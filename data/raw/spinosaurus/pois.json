@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "mapImage": "images/image-2.png",
+  "legend": {
+    "territory": "Claimable water territory (green on the profile map)",
+    "neutral": "Neutral / courtship ground (yellow on the profile map)"
+  },
+  "notes": "Spinosaurus claim medium water sources inside specific territory areas and may only hunt other players from within them. Territoriality is suppressed at neutral grounds.",
+  "pois": [
+    {
+      "regionId": "stillwater-bog",
+      "roles": ["territory", "hunting", "nesting"],
+      "claimable": true,
+      "territoryTier": "greater+lesser",
+      "prey": ["Deinosuchus", "Sarcosuchus", "up to Apex tier"],
+      "note": "Prime claimable freshwater basin (Greater & Lesser Stillwater Territory). Hunts of other players may only start here."
+    },
+    {
+      "regionId": "mudflats",
+      "roles": ["territory", "hunting", "nesting"],
+      "claimable": true,
+      "territoryTier": "greater+lesser",
+      "prey": ["Deinosuchus", "Sarcosuchus", "up to Apex tier"],
+      "note": "Brackish mudflat claim (Greater & Lesser Mudflats Territory)."
+    },
+    {
+      "regionId": "twisted-forest",
+      "roles": ["territory", "hunting", "nesting"],
+      "claimable": true,
+      "territoryTier": "greater+lesser",
+      "prey": ["up to Apex tier"],
+      "note": "Wet forest water claim (Greater & Lesser Twisted Territory)."
+    },
+    {
+      "regionId": "volcano-islands",
+      "roles": ["territory", "hunting", "nesting"],
+      "claimable": true,
+      "territoryTier": "segmented (Northern / Southern / Eastern Volcano Territory)",
+      "prey": ["up to Apex tier"],
+      "note": "Segmented claimable water among the volcanic islands."
+    },
+    {
+      "regionId": "redwood-wind",
+      "roles": ["territory", "hunting", "nesting"],
+      "claimable": true,
+      "territoryTier": "greater+lesser",
+      "prey": ["up to Apex tier"],
+      "note": "South-western water claim (Greater & Lesser Redwoods Territory)."
+    },
+    {
+      "regionId": "triad-falls",
+      "roles": ["migration", "courtship", "neutral"],
+      "claimable": false,
+      "note": "Ancestral neutral ground. Sub-adults migrate here to mature and secure a first pairbond; territoriality is suppressed and the water is not claimable."
+    },
+    {
+      "regionId": "wollemi-forest",
+      "roles": ["courtship", "neutral"],
+      "claimable": false,
+      "note": "Alternate partner-seeking ground alongside Triad Falls."
+    },
+    {
+      "regionId": "grand-falls",
+      "roles": ["courtship", "neutral"],
+      "claimable": false,
+      "note": "New-pair courtship ground & neutral area (yellow on the profile map)."
+    }
+  ],
+  "anyPoiHunting": {
+    "prey": ["Fish", "Leedsichthys", "Tylosaurus", "critters", "corpses"],
+    "note": "Fish, Leedsichthys and Tylosaurus may be hunted in any POI; other player hunts are restricted to claimed territory."
+  }
+}

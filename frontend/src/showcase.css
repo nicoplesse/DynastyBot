@@ -1,0 +1,45 @@
+.profile-hero.with-showcase{display:block;min-height:0;padding:16px 16px 0;background:linear-gradient(180deg,#101a13,#141f17)}
+.profile-hero.with-showcase .hero-copy{width:auto;max-width:880px;padding:28px 30px 36px}
+.profile-hero.with-showcase .hero-copy h1{font-size:clamp(38px,5vw,64px)}
+
+.showcase-grid{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:10px}
+.showcase-grid.animals-2 .role-primary{grid-row:1 / span 2}
+.showcase-grid.animals-2 .role-secondary{aspect-ratio:2.15}
+.showcase-grid.animals-0{grid-template-columns:minmax(0,1fr)}
+.showcase-grid.animals-0 .showcase-ingame{max-width:880px}
+.showcase-tile{--accent:#a9cf82;position:relative;margin:0;min-width:0;overflow:hidden;border:1px solid #2f4031;border-radius:7px;background:#0d140f}
+.showcase-tile.role-secondary{--accent:#6fa3a8}
+.showcase-ingame{--accent:#dcbb78;aspect-ratio:1.615;background:#1c1d1c}
+.showcase-open{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.showcase-open:disabled{cursor:default}
+.showcase-open img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.showcase-ingame .showcase-open img{object-fit:contain}
+.showcase-open:hover img{transform:scale(1.02)}
+.showcase-animal .showcase-open{position:absolute;inset:0}
+.showcase-grid.animals-1 .role-primary{min-height:0}
+.showcase-fallback{display:grid;height:100%;place-items:center;color:#9bb982;font-size:64px;font-weight:800}
+.showcase-tile figcaption{position:absolute;inset:auto 0 0;display:flex;flex-direction:column;gap:3px;padding:44px 18px 15px;background:linear-gradient(180deg,transparent,#070c08d9 62%);pointer-events:none}
+.showcase-tile figcaption strong{color:#f1f6ec;font-size:22px;line-height:1.1;letter-spacing:-.02em}
+.showcase-tile.role-primary figcaption strong{font-size:clamp(24px,2.6vw,34px)}
+.showcase-de{color:#b9c9b5;font-size:12px}
+.showcase-kicker{display:inline-flex;align-items:center;gap:7px;color:#d7e4d1;font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.showcase-kicker b{display:grid;width:19px;height:19px;place-items:center;border-radius:50%;background:var(--accent);color:#0b120d;font-size:10px;letter-spacing:0}
+.showcase-kicker i{padding:3px 6px;border-radius:3px;background:color-mix(in srgb,var(--accent) 24%,#0b120d);color:var(--accent);font-style:normal;font-size:10px;letter-spacing:.04em}
+.showcase-ingame-tag{position:absolute;left:10px;bottom:10px;padding:5px 9px 5px 5px;border:1px solid #dcbb7855;border-radius:14px;background:#0b0c0bcc;pointer-events:none}
+.showcase-credit{position:absolute;top:9px;right:10px;max-width:70%;overflow:hidden;padding:3px 7px;border-radius:3px;background:#070c08a6;color:#c2cfbd;font-size:9px;text-decoration:none;white-space:nowrap;text-overflow:ellipsis;opacity:.72;transition:opacity .15s}
+.showcase-credit:hover,.showcase-credit:focus-visible{opacity:1;color:#fff}
+.showcase-missing{display:flex;flex-direction:column;justify-content:center;gap:6px;height:100%;padding:24px;border:1px dashed #4d5b4e;border-radius:7px;background:repeating-linear-gradient(135deg,#161d17 0 12px,#131a14 12px 24px);color:#95a495;font-size:11px}
+.showcase-missing strong{color:#d8e2d3;font-size:20px;letter-spacing:.08em;text-transform:uppercase}
+
+.profile-card .card-image>span.card-share{display:block;height:auto;place-items:initial;position:absolute;right:11px;bottom:11px;max-width:62%;overflow:hidden;padding:5px 8px;border:1px solid #a9cf8255;border-radius:3px;background:#0b120dcc;color:#e2efd6;font-size:10px;font-weight:700;white-space:nowrap;text-overflow:ellipsis}
+.card-share b{margin-right:5px;color:#a9cf82}
+
+@media(max-width:700px){
+  .profile-hero.with-showcase{padding:10px 10px 0}
+  .profile-hero.with-showcase .hero-copy{padding:22px 14px 28px}
+  .profile-hero.with-showcase .hero-copy h1{font-size:clamp(28px,9vw,40px);overflow-wrap:anywhere}
+  .showcase-grid,.showcase-grid.animals-1,.showcase-grid.animals-2{grid-template-columns:minmax(0,1fr)}
+  .showcase-grid.animals-2 .role-primary{grid-row:auto}
+  .showcase-tile.role-primary{aspect-ratio:1.25}
+  .showcase-tile.role-secondary{aspect-ratio:1.8}
+}

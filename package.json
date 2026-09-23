@@ -1,0 +1,17 @@
+{
+  "name": "dynasty-bot",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["frontend", "server"],
+  "scripts": {
+    "dev": "concurrently -k -n API,UI -c green,cyan \"npm run dev -w server\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend",
+    "process": "npm run process -w server",
+    "curate:pois": "npm run curate:pois -w server",
+    "stats:refresh": "npm run stats:refresh -w server && npm run process",
+    "test": "npm run test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

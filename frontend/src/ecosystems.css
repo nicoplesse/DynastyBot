@@ -1,0 +1,82 @@
+.eco-head h1 span{margin-left:8px;color:#7f9584;font-size:.5em;font-weight:700;letter-spacing:-.01em}
+
+.eco-tabs{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:6px;margin:0 -6px;padding:10px 6px;background:linear-gradient(#101713 82%,#10171300);scrollbar-width:thin}
+.eco-tabs button{--eco:#9bbc7b;display:flex;min-width:0;align-items:center;gap:9px;min-height:50px;padding:7px 12px 7px 9px;border:1px solid #2d3c30;border-radius:8px;background:#162019;color:#aebcaa;text-align:left;transition:border-color .15s,background .15s}
+.eco-tabs button:hover{border-color:color-mix(in srgb,var(--eco) 55%,#2d3c30)}
+.eco-tabs button.active{border-color:var(--eco);background:color-mix(in srgb,var(--eco) 16%,#162019);color:#eef4ea}
+.eco-tab-symbol{display:grid;width:30px;height:30px;place-items:center;border-radius:6px;background:color-mix(in srgb,var(--eco) 22%,#0f1712);color:var(--eco);font-size:16px}
+.eco-tab-text b{display:block;font-size:12px}
+.eco-tab-text{min-width:0}
+.eco-tab-text small{display:none}
+.eco-tabs i{margin-left:auto;padding:2px 7px;border-radius:9px;background:#0f1712;color:#b9cdb1;font-size:10px;font-style:normal;font-weight:800}
+.eco-sorting{margin:6px 2px 22px;color:#7f9283;font-size:11px}
+.eco-sorting b{color:#b7caae}
+
+.eco-section{scroll-margin-top:80px}
+.eco-section.with-divider{margin-top:56px;padding-top:44px;border-top:1px dashed #33443a}
+.eco-banner{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:22px;overflow:hidden;padding:26px 28px;border:1px solid color-mix(in srgb,var(--eco) 40%,#2c3b2f);border-radius:10px;background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--eco) 26%,#141f17) 0%,#141f17 58%)}
+.eco-symbol{display:grid;width:64px;height:64px;place-items:center;border:1px solid color-mix(in srgb,var(--eco) 60%,transparent);border-radius:14px;background:#0d140fb3;color:var(--eco);font-size:32px}
+.eco-kicker{color:var(--eco);font-size:10px;font-weight:800;letter-spacing:.18em}
+.eco-banner h2{margin:6px 0 6px;color:#f0f5ec;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em}
+.eco-banner h2 span{margin-left:6px;color:#9fb29d;font-size:.55em;font-weight:700;letter-spacing:0}
+.eco-banner p{max-width:640px;color:#b3c2b0;font-size:12px;line-height:1.6}
+.eco-stats{display:flex;gap:8px;margin:0}
+.eco-stats div{min-width:84px;padding:10px 12px;border:1px solid #33453a;border-radius:7px;background:#0e1611c7}
+.eco-stats dt{color:#7a8e7d;font-size:8px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.eco-stats dd{margin:5px 0 0;color:#e2edd9;font-size:20px;font-weight:800}
+
+.food-chain{position:relative;list-style:none;margin:22px 0 0;padding:0}
+.food-chain::before{content:"";position:absolute;top:16px;bottom:10px;left:15px;width:2px;background:linear-gradient(var(--eco),#33443a)}
+.fc-level{position:relative;display:grid;grid-template-columns:200px minmax(0,1fr);gap:18px;padding:14px 0}
+.fc-level+.fc-level{border-top:1px solid #1f2b23}
+.fc-rail{position:sticky;top:84px;align-self:start;display:flex;gap:12px;align-items:flex-start}
+.fc-dot{position:relative;z-index:1;display:grid;flex:0 0 32px;width:32px;height:32px;place-items:center;border:2px solid var(--eco);border-radius:50%;background:#101713;color:#eef5e8;font-size:12px;font-weight:800}
+.fc-level.level-5 .fc-dot,.fc-level.level-6 .fc-dot,.fc-level.level-7 .fc-dot{border-style:dashed;color:#b9c9b3}
+.fc-rail strong{display:block;margin-top:2px;color:#e3ecdd;font-size:13px}
+.fc-rail small{display:block;margin-top:2px;color:#809482;font-size:11px}
+.fc-rail em{display:inline-block;margin-top:7px;padding:3px 7px;border-radius:3px;background:color-mix(in srgb,var(--eco) 22%,#0f1712);color:var(--eco);font-size:9px;font-style:normal;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.fc-members{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:10px}
+
+.eco-card{display:flex;flex-direction:column;min-width:0;padding:0;overflow:hidden;border:1px solid #2d3c30;border-radius:8px;background:#17221a;color:inherit;text-align:left;transition:transform .15s,border-color .15s}
+.eco-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--eco) 65%,#2d3c30)}
+.eco-card-image{position:relative;display:block;aspect-ratio:1.75;overflow:hidden;background:#223126}
+.eco-card-image>img:first-child{width:100%;height:100%;object-fit:cover}
+.eco-card-fallback{display:grid;height:100%;place-items:center;color:#9bb982;font-size:40px;font-weight:800}
+.eco-card-ingame{position:absolute;right:7px;bottom:7px;width:42%;aspect-ratio:1.615;object-fit:cover;border:1px solid #ffffff40;border-radius:4px;box-shadow:0 4px 14px #000a}
+.eco-rank{position:absolute;top:7px;left:7px;padding:3px 7px;border-radius:3px;background:#0b120dd9;color:var(--eco);font-size:10px;font-weight:800}
+.eco-card-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.eco-card-body strong{color:#eef3ea;font-size:14px}
+.eco-card-analog{overflow:hidden;color:#b5d193;font-size:10px;font-weight:700;white-space:nowrap;text-overflow:ellipsis}
+.eco-card-meta{display:flex;justify-content:space-between;gap:8px;color:#7f9283;font-size:10px}
+.eco-card-meta b{color:#c8d8c1}
+
+.fc-end{display:flex;align-items:baseline;gap:8px;margin:6px 0 0 50px;color:#7a8e7d;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.fc-end small{color:#5f7263;font-weight:600;letter-spacing:.06em}
+.eco-visitors{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:18px;padding:12px 14px;border:1px solid #27352b;border-radius:8px;background:#121b15}
+.eco-visitors>span{margin-right:6px;color:#728574;font-size:9px;font-weight:800;letter-spacing:.14em}
+.eco-visitors button{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid #33453a;border-radius:14px;background:#17221a;color:#c3d1bf;font-size:11px}
+.eco-visitors button:hover{border-color:var(--eco);color:#fff}
+.eco-visitors i{color:var(--eco);font-style:normal}
+
+.nav-group{display:grid;gap:2px}
+.nav-sub{display:grid;gap:1px;margin:2px 0 6px 22px;padding-left:10px;border-left:1px solid #26352a}
+.nav-sub button{display:flex;align-items:center;gap:8px;height:30px;padding:0 10px;border:1px solid transparent;border-radius:6px;background:transparent;color:#7f9083;font-size:12px;text-align:left}
+.nav-sub button:hover{color:#cfe0c6}
+.nav-sub button.active{border-color:#35493a;background:#1b2a1f;color:#d6ebc6}
+.nav-sub i{width:16px;color:var(--eco,#9bbc7b);font-style:normal;text-align:center}
+.nav-toggle{margin-left:auto;padding:0 2px;border:0;background:none;color:inherit;font-size:11px;transition:transform .15s}
+.nav-toggle.open{transform:rotate(180deg)}
+.nav-row{position:relative;display:flex;align-items:center}
+.nav-row .nav-item{padding-right:34px}
+.nav-row .nav-toggle{position:absolute;right:8px;top:50%;width:24px;height:24px;margin:-12px 0 0;border-radius:5px}
+.nav-row .nav-toggle:hover{background:#1e2c22}
+
+@media(max-width:850px){.eco-tabs{display:flex;overflow-x:auto}.eco-tabs button{flex:0 0 auto}.nav-sub,.nav-row .nav-toggle{display:none}.eco-banner{grid-template-columns:auto minmax(0,1fr)}.eco-stats{grid-column:1 / -1}.fc-level{grid-template-columns:1fr;gap:10px}.fc-rail{position:static}.food-chain::before{display:none}}
+@media(max-width:600px){.eco-banner{grid-template-columns:1fr;padding:20px 16px}.eco-symbol{width:48px;height:48px;font-size:24px}.eco-stats div{min-width:0;flex:1}.fc-members{grid-template-columns:repeat(2,minmax(0,1fr))}.eco-card-meta{flex-direction:column;gap:2px}.fc-end{margin-left:0}}
+
+.directory-actions{display:flex;align-items:stretch;gap:10px}
+.eco-link{display:flex;flex-direction:column;justify-content:center;gap:3px;padding:12px 16px;border:1px solid #3a4d3c;border-radius:7px;background:#18241b;color:#d6ebc6;font-size:13px;font-weight:700;text-align:left}
+.eco-link i{color:#9bbc7b;font-style:normal}
+.eco-link b{color:#8fa08f;font-size:10px;font-weight:600}
+.eco-link:hover{border-color:#9bbc7b}
+@media(max-width:600px){.directory-actions{width:100%}.directory-actions>*{flex:1}}

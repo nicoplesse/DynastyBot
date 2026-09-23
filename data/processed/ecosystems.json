@@ -1,0 +1,1276 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-23T15:55:03.080Z",
+  "levels": [
+    {
+      "level": 1,
+      "label": "Apex predators",
+      "de": "Apex-Prädatoren",
+      "rule": "Carnivore of game tier Apex or Giant"
+    },
+    {
+      "level": 2,
+      "label": "Large predators",
+      "de": "Großräuber",
+      "rule": "Carnivore of game tier Large"
+    },
+    {
+      "level": 3,
+      "label": "Mid-size predators",
+      "de": "Mittlere Räuber",
+      "rule": "Carnivore of game tier Medium"
+    },
+    {
+      "level": 4,
+      "label": "Small predators & scavengers",
+      "de": "Kleinräuber & Aasfresser",
+      "rule": "Carnivore of game tier Small or Tiny"
+    },
+    {
+      "level": 5,
+      "label": "Giant grazers",
+      "de": "Riesen-Pflanzenfresser",
+      "rule": "Herbivore of game tier Apex or Giant, or a filter feeder"
+    },
+    {
+      "level": 6,
+      "label": "Herbivores",
+      "de": "Pflanzenfresser",
+      "rule": "Herbivore of game tier Large or Medium"
+    },
+    {
+      "level": 7,
+      "label": "Small prey",
+      "de": "Kleine Beutetiere",
+      "rule": "Herbivore of game tier Small or Tiny: the end of the food chain"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "sea",
+      "label": "Sea & Coast",
+      "de": "Meer & Küste",
+      "accent": "#5fa8c9",
+      "symbol": "≋",
+      "description": "Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shapes daily life.",
+      "count": 8,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "tylosaurus",
+          "name": "Tylosaurus",
+          "ecosystem": "sea",
+          "level": 1,
+          "combatWeight": 5000,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "An orca of the open sea: pods migrate along the coast and beach-hunting families patrol the shores."
+        },
+        {
+          "rank": 2,
+          "id": "kaiwhekea",
+          "name": "Kaiwhekea",
+          "ecosystem": "sea",
+          "level": 3,
+          "combatWeight": 4000,
+          "maxHealth": 750,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "Sea lion and sea turtle: swims the open sea near the surface and basks on beaches."
+        },
+        {
+          "rank": 3,
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "ecosystem": "sea",
+          "level": 3,
+          "combatWeight": 3100,
+          "maxHealth": 500,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater",
+            "forest"
+          ],
+          "reason": "The profile says it prefers coastal environments; it cools off in shallow water and courts on the mudflats."
+        },
+        {
+          "rank": 4,
+          "id": "eurhinosaurus",
+          "name": "Eurhinosaurus",
+          "ecosystem": "sea",
+          "level": 3,
+          "combatWeight": 3000,
+          "maxHealth": 600,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "A bottlenose dolphin: shoals circle their home waters between fish spots, rocks and underwater caves."
+        },
+        {
+          "rank": 5,
+          "id": "austroraptor",
+          "name": "Austroraptor",
+          "ecosystem": "sea",
+          "level": 3,
+          "combatWeight": 2100,
+          "maxHealth": 650,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "Heron and emperor penguin: fishes coasts and seaways; its preferred areas are mostly coast and ocean."
+        },
+        {
+          "rank": 6,
+          "id": "tropeognathus",
+          "name": "Tropeognathus",
+          "ecosystem": "sea",
+          "level": 4,
+          "combatWeight": 2000,
+          "maxHealth": 450,
+          "tier": "Small",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "Herring gull and cormorant: spends its whole life on the coast and at sea and nests on sea stacks."
+        },
+        {
+          "rank": 7,
+          "id": "leedsichthys",
+          "name": "Leedsichthys",
+          "ecosystem": "sea",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "A whale shark on a great open-sea migration loop."
+        },
+        {
+          "rank": 8,
+          "id": "camptosaurus",
+          "name": "Camptosaurus",
+          "ecosystem": "sea",
+          "level": 7,
+          "combatWeight": 1050,
+          "maxHealth": 700,
+          "tier": "Small",
+          "diet": "Herbivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A quokka of coasts and island scrub; its map marks coastal, island and forest-edge areas."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "deinosuchus",
+          "name": "Deinosuchus",
+          "level": 1,
+          "home": "freshwater"
+        },
+        {
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "level": 2,
+          "home": "freshwater"
+        },
+        {
+          "id": "hatzegopteryx",
+          "name": "Hatzegopteryx",
+          "level": 2,
+          "home": "plains"
+        },
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "level": 3,
+          "home": "freshwater"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "level": 5,
+          "home": "freshwater"
+        },
+        {
+          "id": "lurdusaurus",
+          "name": "Lurdusaurus",
+          "level": 6,
+          "home": "freshwater"
+        }
+      ]
+    },
+    {
+      "id": "freshwater",
+      "label": "Rivers, Lakes & Swamps",
+      "de": "Flüsse, Seen & Sümpfe",
+      "accent": "#6fb3a1",
+      "symbol": "∿",
+      "description": "Rivers, lakes, bogs, mudflats and riverbanks: life organised around fresh water.",
+      "count": 10,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "spinosaurus",
+          "name": "Spinosaurus",
+          "ecosystem": "freshwater",
+          "level": 1,
+          "combatWeight": 6000,
+          "maxHealth": 1100,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "Claims medium water sources in bogs, mudflats and jungle rivers; its territory ends 10 body lengths from the water."
+        },
+        {
+          "rank": 2,
+          "id": "deinosuchus",
+          "name": "Deinosuchus",
+          "ecosystem": "freshwater",
+          "level": 1,
+          "combatWeight": 6000,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [
+            "sea"
+          ],
+          "reason": "A Nile crocodile of rivers and estuaries that also crosses the sea between islands; Spinosaurus drives it out of the same rivers."
+        },
+        {
+          "rank": 3,
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "ecosystem": "freshwater",
+          "level": 2,
+          "combatWeight": 5000,
+          "maxHealth": 700,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "sea"
+          ],
+          "reason": "A gharial that drifts between lakes and rivers and nests close to a Spinosaurus."
+        },
+        {
+          "rank": 4,
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "ecosystem": "freshwater",
+          "level": 2,
+          "combatWeight": 4500,
+          "maxHealth": 600,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A mugger crocodile moving between swamps, ponds and forest rivers and defending mud pools in the dry season."
+        },
+        {
+          "rank": 5,
+          "id": "concavenator",
+          "name": "Concavenator",
+          "ecosystem": "freshwater",
+          "level": 3,
+          "combatWeight": 2100,
+          "maxHealth": 500,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "sea"
+          ],
+          "reason": "A giant otter: semi-aquatic along shores and marshes and nests communally on its marsh nesting ground."
+        },
+        {
+          "rank": 6,
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "ecosystem": "freshwater",
+          "level": 4,
+          "combatWeight": 2100,
+          "maxHealth": 500,
+          "tier": "Small",
+          "diet": "Carnivore",
+          "also": [
+            "mountains"
+          ],
+          "reason": "Flocks travel inland along rivers and lakes and nest at a big lake; they court in the mountains."
+        },
+        {
+          "rank": 7,
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "ecosystem": "freshwater",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 950,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [
+            "sea"
+          ],
+          "reason": "Mute swan and moose: spends its life by lakes and rivers, diving for lakeweed and fleeing into the water."
+        },
+        {
+          "rank": 8,
+          "id": "lambeosaurus",
+          "name": "Lambeosaurus",
+          "ecosystem": "freshwater",
+          "level": 6,
+          "combatWeight": 3500,
+          "maxHealth": 650,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "Travels along waterways and crosses them back and forth to shake off predators."
+        },
+        {
+          "rank": 9,
+          "id": "lurdusaurus",
+          "name": "Lurdusaurus",
+          "ecosystem": "freshwater",
+          "level": 6,
+          "combatWeight": 3200,
+          "maxHealth": 600,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [
+            "sea"
+          ],
+          "reason": "A hippo: in the water by day, males hold water territories, mud baths against the sun."
+        },
+        {
+          "rank": 10,
+          "id": "halszkaraptor",
+          "name": "Halszkaraptor",
+          "ecosystem": "freshwater",
+          "level": 7,
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "tier": "Tiny",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A mallard of ponds, lakes and rivers that skims the water for lakeweed and small fish."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "level": 1,
+          "home": "forest"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "level": 3,
+          "home": "sea"
+        },
+        {
+          "id": "eurhinosaurus",
+          "name": "Eurhinosaurus",
+          "level": 3,
+          "home": "sea"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "level": 3,
+          "home": "forest"
+        },
+        {
+          "id": "megalania",
+          "name": "Megalania",
+          "level": 3,
+          "home": "arid"
+        },
+        {
+          "id": "austroraptor",
+          "name": "Austroraptor",
+          "level": 3,
+          "home": "sea"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "level": 4,
+          "home": "forest"
+        },
+        {
+          "id": "rhamphorhynchus",
+          "name": "Rhamphorhynchus",
+          "level": 4,
+          "home": "plains"
+        },
+        {
+          "id": "apatosaurus",
+          "name": "Apatosaurus",
+          "level": 5,
+          "home": "plains"
+        },
+        {
+          "id": "yunnanosaurus",
+          "name": "Yunnanosaurus",
+          "level": 6,
+          "home": "arid"
+        },
+        {
+          "id": "albertaceratops",
+          "name": "Albertaceratops",
+          "level": 6,
+          "home": "forest"
+        },
+        {
+          "id": "kentrosaurus",
+          "name": "Kentrosaurus",
+          "level": 6,
+          "home": "forest"
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "label": "Forest",
+      "de": "Wald",
+      "accent": "#8fc26f",
+      "symbol": "♣",
+      "description": "Redwoods, jungle, woodland clearings and forested hills: cover, ambush and territory.",
+      "count": 15,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "ecosystem": "forest",
+          "level": 1,
+          "combatWeight": 6000,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "Primarily found in forests; claims the Redwoods, the southern hills and Wollemi as territory."
+        },
+        {
+          "rank": 2,
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "ecosystem": "forest",
+          "level": 1,
+          "combatWeight": 5500,
+          "maxHealth": 900,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "A tiger of hills, forests and wetlands; males claim a whole POI and cool off in ponds."
+        },
+        {
+          "rank": 3,
+          "id": "achillobator",
+          "name": "Achillobator",
+          "ecosystem": "forest",
+          "level": 3,
+          "combatWeight": 2800,
+          "maxHealth": 600,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "A nocturnal caracal roaming woods and wetland edges beside its Latenivenatrix rookery."
+        },
+        {
+          "rank": 4,
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "ecosystem": "forest",
+          "level": 3,
+          "combatWeight": 2600,
+          "maxHealth": 750,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "A grey wolf pack that strongly prefers woodland and clearings."
+        },
+        {
+          "rank": 5,
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "ecosystem": "forest",
+          "level": 3,
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "arid"
+          ],
+          "reason": "Red fox and raccoon of woods and hills, blending in with optional chromatophores."
+        },
+        {
+          "rank": 6,
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "ecosystem": "forest",
+          "level": 4,
+          "combatWeight": 1400,
+          "maxHealth": 500,
+          "tier": "Small",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "Rook and dhole: rookeries settle in forests and wetlands with a shared nest territory."
+        },
+        {
+          "rank": 7,
+          "id": "compsognathus",
+          "name": "Compsognathus",
+          "ecosystem": "forest",
+          "level": 4,
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "also": [
+            "plains"
+          ],
+          "reason": "A rat that follows one large carnivore, most often Tyrannosaurus, through the forest."
+        },
+        {
+          "rank": 8,
+          "id": "eotriceratops",
+          "name": "Eotriceratops",
+          "ecosystem": "forest",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 1300,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [
+            "plains"
+          ],
+          "reason": "Asian elephant and hippo: the matriarch leads the herd through forest and hill country."
+        },
+        {
+          "rank": 9,
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "ecosystem": "forest",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A cassowary that spends most of its life deep in the forest and patrols it at night."
+        },
+        {
+          "rank": 10,
+          "id": "stegosaurus",
+          "name": "Stegosaurus",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 5000,
+          "maxHealth": 800,
+          "tier": "Large",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A black rhino camping on food bushes and water in forests and hills."
+        },
+        {
+          "rank": 11,
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 4500,
+          "maxHealth": 850,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A sedentary wombat of hills, woods and wetland edges living on fruit, roots and nuts."
+        },
+        {
+          "rank": 12,
+          "id": "iguanodon",
+          "name": "Iguanodon",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 4200,
+          "maxHealth": 800,
+          "tier": "Large",
+          "diet": "Herbivore",
+          "also": [
+            "plains"
+          ],
+          "reason": "A cape buffalo roaming forests and hills and claiming food and water on the way."
+        },
+        {
+          "rank": 13,
+          "id": "albertaceratops",
+          "name": "Albertaceratops",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 3500,
+          "maxHealth": 600,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "Badger and wild boar: roots in woodland and moves to rivers and mud pits in the dry season."
+        },
+        {
+          "rank": 14,
+          "id": "kentrosaurus",
+          "name": "Kentrosaurus",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 2700,
+          "maxHealth": 750,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "Settles inside a Stegosaurus territory and stays near rivers and shaded pools."
+        },
+        {
+          "rank": 15,
+          "id": "tenontosaurus",
+          "name": "Tenontosaurus",
+          "ecosystem": "forest",
+          "level": 6,
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A peccary that tramples through forest territories digging for tubers."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "spinosaurus",
+          "name": "Spinosaurus",
+          "level": 1,
+          "home": "freshwater"
+        },
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "level": 1,
+          "home": "arid"
+        },
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "level": 2,
+          "home": "freshwater"
+        },
+        {
+          "id": "maip",
+          "name": "Maip",
+          "level": 2,
+          "home": "mountains"
+        },
+        {
+          "id": "pycnonemosaurus",
+          "name": "Pycnonemosaurus",
+          "level": 2,
+          "home": "arid"
+        },
+        {
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "level": 2,
+          "home": "mountains"
+        },
+        {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "level": 2,
+          "home": "mountains"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "level": 3,
+          "home": "sea"
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "level": 3,
+          "home": "arid"
+        },
+        {
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "level": 4,
+          "home": "plains"
+        },
+        {
+          "id": "parasaurolophus",
+          "name": "Parasaurolophus",
+          "level": 5,
+          "home": "plains"
+        },
+        {
+          "id": "lambeosaurus",
+          "name": "Lambeosaurus",
+          "level": 6,
+          "home": "freshwater"
+        },
+        {
+          "id": "styracosaurus",
+          "name": "Styracosaurus",
+          "level": 6,
+          "home": "plains"
+        },
+        {
+          "id": "camptosaurus",
+          "name": "Camptosaurus",
+          "level": 7,
+          "home": "sea"
+        },
+        {
+          "id": "dryosaurus",
+          "name": "Dryosaurus",
+          "level": 7,
+          "home": "mountains"
+        }
+      ]
+    },
+    {
+      "id": "plains",
+      "label": "Plains & Savanna",
+      "de": "Ebenen & Savanne",
+      "accent": "#d2bd6a",
+      "symbol": "⌒",
+      "description": "Open country where the big herds migrate and the hunters follow them.",
+      "count": 16,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "ecosystem": "plains",
+          "level": 2,
+          "combatWeight": 4500,
+          "maxHealth": 700,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "arid"
+          ],
+          "reason": "An African lion pride holding open country: canyons, coasts, hills and forest edges."
+        },
+        {
+          "rank": 2,
+          "id": "hatzegopteryx",
+          "name": "Hatzegopteryx",
+          "ecosystem": "plains",
+          "level": 2,
+          "combatWeight": 3100,
+          "maxHealth": 600,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "arid",
+            "sea"
+          ],
+          "reason": "A golden eagle whose mated pairs hold whole POIs over open country, canyons and coasts."
+        },
+        {
+          "rank": 3,
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "ecosystem": "plains",
+          "level": 2,
+          "combatWeight": 2750,
+          "maxHealth": 600,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "A vulture that follows the migrating herds and predators to their dying grounds."
+        },
+        {
+          "rank": 4,
+          "id": "alioramus",
+          "name": "Alioramus",
+          "ecosystem": "plains",
+          "level": 3,
+          "combatWeight": 2400,
+          "maxHealth": 525,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "arid"
+          ],
+          "reason": "African wild dogs that travel long distances behind the herds."
+        },
+        {
+          "rank": 5,
+          "id": "kelenken",
+          "name": "Kelenken",
+          "ecosystem": "plains",
+          "level": 3,
+          "combatWeight": 1950,
+          "maxHealth": 500,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "mountains"
+          ],
+          "reason": "A secretary bird of open plains and rocky ground."
+        },
+        {
+          "rank": 6,
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "ecosystem": "plains",
+          "level": 4,
+          "combatWeight": 800,
+          "maxHealth": 550,
+          "tier": "Small",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A spotted hyena that trails large herds and apex carnivores across open ground."
+        },
+        {
+          "rank": 7,
+          "id": "rhamphorhynchus",
+          "name": "Rhamphorhynchus",
+          "ecosystem": "plains",
+          "level": 4,
+          "combatWeight": 500,
+          "maxHealth": 400,
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "An oxpecker roosting on the sauropods of the open plains."
+        },
+        {
+          "rank": 8,
+          "id": "argentinosaurus",
+          "name": "Argentinosaurus",
+          "ecosystem": "plains",
+          "level": 5,
+          "combatWeight": 9000,
+          "maxHealth": 2500,
+          "tier": "Giant",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A giraffe of open country that struggles in forest."
+        },
+        {
+          "rank": 9,
+          "id": "apatosaurus",
+          "name": "Apatosaurus",
+          "ecosystem": "plains",
+          "level": 5,
+          "combatWeight": 8000,
+          "maxHealth": 2000,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "An elephant migrating across open country with mud wallows as waypoints."
+        },
+        {
+          "rank": 10,
+          "id": "parasaurolophus",
+          "name": "Parasaurolophus",
+          "ecosystem": "plains",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 1400,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "Red deer and wild horse on long generational migration loops."
+        },
+        {
+          "rank": 11,
+          "id": "amargasaurus",
+          "name": "Amargasaurus",
+          "ecosystem": "plains",
+          "level": 6,
+          "combatWeight": 5000,
+          "maxHealth": 1250,
+          "tier": "Large",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "Wildebeest and giraffe following the sauropod migration routes."
+        },
+        {
+          "rank": 12,
+          "id": "pachyrhinosaurus",
+          "name": "Pachyrhinosaurus",
+          "ecosystem": "plains",
+          "level": 6,
+          "combatWeight": 4500,
+          "maxHealth": 800,
+          "tier": "Large",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "Musk ox and caribou migrating long distances between feeding and nesting grounds."
+        },
+        {
+          "rank": 13,
+          "id": "styracosaurus",
+          "name": "Styracosaurus",
+          "ecosystem": "plains",
+          "level": 6,
+          "combatWeight": 2800,
+          "maxHealth": 700,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [
+            "arid",
+            "forest"
+          ],
+          "reason": "Musk ox and oryx roaming arid grasslands in huge herds."
+        },
+        {
+          "rank": 14,
+          "id": "citipati",
+          "name": "Citipati",
+          "ecosystem": "plains",
+          "level": 6,
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "Prefers clearings and open land where danger can be seen coming, travelling with sauropods."
+        },
+        {
+          "rank": 15,
+          "id": "struthiomimus",
+          "name": "Struthiomimus",
+          "ecosystem": "plains",
+          "level": 7,
+          "combatWeight": 1400,
+          "maxHealth": 450,
+          "tier": "Small",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "An ostrich that loves traversing vast open lands alongside other herds."
+        },
+        {
+          "rank": 16,
+          "id": "psittacosaurus",
+          "name": "Psittacosaurus",
+          "ecosystem": "plains",
+          "level": 7,
+          "combatWeight": 900,
+          "maxHealth": 500,
+          "tier": "Small",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A meerkat sentry travelling with the ceratopsian herds."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "level": 1,
+          "home": "arid"
+        },
+        {
+          "id": "pycnonemosaurus",
+          "name": "Pycnonemosaurus",
+          "level": 2,
+          "home": "arid"
+        },
+        {
+          "id": "compsognathus",
+          "name": "Compsognathus",
+          "level": 4,
+          "home": "forest"
+        },
+        {
+          "id": "eotriceratops",
+          "name": "Eotriceratops",
+          "level": 5,
+          "home": "forest"
+        },
+        {
+          "id": "iguanodon",
+          "name": "Iguanodon",
+          "level": 6,
+          "home": "forest"
+        }
+      ]
+    },
+    {
+      "id": "arid",
+      "label": "Desert & Canyons",
+      "de": "Wüste & Canyons",
+      "accent": "#d9935b",
+      "symbol": "☼",
+      "description": "Dry canyons, scrub, oases and salt rocks: heat, scarce water and long distances.",
+      "count": 7,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "ecosystem": "arid",
+          "level": 1,
+          "combatWeight": 5500,
+          "maxHealth": 1000,
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "also": [
+            "plains",
+            "forest"
+          ],
+          "reason": "A nomad of canyons, coasts and forest edges; its preferred areas start at Dry Fang Canyon."
+        },
+        {
+          "rank": 2,
+          "id": "allosaurus",
+          "name": "Allosaurus",
+          "ecosystem": "arid",
+          "level": 2,
+          "combatWeight": 3750,
+          "maxHealth": 650,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [],
+          "reason": "The profile says it prefers arid environments: canyons, rock and scrub, sheltering from the midday sun."
+        },
+        {
+          "rank": 3,
+          "id": "pycnonemosaurus",
+          "name": "Pycnonemosaurus",
+          "ecosystem": "arid",
+          "level": 2,
+          "combatWeight": 3500,
+          "maxHealth": 650,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "plains",
+            "forest"
+          ],
+          "reason": "An endless nomad across canyons, hills and forests, driven by its appetite."
+        },
+        {
+          "rank": 4,
+          "id": "megalania",
+          "name": "Megalania",
+          "ecosystem": "arid",
+          "level": 3,
+          "combatWeight": 2600,
+          "maxHealth": 525,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "A Komodo dragon; the arid variant basks in Dry Fang Canyon and Sharptooth Oasis (the temperate variant lives in bogs)."
+        },
+        {
+          "rank": 5,
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "ecosystem": "arid",
+          "level": 3,
+          "combatWeight": 2100,
+          "maxHealth": 550,
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "Wolf family packs holding territories in canyons, hills and forests."
+        },
+        {
+          "rank": 6,
+          "id": "barsboldia",
+          "name": "Barsboldia",
+          "ecosystem": "arid",
+          "level": 5,
+          "combatWeight": 5500,
+          "maxHealth": 1500,
+          "tier": "Apex",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A Bactrian camel: arid-dwelling, travels to Salt Rocks and goes long without water."
+        },
+        {
+          "rank": 7,
+          "id": "yunnanosaurus",
+          "name": "Yunnanosaurus",
+          "ecosystem": "arid",
+          "level": 6,
+          "combatWeight": 4500,
+          "maxHealth": 1000,
+          "tier": "Large",
+          "diet": "Herbivore",
+          "also": [
+            "freshwater"
+          ],
+          "reason": "Moose and red kangaroo: prefers arid ground in the rainy season and returns to water in the dry season."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "level": 2,
+          "home": "plains"
+        },
+        {
+          "id": "hatzegopteryx",
+          "name": "Hatzegopteryx",
+          "level": 2,
+          "home": "plains"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "level": 3,
+          "home": "forest"
+        },
+        {
+          "id": "alioramus",
+          "name": "Alioramus",
+          "level": 3,
+          "home": "plains"
+        },
+        {
+          "id": "styracosaurus",
+          "name": "Styracosaurus",
+          "level": 6,
+          "home": "plains"
+        }
+      ]
+    },
+    {
+      "id": "mountains",
+      "label": "Mountains & Cliffs",
+      "de": "Gebirge & Felsen",
+      "accent": "#a5a3c8",
+      "symbol": "▲",
+      "description": "Cliffs, ledges, caves and rocky outcrops in the high hills.",
+      "count": 5,
+      "foodChain": [
+        {
+          "rank": 1,
+          "id": "maip",
+          "name": "Maip",
+          "ecosystem": "mountains",
+          "level": 2,
+          "combatWeight": 4000,
+          "maxHealth": 650,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A hyena that loses pursuers in rocky outcrops and complicated terrain."
+        },
+        {
+          "rank": 2,
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "ecosystem": "mountains",
+          "level": 2,
+          "combatWeight": 3500,
+          "maxHealth": 600,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A cougar that primarily travels through forests and cliffsides."
+        },
+        {
+          "rank": 3,
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "ecosystem": "mountains",
+          "level": 2,
+          "combatWeight": 3250,
+          "maxHealth": 600,
+          "tier": "Large",
+          "diet": "Carnivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "A snow leopard of cool hills and forests that defends resting and nesting dens."
+        },
+        {
+          "rank": 4,
+          "id": "pachycephalosaurus",
+          "name": "Pachycephalosaurus",
+          "ecosystem": "mountains",
+          "level": 7,
+          "combatWeight": 2000,
+          "maxHealth": 500,
+          "tier": "Small",
+          "diet": "Herbivore",
+          "also": [],
+          "reason": "A mountain goat that thrives in mountains and settles around a chosen rock, cliff or cave."
+        },
+        {
+          "rank": 5,
+          "id": "dryosaurus",
+          "name": "Dryosaurus",
+          "ecosystem": "mountains",
+          "level": 7,
+          "combatWeight": 1000,
+          "maxHealth": 400,
+          "tier": "Small",
+          "diet": "Herbivore",
+          "also": [
+            "forest"
+          ],
+          "reason": "Rabbit and baboon: claims caves and perches in the hills and flees into small caves."
+        }
+      ],
+      "visitors": [
+        {
+          "id": "kelenken",
+          "name": "Kelenken",
+          "level": 3,
+          "home": "plains"
+        },
+        {
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "level": 4,
+          "home": "freshwater"
+        }
+      ]
+    }
+  ]
+}

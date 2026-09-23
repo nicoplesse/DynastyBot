@@ -1,0 +1,67 @@
+.map-view { margin-top: 34px; }
+.map-toolbar { display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center; justify-content: space-between; margin: 4px 0 16px; }
+.map-mode { display: flex; align-items: center; gap: 6px; }
+.map-mode > span { color: #859887; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.map-mode button { padding: 6px 12px; border: 1px solid #344536; border-radius: 5px; background: #131e16; color: #9bb09c; font-size: 11px; font-weight: 700; }
+.map-mode button.on { background: #263829; border-color: #4a6448; color: #d6ebc6; }
+.map-filters { display: flex; flex-wrap: wrap; gap: 7px; }
+.map-chip { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid #344536; border-radius: 20px; background: #131e16; color: #b3c3b0; font-size: 11px; font-weight: 600; }
+.map-chip i { width: 9px; height: 9px; border-radius: 50%; background: var(--c, #8fa989); }
+.map-chip.active { border-color: var(--c, #a6c983); background: #1e2c20; color: #e6efdd; box-shadow: 0 0 0 1px var(--c, #a6c983) inset; }
+.map-chip.clear { color: #c9b0a0; border-style: dashed; }
+
+.map-stage-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 304px; gap: 16px; align-items: start; }
+.map-stage { position: relative; line-height: 0; }
+.map-stage > img { display: block; width: 100%; border: 1px solid #2c3b2e; border-radius: 8px; }
+.map-noimg { display: grid; place-items: center; min-height: 260px; border: 1px dashed #3f5141; border-radius: 8px; color: #8a9d8b; font-size: 12px; }
+.map-poly { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; border-radius: 8px; }
+
+.map-marker { position: absolute; width: 16px; height: 16px; padding: 0; border: 0; background: none; transform: translate(-50%, -50%); z-index: 2; }
+.map-marker i { display: block; width: 13px; height: 13px; border-radius: 50%; background: var(--c, #8fa989); border: 2px solid rgba(6, 12, 8, .65); box-shadow: 0 0 0 2px rgba(255, 255, 255, .28), 0 1px 5px rgba(0, 0, 0, .55); transition: transform .12s; }
+.map-marker:hover i, .map-marker.selected i { transform: scale(1.35); }
+.map-marker.selected i { box-shadow: 0 0 0 3px var(--c, #a6c983), 0 1px 6px rgba(0, 0, 0, .6); }
+.map-marker-label { position: absolute; left: 50%; top: calc(100% + 5px); transform: translateX(-50%); white-space: nowrap; padding: 2px 7px; border-radius: 4px; background: #0c120fe8; border: 1px solid #3a4c3b; color: #e9eee8; font-size: 10px; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 3; }
+.map-marker:hover .map-marker-label, .map-marker.selected .map-marker-label { opacity: 1; }
+
+.map-detail { position: relative; padding: 17px 18px 19px; border: 1px solid #344536; border-radius: 8px; background: #17211a; }
+.map-detail-empty { color: #9bb09c; }
+.map-detail-empty strong { display: block; margin-bottom: 7px; color: #d6e2d1; font-size: 13px; }
+.map-detail-empty p { font-size: 12px; line-height: 1.55; }
+.map-detail-close { position: absolute; top: 10px; right: 11px; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 4px; background: #263829; color: #cad9c3; font-size: 16px; line-height: 20px; }
+.map-detail-close:hover { background: #304733; }
+.map-detail h3 { margin: 0 26px 10px 0; font-size: 16px; color: #eaf1e3; }
+.map-detail-roles { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
+.map-detail-roles span { padding: 3px 8px; border-radius: 4px; background: #243528; color: #cfe3bd; font-size: 10px; font-weight: 700; }
+.map-detail-desc { margin: 0 0 13px; color: #b7c6b2; font-size: 12px; line-height: 1.55; }
+.map-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; margin: 0 0 13px; }
+.map-detail-grid dt { color: #82977f; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.map-detail-grid dd { margin: 2px 0 0; color: #dbe6d3; font-size: 12px; }
+.map-detail-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 11px; }
+.map-detail-cap { color: #82977f; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-right: 2px; }
+.map-detail-tags em { padding: 2px 7px; border: 1px solid #35482f; border-radius: 4px; background: #16211557; color: #a9c299; font-style: normal; font-size: 10px; }
+.map-detail-tags em.prey { border-color: #5a4433; background: #241a14; color: #d8b39a; }
+.map-detail-note { margin: 0; padding: 10px 12px; border-left: 2px solid #a3c376; background: #1c2a1e; color: #c3d3bd; font-size: 11.5px; line-height: 1.55; }
+.map-detail-warn { margin: 10px 0 0; color: #d9b48a; font-size: 11px; }
+
+.map-legend { display: flex; flex-wrap: wrap; gap: 15px; margin: 15px 2px 0; color: #8da08d; font-size: 10px; }
+.map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.map-legend i { width: 9px; height: 9px; border-radius: 50%; }
+.map-footnote { margin: 13px 0 0; color: #8a9d8b; font-size: 11px; line-height: 1.5; }
+.map-footnote.subtle { color: #6f8272; font-size: 10px; }
+.map-footnote strong { color: #b6ccaa; }
+
+@media (max-width: 900px) { .map-stage-wrap { grid-template-columns: 1fr; } }
+
+/* Migration routes */
+.map-routes-toggle { padding: 6px 12px; border: 1px solid #344536; border-radius: 5px; background: #131e16; color: #9bb09c; font-size: 11px; font-weight: 700; }
+.map-routes-toggle.on { background: #263829; border-color: #4a6448; color: #d6ebc6; }
+.map-routes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; border-radius: 8px; z-index: 1; }
+.route-halo, .route-line { fill: none; vector-effect: non-scaling-stroke; stroke-linejoin: round; stroke-linecap: round; }
+.route-halo { stroke: rgba(4, 8, 6, .65); stroke-width: 5px; }
+.route-line { stroke-width: 2.5px; stroke-dasharray: 8 6; }
+.map-routes-legend { display: flex; flex-direction: column; gap: 10px; margin: 14px 2px 0; padding-top: 13px; border-top: 1px solid #26332a; }
+.route-item { display: flex; flex-direction: column; gap: 3px; }
+.route-key { display: inline-flex; align-items: center; gap: 8px; color: #dbe6d3; font-size: 12px; font-weight: 700; }
+.route-key i { width: 16px; height: 3px; border-radius: 2px; background: var(--rc, #f0f0f0); box-shadow: 0 0 0 1px rgba(0,0,0,.4); }
+.route-seq { color: #9fb39d; font-size: 11px; line-height: 1.5; }
+.route-note { color: #82977f; font-size: 10.5px; }

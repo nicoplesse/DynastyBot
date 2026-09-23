@@ -1,0 +1,7996 @@
+{
+  "schemaVersion": 1,
+  "id": "dryosaurus",
+  "name": "Dryosaurus",
+  "aliases": [
+    "Dryo"
+  ],
+  "summary": "Dryosaurus is a small, agile herbivorous dinosaur that travels across multiple POIs, laying claim to caves, perches and resources. Dryosaurus are highly territorial and band together to ward off other dinosaurs much larger or stronger than them.",
+  "credits": [
+    "Written by Dynasty Realism",
+    "With contributions from: Kittyful, Zesty Filip & Skylark",
+    "Photo: Beadil",
+    "Profile inspired by wild rabbits, baboons and the chihuahua dog breed stereotype."
+  ],
+  "classification": {
+    "tier": "Small",
+    "activity": "Cathemeral",
+    "habitat": "Terrestrial",
+    "diet": "Herbivore",
+    "label": "Small Cathemeral Terrestrial Herbivore"
+  },
+  "quickView": [
+    "Dryosaurus are Small Cathemeral Terrestrial Herbivores.",
+    "Dryosaurus can group in unlimited numbers, with unlimited offspring and unlimited adoptees. These groups are known as a warren.",
+    "Dryosaurus are tolerant to others of their species and fiercely aggressive to all other species.",
+    "Dryosaurus can have up to 8 in an engagement.",
+    "Dryosaurus only flees when an engagement appears to not be going their way.",
+    "Dryosaurus orphans imprint on the first species larger than them that they encounter. They quickly become terrible nuisances to their newly adopted \"parent\" with their aggressive and reckless personalities.",
+    "When in a group, Dryosaurus grow rapidly in confidence and aggress all other species. They lay claim to caves, food resources and perching spots, and fiercely defend them.",
+    "Dryosaurus warrens are lead by a dominant pair in the group. This pair have exclusive access to berries - permitting only young similar access, while the rest of the warren must consume other food resources."
+  ],
+  "stats": {
+    "growthTime": "(hatchling-juvenile, juvenile-adolescent, adolescent-sub, sub-adult in minutes): 10-20-30-30 = 90 total",
+    "growthMinutes": 90,
+    "combatWeight": 1000,
+    "changes": [
+      {
+        "text": "Reduced jump stamina drain",
+        "current": null,
+        "previous": null,
+        "direction": "down"
+      }
+    ],
+    "sourceLabel": "Dynasty Adjusted Stats"
+  },
+  "speed": {
+    "unit": "game-units-per-second",
+    "snapshotAt": "2026-09-23",
+    "land": {
+      "trot": 200,
+      "sprint": 1150,
+      "sprintDurationSeconds": 181.818
+    },
+    "water": null,
+    "air": null,
+    "sources": [
+      {
+        "id": "official-mod-packages",
+        "title": "Official Path of Titans mod packages",
+        "url": "https://pathoftitans.com/mods",
+        "type": "Movement defaults extracted from the installed official mod packages",
+        "updatedAt": "2026-09-18",
+        "note": "Adult trot, sprint, fast-swim and fast-flight defaults were verified in the packaged playable blueprints."
+      },
+      {
+        "id": "stamina-curves",
+        "title": "NexLink Core default curves",
+        "url": "https://nexlinkcore.com/guides/path-of-titans/curve-overrides",
+        "type": "Public default stamina and movement-drain curves",
+        "updatedAt": "2026-09-17",
+        "note": "Sprint duration is derived as adult maximum stamina divided by the relevant per-second stamina cost."
+      }
+    ]
+  },
+  "fullStats": {
+    "baseline": {
+      "title": "DivineDryo",
+      "url": "https://nexlinkcore.com/guides/path-of-titans/curve-overrides/modded-dinosaurs/divine-beasts/path-of-titans-divinedryo",
+      "type": "Mod default curves, third-party mirror",
+      "updatedAt": "09-17-2026",
+      "fetchedAt": "2026-09-22T18:58:32.558Z"
+    },
+    "curves": [
+      {
+        "key": "Core.MaxHealth",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          200,
+          300,
+          350,
+          400
+        ],
+        "effectiveValues": [
+          100,
+          200,
+          300,
+          350,
+          400
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MaxStamina",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          50,
+          100,
+          100,
+          100,
+          100
+        ],
+        "effectiveValues": [
+          50,
+          100,
+          100,
+          100,
+          100
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.CombatWeight",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          250,
+          550,
+          750,
+          1000
+        ],
+        "effectiveValues": [
+          100,
+          250,
+          550,
+          750,
+          1000
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.Armor",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MovementSpeedMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.SprintingSpeedMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.TrottingSpeedMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.BodyFoodAmount",
+        "group": "Core & Survival",
+        "baseValues": [
+          80,
+          145,
+          220,
+          255,
+          300
+        ],
+        "effectiveValues": [
+          80,
+          145,
+          220,
+          255,
+          300
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MaxHunger",
+        "group": "Core & Survival",
+        "baseValues": [
+          50,
+          67.5,
+          85,
+          122.5,
+          150
+        ],
+        "effectiveValues": [
+          50,
+          67.5,
+          85,
+          122.5,
+          150
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MaxThirst",
+        "group": "Core & Survival",
+        "baseValues": [
+          50,
+          67.5,
+          85,
+          122.5,
+          150
+        ],
+        "effectiveValues": [
+          50,
+          67.5,
+          85,
+          122.5,
+          150
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.HungerDepletionRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.04,
+          0.05,
+          0.06,
+          0.1,
+          0.13
+        ],
+        "effectiveValues": [
+          0.04,
+          0.05,
+          0.06,
+          0.1,
+          0.13
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ThirstDepletionRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.04,
+          0.05,
+          0.07,
+          0.1,
+          0.15
+        ],
+        "effectiveValues": [
+          0.04,
+          0.05,
+          0.07,
+          0.1,
+          0.15
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.FoodConsumptionRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          15,
+          20,
+          25,
+          30,
+          30
+        ],
+        "effectiveValues": [
+          15,
+          20,
+          25,
+          30,
+          30
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.WaterConsumptionRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          15,
+          20,
+          25,
+          30,
+          30
+        ],
+        "effectiveValues": [
+          15,
+          20,
+          25,
+          30,
+          30
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MaxOxygen",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "effectiveValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.OxygenDepletionRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          3.33,
+          3.33,
+          3.33,
+          3.33,
+          3.33
+        ],
+        "effectiveValues": [
+          3.33,
+          3.33,
+          3.33,
+          3.33,
+          3.33
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.OxygenRecoveryRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "effectiveValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.FallingLegDamage",
+        "group": "Core & Survival",
+        "baseValues": [
+          10,
+          50,
+          50,
+          50,
+          50
+        ],
+        "effectiveValues": [
+          10,
+          50,
+          50,
+          50,
+          50
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.LegHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.BleedingRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.BleedingHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.032,
+          0.032,
+          0.032,
+          0.032,
+          0.032
+        ],
+        "effectiveValues": [
+          0.032,
+          0.032,
+          0.032,
+          0.032,
+          0.032
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.PoisonRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.PoisonHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.016,
+          0.016,
+          0.016,
+          0.016,
+          0.016
+        ],
+        "effectiveValues": [
+          0.016,
+          0.016,
+          0.016,
+          0.016,
+          0.016
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.VenomRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.VenomHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.016,
+          0.016,
+          0.016,
+          0.016,
+          0.016
+        ],
+        "effectiveValues": [
+          0.016,
+          0.016,
+          0.016,
+          0.016,
+          0.016
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ParalysisRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ParalysisHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "effectiveValues": [
+          0,
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ToxinRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ToxinHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "effectiveValues": [
+          0,
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MudRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.MudHealRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.HungerDamage",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "effectiveValues": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.ThirstDamage",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "effectiveValues": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.OxygenDamage",
+        "group": "Core & Survival",
+        "baseValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "effectiveValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.LimpHealthThreshold",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.5,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "effectiveValues": [
+          0.5,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.BodyFoodCorpseThreshold",
+        "group": "Core & Survival",
+        "baseValues": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "effectiveValues": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.HealthRecoveryRate",
+        "group": "Core & Survival",
+        "baseValues": [
+          1.16,
+          1.35,
+          1.75,
+          1.88,
+          2
+        ],
+        "effectiveValues": [
+          1.16,
+          1.35,
+          1.75,
+          1.88,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaRecoveryRate",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          0.6,
+          0.8,
+          0.8,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          0.6,
+          0.8,
+          0.8,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.GrowthPerSecond",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.FallDeathSpeed",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          3500,
+          3500,
+          3500,
+          3500,
+          3500
+        ],
+        "effectiveValues": [
+          3500,
+          3500,
+          3500,
+          3500,
+          3500
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.TurnRadiusMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          2,
+          1.75,
+          1.5,
+          1.25,
+          1
+        ],
+        "effectiveValues": [
+          2,
+          1.75,
+          1.5,
+          1.25,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.TurnInPlaceRadiusMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.BuffDurationMultiplier",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.SpikeDamageMultiplier",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.KnockbackMultiplier",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.GroundAccelerationMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.GroundPreciseAccelerationMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.KnockbackTractionMultiplier",
+        "group": "Core & Survival",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.SwimmingAccelerationMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.JumpForceMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaJumpCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaSprintCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaFastSwimCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaFastDiveCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaFlyCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.StaminaFastFlyCostMultiplier",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.KnockbackToDelatchThreshold",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "effectiveValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.KnockbackToDecarryThreshold",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "effectiveValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Core.KnockbackToCancelAttackThreshold",
+        "group": "Core & Survival",
+        "baseValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "effectiveValues": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1.15,
+          1.15,
+          1.15,
+          1.15,
+          1.15
+        ],
+        "effectiveValues": [
+          1.15,
+          1.15,
+          1.15,
+          1.15,
+          1.15
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "effectiveValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HealthRecovery.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "effectiveValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "effectiveValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "effectiveValues": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "effectiveValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.StaminaRecovery.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenDepletion.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenDepletion.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenRecovery.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "effectiveValues": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.LegHealRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "effectiveValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "effectiveValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "effectiveValues": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "effectiveValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BleedingHealRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "effectiveValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1.75,
+          1.75,
+          1.75,
+          1.75,
+          1.75
+        ],
+        "effectiveValues": [
+          1.75,
+          1.75,
+          1.75,
+          1.75,
+          1.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "effectiveValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.PoisonHealRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "effectiveValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "effectiveValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "effectiveValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "effectiveValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.VenomHealRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "effectiveValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDepletionRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDepletionRate.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.HungerDamage.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.ThirstDamage.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenDamage.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.OxygenDamage.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Resting",
+        "group": "Multipliers",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Sleeping",
+        "group": "Multipliers",
+        "baseValues": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "effectiveValues": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Standing",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Walking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Trotting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Sprinting",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Swimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.FastSwimming",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Diving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.FastDiving",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Crouching",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.CrouchWalking",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.IncomingDamage.Jumping",
+        "group": "Multipliers",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.AgilitySubSpecies.Speed",
+        "group": "Multipliers",
+        "baseValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "effectiveValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.AgilitySubSpecies.Jump",
+        "group": "Multipliers",
+        "baseValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "effectiveValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.AgilitySubSpecies.AirControl",
+        "group": "Multipliers",
+        "baseValues": [
+          1.55,
+          1.55,
+          1.55,
+          1.55,
+          1.55
+        ],
+        "effectiveValues": [
+          1.55,
+          1.55,
+          1.55,
+          1.55,
+          1.55
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.SpeedySubSpecies.Speed",
+        "group": "Multipliers",
+        "baseValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "effectiveValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BulkySubSpecies.Health",
+        "group": "Multipliers",
+        "baseValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "effectiveValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BulkySubSpecies.Weight",
+        "group": "Multipliers",
+        "baseValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "effectiveValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.BulkySubSpecies.Hunger",
+        "group": "Multipliers",
+        "baseValues": [
+          1.33,
+          1.33,
+          1.33,
+          1.33,
+          1.33
+        ],
+        "effectiveValues": [
+          1.33,
+          1.33,
+          1.33,
+          1.33,
+          1.33
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.AttackSubSpecies.Attack",
+        "group": "Multipliers",
+        "baseValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "effectiveValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Multiplier.AttackSubSpecies.Bleed",
+        "group": "Multipliers",
+        "baseValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "effectiveValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "BodyFoodDecayPerSecond",
+        "group": "Other Abilities",
+        "baseValues": [
+          2,
+          1,
+          1,
+          1,
+          0.61
+        ],
+        "effectiveValues": [
+          2,
+          1,
+          1,
+          1,
+          0.61
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "BiteDamage",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          10,
+          15,
+          20,
+          23,
+          25
+        ],
+        "effectiveValues": [
+          10,
+          15,
+          20,
+          23,
+          25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "BiteBoneBreakChance",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "BiteCooldown",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "effectiveValues": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "BiteBleedAmount",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "effectiveValues": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "KickDamage",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          17,
+          22,
+          25,
+          26,
+          40
+        ],
+        "effectiveValues": [
+          17,
+          22,
+          25,
+          26,
+          40
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "KickBoneBreakChance",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "KickCooldown",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "effectiveValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "KickBleedAmount",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "TailDamage",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          6,
+          8,
+          10,
+          13,
+          20
+        ],
+        "effectiveValues": [
+          6,
+          8,
+          10,
+          13,
+          20
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "TailBoneBreakChance",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "TailCooldown",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "TailBleedAmount",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "HealBuffCallRadius",
+        "group": "Other Abilities",
+        "baseValues": [
+          3000,
+          3000,
+          3000,
+          3000,
+          3000
+        ],
+        "effectiveValues": [
+          3000,
+          3000,
+          3000,
+          3000,
+          3000
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "HealBuffCallMultiplier",
+        "group": "Other Abilities",
+        "baseValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "effectiveValues": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "HealBuffCallCooldown",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "effectiveValues": [
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "HealBuffCallCost",
+        "group": "Other Abilities",
+        "baseValues": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "effectiveValues": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "HealBuffCallDuration",
+        "group": "Other Abilities",
+        "baseValues": [
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "effectiveValues": [
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "LeapJumpForce",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.4
+        ],
+        "effectiveValues": [
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.4
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "LeapAirControl",
+        "group": "Other Abilities",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "LeapFallDamage",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "effectiveValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "PaddlingLimbsSpeed",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.6,
+          1.6,
+          1.6,
+          1.6,
+          1.6
+        ],
+        "effectiveValues": [
+          1.6,
+          1.6,
+          1.6,
+          1.6,
+          1.6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "PaddlingOxygen",
+        "group": "Other Abilities",
+        "baseValues": [
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "effectiveValues": [
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "PaddlingTurnRadius",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          2.3,
+          2.3,
+          2.3,
+          2.3,
+          2.3
+        ],
+        "effectiveValues": [
+          2.3,
+          2.3,
+          2.3,
+          2.3,
+          2.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaTrotCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaSprintCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55
+        ],
+        "effectiveValues": [
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaSwimgCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "effectiveValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaFastSwimCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          3.675,
+          3.675,
+          3.675,
+          3.675,
+          3.675
+        ],
+        "effectiveValues": [
+          3.675,
+          3.675,
+          3.675,
+          3.675,
+          3.675
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaDiveCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "effectiveValues": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaFastDiveCostPerSecond",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          3.675,
+          3.675,
+          3.675,
+          3.675,
+          3.675
+        ],
+        "effectiveValues": [
+          3.675,
+          3.675,
+          3.675,
+          3.675,
+          3.675
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "StaminaJumpCost",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          0.1,
+          0.1,
+          0.2,
+          0.4,
+          1
+        ],
+        "effectiveValues": [
+          0.1,
+          0.1,
+          0.2,
+          0.4,
+          null
+        ],
+        "adjustments": [
+          {
+            "text": "Reduced jump stamina drain",
+            "stage": 4,
+            "previous": 1,
+            "current": null,
+            "method": "unquantified",
+            "mismatch": false
+          }
+        ]
+      },
+      {
+        "key": "EscapeArtistDMG",
+        "group": "Other Abilities",
+        "baseValues": [
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "effectiveValues": [
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EscapeArtistArmor",
+        "group": "Other Abilities",
+        "baseValues": [
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "effectiveValues": [
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EscapeArtistSpeed",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "effectiveValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EvaderTRM",
+        "group": "Other Abilities",
+        "baseValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "effectiveValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EvaderJumpForce",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "effectiveValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EvaderTrotSpeed",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "effectiveValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "EvaderAcceleration",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "effectiveValues": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "DiggerTIP",
+        "group": "Other Abilities",
+        "baseValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "effectiveValues": [
+          1.2,
+          1.2,
+          1.2,
+          1.2,
+          1.2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "DiggerFoodConsumptionRate",
+        "group": "Other Abilities",
+        "baseValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "effectiveValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "ResilientScalesVenom",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "effectiveValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "ResilientScalesBleed",
+        "group": "Combat & Abilities",
+        "baseValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "effectiveValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "SurvivalistHunger",
+        "group": "Other Abilities",
+        "baseValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "effectiveValues": [
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "SurvivalistStamina",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "effectiveValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "Infinite",
+        "group": "Other Abilities",
+        "baseValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "effectiveValues": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "CounterBalancedTRM",
+        "group": "Other Abilities",
+        "baseValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "effectiveValues": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "LightTailSpeed",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "effectiveValues": [
+          1.05,
+          1.05,
+          1.05,
+          1.05,
+          1.05
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "DoubleJumpMax",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      },
+      {
+        "key": "DoubleJumpMaxWaitTime",
+        "group": "Movement & Stamina",
+        "baseValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "effectiveValues": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "adjustments": []
+      }
+    ],
+    "unmappedChanges": [],
+    "warnings": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Small Cathemeral Terrestrial Herbivore Dryosaurus form temporary pairbonds that can sometimes develop into strong or lifelong pairbonds. Dryosaurus are territorial over caves, perches, and resources, and claim small territories, but are nomadic in general. Dryosaurus have a [tolerant nature towards other Dryosaurus, but an aggressive nature towards towards all other species. Dryosaurus  may not group with other species. Dryosaurus tolerate mutated  individuals."
+        }
+      ]
+    },
+    {
+      "id": "genetics",
+      "title": "Genetics",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Skins that are considered mutations for Species include: Albino, Melanistic, DR Chimera Piebald, DR Hypo Lavender, DR Semi Axanthic Players must roll in 🎲・genetics-rolls to use these skins in game. This is one roll per species, per character. Only when the character dies can you roll again if using the same character name."
+        }
+      ]
+    },
+    {
+      "id": "group-limits",
+      "title": "Group Limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Up to 2 Sub/Adults of either gender with dominant status Unlimited Sub/Adults Unlimited Offspring Unlimited Adoptees This group is known as a warren."
+        }
+      ]
+    },
+    {
+      "id": "engagement-limits",
+      "title": "Engagement Limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Predator Reaction: Aggressive Up to 8 Sub/Adult Dryosaurus may participate in an engagement. Dryosaurus are bold and do not flee from any species. They only flee from engagements when those engagements do not appear to go their way. Preferred Diet Dryosaurus enjoy a diverse and abundant diet, and are capable of consuming almost all items found across Gondwa. Despite their ability to digest most foods, berries are their most prized food source. The most dominant Dryosaurus pair in a warren claim exclusive access to berries, denying them to lower-ranking individuals. The vibrant pink juice of berries serves as a status symbol, reinforcing their authority. Submissive Dryosaurus must settle for whatever other food sources they can find."
+        }
+      ]
+    },
+    {
+      "id": "nesting-limits",
+      "title": "Nesting Limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "🌧️ Rainy Season: 2 🥚 per 1 hours. ☀️ Dry Season: 4 🥚 per 1 hour. Dryosaurus nest in caves. Their nests are made out of reeds, mud and roots. Dryosaurus may form same-sex pairs, but do not nest. Dryosaurus do adopt."
+        }
+      ]
+    },
+    {
+      "id": "physical-dimorphism",
+      "title": "Physical Dimorphism",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dominant individuals with access to berries sport brighter skins (see Social Interaction for further detail). ♀️ Females are known as does. Females lack quills and have a smooth appearance. Suitable subspecies include: phosphaticus, canaliculatus ♂️ Males are known as bucks. Males have quills over their body. Suitable subspecies include: altus, elderae Physical dimorphism for Species is not mandatory, but individuals differing from the typical dimorphism may face difficulties during courtship."
+        }
+      ]
+    },
+    {
+      "id": "offspring-behavior-nested",
+      "title": "Offspring Behavior (Nested)",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Baby Dryosaurus, known as kits, hatch blind, deaf and entirely dependent on their parents. During their earliest days, they remain nestled inside the safety of the warren's nesting cave, fed on fresh berries brought by their parents. These berries are available to all kits, even if their parents hold a submissive position in the warren. Too weak to stand, kits spend their time sitting or lying in the nest, trilling softly to attract their parents' attention and request food or comfort. Once their eyes open and their hearing develops at the end of the hatchling phase, Dryosaurus imprint on the first adult they see - which is almost always one of their parents. As kits grow into juveniles, they develop the strength to stand and take their first, tentative steps. Short walks help build their muscles and prepare them for active lives ahead. Quickly, kits become more agile at this stage - with their swift legs often outpacing their developing instincts. Kits eagerly venture beyond the nest, following the dominant members of the warren and their parents. They observe and mimic these adults, helping to learn essential survival skills and social behaviors. Kits are notoriously badly behaved and can develop selfish and spoiled attitudes. Adults within a warren typically expect this behavior, but new parents may be stressed if their kits continually misbehave. More experienced Dryosaurus from within the warren do not hesitate to step in and correct particularly unruly young with an aggressive call or firm bite. Young Dryosaurus rapidly grow into their species' feisty attitude, and quickly learn from the adults to aggress most other dinosaurs around them, even when the likelihood of success seems slim. Kits frequently engage in mock battles, chasing, nipping, and roughhousing with one another. These games are loud and chaotic, but they serve to establish pecking orders and develop coordination for future conflicts. Especially bold kits may even attempt this with adults, but are usually swiftly corrected! When stalked or hunted by a predator, kits below Sub-Adult scatter in all directions, only regrouping in a safe spot once the perceived threat has passed. This chaotic escape strategy serves as a form of self-preservation, lessening the chances they will get singled out by a predator. As Dryosaurus reach adolescence, their diet shifts, and their once protected access to berries no longer applies. At this stage, adolescents must forage independently, often testing their learned behaviors. Even children of the dominant pair no longer have access to berries at this stage, unless gifted by the dominant pair. Attempts to assert dominance - usually through copying dominant members of the warren - are quickly suppressed by the dominant pair, wary of potential challenges to their leadership. Adolescent kits form tight-knit groups with others, working together to chase, harass and even kill nearby critters in attempts to prove themselves as valuable members of the warren, as well as hone their own skills. By Sub-Adult, Dryosaurus kits are considered fully fledged members of the warren, but do not fully mature or show any interest in courtship until they reach full Adulthood. Dryosaurus almost always stay with the warren they were born into, and very rarely disperse."
+        }
+      ]
+    },
+    {
+      "id": "orphaned-behavior-wild-spawn",
+      "title": "Orphaned Behavior (Wild Spawn)",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Orphaned Dryosaurus kits are at high risk of starvation or predation due to their inability to forage or defend themselves effectively. Without a caregiver, their chances of survival dramatically decrease. They vocalize frequently, desperate to attract the attention of a parent or caregiver. Sadly, this usually goes unanswered, and after some time trilling and cooing for help without response, they fall silent. Assuming they manage to make it through the hatchling phase without succumbing to predation or starvation, orphaned Dryosaurus have slightly better chances of survival - particularly if they manage to find a warren. Luckily for them, orphaned Dryosaurus are always adopted by other Dryosaurus, of either sex. However, as Dryosaurus open their eyes and have their hearing mature at the end of the hatchling phase, they end up imprinting on the first larger dinosaur than themselves that they see. When they are born safely inside a warren, this is always one of their parents and helps bond them deeply to that parent. Orphans, sadly, imprint on whatever species they come across first - as long as it is larger than them. Imprinting Orphaned Dryosaurus imprint on the first larger species they see, with the imprinting window closing sharply by adolescence. If a Dryosaurus imprints on a predator, the outcome is almost always fatal. If they imprint on a species that tolerates them, Dryosaurus kits become bold, possessive, and essentially a relentless nuisance - a true challenge for their unwitting \"parent.\" Dryosaurus kits are incredibly needy and possessive. They do not tolerate any other species - even the adopted parent's own biological children - and frequently aggress them away when they come close to their parent. Without the structure of a warren and normal social interactions between other Dryosaurus (including reprimands for bad behavior), kits sadly grow into unruly, defiant troublemakers: spoiled, headstrong, and completely unmanageable for their adopted parent. They may attempt to copy their adopted parent's behaviors, but with a heightened level of aggression and possessiveness that surpasses the species they imprint on. Possessive behavior can even extend to chasing away potential courting partners from their adopted parent, or even attempting to destroy any nests they build. Only when they come across other Dryosaurus does this behavior cease. Imprinted Dryosaurus can be prized away from their adopted parent by the approach of others of their kind - kicking in an instinct for the orphan to follow these familiar figures instead. Dryosaurus are highly territorial and possessive over whatever they deem to be their property at the time. This can consist of: rocks, various objects, partners, caves, and food resources. This does not include water sources. They are prone to stealing shiny objects, plants, or even food from other species. They often hoard these items in hidden \"treasure\" piles. Dryosaurus spend their time migrating across various POIs in search of excitement, feeding opportunities and mates to court. They lay claim to caves to use as a home, and defend them fiercely from other species. They move as a clique, often massing together in great numbers and choosing to travel with each other, lead by a dominant individual or pair. At least one individual - usually the most submissive of the group - is relegated to act as sentry as the group move and feed. They perch on top of a high object near the group and look around for danger. When danger is spotted, the sentry lets out a loud screech, prompting a chain reaction across the rest of the group to call out in response, and become alert. Dryosaurus patrol the edges of the warren's claimed cave, chasing away intruders with exaggerated postures. They spread their arms, employ vicious hisses and stand in wide stances designed to make them appear larger and more threatening - a comical sight for most species that tower over them in size. In the dry season, Dryosaurus adults spend the hottest parts of the day resting in shaded areas or near water sources, becoming more active during cooler mornings and evenings. In the rainy season, during particularly cold evenings, Dryosaurus individuals can be observed huddling close together for warmth. During heavy rains and storms, adults lead the warren to sheltered areas like rocky outcrops, burrows, or dense thickets to avoid prolonged exposure. When solitary, Dryosaurus tend to be less bold than when they are in a group. They trail after herds in search of berries and muscle their way in to claim prime spots. This tolerance for other herbivores is only ever temporary - and to suit the Dryosaurus' own benefits - as it quickly disappears when they find others of their kind. As Dryosaurus grow in numbers, this meekness sheds almost entirely - with individuals displaying bold and fearless personalities, seemingly heightening in confidence the more of them grouped together. This bravado - including picking fights and aggressing away dinosaurs much bigger than them - sometimes puts them in dangerous situations. Dryosaurus are very vocal, and use loud, high-pitched vocalizations to intimidate rivals or signal their presence. Once in a pair or more, Dryosaurus fiercely defend their share of berries, plants, or scavenged items from other species, often hissing and screeching at any dinosaurs that approach them, and even going so far as to nip them should they not take the message. Dryosaurus are highly inquisitive, and are interested in any new object or species that they come across. If the item is potentially claimable, they will move to collect it and hoard it from other species almost immediately. Dryosaurus take short naps in frequent bursts throughout day and night. They prefer to do this in shifts - with at least one other standing watch over them while they sleep, and repaying the favor in kind as the responsibility moves. These species can become somewhat of a homebody if a particular POI is especially favorable to them. Low threats and competition are desirable for Dryosaurus, and they may temporarily remain sedentary in a POI if signs look good."
+        }
+      ]
+    },
+    {
+      "id": "solitary-behavior",
+      "title": "Solitary Behavior",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Solitary - without imprinting Dryosaurus lack a lot of confidence when they are solitary compared to when they have others of their kind with them. Though they still show aggressive and cantankerous behavior, this is firmly muted, and outright attacking and claiming of food resources does not occur. Instead, Dryosaurus are forced to share resources in these circumstances, but are quick to voice their displeasure at the same time. Solitary Dryosaurus trail behind other herbivore herds, hoping to benefit from the potential protection and foraging opportunities that comes with being with these species. They will immediately leave behind any herds they were trailing in favor of others of their kind."
+        }
+      ]
+    },
+    {
+      "id": "downtime-behavior",
+      "title": "Downtime Behavior",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dryosaurus sleep in turns, carefully coordinated and directed by the dominant pair to ensure there's always more Dryosaurus awake than asleep at any given moment. They prefer longer, infrequent naps, as opposed to many short ones. Dryosaurus often sleep at the same time as their mate and offspring, where they huddle together and reaffirm bonds through mutual preening. Misbehaving members are often made to sleep alone as punishment by the dominant pair. The dominant pair rarely sleep at the same time, ensuring one or both individuals are always available to lead and supervise the warren. Other Dryosaurus, looking to prove their loyalty to the dominant pair, rush to act as sentries for them, standing guard near the cave entrance or nest. If during a rest period, a Dryosaurus sounds the alarm for an intruder, all sleeping Dryosaurus rush awake, and need little time to fall back into their usual aggressive nature."
+        }
+      ]
+    },
+    {
+      "id": "warren",
+      "title": "Warren",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dryosaurus have a relatively loose social structure. The most dominant and aggressive individuals end up as the dominant pair of the warren. With a dominant status comes access to the favored food resource: berries. Non-dominant individuals are not permitted to eat berries by the dominants, unless they are below Adolescent. The dominant pair can be of either gender and do not have to be a mated pair. The pair team up together to rule the rest of the group and claim resources for themselves. This pair run a tight pecking order that other Dryosaurus are expected to fall in line with: they control where the warren nests, where they claim cave territories, where to forage for food, and when to migrate. With this added responsibility, many Dryosaurus are happy to remain as submissives under the dominants, but may attempt to steal berries when the dominants are not looking from time to time. Some are equally as respected as the dominant pair, and the position may be battled for, with leaders changing frequently. See Aggressive Interaction for more detail. All Dryosaurus are generally affectionate to one another, engaging in mutual preening of feathers and quills. This not only reinforces relationships between individuals, but also reduces any lingering social tension in the group. Dominant individuals use theatrical displays to establish or reinforce dominance, such as hissing, aggressive posturing, and teeth baring. They may go so far as to land nips to keep them in line. More often than not, aggressive postures are enough to subdue a potential rival. Dominant Dryosaurus maintain power by forming alliances within the warren, often grooming or feeding their supporters to ensure loyalty. These alliances are particularly critical during disputes or challenges to dominance. Lone Dryosaurus attempting to join the warren are met with intense scrutiny. Outsiders are often harassed and examined closely by the entire warren, which can appear frightening to a particularly nervous individual. Once the dominants are content that the new addition will be submissive to them, they are welcomed into the warren. The warren moves together in loose formations, with dominant individuals leading from the front, and submissive members following behind. Dryosaurus often rest in close proximity to one another, touching or leaning for warmth and comfort. Both adults and young communicate frequently with a range of chirps, hisses, and trills to signal food sources, danger, or maintain group cohesion during movement. Dominant Dryosaurus within the warren enforce a strict regime, pecking away subordinates from berry bushes. They frequently use their :threaten_call: aggressive hisses to intimidate submissive members that may be pushing their luck, but are swift to soothe tensions with affection after their boundaries are respected. All Dryosaurus - even dominants - show remarkable tolerance and gentleness with kits. Dominant Dryosaurus react harshly toward adolescent and older members of the warren who attempt to eat berries. These individuals are aggressed and bitten away from these prize resources - and brutally attacked if they do not take the message. These battles are never fatal, and once the submissives back away from the berries, the dominants show them affection again."
+        }
+      ]
+    },
+    {
+      "id": "joining-a-warren",
+      "title": "Joining a Warren",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Lone Dryosaurus that wish to join a warren are firstly subject to an interrogation by the existing warren members. The group gathers around the newcomer in a circle, blocking all exits, and performs an intimidation display: chirping, calling loudly, hissing, and mock-attacking. This process tests the outsider’s temperament - and if they wish to be accepted, they must remain submissive throughout. Submission is shown through avoiding direct eye contact, keeping crouched low and looking down or to the side. They should remain calm and quiet throughout the displays. If a new Dryosaurus reacts with aggression, confrontation, or attempts to break out of the circle - they are rejected. The warren members shriek in outrage and immediately chase the outsider out of the immediate area, sometimes delivering a sharp nip but never outright attacking or killing them. Once a new Dryosaurus has been accepted, they are under probation and expected to respect the warren’s hierarchy and avoid aggravating the more dominant members. This means they should remain unobtrusive; keeping out of the way when more dominant members are eating or leading, and not challenging or showing aggression to others within the warren. Over time, the new member of the warren will earn more respect and can climb their way up the social pecking order. They will have proven their worth to the warren by repeatedly showing submission to more dominant members, and respecting other members of the warren. This earns them favor, and higher standing within the group. Orphaned youngsters (Juvenile and below) are the exception to the intimidation process; they are adopted without question, and welcomed regardless of their origin."
+        }
+      ]
+    },
+    {
+      "id": "dominance-fights",
+      "title": "Dominance Fights",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Leadership within a warren is never absolute. There are often challenges from other warren members that can completely change the social structure. The most dominant Dryosaurus within the warren must be willing to fight for their position, and quell any uprising from a youngster with airs above their station. A dominance challenge is initiated when a subordinate within the warren approaches the existing leader and displays aggressively; they puff out their chest, hiss, and flick their tail aggressively to intimidate them. This is reciprocated by the leader, who displays back at them. If neither member submits to the challenge, it will escalate to physical aggression. Dominance fights are loud and chaotic; there is still the aggressive posturing and calls, but there are also quick snapping bits and powerful kicks. The goal of this fight is not to kill the opponent, but to damage them significantly enough that they are forced to submit. Fights are brutal, and go on much longer than other species, they fight until one reaches death scars. During a dominance fight, healing calls may not be used by any warren member. If one is used accidentally, the fight is paused and resumed once the healing effects have worn off! The winning Dryosaurus takes over leadership of the warren, immediately claiming nearby resources and forming new alliances, resetting the social structure to put their favored companions higher in rank than others. The newly dominant and former dominant Dryosaurus should see Physical Dimorphism and change their appearance accordingly. Occasionally, a challenge results in a stalemate where neither Dryosaurus is willing to concede, but both take enough damage to be death scarred. The challenge may be paused, and resumed at another time with several fights needed before the winner is determined. Dominance fights are brutal, but never result in the death of an individual. If a fighting Dryosaurus reaches death scars but refuses to submit to their opponent, the warren will step in and assist in driving out this stubborn individual. Similarly, if a Dryosaurus loses a challenge but initiates another challenge, refusing to accept their loss, they are driven out by the rest of the warren. Adolescent Dryosaurus often mimic a dominance fight between themselves, mock attacking each other and preparing for future challenges. This sparring helps to establish early social rankings within the warren. Submissive members of the warren do not engage in fighting or dominance displays; they live a more peaceful life and regularly show deference to their more dominant companions. Instead, they engage in cooperative behaviors such as grooming each other, sharing food resources, and keeping a look-out at water sources. Dryosaurus in groups are very aggressive to all other species. They view them as rivals, competing for resources and caves. Dryosaurus do not group with any other species. Despite being aggressive and intolerant to other species, Dryosaurus does not attack with an aim to kill. Their main goal is to drive away the other species. This is considered a resource challenge and must abide by resource challenge rules. If the species does not back down, they are ready for a brawl and will engage - if the other species attempts to flee, this is seen as a success for the Dryosaurus and they do not chase further than 10 body lengths from the resource or cave. If a species they are engaging with refuses to back down, and continues fighting even if they seem to be losing the fight - Dryosaurus will continue to engage, even if this results in the other dinosaur’s death. Dryosaurus appear to be very easily offended by all other species. If they deem another species - especially a herbivore - to get too close to their claimed resource (usually a berry bush, food resource, particular perch or - most importantly - a cave), they screech and hiss furiously to warn them away. Those that do not heed the warnings get attacked with furious nips and hard kicks. They tend to be fickle with claimed resources and possessions. Despite harassing and chasing other species away from something they have claimed as theirs, they may afterwards decide to abandon it and move on to something else. A desired perching spot is the most likely candidate for Dryosaurus to lose interest quickly. If Dryosaurus notice that a herbivore group is distracted, such as during bullfights, being hunted, or simply looking the other way, they will quickly swoop in to steal the resources left behind and defend it fiercely from them once they notice."
+        }
+      ]
+    },
+    {
+      "id": "eotriceratops",
+      "title": "Eotriceratops",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dryosaurus that have had exposure to these ceratopsians learn over time that Eotriceratops are highly aggressive. Thrill-seeking Dryosaurus thrive on the adrenaline from deliberately targeting Eotriceratops’ resources to steal food whenever they get the chance - this is especially common in adolescent Dryosaurus trying to prove themselves."
+        }
+      ]
+    },
+    {
+      "id": "citipati",
+      "title": "Citipati",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dryosaurus also particularly dislike Citipati due to the Citipati's desire to adopt them. Older, experienced Dryosaurus recognize a broody Citipati and screech and nip at the incoming Citipati, knowing that they will be forcibly taken away if the Citipati gets its own way."
+        }
+      ]
+    },
+    {
+      "id": "utahraptor",
+      "title": "Utahraptor",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dryo"
+        }
+      ]
+    },
+    {
+      "id": "cross-species-interaction",
+      "title": "Cross-Species Interaction",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "These feisty herbivores have an innate hatred of Utahraptor and will target these species aggressively if they come into contact with them. Utahraptor offspring are a primary target for Dryosaurus - they may go back to their warren to gather more members (up to their engagement limit of 8 Sub/Adults) before descending on Utahraptor nests to kill all chicks in sight as quickly as possible. Change to: These feisty herbivores have an innate hatred of Utahraptor and will target these species aggressively if they come into contact with them. Utahraptor offspring are a primary target for Dryosaurus - they may go back to their warren to gather more members (up to their engagement limit of 8 Sub/Adults) before descending on unguarded Utahraptor nests to kill all chicks in sight as quickly as possible. If these nests are protected by an adult, Dryosaurus may only kill a singular offspring before retreating and may not continue the engagement. Up to 8 Sub/Adult Dryosaurus may participate in an engagement. Dryosaurus under the age of Sub-Adult will not participate in engagements, and remain hidden or at the entrance of a cave where they may call out aggressively in encouragement. Dryosaurus have confident souls, and fear no predator at first sight. They will gang up on small or medium size predators to harass and nip them - driving them out of the area and protecting their resources. Dryosaurus are bold and do not flee from engagements except when those engagements do not appear to go their way. Dryosaurus are plucky and confident, and often don’t realize the danger they are in until it’s too late. When being hunted, or approached by a dangerous carnivore, they stand their ground and use their speed and agility to attack the carnivore, scolding them with painful nips and strong kicks. If they realize the fight is not going their way, they may choose to flee to avoid being killed. When fleeing, they rush into small caves or dive beneath thick bushes to retreat safely."
+        }
+      ]
+    },
+    {
+      "id": "courtship",
+      "title": "Courtship",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Courtship is a loud and chaotic affair for Dryosaurus that escalates into daring - and sometimes fatal - displays of bravery. Courtship begins with bucks seeking out receptive does within the warren. Dryosaurus form temporary pairbonds - but this partner can change each nesting season if neither want to court each other again. Some pairs end up forming lifelong pairbonds, dependent on individual personalities and pair compatibility. Once a buck locates a doe he wishes to try and impress, he initiates the courtship ritual by chasing and circling her, trilling and cooing repeatedly to attract her attention. This performance is often repeated multiple times to reinforce his intentions towards her. If the doe is not interested in his advances, she responds with irritation, and angrily hisses and pecks him away from her. If she is receptive, she mirrors his enthusiasm - chasing and circling him in return. This playful pursuit between the pair grows into an elaborate display, with both individuals darting and weaving in wide circles, their speed and agility turning the ritual into a mesmerizing dance. If a doe isn’t sure about the buck, she may pause to observe him. He takes this hint and seeks out a dangerous opponent to perform an act of bravery to impress her. Dangerous opponents can be in the form of a Large tier or above predator such as a Torvosaurus, or an aggressive herbivore such as an Eotriceratops. The buck will approach this creature and daringly rush in to nip at their heels. If they successfully land three bites and live to tell the tale - the doe observing from the bushes is incredibly impressed, and this boosts his chances of wooing her. If unable to find a suitable dangerous opponent, the male may seek to display his bravery by climbing to the highest point he can find, and throwing himself off in an incredible leap of courage. How well he lands and recovers from his fall will determine how impressed the doe is with his bravery. Bucks that wish to court the same doe may find themselves both circling at the same time. If this happens, the bucks become aggressive to one another and will turn their attention from the female to each other. Rival males will kick and peck one another until one of them reaches half health, resulting in a forfeit. The winning male is much more impressive to the female after he has won his fight, and she is usually pleased to reciprocate his courting advances. Same sex pairings will circle one another in the same way as opposite sex pairings, and if either side casts a judging eye over their potential partner, it results in them dashing off to perform an act of bravery and prove their worth."
+        }
+      ]
+    },
+    {
+      "id": "nesting",
+      "title": "Nesting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once a pair have finished their courtship display, they seek out a suitable cave to build their nest, and both partners work together to build it. Pairs are more than happy to nest alongside other nesting pairs within the warren - though the dominant pair always takes the safest nesting spot in the cave: usually towards the back or middle of the others."
+        }
+      ]
+    },
+    {
+      "id": "parenthood",
+      "title": "Parenthood",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When kits hatch, both parents provide care to them and take turns fetching food or play items to entertain them. If a submissive Dryosaurus is nesting, they are permitted by the dominant Dryosaurus within the warren to pick up and carry berries for their offspring to hatch. At all other times, submissive Dryosaurus are not permitted near the berry bushes. They make sure at least one of them is always with the nest at all times, especially as kits begin to open their eyes and start imprinting. Parents show a lot of affection and care to kits, and happily involve them with the rest of the warren and other kits in the group."
+        }
+      ]
+    },
+    {
+      "id": "offspring-maturity",
+      "title": "Offspring Maturity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When kits age up, they tend to stay within the warren they were born in, and very rarely disperse. They maintain strong bonds with their parents and siblings even as adults."
+        }
+      ]
+    },
+    {
+      "id": "adoption",
+      "title": "Adoption",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If either sex encounters an orphaned Dryosaurus, they will happily take it in and adopt it as one of their own. This occurs even if they already have kits. As Dryosaurus enter their older years, they lose the drive to attain or maintain a dominant status within the warren. When a dominant Dryosaurus becomes elderly, their colors naturally begin to fade. This change triggers other members of the warren to compete for the now-vacant position of dominance. Dryosaurus that are nearing the end of their life begin to act in a lethargic manner. They can be observed sleeping in dens, bushes and caves. All members of the warren begin to treat this member as if they are a hatchling, bringing them berries; something the dominant members of the warren permit. Toward the very end of their lives, elderly Dryosaurus will often isolate themselves from the group. This instinctive behaviour ensures they do not draw attention to the rest of the warren. Upon it being discovered that the elderly member of the warren has met their peaceful demise, other members of the warren will cover their body with foliage. None Dryosaurus are not territorial over water sources. Dryosaurus are bold and do not flee from engagements except when those engagements do not appear to go their way. Dominance fights must stop at deathscars. Healing calls may not be used during dominance fights."
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "vSbofpbdsE0",
+      "url": "https://www.youtube.com/watch?v=vSbofpbdsE0"
+    }
+  ],
+  "media": [
+    {
+      "file": "images/image-2.png",
+      "label": "",
+      "originalFileName": "image.png",
+      "role": "cover"
+    },
+    {
+      "file": "images/image.png",
+      "label": "",
+      "originalFileName": "image.png",
+      "role": "reference"
+    },
+    {
+      "file": "images/image-3.png",
+      "label": "",
+      "originalFileName": "image.png",
+      "role": "map-or-reference"
+    }
+  ],
+  "ingame": {
+    "file": "images/image-2.png",
+    "kind": "title-card",
+    "note": null
+  },
+  "map": {
+    "image": "images/image.png",
+    "imageSize": {
+      "width": 948,
+      "height": 874
+    },
+    "legend": null,
+    "variants": null,
+    "anyPoiHunting": null,
+    "markers": [
+      {
+        "regionId": "dry-fang-canyon",
+        "name": "Dry Fang Canyon",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.15,
+              0
+            ],
+            [
+              0.44,
+              0
+            ],
+            [
+              0.45,
+              0.11
+            ],
+            [
+              0.43,
+              0.21
+            ],
+            [
+              0.36,
+              0.25
+            ],
+            [
+              0.27,
+              0.21
+            ],
+            [
+              0.18,
+              0.18
+            ],
+            [
+              0.14,
+              0.1
+            ]
+          ]
+        },
+        "biome": "canyon",
+        "moisture": "arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "canyon",
+          "cliffs",
+          "rock"
+        ],
+        "description": "Arid rocky canyon in the north-west with very little standing water.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "tallbrush-coasts",
+        "name": "Tallbrush Coasts",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.44,
+              0
+            ],
+            [
+              0.64,
+              0
+            ],
+            [
+              0.64,
+              0.08
+            ],
+            [
+              0.61,
+              0.14
+            ],
+            [
+              0.59,
+              0.21
+            ],
+            [
+              0.53,
+              0.25
+            ],
+            [
+              0.45,
+              0.22
+            ],
+            [
+              0.43,
+              0.14
+            ]
+          ]
+        },
+        "biome": "coast",
+        "moisture": "mesic",
+        "water": {
+          "present": true,
+          "type": "salt",
+          "feature": "coast"
+        },
+        "terrain": [
+          "coast",
+          "brush",
+          "beach"
+        ],
+        "description": "Northern brushy coastline meeting the sea.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "steep-run",
+        "name": "Steep Run",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.27,
+              0.19
+            ],
+            [
+              0.43,
+              0.2
+            ],
+            [
+              0.45,
+              0.28
+            ],
+            [
+              0.39,
+              0.34
+            ],
+            [
+              0.31,
+              0.32
+            ],
+            [
+              0.28,
+              0.27
+            ]
+          ]
+        },
+        "biome": "hills",
+        "moisture": "semi-arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "slope",
+          "scrub",
+          "rock"
+        ],
+        "description": "Steep transitional ground between Dry Fang Canyon, Black Fern Hills and Cedrus Forest.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "big-tree-overlook",
+        "name": "Big Tree Overlook",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.45,
+              0.2
+            ],
+            [
+              0.58,
+              0.2
+            ],
+            [
+              0.6,
+              0.28
+            ],
+            [
+              0.55,
+              0.36
+            ],
+            [
+              0.47,
+              0.35
+            ],
+            [
+              0.43,
+              0.28
+            ]
+          ]
+        },
+        "biome": "forest",
+        "moisture": "mesic",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "forest",
+          "overlook",
+          "highland"
+        ],
+        "description": "Forested lookout above Cedar Valley.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "cedrus-forest",
+        "name": "Cedrus Forest",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.31,
+              0.28
+            ],
+            [
+              0.47,
+              0.27
+            ],
+            [
+              0.52,
+              0.36
+            ],
+            [
+              0.49,
+              0.48
+            ],
+            [
+              0.4,
+              0.54
+            ],
+            [
+              0.32,
+              0.48
+            ],
+            [
+              0.29,
+              0.37
+            ]
+          ]
+        },
+        "biome": "forest",
+        "moisture": "semi-arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "forest",
+          "dry-woodland"
+        ],
+        "description": "Large dry-leaning conifer forest in the map's centre-west.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "twisted-forest",
+        "name": "Twisted Forest",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.58,
+              0.27
+            ],
+            [
+              0.76,
+              0.27
+            ],
+            [
+              0.8,
+              0.36
+            ],
+            [
+              0.77,
+              0.47
+            ],
+            [
+              0.68,
+              0.51
+            ],
+            [
+              0.59,
+              0.47
+            ],
+            [
+              0.56,
+              0.36
+            ]
+          ]
+        },
+        "biome": "forest",
+        "moisture": "wet",
+        "water": {
+          "present": true,
+          "type": "fresh",
+          "feature": "wetland"
+        },
+        "terrain": [
+          "forest",
+          "wetland",
+          "roots"
+        ],
+        "description": "Dense wet eastern woodland threaded with water.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "black-fern-hills",
+        "name": "Black Fern Hills",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.08,
+              0.18
+            ],
+            [
+              0.29,
+              0.19
+            ],
+            [
+              0.34,
+              0.29
+            ],
+            [
+              0.32,
+              0.44
+            ],
+            [
+              0.36,
+              0.53
+            ],
+            [
+              0.27,
+              0.58
+            ],
+            [
+              0.12,
+              0.53
+            ],
+            [
+              0.08,
+              0.4
+            ]
+          ]
+        },
+        "biome": "hills",
+        "moisture": "semi-arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "hills",
+          "fern",
+          "scrub"
+        ],
+        "description": "Dry fern-covered hills along the western border.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "stillwater-bog",
+        "name": "Stillwater Bog",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.47,
+              0.34
+            ],
+            [
+              0.6,
+              0.34
+            ],
+            [
+              0.67,
+              0.43
+            ],
+            [
+              0.65,
+              0.55
+            ],
+            [
+              0.55,
+              0.59
+            ],
+            [
+              0.46,
+              0.54
+            ],
+            [
+              0.43,
+              0.44
+            ]
+          ]
+        },
+        "biome": "swamp",
+        "moisture": "wet",
+        "water": {
+          "present": true,
+          "type": "fresh",
+          "feature": "bog"
+        },
+        "terrain": [
+          "bog",
+          "still-water",
+          "reeds"
+        ],
+        "description": "Large slow-water central bog; a prime freshwater basin.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "mudflats",
+        "name": "Mudflats",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.75,
+              0.32
+            ],
+            [
+              0.92,
+              0.32
+            ],
+            [
+              0.95,
+              0.4
+            ],
+            [
+              0.91,
+              0.5
+            ],
+            [
+              0.8,
+              0.51
+            ],
+            [
+              0.75,
+              0.44
+            ]
+          ]
+        },
+        "biome": "mudflat",
+        "moisture": "wet",
+        "water": {
+          "present": true,
+          "type": "brackish",
+          "feature": "mudflat"
+        },
+        "terrain": [
+          "mud",
+          "tidal-flat"
+        ],
+        "description": "Broad eastern brackish mudflats.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "cliff-edge-falls",
+        "name": "Cliffedge Falls",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.31,
+              0.48
+            ],
+            [
+              0.47,
+              0.47
+            ],
+            [
+              0.5,
+              0.56
+            ],
+            [
+              0.45,
+              0.64
+            ],
+            [
+              0.35,
+              0.62
+            ],
+            [
+              0.31,
+              0.56
+            ]
+          ]
+        },
+        "biome": "freshwater",
+        "moisture": "wet",
+        "water": {
+          "present": true,
+          "type": "fresh",
+          "feature": "waterfall"
+        },
+        "terrain": [
+          "waterfall",
+          "cliff"
+        ],
+        "description": "Waterfall spilling over the central-west cliffs.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "crag-bluffs",
+        "name": "Crag Bluffs",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.56,
+              0.55
+            ],
+            [
+              0.78,
+              0.55
+            ],
+            [
+              0.82,
+              0.64
+            ],
+            [
+              0.76,
+              0.71
+            ],
+            [
+              0.63,
+              0.7
+            ],
+            [
+              0.56,
+              0.63
+            ]
+          ]
+        },
+        "biome": "hills",
+        "moisture": "semi-arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "crags",
+          "bluffs",
+          "rock"
+        ],
+        "description": "Rugged rocky bluffs in the map's south-centre.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "east-passage",
+        "name": "East Passage",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.82,
+              0.47
+            ],
+            [
+              1,
+              0.46
+            ],
+            [
+              1,
+              0.72
+            ],
+            [
+              0.86,
+              0.72
+            ],
+            [
+              0.78,
+              0.64
+            ]
+          ]
+        },
+        "biome": "coast",
+        "moisture": "aquatic",
+        "water": {
+          "present": true,
+          "type": "salt",
+          "feature": "channel"
+        },
+        "terrain": [
+          "channel",
+          "coast"
+        ],
+        "description": "South-eastern saltwater passage.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "redwoods",
+        "name": "Redwoods",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.1,
+              0.51
+            ],
+            [
+              0.35,
+              0.51
+            ],
+            [
+              0.41,
+              0.63
+            ],
+            [
+              0.37,
+              0.8
+            ],
+            [
+              0.3,
+              0.91
+            ],
+            [
+              0.14,
+              0.87
+            ],
+            [
+              0.1,
+              0.72
+            ]
+          ]
+        },
+        "biome": "forest",
+        "moisture": "mesic",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "forest",
+          "redwood",
+          "tall-trees"
+        ],
+        "description": "Towering south-western redwood forest.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "wind-tunnels",
+        "name": "Wind Tunnels",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.35,
+              0.57
+            ],
+            [
+              0.59,
+              0.57
+            ],
+            [
+              0.63,
+              0.68
+            ],
+            [
+              0.57,
+              0.77
+            ],
+            [
+              0.43,
+              0.78
+            ],
+            [
+              0.36,
+              0.7
+            ]
+          ]
+        },
+        "biome": "canyon",
+        "moisture": "arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "canyon",
+          "wind",
+          "rock"
+        ],
+        "description": "Dry wind-carved canyon corridors in the south-centre.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "hollow-hills",
+        "name": "Hollow Hills",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.3,
+              0.7
+            ],
+            [
+              0.67,
+              0.69
+            ],
+            [
+              0.73,
+              0.8
+            ],
+            [
+              0.69,
+              1
+            ],
+            [
+              0.27,
+              1
+            ],
+            [
+              0.26,
+              0.86
+            ]
+          ]
+        },
+        "biome": "hills",
+        "moisture": "semi-arid",
+        "water": {
+          "present": false,
+          "type": "none"
+        },
+        "terrain": [
+          "hills",
+          "hollows",
+          "grass"
+        ],
+        "description": "Rolling dry hills across the southern band.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      },
+      {
+        "regionId": "wollemi-forest",
+        "name": "Wollemi Forest",
+        "shape": {
+          "type": "polygon",
+          "points": [
+            [
+              0.67,
+              0.66
+            ],
+            [
+              1,
+              0.65
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0.68,
+              1
+            ],
+            [
+              0.65,
+              0.84
+            ]
+          ]
+        },
+        "biome": "forest",
+        "moisture": "mesic",
+        "water": {
+          "present": true,
+          "type": "fresh",
+          "feature": "stream"
+        },
+        "terrain": [
+          "forest",
+          "ancient-trees"
+        ],
+        "description": "Ancient south-eastern forest; a recurring courtship and gathering ground.",
+        "roles": [
+          "territory",
+          "nesting"
+        ],
+        "claimable": null,
+        "territoryTier": null,
+        "variant": null,
+        "prey": null,
+        "season": null,
+        "note": "",
+        "unresolvedRegion": false
+      }
+    ],
+    "routes": []
+  },
+  "habitat": {
+    "classification": "Terrestrial",
+    "biomes": [
+      "canyon",
+      "coast",
+      "hills",
+      "forest",
+      "swamp",
+      "mudflat",
+      "freshwater"
+    ],
+    "moisture": [
+      "arid",
+      "mesic",
+      "semi-arid",
+      "wet",
+      "aquatic"
+    ],
+    "regions": [
+      "dry-fang-canyon",
+      "tallbrush-coasts",
+      "steep-run",
+      "big-tree-overlook",
+      "cedrus-forest",
+      "twisted-forest",
+      "black-fern-hills",
+      "stillwater-bog",
+      "mudflats",
+      "cliff-edge-falls",
+      "crag-bluffs",
+      "east-passage",
+      "redwoods",
+      "wind-tunnels",
+      "hollow-hills",
+      "wollemi-forest"
+    ],
+    "roles": {
+      "territory": [
+        "dry-fang-canyon",
+        "tallbrush-coasts",
+        "steep-run",
+        "big-tree-overlook",
+        "cedrus-forest",
+        "twisted-forest",
+        "black-fern-hills",
+        "stillwater-bog",
+        "mudflats",
+        "cliff-edge-falls",
+        "crag-bluffs",
+        "east-passage",
+        "redwoods",
+        "wind-tunnels",
+        "hollow-hills",
+        "wollemi-forest"
+      ],
+      "nesting": [
+        "dry-fang-canyon",
+        "tallbrush-coasts",
+        "steep-run",
+        "big-tree-overlook",
+        "cedrus-forest",
+        "twisted-forest",
+        "black-fern-hills",
+        "stillwater-bog",
+        "mudflats",
+        "cliff-edge-falls",
+        "crag-bluffs",
+        "east-passage",
+        "redwoods",
+        "wind-tunnels",
+        "hollow-hills",
+        "wollemi-forest"
+      ]
+    },
+    "variants": [],
+    "isDry": true,
+    "isAquatic": true
+  },
+  "source": {
+    "importedAt": "2026-09-22T18:09:16.974Z",
+    "profileFile": "data/raw/dryosaurus/profile.txt",
+    "statsSource": "Dynasty Adjusted Stats"
+  },
+  "matchups": {
+    "schemaVersion": 2,
+    "speedKnown": true,
+    "summary": "Dryosaurus has 4 high-priority matchups where legal group size, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.",
+    "threats": [
+      {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Latenivenatrix can create a very narrow escape window",
+        "summary": "Latenivenatrix is linked by a specific profile rule. This is a close chase on land: 1075 vs 1150 units/s, with stamina likely deciding it. The legal groups (8 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 82,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1150,
+          "speedMarginPct": -6.5,
+          "attackerDurationSeconds": 250,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": 37.5,
+          "label": "This is a close chase on land: 1075 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.4,
+          "cappedPowerRatio": 1.4,
+          "label": "The legal groups (8 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.647,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 1075 vs 1150 units/s, with stamina likely deciding it.",
+          "The legal groups (8 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "11 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+        ],
+        "tags": [
+          "pounce",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "latenivenatrix",
+            "profileName": "Latenivenatrix",
+            "section": "Hunting (without Achillobator)",
+            "text": "Latenivenatrix look to hunt Lambeosaurus, Styracosaurus, Pachycephalosaurus, Citipati, Camptosaurus and Dryosaurus first and foremost if multiple prey options are available in the POI."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "direction": "threat",
+        "band": "high",
+        "kind": "predator",
+        "headline": "Compsognathus can create a real pursuit problem",
+        "summary": "Compsognathus is linked by a specific profile rule. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus.",
+        "score": 70,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 1150,
+          "speedMarginPct": 8.7,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": 106.3,
+          "label": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.4,
+          "cappedPowerRatio": 0.49,
+          "label": "Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.8,
+          "label": "16 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus.",
+          "16 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "compsognathus",
+            "profileName": "Compsognathus",
+            "section": "Preferred Prey & Diet",
+            "text": "When hunting, Compsognathus firstly target unattended babies, Dryosaurus, Psittacosaurus and death-scarred individuals of any tier."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "territorial-rival",
+        "headline": "Struthiomimus can create a credible fight",
+        "summary": "Struthiomimus is linked by a specific profile rule. The speed gap is small (1150 vs 1150), but Struthiomimus has the pursuit edge on land. Even at the legal group cap (1 vs 8), a committed straight fight favours Dryosaurus.",
+        "score": 57,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names a direct aggression or rivalry rule."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1150,
+          "targetSpeed": 1150,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 323,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": 77.7,
+          "label": "The speed gap is small (1150 vs 1150), but Struthiomimus has the pursuit edge on land."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.4,
+          "cappedPowerRatio": 0.29,
+          "label": "Even at the legal group cap (1 vs 8), a committed straight fight favours Dryosaurus."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.8,
+          "label": "16 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names a direct aggression or rivalry rule.",
+          "The speed gap is small (1150 vs 1150), but Struthiomimus has the pursuit edge on land.",
+          "Even at the legal group cap (1 vs 8), a committed straight fight favours Dryosaurus.",
+          "16 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "struthiomimus",
+            "profileName": "Struthiomimus",
+            "section": "Interspecies Behavior",
+            "text": "Male Struthiomimus may display aggression toward smaller creatures such as Dryosaurus and Psittacosaurus, particularly during the breeding season."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "territorial-rival",
+        "headline": "Utahraptor can create a credible fight",
+        "summary": "Utahraptor is linked by a specific profile rule. Dryosaurus is 7% faster on land and can normally refuse this fight. The legal groups (5 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 55,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names a direct aggression or rivalry rule."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1150,
+          "speedMarginPct": -6.5,
+          "attackerDurationSeconds": 153.846,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": -15.4,
+          "label": "Dryosaurus is 7% faster on land and can normally refuse this fight."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 2.1,
+          "cappedPowerRatio": 1.39,
+          "label": "The legal groups (5 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names a direct aggression or rivalry rule.",
+          "Dryosaurus is 7% faster on land and can normally refuse this fight.",
+          "The legal groups (5 vs 8) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "8 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "utahraptor",
+            "profileName": "Utahraptor",
+            "section": "Interspecies Tolerance",
+            "text": "Utahraptor do not tolerate and have a deep hatred for Dryosaurus - this small feisty herbivore has a habit of invading nesting spots and attacking young."
+          },
+          {
+            "profileId": "utahraptor",
+            "profileName": "Utahraptor",
+            "section": "Interspecies Tolerance",
+            "text": "All Utahraptor in a family pack, of any age, will aggressively engage with Dryosaurus, regardless of hunger or claimed corpses nearby."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Alioramus can create a very narrow escape window",
+        "summary": "Alioramus is inside the legal hunt range. This is a close chase on land: 1150 vs 1150 units/s, with stamina likely deciding it. At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+        "score": 78,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1150,
+          "targetSpeed": 1150,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 133,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": -26.8,
+          "label": "This is a close chase on land: 1150 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 2.4,
+          "cappedPowerRatio": 1.58,
+          "label": "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.688,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1150 vs 1150 units/s, with stamina likely deciding it.",
+          "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+          "11 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "tags": [
+          "endurance",
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "direction": "threat",
+        "band": "high",
+        "kind": "predator",
+        "headline": "Dilophosaurus can create a real pursuit problem",
+        "summary": "Dilophosaurus is inside the legal hunt range. This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it. At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+        "score": 70,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1100,
+          "targetSpeed": 1150,
+          "speedMarginPct": -4.3,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 181.818,
+          "durationMarginPct": -8.3,
+          "label": "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 2.4,
+          "cappedPowerRatio": 1.58,
+          "label": "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills"
+          ],
+          "overlap": 0.563,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.",
+          "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+          "9 shared mapped areas make contact plausible.",
+          "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      }
+    ],
+    "opportunities": [],
+    "specialRisks": [],
+    "traits": {
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": 1000,
+      "sprintSpeed": 1150,
+      "sprintDurationSeconds": 181.818,
+      "waterSprintSpeed": null,
+      "airSprintSpeed": null,
+      "huntTier": null,
+      "huntGroupSize": 0,
+      "engagementLimit": 8,
+      "huntGroupUnlimited": false,
+      "engagementUnlimited": false,
+      "tags": [
+        "dangerous-defender"
+      ],
+      "excludedGroups": [],
+      "preferredGroups": []
+    },
+    "methodology": {
+      "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
+      "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
+      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
+    }
+  },
+  "analog": {
+    "schemaVersion": 1,
+    "source": "curated",
+    "reviewedAt": "2026-09-23",
+    "label": "Wild rabbit + Baboon troop",
+    "labelDe": "Wildkaninchen + Pavian (Trupp)",
+    "headline": "A rabbit warren with a baboon troop's attitude and chihuahua energy.",
+    "playsLike": "You are a small, fast herbivore (sprint 1,150 for 182 s) in an unlimited 'warren' led by a dominant pair who keep the berries for themselves. In a group you grow bold and aggress every other species: up to 8 of you gang up on small and medium predators, nip and kick them out, and raid unguarded Utahraptor nests. You only flee when a fight turns against you, diving into caves or bushes.",
+    "setting": {
+      "label": "Caves, perches and food spots in forests and hills",
+      "note": "Nomadic, but claims small territories around caves, perches and resources. Flees into small caves or under thick bushes.",
+      "habitats": [
+        {
+          "id": "mountain",
+          "label": "Mountains, cliffs & rock",
+          "de": "Berge, Klippen & Fels"
+        },
+        {
+          "id": "forest",
+          "label": "Forest & jungle",
+          "de": "Wald & Dschungel"
+        }
+      ]
+    },
+    "analogs": [
+      {
+        "id": "wild-rabbit",
+        "animal": "Wild rabbit",
+        "de": "Wildkaninchen",
+        "scientific": "Oryctolagus cuniculus",
+        "archetype": "small-mammal",
+        "archetypeLabel": "Small mammal",
+        "archetypeDe": "Kleinsäuger",
+        "share": 50,
+        "role": "primary",
+        "covers": "Body and safety: a small, fast warren animal that bolts into caves and bushes",
+        "photo": {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
+          "focus": "50% 30%",
+          "credit": {
+            "artist": "euqirneto",
+            "license": "CC BY 4.0",
+            "page": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg"
+          }
+        },
+        "relatives": []
+      },
+      {
+        "id": "baboon-troop",
+        "animal": "Baboon troop",
+        "de": "Pavian (Trupp)",
+        "scientific": "Papio spp.",
+        "archetype": "primate",
+        "archetypeLabel": "Primate",
+        "archetypeDe": "Affe",
+        "share": 50,
+        "role": "secondary",
+        "covers": "Attitude: a ranked gang that claims sleeping spots and mobs predators",
+        "photo": {
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Olive_baboon_Ngorongoro.jpg/1280px-Olive_baboon_Ngorongoro.jpg",
+          "focus": "50% 40%",
+          "credit": {
+            "artist": "Muhammad Mahdi Karim",
+            "license": "GFDL 1.2",
+            "page": "https://commons.wikimedia.org/wiki/File:Olive_baboon_Ngorongoro.jpg"
+          }
+        },
+        "relatives": []
+      }
+    ],
+    "why": [
+      {
+        "trait": "Warren and bolt-holes",
+        "text": "The group is called a warren, and when a fight goes wrong it dives into small caves or under thick bushes. That is pure rabbit (official inspiration)."
+      },
+      {
+        "trait": "Rank perks",
+        "text": "The dominant pair have exclusive access to berries, and pink berry juice is a status symbol. Baboon hierarchies work the same way (official inspiration)."
+      },
+      {
+        "trait": "Mobbing",
+        "text": "Up to 8 gang up on small and medium predators to harass and nip them out of the area, the way baboons mob leopards."
+      },
+      {
+        "trait": "Claims spots",
+        "text": "Territorial over caves, perches and resources, much like baboons guarding their sleeping cliffs."
+      },
+      {
+        "trait": "Aggressive to all",
+        "text": "Tolerant of its own kind, fiercely aggressive to every other species, with an innate hatred of Utahraptor."
+      }
+    ],
+    "notLike": [
+      "Rabbits never pick fights; Dryosaurus picks fights with almost everyone.",
+      "Baboons are big and strong; Dryosaurus is Small tier (1,000 combat weight, 400 HP) and often only notices it's in danger when it's too late."
+    ],
+    "twist": "Chihuahua energy (official inspiration): tiny, loud and convinced it can take anyone.",
+    "moods": [
+      {
+        "id": "colony",
+        "label": "Colony & swarm",
+        "de": "Kolonie & Schwarm"
+      },
+      {
+        "id": "aggressive",
+        "label": "Hot-headed",
+        "de": "Hitzkopf"
+      },
+      {
+        "id": "territorial",
+        "label": "Territorial",
+        "de": "Territorial"
+      },
+      {
+        "id": "fast",
+        "label": "Fast & enduring",
+        "de": "Schnell & ausdauernd"
+      }
+    ],
+    "confidence": "medium",
+    "officialInspiration": "wild rabbits, baboons and the chihuahua dog breed stereotype",
+    "facts": {
+      "tier": "Small",
+      "diet": "Herbivore",
+      "activity": "Cathemeral",
+      "habitat": "Terrestrial",
+      "combatWeight": 1000,
+      "maxHealth": 400,
+      "growthMinutes": 90,
+      "landSprint": 1150,
+      "landSprintSeconds": 181.818,
+      "waterSprint": null,
+      "airSprint": null,
+      "huntTier": null,
+      "huntGroupSize": null,
+      "engagementLimit": 8,
+      "mapBiomes": [
+        "canyon",
+        "coast",
+        "hills",
+        "forest",
+        "swamp",
+        "mudflat",
+        "freshwater"
+      ],
+      "isDry": true,
+      "isAquatic": true
+    }
+  },
+  "ecosystem": {
+    "id": "mountains",
+    "label": "Mountains & Cliffs",
+    "de": "Gebirge & Felsen",
+    "reason": "Rabbit and baboon: claims caves and perches in the hills and flees into small caves.",
+    "also": [
+      {
+        "id": "forest",
+        "label": "Forest",
+        "de": "Wald"
+      }
+    ],
+    "foodChain": {
+      "level": 7,
+      "label": "Small prey",
+      "de": "Kleine Beutetiere",
+      "derived": true,
+      "reason": null
+    }
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "schemaVersion": 1,
+  "note": "Controlled vocabulary for the curated 'plays like' real-animal analogs in data/raw/<slug>/analog.json. Archetypes group real animals into families a player would ask for ('I feel like playing an ox / a big cat'); synonyms are English and German, lower-case, and are what a chatbot or the Animal Finder search matches against. Moods describe the day-to-day play feel. Habitats: forest (woods & jungle), open (grassland, semi-arid hills and scrub, the map's savanna-like country), arid (canyons, badlands, desert, oasis), wetland (rivers, lakes, swamps), sea (ocean & coast), mountain (cliffs, ledges, rock and caves). Each analog.json lists its curated habitat ids in setting.habitats, chosen from the profile text and the profile map.",
+  "archetypes": {
+    "big-cat": {
+      "label": "Big cat",
+      "de": "Großkatze",
+      "synonyms": [
+        "big cat",
+        "cat",
+        "lion",
+        "tiger",
+        "jaguar",
+        "leopard",
+        "panther",
+        "cougar",
+        "puma",
+        "mountain lion",
+        "snow leopard",
+        "großkatze",
+        "katze",
+        "löwe",
+        "löwin",
+        "tiger",
+        "jaguar",
+        "leopard",
+        "panther",
+        "puma",
+        "berglöwe",
+        "schneeleopard",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "small-cat": {
+      "label": "Wild cat & lynx",
+      "de": "Wildkatze & Luchs",
+      "synonyms": [
+        "wild cat",
+        "small cat",
+        "lynx",
+        "caracal",
+        "bobcat",
+        "feral cat",
+        "wildkatze",
+        "luchs",
+        "karakal",
+        "wüstenluchs",
+        "rotluchs",
+        "katze",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "bear": {
+      "label": "Bear",
+      "de": "Bär",
+      "synonyms": [
+        "bear",
+        "grizzly",
+        "grizzly bear",
+        "brown bear",
+        "polar bear",
+        "bär",
+        "grizzly",
+        "grizzlybär",
+        "braunbär",
+        "eisbär",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "canine": {
+      "label": "Wolf, dog & fox",
+      "de": "Wolf, Wildhund & Fuchs",
+      "synonyms": [
+        "wolf",
+        "wolves",
+        "wild dog",
+        "dog",
+        "dingo",
+        "dhole",
+        "coyote",
+        "jackal",
+        "fox",
+        "maned wolf",
+        "painted wolf",
+        "canine",
+        "wolf",
+        "wölfe",
+        "wildhund",
+        "hund",
+        "hyänenhund",
+        "rothund",
+        "kojote",
+        "schakal",
+        "fuchs",
+        "rotfuchs",
+        "polarfuchs",
+        "mähnenwolf",
+        "dingo",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "hyena": {
+      "label": "Hyena",
+      "de": "Hyäne",
+      "synonyms": [
+        "hyena",
+        "hyaena",
+        "spotted hyena",
+        "hyäne",
+        "tüpfelhyäne",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "mustelid": {
+      "label": "Otter, badger & weasel",
+      "de": "Otter, Dachs & Marder",
+      "synonyms": [
+        "otter",
+        "giant otter",
+        "badger",
+        "honey badger",
+        "stoat",
+        "weasel",
+        "ermine",
+        "wolverine",
+        "mustelid",
+        "otter",
+        "riesenotter",
+        "dachs",
+        "honigdachs",
+        "hermelin",
+        "wiesel",
+        "marder",
+        "vielfraß",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "small-mammal": {
+      "label": "Small mammal",
+      "de": "Kleinsäuger",
+      "synonyms": [
+        "small mammal",
+        "rat",
+        "rabbit",
+        "bunny",
+        "meerkat",
+        "mongoose",
+        "raccoon",
+        "opossum",
+        "pika",
+        "rodent",
+        "capybara",
+        "kleinsäuger",
+        "ratte",
+        "kaninchen",
+        "hase",
+        "erdmännchen",
+        "manguste",
+        "waschbär",
+        "opossum",
+        "pfeifhase",
+        "nager",
+        "nagetier",
+        "wasserschwein",
+        "capybara",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "marsupial": {
+      "label": "Kangaroo & marsupial",
+      "de": "Känguru & Beuteltier",
+      "synonyms": [
+        "kangaroo",
+        "wallaby",
+        "quokka",
+        "wombat",
+        "marsupial",
+        "känguru",
+        "wallaby",
+        "quokka",
+        "wombat",
+        "beuteltier",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "primate": {
+      "label": "Primate",
+      "de": "Affe",
+      "synonyms": [
+        "primate",
+        "ape",
+        "monkey",
+        "gorilla",
+        "silverback",
+        "baboon",
+        "marmoset",
+        "affe",
+        "menschenaffe",
+        "gorilla",
+        "silberrücken",
+        "pavian",
+        "krallenaffe",
+        "weißbüscheläffchen",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "elephant": {
+      "label": "Elephant",
+      "de": "Elefant",
+      "synonyms": [
+        "elephant",
+        "african elephant",
+        "asian elephant",
+        "elefant",
+        "afrikanischer elefant",
+        "asiatischer elefant",
+        "wüstenelefant",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "hippo": {
+      "label": "Hippo",
+      "de": "Flusspferd",
+      "synonyms": [
+        "hippo",
+        "hippopotamus",
+        "flusspferd",
+        "nilpferd",
+        "hippo",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "rhino": {
+      "label": "Rhino",
+      "de": "Nashorn",
+      "synonyms": [
+        "rhino",
+        "rhinoceros",
+        "black rhino",
+        "nashorn",
+        "rhinozeros",
+        "spitzmaulnashorn",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "cattle": {
+      "label": "Cattle, buffalo & ox",
+      "de": "Rind, Büffel & Ochse",
+      "synonyms": [
+        "cattle",
+        "ox",
+        "oxen",
+        "bull",
+        "cow",
+        "buffalo",
+        "cape buffalo",
+        "bison",
+        "musk ox",
+        "yak",
+        "rind",
+        "rinder",
+        "ochse",
+        "ochsen",
+        "stier",
+        "bulle",
+        "kuh",
+        "büffel",
+        "kaffernbüffel",
+        "bison",
+        "wisent",
+        "moschusochse",
+        "yak",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "deer-antelope": {
+      "label": "Deer & antelope",
+      "de": "Hirsch & Antilope",
+      "synonyms": [
+        "deer",
+        "stag",
+        "doe",
+        "elk",
+        "moose",
+        "reindeer",
+        "caribou",
+        "antelope",
+        "gazelle",
+        "wildebeest",
+        "gnu",
+        "oryx",
+        "gemsbok",
+        "eland",
+        "hirsch",
+        "reh",
+        "rothirsch",
+        "elch",
+        "rentier",
+        "karibu",
+        "antilope",
+        "gazelle",
+        "gnu",
+        "oryx",
+        "spießbock",
+        "elenantilope",
+        "sambarhirsch",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "horse": {
+      "label": "Horse & zebra",
+      "de": "Pferd & Zebra",
+      "synonyms": [
+        "horse",
+        "wild horse",
+        "mustang",
+        "zebra",
+        "donkey",
+        "pony",
+        "pferd",
+        "wildpferd",
+        "przewalski",
+        "mustang",
+        "zebra",
+        "esel",
+        "pony",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "giraffe": {
+      "label": "Giraffe",
+      "de": "Giraffe",
+      "synonyms": [
+        "giraffe",
+        "giraffe",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "camel-llama": {
+      "label": "Camel & llama",
+      "de": "Kamel & Lama",
+      "synonyms": [
+        "camel",
+        "dromedary",
+        "bactrian camel",
+        "llama",
+        "alpaca",
+        "kamel",
+        "dromedar",
+        "trampeltier",
+        "wildkamel",
+        "lama",
+        "alpaka",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "goat-sheep": {
+      "label": "Goat & sheep",
+      "de": "Ziege & Schaf",
+      "synonyms": [
+        "goat",
+        "mountain goat",
+        "ibex",
+        "sheep",
+        "ram",
+        "bighorn",
+        "ziege",
+        "bergziege",
+        "schneeziege",
+        "steinbock",
+        "schaf",
+        "widder",
+        "dickhornschaf",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "pig": {
+      "label": "Wild boar & pig",
+      "de": "Wildschwein & Schwein",
+      "synonyms": [
+        "pig",
+        "boar",
+        "wild boar",
+        "hog",
+        "warthog",
+        "peccary",
+        "schwein",
+        "wildschwein",
+        "keiler",
+        "bache",
+        "warzenschwein",
+        "pekari",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "armored": {
+      "label": "Spines & armour",
+      "de": "Stacheln & Panzer",
+      "synonyms": [
+        "porcupine",
+        "hedgehog",
+        "pangolin",
+        "armadillo",
+        "tortoise",
+        "armored",
+        "armoured",
+        "tank",
+        "stachelschwein",
+        "igel",
+        "schuppentier",
+        "gürteltier",
+        "panzer",
+        "stacheln"
+      ]
+    },
+    "crocodilian": {
+      "label": "Crocodile",
+      "de": "Krokodil",
+      "synonyms": [
+        "crocodile",
+        "croc",
+        "alligator",
+        "caiman",
+        "gharial",
+        "krokodil",
+        "alligator",
+        "kaiman",
+        "gavial",
+        "leistenkrokodil",
+        "nilkrokodil",
+        "sumpfkrokodil",
+        "reptile",
+        "reptil"
+      ]
+    },
+    "lizard": {
+      "label": "Lizard & monitor",
+      "de": "Echse & Waran",
+      "synonyms": [
+        "lizard",
+        "monitor",
+        "komodo",
+        "komodo dragon",
+        "gila monster",
+        "reptile",
+        "echse",
+        "eidechse",
+        "waran",
+        "komodowaran",
+        "nilwaran",
+        "krustenechse",
+        "reptil"
+      ]
+    },
+    "amphibian": {
+      "label": "Frog",
+      "de": "Frosch",
+      "synonyms": [
+        "frog",
+        "poison dart frog",
+        "toad",
+        "amphibian",
+        "frosch",
+        "pfeilgiftfrosch",
+        "kröte",
+        "amphibie"
+      ]
+    },
+    "bird-of-prey": {
+      "label": "Bird of prey & owl",
+      "de": "Greifvogel & Eule",
+      "synonyms": [
+        "bird of prey",
+        "raptor bird",
+        "eagle",
+        "hawk",
+        "falcon",
+        "owl",
+        "secretary bird",
+        "greifvogel",
+        "raubvogel",
+        "adler",
+        "steinadler",
+        "habicht",
+        "falke",
+        "eule",
+        "kauz",
+        "waldkauz",
+        "sekretär",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "scavenger-bird": {
+      "label": "Vulture & stork",
+      "de": "Geier & Storch",
+      "synonyms": [
+        "vulture",
+        "marabou",
+        "stork",
+        "scavenger bird",
+        "geier",
+        "marabu",
+        "storch",
+        "aasfresser",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "corvid": {
+      "label": "Crow & raven",
+      "de": "Krähe & Rabe",
+      "synonyms": [
+        "crow",
+        "raven",
+        "rook",
+        "magpie",
+        "jackdaw",
+        "corvid",
+        "krähe",
+        "rabe",
+        "kolkrabe",
+        "saatkrähe",
+        "elster",
+        "dohle",
+        "rabenvogel",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "seabird": {
+      "label": "Seabird",
+      "de": "Seevogel",
+      "synonyms": [
+        "seabird",
+        "gull",
+        "seagull",
+        "cormorant",
+        "penguin",
+        "albatross",
+        "gannet",
+        "seevogel",
+        "möwe",
+        "silbermöwe",
+        "lachmöwe",
+        "kormoran",
+        "pinguin",
+        "albatros",
+        "basstölpel",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "waterbird": {
+      "label": "Duck, swan & heron",
+      "de": "Ente, Schwan & Reiher",
+      "synonyms": [
+        "duck",
+        "mallard",
+        "swan",
+        "heron",
+        "grebe",
+        "coot",
+        "jacana",
+        "flamingo",
+        "waterbird",
+        "waterfowl",
+        "ente",
+        "stockente",
+        "schwan",
+        "höckerschwan",
+        "reiher",
+        "graureiher",
+        "taucher",
+        "blässhuhn",
+        "blatthühnchen",
+        "flamingo",
+        "wasservogel",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "ground-bird": {
+      "label": "Ostrich, cassowary & fowl",
+      "de": "Strauß, Kasuar & Huhn",
+      "synonyms": [
+        "ostrich",
+        "emu",
+        "rhea",
+        "cassowary",
+        "ratite",
+        "chicken",
+        "hen",
+        "rooster",
+        "junglefowl",
+        "strauß",
+        "vogel strauß",
+        "emu",
+        "nandu",
+        "kasuar",
+        "laufvogel",
+        "huhn",
+        "henne",
+        "hahn",
+        "bankivahuhn",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "songbird": {
+      "label": "Pigeon, parrot & songbird",
+      "de": "Taube, Sittich & Singvogel",
+      "synonyms": [
+        "pigeon",
+        "dove",
+        "parakeet",
+        "parrot",
+        "oxpecker",
+        "bowerbird",
+        "bird of paradise",
+        "songbird",
+        "taube",
+        "sittich",
+        "papagei",
+        "madenhacker",
+        "laubenvogel",
+        "paradiesvogel",
+        "singvogel",
+        "bird",
+        "birds",
+        "vogel",
+        "vögel"
+      ]
+    },
+    "whale-dolphin": {
+      "label": "Whale & dolphin",
+      "de": "Wal & Delfin",
+      "synonyms": [
+        "whale",
+        "orca",
+        "killer whale",
+        "dolphin",
+        "porpoise",
+        "wal",
+        "orca",
+        "schwertwal",
+        "killerwal",
+        "delfin",
+        "delphin",
+        "tümmler",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "seal": {
+      "label": "Seal & sea lion",
+      "de": "Robbe & Seelöwe",
+      "synonyms": [
+        "seal",
+        "sea lion",
+        "leopard seal",
+        "walrus",
+        "robbe",
+        "seelöwe",
+        "seeleopard",
+        "walross",
+        "mammal",
+        "säugetier"
+      ]
+    },
+    "shark-fish": {
+      "label": "Shark & fish",
+      "de": "Hai & Fisch",
+      "synonyms": [
+        "shark",
+        "whale shark",
+        "great white",
+        "basking shark",
+        "fish",
+        "salmon",
+        "swordfish",
+        "bowfin",
+        "hai",
+        "walhai",
+        "weißer hai",
+        "riesenhai",
+        "fisch",
+        "lachs",
+        "schwertfisch",
+        "kahlhecht"
+      ]
+    },
+    "turtle": {
+      "label": "Turtle",
+      "de": "Schildkröte",
+      "synonyms": [
+        "turtle",
+        "sea turtle",
+        "tortoise",
+        "schildkröte",
+        "meeresschildkröte",
+        "reptile",
+        "reptil"
+      ]
+    }
+  },
+  "moods": {
+    "solitary": {
+      "label": "Solitary",
+      "de": "Einzelgänger",
+      "synonyms": [
+        "solitary",
+        "alone",
+        "lone",
+        "loner",
+        "einzelgänger",
+        "allein",
+        "solo"
+      ]
+    },
+    "pair": {
+      "label": "Pair-bonded",
+      "de": "Feste Partnerschaft",
+      "synonyms": [
+        "pair",
+        "mate",
+        "partner",
+        "duo",
+        "couple",
+        "paar",
+        "partner",
+        "zu zweit",
+        "lebenspartner"
+      ]
+    },
+    "family": {
+      "label": "Family group",
+      "de": "Familiengruppe",
+      "synonyms": [
+        "family",
+        "family group",
+        "familie",
+        "familiengruppe",
+        "clan"
+      ]
+    },
+    "pack": {
+      "label": "Pack hunter",
+      "de": "Rudel",
+      "synonyms": [
+        "pack",
+        "pack hunter",
+        "team",
+        "rudel",
+        "meute",
+        "gruppenjagd",
+        "pack animal",
+        "rudeltier",
+        "rudeljäger"
+      ]
+    },
+    "herd": {
+      "label": "Big herd",
+      "de": "Große Herde",
+      "synonyms": [
+        "herd",
+        "flock",
+        "big group",
+        "herde",
+        "große gruppe",
+        "schar",
+        "herd animal",
+        "herdentier",
+        "herdentiere"
+      ]
+    },
+    "colony": {
+      "label": "Colony & swarm",
+      "de": "Kolonie & Schwarm",
+      "synonyms": [
+        "colony",
+        "swarm",
+        "flock",
+        "kolonie",
+        "schwarm"
+      ]
+    },
+    "harem": {
+      "label": "Harem life",
+      "de": "Harem",
+      "synonyms": [
+        "harem",
+        "harem"
+      ]
+    },
+    "matriarchal": {
+      "label": "Female-led",
+      "de": "Weibchen führen",
+      "synonyms": [
+        "matriarch",
+        "matriarchal",
+        "female-led",
+        "queen",
+        "matriarchin",
+        "weibchen führen",
+        "weiblich geführt"
+      ]
+    },
+    "apex": {
+      "label": "Apex — fears little",
+      "de": "Spitze der Nahrungskette",
+      "synonyms": [
+        "apex",
+        "top predator",
+        "king",
+        "boss",
+        "fearless",
+        "apex",
+        "spitzenprädator",
+        "könig",
+        "furchtlos",
+        "raubtier ganz oben",
+        "top dog"
+      ]
+    },
+    "prey": {
+      "label": "Prey animal — lives alert",
+      "de": "Beutetier",
+      "synonyms": [
+        "prey",
+        "prey animal",
+        "flee",
+        "survival",
+        "beutetier",
+        "flucht",
+        "überleben",
+        "fluchttier"
+      ]
+    },
+    "tank": {
+      "label": "Tanky — stands its ground",
+      "de": "Panzer / hält stand",
+      "synonyms": [
+        "tank",
+        "tanky",
+        "armored",
+        "stubborn",
+        "stands ground",
+        "panzer",
+        "stur",
+        "hält stand",
+        "robust"
+      ]
+    },
+    "fast": {
+      "label": "Fast & enduring",
+      "de": "Schnell & ausdauernd",
+      "synonyms": [
+        "fast",
+        "speed",
+        "runner",
+        "endurance",
+        "schnell",
+        "läufer",
+        "ausdauer"
+      ]
+    },
+    "ambush": {
+      "label": "Ambush hunter",
+      "de": "Lauerjäger",
+      "synonyms": [
+        "ambush",
+        "stalker",
+        "sit and wait",
+        "lauerjäger",
+        "anschleichen",
+        "hinterhalt"
+      ]
+    },
+    "chaser": {
+      "label": "Runs prey down",
+      "de": "Hetzjäger",
+      "synonyms": [
+        "chaser",
+        "endurance hunter",
+        "run down",
+        "hetzjäger",
+        "ausdauerjäger",
+        "hetzjagd"
+      ]
+    },
+    "scavenger": {
+      "label": "Opportunist & scavenger",
+      "de": "Opportunist & Aasfresser",
+      "synonyms": [
+        "scavenger",
+        "opportunist",
+        "thief",
+        "kleptoparasite",
+        "aasfresser",
+        "opportunist",
+        "dieb",
+        "resteverwerter"
+      ]
+    },
+    "territorial": {
+      "label": "Territorial",
+      "de": "Territorial",
+      "synonyms": [
+        "territorial",
+        "territory",
+        "owner",
+        "territorial",
+        "revier",
+        "revierverteidiger"
+      ]
+    },
+    "nomadic": {
+      "label": "Nomad & traveller",
+      "de": "Nomade",
+      "synonyms": [
+        "nomadic",
+        "nomad",
+        "migration",
+        "traveller",
+        "wanderer",
+        "nomade",
+        "wanderung",
+        "reisend"
+      ]
+    },
+    "aggressive": {
+      "label": "Hot-headed",
+      "de": "Hitzkopf",
+      "synonyms": [
+        "aggressive",
+        "hot-headed",
+        "grumpy",
+        "bad-tempered",
+        "aggressiv",
+        "hitzkopf",
+        "grantig",
+        "reizbar"
+      ]
+    },
+    "gentle": {
+      "label": "Gentle & peaceful",
+      "de": "Friedlich",
+      "synonyms": [
+        "gentle",
+        "peaceful",
+        "passive",
+        "calm",
+        "docile",
+        "friedlich",
+        "sanft",
+        "ruhig",
+        "passiv"
+      ]
+    },
+    "playful": {
+      "label": "Playful & social",
+      "de": "Verspielt",
+      "synonyms": [
+        "playful",
+        "social",
+        "chatty",
+        "fun",
+        "verspielt",
+        "gesellig",
+        "gesprächig"
+      ]
+    },
+    "parental": {
+      "label": "Devoted parent",
+      "de": "Fürsorgliche Eltern",
+      "synonyms": [
+        "parent",
+        "parental",
+        "caring",
+        "nurturing",
+        "eltern",
+        "fürsorglich",
+        "brutpflege",
+        "aufzucht"
+      ]
+    },
+    "nocturnal": {
+      "label": "Night-active",
+      "de": "Nachtaktiv",
+      "synonyms": [
+        "nocturnal",
+        "night",
+        "night hunter",
+        "nachtaktiv",
+        "nacht",
+        "nachtjäger"
+      ]
+    },
+    "semi-aquatic": {
+      "label": "Shore & water",
+      "de": "Ufer & Wasser",
+      "synonyms": [
+        "semi-aquatic",
+        "river",
+        "swamp",
+        "shore",
+        "wetland",
+        "halbaquatisch",
+        "fluss",
+        "sumpf",
+        "ufer"
+      ]
+    },
+    "aquatic": {
+      "label": "Open water",
+      "de": "Meer & tiefes Wasser",
+      "synonyms": [
+        "aquatic",
+        "ocean",
+        "sea",
+        "marine",
+        "swimmer",
+        "aquatisch",
+        "meer",
+        "ozean",
+        "schwimmer"
+      ]
+    },
+    "flying": {
+      "label": "Flier",
+      "de": "Flieger",
+      "synonyms": [
+        "flying",
+        "flight",
+        "flier",
+        "aerial",
+        "sky",
+        "fliegen",
+        "flieger",
+        "luft",
+        "himmel"
+      ]
+    }
+  },
+  "habitats": {
+    "forest": {
+      "label": "Forest & jungle",
+      "de": "Wald & Dschungel",
+      "synonyms": [
+        "forest",
+        "jungle",
+        "woodland",
+        "woods",
+        "rainforest",
+        "redwoods",
+        "wald",
+        "dschungel",
+        "urwald",
+        "regenwald",
+        "wälder"
+      ],
+      "match": [
+        "forest",
+        "woodland",
+        "woods",
+        "redwood",
+        "jungle",
+        "clearing"
+      ]
+    },
+    "open": {
+      "label": "Open country & savanna",
+      "de": "Offenes Land & Savanne",
+      "synonyms": [
+        "savanna",
+        "savannah",
+        "plains",
+        "grassland",
+        "steppe",
+        "open",
+        "open country",
+        "prairie",
+        "hills",
+        "scrub",
+        "bush",
+        "savanne",
+        "ebene",
+        "steppe",
+        "grasland",
+        "offen",
+        "offenes land",
+        "prärie",
+        "hügel",
+        "hügelland",
+        "buschland"
+      ],
+      "match": [
+        "plain",
+        "grassland",
+        "open land",
+        "open country",
+        "open ground",
+        "vast lands",
+        "meadow",
+        "hill",
+        "scrub"
+      ]
+    },
+    "arid": {
+      "label": "Dry country & desert",
+      "de": "Trockengebiete & Wüste",
+      "synonyms": [
+        "desert",
+        "arid",
+        "dry",
+        "dry country",
+        "canyon",
+        "badlands",
+        "oasis",
+        "wüste",
+        "trocken",
+        "trockengebiet",
+        "dürr",
+        "halbwüste",
+        "schlucht",
+        "canyon",
+        "oase"
+      ],
+      "match": [
+        "arid",
+        "desert",
+        "dry",
+        "canyon",
+        "rock",
+        "scrub"
+      ]
+    },
+    "wetland": {
+      "label": "Rivers, lakes & swamps",
+      "de": "Flüsse, Seen & Sümpfe",
+      "synonyms": [
+        "river",
+        "lake",
+        "swamp",
+        "marsh",
+        "wetland",
+        "bog",
+        "pond",
+        "riverbank",
+        "fluss",
+        "see",
+        "sumpf",
+        "moor",
+        "feuchtgebiet",
+        "teich",
+        "ufer"
+      ],
+      "match": [
+        "river",
+        "lake",
+        "swamp",
+        "marsh",
+        "wetland",
+        "bog",
+        "pond",
+        "waterway",
+        "riverbank",
+        "mud",
+        "estuar",
+        "freshwater"
+      ]
+    },
+    "sea": {
+      "label": "Sea & coast",
+      "de": "Meer & Küste",
+      "synonyms": [
+        "sea",
+        "ocean",
+        "coast",
+        "beach",
+        "marine",
+        "island",
+        "meer",
+        "ozean",
+        "küste",
+        "strand",
+        "insel"
+      ],
+      "match": [
+        "sea",
+        "ocean",
+        "coast",
+        "beach",
+        "island",
+        "seaway",
+        "shore"
+      ]
+    },
+    "mountain": {
+      "label": "Mountains, cliffs & rock",
+      "de": "Berge, Klippen & Fels",
+      "synonyms": [
+        "mountain",
+        "mountains",
+        "cliff",
+        "cliffs",
+        "rocky",
+        "rock",
+        "ledge",
+        "highland",
+        "caves",
+        "berg",
+        "berge",
+        "gebirge",
+        "klippe",
+        "klippen",
+        "felsen",
+        "fels",
+        "höhle",
+        "höhlen"
+      ],
+      "match": [
+        "mountain",
+        "cliff",
+        "ledge",
+        "crag",
+        "rocky",
+        "cave"
+      ]
+    }
+  }
+}

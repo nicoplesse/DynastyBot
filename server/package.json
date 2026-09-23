@@ -1,0 +1,20 @@
+{
+  "name": "@dynasty-bot/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "process": "node src/processor.js",
+    "detect:pois": "node scripts/detect-pois.mjs",
+    "curate:pois": "node scripts/curate-poi-areas.mjs",
+    "stats:refresh": "node scripts/import-stat-reference.mjs",
+    "test": "node --test",
+    "photos:refresh": "node scripts/fetch-animal-photos.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
