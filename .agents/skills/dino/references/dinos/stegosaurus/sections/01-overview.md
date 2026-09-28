@@ -1,0 +1,3 @@
+# Stegosaurus – Overview
+
+Large Cathemeral Terrestrial Herbivore Stegosaurus form harem bonds that transition into lifelong harem bonds after each female nests 3 clutches with the same male. At this stage, Stegosaurus become elders. Stegosaurus are nomadic but inherently territorial over food and drinkable water and claim small territories around these resources. Stegosaurus are tolerant when migrating, but become aggressive when claiming a resource. Stegosaurus may group with: Miragaia and Kentrosaurus. Stegosaurus may defend and join engagements with these species if grouped together. Stegosaurus shun albino individuals (and group members), but tolerate other mutations.

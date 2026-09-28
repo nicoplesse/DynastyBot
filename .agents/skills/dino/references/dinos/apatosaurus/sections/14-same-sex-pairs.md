@@ -1,0 +1,3 @@
+# Apatosaurus – Same sex pairs
+
+Same sex pairs that have pods make a decision between them on which pod they wish to remain in, with the other partner transferring over to join their mates' pod. Same sex pairs that do not have a pod tend to form their own micro-sized pod within a herd. Sometimes they go on to adopt calves that grow and join their adopted "pod". Micro-pods with 2 males in a same sex pair default to the first female offspring they adopt as their new matriarch. Micro-pods with 2 females in a same sex pair choose the older or more dominant female in the pair to become the matriarch.

@@ -1,0 +1,3 @@
+# Eotriceratops – Growing Up
+
+As bull calves begin to reach adolescent, they begin to express more interest in their fathers, who accept the attention begrudgingly. Bulls may then choose whether or not they would like to teach their offspring to bullfight and exhibit proper bull behaviors; otherwise it is done by the matriarch. Eotriceratops cows form lifelong bonds with their offspring, particularly their own daughters, and are extremely protective of them. A daughter well raised will take after her mother in migration routes and nesting habits, and may even be permitted to join the same matriarchy as she reaches sub-adult.

@@ -1,0 +1,3 @@
+# Tyrannotitan – Giganotosaurus
+
+Tyrannotitan have a fierce rivalry with Giganotosaurus. They refuse to share POIs with Giganotosaurus in any capacity and will immediately challenge them for their territory. If they lose the challenge, they are forced to leave the POI immediately. Tyrannotitan may challenge Giganotosaurus if awoken by them during the day. Tyrannotitan must attempt to challenge Giganotosaurus before hunting anything else in the POI. Tyrannotitan may not interrupt an ongoing fight to challenge Giganotosaurus. Tyrannotitan issue territory challenges to Giganotosaurus, even with a body down. The winner claims the POI and the body. Tyrannotitan do not hunt Giganotosaurus unless Albino, deathscarred, or Adolescent and below, but may eat from their corpses.

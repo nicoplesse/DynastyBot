@@ -1,0 +1,3 @@
+# Stegosaurus – Solitary Behavior
+
+When solitary, Stegosaurus tend to migrate between instinctual nesting locations. A male, oftentimes alone by nature, travels these paths anyway, seeking suitable females for his future harem. He travels along well known paths, hoping to encounter another zeal he can challenge for females of his own. Females are reluctant to travel too far from known areas, and typically remain in places they feel comfortable in before venturing too far from known areas. They do not tolerate other species sharing their resources, but will accept defeat if greatly outnumbered during a fight or challenge.

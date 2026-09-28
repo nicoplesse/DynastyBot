@@ -1,0 +1,3 @@
+# Dryosaurus – Engagement Limits
+
+Predator Reaction: Aggressive Up to 8 Sub/Adult Dryosaurus may participate in an engagement. Dryosaurus are bold and do not flee from any species. They only flee from engagements when those engagements do not appear to go their way. Preferred Diet Dryosaurus enjoy a diverse and abundant diet, and are capable of consuming almost all items found across Gondwa. Despite their ability to digest most foods, berries are their most prized food source. The most dominant Dryosaurus pair in a warren claim exclusive access to berries, denying them to lower-ranking individuals. The vibrant pink juice of berries serves as a status symbol, reinforcing their authority. Submissive Dryosaurus must settle for whatever other food sources they can find.

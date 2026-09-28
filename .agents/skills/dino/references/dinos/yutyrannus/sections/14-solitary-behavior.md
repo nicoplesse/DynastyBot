@@ -1,0 +1,3 @@
+# Yutyrannus – Solitary Behavior
+
+A solitary Yutyrannus typically has a small biome or defined area they enjoy to travel through, looking for other Yutyrannus to group with, or a comfortable place to nap and preen oneself. Solitary Yutyrannus are quieter than their grouped counterparts, understanding that without the strength of a hunting party, they run the risk of being hunted themselves. They prefer to focus their energy on ambushing smaller and weaker prey, staying close to the ground and moving completely silently. Solitary Yutyrannus are often seen in comfortable sleeping places on rock faces and cliffsides, soaking in the sun.

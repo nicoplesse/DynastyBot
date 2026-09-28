@@ -1,0 +1,3 @@
+# Compsognathus – Shunning
+
+Compsognathus are generally tolerant of all other Compsognathus - however, if a Compsognathus is particularly aggressive or sickly, it may be shunned. Compsognathus ignore and push other Compsognathus they are shunning to the outer edges of the swarm. Re-entering the main area, or approaching nests, will result in the shunned Compsognathus being aggressed. Compsognathus, while typically affectionate and friendly, show no such kindness towards shunned Compsognathus, instead turning their back and running away. Compsognathus do not attempt to hunt or kill other Compsognathus.

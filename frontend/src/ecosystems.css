@@ -9,8 +9,19 @@
 .eco-tab-text{min-width:0}
 .eco-tab-text small{display:none}
 .eco-tabs i{margin-left:auto;padding:2px 7px;border-radius:9px;background:#0f1712;color:#b9cdb1;font-size:10px;font-style:normal;font-weight:800}
-.eco-sorting{margin:6px 2px 22px;color:#7f9283;font-size:11px}
+.eco-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:6px 2px 22px}
+.eco-sorting{margin:0;color:#7f9283;font-size:11px}
 .eco-sorting b{color:#b7caae}
+.eco-switch{display:flex;flex:0 0 auto;align-items:center;gap:10px;padding:7px 12px 7px 9px;border:1px solid #2d3c30;border-radius:8px;background:#162019;color:#aebcaa;text-align:left;transition:border-color .15s,background .15s}
+.eco-switch:hover{border-color:#4a6250}
+.eco-switch.on{border-color:#9bbc7b;background:#1b2a1f;color:#eef4ea}
+.eco-switch-track{position:relative;flex:0 0 34px;width:34px;height:20px;border-radius:10px;background:#0f1712;box-shadow:inset 0 0 0 1px #33453a;transition:background .15s}
+.eco-switch-track span{position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#6f8472;transition:transform .15s,background .15s}
+.eco-switch.on .eco-switch-track{background:#9bbc7b55;box-shadow:inset 0 0 0 1px #9bbc7b}
+.eco-switch.on .eco-switch-track span{transform:translateX(14px);background:#d6ebc6}
+.eco-switch-text b{display:block;font-size:12px}
+.eco-switch-text small{display:block;margin-top:1px;color:#7f9283;font-size:10px}
+.eco-switch:focus-visible{outline:2px solid #9bbc7b;outline-offset:2px}
 
 .eco-section{scroll-margin-top:80px}
 .eco-section.with-divider{margin-top:56px;padding-top:44px;border-top:1px dashed #33443a}
@@ -40,10 +51,17 @@
 .eco-card{display:flex;flex-direction:column;min-width:0;padding:0;overflow:hidden;border:1px solid #2d3c30;border-radius:8px;background:#17221a;color:inherit;text-align:left;transition:transform .15s,border-color .15s}
 .eco-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--eco) 65%,#2d3c30)}
 .eco-card-image{position:relative;display:block;aspect-ratio:1.75;overflow:hidden;background:#223126}
-.eco-card-image>img:first-child{width:100%;height:100%;object-fit:cover}
+.eco-card-photo{width:100%;height:100%;object-fit:cover}
 .eco-card-fallback{display:grid;height:100%;place-items:center;color:#9bb982;font-size:40px;font-weight:800}
 .eco-card-ingame{position:absolute;right:7px;bottom:7px;width:42%;aspect-ratio:1.615;object-fit:cover;border:1px solid #ffffff40;border-radius:4px;box-shadow:0 4px 14px #000a}
 .eco-rank{position:absolute;top:7px;left:7px;padding:3px 7px;border-radius:3px;background:#0b120dd9;color:var(--eco);font-size:10px;font-weight:800}
+.eco-card.visitor{border-style:dashed;background:#141d17}
+.eco-card.visitor .eco-card-photo{opacity:.82}
+.eco-card-visitor{--home:#9bbc7b;position:absolute;z-index:2;top:7px;right:7px;display:inline-flex;align-items:center;gap:4px;max-width:calc(100% - 60px);overflow:hidden;padding:3px 8px;border-radius:3px;background:var(--home);color:#0b120d;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis;box-shadow:0 2px 8px #000b}
+.eco-card-visitor i{color:inherit;font-style:normal}
+.eco-card-home{overflow:hidden;color:#8fa38f;font-size:10px;white-space:nowrap;text-overflow:ellipsis}
+.eco-card-home i{color:var(--home,#9bbc7b);font-style:normal}
+.eco-stats dd small{color:#9bbc7b;font-size:12px}
 .eco-card-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
 .eco-card-body strong{color:#eef3ea;font-size:14px}
 .eco-card-analog{overflow:hidden;color:#b5d193;font-size:10px;font-weight:700;white-space:nowrap;text-overflow:ellipsis}
@@ -71,7 +89,7 @@
 .nav-row .nav-toggle{position:absolute;right:8px;top:50%;width:24px;height:24px;margin:-12px 0 0;border-radius:5px}
 .nav-row .nav-toggle:hover{background:#1e2c22}
 
-@media(max-width:850px){.eco-tabs{display:flex;overflow-x:auto}.eco-tabs button{flex:0 0 auto}.nav-sub,.nav-row .nav-toggle{display:none}.eco-banner{grid-template-columns:auto minmax(0,1fr)}.eco-stats{grid-column:1 / -1}.fc-level{grid-template-columns:1fr;gap:10px}.fc-rail{position:static}.food-chain::before{display:none}}
+@media(max-width:850px){.eco-tabs{display:flex;overflow-x:auto}.eco-tabs button{flex:0 0 auto}.nav-sub,.nav-row .nav-toggle{display:none}.eco-banner{grid-template-columns:auto minmax(0,1fr)}.eco-stats{grid-column:1 / -1}.fc-level{grid-template-columns:1fr;gap:10px}.fc-rail{position:static}.food-chain::before{display:none}.eco-toolbar{flex-direction:column;align-items:stretch}}
 @media(max-width:600px){.eco-banner{grid-template-columns:1fr;padding:20px 16px}.eco-symbol{width:48px;height:48px;font-size:24px}.eco-stats div{min-width:0;flex:1}.fc-members{grid-template-columns:repeat(2,minmax(0,1fr))}.eco-card-meta{flex-direction:column;gap:2px}.fc-end{margin-left:0}}
 
 .directory-actions{display:flex;align-items:stretch;gap:10px}

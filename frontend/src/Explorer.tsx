@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react';
-import { api, type Ecosystem, type Catalog, type CatalogItem, type ContentBlock, type ProcessedProfile, type RulesData } from './api';
+import { api, type Ecosystem, type Catalog, type CatalogItem, type ContentBlock, type ProcessedProfile, type ProfileVariant, type RulesData } from './api';
 import { FullStatsView } from './FullStats';
 import { MapView } from './MapView';
 import { MatchupsView } from './MatchupsView';
 import { PlaysLikeView } from './PlaysLikeView';
+import { PlaystyleView } from './PlaystyleView';
 import { AnimalFinder } from './AnimalFinder';
 import { ProfileShowcase } from './Showcase';
 import { EcosystemsPage } from './EcosystemsView';
@@ -108,6 +109,14 @@ function ProfileCard({ profile }: { profile: CatalogItem }) {
   </button>;
 }
 
+// Variants share one official profile but are separate playables; link straight to the other one.
+function VariantLine({ variant }: { variant: ProfileVariant }) {
+  return <p className="hero-analog hero-variant" title={variant.note}>
+    <span>◐ {variant.label}{variant.title && <> <b>„{variant.title}“</b></>} · shares the official {variant.parentName} profile</span>
+    {variant.siblings.map(sibling => <a key={sibling.id} href={`#/profiles/${sibling.id}`}>Other variant: <b>{sibling.name}</b>{sibling.title && <> „{sibling.title}“</>} →</a>)}
+  </p>;
+}
+
 function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
   const [profile, setProfile] = useState<ProcessedProfile | null>(null);
   const [error, setError] = useState('');
@@ -124,15 +133,16 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
     <article className="profile-detail">
       <header className="profile-hero with-showcase">
         <ProfileShowcase profile={profile} onOpen={setLightbox} />
-        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.analog && <p className="hero-analog"><JumpLink id="plays-like">≈ Plays like <b>{profile.analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
+        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.variant && <VariantLine variant={profile.variant} />}{profile.analog && <p className="hero-analog"><JumpLink id="plays-like">≈ Plays like <b>{profile.analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
       </header>
       <div className="profile-layout">
-        <aside className="profile-toc"><strong>ON THIS PROFILE</strong>{profile.analog && <JumpLink id="plays-like">Plays Like</JumpLink>}<JumpLink id="quick-view">Quick View</JumpLink><JumpLink id="stats">Playable Stats</JumpLink>{profile.map && <JumpLink id="map">Territory Map</JumpLink>}{profile.matchups && <JumpLink id="counters">Counters</JumpLink>}{profile.media.length > 1 && <JumpLink id="media">Images</JumpLink>}{profile.videos.length > 0 && <JumpLink id="videos">Videos</JumpLink>}{profile.sections.map(section => <JumpLink key={section.id} id={section.id}>{section.title}</JumpLink>)}</aside>
+        <aside className="profile-toc"><strong>ON THIS PROFILE</strong>{profile.playstyle && <JumpLink id="playstyle">So spielst du ihn</JumpLink>}{profile.analog && <JumpLink id="plays-like">Plays Like</JumpLink>}<JumpLink id="quick-view">Quick View</JumpLink><JumpLink id="stats">Playable Stats</JumpLink>{profile.map && <JumpLink id="map">Territory Map</JumpLink>}{profile.matchups && <JumpLink id="counters">Counters</JumpLink>}{profile.media.length > 1 && <JumpLink id="media">Images</JumpLink>}{profile.videos.length > 0 && <JumpLink id="videos">Videos</JumpLink>}{profile.sections.map(section => <JumpLink key={section.id} id={section.id}>{section.title}</JumpLink>)}</aside>
         <div className="profile-body">
+          {profile.playstyle && <PlaystyleView playstyle={profile.playstyle} name={profile.name} />}
           {profile.analog && <PlaysLikeView analog={profile.analog} name={profile.name} />}
           <section className="quick-view" id="quick-view"><SectionTitle index="01" title="Quick View" /><ul>{profile.quickView.length ? profile.quickView.map((item, index) => <li key={index}><span>✓</span><RichText text={item} /></li>) : <li><span>✓</span><RichText text={profile.summary} /></li>}</ul></section>
           <FullStatsView profile={profile} />
-          {profile.map && <MapView profileId={profile.id} name={profile.name} map={profile.map} />}
+          {profile.map && <MapView profileId={profile.id} name={profile.name} map={profile.map} ecosystem={profile.ecosystem} />}
           {profile.matchups && <MatchupsView matchups={profile.matchups} name={profile.name} />}
           {profile.media.length > 1 && <section className="media-section" id="media"><SectionTitle index="03" title="Profile Images" /><div className="media-grid">{profile.media.slice(1).map((media, index) => <button type="button" key={media.file} onClick={() => setLightbox(api.imageUrl(profile.id, media.file))}><img src={api.imageUrl(profile.id, media.file)} alt={`${profile.name} reference ${index + 1}`} loading="lazy" /><span>{media.label || (media.role === 'map-or-reference' ? 'Map or profile reference' : `Profile reference ${index + 1}`)}</span></button>)}</div></section>}
           {profile.videos.length > 0 && <section className="video-section" id="videos"><SectionTitle index="04" title="Videos" /><div className="video-grid">{profile.videos.map(video => <div className="video-card" key={video.id}><iframe src={`https://www.youtube-nocookie.com/embed/${video.id}`} title={`${profile.name} YouTube video`} loading="lazy" allowFullScreen /><a href={video.url} target="_blank" rel="noreferrer">Open on YouTube ↗</a></div>)}</div></section>}

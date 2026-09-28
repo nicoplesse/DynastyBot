@@ -1,0 +1,3 @@
+# Pachyrhinosaurus – Nesting Limits
+
+🌧️ Rainy Season &  ☀️ Dry Season: Up to 5 eggs per female. Pachyrhinosaurus females nest in harems near the food bush claimed by their chosen male in their nesting grounds. Females may nest again once all her offspring reach Sub-Adult, or she has no offspring below Sub-Adult in game currently. Females must update their nesting posts to include the names of male offspring hatched. The name displayed on the character creation menu must match the name on the nesting post. This is important proof of relation for shields. Pachyrhinosaurus may form female same sex pairs. Males do not form same sex pairs. Female same sex pairs may adopt. Females in a same sex pair may also opt to court and nest with a male.

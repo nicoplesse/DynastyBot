@@ -1,0 +1,3 @@
+# Parasaurolophus – General Communication
+
+Parasaurolophus are highly expressive creatures, and use a range of calls and body language to communicate with each other and the world around them. Calls and body language vary between individuals, but broadly: Discomfort, disapproval, or unease can be shown in a variety of ways - but are commonly expressed through sneezes, scratching at the ground repeatedly, or looking around - as if on high alert. These behaviors are not signs of aggression. Affection, contentment, or care for one another is shown with soft coos, excited and playful calls, and shaking against each other.

@@ -1,0 +1,3 @@
+# Spinosaurus (Saltwater) – Downtime Behavior
+
+Spinosaurus enter a state of deep sleep for extended periods called "torpor," where their heart rate, breathing, and metabolism slow significantly. This allows them to survive extended periods without eating or drinking. For the most extended of naps, Spinosaurus often sleep beneath the water; but are aware enough to rise to the surface at times to catch their breath. Spinosaurus will construct nests at their favorite nesting places, and will return to these places for these extended naps. Spinosaurus will also permit Suchomimus to sleep near them. Spinosaurus will rouse when detecting prey or threats to their territory.

@@ -1,0 +1,3 @@
+# Pachycephalosaurus – Courtship
+
+Females have no favorite buck and do not form bonds with adult males. To females, a buck's role is simply there to breed with and protect them from hungry predators. Should a buck manage to best a rival and take control over the band, he either courts with females without young, or watches over the band protectively. Courting is a submissive demonstration. Crouching in front of a chosen female, the male coos softly and stretches his neck forward, hoping to impress her with this act of tenderness. If impressed enough to pair with him, she will sit down and call softly in return.

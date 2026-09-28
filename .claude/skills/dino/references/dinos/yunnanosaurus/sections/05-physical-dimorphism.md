@@ -1,0 +1,3 @@
+# Yunnanosaurus – Physical Dimorphism
+
+♂️ Male Yunnanosaurus have dewlaps and are colorful. Males temporarily shed their skin into brighter colors after winning a challenge. Suitable male subspecies include: Stocky, dermal spiked, and standard ♀️ Female Yunnanosaurus do not have a dewlap and are duller in color. Suitable female subspecies include: Slim Subspecies dimorphism for Yunnanosaurus is mandatory. Color dimorphism is not mandatory, but individuals differing from what is typical may face difficulties during courtship. In addition to physiological dimorphism, Yunnanosaurus also displays behavioral dimorphism. See more under Social Interaction.

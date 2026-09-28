@@ -1,0 +1,3 @@
+# Camptosaurus – Offspring Maturity
+
+Once offspring reach sub-adult, they are no longer tolerated in the mother’s home range, and forced to disperse, if they haven’t already. This process is typically easy and stress-free, with joeys having already grown confident in their adult roles. Female Camptosaurus may find that some daughters attempt to bribe their way back into her home range with gifts. Mothers do not tolerate this behaviour, and promptly chase the female off once again, treating them as an intruder each time. Though Camptosaurus may nest again after this period, many choose to wait until the next season, recovering from the experience by enjoying a solitary lifestyle once more.

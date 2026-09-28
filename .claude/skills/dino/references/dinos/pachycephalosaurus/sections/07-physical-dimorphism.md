@@ -1,0 +1,3 @@
+# Pachycephalosaurus – Physical Dimorphism
+
+Physical dimorphism for Pachycephalosaurus is mandatory. This profile does not have high and low T mutations. Non-dimorphic males that do not have bright color on their bodies due to mutations are treated as female by all other Pachycephalosaurus. ♀️ Females are dull and have no saturated colors on their bodies. When nesting, females are called "nannies". ♂️ Adult Males have a vibrant color on their bodies. When an adult male is in a band, he is called a "buck". 👶 Pachycephalosaurus has a mandatory additional growth stage between Juvenile and full maturity called "Yearling". This feature relies on a custom skin in the DR Morphs Mod skinpack. Refer to Profile Specific Rules for more.

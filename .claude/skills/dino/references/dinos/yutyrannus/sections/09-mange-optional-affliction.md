@@ -1,0 +1,3 @@
+# Yutyrannus – Mange (Optional Affliction)
+
+Mange is an optional affliction for Yutyrannus that manifests as an individual having lesser feathers, and a dull colored coat. This is done by picking the Lack of Feathers subspecies, and picking a skin with very little patterning or color flares. This affliction is also characterized by pulling out one’s own feathers out of stress. Yutyrannus with mange may heal from this affliction by being groomed by other Yutyrannus and by taking baths in hot springs. After they heal, they may opt to color shift with the seasons like other Yutyrannus, and grow back their feathers. Yutyrannus with mange struggle to court, as Yutyrannus base their decisions on courtship heavily upon the appearance of another individual’s feathers.

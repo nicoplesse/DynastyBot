@@ -1,0 +1,3 @@
+# Achillobator – Same-Sex Courtship
+
+Between vixens, their echoing calls may draw the attention of the other. Upon spotting each other, the two fall silent and approach at a steady pace, occasionally weaving between trees. Their confident strides towards each other bring the two close enough for each to inspect the other. Whichever female begins the chase, the other will follow. This ends upon a heart call from the one who began the chase. Between tods, the process is a lot more hesitant with consistent chatter as they slowly work towards the other. Once meeting in the middle and satisfied with the presence of the other, low chatter grows into excited chirps. Rather than a game of chase, the two will decide to pair then.

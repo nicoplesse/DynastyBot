@@ -1,0 +1,3 @@
+# Lambeosaurus – Downtime Behavior
+
+There are always one or two Lambeosaurus, typically males, who watch over the herds as sentries for potential predators both in the daytime and at night. These individuals may be substituted with Struthiomimus or Citipati, depending on the herd's level of calm. Lambeosaurus often nest at night, when the herd is at its quietest and is the least likely to draw attention to predators. However, due to the performative nature of courtship, they will only court during the day. When sleeping, Lambeosaurus tend to herd close together, with their faces close to those that they care about.

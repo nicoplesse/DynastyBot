@@ -1,0 +1,3 @@
+# Dilophosaurus – Sneaky Courtship
+
+Dilophosaurus sometimes attempt sneaky courtship - whether they are within a bonded leash grouping,  or a roaming dispersal. Some solitary individuals prefer sneaky courtship over traveling to the courtship grounds to form a leash. Dominant males never sneaky court, and reject any advances from an ungrouped suitor. Reynards within a mask must first disperse to be solitary before they can sneakily court vixens. Solitary or same-sex paired vixens are the most likely to sneakily court outside of their bonded group. Typically any dispersed male is suitable to the group, however particularly daring groups attempt to win the attentions of a subordinate male within a leash - hoping their secret remains undetected.

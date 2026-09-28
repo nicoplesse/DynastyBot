@@ -1,0 +1,3 @@
+# Compsognathus – Parenthood
+
+Once eggs hatch, offspring are essentially miniature adults straight away, and receive some gentle guidance from both parents. Fathers participate in child rearing as much as mothers do, and will step in to teach their offspring if an opportunity presents itself. Parents will loosely defend their offspring from other Compsognathus if the play is deemed to be too rough, and from other dinosaurs. This defence is usually in the form of screeching angrily and loudly at the threat, before ushering their offspring in the opposite direction. Weak and sickly offspring end up rejected by both parents, and instinctively pushed away from the majority of the swarm.

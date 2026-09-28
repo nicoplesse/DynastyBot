@@ -1,0 +1,3 @@
+# Utahraptor – Predator Reaction
+
+When traveling as a pack, Utahraptor tend to quieten down and slip past other carnivores and herbivores unseen and unheard. Only the pack leader will bark orders to their subordinates. This strategy is to trick potential prey into thinking the pack is small and therefore not a threat. If Utahraptor have young in their territory and a predatory species enters the POI, young are lured away and hidden in thick foliage. Adult pack members, cautious, stand closeby to observe a potential encounter. A maximum of 5 Utahraptor may engage the threat, while the rest of the pack watch from a distance away (at least 10 bodylengths).

@@ -1,0 +1,3 @@
+# Therizinosaurus – Tidings
+
+Tidings continue to move around a small area in search of babies to raise or females to impress. Tidings of Therizinosaurus do not claim territory and tend to be a bit more skittish and avoidant in the face of predators. Tidings of Therizinosaurus are also a bit more friendly towards stranger species, particularly Struthiomimus, enjoying their help as sentries so they can get ahead of any danger. Tidings often form close bonds with one another, and chat often. While they will fiercely defend one another from threats, other Therizinosaurus in the tiding will quickly move away from the engagement, especially if they have offspring present.

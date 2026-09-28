@@ -1,21 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { access, readFile, readdir } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compareFoodChain, foodChainLevel } from './ecosystems.js';
+import { listPlayables } from './playables.js';
 
 const projectData = fileURLToPath(new URL('../../data/', import.meta.url));
 const doc = JSON.parse(await readFile(join(projectData, 'reference', 'ecosystems.json'), 'utf8'));
 
 async function playableIds() {
-  const rawDir = join(projectData, 'raw');
-  const ids = [];
-  for (const entry of await readdir(rawDir, { withFileTypes: true })) {
-    if (!entry.isDirectory() || entry.name === 'server-rules') continue;
-    if (await access(join(rawDir, entry.name, 'manifest.json')).then(() => true, () => false)) ids.push(entry.name);
-  }
-  return ids;
+  return (await listPlayables(join(projectData, 'raw'))).map(playable => playable.id);
 }
 
 test('every playable has exactly one curated home ecosystem with a reason', async () => {

@@ -1,0 +1,3 @@
+# Kelenken – Overview
+
+Medium Cathemeral Terrestrial Carnivore Kelenken form temporary pairbonds that may develop into lifelong pairbonds after 5 successful clutches - or mutual decision. Same-sex pairs may opt to form lifelong pairbonds after 5 successful adoptions in which they raise offspring to adulthood, or mutual decision. Kelenken are sedentary when grouped, and nomadic when solitary. Kelenken are territorial to other Kelenken when in a full cast. Kelenken have a tolerant nature. Kelenken may not scavenge from claimed corpses and must contest for a body. Critters and abandoned corpses may be freely eaten. Kelenken tolerate albino and melanistic individuals.

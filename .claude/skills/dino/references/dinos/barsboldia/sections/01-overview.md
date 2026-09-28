@@ -1,0 +1,3 @@
+# Barsboldia – Overview
+
+Apex Cathemeral Terrestrial Herbivore Barsboldia form harem bonds. Barsboldia are territorial around nests and food sources, but otherwise nomadic. Barsboldia have a tolerant nature, but an aggressive nature when nesting. Barsboldia may group with Bonapartenykus and Struthiomimus. Barsboldia may not defend these species, even if grouped with them. Barsboldia tolerate albino and melanistic individuals. Albino individuals are unable to court or nest, due to limited fertility, and are treated like babies by their mothers even into adulthood. Some non-related Barsboldia may shun albino individuals.

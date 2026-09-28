@@ -1,0 +1,3 @@
+# Amargasaurus – Offspring Maturity
+
+Even when adoptive young grow into adulthood, caretakers remain steadfast in their duties when broody. Some may grow tired of caring for young, while others fondly continue caring for their chosen young well into adulthood. Elder Amargasaurus are individuals who have lived long lives, often siring or raising numerous offspring. Once they reach the milestone of approximately 20 clutches, their physical condition begins to decline, though the rate of deterioration varies between individuals. Common signs of aging include slower reactions to predators and an increased need for rest, with elders often spending more time sleeping.

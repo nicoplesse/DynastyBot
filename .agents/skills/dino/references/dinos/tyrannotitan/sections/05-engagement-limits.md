@@ -1,0 +1,3 @@
+# Tyrannotitan – Engagement Limits
+
+Up to 2 grouped Tyrannotitan may take part in a hunt or territory challenge. Tyrannotitan may hunt any tier. Tyrannotitan may form a mob of up to 3 individuals in order to hunt Argentinosaurus, but must have at least 2 present to begin a hunt.  They do not group in game to do so, but work together to bring the mighty sauropod down, and share in the kill. Only courted Tyrannotitan (one sett and one female, or one stand and one male) may work together in a mob. Adolescent Tyrannotitan do not assist with their parents’ hunts. Up to 2 Adolescent Tyrannotitan may attempt to hunt up to solo Large.

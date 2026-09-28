@@ -1,7 +1,8 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 import { animalId } from '../src/analogs.js';
+import { listPlayables } from '../src/playables.js';
 
 // One-time research import of the real-animal photos behind the "plays like" analogs.
 // data/reference/animal-photos.json is the curated source: per animal id it names the English
@@ -80,9 +81,8 @@ async function imageInfos(files) {
 
 async function analogAnimals() {
   const animals = new Map();
-  for (const entry of await readdir(rawDir, { withFileTypes: true })) {
-    if (!entry.isDirectory()) continue;
-    const doc = await readFile(join(rawDir, entry.name, 'analog.json'), 'utf8').then(JSON.parse).catch(() => null);
+  for (const playable of await listPlayables(rawDir)) {
+    const doc = await readFile(join(playable.dir, 'analog.json'), 'utf8').then(JSON.parse).catch(() => null);
     for (const analog of doc?.analogs || []) animals.set(animalId(analog.animal), analog.animal);
   }
   return animals;

@@ -1,0 +1,3 @@
+# Leedsichthys – Offspring Maturity
+
+As Leedsichthys pups approach adolescence, the once tightly packed nursery group gradually becomes a loose collection of individuals. Siblings begin travelling further from both their father and one another - sometimes disappearing for periods of time before returning to the family. Fathers progressively make less effort to retrieve wandering offspring as they mature, allowing their natural independence to develop. By Sub-Adult, paternal bonds and sibling schooling instincts fade entirely. Leedsichthys disperse individually from their father and siblings, and begin their own solitary lives.

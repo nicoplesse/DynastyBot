@@ -1,0 +1,3 @@
+# Apatosaurus – Temper Displays
+
+Particularly irritable individuals showcase a range of behaviors to display their temper. These behaviors are mostly considered a form of bluffing as opposed to true violence, but the display is no less menacing. Sudden, surging advances - or "charging" - is common when individuals feel wronged - or irritated - by another's presence. This is usually accompanied by aggressive head jerks, stomping the ground and whipping their tails in their seeming frustration. Objects may be quickly grasped in their mouths and suddenly tossed by these individuals - usually branches or foliage. Apatosaurus usually settle after a while, but more quickly calm down with the reassurance and comfort of their matriarch, or other experienced older females.

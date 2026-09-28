@@ -1,0 +1,3 @@
+# Deinonychus – Nesting Limits
+
+🌧️ Rainy Season: 3 🥚 per 1 hour. ☀️ Dry Season: 5 🥚 per 1 hour. Deinonychus nest along cliff edges or deep inside caves. Their nests are constructed out of mud, reeds and roots, and decorated with thick ferns. Deinonychus males may form same-sex pairs, but do not adopt, and may still accept courtship from females. Deinonychus females become Elders after 20 clutches. Elders only have a maximum of 2 eggs per clutch, regardless of season. Nesting multipliers cannot be used on elder females. Albinos are infertile. Leucistics are fertile, but albino-appearing leucistics are rarely chosen as mates.

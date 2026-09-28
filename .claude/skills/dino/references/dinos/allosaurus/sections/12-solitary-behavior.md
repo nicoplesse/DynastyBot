@@ -1,0 +1,3 @@
+# Allosaurus – Solitary Behavior
+
+Many Allosaurus - particularly orphans - opt to remain solitary, sometimes for the entirety of their life. These individuals do not find any difficulty in surviving alone, and take solace in their independence. At times, solitary Allosaurus may tolerate temporarily grouping with other Allosaurus, especially if they have failed to successfully hunt large prey for several days, or wish to nest. These occurrences are brief, typically only lasting a few days. Once the solitary Allosaurus feels they have achieved their goal, they will disperse from their group, often without even a goodbye.

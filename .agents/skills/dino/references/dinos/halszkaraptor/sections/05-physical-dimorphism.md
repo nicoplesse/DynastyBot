@@ -1,0 +1,3 @@
+# Halszkaraptor – Physical Dimorphism
+
+♀️ Females are known as hens. They are generally larger, with a thicker set of feathers. Their superb plumage supports their ability to incubate eggs, even during harsh conditions.  Hens display a wide range of patterns, but visually are duller in color than drakes, with the occasional flash of bright color on their underside. Suitable subspecies include: Anserilliei, Escuilliei & Cygnilliei ♂️ Males are known as drakes. Drakes hold a slimmer frame, enhancing their ability to maneuver through their surroundings. Males boast bright and confident colors. Suitable subspecies include: Ardeilliei, Anasilliei, & Brantilliei Physical dimorphism for Halszkaraptor is mandatory.

@@ -1,0 +1,3 @@
+# Megalania – Pool Challenges
+
+Sometimes, multiple females may be in the POI and scuffles can occur regarding a claimed pond. One female will approach another with an arched neck and slow, deliberate head bobs, staring directly at the other female with fixed eye contact. The female goes very still, and issues 3 :threaten_call: aggressive calls, one after the other. If the opponent does not yield - or worse, ignores entirely - the interaction escalates into a physical battle. This battle is fought in the water, and continues until one leaves the pool. The first female to get the other to scurry onto land becomes the winner, and retains the rights to display in that pool.

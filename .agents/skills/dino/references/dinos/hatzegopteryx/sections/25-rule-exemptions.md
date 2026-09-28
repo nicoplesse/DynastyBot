@@ -1,0 +1,3 @@
+# Hatzegopteryx – Rule Exemptions
+
+Hatzegopteryx hunting or driving out Quetzalcoatlus do not abide by 1.4 and 4.1, 4.2 Hatzegopteryx in pairs or trios driving out other Hatzegopteryx do not abide by 1.4, 6.7, and 4.1, 4.2 Hatzegopteryx awoken by Rhamphorhynchus  do not abide by 1.4 when chasing it out or hunting it. Hatzegopteryx may hunt any hatchling or juvenile, even if it is protected. 1.10.1 Hatzegopteryx will hunt any unrelated hatchling or juvenile Hatzegopteryx. 8.4 Hatzegopteryx are unable to eat the bodies of Metriacanthosaurus without suffering averse side effects. See 📜・server-guideOPTIONAL - Illnesses & Injuries for more information. 4.4

@@ -1,0 +1,3 @@
+# Allosaurus – Infanticide
+
+Allosaurus males will seek to kill unrelated and unprotected Allosaurus of adolescent and below. If at any point, the young Allosaurus becomes protected, the male will give up their attempt. A 15 minute infanticide timer applies after every attempt, regardless of whether it was successful or unsuccessful. Allosaurus are a curious species, and do not often display aggression towards other species unless there is reason to, such as protecting personal space. Allosaurus may follow other species from a distance to observe them, peering at their odd habits and ways of communication. If woken up by another species, Allosaurus may be momentarily intrigued by it, before returning to sleep.

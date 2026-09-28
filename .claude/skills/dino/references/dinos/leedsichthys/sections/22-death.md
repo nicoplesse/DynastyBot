@@ -1,0 +1,3 @@
+# Leedsichthys – Death
+
+Leedsichthys, in their last throes of life, suddenly flush to show Albino coloration. They begin to sink to the bottom of the ocean, never to rise again. They die against the ocean floor, left for scavengers and for opportunistic carnivores to feed from. Leedsichthys females may split their eggs across multiple males, as long as they do not exceed the nesting limit. Leedsichthys males are those that make the nesting posts. If nesting with multiple females, the male must make separate nesting posts for each female he is nesting with. Leedsichthys do not group with other Leedsichthys unless a father with his offspring, or unless all members of the group are Adolescent or below. Leedsichthys are tolerant of all other Leedsichthys. N/A

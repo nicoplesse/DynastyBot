@@ -1,0 +1,3 @@
+# Sarcosuchus – Night Hunting Strategy
+
+After a day of basking, Sarcosuchus use the energy they have garnered to venture onto land. They sculk through foliage in an attempt to find sleeping creatures to ambush. During the night, Sarcosuchus can hunt on land as well as from water. When hunting on land, they may hunt up to solitary Large tier. Floats of Sarcosuchus are not seen stalking through large stretches of open land, preferring instead to stay near foliage, rocks or trees so they remain hidden. Following a successful hunt on land, Sarcosuchus retreat back to water with their bellies now full.

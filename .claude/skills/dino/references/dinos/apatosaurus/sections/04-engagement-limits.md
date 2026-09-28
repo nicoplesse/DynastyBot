@@ -1,0 +1,3 @@
+# Apatosaurus – Engagement Limits
+
+Predator Reaction: Defensive 1 Sub/Adult Apatosaurus may enter an engagement as their own defender. Against two Apex carnivores, up to 2 Sub/Adult Apatosaurus may defend. Adolescent Apatosaurus may have the following defenders: Up to 2 Adults. These must be related to the individual, or the adoptive parents. Juvenile & Hatchling Apatosaurus may have the following defenders: Up to 3 other Juveniles or Hatchlings. These can be related or unrelated. Preferred Diet Apatosaurus consume berries, fruit and flowers as their primary diet, and feed constantly throughout day and night. In addition, they consume nuts and shellfish to aid with digestion and grinding of their food. This is normally done in between other grazing.

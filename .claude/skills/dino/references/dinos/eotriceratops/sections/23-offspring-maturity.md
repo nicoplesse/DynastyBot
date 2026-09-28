@@ -1,0 +1,3 @@
+# Eotriceratops – Offspring Maturity
+
+When female calves reach Sub-Adult, they are appraised by the matriarch closely. The matriarch determines whether or not the now adult cows will be allowed to stay with the matriarchy, or if they must move off to form their own or find one to join. Some mothers may follow their closest bonded daughters if they are expelled from the matriarchy. Male calves that reach Sub-Adult are immediately sent out to disperse, often sent away in groups with their brothers and half brothers. Once all offspring have reached Sub-Adult, bulls disperse from the herd into a bull group, and leave the matriarchy for other opportunities.

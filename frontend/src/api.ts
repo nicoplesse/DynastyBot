@@ -49,6 +49,7 @@ export type PoiShape =
 export interface PoiWater { present: boolean; type: string; feature?: string }
 export interface PoiMarker {
   regionId: string | null; name: string; shape: PoiShape | null;
+  anchor: { x: number; y: number } | null; ecosystems: string[];
   biome: string | null; moisture: string | null; water: PoiWater | null;
   terrain: string[]; description: string; roles: string[];
   claimable: boolean | null; territoryTier: string | null; variant: string | null;
@@ -64,6 +65,15 @@ export interface ProfileMap {
   markers: PoiMarker[];
   routes: MapRoute[];
 }
+export interface MapRegion {
+  id: string; name: string; shape: PoiShape; anchor?: { x: number; y: number };
+  ecosystems?: string[]; description?: string; within?: string;
+}
+export interface MapLandscape {
+  id: string; label: string; de: string; description: string;
+  regions: string[]; also: string[]; water: string | null;
+}
+export interface WorldMap { schemaVersion: number; landscapes: MapLandscape[]; regions: MapRegion[] }
 export interface Habitat {
   classification: string | null; biomes: string[]; moisture: string[]; regions: string[];
   roles: Record<string, string[]>; variants: string[]; isDry: boolean; isAquatic: boolean;
@@ -73,6 +83,7 @@ export interface MapIndex {
   groups: { dry: string[]; aquatic: string[] };
   moisture: Record<string, { label: string; dinoIds: string[] }>;
   biome: Record<string, { dinoIds: string[] }>;
+  landscape: Record<string, { dinoIds: string[] }>;
   regions: Record<string, { name: string; biome: string | null; moisture: string | null; dinoIds: string[]; roles: Record<string, string[]> }>;
   dinos: Record<string, { name: string; classification: string | null; isDry: boolean; isAquatic: boolean; moisture: string[]; biomes: string[]; regions: string[]; variants: string[] }>;
 }
@@ -159,11 +170,18 @@ export interface ProcessedProfile {
   media: ProcessedMedia[];
   ingame: IngameCover | null;
   ecosystem: ProfileEcosystem | null;
+  playstyle: Playstyle | null;
   map: ProfileMap | null;
   habitat: Habitat | null;
   matchups: Matchups | null;
   analog: ProfileAnalog | null;
-  source: { importedAt: string; profileFile: string; statsSource: string };
+  variant: ProfileVariant | null;
+  source: { importedAt: string; profileFile: string; statsSource: string; rawId?: string };
+}
+// A playable split from a shared official profile (Megalania arid / temperate).
+export interface ProfileVariant {
+  id: string; label: string; de: string | null; title: string | null; parentId: string; parentName: string; note: string;
+  siblings: Array<{ id: string; name: string; variant: string; label: string; de: string | null; title: string | null }>;
 }
 export interface CatalogItem {
   id: string; name: string; aliases: string[]; summary: string; classification: ProcessedProfile['classification'];
@@ -172,7 +190,16 @@ export interface CatalogItem {
   matchups: { threats: number; opportunities: number } | null;
   analog: CatalogAnalog | null;
   ecosystem: { id: string; level: number; also: string[] } | null;
+  solo: SoloFit | null;
+  variant: Pick<ProfileVariant, 'id' | 'label' | 'de' | 'title' | 'parentId' | 'parentName'> | null;
   cover: ProcessedMedia | null; importedAt: string;
+}
+export type SoloFit = 'solo' | 'solo-possible' | 'group';
+export interface Playstyle {
+  schemaVersion: number; reviewedAt: string; language: string;
+  solo: { fit: SoloFit; note: string };
+  summary: string;
+  parts: Array<{ id: string; title: string; text: string; fixed?: boolean }>;
 }
 export interface FoodChainLevel { level: number; label: string; de: string | null; rule?: string }
 export interface ProfileEcosystem {
@@ -221,6 +248,8 @@ export const api = {
   ecosystems: async () => result<EcosystemIndex>(await fetch('/api/ecosystems')),
   processedProfile: async (id: string) => result<ProcessedProfile>(await fetch(`/api/catalog/${encodeURIComponent(id)}`)),
   rules: async () => result<RulesData>(await fetch('/api/rules')),
+  worldMap: async () => result<WorldMap>(await fetch('/api/map')),
+  mapLayerUrl: (file: string) => `/api/map/${file}`,
   mapIndex: async () => result<MapIndex>(await fetch('/api/map-index')),
   matchups: async () => result<MatchupsIndex>(await fetch('/api/matchups')),
   analogs: async () => result<AnalogIndex>(await fetch('/api/analogs')),

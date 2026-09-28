@@ -1,0 +1,3 @@
+# Leedsichthys – Nesting
+
+Males make the nesting posts, with as many eggs as the female allows him to take. He must make one nesting post per female he nests with. Once eggs have been deposited, males become increasingly attentive towards their nests. Females generally leave the area after depositing their eggs, and offer no input on rearing young. Males remain with the nest until their final egg has hatched. Once this happens, nests are abandoned, and the father's attention shifts from the nesting site to the live young now following him. Some new fathers remain in the courtship grounds for a little while after their young hatch, while others prefer to leave immediately for new waters.

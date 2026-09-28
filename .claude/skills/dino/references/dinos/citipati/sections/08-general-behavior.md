@@ -1,0 +1,3 @@
+# Citipati – General Behavior
+
+Citipati are most often found in clearings and open land, where they can spot danger coming. They enjoy grooming and are meticulous in keeping their plumage clean and free from debris. Both sand baths and water baths are enjoyable for Citipatis, when they come across sandy earth or shallow water, they crouch low and fluff their feathers to help clean them. Citipati are never quiet, they love singing and socialising in their flock! Citipati adore being in the sun and will stretch and bask in the rays whenever possible. Citipati roosters broadcast loudly when morning breaks, with hens accompanying their song with morning chirps.

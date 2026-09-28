@@ -1,0 +1,3 @@
+# Megalania (Temperate) – Disputes
+
+Disputes between Megalania always begin with exaggerated posturing and vocalizations to try and intimidate their rival into submission. These reptiles arch their necks, shake their heads from side to side, and snarl out warning hisses. This is often followed by a slight raise of their bodies, and a threatening roar issued directly into their opponent's face. If the rival concedes, they simply scurry away quickly before the other attacks. If the rival is not intimidated, they mirror the gestures back at the opponent, escalating the confrontation. When neither individual backs down, this devolves into a physical brawl - they snap and rip at each other's flesh, continuing until one is driven off in a panic.

@@ -1,0 +1,3 @@
+# Deinosuchus – Notes
+
+Females will only adopt when they have young of their own of a similar age. They do not consciously decide to adopt - instead they confuse unrelated offspring with their own when they get close. All hunts for Deinosuchus must begin in water. Prey can be up to 2 body lengths away from the water, but still within lunge range. Prey can be pursued inland until all stamina is drained while sprinting. If fracture is inflicted, or the prey is on deathscars, Deinosuchus may continue pursuing past this point. Deinosuchus must be in water to third party an ongoing engagement. They can 3rd party if hunter or hunted reaches up to 2 body lengths from the water.

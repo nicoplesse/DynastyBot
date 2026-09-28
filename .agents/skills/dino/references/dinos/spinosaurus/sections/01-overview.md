@@ -1,0 +1,3 @@
+# Spinosaurus – Overview
+
+Apex Cathemeral Semi-Aquatic Carnivore Spinosaurus form temporary pairbonds that become strong pairbonds over time. Spinosaurus are territorial and claim medium water sources in claimable territory areas. (See profile map for specific claimable territory water sources) Territory borders end 10 body lengths from the water's edge. Spinosaurus have an aggressive nature within claimable territory. Otherwise, they are tolerant. Suchomimus, Concavenator and Halszkaraptor are tolerated within their territory in some situations. Spinosaurus are not scavengers, but do share kills claimed by Concavenator and Suchomimus. Spinosaurus tolerate mutated individuals.

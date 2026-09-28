@@ -1,0 +1,3 @@
+# Deinonychus – Direct Courtship
+
+When a female is ready to nest, she approaches her chosen male with a unique display. She spreads her arms wide, turns in a tight circle, and calls to him affectionately. If the male accepts her advances - and is crouched, showing submission appropriately - he rises to mirror her gestures. If he rejects her, he lets out a quiet, submissive noise, and turns to slowly move away. Rejected females may take offense, but never force a bond. Instead, they withdraw their attention from the male - sometimes even shunning him for a short period - and transfers her affection onto another male. Females may both like the same male in some instances. On these occasions, they may spar for the right to court him.

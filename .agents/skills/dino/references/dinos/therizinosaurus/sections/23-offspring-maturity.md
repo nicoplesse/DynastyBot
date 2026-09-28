@@ -1,0 +1,3 @@
+# Therizinosaurus – Offspring Maturity
+
+Males will disperse from their birth sects, encouraged by their father and driven out by the dame. Females may opt to stay in the group if there is room, but are otherwise driven out by the dame. Sub-adult offspring are shown much affection by their fathers, whom nuzzle and preen them before their formal departure. While females tend to be more avoidant of this affection, males accept it happily, issuing soft excited cries. The dame only shows any more attention to her children than she has through their adulthood if they refuse to leave the group, or do so more slowly than she would have liked.

@@ -1,0 +1,3 @@
+# Allosaurus – Quetzalcoatlus
+
+Allosaurus have adapted to recognize the stalking behaviors of Quetzalcoatlus. They understand that the large pterosaur has a habit of following herbivore herds, and Allosaurus are quick to investigate if they notice the aerial carnivore hovering in the skies. Allosaurus do not hunt solitary, adult Quetzalcoatlus, and tolerate them enough to allow scavenging. Quetzalcoatlus in pairs or more are not tolerated and are aggressed away from kills. Otherwise, Allosaurus will still aggress these carnivores away if they enter their personal space in the absence of a fresh corpse. Allosaurus may still contest for a body down owned by Quetzalcoatlus, and may eat from a Quetzalcoatlus body down.

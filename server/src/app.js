@@ -90,6 +90,12 @@ export function createApp({
     catch (error) { next(error); }
   });
 
+  // Raster layers of the shared map (e.g. layers/freshwater.png), next to the gazetteer.
+  app.get('/api/map/layers/:file', (req, res, next) => {
+    if (!/^[a-z0-9-]+\.png$/.test(req.params.file)) return next(httpError(400, 'Invalid layer name.'));
+    res.sendFile(join(resolve(rawDir, '..', 'map', 'layers'), req.params.file), error => { if (error) next(httpError(404, 'Layer not found.')); });
+  });
+
   app.get('/api/map-index', async (_req, res, next) => {
     try { res.json(JSON.parse(await readFile(join(derivedDir, 'map-index.json'), 'utf8'))); }
     catch (error) { next(error); }
@@ -142,10 +148,23 @@ export function createApp({
     } catch (error) { next(error); }
   });
 
+  // A variant playable (e.g. megalania-arid) shows the images of the profile it was split from.
+  async function rawIdFor(id) {
+    try { await manifestAt(join(rawDir, id)); return id; }
+    catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      const profile = JSON.parse(await readFile(join(derivedDir, 'profiles', `${id}.json`), 'utf8'));
+      const rawId = profile.source?.rawId;
+      if (!rawId || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(rawId)) throw error;
+      return rawId;
+    }
+  }
+
   app.get('/api/profiles/:id/images/:file', async (req, res, next) => {
     try {
-      const { id, file } = req.params;
-      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || !safeImagePath(`images/${file}`)) throw httpError(400, 'Invalid image path.');
+      const { id: requested, file } = req.params;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(requested) || !safeImagePath(`images/${file}`)) throw httpError(400, 'Invalid image path.');
+      const id = await rawIdFor(requested);
       const manifest = await manifestAt(join(rawDir, id));
       if (!manifest.images.some((image) => image.file === `images/${file}`)) throw httpError(404, 'Image not found.');
       res.sendFile(join(rawDir, id, 'images', file));

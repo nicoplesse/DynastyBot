@@ -1,0 +1,3 @@
+# Kelenken – Physical Dimorphism
+
+♀️ Females, known as pens, lack the head feathers that cobs possess, and are usually found in desaturated colors. Browns, greys, blacks and whites are acceptable. Suitable subspecies include: Standard, Brow Feathers, Titanis ♂️ Males, known as cobs, have pronounced head feathers and typically brighter, flashier colors with more contrast. Suitable subspecies include: Head Feathers, Head and Brow Feathers, Variation, Phorusrhacos Physical dimorphism for Kelenken is not mandatory, but individuals differing from the typical dimorphism may face difficulties during courtship.

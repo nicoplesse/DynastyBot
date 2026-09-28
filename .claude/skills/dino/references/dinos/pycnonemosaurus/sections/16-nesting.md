@@ -1,0 +1,3 @@
+# Pycnonemosaurus – Nesting
+
+After courting, sows rush to find a suitable location for their nest, with the dominant boar and any other submissive boars following behind with interest. Boars rarely assist in nest building, but take great pleasure in following the sows and watching them assemble their nests. Boars that have stronger bonds with sows may choose to assist their nest building, following them to a resource to collect building materials and bringing them back to the nesting spot for her. Nests are built fairly close together, with a short distance between nests so that the Pycnonemosaurus sow has enough room to defend her personal space from others.

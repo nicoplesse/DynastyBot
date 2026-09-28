@@ -1,0 +1,3 @@
+# Utahraptor – Dispersal Courtship
+
+If two Utahraptor find each other, courtship is very similar to that if it would occur in a pack territory. One individual will crouch and act submissive, while the other sniffs and investigates them; if they determine that the individual is unsatisfactory, they will immediately separate from one another, showing no aggression and not chasing one another down. If multiple dispersals take interest in the same individual, the individual will only display interest in their potential mate. The dispersal that is ignored will quickly recieve the message and move on.

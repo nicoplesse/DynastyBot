@@ -1,0 +1,3 @@
+# Daspletosaurus – Offspring Maturity
+
+Once cubs reach Sub-Adult, they usually disperse in search of their own pack. However - some are permitted to remain with their parents, should the pack have the space. Fathers already with a dominant pair will ignore their sons directly, or attempt to encourage them to become a submissive male. Males who were raised together often form bonded pairs and set off together once maturing. Similarly, females who were raised together may disperse in groups of up to four in order to find their own doting males. Submissive males who have fathered sneaky clutches may also approach his young-adult male children, claim them as a pair, and quickly disperse with the pack to avoid detection.

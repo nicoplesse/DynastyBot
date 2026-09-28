@@ -1,0 +1,3 @@
+# Kelenken – Engagement Limits
+
+Up to 4 Kelenken may enter an engagement or hunt. Kelenken may hunt up to solo Large tier, but specialize in Medium tier and lower. Up to 2 Adolescent Kelenken may hunt up to Small tier. Adolescent Kelenken can assist with their parents’ hunts, up to the limit of 4. POI Challenges between Casts & Other Kelenken: A full cast (8 members) of Kelenken will not tolerate other Kelenken within their current POI. If another Kelenken or group of Kelenken is spotted, and it is not another full cast, 4 Sub/Adult Kelenken may work together to drive the other Kelenken out. POI Challenges between Full Casts: If there is a territory challenge issued between two full casts, all Kelenken may engage.

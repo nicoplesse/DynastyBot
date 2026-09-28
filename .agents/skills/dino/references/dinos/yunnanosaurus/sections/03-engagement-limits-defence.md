@@ -1,0 +1,3 @@
+# Yunnanosaurus – Engagement Limits (Defence)
+
+Predator Reaction: Aggressive Up to 2 Yunnanosaurus may enter an engagement. Yunnanosaurus are aggressive towards carnivores up to Large tier, and do not tolerate them within 5 body lengths of their group. Yunnanosaurus are highly aggressive towards Torvosaurus and Daspletosaurus and will attack them on sight during the rainy season. Yunnanosaurus ignore Apex carnivores unless the carnivore initiates a hunt, in which case they will flee. Preferred Diet Yunnanosaurus predominantly eat roots, nuts, and flowers. Juvenile and hatchling Yunnanosaurus prefer to eat sweeter food such as berries and fruit.

@@ -1,0 +1,3 @@
+# Pycnonemosaurus – Preferred Prey & Diet
+
+Pycnonemosaurus always target carnivores first when hunting. They may not hunt a herbivore if a suitable carnivore prey is within line of sight. Pycnonemosaurus may hunt up to Large tier if they are solo, or any tier if grouped with 2+ members. Pycnonemosaurus ignore all Small tier and below carnivores, and only kill them in defence. However, Pycnonemosaurus may hunt any attended or unattended hatchling or juvenile individuals at any time-- whether herbivore or carnivore. Pycnonemosaurus do not cannibalize. Pycnonemosaurus are unable to eat the bodies of Metriacanthosaurus without suffering averse side effects. See 📜・server-guideOPTIONAL - Illnesses & Injuries for more information.

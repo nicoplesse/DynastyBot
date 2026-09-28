@@ -1,0 +1,3 @@
+# Concavenator – Overview
+
+Medium Cathemeral Semi-Aquatic Carnivore Concavenator are classified as semi-aquatic and terrestrial and may use water to their advantage in all situations. Concavenator can third party. Concavenator can third party only if the hunter OR the hunted come within 2 bodylengths of the water. Concavenator form temporary pairbonds. Concavenator are sedentary. Concavenator have an aggressive nature. At the communal nesting ground, they are tolerant. Concavenator scavenge when solo, and do not when grouped. Concavenator do not tolerate scavengers. Concavenator cannibalize albino, and tolerate other mutated individuals.

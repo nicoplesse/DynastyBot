@@ -1,0 +1,3 @@
+# Sarcosuchus – Day Hunting Strategy
+
+During the day, Sarcosuchus spend a lot of time in water chasing down fish stocks, or basking on the shoreline. When hunting at this time, all hunts for Sarcosuchus must be started within 2 body lengths of water. If a hit lands, they may pursue in land to chase the prey down, but do not pursue if they miss their first attack. When hunting from water, they may hunt up to Apex tier. Sarcosuchus are quick to react to sudden vibrations in the water, or a glimmer of another species getting close to the shore. Sarcosuchus may accidentally grasp their own offspring in their jaws if they behave erratically, confusing them for fast moving prey. Halzkaraptor prove to be a delicious snack for Sarcosuchus stealthy enough to catch them.

@@ -1,0 +1,3 @@
+# Daspletosaurus – Albino & Melanistic Behavior
+
+Albino Daspletosaurus are considerably weaker and more fragile than their healthier counterparts, and seen as sickly are cannibalized by healthy Daspletosaurus - even if they are in the same pack. If a cub is found to be Albino, the dominant pair of the group will attempt to cannibalize the pup, to ensure the health of their offspring and litter. Their mothers may attempt to defend the pup by putting herself in the way, but with nudges from the males, she will eventually relent and gather the rest of her healthy pups close to her. Other mutated individuals face no challenges, other than melanistic males which are seen as female and may face problems courting, and proving themselves as dominant individuals in a pack.

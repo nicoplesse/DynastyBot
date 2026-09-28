@@ -1,26 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, writeFile, readFile, readdir, rm, access } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildProcessedData } from './processor.js';
 import { createApp } from './app.js';
 import { buildAnalogIndex, normalizeTerm, resolveAnalog, searchAnalogs } from './analogs.js';
+import { listPlayables } from './playables.js';
 
 const projectData = fileURLToPath(new URL('../../data/', import.meta.url));
 const vocabulary = JSON.parse(await readFile(join(projectData, 'reference', 'analog-vocabulary.json'), 'utf8'));
 
 test('every real playable has a curated analog that uses the controlled vocabulary', async () => {
-  const rawDir = join(projectData, 'raw');
-  const ids = [];
-  for (const entry of await readdir(rawDir, { withFileTypes: true })) {
-    if (!entry.isDirectory() || entry.name === 'server-rules') continue;
-    if (await access(join(rawDir, entry.name, 'manifest.json')).then(() => true, () => false)) ids.push(entry.name);
-  }
-  assert.ok(ids.length > 0);
-  for (const id of ids) {
-    const doc = JSON.parse(await readFile(join(rawDir, id, 'analog.json'), 'utf8'));
+  const playables = await listPlayables(join(projectData, 'raw'));
+  assert.ok(playables.length > 0);
+  for (const { id, dir } of playables) {
+    const doc = JSON.parse(await readFile(join(dir, 'analog.json'), 'utf8'));
     assert.equal(doc.source, 'curated', id);
     assert.ok(doc.analogs.length >= 1 && doc.analogs.length <= 2, `${id} has one or two animals`);
     assert.equal(doc.analogs.reduce((sum, analog) => sum + analog.share, 0), 100, `${id} shares add up to 100`);

@@ -1,0 +1,3 @@
+# Apatosaurus – Bachelor Groups
+
+Bulls without a pod often gather together in unrelated bachelor groups that travel at the back of the wider herd. These groups are tolerant of one another but far less intimate and affectionate than pods, with members shifting in and out as they gain mates, and looser social bonds forming. As they age, bulls without a pod and without a lifelong bond may eventually adapt to a more solitary existence - travelling further and further at the back of the herd before eventually splitting off to remain alone. Though aloof, this type of permanent isolation is rare, and most bulls opt to travel at the very back, even with advanced age.

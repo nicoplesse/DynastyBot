@@ -1,0 +1,3 @@
+# Alioramus – Courtship Outside a Pack
+
+If a pack consists of no suitable males for courtship - such as packs composed solely of offspring or relatives of both females - the females may lead the pack to a universal courtship grounds in Star Ravine, a secluded waterfall area within Wollemi Forest. Multiple packs may co-exist temporarily in this area. Females tolerate other females so long as distance is maintained, and interactions remain solely focused on courtship. The courtship ritual for males outside the pack is the same as when courting within a pack, but the packs do not merge, and instead go their separate ways after courtship.

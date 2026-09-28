@@ -1,0 +1,3 @@
+# Deinonychus – Same Sex Males
+
+Same sex courting does not have an overall, direct process between males. It is slow burning and builds over time, much like with females, but is often laster longing. Presenting another male with a hunting trophy helps secure a partnership between two males. This prestigious gift is very valuable, and holds a lot of weight, particularly among other males who might use them to garner favor from a female. Same-sex couples spend much of their time together, and particularly enjoy being caretakers to any fledglings within the dynasty. Same-sex males still keep the instinct to pass on their genetics, and may accept courting from females when approached - but quickly return to their male partner after.

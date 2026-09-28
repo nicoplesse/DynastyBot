@@ -6,6 +6,7 @@ import { combineStats } from './stats-model.js';
 import { buildMatchups } from './matchups.js';
 import { attachAnalogRelatives, buildAnalogIndex, resolveAnalog } from './analogs.js';
 import { buildEcosystemIndex, resolveEcosystem } from './ecosystems.js';
+import { readVariants } from './playables.js';
 
 const projectRoot = fileURLToPath(new URL('../../', import.meta.url));
 const defaultRawDir = join(projectRoot, 'data', 'raw');
@@ -243,6 +244,13 @@ function shapeCenter(shape) {
   if (shape.type === 'polygon' && Array.isArray(shape.points) && shape.points.length) {
     const valid = shape.points.filter(point => Array.isArray(point) && typeof point[0] === 'number' && typeof point[1] === 'number');
     if (!valid.length) return null;
+    // Area centroid: traced outlines have many more points along ragged edges.
+    let area = 0, cx = 0, cy = 0;
+    valid.forEach(([x0, y0], i) => {
+      const [x1, y1] = valid[(i + 1) % valid.length], cross = x0 * y1 - x1 * y0;
+      area += cross; cx += (x0 + x1) * cross; cy += (y0 + y1) * cross;
+    });
+    if (Math.abs(area) > 1e-9) return { x: cx / (3 * area), y: cy / (3 * area) };
     return {
       x: valid.reduce((sum, point) => sum + point[0], 0) / valid.length,
       y: valid.reduce((sum, point) => sum + point[1], 0) / valid.length,
@@ -277,6 +285,8 @@ function resolveMap(poiDoc, routeDoc, regions) {
       regionId: poi.regionId || null,
       name: poi.label || base.name || poi.regionId || 'POI',
       shape: poi.shape || base.shape || null,
+      anchor: poi.shape ? null : base.anchor || null,
+      ecosystems: poi.ecosystems || base.ecosystems || [],
       biome: poi.biome || base.biome || null,
       moisture: poi.moisture || base.moisture || null,
       water: poi.water || base.water || null,
@@ -375,6 +385,7 @@ function accumulateMapIndex(index, profile) {
       pushUnique(bucket.dinoIds, profile.id);
     }
     if (marker.biome) pushUnique((index.biome[marker.biome] ||= { dinoIds: [] }).dinoIds, profile.id);
+    for (const eco of marker.ecosystems || []) pushUnique((index.landscape[eco] ||= { dinoIds: [] }).dinoIds, profile.id);
   }
   for (const route of map.routes || []) {
     for (const wp of route.waypoints) {
@@ -386,6 +397,18 @@ function accumulateMapIndex(index, profile) {
   if ((map.routes || []).length) pushUnique(index.groups.migration, profile.id);
 }
 
+// The map's landscape layer: every ecosystem with the POI areas whose main character it is
+// (`regions`) and those where it is a strong secondary trait (`also`).
+function buildLandscapes(regions, ecosystemDoc) {
+  const areas = regions.list.filter(region => region.shape?.type === 'polygon' && Array.isArray(region.ecosystems) && !region.id.startsWith('rex-'));
+  return (ecosystemDoc?.ecosystems || []).map(eco => ({
+    id: eco.id, label: eco.label, de: eco.de, description: eco.description,
+    regions: areas.filter(region => region.ecosystems[0] === eco.id).map(region => region.id),
+    also: areas.filter(region => region.ecosystems.slice(1).includes(eco.id)).map(region => region.id),
+    water: eco.id === 'freshwater' ? 'layers/freshwater.png' : null,
+  }));
+}
+
 function finalizeMapIndex(index) {
   index.generatedAt = new Date().toISOString();
   index.groups.dry.sort();
@@ -393,6 +416,7 @@ function finalizeMapIndex(index) {
   index.groups.migration.sort();
   for (const bucket of Object.values(index.moisture)) bucket.dinoIds.sort();
   for (const bucket of Object.values(index.biome)) bucket.dinoIds.sort();
+  for (const bucket of Object.values(index.landscape)) bucket.dinoIds.sort();
   for (const bucket of Object.values(index.regions)) bucket.dinoIds.sort();
 }
 
@@ -474,8 +498,43 @@ function parseProfile(manifest, raw, reference = null, referenceFetchedAt = null
     ingame: ingame || (coverFile ? { file: coverFile, kind: 'unreviewed', note: null } : null),
     map,
     habitat,
+    variant: null,
     source: { importedAt: manifest.importedAt, profileFile: `data/raw/${manifest.id}/profile.txt`, statsSource: stats.sourceLabel },
   };
+}
+
+// A variant's map keeps only its own POIs plus the shared ones (no variant, or "both").
+function variantPoiDoc(poiDoc, variantId) {
+  if (!poiDoc) return null;
+  const others = new Set((poiDoc.variants || []).map(item => item.id).filter(id => id !== variantId));
+  return {
+    ...poiDoc,
+    legend: poiDoc.legend ? Object.fromEntries(Object.entries(poiDoc.legend).filter(([key]) => !others.has(key))) : null,
+    variants: (poiDoc.variants || []).filter(item => item.id === variantId),
+    pois: (poiDoc.pois || []).filter(poi => !poi.variant || poi.variant === 'both' || poi.variant === variantId),
+  };
+}
+
+// Turns the parsed parent profile into one of its variant playables. Stats, speeds, images and
+// the official text stay the parent's; the id, name and map become the variant's own. The
+// parent's name stays an alias so other profiles that name "Megalania" reach both variants.
+function applyVariant(profile, variant, variants, poiDoc) {
+  const parent = { id: profile.id, name: profile.name };
+  const poiVariant = (poiDoc?.variants || []).find(item => item.id === variant.variant);
+  profile.id = variant.id;
+  profile.name = variant.name;
+  profile.aliases = [...new Set([parent.name, ...(variant.aliases || []), ...profile.aliases])];
+  profile.variant = {
+    id: variant.variant,
+    label: variant.label,
+    de: variant.de || null,
+    title: variant.title || null,
+    parentId: parent.id,
+    parentName: parent.name,
+    note: variant.note || poiVariant?.note || '',
+    siblings: variants.filter(other => other.id !== variant.id).map(other => ({ id: other.id, name: other.name, variant: other.variant, label: other.label, de: other.de || null, title: other.title || null })),
+  };
+  profile.source.rawId = parent.id;
 }
 
 function parseRules(manifest, raw) {
@@ -527,7 +586,7 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   const ecosystemDoc = await optionalReference('ecosystems.json');
   const analogDocs = new Map();
   const regions = await loadRegions(join(dirname(rawRoot), 'map', 'regions.json'));
-  const mapIndex = { schemaVersion: 1, generatedAt: null, dryMoisture: [...DRY_MOISTURE], groups: { dry: [], aquatic: [], migration: [] }, moisture: {}, biome: {}, regions: {}, dinos: {} };
+  const mapIndex = { schemaVersion: 1, generatedAt: null, dryMoisture: [...DRY_MOISTURE], groups: { dry: [], aquatic: [], migration: [] }, moisture: {}, biome: {}, landscape: {}, regions: {}, dinos: {} };
   const profileOutput = join(outputRoot, 'profiles');
   await mkdir(rawRoot, { recursive: true });
   await rm(profileOutput, { recursive: true, force: true });
@@ -553,15 +612,25 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
           if (error.code === 'ENOENT') return null;
           throw error;
         });
-        const analogDoc = await readFile(join(directory, 'analog.json'), 'utf8').then(JSON.parse).catch(error => {
-          if (error.code === 'ENOENT') return null;
-          throw error;
-        });
         const ingame = await resolveIngameCover(manifest, directory, ingameCovers[manifest.id]);
-        const profile = parseProfile(manifest, raw, references?.sources?.[manifest.id], references?.fetchedAt, poiDoc, regions, routeDoc, speeds, ingame);
-        if (analogDoc) analogDocs.set(profile.id, analogDoc);
-        profiles.push(profile);
-        accumulateMapIndex(mapIndex, profile);
+        const variants = await readVariants(directory);
+        for (const variant of variants.length ? variants : [null]) {
+          const contentDir = variant ? variant.dir : directory;
+          const profile = parseProfile(manifest, raw, references?.sources?.[manifest.id], references?.fetchedAt, variant ? variantPoiDoc(poiDoc, variant.variant) : poiDoc, regions, routeDoc, speeds, ingame);
+          if (variant) applyVariant(profile, variant, variants, poiDoc);
+          const analogDoc = await readFile(join(contentDir, 'analog.json'), 'utf8').then(JSON.parse).catch(error => {
+            if (error.code === 'ENOENT') return null;
+            throw error;
+          });
+          if (analogDoc) analogDocs.set(profile.id, analogDoc);
+          // Personal play guide ("profile above the profile"): curated prose, the profile stays the law.
+          profile.playstyle = await readFile(join(contentDir, 'playstyle.json'), 'utf8').then(JSON.parse).catch(error => {
+            if (error.code === 'ENOENT') return null;
+            throw error;
+          });
+          profiles.push(profile);
+          accumulateMapIndex(mapIndex, profile);
+        }
       }
     } catch { /* Incomplete raw imports remain untouched and are omitted. */ }
   }
@@ -594,6 +663,8 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
       analogs: profile.analog.analogs.map(({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo }) => ({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo: photo ? { image: photo.image, focus: photo.focus } : null })),
       moods: profile.analog.moods.map(mood => mood.id), habitats: profile.analog.setting.habitats.map(habitat => habitat.id),
     } : null,
+    solo: profile.playstyle?.solo?.fit || null,
+    variant: profile.variant ? { id: profile.variant.id, label: profile.variant.label, de: profile.variant.de, title: profile.variant.title, parentId: profile.variant.parentId, parentName: profile.variant.parentName } : null,
     ecosystem: profile.ecosystem ? { id: profile.ecosystem.id, level: profile.ecosystem.foodChain.level, also: profile.ecosystem.also.map(item => item.id) } : null,
     cover: profile.media.find(media => media.role === 'cover') || null, importedAt: profile.source.importedAt,
   }));
@@ -601,7 +672,7 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   await writeFile(join(outputRoot, 'index.json'), JSON.stringify(catalog, null, 2) + '\n');
   finalizeMapIndex(mapIndex);
   if (regions.list.length) {
-    await writeFile(join(outputRoot, 'map.json'), JSON.stringify({ schemaVersion: 1, map: regions.meta, vocabulary: regions.vocabulary, regions: regions.list }, null, 2) + '\n');
+    await writeFile(join(outputRoot, 'map.json'), JSON.stringify({ schemaVersion: 1, map: regions.meta, vocabulary: regions.vocabulary, landscapes: buildLandscapes(regions, ecosystemDoc), regions: regions.list }, null, 2) + '\n');
     await writeFile(join(outputRoot, 'map-index.json'), JSON.stringify(mapIndex, null, 2) + '\n');
   } else {
     await rm(join(outputRoot, 'map.json'), { force: true });

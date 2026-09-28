@@ -1,0 +1,3 @@
+# Torvosaurus – Sisterhoods
+
+Females naturally form a sisterhood when they disperse from their natal packs, preferring to stick together with their sisters and half sisters where possible. Even unrelated females may form sisterhoods as they travel, keen to forge female friendships and bonds with others. Females have nothing to prove to one another, and forming a sisterhood together is usually a peaceful and simple process - providing they have room to accommodate each other. Though bonds will be shallow at first, females invest a lot of time on grooming and hunting together to deepen their connection to one another. They actively engage in social interactions, finding comfort and companionship in each other's presence.

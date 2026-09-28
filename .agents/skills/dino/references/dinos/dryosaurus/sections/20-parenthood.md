@@ -1,0 +1,3 @@
+# Dryosaurus – Parenthood
+
+When kits hatch, both parents provide care to them and take turns fetching food or play items to entertain them. If a submissive Dryosaurus is nesting, they are permitted by the dominant Dryosaurus within the warren to pick up and carry berries for their offspring to hatch. At all other times, submissive Dryosaurus are not permitted near the berry bushes. They make sure at least one of them is always with the nest at all times, especially as kits begin to open their eyes and start imprinting. Parents show a lot of affection and care to kits, and happily involve them with the rest of the warren and other kits in the group.

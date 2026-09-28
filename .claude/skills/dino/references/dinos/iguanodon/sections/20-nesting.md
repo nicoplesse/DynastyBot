@@ -1,0 +1,3 @@
+# Iguanodon – Nesting
+
+Once pairings are secured and nests are dug, bulls promptly redirect their attention to other cows in the group, happily engaging in further bullfights and gift giving in the means to court with as many females as possible. After all courtship is over, bulls return back to the females they courted successfully, taking time to go between each female and show her affection. Bulls that only nest with one female sometimes go further - bringing the cow a gift of food while she incubates their eggs. Such behavior is thought to be beneficial for bulls, as spending time and building bonds with cows can help encourage her to court him again next breeding season.

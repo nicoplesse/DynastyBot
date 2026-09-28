@@ -1,0 +1,3 @@
+# Ceratosaurus – Engagement Limits
+
+Only 4 adult Ceratosaurus may enter an engagement or hunt at any one time. Offspring are permitted to join hunts by running alongside adults, but are not allowed to engage in combat. Where possible, Ceratosaurus prefer to contest for an already-claimed body before hunting. Contesting for a claimed body can be done at any time of day regardless of activity schedule. If a claimed body is present in the POI, Ceratosaurus must challenge for this body before initiating a hunt on other prey, if they are able to. Ceratosaurus can hunt up to Large tier if the pack numbers fewer than 4 adults. Ceratosaurus can hunt Apex tier only when there are 4 adults in the hunting party. Ceratosaurus may tolerate scavengers if full.

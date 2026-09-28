@@ -1,0 +1,3 @@
+# Pachycephalosaurus – Leader Social Behavior
+
+Leaders tend to be the most outgoing and proactive members of the band. They seek out other leaders to sleep beside during the night, and when active, will be the first to encounter a new member of the group. Sometimes bands have one leader, sometimes many. As a species that breeds often, bands are in a constant state of change. Yearlings can have outgoing personalities which move them up to leaders as they mature, while others will remain as followers until they have settled enough to be more assertive and can defend their space from more confident or skilled leaders.

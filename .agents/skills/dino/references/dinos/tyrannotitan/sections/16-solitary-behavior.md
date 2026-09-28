@@ -1,0 +1,3 @@
+# Tyrannotitan – Solitary Behavior
+
+A solitary Tyrannotitan exudes the same confidence as any other individual, though may appear more hesitant when faced with a pair of the same sex. Some Tyrannotitan opt to remain alone, finding it easier to rely only on themselves and securing meals without the need to share it. Tyrannotitan who roam territories alone more frequently inspect noises and fall silent, often adapting to a quieter approach. Boars and sows alike frequently rub their faces and necks against trees, often more so than their paired counterparts. This may serve as an intimidation tactic.

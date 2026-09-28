@@ -1,0 +1,3 @@
+# Argentinosaurus – Notes
+
+If a calf dies outside of combat, the mother of the calf may remain with the body, cooing and singing a mournful song for up to two minutes before leaving the body to scavengers. If a calf dies during a hunt, the mother may do the same as above, but only for 30 seconds before she must abandon the body to the predators. During these 30 seconds she may attack any predator that tries to eat from the body. When nesting, Argentinosaurus must nest in one of the nesting areas in their preferred POI. They cannot leave the nesting grounds until their offspring reach adolescent.

@@ -1,0 +1,3 @@
+# Alioramus – Food Aggression
+
+In packs without females, feeding is a highly competitive event. Dominant males routinely bully subordinates to secure first access to meals, often forcing weaker individuals to wait until most of the food is gone. In mixed-sex packs, females regulate this feeding behavior. They position themselves at kills and limit male bullying, ensuring all group members are able to eat before disputes escalate. Alioramus are extremely possessive of food toward ungrouped individuals. Lone or unaffiliated Alioramus approaching a carcass are aggressively driven off to protect their claim.

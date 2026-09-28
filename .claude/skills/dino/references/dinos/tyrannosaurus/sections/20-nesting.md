@@ -1,0 +1,3 @@
+# Tyrannosaurus – Nesting
+
+Whether a bond is newly formed or fully established already, all nesting activities begin with the female placing her nest in a suitable part of the pair's territory. The male assists the female with nest building, and both parents take it in turns to lay beside the nest, keeping eggs warm. Both parents are highly alert and aggressive at this stage, ready to attack any species that ventures too close to the nest, with the exception of Compsognathus, who are permitted to run between the clutch. The first nest between a pair solidifies their bond for life, beginning the start of an unbreakable, lifelong pairbond.

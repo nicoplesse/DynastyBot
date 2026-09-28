@@ -1,0 +1,3 @@
+# Torvosaurus – Overview
+
+Large Cathemeral Terrestrial Carnivore Torvosaurus hunts exclusively during the day, but may perform all other activities at any time. Torvosaurus form harem bonds. Torvosaurus are sedentary. Torvosaurus are territorial towards other Torvosaurus when in a full pack, and will not share a POI with them. The only exception is if Ampelosaurus, Apatosaurus or Argentinosaurus are in the POI. Torvosaurus will tolerate other Torvosaurus in this instance to work together to bring down one of these sauropods. Solitary males or coalitions are nomadic, in search of opportunities and females. Torvosaurus have an aggressive nature. Torvosaurus are not scavengers. Torvosaurus cannibalize albino and tolerate melanistic individuals.

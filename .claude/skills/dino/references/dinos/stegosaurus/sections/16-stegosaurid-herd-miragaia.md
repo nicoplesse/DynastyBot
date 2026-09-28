@@ -1,0 +1,3 @@
+# Stegosaurus – Stegosaurid herd: Miragaia
+
+Miragaia are accepted into Stegosaurus groups, turning a zeal into a stegosaurid herd. Once part of a herd, Miragaia is considered a faithful group member, and defended the same as if they were Stegosaurus themselves. If stumbling upon an orphaned Miragaia baby, both genders of Stegosaurus are known to adopt and raise the abandoned young. Miragaia are a very protective and observant species, and Stegosaurus trust these guardians to watch over young and help defend resources from rivals. Stegosaurus willingly defend Miragaia from threats, and join them in engagements.

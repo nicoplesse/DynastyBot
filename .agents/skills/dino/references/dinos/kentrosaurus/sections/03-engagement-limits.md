@@ -1,0 +1,3 @@
+# Kentrosaurus – Engagement Limits
+
+Predator Reaction: Headstrong 4 Individuals may enter an engagement. Kentrosaurus may actively defend Miragaia and Stegosaurus grouped with them. Alongside up to 2 Stegosaurus and 1 Miragaia, up to 4 Kentrosaurus may engage. Fights between males over females are fought 1 on 1. Kentrosaurus not part of a stegosaurid herd with at least 1 Miragaia or Stegosaurus will flee from Apex carnivores. Kentrosaurus in a full bristle do not tolerate other Kentrosaurus bristles in the same POI, or near their stegosaurid herd, and must challenge them out or leave. Preferred Diet Kentrosaurus young are only able to digest soft fruits and berries. From juvenile, many Kentrosaurus expand their diets to include nuts, roots and flowers.

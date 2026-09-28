@@ -1,0 +1,3 @@
+# Latenivenatrix – Overview
+
+Small Nocturnal Terrestrial Carnivore Though nocturnal, Latenivenatrix may perform all activities during the day, except hunting. They may still hunt hatchlings, juveniles, deathscarred, and Albinos during the day. Latenivenatrix form temporary or lifelong pairbonds or trio-bonds, depending on individual preference. Latenivenatrix are somewhat nomadic and territorial, and claim small territories. These territories center around placed nests by the rookery when they settle for the daytime, and are defended by the entire group. Latenivenatrix have a  tolerant nature when not defending their territory. Latenivenatrix are scavengers when in groups of 3 or less. Latenivenatrix tolerate all mutated individuals.

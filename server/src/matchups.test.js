@@ -17,7 +17,7 @@ test('organic matchup map covers every profile with inspectable evidence and bou
   const map = buildMatchups(profiles);
   const ids = new Set(profiles.map(profile => profile.id));
 
-  assert.equal(profiles.length, 61);
+  assert.equal(profiles.length, 63);
   assert.deepEqual(Object.keys(map).sort(), [...ids].sort());
 
   for (const profile of profiles) {
@@ -64,18 +64,22 @@ test('known edge cases follow profile intent, speed, stamina, habitat and group 
   assert.equal(has('achillobator', 'opportunities', 'latenivenatrix'), undefined, 'a hunting companion is not prey');
   assert.ok(has('achillobator', 'threats', 'kelenken')?.intent.explicit, 'Achillobator sees its named Kelenken danger');
 
-  assert.ok(has('tyrannosaurus', 'opportunities', 'eotriceratops'), 'Eotriceratops is legal but risky Rex quarry');
-  assert.equal(has('tyrannosaurus', 'opportunities', 'eotriceratops').fight.verdict, 'close');
+  // Eotriceratops only shares Hollow Hills with Rex on the maps, so the heavier overlap is Redwoods.
+  assert.ok(has('tyrannosaurus', 'opportunities', 'amargasaurus'), 'Amargasaurus is legal but risky Rex quarry');
+  assert.equal(has('tyrannosaurus', 'opportunities', 'amargasaurus').fight.verdict, 'close');
   assert.ok(map.tyrannosaurus.specialRisks.some(risk => /Albino/i.test(risk.summary)), 'Albino Rex cannibalism exception is preserved');
-  const rexRival = has('tyrannosaurus', 'threats', 'tyrannotitan') || has('tyrannosaurus', 'threats', 'giganotosaurus');
-  assert.equal(rexRival?.band, 'conditional', 'rare Apex rival contact is not presented as a routine loss');
+  // Rex and Tyrannotitan only meet at Cliff Edge Falls and Crag Bluffs; Yutyrannus and Giganotosaurus hold different POIs.
+  assert.equal(has('tyrannosaurus', 'threats', 'tyrannotitan')?.encounter.level, 'possible', 'Apex rival contact is situational, not frequent');
+  assert.equal(has('giganotosaurus', 'threats', 'yutyrannus')?.band, 'conditional', 'rare Apex rival contact is not presented as a routine loss');
 
   for (const prey of ['kaiwhekea', 'eurhinosaurus', 'leedsichthys', 'parasaurolophus', 'lambeosaurus']) {
     assert.ok(has('tylosaurus', 'opportunities', prey)?.intent.explicit, `Tylosaurus priority prey: ${prey}`);
   }
   assert.equal(has('tylosaurus', 'opportunities', 'kaiwhekea').chase.mode, 'water');
-  assert.ok(has('spinosaurus', 'opportunities', 'deinosuchus')?.intent.explicit);
-  assert.ok(has('spinosaurus', 'opportunities', 'sarcosuchus')?.intent.explicit);
+  assert.ok(has('spinosaurus-freshwater', 'opportunities', 'deinosuchus')?.intent.explicit);
+  assert.ok(has('spinosaurus-freshwater', 'opportunities', 'sarcosuchus')?.intent.explicit);
+  assert.ok(has('spinosaurus-saltwater', 'opportunities', 'tylosaurus')?.intent.explicit, 'the saltwater Spinosaurus may hunt Tylosaurus anywhere');
+  assert.equal(has('spinosaurus-saltwater', 'opportunities', 'spinosaurus-freshwater'), undefined, 'Spinosaurus never hunt their own kind');
   assert.ok(has('deinosuchus', 'opportunities', 'sarcosuchus')?.intent.explicit);
   assert.equal(has('torvosaurus', 'opportunities', 'thalassodromeus'), undefined, 'a tolerated ally is not prey');
 });

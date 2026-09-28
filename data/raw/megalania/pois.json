@@ -7,29 +7,204 @@
     "courtship": "Courtship ground (yellow on the profile map)"
   },
   "variants": [
-    { "id": "arid", "name": "Arid Variant", "moisture": "arid", "note": "Native to dry scrubland and deserted, rocky areas. Warm reds/browns/yellows. Melanistics count as arid. More solitary and space-defensive." },
-    { "id": "temperate", "name": "Temperate Variant", "moisture": "wet", "note": "Inhabits wetter woodlands, swamps and river systems. Cooler colors. More tolerant, group-basks by riverbanks." }
+    {
+      "id": "arid",
+      "name": "Arid Variant",
+      "moisture": "arid",
+      "note": "Native to dry scrubland and deserted, rocky areas. Warm reds/browns/yellows. Melanistics count as arid. More solitary and space-defensive."
+    },
+    {
+      "id": "temperate",
+      "name": "Temperate Variant",
+      "moisture": "wet",
+      "note": "Inhabits wetter woodlands, swamps and river systems. Cooler colors. More tolerant, group-basks by riverbanks."
+    }
   ],
   "notes": "Megalania split into two populations by region. Variants do not tolerate each other in their preferred POIs (challenged out), except at the universal courtship ground.",
   "pois": [
-    { "regionId": "dry-fang-canyon", "variant": "arid", "roles": ["territory", "basking", "nesting"], "note": "Core arid range; sunny rock for basking and dry-season nesting." },
-    { "regionId": "sharptooth-oasis", "variant": "arid", "roles": ["territory", "basking"], "note": "Arid oasis; rare water within dry ground." },
-    { "regionId": "black-fern-hills", "variant": "arid", "roles": ["territory", "basking"], "note": "Dry western fern hills favoured by the arid variant." },
-    { "regionId": "cedrus-forest", "variant": "arid", "roles": ["territory"], "note": "Dry-leaning forest at the edge of the arid range." },
-    { "regionId": "rockfall-hill", "variant": "arid", "roles": ["territory", "basking"], "note": "Rocky prime basking spot." },
-    { "regionId": "mud-perch", "variant": "arid", "roles": ["territory"], "note": "Western pooled water inside the arid range." },
-    { "regionId": "cliff-edge-falls", "variant": "arid", "roles": ["territory"], "note": "South-western boundary of the arid range." },
-    { "regionId": "big-tree-overlook", "variant": "arid", "roles": ["territory"], "note": "Highland overlook within the arid range." },
-
-    { "regionId": "twisted-forest", "variant": "temperate", "roles": ["territory", "resting"], "note": "Core temperate range; wet forest and river." },
-    { "regionId": "mudflats", "variant": "temperate", "roles": ["territory", "resting"], "note": "Brackish flats favoured by temperate individuals." },
-    { "regionId": "stillwater-bog", "variant": "temperate", "roles": ["territory", "resting"], "note": "Slow water for wallowing and fishing." },
-    { "regionId": "coastland-swamp", "variant": "temperate", "roles": ["territory"], "note": "Wet south-eastern swamp." },
-    { "regionId": "wollemi-forest", "variant": "temperate", "roles": ["territory", "resting"], "note": "Wet ancient forest at the south-east." },
-    { "regionId": "lakeside-meadow", "variant": "temperate", "roles": ["territory", "basking"], "note": "Group-basking by the lakeshore." },
-    { "regionId": "roots-pond", "variant": "temperate", "roles": ["territory"], "note": "Forest pond within the temperate range." },
-    { "regionId": "grand-falls", "variant": "temperate", "roles": ["territory"], "note": "South-eastern river water." },
-
-    { "regionId": "volcano-islands", "variant": "both", "roles": ["courtship", "neutral"], "note": "Hot Springs — the universal courtship ground. Both variants gather to court and ignore one another here." }
-  ]
+    {
+      "regionId": "dry-fang-canyon",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking",
+        "nesting"
+      ],
+      "note": "Core arid range; sunny rock for basking and dry-season nesting."
+    },
+    {
+      "regionId": "sharptooth-oasis",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Arid oasis; rare water within dry ground."
+    },
+    {
+      "regionId": "black-fern-hills",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Dry western fern hills favoured by the arid variant."
+    },
+    {
+      "regionId": "cedrus-forest",
+      "variant": "arid",
+      "roles": [
+        "territory"
+      ],
+      "note": "Dry-leaning forest at the edge of the arid range."
+    },
+    {
+      "regionId": "tallbrush-coasts",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Dry northern brush coast inside the arid range (red on the profile map)."
+    },
+    {
+      "regionId": "steep-run",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Rocky ravine between Dry Fang Canyon and Cedrus Forest, part of the arid range."
+    },
+    {
+      "regionId": "rockfall-hill",
+      "variant": "arid",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Rocky prime basking spot."
+    },
+    {
+      "regionId": "mud-perch",
+      "variant": "arid",
+      "roles": [
+        "territory"
+      ],
+      "note": "Western pooled water inside the arid range."
+    },
+    {
+      "regionId": "cliff-edge-falls",
+      "variant": "temperate",
+      "roles": [
+        "territory"
+      ],
+      "note": "Falls and pools on the western edge of the temperate range (blue on the profile map)."
+    },
+    {
+      "regionId": "big-tree-overlook",
+      "variant": "arid",
+      "roles": [
+        "territory"
+      ],
+      "note": "Highland overlook within the arid range."
+    },
+    {
+      "regionId": "twisted-forest",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "resting"
+      ],
+      "note": "Core temperate range; wet forest and river."
+    },
+    {
+      "regionId": "mudflats",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "resting"
+      ],
+      "note": "Brackish flats favoured by temperate individuals."
+    },
+    {
+      "regionId": "stillwater-bog",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "resting"
+      ],
+      "note": "Slow water for wallowing and fishing."
+    },
+    {
+      "regionId": "coastland-swamp",
+      "variant": "temperate",
+      "roles": [
+        "territory"
+      ],
+      "note": "Wet south-eastern swamp."
+    },
+    {
+      "regionId": "wollemi-forest",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "resting"
+      ],
+      "note": "Wet ancient forest at the south-east."
+    },
+    {
+      "regionId": "coastal-bluffs",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Island bluffs in the north-east of the temperate range (blue on the profile map)."
+    },
+    {
+      "regionId": "east-passage",
+      "variant": "temperate",
+      "roles": [
+        "territory"
+      ],
+      "note": "Eastern coastal passage within the temperate range."
+    },
+    {
+      "regionId": "lakeside-meadow",
+      "variant": "temperate",
+      "roles": [
+        "territory",
+        "basking"
+      ],
+      "note": "Group-basking by the lakeshore."
+    },
+    {
+      "regionId": "roots-pond",
+      "variant": "temperate",
+      "roles": [
+        "territory"
+      ],
+      "note": "Forest pond within the temperate range."
+    },
+    {
+      "regionId": "grand-falls",
+      "variant": "temperate",
+      "roles": [
+        "territory"
+      ],
+      "note": "South-eastern river water."
+    },
+    {
+      "regionId": "volcano-islands",
+      "variant": "both",
+      "roles": [
+        "courtship",
+        "neutral"
+      ],
+      "note": "Hot Springs — the universal courtship ground. Both variants gather to court and ignore one another here."
+    }
+  ],
+  "reviewedAt": "2026-09-24",
+  "review": "Checked against the traced POI outlines: red areas are the arid range, blue areas the temperate range, as in the map legend."
 }

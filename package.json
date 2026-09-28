@@ -9,6 +9,7 @@
     "process": "npm run process -w server",
     "curate:pois": "npm run curate:pois -w server",
     "stats:refresh": "npm run stats:refresh -w server && npm run process",
+    "skills:build": "npm run process && npm run skills:build -w server",
     "test": "npm run test -w server"
   },
   "devDependencies": {

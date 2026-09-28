@@ -1,0 +1,3 @@
+# Tyrannotitan – Therizinosaurus
+
+Tyrannotitan have a fierce rivalry with the nocturnal Therizinosaurus. These therizinosaurids are known to aggressively cull Tyrannotitan offspring, and are thusly not tolerated, especially within the territories of nesting individuals. A Tyrannotitan must hunt a Therizinosaurus if within LOS before anything else in the POI if sufficient hunger, and must log hunger. If not sufficiently hungry, Therizinosaurus must be challenged from the POI. Therizinosaurus chicks may be culled if in LOS following a successful challenge, but Tyrannotitan must not leave a claimed body down to do so.

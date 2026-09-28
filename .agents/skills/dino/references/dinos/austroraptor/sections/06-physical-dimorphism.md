@@ -1,0 +1,3 @@
+# Austroraptor – Physical Dimorphism
+
+Austroraptor do not have physical dimorphism. This profile does not have high T or low T individuals. ♀️ Females are known as hens. When approached by others at the courtship ground, hens will softly coo as a means of introduction ( :friendly_call: ). ♂️ Males, known as drakes, greet others at the courtship ground by standing on one leg, bowing, stretching out their wings, and lifting their tail in the air (:question_emote: ). Austroraptor only take part in mandatory gendered greetings at the courtship grounds as means of introducing themselves to a new individual. When at the courtship grounds, it is mandatory to use the greeting aligned with the sex chosen at character creation.

@@ -1,0 +1,3 @@
+# Alioramus – High Testosterone and Low Testosterone Individuals
+
+High testosterone females are much snappier in their anxiety than other females, and display brighter colors. Males often show very little interest in courting these females - only courting her if no other females are available. Low testosterone males quickly fall to the bottom of the social hierarchy amongst males while within a pack. They struggle with fighting and submit when bitten much sooner, crouching and crying out. As a result, they are usually the last pick for females during courtship, and the first to be pushed out if more space is required for adult male offspring, or more suitable unrelated males.

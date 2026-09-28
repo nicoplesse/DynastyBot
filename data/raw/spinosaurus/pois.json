@@ -2,72 +2,310 @@
   "schemaVersion": 1,
   "mapImage": "images/image-2.png",
   "legend": {
-    "territory": "Claimable water territory (green on the profile map)",
-    "neutral": "Neutral / courtship ground (yellow on the profile map)"
+    "territory": "Claimable water territory (green on the profile map). A Spinosaurus holds exactly one territory at a time and roams only inside it",
+    "neutral": "Neutral / courtship ground (yellow on the profile map)",
+    "saltwater": "Freshwater drinking spot of the saltwater variant: outside its territory, visited to drink, never claimed or defended"
   },
-  "notes": "Spinosaurus claim medium water sources inside specific territory areas and may only hunt other players from within them. Territoriality is suppressed at neutral grounds.",
+  "notes": "Spinosaurus claim one water territory inside the claimable areas of the profile map (segmented lake, bog and river waters, bright-green river stretches and the bright-green sea areas) and roam only inside it. They may only hunt other players from within it. Territoriality is suppressed at neutral grounds. The profile notes that most claim freshwater lakes and rivers while some prefer saltwater; the archive splits these into a freshwater and a saltwater playable. The saltwater variant drinks at fresh water outside its territory and never defends it.",
   "pois": [
     {
       "regionId": "stillwater-bog",
-      "roles": ["territory", "hunting", "nesting"],
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
       "claimable": true,
       "territoryTier": "greater+lesser",
-      "prey": ["Deinosuchus", "Sarcosuchus", "up to Apex tier"],
-      "note": "Prime claimable freshwater basin (Greater & Lesser Stillwater Territory). Hunts of other players may only start here."
+      "prey": [
+        "Deinosuchus",
+        "Sarcosuchus",
+        "up to Apex tier"
+      ],
+      "note": "Prime claimable freshwater basin (Greater & Lesser Stillwater Territory). Hunts of other players may only start here.",
+      "variant": "freshwater"
     },
     {
       "regionId": "mudflats",
-      "roles": ["territory", "hunting", "nesting"],
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
       "claimable": true,
       "territoryTier": "greater+lesser",
-      "prey": ["Deinosuchus", "Sarcosuchus", "up to Apex tier"],
-      "note": "Brackish mudflat claim (Greater & Lesser Mudflats Territory)."
+      "prey": [
+        "Deinosuchus",
+        "Sarcosuchus",
+        "up to Apex tier"
+      ],
+      "note": "Brackish mudflat claim (Greater & Lesser Mudflats Territory).",
+      "variant": "freshwater"
     },
     {
       "regionId": "twisted-forest",
-      "roles": ["territory", "hunting", "nesting"],
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
       "claimable": true,
       "territoryTier": "greater+lesser",
-      "prey": ["up to Apex tier"],
-      "note": "Wet forest water claim (Greater & Lesser Twisted Territory)."
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Wet forest water claim (Greater & Lesser Twisted Territory).",
+      "variant": "freshwater"
     },
     {
       "regionId": "volcano-islands",
-      "roles": ["territory", "hunting", "nesting"],
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
       "claimable": true,
       "territoryTier": "segmented (Northern / Southern / Eastern Volcano Territory)",
-      "prey": ["up to Apex tier"],
-      "note": "Segmented claimable water among the volcanic islands."
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Segmented claimable water among the volcanic islands.",
+      "variant": "freshwater"
     },
     {
       "regionId": "redwood-wind",
-      "roles": ["territory", "hunting", "nesting"],
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
       "claimable": true,
       "territoryTier": "greater+lesser",
-      "prey": ["up to Apex tier"],
-      "note": "South-western water claim (Greater & Lesser Redwoods Territory)."
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "South-western water claim (Greater & Lesser Redwoods Territory).",
+      "variant": "freshwater"
+    },
+    {
+      "regionId": "big-tree-overlook",
+      "variant": "freshwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable river stretch through Big Tree Overlook and Cedar Valley (bright green on the profile map)."
+    },
+    {
+      "regionId": "tallbrush-coasts",
+      "variant": "freshwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable river stretches running through the Tallbrush Coasts to the sea (bright green on the profile map)."
+    },
+    {
+      "regionId": "cliff-edge-falls",
+      "variant": "freshwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable river and falls water at Cliff Edge Falls (bright green on the profile map)."
+    },
+    {
+      "regionId": "coastland-swamp",
+      "variant": "freshwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable brackish river bands through the Coastland Swamp (bright green on the profile map)."
+    },
+    {
+      "regionId": "kelp-vale",
+      "variant": "saltwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable sea territory: northern kelp shallows off the Tallbrush shore, where the Leedsichthys migration begins."
+    },
+    {
+      "regionId": "coastal-bluffs",
+      "variant": "saltwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting",
+        "basking"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable sea territory: high sea cliffs and the island around Scale Lake (salt water). Rocky shore to bask and nest on."
+    },
+    {
+      "regionId": "abyssal-depths",
+      "variant": "saltwater",
+      "roles": [
+        "territory",
+        "hunting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable sea territory: the deep eastern ocean. Open water with little shore, home of Tylosaurus; no beach to nest on."
+    },
+    {
+      "regionId": "palm-islands",
+      "variant": "saltwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting",
+        "basking"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable sea territory: the tropical island chain with Castaway Isle, on the Leedsichthys route. Beaches to bask and nest on."
+    },
+    {
+      "regionId": "stonebed-shoal",
+      "variant": "saltwater",
+      "roles": [
+        "territory",
+        "hunting",
+        "nesting"
+      ],
+      "claimable": true,
+      "territoryTier": "claimable (bright green)",
+      "prey": [
+        "up to Apex tier"
+      ],
+      "note": "Claimable sea territory: the offshore shoal on the Leedsichthys route, next to the Stonebed Shallows."
+    },
+    {
+      "regionId": "rocky-lake",
+      "variant": "saltwater",
+      "roles": [
+        "drinking"
+      ],
+      "claimable": false,
+      "note": "Fresh water on the northern volcanic fringe, nearest for Kelp Vale. Never claimed or defended by you; if a freshwater Spinosaurus holds this water, you are the intruder."
+    },
+    {
+      "regionId": "dark-pond",
+      "variant": "saltwater",
+      "roles": [
+        "drinking"
+      ],
+      "claimable": false,
+      "note": "Fresh pond among the Volcano Islands, nearest for Coastal Bluffs and Abyssal Depths. Never claimed or defended by you; if another Spinosaurus holds this water, you are the intruder."
+    },
+    {
+      "regionId": "lakeside-meadow",
+      "variant": "saltwater",
+      "roles": [
+        "drinking"
+      ],
+      "claimable": false,
+      "note": "Fresh lake shore south of Twisted Forest, nearest for Palm Islands and Stonebed Shoal. Never claimed or defended by you."
     },
     {
       "regionId": "triad-falls",
-      "roles": ["migration", "courtship", "neutral"],
+      "roles": [
+        "migration",
+        "courtship",
+        "neutral"
+      ],
       "claimable": false,
-      "note": "Ancestral neutral ground. Sub-adults migrate here to mature and secure a first pairbond; territoriality is suppressed and the water is not claimable."
+      "note": "Ancestral neutral ground. Sub-adults migrate here to mature and secure a first pairbond; territoriality is suppressed and the water is not claimable.",
+      "variant": "both"
     },
     {
       "regionId": "wollemi-forest",
-      "roles": ["courtship", "neutral"],
+      "roles": [
+        "courtship",
+        "neutral"
+      ],
       "claimable": false,
-      "note": "Alternate partner-seeking ground alongside Triad Falls."
+      "note": "Alternate partner-seeking ground alongside Triad Falls.",
+      "variant": "both"
     },
     {
       "regionId": "grand-falls",
-      "roles": ["courtship", "neutral"],
+      "roles": [
+        "courtship",
+        "neutral"
+      ],
       "claimable": false,
-      "note": "New-pair courtship ground & neutral area (yellow on the profile map)."
+      "note": "New-pair courtship ground & neutral area (yellow on the profile map).",
+      "variant": "both"
     }
   ],
   "anyPoiHunting": {
-    "prey": ["Fish", "Leedsichthys", "Tylosaurus", "critters", "corpses"],
+    "prey": [
+      "Fish",
+      "Leedsichthys",
+      "Tylosaurus",
+      "critters",
+      "corpses"
+    ],
     "note": "Fish, Leedsichthys and Tylosaurus may be hunted in any POI; other player hunts are restricted to claimed territory."
-  }
+  },
+  "variants": [
+    {
+      "id": "freshwater",
+      "name": "Freshwater Spinosaurus",
+      "moisture": "wet",
+      "note": "Most Spinosaurus \"possessively claim territory in freshwater lakes and rivers\": one territory among the segmented lake, bog and river waters or a claimable river stretch."
+    },
+    {
+      "id": "saltwater",
+      "name": "Saltwater Spinosaurus",
+      "moisture": "aquatic",
+      "note": "Some Spinosaurus prefer saltwater: one claimed sea territory (Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands or Stonebed Shoal), with fresh water to drink outside it that it never defends."
+    }
+  ],
+  "reviewedAt": "2026-09-27",
+  "review": "Checked with audit-pois: the sea areas Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands and Stonebed Shoal are 82-89 % bright green (claimable); river stretches at Big Tree Overlook, Tallbrush Coasts, Cliff Edge Falls and Coastland Swamp are bright green; the segmented territories are darker green."
 }

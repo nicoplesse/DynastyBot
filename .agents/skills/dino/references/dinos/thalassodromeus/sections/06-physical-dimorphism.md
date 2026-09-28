@@ -1,0 +1,3 @@
+# Thalassodromeus – Physical Dimorphism
+
+Both sexes have brightly colored crests and bodies, though younger adults, sickly individuals or those that are more submissive tend to be duller in comparison to the ‘dominant’, healthier adults. The brighter the crest and body, the healthier the individual is! ♀️ Females have shorter and more rounded crests than males. Suitable subspecies include: robustus ♂️ Males have bigger crests than females. Suitable subspecies include: sethi, cuneumi Thalassodromeus dimorphism is not mandatory, but those not conforming to the dimorphism may struggle to find a mate.

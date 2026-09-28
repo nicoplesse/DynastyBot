@@ -1,0 +1,3 @@
+# Tyrannosaurus – Solitary encountering solitary or a pair
+
+When two solitary Tyrannosaurus cross paths, the first response is a tense assessment of the other's sex. Same-sex encounters are immediately hostile. The intruder must be driven out, or the original Tyrannosaurus must flee the POI. Opposite-sex encounters are afforded some hesitancy. If one of the two individuals does not initiate courtship behavior quickly, the opportunity passes, and the intruder is shown aggression. Solitary Tyrannosaurus holding territory that is encroached upon by a pair must make a decision: either attempt to threaten and fight the pair out, or abandon the territory for themselves.

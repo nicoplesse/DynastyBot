@@ -1,0 +1,3 @@
+# Apatosaurus – Parenthood
+
+Apatosaurus are absent parents by necessity for the first few stages of a calf's life - but finally get the chance to parent them once calves reach adolescence, and make their journey to be reunited with their parents. Both parents - if available - rush over to greet their young, whom they instinctively recognize through scent. Overjoyed to be united, they offer them soft, tender nuzzles and drape their necks over them protectively. Once all calves are reunited (or adopted), the herd continues migrating, with calves eagerly indulged and doted on by parents as they travel alongside their parents.

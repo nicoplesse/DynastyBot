@@ -1,0 +1,3 @@
+# Pachyrhinosaurus – Defensive Formation
+
+Pachyrhinosaurus stand their ground, moving together to form a defensive formation, depending on the terrain around them. Cows with young use their bodies to block the predator's view from their offspring. Some cows drop their heads towards the ground in a block position, hoping to deter damage to her and those she defends. Bulls, especially those in a shield, roar in challenge to the predator, standing shoulder to shoulder with his sons or brothers, who stick close to his side. When in an open area a circle is preferred, but a wall formation is also used if they are able to back up against terrain such as cliff faces.

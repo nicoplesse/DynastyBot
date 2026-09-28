@@ -1,0 +1,3 @@
+# Rhamphorhynchus – Nesting
+
+A harem or pair will stay bonded until a suitable nesting ground is found; preferably near a sauropod or suitable herbivore herd. Rhamphorhynchus nest communally near water and on cliffsides. Pens lead and choose a suitable place for nesting, more often than not nearby the nests of sauropods or other herbivores. Drakes help them fill the nests with food in order to ensure that the hatchlings remain fed and that they do not starve. Mothers remain perched on top of nests until the eggs hatch, loudly calling at anything that comes near. Drakes, and other females, ferociously flock to and mob individuals that are unwelcome near their nests. Curious baby herbivores and their parents are reluctantly tolerated.

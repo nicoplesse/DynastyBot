@@ -1,0 +1,3 @@
+# Maip – Tyrannotitan
+
+Maip keep Tyrannotitan at a distance from them, and engage in a game of back and forth shrieking calls throughout the night. Though initially considered almost a form of entertainment for the Maip, it is also considered to be a defensive gesture - by highlighting their location and distracting the Tyrannotitan, they more effectively manage to keep their distance, and track if they get too close to them. Should Tyrannotitan take Maip unaware, they flee at all costs - with the only exception being a closely bonded individual (a sibling, or mate) being outright attacked, prompting the Maip to try and defend them.

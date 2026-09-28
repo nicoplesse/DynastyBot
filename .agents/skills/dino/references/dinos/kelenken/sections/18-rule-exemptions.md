@@ -1,0 +1,3 @@
+# Kelenken – Rule Exemptions
+
+Kelenken may hunt any protected hatchling or juvenile, unless it is protected by an apex carnivore or maip 1.10.1 If there is a territory challenge issued between two full casts, all sub adult and adult Kelenken within the cast may engage. 1.3 If a Kelenken's mate has died due to a predator hunting them, they may defend the corpse for up to 1 minute before allowing the predator to claim it. 5.1.1 Kelenken are unable to eat the bodies of Metriacanthosaurus without suffering averse side effects. See 📜・server-guideOPTIONAL - Illnesses & Injuries for more information. 4.4

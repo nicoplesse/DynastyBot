@@ -1,0 +1,3 @@
+# Yutyrannus – Colonies
+
+Colonies, groups of up to 6 Sub/Adults, are individuals of any relation, typically unrelated individuals eager to socialize and court. These groups have no social hierarchy, and are quite friendly with each other. Individuals who do not like one another will disperse. Colonies with nesting pairs will not tolerate other groups or individuals nearby their nesting dens, and will quickly challenge and drive them out. This is detailed under Aggressive Behavior. Colonies are the loudest and proudest Yutyrannus grouping, frequently singing, dancing, and flirting amongst each other.

@@ -1,0 +1,3 @@
+# Spinosaurus (Saltwater) – Physical Dimorphism
+
+Spinosaurus has color dimorphism. This profile has high and low T individuals. High T females might have brighter colors, while low T males can be duller or not as vibrant as other males. ♀️ Female Spinosaurus are uniform in color. ♂️ Male Spinosaurus have a bright flash of color on their sails that contrasts with the rest of their bodies. High T and Low T individuals face difficulties securing a lifelong partner. Often, they are rejected as pairbonds due to infertility if in a same-sex pair by accident. Physical dimorphism for Spinosaurus is not mandatory, but individuals differing from the dimorphism will be assumed to be the gender they look like.

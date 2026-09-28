@@ -1,0 +1,3 @@
+# Utahraptor – Overview
+
+Medium Cathemeral Terrestrial Carnivore. Utahraptor form lifelong pairbonds. Bonded Pairs and Solitary Utahraptor are nomadic, whereas Family packs are territorial in their preferred POIs towards other Utahraptor. Family packs claim large territories. Solitary Utahraptor are nomadic. Utahraptor have a tolerant nature towards other species. Towards their own kind, they are aggressive, but tolerant when solitary and courting. Utahraptor are not scavengers. Albino and melanistic Utahraptor are only tolerated if similar to family skins; otherwise, they are shunned and exiled.

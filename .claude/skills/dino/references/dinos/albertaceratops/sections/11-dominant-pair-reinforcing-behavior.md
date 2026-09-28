@@ -1,0 +1,3 @@
+# Albertaceratops – Dominant pair reinforcing behavior
+
+Besides disallowing lower-ranking boars from walking in front of the dominant boar, the pecking order also establishes who gets permission to assist the dominant boar in defending the sett from threats and challenging rival herbivores over bushes. For all inner conflicts, the dominant pair resolves most issues, with preference given to the dominant boar. If a sow becomes too aggressive and demanding, the dominant sow will step in to correct the behavior. If the situation escalates into aggressive calling or a smack, the dominant sow's allies will rush to her side to push the aggressive sow aside, forcing her to recognize she is outnumbered and should back down or risk being shunned.

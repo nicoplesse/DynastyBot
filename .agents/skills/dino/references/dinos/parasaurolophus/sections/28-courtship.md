@@ -1,0 +1,3 @@
+# Parasaurolophus – Courtship
+
+Parasaurolophus start courtship in open areas with good visibility, where they are able to remain alert for any predators, and have enough room for performing males. Does interested in courtship approach stags, issuing low affectionate calls and brushing up against them to gain their attention. This triggers a response in the herd as other interested does follow suit, beginning flirting behavior with the males for a short time. Once the stags are prompted into action, the does go and settle down together, waiting to watch the upcoming displays. Non-dimorphic does still show courtship interest, though produce fewer eggs in their clutches. They do not attempt rut displays, even if "high testosterone".

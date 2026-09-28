@@ -1,0 +1,3 @@
+# Latenivenatrix – Hatzegopteryx & Quetzalcoatlus
+
+Latenivenatrix instinctively fear Hatzegopteryx and Quetzalcoatlus. No matter their number, the sight - or sound - of these large pterosaurs causes Latenivenatrix to scatter, rushing into thick undergrowth or other cover in order to hide themselves. This occurs even when Latenivenatrix has Achillobator companions. When hiding from these species, Latenivenatrix remain completely silent, careful not to alert them to their presence. Nests are abandoned when these species circle overhead, with adults and caregivers moving to quickly push offspring to a safer location. If already engaged, Latenivenatrix are not forced to abandon an engagement if Hatzegopteryx or Quetzalcoatlus are sighted.

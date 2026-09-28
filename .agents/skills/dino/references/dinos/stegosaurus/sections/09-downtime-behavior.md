@@ -1,0 +1,3 @@
+# Stegosaurus – Downtime Behavior
+
+Stegosaurus primarily sleep standing up in order to quickly evade predators when necessary, and take short naps. Their tendons and ligaments lock their knee joints to prevent falling. These resting periods are typically brief, and are denoted by a Stegosaurus lowering their head as far as they can. Stegosaurus will only achieve deep sleep by lying down - typically when they feel safe with their herd. A lack of proper sleep results in a Stegosaurus being sluggish, and moving slowly. Stegosaurus will often sleep in shifts with other members of the herd, with some individuals staying alert while others rest. Sleeping upright allows for a quick transition - from sleeping to fleeing, with alarmed calls and swinging tails.

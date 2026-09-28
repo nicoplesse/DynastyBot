@@ -1,0 +1,3 @@
+# Apatosaurus – Argentinosaurus
+
+Apatosaurus show a similar tolerance level toward Argentinosaurus, and may form vast mixed-species sauropod herds with them. While Apatosaurus display aloofness towards other herdmates and Amargasaurus, they show unusual calm in the presence of Argentinosaurus, permitting the larger sauropod to get closer to them than they might others. Over time, bonds may form between Apatosaurus pods and particular Argentinosaurus individuals. Experienced matriarchs with long standing relationships with Argentinosaurus may alter the pace of her pod's migration to accommodate the slower sauropods. Even aggressive bulls and cantankerous cows manage to temper any aggression and irritability towards Argentinosaurus.

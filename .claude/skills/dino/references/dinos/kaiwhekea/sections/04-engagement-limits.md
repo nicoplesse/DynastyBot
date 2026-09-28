@@ -1,0 +1,3 @@
+# Kaiwhekea – Engagement Limits
+
+Up to 3 Sub/Adults may enter an engagement or hunt. Kaiwhekea flee from adult Spinosaurus and Deinosuchus. Kaiwhekea may hunt up to Large tier. Male Kaiwhekea do not protect offspring. Preferred Prey Kaiwhekea may hunt up to Large tier. However, if unattended Leedsichthys offspring are available, they must hunt these first. Afterwards, Kaiwhekea must hunt suitable Medium tier options before targeting Large tiers. Kaiwhekea flee from adult Spinosaurus and Deinosuchus. Offspring of these species, of adolescent and below, may be hunted. Kaiwhekea are unable to eat the bodies of Metriacanthosaurus without suffering averse side effects. See 📜・server-guideOPTIONAL - Illnesses & Injuries for more information.

@@ -1,0 +1,3 @@
+# Therizinosaurus – Looms
+
+Looms are pairs of females who have been pushed outside of their original sects, and are typically sisters or a mother and daughter. They can at times be a bonded pair of females who have grouped in order to establish a territory. Looms are often the most volatile of the Therizinosaurus groupings, and may disperse easily. This is due to female Therizinosaurus tending to be more aggressive and defensive of their personal space. However, once trust has been built between females in a loom, they may become fiercely protective of one another, and will prefer to stick with the other female exclusively, rather than courting or nesting with males.

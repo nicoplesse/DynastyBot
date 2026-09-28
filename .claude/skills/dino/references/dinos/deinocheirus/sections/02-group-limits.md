@@ -1,0 +1,3 @@
+# Deinocheirus – Group Limits
+
+Unlimited Sub/Adults, comprising: Pairs 1 large "Spinster Flock" of all unpaired Sub/Adult females Multiple "Bachelor Flocks", of up to 5 unpaired Sub/Adult males Unlimited individuals of Adolescent age and older. This group is known as a gathering. Pairs split off from a gathering when nesting or adopting offspring: Up to 2 Sub/Adults. Unlimited Offspring Unlimited Adoptees This group is known as a nesting pair. They may also form dispersal groups, consisting of unlimited individuals below Adolescent. These groups may follow after a gathering, but do not receive protection from adults unless the adults split from the group to adopt them.

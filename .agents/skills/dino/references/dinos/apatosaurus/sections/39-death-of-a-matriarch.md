@@ -1,0 +1,3 @@
+# Apatosaurus – Death of a Matriarch
+
+The death of a matriarch is a moment of deep sorrow for an Apatosaurus pod, and often results in the pod splitting or adjusting to a new matriarch. This position is never challenged for or fought over - instead, the next oldest female in the group steps forward to take the lead. Sometimes, pods fracture into smaller, more closely related pods, especially if individuals are very distantly related to one another. Multiple matriarchs and pods sometimes form from the death of one, though they maintain strong relations and usually migrate side by side in the wider herd. Apatosaurus Sub/Adults do not defend young under Adolescent. Apatosaurus with dwarfism may still court and nest. NA

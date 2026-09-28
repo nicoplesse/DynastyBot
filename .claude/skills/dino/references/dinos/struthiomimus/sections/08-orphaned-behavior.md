@@ -1,0 +1,3 @@
+# Struthiomimus – Orphaned Behavior
+
+Orphaned Struthiomimus chicks tend to be extremely cautious, constantly seeking out herbivore herds or groups that might accept them, even if they are not of the same species. If they are fortunate, they may find a flock with a harem willing to adopt them as their own. Struthiomimus that grow up without the presence of other Struthiomimus may struggle with socializing within their own species. They may even develop a preference for the company of other herbivores. If they were raised in a herd of a particular species, they will often favor the presence of that species over others. Struthiomimus may end up raised by broody Citipati hens, and as a result prefer to stay near Citipatis as adults.

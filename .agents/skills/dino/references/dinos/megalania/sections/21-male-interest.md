@@ -1,0 +1,3 @@
+# Megalania – Male Interest
+
+A male arriving at a female's pool begins a slow walk around the entirety of her claimed pool, flicking his tongue to take in her scent. The female continues displaying during this, careful to keep watch of the patrolling male. If multiple males show interest in the same female, they will fight one another for the right to court her. This begins with slight raising onto their hind legs, coupled with vicious roars. [:question_emote:] If neither male backs down, a battle is fought until one either forfeits, or reaches deathscars. If either male enters the pool during this fight, they automatically forfeit, pronouncing the other male the winner.

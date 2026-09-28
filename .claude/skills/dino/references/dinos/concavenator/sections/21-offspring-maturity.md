@@ -1,0 +1,3 @@
+# Concavenator – Offspring Maturity
+
+As the offspring mature into Adolescent, parents gradually shift their attention from them and give the young kits more freedom to explore their surroundings and test boundaries within the group. In rare cases some parents and siblings might develop favorites among their family, forming strong bonds that often last from the Sub-Adult stage well into full adulthood. These favored individuals will be permitted close without provoking a defensive response from their family's personal space being invaded. Parents may choose to chase out offspring that do not leave willingly at Sub-Adult. If they are met with hostility, the whole gang will assist in chasing out this individual.

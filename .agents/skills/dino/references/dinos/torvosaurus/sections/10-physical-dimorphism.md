@@ -1,0 +1,3 @@
+# Torvosaurus – Physical Dimorphism
+
+Physical dimorphism for Torvosaurus is not mandatory.  Behavioral greetings are mandatory. This profile does not have high and low T individuals. Females and males can exhibit color differences, but will always behave as their biological sex. ♀️ Females have more uniform and duller colors, without bright flashes of color on their face and neck. They greet others with a bowed head. (⤵️ emote) ♂️ Males have bright flashes of color on their face and neck. They greet others with a raised head. (⤴️ emote) Torvosaurus are required to follow behavioral greetings. For example, you may not be a male Torvosaurus and attempt to 'trick' others by using the other gender emote.

@@ -1,0 +1,3 @@
+# Eurhinosaurus – General Behavior
+
+Eurhinosaurus are usually loud and rambunctious by nature, and are normally heard long before they are seen. Shoals often follow a familiar route around their current POI, travelling between popular fish locations and checking rocks and underwater caves to seek out crustaceans. While both sexes enjoy vocalising, males call more loudly and more often, projecting their voices through the water and singing out to their group mates. Despite being confined to the waters, Eurhinosaurus are playful and curious. They take great pleasure in calling to terrestrial species and poking their heads above the water to peer into nearby forests.

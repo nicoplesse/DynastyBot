@@ -1,0 +1,3 @@
+# Maip – Preferred Prey & Diet
+
+Maip target vulnerable dinosaurs as much as possible. Hatchlings and juveniles, sickly, sleeping or elderly prey are the first prey options they target. While Maip actively avoids adult Tyrannotitan, they will hunt and even target lone Tyrannotitan offspring of Adolescent and below. Possessing very strong stomachs and even stronger immune systems, Maip can consume rotting carrion without issue. They can be seen frequently gnawing bones for the nutritious marrow inside. Maip tolerate scavengers around their kill if they still have one during the day. At night, they defend their kills from scavengers. Maip will cannibalize Albinos of their species. Maip may feed from the bodies of Metriacanthosaurus without suffering averse side effects.

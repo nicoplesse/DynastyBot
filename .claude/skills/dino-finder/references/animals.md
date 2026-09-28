@@ -1,0 +1,111 @@
+# Echte Tiere → Playables
+
+Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst. Fehlt ein Tier, nimm den passenden Tiertyp aus `catalog.md`.
+
+- Karakal / Caracal: Achillobator
+- Mähnenwolf / Maned wolf: Achillobator
+- Europäischer Dachs / European badger: Albertaceratops
+- Wildschwein / Wild boar: Pycnonemosaurus, Albertaceratops
+- Afrikanischer Wildhund / African wild dog: Alioramus
+- Asiatischer Löwe / Asiatic lion: Allosaurus
+- Rotluchs / Bobcat: Allosaurus
+- Gnu / Wildebeest: Amargasaurus
+- Giraffe / Giraffe: Argentinosaurus, Amargasaurus
+- Wombat / Wombat: Anodontosaurus
+- Honigdachs / Honey badger: Anodontosaurus
+- Afrikanischer Elefant / African savanna elephant: Apatosaurus
+- Gorilla (Silberrücken) / Gorilla (silverback troop): Argentinosaurus
+- Graureiher / Grey heron: Austroraptor
+- Kaiserpinguin / Emperor penguin: Austroraptor
+- Wildkamel (Trampeltier) / Wild Bactrian camel: Barsboldia
+- Wüstenelefant / Desert elephant: Barsboldia
+- Quokka / Quokka: Camptosaurus
+- Pfeifhase / American pika: Camptosaurus
+- Grauwolf / Grey wolf: Ceratosaurus
+- Huhn (Bankivahuhn) / Chicken (red junglefowl): Citipati
+- Wanderratte / Brown rat: Compsognathus
+- Goldschakal / Golden jackal: Compsognathus
+- Riesenotter / Giant otter: Concavenator
+- Hermelin / Stoat: Concavenator
+- Dingo / Dingo: Daspletosaurus
+- Puma / Cougar: Daspletosaurus
+- Höckerschwan / Mute swan: Deinocheirus
+- Elch / Moose: Yunnanosaurus, Deinocheirus
+- Tüpfelhyäne / Spotted hyena: Maip, Deinonychus
+- Zwergmanguste / Dwarf mongoose: Deinonychus
+- Nilkrokodil / Nile crocodile: Deinosuchus
+- Rotfuchs / Red fox: Dilophosaurus
+- Waschbär / Raccoon: Dilophosaurus
+- Wildkaninchen / Wild rabbit: Dryosaurus
+- Pavian (Trupp) / Baboon troop: Dryosaurus
+- Asiatischer Elefant / Asian elephant: Eotriceratops
+- Flusspferd (Bulle) / Hippopotamus (bull): Eotriceratops
+- Großer Tümmler / Bottlenose dolphin: Eurhinosaurus
+- Jaguar / Jaguar: Giganotosaurus
+- Stockente / Mallard: Halszkaraptor
+- Elster / Magpie: Halszkaraptor
+- Steinadler / Golden eagle: Hatzegopteryx
+- Kaffernbüffel / Cape buffalo: Iguanodon
+- Seelöwe / Sea lion: Kaiwhekea
+- Meeresschildkröte / Sea turtle: Kaiwhekea
+- Sekretär / Secretary bird: Kelenken
+- Lama / Llama: Kentrosaurus
+- Stachelschwein / Porcupine: Kentrosaurus
+- Sambarhirsch / Sambar deer: Lambeosaurus
+- Schaf (Herde) / Sheep (flock): Lambeosaurus
+- Saatkrähe / Rook: Latenivenatrix
+- Rothund / Dhole: Latenivenatrix
+- Walhai / Whale shark: Leedsichthys
+- Kahlhecht / Bowfin: Leedsichthys
+- Flusspferd / Hippopotamus: Lurdusaurus
+- Wasserschwein / Capybara: Lurdusaurus
+- Kolkrabe / Common raven: Maip
+- Komodowaran / Komodo dragon: Megalania (Arid)
+- Leopardgecko / Leopard gecko: Megalania (Arid)
+- Buntwaran / Lace monitor: Megalania (Temperate)
+- Tokeh / Tokay gecko: Megalania (Temperate)
+- Gila-Krustenechse / Gila monster: Metriacanthosaurus
+- Pfeilgiftfrosch / Poison dart frog: Metriacanthosaurus
+- Schneeziege / Mountain goat: Pachycephalosaurus
+- Dickhornschaf / Bighorn sheep: Pachycephalosaurus
+- Moschusochse / Musk ox: Pachyrhinosaurus, Styracosaurus
+- Karibu / Rentier / Caribou / reindeer: Pachyrhinosaurus
+- Rothirsch / Red deer: Parasaurolophus
+- Przewalski-Pferd / Przewalski's horse: Parasaurolophus
+- Erdmännchen / Meerkat: Psittacosaurus
+- Opossum / Virginia opossum: Psittacosaurus
+- Löwe / Lion: Pycnonemosaurus
+- Geier / Vulture: Quetzalcoatlus
+- Marabu / Marabou stork: Quetzalcoatlus
+- Madenhacker / Oxpecker: Rhamphorhynchus
+- Sittich / Parakeet: Rhamphorhynchus
+- Sumpfkrokodil / Mugger crocodile: Sarcosuchus
+- Blatthühnchen / Jacana: Sarcosuchus
+- Grizzlybär / Grizzly bear: Spinosaurus (Freshwater)
+- Leistenkrokodil / Saltwater crocodile: Spinosaurus (Freshwater)
+- Seeleopard / Leopard seal: Spinosaurus (Saltwater)
+- Grauer Riffhai / Grey reef shark: Spinosaurus (Saltwater)
+- Spitzmaulnashorn / Black rhinoceros: Stegosaurus
+- Grevyzebra / Grévy's zebra: Stegosaurus
+- Strauß / Ostrich: Struthiomimus
+- Spießbock (Oryx) / Gemsbok (oryx): Styracosaurus
+- Gangesgavial / Gharial: Suchomimus
+- Kojote / Coyote: Suchomimus
+- Weißbartpekari / White-lipped peccary: Tenontosaurus
+- Weißbüscheläffchen / Common marmoset: Tenontosaurus
+- Taube / Pigeon: Thalassodromeus
+- Lachmöwe / Black-headed gull: Thalassodromeus
+- Kasuar / Cassowary: Therizinosaurus
+- Afrikanischer Löwe / African lion: Torvosaurus
+- Silbermöwe / Herring gull: Tropeognathus
+- Kormoran / Great cormorant: Tropeognathus
+- Orca (Schwertwal) / Orca: Tylosaurus
+- Eisbär / Polar bear: Tyrannosaurus
+- Waldkauz / Tawny owl: Tyrannosaurus
+- Tiger / Tiger: Tyrannotitan
+- Weißer Hai / Great white shark: Tyrannotitan
+- Grauwolf (Familienrudel) / Grey wolf (family pack): Utahraptor
+- Laubenvogel / Bowerbird: Utahraptor
+- Rotes Riesenkänguru / Red kangaroo: Yunnanosaurus
+- Schneeleopard / Snow leopard: Yutyrannus
+- Polarfuchs / Arctic fox: Yutyrannus

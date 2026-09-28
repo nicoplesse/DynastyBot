@@ -1,0 +1,3 @@
+# Tyrannotitan – Sow & Boar Interactions
+
+Sows may be observed returning to the same territories to court the same boars throughout their lifetimes. They may recognize each other, but still must greet each other upon every reunion. However, if either female in the stand is related to a male, they will often choose not to return to his territory, in order to allow both females to nest. As offspring age, and as females repeatedly nest with the same males, they may allow themselves in closer proximity to the males, which males express quiet interest in. Solitary sows and boars are particularly open to being closer to one another, to allow them to best defend one another. This also applies to solitary females with paired boars.

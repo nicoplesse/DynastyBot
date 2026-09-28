@@ -1,0 +1,3 @@
+# Psittacosaurus – Nesting
+
+Another nest is then built by the jill, preferably directly beside the jack's nest to provide a bigger and secure area for young to hatch. While the jill prepares and maintains the nest, the jack takes on a supportive role, gathering nutrient rich food to sustain her before and after egg laying. Both parents remain near the nesting site throughout the incubation period, rotating short foraging trips to ensure the nest is never left unguarded for long. The Quillguard remains aware of active nests within the passel and subtly guides group movement to reduce the risk of predators wandering too close.

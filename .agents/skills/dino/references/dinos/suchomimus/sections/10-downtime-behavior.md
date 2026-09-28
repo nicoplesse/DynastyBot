@@ -1,0 +1,3 @@
+# Suchomimus – Downtime Behavior
+
+Suchomimus sleep often, especially when Spinosaurus allies are around to protect them. These frequent naps occur in shallow water and on banks and beaches near water sources. While preparing for rest, Suchomimus may be observed chewing on shells to get to the meat inside, as well as to sharpen their teeth and as a form of enrichment. Suchomimus may also be observed grabbing lakeweed or kelp out of the water to put in piles in preferred sleeping places to make them more comfortable. Suchomimus at times bicker over fish during their resting periods, especially over large fish. These bickering matches are brought to an end when another big fish is provided by a Spinosaurus, or when the fish has been eaten.

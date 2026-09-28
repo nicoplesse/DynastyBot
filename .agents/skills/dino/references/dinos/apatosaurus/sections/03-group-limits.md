@@ -1,0 +1,3 @@
+# Apatosaurus – Group Limits
+
+Unlimited Sub/Adults Unlimited Offspring Unlimited Adoptees This group is known as an Apatosaurus herd. Within a herd, smaller social groupings form, consisting of: 1 dominant or elder female, known as the matriarch Unlimited individuals of either sex related to her. These can be of any relation, so long as they can be traced back to the matriarch in some way. Offspring & Adoptees Lifelong bonded mates Males leave their birth pod to join their mate's pod. This sub-group is known as a pod, and is led by the matriarch. Multiple pods can exist and group/travel together in a herd. Individuals unrelated to others drift between different members of the herd, but do not formally belong to a pod.

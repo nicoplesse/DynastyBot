@@ -1,0 +1,3 @@
+# Anodontosaurus – Offspring Maturity
+
+As Anodontosaurus pups age, their parents' obligation to them begins to fade. By the time they reach Sub-Adult, parents no longer partake in caring for them at all. Once all of their offspring are sub-adult, parents may break away from each other - but some opt to remain together as companions; sometimes nesting again. Most newly mature Anodontosaurus disperse on their own at this stage - but some offspring linger too long, failing to recognize the social cues to leave. These offspring are pushed out by their parents, who become increasingly insistent on establishing their own space again.

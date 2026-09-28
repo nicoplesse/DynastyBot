@@ -1,0 +1,3 @@
+# Deinonychus – Group Limits
+
+Unlimited Sub/Adults, comprising of 1 dominant female known as the mother, 1 preferred male, related females, and males of any relation. A maximum of 10 Unrelated males can be present in a dynasty at any one time. Unlimited Offspring Deinonychus do not adopt. This group is known as a dynasty. Or: Up to 10 Sub/Adult males No offspring or adoptees This group is known as a troop. Additionally, Deinonychus may form dispersal groups may consisting of unlimited individuals of adolescent and below. These dispersal groups are sex specific and never mixed sex. Females must be related. Related members in a Dynasty must individually log their relations in the 🩸・bloodline-logs to group together. Players are responsible for logging their own characters.

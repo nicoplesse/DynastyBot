@@ -1,0 +1,3 @@
+# Psittacosaurus – Courtship
+
+Jills that are ready for courtship undergo a visible color change, with their tails flushing into bright hues or intricate patterns that signal fertility. As jacks notice these changes, they begin constructing demonstrative nests, displaying their willingness and ability to care for offspring. Once the demonstrative nests have been created, jills carefully inspect each one. She then chooses the jack whose nest best meets her standards, continuing courtship exclusively with him. The chosen pair engage in a final display, facing one another and standing upright on their hind legs to showcase their colors and patterns. This ritual cements their mutual intent to raise offspring together, and they settle down to groom in the nest.

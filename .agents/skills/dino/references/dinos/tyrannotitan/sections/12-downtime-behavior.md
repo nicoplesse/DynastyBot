@@ -1,0 +1,3 @@
+# Tyrannotitan – Downtime Behavior
+
+Tyrannotitan - especially young Tyrannotitan - seek natural shelters when settling down to sleep, such as under trees, in caves, rock crevices, or roots. Tyrannotitan also take short naps immediately after hunting nearby their corpse, to allow themselves to digest faster and to rejuvenate energy from what are often intense and bloody hunts. Tyrannotitan sleep in dim, shaded places to avoid the bright light of the sun, and stretch themselves out to be the most comfortable. Boars only host patrols of their territory if woken by something; but do not express much effort in the patrol, and will go back to sleep as soon as they find a suitable spot again, or the sun gets too bright for them.

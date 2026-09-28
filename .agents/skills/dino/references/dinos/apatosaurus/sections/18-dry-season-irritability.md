@@ -1,0 +1,3 @@
+# Apatosaurus – Dry Season Irritability
+
+Though typically patient with their species, Apatosaurus can become remarkably cantankerous - particularly during the dry season when water, shade and food becomes scarce. Tempers shorten noticeably, and individuals become far less forgiving of close proximity. Much aggression is ritualized and preventative rather than intended to escalate into violence. Disputes are usually resolved through warning displays - such as aggressive bellows and jerking head motions - before they turn into physical altercations. Irritability is especially common when water quality is low or where the terrain narrows. Individuals begin pushing and shoving each other to claim space or water sources.

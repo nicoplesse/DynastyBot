@@ -1,0 +1,3 @@
+# Lambeosaurus – Physical Dimorphism
+
+Lambeosaurus do not exhibit physical dimorphism, and instead exhibit differences in social behavior. This profile does not have high or low testosterone individuals. ♀️ Females, known as does, greet other Lambeosaurus by remaining on all fours, dipping their heads and using the shake emote. Does rarely, if ever, raise onto their backlegs, unless a threat is near. ♂️ Males, known as bucks, greet other Lambeosaurus by rising onto their back legs, lifting their heads and using the shake emote. Bucks often act as sentries for the herd. Behavioral greetings are mandatory and the incorrect behavioral greeting may not be used to “trick” others into believing they are the opposite sex.

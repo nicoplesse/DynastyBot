@@ -1,0 +1,3 @@
+# Austroraptor – Solitary Behavior
+
+When solitary, Austroraptor do not exhibit many differences from individuals in a pair. Lone Austroraptor will often quietly observe and follow potential prey items or species new to them for short periods of time.If aggressed by adult individuals they cannot hunt, they will flee. These lone individuals may move to the courting grounds in hopes of finding a mate or observe the behavior of more experienced individuals in an attempt to learn how to socialise. Some Austroraptor, typically younger individuals, opt not to visit the courting grounds until later in their lives.

@@ -1,0 +1,3 @@
+# Maip – Rhamphorhynchus, Compsognathus & Solo Latenivenatrix
+
+Maip can be seen seeking out these small species for grooming opportunities, and will sometimes reward their little noisy companions with scraps from their hunts. Maip seeking a cleaner will often, upon seeing one, make soft calls and giggles to entice them closer, before rolling on the ground to show their need for cleaning. This is often accompanied by a crouched position, highlighting their lack of interest in hunting. Maip only tolerate these small scavengers when they do not have offspring under Sub-Adult, and will only permit one at a time. Others are chased or aggressed away.

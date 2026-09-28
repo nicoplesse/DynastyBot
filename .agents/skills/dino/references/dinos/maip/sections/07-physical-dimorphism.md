@@ -1,0 +1,3 @@
+# Maip – Physical Dimorphism
+
+Maip have no physical dimorphism, but do have behavioral dimorphism. This profile does not have high and low T individuals. ♀️ Female Maip are brash and brutish, and greet others of their species with a raised posture, using loud calls to establish their power and dominance. [:question_emote:] ♂️ Male Maip are much more submissive, and crouch down with gentle coos and giggles to greet others of their species in the hopes of appeasement. They may even roll over, showing their soft and vulnerable bellies - especially in the presence of females. [:shake_emote:] Behavioral dimorphism is mandatory for Maip. Players may not behave as the opposite sex with greetings.

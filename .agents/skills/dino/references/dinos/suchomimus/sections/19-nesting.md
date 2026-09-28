@@ -1,0 +1,3 @@
+# Suchomimus – Nesting
+
+The female will then move off to observe other fights, or to construct her nest. Females may nest with up to 2 males in any season. Males will continue courtship for as long as females are expressing interest. Females must list both fathers, if courting two different males, in their nesting posts. Offspring may select which male is their father. Females will construct their nests on different, quieter shores, where they can brood over their eggs and ensure they are not interrupted by other predators attempting to steal them. Another favoured nesting location is nearby Spinosaurus nests-- as very little risks coming close to a Spinosaurus.

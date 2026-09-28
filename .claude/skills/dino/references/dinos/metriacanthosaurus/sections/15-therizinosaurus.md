@@ -1,0 +1,3 @@
+# Metriacanthosaurus – Therizinosaurus
+
+Metriacanthosaurus take the most interest in Therizinosaurus. This large feathered creature - while intimidating up close - is an almost irresistible sight to Metriacanthosaurus, especially if it has offspring. Metriacanthosaurus trails these species from a safe distance, out of reach of their long claws. Metriacanthosaurus may even mimic the calls of these large theropod and strut about slowly in the same manner. Fascination in these species can turn into a desire to hunt. Metriacanthosaurus, when interested in hunting Therizinosaurus, fall quiet, using any cover available and wait patiently until any offspring fall behind.

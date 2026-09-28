@@ -1,0 +1,3 @@
+# Tropeognathus – Engagement Limits
+
+Up to 4 Tropeognathus may enter an engagement, challenge or a hunt. Dominant and adult males are the first to rally to the defence of others, but females with close bonds to others may also opt to defend. Offspring under Sub-Adult are excluded from this restriction and parents will always defend their targeted young. Tropeognathus may use water to their advantage. They can attack in water, and use water to evade their attackers. Adolescent Tropeognathus can assist with their parents’ hunts, up to the limit of 4. Solo Adolescent Tropeognathus may attempt to hunt up to Small tier.

@@ -1,0 +1,3 @@
+# Apatosaurus – Rule Exemptions
+
+NA

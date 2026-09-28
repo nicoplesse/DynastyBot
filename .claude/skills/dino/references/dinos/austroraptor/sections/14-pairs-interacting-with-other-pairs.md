@@ -1,0 +1,3 @@
+# Austroraptor – Pairs interacting with other Pairs
+
+Austroraptor pairs tolerate other pairs in the area, though depending on the personalities of the individuals, interaction may vary from quiet observation to louder chater. If two or more pairs are nesting some pairs will take part in Conspecific Brood Parasitism - See more in Courtship & Nesting. Pairs who recognize others as family may be seen swimming and fishing together, tolerating each other within their space. Some pairs may not appreciate others in their space, staring down those who approach or opting to move away from another encroaching pair.

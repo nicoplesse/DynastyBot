@@ -1,0 +1,3 @@
+# Tyrannosaurus – Compsognathus
+
+Compsognathus are tolerated by all Tyrannosaurus and permitted to share from their kills. Too small to pose any threat, and not worth the effort as a meal, these nimble scavengers are allowed to move freely around Tyrannosaurus - even when they have young. Their presence is not only harmless, but beneficial: with their narrow snouts and delicate teeth, Compsognathus can access scraps of meat deep within carcasses that a Rex cannot reach. More importantly, they provide a natural form of grooming. Compsognathus pick at parasites, clean the area around wounds and remove debris from between scales.

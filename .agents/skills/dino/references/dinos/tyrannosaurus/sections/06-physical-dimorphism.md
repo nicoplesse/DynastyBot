@@ -1,0 +1,3 @@
+# Tyrannosaurus – Physical Dimorphism
+
+Physical dimorphism for Tyrannosaurus is mandatory. This profile does not have high and low T individuals. ♀️ Females are the larger and bulkier of the sexes.  Females greet others with a crouched stance, growling and hissing.  [:question_emote:] Suitable subspecies include: Standard, Stocky, Larger Jowels ♂️ Males, known as bulls, are slimmer. Males greet others with a short, sharp hiss and a dip of their head. [:claw_emote:] Suitable subspecies include: Slim, Larger Hornlets, Standard (T) Tyrannosaurus do not have color dimorphism. However, during courting, males with their added testosterone may flash into brighter colors.

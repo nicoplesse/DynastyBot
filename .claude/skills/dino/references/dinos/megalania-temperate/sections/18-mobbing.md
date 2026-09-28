@@ -1,0 +1,3 @@
+# Megalania (Temperate) – Mobbing
+
+Megalania may temporarily come together to hunt Apex species in the POI. This can range from 2 to 5 adults total, working together to bring down the prey. They form an in game group to do so. This group dissolves as soon as a hunt is lost, or a body is consumed. Once one begins, the others have 30 seconds to join the hunt. If one Megalania forfeits, they are not permitted to share in the kill should the hunt end up successful. They must also leave the in game group. Once the prey is killed, each individual that joined in the mob hunt tolerate one another at the kill.

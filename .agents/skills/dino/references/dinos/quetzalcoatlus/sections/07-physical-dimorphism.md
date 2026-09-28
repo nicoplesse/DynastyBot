@@ -1,0 +1,3 @@
+# Quetzalcoatlus – Physical Dimorphism
+
+Quetzalcoatlus have only color dimorphism between sexes. This profile has high and low T individuals. Females who are high testosterone are brighter in color, and males who are low testosterone are duller in coloration. ♂️ Males tend to have brighter, flashier colors to impress females, specifically on their wings, faces, and crests. Males who have yet to nest are called lords, and males who have nested are called dukes. ♀️ Females tend to be duller or greyscale. Females who have yet to nest are called ladies, and females who have nested are called duchesses.

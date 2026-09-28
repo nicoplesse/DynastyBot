@@ -1,0 +1,3 @@
+# Utahraptor – Group Limits
+
+Utahraptor players must individually log their relations in the 🩸・bloodline-logs to group together. Refer to bloodline rules. Up to 20 Sub/Adults. 2 slots must be reserved at all times for the Alpha pair. Unlimited Offspring Utahraptor do not adopt. This group is known as a family pack. Family packs may have unlimited pack members, but a maximum of 20 Sub/Adults grouped in game on a server at a time. You cannot have multiple in-game groups of the same Family Pack in the same server. Additionally, a lifelong bonded pair of 2 unrelated Utahraptor may group in what is known as a bonded pair. Outside of a family pack or bonded pair, Utahraptor are solitary, even when young.

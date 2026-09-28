@@ -1,0 +1,3 @@
+# Lambeosaurus – Solitary Behavior
+
+Lambeosaurus are a highly social species, and unless orphaned and having grown up alone, often struggle with extended periods of isolation from a herd or another friendly species. Solitary Lambeosaurus often seek a sentry species if unable to find another Lambeosaurus companion, and will rely on them to meet their social and emotional needs. They may also join other Parasaurolophus or Iguanodon herds for company. The potential of being hunted while alone puts a Lambeosaurus in a great deal of emotional distress, with constant fear calls as it bolts at any odd movement or sound. It may defend itself from less than 3+ Large when hunted, but must flee from 3+ Large and Apexes.

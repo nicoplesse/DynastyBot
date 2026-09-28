@@ -1,0 +1,3 @@
+# Yutyrannus – Lone Tom / Dry Season Performances
+
+If there is only one male in the group, or there is only one male that a molly is actively interested in, a male will perform his courtship dance without any competition. In the Dry Season, toms will only attempt to court females that they have previously courted with, and will not compete with other toms to do so. Mollies will still flirt with toms in the same fashion she would during the rainy season to indicate readiness to nest. The process of accepting the tom is the same as if he were dancing against another tom; she issues the chortling call and then heart calls and nuzzles him, which he returns with a final dance move.

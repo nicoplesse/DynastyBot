@@ -1,0 +1,3 @@
+# Allosaurus – Offspring Maturity
+
+Once cubs have matured to sub-adult, parents return to conduct a final inspection of them. If the pair do not have a favored offspring with them already, they may select a single cub to continue travelling alongside them. Often, this is the cub who has shown the most potential, but preferences may be different between individuals. Otherwise, offspring are ushered away with gentle nudges and affectionate shakes, encouraged to disperse and continue their independence elsewhere. Persistent offspring who refuse to leave are met with increasingly harsher aggressive calls. Once the offspring receives the message and begins to disperse, the interaction is soothed over with one last distant affectionate call from the parents.

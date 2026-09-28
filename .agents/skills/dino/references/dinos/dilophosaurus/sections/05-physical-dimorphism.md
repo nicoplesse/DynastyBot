@@ -1,0 +1,3 @@
+# Dilophosaurus – Physical Dimorphism
+
+Dilophosaurus have physical dimorphism, with males slightly larger and showcasing wattles on their throats. They do not have color dimorphism, and their colors sometimes change depending on the biome they are currently in. ♀️ Female Dilophosaurus, known as vixens, are smaller. Suitable Subspecies include: wetherilli, wetherilli (variation 1), wetherilli (variation 4), wetherilli (variation 5) ♂️ Male Dilophosaurus, known as reynards, are larger and have wattles. Some may have larger crests. Suitable Subspecies include: wetherilli (variation 2), wetherilli (variation 3) Physical dimorphism for Dilophosaurus is mandatory.

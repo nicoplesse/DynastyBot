@@ -124,7 +124,19 @@ function targetPattern(unit) {
   return new RegExp(`\\b(?:${labels.map(escapeRegExp).join('|')})(?:es|s)?\\b`, 'i');
 }
 
+// Variants split from one profile share its text, which names the rival variant by rule
+// ("cannibalize other adults of the opposite variant") rather than by a playable name.
+function siblingVariantEvidence(attacker, target) {
+  if (!attacker.parentId || attacker.parentId !== target.parentId) return null;
+  const rules = attacker.segments.filter(segment => /(?:hunt|cannibali[sz]e|kill)[^.]{0,80}\b(?:opposite|different|other) variants?\b/i.test(segment.text));
+  // Without such a rule the variants are simply one species; same-species conflict stays in specialRisks.
+  if (!rules.length) return { type: 'avoid', evidence: [] };
+  return { type: 'hunt', evidence: rules.slice(0, 2).map(segment => ({ profileId: attacker.id, profileName: attacker.name, section: segment.section, text: segment.text.slice(0, 420) })) };
+}
+
 function relationEvidence(attacker, target) {
+  const sibling = siblingVariantEvidence(attacker, target);
+  if (sibling) return sibling;
   const pattern = targetPattern(target);
   const mentions = attacker.segments.filter(segment => pattern.test(segment.text));
   const evidence = [];
@@ -350,6 +362,7 @@ function unitFromProfile(profile) {
     id: profile.id,
     name: profile.name,
     aliases: profile.aliases || [],
+    parentId: profile.variant?.parentId || null,
     tier: profile.classification.tier,
     tierRank: TIER_RANK[profile.classification.tier] || 3,
     diet: profile.classification.diet,

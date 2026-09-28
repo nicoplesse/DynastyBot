@@ -1,0 +1,3 @@
+# Struthiomimus – Notes
+
+None

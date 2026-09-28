@@ -1,0 +1,3 @@
+# Apatosaurus – Disputes Between Pods
+
+Conflict between pods often stems from tension between matriarchs - typically during competition over resources or disputes involving adolescent calves. Matriarchs may confront one another through parallel posturing, warning bellows, and slow and deliberate advances forward to pressure their rivals into yielding. Physical clashes are uncommon, but escalate to involve body shoving and smacking of necks. These disputes are brief and only between matriarchs - with the rest of the pod following behind only after a dispute has been settled. During the dry season, pods become noticeably less tolerant of other pods, and more likely to drive others away from favored feeding spots, or wallowing pools.

@@ -1,0 +1,3 @@
+# Albertaceratops – Notes
+
+In challenges for the dominant sow position, a loser may choose to leave the group and start a new one. Now separate, they consider each other rivals and can push each other off food bushes. If challenges for the dominant sow position result in the group having equal allies on each side, both sides will leave the group and start separate ones. If a sett splits, other species that herd with Albertaceratops can choose which group they want to herd with. If there are 4 or less Albertaceratops in a group, and all members of the group are active defenders, they may not chase predators who have forfeited for more than 5 bodylengths.

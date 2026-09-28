@@ -1,0 +1,3 @@
+# Latenivenatrix – Adoption
+
+Latenivenatrix have no qualms with adopting, and will easily ferry both Latenivenatrix and Achillobator orphans into their creche. As Latenivenatrix grow into elders, they show very little physical difference or behavioral changes. They may nap longer, move slower, and show more signs of exhaustion after particularly intense hunts, but still sing, play, and run about as usual. The rest of their group is always happy to continue to care for them, and even may dote on them, especially if related to them in some fashion. Elders are often the most common pick for babysitters, as they are the most experienced in handling and correcting mischievous chicks.

@@ -1,0 +1,3 @@
+# Stegosaurus – Other Herbivores & Carnivores
+
+Other herbivores and carnivores are ignored - but kept a close eye on - unless they come within 10 body lengths of a guarded resource. Those that dare to come too close - or worse, even attempt to challenge - are met with aggressive posturing that escalates until the species leaves or accepts the challenge. When young are present in the herd, Stegosaurus readily bellow loudly (:broadcast_call: ) in both a warning display and to alert their herd of the incoming threat. The bull, hotheaded and protective, paces around his herd and their current bush or drinking spot. His calls shift to aggressive displays with tail swipes and scoffing puffs of air (:threaten_call:).

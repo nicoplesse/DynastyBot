@@ -1,0 +1,3 @@
+# Dilophosaurus – Overview
+
+Medium Cathemeral Terrestrial Carnivore Dilophosaurus form harem bonds. These bonds strengthen with every successful nest, and groups bonded in this way often stay together for life. Dilophosaurus are sedentary. Dilophosaurus have a tolerant nature towards their own species, and passive nature towards other species. Unattended ungrouped Dilophosaurus offspring are at risk of being cannibalized. Only the dominant male in a leash cannibalizes ungrouped offspring. Solitary Dilophosaurus may scavenge from claimed corpses. 2+ Dilophosaurus may not scavenge, and must challenge for the body. Critters and abandoned corpses may be freely eaten. Dilophosaurus tolerate albino and melanistic individuals.

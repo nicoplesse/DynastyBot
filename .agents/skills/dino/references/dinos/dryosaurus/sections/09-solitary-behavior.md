@@ -1,0 +1,3 @@
+# Dryosaurus – Solitary Behavior
+
+Solitary - without imprinting Dryosaurus lack a lot of confidence when they are solitary compared to when they have others of their kind with them. Though they still show aggressive and cantankerous behavior, this is firmly muted, and outright attacking and claiming of food resources does not occur. Instead, Dryosaurus are forced to share resources in these circumstances, but are quick to voice their displeasure at the same time. Solitary Dryosaurus trail behind other herbivore herds, hoping to benefit from the potential protection and foraging opportunities that comes with being with these species. They will immediately leave behind any herds they were trailing in favor of others of their kind.

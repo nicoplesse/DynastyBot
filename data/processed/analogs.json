@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T15:55:03.072Z",
+  "generatedAt": "2026-09-28T14:00:42.842Z",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -472,7 +472,21 @@
           "komodowaran",
           "nilwaran",
           "krustenechse",
-          "reptil"
+          "reptil",
+          "perentie",
+          "riesenwaran",
+          "lace monitor",
+          "buntwaran",
+          "tree monitor",
+          "baumwaran",
+          "gecko",
+          "tokay",
+          "tokay gecko",
+          "tokeh",
+          "gekko",
+          "leopard gecko",
+          "leopardgecko",
+          "leo"
         ]
       },
       "amphibian": {
@@ -722,7 +736,11 @@
           "fisch",
           "lachs",
           "schwertfisch",
-          "kahlhecht"
+          "kahlhecht",
+          "reef shark",
+          "grey reef shark",
+          "riffhai",
+          "grauer riffhai"
         ]
       },
       "turtle": {
@@ -910,6 +928,25 @@
           "lauerjäger",
           "anschleichen",
           "hinterhalt"
+        ]
+      },
+      "climber": {
+        "label": "Climber",
+        "de": "Kletterer",
+        "synonyms": [
+          "climber",
+          "climbing",
+          "climbs",
+          "arboreal",
+          "tree climber",
+          "in the trees",
+          "kletterer",
+          "klettern",
+          "klettert",
+          "baumkletterer",
+          "auf bäumen",
+          "an bäumen",
+          "am baum"
         ]
       },
       "chaser": {
@@ -1356,8 +1393,8 @@
       "de": "Bär",
       "dinos": [
         {
-          "id": "spinosaurus",
-          "name": "Spinosaurus",
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
           "animal": "Grizzly bear",
           "role": "primary",
           "share": 60,
@@ -1960,8 +1997,8 @@
           "headline": "A fish-snatching gharial with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young."
         },
         {
-          "id": "spinosaurus",
-          "name": "Spinosaurus",
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
           "animal": "Saltwater crocodile",
           "role": "secondary",
           "share": 40,
@@ -1974,12 +2011,20 @@
       "de": "Echse & Waran",
       "dinos": [
         {
-          "id": "megalania",
-          "name": "Megalania",
-          "animal": "Komodo dragon + Nile monitor",
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "animal": "Komodo dragon + Leopard gecko",
           "role": "primary",
           "share": 100,
-          "headline": "A Komodo dragon in the dry country and a Nile monitor in the wetlands: two rival variants of one solitary scavenger-hunter."
+          "headline": "A Komodo dragon with the soul of a leopard gecko: the canyon dragon that lives on the ground between the rocks, stalks slowly and bites once."
+        },
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "animal": "Lace monitor + Tokay gecko",
+          "role": "primary",
+          "share": 100,
+          "headline": "A lace monitor that clings to the trunk like a tokay gecko: the tree dragon of the swamp forest that waits above the water and strikes at anything that moves."
         },
         {
           "id": "metriacanthosaurus",
@@ -2240,6 +2285,14 @@
           "role": "primary",
           "share": 60,
           "headline": "A sea-lion colony in a long-necked, turtle-like body: basks on beaches, plays in the surf, hunts in turns."
+        },
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "animal": "Leopard seal",
+          "role": "primary",
+          "share": 55,
+          "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through."
         }
       ]
     },
@@ -2254,6 +2307,14 @@
           "role": "primary",
           "share": 100,
           "headline": "A gentle whale shark on an endless migration loop, where the fathers raise the young."
+        },
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "animal": "Grey reef shark",
+          "role": "secondary",
+          "share": 45,
+          "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through."
         },
         {
           "id": "tyrannotitan",
@@ -3124,24 +3185,52 @@
       "archetype": "lizard",
       "dinos": [
         {
-          "id": "megalania",
-          "name": "Megalania",
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
           "role": "primary",
-          "share": 60
+          "share": 55
         }
       ]
     },
-    "nile-monitor": {
-      "animal": "Nile monitor",
-      "de": "Nilwaran",
-      "scientific": "Varanus niloticus",
+    "leopard-gecko": {
+      "animal": "Leopard gecko",
+      "de": "Leopardgecko",
+      "scientific": "Eublepharis macularius",
       "archetype": "lizard",
       "dinos": [
         {
-          "id": "megalania",
-          "name": "Megalania",
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
           "role": "secondary",
-          "share": 40
+          "share": 45
+        }
+      ]
+    },
+    "lace-monitor": {
+      "animal": "Lace monitor",
+      "de": "Buntwaran",
+      "scientific": "Varanus varius",
+      "archetype": "lizard",
+      "dinos": [
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "role": "primary",
+          "share": 55
+        }
+      ]
+    },
+    "tokay-gecko": {
+      "animal": "Tokay gecko",
+      "de": "Tokeh",
+      "scientific": "Gekko gecko",
+      "archetype": "lizard",
+      "dinos": [
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "role": "secondary",
+          "share": 45
         }
       ]
     },
@@ -3396,8 +3485,8 @@
       "archetype": "bear",
       "dinos": [
         {
-          "id": "spinosaurus",
-          "name": "Spinosaurus",
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
           "role": "primary",
           "share": 60
         }
@@ -3410,10 +3499,38 @@
       "archetype": "crocodilian",
       "dinos": [
         {
-          "id": "spinosaurus",
-          "name": "Spinosaurus",
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
           "role": "secondary",
           "share": 40
+        }
+      ]
+    },
+    "leopard-seal": {
+      "animal": "Leopard seal",
+      "de": "Seeleopard",
+      "scientific": "Hydrurga leptonyx",
+      "archetype": "seal",
+      "dinos": [
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "role": "primary",
+          "share": 55
+        }
+      ]
+    },
+    "grey-reef-shark": {
+      "animal": "Grey reef shark",
+      "de": "Grauer Riffhai",
+      "scientific": "Carcharhinus amblyrhynchos",
+      "archetype": "shark-fish",
+      "dinos": [
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "role": "secondary",
+          "share": 45
         }
       ]
     },
@@ -3764,8 +3881,10 @@
         "deinosuchus",
         "giganotosaurus",
         "leedsichthys",
-        "megalania",
-        "spinosaurus",
+        "megalania-arid",
+        "megalania-temperate",
+        "spinosaurus-freshwater",
+        "spinosaurus-saltwater",
         "tyrannotitan"
       ]
     },
@@ -3782,7 +3901,8 @@
         "kelenken",
         "maip",
         "metriacanthosaurus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
+        "spinosaurus-saltwater",
         "thalassodromeus",
         "tyrannosaurus",
         "tyrannotitan"
@@ -3908,7 +4028,8 @@
       "dinoIds": [
         "deinosuchus",
         "giganotosaurus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
+        "spinosaurus-saltwater",
         "tylosaurus",
         "tyrannosaurus",
         "tyrannotitan"
@@ -3972,10 +4093,19 @@
         "ceratosaurus",
         "daspletosaurus",
         "deinosuchus",
-        "megalania",
+        "megalania-arid",
+        "megalania-temperate",
         "sarcosuchus",
+        "spinosaurus-saltwater",
         "tyrannosaurus",
         "yutyrannus"
+      ]
+    },
+    "climber": {
+      "label": "Climber",
+      "de": "Kletterer",
+      "dinoIds": [
+        "megalania-temperate"
       ]
     },
     "chaser": {
@@ -3986,6 +4116,7 @@
         "giganotosaurus",
         "kelenken",
         "maip",
+        "megalania-arid",
         "tyrannotitan",
         "utahraptor"
       ]
@@ -3999,7 +4130,8 @@
         "concavenator",
         "deinonychus",
         "dilophosaurus",
-        "megalania",
+        "megalania-arid",
+        "megalania-temperate",
         "metriacanthosaurus",
         "quetzalcoatlus",
         "rhamphorhynchus",
@@ -4021,11 +4153,12 @@
         "kelenken",
         "latenivenatrix",
         "lurdusaurus",
-        "megalania",
+        "megalania-arid",
         "metriacanthosaurus",
         "pachycephalosaurus",
         "sarcosuchus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
+        "spinosaurus-saltwater",
         "stegosaurus",
         "tenontosaurus",
         "therizinosaurus",
@@ -4091,7 +4224,7 @@
         "maip",
         "metriacanthosaurus",
         "pycnonemosaurus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
         "stegosaurus",
         "styracosaurus",
         "therizinosaurus",
@@ -4180,9 +4313,10 @@
         "deinosuchus",
         "halszkaraptor",
         "lurdusaurus",
-        "megalania",
+        "megalania-temperate",
         "sarcosuchus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
+        "spinosaurus-saltwater",
         "suchomimus"
       ]
     },
@@ -4234,14 +4368,14 @@
         "lambeosaurus",
         "latenivenatrix",
         "maip",
-        "megalania",
+        "megalania-temperate",
         "metriacanthosaurus",
         "pachyrhinosaurus",
         "parasaurolophus",
         "psittacosaurus",
         "pycnonemosaurus",
         "sarcosuchus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
         "stegosaurus",
         "styracosaurus",
         "tenontosaurus",
@@ -4277,6 +4411,7 @@
         "iguanodon",
         "kelenken",
         "kentrosaurus",
+        "megalania-arid",
         "pachyrhinosaurus",
         "parasaurolophus",
         "psittacosaurus",
@@ -4305,7 +4440,7 @@
         "dilophosaurus",
         "giganotosaurus",
         "hatzegopteryx",
-        "megalania",
+        "megalania-arid",
         "pycnonemosaurus",
         "quetzalcoatlus",
         "styracosaurus",
@@ -4333,11 +4468,11 @@
         "lambeosaurus",
         "latenivenatrix",
         "lurdusaurus",
-        "megalania",
+        "megalania-temperate",
         "parasaurolophus",
         "rhamphorhynchus",
         "sarcosuchus",
-        "spinosaurus",
+        "spinosaurus-freshwater",
         "suchomimus",
         "thalassodromeus",
         "tyrannotitan",
@@ -4361,6 +4496,7 @@
         "lurdusaurus",
         "metriacanthosaurus",
         "sarcosuchus",
+        "spinosaurus-saltwater",
         "suchomimus",
         "tropeognathus",
         "tylosaurus"
@@ -4375,6 +4511,7 @@
         "dryosaurus",
         "kelenken",
         "maip",
+        "megalania-arid",
         "pachycephalosaurus",
         "thalassodromeus"
       ]
@@ -5707,16 +5844,16 @@
       "activity": "Nocturnal",
       "classification": "Terrestrial"
     },
-    "megalania": {
-      "name": "Megalania",
-      "label": "Komodo dragon + Nile monitor",
-      "labelDe": "Komodowaran + Nilwaran",
-      "headline": "A Komodo dragon in the dry country and a Nile monitor in the wetlands: two rival variants of one solitary scavenger-hunter.",
-      "setting": "Arid variant: canyons, oasis and dry hills. Temperate variant: bogs, swamps and riverside woods",
+    "megalania-arid": {
+      "name": "Megalania (Arid)",
+      "label": "Komodo dragon + Leopard gecko",
+      "labelDe": "Komodowaran + Leopardgecko",
+      "headline": "A Komodo dragon with the soul of a leopard gecko: the canyon dragon that lives on the ground between the rocks, stalks slowly and bites once.",
+      "setting": "Canyons, rocky hills, dry scrub and the oasis",
       "habitats": [
         "arid",
-        "wetland",
-        "forest"
+        "mountain",
+        "open"
       ],
       "analogs": [
         {
@@ -5724,15 +5861,15 @@
           "animal": "Komodo dragon",
           "de": "Komodowaran",
           "archetype": "lizard",
-          "share": 60,
+          "share": 55,
           "role": "primary"
         },
         {
-          "id": "nile-monitor",
-          "animal": "Nile monitor",
-          "de": "Nilwaran",
+          "id": "leopard-gecko",
+          "animal": "Leopard gecko",
+          "de": "Leopardgecko",
           "archetype": "lizard",
-          "share": 40,
+          "share": 45,
           "role": "secondary"
         }
       ],
@@ -5740,8 +5877,48 @@
         "solitary",
         "scavenger",
         "ambush",
-        "semi-aquatic",
+        "chaser",
         "territorial"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Terrestrial & Semi-Aquatic"
+    },
+    "megalania-temperate": {
+      "name": "Megalania (Temperate)",
+      "label": "Lace monitor + Tokay gecko",
+      "labelDe": "Buntwaran + Tokeh",
+      "headline": "A lace monitor that clings to the trunk like a tokay gecko: the tree dragon of the swamp forest that waits above the water and strikes at anything that moves.",
+      "setting": "Swamp forests, bogs, riverbanks and waterfalls",
+      "habitats": [
+        "forest",
+        "wetland"
+      ],
+      "analogs": [
+        {
+          "id": "lace-monitor",
+          "animal": "Lace monitor",
+          "de": "Buntwaran",
+          "archetype": "lizard",
+          "share": 55,
+          "role": "primary"
+        },
+        {
+          "id": "tokay-gecko",
+          "animal": "Tokay gecko",
+          "de": "Tokeh",
+          "archetype": "lizard",
+          "share": 45,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "ambush",
+        "climber",
+        "scavenger",
+        "semi-aquatic"
       ],
       "tier": "Medium",
       "diet": "Carnivore",
@@ -6107,12 +6284,12 @@
       "activity": "Cathemeral",
       "classification": "Semi-Aquatic"
     },
-    "spinosaurus": {
-      "name": "Spinosaurus",
+    "spinosaurus-freshwater": {
+      "name": "Spinosaurus (Freshwater)",
       "label": "Grizzly bear + Saltwater crocodile",
       "labelDe": "Grizzlybär + Leistenkrokodil",
       "headline": "A grizzly that owns its stretch of river and fights like a saltwater crocodile, then relaxes with its rivals at the great falls.",
-      "setting": "Swamp and jungle rivers",
+      "setting": "Swamp, lake and jungle rivers",
       "habitats": [
         "wetland",
         "forest"
@@ -6142,6 +6319,46 @@
         "territorial",
         "semi-aquatic",
         "aggressive"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Semi-Aquatic"
+    },
+    "spinosaurus-saltwater": {
+      "name": "Spinosaurus (Saltwater)",
+      "label": "Leopard seal + Grey reef shark",
+      "labelDe": "Seeleopard + Grauer Riffhai",
+      "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through.",
+      "setting": "One sea territory: island chain, sea cliffs, kelp shallows, shoal or deep ocean",
+      "habitats": [
+        "sea"
+      ],
+      "analogs": [
+        {
+          "id": "leopard-seal",
+          "animal": "Leopard seal",
+          "de": "Seeleopard",
+          "archetype": "seal",
+          "share": 55,
+          "role": "primary"
+        },
+        {
+          "id": "grey-reef-shark",
+          "animal": "Grey reef shark",
+          "de": "Grauer Riffhai",
+          "archetype": "shark-fish",
+          "share": 45,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "pair",
+        "apex",
+        "territorial",
+        "ambush",
+        "semi-aquatic"
       ],
       "tier": "Apex",
       "diet": "Carnivore",
@@ -9301,13 +9518,135 @@
       "archetypes": [
         "lizard"
       ],
-      "animals": [
-        "nile-monitor"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
     "krustenechse": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "perentie": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "riesenwaran": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "lace monitor": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "lace-monitor"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "buntwaran": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "lace-monitor"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "tree monitor": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "baumwaran": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "gecko": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "tokay": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "tokay gecko": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "tokay-gecko"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "tokeh": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "tokay-gecko"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "gekko": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "leopard gecko": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "leopard-gecko"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "leopardgecko": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "leopard-gecko"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "leo": {
       "archetypes": [
         "lizard"
       ],
@@ -10585,7 +10924,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "leopard-seal"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -10619,7 +10960,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "leopard-seal"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -10781,6 +11124,42 @@
       ],
       "animals": [
         "bowfin"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "reef shark": {
+      "archetypes": [
+        "shark-fish"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "grey reef shark": {
+      "archetypes": [
+        "shark-fish"
+      ],
+      "animals": [
+        "grey-reef-shark"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "riffhai": {
+      "archetypes": [
+        "shark-fish"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "grauer riffhai": {
+      "archetypes": [
+        "shark-fish"
+      ],
+      "animals": [
+        "grey-reef-shark"
       ],
       "moods": [],
       "habitats": []
@@ -11635,6 +12014,110 @@
       "animals": [],
       "moods": [
         "ambush"
+      ],
+      "habitats": []
+    },
+    "climber": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "kletterer": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "climbing": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "climbs": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "arboreal": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "tree climber": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "in the trees": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "klettern": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "klettert": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "baumkletterer": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "auf baumen": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "an baumen": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
+      ],
+      "habitats": []
+    },
+    "am baum": {
+      "archetypes": [],
+      "animals": [],
+      "moods": [
+        "climber"
       ],
       "habitats": []
     },
@@ -13622,16 +14105,6 @@
       ],
       "animals": [
         "common-raven"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "nile monitor": {
-      "archetypes": [
-        "lizard"
-      ],
-      "animals": [
-        "nile-monitor"
       ],
       "moods": [],
       "habitats": []

@@ -1,0 +1,3 @@
+# Albertaceratops – Overview
+
+Medium Cathermal Terrestrial Herbivore Albertaceratops form promiscuous pairbonds. Albertaceratops are nomadic but claim small territories in their courting grounds around nests. Albertaceratops have a tolerant nature unless cornered, ignored or with young - where they become aggressive. Albertaceratops may group with: Pachyrhinosaurus, Nasutoceratops, Styracosaurus and Psittacosaurus. Albertaceratops may defend these species. Albertaceratops shun albino, albino-appearing, melanistic, and melanistic-appearing individuals from their groups. This includes other species grouping.

@@ -1,0 +1,3 @@
+# Daspletosaurus – Lambeosaurus & Parasaurolophus
+
+These herbivores are the preferred targets of Daspletosaurus and most easily herded. The calls of these species instinctively draw Daspletosaurus to them. These herds are often trailed at a distance for long periods of time, experienced Daspletosaurus may wait until the herds settle down for the night before launching an attack. Should a pack spot Lambeosaurus, Daspletosaurus may remain stalking at a distance to remain unheard, especially if near water. Parasaurolophus intrigues Daspletosaurus and packs often find the challenge of the Apex hadrosaurs to be a fulfilling hunt.

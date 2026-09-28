@@ -1,0 +1,3 @@
+# Sarcosuchus – Elderly & End of Life (Optional)
+
+Elderly Sarcosuchus slow down significantly, basking for longer periods, and spending more time in shallow, slow-moving waters where they can conserve energy. Their hunting efficiency declines, and elderly Sarcosuchus no longer leave the water to travel in land and hunt at night. If grouped with other, younger members, they may be assisted by their floatmates bringing them back scraps of meat from a kill made on land. Their thicker, scarred hides show the marks of a long life, with deep scratches, worn scales and missing teeth showcasing the telltale signs of past battles. Scales fade, losing their depth of color - a symptom most easily noticed in elderly males.

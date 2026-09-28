@@ -45,5 +45,19 @@ test('Tyrannosaurus uses the six territory subdivisions shown on its map', async
     'rex-northern-redwoods', 'rex-southern-redwoods',
     'rex-western-hills', 'rex-eastern-hills',
     'rex-upper-wollemi', 'rex-lower-wollemi',
+    // The other preferred POIs painted green on the Rex map.
+    'cliff-edge-falls', 'wind-tunnels', 'crag-bluffs', 'east-passage',
   ]);
+});
+
+test('traced POI areas carry a landscape and territories sit inside their parent area', async () => {
+  const regionsDoc = JSON.parse(await readFile(join(projectRoot, 'data', 'map', 'regions.json'), 'utf8'));
+  const regions = new Map(regionsDoc.regions.map(region => [region.id, region]));
+  const landscapes = new Set(regionsDoc.vocabulary.ecosystems);
+  for (const region of regionsDoc.regions.filter(r => r.shape.type === 'polygon')) {
+    assert.ok(region.traced, `${region.id} should be traced from the map images`);
+    assert.ok(region.ecosystems?.length, `${region.id} needs a landscape`);
+    for (const eco of region.ecosystems) assert.ok(landscapes.has(eco), `${region.id} uses unknown landscape ${eco}`);
+    if (region.within) assert.equal(regions.get(region.within)?.shape.type, 'polygon', `${region.id} sits inside ${region.within}`);
+  }
 });

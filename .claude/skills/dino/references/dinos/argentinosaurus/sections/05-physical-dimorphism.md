@@ -1,0 +1,3 @@
+# Argentinosaurus – Physical Dimorphism
+
+♂️ Males, known as bulls, possess dull, desaturated colorations when alone. However, when courting for rights to a harem, forming a harem, or actively leading a harem; they will flush their bodies into more saturated and eye-catching colors. Suitable subspecies include: Huiculensis (spiked, Titanus) ♀️ Females, known as cows, have duller colorations year-round. Suitable subspecies include: Coria, Huinculensis (no spikes) Physical dimorphism for Argentinosaurus is not mandatory, but individuals differing from the typical dimorphism may face difficulties during courtship.

@@ -1,0 +1,3 @@
+# Latenivenatrix – Hunting with Achillobator
+
+A maximum of 3 Latenivenatrix may hunt alongside their bonded Achillobator companions. When hunting alongside Achillobator companions, 3 Latenivenatrix may hunt up to Apex tier - excluding sauropods such as Amargasaurus, Apatosaurus, and Argentinosaurus. As a result, they target larger prey first, such as: Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements. While Achillobator lead the hunt, Latenivenatrix act as consistent support and distraction, frequently jumping onto the sides of their targets and ripping deep holes into their scales and flesh.
