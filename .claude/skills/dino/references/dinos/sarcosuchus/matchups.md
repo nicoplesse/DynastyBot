@@ -1,6 +1,6 @@
 # Sarcosuchus – Matchups
 
-Sarcosuchus has 2 high-priority matchups where legal group size, pursuit and profile intent align. Against 3 listed threats, speed still provides a reliable disengage option.
+Sarcosuchus has 3 high-priority matchups where legal group size, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -20,10 +20,10 @@ Spinosaurus (Freshwater) is linked by a specific profile rule. Sarcosuchus is 15
 - Kampf: defender-advantage (Kampfgewicht 6000 vs 4500)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus – conditional (predator)
-Deinosuchus matters only if it gets the right opening
+### Deinosuchus (Shore) – conditional (predator)
+Deinosuchus (Shore) matters only if it gets the right opening
 
-Deinosuchus is linked by a specific profile rule. Sarcosuchus is 20% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.
+Deinosuchus (Shore) is linked by a specific profile rule. Sarcosuchus is 20% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.
 - Verfolgung: Sarcosuchus is 20% faster in water and can normally refuse this fight.
 - Kampf: defender-advantage (Kampfgewicht 6000 vs 4500)
 - Profilbezug: The profile names this playable as prey or a target.
@@ -33,6 +33,14 @@ Spinosaurus (Saltwater) matters only if it gets the right opening
 
 Spinosaurus (Saltwater) is linked by a specific profile rule. Sarcosuchus is 15% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.
 - Verfolgung: Sarcosuchus is 15% faster in water and can normally refuse this fight.
+- Kampf: defender-advantage (Kampfgewicht 6000 vs 4500)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Deinosuchus (Ocean) – conditional (predator)
+Deinosuchus (Ocean) matters only if it gets the right opening
+
+Deinosuchus (Ocean) is linked by a specific profile rule. Sarcosuchus is 20% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.
+- Verfolgung: Sarcosuchus is 20% faster in water and can normally refuse this fight.
 - Kampf: defender-advantage (Kampfgewicht 6000 vs 4500)
 - Profilbezug: The profile names this playable as prey or a target.
 
@@ -52,31 +60,23 @@ Maip is inside the legal hunt range. Maip is 14% faster on land; a clean escape 
 - Kampf: close (Kampfgewicht 4000 vs 4500)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Tyrannotitan – sehr hoch (predator)
+Tyrannotitan can create a very narrow escape window
+
+Tyrannotitan is inside the legal hunt range. The speed gap is small (900 vs 900), but Tyrannotitan has the pursuit edge on land. The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: The speed gap is small (900 vs 900), but Tyrannotitan has the pursuit edge on land.
+- Kampf: close (Kampfgewicht 5500 vs 4500)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
 ## Chancen (wen du jagen/schlagen kannst)
 
-### Spinosaurus (Freshwater) – sehr hoch (quarry)
-Spinosaurus (Freshwater) is a realistic hunting opportunity
-
-A profile rule names or prioritises this matchup. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.
-- Kampf: attacker-advantage (Kampfgewicht 4500 vs 6000)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Spinosaurus (Saltwater) – sehr hoch (quarry)
-Spinosaurus (Saltwater) is a realistic hunting opportunity
-
-A profile rule names or prioritises this matchup. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.
-- Kampf: attacker-advantage (Kampfgewicht 4500 vs 6000)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Deinocheirus – sehr hoch (quarry)
+### Deinocheirus – conditional (conditional)
 Deinocheirus is a realistic hunting opportunity
 
 A profile rule names or prioritises this matchup. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.
 - Kampf: close (Kampfgewicht 4500 vs 5500)
-- Profilbezug: The profile names this playable as prey or a target.
+- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
 ### Anodontosaurus – sehr hoch (quarry)
 Anodontosaurus is a realistic hunting opportunity
@@ -100,6 +100,30 @@ Concavenator is a realistic hunting opportunity
 Concavenator is within the legal hunt ceiling. Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 4 defenders), the attacking side has the stronger combat envelope.
 - Verfolgung: Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted.
 - Kampf: attacker-advantage (Kampfgewicht 4500 vs 2100)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Megalania (Temperate) – sehr hoch (quarry)
+Megalania (Temperate) is a realistic hunting opportunity
+
+Megalania (Temperate) is within the legal hunt ceiling. Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 4500 vs 2600)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Deinosuchus (Shore) – sehr hoch (quarry)
+Deinosuchus (Shore) is a realistic hunting opportunity
+
+Deinosuchus (Shore) is within the legal hunt ceiling. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 4500 vs 6000)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Megalania (Arid) – sehr hoch (quarry)
+Megalania (Arid) is a realistic hunting opportunity
+
+Megalania (Arid) is within the legal hunt ceiling. Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Sarcosuchus is 96% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 4500 vs 2600)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

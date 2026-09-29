@@ -30,8 +30,8 @@ A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in
 - Kampf: close (Kampfgewicht 3000 vs 5500)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus – conditional (conditional)
-Deinosuchus is a realistic hunting opportunity
+### Deinosuchus (Shore) – conditional (conditional)
+Deinosuchus (Shore) is a realistic hunting opportunity
 
 A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
@@ -54,6 +54,14 @@ A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in
 - Kampf: close (Kampfgewicht 3000 vs 6000)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
+### Deinosuchus (Ocean) – conditional (conditional)
+Deinosuchus (Ocean) is a realistic hunting opportunity
+
+A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 3000 vs 6000)
+- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
+
 ### Kaiwhekea – hoch (risky-quarry)
 Kaiwhekea is legal quarry, but not a comfortable fight
 
@@ -68,6 +76,22 @@ Austroraptor is a realistic hunting opportunity
 Austroraptor is within the legal hunt ceiling. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.
 - Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
 - Kampf: attacker-advantage (Kampfgewicht 3000 vs 2100)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Megalania (Temperate) – sehr hoch (quarry)
+Megalania (Temperate) is a realistic hunting opportunity
+
+Megalania (Temperate) is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 3000 vs 2600)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Megalania (Arid) – hoch (quarry)
+Megalania (Arid) is a realistic hunting opportunity
+
+Megalania (Arid) is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 3000 vs 2600)
 - Profilbezug: Its profile permits hunting through Large tier.
 
 

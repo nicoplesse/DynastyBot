@@ -61,10 +61,10 @@ You are a medium, very fast aquatic carnivore (cruise 700, sprint 1,050) in an u
 
 **Beute & Chancen:**
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
-- **Deinosuchus** (conditional): Deinosuchus is a realistic hunting opportunity
+- **Deinosuchus (Shore)** (conditional): Deinosuchus (Shore) is a realistic hunting opportunity
 - **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) is a realistic hunting opportunity
 - **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) is a realistic hunting opportunity
+- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is a realistic hunting opportunity
 - **Kaiwhekea** (hoch): Kaiwhekea is legal quarry, but not a comfortable fight
-- **Austroraptor** (sehr hoch): Austroraptor is a realistic hunting opportunity
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

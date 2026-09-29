@@ -33,7 +33,9 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Elch / Moose: Yunnanosaurus, Deinocheirus
 - Tüpfelhyäne / Spotted hyena: Maip, Deinonychus
 - Zwergmanguste / Dwarf mongoose: Deinonychus
-- Nilkrokodil / Nile crocodile: Deinosuchus
+- Weißer Hai / Great white shark: Deinosuchus (Ocean), Tyrannotitan
+- See-Elefant / Southern elephant seal: Deinosuchus (Ocean)
+- Nilkrokodil / Nile crocodile: Deinosuchus (Shore)
 - Rotfuchs / Red fox: Dilophosaurus
 - Waschbär / Raccoon: Dilophosaurus
 - Wildkaninchen / Wild rabbit: Dryosaurus
@@ -103,7 +105,6 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Eisbär / Polar bear: Tyrannosaurus
 - Waldkauz / Tawny owl: Tyrannosaurus
 - Tiger / Tiger: Tyrannotitan
-- Weißer Hai / Great white shark: Tyrannotitan
 - Grauwolf (Familienrudel) / Grey wolf (family pack): Utahraptor
 - Laubenvogel / Bowerbird: Utahraptor
 - Rotes Riesenkänguru / Red kangaroo: Yunnanosaurus

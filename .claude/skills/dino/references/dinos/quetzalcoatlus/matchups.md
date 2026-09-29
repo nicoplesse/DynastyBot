@@ -78,6 +78,14 @@ Tenontosaurus is within the legal hunt ceiling. Quetzalcoatlus can approach at 1
 - Kampf: close (Kampfgewicht 2750 vs 2400)
 - Profilbezug: Its profile permits hunting through Large tier.
 
+### Citipati – hoch (quarry)
+Citipati is a realistic hunting opportunity
+
+Citipati is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.
+- Kampf: close (Kampfgewicht 2750 vs 2400)
+- Profilbezug: Its profile permits hunting through Large tier.
+
 ## Besondere Risiken
 
 - **Mutation-specific risk:** Quetzalcoatlus may hunt up to Medium tier if solo, and Large or Albino Apexes if grouped. Any Quetzalcoatlus may hunt offspring of adolescent or below of any tier. They prefer to bully other hunters off their corpses. Solitary Quetzalcoatlus may scavenge at their own risk, but grouped must contest for a body.

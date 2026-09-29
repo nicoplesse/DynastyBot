@@ -13791,13 +13791,13 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "opportunity",
         "band": "conditional",
         "kind": "conditional",
-        "headline": "Deinosuchus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus.",
+        "headline": "Deinosuchus (Shore) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Shore).",
         "score": 41,
         "intent": {
           "allowed": true,
@@ -13826,7 +13826,7 @@
           "targetDefendersUnlimited": false,
           "soloWeightRatio": 0.53,
           "cappedPowerRatio": 0.53,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus."
+          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Shore)."
         },
         "encounter": {
           "level": "frequent",
@@ -13840,13 +13840,13 @@
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.444,
+          "overlap": 0.533,
           "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus.",
+          "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Shore).",
           "8 shared mapped areas make contact plausible."
         ],
         "tags": [],
@@ -13996,6 +13996,73 @@
           "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
           "Even at the legal group cap (1 vs 1), a committed straight fight favours Spinosaurus (Saltwater).",
           "They overlap in 3 mapped areas, so the matchup is situational."
+        ],
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "lurdusaurus",
+            "profileName": "Lurdusaurus",
+            "section": "General Behavior",
+            "text": "Crocodilian species such as Sarcosuchus and Kaprosuchus are especially driven out - with apexes such as Deinosuchus, Spinosaurus and Deinocheirus regrettably tolerated (and avoided) until they have at least 5 Adults; enough for the float to feel confident chasing them out."
+          },
+          {
+            "profileId": "lurdusaurus",
+            "profileName": "Lurdusaurus",
+            "section": "Predator Reaction",
+            "text": "Lurdusaurus always flee from Deinosuchus or Spinosaurus hunting them unless there are at least 5 sub/adults in their group, in which case they will attempt to defend themselves."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "opportunity",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Deinosuchus (Ocean) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Ocean).",
+        "score": 12,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 700,
+          "targetSpeed": 700,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 250,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 50,
+          "label": "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.53,
+          "cappedPowerRatio": 0.53,
+          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Ocean)."
+        },
+        "encounter": {
+          "level": "rare",
+          "sharedRegions": [],
+          "overlap": 0,
+          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
+        },
+        "facts": [
+          "Only a stated condition turns this into a legal hunt or attack.",
+          "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.",
+          "Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Ocean).",
+          "Their mapped ranges and movement niches rarely produce a meaningful encounter."
         ],
         "tags": [],
         "evidence": [

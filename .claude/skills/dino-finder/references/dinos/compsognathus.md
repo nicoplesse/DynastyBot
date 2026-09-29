@@ -54,7 +54,6 @@ You are the smallest carnivore on the roster (Tiny, 400 combat weight) in an unl
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Deinosuchus** (sehr hoch): Deinosuchus can create a very narrow escape window
 - **Deinonychus** (conditional): Deinonychus matters only if it gets the right opening
 - **Latenivenatrix** (conditional): Latenivenatrix matters only if it gets the right opening
 

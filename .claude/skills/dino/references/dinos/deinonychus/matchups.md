@@ -102,5 +102,13 @@ Ceratosaurus is within the legal hunt ceiling. The speed gap is small (1100 vs 1
 - Kampf: close (Kampfgewicht 800 vs 2600)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Austroraptor – spürbar (quarry)
+Austroraptor is a realistic hunting opportunity
+
+Austroraptor is within the legal hunt ceiling. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.
+- Kampf: close (Kampfgewicht 800 vs 2100)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 
 _Methode: [object Object]_

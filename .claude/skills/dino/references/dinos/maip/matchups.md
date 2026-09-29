@@ -102,5 +102,13 @@ Parasaurolophus is within the legal hunt ceiling. Maip is 11% faster on land; a 
 - Kampf: close (Kampfgewicht 4000 vs 5500)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Sarcosuchus – sehr hoch (quarry)
+Sarcosuchus is a realistic hunting opportunity
+
+Sarcosuchus is within the legal hunt ceiling. Maip is 14% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Maip is 14% faster on land; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 4000 vs 4500)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 
 _Methode: [object Object]_

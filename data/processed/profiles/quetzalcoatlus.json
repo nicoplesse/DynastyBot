@@ -15422,6 +15422,71 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "citipati",
+        "name": "Citipati",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Citipati is a realistic hunting opportunity",
+        "summary": "Citipati is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 66,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "air-to-land",
+          "verdict": "approach-advantage",
+          "attackerSpeed": 1350,
+          "targetSpeed": 1075,
+          "speedMarginPct": 25.6,
+          "attackerDurationSeconds": 50,
+          "targetDurationSeconds": 133.333,
+          "durationMarginPct": -62.5,
+          "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 2750,
+          "targetCombatWeight": 2400,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.15,
+          "cappedPowerRatio": 0.91,
+          "label": "The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "black-fern-hills",
+            "coastland-swamp",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.563,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+          "The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "9 shared mapped areas make contact plausible."
+        ],
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [

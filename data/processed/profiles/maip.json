@@ -12367,6 +12367,70 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Sarcosuchus is a realistic hunting opportunity",
+        "summary": "Sarcosuchus is within the legal hunt ceiling. Maip is 14% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 79,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
+          "targetSpeed": 900,
+          "speedMarginPct": 13.9,
+          "attackerDurationSeconds": 90.909,
+          "targetDurationSeconds": 40,
+          "durationMarginPct": 127.3,
+          "label": "Maip is 14% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.89,
+          "cappedPowerRatio": 0.89,
+          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "redwoods",
+            "wollemi-forest"
+          ],
+          "overlap": 0.538,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Maip is 14% faster on land; a clean escape is unlikely once spotted.",
+          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "7 shared mapped areas make contact plausible."
+        ],
+        "tags": [
+          "bleed",
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [],

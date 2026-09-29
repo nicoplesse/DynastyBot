@@ -1,6 +1,6 @@
 # Rhamphorhynchus – Matchups
 
-Rhamphorhynchus has 2 high-priority matchups where legal group size, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.
+Rhamphorhynchus has 1 high-priority matchup where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -10,14 +10,6 @@ Tropeognathus can create a very narrow escape window
 Tropeognathus is linked by a specific profile rule. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.
 - Verfolgung: Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.
 - Kampf: attacker-advantage (Kampfgewicht 2000 vs 500)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Deinosuchus – sehr hoch (predator)
-Deinosuchus can create a very narrow escape window
-
-Deinosuchus is linked by a specific profile rule. Rhamphorhynchus is 8% faster on land and can normally refuse this fight. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Rhamphorhynchus is 8% faster on land and can normally refuse this fight.
-- Kampf: attacker-advantage (Kampfgewicht 6000 vs 500)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Hatzegopteryx – spürbar (predator)

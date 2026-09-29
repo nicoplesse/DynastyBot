@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T15:05:13.935Z",
+  "generatedAt": "2026-09-29T20:34:15.519Z",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -724,7 +724,12 @@
           "seeleopard",
           "walross",
           "mammal",
-          "säugetier"
+          "säugetier",
+          "elephant seal",
+          "southern elephant seal",
+          "see-elefant",
+          "seeelefant",
+          "see elefant"
         ]
       },
       "shark-fish": {
@@ -750,7 +755,8 @@
           "reef shark",
           "grey reef shark",
           "riffhai",
-          "grauer riffhai"
+          "grauer riffhai",
+          "great white shark"
         ]
       },
       "turtle": {
@@ -1991,8 +1997,8 @@
       "de": "Krokodil",
       "dinos": [
         {
-          "id": "deinosuchus",
-          "name": "Deinosuchus",
+          "id": "deinosuchus-shore",
+          "name": "Deinosuchus (Shore)",
           "animal": "Nile crocodile",
           "role": "primary",
           "share": 100,
@@ -2303,6 +2309,14 @@
           "role": "primary",
           "share": 55,
           "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through."
+        },
+        {
+          "id": "deinosuchus-ocean",
+          "name": "Deinosuchus (Ocean)",
+          "animal": "Southern elephant seal",
+          "role": "secondary",
+          "share": 45,
+          "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark."
         }
       ]
     },
@@ -2317,6 +2331,14 @@
           "role": "primary",
           "share": 100,
           "headline": "A gentle whale shark on an endless migration loop, where the fathers raise the young."
+        },
+        {
+          "id": "deinosuchus-ocean",
+          "name": "Deinosuchus (Ocean)",
+          "animal": "Great white shark",
+          "role": "primary",
+          "share": 55,
+          "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark."
         },
         {
           "id": "spinosaurus-saltwater",
@@ -2810,6 +2832,40 @@
         }
       ]
     },
+    "great-white-shark": {
+      "animal": "Great white shark",
+      "de": "Weißer Hai",
+      "scientific": "Carcharodon carcharias",
+      "archetype": "shark-fish",
+      "dinos": [
+        {
+          "id": "deinosuchus-ocean",
+          "name": "Deinosuchus (Ocean)",
+          "role": "primary",
+          "share": 55
+        },
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "role": "secondary",
+          "share": 40
+        }
+      ]
+    },
+    "southern-elephant-seal": {
+      "animal": "Southern elephant seal",
+      "de": "See-Elefant",
+      "scientific": "Mirounga leonina",
+      "archetype": "seal",
+      "dinos": [
+        {
+          "id": "deinosuchus-ocean",
+          "name": "Deinosuchus (Ocean)",
+          "role": "secondary",
+          "share": 45
+        }
+      ]
+    },
     "nile-crocodile": {
       "animal": "Nile crocodile",
       "de": "Nilkrokodil",
@@ -2817,8 +2873,8 @@
       "archetype": "crocodilian",
       "dinos": [
         {
-          "id": "deinosuchus",
-          "name": "Deinosuchus",
+          "id": "deinosuchus-shore",
+          "name": "Deinosuchus (Shore)",
           "role": "primary",
           "share": 100
         }
@@ -3796,20 +3852,6 @@
         }
       ]
     },
-    "great-white-shark": {
-      "animal": "Great white shark",
-      "de": "Weißer Hai",
-      "scientific": "Carcharodon carcharias",
-      "archetype": "shark-fish",
-      "dinos": [
-        {
-          "id": "tyrannotitan",
-          "name": "Tyrannotitan",
-          "role": "secondary",
-          "share": 40
-        }
-      ]
-    },
     "grey-wolf-family-pack": {
       "animal": "Grey wolf (family pack)",
       "de": "Grauwolf (Familienrudel)",
@@ -3888,7 +3930,8 @@
       "dinoIds": [
         "anodontosaurus",
         "camptosaurus",
-        "deinosuchus",
+        "deinosuchus-ocean",
+        "deinosuchus-shore",
         "giganotosaurus",
         "leedsichthys",
         "megalania-arid",
@@ -4036,7 +4079,8 @@
       "label": "Apex — fears little",
       "de": "Spitze der Nahrungskette",
       "dinoIds": [
-        "deinosuchus",
+        "deinosuchus-ocean",
+        "deinosuchus-shore",
         "giganotosaurus",
         "spinosaurus-freshwater",
         "spinosaurus-saltwater",
@@ -4102,7 +4146,8 @@
         "allosaurus",
         "ceratosaurus",
         "daspletosaurus",
-        "deinosuchus",
+        "deinosuchus-ocean",
+        "deinosuchus-shore",
         "megalania-arid",
         "megalania-temperate",
         "sarcosuchus",
@@ -4156,7 +4201,8 @@
         "allosaurus",
         "anodontosaurus",
         "camptosaurus",
-        "deinosuchus",
+        "deinosuchus-ocean",
+        "deinosuchus-shore",
         "dryosaurus",
         "hatzegopteryx",
         "iguanodon",
@@ -4321,7 +4367,7 @@
         "austroraptor",
         "concavenator",
         "deinocheirus",
-        "deinosuchus",
+        "deinosuchus-shore",
         "halszkaraptor",
         "lurdusaurus",
         "megalania-temperate",
@@ -4335,6 +4381,7 @@
       "label": "Open water",
       "de": "Meer & tiefes Wasser",
       "dinoIds": [
+        "deinosuchus-ocean",
         "eurhinosaurus",
         "kaiwhekea",
         "leedsichthys",
@@ -4472,7 +4519,7 @@
         "compsognathus",
         "concavenator",
         "deinocheirus",
-        "deinosuchus",
+        "deinosuchus-shore",
         "eurhinosaurus",
         "halszkaraptor",
         "kentrosaurus",
@@ -4498,7 +4545,8 @@
         "camptosaurus",
         "concavenator",
         "deinocheirus",
-        "deinosuchus",
+        "deinosuchus-ocean",
+        "deinosuchus-shore",
         "eurhinosaurus",
         "halszkaraptor",
         "hatzegopteryx",
@@ -5219,8 +5267,47 @@
       "activity": "Diurnal",
       "classification": "Terrestrial"
     },
-    "deinosuchus": {
-      "name": "Deinosuchus",
+    "deinosuchus-ocean": {
+      "name": "Deinosuchus (Ocean)",
+      "label": "Great white shark + Southern elephant seal",
+      "labelDe": "Weißer Hai + See-Elefant",
+      "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark.",
+      "setting": "The true open ocean: kelp shallows, the deep sea and the offshore shoal",
+      "habitats": [
+        "sea"
+      ],
+      "analogs": [
+        {
+          "id": "great-white-shark",
+          "animal": "Great white shark",
+          "de": "Weißer Hai",
+          "archetype": "shark-fish",
+          "share": 55,
+          "role": "primary"
+        },
+        {
+          "id": "southern-elephant-seal",
+          "animal": "Southern elephant seal",
+          "de": "See-Elefant",
+          "archetype": "seal",
+          "share": 45,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "ambush",
+        "apex",
+        "territorial",
+        "aquatic"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Semi-Aquatic"
+    },
+    "deinosuchus-shore": {
+      "name": "Deinosuchus (Shore)",
       "label": "Nile crocodile",
       "labelDe": "Nilkrokodil",
       "headline": "A Nile crocodile with sea legs: lazy basker, ambush at the water's edge, death rolls.",
@@ -11066,6 +11153,42 @@
       "moods": [],
       "habitats": []
     },
+    "elephant seal": {
+      "archetypes": [
+        "seal"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "southern elephant seal": {
+      "archetypes": [
+        "seal"
+      ],
+      "animals": [
+        "southern-elephant-seal"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "see elefant": {
+      "archetypes": [
+        "seal"
+      ],
+      "animals": [
+        "southern-elephant-seal"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "seeelefant": {
+      "archetypes": [
+        "seal"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
     "shark fish": {
       "archetypes": [
         "shark-fish"
@@ -11252,6 +11375,16 @@
       ],
       "animals": [
         "grey-reef-shark"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "great white shark": {
+      "archetypes": [
+        "shark-fish"
+      ],
+      "animals": [
+        "great-white-shark"
       ],
       "moods": [],
       "habitats": []
@@ -14467,16 +14600,6 @@
       ],
       "animals": [
         "tawny-owl"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "great white shark": {
-      "archetypes": [
-        "shark-fish"
-      ],
-      "animals": [
-        "great-white-shark"
       ],
       "moods": [],
       "habitats": []

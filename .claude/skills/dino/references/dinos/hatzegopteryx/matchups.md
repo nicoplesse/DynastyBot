@@ -78,6 +78,22 @@ Tropeognathus is within the legal hunt ceiling. Hatzegopteryx can approach at 11
 - Kampf: close (Kampfgewicht 3100 vs 2000)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
+### Spinosaurus (Freshwater) – hoch (quarry)
+Spinosaurus (Freshwater) is a realistic hunting opportunity
+
+Spinosaurus (Freshwater) is within the legal hunt ceiling. Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters.
+- Kampf: close (Kampfgewicht 3100 vs 6000)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Spinosaurus (Saltwater) – spürbar (quarry)
+Spinosaurus (Saltwater) is a realistic hunting opportunity
+
+Spinosaurus (Saltwater) is within the legal hunt ceiling. Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters.
+- Kampf: close (Kampfgewicht 3100 vs 6000)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
 ## Besondere Risiken
 
 - **Same-species territory risk:** DEFENDING A TERRITORY: When in a mated pair, Hatzegopteryx claim large territories consisting of an entire POI, and aggressively chase out any other Hatzegopteryx individuals they are not grouped with.

@@ -151,7 +151,7 @@ function relationEvidence(attacker, target) {
     const directAggression = new RegExp(`(?:attack(?:s|ed|ing)?|aggress(?:es|ed|ing)?|challenge(?:s|d|ing)?|drive(?:s|n|ing)?\\s+out|push(?:es|ed|ing)?\\s+out|expel(?:s|led|ling)?|not tolerate)(?:[^.]{0,100})${targetSource}`, 'i');
     if (passiveTarget.test(text)) current = 'avoid';
     else if (cooperative.test(text)) current = 'tolerate';
-    else if (/(?:do not|may not|cannot|never) hunt|excluding?|flee(?:s|ing)? from|avoid(?:s|ing)?/i.test(text)) {
+    else if (/(?:do(?:es)? not|may not|cannot|never)\s+(?:bother\s+(?:to\s+hunt|with)|hunt)|excluding?|flee(?:s|ing)? from|avoid(?:s|ing)?/i.test(text)) {
       current = /unless|except|desperate hunger|deathscar|albino|offspring|adolescent|juvenile|hatchling|young/i.test(text) ? 'conditional' : 'avoid';
     } else if (directHunt.test(text)) current = 'hunt';
     else if (directAggression.test(text)) current = 'aggression';
@@ -398,6 +398,7 @@ function survivalSummary(unit, threats) {
 export function buildMatchups(profiles) {
   const units = profiles.map(unitFromProfile);
   const result = {};
+  const familyOf = new Map(units.map(unit => [unit.id, unit.parentId || unit.id]));
   for (const subject of units) {
     const threats = [];
     const opportunities = [];
@@ -411,15 +412,28 @@ export function buildMatchups(profiles) {
     const relevance = entry => entry.intent.explicit ? 1 : 0;
     threats.sort((a, b) => relevance(b) - relevance(a) || b.score - a.score || b.encounter.sharedRegions.length - a.encounter.sharedRegions.length);
     opportunities.sort((a, b) => relevance(b) - relevance(a) || b.score - a.score || b.encounter.sharedRegions.length - a.encounter.sharedRegions.length);
-    const threatLimit = Math.max(6, Math.min(8, threats.filter(entry => entry.intent.explicit).length));
-    const opportunityLimit = Math.max(6, Math.min(8, opportunities.filter(entry => entry.intent.explicit).length));
-    const actionableThreats = threats.slice(0, threatLimit);
+    // Variants of one profile (megalania-arid / -temperate) share one slot, so a split profile
+    // cannot crowd other counterparts out of the bounded lists.
+    const familyCount = entries => new Set(entries.map(entry => familyOf.get(entry.id))).size;
+    const takeFamilies = (entries, limit) => {
+      const kept = [], families = new Set();
+      for (const entry of entries) {
+        const family = familyOf.get(entry.id);
+        if (!families.has(family) && families.size >= limit) continue;
+        families.add(family);
+        kept.push(entry);
+      }
+      return kept;
+    };
+    const threatLimit = Math.max(6, Math.min(8, familyCount(threats.filter(entry => entry.intent.explicit))));
+    const opportunityLimit = Math.max(6, Math.min(8, familyCount(opportunities.filter(entry => entry.intent.explicit))));
+    const actionableThreats = takeFamilies(threats, threatLimit);
     result[subject.id] = {
       schemaVersion: 2,
       speedKnown: Boolean(subject.landSpeed?.sprint),
       summary: survivalSummary(subject, actionableThreats),
       threats: actionableThreats,
-      opportunities: opportunities.slice(0, opportunityLimit),
+      opportunities: takeFamilies(opportunities, opportunityLimit),
       specialRisks: specialRisks(subject),
       traits: {
         tier: subject.tier,

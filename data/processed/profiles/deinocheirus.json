@@ -14360,21 +14360,22 @@
   "matchups": {
     "schemaVersion": 2,
     "speedKnown": true,
-    "summary": "Deinocheirus has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Deinocheirus has 5 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
         "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Sarcosuchus can create a very narrow escape window",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Sarcosuchus matters only if it gets the right opening",
         "summary": "Sarcosuchus is linked by a specific profile rule. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 102,
+        "score": 80,
         "intent": {
           "allowed": true,
           "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
         },
         "chase": {
           "mode": "water",
@@ -14415,7 +14416,7 @@
           "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
-          "The profile names this playable as prey or a target.",
+          "Only a stated condition turns this into a legal hunt or attack.",
           "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
           "8 shared mapped areas make contact plausible.",
@@ -14443,13 +14444,13 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Deinosuchus can create a real pursuit problem",
-        "summary": "Deinosuchus is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
+        "headline": "Deinosuchus (Shore) can create a real pursuit problem",
+        "summary": "Deinosuchus (Shore) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
         "score": 64,
         "intent": {
           "allowed": true,
@@ -14491,7 +14492,7 @@
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.444,
+          "overlap": 0.533,
           "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
@@ -14500,7 +14501,7 @@
           "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
           "8 shared mapped areas make contact plausible.",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Deinosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [
           "ambush",
@@ -14508,14 +14509,85 @@
         ],
         "evidence": [
           {
-            "profileId": "deinosuchus",
-            "profileName": "Deinosuchus",
+            "profileId": "deinosuchus-shore",
+            "profileName": "Deinosuchus (Shore)",
             "section": "Preferred Prey & Diet",
             "text": "Deinosuchus may only hunt solo adult Deinocheirus that are albino or have open wounds."
           },
           {
-            "profileId": "deinosuchus",
-            "profileName": "Deinosuchus",
+            "profileId": "deinosuchus-shore",
+            "profileName": "Deinosuchus (Shore)",
+            "section": "Cross-Species Interaction",
+            "text": "Deinosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Deinosuchus (Ocean) matters only if it gets the right opening",
+        "summary": "Deinosuchus (Ocean) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
+        "score": 35,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "close-chase",
+          "attackerSpeed": 700,
+          "targetSpeed": 700,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": -33.3,
+          "label": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.09,
+          "cappedPowerRatio": 0.7,
+          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus."
+        },
+        "encounter": {
+          "level": "rare",
+          "sharedRegions": [],
+          "overlap": 0,
+          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+          "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
+          "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "deinosuchus-ocean",
+            "profileName": "Deinosuchus (Ocean)",
+            "section": "Preferred Prey & Diet",
+            "text": "Deinosuchus may only hunt solo adult Deinocheirus that are albino or have open wounds."
+          },
+          {
+            "profileId": "deinosuchus-ocean",
+            "profileName": "Deinosuchus (Ocean)",
             "section": "Cross-Species Interaction",
             "text": "Deinosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
           }
@@ -14790,12 +14862,12 @@
     ],
     "opportunities": [
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "opportunity",
         "band": "severe",
         "kind": "territorial-rival",
-        "headline": "Deinosuchus is a realistic hunting opportunity",
+        "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
         "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
         "score": 89,
         "intent": {
@@ -14838,7 +14910,7 @@
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.444,
+          "overlap": 0.533,
           "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
@@ -14925,6 +14997,76 @@
           "This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it.",
           "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
           "8 shared mapped areas make contact plausible.",
+          "Deinocheirus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "deinocheirus",
+            "profileName": "Deinocheirus",
+            "section": "Engagement Limits (Defence)",
+            "text": "Unless aggression is shown, Deinocheirus ingore Deinosuchus and Sarcosuchus."
+          },
+          {
+            "profileId": "deinocheirus",
+            "profileName": "Deinocheirus",
+            "section": "Predator Reaction",
+            "text": "Though they're generally ignored by healthy Deinosuchus and Sarcosuchus, Deinocheirus remain cautious around these ambush predators."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "opportunity",
+        "band": "conditional",
+        "kind": "territorial-rival",
+        "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 44,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names a direct aggression or rivalry rule."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 700,
+          "targetSpeed": 700,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 250,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 50,
+          "label": "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.92,
+          "cappedPowerRatio": 0.92,
+          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "rare",
+          "sharedRegions": [],
+          "overlap": 0,
+          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
+        },
+        "facts": [
+          "The profile names a direct aggression or rivalry rule.",
+          "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water.",
+          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
           "Deinocheirus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [

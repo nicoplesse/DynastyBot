@@ -70,5 +70,13 @@ Lurdusaurus is within the legal hunt ceiling. Kaiwhekea is 41% faster in water; 
 - Kampf: close (Kampfgewicht 4000 vs 3200)
 - Profilbezug: Its profile permits hunting through Large tier.
 
+### Sarcosuchus – hoch (quarry)
+Sarcosuchus is a realistic hunting opportunity
+
+Sarcosuchus is within the legal hunt ceiling. Kaiwhekea is 13% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Kaiwhekea is 13% faster in water; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 4000 vs 4500)
+- Profilbezug: Its profile permits hunting through Large tier.
+
 
 _Methode: [object Object]_

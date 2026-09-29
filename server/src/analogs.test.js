@@ -53,6 +53,8 @@ test('search understands German and English, ranks the main animal first and kee
     fakeProfile('lion-dino', 'Lionsaur', doc([{ animal: 'African lion', de: 'Afrikanischer Löwe', scientific: 'x', archetype: 'big-cat', share: 100, covers: '' }], ['open']), 'Carnivore'),
     fakeProfile('jaguar-dino', 'Jagosaur', doc([{ animal: 'Jaguar', de: 'Jaguar', scientific: 'x', archetype: 'big-cat', share: 100, covers: '' }], ['forest']), 'Carnivore'),
     fakeProfile('sealion-dino', 'Sealosaur', doc([{ animal: 'Sea lion', de: 'Seelöwe', scientific: 'x', archetype: 'seal', share: 100, covers: '' }], ['sea']), 'Carnivore'),
+    fakeProfile('elephant-dino', 'Elephodon', doc([{ animal: 'African elephant', de: 'Afrikanischer Elefant', scientific: 'x', archetype: 'elephant', share: 100, covers: '' }], ['open'])),
+    fakeProfile('eseal-dino', 'Mirounodon', doc([{ animal: 'Great white shark', de: 'Weißer Hai', scientific: 'x', archetype: 'shark-fish', share: 55, covers: '' }, { animal: 'Southern elephant seal', de: 'See-Elefant', scientific: 'x', archetype: 'seal', share: 45, covers: '' }], ['sea']), 'Carnivore'),
   ];
   const index = buildAnalogIndex(profiles, vocabulary);
   assert.equal(normalizeTerm('Großkatze'), 'grosskatze');
@@ -60,6 +62,9 @@ test('search understands German and English, ranks the main animal first and kee
   assert.equal(searchAnalogs(index, 'Löwe').results[0].id, 'lion-dino');
   assert.ok(!searchAnalogs(index, 'Löwe').results.some(result => result.id === 'sealion-dino'), 'Seelöwe is not a lion');
   assert.equal(searchAnalogs(index, 'Seelöwe').results[0].id, 'sealion-dino');
+  assert.equal(searchAnalogs(index, 'See-Elefant').results[0].id, 'eseal-dino', 'a See-Elefant is a seal');
+  assert.ok(!searchAnalogs(index, 'See-Elefant').results.some(result => result.id === 'elephant-dino'), 'See-Elefant does not name the elephants');
+  assert.equal(searchAnalogs(index, 'Elefant').results[0].id, 'elephant-dino');
   assert.equal(searchAnalogs(index, 'Großkatze im Dschungel').results[0].id, 'jaguar-dino');
   assert.equal(searchAnalogs(index, 'big cat savanna').results[0].id, 'lion-dino');
   assert.deepEqual(index.archetypes.cattle.dinos.map(dino => dino.id), ['buffalo-dino', 'muskox-dino']);

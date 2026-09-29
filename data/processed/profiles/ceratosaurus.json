@@ -13050,6 +13050,122 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Spinosaurus (Saltwater) is a realistic hunting opportunity",
+        "summary": "Spinosaurus (Saltwater) is within the legal hunt ceiling. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 64,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 700,
+          "speedMarginPct": 50,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 217.8,
+          "label": "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.43,
+          "cappedPowerRatio": 1.15,
+          "label": "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "wollemi-forest"
+          ],
+          "overlap": 0.05,
+          "label": "They overlap in 1 mapped area, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.",
+          "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 1 mapped area, so the matchup is situational."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "score": 61,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1050,
+          "targetSpeed": 1025,
+          "speedMarginPct": 2.4,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 0,
+          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1,
+          "cappedPowerRatio": 2.65,
+          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "cliff-edge-falls",
+            "east-passage",
+            "wollemi-forest"
+          ],
+          "overlap": 0.158,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "They overlap in 3 mapped areas, so the matchup is situational."
+        ],
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [

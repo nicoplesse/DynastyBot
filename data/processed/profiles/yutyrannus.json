@@ -10297,6 +10297,67 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Barsboldia is a realistic hunting opportunity",
+        "summary": "Barsboldia is within the legal hunt ceiling. Yutyrannus is 22% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 80,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 850,
+          "speedMarginPct": 22.4,
+          "attackerDurationSeconds": 100,
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 100,
+          "label": "Yutyrannus is 22% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.59,
+          "cappedPowerRatio": 1.01,
+          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.2,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Yutyrannus is 22% faster on land; a clean escape is unlikely once spotted.",
+          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 shared mapped areas make contact plausible.",
+          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [

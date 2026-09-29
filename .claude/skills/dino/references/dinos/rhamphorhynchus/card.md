@@ -56,7 +56,6 @@ You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200
 
 **Gefährlich für dich:**
 - **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
-- **Deinosuchus** (sehr hoch): Deinosuchus can create a very narrow escape window
 - **Hatzegopteryx** (spürbar): Hatzegopteryx can create a credible fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus can create a credible fight
 - **Thalassodromeus** (spürbar): Thalassodromeus can create a credible fight

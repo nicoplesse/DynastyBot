@@ -7,23 +7,24 @@ Pro Ökosystem die Playables, die dort zu Hause sind, von der Spitze der Nahrung
 Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shapes daily life.
 
 1. Spinosaurus (Saltwater) – Stufe 1, Apex, Fleisch, Kampfgewicht 6000
-2. Tylosaurus – Stufe 1, Apex, Fleisch, Kampfgewicht 5000
-3. Kaiwhekea – Stufe 3, Medium, Fleisch, Kampfgewicht 4000
-4. Metriacanthosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3100
-5. Eurhinosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3000
-6. Austroraptor – Stufe 3, Medium, Fleisch, Kampfgewicht 2100
-7. Tropeognathus – Stufe 4, Small, Fleisch, Kampfgewicht 2000
-8. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
-9. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
+2. Deinosuchus (Ocean) – Stufe 1, Apex, Fleisch, Kampfgewicht 6000
+3. Tylosaurus – Stufe 1, Apex, Fleisch, Kampfgewicht 5000
+4. Kaiwhekea – Stufe 3, Medium, Fleisch, Kampfgewicht 4000
+5. Metriacanthosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3100
+6. Eurhinosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3000
+7. Austroraptor – Stufe 3, Medium, Fleisch, Kampfgewicht 2100
+8. Tropeognathus – Stufe 4, Small, Fleisch, Kampfgewicht 2000
+9. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
+10. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
 
-Besucher: Deinosuchus, Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus, Lurdusaurus
+Besucher: Deinosuchus (Shore), Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus, Lurdusaurus
 
 ## Flüsse, Seen & Sümpfe (Rivers, Lakes & Swamps)
 
 Rivers, lakes, bogs, mudflats and riverbanks: life organised around fresh water.
 
 1. Spinosaurus (Freshwater) – Stufe 1, Apex, Fleisch, Kampfgewicht 6000
-2. Deinosuchus – Stufe 1, Apex, Fleisch, Kampfgewicht 6000
+2. Deinosuchus (Shore) – Stufe 1, Apex, Fleisch, Kampfgewicht 6000
 3. Suchomimus – Stufe 2, Large, Fleisch, Kampfgewicht 5000
 4. Sarcosuchus – Stufe 2, Large, Fleisch, Kampfgewicht 4500
 5. Concavenator – Stufe 3, Medium, Fleisch, Kampfgewicht 2100

@@ -12668,6 +12668,70 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
+        "summary": "Sarcosuchus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+        "score": 55,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
+          "targetSpeed": 900,
+          "speedMarginPct": 13.9,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 40,
+          "durationMarginPct": 127.5,
+          "label": "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.78,
+          "cappedPowerRatio": 0.37,
+          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "redwoods",
+            "wollemi-forest"
+          ],
+          "overlap": 0.538,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+          "7 shared mapped areas make contact plausible.",
+          "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [],

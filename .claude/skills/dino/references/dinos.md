@@ -22,7 +22,8 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | daspletosaurus | Daspletosaurus | Dasp, Daspleto | Large Cathemeral Terrestrial Carnivore | Dingo + Puma (Dingo + Cougar) |
 | deinocheirus | Deinocheirus | – | Apex Cathemeral Semi-Aquatic Herbivore | Höckerschwan + Elch (Mute swan + Moose) |
 | deinonychus | Deinonychus | Deinony | Small Diurnal Terrestrial Carnivore | Tüpfelhyäne + Zwergmanguste (Spotted hyena + Dwarf mongoose) |
-| deinosuchus | Deinosuchus | – | Apex Cathemeral Semi-Aquatic Carnivore | Nilkrokodil (Nile crocodile) |
+| deinosuchus-ocean | Deinosuchus (Ocean) | Deinosuchus, Ocean Deinosuchus, Ocean Deino, Sea Deino, Hochsee-Deino, Meeres-Deino, Hai-Deino, Hochseehai | Apex Cathemeral Semi-Aquatic Carnivore | Weißer Hai + See-Elefant (Great white shark + Southern elephant seal) |
+| deinosuchus-shore | Deinosuchus (Shore) | Deinosuchus, Shore Deinosuchus, Shore Deino, Ufer-Deino, Uferlauerer | Apex Cathemeral Semi-Aquatic Carnivore | Nilkrokodil (Nile crocodile) |
 | dilophosaurus | Dilophosaurus | – | Medium Cathemeral Terrestrial Carnivore | Rotfuchs + Waschbär (Red fox + Raccoon) |
 | dryosaurus | Dryosaurus | Dryo | Small Cathemeral Terrestrial Herbivore | Wildkaninchen + Pavian (Trupp) (Wild rabbit + Baboon troop) |
 | eotriceratops | Eotriceratops | Eo, Eotrike, Trike | Apex Diurnal Terrestrial Herbivore | Asiatischer Elefant + Flusspferd (Bulle) (Asian elephant + Hippopotamus (bull)) |

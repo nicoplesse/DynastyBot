@@ -12964,12 +12964,12 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
-        "headline": "Deinosuchus is a realistic hunting opportunity",
+        "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
         "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
         "score": 102,
         "intent": {
@@ -13003,25 +13003,22 @@
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "kelp-vale",
             "coastal-bluffs",
             "volcano-islands",
-            "abyssal-depths",
             "palm-islands",
             "big-tree-overlook",
             "twisted-forest",
             "stillwater-bog",
-            "mudflats",
-            "stonebed-shoal"
+            "mudflats"
           ],
-          "overlap": 0.909,
-          "label": "10 shared mapped areas make contact plausible."
+          "overlap": 0.636,
+          "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "10 shared mapped areas make contact plausible.",
+          "7 shared mapped areas make contact plausible.",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [
@@ -13174,6 +13171,80 @@
           "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
           "5 shared mapped areas make contact plausible.",
+          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Quick View",
+            "text": "Tylosaurus may hunt up to Apex tier. Tylosaurus will not hunt adult Apex terrestrial carnivores unless they are swimming in water, and will only hunt Sub/Adult Spinosaurus or Deinosuchus if desperate hunger. Tylosaurus may not scavenge."
+          },
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Engagement Limits",
+            "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 102,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 900,
+          "targetSpeed": 700,
+          "speedMarginPct": 28.6,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 33.2,
+          "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.83,
+          "cappedPowerRatio": 1.29,
+          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "abyssal-depths",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.3,
+          "label": "3 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 shared mapped areas make contact plausible.",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [

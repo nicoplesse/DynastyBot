@@ -79,7 +79,7 @@ You are the loner of the red rock, and you live on the ground. Where your temper
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
-- **Deinosuchus** (sehr hoch): Deinosuchus can create a very narrow escape window
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 
 **Beute & Chancen:**

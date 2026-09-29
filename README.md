@@ -78,7 +78,12 @@ Spinosaurus is split along a line the profile draws itself. Most Spinosaurus "po
 
 Like every Spinosaurus, each variant holds exactly one territory and roams only inside it. The saltwater variant drinks at fresh water outside its territory (POI role `drinking`, `"claimable": false`), which it uses peacefully and never defends.
 
-Sibling variants are one species unless the profile says otherwise. The Spinosaurus variants never appear as each other's prey, while the Megalania variants may hunt each other.
+Deinosuchus is split into a shore and an ocean playable. Its profile says it adapts "surprisingly well to brackish and saltwater environments" and ventures "out into the open ocean":
+
+- **Deinosuchus (Shore)**, the "Uferlauerer": the Nile crocodile of rivers, swamps, estuaries, beaches and islands, ambushing land animals at the water's edge.
+- **Deinosuchus (Ocean)**, the "Hochseehai": only the three true ocean areas (Kelp Vale, Abyssal Depths, Stonebed Shoal), with no crocodile analog. By day it is a southern elephant seal that basks on shores, rocks and driftwood or at the surface and sheds in large pieces; at night it is a great white that sinks into deep water and strikes from below.
+
+Sibling variants are one species unless the profile says otherwise, and in the bounded threat and prey lists the variants of one profile share a single slot. The Spinosaurus variants never appear as each other's prey, while the Megalania variants may hunt each other.
 
 ## Counters and matchups
 
@@ -96,7 +101,7 @@ Every playable is matched to the one or two real animals it plays most like, so 
 - `why`: concrete profile rules and stats that make the comparison fit, with verbatim quotes where the profile says it best; `notLike`: where the comparison breaks; `twist`: an optional extra abstraction (for example "scaled up to the largest land animal ever").
 - `moods`: the play feel (solitary, pack, herd, ambush, apex, prey, nocturnal…).
 
-Animal families, moods and habitats form a controlled vocabulary with English and German synonyms in `data/reference/analog-vocabulary.json`. At processing time (`server/src/analogs.js`) each profile gains an `analog` block with the curated content, the official "Profile inspired by…" credit, live stat facts (tier, combat weight, HP, sprint speeds, hunt ceiling) and links to other playables built on the same animal. The processor also writes `data/processed/analogs.json`: an index of playables by animal family, animal, mood and habitat, plus a synonym lookup. `GET /api/analogs` serves it and `GET /api/analogs/search?q=…` ranks playables for free text in German or English ("ochse", "Großkatze im Dschungel", "Rudel Wolf", "Krokodil im Sumpf"). The main animal ranks ahead of a partial match, and family words only name an animal as a whole word ("Moschusochse" is not an ox; "Seelöwe" is not a lion). The frontend shows a **Plays Like** section at the top of every profile and an **Animal Finder** page (families, habitat, play-feel and diet filters, free-text search).
+Animal families, moods and habitats form a controlled vocabulary with English and German synonyms in `data/reference/analog-vocabulary.json`. At processing time (`server/src/analogs.js`) each profile gains an `analog` block with the curated content, the official "Profile inspired by…" credit, live stat facts (tier, combat weight, HP, sprint speeds, hunt ceiling) and links to other playables built on the same animal. The processor also writes `data/processed/analogs.json`: an index of playables by animal family, animal, mood and habitat, plus a synonym lookup. `GET /api/analogs` serves it and `GET /api/analogs/search?q=…` ranks playables for free text in German or English ("ochse", "Großkatze im Dschungel", "Rudel Wolf", "Krokodil im Sumpf"). The main animal ranks ahead of a partial match, and family words only name an animal as a whole word ("Moschusochse" is not an ox; "Seelöwe" is not a lion). A matched phrase owns its words ("See-Elefant" is an elephant seal, not an elephant), and when a query names a specific animal, other members of its family rank below the playables built on that animal. The frontend shows a **Plays Like** section at the top of every profile and an **Animal Finder** page (families, habitat, play-feel and diet filters, free-text search).
 
 ## Profile images: animal first, then the game
 

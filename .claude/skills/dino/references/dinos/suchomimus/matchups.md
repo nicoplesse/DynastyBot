@@ -36,14 +36,6 @@ Torvosaurus is inside the legal hunt range. This is a close chase on land: 950 v
 - Kampf: attacker-advantage (Kampfgewicht 4500 vs 5000)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
-### Deinosuchus – spürbar (predator)
-Deinosuchus can create a credible fight
-
-Deinosuchus is inside the legal hunt range. Deinosuchus is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.
-- Verfolgung: Deinosuchus is 9% faster in water; a clean escape is unlikely once spotted.
-- Kampf: defender-advantage (Kampfgewicht 6000 vs 5000)
-- Profilbezug: Its profile permits hunting through Giant tier.
-
 ### Tylosaurus – spürbar (predator)
 Tylosaurus can create a credible fight
 
@@ -51,6 +43,22 @@ Tylosaurus is inside the legal hunt range. Tylosaurus is 41% faster in water; a 
 - Verfolgung: Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted.
 - Kampf: defender-advantage (Kampfgewicht 5000 vs 5000)
 - Profilbezug: Its profile permits hunting through Apex tier.
+
+### Deinosuchus (Shore) – spürbar (predator)
+Deinosuchus (Shore) can create a credible fight
+
+Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.
+- Verfolgung: Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.
+- Kampf: defender-advantage (Kampfgewicht 6000 vs 5000)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Deinosuchus (Ocean) – conditional (predator)
+Deinosuchus (Ocean) matters only if it gets the right opening
+
+Deinosuchus (Ocean) is inside the legal hunt range. Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.
+- Verfolgung: Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted.
+- Kampf: defender-advantage (Kampfgewicht 6000 vs 5000)
+- Profilbezug: Its profile permits hunting through Giant tier.
 
 ## Chancen (wen du jagen/schlagen kannst)
 
@@ -100,6 +108,14 @@ Stegosaurus is a realistic hunting opportunity
 Stegosaurus is within the legal hunt ceiling. The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.
 - Verfolgung: The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.
 - Kampf: attacker-advantage (Kampfgewicht 5000 vs 5000)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Parasaurolophus – hoch (quarry)
+Parasaurolophus is a realistic hunting opportunity
+
+Parasaurolophus is within the legal hunt ceiling. The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land.
+- Kampf: close (Kampfgewicht 5000 vs 5500)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

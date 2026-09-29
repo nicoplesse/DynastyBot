@@ -78,18 +78,18 @@ You are a large semi-aquatic carnivore in a 'float' of up to 3: one female with 
 **Gefährlich für dich:**
 - **Deinocheirus** (spürbar): Deinocheirus can create a credible fight
 - **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
-- **Deinosuchus** (conditional): Deinosuchus matters only if it gets the right opening
+- **Deinosuchus (Shore)** (conditional): Deinosuchus (Shore) matters only if it gets the right opening
 - **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) matters only if it gets the right opening
+- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) matters only if it gets the right opening
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
-- **Maip** (sehr hoch): Maip can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
-- **Deinocheirus** (sehr hoch): Deinocheirus is a realistic hunting opportunity
+- **Deinocheirus** (conditional): Deinocheirus is a realistic hunting opportunity
 - **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
 - **Austroraptor** (sehr hoch): Austroraptor is a realistic hunting opportunity
 - **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
+- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Cannibalism / offspring risk: Sarcosuchus can group up to 3 Sub/Adults with unlimited offspring and  unlimited adoptees. These groups are called a float. Only males adopt - females may cannibalize unrelated Sarcosuchus of adolescent and below.

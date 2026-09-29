@@ -66,10 +66,10 @@ You are an Apex aquatic carnivore. Females live in matrilines of up to 6 related
 
 **Beute & Chancen:**
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
-- **Deinosuchus** (sehr hoch): Deinosuchus is a realistic hunting opportunity
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
 - **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
 - **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
+- **Deinosuchus (Ocean)** (sehr hoch): Deinosuchus (Ocean) is a realistic hunting opportunity
 - **Kaiwhekea** (sehr hoch): Kaiwhekea is a realistic hunting opportunity
-- **Eurhinosaurus** (hoch): Eurhinosaurus can usually refuse the chase
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

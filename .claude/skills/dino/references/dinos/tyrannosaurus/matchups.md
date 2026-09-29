@@ -102,6 +102,14 @@ Amargasaurus is within the legal hunt ceiling. Tyrannosaurus is 14% faster on la
 - Kampf: close (Kampfgewicht 6000 vs 5000)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
+### Apatosaurus – hoch (quarry)
+Apatosaurus is a realistic hunting opportunity
+
+Apatosaurus is within the legal hunt ceiling. Tyrannosaurus is 60% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Tyrannosaurus is 60% faster on land; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 6000 vs 8000)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
 ## Besondere Risiken
 
 - **Mutation-specific risk:** Tyrannosaurus adults may cannibalize unrelated offspring of Adolescent and below, and Albinos.

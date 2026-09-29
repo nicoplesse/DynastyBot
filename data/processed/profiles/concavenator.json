@@ -12738,13 +12738,13 @@
         "confidence": "derived"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
-        "headline": "Deinosuchus can create a very narrow escape window",
-        "summary": "Deinosuchus is inside the legal hunt range. Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted. The legal groups (1 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "headline": "Deinosuchus (Shore) can create a very narrow escape window",
+        "summary": "Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted. The legal groups (1 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
         "score": 80,
         "intent": {
           "allowed": true,
@@ -12760,7 +12760,7 @@
           "attackerDurationSeconds": 166.667,
           "targetDurationSeconds": 91,
           "durationMarginPct": 83.2,
-          "label": "Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted."
+          "label": "Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted."
         },
         "fight": {
           "verdict": "close",
@@ -12785,15 +12785,15 @@
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.5,
+          "overlap": 0.636,
           "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted.",
+          "Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (1 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
           "7 shared mapped areas make contact plausible.",
-          "Deinosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [
           "ambush"
@@ -13230,6 +13230,66 @@
         "tags": [
           "dangerous-defender"
         ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "citipati",
+        "name": "Citipati",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Citipati is a realistic hunting opportunity",
+        "summary": "Citipati is within the legal hunt ceiling. The speed gap is small (1100 vs 1075), but Concavenator has the pursuit edge on land. The legal groups (4 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 66,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1100,
+          "targetSpeed": 1075,
+          "speedMarginPct": 2.3,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 133.333,
+          "durationMarginPct": 25.3,
+          "label": "The speed gap is small (1100 vs 1075), but Concavenator has the pursuit edge on land."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 2400,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.88,
+          "cappedPowerRatio": 0.88,
+          "label": "The legal groups (4 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "coastland-swamp"
+          ],
+          "overlap": 0.316,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "The speed gap is small (1100 vs 1075), but Concavenator has the pursuit edge on land.",
+          "The legal groups (4 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "6 shared mapped areas make contact plausible."
+        ],
+        "tags": [],
         "evidence": [],
         "confidence": "derived"
       }

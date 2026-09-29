@@ -57,8 +57,8 @@ You are a large semi-aquatic carnivore in a 'snare' of up to 3. You fish readily
 - **Achillobator** (hoch): Achillobator can create a real pursuit problem
 - **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
 - **Torvosaurus** (spürbar): Torvosaurus can create a credible fight
-- **Deinosuchus** (spürbar): Deinosuchus can create a credible fight
 - **Tylosaurus** (spürbar): Tylosaurus can create a credible fight
+- **Deinosuchus (Shore)** (spürbar): Deinosuchus (Shore) can create a credible fight
 
 **Beute & Chancen:**
 - **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity

@@ -56,7 +56,7 @@ You are a swift, medium semi-aquatic carnivore in a leaderless gang of up to 8. 
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Kaiwhekea** (sehr hoch): Kaiwhekea can create a very narrow escape window
 - **Suchomimus** (sehr hoch): Suchomimus can create a very narrow escape window
-- **Deinosuchus** (sehr hoch): Deinosuchus can create a very narrow escape window
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Alioramus** (hoch): Alioramus can create a real pursuit problem
 
 **Beute & Chancen:**

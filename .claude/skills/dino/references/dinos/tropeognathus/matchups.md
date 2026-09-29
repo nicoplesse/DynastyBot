@@ -70,12 +70,12 @@ A profile rule names or prioritises this matchup. Tropeognathus can arrive from 
 - Kampf: defender-advantage (Kampfgewicht 2000 vs 2100)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus – hoch (quarry)
-Deinosuchus is a realistic hunting opportunity
+### Leedsichthys – hoch (quarry)
+Leedsichthys is a realistic hunting opportunity
 
-Deinosuchus is within the legal hunt ceiling. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+Leedsichthys is within the legal hunt ceiling. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.
-- Kampf: close (Kampfgewicht 2000 vs 6000)
+- Kampf: close (Kampfgewicht 2000 vs 5500)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
 

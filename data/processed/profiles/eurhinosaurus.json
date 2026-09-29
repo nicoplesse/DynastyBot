@@ -13676,12 +13676,12 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "opportunity",
         "band": "conditional",
         "kind": "conditional",
-        "headline": "Deinosuchus is a realistic hunting opportunity",
+        "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
         "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
         "score": 73,
         "intent": {
@@ -13716,26 +13716,23 @@
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "kelp-vale",
             "coastal-bluffs",
             "volcano-islands",
-            "abyssal-depths",
             "palm-islands",
             "big-tree-overlook",
             "twisted-forest",
             "stillwater-bog",
             "mudflats",
-            "stonebed-shoal",
             "coastland-swamp"
           ],
-          "overlap": 1,
-          "label": "11 shared mapped areas make contact plausible."
+          "overlap": 0.727,
+          "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "11 shared mapped areas make contact plausible."
+          "8 shared mapped areas make contact plausible."
         ],
         "tags": [],
         "evidence": [
@@ -13871,6 +13868,71 @@
           "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
           "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
           "5 shared mapped areas make contact plausible."
+        ],
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "eurhinosaurus",
+            "profileName": "Eurhinosaurus",
+            "section": "Cross-Species Interaction",
+            "text": "Eurhinosaurus consider most other species in a neural manner, except for Spinosaurus and Deinosuchus which they will flee from."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "opportunity",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 64,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 700,
+          "speedMarginPct": 50,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 33.2,
+          "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.5,
+          "cappedPowerRatio": 1.05,
+          "label": "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "kelp-vale",
+            "abyssal-depths",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.273,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Only a stated condition turns this into a legal hunt or attack.",
+          "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+          "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 3 mapped areas, so the matchup is situational."
         ],
         "tags": [],
         "evidence": [
@@ -14021,6 +14083,122 @@
           "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
           "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
           "11 shared mapped areas make contact plausible."
+        ],
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "score": 83,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 450,
+          "speedMarginPct": 133.3,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 393.3,
+          "label": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.15,
+          "cappedPowerRatio": 2.42,
+          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "volcano-islands",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp"
+          ],
+          "overlap": 0.353,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
+          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "6 shared mapped areas make contact plausible."
+        ],
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Megalania (Arid) is a realistic hunting opportunity",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "score": 74,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 450,
+          "speedMarginPct": 133.3,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 393.3,
+          "label": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.15,
+          "cappedPowerRatio": 2.42,
+          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "volcano-islands",
+            "big-tree-overlook"
+          ],
+          "overlap": 0.105,
+          "label": "They overlap in 2 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
+          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "They overlap in 2 mapped areas, so the matchup is situational."
         ],
         "tags": [],
         "evidence": [],

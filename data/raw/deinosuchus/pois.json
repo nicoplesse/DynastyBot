@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "curated-areas",
   "mapImage": "images/image.png",
-  "note": "Preferred POI areas curated from the profile map. Small named landmarks are represented by their enclosing, black-outlined POI area.",
+  "note": "Preferred POI areas curated from the profile map (green = \"Preferred POI\"). The archive splits them into a shore variant and an ocean variant that keeps to the three true ocean areas.",
   "pois": [
     {
       "regionId": "kelp-vale",
@@ -10,7 +10,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "coastal-bluffs",
@@ -18,7 +19,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "volcano-islands",
@@ -26,7 +28,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "abyssal-depths",
@@ -34,7 +37,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "palm-islands",
@@ -42,7 +46,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "big-tree-overlook",
@@ -50,7 +55,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "twisted-forest",
@@ -58,7 +64,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "stillwater-bog",
@@ -66,7 +73,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "mudflats",
@@ -74,7 +82,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     },
     {
       "regionId": "stonebed-shoal",
@@ -82,7 +91,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "coastland-swamp",
@@ -90,9 +100,28 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "shore"
     }
   ],
   "reviewedAt": "2026-09-24",
-  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed."
+  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed.",
+  "variants": [
+    {
+      "id": "shore",
+      "name": "Shore Deinosuchus",
+      "moisture": "wet",
+      "note": "The Deinosuchus of rivers, swamps, estuaries, beaches and islands: ambushes land animals at the water's edge."
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean Deinosuchus",
+      "moisture": "aquatic",
+      "note": "The Deinosuchus of the true open ocean: Kelp Vale, the Abyssal Depths and the Stonebed Shoal only. Tolerates salt water fully and needs no fresh water."
+    }
+  ],
+  "legend": {
+    "ocean": "Ocean range of the ocean variant (Kelp Vale, Abyssal Depths, Stonebed Shoal)",
+    "shore": "Range of the shore variant (rivers, swamps, estuaries, beaches and islands)"
+  }
 }

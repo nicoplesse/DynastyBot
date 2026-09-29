@@ -102,6 +102,14 @@ Barsboldia is within the legal hunt ceiling. Dilophosaurus is 29% faster on land
 - Kampf: close (Kampfgewicht 2400 vs 5500)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Megalania (Temperate) – hoch (quarry)
+Megalania (Temperate) is a realistic hunting opportunity
+
+Megalania (Temperate) is within the legal hunt ceiling. The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land. At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land.
+- Kampf: attacker-advantage (Kampfgewicht 2400 vs 2600)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ## Besondere Risiken
 
 - **Cannibalism / offspring risk:** Dilophosaurus are tolerant towards other groups of Dilophosaurus. Dilophosaurus are passive towards all other species. Dominant males in leashes may attempt to cannibalize unattended ungrouped Dilophosaurus offspring.

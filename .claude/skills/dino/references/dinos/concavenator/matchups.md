@@ -36,11 +36,11 @@ Suchomimus is inside the legal hunt range. Suchomimus is 42% faster in water; a 
 - Kampf: attacker-advantage (Kampfgewicht 5000 vs 2100)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Deinosuchus – sehr hoch (predator)
-Deinosuchus can create a very narrow escape window
+### Deinosuchus (Shore) – sehr hoch (predator)
+Deinosuchus (Shore) can create a very narrow escape window
 
-Deinosuchus is inside the legal hunt range. Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted. The legal groups (1 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.
-- Verfolgung: Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted.
+Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted. The legal groups (1 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted.
 - Kampf: close (Kampfgewicht 6000 vs 2100)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
@@ -100,6 +100,14 @@ Metriacanthosaurus is a realistic hunting opportunity
 Metriacanthosaurus is within the legal hunt ceiling. The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land.
 - Kampf: close (Kampfgewicht 2100 vs 3100)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Citipati – hoch (quarry)
+Citipati is a realistic hunting opportunity
+
+Citipati is within the legal hunt ceiling. The speed gap is small (1100 vs 1075), but Concavenator has the pursuit edge on land. The legal groups (4 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: The speed gap is small (1100 vs 1075), but Concavenator has the pursuit edge on land.
+- Kampf: close (Kampfgewicht 2100 vs 2400)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

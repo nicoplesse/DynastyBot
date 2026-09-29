@@ -30,8 +30,8 @@ A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in wa
 - Kampf: attacker-advantage (Kampfgewicht 5000 vs 5500)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus – sehr hoch (quarry)
-Deinosuchus is a realistic hunting opportunity
+### Deinosuchus (Shore) – sehr hoch (quarry)
+Deinosuchus (Shore) is a realistic hunting opportunity
 
 A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.
@@ -51,6 +51,14 @@ Spinosaurus (Saltwater) is a realistic hunting opportunity
 
 A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 5000 vs 6000)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Deinosuchus (Ocean) – sehr hoch (quarry)
+Deinosuchus (Ocean) is a realistic hunting opportunity
+
+A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.
 - Kampf: close (Kampfgewicht 5000 vs 6000)
 - Profilbezug: The profile names this playable as prey or a target.
 

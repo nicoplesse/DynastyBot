@@ -1,6 +1,6 @@
 # Megalania (Temperate) – Matchups
 
-Megalania (Temperate) has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Megalania (Temperate) has 7 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -12,11 +12,11 @@ Megalania (Arid) is linked by a specific profile rule. This is a close chase in 
 - Kampf: close (Kampfgewicht 2600 vs 2600)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus – sehr hoch (predator)
-Deinosuchus can create a very narrow escape window
+### Deinosuchus (Shore) – sehr hoch (predator)
+Deinosuchus (Shore) can create a very narrow escape window
 
-Deinosuchus is inside the legal hunt range. Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted.
+Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted.
 - Kampf: attacker-advantage (Kampfgewicht 6000 vs 2600)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
@@ -51,6 +51,14 @@ Eurhinosaurus is inside the legal hunt range. Eurhinosaurus is 133% faster in wa
 - Verfolgung: Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.
 - Kampf: attacker-advantage (Kampfgewicht 3000 vs 2600)
 - Profilbezug: Its profile permits hunting through Large tier.
+
+### Spinosaurus (Saltwater) – sehr hoch (predator)
+Spinosaurus (Saltwater) can create a very narrow escape window
+
+Spinosaurus (Saltwater) is inside the legal hunt range. Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 6000 vs 2600)
+- Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Chancen (wen du jagen/schlagen kannst)
 
