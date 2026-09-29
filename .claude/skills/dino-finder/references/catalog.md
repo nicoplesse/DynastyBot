@@ -12,7 +12,7 @@ Alle 64 Playables in einer Zeile. Spalten: Tier = Spielgröße (Tiny < Small < M
 | anodontosaurus | Anodontosaurus | Medium | Pflanzen | tagaktiv | Land | Wald | Solo spielbar | – | – | Wombat 60% + Honigdachs 40% | Du bist ein Wombat mit der Haltung eines Honigdachses: ein gepanzerter, dickköpfiger Einzelgänger, der vor nichts und niemandem davonläuft. |
 | apatosaurus | Apatosaurus | Apex | Pflanzen | tagaktiv | Land | Ebenen & Savanne | Solo eingeschränkt | – | – | Afrikanischer Elefant 100% | Du bist ein Afrikanischer Elefant in Sauropoden-Größe: ein ruhiger, aber launischer Riese, der mit seiner Herde über offenes Land zieht und dabei von Schlammloch zu … |
 | argentinosaurus | Argentinosaurus | Giant | Pflanzen | tag- & nachtaktiv | Land | Ebenen & Savanne | Gruppentier | – | – | Giraffe 50% + Gorilla (Silberrücken) 50% | Du bist eine Giraffe in der Größe eines Hochhauses mit der Seele eines Silberrücken-Gorillas: das langsamste und größte Landtier der Karte, ein sanfter Riese mit tiefen … |
-| austroraptor | Austroraptor | Medium | Fleisch | tag- & nachtaktiv | Land & Wasser | Meer & Küste | Solo spielbar | 1 | Medium | Graureiher 55% + Kaiserpinguin 45% | Du bist ein Graureiher mit dem Leben eines Kaiserpinguins: ein schneller, halb im Wasser lebender Fischer, der geduldig am Ufer lauert, kleine Beute packt, ertränkt … |
+| austroraptor | Austroraptor | Medium | Fleisch | tag- & nachtaktiv | Land & Wasser | Meer & Küste | Solo spielbar | 1 | Medium | EKH-Hauskatze 55% + Kaiserpinguin 45% | Du bist an Land eine EKH-Katze und im Wasser ein Kaiserpinguin: neugierig und ein bisschen hochnäsig, döst im Gebüsch, starrt Rivalen nieder und spielt mit allem, was … |
 | barsboldia | Barsboldia | Apex | Pflanzen | tag- & nachtaktiv | Land | Wüste & Canyons | Solo eingeschränkt | – | – | Wildkamel (Trampeltier) 60% + Wüstenelefant 40% | Du bist ein Wildkamel mit dem Herz eines Wüstenelefanten: ein riesiger, gemütlicher Wüstennomade, der weite Strecken zu den Salzfelsen zurücklegt, lange ohne Wasser … |
 | camptosaurus | Camptosaurus | Small | Pflanzen | nachtaktiv | Land | Meer & Küste | Solo spielbar | – | – | Quokka 55% + Pfeifhase 45% | Du bist ein Quokka mit der Nachbarschaftslogik eines Pfeifhasen: ein kleiner, nachtaktiver Küstenbewohner, der sich auf seine Schnelligkeit verlässt und in einer … |
 | ceratosaurus | Ceratosaurus | Medium | Fleisch | nachtaktiv | Land | Wald | Solo eingeschränkt | 4 | Apex | Grauwolf 100% | Du bist ein Grauwolf, genauer der einsame Wolf, der sein Rudel noch sucht: ein nachtaktiver Waldjäger, der am Rand seines POIs patrouilliert, vom Geruch von Blut … |
@@ -80,7 +80,7 @@ Alle 64 Playables in einer Zeile. Spalten: Tier = Spielgröße (Tiny < Small < M
 Für grobe Wünsche wie „irgendwas Katzenhaftes“ oder „wie ein Wolf“ (Anteil am Analog in %).
 
 - Großkatze / Big cat: Giganotosaurus (Jaguar 100%), Torvosaurus (African lion 100%), Allosaurus (Asiatic lion 60%), Tyrannotitan (Tiger 60%), Yutyrannus (Snow leopard 60%), Daspletosaurus (Cougar 45%), Pycnonemosaurus (Lion 45%)
-- Wildkatze & Luchs / Wild cat & lynx: Achillobator (Caracal 60%), Allosaurus (Bobcat 40%)
+- Kleinkatze & Luchs / Small cat & lynx: Achillobator (Caracal 60%), Austroraptor (European Shorthair 55%), Allosaurus (Bobcat 40%)
 - Bär / Bear: Spinosaurus (Freshwater) (Grizzly bear 60%), Tyrannosaurus (Polar bear 55%)
 - Wolf, Wildhund & Fuchs / Wolf, dog & fox: Alioramus (African wild dog 100%), Ceratosaurus (Grey wolf 100%), Utahraptor (Grey wolf (family pack) 70%), Daspletosaurus (Dingo 55%), Dilophosaurus (Red fox 55%), Suchomimus (Coyote 50%), Achillobator (Maned wolf 40%), Compsognathus (Golden jackal 40%), Latenivenatrix (Dhole 40%), Yutyrannus (Arctic fox 40%)
 - Hyäne / Hyena: Maip (Spotted hyena 60%), Deinonychus (Spotted hyena 55%)
@@ -106,7 +106,7 @@ Für grobe Wünsche wie „irgendwas Katzenhaftes“ oder „wie ein Wolf“ (An
 - Geier & Storch / Vulture & stork: Quetzalcoatlus (Vulture + Marabou stork 100%)
 - Krähe & Rabe / Crow & raven: Latenivenatrix (Rook 60%), Maip (Common raven 40%), Halszkaraptor (Magpie 30%)
 - Seevogel / Seabird: Tropeognathus (Herring gull + Great cormorant 100%), Austroraptor (Emperor penguin 45%), Thalassodromeus (Black-headed gull 45%)
-- Ente, Schwan & Reiher / Duck, swan & heron: Halszkaraptor (Mallard 70%), Austroraptor (Grey heron 55%), Deinocheirus (Mute swan 55%), Sarcosuchus (Jacana 40%)
+- Ente, Schwan & Reiher / Duck, swan & heron: Halszkaraptor (Mallard 70%), Deinocheirus (Mute swan 55%), Sarcosuchus (Jacana 40%)
 - Strauß, Kasuar & Huhn / Ostrich, cassowary & fowl: Citipati (Chicken (red junglefowl) 100%), Struthiomimus (Ostrich 100%), Therizinosaurus (Cassowary 100%)
 - Taube, Sittich & Singvogel / Pigeon, parrot & songbird: Rhamphorhynchus (Oxpecker + Parakeet 100%), Thalassodromeus (Pigeon 55%), Utahraptor (Bowerbird 30%)
 - Wal & Delfin / Whale & dolphin: Eurhinosaurus (Bottlenose dolphin 100%), Tylosaurus (Orca 100%)
@@ -136,7 +136,7 @@ Für grobe Wünsche wie „irgendwas Katzenhaftes“ oder „wie ein Wolf“ (An
 - Nomade / Nomad & traveller: Achillobator, Albertaceratops, Alioramus, Amargasaurus, Apatosaurus, Austroraptor, Barsboldia, Citipati, Compsognathus, Daspletosaurus, Deinonychus, Eotriceratops, Giganotosaurus, Iguanodon, Kentrosaurus, Lambeosaurus, Leedsichthys, Maip, Pachyrhinosaurus, Parasaurolophus, Pycnonemosaurus, Quetzalcoatlus, Sarcosuchus, Stegosaurus, Struthiomimus, Styracosaurus, Suchomimus, Thalassodromeus, Tropeognathus, Tylosaurus, Yunnanosaurus
 - Hitzkopf / Hot-headed: Concavenator, Daspletosaurus, Deinonychus, Dryosaurus, Eotriceratops, Giganotosaurus, Hatzegopteryx, Iguanodon, Kentrosaurus, Lurdusaurus, Maip, Metriacanthosaurus, Pycnonemosaurus, Spinosaurus (Freshwater), Stegosaurus, Styracosaurus, Therizinosaurus, Torvosaurus, Tylosaurus, Tyrannosaurus, Tyrannotitan, Yunnanosaurus
 - Friedlich / Gentle & peaceful: Amargasaurus, Apatosaurus, Argentinosaurus, Deinocheirus, Halszkaraptor, Kaiwhekea, Lambeosaurus, Leedsichthys, Parasaurolophus, Psittacosaurus, Rhamphorhynchus
-- Verspielt / Playful & social: Amargasaurus, Ceratosaurus, Citipati, Compsognathus, Eurhinosaurus, Halszkaraptor, Kaiwhekea, Latenivenatrix, Lurdusaurus, Pycnonemosaurus, Thalassodromeus, Yutyrannus
+- Verspielt / Playful & social: Amargasaurus, Austroraptor, Ceratosaurus, Citipati, Compsognathus, Eurhinosaurus, Halszkaraptor, Kaiwhekea, Latenivenatrix, Lurdusaurus, Pycnonemosaurus, Thalassodromeus, Yutyrannus
 - Fürsorgliche Eltern / Devoted parent: Albertaceratops, Argentinosaurus, Barsboldia, Citipati, Deinocheirus, Eotriceratops, Halszkaraptor, Hatzegopteryx, Leedsichthys, Parasaurolophus, Tenontosaurus, Therizinosaurus
 - Nachtaktiv / Night-active: Achillobator, Allosaurus, Camptosaurus, Ceratosaurus, Latenivenatrix, Maip, Metriacanthosaurus, Therizinosaurus, Tyrannotitan
 - Ufer & Wasser / Shore & water: Austroraptor, Concavenator, Deinocheirus, Deinosuchus (Shore), Halszkaraptor, Lurdusaurus, Megalania (Temperate), Sarcosuchus, Spinosaurus (Freshwater), Spinosaurus (Saltwater), Suchomimus

@@ -15,7 +15,7 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Honigdachs / Honey badger: Anodontosaurus
 - Afrikanischer Elefant / African savanna elephant: Apatosaurus
 - Gorilla (Silberrücken) / Gorilla (silverback troop): Argentinosaurus
-- Graureiher / Grey heron: Austroraptor
+- EKH-Hauskatze / European Shorthair: Austroraptor
 - Kaiserpinguin / Emperor penguin: Austroraptor
 - Wildkamel (Trampeltier) / Wild Bactrian camel: Barsboldia
 - Wüstenelefant / Desert elephant: Barsboldia
