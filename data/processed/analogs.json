@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:00:42.842Z",
+  "generatedAt": "2026-09-29T15:05:13.935Z",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -37,8 +37,8 @@
         ]
       },
       "small-cat": {
-        "label": "Wild cat & lynx",
-        "de": "Wildkatze & Luchs",
+        "label": "Small cat & lynx",
+        "de": "Kleinkatze & Luchs",
         "synonyms": [
           "wild cat",
           "small cat",
@@ -46,12 +46,22 @@
           "caracal",
           "bobcat",
           "feral cat",
+          "domestic cat",
+          "house cat",
+          "european shorthair",
           "wildkatze",
           "luchs",
           "karakal",
           "wüstenluchs",
           "rotluchs",
           "katze",
+          "hauskatze",
+          "ekh",
+          "ekh-katze",
+          "europäisch kurzhaar",
+          "kater",
+          "stubentiger",
+          "mieze",
           "mammal",
           "säugetier"
         ]
@@ -1367,8 +1377,8 @@
       ]
     },
     "small-cat": {
-      "label": "Wild cat & lynx",
-      "de": "Wildkatze & Luchs",
+      "label": "Small cat & lynx",
+      "de": "Kleinkatze & Luchs",
       "dinos": [
         {
           "id": "achillobator",
@@ -1377,6 +1387,14 @@
           "role": "primary",
           "share": 60,
           "headline": "A night-hunting caracal that lives as a lifelong maned-wolf pair and hunts big game with its rook-like Latenivenatrix partners."
+        },
+        {
+          "id": "austroraptor",
+          "name": "Austroraptor",
+          "animal": "European Shorthair",
+          "role": "primary",
+          "share": 55,
+          "headline": "A house cat on land and a penguin in the water: toys with what it catches, naps in the bushes and stares down rivals, then dives with its lifelong partner and breeds in a crowded beach colony."
         },
         {
           "id": "allosaurus",
@@ -2142,7 +2160,7 @@
           "animal": "Emperor penguin",
           "role": "secondary",
           "share": 45,
-          "headline": "A heron that fishes and drowns small prey, living like a penguin: devoted pair, swims the seas, breeds in a crowded colony."
+          "headline": "A house cat on land and a penguin in the water: toys with what it catches, naps in the bushes and stares down rivals, then dives with its lifelong partner and breeds in a crowded beach colony."
         },
         {
           "id": "thalassodromeus",
@@ -2165,14 +2183,6 @@
           "role": "primary",
           "share": 70,
           "headline": "A raft of mallards that mobs anything near the nest, with a magpie's eye for shiny things."
-        },
-        {
-          "id": "austroraptor",
-          "name": "Austroraptor",
-          "animal": "Grey heron",
-          "role": "primary",
-          "share": 55,
-          "headline": "A heron that fishes and drowns small prey, living like a penguin: devoted pair, swims the seas, breeds in a crowded colony."
         },
         {
           "id": "deinocheirus",
@@ -2536,11 +2546,11 @@
         }
       ]
     },
-    "grey-heron": {
-      "animal": "Grey heron",
-      "de": "Graureiher",
-      "scientific": "Ardea cinerea",
-      "archetype": "waterbird",
+    "european-shorthair": {
+      "animal": "European Shorthair",
+      "de": "EKH-Hauskatze",
+      "scientific": "Felis catus",
+      "archetype": "small-cat",
       "dinos": [
         {
           "id": "austroraptor",
@@ -4257,6 +4267,7 @@
       "de": "Verspielt",
       "dinoIds": [
         "amargasaurus",
+        "austroraptor",
         "ceratosaurus",
         "citipati",
         "compsognathus",
@@ -4825,9 +4836,9 @@
     },
     "austroraptor": {
       "name": "Austroraptor",
-      "label": "Grey heron + Emperor penguin",
-      "labelDe": "Graureiher + Kaiserpinguin",
-      "headline": "A heron that fishes and drowns small prey, living like a penguin: devoted pair, swims the seas, breeds in a crowded colony.",
+      "label": "European Shorthair + Emperor penguin",
+      "labelDe": "EKH-Hauskatze + Kaiserpinguin",
+      "headline": "A house cat on land and a penguin in the water: toys with what it catches, naps in the bushes and stares down rivals, then dives with its lifelong partner and breeds in a crowded beach colony.",
       "setting": "Rivers, coasts and seaways",
       "habitats": [
         "wetland",
@@ -4835,10 +4846,10 @@
       ],
       "analogs": [
         {
-          "id": "grey-heron",
-          "animal": "Grey heron",
-          "de": "Graureiher",
-          "archetype": "waterbird",
+          "id": "european-shorthair",
+          "animal": "European Shorthair",
+          "de": "EKH-Hauskatze",
+          "archetype": "small-cat",
           "share": 55,
           "role": "primary"
         },
@@ -4854,6 +4865,7 @@
       "moods": [
         "pair",
         "semi-aquatic",
+        "playful",
         "scavenger",
         "nomadic",
         "colony"
@@ -7146,7 +7158,7 @@
       "moods": [],
       "habitats": []
     },
-    "wild cat lynx": {
+    "small cat lynx": {
       "archetypes": [
         "small-cat"
       ],
@@ -7154,7 +7166,7 @@
       "moods": [],
       "habitats": []
     },
-    "wildkatze luchs": {
+    "kleinkatze luchs": {
       "archetypes": [
         "small-cat"
       ],
@@ -7214,6 +7226,32 @@
       "moods": [],
       "habitats": []
     },
+    "domestic cat": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "house cat": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "european shorthair": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [
+        "european-shorthair"
+      ],
+      "moods": [],
+      "habitats": []
+    },
     "wildkatze": {
       "archetypes": [
         "small-cat"
@@ -7255,6 +7293,62 @@
       "animals": [
         "bobcat"
       ],
+      "moods": [],
+      "habitats": []
+    },
+    "hauskatze": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "ekh": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "ekh katze": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "europaisch kurzhaar": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "kater": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "stubentiger": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "mieze": {
+      "archetypes": [
+        "small-cat"
+      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10416,9 +10510,7 @@
       "archetypes": [
         "waterbird"
       ],
-      "animals": [
-        "grey-heron"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -13777,12 +13869,12 @@
       "moods": [],
       "habitats": []
     },
-    "grey heron": {
+    "ekh hauskatze": {
       "archetypes": [
-        "waterbird"
+        "small-cat"
       ],
       "animals": [
-        "grey-heron"
+        "european-shorthair"
       ],
       "moods": [],
       "habitats": []

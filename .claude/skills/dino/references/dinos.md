@@ -12,7 +12,7 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | anodontosaurus | Anodontosaurus | Ano | Medium Diurnal Terrestrial Herbivore | Wombat + Honigdachs (Wombat + Honey badger) |
 | apatosaurus | Apatosaurus | Apa, Apato | Apex Diurnal Terrestrial Herbivore | Afrikanischer Elefant (African savanna elephant) |
 | argentinosaurus | Argentinosaurus | – | Giant Cathemeral Terrestrial Herbivore | Giraffe + Gorilla (Silberrücken) (Giraffe + Gorilla (silverback troop)) |
-| austroraptor | Austroraptor | Austro | Medium Cathemeral Semi-Aquatic Carnivore | Graureiher + Kaiserpinguin (Grey heron + Emperor penguin) |
+| austroraptor | Austroraptor | Austro | Medium Cathemeral Semi-Aquatic Carnivore | EKH-Hauskatze + Kaiserpinguin (European Shorthair + Emperor penguin) |
 | barsboldia | Barsboldia | – | Apex Cathemeral Terrestrial Herbivore | Wildkamel (Trampeltier) + Wüstenelefant (Wild Bactrian camel + Desert elephant) |
 | camptosaurus | Camptosaurus | Campto | Small Nocturnal Terrestrial Herbivore | Quokka + Pfeifhase (Quokka + American pika) |
 | ceratosaurus | Ceratosaurus | – | Medium Nocturnal Terrestrial Carnivore | Grauwolf (Grey wolf) |
