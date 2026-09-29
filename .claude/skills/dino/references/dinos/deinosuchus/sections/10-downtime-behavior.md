@@ -1,3 +1,0 @@
-# Deinosuchus – Downtime Behavior
-
-Deinosuchus engage in "unihemispheric sleep," where a portion of their brain remains awake to monitor their surroundings; either submered at the bottom of the water, directly below the surface, or on land near water. Even when sleeping beneath the water, they are awake enough to rise to the top to breathe when necessary. Deinosuchus sleep on land with their mouths open to assist with regulating their temperatures and to allow scavenger cleaning species close to clean their teeth. If these cleaners are careful, Deinosuchus are unbothered, and often do not rouse from their slumber. Deinosuchus may sleep for up to 17 hours a day; conserving their energy for intense, violent hunts.

@@ -14129,7 +14129,7 @@
   "matchups": {
     "schemaVersion": 2,
     "speedKnown": true,
-    "summary": "Megalania (Temperate) has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Megalania (Temperate) has 7 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "megalania-arid",
@@ -14194,13 +14194,13 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
-        "headline": "Deinosuchus can create a very narrow escape window",
-        "summary": "Deinosuchus is inside the legal hunt range. Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+        "headline": "Deinosuchus (Shore) can create a very narrow escape window",
+        "summary": "Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
         "score": 90,
         "intent": {
           "allowed": true,
@@ -14216,7 +14216,7 @@
           "attackerDurationSeconds": 166.667,
           "targetDurationSeconds": 45,
           "durationMarginPct": 270.4,
-          "label": "Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted."
+          "label": "Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted."
         },
         "fight": {
           "verdict": "attacker-advantage",
@@ -14240,15 +14240,15 @@
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.353,
+          "overlap": 0.429,
           "label": "6 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted.",
+          "Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted.",
           "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
           "6 shared mapped areas make contact plausible.",
-          "Deinosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "tags": [
           "ambush"
@@ -14498,6 +14498,64 @@
           "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
           "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
           "6 shared mapped areas make contact plausible."
+        ],
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Spinosaurus (Saltwater) can create a very narrow escape window",
+        "summary": "Spinosaurus (Saltwater) is inside the legal hunt range. Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+        "score": 83,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 750,
+          "targetSpeed": 450,
+          "speedMarginPct": 66.7,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 271.1,
+          "label": "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 2.31,
+          "cappedPowerRatio": 2.31,
+          "label": "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "lakeside-meadow",
+            "wollemi-forest",
+            "grand-falls"
+          ],
+          "overlap": 0.211,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.",
+          "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+          "4 shared mapped areas make contact plausible."
         ],
         "tags": [],
         "evidence": [],

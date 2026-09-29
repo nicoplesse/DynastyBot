@@ -1,3 +1,0 @@
-# Deinosuchus – Overview
-
-Apex Cathemeral Semi-Aquatic Carnivore Deinosuchus form temporary pairbonds. Deinosuchus males are territorial towards other males and Sarcosuchus, and defend large sized territories. Deinosuchus females are sedentary unless in a mated pair - in which case they are territorial. Females are tolerated in the territory of unpaired males. Deinosuchus have an aggressive nature towards the same species. Females are tolerant except when in a mated pair. Towards other species, Deinosuchus are tolerant. Deinosuchus may not scavenge from claimed corpses and must contest for a body. Critters and abandoned corpses may be freely eaten. Deinosuchus cannibalize albinos, and tolerate melanistic individuals.

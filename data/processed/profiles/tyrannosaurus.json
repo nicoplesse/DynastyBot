@@ -13096,6 +13096,68 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "apatosaurus",
+        "name": "Apatosaurus",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Apatosaurus is a realistic hunting opportunity",
+        "summary": "Apatosaurus is within the legal hunt ceiling. Tyrannosaurus is 60% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 71,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 800,
+          "targetSpeed": 500,
+          "speedMarginPct": 60,
+          "attackerDurationSeconds": 45,
+          "targetDurationSeconds": 100,
+          "durationMarginPct": -55,
+          "label": "Tyrannosaurus is 60% faster on land; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 8000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.75,
+          "cappedPowerRatio": 1.16,
+          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "redwoods",
+            "crag-bluffs"
+          ],
+          "overlap": 0.167,
+          "label": "They overlap in 2 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Tyrannosaurus is 60% faster on land; a clean escape is unlikely once spotted.",
+          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 2 mapped areas, so the matchup is situational.",
+          "Apatosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Tyrannosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush",
+          "endurance",
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [

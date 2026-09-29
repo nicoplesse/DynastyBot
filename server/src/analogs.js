@@ -191,13 +191,20 @@ function matchTerms(index, query) {
     current.terms.add(term);
     hits[kind].set(id, current);
   };
+  const found = [];
   for (const [key, entry] of Object.entries(index.lookup)) {
     const exact = phrase.includes(` ${key} `);
     // Loose stem match for single German/English words ("ochsen" -> "ochse", "löwen" -> "löwe").
     const loose = !exact && !key.includes(' ') && words.some(word =>
       (key.length >= 3 && word.startsWith(key) && word.length - key.length <= 2) ||
       (word.length >= 4 && key.startsWith(word) && key.length - word.length <= 3));
-    if (!exact && !loose) continue;
+    if (exact || loose) found.push({ key, entry, exact });
+  }
+  // A matched phrase owns its words: "See-Elefant" (see elefant) is an elephant seal, so its
+  // "elefant" must not also name the elephants.
+  const phrases = found.filter(item => item.exact && item.key.includes(' ')).map(item => ` ${item.key} `);
+  for (const { key, entry, exact } of found) {
+    if (phrases.some(owner => owner !== ` ${key} ` && owner.includes(` ${key} `))) continue;
     const weight = (exact ? 1 : 0.7) * (1 + key.split(' ').length * 0.1);
     for (const kind of Object.keys(hits)) for (const id of entry[kind]) note(kind, id, weight, key);
   }
@@ -208,6 +215,7 @@ export function searchAnalogs(index, query, { limit = 12 } = {}) {
   const hits = matchTerms(index, query);
   // Once the query names an animal or family, habitat and mood words only rank those matches.
   const wantsAnimal = hits.archetypes.size > 0 || hits.animals.size > 0;
+  const namesAnimal = hits.animals.size > 0;
   const results = [];
   for (const [id, dino] of Object.entries(index.dinos)) {
     if (wantsAnimal && !dino.analogs.some(analog => hits.animals.has(analog.id) || hits.archetypes.has(analog.archetype))) continue;
@@ -226,7 +234,8 @@ export function searchAnalogs(index, query, { limit = 12 } = {}) {
       const animalHit = hits.animals.get(analog.id) || (namedByFamilyWord ? archetypeHit : null);
       if (scoredArchetypes.has(analog.archetype) && !hits.animals.get(analog.id)) continue;
       if (animalHit) { score += 6 * roleWeight * shareWeight * animalHit.weight; reasons.push(`${analog.role === 'primary' ? 'plays mostly like' : 'partly plays like'} ${analog.animal}`); }
-      else if (archetypeHit) { score += 4 * roleWeight * shareWeight * archetypeHit.weight; reasons.push(`${analog.animal} (${index.archetypes[analog.archetype]?.label || analog.archetype})`); }
+      // When the query names a specific animal ("See-Elefant"), other members of its family rank below it.
+      else if (archetypeHit) { score += 4 * roleWeight * shareWeight * archetypeHit.weight * (namesAnimal ? 0.4 : 1); reasons.push(`${analog.animal} (${index.archetypes[analog.archetype]?.label || analog.archetype})`); }
       if (animalHit || archetypeHit) scoredArchetypes.add(analog.archetype);
     }
     for (const mood of dino.moods) if (hits.moods.has(mood)) { score += 1.2; reasons.push(index.moods[mood]?.label || mood); }

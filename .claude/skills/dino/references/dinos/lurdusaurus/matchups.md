@@ -70,10 +70,10 @@ A profile rule names or prioritises this matchup. The speed gap is small (1050 v
 - Kampf: defender-advantage (Kampfgewicht 3200 vs 4500)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
-### Deinosuchus – conditional (conditional)
-Deinosuchus is legal quarry, but not a comfortable fight
+### Deinosuchus (Shore) – conditional (conditional)
+Deinosuchus (Shore) is legal quarry, but not a comfortable fight
 
-A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus.
+A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Shore).
 - Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.
 - Kampf: defender-advantage (Kampfgewicht 3200 vs 6000)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
@@ -91,6 +91,14 @@ Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
 
 A profile rule names or prioritises this matchup. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 1), a committed straight fight favours Spinosaurus (Saltwater).
 - Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
+- Kampf: defender-advantage (Kampfgewicht 3200 vs 6000)
+- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
+
+### Deinosuchus (Ocean) – conditional (conditional)
+Deinosuchus (Ocean) is legal quarry, but not a comfortable fight
+
+A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. Even at the legal group cap (1 vs 1), a committed straight fight favours Deinosuchus (Ocean).
+- Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.
 - Kampf: defender-advantage (Kampfgewicht 3200 vs 6000)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 

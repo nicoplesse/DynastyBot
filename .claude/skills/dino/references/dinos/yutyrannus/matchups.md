@@ -102,6 +102,14 @@ Spinosaurus (Saltwater) is within the legal hunt ceiling. Yutyrannus is 49% fast
 - Kampf: attacker-advantage (Kampfgewicht 3250 vs 6000)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Barsboldia – sehr hoch (quarry)
+Barsboldia is a realistic hunting opportunity
+
+Barsboldia is within the legal hunt ceiling. Yutyrannus is 22% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Yutyrannus is 22% faster on land; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 3250 vs 5500)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ## Besondere Risiken
 
 - **Same-species territory risk:** Yutyrannus can have up to 4 in an engagement, and up to 6 individuals if taking part in a territory challenge against a different group of Yutyrannus.

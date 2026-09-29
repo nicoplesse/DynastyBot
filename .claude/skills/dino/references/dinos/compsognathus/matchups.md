@@ -1,16 +1,8 @@
 # Compsognathus – Matchups
 
-Compsognathus has 1 high-priority matchup where legal group size, pursuit and profile intent align. Against 3 listed threats, speed still provides a reliable disengage option.
+Compsognathus's listed dangers are situational rather than automatic losses. Speed, stamina or low encounter overlap prevents raw combat weight from becoming a routine counter.
 
 ## Gefahren (wer dir gefährlich wird)
-
-### Deinosuchus – sehr hoch (predator)
-Deinosuchus can create a very narrow escape window
-
-Deinosuchus is linked by a specific profile rule. Compsognathus is 56% faster on land and can normally refuse this fight. At the legal limits (1 attacker vs 10 defenders), the attacking side has the stronger combat envelope.
-- Verfolgung: Compsognathus is 56% faster on land and can normally refuse this fight.
-- Kampf: attacker-advantage (Kampfgewicht 6000 vs 400)
-- Profilbezug: The profile names this playable as prey or a target.
 
 ### Deinonychus – conditional (predator)
 Deinonychus matters only if it gets the right opening

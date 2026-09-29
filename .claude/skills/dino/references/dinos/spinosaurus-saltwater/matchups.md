@@ -4,14 +4,6 @@ Spinosaurus (Saltwater) has 4 high-priority matchups where legal group size, pur
 
 ## Gefahren (wer dir gefährlich wird)
 
-### Sarcosuchus – sehr hoch (predator)
-Sarcosuchus can create a very narrow escape window
-
-Sarcosuchus is linked by a specific profile rule. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.
-- Kampf: attacker-advantage (Kampfgewicht 4500 vs 6000)
-- Profilbezug: The profile names this playable as prey or a target.
-
 ### Tylosaurus – sehr hoch (predator)
 Tylosaurus can create a very narrow escape window
 
@@ -52,15 +44,15 @@ Yutyrannus is inside the legal hunt range. Yutyrannus is 49% faster on land; a c
 - Kampf: attacker-advantage (Kampfgewicht 3250 vs 6000)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Maip – sehr hoch (predator)
+Maip can create a very narrow escape window
+
+Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Maip is 46% faster on land; a clean escape is unlikely once spotted.
+- Kampf: attacker-advantage (Kampfgewicht 4000 vs 6000)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ## Chancen (wen du jagen/schlagen kannst)
-
-### Deinosuchus – sehr hoch (quarry)
-Deinosuchus is a realistic hunting opportunity
-
-A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
-- Verfolgung: The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.
-- Kampf: close (Kampfgewicht 6000 vs 6000)
-- Profilbezug: The profile names this playable as prey or a target.
 
 ### Leedsichthys – sehr hoch (quarry)
 Leedsichthys is a realistic hunting opportunity
@@ -68,6 +60,22 @@ Leedsichthys is a realistic hunting opportunity
 A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
 - Verfolgung: This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.
 - Kampf: close (Kampfgewicht 6000 vs 5500)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Deinosuchus (Ocean) – sehr hoch (quarry)
+Deinosuchus (Ocean) is a realistic hunting opportunity
+
+A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.
+- Kampf: close (Kampfgewicht 6000 vs 6000)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Deinosuchus (Shore) – sehr hoch (quarry)
+Deinosuchus (Shore) is a realistic hunting opportunity
+
+A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.
+- Kampf: close (Kampfgewicht 6000 vs 6000)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Tylosaurus – conditional (risky-quarry)

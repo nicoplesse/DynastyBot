@@ -70,20 +70,20 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
 - **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Deinosuchus** (sehr hoch): Deinosuchus is a realistic hunting opportunity
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
+- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is a realistic hunting opportunity
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Tylosaurus** (conditional): Tylosaurus is legal quarry, but not a comfortable fight
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Austroraptor** (hoch): Austroraptor is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Spinosaurus may defend their partner, offspring, territory as 2 sub/adults in a bonded pair. Spinosaurus hunt alone as 1 sub/adult. Their partner does not assist in hunts.

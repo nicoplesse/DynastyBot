@@ -19475,7 +19475,7 @@
   "matchups": {
     "schemaVersion": 2,
     "speedKnown": true,
-    "summary": "Rhamphorhynchus has 2 high-priority matchups where legal group size, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.",
+    "summary": "Rhamphorhynchus has 1 high-priority matchup where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "tropeognathus",
@@ -19553,87 +19553,6 @@
             "profileName": "Tropeognathus",
             "section": "Cross-Species Interaction",
             "text": "Though Tropeognathus will not hunt Rhamphorhynchus, they may kill them (even accidentally) if this smaller pterosaur does not respect their boundaries with food."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
-        "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Deinosuchus can create a very narrow escape window",
-        "summary": "Deinosuchus is linked by a specific profile rule. Rhamphorhynchus is 8% faster on land and can normally refuse this fight. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 78,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 550,
-          "targetSpeed": 600,
-          "speedMarginPct": -8.3,
-          "attackerDurationSeconds": 40,
-          "targetDurationSeconds": 133,
-          "durationMarginPct": -69.9,
-          "label": "Rhamphorhynchus is 8% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 12,
-          "cappedPowerRatio": 12,
-          "label": "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "volcano-islands",
-            "abyssal-depths",
-            "palm-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats",
-            "stonebed-shoal",
-            "coastland-swamp"
-          ],
-          "overlap": 0.478,
-          "label": "11 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Rhamphorhynchus is 8% faster on land and can normally refuse this fight.",
-          "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
-          "11 shared mapped areas make contact plausible.",
-          "Deinosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [
-          {
-            "profileId": "deinosuchus",
-            "profileName": "Deinosuchus",
-            "section": "Preferred Prey & Diet",
-            "text": "They do not bother to hunt Rhamphorhynchus or Compsognathus."
-          },
-          {
-            "profileId": "deinosuchus",
-            "profileName": "Deinosuchus",
-            "section": "Cross-Species Interaction",
-            "text": "They do not hunt Rhamphorhynchus or Compsognathus."
           }
         ],
         "confidence": "profile-specific"

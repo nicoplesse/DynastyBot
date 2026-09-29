@@ -16,16 +16,19 @@ test('organic matchup map covers every profile with inspectable evidence and bou
   const profiles = await loadProfiles();
   const map = buildMatchups(profiles);
   const ids = new Set(profiles.map(profile => profile.id));
+  const familyOf = new Map(profiles.map(profile => [profile.id, profile.variant?.parentId || profile.id]));
 
-  assert.equal(profiles.length, 63);
+  assert.equal(profiles.length, 64);
   assert.deepEqual(Object.keys(map).sort(), [...ids].sort());
 
   for (const profile of profiles) {
     const dossier = map[profile.id];
     assert.equal(dossier.schemaVersion, 2, `${profile.id}: schema`);
     assert.ok(dossier.summary.length > 60, `${profile.id}: organic summary`);
-    assert.ok(dossier.threats.length <= 8, `${profile.id}: concise threats`);
-    assert.ok(dossier.opportunities.length <= 8, `${profile.id}: concise opportunities`);
+    // Variants of one profile share a slot, so the cap counts profiles, not entries.
+    const families = entries => new Set(entries.map(entry => familyOf.get(entry.id))).size;
+    assert.ok(families(dossier.threats) <= 8, `${profile.id}: concise threats`);
+    assert.ok(families(dossier.opportunities) <= 8, `${profile.id}: concise opportunities`);
     assert.ok(dossier.traits.sprintSpeed > 0, `${profile.id}: speed is part of the dossier`);
     assert.ok(dossier.traits.sprintDurationSeconds > 0, `${profile.id}: stamina window is part of the dossier`);
 
@@ -76,10 +79,14 @@ test('known edge cases follow profile intent, speed, stamina, habitat and group 
     assert.ok(has('tylosaurus', 'opportunities', prey)?.intent.explicit, `Tylosaurus priority prey: ${prey}`);
   }
   assert.equal(has('tylosaurus', 'opportunities', 'kaiwhekea').chase.mode, 'water');
-  assert.ok(has('spinosaurus-freshwater', 'opportunities', 'deinosuchus')?.intent.explicit);
+  assert.ok(has('spinosaurus-freshwater', 'opportunities', 'deinosuchus-shore')?.intent.explicit);
   assert.ok(has('spinosaurus-freshwater', 'opportunities', 'sarcosuchus')?.intent.explicit);
   assert.ok(has('spinosaurus-saltwater', 'opportunities', 'tylosaurus')?.intent.explicit, 'the saltwater Spinosaurus may hunt Tylosaurus anywhere');
   assert.equal(has('spinosaurus-saltwater', 'opportunities', 'spinosaurus-freshwater'), undefined, 'Spinosaurus never hunt their own kind');
-  assert.ok(has('deinosuchus', 'opportunities', 'sarcosuchus')?.intent.explicit);
+  assert.ok(has('spinosaurus-saltwater', 'opportunities', 'deinosuchus-ocean')?.intent.explicit, 'the parent name reaches both Deinosuchus variants');
+  assert.equal(has('deinosuchus-ocean', 'opportunities', 'deinosuchus-shore'), undefined, 'Deinosuchus variants are one species');
+  assert.equal(has('deinosuchus-ocean', 'opportunities', 'rhamphorhynchus'), undefined, '"do not bother to hunt" is a negation');
+  assert.equal(has('deinosuchus-shore', 'opportunities', 'compsognathus'), undefined, '"do not bother with" is a negation');
+  assert.ok(has('deinosuchus-shore', 'opportunities', 'sarcosuchus')?.intent.explicit);
   assert.equal(has('torvosaurus', 'opportunities', 'thalassodromeus'), undefined, 'a tolerated ally is not prey');
 });

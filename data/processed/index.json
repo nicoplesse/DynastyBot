@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T14:00:42.904Z",
-  "count": 63,
+  "generatedAt": "2026-09-29T13:43:26.630Z",
+  "count": 64,
   "profiles": [
     {
       "id": "achillobator",
@@ -1142,7 +1142,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 8
       },
       "analog": {
         "label": "Grey wolf",
@@ -1320,7 +1320,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 3,
+        "threats": 2,
         "opportunities": 6
       },
       "analog": {
@@ -1428,7 +1428,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Giant otter + Stoat",
@@ -1532,7 +1532,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Dingo + Cougar",
@@ -1635,8 +1635,8 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
-        "opportunities": 2
+        "threats": 7,
+        "opportunities": 3
       },
       "analog": {
         "label": "Mute swan + Moose",
@@ -1741,7 +1741,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Spotted hyena + Dwarf mongoose",
@@ -1805,9 +1805,18 @@
       "importedAt": "2026-09-22T17:20:08.727Z"
     },
     {
-      "id": "deinosuchus",
-      "name": "Deinosuchus",
-      "aliases": [],
+      "id": "deinosuchus-ocean",
+      "name": "Deinosuchus (Ocean)",
+      "aliases": [
+        "Deinosuchus",
+        "Ocean Deinosuchus",
+        "Ocean Deino",
+        "Sea Deino",
+        "Hochsee-Deino",
+        "Meeres-Deino",
+        "Hai-Deino",
+        "Hochseehai"
+      ],
       "summary": "Deinosuchus was a massive prehistoric crocodile that lived during the Late Cretaceous period, around 80 to 73 million years ago. Growing up to 33 feet long, it was one of the largest crocodyliforms to ever exist. Deinosuchus lived in rivers and coastal environments, preying on dinosaurs and other large animals that ventured near the water’s edge. With its powerful jaws and ambush tactics, it was a dominant predator, capable of taking down prey as large as a hadrosaur.",
       "classification": {
         "tier": "Apex",
@@ -1824,25 +1833,123 @@
       "habitat": {
         "classification": "Semi-Aquatic",
         "moisture": [
-          "aquatic",
+          "aquatic"
+        ],
+        "biomes": [
+          "ocean"
+        ],
+        "regions": 3,
+        "isDry": false,
+        "hasMap": true
+      },
+      "matchups": {
+        "threats": 7,
+        "opportunities": 6
+      },
+      "analog": {
+        "label": "Great white shark + Southern elephant seal",
+        "labelDe": "Weißer Hai + See-Elefant",
+        "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark.",
+        "analogs": [
+          {
+            "animal": "Great white shark",
+            "de": "Weißer Hai",
+            "archetype": "shark-fish",
+            "archetypeLabel": "Shark & fish",
+            "archetypeDe": "Hai & Fisch",
+            "share": 55,
+            "role": "primary",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg",
+              "focus": "50% 40%"
+            }
+          },
+          {
+            "animal": "Southern elephant seal",
+            "de": "See-Elefant",
+            "archetype": "seal",
+            "archetypeLabel": "Seal & sea lion",
+            "archetypeDe": "Robbe & Seelöwe",
+            "share": 45,
+            "role": "secondary",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2020-11_Kerguelen_Islands_-_Southern_elephant_seal_30.jpg/1280px-2020-11_Kerguelen_Islands_-_Southern_elephant_seal_30.jpg",
+              "focus": "42% 38%"
+            }
+          }
+        ],
+        "moods": [
+          "solitary",
+          "ambush",
+          "apex",
+          "territorial",
+          "aquatic"
+        ],
+        "habitats": [
+          "sea"
+        ]
+      },
+      "solo": "solo",
+      "variant": {
+        "id": "ocean",
+        "label": "Ocean variant",
+        "de": "Hochsee-Variante",
+        "title": "Hochseehai",
+        "parentId": "deinosuchus",
+        "parentName": "Deinosuchus"
+      },
+      "ecosystem": {
+        "id": "sea",
+        "level": 1,
+        "also": []
+      },
+      "cover": null,
+      "importedAt": "2026-09-22T17:16:47.079Z"
+    },
+    {
+      "id": "deinosuchus-shore",
+      "name": "Deinosuchus (Shore)",
+      "aliases": [
+        "Deinosuchus",
+        "Shore Deinosuchus",
+        "Shore Deino",
+        "Ufer-Deino",
+        "Uferlauerer"
+      ],
+      "summary": "Deinosuchus was a massive prehistoric crocodile that lived during the Late Cretaceous period, around 80 to 73 million years ago. Growing up to 33 feet long, it was one of the largest crocodyliforms to ever exist. Deinosuchus lived in rivers and coastal environments, preying on dinosaurs and other large animals that ventured near the water’s edge. With its powerful jaws and ambush tactics, it was a dominant predator, capable of taking down prey as large as a hadrosaur.",
+      "classification": {
+        "tier": "Apex",
+        "activity": "Cathemeral",
+        "habitat": "Semi-Aquatic",
+        "diet": "Carnivore",
+        "label": "Apex Cathemeral Semi-Aquatic Carnivore"
+      },
+      "stats": {
+        "combatWeight": 6000,
+        "growthMinutes": 240,
+        "changeCount": 3
+      },
+      "habitat": {
+        "classification": "Semi-Aquatic",
+        "moisture": [
           "mesic",
+          "aquatic",
           "wet"
         ],
         "biomes": [
-          "ocean",
           "coast",
           "volcanic",
           "forest",
           "swamp",
           "mudflat"
         ],
-        "regions": 11,
+        "regions": 8,
         "isDry": false,
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
-        "opportunities": 6
+        "threats": 7,
+        "opportunities": 7
       },
       "analog": {
         "label": "Nile crocodile",
@@ -1876,7 +1983,14 @@
         ]
       },
       "solo": "solo",
-      "variant": null,
+      "variant": {
+        "id": "shore",
+        "label": "Shore variant",
+        "de": "Ufer-Variante",
+        "title": "Uferlauerer",
+        "parentId": "deinosuchus",
+        "parentName": "Deinosuchus"
+      },
       "ecosystem": {
         "id": "freshwater",
         "level": 1,
@@ -1924,7 +2038,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Red fox + Raccoon",
@@ -2232,7 +2346,7 @@
       },
       "matchups": {
         "threats": 2,
-        "opportunities": 6
+        "opportunities": 9
       },
       "analog": {
         "label": "Bottlenose dolphin",
@@ -2522,7 +2636,7 @@
       },
       "matchups": {
         "threats": 3,
-        "opportunities": 6
+        "opportunities": 8
       },
       "analog": {
         "label": "Golden eagle",
@@ -2706,7 +2820,7 @@
       },
       "matchups": {
         "threats": 2,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Sea lion + Sea turtle",
@@ -3305,7 +3419,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 5
+        "opportunities": 6
       },
       "analog": {
         "label": "Hippopotamus + Capybara",
@@ -3407,7 +3521,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Spotted hyena + Common raven",
@@ -3634,7 +3748,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 6
       },
       "analog": {
@@ -4374,7 +4488,7 @@
       },
       "matchups": {
         "threats": 3,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Vulture + Marabou stork",
@@ -4478,7 +4592,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 5,
+        "threats": 4,
         "opportunities": 2
       },
       "analog": {
@@ -4578,8 +4692,8 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
-        "opportunities": 6
+        "threats": 8,
+        "opportunities": 7
       },
       "analog": {
         "label": "Mugger crocodile + Jacana",
@@ -4689,7 +4803,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 8
       },
       "analog": {
         "label": "Grizzly bear + Saltwater crocodile",
@@ -4808,7 +4922,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Leopard seal + Grey reef shark",
@@ -5203,8 +5317,8 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
-        "opportunities": 6
+        "threats": 7,
+        "opportunities": 7
       },
       "analog": {
         "label": "Gharial + Coyote",
@@ -5788,7 +5902,7 @@
       },
       "matchups": {
         "threats": 2,
-        "opportunities": 8
+        "opportunities": 9
       },
       "analog": {
         "label": "Orca",
@@ -5878,7 +5992,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Polar bear + Tawny owl",
@@ -6088,7 +6202,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Grey wolf (family pack) + Bowerbird",
@@ -6288,7 +6402,7 @@
       },
       "matchups": {
         "threats": 6,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Snow leopard + Arctic fox",

@@ -36,11 +36,11 @@ Sarcosuchus is inside the legal hunt range. Sarcosuchus is 96% faster in water; 
 - Kampf: attacker-advantage (Kampfgewicht 4500 vs 2600)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Deinosuchus – sehr hoch (predator)
-Deinosuchus can create a very narrow escape window
+### Deinosuchus (Shore) – sehr hoch (predator)
+Deinosuchus (Shore) can create a very narrow escape window
 
-Deinosuchus is inside the legal hunt range. Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
-- Verfolgung: Deinosuchus is 56% faster in water; a clean escape is unlikely once spotted.
+Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: Deinosuchus (Shore) is 56% faster in water; a clean escape is unlikely once spotted.
 - Kampf: attacker-advantage (Kampfgewicht 6000 vs 2600)
 - Profilbezug: Its profile permits hunting through Giant tier.
 

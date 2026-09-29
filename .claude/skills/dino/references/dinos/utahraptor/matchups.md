@@ -102,6 +102,14 @@ Megalania (Temperate) is within the legal hunt ceiling. The speed gap is small (
 - Kampf: attacker-advantage (Kampfgewicht 2100 vs 2600)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Megalania (Arid) – hoch (quarry)
+Megalania (Arid) is a realistic hunting opportunity
+
+Megalania (Arid) is within the legal hunt ceiling. The speed gap is small (1075 vs 1025), but Utahraptor has the pursuit edge on land. At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: The speed gap is small (1075 vs 1025), but Utahraptor has the pursuit edge on land.
+- Kampf: attacker-advantage (Kampfgewicht 2100 vs 2600)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ## Besondere Risiken
 
 - **Same-species territory risk:** Utahraptor are tolerant to other species, and aggressive towards rival Utahraptor. When solitary, they are tolerant towards other Utahraptor.

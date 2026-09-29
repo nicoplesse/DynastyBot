@@ -102,5 +102,13 @@ Barsboldia is within the legal hunt ceiling. Daspletosaurus is 21% faster on lan
 - Kampf: defender-advantage (Kampfgewicht 3500 vs 5500)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Sarcosuchus – spürbar (risky-quarry)
+Sarcosuchus is legal quarry, but not a comfortable fight
+
+Sarcosuchus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.
+- Verfolgung: Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.
+- Kampf: defender-advantage (Kampfgewicht 3500 vs 4500)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 
 _Methode: [object Object]_

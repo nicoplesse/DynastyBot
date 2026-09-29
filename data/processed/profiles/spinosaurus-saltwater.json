@@ -11685,77 +11685,6 @@
     "summary": "Spinosaurus (Saltwater) has 4 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
-        "id": "sarcosuchus",
-        "name": "Sarcosuchus",
-        "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Sarcosuchus can create a very narrow escape window",
-        "summary": "Sarcosuchus is linked by a specific profile rule. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 103,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 880,
-          "targetSpeed": 750,
-          "speedMarginPct": 17.3,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 0,
-          "label": "Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.75,
-          "cappedPowerRatio": 1.57,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "wollemi-forest"
-          ],
-          "overlap": 0.05,
-          "label": "They overlap in 1 mapped area, so the matchup is situational."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 1 mapped area, so the matchup is situational.",
-          "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [
-          {
-            "profileId": "sarcosuchus",
-            "profileName": "Sarcosuchus",
-            "section": "Preferred Prey & Diet",
-            "text": "Sarcosuchus does not hunt adult Spinosaurus."
-          },
-          {
-            "profileId": "sarcosuchus",
-            "profileName": "Sarcosuchus",
-            "section": "Cross-Species Interaction",
-            "text": "Sarcosuchus do not hunt adult Spinosaurus and do not accept territory challenges, and opt to flee engagements from them."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "tylosaurus",
         "name": "Tylosaurus",
         "direction": "threat",
@@ -12085,81 +12014,67 @@
         ],
         "evidence": [],
         "confidence": "derived"
-      }
-    ],
-    "opportunities": [
+      },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
-        "direction": "opportunity",
+        "id": "maip",
+        "name": "Maip",
+        "direction": "threat",
         "band": "severe",
-        "kind": "quarry",
-        "headline": "Deinosuchus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 88,
+        "kind": "predator",
+        "headline": "Maip can create a very narrow escape window",
+        "summary": "Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "score": 80,
         "intent": {
           "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
         },
         "chase": {
-          "mode": "water",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 750,
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
           "targetSpeed": 700,
-          "speedMarginPct": 7.1,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 166.667,
-          "durationMarginPct": 0.2,
-          "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+          "speedMarginPct": 46.4,
+          "attackerDurationSeconds": 90.909,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 102,
+          "label": "Maip is 46% faster on land; a clean escape is unlikely once spotted."
         },
         "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 6000,
+          "verdict": "attacker-advantage",
+          "attackerCombatWeight": 4000,
           "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
+          "attackerGroupLimit": 3,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "soloWeightRatio": 0.67,
+          "cappedPowerRatio": 1.4,
+          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
-          "level": "frequent",
+          "level": "possible",
           "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "abyssal-depths",
-            "palm-islands",
-            "stonebed-shoal"
+            "wollemi-forest"
           ],
-          "overlap": 0.294,
-          "label": "5 shared mapped areas make contact plausible."
+          "overlap": 0.05,
+          "label": "They overlap in 1 mapped area, so the matchup is situational."
         },
         "facts": [
-          "The profile names this playable as prey or a target.",
-          "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible."
+          "Its profile permits hunting through Apex tier.",
+          "Maip is 46% faster on land; a clean escape is unlikely once spotted.",
+          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "They overlap in 1 mapped area, so the matchup is situational."
         ],
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "spinosaurus-saltwater",
-            "profileName": "Spinosaurus (Saltwater)",
-            "section": "Quick View",
-            "text": "Spinosaurus are especially aggressive towards Deinosuchus and Sarcosuchus, and opt to kill or expel them from their territory as quickly as possible."
-          },
-          {
-            "profileId": "spinosaurus-saltwater",
-            "profileName": "Spinosaurus (Saltwater)",
-            "section": "Engagement Limits",
-            "text": "Crocodilian rivalry: up to 2 Spinosaurs in a pairbond may work together to kill Deinosuchus and Sarcosuchus if spotted within their territory."
-          }
+        "tags": [
+          "bleed",
+          "endurance"
         ],
-        "confidence": "profile-specific"
-      },
+        "evidence": [],
+        "confidence": "derived"
+      }
+    ],
+    "opportunities": [
       {
         "id": "leedsichthys",
         "name": "Leedsichthys",
@@ -12229,6 +12144,145 @@
             "profileName": "Spinosaurus (Saltwater)",
             "section": "Engagement Limits",
             "text": "Preferred Prey Hunting in any POI: Fish, ai corpses or critters, Leedsichthys, and Tylosaurus - though this is risky, and offspring are preferred."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 79,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 750,
+          "targetSpeed": 700,
+          "speedMarginPct": 7.1,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 0.2,
+          "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1,
+          "cappedPowerRatio": 1,
+          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "kelp-vale",
+            "abyssal-depths",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.273,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 3 mapped areas, so the matchup is situational."
+        ],
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Quick View",
+            "text": "Spinosaurus are especially aggressive towards Deinosuchus and Sarcosuchus, and opt to kill or expel them from their territory as quickly as possible."
+          },
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Engagement Limits",
+            "text": "Crocodilian rivalry: up to 2 Spinosaurs in a pairbond may work together to kill Deinosuchus and Sarcosuchus if spotted within their territory."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 79,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 750,
+          "targetSpeed": 700,
+          "speedMarginPct": 7.1,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 0.2,
+          "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1,
+          "cappedPowerRatio": 1,
+          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "palm-islands"
+          ],
+          "overlap": 0.118,
+          "label": "They overlap in 2 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 2 mapped areas, so the matchup is situational."
+        ],
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Quick View",
+            "text": "Spinosaurus are especially aggressive towards Deinosuchus and Sarcosuchus, and opt to kill or expel them from their territory as quickly as possible."
+          },
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Engagement Limits",
+            "text": "Crocodilian rivalry: up to 2 Spinosaurs in a pairbond may work together to kill Deinosuchus and Sarcosuchus if spotted within their territory."
           }
         ],
         "confidence": "profile-specific"

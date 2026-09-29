@@ -102,6 +102,22 @@ Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land
 - Kampf: attacker-advantage (Kampfgewicht 2600 vs 2600)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Spinosaurus (Saltwater) – hoch (quarry)
+Spinosaurus (Saltwater) is a realistic hunting opportunity
+
+Spinosaurus (Saltwater) is within the legal hunt ceiling. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.
+- Verfolgung: Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.
+- Kampf: close (Kampfgewicht 2600 vs 6000)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Megalania (Temperate) – spürbar (quarry)
+Megalania (Temperate) is a realistic hunting opportunity
+
+Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.
+- Verfolgung: This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.
+- Kampf: attacker-advantage (Kampfgewicht 2600 vs 2600)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ## Besondere Risiken
 
 - **Cannibalism / offspring risk:** Ceratosaurus are not cannibalistic and will never eat the bodies of a fallen Ceratosaurus, whether it be a pack member or stranger whelp.

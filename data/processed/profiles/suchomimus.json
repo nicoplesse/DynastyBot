@@ -13886,74 +13886,6 @@
         "confidence": "derived"
       },
       {
-        "id": "deinosuchus",
-        "name": "Deinosuchus",
-        "direction": "threat",
-        "band": "meaningful",
-        "kind": "predator",
-        "headline": "Deinosuchus can create a credible fight",
-        "summary": "Deinosuchus is inside the legal hunt range. Deinosuchus is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
-        "score": 55,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Giant tier."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 700,
-          "targetSpeed": 640,
-          "speedMarginPct": 9.4,
-          "attackerDurationSeconds": 166.667,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": -0.2,
-          "label": "Deinosuchus is 9% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.57,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "volcano-islands",
-            "abyssal-depths",
-            "palm-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats",
-            "stonebed-shoal",
-            "coastland-swamp"
-          ],
-          "overlap": 0.917,
-          "label": "11 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Giant tier.",
-          "Deinosuchus is 9% faster in water; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
-          "11 shared mapped areas make contact plausible.",
-          "Deinosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
         "id": "tylosaurus",
         "name": "Tylosaurus",
         "direction": "threat",
@@ -14017,6 +13949,131 @@
         "tags": [
           "ambush",
           "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Deinosuchus (Shore) can create a credible fight",
+        "summary": "Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+        "score": 55,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 700,
+          "targetSpeed": 640,
+          "speedMarginPct": 9.4,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": -0.2,
+          "label": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.2,
+          "cappedPowerRatio": 0.57,
+          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "volcano-islands",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp"
+          ],
+          "overlap": 0.667,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+          "8 shared mapped areas make contact plausible.",
+          "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Deinosuchus (Ocean) matters only if it gets the right opening",
+        "summary": "Deinosuchus (Ocean) is inside the legal hunt range. Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+        "score": 46,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 700,
+          "targetSpeed": 640,
+          "speedMarginPct": 9.4,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": -0.2,
+          "label": "Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "defender-advantage",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 1.2,
+          "cappedPowerRatio": 0.57,
+          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "kelp-vale",
+            "abyssal-depths",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.25,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "tags": [
+          "ambush"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -14373,6 +14430,68 @@
           "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
           "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
           "They overlap in 3 mapped areas, so the matchup is situational."
+        ],
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Parasaurolophus is a realistic hunting opportunity",
+        "summary": "Parasaurolophus is within the legal hunt ceiling. The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 66,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 950,
+          "targetSpeed": 925,
+          "speedMarginPct": 2.7,
+          "attackerDurationSeconds": 63,
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 26,
+          "label": "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.91,
+          "cappedPowerRatio": 1.23,
+          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "volcano-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp",
+            "redwoods"
+          ],
+          "overlap": 0.25,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land.",
+          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "8 shared mapped areas make contact plausible."
         ],
         "tags": [],
         "evidence": [],

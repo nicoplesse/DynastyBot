@@ -13676,6 +13676,63 @@
         "tags": [],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Sarcosuchus is a realistic hunting opportunity",
+        "summary": "Sarcosuchus is within the legal hunt ceiling. Kaiwhekea is 13% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "score": 64,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 990,
+          "targetSpeed": 880,
+          "speedMarginPct": 12.5,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 0,
+          "label": "Kaiwhekea is 13% faster in water; a clean escape is unlikely once spotted."
+        },
+        "fight": {
+          "verdict": "close",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "soloWeightRatio": 0.89,
+          "cappedPowerRatio": 0.89,
+          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp"
+          ],
+          "overlap": 0.167,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Kaiwhekea is 13% faster in water; a clean escape is unlikely once spotted.",
+          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "They overlap in 3 mapped areas, so the matchup is situational."
+        ],
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "specialRisks": [],

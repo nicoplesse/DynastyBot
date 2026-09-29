@@ -72,7 +72,7 @@ You are a small aerial carnivore in an unlimited 'cluster' that welcomes any new
 - **Hatzegopteryx** (hoch): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Lurdusaurus** (conditional): Lurdusaurus is legal quarry, but not a comfortable fight
 - **Thalassodromeus** (conditional): Thalassodromeus is legal quarry, but not a comfortable fight
-- **Deinosuchus** (hoch): Deinosuchus is a realistic hunting opportunity
+- **Leedsichthys** (hoch): Leedsichthys is a realistic hunting opportunity
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

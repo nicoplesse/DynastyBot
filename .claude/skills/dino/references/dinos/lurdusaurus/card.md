@@ -69,9 +69,10 @@ You are a medium semi-aquatic herbivore in a 'float' of up to 10 (max 5 males) l
 **Beute & Chancen:**
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
 - **Yunnanosaurus** (spürbar): Yunnanosaurus is legal quarry, but not a comfortable fight
-- **Deinosuchus** (conditional): Deinosuchus is legal quarry, but not a comfortable fight
+- **Deinosuchus (Shore)** (conditional): Deinosuchus (Shore) is legal quarry, but not a comfortable fight
 - **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
 - **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
+- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Male Lurdusaurus patrol the float's territory both day and night, eager to drive out any rival male Lurdusaurus, and other semi-aquatic species.

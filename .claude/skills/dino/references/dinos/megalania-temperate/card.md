@@ -78,7 +78,7 @@ You live among the trunks and the water of Twisted Forest, Wollemi Forest and th
 
 **Gefährlich für dich:**
 - **Megalania (Arid)** (hoch): Megalania (Arid) can create a real pursuit problem
-- **Deinosuchus** (sehr hoch): Deinosuchus can create a very narrow escape window
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
