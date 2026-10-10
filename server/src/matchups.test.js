@@ -18,12 +18,12 @@ test('organic matchup map covers every profile with inspectable evidence and bou
   const ids = new Set(profiles.map(profile => profile.id));
   const familyOf = new Map(profiles.map(profile => [profile.id, profile.variant?.parentId || profile.id]));
 
-  assert.equal(profiles.length, 64);
+  assert.equal(profiles.length, 65);
   assert.deepEqual(Object.keys(map).sort(), [...ids].sort());
 
   for (const profile of profiles) {
     const dossier = map[profile.id];
-    assert.equal(dossier.schemaVersion, 2, `${profile.id}: schema`);
+    assert.equal(dossier.schemaVersion, 3, `${profile.id}: schema`);
     assert.ok(dossier.summary.length > 60, `${profile.id}: organic summary`);
     // Variants of one profile share a slot, so the cap counts profiles, not entries.
     const families = entries => new Set(entries.map(entry => familyOf.get(entry.id))).size;

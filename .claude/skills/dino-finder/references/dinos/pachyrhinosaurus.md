@@ -55,12 +55,12 @@ You are a large, docile ceratopsian in an unlimited 'migration' guided by the el
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
+- **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
 - **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
-- **Achillobator** (spürbar): Achillobator can create a credible fight
-- **Latenivenatrix** (spürbar): Latenivenatrix can create a credible fight
-- **Alioramus** (spürbar): Alioramus can create a credible fight
-- **Allosaurus** (conditional): Allosaurus matters only if it gets the right opening
-- **Daspletosaurus** (conditional): Daspletosaurus matters only if it gets the right opening
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Yutyrannus** (sehr hoch): Yutyrannus can create a very narrow escape window
 
 **Beute & Chancen:**
 

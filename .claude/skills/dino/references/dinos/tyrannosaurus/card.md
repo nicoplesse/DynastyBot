@@ -61,15 +61,15 @@ You are an Apex carnivore (6,000 combat weight) that lives alone or with a partn
 - **Giganotosaurus** (spürbar): Giganotosaurus can create a credible fight
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Maip** (sehr hoch): Maip can create a very narrow escape window
-- **Torvosaurus** (hoch): Torvosaurus can create a real pursuit problem
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Tyrannotitan** (spürbar): Tyrannotitan can usually refuse the chase
-- **Giganotosaurus** (spürbar): Giganotosaurus can usually refuse the chase
+- **Giganotosaurus** (conditional): Giganotosaurus is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
 - **Amargasaurus** (hoch): Amargasaurus is a realistic hunting opportunity
+- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
+- **Spinosaurus (Saltwater)** (hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Mutation-specific risk: Tyrannosaurus adults may cannibalize unrelated offspring of Adolescent and below, and Albinos.

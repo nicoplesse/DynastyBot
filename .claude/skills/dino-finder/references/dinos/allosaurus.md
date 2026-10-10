@@ -58,18 +58,18 @@ You are a large, hardy night hunter who can survive alone or in a pair or coalit
 **Gefährlich für dich:**
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 - **Hatzegopteryx** (hoch): Hatzegopteryx can create a real pursuit problem
-- **Ceratosaurus** (hoch): Ceratosaurus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
+- **Concavenator** (hoch): Concavenator can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Stegosaurus** (sehr hoch): Stegosaurus is a realistic hunting opportunity
-- **Apatosaurus** (sehr hoch): Apatosaurus is a realistic hunting opportunity
-- **Amargasaurus** (sehr hoch): Amargasaurus is a realistic hunting opportunity
-- **Kentrosaurus** (sehr hoch): Kentrosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
+- **Stegosaurus** (spürbar): Stegosaurus is legal quarry, but not a comfortable fight
+- **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
+- **Amargasaurus** (spürbar): Amargasaurus is legal quarry, but not a comfortable fight
+- **Kentrosaurus** (spürbar): Kentrosaurus is legal quarry, but not a comfortable fight
+- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Preferred Prey Before hunting, Allosaurus must challenge ungrouped Allosaurus in line of sight or that are knowingly within the POI, whether solitary or grouped.

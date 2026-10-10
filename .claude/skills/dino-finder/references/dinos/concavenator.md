@@ -52,19 +52,19 @@ You are a swift, medium semi-aquatic carnivore in a leaderless gang of up to 8. 
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
+- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
+- **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 - **Kaiwhekea** (sehr hoch): Kaiwhekea can create a very narrow escape window
-- **Suchomimus** (sehr hoch): Suchomimus can create a very narrow escape window
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Deinonychus** (hoch): Deinonychus is a realistic hunting opportunity
-- **Ceratosaurus** (hoch): Ceratosaurus is a realistic hunting opportunity
-- **Tenontosaurus** (hoch): Tenontosaurus is a realistic hunting opportunity
-- **Metriacanthosaurus** (hoch): Metriacanthosaurus is a realistic hunting opportunity
+- **Camptosaurus** (conditional): Camptosaurus can usually refuse the chase
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
+- **Tyrannotitan** (spürbar): Tyrannotitan is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

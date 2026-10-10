@@ -60,20 +60,20 @@ You are a large, aggressive carnivore that hunts only by day. A 'pack' is 1 unre
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Yunnanosaurus** (spürbar): Yunnanosaurus can create a credible fight
-- **Pycnonemosaurus** (spürbar): Pycnonemosaurus can create a credible fight
-- **Allosaurus** (spürbar): Allosaurus can create a credible fight
-- **Kelenken** (spürbar): Kelenken can create a credible fight
-- **Alioramus** (spürbar): Alioramus can create a credible fight
-- **Suchomimus** (spürbar): Suchomimus can create a credible fight
+- **Yunnanosaurus** (sehr hoch): Yunnanosaurus can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Ceratosaurus** (sehr hoch): Ceratosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Amargasaurus** (sehr hoch): Amargasaurus is a realistic hunting opportunity
-- **Eotriceratops** (sehr hoch): Eotriceratops is a realistic hunting opportunity
-- **Pachyrhinosaurus** (sehr hoch): Pachyrhinosaurus is a realistic hunting opportunity
-- **Styracosaurus** (hoch): Styracosaurus can usually refuse the chase
+- **Amargasaurus** (spürbar): Amargasaurus is legal quarry, but not a comfortable fight
+- **Eotriceratops** (spürbar): Eotriceratops is legal quarry, but not a comfortable fight
+- **Pachyrhinosaurus** (spürbar): Pachyrhinosaurus is legal quarry, but not a comfortable fight
 - **Albertaceratops** (spürbar): Albertaceratops is legal quarry, but not a comfortable fight
-- **Barsboldia** (sehr hoch): Barsboldia is a realistic hunting opportunity
+- **Styracosaurus** (conditional): Styracosaurus is legal quarry, but not a comfortable fight
+- **Megalania (Arid)** (conditional): Megalania (Arid) can usually refuse the chase
 
 **Besondere Risiken:**
 - Same-species territory risk: Torvosaurus have strong behavioral dimorphism, where the females are primarily responsible for hunting and providing food, and the male serves to protect the pack and drive off rival males from pack takeovers.

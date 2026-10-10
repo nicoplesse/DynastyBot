@@ -58,11 +58,11 @@ You are a medium, very noisy and sociable herbivore in a flock built from harems
 
 **Gefährlich für dich:**
 - **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
 - **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
 

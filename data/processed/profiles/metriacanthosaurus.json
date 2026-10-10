@@ -14449,19 +14449,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Metriacanthosaurus has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Metriacanthosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Metriacanthosaurus: the Alioramus side wins in about 3 s with 95% of its health left.",
         "score": 97,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14477,18 +14479,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": 6.4,
           "label": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 3100,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.77,
-          "cappedPowerRatio": 1.6,
-          "label": "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -14506,10 +14496,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "5 Alioramus vs 1 Metriacanthosaurus: the Alioramus side wins in about 3 s with 95% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 35 on Metriacanthosaurus (15 to kill); a Metriacanthosaurus v2claw attack lands 52 back (11 to kill).",
           "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 35,
+            "defenderHit": 52,
+            "attackerBurst": 43,
+            "defenderBurst": 84,
+            "attackerHitsToKill": 15,
+            "defenderHitsToKill": 11,
+            "attackerDps": 37.7,
+            "defenderDps": 50.2,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.95,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2.75
+            }
+          },
+          "label": "5 Alioramus vs 1 Metriacanthosaurus: the Alioramus side wins in about 3 s with 95% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 3100,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 2 Metriacanthosaurus: the Alioramus side wins in about 6 s with 84% of its health left.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 79,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance",
           "dangerous-defender"
@@ -14520,12 +14576,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Kelenken can create a very narrow escape window",
-        "summary": "Kelenken is inside the legal hunt range. The speed gap is small (1075 vs 1050), but Kelenken has the pursuit edge on land. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
+        "summary": "Kelenken is inside the legal hunt range. The speed gap is small (1075 vs 1050), but Kelenken has the pursuit edge on land. 4 Kelenken vs 1 Metriacanthosaurus: the Kelenken side wins in about 4 s with 88% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14542,18 +14600,6 @@
           "durationMarginPct": 33.3,
           "label": "The speed gap is small (1075 vs 1050), but Kelenken has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 3100,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.63,
-          "cappedPowerRatio": 1.08,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -14569,10 +14615,76 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "The speed gap is small (1075 vs 1050), but Kelenken has the pursuit edge on land.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 Kelenken vs 1 Metriacanthosaurus: the Kelenken side wins in about 4 s with 88% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 31 on Metriacanthosaurus (16 to kill); a Metriacanthosaurus v2claw attack lands 64 back (8 to kill).",
           "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 31,
+            "defenderHit": 64,
+            "attackerBurst": 44,
+            "defenderBurst": 103,
+            "attackerHitsToKill": 16,
+            "defenderHitsToKill": 8,
+            "attackerDps": 33.8,
+            "defenderDps": 61.8,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0.031,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.88,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.75
+            }
+          },
+          "label": "4 Kelenken vs 1 Metriacanthosaurus: the Kelenken side wins in about 4 s with 88% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 3100,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 2 Metriacanthosaurus: the Kelenken side wins in about 9 s with 62% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1050), but Kelenken has the pursuit edge on land.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
         "tags": [
           "endurance",
           "dangerous-defender"
@@ -14581,14 +14693,135 @@
         "confidence": "derived"
       },
       {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Pycnonemosaurus can create a very narrow escape window",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 3 Pycnonemosaurus vs 1 Metriacanthosaurus: the Pycnonemosaurus side wins in about 3 s with 95% of its health left.",
+        "score": 82,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1050,
+          "speedMarginPct": 2.4,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 125,
+          "durationMarginPct": -27.2,
+          "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "wind-tunnels"
+          ],
+          "overlap": 0.353,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "3 Pycnonemosaurus vs 1 Metriacanthosaurus: the Pycnonemosaurus side wins in about 3 s with 95% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 56 on Metriacanthosaurus (9 to kill); a Metriacanthosaurus v2claw attack lands 35 back (19 to kill).",
+          "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 56,
+            "defenderHit": 35,
+            "attackerBurst": 135,
+            "defenderBurst": 58,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 19,
+            "attackerDps": 61.3,
+            "defenderDps": 34.4,
+            "attackerTimeToKill": 8,
+            "defenderTimeToKill": 19,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.95,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2.75
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Metriacanthosaurus: the Pycnonemosaurus side wins in about 3 s with 95% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 3100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Pycnonemosaurus vs 2 Metriacanthosaurus: the Pycnonemosaurus side wins in about 6 s with 85% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 64,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 3 Allosaurus vs 1 Metriacanthosaurus: the Allosaurus side wins in about 4 s with 94% of its health left.",
         "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14604,18 +14837,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": -27.2,
           "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 3100,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.21,
-          "cappedPowerRatio": 1.64,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -14635,11 +14856,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "3 Allosaurus vs 1 Metriacanthosaurus: the Allosaurus side wins in about 4 s with 94% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 60 on Metriacanthosaurus (9 to kill); a Metriacanthosaurus v2claw attack lands 33 back (20 to kill).",
+          "Allosaurus's bleed builds faster than Metriacanthosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 60,
+            "defenderHit": 33,
+            "attackerBurst": 85,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 20,
+            "attackerDps": 46.4,
+            "defenderDps": 32.1,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 20,
+            "attackerBleed": 0.137,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.94,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.75
+            }
+          },
+          "label": "3 Allosaurus vs 1 Metriacanthosaurus: the Allosaurus side wins in about 4 s with 94% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 3100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 2 Metriacanthosaurus: the Allosaurus side wins in about 7 s with 82% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14648,14 +14936,16 @@
         "confidence": "derived"
       },
       {
-        "id": "dilophosaurus",
-        "name": "Dilophosaurus",
+        "id": "concavenator",
+        "name": "Concavenator",
+        "family": "concavenator",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Dilophosaurus can create a real pursuit problem",
-        "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land. At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "headline": "Concavenator can create a real pursuit problem",
+        "summary": "Concavenator is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land. 4 Concavenator vs 1 Metriacanthosaurus: the Concavenator side wins in about 4 s with 90% of its health left.",
         "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14667,104 +14957,101 @@
           "attackerSpeed": 1100,
           "targetSpeed": 1050,
           "speedMarginPct": 4.8,
-          "attackerDurationSeconds": 166.667,
+          "attackerDurationSeconds": 167,
           "targetDurationSeconds": 125,
-          "durationMarginPct": 33.3,
-          "label": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 3100,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.77,
-          "cappedPowerRatio": 1.6,
-          "label": "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
+          "durationMarginPct": 33.6,
+          "label": "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
+            "tallbrush-coasts",
+            "coastal-bluffs",
+            "volcano-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
             "cliff-edge-falls",
-            "wind-tunnels"
+            "coastland-swamp"
           ],
-          "overlap": 0.222,
-          "label": "4 shared mapped areas make contact plausible."
+          "overlap": 0.563,
+          "label": "9 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
-          "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "4 shared mapped areas make contact plausible.",
+          "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land.",
+          "4 Concavenator vs 1 Metriacanthosaurus: the Concavenator side wins in about 4 s with 90% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Concavenator bite lands 34 on Metriacanthosaurus (15 to kill); a Metriacanthosaurus v2claw attack lands 59 back (9 to kill).",
+          "Concavenator's bleed builds faster than Metriacanthosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "pycnonemosaurus",
-        "name": "Pycnonemosaurus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Pycnonemosaurus can create a real pursuit problem",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 72,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Giant tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1075,
-          "targetSpeed": 1050,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 91,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": -27.2,
-          "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
-        },
         "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3500,
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 34,
+            "defenderHit": 59,
+            "attackerBurst": 54,
+            "defenderBurst": 96,
+            "attackerHitsToKill": 15,
+            "defenderHitsToKill": 9,
+            "attackerDps": 36.4,
+            "defenderDps": 57.4,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0.034,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.9,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "4 Concavenator vs 1 Metriacanthosaurus: the Concavenator side wins in about 4 s with 90% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2100,
           "targetCombatWeight": 3100,
-          "attackerGroupLimit": 3,
+          "attackerGroupLimit": 4,
           "targetDefenderLimit": 2,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.13,
-          "cappedPowerRatio": 1.53,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Concavenator vs 2 Metriacanthosaurus: the Concavenator side wins in about 8 s with 68% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "stillwater-bog",
-            "cliff-edge-falls",
-            "crag-bluffs",
-            "wind-tunnels"
-          ],
-          "overlap": 0.353,
-          "label": "6 shared mapped areas make contact plausible."
+        "attackerId": "concavenator",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Concavenator",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Concavenator is inside the legal hunt range."
         },
-        "facts": [
-          "Its profile permits hunting through Giant tier.",
-          "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible.",
-          "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
         "tags": [
           "dangerous-defender"
         ],
@@ -14772,14 +15059,16 @@
         "confidence": "derived"
       },
       {
-        "id": "achillobator",
-        "name": "Achillobator",
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Achillobator can create a real pursuit problem",
-        "summary": "Achillobator is inside the legal hunt range. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 70,
+        "headline": "Deinonychus can create a real pursuit problem",
+        "summary": "Deinonychus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land. 8 Deinonychus vs 1 Metriacanthosaurus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+        "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14787,52 +15076,105 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1100,
           "targetSpeed": 1050,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 154,
+          "speedMarginPct": 4.8,
+          "attackerDurationSeconds": 200,
           "targetDurationSeconds": 125,
-          "durationMarginPct": 23.2,
-          "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 3100,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.9,
-          "cappedPowerRatio": 1.86,
-          "label": "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
+          "durationMarginPct": 60,
+          "label": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
+            "tallbrush-coasts",
             "steep-run",
+            "volcano-islands",
             "big-tree-overlook",
             "cedrus-forest",
             "twisted-forest",
-            "mudflats",
+            "stillwater-bog",
             "cliff-edge-falls",
-            "east-passage",
             "wind-tunnels"
           ],
-          "overlap": 0.444,
-          "label": "8 shared mapped areas make contact plausible."
+          "overlap": 0.5,
+          "label": "9 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "8 shared mapped areas make contact plausible.",
-          "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "8 Deinonychus vs 1 Metriacanthosaurus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 13 on Metriacanthosaurus (39 to kill); a Metriacanthosaurus v2claw attack lands 155 back (4 to kill).",
+          "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 13,
+            "defenderHit": 155,
+            "attackerBurst": 13,
+            "defenderBurst": 252,
+            "attackerHitsToKill": 39,
+            "defenderHitsToKill": 4,
+            "attackerDps": 12.9,
+            "defenderDps": 150.6,
+            "attackerTimeToKill": 39,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 7,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.83,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.75
+            }
+          },
+          "label": "8 Deinonychus vs 1 Metriacanthosaurus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 3100,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "8 Deinonychus vs 2 Metriacanthosaurus: the Deinonychus side wins in about 15 s with 29% of its health left, too narrow to call.",
+            "attackers": 8,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "metriacanthosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinonychus",
+          "targetName": "Metriacanthosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinonychus is inside the legal hunt range."
+        },
         "tags": [
-          "pounce",
           "dangerous-defender"
         ],
         "evidence": [],
@@ -14843,12 +15185,14 @@
       {
         "id": "suchomimus",
         "name": "Suchomimus",
+        "family": "suchomimus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Suchomimus is legal quarry, but not a comfortable fight",
-        "summary": "Suchomimus is within the legal hunt ceiling. Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+        "summary": "Suchomimus is within the legal hunt ceiling. Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14864,18 +15208,6 @@
           "targetDurationSeconds": 63,
           "durationMarginPct": 98.4,
           "label": "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.62,
-          "cappedPowerRatio": 0.3,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
         },
         "encounter": {
           "level": "frequent",
@@ -14895,9 +15227,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
-          "8 shared mapped areas make contact plausible."
+          "1 Metriacanthosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Metriacanthosaurus v2claw attack lands 25 on Suchomimus (29 to kill); a Suchomimus bite lands 65 back (8 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 25,
+            "defenderHit": 65,
+            "attackerBurst": 40,
+            "defenderBurst": 145,
+            "attackerHitsToKill": 29,
+            "defenderHitsToKill": 8,
+            "attackerDps": 24.1,
+            "defenderDps": 61.8,
+            "attackerTimeToKill": 29,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 3,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2.75
+            }
+          },
+          "label": "1 Metriacanthosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 3100,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Metriacanthosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "metriacanthosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Metriacanthosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Suchomimus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14907,12 +15305,14 @@
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
+        "family": "sarcosuchus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
-        "summary": "Sarcosuchus is within the legal hunt ceiling. Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+        "summary": "Sarcosuchus is within the legal hunt ceiling. Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 98% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14928,18 +15328,6 @@
           "targetDurationSeconds": 40,
           "durationMarginPct": 212.5,
           "label": "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 0.33,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus."
         },
         "encounter": {
           "level": "frequent",
@@ -14958,9 +15346,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
-          "7 shared mapped areas make contact plausible."
+          "1 Metriacanthosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 98% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Metriacanthosaurus v2claw attack lands 28 on Sarcosuchus (22 to kill); a Sarcosuchus tail lands 58 back (9 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 28,
+            "defenderHit": 58,
+            "attackerBurst": 45,
+            "defenderBurst": 305,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 9,
+            "attackerDps": 26.8,
+            "defenderDps": 131.6,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.98,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Metriacanthosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 98% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 3100,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Metriacanthosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 98% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "metriacanthosaurus",
+        "targetId": "sarcosuchus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Metriacanthosaurus",
+          "targetName": "Sarcosuchus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Sarcosuchus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14970,12 +15424,14 @@
       {
         "id": "torvosaurus",
         "name": "Torvosaurus",
+        "family": "torvosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Torvosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Torvosaurus is within the legal hunt ceiling. Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
+        "summary": "Torvosaurus is within the legal hunt ceiling. Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 2 s with 99% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14991,18 +15447,6 @@
           "targetDurationSeconds": 68.966,
           "durationMarginPct": 81.2,
           "label": "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 0.26,
-          "label": "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -15021,9 +15465,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
-          "7 shared mapped areas make contact plausible."
+          "1 Metriacanthosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 2 s with 99% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Metriacanthosaurus v2claw attack lands 21 on Torvosaurus (34 to kill); a Torvosaurus bite lands 94 back (6 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 21,
+            "defenderHit": 94,
+            "attackerBurst": 34,
+            "defenderBurst": 94,
+            "attackerHitsToKill": 34,
+            "defenderHitsToKill": 6,
+            "attackerDps": 20.6,
+            "defenderDps": 62.9,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2
+            }
+          },
+          "label": "1 Metriacanthosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 2 s with 99% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 3100,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Metriacanthosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 2 s with 99% of its health left.",
+            "attackers": 1,
+            "defenders": 4
+          }
+        },
+        "attackerId": "metriacanthosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Metriacanthosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Metriacanthosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Torvosaurus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -15033,12 +15543,14 @@
       {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
+        "family": "anodontosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Metriacanthosaurus is 59% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+        "summary": "Anodontosaurus is within the legal hunt ceiling. Metriacanthosaurus is 59% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 86% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -15054,18 +15566,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": 0,
           "label": "Metriacanthosaurus is 59% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 0.69,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -15083,10 +15583,76 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Metriacanthosaurus is 59% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+          "1 Metriacanthosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 86% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Metriacanthosaurus v2claw attack lands 18 on Anodontosaurus (47 to kill); a Anodontosaurus tail slam lands 102 back (5 to kill).",
           "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 18,
+            "defenderHit": 102,
+            "attackerBurst": 30,
+            "defenderBurst": 174,
+            "attackerHitsToKill": 47,
+            "defenderHitsToKill": 5,
+            "attackerDps": 17.8,
+            "defenderDps": 76.6,
+            "attackerTimeToKill": 48,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 7,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.86,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6.75
+            }
+          },
+          "label": "1 Metriacanthosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 86% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3100,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Metriacanthosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "metriacanthosaurus",
+        "targetId": "anodontosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Metriacanthosaurus",
+          "targetName": "Anodontosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Metriacanthosaurus is 59% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -15096,12 +15662,14 @@
       {
         "id": "stegosaurus",
         "name": "Stegosaurus",
+        "family": "stegosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Stegosaurus is within the legal hunt ceiling. Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 2), a committed straight fight favours Stegosaurus.",
+        "summary": "Stegosaurus is within the legal hunt ceiling. Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -15117,18 +15685,6 @@
           "targetDurationSeconds": 63,
           "durationMarginPct": 98.4,
           "label": "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.62,
-          "cappedPowerRatio": 0.4,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Stegosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -15146,9 +15702,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Stegosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "1 Metriacanthosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Metriacanthosaurus v2claw attack lands 25 on Stegosaurus (33 to kill); a Stegosaurus tail attack lands 129 back (4 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 25,
+            "defenderHit": 129,
+            "attackerBurst": 40,
+            "defenderBurst": 258,
+            "attackerHitsToKill": 33,
+            "defenderHitsToKill": 4,
+            "attackerDps": 24.1,
+            "defenderDps": 145.2,
+            "attackerTimeToKill": 33,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0,
+            "defenderBleed": 1.058,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Metriacanthosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 3100,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Metriacanthosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "metriacanthosaurus",
+        "targetId": "stegosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Metriacanthosaurus",
+          "targetName": "Stegosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Metriacanthosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Stegosaurus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -15156,6 +15778,2131 @@
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a real pursuit problem",
+          "summary": "Latenivenatrix is inside the legal hunt range. The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land. 8 Latenivenatrix vs 1 Metriacanthosaurus: the Latenivenatrix side wins in about 4 s with 92% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1050,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 100,
+            "label": "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land.",
+            "8 Latenivenatrix vs 1 Metriacanthosaurus: the Latenivenatrix side wins in about 4 s with 92% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 18 on Metriacanthosaurus (28 to kill); a Metriacanthosaurus v2claw attack lands 89 back (6 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 18,
+              "defenderHit": 89,
+              "attackerBurst": 41,
+              "defenderBurst": 144,
+              "attackerHitsToKill": 28,
+              "defenderHitsToKill": 6,
+              "attackerDps": 18.1,
+              "defenderDps": 86,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 6,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 8,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.5
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Metriacanthosaurus: the Latenivenatrix side wins in about 4 s with 92% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "8 Latenivenatrix vs 2 Metriacanthosaurus: the Latenivenatrix side wins in about 8 s with 76% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Metriacanthosaurus: the Quetzalcoatlus side wins in about 7 s with 84% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1050,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -60,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "mudflats",
+              "coastland-swamp",
+              "crag-bluffs",
+              "east-passage"
+            ],
+            "overlap": 0.25,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Metriacanthosaurus: the Quetzalcoatlus side wins in about 7 s with 84% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 71 on Metriacanthosaurus (8 to kill); a Metriacanthosaurus v2claw attack lands 45 back (14 to kill).",
+            "Quetzalcoatlus's bleed builds faster than Metriacanthosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 71,
+              "defenderHit": 45,
+              "attackerBurst": 80,
+              "defenderBurst": 73,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 14,
+              "attackerDps": 25.4,
+              "defenderDps": 43.8,
+              "attackerTimeToKill": 20,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0.044,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 7,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.84,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6.75
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Metriacanthosaurus: the Quetzalcoatlus side wins in about 7 s with 84% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Quetzalcoatlus vs 2 Metriacanthosaurus: the Quetzalcoatlus side wins in about 16 s with 44% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "family": "thalassodromeus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Thalassodromeus can create a real pursuit problem",
+          "summary": "Thalassodromeus is inside the legal hunt range. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1200,
+            "targetSpeed": 1050,
+            "speedMarginPct": 14.3,
+            "attackerDurationSeconds": 83,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -33.6,
+            "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "wind-tunnels"
+            ],
+            "overlap": 0.25,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Thalassodromeus bite lands 27 on Metriacanthosaurus (19 to kill); a Metriacanthosaurus v2claw attack lands 59 back (9 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": null,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 27,
+              "defenderHit": 59,
+              "attackerBurst": 47,
+              "defenderBurst": 96,
+              "attackerHitsToKill": 19,
+              "defenderHitsToKill": 9,
+              "attackerDps": 22.9,
+              "defenderDps": 57.4,
+              "attackerTimeToKill": 22,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": null,
+            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": true,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": null,
+              "defenders": 2
+            }
+          },
+          "attackerId": "thalassodromeus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Thalassodromeus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Thalassodromeus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land. 5 Dilophosaurus vs 1 Metriacanthosaurus: the Dilophosaurus side wins in about 3 s with 95% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 33.3,
+            "label": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "wind-tunnels"
+            ],
+            "overlap": 0.222,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "5 Dilophosaurus vs 1 Metriacanthosaurus: the Dilophosaurus side wins in about 3 s with 95% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 39 on Metriacanthosaurus (13 to kill); a Metriacanthosaurus v2claw attack lands 52 back (11 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 39,
+              "defenderHit": 52,
+              "attackerBurst": 39,
+              "defenderBurst": 84,
+              "attackerHitsToKill": 13,
+              "defenderHitsToKill": 11,
+              "attackerDps": 38.7,
+              "defenderDps": 50.2,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2.75
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Metriacanthosaurus: the Dilophosaurus side wins in about 3 s with 95% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Dilophosaurus vs 2 Metriacanthosaurus: the Dilophosaurus side wins in about 5 s with 85% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Achillobator can create a real pursuit problem",
+          "summary": "Achillobator is inside the legal hunt range. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 5 Achillobator vs 1 Metriacanthosaurus: the Achillobator side wins in about 2 s with 97% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 23.2,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "5 Achillobator vs 1 Metriacanthosaurus: the Achillobator side wins in about 2 s with 97% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 63 on Metriacanthosaurus (8 to kill); a Metriacanthosaurus v2claw attack lands 44 back (14 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 63,
+              "defenderHit": 44,
+              "attackerBurst": 126,
+              "defenderBurst": 72,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 14,
+              "attackerDps": 45.2,
+              "defenderDps": 43,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 2,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.97,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2.25
+              }
+            },
+            "label": "5 Achillobator vs 1 Metriacanthosaurus: the Achillobator side wins in about 2 s with 97% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 2 Metriacanthosaurus: the Achillobator side wins in about 5 s with 90% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a real pursuit problem",
+          "summary": "Ceratosaurus is inside the legal hunt range. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 4 Ceratosaurus vs 1 Metriacanthosaurus: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 14.4,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.471,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "4 Ceratosaurus vs 1 Metriacanthosaurus: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 34 on Metriacanthosaurus (15 to kill); a Metriacanthosaurus v2claw attack lands 48 back (16 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 34,
+              "defenderHit": 48,
+              "attackerBurst": 75,
+              "defenderBurst": 78,
+              "attackerHitsToKill": 15,
+              "defenderHitsToKill": 16,
+              "attackerDps": 45.3,
+              "defenderDps": 46.3,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Metriacanthosaurus: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Ceratosaurus vs 2 Metriacanthosaurus: the Ceratosaurus side wins in about 6 s with 86% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "tenontosaurus",
+          "name": "Tenontosaurus",
+          "family": "tenontosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Tenontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Tenontosaurus is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 1 Metriacanthosaurus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 90% of its health left.",
+          "score": 35,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 133.333,
+            "durationMarginPct": -6.2,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.75,
+            "label": "15 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "1 Metriacanthosaurus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 90% of its health left.",
+            "15 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 52 on Tenontosaurus (11 to kill); a Tenontosaurus bite lands 19 back (26 to kill).",
+            "Tenontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 52,
+              "defenderHit": 19,
+              "attackerBurst": 84,
+              "defenderBurst": 50,
+              "attackerHitsToKill": 11,
+              "defenderHitsToKill": 26,
+              "attackerDps": 50.2,
+              "defenderDps": 30.1,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 17,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 4,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.9,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.25
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 90% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 2400,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 90% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "tenontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Tenontosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tenontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "citipati",
+          "name": "Citipati",
+          "family": "citipati",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Citipati is legal quarry, but not a comfortable fight",
+          "summary": "Citipati is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1075 units/s, with stamina likely deciding it. 1 Metriacanthosaurus vs 4 Citipati: the Citipati side wins in about 4 s with 90% of its health left.",
+          "score": 35,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1075,
+            "speedMarginPct": -2.3,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 133.333,
+            "durationMarginPct": -6.2,
+            "label": "This is a close chase on land: 1050 vs 1075 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.5,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "This is a close chase on land: 1050 vs 1075 units/s, with stamina likely deciding it.",
+            "1 Metriacanthosaurus vs 4 Citipati: the Citipati side wins in about 4 s with 90% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 52 on Citipati (11 to kill); a Citipati beak snap lands 31 back (17 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 52,
+              "defenderHit": 31,
+              "attackerBurst": 84,
+              "defenderBurst": 46,
+              "attackerHitsToKill": 11,
+              "defenderHitsToKill": 17,
+              "attackerDps": 50.2,
+              "defenderDps": 30.4,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0.07,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 4,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.9,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.25
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 4 Citipati: the Citipati side wins in about 4 s with 90% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 2400,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 4 Citipati: the Citipati side wins in about 4 s with 90% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "citipati",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Citipati",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1075 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Citipati is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Achillobator is legal quarry, but not a comfortable fight",
+          "summary": "Achillobator is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 1 Metriacanthosaurus vs 2 Achillobator: the Achillobator side wins in about 6 s with 79% of its health left.",
+          "score": 35,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -18.8,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "1 Metriacanthosaurus vs 2 Achillobator: the Achillobator side wins in about 6 s with 79% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 44 on Achillobator (14 to kill); a Achillobator bite lands 63 back (8 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 44,
+              "defenderHit": 63,
+              "attackerBurst": 72,
+              "defenderBurst": 126,
+              "attackerHitsToKill": 14,
+              "defenderHitsToKill": 8,
+              "attackerDps": 43,
+              "defenderDps": 45.2,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.79,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.75
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 2 Achillobator: the Achillobator side wins in about 6 s with 79% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 2 Achillobator: the Achillobator side wins in about 6 s with 79% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "kentrosaurus",
+          "name": "Kentrosaurus",
+          "family": "kentrosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Kentrosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Kentrosaurus is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 1 Metriacanthosaurus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
+          "score": 35,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -12.6,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.353,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "1 Metriacanthosaurus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 46 on Kentrosaurus (17 to kill); a Kentrosaurus tail swipe left lands 35 back (15 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 46,
+              "defenderHit": 35,
+              "attackerBurst": 75,
+              "defenderBurst": 65,
+              "attackerHitsToKill": 17,
+              "defenderHitsToKill": 15,
+              "attackerDps": 44.6,
+              "defenderDps": 45,
+              "attackerTimeToKill": 17,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0.145,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 2700,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "kentrosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Kentrosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Kentrosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "pachycephalosaurus",
+          "name": "Pachycephalosaurus",
+          "family": "pachycephalosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Pachycephalosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Pachycephalosaurus is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 35,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": -25.1,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "wind-tunnels"
+            ],
+            "overlap": 0.333,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 62 on Pachycephalosaurus (9 to kill); a Pachycephalosaurus headbutt lands 39 back (13 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": null,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 62,
+              "defenderHit": 39,
+              "attackerBurst": 101,
+              "defenderBurst": 52,
+              "attackerHitsToKill": 9,
+              "defenderHitsToKill": 13,
+              "attackerDps": 60.2,
+              "defenderDps": 29.9,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 17,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": null,
+            "label": "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 2000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": true,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": 1,
+              "defenders": null
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "pachycephalosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Pachycephalosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Pachycephalosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "family": "yutyrannus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Yutyrannus is legal quarry, but not a comfortable fight",
+          "summary": "Yutyrannus is within the legal hunt ceiling. The speed gap is small (1050 vs 1040), but Metriacanthosaurus has the pursuit edge on land. 1 Metriacanthosaurus vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
+          "score": 32,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1040,
+            "speedMarginPct": 1,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 100,
+            "durationMarginPct": 25,
+            "label": "The speed gap is small (1050 vs 1040), but Metriacanthosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "wind-tunnels"
+            ],
+            "overlap": 0.056,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "The speed gap is small (1050 vs 1040), but Metriacanthosaurus has the pursuit edge on land.",
+            "1 Metriacanthosaurus vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 38 on Yutyrannus (16 to kill); a Yutyrannus bite lands 63 back (8 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 63,
+              "attackerBurst": 62,
+              "defenderBurst": 63,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 8,
+              "attackerDps": 37.1,
+              "defenderDps": 41.9,
+              "attackerTimeToKill": 16,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.95,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 3250,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "yutyrannus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Yutyrannus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1050 vs 1040), but Metriacanthosaurus has the pursuit edge on land.",
+            "baseScore": 49,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Yutyrannus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "stegosaurus": {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "cw": 5000,
+        "hp": 800,
+        "armor": 1,
+        "dps": 90,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 160,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.656,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "tenontosaurus": {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 38.83,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Slam",
+          "damage": 65,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Tail Slam",
+          "Haymaker"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.04,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "citipati": {
+        "id": "citipati",
+        "name": "Citipati",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 39.33,
+        "primary": {
+          "label": "Beak Snap",
+          "damage": 40,
+          "cooldown": 1.25
+        },
+        "burst": {
+          "label": "Claw Swipe",
+          "damage": 60,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Beak Snap",
+          "Kick",
+          "Claw Swipe"
+        ],
+        "bleedPerSecond": 0.09,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kentrosaurus": {
+        "id": "kentrosaurus",
+        "name": "Kentrosaurus",
+        "cw": 2700,
+        "hp": 750,
+        "armor": 1,
+        "dps": 51.67,
+        "primary": {
+          "label": "Tail Swipe Left",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 75,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Swipe Left",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.167,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "pachycephalosaurus": {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "cw": 2000,
+        "hp": 500,
+        "armor": 1,
+        "dps": 46.33,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 80,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt",
+          "Batter",
+          "Charge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -15211,7 +17958,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

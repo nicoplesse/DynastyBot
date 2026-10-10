@@ -12728,19 +12728,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Tylosaurus's listed dangers are situational rather than automatic losses. Speed, stamina or low encounter overlap prevents raw combat weight from becoming a routine counter.",
+    "summary": "Played solo against their full legal groups, Tylosaurus has 2 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "spinosaurus-freshwater",
         "name": "Spinosaurus (Freshwater)",
+        "family": "spinosaurus",
         "direction": "threat",
-        "band": "conditional",
+        "band": "high",
         "kind": "predator",
-        "headline": "Spinosaurus (Freshwater) matters only if it gets the right opening",
-        "summary": "Spinosaurus (Freshwater) is linked by a specific profile rule. Tylosaurus is 17% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
-        "score": 36,
+        "headline": "Spinosaurus (Freshwater) can create a real pursuit problem",
+        "summary": "Spinosaurus (Freshwater) is linked by a specific profile rule. Tylosaurus is 17% faster in water and can normally refuse this fight. 1 Spinosaurus (Freshwater) vs 1 Tylosaurus: the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
+        "score": 71,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12757,18 +12759,6 @@
           "durationMarginPct": -24.8,
           "label": "Tylosaurus is 17% faster in water and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.77,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12784,10 +12774,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 17% faster in water and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
+          "1 Spinosaurus (Freshwater) vs 1 Tylosaurus: the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Freshwater) claw lands 72 on Tylosaurus (14 to kill); a Tylosaurus bite lands 49 back (23 to kill).",
           "Tylosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 49,
+            "attackerBurst": 204,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 23,
+            "attackerDps": 87.2,
+            "defenderDps": 39,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 12,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.59,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 11.5
+            }
+          },
+          "label": "1 Spinosaurus (Freshwater) vs 1 Tylosaurus: the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Spinosaurus (Freshwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "spinosaurus-freshwater",
+        "targetId": "tylosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Spinosaurus (Freshwater)",
+          "targetName": "Tylosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tylosaurus is 17% faster in water and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Spinosaurus (Freshwater) is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12810,12 +12866,14 @@
       {
         "id": "spinosaurus-saltwater",
         "name": "Spinosaurus (Saltwater)",
+        "family": "spinosaurus",
         "direction": "threat",
-        "band": "conditional",
+        "band": "high",
         "kind": "predator",
-        "headline": "Spinosaurus (Saltwater) matters only if it gets the right opening",
-        "summary": "Spinosaurus (Saltwater) is linked by a specific profile rule. Tylosaurus is 17% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
-        "score": 36,
+        "headline": "Spinosaurus (Saltwater) can create a real pursuit problem",
+        "summary": "Spinosaurus (Saltwater) is linked by a specific profile rule. Tylosaurus is 17% faster in water and can normally refuse this fight. 1 Spinosaurus (Saltwater) vs 1 Tylosaurus: the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
+        "score": 71,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12832,18 +12890,6 @@
           "durationMarginPct": -24.8,
           "label": "Tylosaurus is 17% faster in water and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.77,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12859,10 +12905,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 17% faster in water and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
+          "1 Spinosaurus (Saltwater) vs 1 Tylosaurus: the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 72 on Tylosaurus (14 to kill); a Tylosaurus bite lands 49 back (23 to kill).",
           "Tylosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 49,
+            "attackerBurst": 204,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 23,
+            "attackerDps": 87.2,
+            "defenderDps": 39,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 12,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.59,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 11.5
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Tylosaurus: the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Spinosaurus (Saltwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "tylosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Tylosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tylosaurus is 17% faster in water and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Spinosaurus (Saltwater) is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12887,12 +12999,14 @@
       {
         "id": "leedsichthys",
         "name": "Leedsichthys",
+        "family": "leedsichthys",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 112,
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
+        "score": 102,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12908,18 +13022,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": 32.9,
           "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.91,
-          "cappedPowerRatio": 1.41,
-          "label": "At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -12939,10 +13041,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 61 back (17 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 61,
+            "attackerBurst": 48,
+            "defenderBurst": 61,
+            "attackerHitsToKill": 34,
+            "defenderHitsToKill": 17,
+            "attackerDps": 23.4,
+            "defenderDps": 30.3,
+            "attackerTimeToKill": 43,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 33,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.22,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 33.25
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -12966,12 +13134,14 @@
       {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
+        "family": "deinosuchus",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 19 s with 25% of its health left, too narrow to call.",
         "score": 102,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12987,18 +13157,6 @@
           "targetDurationSeconds": 166.667,
           "durationMarginPct": 33.2,
           "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.29,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -13017,162 +13175,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tylosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 19 s with 25% of its health left, too narrow to call.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 49 on Deinosuchus (Shore) (21 to kill); a Deinosuchus (Shore) bite lands 66 back (16 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
-        "tags": [
-          "ambush",
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Quick View",
-            "text": "Tylosaurus may hunt up to Apex tier. Tylosaurus will not hunt adult Apex terrestrial carnivores unless they are swimming in water, and will only hunt Sub/Adult Spinosaurus or Deinosuchus if desperate hunger. Tylosaurus may not scavenge."
-          },
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Engagement Limits",
-            "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "spinosaurus-freshwater",
-        "name": "Spinosaurus (Freshwater)",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Spinosaurus (Freshwater) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 102,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 900,
-          "targetSpeed": 750,
-          "speedMarginPct": 20,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 32.9,
-          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
-        },
         "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 49,
+            "defenderHit": 66,
+            "attackerBurst": 80,
+            "defenderBurst": 138,
+            "attackerHitsToKill": 21,
+            "defenderHitsToKill": 16,
+            "attackerDps": 39,
+            "defenderDps": 52.4,
+            "attackerTimeToKill": 26,
+            "defenderTimeToKill": 19,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
           "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 19,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.25,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 19.25
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 19 s with 25% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 5000,
           "targetCombatWeight": 6000,
           "attackerGroupLimit": 2,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.29,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "volcano-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats"
-          ],
-          "overlap": 0.294,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible.",
-          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush",
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Quick View",
-            "text": "Tylosaurus may hunt up to Apex tier. Tylosaurus will not hunt adult Apex terrestrial carnivores unless they are swimming in water, and will only hunt Sub/Adult Spinosaurus or Deinosuchus if desperate hunger. Tylosaurus may not scavenge."
-          },
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Engagement Limits",
-            "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 1 Deinosuchus (Shore): the Tylosaurus side wins in about 13 s with 66% of its health left.",
+            "attackers": 2,
+            "defenders": 1
           }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "spinosaurus-saltwater",
-        "name": "Spinosaurus (Saltwater)",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Spinosaurus (Saltwater) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 102,
-        "intent": {
-          "allowed": true,
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "deinosuchus-shore",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Deinosuchus (Shore)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
           "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
         },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 900,
-          "targetSpeed": 750,
-          "speedMarginPct": 20,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 32.9,
-          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.29,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "abyssal-depths",
-            "palm-islands",
-            "stonebed-shoal"
-          ],
-          "overlap": 0.313,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible.",
-          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13196,12 +13268,14 @@
       {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
+        "family": "deinosuchus",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 19 s with 25% of its health left, too narrow to call.",
         "score": 102,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13218,18 +13292,6 @@
           "durationMarginPct": 33.2,
           "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.29,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -13243,10 +13305,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tylosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 19 s with 25% of its health left, too narrow to call.",
           "3 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 49 on Deinosuchus (Ocean) (21 to kill); a Deinosuchus (Ocean) bite lands 66 back (16 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 49,
+            "defenderHit": 66,
+            "attackerBurst": 80,
+            "defenderBurst": 138,
+            "attackerHitsToKill": 21,
+            "defenderHitsToKill": 16,
+            "attackerDps": 39,
+            "defenderDps": 52.4,
+            "attackerTimeToKill": 26,
+            "defenderTimeToKill": 19,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 19,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.25,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 19.25
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 19 s with 25% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 1 Deinosuchus (Ocean): the Tylosaurus side wins in about 13 s with 66% of its health left.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "deinosuchus-ocean",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Deinosuchus (Ocean)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13268,14 +13396,16 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "kaiwhekea",
-        "name": "Kaiwhekea",
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "family": "spinosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Kaiwhekea is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it. The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 89,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
+        "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13283,51 +13413,100 @@
         },
         "chase": {
           "mode": "water",
-          "verdict": "close-chase",
+          "verdict": "attacker-faster",
           "attackerSpeed": 900,
-          "targetSpeed": 990,
-          "speedMarginPct": -9.1,
+          "targetSpeed": 750,
+          "speedMarginPct": 20,
           "attackerDurationSeconds": 222,
           "targetDurationSeconds": 167,
           "durationMarginPct": 32.9,
-          "label": "This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 4000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.25,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
             "volcano-islands",
-            "abyssal-depths",
-            "palm-islands",
             "big-tree-overlook",
             "twisted-forest",
             "stillwater-bog",
-            "mudflats",
-            "stonebed-shoal"
+            "mudflats"
           ],
-          "overlap": 0.909,
-          "label": "10 shared mapped areas make contact plausible."
+          "overlap": 0.294,
+          "label": "5 shared mapped areas make contact plausible."
         },
         "facts": [
           "The profile names this playable as prey or a target.",
-          "This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it.",
-          "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "10 shared mapped areas make contact plausible.",
+          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "1 Tylosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 49 on Spinosaurus (Freshwater) (23 to kill); a Spinosaurus (Freshwater) claw lands 72 back (14 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 49,
+            "defenderHit": 72,
+            "attackerBurst": 80,
+            "defenderBurst": 204,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 14,
+            "attackerDps": 39,
+            "defenderDps": 87.2,
+            "attackerTimeToKill": 28,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.59,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 11.5
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 12 s with 59% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 1 Spinosaurus (Freshwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "spinosaurus-freshwater",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Spinosaurus (Freshwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13337,13 +13516,145 @@
             "profileId": "tylosaurus",
             "profileName": "Tylosaurus",
             "section": "Quick View",
-            "text": "Tylosaurus must hunt Kaiwheka, Eurhinosaurus, and Leedsichthys before anything else in LOS. After Kai and Eurhino, their next priority targets are Parasaurolophus and Lambeosaurus. They may hunt other species if none of those 4 species are available as prey."
+            "text": "Tylosaurus may hunt up to Apex tier. Tylosaurus will not hunt adult Apex terrestrial carnivores unless they are swimming in water, and will only hunt Sub/Adult Spinosaurus or Deinosuchus if desperate hunger. Tylosaurus may not scavenge."
           },
           {
             "profileId": "tylosaurus",
             "profileName": "Tylosaurus",
             "section": "Engagement Limits",
-            "text": "Preferred Prey Kaiwheka, Eurhinosaurus, and Leedsichthys must be hunted before all other prey in the POI."
+            "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "family": "spinosaurus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
+        "score": 77,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 900,
+          "targetSpeed": 750,
+          "speedMarginPct": 20,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 32.9,
+          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "abyssal-depths",
+            "palm-islands",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.313,
+          "label": "5 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "1 Tylosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 49 on Spinosaurus (Saltwater) (23 to kill); a Spinosaurus (Saltwater) claw lands 72 back (14 to kill).",
+          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 49,
+            "defenderHit": 72,
+            "attackerBurst": 80,
+            "defenderBurst": 204,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 14,
+            "attackerDps": 39,
+            "defenderDps": 87.2,
+            "attackerTimeToKill": 28,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.59,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 11.5
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 12 s with 59% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Quick View",
+            "text": "Tylosaurus may hunt up to Apex tier. Tylosaurus will not hunt adult Apex terrestrial carnivores unless they are swimming in water, and will only hunt Sub/Adult Spinosaurus or Deinosuchus if desperate hunger. Tylosaurus may not scavenge."
+          },
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Engagement Limits",
+            "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
           }
         ],
         "confidence": "profile-specific"
@@ -13351,12 +13662,14 @@
       {
         "id": "eurhinosaurus",
         "name": "Eurhinosaurus",
+        "family": "eurhinosaurus",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
         "headline": "Eurhinosaurus can usually refuse the chase",
-        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 14% faster in water and can normally refuse this fight. The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 14% faster in water and can normally refuse this fight. 1 Tylosaurus vs 3 Eurhinosaurus: the Tylosaurus side wins in about 21 s with 17% of its health left, too narrow to call.",
         "score": 68,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13372,18 +13685,6 @@
           "targetDurationSeconds": 222,
           "durationMarginPct": 0,
           "label": "Eurhinosaurus is 14% faster in water and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 3000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.67,
-          "cappedPowerRatio": 1.23,
-          "label": "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -13405,10 +13706,213 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Eurhinosaurus is 14% faster in water and can normally refuse this fight.",
-          "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tylosaurus vs 3 Eurhinosaurus: the Tylosaurus side wins in about 21 s with 17% of its health left, too narrow to call.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 108 on Eurhinosaurus (6 to kill); a Eurhinosaurus bite lands 24 back (42 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 108,
+            "defenderHit": 24,
+            "attackerBurst": 175,
+            "defenderBurst": 39,
+            "attackerHitsToKill": 6,
+            "defenderHitsToKill": 42,
+            "attackerDps": 85.8,
+            "defenderDps": 19.6,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 51,
+            "attackerBleed": 0,
+            "defenderBleed": 0.034,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 21,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.17,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7
+            }
+          },
+          "label": "1 Tylosaurus vs 3 Eurhinosaurus: the Tylosaurus side wins in about 21 s with 17% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 3000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 3 Eurhinosaurus: the Tylosaurus side wins in about 11 s with 79% of its health left.",
+            "attackers": 2,
+            "defenders": 3
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "eurhinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Eurhinosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Eurhinosaurus is 14% faster in water and can normally refuse this fight.",
+          "baseScore": 60,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Quick View",
+            "text": "Tylosaurus must hunt Kaiwheka, Eurhinosaurus, and Leedsichthys before anything else in LOS. After Kai and Eurhino, their next priority targets are Parasaurolophus and Lambeosaurus. They may hunt other species if none of those 4 species are available as prey."
+          },
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Engagement Limits",
+            "text": "Preferred Prey Kaiwheka, Eurhinosaurus, and Leedsichthys must be hunted before all other prey in the POI."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "kaiwhekea",
+        "name": "Kaiwhekea",
+        "family": "kaiwhekea",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Kaiwhekea is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it. 1 Tylosaurus vs 3 Kaiwhekea: the Kaiwhekea side wins in about 8 s with 79% of its health left.",
+        "score": 64,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "close-chase",
+          "attackerSpeed": 900,
+          "targetSpeed": 990,
+          "speedMarginPct": -9.1,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 32.9,
+          "label": "This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "volcano-islands",
+            "abyssal-depths",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.909,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it.",
+          "1 Tylosaurus vs 3 Kaiwhekea: the Kaiwhekea side wins in about 8 s with 79% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 81 on Kaiwhekea (10 to kill); a Kaiwhekea bite lands 40 back (25 to kill).",
+          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 81,
+            "defenderHit": 40,
+            "attackerBurst": 131,
+            "defenderBurst": 68,
+            "attackerHitsToKill": 10,
+            "defenderHitsToKill": 25,
+            "attackerDps": 64.3,
+            "defenderDps": 45.5,
+            "attackerTimeToKill": 12,
+            "defenderTimeToKill": 22,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 8,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.79,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Tylosaurus vs 3 Kaiwhekea: the Kaiwhekea side wins in about 8 s with 79% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 4000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 3 Kaiwhekea: the Kaiwhekea side wins in about 23 s with 13% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 3
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "kaiwhekea",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Kaiwhekea",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 900 vs 990 units/s, with stamina likely deciding it.",
+          "baseScore": 81,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13432,12 +13936,14 @@
       {
         "id": "parasaurolophus",
         "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Parasaurolophus can usually refuse the chase",
-        "summary": "A profile rule names or prioritises this matchup. Parasaurolophus is 83% faster on land and can normally refuse this fight. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 68,
+        "band": "conditional",
+        "kind": "risky-quarry",
+        "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Parasaurolophus is 83% faster on land and can normally refuse this fight. 1 Tylosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 12 s with 81% of its health left.",
+        "score": 43,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13453,18 +13959,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 26,
           "label": "Parasaurolophus is 83% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.91,
-          "cappedPowerRatio": 0.91,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -13482,10 +13976,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Parasaurolophus is 83% faster on land and can normally refuse this fight.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tylosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 12 s with 81% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 54 on Parasaurolophus (27 to kill); a Parasaurolophus bite lands 28 back (37 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 54,
+            "defenderHit": 28,
+            "attackerBurst": 87,
+            "defenderBurst": 88,
+            "attackerHitsToKill": 27,
+            "defenderHitsToKill": 37,
+            "attackerDps": 42.5,
+            "defenderDps": 41.3,
+            "attackerTimeToKill": 33,
+            "defenderTimeToKill": 24,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.81,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 12.25
+            }
+          },
+          "label": "1 Tylosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 12 s with 81% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tylosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 28 s with 39% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Parasaurolophus is 83% faster on land and can normally refuse this fight.",
+          "baseScore": 60,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13503,12 +14063,14 @@
       {
         "id": "lambeosaurus",
         "name": "Lambeosaurus",
+        "family": "lambeosaurus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Lambeosaurus can usually refuse the chase",
-        "summary": "A profile rule names or prioritises this matchup. Lambeosaurus is 84% faster on land and can normally refuse this fight. The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 68,
+        "band": "conditional",
+        "kind": "risky-quarry",
+        "headline": "Lambeosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Lambeosaurus is 84% faster on land and can normally refuse this fight. 1 Tylosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 9 s with 65% of its health left.",
+        "score": 43,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13525,18 +14087,6 @@
           "durationMarginPct": -49.6,
           "label": "Lambeosaurus is 84% faster on land and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.43,
-          "cappedPowerRatio": 1.05,
-          "label": "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -13551,11 +14101,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Lambeosaurus is 84% faster on land and can normally refuse this fight.",
-          "The legal groups (2 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tylosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 9 s with 65% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 93 on Lambeosaurus (7 to kill); a Lambeosaurus bite lands 21 back (48 to kill).",
           "Lambeosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 93,
+            "defenderHit": 21,
+            "attackerBurst": 150,
+            "defenderBurst": 56,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 48,
+            "attackerDps": 73.5,
+            "defenderDps": 36.8,
+            "attackerTimeToKill": 9,
+            "defenderTimeToKill": 27,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.65,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 9
+            }
+          },
+          "label": "1 Tylosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 9 s with 65% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 3 Lambeosaurus: the Tylosaurus side wins in about 14 s with 50% of its health left.",
+            "attackers": 2,
+            "defenders": 3
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "lambeosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Lambeosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Lambeosaurus is 84% faster on land and can normally refuse this fight.",
+          "baseScore": 60,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13571,6 +14187,1385 @@
         "confidence": "profile-specific"
       }
     ],
+    "reserve": {
+      "threats": [],
+      "opportunities": [
+        {
+          "id": "austroraptor",
+          "name": "Austroraptor",
+          "family": "austroraptor",
+          "direction": "opportunity",
+          "band": "severe",
+          "kind": "quarry",
+          "headline": "Austroraptor is a realistic hunting opportunity",
+          "summary": "Austroraptor is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 2 Austroraptor: the Tylosaurus side wins in about 11 s with 65% of its health left.",
+          "score": 90,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 700,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "volcano-islands",
+              "abyssal-depths",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.625,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 2 Austroraptor: the Tylosaurus side wins in about 11 s with 65% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 155 on Austroraptor (5 to kill); a Austroraptor bite lands 21 back (48 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 155,
+              "defenderHit": 21,
+              "attackerBurst": 250,
+              "defenderBurst": 25,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 48,
+              "attackerDps": 122.5,
+              "defenderDps": 21.3,
+              "attackerTimeToKill": 5,
+              "defenderTimeToKill": 47,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 11,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.65,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.5
+              }
+            },
+            "label": "1 Tylosaurus vs 2 Austroraptor: the Tylosaurus side wins in about 11 s with 65% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tylosaurus vs 2 Austroraptor: the Tylosaurus side wins in about 6 s with 91% of its health left.",
+              "attackers": 2,
+              "defenders": 2
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Austroraptor is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "severe",
+          "kind": "quarry",
+          "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+          "summary": "Megalania (Temperate) is within the legal hunt ceiling. Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Megalania (Temperate): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+          "score": 90,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 450,
+            "speedMarginPct": 100,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 393.3,
+            "label": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats"
+            ],
+            "overlap": 0.294,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 1 Megalania (Temperate): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 119 on Megalania (Temperate) (5 to kill); a Megalania (Temperate) bite lands 21 back (49 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 119,
+              "defenderHit": 21,
+              "attackerBurst": 192,
+              "defenderBurst": 42,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 49,
+              "attackerDps": 94.2,
+              "defenderDps": 25.8,
+              "attackerTimeToKill": 6,
+              "defenderTimeToKill": 39,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.85,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.75
+              }
+            },
+            "label": "1 Tylosaurus vs 1 Megalania (Temperate): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tylosaurus vs 1 Megalania (Temperate): the Tylosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "megalania-temperate",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Megalania (Temperate)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "severe",
+          "kind": "quarry",
+          "headline": "Megalania (Arid) is a realistic hunting opportunity",
+          "summary": "Megalania (Arid) is within the legal hunt ceiling. Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Megalania (Arid): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+          "score": 81,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 450,
+            "speedMarginPct": 100,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 393.3,
+            "label": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook"
+            ],
+            "overlap": 0.111,
+            "label": "They overlap in 2 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 1 Megalania (Arid): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+            "They overlap in 2 mapped areas, so the matchup is situational.",
+            "One-on-one, a Tylosaurus bite lands 119 on Megalania (Arid) (5 to kill); a Megalania (Arid) bite lands 21 back (49 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 119,
+              "defenderHit": 21,
+              "attackerBurst": 192,
+              "defenderBurst": 42,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 49,
+              "attackerDps": 94.2,
+              "defenderDps": 25.8,
+              "attackerTimeToKill": 6,
+              "defenderTimeToKill": 39,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.85,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.75
+              }
+            },
+            "label": "1 Tylosaurus vs 1 Megalania (Arid): the Tylosaurus side wins in about 6 s with 85% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tylosaurus vs 1 Megalania (Arid): the Tylosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "megalania-arid",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Megalania (Arid)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 63,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "opportunity",
+          "band": "severe",
+          "kind": "quarry",
+          "headline": "Concavenator is a realistic hunting opportunity",
+          "summary": "Concavenator is within the legal hunt ceiling. Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 4 Concavenator: the Tylosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "score": 80,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 450,
+            "speedMarginPct": 100,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 144,
+            "label": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats"
+            ],
+            "overlap": 0.429,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 4 Concavenator: the Tylosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 155 on Concavenator (4 to kill); a Concavenator bite lands 21 back (48 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 155,
+              "defenderHit": 21,
+              "attackerBurst": 250,
+              "defenderBurst": 34,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 48,
+              "attackerDps": 122.5,
+              "defenderDps": 22.5,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 44,
+              "attackerBleed": 0,
+              "defenderBleed": 0.021,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 17,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.07,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4.25
+              }
+            },
+            "label": "1 Tylosaurus vs 4 Concavenator: the Tylosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tylosaurus vs 4 Concavenator: the Tylosaurus side wins in about 8 s with 76% of its health left.",
+              "attackers": 2,
+              "defenders": 4
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "concavenator",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Concavenator",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 100% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "family": "suchomimus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Suchomimus is legal quarry, but not a comfortable fight",
+          "summary": "Suchomimus is within the legal hunt ceiling. Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 3 Suchomimus: the Suchomimus side wins in about 9 s with 79% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 640,
+            "speedMarginPct": 40.6,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 32.9,
+            "label": "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "volcano-islands",
+              "abyssal-depths",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.833,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 3 Suchomimus: the Suchomimus side wins in about 9 s with 79% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 65 on Suchomimus (11 to kill); a Suchomimus bite lands 40 back (25 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 65,
+              "defenderHit": 40,
+              "attackerBurst": 105,
+              "defenderBurst": 90,
+              "attackerHitsToKill": 11,
+              "defenderHitsToKill": 25,
+              "attackerDps": 51.5,
+              "defenderDps": 38.3,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 26,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 9,
+              "attackersLeft": 0,
+              "defendersLeft": 3,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.79,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 8.75
+              }
+            },
+            "label": "1 Tylosaurus vs 3 Suchomimus: the Suchomimus side wins in about 9 s with 79% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "2 Tylosaurus vs 3 Suchomimus: the Suchomimus side wins in about 28 s with 8% of its health left, too narrow to call.",
+              "attackers": 2,
+              "defenders": 3
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Suchomimus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+          "summary": "Deinocheirus is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 15 s with 68% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 700,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats"
+            ],
+            "overlap": 0.389,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 15 s with 68% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 54 on Deinocheirus (18 to kill); a Deinocheirus claw lands 50 back (21 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 54,
+              "defenderHit": 50,
+              "attackerBurst": 87,
+              "defenderBurst": 55,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 21,
+              "attackerDps": 42.5,
+              "defenderDps": 34.8,
+              "attackerTimeToKill": 22,
+              "defenderTimeToKill": 29,
+              "attackerBleed": 0,
+              "defenderBleed": 0.074,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 15,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.68,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 14.5
+              }
+            },
+            "label": "1 Tylosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 15 s with 68% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "2 Tylosaurus vs 2 Deinocheirus: the Tylosaurus side wins in about 27 s with 33% of its health left, too narrow to call.",
+              "attackers": 2,
+              "defenders": 2
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "lurdusaurus",
+          "name": "Lurdusaurus",
+          "family": "lurdusaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Lurdusaurus is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 700,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats"
+            ],
+            "overlap": 0.389,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 102 on Lurdusaurus (6 to kill); a Lurdusaurus bite lands 29 back (35 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 5,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 102,
+              "defenderHit": 29,
+              "attackerBurst": 164,
+              "defenderBurst": 64,
+              "attackerHitsToKill": 6,
+              "defenderHitsToKill": 35,
+              "attackerDps": 80.4,
+              "defenderDps": 42.6,
+              "attackerTimeToKill": 7,
+              "defenderTimeToKill": 23,
+              "attackerBleed": 0,
+              "defenderBleed": 0.086,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 5,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.87,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.75
+              }
+            },
+            "label": "1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
+            "detail": "1 attacker vs 5 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 3200,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "2 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 11 s with 56% of its health left.",
+              "attackers": 2,
+              "defenders": 5
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "lurdusaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Lurdusaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lurdusaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 7
+    },
+    "roster": {
+      "tylosaurus": {
+        "id": "tylosaurus",
+        "name": "Tylosaurus",
+        "cw": 5000,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 51.46,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bone Snap",
+          "damage": 105,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bone Snap",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-freshwater": {
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-saltwater": {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "leedsichthys": {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 2,
+        "dps": 27.5,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-ocean": {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "eurhinosaurus": {
+        "id": "eurhinosaurus",
+        "name": "Eurhinosaurus",
+        "cw": 3000,
+        "hp": 600,
+        "armor": 1,
+        "dps": 32.74,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Joust",
+          "damage": 65,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Joust",
+          "Thrash"
+        ],
+        "bleedPerSecond": 0.057,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "kaiwhekea": {
+        "id": "kaiwhekea",
+        "name": "Kaiwhekea",
+        "cw": 4000,
+        "hp": 750,
+        "armor": 1,
+        "dps": 56.92,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "AOEBarrel Roll",
+          "damage": 85,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Fluke Slap",
+          "AOEBarrel Roll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "lambeosaurus": {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rodeo Kick",
+          "damage": 80,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rodeo Kick",
+          "Dunking Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus": {
+        "id": "lurdusaurus",
+        "name": "Lurdusaurus",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Apex",
@@ -13596,7 +15591,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

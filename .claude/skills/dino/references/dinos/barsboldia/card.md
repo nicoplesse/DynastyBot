@@ -64,8 +64,8 @@ You are an Apex hadrosaur in a family herd of up to 10, led by a lead male or an
 
 **Gefährlich für dich:**
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
+- **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
-- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Yutyrannus** (sehr hoch): Yutyrannus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Maip** (sehr hoch): Maip can create a very narrow escape window

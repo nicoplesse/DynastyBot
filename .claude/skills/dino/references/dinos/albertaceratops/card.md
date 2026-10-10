@@ -62,12 +62,12 @@ You live in a sett: an unlimited group run by a dominant sow who chooses the dom
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Ceratosaurus** (spürbar): Ceratosaurus can create a credible fight
-- **Torvosaurus** (spürbar): Torvosaurus can create a credible fight
-- **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
-- **Kelenken** (spürbar): Kelenken can create a credible fight
-- **Allosaurus** (conditional): Allosaurus matters only if it gets the right opening
+- **Ceratosaurus** (sehr hoch): Ceratosaurus can create a very narrow escape window
+- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Yutyrannus** (sehr hoch): Yutyrannus can create a very narrow escape window
 
 **Beute & Chancen:**
 

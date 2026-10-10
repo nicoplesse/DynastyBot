@@ -59,12 +59,12 @@ You are a medium semi-aquatic herbivore in a 'float' of up to 10 (max 5 males) l
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus** (conditional): Tropeognathus matters only if it gets the right opening
+- **Tropeognathus (Coast)** (spürbar): Tropeognathus (Coast) can create a credible fight
+- **Tropeognathus (Ocean)** (spürbar): Tropeognathus (Ocean) can create a credible fight
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
-- **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Kaiwhekea** (hoch): Kaiwhekea can create a real pursuit problem
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
-- **Achillobator** (spürbar): Achillobator can create a credible fight
+- **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight

@@ -65,8 +65,8 @@ You are a medium semi-aquatic hunter bonded to one mate for life. On land you ar
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Anodontosaurus** (hoch): Anodontosaurus is legal quarry, but not a comfortable fight
-- **Apatosaurus** (hoch): Apatosaurus is legal quarry, but not a comfortable fight
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
 - **Amargasaurus** (spürbar): Amargasaurus is legal quarry, but not a comfortable fight
 - **Argentinosaurus** (spürbar): Argentinosaurus is legal quarry, but not a comfortable fight
 - **Deinonychus** (spürbar): Deinonychus is legal quarry, but not a comfortable fight

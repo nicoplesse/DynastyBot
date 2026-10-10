@@ -52,11 +52,12 @@ You are a small daytime herbivore in a 'band' of unlimited females with one adul
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
+- **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
+- **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Alioramus** (spürbar): Alioramus can create a credible fight
-- **Compsognathus** (spürbar): Compsognathus can create a credible fight
-- **Kelenken** (conditional): Kelenken matters only if it gets the right opening
 
 **Beute & Chancen:**
 

@@ -58,14 +58,14 @@ You are an Apex nocturnal herbivore that stands its ground and never flees. Fema
 
 **Gefährlich für dich:**
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
+- **Maip** (sehr hoch): Maip can create a very narrow escape window
+- **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
+- **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Yutyrannus** (sehr hoch): Yutyrannus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Maip** (sehr hoch): Maip can create a very narrow escape window
-- **Torvosaurus** (hoch): Torvosaurus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Struthiomimus** (spürbar): Struthiomimus can usually refuse the chase
+- **Struthiomimus** (hoch): Struthiomimus can usually refuse the chase
 - **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
 - **Argentinosaurus** (spürbar): Argentinosaurus is legal quarry, but not a comfortable fight
 

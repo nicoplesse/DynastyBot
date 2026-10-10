@@ -59,7 +59,11 @@ You are a Tiny, quick semi-aquatic herbivore (water sprint 1,350) living in an u
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Compsognathus** (spürbar): Compsognathus can create a credible fight
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
+- **Alioramus** (hoch): Alioramus can create a real pursuit problem
+- **Austroraptor** (spürbar): Austroraptor can create a credible fight
+- **Deinonychus** (conditional): Deinonychus matters only if it gets the right opening
+- **Latenivenatrix** (conditional): Latenivenatrix matters only if it gets the right opening
 
 **Beute & Chancen:**
 

@@ -85,8 +85,8 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Blatthühnchen / Jacana: Sarcosuchus
 - Grizzlybär / Grizzly bear: Spinosaurus (Freshwater)
 - Leistenkrokodil / Saltwater crocodile: Spinosaurus (Freshwater)
-- Seeleopard / Leopard seal: Spinosaurus (Saltwater)
-- Grauer Riffhai / Grey reef shark: Spinosaurus (Saltwater)
+- Eisbär / Polar bear: Spinosaurus (Saltwater), Tyrannosaurus
+- Walross / Walrus: Spinosaurus (Saltwater)
 - Spitzmaulnashorn / Black rhinoceros: Stegosaurus
 - Grevyzebra / Grévy's zebra: Stegosaurus
 - Strauß / Ostrich: Struthiomimus
@@ -99,10 +99,11 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Lachmöwe / Black-headed gull: Thalassodromeus
 - Kasuar / Cassowary: Therizinosaurus
 - Afrikanischer Löwe / African lion: Torvosaurus
-- Silbermöwe / Herring gull: Tropeognathus
-- Kormoran / Great cormorant: Tropeognathus
+- Silbermöwe / Herring gull: Tropeognathus (Coast)
+- Kormoran / Great cormorant: Tropeognathus (Coast)
+- Wanderalbatros / Wandering albatross: Tropeognathus (Ocean)
+- Basstölpel / Northern gannet: Tropeognathus (Ocean)
 - Orca (Schwertwal) / Orca: Tylosaurus
-- Eisbär / Polar bear: Tyrannosaurus
 - Waldkauz / Tawny owl: Tyrannosaurus
 - Tiger / Tiger: Tyrannotitan
 - Grauwolf (Familienrudel) / Grey wolf (family pack): Utahraptor

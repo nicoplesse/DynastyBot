@@ -56,11 +56,11 @@ You are an Apex daytime hunter who thrives alone. Bonds are fragile: brothers, a
 
 **Gefährlich für dich:**
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
-- **Tyrannosaurus** (spürbar): Tyrannosaurus can create a credible fight
+- **Tyrannosaurus** (hoch): Tyrannosaurus can create a real pursuit problem
 - **Yutyrannus** (conditional): Yutyrannus matters only if it gets the right opening
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
-- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Maip** (sehr hoch): Maip can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Tyrannosaurus** (spürbar): Tyrannosaurus is legal quarry, but not a comfortable fight
@@ -68,7 +68,6 @@ You are an Apex daytime hunter who thrives alone. Bonds are fragile: brothers, a
 - **Argentinosaurus** (conditional): Argentinosaurus is legal quarry, but not a comfortable fight
 - **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Giganotosaurus do not hunt adult Tyrannosaurus, Tyrannotitan, or other Giganotosaurus, but may challenge them and eat from their bodies.

@@ -10,6 +10,9 @@
 // profile sentences that caused each verdict. This makes the generated map useful to both
 // the UI and a future recommendation agent without pretending that combat weight is fate.
 
+import { combatSide, evaluateFight, presentEntry, survivalSummary } from '../../shared/combat-sim.mjs';
+import { combatKit } from './combat.js';
+
 const TIER_RANK = { Tiny: 1, Small: 2, Medium: 3, Large: 4, Apex: 5, Giant: 6 };
 const TIER_NAME = Object.fromEntries(Object.entries(TIER_RANK).map(([name, rank]) => [rank, name]));
 const WORD_NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
@@ -238,33 +241,16 @@ function chaseAnalysis(attacker, target) {
   };
 }
 
-function coordinatedPower(combatWeight, groupSize) {
-  return combatWeight * (1 + 0.55 * Math.max(0, groupSize - 1));
-}
-
-function fightAnalysis(attacker, target) {
-  const attackGroup = Math.max(1, attacker.huntGroupSize || 1);
-  const defendGroup = Math.max(1, target.engagementLimit || 1);
-  const soloRatio = target.cw ? attacker.cw / target.cw : 1;
-  const cappedRatio = attacker.huntGroupUnlimited || target.engagementUnlimited ? null : coordinatedPower(attacker.cw, attackGroup) / Math.max(1, coordinatedPower(target.cw, defendGroup));
-  let verdict = attacker.huntGroupUnlimited && !target.engagementUnlimited ? 'attacker-advantage'
-    : target.engagementUnlimited && !attacker.huntGroupUnlimited ? 'defender-advantage'
-      : attacker.huntGroupUnlimited && target.engagementUnlimited ? 'close'
-        : cappedRatio >= 1.3 ? 'attacker-advantage' : cappedRatio >= 0.82 ? 'close' : 'defender-advantage';
-  if (target.tags.includes('armored') || target.tags.includes('dangerous-defender') || target.standsGround) {
-    if (verdict === 'attacker-advantage' && cappedRatio < 1.55) verdict = 'close';
-  }
-  const unlimitedLabel = attacker.huntGroupUnlimited || target.engagementUnlimited
-    ? `The profile limits are ${attacker.huntGroupUnlimited ? 'unlimited hunters' : `${attackGroup} attacker${attackGroup === 1 ? '' : 's'}`} vs ${target.engagementUnlimited ? 'unlimited eligible defenders' : `${defendGroup} defender${defendGroup === 1 ? '' : 's'}`}; no invented numeric swarm is used.` : null;
-  const label = unlimitedLabel || (verdict === 'attacker-advantage'
-    ? `At the legal limits (${attackGroup} attacker${attackGroup === 1 ? '' : 's'} vs ${defendGroup} defender${defendGroup === 1 ? '' : 's'}), the attacking side has the stronger combat envelope.`
-    : verdict === 'defender-advantage'
-      ? `Even at the legal group cap (${attackGroup} vs ${defendGroup}), a committed straight fight favours ${target.name}.`
-      : `The legal groups (${attackGroup} vs ${defendGroup}) produce a close fight; positioning and the first clean hit matter more than raw weight.`);
+// One compact combat card per profile; hunting parties attack, engagement limits defend.
+function rosterStats(unit) {
+  const rotation = unit.kit.rotation;
   return {
-    verdict, attackerCombatWeight: attacker.cw, targetCombatWeight: target.cw, attackerGroupLimit: attackGroup,
-    targetDefenderLimit: defendGroup, attackerGroupUnlimited: attacker.huntGroupUnlimited, targetDefendersUnlimited: target.engagementUnlimited,
-    soloWeightRatio: Number(soloRatio.toFixed(2)), cappedPowerRatio: cappedRatio == null ? null : Number(cappedRatio.toFixed(2)), label,
+    id: unit.id, name: unit.name, cw: unit.kit.cw, hp: unit.kit.hp, armor: unit.kit.armor,
+    dps: rotation?.dps || 0, primary: rotation?.primary || null, burst: rotation?.burst || null,
+    attacks: rotation?.attacks || [], bleedPerSecond: rotation?.bleedPerSecond || 0, bleedHealRate: unit.kit.bleedHealRate,
+    estimated: Boolean(rotation?.estimated),
+    huntLimit: Math.max(1, unit.huntGroupSize || 1), huntUnlimited: unit.huntGroupUnlimited,
+    engagementLimit: Math.max(1, unit.engagementLimit || 1), engagementUnlimited: unit.engagementUnlimited,
   };
 }
 
@@ -277,13 +263,11 @@ function preferenceBonus(attacker, target, relation) {
   return bonus;
 }
 
-function dangerBand(score, conditional) {
-  if (conditional) return 'conditional';
-  if (score >= 78) return 'severe';
-  if (score >= 62) return 'high';
-  if (score >= 47) return 'meaningful';
-  return 'conditional';
-}
+// The reader plays solo by default: they face the opponent's full legal group, and they hunt alone.
+const RESERVE_FAMILIES = 6;
+const DEFAULT_SETUP = { threat: ['max', 1], opportunity: [1, 'max'] };
+// The most attacker-friendly setup decides whether a counterpart can appear at all.
+const WIDEST_SETUP = ['max', 1];
 
 function matchupEntry(attacker, target, direction) {
   const relation = relationEvidence(attacker, target);
@@ -291,42 +275,56 @@ function matchupEntry(attacker, target, direction) {
   if (!intent.allowed) return null;
   const encounter = encounterAnalysis(attacker, target, relation);
   const chase = chaseAnalysis(attacker, target);
-  const fight = fightAnalysis(attacker, target);
   const explicitBonus = preferenceBonus(attacker, target, relation);
-  let score = 34 + explicitBonus;
-  score += encounter.level === 'frequent' ? 15 : encounter.level === 'possible' ? 6 : -14;
-  score += chase.verdict === 'attacker-faster' ? 16 : chase.verdict === 'attacker-edge' || chase.verdict === 'approach-advantage' ? 9 : chase.verdict === 'target-can-disengage' ? -18 : 3;
-  score += fight.verdict === 'attacker-advantage' ? 18 : fight.verdict === 'close' ? 8 : -17;
-  if (attacker.tags.includes('ambush')) score += 7;
-  if (attacker.tags.includes('endurance') && chase.attackerDurationSeconds > chase.targetDurationSeconds) score += 6;
-  if (!intent.explicit && attacker.cw > target.cw * 4) score -= 15;
+  let baseScore = 34 + explicitBonus;
+  baseScore += encounter.level === 'frequent' ? 15 : encounter.level === 'possible' ? 6 : -14;
+  baseScore += chase.verdict === 'attacker-faster' ? 16 : chase.verdict === 'attacker-edge' || chase.verdict === 'approach-advantage' ? 9 : chase.verdict === 'target-can-disengage' ? -18 : 3;
+  if (attacker.tags.includes('ambush')) baseScore += 7;
+  if (attacker.tags.includes('endurance') && chase.attackerDurationSeconds > chase.targetDurationSeconds) baseScore += 6;
+  if (!intent.explicit && attacker.cw > target.cw * 4) baseScore -= 15;
   const conditional = Boolean(intent.conditional || encounter.level === 'rare' || (chase.verdict === 'target-can-disengage' && relation.type !== 'hunt' && relation.type !== 'aggression'));
-  if (encounter.level === 'rare') score = Math.min(score, 44);
-  const band = dangerBand(score, conditional);
   if (!intent.explicit && encounter.level === 'rare') return null;
   if (!intent.explicit && chase.verdict === 'target-can-disengage' && chase.speedMarginPct <= -15) return null;
-  if (score < 43 && !intent.explicit) return null;
-  if (direction === 'threat' && band === 'conditional' && encounter.level === 'rare' && !intent.explicit) return null;
+
+  const sides = { attacker: combatSide(rosterStats(attacker), 'attacker'), target: combatSide(rosterStats(target), 'defender') };
+  const core = {
+    direction, attackerName: attacker.name, targetName: target.name, chaseVerdict: chase.verdict, chaseLabel: chase.label,
+    baseScore, scoreCap: encounter.level === 'rare' ? 44 : null, conditional, explicit: Boolean(intent.explicit),
+    relationKind: relation.type === 'aggression' ? 'territorial-rival' : relation.type === 'conditional' ? 'conditional' : null,
+    summaryLead: direction === 'threat'
+      ? `${attacker.name} is ${intent.explicit ? 'linked by a specific profile rule' : 'inside the legal hunt range'}.`
+      : `${intent.explicit ? 'A profile rule names or prioritises this matchup.' : `${target.name} is within the legal hunt ceiling.`}`,
+  };
+  if (!presentEntry(core, evaluateFight(sides.attacker, sides.target, ...WIDEST_SETUP)).visible) return null;
+  const fight = evaluateFight(sides.attacker, sides.target, ...DEFAULT_SETUP[direction]);
+  const legal = evaluateFight(sides.attacker, sides.target, 'max', 'max');
+  const shown = presentEntry(core, fight);
+  const duel = fight.duel;
 
   const facts = [intent.reason, chase.label, fight.label, encounter.label];
+  if (sides.attacker.primary && sides.target.primary) facts.push(`One-on-one, a ${attacker.name} ${sides.attacker.primary.label.toLowerCase()} lands ${duel.attackerHit} on ${target.name} (${duel.attackerHitsToKill} to kill); a ${target.name} ${sides.target.primary.label.toLowerCase()} lands ${duel.defenderHit} back (${duel.defenderHitsToKill} to kill).`);
+  if (duel.attackerBleedOutpacesHeal) facts.push(`${attacker.name}'s bleed builds faster than ${target.name} heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.`);
   if (target.tags.includes('armored') || target.tags.includes('dangerous-defender') || target.standsGround) facts.push(`${target.name}'s profile describes a committed or dangerous defence; it should not be treated as passive prey.`);
   if (attacker.tags.includes('ambush')) facts.push(`${attacker.name} has an explicit ambush style, so raw top speed understates the opening danger.`);
   if (attacker.companion) facts.push(`Its maximum hunting setup includes ${attacker.companion.count} ${attacker.companion.name} companion${attacker.companion.count === 1 ? '' : 's'}; the model never assumes an unlimited swarm.`);
 
-  const headline = direction === 'threat'
-    ? band === 'conditional' ? `${attacker.name} matters only if it gets the right opening` : `${attacker.name} can create a ${band === 'severe' ? 'very narrow escape window' : band === 'high' ? 'real pursuit problem' : 'credible fight'}`
-    : fight.verdict === 'defender-advantage' ? `${target.name} is legal quarry, but not a comfortable fight` : chase.verdict === 'target-can-disengage' ? `${target.name} can usually refuse the chase` : `${target.name} is a realistic hunting opportunity`;
-  const summary = direction === 'threat'
-    ? `${attacker.name} is ${intent.explicit ? 'linked by a specific profile rule' : 'inside the legal hunt range'}. ${chase.label} ${fight.label}`
-    : `${intent.explicit ? 'A profile rule names or prioritises this matchup.' : `${target.name} is within the legal hunt ceiling.`} ${chase.label} ${fight.label}`;
-
   return {
     id: direction === 'threat' ? attacker.id : target.id,
     name: direction === 'threat' ? attacker.name : target.name,
+    family: direction === 'threat' ? attacker.parentId || attacker.id : target.parentId || target.id,
     direction,
-    band,
-    kind: relation.type === 'aggression' ? 'territorial-rival' : relation.type === 'conditional' ? 'conditional' : direction === 'threat' ? 'predator' : fight.verdict === 'defender-advantage' ? 'risky-quarry' : 'quarry',
-    headline, summary, score: Math.round(score), intent, chase, fight, encounter, facts,
+    band: shown.band,
+    kind: shown.kind,
+    headline: shown.headline, summary: shown.summary, score: shown.score, visible: shown.visible,
+    intent, chase, encounter, facts,
+    fight: {
+      ...fight,
+      attackerCombatWeight: attacker.cw, targetCombatWeight: target.cw,
+      attackerGroupLimit: sides.attacker.limit, targetDefenderLimit: sides.target.limit,
+      attackerGroupUnlimited: sides.attacker.unlimited, targetDefendersUnlimited: sides.target.unlimited,
+      legal: { verdict: legal.verdict, label: legal.label, attackers: legal.attackers, defenders: legal.defenders },
+    },
+    attackerId: attacker.id, targetId: target.id, core,
     tags: [...new Set([...attacker.tags, ...(target.tags.includes('dangerous-defender') ? ['dangerous-defender'] : [])])],
     evidence: relation.evidence,
     confidence: relation.evidence.length ? 'profile-specific' : encounter.level === 'rare' ? 'low' : 'derived',
@@ -378,27 +376,16 @@ function unitFromProfile(profile) {
     waterSpeed: profile.speed?.water || null,
     airSpeed: profile.speed?.air || null,
     segments: evidenceSegments(profile),
+    kit: combatKit(profile),
     ...traits,
   };
-}
-
-function survivalSummary(unit, threats) {
-  if (!threats.length) return `${unit.name} has no routine direct counter in the current profiles. The remaining danger is conditional: a bad ambush, isolation from legal defenders, or a profile-specific territory rule.`;
-  const severe = threats.filter(entry => entry.band === 'severe' || entry.band === 'high');
-  const escape = threats.filter(entry => entry.chase.verdict === 'target-can-disengage');
-  if (severe.length) {
-    const escapeNote = escape.length
-      ? ` Against ${escape.length} listed threat${escape.length === 1 ? '' : 's'}, speed still provides a reliable disengage option.`
-      : ' None of those matchups offers a reliable speed-based disengage once contact is forced.';
-    return `${unit.name} has ${severe.length} high-priority matchup${severe.length === 1 ? '' : 's'} where legal group size, pursuit and profile intent align.${escapeNote}`;
-  }
-  return `${unit.name}'s listed dangers are situational rather than automatic losses. Speed, stamina or low encounter overlap prevents raw combat weight from becoming a routine counter.`;
 }
 
 export function buildMatchups(profiles) {
   const units = profiles.map(unitFromProfile);
   const result = {};
   const familyOf = new Map(units.map(unit => [unit.id, unit.parentId || unit.id]));
+  const unitById = new Map(units.map(unit => [unit.id, unit]));
   for (const subject of units) {
     const threats = [];
     const opportunities = [];
@@ -427,13 +414,25 @@ export function buildMatchups(profiles) {
     };
     const threatLimit = Math.max(6, Math.min(8, familyCount(threats.filter(entry => entry.intent.explicit))));
     const opportunityLimit = Math.max(6, Math.min(8, familyCount(opportunities.filter(entry => entry.intent.explicit))));
-    const actionableThreats = takeFamilies(threats, threatLimit);
+    // The default lists read "you solo"; the reserve holds counterparts that only surface with
+    // other group sizes, so the browser can re-rank without a second request.
+    const actionableThreats = takeFamilies(threats.filter(entry => entry.visible), threatLimit);
+    const shownOpportunities = takeFamilies(opportunities.filter(entry => entry.visible), opportunityLimit);
+    const reserve = {
+      threats: takeFamilies(threats.filter(entry => !actionableThreats.includes(entry)), RESERVE_FAMILIES),
+      opportunities: takeFamilies(opportunities.filter(entry => !shownOpportunities.includes(entry)), RESERVE_FAMILIES),
+    };
+    const listed = [...actionableThreats, ...shownOpportunities, ...reserve.threats, ...reserve.opportunities];
     result[subject.id] = {
-      schemaVersion: 2,
+      schemaVersion: 3,
       speedKnown: Boolean(subject.landSpeed?.sprint),
-      summary: survivalSummary(subject, actionableThreats),
+      summary: survivalSummary(subject.name, actionableThreats, 'Played solo against their full legal groups'),
       threats: actionableThreats,
-      opportunities: takeFamilies(opportunities, opportunityLimit),
+      opportunities: shownOpportunities,
+      reserve,
+      listLimits: { threats: threatLimit, opportunities: opportunityLimit },
+      // Combat cards for the subject and every listed counterpart, so the browser can re-run any fight.
+      roster: Object.fromEntries([subject.id, ...listed.map(entry => entry.id)].map(id => [id, rosterStats(unitById.get(id))])),
       specialRisks: specialRisks(subject),
       traits: {
         tier: subject.tier,
@@ -456,7 +455,8 @@ export function buildMatchups(profiles) {
       methodology: {
         intent: 'Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.',
         pursuit: 'Relevant land, water or flight caps and sprint duration determine whether contact can be forced.',
-        groups: 'Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.',
+        groups: 'By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.',
+        fight: 'Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.',
         encounter: 'Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap.',
       },
     };

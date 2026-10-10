@@ -54,12 +54,12 @@ You are a small, fast herbivore (sprint 1,150 for 182 s) in an unlimited 'warren
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
+- **Struthiomimus** (sehr hoch): Struthiomimus can create a very narrow escape window
 - **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
-- **Compsognathus** (hoch): Compsognathus can create a real pursuit problem
-- **Struthiomimus** (spürbar): Struthiomimus can create a credible fight
-- **Utahraptor** (spürbar): Utahraptor can create a credible fight
+- **Utahraptor** (hoch): Utahraptor can create a real pursuit problem
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 
 **Beute & Chancen:**
 

@@ -149,10 +149,12 @@ function statsFile(profile) {
 function matchupsFile(profile) {
   const m = profile.matchups;
   if (!m) return `# ${profile.name} – Matchups\n\nKeine Daten.`;
-  const entry = x => [`### ${x.name} – ${de('band', x.band)} (${x.kind})`, x.headline, '', x.summary, x.chase?.label ? `- Verfolgung: ${x.chase.label}` : null, x.fight?.verdict ? `- Kampf: ${x.fight.verdict} (Kampfgewicht ${x.fight.attackerCombatWeight} vs ${x.fight.targetCombatWeight})` : null, x.intent?.reason ? `- Profilbezug: ${x.intent.reason}` : null, ''].filter(v => v !== null);
+  const entry = x => [`### ${x.name} – ${de('band', x.band)} (${x.kind})`, x.headline, '', x.summary, x.chase?.label ? `- Verfolgung: ${x.chase.label}` : null, x.fight?.verdict ? `- Kampf (du solo gegen ihre volle legale Gruppe): ${x.fight.label} (Kampfgewicht ${x.fight.attackerCombatWeight} vs ${x.fight.targetCombatWeight})` : null,
+    x.fight?.legal ? `- Kampf (beide Seiten legal max): ${x.fight.legal.label}` : null,
+    x.fight?.duel?.attackerHit ? `- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): ${x.fight.duel.attackerHit} pro Haupttreffer vom Angreifer (${x.fight.duel.attackerHitsToKill} bis zum Kill), ${x.fight.duel.defenderHit} zurück (${x.fight.duel.defenderHitsToKill} bis zum Kill)` : null, x.intent?.reason ? `- Profilbezug: ${x.intent.reason}` : null, ''].filter(v => v !== null);
   return [`# ${profile.name} – Matchups`, '', m.summary, '', '## Gefahren (wer dir gefährlich wird)', '', ...m.threats.flatMap(entry), '## Chancen (wen du jagen/schlagen kannst)', '', ...m.opportunities.flatMap(entry),
     ...(m.specialRisks?.length ? ['## Besondere Risiken', '', ...m.specialRisks.map(r => `- **${r.title}:** ${r.summary}`)] : []),
-    '', `_Methode: ${m.methodology?.summary ?? m.methodology ?? 'Kampfgewicht, Tempo, Gruppengrößen und Profilregeln.'}_`].join('\n');
+    '', `_Methode: ${m.methodology ? Object.values(m.methodology).join(' ') : 'Kampfgewicht, Tempo, Gruppengrößen und Profilregeln.'}_`].join('\n');
 }
 
 function slug(text) {

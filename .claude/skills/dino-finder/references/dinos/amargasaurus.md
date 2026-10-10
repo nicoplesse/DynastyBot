@@ -55,12 +55,12 @@ You are a gentle, highly social large herbivore that almost never stops calling 
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
 - **Austroraptor** (spürbar): Austroraptor can create a credible fight
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
-- **Utahraptor** (hoch): Utahraptor can create a real pursuit problem
-- **Tyrannotitan** (hoch): Tyrannotitan can create a real pursuit problem
+- **Utahraptor** (sehr hoch): Utahraptor can create a very narrow escape window
+- **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 
 **Beute & Chancen:**
 

@@ -11510,19 +11510,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Torvosaurus's listed dangers are situational rather than automatic losses. Speed, stamina or low encounter overlap prevents raw combat weight from becoming a routine counter.",
+    "summary": "Played solo against their full legal groups, Torvosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "yunnanosaurus",
         "name": "Yunnanosaurus",
+        "family": "yunnanosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "territorial-rival",
-        "headline": "Yunnanosaurus can create a credible fight",
-        "summary": "Yunnanosaurus is linked by a specific profile rule. The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land. Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
-        "score": 57,
+        "headline": "Yunnanosaurus can create a very narrow escape window",
+        "summary": "Yunnanosaurus is linked by a specific profile rule. The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land. 1 Yunnanosaurus vs 1 Torvosaurus: the Torvosaurus side wins in about 23 s with 2% of its health left, too narrow to call.",
+        "score": 82,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11538,18 +11540,6 @@
           "targetDurationSeconds": 68.966,
           "durationMarginPct": 31.8,
           "label": "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 0.38,
-          "label": "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -11567,9 +11557,76 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land.",
-          "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "1 Yunnanosaurus vs 1 Torvosaurus: the Torvosaurus side wins in about 23 s with 2% of its health left, too narrow to call.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Yunnanosaurus claw attack lands 54 on Torvosaurus (13 to kill); a Torvosaurus bite lands 65 back (16 to kill).",
+          "Yunnanosaurus's bleed builds faster than Torvosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 54,
+            "defenderHit": 65,
+            "attackerBurst": 77,
+            "defenderBurst": 65,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 16,
+            "attackerDps": 29.4,
+            "defenderDps": 43.3,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 23,
+            "attackerBleed": 0.154,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 23,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.02,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 23.25
+            }
+          },
+          "label": "1 Yunnanosaurus vs 1 Torvosaurus: the Torvosaurus side wins in about 23 s with 2% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Yunnanosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 94% of its health left.",
+            "attackers": 1,
+            "defenders": 4
+          }
+        },
+        "attackerId": "yunnanosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yunnanosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "Yunnanosaurus is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11592,12 +11649,14 @@
       {
         "id": "pycnonemosaurus",
         "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Pycnonemosaurus can create a credible fight",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus.",
-        "score": 60,
+        "headline": "Pycnonemosaurus can create a very narrow escape window",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Torvosaurus: the Pycnonemosaurus side wins in about 7 s with 79% of its health left.",
+        "score": 95,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11614,18 +11673,6 @@
           "durationMarginPct": 31.9,
           "label": "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.78,
-          "cappedPowerRatio": 0.62,
-          "label": "Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11641,9 +11688,75 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus.",
-          "5 shared mapped areas make contact plausible."
+          "3 Pycnonemosaurus vs 1 Torvosaurus: the Pycnonemosaurus side wins in about 7 s with 79% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 30 on Torvosaurus (24 to kill); a Torvosaurus bite lands 84 back (8 to kill)."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 84,
+            "attackerBurst": 72,
+            "defenderBurst": 84,
+            "attackerHitsToKill": 24,
+            "defenderHitsToKill": 8,
+            "attackerDps": 32.5,
+            "defenderDps": 55.7,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 7,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.79,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.25
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Torvosaurus: the Pycnonemosaurus side wins in about 7 s with 79% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Pycnonemosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 9 s with 79% of its health left.",
+            "attackers": 3,
+            "defenders": 4
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 77,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -11651,12 +11764,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Allosaurus can create a credible fight",
-        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 9% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus.",
-        "score": 55,
+        "headline": "Allosaurus can create a very narrow escape window",
+        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 9% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Torvosaurus: the Allosaurus side wins in about 10 s with 75% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11672,18 +11787,6 @@
           "targetDurationSeconds": 68.966,
           "durationMarginPct": 31.9,
           "label": "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 0.66,
-          "label": "Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -11704,10 +11807,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (3 vs 4), a committed straight fight favours Torvosaurus.",
+          "3 Allosaurus vs 1 Torvosaurus: the Allosaurus side wins in about 10 s with 75% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 32 on Torvosaurus (22 to kill); a Torvosaurus bite lands 78 back (9 to kill).",
+          "Allosaurus's bleed builds faster than Torvosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 32,
+            "defenderHit": 78,
+            "attackerBurst": 45,
+            "defenderBurst": 78,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 9,
+            "attackerDps": 24.6,
+            "defenderDps": 52,
+            "attackerTimeToKill": 28,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0.094,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.75,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 9.5
+            }
+          },
+          "label": "3 Allosaurus vs 1 Torvosaurus: the Allosaurus side wins in about 10 s with 75% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Allosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 10 s with 83% of its health left.",
+            "attackers": 3,
+            "defenders": 4
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -11717,12 +11887,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Kelenken can create a credible fight",
-        "summary": "Kelenken is inside the legal hunt range. Kelenken is 13% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (4 vs 4), a committed straight fight favours Torvosaurus.",
-        "score": 54,
+        "headline": "Kelenken can create a very narrow escape window",
+        "summary": "Kelenken is inside the legal hunt range. Kelenken is 13% faster on land; a clean escape is unlikely once spotted. 4 Kelenken vs 1 Torvosaurus: the Kelenken side wins in about 12 s with 40% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11738,18 +11910,6 @@
           "targetDurationSeconds": 68.966,
           "durationMarginPct": 141.7,
           "label": "Kelenken is 13% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.43,
-          "cappedPowerRatio": 0.43,
-          "label": "Even at the legal group cap (4 vs 4), a committed straight fight favours Torvosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -11767,9 +11927,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Kelenken is 13% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (4 vs 4), a committed straight fight favours Torvosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "4 Kelenken vs 1 Torvosaurus: the Kelenken side wins in about 12 s with 40% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 17 on Torvosaurus (42 to kill); a Torvosaurus bite lands 150 back (4 to kill)."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 17,
+            "defenderHit": 150,
+            "attackerBurst": 23,
+            "defenderBurst": 150,
+            "attackerHitsToKill": 42,
+            "defenderHitsToKill": 4,
+            "attackerDps": 17.9,
+            "defenderDps": 100,
+            "attackerTimeToKill": 39,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0.022,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 12,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.4,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.25
+            }
+          },
+          "label": "4 Kelenken vs 1 Torvosaurus: the Kelenken side wins in about 12 s with 40% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Kelenken vs 4 Torvosaurus: the Torvosaurus side wins in about 5 s with 91% of its health left.",
+            "attackers": 4,
+            "defenders": 4
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Kelenken is 13% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -11779,12 +12005,14 @@
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Alioramus can create a credible fight",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 21% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (5 vs 4), a committed straight fight favours Torvosaurus.",
-        "score": 54,
+        "headline": "Alioramus can create a very narrow escape window",
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 21% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Torvosaurus: the Alioramus side wins in about 7 s with 78% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11801,18 +12029,6 @@
           "durationMarginPct": 92.8,
           "label": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.53,
-          "cappedPowerRatio": 0.64,
-          "label": "Even at the legal group cap (5 vs 4), a committed straight fight favours Torvosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11827,9 +12043,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (5 vs 4), a committed straight fight favours Torvosaurus.",
-          "4 shared mapped areas make contact plausible."
+          "5 Alioramus vs 1 Torvosaurus: the Alioramus side wins in about 7 s with 78% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 18 on Torvosaurus (38 to kill); a Torvosaurus bite lands 122 back (5 to kill)."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 18,
+            "defenderHit": 122,
+            "attackerBurst": 23,
+            "defenderBurst": 122,
+            "attackerHitsToKill": 38,
+            "defenderHitsToKill": 5,
+            "attackerDps": 20,
+            "defenderDps": 81.2,
+            "attackerTimeToKill": 35,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 7,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.78,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6.5
+            }
+          },
+          "label": "5 Alioramus vs 1 Torvosaurus: the Alioramus side wins in about 7 s with 78% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Alioramus vs 4 Torvosaurus: the Torvosaurus side wins in about 8 s with 82% of its health left.",
+            "attackers": 5,
+            "defenders": 4
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -11837,14 +12119,16 @@
         "confidence": "derived"
       },
       {
-        "id": "suchomimus",
-        "name": "Suchomimus",
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "family": "ceratosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Suchomimus can create a credible fight",
-        "summary": "Suchomimus is inside the legal hunt range. This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it. The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 51,
+        "headline": "Ceratosaurus can create a very narrow escape window",
+        "summary": "Ceratosaurus is inside the legal hunt range. Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Torvosaurus: the Ceratosaurus side wins in about 8 s with 81% of its health left.",
+        "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11852,44 +12136,102 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 950,
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
           "targetSpeed": 950,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 63,
+          "speedMarginPct": 10.5,
+          "attackerDurationSeconds": 143,
           "targetDurationSeconds": 68.966,
-          "durationMarginPct": -8.7,
-          "label": "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.11,
-          "cappedPowerRatio": 0.88,
-          "label": "The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "durationMarginPct": 107.3,
+          "label": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
-          "level": "possible",
+          "level": "frequent",
           "sharedRegions": [
-            "volcano-islands",
+            "tallbrush-coasts",
+            "steep-run",
             "big-tree-overlook",
-            "stillwater-bog"
+            "cedrus-forest",
+            "crag-bluffs"
           ],
-          "overlap": 0.167,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          "overlap": 0.357,
+          "label": "5 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it.",
-          "The legal groups (3 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
+          "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "4 Ceratosaurus vs 1 Torvosaurus: the Ceratosaurus side wins in about 8 s with 81% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 18 on Torvosaurus (40 to kill); a Torvosaurus bite lands 113 back (7 to kill)."
         ],
-        "tags": [],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 18,
+            "defenderHit": 113,
+            "attackerBurst": 40,
+            "defenderBurst": 113,
+            "attackerHitsToKill": 40,
+            "defenderHitsToKill": 7,
+            "attackerDps": 24,
+            "defenderDps": 75,
+            "attackerTimeToKill": 29,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.81,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.5
+            }
+          },
+          "label": "4 Ceratosaurus vs 1 Torvosaurus: the Ceratosaurus side wins in about 8 s with 81% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Ceratosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 10 s with 78% of its health left.",
+            "attackers": 4,
+            "defenders": 4
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Ceratosaurus is inside the legal hunt range."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
         "evidence": [],
         "confidence": "derived"
       }
@@ -11898,12 +12240,14 @@
       {
         "id": "amargasaurus",
         "name": "Amargasaurus",
+        "family": "amargasaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Amargasaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Torvosaurus is 36% faster on land; a clean escape is unlikely once spotted. At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 96,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Amargasaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Torvosaurus is 36% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 2 Amargasaurus: the Amargasaurus side wins in about 15 s with 76% of its health left.",
+        "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11920,18 +12264,6 @@
           "durationMarginPct": -48.1,
           "label": "Torvosaurus is 36% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.9,
-          "cappedPowerRatio": 2.18,
-          "label": "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -11945,10 +12277,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Torvosaurus is 36% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "1 Torvosaurus vs 2 Amargasaurus: the Amargasaurus side wins in about 15 s with 76% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Torvosaurus bite lands 59 on Amargasaurus (22 to kill); a Amargasaurus bite lands 26 back (28 to kill).",
           "Amargasaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 59,
+            "defenderHit": 26,
+            "attackerBurst": 59,
+            "defenderBurst": 103,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 28,
+            "attackerDps": 39,
+            "defenderDps": 23.1,
+            "attackerTimeToKill": 32,
+            "defenderTimeToKill": 30,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 15,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.76,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 15.25
+            }
+          },
+          "label": "1 Torvosaurus vs 2 Amargasaurus: the Amargasaurus side wins in about 15 s with 76% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 2 Amargasaurus: the Torvosaurus side wins in about 11 s with 91% of its health left.",
+            "attackers": 6,
+            "defenders": 2
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "amargasaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Amargasaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Torvosaurus is 36% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11965,12 +12363,14 @@
       {
         "id": "eotriceratops",
         "name": "Eotriceratops",
+        "family": "eotriceratops",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Eotriceratops is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Torvosaurus is 23% faster on land; a clean escape is unlikely once spotted. At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 96,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Eotriceratops is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Torvosaurus is 23% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 2 Eotriceratops: the Eotriceratops side wins in about 14 s with 84% of its health left.",
+        "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11987,18 +12387,6 @@
           "durationMarginPct": 53.3,
           "label": "Torvosaurus is 23% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.82,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12010,10 +12398,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Torvosaurus is 23% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "1 Torvosaurus vs 2 Eotriceratops: the Eotriceratops side wins in about 14 s with 84% of its health left.",
           "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Torvosaurus bite lands 44 on Eotriceratops (30 to kill); a Eotriceratops bite lands 28 back (25 to kill).",
           "Eotriceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 44,
+            "defenderHit": 28,
+            "attackerBurst": 44,
+            "defenderBurst": 94,
+            "attackerHitsToKill": 30,
+            "defenderHitsToKill": 25,
+            "attackerDps": 29.5,
+            "defenderDps": 25.4,
+            "attackerTimeToKill": 44,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 14,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.84,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 14
+            }
+          },
+          "label": "1 Torvosaurus vs 2 Eotriceratops: the Eotriceratops side wins in about 14 s with 84% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 2 Eotriceratops: the Torvosaurus side wins in about 15 s with 87% of its health left.",
+            "attackers": 6,
+            "defenders": 2
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "eotriceratops",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Eotriceratops",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Torvosaurus is 23% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12030,12 +12484,14 @@
       {
         "id": "pachyrhinosaurus",
         "name": "Pachyrhinosaurus",
+        "family": "pachyrhinosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Pachyrhinosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land. The legal groups (6 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Pachyrhinosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land. 1 Torvosaurus vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 5 s with 94% of its health left.",
+        "score": 54,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12052,18 +12508,6 @@
           "durationMarginPct": -31,
           "label": "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1.42,
-          "label": "The legal groups (6 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12076,76 +12520,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land.",
-          "The legal groups (6 vs 4) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Torvosaurus vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 5 s with 94% of its health left.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Torvosaurus bite lands 65 on Pachyrhinosaurus (13 to kill); a Pachyrhinosaurus crusher lands 38 back (19 to kill).",
           "Pachyrhinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "torvosaurus",
-            "profileName": "Torvosaurus",
-            "section": "Preferred Prey & Diet",
-            "text": "When Amargasaurus is not available, and mobbing larger sauropods is not possible, they prioritize hunting ceratopsian species (Eotriceratops, Pachyrhinosaurus, Nasutoceratops, Styracosaurus and Albertaceratops)."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "styracosaurus",
-        "name": "Styracosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Styracosaurus can usually refuse the chase",
-        "summary": "A profile rule names or prioritises this matchup. Styracosaurus is 10% faster on land and can normally refuse this fight. At the legal limits (6 attackers vs 4 defenders), the attacking side has the stronger combat envelope.",
-        "score": 62,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 950,
-          "targetSpeed": 1050,
-          "speedMarginPct": -9.5,
-          "attackerDurationSeconds": 68.966,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": -44.8,
-          "label": "Styracosaurus is 10% faster on land and can normally refuse this fight."
-        },
         "fight": {
-          "verdict": "attacker-advantage",
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 65,
+            "defenderHit": 38,
+            "attackerBurst": 65,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 19,
+            "attackerDps": 43.3,
+            "defenderDps": 40.4,
+            "attackerTimeToKill": 18,
+            "defenderTimeToKill": 17,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.94,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.5
+            }
+          },
+          "label": "1 Torvosaurus vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 5 s with 94% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
           "attackerCombatWeight": 4500,
-          "targetCombatWeight": 2800,
+          "targetCombatWeight": 4500,
           "attackerGroupLimit": 6,
           "targetDefenderLimit": 4,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.61,
-          "cappedPowerRatio": 2.27,
-          "label": "At the legal limits (6 attackers vs 4 defenders), the attacking side has the stronger combat envelope."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 4 Pachyrhinosaurus: the Torvosaurus side wins in about 14 s with 67% of its health left.",
+            "attackers": 6,
+            "defenders": 4
+          }
         },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "cedrus-forest"
-          ],
-          "overlap": 0.2,
-          "label": "They overlap in 2 mapped areas, so the matchup is situational."
+        "attackerId": "torvosaurus",
+        "targetId": "pachyrhinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Pachyrhinosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
         },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Styracosaurus is 10% faster on land and can normally refuse this fight.",
-          "At the legal limits (6 attackers vs 4 defenders), the attacking side has the stronger combat envelope.",
-          "They overlap in 2 mapped areas, so the matchup is situational.",
-          "Styracosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
         "tags": [
           "dangerous-defender"
         ],
@@ -12162,12 +12606,14 @@
       {
         "id": "albertaceratops",
         "name": "Albertaceratops",
+        "family": "albertaceratops",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Albertaceratops is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it. The profile limits are 6 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it. Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12184,18 +12630,6 @@
           "durationMarginPct": -37.9,
           "label": "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "soloWeightRatio": 1.29,
-          "cappedPowerRatio": null,
-          "label": "The profile limits are 6 attackers vs unlimited eligible defenders; no invented numeric swarm is used."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12208,10 +12642,64 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it.",
-          "The profile limits are 6 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+          "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Torvosaurus bite lands 84 on Albertaceratops (8 to kill); a Albertaceratops kick lands 30 back (24 to kill).",
           "Albertaceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": null,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 84,
+            "defenderHit": 30,
+            "attackerBurst": 84,
+            "defenderBurst": 72,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 24,
+            "attackerDps": 55.7,
+            "defenderDps": 32.4,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 22,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": null,
+          "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 6,
+            "defenders": null
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "albertaceratops",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Albertaceratops",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12226,14 +12714,138 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "barsboldia",
-        "name": "Barsboldia",
+        "id": "styracosaurus",
+        "name": "Styracosaurus",
+        "family": "styracosaurus",
         "direction": "opportunity",
-        "band": "severe",
+        "band": "conditional",
+        "kind": "risky-quarry",
+        "headline": "Styracosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Styracosaurus is 10% faster on land and can normally refuse this fight. 1 Torvosaurus vs 4 Styracosaurus: the Styracosaurus side wins in about 4 s with 91% of its health left.",
+        "score": 27,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 950,
+          "targetSpeed": 1050,
+          "speedMarginPct": -9.5,
+          "attackerDurationSeconds": 68.966,
+          "targetDurationSeconds": 125,
+          "durationMarginPct": -44.8,
+          "label": "Styracosaurus is 10% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "cedrus-forest"
+          ],
+          "overlap": 0.2,
+          "label": "They overlap in 2 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Styracosaurus is 10% faster on land and can normally refuse this fight.",
+          "1 Torvosaurus vs 4 Styracosaurus: the Styracosaurus side wins in about 4 s with 91% of its health left.",
+          "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Torvosaurus bite lands 104 on Styracosaurus (7 to kill); a Styracosaurus stomp lands 53 back (14 to kill).",
+          "Styracosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 104,
+            "defenderHit": 53,
+            "attackerBurst": 104,
+            "defenderBurst": 53,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 14,
+            "attackerDps": 69.6,
+            "defenderDps": 52.6,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.91,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.5
+            }
+          },
+          "label": "1 Torvosaurus vs 4 Styracosaurus: the Styracosaurus side wins in about 4 s with 91% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 4 Styracosaurus: the Torvosaurus side wins in about 7 s with 78% of its health left.",
+            "attackers": 6,
+            "defenders": 4
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "styracosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Styracosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Styracosaurus is 10% faster on land and can normally refuse this fight.",
+          "baseScore": 44,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "torvosaurus",
+            "profileName": "Torvosaurus",
+            "section": "Preferred Prey & Diet",
+            "text": "When Amargasaurus is not available, and mobbing larger sauropods is not possible, they prioritize hunting ceratopsian species (Eotriceratops, Pachyrhinosaurus, Nasutoceratops, Styracosaurus and Albertaceratops)."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "family": "megalania",
+        "direction": "opportunity",
+        "band": "conditional",
         "kind": "quarry",
-        "headline": "Barsboldia is a realistic hunting opportunity",
-        "summary": "Barsboldia is within the legal hunt ceiling. Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted. At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 83,
+        "headline": "Megalania (Arid) can usually refuse the chase",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 7% faster on land and can normally refuse this fight. 1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+        "score": 49,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12241,26 +12853,14 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "attacker-faster",
+          "verdict": "target-can-disengage",
           "attackerSpeed": 950,
-          "targetSpeed": 850,
-          "speedMarginPct": 11.8,
+          "targetSpeed": 1025,
+          "speedMarginPct": -7.3,
           "attackerDurationSeconds": 68.966,
-          "targetDurationSeconds": 50,
-          "durationMarginPct": 37.9,
-          "label": "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.82,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
+          "targetDurationSeconds": 143,
+          "durationMarginPct": -51.8,
+          "label": "Megalania (Arid) is 7% faster on land and can normally refuse this fight."
         },
         "encounter": {
           "level": "frequent",
@@ -12271,24 +12871,2235 @@
             "volcano-islands",
             "big-tree-overlook",
             "cedrus-forest",
-            "black-fern-hills",
-            "stillwater-bog",
-            "crag-bluffs"
+            "black-fern-hills"
           ],
-          "overlap": 0.45,
-          "label": "9 shared mapped areas make contact plausible."
+          "overlap": 0.583,
+          "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "9 shared mapped areas make contact plausible."
+          "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
+          "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Torvosaurus bite lands 107 on Megalania (Arid) (5 to kill); a Megalania (Arid) bite lands 18 back (40 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 107,
+            "defenderHit": 18,
+            "attackerBurst": 107,
+            "defenderBurst": 36,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 40,
+            "attackerDps": 71.4,
+            "defenderDps": 22.1,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 32,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.76,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 1 s with 99% of its health left.",
+            "attackers": 6,
+            "defenders": 1
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "megalania-arid",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Megalania (Arid)",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Concavenator can create a very narrow escape window",
+          "summary": "Concavenator is inside the legal hunt range. Concavenator is 16% faster on land; a clean escape is unlikely once spotted. 4 Concavenator vs 1 Torvosaurus: the Concavenator side wins in about 11 s with 51% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 950,
+            "speedMarginPct": 15.8,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 142.1,
+            "label": "Concavenator is 16% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "volcano-islands",
+              "big-tree-overlook",
+              "black-fern-hills",
+              "stillwater-bog"
+            ],
+            "overlap": 0.357,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Concavenator is 16% faster on land; a clean escape is unlikely once spotted.",
+            "4 Concavenator vs 1 Torvosaurus: the Concavenator side wins in about 11 s with 51% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Concavenator bite lands 18 on Torvosaurus (39 to kill); a Torvosaurus bite lands 139 back (4 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 18,
+              "defenderHit": 139,
+              "attackerBurst": 29,
+              "defenderBurst": 139,
+              "attackerHitsToKill": 39,
+              "defenderHitsToKill": 4,
+              "attackerDps": 19.3,
+              "defenderDps": 92.8,
+              "attackerTimeToKill": 36,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0.023,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 11,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.51,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.5
+              }
+            },
+            "label": "4 Concavenator vs 1 Torvosaurus: the Concavenator side wins in about 11 s with 51% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Concavenator vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 90% of its health left.",
+              "attackers": 4,
+              "defenders": 4
+            }
+          },
+          "attackerId": "concavenator",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Concavenator",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Concavenator is 16% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a very narrow escape window",
+          "summary": "Dilophosaurus is inside the legal hunt range. Dilophosaurus is 16% faster on land; a clean escape is unlikely once spotted. 5 Dilophosaurus vs 1 Torvosaurus: the Dilophosaurus side wins in about 7 s with 79% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 950,
+            "speedMarginPct": 15.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 141.7,
+            "label": "Dilophosaurus is 16% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills"
+            ],
+            "overlap": 0.333,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Dilophosaurus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "5 Dilophosaurus vs 1 Torvosaurus: the Dilophosaurus side wins in about 7 s with 79% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 21 on Torvosaurus (35 to kill); a Torvosaurus bite lands 122 back (5 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 21,
+              "defenderHit": 122,
+              "attackerBurst": 21,
+              "defenderBurst": 122,
+              "attackerHitsToKill": 35,
+              "defenderHitsToKill": 5,
+              "attackerDps": 20.5,
+              "defenderDps": 81.2,
+              "attackerTimeToKill": 34,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 7,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.79,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 7
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Torvosaurus: the Dilophosaurus side wins in about 7 s with 79% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Dilophosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 9 s with 81% of its health left.",
+              "attackers": 5,
+              "defenders": 4
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Dilophosaurus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "maip",
+          "name": "Maip",
+          "family": "maip",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Maip can create a very narrow escape window",
+          "summary": "Maip is inside the legal hunt range. The speed gap is small (1025 vs 950), but Maip has the pursuit edge on land. 3 Maip vs 1 Torvosaurus: the Maip side wins in about 8 s with 81% of its health left.",
+          "score": 82,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1025,
+            "targetSpeed": 950,
+            "speedMarginPct": 7.9,
+            "attackerDurationSeconds": 90.909,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 31.8,
+            "label": "The speed gap is small (1025 vs 950), but Maip has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "crag-bluffs"
+            ],
+            "overlap": 0.267,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1025 vs 950), but Maip has the pursuit edge on land.",
+            "3 Maip vs 1 Torvosaurus: the Maip side wins in about 8 s with 81% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Maip claw lands 41 on Torvosaurus (18 to kill); a Torvosaurus bite lands 73 back (9 to kill).",
+            "Maip's bleed builds faster than Torvosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 41,
+              "defenderHit": 73,
+              "attackerBurst": 62,
+              "defenderBurst": 73,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 9,
+              "attackerDps": 31.5,
+              "defenderDps": 48.7,
+              "attackerTimeToKill": 22,
+              "defenderTimeToKill": 13,
+              "attackerBleed": 0.282,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.81,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 7.5
+              }
+            },
+            "label": "3 Maip vs 1 Torvosaurus: the Maip side wins in about 8 s with 81% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4000,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Maip vs 4 Torvosaurus: the Torvosaurus side wins in about 10 s with 77% of its health left.",
+              "attackers": 3,
+              "defenders": 4
+            }
+          },
+          "attackerId": "maip",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Maip",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1025 vs 950), but Maip has the pursuit edge on land.",
+            "baseScore": 64,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Maip is inside the legal hunt range."
+          },
+          "tags": [
+            "bleed",
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "family": "tyrannotitan",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Tyrannotitan can create a real pursuit problem",
+          "summary": "Tyrannotitan is inside the legal hunt range. This is a close chase on land: 900 vs 950 units/s, with stamina likely deciding it. 2 Tyrannotitan vs 1 Torvosaurus: the Tyrannotitan side wins in about 12 s with 78% of its health left.",
+          "score": 77,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 900,
+            "targetSpeed": 950,
+            "speedMarginPct": -5.3,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": -8.7,
+            "label": "This is a close chase on land: 900 vs 950 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.462,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "This is a close chase on land: 900 vs 950 units/s, with stamina likely deciding it.",
+            "2 Tyrannotitan vs 1 Torvosaurus: the Tyrannotitan side wins in about 12 s with 78% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 38 on Torvosaurus (19 to kill); a Torvosaurus bite lands 48 back (19 to kill).",
+            "Tyrannotitan's bleed builds faster than Torvosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 2,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 48,
+              "attackerBurst": 94,
+              "defenderBurst": 48,
+              "attackerHitsToKill": 19,
+              "defenderHitsToKill": 19,
+              "attackerDps": 28.8,
+              "defenderDps": 32.2,
+              "attackerTimeToKill": 24,
+              "defenderTimeToKill": 28,
+              "attackerBleed": 0.293,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 12,
+              "attackersLeft": 2,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.78,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 12.25
+              }
+            },
+            "label": "2 Tyrannotitan vs 1 Torvosaurus: the Tyrannotitan side wins in about 12 s with 78% of its health left.",
+            "detail": "2 attackers vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "2 Tyrannotitan vs 4 Torvosaurus: the Torvosaurus side wins in about 14 s with 78% of its health left.",
+              "attackers": 2,
+              "defenders": 4
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 900 vs 950 units/s, with stamina likely deciding it.",
+            "baseScore": 59,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannotitan is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Achillobator can create a real pursuit problem",
+          "summary": "Achillobator is inside the legal hunt range. Achillobator is 11% faster on land; a clean escape is unlikely once spotted. 5 Achillobator vs 1 Torvosaurus: the Achillobator side wins in about 6 s with 86% of its health left.",
+          "score": 74,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 950,
+            "speedMarginPct": 10.5,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 123.3,
+            "label": "Achillobator is 11% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.176,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 11% faster on land; a clean escape is unlikely once spotted.",
+            "5 Achillobator vs 1 Torvosaurus: the Achillobator side wins in about 6 s with 86% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Achillobator bite lands 34 on Torvosaurus (21 to kill); a Torvosaurus bite lands 104 back (6 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 34,
+              "defenderHit": 104,
+              "attackerBurst": 67,
+              "defenderBurst": 104,
+              "attackerHitsToKill": 21,
+              "defenderHitsToKill": 6,
+              "attackerDps": 23.9,
+              "defenderDps": 69.6,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.86,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6
+              }
+            },
+            "label": "5 Achillobator vs 1 Torvosaurus: the Achillobator side wins in about 6 s with 86% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Achillobator vs 4 Torvosaurus: the Torvosaurus side wins in about 12 s with 71% of its health left.",
+              "attackers": 5,
+              "defenders": 4
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 11% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a real pursuit problem",
+          "summary": "Latenivenatrix is inside the legal hunt range. Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted. 8 Latenivenatrix vs 1 Torvosaurus: the Latenivenatrix side wins in about 11 s with 63% of its health left.",
+          "score": 74,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 950,
+            "speedMarginPct": 13.2,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 262.5,
+            "label": "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.176,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted.",
+            "8 Latenivenatrix vs 1 Torvosaurus: the Latenivenatrix side wins in about 11 s with 63% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Latenivenatrix bite lands 10 on Torvosaurus (74 to kill); a Torvosaurus bite lands 209 back (3 to kill).",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 10,
+              "defenderHit": 209,
+              "attackerBurst": 22,
+              "defenderBurst": 209,
+              "attackerHitsToKill": 74,
+              "defenderHitsToKill": 3,
+              "attackerDps": 9.6,
+              "defenderDps": 139.3,
+              "attackerTimeToKill": 73,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 11,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.63,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.75
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Torvosaurus: the Latenivenatrix side wins in about 11 s with 63% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Latenivenatrix vs 4 Torvosaurus: the Torvosaurus side wins in about 7 s with 89% of its health left.",
+              "attackers": 8,
+              "defenders": 4
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "austroraptor",
+          "name": "Austroraptor",
+          "family": "austroraptor",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Austroraptor can usually refuse the chase",
+          "summary": "Austroraptor is within the legal hunt ceiling. Austroraptor is 14% faster on land and can normally refuse this fight. 1 Torvosaurus vs 2 Austroraptor: the Torvosaurus side wins in about 14 s with 44% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1100,
+            "speedMarginPct": -13.6,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": -58.6,
+            "label": "Austroraptor is 14% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog"
+            ],
+            "overlap": 0.316,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Austroraptor is 14% faster on land and can normally refuse this fight.",
+            "1 Torvosaurus vs 2 Austroraptor: the Torvosaurus side wins in about 14 s with 44% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 139 on Austroraptor (5 to kill); a Austroraptor bite lands 18 back (39 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 139,
+              "defenderHit": 18,
+              "attackerBurst": 139,
+              "defenderBurst": 22,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 39,
+              "attackerDps": 92.8,
+              "defenderDps": 18.2,
+              "attackerTimeToKill": 7,
+              "defenderTimeToKill": 38,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 14,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.44,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 7.25
+              }
+            },
+            "label": "1 Torvosaurus vs 2 Austroraptor: the Torvosaurus side wins in about 14 s with 44% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Austroraptor: the Torvosaurus side wins in about 3 s with 98% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Austroraptor is 14% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Austroraptor is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Ceratosaurus can usually refuse the chase",
+          "summary": "Ceratosaurus is within the legal hunt ceiling. Ceratosaurus is 10% faster on land and can normally refuse this fight. 1 Torvosaurus vs 1 Ceratosaurus: the Torvosaurus side wins in about 10 s with 65% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1050,
+            "speedMarginPct": -9.5,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -51.8,
+            "label": "Ceratosaurus is 10% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "crag-bluffs"
+            ],
+            "overlap": 0.357,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Ceratosaurus is 10% faster on land and can normally refuse this fight.",
+            "1 Torvosaurus vs 1 Ceratosaurus: the Torvosaurus side wins in about 10 s with 65% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 113 on Ceratosaurus (7 to kill); a Ceratosaurus bite lands 18 back (40 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 113,
+              "defenderHit": 18,
+              "attackerBurst": 113,
+              "defenderBurst": 40,
+              "attackerHitsToKill": 7,
+              "defenderHitsToKill": 40,
+              "attackerDps": 75,
+              "defenderDps": 24,
+              "attackerTimeToKill": 10,
+              "defenderTimeToKill": 29,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.65,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.25
+              }
+            },
+            "label": "1 Torvosaurus vs 1 Ceratosaurus: the Torvosaurus side wins in about 10 s with 65% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 1 Ceratosaurus: the Torvosaurus side wins in about 2 s with 99% of its health left.",
+              "attackers": 6,
+              "defenders": 1
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Ceratosaurus is 10% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "barsboldia",
+          "name": "Barsboldia",
+          "family": "barsboldia",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+          "summary": "Barsboldia is within the legal hunt ceiling. Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 2 Barsboldia: the Barsboldia side wins in about 6 s with 94% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 850,
+            "speedMarginPct": 11.8,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 37.9,
+            "label": "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.45,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted.",
+            "1 Torvosaurus vs 2 Barsboldia: the Barsboldia side wins in about 6 s with 94% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 48 on Barsboldia (32 to kill); a Barsboldia kick lands 47 back (15 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 48,
+              "defenderHit": 47,
+              "attackerBurst": 48,
+              "defenderBurst": 141,
+              "attackerHitsToKill": 32,
+              "defenderHitsToKill": 15,
+              "attackerDps": 32.2,
+              "defenderDps": 62.9,
+              "attackerTimeToKill": 47,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.94,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.75
+              }
+            },
+            "label": "1 Torvosaurus vs 2 Barsboldia: the Barsboldia side wins in about 6 s with 94% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Barsboldia: the Torvosaurus side wins in about 19 s with 60% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "barsboldia",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Barsboldia",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Barsboldia is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+          "summary": "Deinocheirus is within the legal hunt ceiling. Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 12 s with 80% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 800,
+            "speedMarginPct": 18.8,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 53.3,
+            "label": "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.333,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "1 Torvosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 12 s with 80% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 48 on Deinocheirus (20 to kill); a Deinocheirus claw lands 42 back (17 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 48,
+              "defenderHit": 42,
+              "attackerBurst": 48,
+              "defenderBurst": 47,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 17,
+              "attackerDps": 32.2,
+              "defenderDps": 29.8,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 24,
+              "attackerBleed": 0,
+              "defenderBleed": 0.082,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 12,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.8,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 12
+              }
+            },
+            "label": "1 Torvosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 12 s with 80% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Deinocheirus: the Torvosaurus side wins in about 10 s with 89% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "family": "giganotosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Giganotosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Giganotosaurus is within the legal hunt ceiling. Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 9 s with 85% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 850,
+            "speedMarginPct": 11.8,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 37.9,
+            "label": "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills"
+            ],
+            "overlap": 0.5,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted.",
+            "1 Torvosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 9 s with 85% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 48 on Giganotosaurus (21 to kill); a Giganotosaurus bite lands 42 back (17 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 48,
+              "defenderHit": 42,
+              "attackerBurst": 48,
+              "defenderBurst": 85,
+              "attackerHitsToKill": 21,
+              "defenderHitsToKill": 17,
+              "attackerDps": 32.2,
+              "defenderDps": 39,
+              "attackerTimeToKill": 31,
+              "defenderTimeToKill": 18,
+              "attackerBleed": 0,
+              "defenderBleed": 0.174,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 9,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.85,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 9
+              }
+            },
+            "label": "1 Torvosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 9 s with 85% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Giganotosaurus: the Torvosaurus side wins in about 11 s with 85% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "giganotosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Giganotosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Torvosaurus is 12% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Giganotosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 660,
+            "speedMarginPct": 43.9,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -44.8,
+            "label": "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "crag-bluffs"
+            ],
+            "overlap": 0.267,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted.",
+            "1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 43 on Anodontosaurus (20 to kill); a Anodontosaurus tail slam lands 54 back (13 to kill).",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 43,
+              "defenderHit": 54,
+              "attackerBurst": 43,
+              "defenderBurst": 92,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 13,
+              "attackerDps": 28.9,
+              "defenderDps": 40.6,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 17,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 17,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.41,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 17.25
+              }
+            },
+            "label": "1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 1 Anodontosaurus: the Torvosaurus side wins in about 5 s with 95% of its health left.",
+              "attackers": 6,
+              "defenders": 1
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "yunnanosaurus": {
+        "id": "yunnanosaurus",
+        "name": "Yunnanosaurus",
+        "cw": 4500,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 38.25,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Body Slam",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Body Slam",
+          "Tail Slam"
+        ],
+        "bleedPerSecond": 0.154,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "amargasaurus": {
+        "id": "amargasaurus",
+        "name": "Amargasaurus",
+        "cw": 5000,
+        "hp": 1250,
+        "armor": 1,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Thrash",
+          "Stomp v2"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "eotriceratops": {
+        "id": "eotriceratops",
+        "name": "Eotriceratops",
+        "cw": 5500,
+        "hp": 1300,
+        "armor": 1.2,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 100,
+          "cooldown": 60,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Head Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "pachyrhinosaurus": {
+        "id": "pachyrhinosaurus",
+        "name": "Pachyrhinosaurus",
+        "cw": 4500,
+        "hp": 800,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Crusher",
+          "damage": 50,
+          "cooldown": 0.5
+        },
+        "burst": {
+          "label": "Blast Stinger",
+          "damage": 70,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Crusher",
+          "Blast Stinger"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "albertaceratops": {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1.25
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Head Slam",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": true
+      },
+      "styracosaurus": {
+        "id": "styracosaurus",
+        "name": "Styracosaurus",
+        "cw": 2800,
+        "hp": 700,
+        "armor": 1,
+        "dps": 110,
+        "primary": {
+          "label": "Stomp",
+          "damage": 110,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 110,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "maip": {
+        "id": "maip",
+        "name": "Maip",
+        "cw": 4000,
+        "hp": 650,
+        "armor": 1,
+        "dps": 46,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Claw Charged"
+        ],
+        "bleedPerSecond": 0.317,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "giganotosaurus": {
+        "id": "giganotosaurus",
+        "name": "Giganotosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 41.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charged Bite",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bulldoze",
+          "Charged Bite"
+        ],
+        "bleedPerSecond": 0.142,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -12342,7 +15153,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

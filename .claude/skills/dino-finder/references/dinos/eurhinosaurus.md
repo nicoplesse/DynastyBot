@@ -56,15 +56,15 @@ You are a medium, very fast aquatic carnivore (cruise 700, sprint 1,050) in an u
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tylosaurus** (hoch): Tylosaurus can create a real pursuit problem
+- **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Kaiwhekea** (conditional): Kaiwhekea matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
-- **Deinosuchus (Shore)** (conditional): Deinosuchus (Shore) is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) is a realistic hunting opportunity
-- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is a realistic hunting opportunity
-- **Kaiwhekea** (hoch): Kaiwhekea is legal quarry, but not a comfortable fight
+- **Leedsichthys** (spürbar): Leedsichthys is legal quarry, but not a comfortable fight
+- **Kaiwhekea** (spürbar): Kaiwhekea is legal quarry, but not a comfortable fight
+- **Deinosuchus (Shore)** (conditional): Deinosuchus (Shore) is legal quarry, but not a comfortable fight
+- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
+- **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
+- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

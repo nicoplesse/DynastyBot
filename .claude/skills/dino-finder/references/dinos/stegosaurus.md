@@ -58,9 +58,9 @@ You are a large, bad-tempered herbivore in a 'zeal' of 1 male and up to 3 unrela
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Maip** (sehr hoch): Maip can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Torvosaurus** (hoch): Torvosaurus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
-- **Ceratosaurus** (hoch): Ceratosaurus can create a real pursuit problem
+- **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
+- **Ceratosaurus** (sehr hoch): Ceratosaurus can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 

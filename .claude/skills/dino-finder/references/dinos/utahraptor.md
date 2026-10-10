@@ -62,20 +62,20 @@ You are a medium carnivore in a family pack around an alpha pair (up to 20 adult
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Kelenken** (spürbar): Kelenken can create a credible fight
-- **Tenontosaurus** (conditional): Tenontosaurus matters only if it gets the right opening
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
-- **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Tenontosaurus** (spürbar): Tenontosaurus can create a credible fight
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Dryosaurus** (spürbar): Dryosaurus can usually refuse the chase
-- **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Amargasaurus** (hoch): Amargasaurus is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
-- **Ceratosaurus** (hoch): Ceratosaurus is a realistic hunting opportunity
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Dryosaurus** (conditional): Dryosaurus is legal quarry, but not a comfortable fight
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Utahraptor are tolerant to other species, and aggressive towards rival Utahraptor. When solitary, they are tolerant towards other Utahraptor.

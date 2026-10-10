@@ -59,15 +59,15 @@ You are a quiet, medium-sized night stalker with long legs and sickle claws, liv
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
 - **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
-- **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Parasaurolophus** (sehr hoch): Parasaurolophus is a realistic hunting opportunity
-- **Iguanodon** (sehr hoch): Iguanodon is a realistic hunting opportunity
-- **Eotriceratops** (sehr hoch): Eotriceratops is a realistic hunting opportunity
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
 - **Pachyrhinosaurus** (spürbar): Pachyrhinosaurus is legal quarry, but not a comfortable fight
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Barsboldia** (hoch): Barsboldia is a realistic hunting opportunity
+- **Eotriceratops** (spürbar): Eotriceratops is legal quarry, but not a comfortable fight
+- **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Mutation-specific risk: Albino Achillobator and albino Latenivenatrix are not tolerated by Achillobator.

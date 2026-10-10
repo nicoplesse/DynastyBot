@@ -17,6 +17,7 @@ function exactKey(text, keys) {
   const line = text.toLowerCase();
   const exact = name => keys.includes(name) ? name : null;
   const like = expression => keys.filter(key => expression.test(key));
+  if (/clamp weight/.test(line)) return exact('Core.CarryCapacity') || exact('CarryCapacity');
   if (/combat weight/.test(line)) return exact('Core.CombatWeight');
   if (/health recovery rate|health regen/.test(line)) return exact('Core.HealthRecoveryRate');
   if (/\b(?:max )?health\b/.test(line) && !/heal cooldown|health recovery/.test(line)) return exact('Core.MaxHealth');
@@ -103,6 +104,9 @@ function findKey(change, keys) {
 
 function overrideValue(change, base) {
   if (/\bremoved?\b/i.test(change.text)) return { value: 0, method: 'removed' };
+  // "Clamp Weight: Up to 3900 Combat Weight" means carry capacity one above the heaviest clampable dino.
+  const clamp = change.text.match(/clamp weight:?\s*up to\s*([\d,.]+)/i);
+  if (clamp) return { value: Number(clamp[1].replace(/,/g, '')) + 1, method: 'calculated' };
   if (/\bdoubled\b/i.test(change.text) && Number.isFinite(base)) return { value: base * 2, method: 'calculated' };
   if (/\bhalved\b/i.test(change.text) && Number.isFinite(base)) return { value: base / 2, method: 'calculated' };
   if (change.current != null && Number.isFinite(numeric(change.current, base))) return { value: numeric(change.current, base), method: 'explicit' };

@@ -61,11 +61,11 @@ You are a medium herbivore with strong sex roles. A 'glade' is ruled by one matr
 
 **Gefährlich für dich:**
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
 - **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 - **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
-- **Concavenator** (hoch): Concavenator can create a real pursuit problem
-- **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Deinonychus** (conditional): Deinonychus is legal quarry, but not a comfortable fight

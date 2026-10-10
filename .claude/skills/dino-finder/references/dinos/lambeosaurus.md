@@ -57,11 +57,11 @@ You are a passive medium herbivore in an unlimited herd where the does are domin
 
 **Gefährlich für dich:**
 - **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
-- **Tylosaurus** (hoch): Tylosaurus can create a real pursuit problem
-- **Daspletosaurus** (hoch): Daspletosaurus can create a real pursuit problem
+- **Daspletosaurus** (sehr hoch): Daspletosaurus can create a very narrow escape window
+- **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Deinonychus** (sehr hoch): Deinonychus can create a very narrow escape window
 
 **Beute & Chancen:**
 

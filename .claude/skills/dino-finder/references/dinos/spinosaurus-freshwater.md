@@ -47,7 +47,7 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 - Leistenkrokodil / Saltwater crocodile – 40 %: Water behaviour: the tyrant of its water that lunges at intruders and kills rival crocodilians
 - Lebensraum: Swamp, lake and jungle rivers. Claims one medium water source in Stillwater Bog, the Mudflats, Twisted Forest, the Volcano Islands or Redwood Wind, or one of the bright-green river stretches (Big Tree Overlook, Tallbrush Coasts, Cliff Edge Falls, Coastland Swamp); the territory ends 10 body lengths from the water. Neutral gathering and courtship at Triad Falls, Wollemi Forest and Grand Falls. The bright-green sea areas belong to the saltwater variant.
 - Anders als die Tiere: Grizzlies roam widely to hunt; Spinosaurus may hunt only in its claimed water territory (fish, Leedsichthys and Tylosaurus excepted). Crocodiles don't adopt; Spinosaurus adopts Suchomimus of any age.
-- Besonderheit: Your cousin is the saltwater variant, which holds a stretch of sea instead of a river. You are still one species and court together at Triad Falls.
+- Besonderheit: Your cousin is the saltwater variant, a polar bear of the sea with one home sea area that tours the Leedsichthys route. You are still one species and court together at Triad Falls.
 
 ## Karte & POIs
 
@@ -74,16 +74,16 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
 - **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
-- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
+- **Tyrannosaurus** (sehr hoch): Tyrannosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
+- **Tylosaurus** (spürbar): Tylosaurus can usually refuse the chase
 - **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is a realistic hunting opportunity
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
-- **Tylosaurus** (conditional): Tylosaurus is legal quarry, but not a comfortable fight
-- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Spinosaurus may defend their partner, offspring, territory as 2 sub/adults in a bonded pair. Spinosaurus hunt alone as 1 sub/adult. Their partner does not assist in hunts.

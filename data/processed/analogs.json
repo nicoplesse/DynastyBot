@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T21:28:30.757Z",
+  "generatedAt": "2026-10-10T00:59:05.805Z",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -603,7 +603,15 @@
           "bird",
           "birds",
           "vogel",
-          "vögel"
+          "vögel",
+          "herring gull",
+          "great cormorant",
+          "wandering albatross",
+          "wanderalbatros",
+          "northern gannet",
+          "ostseemöwe",
+          "sturmmöwe",
+          "strandmöwe"
         ]
       },
       "waterbird": {
@@ -1417,6 +1425,14 @@
       "de": "Bär",
       "dinos": [
         {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "animal": "Polar bear",
+          "role": "primary",
+          "share": 70,
+          "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge."
+        },
+        {
           "id": "spinosaurus-freshwater",
           "name": "Spinosaurus (Freshwater)",
           "animal": "Grizzly bear",
@@ -2153,12 +2169,20 @@
       "de": "Seevogel",
       "dinos": [
         {
-          "id": "tropeognathus",
-          "name": "Tropeognathus",
+          "id": "tropeognathus-coast",
+          "name": "Tropeognathus (Coast)",
           "animal": "Herring gull + Great cormorant",
           "role": "primary",
           "share": 100,
-          "headline": "A cheeky seagull colony that dives for fish like a cormorant and turns into a pack hunter at night."
+          "headline": "A Baltic beach gull with a cormorant's dive: sits on sand and rocks, raids every kill on the shore, cracks mussels on stone and turns into a pack hunter at night."
+        },
+        {
+          "id": "tropeognathus-ocean",
+          "name": "Tropeognathus (Ocean)",
+          "animal": "Wandering albatross + Northern gannet",
+          "role": "primary",
+          "share": 100,
+          "headline": "An albatross over the open sea that dives like a gannet: rides the wind from Kelp Vale to the Stonebed Shoal, rests and sleeps on the waves and touches rock only to dry its wings, to sit out a storm or to breed."
         },
         {
           "id": "austroraptor",
@@ -2303,20 +2327,20 @@
           "headline": "A sea-lion colony in a long-necked, turtle-like body: basks on beaches, plays in the surf, hunts in turns."
         },
         {
-          "id": "spinosaurus-saltwater",
-          "name": "Spinosaurus (Saltwater)",
-          "animal": "Leopard seal",
-          "role": "primary",
-          "share": 55,
-          "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through."
-        },
-        {
           "id": "deinosuchus-ocean",
           "name": "Deinosuchus (Ocean)",
           "animal": "Southern elephant seal",
           "role": "secondary",
           "share": 45,
           "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark."
+        },
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "animal": "Walrus",
+          "role": "secondary",
+          "share": 30,
+          "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge."
         }
       ]
     },
@@ -2339,14 +2363,6 @@
           "role": "primary",
           "share": 55,
           "headline": "A sunbathing elephant seal by day and a great white by night: the Deinosuchus of the open ocean lazes on sand and driftwood in the sun and strikes from the deep after dark."
-        },
-        {
-          "id": "spinosaurus-saltwater",
-          "name": "Spinosaurus (Saltwater)",
-          "animal": "Grey reef shark",
-          "role": "secondary",
-          "share": 45,
-          "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through."
         },
         {
           "id": "tyrannotitan",
@@ -3572,31 +3588,37 @@
         }
       ]
     },
-    "leopard-seal": {
-      "animal": "Leopard seal",
-      "de": "Seeleopard",
-      "scientific": "Hydrurga leptonyx",
-      "archetype": "seal",
+    "polar-bear": {
+      "animal": "Polar bear",
+      "de": "Eisbär",
+      "scientific": "Ursus maritimus",
+      "archetype": "bear",
       "dinos": [
         {
           "id": "spinosaurus-saltwater",
           "name": "Spinosaurus (Saltwater)",
           "role": "primary",
+          "share": 70
+        },
+        {
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "role": "primary",
           "share": 55
         }
       ]
     },
-    "grey-reef-shark": {
-      "animal": "Grey reef shark",
-      "de": "Grauer Riffhai",
-      "scientific": "Carcharhinus amblyrhynchos",
-      "archetype": "shark-fish",
+    "walrus": {
+      "animal": "Walrus",
+      "de": "Walross",
+      "scientific": "Odobenus rosmarus",
+      "archetype": "seal",
       "dinos": [
         {
           "id": "spinosaurus-saltwater",
           "name": "Spinosaurus (Saltwater)",
           "role": "secondary",
-          "share": 45
+          "share": 30
         }
       ]
     },
@@ -3775,10 +3797,10 @@
       "archetype": "seabird",
       "dinos": [
         {
-          "id": "tropeognathus",
-          "name": "Tropeognathus",
+          "id": "tropeognathus-coast",
+          "name": "Tropeognathus (Coast)",
           "role": "primary",
-          "share": 55
+          "share": 65
         }
       ]
     },
@@ -3789,10 +3811,38 @@
       "archetype": "seabird",
       "dinos": [
         {
-          "id": "tropeognathus",
-          "name": "Tropeognathus",
+          "id": "tropeognathus-coast",
+          "name": "Tropeognathus (Coast)",
           "role": "secondary",
-          "share": 45
+          "share": 35
+        }
+      ]
+    },
+    "wandering-albatross": {
+      "animal": "Wandering albatross",
+      "de": "Wanderalbatros",
+      "scientific": "Diomedea exulans",
+      "archetype": "seabird",
+      "dinos": [
+        {
+          "id": "tropeognathus-ocean",
+          "name": "Tropeognathus (Ocean)",
+          "role": "primary",
+          "share": 60
+        }
+      ]
+    },
+    "northern-gannet": {
+      "animal": "Northern gannet",
+      "de": "Basstölpel",
+      "scientific": "Morus bassanus",
+      "archetype": "seabird",
+      "dinos": [
+        {
+          "id": "tropeognathus-ocean",
+          "name": "Tropeognathus (Ocean)",
+          "role": "secondary",
+          "share": 40
         }
       ]
     },
@@ -3807,20 +3857,6 @@
           "name": "Tylosaurus",
           "role": "primary",
           "share": 100
-        }
-      ]
-    },
-    "polar-bear": {
-      "animal": "Polar bear",
-      "de": "Eisbär",
-      "scientific": "Ursus maritimus",
-      "archetype": "bear",
-      "dinos": [
-        {
-          "id": "tyrannosaurus",
-          "name": "Tyrannosaurus",
-          "role": "primary",
-          "share": 55
         }
       ]
     },
@@ -4031,7 +4067,8 @@
         "latenivenatrix",
         "rhamphorhynchus",
         "thalassodromeus",
-        "tropeognathus"
+        "tropeognathus-coast",
+        "tropeognathus-ocean"
       ]
     },
     "harem": {
@@ -4054,7 +4091,8 @@
         "struthiomimus",
         "styracosaurus",
         "torvosaurus",
-        "tropeognathus",
+        "tropeognathus-coast",
+        "tropeognathus-ocean",
         "yunnanosaurus"
       ]
     },
@@ -4191,7 +4229,7 @@
         "quetzalcoatlus",
         "rhamphorhynchus",
         "thalassodromeus",
-        "tropeognathus"
+        "tropeognathus-coast"
       ]
     },
     "territorial": {
@@ -4214,7 +4252,6 @@
         "pachycephalosaurus",
         "sarcosuchus",
         "spinosaurus-freshwater",
-        "spinosaurus-saltwater",
         "stegosaurus",
         "tenontosaurus",
         "therizinosaurus",
@@ -4253,12 +4290,14 @@
         "pycnonemosaurus",
         "quetzalcoatlus",
         "sarcosuchus",
+        "spinosaurus-saltwater",
         "stegosaurus",
         "struthiomimus",
         "styracosaurus",
         "suchomimus",
         "thalassodromeus",
-        "tropeognathus",
+        "tropeognathus-coast",
+        "tropeognathus-ocean",
         "tylosaurus",
         "yunnanosaurus"
       ]
@@ -4374,7 +4413,8 @@
         "sarcosuchus",
         "spinosaurus-freshwater",
         "spinosaurus-saltwater",
-        "suchomimus"
+        "suchomimus",
+        "tropeognathus-coast"
       ]
     },
     "aquatic": {
@@ -4385,7 +4425,7 @@
         "eurhinosaurus",
         "kaiwhekea",
         "leedsichthys",
-        "tropeognathus",
+        "tropeognathus-ocean",
         "tylosaurus"
       ]
     },
@@ -4397,7 +4437,8 @@
         "quetzalcoatlus",
         "rhamphorhynchus",
         "thalassodromeus",
-        "tropeognathus"
+        "tropeognathus-coast",
+        "tropeognathus-ocean"
       ]
     }
   },
@@ -4533,6 +4574,7 @@
         "spinosaurus-freshwater",
         "suchomimus",
         "thalassodromeus",
+        "tropeognathus-coast",
         "tyrannotitan",
         "yunnanosaurus"
       ]
@@ -4557,7 +4599,8 @@
         "sarcosuchus",
         "spinosaurus-saltwater",
         "suchomimus",
-        "tropeognathus",
+        "tropeognathus-coast",
+        "tropeognathus-ocean",
         "tylosaurus"
       ]
     },
@@ -6426,28 +6469,28 @@
     },
     "spinosaurus-saltwater": {
       "name": "Spinosaurus (Saltwater)",
-      "label": "Leopard seal + Grey reef shark",
-      "labelDe": "Seeleopard + Grauer Riffhai",
-      "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through.",
-      "setting": "One sea territory: island chain, sea cliffs, kelp shallows, shoal or deep ocean",
+      "label": "Polar bear + Walrus",
+      "labelDe": "Eisbär + Walross",
+      "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge.",
+      "setting": "One home sea area, best the cold north (Kelp Vale, Coastal Bluffs), plus tours along the Leedsichthys loop",
       "habitats": [
         "sea"
       ],
       "analogs": [
         {
-          "id": "leopard-seal",
-          "animal": "Leopard seal",
-          "de": "Seeleopard",
-          "archetype": "seal",
-          "share": 55,
+          "id": "polar-bear",
+          "animal": "Polar bear",
+          "de": "Eisbär",
+          "archetype": "bear",
+          "share": 70,
           "role": "primary"
         },
         {
-          "id": "grey-reef-shark",
-          "animal": "Grey reef shark",
-          "de": "Grauer Riffhai",
-          "archetype": "shark-fish",
-          "share": 45,
+          "id": "walrus",
+          "animal": "Walrus",
+          "de": "Walross",
+          "archetype": "seal",
+          "share": 30,
           "role": "secondary"
         }
       ],
@@ -6455,7 +6498,7 @@
         "solitary",
         "pair",
         "apex",
-        "territorial",
+        "nomadic",
         "ambush",
         "semi-aquatic"
       ],
@@ -6758,14 +6801,15 @@
       "activity": "Cathemeral",
       "classification": "Terrestrial"
     },
-    "tropeognathus": {
-      "name": "Tropeognathus",
+    "tropeognathus-coast": {
+      "name": "Tropeognathus (Coast)",
       "label": "Herring gull + Great cormorant",
       "labelDe": "Silbermöwe + Kormoran",
-      "headline": "A cheeky seagull colony that dives for fish like a cormorant and turns into a pack hunter at night.",
-      "setting": "Coasts, beaches and open sea",
+      "headline": "A Baltic beach gull with a cormorant's dive: sits on sand and rocks, raids every kill on the shore, cracks mussels on stone and turns into a pack hunter at night.",
+      "setting": "Beaches, mudflats, swamps, islands and the coast inland to the bogs",
       "habitats": [
-        "sea"
+        "sea",
+        "wetland"
       ],
       "analogs": [
         {
@@ -6773,7 +6817,7 @@
           "animal": "Herring gull",
           "de": "Silbermöwe",
           "archetype": "seabird",
-          "share": 55,
+          "share": 65,
           "role": "primary"
         },
         {
@@ -6781,7 +6825,7 @@
           "animal": "Great cormorant",
           "de": "Kormoran",
           "archetype": "seabird",
-          "share": 45,
+          "share": 35,
           "role": "secondary"
         }
       ],
@@ -6789,6 +6833,45 @@
         "colony",
         "flying",
         "scavenger",
+        "semi-aquatic",
+        "nomadic",
+        "harem"
+      ],
+      "tier": "Small",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Aerial"
+    },
+    "tropeognathus-ocean": {
+      "name": "Tropeognathus (Ocean)",
+      "label": "Wandering albatross + Northern gannet",
+      "labelDe": "Wanderalbatros + Basstölpel",
+      "headline": "An albatross over the open sea that dives like a gannet: rides the wind from Kelp Vale to the Stonebed Shoal, rests and sleeps on the waves and touches rock only to dry its wings, to sit out a storm or to breed.",
+      "setting": "The open sea: kelp shallows, the deep ocean and the offshore shoal, with sea cliffs to land on",
+      "habitats": [
+        "sea"
+      ],
+      "analogs": [
+        {
+          "id": "wandering-albatross",
+          "animal": "Wandering albatross",
+          "de": "Wanderalbatros",
+          "archetype": "seabird",
+          "share": 60,
+          "role": "primary"
+        },
+        {
+          "id": "northern-gannet",
+          "animal": "Northern gannet",
+          "de": "Basstölpel",
+          "archetype": "seabird",
+          "share": 40,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "colony",
+        "flying",
         "aquatic",
         "nomadic",
         "harem"
@@ -10445,6 +10528,82 @@
       "archetypes": [
         "seabird"
       ],
+      "animals": [
+        "northern-gannet"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "herring gull": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [
+        "herring-gull"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "great cormorant": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [
+        "great-cormorant"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "wandering albatross": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [
+        "wandering-albatross"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "wanderalbatros": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [
+        "wandering-albatross"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "northern gannet": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [
+        "northern-gannet"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "ostseemowe": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "sturmmowe": {
+      "archetypes": [
+        "seabird"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "strandmowe": {
+      "archetypes": [
+        "seabird"
+      ],
       "animals": [],
       "moods": [],
       "habitats": []
@@ -11103,9 +11262,7 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [
-        "leopard-seal"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -11113,7 +11270,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "walrus"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -11139,9 +11298,7 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [
-        "leopard-seal"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -11149,7 +11306,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "walrus"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -11355,9 +11514,7 @@
       "archetypes": [
         "shark-fish"
       ],
-      "animals": [
-        "grey-reef-shark"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -11373,9 +11530,7 @@
       "archetypes": [
         "shark-fish"
       ],
-      "animals": [
-        "grey-reef-shark"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -14560,26 +14715,6 @@
       ],
       "animals": [
         "african-lion"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "herring gull": {
-      "archetypes": [
-        "seabird"
-      ],
-      "animals": [
-        "herring-gull"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "great cormorant": {
-      "archetypes": [
-        "seabird"
-      ],
-      "animals": [
-        "great-cormorant"
       ],
       "moods": [],
       "habitats": []

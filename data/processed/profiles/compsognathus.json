@@ -14112,19 +14112,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
     "summary": "Compsognathus's listed dangers are situational rather than automatic losses. Speed, stamina or low encounter overlap prevents raw combat weight from becoming a routine counter.",
     "threats": [
       {
         "id": "deinonychus",
         "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Deinonychus matters only if it gets the right opening",
-        "summary": "Deinonychus is inside the legal hunt range. Compsognathus is 12% faster on land and can normally refuse this fight. At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Deinonychus is inside the legal hunt range. Compsognathus is 12% faster on land and can normally refuse this fight. 8 Deinonychus vs 1 Compsognathus: the Deinonychus side wins in about 1 s with 100% of its health left.",
         "score": 49,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14140,18 +14142,6 @@
           "targetDurationSeconds": 375,
           "durationMarginPct": -46.7,
           "label": "Compsognathus is 12% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 400,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 10,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2,
-          "cappedPowerRatio": 1.63,
-          "label": "At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -14175,9 +14165,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Compsognathus is 12% faster on land and can normally refuse this fight.",
-          "At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope.",
-          "12 shared mapped areas make contact plausible."
+          "8 Deinonychus vs 1 Compsognathus: the Deinonychus side wins in about 1 s with 100% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 100 on Compsognathus (4 to kill); a Compsognathus bite lands 10 back (55 to kill)."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 100,
+            "defenderHit": 10,
+            "attackerBurst": 100,
+            "defenderBurst": 10,
+            "attackerHitsToKill": 4,
+            "defenderHitsToKill": 55,
+            "attackerDps": 100,
+            "defenderDps": 10,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 55,
+            "attackerBleed": 0,
+            "defenderBleed": 0.01,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 8,
+            "defendersLeft": 0,
+            "attackerHpShare": 1,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 0.5
+            }
+          },
+          "label": "8 Deinonychus vs 1 Compsognathus: the Deinonychus side wins in about 1 s with 100% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 400,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Deinonychus vs 10 Compsognathus: the Deinonychus side wins in about 5 s with 94% of its health left.",
+            "attackers": 8,
+            "defenders": 10
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "compsognathus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinonychus",
+          "targetName": "Compsognathus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Compsognathus is 12% faster on land and can normally refuse this fight.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinonychus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -14185,12 +14241,14 @@
       {
         "id": "latenivenatrix",
         "name": "Latenivenatrix",
+        "family": "latenivenatrix",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Latenivenatrix matters only if it gets the right opening",
-        "summary": "Latenivenatrix is inside the legal hunt range. Compsognathus is 14% faster on land and can normally refuse this fight. At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Latenivenatrix is inside the legal hunt range. Compsognathus is 14% faster on land and can normally refuse this fight. 8 Latenivenatrix vs 1 Compsognathus: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
         "score": 49,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14206,18 +14264,6 @@
           "targetDurationSeconds": 375,
           "durationMarginPct": -33.3,
           "label": "Compsognathus is 14% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1400,
-          "targetCombatWeight": 400,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 10,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 3.5,
-          "cappedPowerRatio": 2.85,
-          "label": "At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -14240,10 +14286,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Compsognathus is 14% faster on land and can normally refuse this fight.",
-          "At the legal limits (8 attackers vs 10 defenders), the attacking side has the stronger combat envelope.",
+          "8 Latenivenatrix vs 1 Compsognathus: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
           "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Latenivenatrix bite lands 140 on Compsognathus (3 to kill); a Compsognathus bite lands 6 back (88 to kill).",
           "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 140,
+            "defenderHit": 6,
+            "attackerBurst": 315,
+            "defenderBurst": 6,
+            "attackerHitsToKill": 3,
+            "defenderHitsToKill": 88,
+            "attackerDps": 140,
+            "defenderDps": 5.7,
+            "attackerTimeToKill": 3,
+            "defenderTimeToKill": 88,
+            "attackerBleed": 0,
+            "defenderBleed": 0.006,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 8,
+            "defendersLeft": 0,
+            "attackerHpShare": 1,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 0.5
+            }
+          },
+          "label": "8 Latenivenatrix vs 1 Compsognathus: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 400,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Latenivenatrix vs 10 Compsognathus: the Latenivenatrix side wins in about 4 s with 97% of its health left.",
+            "attackers": 8,
+            "defenders": 10
+          }
+        },
+        "attackerId": "latenivenatrix",
+        "targetId": "compsognathus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Latenivenatrix",
+          "targetName": "Compsognathus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Compsognathus is 14% faster on land and can normally refuse this fight.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Latenivenatrix is inside the legal hunt range."
+        },
         "tags": [
           "pounce"
         ],
@@ -14255,12 +14367,14 @@
       {
         "id": "psittacosaurus",
         "name": "Psittacosaurus",
+        "family": "psittacosaurus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Psittacosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+        "summary": "A profile rule names or prioritises this matchup. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
         "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14276,18 +14390,6 @@
           "targetDurationSeconds": 166.667,
           "durationMarginPct": 125,
           "label": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 900,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "soloWeightRatio": 0.44,
-          "cappedPowerRatio": null,
-          "label": "The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used."
         },
         "encounter": {
           "level": "frequent",
@@ -14319,9 +14421,63 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
-          "20 shared mapped areas make contact plausible."
+          "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 9 on Psittacosaurus (57 to kill); a Psittacosaurus bite lands 113 back (4 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": null,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 9,
+            "defenderHit": 113,
+            "attackerBurst": 9,
+            "defenderBurst": 180,
+            "attackerHitsToKill": 57,
+            "defenderHitsToKill": 4,
+            "attackerDps": 8.9,
+            "defenderDps": 118.5,
+            "attackerTimeToKill": 56,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0.009,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": null,
+          "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 900,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 10,
+            "defenders": null
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "psittacosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Psittacosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -14336,12 +14492,14 @@
       {
         "id": "dryosaurus",
         "name": "Dryosaurus",
+        "family": "dryosaurus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Dryosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 8 Dryosaurus: the Dryosaurus side wins in about 1 s with 100% of its health left.",
         "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14357,18 +14515,6 @@
           "targetDurationSeconds": 181.818,
           "durationMarginPct": 106.3,
           "label": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 1000,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.4,
-          "cappedPowerRatio": 0.49,
-          "label": "Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -14394,10 +14540,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (10 vs 8), a committed straight fight favours Dryosaurus.",
+          "1 Compsognathus vs 8 Dryosaurus: the Dryosaurus side wins in about 1 s with 100% of its health left.",
           "14 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 8 on Dryosaurus (50 to kill); a Dryosaurus kick lands 100 back (4 to kill).",
           "Dryosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 8,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 8,
+            "defenderHit": 100,
+            "attackerBurst": 8,
+            "defenderBurst": 100,
+            "attackerHitsToKill": 50,
+            "defenderHitsToKill": 4,
+            "attackerDps": 8,
+            "defenderDps": 66.7,
+            "attackerTimeToKill": 50,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0.008,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 8,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 0.75
+            }
+          },
+          "label": "1 Compsognathus vs 8 Dryosaurus: the Dryosaurus side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 8 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 1000,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 8 Dryosaurus: the Dryosaurus side wins in about 8 s with 90% of its health left.",
+            "attackers": 10,
+            "defenders": 8
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "dryosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Dryosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14412,71 +14624,16 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "camptosaurus",
-        "name": "Camptosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Camptosaurus is a realistic hunting opportunity",
-        "summary": "Camptosaurus is within the legal hunt ceiling. Compsognathus is 11% faster on land; a clean escape is unlikely once spotted. At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 74,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Small tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1250,
-          "targetSpeed": 1125,
-          "speedMarginPct": 11.1,
-          "attackerDurationSeconds": 375,
-          "targetDurationSeconds": 250,
-          "durationMarginPct": 50,
-          "label": "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.38,
-          "cappedPowerRatio": 2.27,
-          "label": "At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "volcano-islands",
-            "coastland-swamp"
-          ],
-          "overlap": 0.15,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Small tier.",
-          "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
-        ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
         "id": "struthiomimus",
         "name": "Struthiomimus",
+        "family": "struthiomimus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Struthiomimus is legal quarry, but not a comfortable fight",
-        "summary": "Struthiomimus is within the legal hunt ceiling. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (10 vs 5), a committed straight fight favours Struthiomimus.",
+        "summary": "Struthiomimus is within the legal hunt ceiling. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 5 Struthiomimus: the Struthiomimus side wins in about 1 s with 100% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14492,18 +14649,6 @@
           "targetDurationSeconds": 323,
           "durationMarginPct": 16.1,
           "label": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 1400,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 5,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.29,
-          "cappedPowerRatio": 0.53,
-          "label": "Even at the legal group cap (10 vs 5), a committed straight fight favours Struthiomimus."
         },
         "encounter": {
           "level": "frequent",
@@ -14535,9 +14680,75 @@
         "facts": [
           "Its profile permits hunting through Small tier.",
           "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (10 vs 5), a committed straight fight favours Struthiomimus.",
-          "20 shared mapped areas make contact plausible."
+          "1 Compsognathus vs 5 Struthiomimus: the Struthiomimus side wins in about 1 s with 100% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 6 on Struthiomimus (79 to kill); a Struthiomimus kick lands 175 back (3 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 5,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 6,
+            "defenderHit": 175,
+            "attackerBurst": 6,
+            "defenderBurst": 175,
+            "attackerHitsToKill": 79,
+            "defenderHitsToKill": 3,
+            "attackerDps": 5.7,
+            "defenderDps": 87.5,
+            "attackerTimeToKill": 79,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0.006,
+            "defenderBleed": 1.75,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 5,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1
+            }
+          },
+          "label": "1 Compsognathus vs 5 Struthiomimus: the Struthiomimus side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 5 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 5,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 5 Struthiomimus: the Struthiomimus side wins in about 9 s with 87% of its health left.",
+            "attackers": 10,
+            "defenders": 5
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "struthiomimus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Struthiomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Struthiomimus is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -14545,12 +14756,14 @@
       {
         "id": "halszkaraptor",
         "name": "Halszkaraptor",
+        "family": "halszkaraptor",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Halszkaraptor is legal quarry, but not a comfortable fight",
-        "summary": "Halszkaraptor is within the legal hunt ceiling. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+        "summary": "Halszkaraptor is within the legal hunt ceiling. Compsognathus is 9% faster on land; a clean escape is unlikely once spotted. Halszkaraptor may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14566,18 +14779,6 @@
           "targetDurationSeconds": 375,
           "durationMarginPct": 0,
           "label": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 400,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": null,
-          "label": "The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used."
         },
         "encounter": {
           "level": "frequent",
@@ -14604,10 +14805,64 @@
         "facts": [
           "Its profile permits hunting through Small tier.",
           "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "The profile limits are 10 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+          "Halszkaraptor may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
           "15 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 20 on Halszkaraptor (20 to kill); a Halszkaraptor kick lands 55 back (8 to kill).",
           "Halszkaraptor's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": null,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 20,
+            "defenderHit": 55,
+            "attackerBurst": 20,
+            "defenderBurst": 55,
+            "attackerHitsToKill": 20,
+            "defenderHitsToKill": 8,
+            "attackerDps": 20,
+            "defenderDps": 27.5,
+            "attackerTimeToKill": 20,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0.02,
+            "defenderBleed": 0.1,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": null,
+          "label": "Halszkaraptor may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 400,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Halszkaraptor may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 10,
+            "defenders": null
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "halszkaraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Halszkaraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Halszkaraptor is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14617,12 +14872,14 @@
       {
         "id": "deinonychus",
         "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Deinonychus is legal quarry, but not a comfortable fight",
-        "summary": "Deinonychus is within the legal hunt ceiling. Compsognathus is 14% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (10 vs 8), a committed straight fight favours Deinonychus.",
+        "summary": "Deinonychus is within the legal hunt ceiling. Compsognathus is 14% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 100% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14638,18 +14895,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": 87.5,
           "label": "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.5,
-          "cappedPowerRatio": 0.61,
-          "label": "Even at the legal group cap (10 vs 8), a committed straight fight favours Deinonychus."
         },
         "encounter": {
           "level": "frequent",
@@ -14673,14 +14918,697 @@
         "facts": [
           "Its profile permits hunting through Small tier.",
           "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (10 vs 8), a committed straight fight favours Deinonychus.",
-          "12 shared mapped areas make contact plausible."
+          "1 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 100% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 10 on Deinonychus (55 to kill); a Deinonychus bite lands 100 back (4 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 8,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 10,
+            "defenderHit": 100,
+            "attackerBurst": 10,
+            "defenderBurst": 100,
+            "attackerHitsToKill": 55,
+            "defenderHitsToKill": 4,
+            "attackerDps": 10,
+            "defenderDps": 100,
+            "attackerTimeToKill": 55,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0.01,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 8,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 0.5
+            }
+          },
+          "label": "1 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 8 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 94% of its health left.",
+            "attackers": 10,
+            "defenders": 8
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinonychus is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "family": "latenivenatrix",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Latenivenatrix is legal quarry, but not a comfortable fight",
+        "summary": "Latenivenatrix is within the legal hunt ceiling. Compsognathus is 16% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Small tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 1075,
+          "speedMarginPct": 16.3,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": 50,
+          "label": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "mudflats",
+            "cliff-edge-falls",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.55,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Small tier.",
+          "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
+          "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 6 on Latenivenatrix (88 to kill); a Latenivenatrix bite lands 140 back (3 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 6,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 6,
+            "defenderHit": 140,
+            "attackerBurst": 6,
+            "defenderBurst": 315,
+            "attackerHitsToKill": 88,
+            "defenderHitsToKill": 3,
+            "attackerDps": 5.7,
+            "defenderDps": 140,
+            "attackerTimeToKill": 88,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0.006,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 6,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 0.5
+            }
+          },
+          "label": "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 6 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 6,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 5 s with 95% of its health left.",
+            "attackers": 10,
+            "defenders": 6
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "latenivenatrix",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Latenivenatrix",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Latenivenatrix is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [],
+      "opportunities": [
+        {
+          "id": "pachycephalosaurus",
+          "name": "Pachycephalosaurus",
+          "family": "pachycephalosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Pachycephalosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Pachycephalosaurus is within the legal hunt ceiling. Compsognathus is 19% faster on land; a clean escape is unlikely once spotted. Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Small tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1250,
+            "targetSpeed": 1050,
+            "speedMarginPct": 19,
+            "attackerDurationSeconds": 375,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 124.6,
+            "label": "Compsognathus is 19% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.45,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Small tier.",
+            "Compsognathus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Compsognathus bite lands 4 on Pachycephalosaurus (125 to kill); a Pachycephalosaurus headbutt lands 300 back (2 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": null,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 4,
+              "defenderHit": 300,
+              "attackerBurst": 4,
+              "defenderBurst": 400,
+              "attackerHitsToKill": 125,
+              "defenderHitsToKill": 2,
+              "attackerDps": 4,
+              "defenderDps": 231.6,
+              "attackerTimeToKill": 125,
+              "defenderTimeToKill": 2,
+              "attackerBleed": 0.004,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": null,
+            "label": "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 400,
+            "targetCombatWeight": 2000,
+            "attackerGroupLimit": 10,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": true,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "Pachycephalosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": 10,
+              "defenders": null
+            }
+          },
+          "attackerId": "compsognathus",
+          "targetId": "pachycephalosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Compsognathus",
+            "targetName": "Pachycephalosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Compsognathus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Pachycephalosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "camptosaurus",
+          "name": "Camptosaurus",
+          "family": "camptosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Camptosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Camptosaurus is within the legal hunt ceiling. Compsognathus is 11% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 1 Camptosaurus: the Camptosaurus side wins in about 5 s with 94% of its health left.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Small tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1250,
+            "targetSpeed": 1125,
+            "speedMarginPct": 11.1,
+            "attackerDurationSeconds": 375,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": 50,
+            "label": "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "volcano-islands",
+              "coastland-swamp"
+            ],
+            "overlap": 0.15,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Small tier.",
+            "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted.",
+            "1 Compsognathus vs 1 Camptosaurus: the Camptosaurus side wins in about 5 s with 94% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Compsognathus bite lands 8 on Camptosaurus (92 to kill); a Camptosaurus bite lands 79 back (6 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 8,
+              "defenderHit": 79,
+              "attackerBurst": 8,
+              "defenderBurst": 79,
+              "attackerHitsToKill": 92,
+              "defenderHitsToKill": 6,
+              "attackerDps": 7.6,
+              "defenderDps": 78.8,
+              "attackerTimeToKill": 92,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0.008,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.94,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.25
+              }
+            },
+            "label": "1 Compsognathus vs 1 Camptosaurus: the Camptosaurus side wins in about 5 s with 94% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 400,
+            "targetCombatWeight": 1050,
+            "attackerGroupLimit": 10,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "10 Compsognathus vs 1 Camptosaurus: the Compsognathus side wins in about 10 s with 81% of its health left.",
+              "attackers": 10,
+              "defenders": 1
+            }
+          },
+          "attackerId": "compsognathus",
+          "targetId": "camptosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Compsognathus",
+            "targetName": "Camptosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Camptosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "compsognathus": {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "cw": 400,
+        "hp": 400,
+        "armor": 1,
+        "dps": 20,
+        "primary": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0.02,
+        "bleedHealRate": 0.052,
+        "estimated": false,
+        "huntLimit": 10,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "psittacosaurus": {
+        "id": "psittacosaurus",
+        "name": "Psittacosaurus",
+        "cw": 900,
+        "hp": 500,
+        "armor": 1,
+        "dps": 52.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 80,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Charge",
+          "Burrow"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "dryosaurus": {
+        "id": "dryosaurus",
+        "name": "Dryosaurus",
+        "cw": 1000,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Kick",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Kick",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "struthiomimus": {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "cw": 1400,
+        "hp": 450,
+        "armor": 1,
+        "dps": 25,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Kick"
+        ],
+        "bleedPerSecond": 0.5,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "halszkaraptor": {
+        "id": "halszkaraptor",
+        "name": "Halszkaraptor",
+        "cw": 400,
+        "hp": 400,
+        "armor": 1,
+        "dps": 27.5,
+        "primary": {
+          "label": "Kick",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Kick",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Kick"
+        ],
+        "bleedPerSecond": 0.1,
+        "bleedHealRate": 0.052,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "pachycephalosaurus": {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "cw": 2000,
+        "hp": 500,
+        "armor": 1,
+        "dps": 46.33,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 80,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt",
+          "Batter",
+          "Charge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "camptosaurus": {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "cw": 1050,
+        "hp": 700,
+        "armor": 1,
+        "dps": 30,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Tiny",
@@ -14703,7 +15631,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

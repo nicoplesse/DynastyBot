@@ -61,11 +61,11 @@ Cows live in matriarchies of up to 12, led by an experienced matriarch who remem
 
 **Gefährlich für dich:**
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
-- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
 - **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
-- **Latenivenatrix** (spürbar): Latenivenatrix can create a credible fight
-- **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
-- **Sarcosuchus** (hoch): Sarcosuchus can create a real pursuit problem
+- **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
+- **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 
 **Beute & Chancen:**
 

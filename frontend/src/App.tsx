@@ -51,7 +51,7 @@ export default function App() {
     window.addEventListener('hashchange', update);
     return () => window.removeEventListener('hashchange', update);
   }, []);
-  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/rules') || route.startsWith('/animals')) return <Explorer route={route} />;
+  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd')) return <Explorer route={route} />;
   return <ImportApp />;
 }
 
@@ -216,6 +216,7 @@ function ImportApp() {
         <div className="nav-caption">WORKSPACE</div>
         <nav aria-label="Main navigation">
           <button className="nav-item active" aria-current="page" onClick={() => { window.location.hash = '#/import'; }}><span className="nav-symbol">↧</span> Import</button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/herd'; }}><span className="nav-symbol">◆</span> My Dinos</button>
           <div className="nav-divider" />
           <button className="nav-item" onClick={() => { window.location.hash = '#/profiles'; }}><span className="nav-symbol">▤</span> Profiles</button>
           <button className="nav-item" onClick={() => { window.location.hash = '#/rules'; }}><span className="nav-symbol">≡</span> Rules</button>

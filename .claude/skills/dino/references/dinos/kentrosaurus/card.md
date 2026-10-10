@@ -68,10 +68,10 @@ You are a medium, skittish but aggressive herbivore in a 'bristle' of up to 8 wi
 **Gefährlich für dich:**
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 - **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
-- **Achillobator** (spürbar): Achillobator can create a credible fight
-- **Ceratosaurus** (spürbar): Ceratosaurus can create a credible fight
+- **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
 
 **Beute & Chancen:**
 

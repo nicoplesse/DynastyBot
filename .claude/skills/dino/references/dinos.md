@@ -52,7 +52,7 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | rhamphorhynchus | Rhamphorhynchus | Rhamph, Rhamphy | Tiny Cathemeral Aerial Carnivore | Madenhacker + Sittich (Oxpecker + Parakeet) |
 | sarcosuchus | Sarcosuchus | – | Large Cathemeral Semi-Aquatic Carnivore | Sumpfkrokodil + Blatthühnchen (Mugger crocodile + Jacana) |
 | spinosaurus-freshwater | Spinosaurus (Freshwater) | Spinosaurus, Freshwater Spinosaurus, Freshwater Spino, Süßwasser-Spino, Fluss-Spino, Flussherr, Spino, Spoon | Apex Cathemeral Semi-Aquatic Carnivore | Grizzlybär + Leistenkrokodil (Grizzly bear + Saltwater crocodile) |
-| spinosaurus-saltwater | Spinosaurus (Saltwater) | Spinosaurus, Saltwater Spinosaurus, Saltwater Spino, Sea Spino, Salzwasser-Spino, Meeres-Spino, Küsten-Spino, Küstenwächter, Spino, Spoon | Apex Cathemeral Semi-Aquatic Carnivore | Seeleopard + Grauer Riffhai (Leopard seal + Grey reef shark) |
+| spinosaurus-saltwater | Spinosaurus (Saltwater) | Spinosaurus, Saltwater Spinosaurus, Saltwater Spino, Sea Spino, Salzwasser-Spino, Meeres-Spino, Küsten-Spino, Eisbär-Spino, Meeresbär, Spino, Spoon | Apex Cathemeral Semi-Aquatic Carnivore | Eisbär + Walross (Polar bear + Walrus) |
 | stegosaurus | Stegosaurus | Stego | Large Cathemeral Terrestrial Herbivore | Spitzmaulnashorn + Grevyzebra (Black rhinoceros + Grévy's zebra) |
 | struthiomimus | Struthiomimus | – | Small Cathemeral Terrestrial Herbivore | Strauß (Ostrich) |
 | styracosaurus | Styracosaurus | – | Medium Cathemeral Terrestrial Herbivore | Moschusochse + Spießbock (Oryx) (Musk ox + Gemsbok (oryx)) |
@@ -61,7 +61,8 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | thalassodromeus | Thalassodromeus | – | Small Diurnal Aerial Carnivore | Taube + Lachmöwe (Pigeon + Black-headed gull) |
 | therizinosaurus | Therizinosaurus | Theri, Therizino | Apex Nocturnal Terrestrial Herbivore | Kasuar (Cassowary) |
 | torvosaurus | Torvosaurus | Torvo | Large Cathemeral Terrestrial Carnivore | Afrikanischer Löwe (African lion) |
-| tropeognathus | Tropeognathus | – | Small Cathemeral Aerial Carnivore | Silbermöwe + Kormoran (Herring gull + Great cormorant) |
+| tropeognathus-coast | Tropeognathus (Coast) | Tropeognathus, Coast Tropeognathus, Beach Tropeognathus, Coast Trope, Beach Trope, Strand-Trope, Küsten-Trope, Möwen-Trope, Strandpirat | Small Cathemeral Aerial Carnivore | Silbermöwe + Kormoran (Herring gull + Great cormorant) |
+| tropeognathus-ocean | Tropeognathus (Ocean) | Tropeognathus, Ocean Tropeognathus, Sea Tropeognathus, Ocean Trope, Sea Trope, Hochsee-Trope, Meeres-Trope, Albatros-Trope, Sturmsegler | Small Cathemeral Aerial Carnivore | Wanderalbatros + Basstölpel (Wandering albatross + Northern gannet) |
 | tylosaurus | Tylosaurus | Ty, Tylo | Apex Cathemeral Aquatic Carnivore | Orca (Schwertwal) (Orca) |
 | tyrannosaurus | Tyrannosaurus | Rex, T Rex | Apex Cathemeral Terrestrial Carnivore | Eisbär + Waldkauz (Polar bear + Tawny owl) |
 | tyrannotitan | Tyrannotitan | TT, Tyranno, Titan | Apex Nocturnal Terrestrial Carnivore | Tiger + Weißer Hai (Tiger + Great white shark) |

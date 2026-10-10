@@ -66,8 +66,8 @@ You are the heaviest and slowest-walking animal on the map: 9,000 combat weight,
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
-- **Rhamphorhynchus** (hoch): Rhamphorhynchus can create a real pursuit problem
+- **Tyrannotitan** (spürbar): Tyrannotitan can create a credible fight
+- **Rhamphorhynchus** (spürbar): Rhamphorhynchus can create a credible fight
 - **Austroraptor** (spürbar): Austroraptor can create a credible fight
 - **Therizinosaurus** (spürbar): Therizinosaurus can create a credible fight
 - **Giganotosaurus** (conditional): Giganotosaurus matters only if it gets the right opening

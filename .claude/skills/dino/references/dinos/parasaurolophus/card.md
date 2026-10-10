@@ -60,10 +60,10 @@ You are an Apex-sized (5,500 combat weight) but passive herbivore in a herd of u
 **Gefährlich für dich:**
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 - **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
-- **Daspletosaurus** (hoch): Daspletosaurus can create a real pursuit problem
-- **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
-- **Tylosaurus** (hoch): Tylosaurus can create a real pursuit problem
-- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
+- **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
+- **Daspletosaurus** (spürbar): Daspletosaurus can create a credible fight
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Leedsichthys** (conditional): Leedsichthys is a realistic hunting opportunity

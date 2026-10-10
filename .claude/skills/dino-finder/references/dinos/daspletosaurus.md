@@ -56,16 +56,16 @@ You are a large, aggressive tyrannosaurid in a pack of up to 6 led by a dominant
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Yunnanosaurus** (spürbar): Yunnanosaurus can create a credible fight
+- **Yunnanosaurus** (sehr hoch): Yunnanosaurus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
 - **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Parasaurolophus** (hoch): Parasaurolophus is legal quarry, but not a comfortable fight
-- **Lambeosaurus** (hoch): Lambeosaurus is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight

@@ -56,15 +56,15 @@ You are a medium aquatic carnivore in a 'bale' of up to 6 females and 2 males. Y
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Eurhinosaurus** (hoch): Eurhinosaurus can create a real pursuit problem
+- **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
+- **Leedsichthys** (spürbar): Leedsichthys is legal quarry, but not a comfortable fight
 - **Austroraptor** (sehr hoch): Austroraptor is a realistic hunting opportunity
-- **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Lurdusaurus** (hoch): Lurdusaurus is a realistic hunting opportunity
+- **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight
+- **Lurdusaurus** (spürbar): Lurdusaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

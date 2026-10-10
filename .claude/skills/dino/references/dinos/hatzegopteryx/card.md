@@ -56,17 +56,16 @@ You are a Large daytime flier (air sprint 1,100). Once you have paired for life 
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus can create a very narrow escape window
+- **Tropeognathus (Ocean)** (sehr hoch): Tropeognathus (Ocean) can create a very narrow escape window
 - **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
-- **Tropeognathus** (hoch): Tropeognathus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus is a realistic hunting opportunity
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Lambeosaurus** (hoch): Lambeosaurus is a realistic hunting opportunity
-- **Allosaurus** (hoch): Allosaurus is a realistic hunting opportunity
-- **Tropeognathus** (hoch): Tropeognathus is a realistic hunting opportunity
+- **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: DEFENDING A TERRITORY: When in a mated pair, Hatzegopteryx claim large territories consisting of an entire POI, and aggressively chase out any other Hatzegopteryx individuals they are not grouped with.

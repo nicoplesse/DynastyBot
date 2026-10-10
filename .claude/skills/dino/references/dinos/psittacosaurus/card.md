@@ -52,10 +52,12 @@ You are a small herbivore in an unlimited 'passel' led by one elder, the Quillgu
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Compsognathus** (hoch): Compsognathus can create a real pursuit problem
-- **Struthiomimus** (spürbar): Struthiomimus can create a credible fight
-- **Alioramus** (conditional): Alioramus matters only if it gets the right opening
-- **Kelenken** (conditional): Kelenken matters only if it gets the right opening
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
+- **Struthiomimus** (sehr hoch): Struthiomimus can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Austroraptor** (hoch): Austroraptor can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 
 **Beute & Chancen:**
 

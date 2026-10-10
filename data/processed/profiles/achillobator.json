@@ -12093,19 +12093,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Achillobator has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Achillobator has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Kelenken can create a very narrow escape window",
-        "summary": "Kelenken is linked by a specific profile rule. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 88,
+        "summary": "Kelenken is linked by a specific profile rule. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 4 Kelenken vs 1 Achillobator: the Kelenken side wins in about 4 s with 85% of its health left.",
+        "score": 98,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12121,18 +12123,6 @@
           "targetDurationSeconds": 154,
           "durationMarginPct": 8.2,
           "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.7,
-          "cappedPowerRatio": 1.19,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12150,9 +12140,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible."
+          "4 Kelenken vs 1 Achillobator: the Kelenken side wins in about 4 s with 85% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 35 on Achillobator (18 to kill); a Achillobator bite lands 101 back (5 to kill).",
+          "Kelenken's bleed builds faster than Achillobator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 35,
+            "defenderHit": 101,
+            "attackerBurst": 49,
+            "defenderBurst": 201,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 5,
+            "attackerDps": 37.4,
+            "defenderDps": 71.8,
+            "attackerTimeToKill": 16,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0.035,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.85,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.25
+            }
+          },
+          "label": "4 Kelenken vs 1 Achillobator: the Kelenken side wins in about 4 s with 85% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 2 Achillobator: the Kelenken side wins in about 10 s with 50% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Achillobator",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 80,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Kelenken is linked by a specific profile rule."
+        },
         "tags": [
           "endurance"
         ],
@@ -12175,12 +12232,14 @@
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Achillobator: the Alioramus side wins in about 3 s with 93% of its health left.",
         "score": 91,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12196,18 +12255,6 @@
           "targetDurationSeconds": 154,
           "durationMarginPct": -13.6,
           "label": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.86,
-          "cappedPowerRatio": 1.77,
-          "label": "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -12227,9 +12274,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "8 shared mapped areas make contact plausible."
+          "5 Alioramus vs 1 Achillobator: the Alioramus side wins in about 3 s with 93% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 39 on Achillobator (16 to kill); a Achillobator bite lands 82 back (7 to kill)."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 39,
+            "defenderHit": 82,
+            "attackerBurst": 47,
+            "defenderBurst": 163,
+            "attackerHitsToKill": 16,
+            "defenderHitsToKill": 7,
+            "attackerDps": 41.8,
+            "defenderDps": 58.3,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.93,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3
+            }
+          },
+          "label": "5 Alioramus vs 1 Achillobator: the Alioramus side wins in about 3 s with 93% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 2 Achillobator: the Alioramus side wins in about 6 s with 81% of its health left.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Achillobator",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 73,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -12239,12 +12352,14 @@
       {
         "id": "pycnonemosaurus",
         "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Pycnonemosaurus can create a very narrow escape window",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 3 Pycnonemosaurus vs 1 Achillobator: the Pycnonemosaurus side wins in about 3 s with 94% of its health left.",
         "score": 82,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12261,18 +12376,6 @@
           "durationMarginPct": -40.9,
           "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.25,
-          "cappedPowerRatio": 1.69,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12288,9 +12391,75 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "5 shared mapped areas make contact plausible."
+          "3 Pycnonemosaurus vs 1 Achillobator: the Pycnonemosaurus side wins in about 3 s with 94% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 63 on Achillobator (10 to kill); a Achillobator bite lands 56 back (12 to kill)."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 63,
+            "defenderHit": 56,
+            "attackerBurst": 150,
+            "defenderBurst": 112,
+            "attackerHitsToKill": 10,
+            "defenderHitsToKill": 12,
+            "attackerDps": 67.9,
+            "defenderDps": 40,
+            "attackerTimeToKill": 9,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.94,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Achillobator: the Pycnonemosaurus side wins in about 3 s with 94% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Pycnonemosaurus vs 2 Achillobator: the Pycnonemosaurus side wins in about 6 s with 82% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Achillobator",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 64,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -12298,12 +12467,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 3 Allosaurus vs 1 Achillobator: the Allosaurus side wins in about 4 s with 92% of its health left.",
         "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12320,18 +12491,6 @@
           "durationMarginPct": -40.9,
           "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.34,
-          "cappedPowerRatio": 1.81,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12346,10 +12505,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "3 Allosaurus vs 1 Achillobator: the Allosaurus side wins in about 4 s with 92% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 67 on Achillobator (9 to kill); a Achillobator bite lands 52 back (13 to kill).",
+          "Allosaurus's bleed builds faster than Achillobator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 67,
+            "defenderHit": 52,
+            "attackerBurst": 94,
+            "defenderBurst": 105,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 13,
+            "attackerDps": 51.3,
+            "defenderDps": 37.3,
+            "attackerTimeToKill": 12,
+            "defenderTimeToKill": 17,
+            "attackerBleed": 0.151,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.92,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4
+            }
+          },
+          "label": "3 Allosaurus vs 1 Achillobator: the Allosaurus side wins in about 4 s with 92% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 2 Achillobator: the Allosaurus side wins in about 8 s with 77% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Achillobator",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -12359,12 +12585,14 @@
       {
         "id": "yutyrannus",
         "name": "Yutyrannus",
+        "family": "yutyrannus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Yutyrannus can create a real pursuit problem",
-        "summary": "Yutyrannus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Yutyrannus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 4 Yutyrannus vs 1 Achillobator: the Yutyrannus side wins in about 3 s with 94% of its health left.",
         "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12381,18 +12609,6 @@
           "durationMarginPct": -35.1,
           "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.16,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12407,10 +12623,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "4 Yutyrannus vs 1 Achillobator: the Yutyrannus side wins in about 3 s with 94% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 70 on Achillobator (9 to kill); a Achillobator bite lands 60 back (10 to kill).",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 70,
+            "defenderHit": 60,
+            "attackerBurst": 70,
+            "defenderBurst": 121,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 10,
+            "attackerDps": 46.4,
+            "defenderDps": 43.1,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.94,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.25
+            }
+          },
+          "label": "4 Yutyrannus vs 1 Achillobator: the Yutyrannus side wins in about 3 s with 94% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Yutyrannus vs 2 Achillobator: the Yutyrannus side wins in about 7 s with 82% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yutyrannus",
+          "targetName": "Achillobator",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Yutyrannus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -12418,62 +12700,118 @@
         "confidence": "derived"
       },
       {
-        "id": "thalassodromeus",
-        "name": "Thalassodromeus",
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Thalassodromeus can create a real pursuit problem",
-        "summary": "Thalassodromeus is inside the legal hunt range. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. The profile limits are unlimited hunters vs 2 defenders; no invented numeric swarm is used.",
+        "headline": "Deinonychus can create a real pursuit problem",
+        "summary": "Deinonychus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land. 8 Deinonychus vs 1 Achillobator: the Deinonychus side wins in about 6 s with 77% of its health left.",
         "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
-          "reason": "Its profile permits hunting through Medium tier."
+          "reason": "Its profile permits hunting through Apex tier."
         },
         "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1200,
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1100,
           "targetSpeed": 1050,
-          "speedMarginPct": 14.3,
-          "attackerDurationSeconds": 83,
+          "speedMarginPct": 4.8,
+          "attackerDurationSeconds": 200,
           "targetDurationSeconds": 154,
-          "durationMarginPct": -46.1,
-          "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": true,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.75,
-          "cappedPowerRatio": null,
-          "label": "The profile limits are unlimited hunters vs 2 defenders; no invented numeric swarm is used."
+          "durationMarginPct": 29.9,
+          "label": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "steep-run",
+            "big-tree-overlook",
             "cedrus-forest",
+            "twisted-forest",
             "cliff-edge-falls",
             "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
-            "wollemi-forest"
+            "wind-tunnels"
           ],
-          "overlap": 0.5,
+          "overlap": 0.438,
           "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
-          "Its profile permits hunting through Medium tier.",
-          "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
-          "The profile limits are unlimited hunters vs 2 defenders; no invented numeric swarm is used.",
-          "7 shared mapped areas make contact plausible."
+          "Its profile permits hunting through Apex tier.",
+          "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "8 Deinonychus vs 1 Achillobator: the Deinonychus side wins in about 6 s with 77% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 14 on Achillobator (42 to kill); a Achillobator bite lands 245 back (3 to kill)."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 14,
+            "defenderHit": 245,
+            "attackerBurst": 14,
+            "defenderBurst": 490,
+            "attackerHitsToKill": 42,
+            "defenderHitsToKill": 3,
+            "attackerDps": 14.3,
+            "defenderDps": 175,
+            "attackerTimeToKill": 42,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 6,
+            "attackersLeft": 7,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.77,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.25
+            }
+          },
+          "label": "8 Deinonychus vs 1 Achillobator: the Deinonychus side wins in about 6 s with 77% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 2800,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "8 Deinonychus vs 2 Achillobator: the Achillobator side wins in about 19 s with 14% of its health left, too narrow to call.",
+            "attackers": 8,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "achillobator",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinonychus",
+          "targetName": "Achillobator",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinonychus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -12483,12 +12821,14 @@
       {
         "id": "parasaurolophus",
         "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Parasaurolophus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Achillobator is 14% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 95,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Achillobator is 14% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Parasaurolophus: the Parasaurolophus side wins in about 4 s with 96% of its health left.",
+        "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12504,18 +12844,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 208,
           "label": "Achillobator is 14% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.51,
-          "cappedPowerRatio": 1.05,
-          "label": "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12536,10 +12864,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Achillobator is 14% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Achillobator vs 2 Parasaurolophus: the Parasaurolophus side wins in about 4 s with 96% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Achillobator bite lands 32 on Parasaurolophus (44 to kill); a Parasaurolophus bite lands 49 back (13 to kill).",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 32,
+            "defenderHit": 49,
+            "attackerBurst": 65,
+            "defenderBurst": 157,
+            "attackerHitsToKill": 44,
+            "defenderHitsToKill": 13,
+            "attackerDps": 23.1,
+            "defenderDps": 73.7,
+            "attackerTimeToKill": 61,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.96,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.25
+            }
+          },
+          "label": "1 Achillobator vs 2 Parasaurolophus: the Parasaurolophus side wins in about 4 s with 96% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Achillobator vs 2 Parasaurolophus: the Parasaurolophus side wins in about 21 s with 48% of its health left.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Achillobator is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "pounce"
         ],
@@ -12562,12 +12956,14 @@
       {
         "id": "iguanodon",
         "name": "Iguanodon",
+        "family": "iguanodon",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Iguanodon is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 88,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Iguanodon is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land. 1 Achillobator vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 97% of its health left.",
+        "score": 63,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12583,18 +12979,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 69.2,
           "label": "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.67,
-          "cappedPowerRatio": 1.02,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12615,84 +12999,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Achillobator vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 97% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Achillobator bite lands 47 on Iguanodon (18 to kill); a Iguanodon kick lands 90 back (7 to kill).",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
-        "tags": [
-          "pounce",
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "achillobator",
-            "profileName": "Achillobator",
-            "section": "Engagement Limits",
-            "text": "When hunting alongside Latenivenatrix companions, Achillobator target larger prey first, such as; Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements."
-          },
-          {
-            "profileId": "achillobator",
-            "profileName": "Achillobator",
-            "section": "Hunting with Latenivenatrix",
-            "text": "As a result, they target larger prey first, such as: Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "eotriceratops",
-        "name": "Eotriceratops",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Eotriceratops is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Achillobator is 35% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 86,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 775,
-          "speedMarginPct": 35.5,
-          "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 45,
-          "durationMarginPct": 242.2,
-          "label": "Achillobator is 35% faster on land; a clean escape is unlikely once spotted."
-        },
         "fight": {
-          "verdict": "close",
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 47,
+            "defenderHit": 90,
+            "attackerBurst": 93,
+            "defenderBurst": 128,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 7,
+            "attackerDps": 33.3,
+            "defenderDps": 105,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2
+            }
+          },
+          "label": "1 Achillobator vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 97% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
           "attackerCombatWeight": 2800,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 4200,
           "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
+          "targetDefenderLimit": 3,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.51,
-          "cappedPowerRatio": 1.05,
-          "label": "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Achillobator vs 3 Iguanodon: the Iguanodon side wins in about 11 s with 56% of its health left.",
+            "attackers": 5,
+            "defenders": 3
+          }
         },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "hollow-hills"
-          ],
-          "overlap": 0.077,
-          "label": "They overlap in 1 mapped area, so the matchup is situational."
+        "attackerId": "achillobator",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land.",
+          "baseScore": 80,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
         },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Achillobator is 35% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 1 mapped area, so the matchup is situational.",
-          "Eotriceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-        ],
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -12716,12 +13093,14 @@
       {
         "id": "pachyrhinosaurus",
         "name": "Pachyrhinosaurus",
+        "family": "pachyrhinosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Pachyrhinosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Achillobator is 17% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (5 vs 4), a committed straight fight favours Pachyrhinosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Achillobator is 17% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 2 s with 98% of its health left.",
         "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12738,18 +13117,6 @@
           "durationMarginPct": 54,
           "label": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.62,
-          "cappedPowerRatio": 0.75,
-          "label": "Even at the legal group cap (5 vs 4), a committed straight fight favours Pachyrhinosaurus."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12762,11 +13129,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (5 vs 4), a committed straight fight favours Pachyrhinosaurus.",
+          "1 Achillobator vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 2 s with 98% of its health left.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Achillobator bite lands 44 on Pachyrhinosaurus (19 to kill); a Pachyrhinosaurus crusher lands 80 back (8 to kill).",
           "Pachyrhinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 44,
+            "defenderHit": 80,
+            "attackerBurst": 87,
+            "defenderBurst": 113,
+            "attackerHitsToKill": 19,
+            "defenderHitsToKill": 8,
+            "attackerDps": 31.1,
+            "defenderDps": 84.4,
+            "attackerTimeToKill": 26,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.98,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2
+            }
+          },
+          "label": "1 Achillobator vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 2 s with 98% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Achillobator vs 4 Pachyrhinosaurus: the Pachyrhinosaurus side wins in about 10 s with 73% of its health left.",
+            "attackers": 5,
+            "defenders": 4
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "pachyrhinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Pachyrhinosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -12788,14 +13221,145 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
+        "id": "eotriceratops",
+        "name": "Eotriceratops",
+        "family": "eotriceratops",
         "direction": "opportunity",
-        "band": "severe",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Eotriceratops is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Achillobator is 35% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Eotriceratops: the Eotriceratops side wins in about 6 s with 95% of its health left.",
+        "score": 61,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 775,
+          "speedMarginPct": 35.5,
+          "attackerDurationSeconds": 154,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 242.2,
+          "label": "Achillobator is 35% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "hollow-hills"
+          ],
+          "overlap": 0.077,
+          "label": "They overlap in 1 mapped area, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Achillobator is 35% faster on land; a clean escape is unlikely once spotted.",
+          "1 Achillobator vs 2 Eotriceratops: the Eotriceratops side wins in about 6 s with 95% of its health left.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Achillobator bite lands 30 on Eotriceratops (44 to kill); a Eotriceratops bite lands 59 back (11 to kill).",
+          "Eotriceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 59,
+            "attackerBurst": 59,
+            "defenderBurst": 196,
+            "attackerHitsToKill": 44,
+            "defenderHitsToKill": 11,
+            "attackerDps": 21.2,
+            "defenderDps": 53,
+            "attackerTimeToKill": 61,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 6,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.95,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "1 Achillobator vs 2 Eotriceratops: the Eotriceratops side wins in about 6 s with 95% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "5 Achillobator vs 2 Eotriceratops: the Eotriceratops side wins in about 42 s with 11% of its health left, too narrow to call.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "eotriceratops",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Eotriceratops",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Achillobator is 35% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [
+          "pounce",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "achillobator",
+            "profileName": "Achillobator",
+            "section": "Engagement Limits",
+            "text": "When hunting alongside Latenivenatrix companions, Achillobator target larger prey first, such as; Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements."
+          },
+          {
+            "profileId": "achillobator",
+            "profileName": "Achillobator",
+            "section": "Hunting with Latenivenatrix",
+            "text": "As a result, they target larger prey first, such as: Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "family": "ceratosaurus",
+        "direction": "opportunity",
+        "band": "meaningful",
         "kind": "quarry",
-        "headline": "Anodontosaurus is a realistic hunting opportunity",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Achillobator is 59% faster on land; a clean escape is unlikely once spotted. At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 83,
+        "headline": "Ceratosaurus is a realistic hunting opportunity",
+        "summary": "Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Ceratosaurus: the Ceratosaurus side wins in about 12 s with 14% of its health left, too narrow to call.",
+        "score": 60,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12803,37 +13367,25 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "attacker-faster",
+          "verdict": "close-chase",
           "attackerSpeed": 1050,
-          "targetSpeed": 660,
-          "speedMarginPct": 59.1,
+          "targetSpeed": 1050,
+          "speedMarginPct": 0,
           "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": 23.2,
-          "label": "Achillobator is 59% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.62,
-          "cappedPowerRatio": 1.99,
-          "label": "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 7.7,
+          "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "steep-run",
+            "big-tree-overlook",
             "cedrus-forest",
             "cliff-edge-falls",
             "east-passage",
             "redwoods",
             "wind-tunnels",
-            "hollow-hills",
             "wollemi-forest"
           ],
           "overlap": 0.615,
@@ -12841,12 +13393,78 @@
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "Achillobator is 59% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+          "1 Achillobator vs 1 Ceratosaurus: the Ceratosaurus side wins in about 12 s with 14% of its health left, too narrow to call.",
           "8 shared mapped areas make contact plausible.",
-          "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "One-on-one, a Achillobator bite lands 75 on Ceratosaurus (10 to kill); a Ceratosaurus bite lands 37 back (17 to kill).",
+          "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 75,
+            "defenderHit": 37,
+            "attackerBurst": 151,
+            "defenderBurst": 84,
+            "attackerHitsToKill": 10,
+            "defenderHitsToKill": 17,
+            "attackerDps": 53.8,
+            "defenderDps": 50.1,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.14,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 12
+            }
+          },
+          "label": "1 Achillobator vs 1 Ceratosaurus: the Ceratosaurus side wins in about 12 s with 14% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.",
+            "attackers": 5,
+            "defenders": 1
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 52,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Ceratosaurus is within the legal hunt ceiling."
+        },
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -12855,14 +13473,16 @@
         "confidence": "derived"
       },
       {
-        "id": "barsboldia",
-        "name": "Barsboldia",
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "family": "megalania",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "quarry",
-        "headline": "Barsboldia is a realistic hunting opportunity",
-        "summary": "Barsboldia is within the legal hunt ceiling. Achillobator is 24% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+        "score": 60,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12870,52 +13490,216 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "attacker-faster",
+          "verdict": "close-chase",
           "attackerSpeed": 1050,
-          "targetSpeed": 850,
-          "speedMarginPct": 23.5,
+          "targetSpeed": 1025,
+          "speedMarginPct": 2.4,
           "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 50,
-          "durationMarginPct": 208,
-          "label": "Achillobator is 24% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.51,
-          "cappedPowerRatio": 1.05,
-          "label": "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 7.7,
+          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
             "twisted-forest",
             "mudflats",
             "cliff-edge-falls",
             "east-passage",
-            "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
             "wollemi-forest"
           ],
-          "overlap": 0.55,
-          "label": "11 shared mapped areas make contact plausible."
+          "overlap": 0.278,
+          "label": "5 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "Achillobator is 24% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "11 shared mapped areas make contact plausible.",
+          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Achillobator bite lands 72 on Megalania (Temperate) (8 to kill); a Megalania (Temperate) bite lands 37 back (17 to kill).",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 37,
+            "attackerBurst": 144,
+            "defenderBurst": 74,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 17,
+            "attackerDps": 51.3,
+            "defenderDps": 46.2,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.21,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.25
+            }
+          },
+          "label": "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 2 s with 97% of its health left.",
+            "attackers": 5,
+            "defenders": 1
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "megalania-temperate",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Megalania (Temperate)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 52,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "pounce"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "family": "megalania",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Megalania (Arid) is a realistic hunting opportunity",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+        "score": 51,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1050,
+          "targetSpeed": 1025,
+          "speedMarginPct": 2.4,
+          "attackerDurationSeconds": 154,
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 7.7,
+          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest"
+          ],
+          "overlap": 0.167,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Achillobator bite lands 72 on Megalania (Arid) (8 to kill); a Megalania (Arid) bite lands 37 back (17 to kill).",
+          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 37,
+            "attackerBurst": 144,
+            "defenderBurst": 74,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 17,
+            "attackerDps": 51.3,
+            "defenderDps": 46.2,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.21,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.25
+            }
+          },
+          "label": "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 2 s with 97% of its health left.",
+            "attackers": 5,
+            "defenders": 1
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "megalania-arid",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Megalania (Arid)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 43,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
         "tags": [
           "pounce"
         ],
@@ -12923,6 +13707,2200 @@
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "family": "thalassodromeus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Thalassodromeus can create a real pursuit problem",
+          "summary": "Thalassodromeus is inside the legal hunt range. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1200,
+            "targetSpeed": 1050,
+            "speedMarginPct": 14.3,
+            "attackerDurationSeconds": 83,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -46.1,
+            "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.5,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Thalassodromeus bite lands 30 on Achillobator (20 to kill); a Achillobator bite lands 93 back (6 to kill)."
+          ],
+          "fight": {
+            "attackers": null,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 30,
+              "defenderHit": 93,
+              "attackerBurst": 53,
+              "defenderBurst": 187,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 6,
+              "attackerDps": 25.4,
+              "defenderDps": 66.7,
+              "attackerTimeToKill": 24,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": null,
+            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": true,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": null,
+              "defenders": 2
+            }
+          },
+          "attackerId": "thalassodromeus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Thalassodromeus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Thalassodromeus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Achillobator: the Quetzalcoatlus side wins in about 7 s with 79% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1050,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -67.5,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "mudflats",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.4,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Achillobator: the Quetzalcoatlus side wins in about 7 s with 79% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 79 on Achillobator (8 to kill); a Achillobator bite lands 71 back (9 to kill).",
+            "Quetzalcoatlus's bleed builds faster than Achillobator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 79,
+              "defenderHit": 71,
+              "attackerBurst": 88,
+              "defenderBurst": 143,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 9,
+              "attackerDps": 28.2,
+              "defenderDps": 50.9,
+              "attackerTimeToKill": 21,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0.049,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 7,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.79,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 7.25
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Achillobator: the Quetzalcoatlus side wins in about 7 s with 79% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Quetzalcoatlus vs 2 Achillobator: the Quetzalcoatlus side wins in about 21 s with 19% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land. 5 Dilophosaurus vs 1 Achillobator: the Dilophosaurus side wins in about 3 s with 94% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": 8.2,
+            "label": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.385,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "5 Dilophosaurus vs 1 Achillobator: the Dilophosaurus side wins in about 3 s with 94% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 43 on Achillobator (15 to kill); a Achillobator bite lands 82 back (7 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 43,
+              "defenderHit": 82,
+              "attackerBurst": 43,
+              "defenderBurst": 163,
+              "attackerHitsToKill": 15,
+              "defenderHitsToKill": 7,
+              "attackerDps": 42.9,
+              "defenderDps": 58.3,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.94,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Achillobator: the Dilophosaurus side wins in about 3 s with 94% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Dilophosaurus vs 2 Achillobator: the Dilophosaurus side wins in about 6 s with 81% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Concavenator can create a real pursuit problem",
+          "summary": "Concavenator is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land. 4 Concavenator vs 1 Achillobator: the Concavenator side wins in about 4 s with 87% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": 8.4,
+            "label": "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.235,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land.",
+            "4 Concavenator vs 1 Achillobator: the Concavenator side wins in about 4 s with 87% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Concavenator bite lands 38 on Achillobator (16 to kill); a Achillobator bite lands 93 back (6 to kill).",
+            "Concavenator's bleed builds faster than Achillobator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 93,
+              "attackerBurst": 60,
+              "defenderBurst": 187,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 6,
+              "attackerDps": 40.3,
+              "defenderDps": 66.7,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0.038,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.87,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "4 Concavenator vs 1 Achillobator: the Concavenator side wins in about 4 s with 87% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Concavenator vs 2 Achillobator: the Concavenator side wins in about 9 s with 58% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "concavenator",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Concavenator",
+            "targetName": "Achillobator",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Concavenator has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a real pursuit problem",
+          "summary": "Ceratosaurus is inside the legal hunt range. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 4 Ceratosaurus vs 1 Achillobator: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -7.1,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "4 Ceratosaurus vs 1 Achillobator: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 37 on Achillobator (17 to kill); a Achillobator bite lands 75 back (10 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 37,
+              "defenderHit": 75,
+              "attackerBurst": 84,
+              "defenderBurst": 151,
+              "attackerHitsToKill": 17,
+              "defenderHitsToKill": 10,
+              "attackerDps": 50.1,
+              "defenderDps": 53.8,
+              "attackerTimeToKill": 12,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Achillobator: the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Ceratosaurus vs 2 Achillobator: the Ceratosaurus side wins in about 6 s with 84% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "family": "utahraptor",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Utahraptor can create a real pursuit problem",
+          "summary": "Utahraptor is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 5 Utahraptor vs 1 Achillobator: the Utahraptor side wins in about 3 s with 93% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1050,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -0.1,
+            "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.385,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+            "5 Utahraptor vs 1 Achillobator: the Utahraptor side wins in about 3 s with 93% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Utahraptor bite lands 38 on Achillobator (16 to kill); a Achillobator bite lands 93 back (6 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 93,
+              "attackerBurst": 56,
+              "defenderBurst": 187,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 6,
+              "attackerDps": 43.2,
+              "defenderDps": 66.7,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.93,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "5 Utahraptor vs 1 Achillobator: the Utahraptor side wins in about 3 s with 93% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Utahraptor vs 2 Achillobator: the Utahraptor side wins in about 6 s with 79% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Utahraptor",
+            "targetName": "Achillobator",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Utahraptor is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "barsboldia",
+          "name": "Barsboldia",
+          "family": "barsboldia",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+          "summary": "Barsboldia is within the legal hunt ceiling. Achillobator is 24% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 850,
+            "speedMarginPct": 23.5,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 208,
+            "label": "Achillobator is 24% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.55,
+            "label": "11 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 24% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+            "11 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 32 on Barsboldia (47 to kill); a Barsboldia kick lands 98 back (7 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 98,
+              "attackerBurst": 65,
+              "defenderBurst": 295,
+              "attackerHitsToKill": 47,
+              "defenderHitsToKill": 7,
+              "attackerDps": 23.1,
+              "defenderDps": 131.4,
+              "attackerTimeToKill": 65,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.5
+              }
+            },
+            "label": "1 Achillobator vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Achillobator vs 2 Barsboldia: the Barsboldia side wins in about 12 s with 73% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "barsboldia",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Barsboldia",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 24% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Barsboldia is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. Achillobator is 59% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 82% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 660,
+            "speedMarginPct": 59.1,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 23.2,
+            "label": "Achillobator is 59% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 59% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 82% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 29 on Anodontosaurus (30 to kill); a Anodontosaurus tail slam lands 113 back (6 to kill).",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 29,
+              "defenderHit": 113,
+              "attackerBurst": 58,
+              "defenderBurst": 193,
+              "attackerHitsToKill": 30,
+              "defenderHitsToKill": 6,
+              "attackerDps": 20.7,
+              "defenderDps": 84.8,
+              "attackerTimeToKill": 41,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 7,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.82,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 7.25
+              }
+            },
+            "label": "1 Achillobator vs 1 Anodontosaurus: the Anodontosaurus side wins in about 7 s with 82% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 1 Anodontosaurus: the Achillobator side wins in about 9 s with 76% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 59% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+          "summary": "Deinocheirus is within the legal hunt ceiling. Achillobator is 31% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Deinocheirus: the Deinocheirus side wins in about 5 s with 94% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 800,
+            "speedMarginPct": 31.3,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 242.2,
+            "label": "Achillobator is 31% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 31% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 2 Deinocheirus: the Deinocheirus side wins in about 5 s with 94% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 32 on Deinocheirus (30 to kill); a Deinocheirus claw lands 88 back (7 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 88,
+              "attackerBurst": 65,
+              "defenderBurst": 98,
+              "attackerHitsToKill": 30,
+              "defenderHitsToKill": 7,
+              "attackerDps": 23.1,
+              "defenderDps": 62.2,
+              "attackerTimeToKill": 41,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0,
+              "defenderBleed": 0.132,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.94,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5
+              }
+            },
+            "label": "1 Achillobator vs 2 Deinocheirus: the Deinocheirus side wins in about 5 s with 94% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Achillobator vs 2 Deinocheirus: the Achillobator side wins in about 24 s with 32% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 31% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "family": "therizinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Therizinosaurus is within the legal hunt ceiling. Achillobator is 24% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 850,
+            "speedMarginPct": 23.5,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 123.3,
+            "label": "Achillobator is 24% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.583,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 24% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 97% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 32 on Therizinosaurus (31 to kill); a Therizinosaurus claw attack lands 177 back (4 to kill).",
+            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 177,
+              "attackerBurst": 65,
+              "defenderBurst": 255,
+              "attackerHitsToKill": 31,
+              "defenderHitsToKill": 4,
+              "attackerDps": 23.1,
+              "defenderDps": 133.6,
+              "attackerTimeToKill": 43,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.25
+              }
+            },
+            "label": "1 Achillobator vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 97% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Achillobator vs 2 Therizinosaurus: the Therizinosaurus side wins in about 11 s with 61% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "therizinosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Therizinosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 24% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "family": "sarcosuchus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
+          "summary": "Sarcosuchus is within the legal hunt ceiling. Achillobator is 17% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 40,
+            "durationMarginPct": 285,
+            "label": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.4,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 44 on Sarcosuchus (14 to kill); a Sarcosuchus tail lands 64 back (10 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 44,
+              "defenderHit": 64,
+              "attackerBurst": 87,
+              "defenderBurst": 338,
+              "attackerHitsToKill": 14,
+              "defenderHitsToKill": 10,
+              "attackerDps": 31.1,
+              "defenderDps": 145.7,
+              "attackerTimeToKill": 19,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 3,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.5
+              }
+            },
+            "label": "1 Achillobator vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Achillobator vs 3 Sarcosuchus: the Sarcosuchus side wins in about 8 s with 62% of its health left.",
+              "attackers": 5,
+              "defenders": 3
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "sarcosuchus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Sarcosuchus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Sarcosuchus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "stegosaurus",
+          "name": "Stegosaurus",
+          "family": "stegosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Stegosaurus is within the legal hunt ceiling. Achillobator is 17% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 144.4,
+            "label": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "wollemi-forest"
+            ],
+            "overlap": 0.357,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
+            "1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 39 on Stegosaurus (21 to kill); a Stegosaurus tail attack lands 143 back (5 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 39,
+              "defenderHit": 143,
+              "attackerBurst": 78,
+              "defenderBurst": 286,
+              "attackerHitsToKill": 21,
+              "defenderHitsToKill": 5,
+              "attackerDps": 28,
+              "defenderDps": 160.7,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 1.171,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2
+              }
+            },
+            "label": "1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 10 s with 50% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "stegosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Stegosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Stegosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "iguanodon": {
+        "id": "iguanodon",
+        "name": "Iguanodon",
+        "cw": 4200,
+        "hp": 800,
+        "armor": 1,
+        "dps": 70,
+        "primary": {
+          "label": "Kick",
+          "damage": 60,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 85,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Back Kick",
+          "Arm Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "pachyrhinosaurus": {
+        "id": "pachyrhinosaurus",
+        "name": "Pachyrhinosaurus",
+        "cw": 4500,
+        "hp": 800,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Crusher",
+          "damage": 50,
+          "cooldown": 0.5
+        },
+        "burst": {
+          "label": "Blast Stinger",
+          "damage": 70,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Crusher",
+          "Blast Stinger"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "eotriceratops": {
+        "id": "eotriceratops",
+        "name": "Eotriceratops",
+        "cw": 5500,
+        "hp": 1300,
+        "armor": 1.2,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 100,
+          "cooldown": 60,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Head Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "utahraptor": {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "cw": 2100,
+        "hp": 550,
+        "armor": 1,
+        "dps": 57.57,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunge",
+          "damage": 75,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite",
+          "Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "stegosaurus": {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "cw": 5000,
+        "hp": 800,
+        "armor": 1,
+        "dps": 90,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 160,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.656,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Mutation-specific risk",
@@ -12961,7 +15939,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

@@ -58,11 +58,11 @@ You are the smallest carnivore on the roster (Tiny, 400 combat weight) in an unl
 - **Latenivenatrix** (conditional): Latenivenatrix matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Psittacosaurus** (hoch): Psittacosaurus is legal quarry, but not a comfortable fight
-- **Dryosaurus** (hoch): Dryosaurus is legal quarry, but not a comfortable fight
-- **Camptosaurus** (hoch): Camptosaurus is a realistic hunting opportunity
+- **Psittacosaurus** (spürbar): Psittacosaurus is legal quarry, but not a comfortable fight
+- **Dryosaurus** (spürbar): Dryosaurus is legal quarry, but not a comfortable fight
 - **Struthiomimus** (spürbar): Struthiomimus is legal quarry, but not a comfortable fight
 - **Halszkaraptor** (spürbar): Halszkaraptor is legal quarry, but not a comfortable fight
 - **Deinonychus** (spürbar): Deinonychus is legal quarry, but not a comfortable fight
+- **Latenivenatrix** (spürbar): Latenivenatrix is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

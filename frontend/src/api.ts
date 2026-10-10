@@ -1,3 +1,5 @@
+import type { CombatStats, EntryCore, FightResult, MatchupBand } from '../../shared/combat-sim.mjs';
+
 export interface ImageRecord {
   file: string;
   label: string;
@@ -87,13 +89,14 @@ export interface MapIndex {
   regions: Record<string, { name: string; biome: string | null; moisture: string | null; dinoIds: string[]; roles: Record<string, string[]> }>;
   dinos: Record<string, { name: string; classification: string | null; isDry: boolean; isAquatic: boolean; moisture: string[]; biomes: string[]; regions: string[]; variants: string[] }>;
 }
-export type MatchupBand = 'severe' | 'high' | 'meaningful' | 'conditional';
+export type { MatchupBand };
 export interface MatchupEntry {
   id: string; name: string; direction: 'threat' | 'opportunity'; band: MatchupBand; kind: string;
   headline: string; summary: string; score: number; tags: string[]; confidence: 'profile-specific' | 'derived' | 'low';
   intent: { allowed: boolean; explicit?: boolean; conditional?: boolean; reason: string };
   chase: { mode: 'land' | 'water' | 'air-to-land'; verdict: string; attackerSpeed: number; targetSpeed: number; speedMarginPct: number; attackerDurationSeconds: number; targetDurationSeconds: number; durationMarginPct: number; label: string };
-  fight: { verdict: string; attackerCombatWeight: number; targetCombatWeight: number; attackerGroupLimit: number; targetDefenderLimit: number; attackerGroupUnlimited: boolean; targetDefendersUnlimited: boolean; soloWeightRatio: number; cappedPowerRatio: number | null; label: string };
+  fight: FightResult & { attackerCombatWeight: number; targetCombatWeight: number; attackerGroupLimit: number; targetDefenderLimit: number; attackerGroupUnlimited: boolean; targetDefendersUnlimited: boolean; legal: { verdict: string; label: string; attackers: number | null; defenders: number | null } };
+  attackerId: string; targetId: string; family: string; visible: boolean; core: EntryCore;
   encounter: { level: 'frequent' | 'possible' | 'rare'; sharedRegions: string[]; overlap: number; label: string };
   facts: string[];
   evidence: Array<{ profileId: string; profileName: string; section: string; text: string }>;
@@ -103,9 +106,12 @@ export interface Matchups {
   speedKnown: boolean;
   summary: string;
   threats: MatchupEntry[]; opportunities: MatchupEntry[];
+  reserve: { threats: MatchupEntry[]; opportunities: MatchupEntry[] };
+  listLimits: { threats: number; opportunities: number };
+  roster: Record<string, CombatStats>;
   specialRisks: Array<{ title: string; summary: string; evidence: { profileId: string; profileName: string; section: string; text: string } }>;
   traits: { tier: string | null; diet: string | null; habitat: string | null; combatWeight: number | null; sprintSpeed: number | null; sprintDurationSeconds: number | null; waterSprintSpeed: number | null; airSprintSpeed: number | null; huntTier: string | null; huntGroupSize: number; engagementLimit: number; huntGroupUnlimited: boolean; engagementUnlimited: boolean; tags: string[]; excludedGroups: string[]; preferredGroups: string[] };
-  methodology: { intent: string; pursuit: string; groups: string; encounter: string };
+  methodology: { intent: string; pursuit: string; groups: string; fight: string; encounter: string };
 }
 export interface MatchupsIndex { schemaVersion: number; generatedAt: string; speedKnown: boolean; dinos: Record<string, Matchups> }
 export type AnalogRole = 'primary' | 'secondary';

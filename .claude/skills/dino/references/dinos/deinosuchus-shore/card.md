@@ -69,14 +69,14 @@ You are an Apex semi-aquatic ambusher with 6,000 combat weight. Every hunt start
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Deinocheirus** (sehr hoch): Deinocheirus can create a very narrow escape window
 - **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
 - **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
+- **Deinocheirus** (spürbar): Deinocheirus can create a credible fight
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
 - **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Deinocheirus** (hoch): Deinocheirus is legal quarry, but not a comfortable fight
+- **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (sehr hoch): Megalania (Arid) is a realistic hunting opportunity
@@ -92,6 +92,7 @@ Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachst
 
 ## Dynasty-Anpassungen
 
+- Clamp Weight: Up to 3900 Combat Weight
 - Combat weight increased to 6000 from 5500
 - Increased health from 900 to 1000
 - Sprint speed reduced by 10%

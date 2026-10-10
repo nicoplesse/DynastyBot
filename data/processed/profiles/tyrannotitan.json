@@ -11323,19 +11323,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Tyrannotitan has 2 high-priority matchups where legal group size, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Tyrannotitan has 3 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "maip",
         "name": "Maip",
+        "family": "maip",
         "direction": "threat",
         "band": "conditional",
         "kind": "conditional",
         "headline": "Maip matters only if it gets the right opening",
-        "summary": "Maip is linked by a specific profile rule. Maip is 14% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "summary": "Maip is linked by a specific profile rule. Maip is 14% faster on land; a clean escape is unlikely once spotted. 3 Maip vs 1 Tyrannotitan: the Maip side wins in about 10 s with 78% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11353,18 +11355,6 @@
           "durationMarginPct": 44.3,
           "label": "Maip is 14% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 4000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.73,
-          "cappedPowerRatio": 0.99,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11379,10 +11369,77 @@
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "Maip is 14% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Maip vs 1 Tyrannotitan: the Maip side wins in about 10 s with 78% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Maip claw lands 40 on Tyrannotitan (23 to kill); a Tyrannotitan bite lands 55 back (12 to kill).",
+          "Maip's bleed builds faster than Tyrannotitan heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 40,
+            "defenderHit": 55,
+            "attackerBurst": 60,
+            "defenderBurst": 138,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 12,
+            "attackerDps": 30.4,
+            "defenderDps": 42.2,
+            "attackerTimeToKill": 30,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0.231,
+            "defenderBleed": 0.33,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.78,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10
+            }
+          },
+          "label": "3 Maip vs 1 Tyrannotitan: the Maip side wins in about 10 s with 78% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Maip vs 2 Tyrannotitan: the Maip side wins in about 32 s with 8% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "maip",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Maip",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Maip is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Maip is linked by a specific profile rule."
+        },
         "tags": [
           "bleed",
           "endurance",
@@ -11407,12 +11464,14 @@
       {
         "id": "tyrannosaurus",
         "name": "Tyrannosaurus",
+        "family": "tyrannosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "high",
         "kind": "predator",
-        "headline": "Tyrannosaurus can create a credible fight",
-        "summary": "Tyrannosaurus is linked by a specific profile rule. Tyrannotitan is 11% faster on land and can normally refuse this fight. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 59,
+        "headline": "Tyrannosaurus can create a real pursuit problem",
+        "summary": "Tyrannosaurus is linked by a specific profile rule. Tyrannotitan is 11% faster on land and can normally refuse this fight. 2 Tyrannosaurus vs 1 Tyrannotitan: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
+        "score": 69,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11429,18 +11488,6 @@
           "durationMarginPct": -28.6,
           "label": "Tyrannotitan is 11% faster on land and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.09,
-          "cappedPowerRatio": 1.09,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -11453,11 +11500,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tyrannotitan is 11% faster on land and can normally refuse this fight.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "2 Tyrannosaurus vs 1 Tyrannotitan: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Tyrannosaurus bite lands 69 on Tyrannotitan (13 to kill); a Tyrannotitan bite lands 33 back (31 to kill).",
           "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 69,
+            "defenderHit": 33,
+            "attackerBurst": 119,
+            "defenderBurst": 83,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 31,
+            "attackerDps": 53.7,
+            "defenderDps": 25.6,
+            "attackerTimeToKill": 17,
+            "defenderTimeToKill": 39,
+            "attackerBleed": 0,
+            "defenderBleed": 0.22,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.89,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8.5
+            }
+          },
+          "label": "2 Tyrannosaurus vs 1 Tyrannotitan: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tyrannosaurus vs 2 Tyrannotitan: the Tyrannosaurus side wins in about 17 s with 67% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannosaurus",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tyrannosaurus",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tyrannotitan is 11% faster on land and can normally refuse this fight.",
+          "baseScore": 51,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Tyrannosaurus is linked by a specific profile rule."
+        },
         "tags": [
           "ambush",
           "endurance",
@@ -11474,14 +11587,146 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "giganotosaurus",
+        "name": "Giganotosaurus",
+        "family": "giganotosaurus",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Giganotosaurus can create a credible fight",
+        "summary": "Giganotosaurus is linked by a specific profile rule. Tyrannotitan is 6% faster on land and can normally refuse this fight. 1 Giganotosaurus vs 1 Tyrannotitan: the Giganotosaurus side wins in about 24 s with 33% of its health left, too narrow to call.",
+        "score": 52,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 850,
+          "targetSpeed": 900,
+          "speedMarginPct": -5.6,
+          "attackerDurationSeconds": 50,
+          "targetDurationSeconds": 63,
+          "durationMarginPct": -20.6,
+          "label": "Tyrannotitan is 6% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "cliff-edge-falls"
+          ],
+          "overlap": 0.231,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Tyrannotitan is 6% faster on land and can normally refuse this fight.",
+          "1 Giganotosaurus vs 1 Tyrannotitan: the Giganotosaurus side wins in about 24 s with 33% of its health left, too narrow to call.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Giganotosaurus bite lands 41 on Tyrannotitan (22 to kill); a Tyrannotitan bite lands 36 back (28 to kill).",
+          "Giganotosaurus's bleed builds faster than Tyrannotitan heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 41,
+            "defenderHit": 36,
+            "attackerBurst": 82,
+            "defenderBurst": 91,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 28,
+            "attackerDps": 37.7,
+            "defenderDps": 27.9,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 36,
+            "attackerBleed": 0.142,
+            "defenderBleed": 0.24,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 24,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.33,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 24
+            }
+          },
+          "label": "1 Giganotosaurus vs 1 Tyrannotitan: the Giganotosaurus side wins in about 24 s with 33% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Giganotosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 18 s with 62% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "giganotosaurus",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Giganotosaurus",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tyrannotitan is 6% faster on land and can normally refuse this fight.",
+          "baseScore": 44,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Giganotosaurus is linked by a specific profile rule."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "giganotosaurus",
+            "profileName": "Giganotosaurus",
+            "section": "Quick View",
+            "text": "Giganotosaurus may hunt any tier. They cannot hunt Tyrannosaurus or Tyrannotitan, and instead must challenge them for rights to remain in the POI."
+          },
+          {
+            "profileId": "giganotosaurus",
+            "profileName": "Giganotosaurus",
+            "section": "Quick View",
+            "text": "Giganotosaurus have an intense rivalry with Tyrannotitan, and cannot tolerate Tyrannosaurus within the same POI. They must challenge these species first, and cannot hunt them unless specific requirements are met. If they are uninterested in challenging them, they must leave the POI."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
         "id": "yutyrannus",
         "name": "Yutyrannus",
+        "family": "yutyrannus",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Yutyrannus matters only if it gets the right opening",
-        "summary": "Yutyrannus is linked by a specific profile rule. Yutyrannus is 16% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "summary": "Yutyrannus is linked by a specific profile rule. Yutyrannus is 16% faster on land; a clean escape is unlikely once spotted. 4 Yutyrannus vs 1 Tyrannotitan: the Yutyrannus side wins in about 11 s with 77% of its health left.",
         "score": 44,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11498,18 +11743,6 @@
           "durationMarginPct": 58.7,
           "label": "Yutyrannus is 16% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.59,
-          "cappedPowerRatio": 1.01,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "rare",
           "sharedRegions": [],
@@ -11519,11 +11752,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Yutyrannus is 16% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 Yutyrannus vs 1 Tyrannotitan: the Yutyrannus side wins in about 11 s with 77% of its health left.",
           "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Yutyrannus bite lands 32 on Tyrannotitan (28 to kill); a Tyrannotitan bite lands 68 back (9 to kill).",
           "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 32,
+            "defenderHit": 68,
+            "attackerBurst": 32,
+            "defenderBurst": 169,
+            "attackerHitsToKill": 28,
+            "defenderHitsToKill": 9,
+            "attackerDps": 21.5,
+            "defenderDps": 51.9,
+            "attackerTimeToKill": 42,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0.406,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.77,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.5
+            }
+          },
+          "label": "4 Yutyrannus vs 1 Tyrannotitan: the Yutyrannus side wins in about 11 s with 77% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "4 Yutyrannus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 34 s with 11% of its health left, too narrow to call.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yutyrannus",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Yutyrannus is 16% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": 44,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Yutyrannus is linked by a specific profile rule."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -11545,87 +11844,16 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "giganotosaurus",
-        "name": "Giganotosaurus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "predator",
-        "headline": "Giganotosaurus matters only if it gets the right opening",
-        "summary": "Giganotosaurus is linked by a specific profile rule. Tyrannotitan is 6% faster on land and can normally refuse this fight. Even at the legal group cap (1 vs 2), a committed straight fight favours Tyrannotitan.",
-        "score": 27,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 850,
-          "targetSpeed": 900,
-          "speedMarginPct": -5.6,
-          "attackerDurationSeconds": 50,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": -20.6,
-          "label": "Tyrannotitan is 6% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 0.65,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Tyrannotitan."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "cliff-edge-falls"
-          ],
-          "overlap": 0.231,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Tyrannotitan is 6% faster on land and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Tyrannotitan.",
-          "They overlap in 3 mapped areas, so the matchup is situational.",
-          "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "giganotosaurus",
-            "profileName": "Giganotosaurus",
-            "section": "Quick View",
-            "text": "Giganotosaurus may hunt any tier. They cannot hunt Tyrannosaurus or Tyrannotitan, and instead must challenge them for rights to remain in the POI."
-          },
-          {
-            "profileId": "giganotosaurus",
-            "profileName": "Giganotosaurus",
-            "section": "Quick View",
-            "text": "Giganotosaurus have an intense rivalry with Tyrannotitan, and cannot tolerate Tyrannosaurus within the same POI. They must challenge these species first, and cannot hunt them unless specific requirements are met. If they are uninterested in challenging them, they must leave the POI."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "pycnonemosaurus",
         "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Pycnonemosaurus can create a very narrow escape window",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 19% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 85,
+        "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 19% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Tyrannotitan: the Pycnonemosaurus side wins in about 10 s with 76% of its health left.",
+        "score": 95,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11642,18 +11870,6 @@
           "durationMarginPct": 44.4,
           "label": "Pycnonemosaurus is 19% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.64,
-          "cappedPowerRatio": 0.86,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11669,10 +11885,76 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Pycnonemosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Pycnonemosaurus vs 1 Tyrannotitan: the Pycnonemosaurus side wins in about 10 s with 76% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 29 on Tyrannotitan (32 to kill); a Tyrannotitan bite lands 63 back (11 to kill).",
           "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 29,
+            "defenderHit": 63,
+            "attackerBurst": 69,
+            "defenderBurst": 157,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 11,
+            "attackerDps": 31.4,
+            "defenderDps": 48.2,
+            "attackerTimeToKill": 29,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0,
+            "defenderBleed": 0.377,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.76,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 9.75
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Tyrannotitan: the Pycnonemosaurus side wins in about 10 s with 76% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Pycnonemosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 30 s with 9% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Pycnonemosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 77,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11682,12 +11964,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Allosaurus can create a very narrow escape window",
-        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 16% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
+        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 16% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Tyrannotitan: the Allosaurus side wins in about 13 s with 71% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11703,18 +11987,6 @@
           "targetDurationSeconds": 63,
           "durationMarginPct": 44.4,
           "label": "Allosaurus is 16% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.68,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -11733,11 +12005,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Allosaurus is 16% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Allosaurus vs 1 Tyrannotitan: the Allosaurus side wins in about 13 s with 71% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 31 on Tyrannotitan (30 to kill); a Tyrannotitan bite lands 59 back (12 to kill).",
+          "Allosaurus's bleed builds faster than Tyrannotitan heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 31,
+            "defenderHit": 59,
+            "attackerBurst": 43,
+            "defenderBurst": 147,
+            "attackerHitsToKill": 30,
+            "defenderHitsToKill": 12,
+            "attackerDps": 23.8,
+            "defenderDps": 45,
+            "attackerTimeToKill": 38,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0.077,
+            "defenderBleed": 0.352,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 13,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.71,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 12.75
+            }
+          },
+          "label": "3 Allosaurus vs 1 Tyrannotitan: the Allosaurus side wins in about 13 s with 71% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Allosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 27 s with 35% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "tyrannotitan",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Tyrannotitan",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 16% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -11750,12 +12089,14 @@
       {
         "id": "apatosaurus",
         "name": "Apatosaurus",
+        "family": "apatosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Apatosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 80% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 102,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Apatosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 80% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 1 Apatosaurus: the Apatosaurus side wins in about 27 s with 78% of its health left.",
+        "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11772,18 +12113,6 @@
           "durationMarginPct": -37,
           "label": "Tyrannotitan is 80% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 8000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 1.07,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11798,11 +12127,78 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tyrannotitan is 80% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 1 Apatosaurus: the Apatosaurus side wins in about 27 s with 78% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Tyrannotitan bite lands 21 on Apatosaurus (95 to kill); a Apatosaurus tail attack lands 106 back (9 to kill).",
+          "Tyrannotitan's bleed builds faster than Apatosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Apatosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 21,
+            "defenderHit": 106,
+            "attackerBurst": 53,
+            "defenderBurst": 159,
+            "attackerHitsToKill": 95,
+            "defenderHitsToKill": 9,
+            "attackerDps": 16.2,
+            "defenderDps": 33.1,
+            "attackerTimeToKill": 123,
+            "defenderTimeToKill": 27,
+            "attackerBleed": 0.165,
+            "defenderBleed": 0.017,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 27,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.78,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 27.25
+            }
+          },
+          "label": "1 Tyrannotitan vs 1 Apatosaurus: the Apatosaurus side wins in about 27 s with 78% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 8000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tyrannotitan vs 1 Apatosaurus: the Apatosaurus side wins in about 55 s with 34% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "apatosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Apatosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannotitan is 80% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -11828,12 +12224,14 @@
       {
         "id": "barsboldia",
         "name": "Barsboldia",
+        "family": "barsboldia",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Barsboldia is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 101,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. 1 Tyrannotitan vs 2 Barsboldia: the Barsboldia side wins in about 8 s with 93% of its health left.",
+        "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11849,18 +12247,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 26,
           "label": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -11882,10 +12268,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Barsboldia: the Barsboldia side wins in about 8 s with 93% of its health left.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Tyrannotitan bite lands 36 on Barsboldia (42 to kill); a Barsboldia kick lands 45 back (20 to kill).",
+          "Tyrannotitan's bleed builds faster than Barsboldia heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 45,
+            "attackerBurst": 91,
+            "defenderBurst": 136,
+            "attackerHitsToKill": 42,
+            "defenderHitsToKill": 20,
+            "attackerDps": 27.9,
+            "defenderDps": 60.8,
+            "attackerTimeToKill": 54,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 8,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.93,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Barsboldia: the Barsboldia side wins in about 8 s with 93% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Barsboldia: the Barsboldia side wins in about 15 s with 79% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "barsboldia",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Barsboldia",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
+          "baseScore": 93,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -11911,12 +12364,14 @@
       {
         "id": "parasaurolophus",
         "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Parasaurolophus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 925), but Tyrannotitan has the pursuit edge on land. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 101,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 925), but Tyrannotitan has the pursuit edge on land. 1 Tyrannotitan vs 2 Parasaurolophus: the Parasaurolophus side wins in about 13 s with 87% of its health left.",
+        "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11932,18 +12387,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 26,
           "label": "The speed gap is small (900 vs 925), but Tyrannotitan has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -11964,10 +12407,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (900 vs 925), but Tyrannotitan has the pursuit edge on land.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Parasaurolophus: the Parasaurolophus side wins in about 13 s with 87% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Tyrannotitan bite lands 36 on Parasaurolophus (39 to kill); a Parasaurolophus bite lands 23 back (40 to kill).",
+          "Tyrannotitan's bleed builds faster than Parasaurolophus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 23,
+            "attackerBurst": 91,
+            "defenderBurst": 73,
+            "attackerHitsToKill": 39,
+            "defenderHitsToKill": 40,
+            "attackerDps": 27.9,
+            "defenderDps": 34.1,
+            "attackerTimeToKill": 50,
+            "defenderTimeToKill": 26,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 13,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.87,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 13.25
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Parasaurolophus: the Parasaurolophus side wins in about 13 s with 87% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Parasaurolophus: the Parasaurolophus side wins in about 27 s with 60% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (900 vs 925), but Tyrannotitan has the pursuit edge on land.",
+          "baseScore": 93,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -11993,12 +12503,14 @@
       {
         "id": "tyrannosaurus",
         "name": "Tyrannosaurus",
+        "family": "tyrannosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Tyrannosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 99,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Tyrannosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
+        "score": 74,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12015,18 +12527,6 @@
           "durationMarginPct": 40,
           "label": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.92,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12039,10 +12539,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Tyrannotitan bite lands 33 on Tyrannosaurus (31 to kill); a Tyrannosaurus bite lands 69 back (13 to kill).",
+          "Tyrannotitan's bleed builds faster than Tyrannosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 33,
+            "defenderHit": 69,
+            "attackerBurst": 83,
+            "defenderBurst": 119,
+            "attackerHitsToKill": 31,
+            "defenderHitsToKill": 13,
+            "attackerDps": 25.6,
+            "defenderDps": 53.7,
+            "attackerTimeToKill": 39,
+            "defenderTimeToKill": 17,
+            "attackerBleed": 0.22,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.89,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 8.5
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 89% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 17 s with 67% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "tyrannosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Tyrannosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 91,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -12068,12 +12635,14 @@
       {
         "id": "eotriceratops",
         "name": "Eotriceratops",
+        "family": "eotriceratops",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Eotriceratops is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 16% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 99,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Eotriceratops is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 16% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 2 Eotriceratops: the Eotriceratops side wins in about 19 s with 82% of its health left.",
+        "score": 74,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12090,18 +12659,6 @@
           "durationMarginPct": 40,
           "label": "Tyrannotitan is 16% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12113,11 +12670,78 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tyrannotitan is 16% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Eotriceratops: the Eotriceratops side wins in about 19 s with 82% of its health left.",
           "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Tyrannotitan bite lands 33 on Eotriceratops (39 to kill); a Eotriceratops bite lands 27 back (33 to kill).",
+          "Tyrannotitan's bleed builds faster than Eotriceratops heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Eotriceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 33,
+            "defenderHit": 27,
+            "attackerBurst": 83,
+            "defenderBurst": 91,
+            "attackerHitsToKill": 39,
+            "defenderHitsToKill": 33,
+            "attackerDps": 25.6,
+            "defenderDps": 24.5,
+            "attackerTimeToKill": 51,
+            "defenderTimeToKill": 37,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 19,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.82,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 18.5
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Eotriceratops: the Eotriceratops side wins in about 19 s with 82% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Eotriceratops: the Eotriceratops side wins in about 41 s with 42% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "eotriceratops",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Eotriceratops",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannotitan is 16% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 91,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -12143,12 +12767,14 @@
       {
         "id": "therizinosaurus",
         "name": "Therizinosaurus",
+        "family": "therizinosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Therizinosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 95,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. 1 Tyrannotitan vs 2 Therizinosaurus: the Therizinosaurus side wins in about 8 s with 90% of its health left.",
+        "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12165,18 +12791,6 @@
           "durationMarginPct": -8.7,
           "label": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12191,11 +12805,78 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Therizinosaurus: the Therizinosaurus side wins in about 8 s with 90% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Tyrannotitan bite lands 36 on Therizinosaurus (28 to kill); a Therizinosaurus claw attack lands 82 back (11 to kill).",
+          "Tyrannotitan's bleed builds faster than Therizinosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 82,
+            "attackerBurst": 91,
+            "defenderBurst": 118,
+            "attackerHitsToKill": 28,
+            "defenderHitsToKill": 11,
+            "attackerDps": 27.9,
+            "defenderDps": 61.8,
+            "attackerTimeToKill": 36,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 8,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.9,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Therizinosaurus: the Therizinosaurus side wins in about 8 s with 90% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Therizinosaurus: the Therizinosaurus side wins in about 15 s with 69% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "therizinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Therizinosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -12221,12 +12902,14 @@
       {
         "id": "argentinosaurus",
         "name": "Argentinosaurus",
+        "family": "argentinosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Argentinosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 157% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 93,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Argentinosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tyrannotitan is 157% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 1 Argentinosaurus: the Argentinosaurus side wins in about 7 s with 96% of its health left.",
+        "score": 68,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12243,18 +12926,6 @@
           "durationMarginPct": -37,
           "label": "Tyrannotitan is 157% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 9000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.61,
-          "cappedPowerRatio": 0.95,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12268,11 +12939,78 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tyrannotitan is 157% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 1 Argentinosaurus: the Argentinosaurus side wins in about 7 s with 96% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Tyrannotitan bite lands 19 on Argentinosaurus (133 to kill); a Argentinosaurus stomp lands 126 back (8 to kill).",
+          "Tyrannotitan's bleed builds faster than Argentinosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Argentinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 19,
+            "defenderHit": 126,
+            "attackerBurst": 47,
+            "defenderBurst": 2975,
+            "attackerHitsToKill": 133,
+            "defenderHitsToKill": 8,
+            "attackerDps": 14.4,
+            "defenderDps": 133.9,
+            "attackerTimeToKill": 173,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0.147,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 7,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.96,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6.75
+            }
+          },
+          "label": "1 Tyrannotitan vs 1 Argentinosaurus: the Argentinosaurus side wins in about 7 s with 96% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 9000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 1 Argentinosaurus: the Argentinosaurus side wins in about 14 s with 88% of its health left.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "argentinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Argentinosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannotitan is 157% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 85,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -12298,12 +13036,14 @@
       {
         "id": "giganotosaurus",
         "name": "Giganotosaurus",
+        "family": "giganotosaurus",
         "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Giganotosaurus is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 92,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Giganotosaurus is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land. 1 Tyrannotitan vs 2 Giganotosaurus: the Giganotosaurus side wins in about 12 s with 83% of its health left.",
+        "score": 67,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12320,18 +13060,6 @@
           "durationMarginPct": 26,
           "label": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12345,10 +13073,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Tyrannotitan vs 2 Giganotosaurus: the Giganotosaurus side wins in about 12 s with 83% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Tyrannotitan bite lands 36 on Giganotosaurus (28 to kill); a Giganotosaurus bite lands 41 back (22 to kill).",
+          "Tyrannotitan's bleed builds faster than Giganotosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 41,
+            "attackerBurst": 91,
+            "defenderBurst": 82,
+            "attackerHitsToKill": 28,
+            "defenderHitsToKill": 22,
+            "attackerDps": 27.9,
+            "defenderDps": 37.7,
+            "attackerTimeToKill": 36,
+            "defenderTimeToKill": 24,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0.142,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.83,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 12
+            }
+          },
+          "label": "1 Tyrannotitan vs 2 Giganotosaurus: the Giganotosaurus side wins in about 12 s with 83% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Tyrannotitan vs 2 Giganotosaurus: the Giganotosaurus side wins in about 24 s with 50% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "giganotosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Giganotosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (900 vs 850), but Tyrannotitan has the pursuit edge on land.",
+          "baseScore": 84,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -12372,6 +13167,2397 @@
         "confidence": "profile-specific"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Concavenator can create a very narrow escape window",
+          "summary": "Concavenator is inside the legal hunt range. Concavenator is 22% faster on land; a clean escape is unlikely once spotted. 4 Concavenator vs 1 Tyrannotitan: the Concavenator side wins in about 15 s with 40% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 900,
+            "speedMarginPct": 22.2,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 165.1,
+            "label": "Concavenator is 22% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.538,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Concavenator is 22% faster on land; a clean escape is unlikely once spotted.",
+            "4 Concavenator vs 1 Tyrannotitan: the Concavenator side wins in about 15 s with 40% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Concavenator bite lands 17 on Tyrannotitan (52 to kill); a Tyrannotitan bite lands 105 back (5 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 105,
+              "attackerBurst": 28,
+              "defenderBurst": 262,
+              "attackerHitsToKill": 52,
+              "defenderHitsToKill": 5,
+              "attackerDps": 18.6,
+              "defenderDps": 80.3,
+              "attackerTimeToKill": 48,
+              "defenderTimeToKill": 6,
+              "attackerBleed": 0.019,
+              "defenderBleed": 0.629,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 15,
+              "attackersLeft": 2,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.4,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 6.25
+              }
+            },
+            "label": "4 Concavenator vs 1 Tyrannotitan: the Concavenator side wins in about 15 s with 40% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Concavenator vs 2 Tyrannotitan: the Tyrannotitan side wins in about 13 s with 67% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "concavenator",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Concavenator",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Concavenator is 22% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a very narrow escape window",
+          "summary": "Latenivenatrix is inside the legal hunt range. Latenivenatrix is 19% faster on land; a clean escape is unlikely once spotted. 8 Latenivenatrix vs 1 Tyrannotitan: the Latenivenatrix side wins in about 15 s with 56% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 900,
+            "speedMarginPct": 19.4,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 296.8,
+            "label": "Latenivenatrix is 19% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.4,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Latenivenatrix is 19% faster on land; a clean escape is unlikely once spotted.",
+            "8 Latenivenatrix vs 1 Tyrannotitan: the Latenivenatrix side wins in about 15 s with 56% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 9 on Tyrannotitan (98 to kill); a Tyrannotitan bite lands 157 back (4 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 9,
+              "defenderHit": 157,
+              "attackerBurst": 21,
+              "defenderBurst": 393,
+              "attackerHitsToKill": 98,
+              "defenderHitsToKill": 4,
+              "attackerDps": 9.3,
+              "defenderDps": 120.5,
+              "attackerTimeToKill": 97,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0.943,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 15,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.56,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.25
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Tyrannotitan: the Latenivenatrix side wins in about 15 s with 56% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Latenivenatrix vs 2 Tyrannotitan: the Tyrannotitan side wins in about 17 s with 61% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Latenivenatrix is 19% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a very narrow escape window",
+          "summary": "Ceratosaurus is inside the legal hunt range. Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Tyrannotitan: the Ceratosaurus side wins in about 10 s with 79% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 127,
+            "label": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs"
+            ],
+            "overlap": 0.333,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "4 Ceratosaurus vs 1 Tyrannotitan: the Ceratosaurus side wins in about 10 s with 79% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 17 on Tyrannotitan (53 to kill); a Tyrannotitan bite lands 85 back (9 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 85,
+              "attackerBurst": 39,
+              "defenderBurst": 212,
+              "attackerHitsToKill": 53,
+              "defenderHitsToKill": 9,
+              "attackerDps": 23.2,
+              "defenderDps": 64.9,
+              "attackerTimeToKill": 39,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0.508,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.79,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 9.75
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Tyrannotitan: the Ceratosaurus side wins in about 10 s with 79% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "4 Ceratosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 35 s with 0% of its health left, too narrow to call.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "family": "sarcosuchus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Sarcosuchus can create a real pursuit problem",
+          "summary": "Sarcosuchus is inside the legal hunt range. This is a close chase on land: 900 vs 900 units/s, with stamina likely deciding it. 3 Sarcosuchus vs 1 Tyrannotitan: the Sarcosuchus side wins in about 5 s with 91% of its health left.",
+          "score": 77,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 900,
+            "targetSpeed": 900,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 40,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": -36.5,
+            "label": "This is a close chase on land: 900 vs 900 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.538,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 900 vs 900 units/s, with stamina likely deciding it.",
+            "3 Sarcosuchus vs 1 Tyrannotitan: the Sarcosuchus side wins in about 5 s with 91% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Sarcosuchus tail lands 30 on Tyrannotitan (31 to kill); a Tyrannotitan bite lands 49 back (13 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 30,
+              "defenderHit": 49,
+              "attackerBurst": 156,
+              "defenderBurst": 122,
+              "attackerHitsToKill": 31,
+              "defenderHitsToKill": 13,
+              "attackerDps": 67.4,
+              "defenderDps": 37.5,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0.293,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.91,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4.5
+              }
+            },
+            "label": "3 Sarcosuchus vs 1 Tyrannotitan: the Sarcosuchus side wins in about 5 s with 91% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Sarcosuchus vs 2 Tyrannotitan: the Sarcosuchus side wins in about 9 s with 72% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "sarcosuchus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Sarcosuchus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 900 vs 900 units/s, with stamina likely deciding it.",
+            "baseScore": 59,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Sarcosuchus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "family": "suchomimus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Suchomimus can create a real pursuit problem",
+          "summary": "Suchomimus is inside the legal hunt range. The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land. 3 Suchomimus vs 1 Tyrannotitan: the Suchomimus side wins in about 10 s with 85% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 950,
+            "targetSpeed": 900,
+            "speedMarginPct": 5.6,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 0,
+            "label": "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
+            "3 Suchomimus vs 1 Tyrannotitan: the Suchomimus side wins in about 10 s with 85% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Suchomimus bite lands 33 on Tyrannotitan (28 to kill); a Tyrannotitan bite lands 44 back (16 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 44,
+              "attackerBurst": 74,
+              "defenderBurst": 110,
+              "attackerHitsToKill": 28,
+              "defenderHitsToKill": 16,
+              "attackerDps": 31.7,
+              "defenderDps": 33.7,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 21,
+              "attackerBleed": 0,
+              "defenderBleed": 0.264,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.85,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 9.5
+              }
+            },
+            "label": "3 Suchomimus vs 1 Tyrannotitan: the Suchomimus side wins in about 10 s with 85% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Suchomimus vs 2 Tyrannotitan: the Suchomimus side wins in about 23 s with 48% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Suchomimus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Suchomimus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "family": "torvosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Torvosaurus can create a real pursuit problem",
+          "summary": "Torvosaurus is inside the legal hunt range. The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land. 6 Torvosaurus vs 1 Tyrannotitan: the Torvosaurus side wins in about 5 s with 97% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 950,
+            "targetSpeed": 900,
+            "speedMarginPct": 5.6,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 9.5,
+            "label": "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.462,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land.",
+            "6 Torvosaurus vs 1 Tyrannotitan: the Torvosaurus side wins in about 5 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 48 on Tyrannotitan (19 to kill); a Tyrannotitan bite lands 38 back (19 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 6,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 48,
+              "defenderHit": 38,
+              "attackerBurst": 48,
+              "defenderBurst": 94,
+              "attackerHitsToKill": 19,
+              "defenderHitsToKill": 19,
+              "attackerDps": 32.2,
+              "defenderDps": 28.8,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 24,
+              "attackerBleed": 0,
+              "defenderBleed": 0.293,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.97,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4.75
+              }
+            },
+            "label": "6 Torvosaurus vs 1 Tyrannotitan: the Torvosaurus side wins in about 5 s with 97% of its health left.",
+            "detail": "6 attackers vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Tyrannotitan: the Torvosaurus side wins in about 10 s with 90% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Torvosaurus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (950 vs 900), but Torvosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Torvosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "severe",
+          "kind": "quarry",
+          "headline": "Anodontosaurus is a realistic hunting opportunity",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. Tyrannotitan is 36% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 1 Anodontosaurus: the Anodontosaurus side wins in about 23 s with 32% of its health left, too narrow to call.",
+          "score": 80,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 660,
+            "speedMarginPct": 36.4,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -49.6,
+            "label": "Tyrannotitan is 36% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs"
+            ],
+            "overlap": 0.25,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 36% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 1 Anodontosaurus: the Anodontosaurus side wins in about 23 s with 32% of its health left, too narrow to call.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 33 on Anodontosaurus (27 to kill); a Anodontosaurus tail slam lands 52 back (18 to kill).",
+            "Tyrannotitan's bleed builds faster than Anodontosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 52,
+              "attackerBurst": 81,
+              "defenderBurst": 89,
+              "attackerHitsToKill": 27,
+              "defenderHitsToKill": 18,
+              "attackerDps": 25,
+              "defenderDps": 39.3,
+              "attackerTimeToKill": 34,
+              "defenderTimeToKill": 23,
+              "attackerBleed": 0.293,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 23,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.32,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 23
+              }
+            },
+            "label": "1 Tyrannotitan vs 1 Anodontosaurus: the Anodontosaurus side wins in about 23 s with 32% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 1 Anodontosaurus: the Tyrannotitan side wins in about 17 s with 62% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 36% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+          "summary": "Deinocheirus is within the legal hunt ceiling. Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 2 Deinocheirus: the Deinocheirus side wins in about 16 s with 77% of its health left.",
+          "score": 61,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 800,
+            "speedMarginPct": 12.5,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 40,
+            "label": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.563,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 2 Deinocheirus: the Deinocheirus side wins in about 16 s with 77% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 36 on Deinocheirus (27 to kill); a Deinocheirus claw lands 41 back (22 to kill).",
+            "Tyrannotitan's bleed builds faster than Deinocheirus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 36,
+              "defenderHit": 41,
+              "attackerBurst": 91,
+              "defenderBurst": 45,
+              "attackerHitsToKill": 27,
+              "defenderHitsToKill": 22,
+              "attackerDps": 27.9,
+              "defenderDps": 28.8,
+              "attackerTimeToKill": 34,
+              "defenderTimeToKill": 31,
+              "attackerBleed": 0.24,
+              "defenderBleed": 0.067,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 16,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.77,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 15.75
+              }
+            },
+            "label": "1 Tyrannotitan vs 2 Deinocheirus: the Deinocheirus side wins in about 16 s with 77% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "2 Tyrannotitan vs 2 Deinocheirus: the Deinocheirus side wins in about 44 s with 12% of its health left, too narrow to call.",
+              "attackers": 2,
+              "defenders": 2
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 78,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
+          "family": "spinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight",
+          "summary": "Spinosaurus (Freshwater) is within the legal hunt ceiling. Tyrannotitan is 29% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 71% of its health left.",
+          "score": 61,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 700,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 40,
+            "label": "Tyrannotitan is 29% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.467,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 29% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 71% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 33 on Spinosaurus (Freshwater) (34 to kill); a Spinosaurus (Freshwater) claw lands 60 back (16 to kill).",
+            "Tyrannotitan's bleed builds faster than Spinosaurus (Freshwater) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 60,
+              "attackerBurst": 83,
+              "defenderBurst": 169,
+              "attackerHitsToKill": 34,
+              "defenderHitsToKill": 16,
+              "attackerDps": 25.6,
+              "defenderDps": 72.1,
+              "attackerTimeToKill": 43,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0.22,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 13,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.71,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 12.5
+              }
+            },
+            "label": "1 Tyrannotitan vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 71% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "2 Tyrannotitan vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 25 s with 13% of its health left, too narrow to call.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "spinosaurus-freshwater",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Spinosaurus (Freshwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 29% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 78,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Freshwater) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinosuchus-shore",
+          "name": "Deinosuchus (Shore)",
+          "family": "deinosuchus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinosuchus (Shore) is legal quarry, but not a comfortable fight",
+          "summary": "Deinosuchus (Shore) is within the legal hunt ceiling. Tyrannotitan is 64% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 46% of its health left.",
+          "score": 61,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 550,
+            "speedMarginPct": 63.6,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 40,
+            "durationMarginPct": 57.5,
+            "label": "Tyrannotitan is 64% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.5,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 64% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 46% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 33 on Deinosuchus (Shore) (31 to kill); a Deinosuchus (Shore) bite lands 55 back (17 to kill).",
+            "Tyrannotitan's bleed builds faster than Deinosuchus (Shore) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 55,
+              "attackerBurst": 83,
+              "defenderBurst": 114,
+              "attackerHitsToKill": 31,
+              "defenderHitsToKill": 17,
+              "attackerDps": 25.6,
+              "defenderDps": 43.3,
+              "attackerTimeToKill": 39,
+              "defenderTimeToKill": 21,
+              "attackerBleed": 0.22,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 21,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.46,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 21
+              }
+            },
+            "label": "1 Tyrannotitan vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 46% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 1 Deinosuchus (Shore): the Tyrannotitan side wins in about 20 s with 52% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "deinosuchus-shore",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Deinosuchus (Shore)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 64% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 78,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinosuchus (Shore) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "family": "metriacanthosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Metriacanthosaurus can usually refuse the chase",
+          "summary": "Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 14% faster on land and can normally refuse this fight. 1 Tyrannotitan vs 2 Metriacanthosaurus: the Tyrannotitan side wins in about 19 s with 39% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 900,
+            "targetSpeed": 1050,
+            "speedMarginPct": -14.3,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -49.6,
+            "label": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.667,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
+            "1 Tyrannotitan vs 2 Metriacanthosaurus: the Tyrannotitan side wins in about 19 s with 39% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 71 on Metriacanthosaurus (8 to kill); a Metriacanthosaurus v2claw attack lands 20 back (44 to kill).",
+            "Tyrannotitan's bleed builds faster than Metriacanthosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 71,
+              "defenderHit": 20,
+              "attackerBurst": 177,
+              "defenderBurst": 33,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 44,
+              "attackerDps": 54.4,
+              "defenderDps": 19.9,
+              "attackerTimeToKill": 9,
+              "defenderTimeToKill": 45,
+              "attackerBleed": 0.426,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 19,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.39,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 9.25
+              }
+            },
+            "label": "1 Tyrannotitan vs 2 Metriacanthosaurus: the Tyrannotitan side wins in about 19 s with 39% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 2 Metriacanthosaurus: the Tyrannotitan side wins in about 9 s with 85% of its health left.",
+              "attackers": 2,
+              "defenders": 2
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Megalania (Temperate) can usually refuse the chase",
+          "summary": "Megalania (Temperate) is within the legal hunt ceiling. Megalania (Temperate) is 12% faster on land and can normally refuse this fight. 1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 900,
+            "targetSpeed": 1025,
+            "speedMarginPct": -12.2,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -55.9,
+            "label": "Megalania (Temperate) is 12% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Megalania (Temperate) is 12% faster on land and can normally refuse this fight.",
+            "1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 81 on Megalania (Temperate) (7 to kill); a Megalania (Temperate) bite lands 17 back (53 to kill).",
+            "Tyrannotitan's bleed builds faster than Megalania (Temperate) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 81,
+              "defenderHit": 17,
+              "attackerBurst": 201,
+              "defenderBurst": 34,
+              "attackerHitsToKill": 7,
+              "defenderHitsToKill": 53,
+              "attackerDps": 61.8,
+              "defenderDps": 21.4,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 42,
+              "attackerBleed": 0.508,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 9,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.8,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.5
+              }
+            },
+            "label": "1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 4 s with 95% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "megalania-temperate",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Megalania (Temperate)",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Megalania (Temperate) is 12% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Megalania (Arid) can usually refuse the chase",
+          "summary": "Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 12% faster on land and can normally refuse this fight. 1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 900,
+            "targetSpeed": 1025,
+            "speedMarginPct": -12.2,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -55.9,
+            "label": "Megalania (Arid) is 12% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.25,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Megalania (Arid) is 12% faster on land and can normally refuse this fight.",
+            "1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 81 on Megalania (Arid) (7 to kill); a Megalania (Arid) bite lands 17 back (53 to kill).",
+            "Tyrannotitan's bleed builds faster than Megalania (Arid) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 81,
+              "defenderHit": 17,
+              "attackerBurst": 201,
+              "defenderBurst": 34,
+              "attackerHitsToKill": 7,
+              "defenderHitsToKill": 53,
+              "attackerDps": 61.8,
+              "defenderDps": 21.4,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 42,
+              "attackerBleed": 0.508,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 9,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.8,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.5
+              }
+            },
+            "label": "1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 4 s with 95% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "megalania-arid",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Megalania (Arid)",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Megalania (Arid) is 12% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 8
+    },
+    "roster": {
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "maip": {
+        "id": "maip",
+        "name": "Maip",
+        "cw": 4000,
+        "hp": 650,
+        "armor": 1,
+        "dps": 46,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Claw Charged"
+        ],
+        "bleedPerSecond": 0.317,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "tyrannosaurus": {
+        "id": "tyrannosaurus",
+        "name": "Tyrannosaurus",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Bone Snap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "giganotosaurus": {
+        "id": "giganotosaurus",
+        "name": "Giganotosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 41.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charged Bite",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bulldoze",
+          "Charged Bite"
+        ],
+        "bleedPerSecond": 0.142,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "apatosaurus": {
+        "id": "apatosaurus",
+        "name": "Apatosaurus",
+        "cw": 8000,
+        "hp": 2000,
+        "armor": 1.3,
+        "dps": 25,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 4
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Stomp",
+          "Headslam"
+        ],
+        "bleedPerSecond": 0.012,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "eotriceratops": {
+        "id": "eotriceratops",
+        "name": "Eotriceratops",
+        "cw": 5500,
+        "hp": 1300,
+        "armor": 1.2,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 100,
+          "cooldown": 60,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Head Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "argentinosaurus": {
+        "id": "argentinosaurus",
+        "name": "Argentinosaurus",
+        "cw": 9000,
+        "hp": 2500,
+        "armor": 1.3,
+        "dps": 90,
+        "primary": {
+          "label": "Stomp",
+          "damage": 85,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Big Stomp",
+          "damage": 2000,
+          "cooldown": 15,
+          "situational": true
+        },
+        "attacks": [
+          "Stomp",
+          "Tail Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.026,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-freshwater": {
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -12430,7 +15616,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

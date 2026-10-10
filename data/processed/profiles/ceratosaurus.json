@@ -12278,19 +12278,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Ceratosaurus has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Ceratosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Ceratosaurus: the Alioramus side wins in about 4 s with 92% of its health left.",
         "score": 91,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12306,18 +12308,6 @@
           "targetDurationSeconds": 143,
           "durationMarginPct": -7,
           "label": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.92,
-          "cappedPowerRatio": 2.95,
-          "label": "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -12337,10 +12327,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "5 Alioramus vs 1 Ceratosaurus: the Alioramus side wins in about 4 s with 92% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 42 on Ceratosaurus (19 to kill); a Ceratosaurus bite lands 43 back (13 to kill).",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 42,
+            "defenderHit": 43,
+            "attackerBurst": 51,
+            "defenderBurst": 98,
+            "attackerHitsToKill": 19,
+            "defenderHitsToKill": 13,
+            "attackerDps": 45,
+            "defenderDps": 58.5,
+            "attackerTimeToKill": 17,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.92,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "5 Alioramus vs 1 Ceratosaurus: the Alioramus side wins in about 4 s with 92% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 1 Ceratosaurus: the Alioramus side wins in about 4 s with 92% of its health left.",
+            "attackers": 5,
+            "defenders": 1
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 73,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance",
           "dangerous-defender"
@@ -12351,12 +12407,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Kelenken can create a very narrow escape window",
-        "summary": "Kelenken is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Kelenken is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 4 Kelenken vs 1 Ceratosaurus: the Kelenken side wins in about 5 s with 83% of its health left.",
         "score": 84,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12372,18 +12430,6 @@
           "targetDurationSeconds": 143,
           "durationMarginPct": 16.6,
           "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.75,
-          "cappedPowerRatio": 1.99,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -12401,10 +12447,77 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "4 Kelenken vs 1 Ceratosaurus: the Kelenken side wins in about 5 s with 83% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 38 on Ceratosaurus (20 to kill); a Ceratosaurus bite lands 53 back (10 to kill).",
+          "Kelenken's bleed builds faster than Ceratosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 53,
+            "attackerBurst": 53,
+            "defenderBurst": 120,
+            "attackerHitsToKill": 20,
+            "defenderHitsToKill": 10,
+            "attackerDps": 40.3,
+            "defenderDps": 72,
+            "attackerTimeToKill": 19,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0.038,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.83,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.75
+            }
+          },
+          "label": "4 Kelenken vs 1 Ceratosaurus: the Kelenken side wins in about 5 s with 83% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 1 Ceratosaurus: the Kelenken side wins in about 5 s with 83% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 66,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
         "tags": [
           "endurance",
           "dangerous-defender"
@@ -12415,12 +12528,14 @@
       {
         "id": "pycnonemosaurus",
         "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Pycnonemosaurus can create a very narrow escape window",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 3 Pycnonemosaurus vs 1 Ceratosaurus: the Pycnonemosaurus side wins in about 4 s with 93% of its health left.",
         "score": 82,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12437,18 +12552,6 @@
           "durationMarginPct": -36.4,
           "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.35,
-          "cappedPowerRatio": 2.83,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12464,10 +12567,76 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "3 Pycnonemosaurus vs 1 Ceratosaurus: the Pycnonemosaurus side wins in about 4 s with 93% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 67 on Ceratosaurus (12 to kill); a Ceratosaurus bite lands 30 back (22 to kill).",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 67,
+            "defenderHit": 30,
+            "attackerBurst": 162,
+            "defenderBurst": 67,
+            "attackerHitsToKill": 12,
+            "defenderHitsToKill": 22,
+            "attackerDps": 73.1,
+            "defenderDps": 40.1,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.93,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Ceratosaurus: the Pycnonemosaurus side wins in about 4 s with 93% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Pycnonemosaurus vs 1 Ceratosaurus: the Pycnonemosaurus side wins in about 4 s with 93% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 64,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12477,12 +12646,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
         "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12499,18 +12670,6 @@
           "durationMarginPct": -36.4,
           "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.44,
-          "cappedPowerRatio": 3.03,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12526,11 +12685,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 72 on Ceratosaurus (11 to kill); a Ceratosaurus bite lands 28 back (24 to kill).",
+          "Allosaurus's bleed builds faster than Ceratosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 28,
+            "attackerBurst": 101,
+            "defenderBurst": 62,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 24,
+            "attackerDps": 55.3,
+            "defenderDps": 37.4,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 17,
+            "attackerBleed": 0.163,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.91,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.75
+            }
+          },
+          "label": "3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -12541,12 +12767,14 @@
       {
         "id": "latenivenatrix",
         "name": "Latenivenatrix",
+        "family": "latenivenatrix",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Latenivenatrix can create a real pursuit problem",
-        "summary": "Latenivenatrix is inside the legal hunt range. The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land. At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Latenivenatrix is inside the legal hunt range. The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land. 8 Latenivenatrix vs 1 Ceratosaurus: the Latenivenatrix side wins in about 5 s with 89% of its health left.",
         "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12562,18 +12790,6 @@
           "targetDurationSeconds": 143,
           "durationMarginPct": 74.8,
           "label": "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1400,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.54,
-          "cappedPowerRatio": 2.61,
-          "label": "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -12593,11 +12809,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land.",
-          "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "8 Latenivenatrix vs 1 Ceratosaurus: the Latenivenatrix side wins in about 5 s with 89% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Latenivenatrix bite lands 22 on Ceratosaurus (35 to kill); a Ceratosaurus bite lands 74 back (7 to kill).",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 74,
+            "attackerBurst": 48,
+            "defenderBurst": 167,
+            "attackerHitsToKill": 35,
+            "defenderHitsToKill": 7,
+            "attackerDps": 21.5,
+            "defenderDps": 100.3,
+            "attackerTimeToKill": 35,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 8,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.89,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.5
+            }
+          },
+          "label": "8 Latenivenatrix vs 1 Ceratosaurus: the Latenivenatrix side wins in about 5 s with 89% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Latenivenatrix vs 1 Ceratosaurus: the Latenivenatrix side wins in about 5 s with 89% of its health left.",
+            "attackers": 8,
+            "defenders": 1
+          }
+        },
+        "attackerId": "latenivenatrix",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Latenivenatrix",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1050), but Latenivenatrix has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Latenivenatrix is inside the legal hunt range."
+        },
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -12606,14 +12888,16 @@
         "confidence": "derived"
       },
       {
-        "id": "dilophosaurus",
-        "name": "Dilophosaurus",
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Dilophosaurus can create a real pursuit problem",
-        "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land. At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "headline": "Deinonychus can create a real pursuit problem",
+        "summary": "Deinonychus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land. 8 Deinonychus vs 1 Ceratosaurus: the Deinonychus side wins in about 7 s with 73% of its health left.",
         "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12625,42 +12909,98 @@
           "attackerSpeed": 1100,
           "targetSpeed": 1050,
           "speedMarginPct": 4.8,
-          "attackerDurationSeconds": 166.667,
+          "attackerDurationSeconds": 200,
           "targetDurationSeconds": 143,
-          "durationMarginPct": 16.6,
-          "label": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.92,
-          "cappedPowerRatio": 2.95,
-          "label": "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "durationMarginPct": 39.9,
+          "label": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
+            "tallbrush-coasts",
             "steep-run",
+            "big-tree-overlook",
             "cedrus-forest",
             "cliff-edge-falls",
             "redwoods",
             "wind-tunnels"
           ],
-          "overlap": 0.417,
-          "label": "5 shared mapped areas make contact plausible."
+          "overlap": 0.467,
+          "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
-          "At the legal limits (5 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "5 shared mapped areas make contact plausible.",
+          "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "8 Deinonychus vs 1 Ceratosaurus: the Deinonychus side wins in about 7 s with 73% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 15 on Ceratosaurus (49 to kill); a Ceratosaurus bite lands 130 back (5 to kill).",
           "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 15,
+            "defenderHit": 130,
+            "attackerBurst": 15,
+            "defenderBurst": 293,
+            "attackerHitsToKill": 49,
+            "defenderHitsToKill": 5,
+            "attackerDps": 15.4,
+            "defenderDps": 175.5,
+            "attackerTimeToKill": 49,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 7,
+            "attackersLeft": 6,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.73,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.25
+            }
+          },
+          "label": "8 Deinonychus vs 1 Ceratosaurus: the Deinonychus side wins in about 7 s with 73% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Deinonychus vs 1 Ceratosaurus: the Deinonychus side wins in about 7 s with 73% of its health left.",
+            "attackers": 8,
+            "defenders": 1
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "ceratosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinonychus",
+          "targetName": "Ceratosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinonychus is inside the legal hunt range."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12672,12 +13012,14 @@
       {
         "id": "albertaceratops",
         "name": "Albertaceratops",
+        "family": "albertaceratops",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Albertaceratops is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted. The profile limits are 4 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+        "summary": "A profile rule names or prioritises this matchup. Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted. Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
         "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12694,18 +13036,6 @@
           "durationMarginPct": 28.8,
           "label": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "soloWeightRatio": 0.74,
-          "cappedPowerRatio": null,
-          "label": "The profile limits are 4 attackers vs unlimited eligible defenders; no invented numeric swarm is used."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12718,10 +13048,64 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "The profile limits are 4 attackers vs unlimited eligible defenders; no invented numeric swarm is used.",
+          "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Ceratosaurus bite lands 30 on Albertaceratops (21 to kill); a Albertaceratops kick lands 67 back (12 to kill).",
           "Albertaceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": null,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 67,
+            "attackerBurst": 67,
+            "defenderBurst": 162,
+            "attackerHitsToKill": 21,
+            "defenderHitsToKill": 12,
+            "attackerDps": 40.1,
+            "defenderDps": 72.9,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": null,
+          "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 4,
+            "defenders": null
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "albertaceratops",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Albertaceratops",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12742,14 +13126,369 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "family": "megalania",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Megalania (Arid) is a realistic hunting opportunity",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Ceratosaurus vs 1 Megalania (Arid): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+        "score": 60,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1050,
+          "targetSpeed": 1025,
+          "speedMarginPct": 2.4,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 0,
+          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest"
+          ],
+          "overlap": 0.25,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "1 Ceratosaurus vs 1 Megalania (Arid): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 38 on Megalania (Arid) (14 to kill); a Megalania (Arid) bite lands 40 back (19 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 40,
+            "attackerBurst": 86,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 19,
+            "attackerDps": 51.4,
+            "defenderDps": 49.7,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.32,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.25
+            }
+          },
+          "label": "1 Ceratosaurus vs 1 Megalania (Arid): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Ceratosaurus vs 1 Megalania (Arid): the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "megalania-arid",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Megalania (Arid)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 52,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "family": "megalania",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Ceratosaurus vs 1 Megalania (Temperate): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+        "score": 51,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 1050,
+          "targetSpeed": 1025,
+          "speedMarginPct": 2.4,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 143,
+          "durationMarginPct": 0,
+          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "cliff-edge-falls",
+            "east-passage",
+            "wollemi-forest"
+          ],
+          "overlap": 0.158,
+          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "1 Ceratosaurus vs 1 Megalania (Temperate): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Ceratosaurus bite lands 38 on Megalania (Temperate) (14 to kill); a Megalania (Temperate) bite lands 40 back (19 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 40,
+            "attackerBurst": 86,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 19,
+            "attackerDps": 51.4,
+            "defenderDps": 49.7,
+            "attackerTimeToKill": 10,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.32,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.25
+            }
+          },
+          "label": "1 Ceratosaurus vs 1 Megalania (Temperate): the Ceratosaurus side wins in about 10 s with 32% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Ceratosaurus vs 1 Megalania (Temperate): the Ceratosaurus side wins in about 3 s with 95% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "megalania-temperate",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Megalania (Temperate)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 43,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "family": "barsboldia",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+        "summary": "Barsboldia is within the legal hunt ceiling. Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 850,
+          "speedMarginPct": 23.5,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 186,
+          "label": "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted.",
+          "1 Ceratosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 17 on Barsboldia (88 to kill); a Barsboldia kick lands 106 back (8 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 17,
+            "defenderHit": 106,
+            "attackerBurst": 39,
+            "defenderBurst": 317,
+            "attackerHitsToKill": 88,
+            "defenderHitsToKill": 8,
+            "attackerDps": 23.2,
+            "defenderDps": 141.5,
+            "attackerTimeToKill": 65,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 3,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.98,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2.75
+            }
+          },
+          "label": "1 Ceratosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 98% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Ceratosaurus vs 2 Barsboldia: the Barsboldia side wins in about 11 s with 79% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "barsboldia",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Barsboldia",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Barsboldia is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
+        "family": "anodontosaurus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Anodontosaurus is a realistic hunting opportunity",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Ceratosaurus is 59% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
+        "summary": "Anodontosaurus is within the legal hunt ceiling. Ceratosaurus is 59% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 80% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12765,18 +13504,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": 14.4,
           "label": "Ceratosaurus is 59% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.58,
-          "cappedPowerRatio": 1.53,
-          "label": "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12796,255 +13523,197 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Ceratosaurus is 59% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Ceratosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 80% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 15 on Anodontosaurus (56 to kill); a Anodontosaurus tail slam lands 121 back (7 to kill).",
           "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "stegosaurus",
-        "name": "Stegosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Stegosaurus is a realistic hunting opportunity",
-        "summary": "Stegosaurus is within the legal hunt ceiling. Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 900,
-          "speedMarginPct": 16.7,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 127,
-          "label": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted."
-        },
         "fight": {
-          "verdict": "close",
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 15,
+            "defenderHit": 121,
+            "attackerBurst": 35,
+            "defenderBurst": 208,
+            "attackerHitsToKill": 56,
+            "defenderHitsToKill": 7,
+            "attackerDps": 20.8,
+            "defenderDps": 91.4,
+            "attackerTimeToKill": 41,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 8,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.8,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 8.25
+            }
+          },
+          "label": "1 Ceratosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 80% of its health left.",
+          "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 2600,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.52,
-          "cappedPowerRatio": 0.89,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "crag-bluffs",
-            "wollemi-forest"
-          ],
-          "overlap": 0.385,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "spinosaurus-freshwater",
-        "name": "Spinosaurus (Freshwater)",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Spinosaurus (Freshwater) is a realistic hunting opportunity",
-        "summary": "Spinosaurus (Freshwater) is within the legal hunt ceiling. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 700,
-          "speedMarginPct": 50,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 45,
-          "durationMarginPct": 217.8,
-          "label": "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 6000,
+          "targetCombatWeight": 4500,
           "attackerGroupLimit": 4,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.43,
-          "cappedPowerRatio": 1.15,
-          "label": "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Ceratosaurus vs 1 Anodontosaurus: the Ceratosaurus side wins in about 11 s with 67% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "anodontosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Anodontosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 59% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "family": "deinocheirus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+        "summary": "Deinocheirus is within the legal hunt ceiling. Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 800,
+          "speedMarginPct": 31.3,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 217.8,
+          "label": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "tallbrush-coasts",
             "big-tree-overlook",
-            "cliff-edge-falls",
-            "wollemi-forest"
-          ],
-          "overlap": 0.222,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "4 shared mapped areas make contact plausible."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "achillobator",
-        "name": "Achillobator",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Achillobator is a realistic hunting opportunity",
-        "summary": "Achillobator is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 70,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1050,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 154,
-          "durationMarginPct": -7.1,
-          "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.93,
-          "cappedPowerRatio": 1.59,
-          "label": "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
             "cedrus-forest",
             "cliff-edge-falls",
-            "east-passage",
+            "crag-bluffs",
             "redwoods",
             "wind-tunnels",
             "wollemi-forest"
           ],
-          "overlap": 0.615,
+          "overlap": 0.471,
           "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "8 shared mapped areas make contact plausible."
+          "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+          "1 Ceratosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 17 on Deinocheirus (56 to kill); a Deinocheirus claw lands 95 back (8 to kill).",
+          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Megalania (Arid) is a realistic hunting opportunity",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 70,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1025,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 0,
-          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
-        },
         "fight": {
-          "verdict": "attacker-advantage",
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 17,
+            "defenderHit": 95,
+            "attackerBurst": 39,
+            "defenderBurst": 106,
+            "attackerHitsToKill": 56,
+            "defenderHitsToKill": 8,
+            "attackerDps": 23.2,
+            "defenderDps": 67,
+            "attackerTimeToKill": 41,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0.142,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 6,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.93,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "1 Ceratosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
           "attackerCombatWeight": 2600,
-          "targetCombatWeight": 2600,
+          "targetCombatWeight": 5500,
           "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
+          "targetDefenderLimit": 2,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 2.65,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "legal": {
+            "verdict": "close",
+            "label": "4 Ceratosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 33 s with 12% of its health left, too narrow to call.",
+            "attackers": 4,
+            "defenders": 2
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest"
-          ],
-          "overlap": 0.25,
-          "label": "4 shared mapped areas make contact plausible."
+        "attackerId": "ceratosaurus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinocheirus is within the legal hunt ceiling."
         },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "4 shared mapped areas make contact plausible."
-        ],
         "tags": [
           "dangerous-defender"
         ],
@@ -13052,14 +13721,16 @@
         "confidence": "derived"
       },
       {
-        "id": "spinosaurus-saltwater",
-        "name": "Spinosaurus (Saltwater)",
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Spinosaurus (Saltwater) is a realistic hunting opportunity",
-        "summary": "Spinosaurus (Saltwater) is within the legal hunt ceiling. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 64,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+        "summary": "Parasaurolophus is within the legal hunt ceiling. Ceratosaurus is 14% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 96% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13069,98 +13740,100 @@
           "mode": "land",
           "verdict": "attacker-faster",
           "attackerSpeed": 1050,
-          "targetSpeed": 700,
-          "speedMarginPct": 50,
+          "targetSpeed": 925,
+          "speedMarginPct": 13.5,
           "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 45,
-          "durationMarginPct": 217.8,
-          "label": "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.43,
-          "cappedPowerRatio": 1.15,
-          "label": "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 186,
+          "label": "Ceratosaurus is 14% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
-          "level": "possible",
+          "level": "frequent",
           "sharedRegions": [
-            "wollemi-forest"
-          ],
-          "overlap": 0.05,
-          "label": "They overlap in 1 mapped area, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 1 mapped area, so the matchup is situational."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "megalania-temperate",
-        "name": "Megalania (Temperate)",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "quarry",
-        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 61,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1025,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 0,
-          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 2.65,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "cedrus-forest",
             "cliff-edge-falls",
+            "crag-bluffs",
             "east-passage",
-            "wollemi-forest"
+            "redwoods",
+            "wind-tunnels"
           ],
-          "overlap": 0.158,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          "overlap": 0.267,
+          "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
+          "Ceratosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "1 Ceratosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 96% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 17 on Parasaurolophus (82 to kill); a Parasaurolophus bite lands 53 back (15 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 17,
+            "defenderHit": 53,
+            "attackerBurst": 39,
+            "defenderBurst": 169,
+            "attackerHitsToKill": 82,
+            "defenderHitsToKill": 15,
+            "attackerDps": 23.2,
+            "defenderDps": 79.3,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.96,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.75
+            }
+          },
+          "label": "1 Ceratosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 96% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Ceratosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 19 s with 61% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "ceratosaurus",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Ceratosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Parasaurolophus is within the legal hunt ceiling."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -13168,6 +13841,2219 @@
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "family": "thalassodromeus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Thalassodromeus can create a real pursuit problem",
+          "summary": "Thalassodromeus is inside the legal hunt range. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1200,
+            "targetSpeed": 1050,
+            "speedMarginPct": 14.3,
+            "attackerDurationSeconds": 83,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -42,
+            "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.538,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Thalassodromeus bite lands 32 on Ceratosaurus (24 to kill); a Ceratosaurus bite lands 50 back (11 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": null,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 50,
+              "attackerBurst": 57,
+              "defenderBurst": 111,
+              "attackerHitsToKill": 24,
+              "defenderHitsToKill": 11,
+              "attackerDps": 27.3,
+              "defenderDps": 66.9,
+              "attackerTimeToKill": 27,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": null,
+            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": true,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": null,
+              "defenders": 1
+            }
+          },
+          "attackerId": "thalassodromeus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Thalassodromeus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Thalassodromeus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land. 5 Dilophosaurus vs 1 Ceratosaurus: the Dilophosaurus side wins in about 3 s with 93% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": 16.6,
+            "label": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.417,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "5 Dilophosaurus vs 1 Ceratosaurus: the Dilophosaurus side wins in about 3 s with 93% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 46 on Ceratosaurus (17 to kill); a Ceratosaurus bite lands 43 back (13 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 46,
+              "defenderHit": 43,
+              "attackerBurst": 46,
+              "defenderBurst": 98,
+              "attackerHitsToKill": 17,
+              "defenderHitsToKill": 13,
+              "attackerDps": 46.2,
+              "defenderDps": 58.5,
+              "attackerTimeToKill": 16,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.93,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.25
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Ceratosaurus: the Dilophosaurus side wins in about 3 s with 93% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Dilophosaurus vs 1 Ceratosaurus: the Dilophosaurus side wins in about 3 s with 93% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Dilophosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Ceratosaurus: the Quetzalcoatlus side wins in about 8 s with 77% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1050,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -65,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.333,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Ceratosaurus: the Quetzalcoatlus side wins in about 8 s with 77% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 85 on Ceratosaurus (9 to kill); a Ceratosaurus bite lands 38 back (16 to kill).",
+            "Quetzalcoatlus's bleed builds faster than Ceratosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 85,
+              "defenderHit": 38,
+              "attackerBurst": 95,
+              "defenderBurst": 85,
+              "attackerHitsToKill": 9,
+              "defenderHitsToKill": 16,
+              "attackerDps": 30.3,
+              "defenderDps": 51.1,
+              "attackerTimeToKill": 25,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0.053,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.77,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Ceratosaurus: the Quetzalcoatlus side wins in about 8 s with 77% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Quetzalcoatlus vs 1 Ceratosaurus: the Quetzalcoatlus side wins in about 8 s with 77% of its health left.",
+              "attackers": 3,
+              "defenders": 1
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Achillobator can create a real pursuit problem",
+          "summary": "Achillobator is inside the legal hunt range. This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it. 5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1050,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": 7.7,
+            "label": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 75 on Ceratosaurus (10 to kill); a Ceratosaurus bite lands 37 back (17 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 75,
+              "defenderHit": 37,
+              "attackerBurst": 151,
+              "defenderBurst": 84,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 17,
+              "attackerDps": 53.8,
+              "defenderDps": 50.1,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "family": "utahraptor",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Utahraptor can create a real pursuit problem",
+          "summary": "Utahraptor is inside the legal hunt range. This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it. 5 Utahraptor vs 1 Ceratosaurus: the Utahraptor side wins in about 3 s with 92% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1050,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": 7.6,
+            "label": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.417,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+            "5 Utahraptor vs 1 Ceratosaurus: the Utahraptor side wins in about 3 s with 92% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Utahraptor bite lands 40 on Ceratosaurus (19 to kill); a Ceratosaurus bite lands 50 back (12 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 50,
+              "attackerBurst": 61,
+              "defenderBurst": 111,
+              "attackerHitsToKill": 19,
+              "defenderHitsToKill": 12,
+              "attackerDps": 46.5,
+              "defenderDps": 66.9,
+              "attackerTimeToKill": 16,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.25
+              }
+            },
+            "label": "5 Utahraptor vs 1 Ceratosaurus: the Utahraptor side wins in about 3 s with 92% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Utahraptor vs 1 Ceratosaurus: the Utahraptor side wins in about 3 s with 92% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Utahraptor",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1075 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Utahraptor is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "family": "yutyrannus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Yutyrannus can create a real pursuit problem",
+          "summary": "Yutyrannus is inside the legal hunt range. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 4 Yutyrannus vs 1 Ceratosaurus: the Yutyrannus side wins in about 4 s with 93% of its health left.",
+          "score": 68,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1040,
+            "targetSpeed": 1050,
+            "speedMarginPct": -1,
+            "attackerDurationSeconds": 100,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -30.1,
+            "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.273,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+            "4 Yutyrannus vs 1 Ceratosaurus: the Yutyrannus side wins in about 4 s with 93% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Yutyrannus bite lands 75 on Ceratosaurus (10 to kill); a Ceratosaurus bite lands 32 back (19 to kill).",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 75,
+              "defenderHit": 32,
+              "attackerBurst": 75,
+              "defenderBurst": 72,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 19,
+              "attackerDps": 50,
+              "defenderDps": 43.2,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.93,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "4 Yutyrannus vs 1 Ceratosaurus: the Yutyrannus side wins in about 4 s with 93% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 3250,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Yutyrannus vs 1 Ceratosaurus: the Yutyrannus side wins in about 4 s with 93% of its health left.",
+              "attackers": 4,
+              "defenders": 1
+            }
+          },
+          "attackerId": "yutyrannus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Yutyrannus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 50,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Yutyrannus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "family": "sarcosuchus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
+          "summary": "Sarcosuchus is within the legal hunt ceiling. Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 40,
+            "durationMarginPct": 257.5,
+            "label": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.429,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 23 on Sarcosuchus (26 to kill); a Sarcosuchus tail lands 69 back (11 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 23,
+              "defenderHit": 69,
+              "attackerBurst": 52,
+              "defenderBurst": 363,
+              "attackerHitsToKill": 26,
+              "defenderHitsToKill": 11,
+              "attackerDps": 31.2,
+              "defenderDps": 156.9,
+              "attackerTimeToKill": 19,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 3,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.75
+              }
+            },
+            "label": "1 Ceratosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 7 s with 71% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "sarcosuchus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Sarcosuchus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Sarcosuchus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "family": "therizinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Therizinosaurus is within the legal hunt ceiling. Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 850,
+            "speedMarginPct": 23.5,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 107.3,
+            "label": "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.5,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 17 on Therizinosaurus (59 to kill); a Therizinosaurus claw attack lands 190 back (4 to kill).",
+            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 190,
+              "attackerBurst": 39,
+              "defenderBurst": 275,
+              "attackerHitsToKill": 59,
+              "defenderHitsToKill": 4,
+              "attackerDps": 23.2,
+              "defenderDps": 143.8,
+              "attackerTimeToKill": 43,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.75
+              }
+            },
+            "label": "1 Ceratosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 97% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 11 s with 69% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "therizinosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Therizinosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 24% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "family": "tyrannosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Tyrannosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannosaurus is within the legal hunt ceiling. Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 800,
+            "speedMarginPct": 31.3,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 217.8,
+            "label": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.545,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 16 on Tyrannosaurus (64 to kill); a Tyrannosaurus bite lands 162 back (5 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 16,
+              "defenderHit": 162,
+              "attackerBurst": 35,
+              "defenderBurst": 277,
+              "attackerHitsToKill": 64,
+              "defenderHitsToKill": 5,
+              "attackerDps": 21.3,
+              "defenderDps": 125,
+              "attackerTimeToKill": 47,
+              "defenderTimeToKill": 6,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3
+              }
+            },
+            "label": "1 Ceratosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 97% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 12 s with 68% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "tyrannosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Tyrannosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "stegosaurus",
+          "name": "Stegosaurus",
+          "family": "stegosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Stegosaurus is within the legal hunt ceiling. Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 127,
+            "label": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "crag-bluffs",
+              "wollemi-forest"
+            ],
+            "overlap": 0.385,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 21 on Stegosaurus (39 to kill); a Stegosaurus tail attack lands 154 back (5 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 21,
+              "defenderHit": 154,
+              "attackerBurst": 47,
+              "defenderBurst": 308,
+              "attackerHitsToKill": 39,
+              "defenderHitsToKill": 5,
+              "attackerDps": 28.1,
+              "defenderDps": 173.1,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 1.262,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.25
+              }
+            },
+            "label": "1 Ceratosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 9 s with 61% of its health left.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "stegosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Stegosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Stegosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "family": "torvosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Torvosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Torvosaurus is within the legal hunt ceiling. Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 3 s with 98% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 950,
+            "speedMarginPct": 10.5,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 107.3,
+            "label": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "crag-bluffs"
+            ],
+            "overlap": 0.357,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 3 s with 98% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 18 on Torvosaurus (40 to kill); a Torvosaurus bite lands 113 back (7 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 18,
+              "defenderHit": 113,
+              "attackerBurst": 40,
+              "defenderBurst": 113,
+              "attackerHitsToKill": 40,
+              "defenderHitsToKill": 7,
+              "attackerDps": 24,
+              "defenderDps": 75,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.75
+              }
+            },
+            "label": "1 Ceratosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 3 s with 98% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 10 s with 78% of its health left.",
+              "attackers": 4,
+              "defenders": 4
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Torvosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "family": "tyrannotitan",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Tyrannotitan is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannotitan is within the legal hunt ceiling. Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 6 s with 92% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 900,
+            "speedMarginPct": 16.7,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 127,
+            "label": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs"
+            ],
+            "overlap": 0.333,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "1 Ceratosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 6 s with 92% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 17 on Tyrannotitan (53 to kill); a Tyrannotitan bite lands 85 back (9 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 85,
+              "attackerBurst": 39,
+              "defenderBurst": 212,
+              "attackerHitsToKill": 53,
+              "defenderHitsToKill": 9,
+              "attackerDps": 23.2,
+              "defenderDps": 64.9,
+              "attackerTimeToKill": 39,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0.508,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.92,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 6
+              }
+            },
+            "label": "1 Ceratosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 6 s with 92% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "4 Ceratosaurus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 35 s with 0% of its health left, too narrow to call.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 17% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannotitan is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "albertaceratops": {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1.25
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Head Slam",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": true
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "utahraptor": {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "cw": 2100,
+        "hp": 550,
+        "armor": 1,
+        "dps": 57.57,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunge",
+          "damage": 75,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite",
+          "Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "tyrannosaurus": {
+        "id": "tyrannosaurus",
+        "name": "Tyrannosaurus",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Bone Snap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "stegosaurus": {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "cw": 5000,
+        "hp": 800,
+        "armor": 1,
+        "dps": 90,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 160,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.656,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Cannibalism / offspring risk",
@@ -13223,7 +16109,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

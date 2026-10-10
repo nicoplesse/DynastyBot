@@ -54,16 +54,16 @@ You are a large aerial carnivore in a 'committee' of up to 3 with temporary bond
 
 **Gefährlich für dich:**
 - **Hatzegopteryx** (sehr hoch): Hatzegopteryx can create a very narrow escape window
-- **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
+- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
 - **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
+- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Hatzegopteryx** (sehr hoch): Hatzegopteryx is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
-- **Ceratosaurus** (hoch): Ceratosaurus is a realistic hunting opportunity
+- **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Tenontosaurus** (hoch): Tenontosaurus is a realistic hunting opportunity
+- **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
+- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Mutation-specific risk: Quetzalcoatlus may hunt up to Medium tier if solo, and Large or Albino Apexes if grouped. Any Quetzalcoatlus may hunt offspring of adolescent or below of any tier. They prefer to bully other hunters off their corpses. Solitary Quetzalcoatlus may scavenge at their own risk, but grouped must contest for a body.

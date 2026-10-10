@@ -57,6 +57,7 @@ You are a small nocturnal herbivore living in a large colony, yet each Camptosau
 - **Latenivenatrix** (conditional): Latenivenatrix matters only if it gets the right opening
 - **Compsognathus** (hoch): Compsognathus can create a real pursuit problem
 - **Concavenator** (conditional): Concavenator matters only if it gets the right opening
+- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) matters only if it gets the right opening
 - **Kelenken** (conditional): Kelenken matters only if it gets the right opening
 - **Allosaurus** (conditional): Allosaurus matters only if it gets the right opening
 

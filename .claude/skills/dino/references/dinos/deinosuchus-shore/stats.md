@@ -46,7 +46,7 @@ Stufen: Hatchling, Juvenile, Adolescent, Sub-Adult, Adult. „Dynasty“ = nach 
 | Core.KnockbackMultiplier | 1 / 1 / 1 / 1 / 1 | = |
 | Core.WaterVision | 3 / 3 / 3 / 3 / 3 | = |
 | Core.KnockbackTractionMultiplier | 1 / 1 / 1 / 1 / 1 | = |
-| Core.CarryCapacity | 200 / 900 / 1600 / 2300 / 3001 | = |
+| Core.CarryCapacity | 200 / 900 / 1600 / 2300 / 3901 | 3001 |
 | Core.KnockbackToDelatchThreshold | 100 / 100 / 100 / 100 / 100 | = |
 | Core.KnockbackToDecarryThreshold | 100 / 100 / 100 / 100 / 100 | = |
 | Core.KnockbackToCancelAttackThreshold | 100 / 100 / 100 / 100 / 100 | = |

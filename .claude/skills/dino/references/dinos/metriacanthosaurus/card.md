@@ -61,10 +61,10 @@ You are a medium nocturnal carnivore living in a mated pair (a 'quiver'). Your f
 **Gefährlich für dich:**
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
-- **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
+- **Concavenator** (hoch): Concavenator can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight

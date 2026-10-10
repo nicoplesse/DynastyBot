@@ -57,19 +57,19 @@ You are a small nocturnal carnivore in a rookery of up to 16 that constantly sin
 
 **Gefährlich für dich:**
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
-- **Tenontosaurus** (conditional): Tenontosaurus matters only if it gets the right opening
+- **Tenontosaurus** (hoch): Tenontosaurus can create a real pursuit problem
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
 - **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Citipati** (sehr hoch): Citipati is a realistic hunting opportunity
-- **Lambeosaurus** (sehr hoch): Lambeosaurus is a realistic hunting opportunity
-- **Dryosaurus** (sehr hoch): Dryosaurus is a realistic hunting opportunity
-- **Styracosaurus** (sehr hoch): Styracosaurus is a realistic hunting opportunity
-- **Parasaurolophus** (hoch): Parasaurolophus is legal quarry, but not a comfortable fight
-- **Iguanodon** (hoch): Iguanodon is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Citipati** (spürbar): Citipati is legal quarry, but not a comfortable fight
+- **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
+- **Pachycephalosaurus** (spürbar): Pachycephalosaurus is legal quarry, but not a comfortable fight
+- **Pachyrhinosaurus** (spürbar): Pachyrhinosaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

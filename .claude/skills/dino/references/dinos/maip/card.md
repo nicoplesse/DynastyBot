@@ -56,7 +56,7 @@ You are a large nocturnal carnivore living as a lifelong pair with a favoured ad
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Kelenken** (hoch): Kelenken can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
@@ -64,12 +64,12 @@ You are a large nocturnal carnivore living as a lifelong pair with a favoured ad
 - **Achillobator** (hoch): Achillobator can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Tyrannotitan** (conditional): Tyrannotitan is a realistic hunting opportunity
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
-- **Barsboldia** (sehr hoch): Barsboldia is a realistic hunting opportunity
-- **Parasaurolophus** (sehr hoch): Parasaurolophus is a realistic hunting opportunity
+- **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
+- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

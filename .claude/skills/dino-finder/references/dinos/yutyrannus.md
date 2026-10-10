@@ -58,19 +58,19 @@ You are a large, feathered tyrannosaurid in a group of up to 6: a related 'clowd
 
 **Gefährlich für dich:**
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
-- **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Achillobator** (hoch): Achillobator can create a real pursuit problem
-- **Maip** (spürbar): Maip can create a credible fight
-- **Dilophosaurus** (spürbar): Dilophosaurus can create a credible fight
-- **Kelenken** (spürbar): Kelenken can create a credible fight
+- **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
+- **Utahraptor** (hoch): Utahraptor can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Tyrannosaurus** (sehr hoch): Tyrannosaurus is a realistic hunting opportunity
-- **Giganotosaurus** (conditional): Giganotosaurus is a realistic hunting opportunity
-- **Tyrannotitan** (conditional): Tyrannotitan is a realistic hunting opportunity
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
+- **Tyrannosaurus** (spürbar): Tyrannosaurus is legal quarry, but not a comfortable fight
+- **Giganotosaurus** (conditional): Giganotosaurus is legal quarry, but not a comfortable fight
+- **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
+- **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Yutyrannus can have up to 4 in an engagement, and up to 6 individuals if taking part in a territory challenge against a different group of Yutyrannus.

@@ -153,7 +153,9 @@ function parseStats(lines) {
   const growthMatch = growthLine?.match(/=\s*(\d+)\s*(?:total)?/i);
   const combatMatch = combatLine?.match(/Combat Weight:\s*([\d,.]+)/i);
   const adjustedIndex = slice.findIndex(line => /^Adjusted Stats:/i.test(line));
-  const changes = [];
+  const changes = (adjustedIndex >= 0 ? slice.slice(0, adjustedIndex) : slice)
+    .filter(line => /^Clamp Weight:/i.test(line))
+    .map(text => ({ text, current: null, previous: null, direction: 'changed' }));
   if (adjustedIndex >= 0) {
     const inline = slice[adjustedIndex].replace(/^Adjusted Stats:\s*/i, '').replace(/^[-*]\s*/, '').trim();
     const candidates = [inline];
@@ -650,7 +652,7 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   else await rm(join(outputRoot, 'ecosystems.json'), { force: true });
   await writeFile(join(outputRoot, 'analogs.json'), JSON.stringify(analogIndex, null, 2) + '\n');
   const speedKnown = profiles.length > 0 && profiles.every(profile => profile.speed?.land?.sprint > 0);
-  const matchupMap = { schemaVersion: 2, generatedAt: new Date().toISOString(), speedKnown, methodology: 'intent-contact-pursuit-groups', dinos: matchups };
+  const matchupMap = { schemaVersion: 3, generatedAt: new Date().toISOString(), speedKnown, methodology: 'intent-contact-pursuit-groups', dinos: matchups };
   await writeFile(join(outputRoot, 'matchups.json'), JSON.stringify(matchupMap, null, 2) + '\n');
   await writeFile(join(outputRoot, 'matchup-map.json'), JSON.stringify(matchupMap, null, 2) + '\n');
   const index = profiles.map(profile => ({

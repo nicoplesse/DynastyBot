@@ -54,20 +54,20 @@ You travel in a mixed-sex pack of up to 8, with at most 2 females, and cover hug
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Latenivenatrix** (spürbar): Latenivenatrix can create a credible fight
-- **Utahraptor** (spürbar): Utahraptor can create a credible fight
-- **Dilophosaurus** (spürbar): Dilophosaurus can create a credible fight
-- **Pycnonemosaurus** (conditional): Pycnonemosaurus matters only if it gets the right opening
-- **Kelenken** (spürbar): Kelenken can create a credible fight
+- **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
+- **Utahraptor** (hoch): Utahraptor can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
+- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Metriacanthosaurus** (sehr hoch): Metriacanthosaurus is a realistic hunting opportunity
-- **Achillobator** (sehr hoch): Achillobator is a realistic hunting opportunity
-- **Ceratosaurus** (sehr hoch): Ceratosaurus is a realistic hunting opportunity
-- **Lambeosaurus** (sehr hoch): Lambeosaurus is a realistic hunting opportunity
-- **Styracosaurus** (sehr hoch): Styracosaurus is a realistic hunting opportunity
+- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
+- **Lurdusaurus** (spürbar): Lurdusaurus is legal quarry, but not a comfortable fight
+- **Metriacanthosaurus** (spürbar): Metriacanthosaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

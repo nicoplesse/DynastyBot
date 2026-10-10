@@ -8247,19 +8247,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Camptosaurus has 1 high-priority matchup where legal group size, pursuit and profile intent align. Against 3 listed threats, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Camptosaurus has 1 high-priority matchup where fight maths, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "latenivenatrix",
         "name": "Latenivenatrix",
+        "family": "latenivenatrix",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Latenivenatrix matters only if it gets the right opening",
-        "summary": "Latenivenatrix is linked by a specific profile rule. This is a close chase on land: 1075 vs 1125 units/s, with stamina likely deciding it. At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Latenivenatrix is linked by a specific profile rule. This is a close chase on land: 1075 vs 1125 units/s, with stamina likely deciding it. 8 Latenivenatrix vs 1 Camptosaurus: the Latenivenatrix side wins in about 2 s with 99% of its health left.",
         "score": 44,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -8276,18 +8278,6 @@
           "durationMarginPct": 0,
           "label": "This is a close chase on land: 1075 vs 1125 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1400,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.33,
-          "cappedPowerRatio": 6.47,
-          "label": "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "rare",
           "sharedRegions": [],
@@ -8297,10 +8287,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1075 vs 1125 units/s, with stamina likely deciding it.",
-          "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "8 Latenivenatrix vs 1 Camptosaurus: the Latenivenatrix side wins in about 2 s with 99% of its health left.",
           "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Latenivenatrix bite lands 53 on Camptosaurus (14 to kill); a Camptosaurus bite lands 23 back (23 to kill).",
           "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 53,
+            "defenderHit": 23,
+            "attackerBurst": 120,
+            "defenderBurst": 23,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 23,
+            "attackerDps": 53.3,
+            "defenderDps": 22.5,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 22,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 2,
+            "attackersLeft": 8,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "8 Latenivenatrix vs 1 Camptosaurus: the Latenivenatrix side wins in about 2 s with 99% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Latenivenatrix vs 1 Camptosaurus: the Latenivenatrix side wins in about 2 s with 99% of its health left.",
+            "attackers": 8,
+            "defenders": 1
+          }
+        },
+        "attackerId": "latenivenatrix",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Latenivenatrix",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1125 units/s, with stamina likely deciding it.",
+          "baseScore": 45,
+          "scoreCap": 44,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Latenivenatrix is linked by a specific profile rule."
+        },
         "tags": [
           "pounce"
         ],
@@ -8317,12 +8373,14 @@
       {
         "id": "compsognathus",
         "name": "Compsognathus",
+        "family": "compsognathus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Compsognathus can create a real pursuit problem",
-        "summary": "Compsognathus is inside the legal hunt range. Compsognathus is 11% faster on land; a clean escape is unlikely once spotted. At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Compsognathus is inside the legal hunt range. Compsognathus is 11% faster on land; a clean escape is unlikely once spotted. 10 Compsognathus vs 1 Camptosaurus: the Compsognathus side wins in about 10 s with 81% of its health left.",
         "score": 74,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -8339,18 +8397,6 @@
           "durationMarginPct": 50,
           "label": "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.38,
-          "cappedPowerRatio": 2.27,
-          "label": "At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -8364,9 +8410,75 @@
         "facts": [
           "Its profile permits hunting through Small tier.",
           "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (10 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
+          "10 Compsognathus vs 1 Camptosaurus: the Compsognathus side wins in about 10 s with 81% of its health left.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Compsognathus bite lands 8 on Camptosaurus (92 to kill); a Camptosaurus bite lands 79 back (6 to kill)."
         ],
+        "fight": {
+          "attackers": 10,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 8,
+            "defenderHit": 79,
+            "attackerBurst": 8,
+            "defenderBurst": 79,
+            "attackerHitsToKill": 92,
+            "defenderHitsToKill": 6,
+            "attackerDps": 7.6,
+            "defenderDps": 78.8,
+            "attackerTimeToKill": 92,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0.008,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 10,
+            "attackersLeft": 9,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.81,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.25
+            }
+          },
+          "label": "10 Compsognathus vs 1 Camptosaurus: the Compsognathus side wins in about 10 s with 81% of its health left.",
+          "detail": "10 attackers vs 1 defender",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "10 Compsognathus vs 1 Camptosaurus: the Compsognathus side wins in about 10 s with 81% of its health left.",
+            "attackers": 10,
+            "defenders": 1
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Compsognathus",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 56,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Compsognathus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -8374,12 +8486,14 @@
       {
         "id": "concavenator",
         "name": "Concavenator",
+        "family": "concavenator",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Concavenator matters only if it gets the right opening",
-        "summary": "Concavenator is inside the legal hunt range. Camptosaurus is 2% faster on land and can normally refuse this fight. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Concavenator is inside the legal hunt range. Camptosaurus is 2% faster on land and can normally refuse this fight. 4 Concavenator vs 1 Camptosaurus: the Concavenator side wins in about 2 s with 99% of its health left.",
         "score": 49,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -8396,18 +8510,6 @@
           "durationMarginPct": -33.2,
           "label": "Camptosaurus is 2% faster on land and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2,
-          "cappedPowerRatio": 5.3,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -8421,9 +8523,190 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Camptosaurus is 2% faster on land and can normally refuse this fight.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "3 shared mapped areas make contact plausible."
+          "4 Concavenator vs 1 Camptosaurus: the Concavenator side wins in about 2 s with 99% of its health left.",
+          "3 shared mapped areas make contact plausible.",
+          "One-on-one, a Concavenator bite lands 100 on Camptosaurus (7 to kill); a Camptosaurus bite lands 15 back (34 to kill).",
+          "Concavenator's bleed builds faster than Camptosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 100,
+            "defenderHit": 15,
+            "attackerBurst": 160,
+            "defenderBurst": 15,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 34,
+            "attackerDps": 107.3,
+            "defenderDps": 15,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0.1,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 2,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "4 Concavenator vs 1 Camptosaurus: the Concavenator side wins in about 2 s with 99% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Concavenator vs 1 Camptosaurus: the Concavenator side wins in about 2 s with 99% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "concavenator",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Concavenator",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Camptosaurus is 2% faster on land and can normally refuse this fight.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Concavenator is inside the legal hunt range."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "tropeognathus-coast",
+        "name": "Tropeognathus (Coast)",
+        "family": "tropeognathus",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Tropeognathus (Coast) matters only if it gets the right opening",
+        "summary": "Tropeognathus (Coast) is inside the legal hunt range. Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
+        "score": 49,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "air-to-land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 1300,
+          "targetSpeed": 1125,
+          "speedMarginPct": 15.6,
+          "attackerDurationSeconds": 181.818,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": -27.3,
+          "label": "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "volcano-islands",
+            "coastland-swamp"
+          ],
+          "overlap": 0.3,
+          "label": "3 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass.",
+          "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
+          "3 shared mapped areas make contact plausible.",
+          "One-on-one, a Tropeognathus (Coast) chomp lands 86 on Camptosaurus (9 to kill); a Camptosaurus bite lands 16 back (29 to kill).",
+          "Tropeognathus (Coast)'s bleed builds faster than Camptosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 86,
+            "defenderHit": 16,
+            "attackerBurst": 124,
+            "defenderBurst": 16,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 29,
+            "attackerDps": 50.9,
+            "defenderDps": 15.8,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 29,
+            "attackerBleed": 0.149,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.97,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2000,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tropeognathus-coast",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tropeognathus (Coast)",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tropeognathus (Coast) is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -8431,12 +8714,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Kelenken matters only if it gets the right opening",
-        "summary": "Kelenken is inside the legal hunt range. Camptosaurus is 4% faster on land and can normally refuse this fight. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Kelenken is inside the legal hunt range. Camptosaurus is 4% faster on land and can normally refuse this fight. 4 Kelenken vs 1 Camptosaurus: the Kelenken side wins in about 2 s with 98% of its health left.",
         "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -8453,18 +8738,6 @@
           "durationMarginPct": -33.3,
           "label": "Camptosaurus is 4% faster on land and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.86,
-          "cappedPowerRatio": 4.92,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -8476,9 +8749,76 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Camptosaurus is 4% faster on land and can normally refuse this fight.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 1 mapped area, so the matchup is situational."
+          "4 Kelenken vs 1 Camptosaurus: the Kelenken side wins in about 2 s with 98% of its health left.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Kelenken bite lands 93 on Camptosaurus (8 to kill); a Camptosaurus bite lands 16 back (31 to kill).",
+          "Kelenken's bleed builds faster than Camptosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 93,
+            "defenderHit": 16,
+            "attackerBurst": 130,
+            "defenderBurst": 16,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 31,
+            "attackerDps": 99.7,
+            "defenderDps": 16.2,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 31,
+            "attackerBleed": 0.093,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 2,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.98,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2
+            }
+          },
+          "label": "4 Kelenken vs 1 Camptosaurus: the Kelenken side wins in about 2 s with 98% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 1 Camptosaurus: the Kelenken side wins in about 2 s with 98% of its health left.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Camptosaurus is 4% faster on land and can normally refuse this fight.",
+          "baseScore": 30,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -8488,12 +8828,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Allosaurus matters only if it gets the right opening",
-        "summary": "Allosaurus is inside the legal hunt range. Camptosaurus is 8% faster on land and can normally refuse this fight. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Allosaurus is inside the legal hunt range. Camptosaurus is 8% faster on land and can normally refuse this fight. 3 Allosaurus vs 1 Camptosaurus: the Allosaurus side wins in about 2 s with 99% of its health left.",
         "score": 47,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -8510,18 +8852,6 @@
           "durationMarginPct": -63.6,
           "label": "Camptosaurus is 8% faster on land and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 3.57,
-          "cappedPowerRatio": 7.5,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -8534,10 +8864,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Camptosaurus is 8% faster on land and can normally refuse this fight.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "3 Allosaurus vs 1 Camptosaurus: the Allosaurus side wins in about 2 s with 99% of its health left.",
           "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Allosaurus bite lands 179 on Camptosaurus (4 to kill); a Camptosaurus bite lands 8 back (78 to kill).",
+          "Allosaurus's bleed builds faster than Camptosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 179,
+            "defenderHit": 8,
+            "attackerBurst": 250,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 4,
+            "defenderHitsToKill": 78,
+            "attackerDps": 136.9,
+            "defenderDps": 8.4,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 77,
+            "attackerBleed": 0.404,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 2,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "3 Allosaurus vs 1 Camptosaurus: the Allosaurus side wins in about 2 s with 99% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 1050,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 1 Camptosaurus: the Allosaurus side wins in about 2 s with 99% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "camptosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Camptosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Camptosaurus is 8% faster on land and can normally refuse this fight.",
+          "baseScore": 29,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -8546,6 +8943,225 @@
       }
     ],
     "opportunities": [],
+    "reserve": {
+      "threats": [],
+      "opportunities": []
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "camptosaurus": {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "cw": 1050,
+        "hp": 700,
+        "armor": 1,
+        "dps": 30,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "compsognathus": {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "cw": 400,
+        "hp": 400,
+        "armor": 1,
+        "dps": 20,
+        "primary": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0.02,
+        "bleedHealRate": 0.052,
+        "estimated": false,
+        "huntLimit": 10,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "tropeognathus-coast": {
+        "id": "tropeognathus-coast",
+        "name": "Tropeognathus (Coast)",
+        "cw": 2000,
+        "hp": 450,
+        "armor": 1,
+        "dps": 26.71,
+        "primary": {
+          "label": "Chomp",
+          "damage": 45,
+          "cooldown": 1.75
+        },
+        "burst": {
+          "label": "Ramming Rampage",
+          "damage": 65,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Chomp",
+          "Ramming Rampage"
+        ],
+        "bleedPerSecond": 0.078,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -8579,7 +9195,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

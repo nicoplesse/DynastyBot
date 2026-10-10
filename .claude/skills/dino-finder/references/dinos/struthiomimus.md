@@ -45,12 +45,12 @@ You are a small, extremely fast herbivore: sprint 1,150 held for 323 s, one of t
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Therizinosaurus** (spürbar): Therizinosaurus can create a credible fight
+- **Therizinosaurus** (hoch): Therizinosaurus can create a real pursuit problem
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (conditional): Kelenken matters only if it gets the right opening
 - **Allosaurus** (conditional): Allosaurus matters only if it gets the right opening
-- **Yutyrannus** (conditional): Yutyrannus matters only if it gets the right opening
-- **Hatzegopteryx** (conditional): Hatzegopteryx matters only if it gets the right opening
-- **Achillobator** (conditional): Achillobator matters only if it gets the right opening
+- **Daspletosaurus** (conditional): Daspletosaurus matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Psittacosaurus** (spürbar): Psittacosaurus is legal quarry, but not a comfortable fight

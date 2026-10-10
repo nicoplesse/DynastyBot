@@ -13,9 +13,10 @@ Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shape
 5. Metriacanthosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3100
 6. Eurhinosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3000
 7. Austroraptor – Stufe 3, Medium, Fleisch, Kampfgewicht 2100
-8. Tropeognathus – Stufe 4, Small, Fleisch, Kampfgewicht 2000
-9. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
-10. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
+8. Tropeognathus (Coast) – Stufe 4, Small, Fleisch, Kampfgewicht 2000
+9. Tropeognathus (Ocean) – Stufe 4, Small, Fleisch, Kampfgewicht 2000
+10. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
+11. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
 
 Besucher: Deinosuchus (Shore), Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus, Lurdusaurus
 
@@ -34,7 +35,7 @@ Rivers, lakes, bogs, mudflats and riverbanks: life organised around fresh water.
 9. Lurdusaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
 10. Halszkaraptor – Stufe 7, Tiny, Pflanzen, Kampfgewicht 400
 
-Besucher: Spinosaurus (Saltwater), Tyrannotitan, Metriacanthosaurus, Eurhinosaurus, Achillobator, Megalania (Temperate), Austroraptor, Latenivenatrix, Rhamphorhynchus, Apatosaurus, Yunnanosaurus, Albertaceratops, Kentrosaurus
+Besucher: Spinosaurus (Saltwater), Tyrannotitan, Metriacanthosaurus, Eurhinosaurus, Achillobator, Megalania (Temperate), Austroraptor, Tropeognathus (Coast), Latenivenatrix, Rhamphorhynchus, Apatosaurus, Yunnanosaurus, Albertaceratops, Kentrosaurus
 
 ## Wald (Forest)
 

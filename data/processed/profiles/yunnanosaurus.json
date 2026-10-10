@@ -11533,19 +11533,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Yunnanosaurus has 5 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Yunnanosaurus has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "lurdusaurus",
         "name": "Lurdusaurus",
+        "family": "lurdusaurus",
         "direction": "threat",
         "band": "meaningful",
         "kind": "territorial-rival",
         "headline": "Lurdusaurus can create a credible fight",
-        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. Even at the legal group cap (1 vs 2), a committed straight fight favours Yunnanosaurus.",
+        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. 1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11562,18 +11564,6 @@
           "durationMarginPct": 37.5,
           "label": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3200,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.71,
-          "cappedPowerRatio": 0.46,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Yunnanosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11589,10 +11579,77 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Yunnanosaurus.",
+          "1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Lurdusaurus bite lands 32 on Yunnanosaurus (32 to kill); a Yunnanosaurus claw attack lands 98 back (7 to kill).",
+          "Lurdusaurus's bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 32,
+            "defenderHit": 98,
+            "attackerBurst": 71,
+            "defenderBurst": 141,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 7,
+            "attackerDps": 47.3,
+            "defenderDps": 53.8,
+            "attackerTimeToKill": 21,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0.096,
+            "defenderBleed": 0.217,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 11,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.47,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 11.25
+            }
+          },
+          "label": "1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Lurdusaurus vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 6 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "lurdusaurus",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Lurdusaurus",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "Lurdusaurus is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11609,12 +11666,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "headline": "Allosaurus can create a very narrow escape window",
+        "summary": "Allosaurus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land. 3 Allosaurus vs 1 Yunnanosaurus: the Allosaurus side wins in about 11 s with 75% of its health left.",
+        "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11630,18 +11689,6 @@
           "targetDurationSeconds": 90.909,
           "durationMarginPct": 0.1,
           "label": "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.13,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -11659,11 +11706,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Allosaurus vs 1 Yunnanosaurus: the Allosaurus side wins in about 11 s with 75% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 42 on Yunnanosaurus (24 to kill); a Yunnanosaurus claw attack lands 84 back (8 to kill).",
+          "Allosaurus's bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 42,
+            "defenderHit": 84,
+            "attackerBurst": 58,
+            "defenderBurst": 120,
+            "attackerHitsToKill": 24,
+            "defenderHitsToKill": 8,
+            "attackerDps": 31.9,
+            "defenderDps": 45.9,
+            "attackerTimeToKill": 31,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0.094,
+            "defenderBleed": 0.185,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.75,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 10.5
+            }
+          },
+          "label": "3 Allosaurus vs 1 Yunnanosaurus: the Allosaurus side wins in about 11 s with 75% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Allosaurus vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 30 s with 14% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -11674,12 +11788,14 @@
       {
         "id": "yutyrannus",
         "name": "Yutyrannus",
+        "family": "yutyrannus",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Yutyrannus can create a real pursuit problem",
-        "summary": "Yutyrannus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "headline": "Yutyrannus can create a very narrow escape window",
+        "summary": "Yutyrannus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land. 4 Yutyrannus vs 1 Yunnanosaurus: the Yutyrannus side wins in about 9 s with 81% of its health left.",
+        "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11696,18 +11812,6 @@
           "durationMarginPct": 10,
           "label": "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.72,
-          "cappedPowerRatio": 1.23,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11721,11 +11825,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 Yutyrannus vs 1 Yunnanosaurus: the Yutyrannus side wins in about 9 s with 81% of its health left.",
           "3 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 43 on Yunnanosaurus (24 to kill); a Yunnanosaurus claw attack lands 97 back (7 to kill).",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 43,
+            "defenderHit": 97,
+            "attackerBurst": 43,
+            "defenderBurst": 138,
+            "attackerHitsToKill": 24,
+            "defenderHitsToKill": 7,
+            "attackerDps": 28.9,
+            "defenderDps": 53,
+            "attackerTimeToKill": 35,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0.213,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.81,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8.75
+            }
+          },
+          "label": "4 Yutyrannus vs 1 Yunnanosaurus: the Yutyrannus side wins in about 9 s with 81% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "4 Yutyrannus vs 2 Yunnanosaurus: the Yutyrannus side wins in about 26 s with 21% of its health left, too narrow to call.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yutyrannus",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Yutyrannus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -11734,14 +11904,138 @@
         "confidence": "derived"
       },
       {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "family": "kelenken",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Kelenken can create a very narrow escape window",
+        "summary": "Kelenken is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land. 4 Kelenken vs 1 Yunnanosaurus: the Kelenken side wins in about 13 s with 43% of its health left.",
+        "score": 82,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1000,
+          "speedMarginPct": 7.5,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 90.909,
+          "durationMarginPct": 83.3,
+          "label": "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "black-fern-hills",
+            "redwoods",
+            "hollow-hills"
+          ],
+          "overlap": 0.8,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land.",
+          "4 Kelenken vs 1 Yunnanosaurus: the Kelenken side wins in about 13 s with 43% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 22 on Yunnanosaurus (47 to kill); a Yunnanosaurus claw attack lands 162 back (4 to kill).",
+          "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 162,
+            "attackerBurst": 30,
+            "defenderBurst": 231,
+            "attackerHitsToKill": 47,
+            "defenderHitsToKill": 4,
+            "attackerDps": 23.3,
+            "defenderDps": 88.3,
+            "attackerTimeToKill": 43,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0.022,
+            "defenderBleed": 0.355,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 13,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.43,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "4 Kelenken vs 1 Yunnanosaurus: the Kelenken side wins in about 13 s with 43% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Kelenken vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 12 s with 67% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land.",
+          "baseScore": 64,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
+        "tags": [
+          "endurance",
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
+        "family": "ceratosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Ceratosaurus can create a real pursuit problem",
-        "summary": "Ceratosaurus is inside the legal hunt range. The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land. The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
+        "summary": "Ceratosaurus is inside the legal hunt range. The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land. 4 Ceratosaurus vs 1 Yunnanosaurus: the Ceratosaurus side wins in about 8 s with 82% of its health left.",
+        "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11757,18 +12051,6 @@
           "targetDurationSeconds": 90.909,
           "durationMarginPct": 57.3,
           "label": "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.58,
-          "cappedPowerRatio": 0.99,
-          "label": "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -11786,136 +12068,193 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land.",
-          "The legal groups (4 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 Ceratosaurus vs 1 Yunnanosaurus: the Ceratosaurus side wins in about 8 s with 82% of its health left.",
           "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Ceratosaurus bite lands 23 on Yunnanosaurus (44 to kill); a Yunnanosaurus claw attack lands 121 back (7 to kill).",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "quetzalcoatlus",
-        "name": "Quetzalcoatlus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Quetzalcoatlus can create a real pursuit problem",
-        "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Large tier."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1350,
-          "targetSpeed": 1000,
-          "speedMarginPct": 35,
-          "attackerDurationSeconds": 50,
-          "targetDurationSeconds": 90.909,
-          "durationMarginPct": -45,
-          "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
-        },
         "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2750,
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 23,
+            "defenderHit": 121,
+            "attackerBurst": 52,
+            "defenderBurst": 173,
+            "attackerHitsToKill": 44,
+            "defenderHitsToKill": 7,
+            "attackerDps": 31.2,
+            "defenderDps": 66.2,
+            "attackerTimeToKill": 32,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0.267,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.82,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8.25
+            }
+          },
+          "label": "4 Ceratosaurus vs 1 Yunnanosaurus: the Ceratosaurus side wins in about 8 s with 82% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2600,
           "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
+          "attackerGroupLimit": 4,
           "targetDefenderLimit": 2,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.61,
-          "cappedPowerRatio": 0.83,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "close",
+            "label": "4 Ceratosaurus vs 2 Yunnanosaurus: the Ceratosaurus side wins in about 23 s with 30% of its health left, too narrow to call.",
+            "attackers": 4,
+            "defenders": 2
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "steep-run",
-            "black-fern-hills",
-            "redwoods",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.462,
-          "label": "6 shared mapped areas make contact plausible."
+        "attackerId": "ceratosaurus",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Ceratosaurus",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Ceratosaurus is inside the legal hunt range."
         },
-        "facts": [
-          "Its profile permits hunting through Large tier.",
-          "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible.",
-          "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
         "tags": [
-          "endurance",
           "dangerous-defender"
         ],
         "evidence": [],
         "confidence": "derived"
       },
       {
-        "id": "hatzegopteryx",
-        "name": "Hatzegopteryx",
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
-        "headline": "Hatzegopteryx can create a real pursuit problem",
-        "summary": "Hatzegopteryx is inside the legal hunt range. Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
+        "headline": "Pycnonemosaurus can create a real pursuit problem",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land. 3 Pycnonemosaurus vs 1 Yunnanosaurus: the Pycnonemosaurus side wins in about 8 s with 80% of its health left.",
+        "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
           "reason": "Its profile permits hunting through Giant tier."
         },
         "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1100,
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1075,
           "targetSpeed": 1000,
-          "speedMarginPct": 10,
-          "attackerDurationSeconds": 50,
+          "speedMarginPct": 7.5,
+          "attackerDurationSeconds": 91,
           "targetDurationSeconds": 90.909,
-          "durationMarginPct": -45,
-          "label": "Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3100,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 0.93,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "durationMarginPct": 0.1,
+          "label": "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "dry-fang-canyon",
-            "tallbrush-coasts",
             "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest"
+            "cedrus-forest",
+            "hollow-hills"
           ],
-          "overlap": 0.278,
-          "label": "5 shared mapped areas make contact plausible."
+          "overlap": 0.308,
+          "label": "4 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible.",
+          "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land.",
+          "3 Pycnonemosaurus vs 1 Yunnanosaurus: the Pycnonemosaurus side wins in about 8 s with 80% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 39 on Yunnanosaurus (26 to kill); a Yunnanosaurus claw attack lands 90 back (8 to kill).",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 39,
+            "defenderHit": 90,
+            "attackerBurst": 93,
+            "defenderBurst": 129,
+            "attackerHitsToKill": 26,
+            "defenderHitsToKill": 8,
+            "attackerDps": 42.3,
+            "defenderDps": 49.2,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0,
+            "defenderBleed": 0.198,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.8,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Yunnanosaurus: the Pycnonemosaurus side wins in about 8 s with 80% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Pycnonemosaurus vs 2 Yunnanosaurus: the Pycnonemosaurus side wins in about 23 s with 21% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11927,12 +12266,14 @@
       {
         "id": "torvosaurus",
         "name": "Torvosaurus",
+        "family": "torvosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "territorial-rival",
         "headline": "Torvosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land. Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land. 1 Yunnanosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 94% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11948,18 +12289,6 @@
           "targetDurationSeconds": 68.966,
           "durationMarginPct": 31.8,
           "label": "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 0.38,
-          "label": "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -11977,9 +12306,76 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land.",
-          "Even at the legal group cap (1 vs 4), a committed straight fight favours Torvosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "1 Yunnanosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 94% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Yunnanosaurus claw attack lands 54 on Torvosaurus (13 to kill); a Torvosaurus bite lands 65 back (16 to kill).",
+          "Yunnanosaurus's bleed builds faster than Torvosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 54,
+            "defenderHit": 65,
+            "attackerBurst": 77,
+            "defenderBurst": 65,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 16,
+            "attackerDps": 29.4,
+            "defenderDps": 43.3,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 23,
+            "attackerBleed": 0.154,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 6,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.94,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6
+            }
+          },
+          "label": "1 Yunnanosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 94% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Yunnanosaurus vs 4 Torvosaurus: the Torvosaurus side wins in about 6 s with 94% of its health left.",
+            "attackers": 1,
+            "defenders": 4
+          }
+        },
+        "attackerId": "yunnanosaurus",
+        "targetId": "torvosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Yunnanosaurus",
+          "targetName": "Torvosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1000 vs 950), but Yunnanosaurus has the pursuit edge on land.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12002,12 +12398,14 @@
       {
         "id": "daspletosaurus",
         "name": "Daspletosaurus",
+        "family": "daspletosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "territorial-rival",
         "headline": "Daspletosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it. 1 Yunnanosaurus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
         "score": 51,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12023,18 +12421,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": -0.1,
           "label": "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.29,
-          "cappedPowerRatio": 0.61,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -12052,9 +12438,76 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "1 Yunnanosaurus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Yunnanosaurus claw attack lands 90 on Daspletosaurus (7 to kill); a Daspletosaurus bite lands 47 back (22 to kill).",
+          "Yunnanosaurus's bleed builds faster than Daspletosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 90,
+            "defenderHit": 47,
+            "attackerBurst": 129,
+            "defenderBurst": 70,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 22,
+            "attackerDps": 49.2,
+            "defenderDps": 36,
+            "attackerTimeToKill": 12,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0.198,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 10,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.74,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 9.5
+            }
+          },
+          "label": "1 Yunnanosaurus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Yunnanosaurus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "yunnanosaurus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Yunnanosaurus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 68,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12075,6 +12528,1160 @@
         "confidence": "profile-specific"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "family": "utahraptor",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Utahraptor can create a real pursuit problem",
+          "summary": "Utahraptor is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land. 5 Utahraptor vs 1 Yunnanosaurus: the Utahraptor side wins in about 8 s with 77% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1000,
+            "speedMarginPct": 7.5,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": 69.2,
+            "label": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.333,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
+            "5 Utahraptor vs 1 Yunnanosaurus: the Utahraptor side wins in about 8 s with 77% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Utahraptor bite lands 23 on Yunnanosaurus (43 to kill); a Yunnanosaurus claw attack lands 150 back (4 to kill).",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 23,
+              "defenderHit": 150,
+              "attackerBurst": 35,
+              "defenderBurst": 214,
+              "attackerHitsToKill": 43,
+              "defenderHitsToKill": 4,
+              "attackerDps": 26.9,
+              "defenderDps": 82,
+              "attackerTimeToKill": 37,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0.33,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.77,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 6.75
+              }
+            },
+            "label": "5 Utahraptor vs 1 Yunnanosaurus: the Utahraptor side wins in about 8 s with 77% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Utahraptor vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 25 s with 14% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Utahraptor",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Utahraptor is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "maip",
+          "name": "Maip",
+          "family": "maip",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Maip can create a real pursuit problem",
+          "summary": "Maip is inside the legal hunt range. This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it. 3 Maip vs 1 Yunnanosaurus: the Maip side wins in about 8 s with 82% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1025,
+            "targetSpeed": 1000,
+            "speedMarginPct": 2.5,
+            "attackerDurationSeconds": 90.909,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": 0,
+            "label": "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.462,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it.",
+            "3 Maip vs 1 Yunnanosaurus: the Maip side wins in about 8 s with 82% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Maip claw lands 53 on Yunnanosaurus (19 to kill); a Yunnanosaurus claw attack lands 79 back (9 to kill).",
+            "Maip's bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 53,
+              "defenderHit": 79,
+              "attackerBurst": 80,
+              "defenderBurst": 113,
+              "attackerHitsToKill": 19,
+              "defenderHitsToKill": 9,
+              "attackerDps": 40.9,
+              "defenderDps": 43,
+              "attackerTimeToKill": 24,
+              "defenderTimeToKill": 15,
+              "attackerBleed": 0.282,
+              "defenderBleed": 0.173,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.82,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "3 Maip vs 1 Yunnanosaurus: the Maip side wins in about 8 s with 82% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4000,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Maip vs 2 Yunnanosaurus: the Maip side wins in about 21 s with 35% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "maip",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Maip",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Maip is inside the legal hunt range."
+          },
+          "tags": [
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Yunnanosaurus: the Quetzalcoatlus side wins in about 28 s with 2% of its health left, too narrow to call.",
+          "score": 66,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1000,
+            "speedMarginPct": 35,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": -45,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "steep-run",
+              "black-fern-hills",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.462,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Yunnanosaurus: the Quetzalcoatlus side wins in about 28 s with 2% of its health left, too narrow to call.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 49 on Yunnanosaurus (21 to kill); a Yunnanosaurus claw attack lands 115 back (6 to kill).",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 49,
+              "defenderHit": 115,
+              "attackerBurst": 55,
+              "defenderBurst": 164,
+              "attackerHitsToKill": 21,
+              "defenderHitsToKill": 6,
+              "attackerDps": 17.5,
+              "defenderDps": 62.6,
+              "attackerTimeToKill": 57,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0.031,
+              "defenderBleed": 0.252,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 28,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.02,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 9.75
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Yunnanosaurus: the Quetzalcoatlus side wins in about 28 s with 2% of its health left, too narrow to call.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Quetzalcoatlus vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 15 s with 74% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "hatzegopteryx",
+          "name": "Hatzegopteryx",
+          "family": "hatzegopteryx",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Hatzegopteryx can create a real pursuit problem",
+          "summary": "Hatzegopteryx is inside the legal hunt range. Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters. 3 Hatzegopteryx vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 33 s with 4% of its health left, too narrow to call.",
+          "score": 66,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1000,
+            "speedMarginPct": 10,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": -45,
+            "label": "Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.278,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters.",
+            "3 Hatzegopteryx vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 33 s with 4% of its health left, too narrow to call.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Hatzegopteryx bite lands 21 on Yunnanosaurus (49 to kill); a Yunnanosaurus claw attack lands 102 back (6 to kill).",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 21,
+              "defenderHit": 102,
+              "attackerBurst": 48,
+              "defenderBurst": 145,
+              "attackerHitsToKill": 49,
+              "defenderHitsToKill": 6,
+              "attackerDps": 14.7,
+              "defenderDps": 55.5,
+              "attackerTimeToKill": 68,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0.224,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 33,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.04,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 11
+              }
+            },
+            "label": "3 Hatzegopteryx vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 33 s with 4% of its health left, too narrow to call.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Hatzegopteryx vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 16 s with 76% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "hatzegopteryx",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Hatzegopteryx",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Hatzegopteryx can approach at 1100 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Hatzegopteryx is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "family": "sarcosuchus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Sarcosuchus matters only if it gets the right opening",
+          "summary": "Sarcosuchus is inside the legal hunt range. Yunnanosaurus is 10% faster on land and can normally refuse this fight. 3 Sarcosuchus vs 1 Yunnanosaurus: the Sarcosuchus side wins in about 4 s with 92% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 900,
+            "targetSpeed": 1000,
+            "speedMarginPct": -10,
+            "attackerDurationSeconds": 40,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": -56,
+            "label": "Yunnanosaurus is 10% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "redwoods",
+              "wollemi-forest"
+            ],
+            "overlap": 0.357,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Yunnanosaurus is 10% faster on land and can normally refuse this fight.",
+            "3 Sarcosuchus vs 1 Yunnanosaurus: the Sarcosuchus side wins in about 4 s with 92% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Sarcosuchus tail lands 40 on Yunnanosaurus (25 to kill); a Yunnanosaurus claw attack lands 70 back (9 to kill).",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 70,
+              "attackerBurst": 210,
+              "defenderBurst": 100,
+              "attackerHitsToKill": 25,
+              "defenderHitsToKill": 9,
+              "attackerDps": 90.7,
+              "defenderDps": 38.3,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0.154,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "3 Sarcosuchus vs 1 Yunnanosaurus: the Sarcosuchus side wins in about 4 s with 92% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Sarcosuchus vs 2 Yunnanosaurus: the Sarcosuchus side wins in about 8 s with 76% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "sarcosuchus",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Sarcosuchus",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Yunnanosaurus is 10% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Sarcosuchus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "family": "torvosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Torvosaurus matters only if it gets the right opening",
+          "summary": "Torvosaurus is inside the legal hunt range. Yunnanosaurus is 5% faster on land and can normally refuse this fight. 6 Torvosaurus vs 1 Yunnanosaurus: the Torvosaurus side wins in about 4 s with 97% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1000,
+            "speedMarginPct": -5,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 90.909,
+            "durationMarginPct": -24.1,
+            "label": "Yunnanosaurus is 5% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills"
+            ],
+            "overlap": 0.5,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Yunnanosaurus is 5% faster on land and can normally refuse this fight.",
+            "6 Torvosaurus vs 1 Yunnanosaurus: the Torvosaurus side wins in about 4 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 65 on Yunnanosaurus (16 to kill); a Yunnanosaurus claw attack lands 54 back (13 to kill).",
+            "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 6,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 65,
+              "defenderHit": 54,
+              "attackerBurst": 65,
+              "defenderBurst": 77,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 13,
+              "attackerDps": 43.3,
+              "defenderDps": 29.4,
+              "attackerTimeToKill": 23,
+              "defenderTimeToKill": 24,
+              "attackerBleed": 0,
+              "defenderBleed": 0.154,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.97,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4
+              }
+            },
+            "label": "6 Torvosaurus vs 1 Yunnanosaurus: the Torvosaurus side wins in about 4 s with 97% of its health left.",
+            "detail": "6 attackers vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Yunnanosaurus: the Torvosaurus side wins in about 8 s with 92% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "yunnanosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Torvosaurus",
+            "targetName": "Yunnanosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Yunnanosaurus is 5% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Torvosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": []
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "yunnanosaurus": {
+        "id": "yunnanosaurus",
+        "name": "Yunnanosaurus",
+        "cw": 4500,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 38.25,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Body Slam",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Body Slam",
+          "Tail Slam"
+        ],
+        "bleedPerSecond": 0.154,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus": {
+        "id": "lurdusaurus",
+        "name": "Lurdusaurus",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "daspletosaurus": {
+        "id": "daspletosaurus",
+        "name": "Daspletosaurus",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 46.25,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 90,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Crushing Bite",
+          "Bone Snap Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "utahraptor": {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "cw": 2100,
+        "hp": 550,
+        "armor": 1,
+        "dps": 57.57,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunge",
+          "damage": 75,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite",
+          "Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "maip": {
+        "id": "maip",
+        "name": "Maip",
+        "cw": 4000,
+        "hp": 650,
+        "armor": 1,
+        "dps": 46,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Claw Charged"
+        ],
+        "bleedPerSecond": 0.317,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "hatzegopteryx": {
+        "id": "hatzegopteryx",
+        "name": "Hatzegopteryx",
+        "cw": 3100,
+        "hp": 600,
+        "armor": 1,
+        "dps": 21.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "AOEBarrel Roll",
+          "damage": 70,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "AOEBarrel Roll",
+          "Flail"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -12120,7 +13727,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

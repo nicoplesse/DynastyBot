@@ -67,15 +67,15 @@ You are a medium nocturnal carnivore in a close, loyal pack of up to 6 that stay
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
 - **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Albertaceratops** (spürbar): Albertaceratops is legal quarry, but not a comfortable fight
-- **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Stegosaurus** (hoch): Stegosaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Cannibalism / offspring risk: Ceratosaurus are not cannibalistic and will never eat the bodies of a fallen Ceratosaurus, whether it be a pack member or stranger whelp.

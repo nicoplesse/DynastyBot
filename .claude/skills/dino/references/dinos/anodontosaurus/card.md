@@ -56,7 +56,7 @@ You are a medium, armoured herbivore that prefers its own company. Whatever food
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Austroraptor** (hoch): Austroraptor can create a real pursuit problem
+- **Austroraptor** (spürbar): Austroraptor can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Tyrannosaurus** (sehr hoch): Tyrannosaurus can create a very narrow escape window

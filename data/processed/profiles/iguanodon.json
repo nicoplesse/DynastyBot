@@ -13925,19 +13925,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Iguanodon has 5 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Iguanodon has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "achillobator",
         "name": "Achillobator",
+        "family": "achillobator",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Achillobator can create a very narrow escape window",
-        "summary": "Achillobator is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 88,
+        "summary": "Achillobator is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land. 5 Achillobator vs 1 Iguanodon: the Achillobator side wins in about 5 s with 82% of its health left.",
+        "score": 98,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13953,18 +13955,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 69.2,
           "label": "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.67,
-          "cappedPowerRatio": 1.02,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -13985,11 +13975,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "5 Achillobator vs 1 Iguanodon: the Achillobator side wins in about 5 s with 82% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Achillobator bite lands 47 on Iguanodon (18 to kill); a Iguanodon kick lands 90 back (7 to kill).",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 47,
+            "defenderHit": 90,
+            "attackerBurst": 93,
+            "defenderBurst": 128,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 7,
+            "attackerDps": 33.3,
+            "defenderDps": 105,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.82,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 5
+            }
+          },
+          "label": "5 Achillobator vs 1 Iguanodon: the Achillobator side wins in about 5 s with 82% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Achillobator vs 3 Iguanodon: the Iguanodon side wins in about 11 s with 56% of its health left.",
+            "attackers": 5,
+            "defenders": 3
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Achillobator",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Achillobator has the pursuit edge on land.",
+          "baseScore": 80,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Achillobator is linked by a specific profile rule."
+        },
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -14013,12 +14069,14 @@
       {
         "id": "latenivenatrix",
         "name": "Latenivenatrix",
+        "family": "latenivenatrix",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Latenivenatrix can create a real pursuit problem",
-        "summary": "Latenivenatrix is linked by a specific profile rule. The speed gap is small (1075 vs 1000), but Latenivenatrix has the pursuit edge on land. Even at the legal group cap (8 vs 3), a committed straight fight favours Iguanodon.",
-        "score": 63,
+        "headline": "Latenivenatrix can create a very narrow escape window",
+        "summary": "Latenivenatrix is linked by a specific profile rule. The speed gap is small (1075 vs 1000), but Latenivenatrix has the pursuit edge on land. 8 Latenivenatrix vs 1 Iguanodon: the Latenivenatrix side wins in about 9 s with 51% of its health left.",
+        "score": 98,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14034,18 +14092,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 174.7,
           "label": "The speed gap is small (1075 vs 1000), but Latenivenatrix has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 1400,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.33,
-          "cappedPowerRatio": 0.77,
-          "label": "Even at the legal group cap (8 vs 3), a committed straight fight favours Iguanodon."
         },
         "encounter": {
           "level": "frequent",
@@ -14066,11 +14112,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (1075 vs 1000), but Latenivenatrix has the pursuit edge on land.",
-          "Even at the legal group cap (8 vs 3), a committed straight fight favours Iguanodon.",
+          "8 Latenivenatrix vs 1 Iguanodon: the Latenivenatrix side wins in about 9 s with 51% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Latenivenatrix bite lands 13 on Iguanodon (61 to kill); a Iguanodon kick lands 180 back (3 to kill).",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
         ],
+        "fight": {
+          "attackers": 8,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 13,
+            "defenderHit": 180,
+            "attackerBurst": 30,
+            "defenderBurst": 255,
+            "attackerHitsToKill": 61,
+            "defenderHitsToKill": 3,
+            "attackerDps": 13.3,
+            "defenderDps": 210,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 2,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.51,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 2.5
+            }
+          },
+          "label": "8 Latenivenatrix vs 1 Iguanodon: the Latenivenatrix side wins in about 9 s with 51% of its health left.",
+          "detail": "8 attackers vs 1 defender",
+          "attackerCombatWeight": 1400,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Latenivenatrix vs 3 Iguanodon: the Iguanodon side wins in about 7 s with 83% of its health left.",
+            "attackers": 8,
+            "defenders": 3
+          }
+        },
+        "attackerId": "latenivenatrix",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Latenivenatrix",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1000), but Latenivenatrix has the pursuit edge on land.",
+          "baseScore": 80,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Latenivenatrix is linked by a specific profile rule."
+        },
         "tags": [
           "pounce",
           "dangerous-defender"
@@ -14094,12 +14206,14 @@
       {
         "id": "lurdusaurus",
         "name": "Lurdusaurus",
+        "family": "lurdusaurus",
         "direction": "threat",
         "band": "meaningful",
         "kind": "territorial-rival",
         "headline": "Lurdusaurus can create a credible fight",
-        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. Even at the legal group cap (1 vs 3), a committed straight fight favours Iguanodon.",
+        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. 1 Lurdusaurus vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14115,18 +14229,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 37.4,
           "label": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3200,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.76,
-          "cappedPowerRatio": 0.36,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Iguanodon."
         },
         "encounter": {
           "level": "frequent",
@@ -14149,10 +14251,77 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Iguanodon.",
+          "1 Lurdusaurus vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.",
           "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Lurdusaurus bite lands 34 on Iguanodon (24 to kill); a Iguanodon kick lands 79 back (8 to kill).",
+          "Lurdusaurus's bleed builds faster than Iguanodon heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 34,
+            "defenderHit": 79,
+            "attackerBurst": 76,
+            "defenderBurst": 112,
+            "attackerHitsToKill": 24,
+            "defenderHitsToKill": 8,
+            "attackerDps": 50.7,
+            "defenderDps": 91.9,
+            "attackerTimeToKill": 16,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0.103,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 7,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.57,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6.75
+            }
+          },
+          "label": "1 Lurdusaurus vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Lurdusaurus vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 95% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "lurdusaurus",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Lurdusaurus",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "Lurdusaurus is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14175,12 +14344,14 @@
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 15% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 15% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Iguanodon: the Alioramus side wins in about 6 s with 71% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14196,18 +14367,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 46.2,
           "label": "Alioramus is 15% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.57,
-          "cappedPowerRatio": 0.87,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14227,10 +14386,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 15% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "5 Alioramus vs 1 Iguanodon: the Alioramus side wins in about 6 s with 71% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 26 on Iguanodon (32 to kill); a Iguanodon kick lands 105 back (5 to kill).",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 26,
+            "defenderHit": 105,
+            "attackerBurst": 31,
+            "defenderBurst": 149,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 5,
+            "attackerDps": 27.9,
+            "defenderDps": 122.5,
+            "attackerTimeToKill": 29,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 6,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.71,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.5
+            }
+          },
+          "label": "5 Alioramus vs 1 Iguanodon: the Alioramus side wins in about 6 s with 71% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Alioramus vs 3 Iguanodon: the Iguanodon side wins in about 7 s with 74% of its health left.",
+            "attackers": 5,
+            "defenders": 3
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance",
           "dangerous-defender"
@@ -14241,12 +14466,14 @@
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "headline": "Allosaurus can create a very narrow escape window",
+        "summary": "Allosaurus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land. 3 Allosaurus vs 1 Iguanodon: the Allosaurus side wins in about 8 s with 68% of its health left.",
+        "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14262,18 +14489,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 0,
           "label": "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.89,
-          "cappedPowerRatio": 0.89,
-          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14292,11 +14507,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land.",
-          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Allosaurus vs 1 Iguanodon: the Allosaurus side wins in about 8 s with 68% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 45 on Iguanodon (18 to kill); a Iguanodon kick lands 67 back (10 to kill).",
+          "Allosaurus's bleed builds faster than Iguanodon heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 45,
+            "defenderHit": 67,
+            "attackerBurst": 63,
+            "defenderBurst": 95,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 10,
+            "attackerDps": 34.2,
+            "defenderDps": 78.4,
+            "attackerTimeToKill": 23,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0.101,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.68,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8
+            }
+          },
+          "label": "3 Allosaurus vs 1 Iguanodon: the Allosaurus side wins in about 8 s with 68% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Allosaurus vs 3 Iguanodon: the Iguanodon side wins in about 9 s with 75% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1040 vs 1000), but Allosaurus has the pursuit edge on land.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14307,12 +14589,14 @@
       {
         "id": "dilophosaurus",
         "name": "Dilophosaurus",
+        "family": "dilophosaurus",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Dilophosaurus can create a real pursuit problem",
-        "summary": "Dilophosaurus is inside the legal hunt range. Dilophosaurus is 10% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "headline": "Dilophosaurus can create a very narrow escape window",
+        "summary": "Dilophosaurus is inside the legal hunt range. Dilophosaurus is 10% faster on land; a clean escape is unlikely once spotted. 5 Dilophosaurus vs 1 Iguanodon: the Dilophosaurus side wins in about 6 s with 73% of its health left.",
+        "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14329,18 +14613,6 @@
           "durationMarginPct": 83.2,
           "label": "Dilophosaurus is 10% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 4200,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.57,
-          "cappedPowerRatio": 0.87,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -14356,10 +14628,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Dilophosaurus is 10% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "5 Dilophosaurus vs 1 Iguanodon: the Dilophosaurus side wins in about 6 s with 73% of its health left.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Dilophosaurus bite lands 29 on Iguanodon (29 to kill); a Iguanodon kick lands 105 back (6 to kill).",
           "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 29,
+            "defenderHit": 105,
+            "attackerBurst": 29,
+            "defenderBurst": 149,
+            "attackerHitsToKill": 29,
+            "defenderHitsToKill": 6,
+            "attackerDps": 28.6,
+            "defenderDps": 122.5,
+            "attackerTimeToKill": 28,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 6,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.73,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.5
+            }
+          },
+          "label": "5 Dilophosaurus vs 1 Iguanodon: the Dilophosaurus side wins in about 6 s with 73% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Dilophosaurus vs 3 Iguanodon: the Iguanodon side wins in about 8 s with 73% of its health left.",
+            "attackers": 5,
+            "defenders": 3
+          }
+        },
+        "attackerId": "dilophosaurus",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Dilophosaurus",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Dilophosaurus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Dilophosaurus is inside the legal hunt range."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14368,6 +14706,1132 @@
       }
     ],
     "opportunities": [],
+    "reserve": {
+      "threats": [
+        {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "family": "yutyrannus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Yutyrannus can create a very narrow escape window",
+          "summary": "Yutyrannus is inside the legal hunt range. The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land. 4 Yutyrannus vs 1 Iguanodon: the Yutyrannus side wins in about 7 s with 75% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1040,
+            "targetSpeed": 1000,
+            "speedMarginPct": 4,
+            "attackerDurationSeconds": 100,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 9.9,
+            "label": "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.286,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land.",
+            "4 Yutyrannus vs 1 Iguanodon: the Yutyrannus side wins in about 7 s with 75% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Yutyrannus bite lands 46 on Iguanodon (18 to kill); a Iguanodon kick lands 78 back (8 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 46,
+              "defenderHit": 78,
+              "attackerBurst": 46,
+              "defenderBurst": 110,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 8,
+              "attackerDps": 31,
+              "defenderDps": 90.5,
+              "attackerTimeToKill": 26,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 7,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.75,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6.5
+              }
+            },
+            "label": "4 Yutyrannus vs 1 Iguanodon: the Yutyrannus side wins in about 7 s with 75% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 3250,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Yutyrannus vs 3 Iguanodon: the Iguanodon side wins in about 9 s with 71% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "yutyrannus",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Yutyrannus",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1040 vs 1000), but Yutyrannus has the pursuit edge on land.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Yutyrannus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a real pursuit problem",
+          "summary": "Ceratosaurus is inside the legal hunt range. The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land. 4 Ceratosaurus vs 1 Iguanodon: the Ceratosaurus side wins in about 6 s with 77% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1000,
+            "speedMarginPct": 5,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 57.1,
+            "label": "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.6,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land.",
+            "4 Ceratosaurus vs 1 Iguanodon: the Ceratosaurus side wins in about 6 s with 77% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 25 on Iguanodon (33 to kill); a Iguanodon kick lands 97 back (8 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 25,
+              "defenderHit": 97,
+              "attackerBurst": 56,
+              "defenderBurst": 137,
+              "attackerHitsToKill": 33,
+              "defenderHitsToKill": 8,
+              "attackerDps": 33.4,
+              "defenderDps": 113.1,
+              "attackerTimeToKill": 24,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.77,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Iguanodon: the Ceratosaurus side wins in about 6 s with 77% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Ceratosaurus vs 3 Iguanodon: the Iguanodon side wins in about 9 s with 69% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1050 vs 1000), but Ceratosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "pycnonemosaurus",
+          "name": "Pycnonemosaurus",
+          "family": "pycnonemosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Pycnonemosaurus can create a real pursuit problem",
+          "summary": "Pycnonemosaurus is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land. 3 Pycnonemosaurus vs 1 Iguanodon: the Pycnonemosaurus side wins in about 6 s with 74% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1000,
+            "speedMarginPct": 7.5,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 0,
+            "label": "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cedrus-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "wind-tunnels",
+              "hollow-hills"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land.",
+            "3 Pycnonemosaurus vs 1 Iguanodon: the Pycnonemosaurus side wins in about 6 s with 74% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Pycnonemosaurus bite lands 42 on Iguanodon (20 to kill); a Iguanodon kick lands 72 back (10 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 42,
+              "defenderHit": 72,
+              "attackerBurst": 100,
+              "defenderBurst": 102,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 10,
+              "attackerDps": 45.3,
+              "defenderDps": 84,
+              "attackerTimeToKill": 18,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.74,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6
+              }
+            },
+            "label": "3 Pycnonemosaurus vs 1 Iguanodon: the Pycnonemosaurus side wins in about 6 s with 74% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Pycnonemosaurus vs 3 Iguanodon: the Iguanodon side wins in about 8 s with 70% of its health left.",
+              "attackers": 3,
+              "defenders": 3
+            }
+          },
+          "attackerId": "pycnonemosaurus",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Pycnonemosaurus",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1000), but Pycnonemosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "family": "utahraptor",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Utahraptor can create a real pursuit problem",
+          "summary": "Utahraptor is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land. 5 Utahraptor vs 1 Iguanodon: the Utahraptor side wins in about 6 s with 69% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1000,
+            "speedMarginPct": 7.5,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 69.1,
+            "label": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.4,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
+            "5 Utahraptor vs 1 Iguanodon: the Utahraptor side wins in about 6 s with 69% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Utahraptor bite lands 25 on Iguanodon (32 to kill); a Iguanodon kick lands 120 back (5 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 25,
+              "defenderHit": 120,
+              "attackerBurst": 38,
+              "defenderBurst": 170,
+              "attackerHitsToKill": 32,
+              "defenderHitsToKill": 5,
+              "attackerDps": 28.8,
+              "defenderDps": 140,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 6,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.69,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4
+              }
+            },
+            "label": "5 Utahraptor vs 1 Iguanodon: the Utahraptor side wins in about 6 s with 69% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Utahraptor vs 3 Iguanodon: the Iguanodon side wins in about 7 s with 76% of its health left.",
+              "attackers": 5,
+              "defenders": 3
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Utahraptor",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Utahraptor is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Concavenator can create a real pursuit problem",
+          "summary": "Concavenator is inside the legal hunt range. Concavenator is 10% faster on land; a clean escape is unlikely once spotted. 4 Concavenator vs 1 Iguanodon: the Concavenator side wins in about 10 s with 34% of its health left, too narrow to call.",
+          "score": 73,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1000,
+            "speedMarginPct": 10,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 83.5,
+            "label": "Concavenator is 10% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "coastal-bluffs",
+              "big-tree-overlook",
+              "twisted-forest",
+              "black-fern-hills",
+              "stillwater-bog",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.412,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Concavenator is 10% faster on land; a clean escape is unlikely once spotted.",
+            "4 Concavenator vs 1 Iguanodon: the Concavenator side wins in about 10 s with 34% of its health left, too narrow to call.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Concavenator bite lands 25 on Iguanodon (32 to kill); a Iguanodon kick lands 120 back (5 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 25,
+              "defenderHit": 120,
+              "attackerBurst": 40,
+              "defenderBurst": 170,
+              "attackerHitsToKill": 32,
+              "defenderHitsToKill": 5,
+              "attackerDps": 26.8,
+              "defenderDps": 140,
+              "attackerTimeToKill": 30,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0.025,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 2,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.34,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.75
+              }
+            },
+            "label": "4 Concavenator vs 1 Iguanodon: the Concavenator side wins in about 10 s with 34% of its health left, too narrow to call.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Concavenator vs 3 Iguanodon: the Iguanodon side wins in about 5 s with 86% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "concavenator",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Concavenator",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Concavenator is 10% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "kelenken",
+          "name": "Kelenken",
+          "family": "kelenken",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Kelenken can create a real pursuit problem",
+          "summary": "Kelenken is inside the legal hunt range. The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land. 4 Kelenken vs 1 Iguanodon: the Kelenken side wins in about 12 s with 10% of its health left, too narrow to call.",
+          "score": 72,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1000,
+            "speedMarginPct": 7.5,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 83.2,
+            "label": "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills"
+            ],
+            "overlap": 0.438,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land.",
+            "4 Kelenken vs 1 Iguanodon: the Kelenken side wins in about 12 s with 10% of its health left, too narrow to call.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Kelenken bite lands 23 on Iguanodon (35 to kill); a Iguanodon kick lands 129 back (4 to kill).",
+            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 23,
+              "defenderHit": 129,
+              "attackerBurst": 33,
+              "defenderBurst": 183,
+              "attackerHitsToKill": 35,
+              "defenderHitsToKill": 4,
+              "attackerDps": 24.9,
+              "defenderDps": 150.8,
+              "attackerTimeToKill": 32,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0.023,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 12,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.1,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.5
+              }
+            },
+            "label": "4 Kelenken vs 1 Iguanodon: the Kelenken side wins in about 12 s with 10% of its health left, too narrow to call.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 1950,
+            "targetCombatWeight": 4200,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Kelenken vs 3 Iguanodon: the Iguanodon side wins in about 5 s with 88% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "kelenken",
+          "targetId": "iguanodon",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Kelenken",
+            "targetName": "Iguanodon",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1000), but Kelenken has the pursuit edge on land.",
+            "baseScore": 64,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Kelenken is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": []
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "iguanodon": {
+        "id": "iguanodon",
+        "name": "Iguanodon",
+        "cw": 4200,
+        "hp": 800,
+        "armor": 1,
+        "dps": 70,
+        "primary": {
+          "label": "Kick",
+          "damage": 60,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 85,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Back Kick",
+          "Arm Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus": {
+        "id": "lurdusaurus",
+        "name": "Lurdusaurus",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "utahraptor": {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "cw": 2100,
+        "hp": 550,
+        "armor": 1,
+        "dps": 57.57,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunge",
+          "damage": 75,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite",
+          "Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -14403,7 +15867,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

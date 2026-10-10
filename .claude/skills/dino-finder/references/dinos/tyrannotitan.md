@@ -63,19 +63,19 @@ You are an Apex nocturnal carnivore living alone or in a related same-sex pair: 
 
 **Gefährlich für dich:**
 - **Maip** (conditional): Maip matters only if it gets the right opening
-- **Tyrannosaurus** (spürbar): Tyrannosaurus can create a credible fight
+- **Tyrannosaurus** (hoch): Tyrannosaurus can create a real pursuit problem
+- **Giganotosaurus** (spürbar): Giganotosaurus can create a credible fight
 - **Yutyrannus** (conditional): Yutyrannus matters only if it gets the right opening
-- **Giganotosaurus** (conditional): Giganotosaurus matters only if it gets the right opening
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Apatosaurus** (sehr hoch): Apatosaurus is a realistic hunting opportunity
-- **Barsboldia** (sehr hoch): Barsboldia is a realistic hunting opportunity
-- **Parasaurolophus** (sehr hoch): Parasaurolophus is a realistic hunting opportunity
-- **Tyrannosaurus** (sehr hoch): Tyrannosaurus is a realistic hunting opportunity
-- **Eotriceratops** (sehr hoch): Eotriceratops is a realistic hunting opportunity
-- **Therizinosaurus** (sehr hoch): Therizinosaurus is a realistic hunting opportunity
+- **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Tyrannosaurus** (spürbar): Tyrannosaurus is legal quarry, but not a comfortable fight
+- **Eotriceratops** (spürbar): Eotriceratops is legal quarry, but not a comfortable fight
+- **Therizinosaurus** (spürbar): Therizinosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Tyrannotitan do respect the forfeits of Tyrannosaurus & Giganotosaurus - but these rivals must be seen to be fleeing the POI for Tyrannotitan to let them go.

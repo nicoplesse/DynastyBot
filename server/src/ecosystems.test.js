@@ -59,5 +59,5 @@ test('the processed overview lists every playable once, from the top of the food
       if (position) assert.ok(compareFoodChain(ecosystem.foodChain[position - 1], member) <= 0, `${ecosystem.id}: ${member.name} out of order`);
     });
   }
-  assert.equal(index.ecosystems.find(item => item.id === 'sea').foodChain.some(member => member.id === 'tropeognathus'), true);
+  assert.equal(index.ecosystems.find(item => item.id === 'sea').foodChain.some(member => member.id === 'tropeognathus-ocean'), true);
 });

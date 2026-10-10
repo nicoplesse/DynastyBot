@@ -25,6 +25,7 @@ data/raw/        Versionable source profiles: one directory per playable
 data/map/        Shared world gazetteer: named regions with coordinates and biome/moisture tags
 data/reference/  Local snapshot of publicly listed default stat curves
 data/processed/  Generated profile JSON, catalog, structured rules and the map index
+data/herd/       Your own dinos (My Dinos): raw screenshots, photo and dino.json
 ```
 
 Each `data/raw/<slug>/` directory contains `manifest.json`, the original `profile.txt`, regular image files in `images/`, and an optional `pois.json` (points of interest for the map, see below). `data/raw/` is intentionally **not** ignored by Git. Generated files include `data/processed/index.json`, one JSON document per profile, `data/processed/rules.json`, `data/processed/map.json` and `data/processed/map-index.json`. This gives later search or chat features a stable structured source while keeping raw data intact.
@@ -57,6 +58,14 @@ Each POI area in the gazetteer has `ecosystems`: its landscape, using the six ec
 
 The profile map adds no colour of its own, because the map image already shows the profile's territories, nesting and courtship grounds and routes. POI areas are invisible click targets: hovering outlines the area in white and shows its name, and the side panel lists the POIs by role. The **Landscape** buttons show one landscape at a time as a spotlight. The rest of the map is dimmed, the areas of that landscape keep the map's own colours with a thin white outline, and areas where it is only a secondary trait stay half-lit with a dashed outline. For Rivers & Swamps, lakes, rivers and ponds inside other areas are lit as well. Each button shows how many of the profile's POIs lie in that landscape, and a dot marks the profile's home ecosystem.
 
+## My Dinos
+
+The **My Dinos** tab (`#/herd`) keeps your own dinosaurs: bloodlines, dominant and recessive skins, mutations, a mutation proof (Discord link), a nesting proof link and a photo. Each dino is a folder `data/herd/<id>/` with `dino.json`, the raw `screenshots/` (stored byte for byte, never modified) and an optional `photo-*` image.
+
+1. In **My Dinos → Import screenshots**, enter the dino's name (e.g. Malekit), optionally pick the playable, and drop or paste (Ctrl+V) screenshots. The mutation proof and nesting proof links are optional fields there too; an empty field keeps a link the dino already has. An existing name adds the screenshots to that dino.
+2. In Claude, type `/aktualisiere`. It asks which dino to update, reads the new screenshots and writes the details through `node server/scripts/herd.mjs apply` (`list` and `show` are there too). Every read screenshot keeps the text Claude read from it, so the values can be checked later.
+3. Links, photo and corrections can also be edited on the dino's page. On a playable's profile, a small collapsed line under the ecosystem lists your dinos of that playable; it expands to their genetics.
+
 ## Variants: one profile, several playables
 
 Some official profiles describe two populations that play very differently. Such a profile can be split into separate playables that share its official text, stats, speeds and images. Each variant is a folder `data/raw/<slug>/variants/<variant>/` with:
@@ -74,14 +83,19 @@ Megalania is split this way:
 Spinosaurus is split along a line the profile draws itself. Most Spinosaurus "possessively claim territory in freshwater lakes and rivers", while some prefer "a lazy lifestyle touring saltwater areas":
 
 - **Spinosaurus (Freshwater)**, the "Flussherr": the grizzly and saltwater crocodile. It claims one lake, bog or river water (the segmented territories and the bright-green river stretches).
-- **Spinosaurus (Saltwater)**, the "Küstenwächter": a leopard seal and grey reef shark. It claims one of the bright-green sea areas of the profile map (Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands, Stonebed Shoal).
+- **Spinosaurus (Saltwater)**, the "Meeresbär": a polar bear of the sea with a walrus bull's territorial display. It claims one of the bright-green sea areas of the profile map as its home (best Kelp Vale or the Coastal Bluffs; also Stonebed Shoal, Palm Islands, Abyssal Depths) and from there tours the Leedsichthys migration loop.
 
-Like every Spinosaurus, each variant holds exactly one territory and roams only inside it. The saltwater variant drinks at fresh water outside its territory (POI role `drinking`, `"claimable": false`), which it uses peacefully and never defends.
+Like every Spinosaurus, each variant holds exactly one territory, nests there and hunts other players only from there. The freshwater variant roams only inside it. The saltwater variant, following the profile's "lazy lifestyle touring saltwater areas", also tours the Leedsichthys loop peacefully, hunting only fish, critters, Leedsichthys and Tylosaurus outside its home, and drinks at fresh water outside its territory (POI role `drinking`, `"claimable": false`), which it never defends.
 
 Deinosuchus is split into a shore and an ocean playable. Its profile says it adapts "surprisingly well to brackish and saltwater environments" and ventures "out into the open ocean":
 
 - **Deinosuchus (Shore)**, the "Uferlauerer": the Nile crocodile of rivers, swamps, estuaries, beaches and islands, ambushing land animals at the water's edge.
 - **Deinosuchus (Ocean)**, the "Hochseehai": only the three true ocean areas (Kelp Vale, Abyssal Depths, Stonebed Shoal), with no crocodile analog. By day it is a southern elephant seal that basks on shores, rocks and driftwood or at the surface and sheds in large pieces; at night it is a great white that sinks into deep water and strikes from below.
+
+Tropeognathus is split into a coast and an ocean playable, since its profile places it in "coastal regions and open seas". Both share the sea cliffs of the Coastal Bluffs, and both court at Ripple Beach and nest at Ocean Pillars as the profile says:
+
+- **Tropeognathus (Coast)**, the "Strandpirat": a Baltic beach gull (herring gull) with a cormorant's dive. It rests on sandbanks and rocks along beaches, mudflats, swamps and islands, raids other predators' kills, cracks mussels on stone and follows land animals inland to the bogs.
+- **Tropeognathus (Ocean)**, the "Sturmsegler": a wandering albatross that plunge-dives like a northern gannet. It glides over Kelp Vale, the Abyssal Depths and the Stonebed Shoal, rests and sleeps on the water like an albatross and touches rock only to dry its wings or sit out a storm.
 
 Sibling variants are one species unless the profile says otherwise, and in the bounded threat and prey lists the variants of one profile share a single slot. The Spinosaurus variants never appear as each other's prey, while the Megalania variants may hunt each other.
 

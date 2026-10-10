@@ -13545,19 +13545,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Austroraptor has 6 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Austroraptor has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "tylosaurus",
         "name": "Tylosaurus",
+        "family": "tylosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Tylosaurus can create a very narrow escape window",
-        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. At the legal limits (2 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Austroraptor: the Tylosaurus side wins in about 3 s with 97% of its health left.",
         "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13573,18 +13575,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -11.2,
           "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.38,
-          "cappedPowerRatio": 2.38,
-          "label": "At the legal limits (2 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13606,10 +13596,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (2 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "2 Tylosaurus vs 1 Austroraptor: the Tylosaurus side wins in about 3 s with 97% of its health left.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 155 on Austroraptor (5 to kill); a Austroraptor bite lands 21 back (48 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 155,
+            "defenderHit": 21,
+            "attackerBurst": 250,
+            "defenderBurst": 25,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 48,
+            "attackerDps": 122.5,
+            "defenderDps": 21.3,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 47,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.97,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2.75
+            }
+          },
+          "label": "2 Tylosaurus vs 1 Austroraptor: the Tylosaurus side wins in about 3 s with 97% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tylosaurus vs 2 Austroraptor: the Tylosaurus side wins in about 6 s with 91% of its health left.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tylosaurus",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tylosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13620,12 +13676,14 @@
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
+        "family": "sarcosuchus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Sarcosuchus can create a very narrow escape window",
-        "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. 3 Sarcosuchus vs 1 Austroraptor: the Sarcosuchus side wins in about 1 s with 98% of its health left.",
         "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13641,18 +13699,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -33.2,
           "label": "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.14,
-          "cappedPowerRatio": 2.9,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13671,10 +13717,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+          "3 Sarcosuchus vs 1 Austroraptor: the Sarcosuchus side wins in about 1 s with 98% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Sarcosuchus tail lands 86 on Austroraptor (8 to kill); a Austroraptor bite lands 23 back (26 to kill).",
           "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 86,
+            "defenderHit": 23,
+            "attackerBurst": 450,
+            "defenderBurst": 28,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 26,
+            "attackerDps": 194.3,
+            "defenderDps": 23.6,
+            "attackerTimeToKill": 3,
+            "defenderTimeToKill": 25,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.98,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.25
+            }
+          },
+          "label": "3 Sarcosuchus vs 1 Austroraptor: the Sarcosuchus side wins in about 1 s with 98% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Sarcosuchus vs 2 Austroraptor: the Sarcosuchus side wins in about 2 s with 95% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "sarcosuchus",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Sarcosuchus",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Sarcosuchus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -13684,12 +13796,14 @@
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land. At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Alioramus is inside the legal hunt range. The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land. 5 Alioramus vs 1 Austroraptor: the Alioramus side wins in about 3 s with 96% of its health left.",
         "score": 84,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13706,18 +13820,6 @@
           "durationMarginPct": -20.2,
           "label": "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.14,
-          "cappedPowerRatio": 2.36,
-          "label": "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -13732,9 +13834,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land.",
-          "At the legal limits (5 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "4 shared mapped areas make contact plausible."
+          "5 Alioramus vs 1 Austroraptor: the Alioramus side wins in about 3 s with 96% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 51 on Austroraptor (13 to kill); a Austroraptor bite lands 44 back (12 to kill)."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 51,
+            "defenderHit": 44,
+            "attackerBurst": 63,
+            "defenderBurst": 53,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 12,
+            "attackerDps": 55.7,
+            "defenderDps": 44.3,
+            "attackerTimeToKill": 12,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.96,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2.5
+            }
+          },
+          "label": "5 Alioramus vs 1 Austroraptor: the Alioramus side wins in about 3 s with 96% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 2 Austroraptor: the Alioramus side wins in about 5 s with 88% of its health left.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land.",
+          "baseScore": 66,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -13744,12 +13912,14 @@
       {
         "id": "eurhinosaurus",
         "name": "Eurhinosaurus",
+        "family": "eurhinosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Eurhinosaurus can create a very narrow escape window",
-        "summary": "Eurhinosaurus is inside the legal hunt range. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Eurhinosaurus is inside the legal hunt range. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Austroraptor: the Eurhinosaurus side wins in about 5 s with 91% of its health left.",
         "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13765,18 +13935,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -11.2,
           "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.43,
-          "cappedPowerRatio": 1.94,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13799,9 +13957,76 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "11 shared mapped areas make contact plausible."
+          "3 Eurhinosaurus vs 1 Austroraptor: the Eurhinosaurus side wins in about 5 s with 91% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Eurhinosaurus bite lands 57 on Austroraptor (12 to kill); a Austroraptor bite lands 35 back (18 to kill).",
+          "Eurhinosaurus's bleed builds faster than Austroraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 57,
+            "defenderHit": 35,
+            "attackerBurst": 93,
+            "defenderBurst": 42,
+            "attackerHitsToKill": 12,
+            "defenderHitsToKill": 18,
+            "attackerDps": 46.8,
+            "defenderDps": 35.5,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 17,
+            "attackerBleed": 0.081,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.91,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.75
+            }
+          },
+          "label": "3 Eurhinosaurus vs 1 Austroraptor: the Eurhinosaurus side wins in about 5 s with 91% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Eurhinosaurus vs 2 Austroraptor: the Eurhinosaurus side wins in about 10 s with 72% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "eurhinosaurus",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Eurhinosaurus",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Eurhinosaurus is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -13809,12 +14034,14 @@
       {
         "id": "kaiwhekea",
         "name": "Kaiwhekea",
+        "family": "kaiwhekea",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Kaiwhekea can create a very narrow escape window",
-        "summary": "Kaiwhekea is inside the legal hunt range. Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Kaiwhekea is inside the legal hunt range. Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted. 3 Kaiwhekea vs 1 Austroraptor: the Kaiwhekea side wins in about 2 s with 98% of its health left.",
         "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13830,18 +14057,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -33.2,
           "label": "Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4000,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.9,
-          "cappedPowerRatio": 2.58,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13864,9 +14079,75 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "11 shared mapped areas make contact plausible."
+          "3 Kaiwhekea vs 1 Austroraptor: the Kaiwhekea side wins in about 2 s with 98% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Kaiwhekea bite lands 95 on Austroraptor (7 to kill); a Austroraptor bite lands 26 back (29 to kill)."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 95,
+            "defenderHit": 26,
+            "attackerBurst": 162,
+            "defenderBurst": 32,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 29,
+            "attackerDps": 108.4,
+            "defenderDps": 26.6,
+            "attackerTimeToKill": 6,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 2,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.98,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2
+            }
+          },
+          "label": "3 Kaiwhekea vs 1 Austroraptor: the Kaiwhekea side wins in about 2 s with 98% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Kaiwhekea vs 2 Austroraptor: the Kaiwhekea side wins in about 4 s with 93% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "kaiwhekea",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kaiwhekea",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kaiwhekea is inside the legal hunt range."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -13874,12 +14155,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Kelenken can create a very narrow escape window",
-        "summary": "Kelenken is inside the legal hunt range. This is a close chase on land: 1075 vs 1100 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Kelenken is inside the legal hunt range. This is a close chase on land: 1075 vs 1100 units/s, with stamina likely deciding it. 4 Kelenken vs 1 Austroraptor: the Kelenken side wins in about 4 s with 90% of its health left.",
         "score": 78,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13896,18 +14179,6 @@
           "durationMarginPct": 0,
           "label": "This is a close chase on land: 1075 vs 1100 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.93,
-          "cappedPowerRatio": 1.59,
-          "label": "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -13923,9 +14194,76 @@
         "facts": [
           "Its profile permits hunting through Large tier.",
           "This is a close chase on land: 1075 vs 1100 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "5 shared mapped areas make contact plausible."
+          "4 Kelenken vs 1 Austroraptor: the Kelenken side wins in about 4 s with 90% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 46 on Austroraptor (14 to kill); a Austroraptor bite lands 54 back (10 to kill).",
+          "Kelenken's bleed builds faster than Austroraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 46,
+            "defenderHit": 54,
+            "attackerBurst": 65,
+            "defenderBurst": 65,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 10,
+            "attackerDps": 49.8,
+            "defenderDps": 54.6,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0.046,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.9,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "4 Kelenken vs 1 Austroraptor: the Kelenken side wins in about 4 s with 90% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 2 Austroraptor: the Kelenken side wins in about 7 s with 71% of its health left.",
+            "attackers": 4,
+            "defenders": 2
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1075 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 60,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -13937,12 +14275,14 @@
       {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
+        "family": "anodontosaurus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 67% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 67% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 1 Anodontosaurus: the Anodontosaurus side wins in about 6 s with 89% of its health left.",
         "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13959,18 +14299,6 @@
           "durationMarginPct": 33.3,
           "label": "Austroraptor is 67% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.47,
-          "cappedPowerRatio": 0.47,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -13985,10 +14313,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Austroraptor is 67% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+          "1 Austroraptor vs 1 Anodontosaurus: the Anodontosaurus side wins in about 6 s with 89% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Austroraptor bite lands 16 on Anodontosaurus (55 to kill); a Anodontosaurus tail slam lands 150 back (5 to kill).",
           "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 16,
+            "defenderHit": 150,
+            "attackerBurst": 19,
+            "defenderBurst": 257,
+            "attackerHitsToKill": 55,
+            "defenderHitsToKill": 5,
+            "attackerDps": 15.8,
+            "defenderDps": 113.1,
+            "attackerTimeToKill": 54,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 6,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.89,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "1 Austroraptor vs 1 Anodontosaurus: the Anodontosaurus side wins in about 6 s with 89% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 1 Anodontosaurus: the Anodontosaurus side wins in about 6 s with 89% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "anodontosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Anodontosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Austroraptor is 67% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14005,12 +14399,14 @@
       {
         "id": "apatosaurus",
         "name": "Apatosaurus",
+        "family": "apatosaurus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Apatosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 120% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 1), a committed straight fight favours Apatosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 120% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 1 Apatosaurus: the Apatosaurus side wins in about 7 s with 96% of its health left.",
         "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14027,18 +14423,6 @@
           "durationMarginPct": 66.7,
           "label": "Austroraptor is 120% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 8000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.26,
-          "cappedPowerRatio": 0.26,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Apatosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -14053,10 +14437,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Austroraptor is 120% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Apatosaurus.",
+          "1 Austroraptor vs 1 Apatosaurus: the Apatosaurus side wins in about 7 s with 96% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Austroraptor bite lands 10 on Apatosaurus (199 to kill); a Apatosaurus tail attack lands 305 back (3 to kill).",
           "Apatosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 10,
+            "defenderHit": 305,
+            "attackerBurst": 12,
+            "defenderBurst": 457,
+            "attackerHitsToKill": 199,
+            "defenderHitsToKill": 3,
+            "attackerDps": 10.2,
+            "defenderDps": 95.2,
+            "attackerTimeToKill": 195,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0,
+            "defenderBleed": 0.046,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 7,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.96,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7
+            }
+          },
+          "label": "1 Austroraptor vs 1 Apatosaurus: the Apatosaurus side wins in about 7 s with 96% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 8000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 1 Apatosaurus: the Apatosaurus side wins in about 7 s with 96% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "apatosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Apatosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Austroraptor is 120% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14079,12 +14529,14 @@
       {
         "id": "amargasaurus",
         "name": "Amargasaurus",
+        "family": "amargasaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Amargasaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 57% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 2), a committed straight fight favours Amargasaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 57% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 2 Amargasaurus: the Amargasaurus side wins in about 5 s with 96% of its health left.",
         "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14101,18 +14553,6 @@
           "durationMarginPct": 25.3,
           "label": "Austroraptor is 57% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.42,
-          "cappedPowerRatio": 0.27,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Amargasaurus."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -14126,10 +14566,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Austroraptor is 57% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Amargasaurus.",
+          "1 Austroraptor vs 2 Amargasaurus: the Amargasaurus side wins in about 5 s with 96% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Austroraptor bite lands 21 on Amargasaurus (60 to kill); a Amargasaurus bite lands 71 back (10 to kill).",
           "Amargasaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 21,
+            "defenderHit": 71,
+            "attackerBurst": 25,
+            "defenderBurst": 286,
+            "attackerHitsToKill": 60,
+            "defenderHitsToKill": 10,
+            "attackerDps": 21.3,
+            "defenderDps": 64.3,
+            "attackerTimeToKill": 59,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.96,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.25
+            }
+          },
+          "label": "1 Austroraptor vs 2 Amargasaurus: the Amargasaurus side wins in about 5 s with 96% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 2 Amargasaurus: the Amargasaurus side wins in about 5 s with 96% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "amargasaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Amargasaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Austroraptor is 57% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14152,12 +14658,14 @@
       {
         "id": "argentinosaurus",
         "name": "Argentinosaurus",
+        "family": "argentinosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Argentinosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 214% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 1), a committed straight fight favours Argentinosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. Austroraptor is 214% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 1 Argentinosaurus: the Argentinosaurus side wins in about 2 s with 99% of its health left.",
         "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14174,18 +14682,6 @@
           "durationMarginPct": 66.7,
           "label": "Austroraptor is 214% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 9000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.23,
-          "cappedPowerRatio": 0.23,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Argentinosaurus."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -14199,10 +14695,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Austroraptor is 214% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Argentinosaurus.",
+          "1 Austroraptor vs 1 Argentinosaurus: the Argentinosaurus side wins in about 2 s with 99% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Austroraptor bite lands 9 on Argentinosaurus (279 to kill); a Argentinosaurus stomp lands 364 back (2 to kill).",
           "Argentinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 9,
+            "defenderHit": 364,
+            "attackerBurst": 11,
+            "defenderBurst": 8571,
+            "attackerHitsToKill": 279,
+            "defenderHitsToKill": 2,
+            "attackerDps": 9.1,
+            "defenderDps": 385.7,
+            "attackerTimeToKill": 275,
+            "defenderTimeToKill": 2,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Austroraptor vs 1 Argentinosaurus: the Argentinosaurus side wins in about 2 s with 99% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 9000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 1 Argentinosaurus: the Argentinosaurus side wins in about 2 s with 99% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "argentinosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Argentinosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Austroraptor is 214% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -14225,12 +14787,14 @@
       {
         "id": "deinonychus",
         "name": "Deinonychus",
+        "family": "deinonychus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Deinonychus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 1 Austroraptor vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 86% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14246,18 +14810,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": -16.7,
           "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.63,
-          "cappedPowerRatio": 0.54,
-          "label": "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus."
         },
         "encounter": {
           "level": "frequent",
@@ -14278,9 +14830,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
-          "9 shared mapped areas make contact plausible."
+          "1 Austroraptor vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 86% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Austroraptor bite lands 131 on Deinonychus (5 to kill); a Deinonychus bite lands 19 back (35 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 8,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 131,
+            "defenderHit": 19,
+            "attackerBurst": 158,
+            "defenderBurst": 19,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 35,
+            "attackerDps": 133,
+            "defenderDps": 19,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 34,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 7,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.86,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.25
+            }
+          },
+          "label": "1 Austroraptor vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 86% of its health left.",
+          "detail": "1 attacker vs 8 defenders",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 8
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -14295,12 +14913,14 @@
       {
         "id": "leedsichthys",
         "name": "Leedsichthys",
+        "family": "leedsichthys",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Leedsichthys is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 1), a committed straight fight favours Leedsichthys.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14316,18 +14936,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": 49.7,
           "label": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.38,
-          "cappedPowerRatio": 0.38,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Leedsichthys."
         },
         "encounter": {
           "level": "frequent",
@@ -14348,9 +14956,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Leedsichthys.",
-          "9 shared mapped areas make contact plausible."
+          "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Austroraptor bite lands 10 on Leedsichthys (105 to kill); a Leedsichthys headbutt lands 144 back (5 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 10,
+            "defenderHit": 144,
+            "attackerBurst": 11,
+            "defenderBurst": 144,
+            "attackerHitsToKill": 105,
+            "defenderHitsToKill": 5,
+            "attackerDps": 9.7,
+            "defenderDps": 72,
+            "attackerTimeToKill": 103,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.91,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 9.25
+            }
+          },
+          "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Austroraptor",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -14369,6 +15043,2627 @@
         "confidence": "profile-specific"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "deinosuchus-shore",
+          "name": "Deinosuchus (Shore)",
+          "family": "deinosuchus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Deinosuchus (Shore) can create a real pursuit problem",
+          "summary": "Deinosuchus (Shore) is inside the legal hunt range. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. 1 Deinosuchus (Shore) vs 1 Austroraptor: the Deinosuchus (Shore) side wins in about 5 s with 92% of its health left.",
+          "score": 77,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "close-chase",
+            "attackerSpeed": 700,
+            "targetSpeed": 700,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.3,
+            "label": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.5,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+            "1 Deinosuchus (Shore) vs 1 Austroraptor: the Deinosuchus (Shore) side wins in about 5 s with 92% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinosuchus (Shore) bite lands 157 on Austroraptor (5 to kill); a Austroraptor bite lands 16 back (63 to kill).",
+            "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 157,
+              "defenderHit": 16,
+              "attackerBurst": 329,
+              "defenderBurst": 19,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 63,
+              "attackerDps": 124.8,
+              "defenderDps": 16.1,
+              "attackerTimeToKill": 5,
+              "defenderTimeToKill": 62,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.25
+              }
+            },
+            "label": "1 Deinosuchus (Shore) vs 1 Austroraptor: the Deinosuchus (Shore) side wins in about 5 s with 92% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Deinosuchus (Shore) vs 2 Austroraptor: the Deinosuchus (Shore) side wins in about 11 s with 75% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "deinosuchus-shore",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Deinosuchus (Shore)",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+            "baseScore": 59,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinosuchus (Shore) is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
+          "family": "spinosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Spinosaurus (Freshwater) can create a real pursuit problem",
+          "summary": "Spinosaurus (Freshwater) is inside the legal hunt range. The speed gap is small (750 vs 700), but Spinosaurus (Freshwater) has the pursuit edge in water. 1 Spinosaurus (Freshwater) vs 1 Austroraptor: the Spinosaurus (Freshwater) side wins in about 3 s with 95% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 750,
+            "targetSpeed": 700,
+            "speedMarginPct": 7.1,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.2,
+            "label": "The speed gap is small (750 vs 700), but Spinosaurus (Freshwater) has the pursuit edge in water."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "stillwater-bog",
+              "mudflats",
+              "twisted-forest",
+              "volcano-islands",
+              "big-tree-overlook",
+              "tallbrush-coasts",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.4,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (750 vs 700), but Spinosaurus (Freshwater) has the pursuit edge in water.",
+            "1 Spinosaurus (Freshwater) vs 1 Austroraptor: the Spinosaurus (Freshwater) side wins in about 3 s with 95% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Spinosaurus (Freshwater) claw lands 171 on Austroraptor (4 to kill); a Austroraptor bite lands 16 back (70 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 171,
+              "defenderHit": 16,
+              "attackerBurst": 486,
+              "defenderBurst": 19,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 70,
+              "attackerDps": 207.6,
+              "defenderDps": 16.1,
+              "attackerTimeToKill": 3,
+              "defenderTimeToKill": 68,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.25
+              }
+            },
+            "label": "1 Spinosaurus (Freshwater) vs 1 Austroraptor: the Spinosaurus (Freshwater) side wins in about 3 s with 95% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Spinosaurus (Freshwater) vs 2 Austroraptor: the Spinosaurus (Freshwater) side wins in about 7 s with 86% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "spinosaurus-freshwater",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Spinosaurus (Freshwater)",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Freshwater) has the pursuit edge in water.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Freshwater) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a real pursuit problem",
+          "summary": "Latenivenatrix is inside the legal hunt range. The speed gap is small (1075 vs 1100), but Latenivenatrix has the pursuit edge on land. 8 Latenivenatrix vs 1 Austroraptor: the Latenivenatrix side wins in about 3 s with 94% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1100,
+            "speedMarginPct": -2.3,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": 50,
+            "label": "The speed gap is small (1075 vs 1100), but Latenivenatrix has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.35,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1075 vs 1100), but Latenivenatrix has the pursuit edge on land.",
+            "8 Latenivenatrix vs 1 Austroraptor: the Latenivenatrix side wins in about 3 s with 94% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 27 on Austroraptor (25 to kill); a Austroraptor bite lands 75 back (7 to kill).",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 27,
+              "defenderHit": 75,
+              "attackerBurst": 60,
+              "defenderBurst": 90,
+              "attackerHitsToKill": 25,
+              "defenderHitsToKill": 7,
+              "attackerDps": 26.7,
+              "defenderDps": 76,
+              "attackerTimeToKill": 24,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 8,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.94,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.25
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Austroraptor: the Latenivenatrix side wins in about 3 s with 94% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "8 Latenivenatrix vs 2 Austroraptor: the Latenivenatrix side wins in about 7 s with 81% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1100), but Latenivenatrix has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "family": "spinosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Spinosaurus (Saltwater) can create a real pursuit problem",
+          "summary": "Spinosaurus (Saltwater) is inside the legal hunt range. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 1 Austroraptor: the Spinosaurus (Saltwater) side wins in about 3 s with 95% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 750,
+            "targetSpeed": 700,
+            "speedMarginPct": 7.1,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.2,
+            "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "abyssal-depths",
+              "palm-islands",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.227,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "1 Spinosaurus (Saltwater) vs 1 Austroraptor: the Spinosaurus (Saltwater) side wins in about 3 s with 95% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 171 on Austroraptor (4 to kill); a Austroraptor bite lands 16 back (70 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 171,
+              "defenderHit": 16,
+              "attackerBurst": 486,
+              "defenderBurst": 19,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 70,
+              "attackerDps": 207.6,
+              "defenderDps": 16.1,
+              "attackerTimeToKill": 3,
+              "defenderTimeToKill": 68,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.95,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.25
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 1 Austroraptor: the Spinosaurus (Saltwater) side wins in about 3 s with 95% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 2 Austroraptor: the Spinosaurus (Saltwater) side wins in about 7 s with 86% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Saltwater) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "family": "deinonychus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Deinonychus can create a real pursuit problem",
+          "summary": "Deinonychus is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 8 Deinonychus vs 1 Austroraptor: the Deinonychus side wins in about 5 s with 86% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1100,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": 20,
+            "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.474,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "8 Deinonychus vs 1 Austroraptor: the Deinonychus side wins in about 5 s with 86% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 19 on Austroraptor (35 to kill); a Austroraptor bite lands 131 back (5 to kill)."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 19,
+              "defenderHit": 131,
+              "attackerBurst": 19,
+              "defenderBurst": 158,
+              "attackerHitsToKill": 35,
+              "defenderHitsToKill": 5,
+              "attackerDps": 19,
+              "defenderDps": 133,
+              "attackerTimeToKill": 34,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 7,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.86,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.25
+              }
+            },
+            "label": "8 Deinonychus vs 1 Austroraptor: the Deinonychus side wins in about 5 s with 86% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "8 Deinonychus vs 2 Austroraptor: the Deinonychus side wins in about 11 s with 52% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Deinonychus",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinonychus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Achillobator can create a real pursuit problem",
+          "summary": "Achillobator is inside the legal hunt range. This is a close chase on land: 1050 vs 1100 units/s, with stamina likely deciding it. 5 Achillobator vs 1 Austroraptor: the Achillobator side wins in about 2 s with 97% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1100,
+            "speedMarginPct": -4.5,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": -7.6,
+            "label": "This is a close chase on land: 1050 vs 1100 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.35,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1100 units/s, with stamina likely deciding it.",
+            "5 Achillobator vs 1 Austroraptor: the Achillobator side wins in about 2 s with 97% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 93 on Austroraptor (7 to kill); a Austroraptor bite lands 38 back (16 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 93,
+              "defenderHit": 38,
+              "attackerBurst": 187,
+              "defenderBurst": 45,
+              "attackerHitsToKill": 7,
+              "defenderHitsToKill": 16,
+              "attackerDps": 66.7,
+              "defenderDps": 38,
+              "attackerTimeToKill": 10,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 2,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.97,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "5 Achillobator vs 1 Austroraptor: the Achillobator side wins in about 2 s with 97% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 2 Austroraptor: the Achillobator side wins in about 4 s with 92% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1100 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 5 Dilophosaurus vs 1 Austroraptor: the Dilophosaurus side wins in about 3 s with 96% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1100,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": 0,
+            "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.211,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "5 Dilophosaurus vs 1 Austroraptor: the Dilophosaurus side wins in about 3 s with 96% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 57 on Austroraptor (12 to kill); a Austroraptor bite lands 44 back (13 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 57,
+              "defenderHit": 44,
+              "attackerBurst": 57,
+              "defenderBurst": 53,
+              "attackerHitsToKill": 12,
+              "defenderHitsToKill": 13,
+              "attackerDps": 57.1,
+              "defenderDps": 44.3,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.96,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2.5
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Austroraptor: the Dilophosaurus side wins in about 3 s with 96% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Dilophosaurus vs 2 Austroraptor: the Dilophosaurus side wins in about 5 s with 88% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinosuchus-ocean",
+          "name": "Deinosuchus (Ocean)",
+          "family": "deinosuchus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Deinosuchus (Ocean) can create a real pursuit problem",
+          "summary": "Deinosuchus (Ocean) is inside the legal hunt range. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. 1 Deinosuchus (Ocean) vs 1 Austroraptor: the Deinosuchus (Ocean) side wins in about 5 s with 92% of its health left.",
+          "score": 68,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "close-chase",
+            "attackerSpeed": 700,
+            "targetSpeed": 700,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.3,
+            "label": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "kelp-vale",
+              "abyssal-depths",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.188,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+            "1 Deinosuchus (Ocean) vs 1 Austroraptor: the Deinosuchus (Ocean) side wins in about 5 s with 92% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Deinosuchus (Ocean) bite lands 157 on Austroraptor (5 to kill); a Austroraptor bite lands 16 back (63 to kill).",
+            "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 157,
+              "defenderHit": 16,
+              "attackerBurst": 329,
+              "defenderBurst": 19,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 63,
+              "attackerDps": 124.8,
+              "defenderDps": 16.1,
+              "attackerTimeToKill": 5,
+              "defenderTimeToKill": 62,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.25
+              }
+            },
+            "label": "1 Deinosuchus (Ocean) vs 1 Austroraptor: the Deinosuchus (Ocean) side wins in about 5 s with 92% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Deinosuchus (Ocean) vs 2 Austroraptor: the Deinosuchus (Ocean) side wins in about 11 s with 75% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "deinosuchus-ocean",
+          "targetId": "austroraptor",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Deinosuchus (Ocean)",
+            "targetName": "Austroraptor",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+            "baseScore": 50,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinosuchus (Ocean) is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+          "summary": "Megalania (Temperate) is within the legal hunt ceiling. Austroraptor is 56% faster in water; a clean escape is unlikely once spotted. 1 Austroraptor vs 1 Megalania (Temperate): the Megalania (Temperate) side wins in about 11 s with 20% of its health left, too narrow to call.",
+          "score": 73,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 700,
+            "targetSpeed": 450,
+            "speedMarginPct": 55.6,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 455.6,
+            "label": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.333,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 1 Megalania (Temperate): the Megalania (Temperate) side wins in about 11 s with 20% of its health left, too narrow to call.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 38 on Megalania (Temperate) (14 to kill); a Megalania (Temperate) bite lands 50 back (14 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 50,
+              "attackerBurst": 46,
+              "defenderBurst": 99,
+              "attackerHitsToKill": 14,
+              "defenderHitsToKill": 14,
+              "attackerDps": 39,
+              "defenderDps": 61.5,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 11,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.2,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 10.75
+              }
+            },
+            "label": "1 Austroraptor vs 1 Megalania (Temperate): the Megalania (Temperate) side wins in about 11 s with 20% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Austroraptor vs 1 Megalania (Temperate): the Megalania (Temperate) side wins in about 11 s with 20% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 1
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "megalania-temperate",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Megalania (Temperate)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Megalania (Arid) is a realistic hunting opportunity",
+          "summary": "Megalania (Arid) is within the legal hunt ceiling. Austroraptor is 56% faster in water; a clean escape is unlikely once spotted. 1 Austroraptor vs 1 Megalania (Arid): the Megalania (Arid) side wins in about 11 s with 20% of its health left, too narrow to call.",
+          "score": 73,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 700,
+            "targetSpeed": 450,
+            "speedMarginPct": 55.6,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 455.6,
+            "label": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.238,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 1 Megalania (Arid): the Megalania (Arid) side wins in about 11 s with 20% of its health left, too narrow to call.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 38 on Megalania (Arid) (14 to kill); a Megalania (Arid) bite lands 50 back (14 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 50,
+              "attackerBurst": 46,
+              "defenderBurst": 99,
+              "attackerHitsToKill": 14,
+              "defenderHitsToKill": 14,
+              "attackerDps": 39,
+              "defenderDps": 61.5,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 11,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.2,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 10.75
+              }
+            },
+            "label": "1 Austroraptor vs 1 Megalania (Arid): the Megalania (Arid) side wins in about 11 s with 20% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Austroraptor vs 1 Megalania (Arid): the Megalania (Arid) side wins in about 11 s with 20% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 1
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "megalania-arid",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Megalania (Arid)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Concavenator is legal quarry, but not a comfortable fight",
+          "summary": "Concavenator is within the legal hunt ceiling. Austroraptor is 56% faster in water; a clean escape is unlikely once spotted. 1 Austroraptor vs 4 Concavenator: the Concavenator side wins in about 3 s with 92% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 700,
+            "targetSpeed": 450,
+            "speedMarginPct": 55.6,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 174.7,
+            "label": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "coastal-bluffs",
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.529,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 4 Concavenator: the Concavenator side wins in about 3 s with 92% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 50 on Concavenator (10 to kill); a Concavenator bite lands 50 back (13 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 50,
+              "defenderHit": 50,
+              "attackerBurst": 60,
+              "defenderBurst": 80,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 13,
+              "attackerDps": 50.7,
+              "defenderDps": 53.7,
+              "attackerTimeToKill": 10,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0.05,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.92,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.25
+              }
+            },
+            "label": "1 Austroraptor vs 4 Concavenator: the Concavenator side wins in about 3 s with 92% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Austroraptor vs 4 Concavenator: the Concavenator side wins in about 3 s with 92% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "concavenator",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Concavenator",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 56% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "lambeosaurus",
+          "name": "Lambeosaurus",
+          "family": "lambeosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Lambeosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Lambeosaurus is within the legal hunt ceiling. Austroraptor is 10% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 3 Lambeosaurus: the Lambeosaurus side wins in about 3 s with 96% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1000,
+            "speedMarginPct": 10,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 33.3,
+            "label": "Austroraptor is 10% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "coastal-bluffs",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.364,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 10% faster on land; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 3 Lambeosaurus: the Lambeosaurus side wins in about 3 s with 96% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 30 on Lambeosaurus (22 to kill); a Lambeosaurus bite lands 50 back (13 to kill).",
+            "Lambeosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 30,
+              "defenderHit": 50,
+              "attackerBurst": 36,
+              "defenderBurst": 133,
+              "attackerHitsToKill": 22,
+              "defenderHitsToKill": 13,
+              "attackerDps": 30.4,
+              "defenderDps": 87.5,
+              "attackerTimeToKill": 21,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 3,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.5
+              }
+            },
+            "label": "1 Austroraptor vs 3 Lambeosaurus: the Lambeosaurus side wins in about 3 s with 96% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Austroraptor vs 3 Lambeosaurus: the Lambeosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 1,
+              "defenders": 3
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "lambeosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Lambeosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 10% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lambeosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tenontosaurus",
+          "name": "Tenontosaurus",
+          "family": "tenontosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Tenontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Tenontosaurus is within the legal hunt ceiling. The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land. 1 Austroraptor vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 92% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 133.333,
+            "durationMarginPct": 25,
+            "label": "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.565,
+            "label": "13 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land.",
+            "1 Austroraptor vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 92% of its health left.",
+            "13 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 44 on Tenontosaurus (13 to kill); a Tenontosaurus bite lands 29 back (23 to kill).",
+            "Tenontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 44,
+              "defenderHit": 29,
+              "attackerBurst": 53,
+              "defenderBurst": 74,
+              "attackerHitsToKill": 13,
+              "defenderHitsToKill": 23,
+              "attackerDps": 44.3,
+              "defenderDps": 44.4,
+              "attackerTimeToKill": 12,
+              "defenderTimeToKill": 15,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 4,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.92,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.75
+              }
+            },
+            "label": "1 Austroraptor vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 92% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2400,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Austroraptor vs 4 Tenontosaurus: the Tenontosaurus side wins in about 4 s with 92% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "tenontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Tenontosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tenontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "family": "metriacanthosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Metriacanthosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Metriacanthosaurus is within the legal hunt ceiling. The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land. 1 Austroraptor vs 2 Metriacanthosaurus: the Metriacanthosaurus side wins in about 6 s with 80% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1050,
+            "speedMarginPct": 4.8,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 33.3,
+            "label": "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp"
+            ],
+            "overlap": 0.632,
+            "label": "12 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land.",
+            "1 Austroraptor vs 2 Metriacanthosaurus: the Metriacanthosaurus side wins in about 6 s with 80% of its health left.",
+            "12 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 34 on Metriacanthosaurus (15 to kill); a Metriacanthosaurus v2claw attack lands 59 back (12 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 34,
+              "defenderHit": 59,
+              "attackerBurst": 41,
+              "defenderBurst": 96,
+              "attackerHitsToKill": 15,
+              "defenderHitsToKill": 12,
+              "attackerDps": 34.3,
+              "defenderDps": 57.4,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.8,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.75
+              }
+            },
+            "label": "1 Austroraptor vs 2 Metriacanthosaurus: the Metriacanthosaurus side wins in about 6 s with 80% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Austroraptor vs 2 Metriacanthosaurus: the Metriacanthosaurus side wins in about 6 s with 80% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1050), but Austroraptor has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "citipati",
+          "name": "Citipati",
+          "family": "citipati",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Citipati is legal quarry, but not a comfortable fight",
+          "summary": "Citipati is within the legal hunt ceiling. The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land. 1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1075,
+            "speedMarginPct": 2.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 133.333,
+            "durationMarginPct": 25,
+            "label": "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.348,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land.",
+            "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 44 on Citipati (13 to kill); a Citipati beak snap lands 46 back (15 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 44,
+              "defenderHit": 46,
+              "attackerBurst": 53,
+              "defenderBurst": 69,
+              "attackerHitsToKill": 13,
+              "defenderHitsToKill": 15,
+              "attackerDps": 44.3,
+              "defenderDps": 44.9,
+              "attackerTimeToKill": 12,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0,
+              "defenderBleed": 0.103,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 4,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.92,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.75
+              }
+            },
+            "label": "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 2400,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "citipati",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Citipati",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Citipati is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "tylosaurus": {
+        "id": "tylosaurus",
+        "name": "Tylosaurus",
+        "cw": 5000,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 51.46,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bone Snap",
+          "damage": 105,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bone Snap",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "eurhinosaurus": {
+        "id": "eurhinosaurus",
+        "name": "Eurhinosaurus",
+        "cw": 3000,
+        "hp": 600,
+        "armor": 1,
+        "dps": 32.74,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Joust",
+          "damage": 65,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Joust",
+          "Thrash"
+        ],
+        "bleedPerSecond": 0.057,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "kaiwhekea": {
+        "id": "kaiwhekea",
+        "name": "Kaiwhekea",
+        "cw": 4000,
+        "hp": 750,
+        "armor": 1,
+        "dps": 56.92,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "AOEBarrel Roll",
+          "damage": 85,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Fluke Slap",
+          "AOEBarrel Roll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "apatosaurus": {
+        "id": "apatosaurus",
+        "name": "Apatosaurus",
+        "cw": 8000,
+        "hp": 2000,
+        "armor": 1.3,
+        "dps": 25,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 4
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Stomp",
+          "Headslam"
+        ],
+        "bleedPerSecond": 0.012,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "amargasaurus": {
+        "id": "amargasaurus",
+        "name": "Amargasaurus",
+        "cw": 5000,
+        "hp": 1250,
+        "armor": 1,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Thrash",
+          "Stomp v2"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "argentinosaurus": {
+        "id": "argentinosaurus",
+        "name": "Argentinosaurus",
+        "cw": 9000,
+        "hp": 2500,
+        "armor": 1.3,
+        "dps": 90,
+        "primary": {
+          "label": "Stomp",
+          "damage": 85,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Big Stomp",
+          "damage": 2000,
+          "cooldown": 15,
+          "situational": true
+        },
+        "attacks": [
+          "Stomp",
+          "Tail Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.026,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "leedsichthys": {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 2,
+        "dps": 27.5,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-freshwater": {
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-saltwater": {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-ocean": {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "lambeosaurus": {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rodeo Kick",
+          "damage": 80,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rodeo Kick",
+          "Dunking Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "tenontosaurus": {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 38.83,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Slam",
+          "damage": 65,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Tail Slam",
+          "Haymaker"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.04,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "citipati": {
+        "id": "citipati",
+        "name": "Citipati",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 39.33,
+        "primary": {
+          "label": "Beak Snap",
+          "damage": 40,
+          "cooldown": 1.25
+        },
+        "burst": {
+          "label": "Claw Swipe",
+          "damage": 60,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Beak Snap",
+          "Kick",
+          "Claw Swipe"
+        ],
+        "bleedPerSecond": 0.09,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -14402,7 +17697,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

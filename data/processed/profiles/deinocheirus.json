@@ -14358,100 +14358,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Deinocheirus has 5 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Deinocheirus has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
-      {
-        "id": "sarcosuchus",
-        "name": "Sarcosuchus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Sarcosuchus matters only if it gets the right opening",
-        "summary": "Sarcosuchus is linked by a specific profile rule. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 880,
-          "targetSpeed": 700,
-          "speedMarginPct": 25.7,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 250,
-          "durationMarginPct": -33.2,
-          "label": "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.82,
-          "cappedPowerRatio": 1.11,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "cedrus-forest",
-            "stillwater-bog",
-            "mudflats",
-            "cliff-edge-falls",
-            "coastland-swamp",
-            "crag-bluffs",
-            "redwoods",
-            "wollemi-forest"
-          ],
-          "overlap": 0.471,
-          "label": "8 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "8 shared mapped areas make contact plausible.",
-          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush",
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "sarcosuchus",
-            "profileName": "Sarcosuchus",
-            "section": "Preferred Prey & Diet",
-            "text": "Sarcosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
-          },
-          {
-            "profileId": "sarcosuchus",
-            "profileName": "Sarcosuchus",
-            "section": "Cross-Species Interaction",
-            "text": "Sarcosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
       {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
+        "family": "deinosuchus",
         "direction": "threat",
-        "band": "high",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Deinosuchus (Shore) can create a real pursuit problem",
-        "summary": "Deinosuchus (Shore) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
-        "score": 64,
+        "headline": "Deinosuchus (Shore) can create a very narrow escape window",
+        "summary": "Deinosuchus (Shore) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. 1 Deinosuchus (Shore) vs 1 Deinocheirus: the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
+        "score": 99,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14467,18 +14388,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -33.3,
           "label": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.09,
-          "cappedPowerRatio": 0.7,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus."
         },
         "encounter": {
           "level": "frequent",
@@ -14498,11 +14407,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
+          "1 Deinosuchus (Shore) vs 1 Deinocheirus: the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinosuchus (Shore) bite lands 55 on Deinocheirus (18 to kill); a Deinocheirus claw lands 38 back (27 to kill).",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 55,
+            "defenderHit": 38,
+            "attackerBurst": 114,
+            "defenderBurst": 42,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 27,
+            "attackerDps": 43.3,
+            "defenderDps": 26.4,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 38,
+            "attackerBleed": 0,
+            "defenderBleed": 0.061,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 22,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.42,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 22
+            }
+          },
+          "label": "1 Deinosuchus (Shore) vs 1 Deinocheirus: the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinosuchus (Shore) vs 2 Deinocheirus: the Deinocheirus side wins in about 19 s with 57% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinosuchus-shore",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinosuchus (Shore)",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+          "baseScore": 81,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Deinosuchus (Shore) is linked by a specific profile rule."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14524,14 +14499,153 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "family": "sarcosuchus",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Sarcosuchus matters only if it gets the right opening",
+        "summary": "Sarcosuchus is linked by a specific profile rule. Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted. 3 Sarcosuchus vs 1 Deinocheirus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
+        "score": 90,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 880,
+          "targetSpeed": 700,
+          "speedMarginPct": 25.7,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": -33.2,
+          "label": "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "cedrus-forest",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "coastland-swamp",
+            "crag-bluffs",
+            "redwoods",
+            "wollemi-forest"
+          ],
+          "overlap": 0.471,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Only a stated condition turns this into a legal hunt or attack.",
+          "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
+          "3 Sarcosuchus vs 1 Deinocheirus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Sarcosuchus tail lands 30 on Deinocheirus (32 to kill); a Deinocheirus claw lands 55 back (11 to kill).",
+          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 55,
+            "attackerBurst": 156,
+            "defenderBurst": 61,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 11,
+            "attackerDps": 67.4,
+            "defenderDps": 38.7,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0,
+            "defenderBleed": 0.082,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.9,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.75
+            }
+          },
+          "label": "3 Sarcosuchus vs 1 Deinocheirus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Sarcosuchus vs 2 Deinocheirus: the Sarcosuchus side wins in about 10 s with 69% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "sarcosuchus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Sarcosuchus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Sarcosuchus is 26% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Sarcosuchus is linked by a specific profile rule."
+        },
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "sarcosuchus",
+            "profileName": "Sarcosuchus",
+            "section": "Preferred Prey & Diet",
+            "text": "Sarcosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
+          },
+          {
+            "profileId": "sarcosuchus",
+            "profileName": "Sarcosuchus",
+            "section": "Cross-Species Interaction",
+            "text": "Sarcosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
+        "family": "deinosuchus",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
         "headline": "Deinosuchus (Ocean) matters only if it gets the right opening",
-        "summary": "Deinosuchus (Ocean) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
-        "score": 35,
+        "summary": "Deinosuchus (Ocean) is linked by a specific profile rule. This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it. 1 Deinosuchus (Ocean) vs 1 Deinocheirus: the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
+        "score": 44,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14548,18 +14662,6 @@
           "durationMarginPct": -33.3,
           "label": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.09,
-          "cappedPowerRatio": 0.7,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus."
-        },
         "encounter": {
           "level": "rare",
           "sharedRegions": [],
@@ -14569,11 +14671,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Deinocheirus.",
+          "1 Deinosuchus (Ocean) vs 1 Deinocheirus: the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
           "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Deinosuchus (Ocean) bite lands 55 on Deinocheirus (18 to kill); a Deinocheirus claw lands 38 back (27 to kill).",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 55,
+            "defenderHit": 38,
+            "attackerBurst": 114,
+            "defenderBurst": 42,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 27,
+            "attackerDps": 43.3,
+            "defenderDps": 26.4,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 38,
+            "attackerBleed": 0,
+            "defenderBleed": 0.061,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 22,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.42,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 22
+            }
+          },
+          "label": "1 Deinosuchus (Ocean) vs 1 Deinocheirus: the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinosuchus (Ocean) vs 2 Deinocheirus: the Deinocheirus side wins in about 19 s with 57% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinosuchus-ocean",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinosuchus (Ocean)",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 700 vs 700 units/s, with stamina likely deciding it.",
+          "baseScore": 52,
+          "scoreCap": 44,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Deinosuchus (Ocean) is linked by a specific profile rule."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14597,12 +14765,14 @@
       {
         "id": "tyrannotitan",
         "name": "Tyrannotitan",
+        "family": "tyrannotitan",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Tyrannotitan can create a very narrow escape window",
-        "summary": "Tyrannotitan is inside the legal hunt range. Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 86,
+        "summary": "Tyrannotitan is inside the legal hunt range. Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted. 2 Tyrannotitan vs 1 Deinocheirus: the Tyrannotitan side wins in about 17 s with 72% of its health left.",
+        "score": 96,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14618,18 +14788,6 @@
           "targetDurationSeconds": 45,
           "durationMarginPct": 40,
           "label": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14650,11 +14808,78 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "2 Tyrannotitan vs 1 Deinocheirus: the Tyrannotitan side wins in about 17 s with 72% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Tyrannotitan bite lands 36 on Deinocheirus (27 to kill); a Deinocheirus claw lands 41 back (22 to kill).",
+          "Tyrannotitan's bleed builds faster than Deinocheirus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 41,
+            "attackerBurst": 91,
+            "defenderBurst": 45,
+            "attackerHitsToKill": 27,
+            "defenderHitsToKill": 22,
+            "attackerDps": 27.9,
+            "defenderDps": 28.8,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 31,
+            "attackerBleed": 0.24,
+            "defenderBleed": 0.067,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 17,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.72,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 17.25
+            }
+          },
+          "label": "2 Tyrannotitan vs 1 Deinocheirus: the Tyrannotitan side wins in about 17 s with 72% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tyrannotitan vs 2 Deinocheirus: the Deinocheirus side wins in about 44 s with 12% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tyrannotitan",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tyrannotitan",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannotitan is 13% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 78,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tyrannotitan is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "bleed",
@@ -14665,77 +14890,16 @@
         "confidence": "derived"
       },
       {
-        "id": "torvosaurus",
-        "name": "Torvosaurus",
-        "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Torvosaurus can create a very narrow escape window",
-        "summary": "Torvosaurus is inside the legal hunt range. Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted. At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 83,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Giant tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 950,
-          "targetSpeed": 800,
-          "speedMarginPct": 18.8,
-          "attackerDurationSeconds": 68.966,
-          "targetDurationSeconds": 45,
-          "durationMarginPct": 53.3,
-          "label": "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.82,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "volcano-islands",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "stillwater-bog",
-            "crag-bluffs"
-          ],
-          "overlap": 0.333,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Giant tier.",
-          "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (6 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "6 shared mapped areas make contact plausible.",
-          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Allosaurus can create a very narrow escape window",
-        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 30% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
+        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 30% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Deinocheirus: the Allosaurus side wins in about 14 s with 68% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14751,18 +14915,6 @@
           "targetDurationSeconds": 45,
           "durationMarginPct": 102.2,
           "label": "Allosaurus is 30% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.68,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14781,11 +14933,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Allosaurus is 30% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Allosaurus vs 1 Deinocheirus: the Allosaurus side wins in about 14 s with 68% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 31 on Deinocheirus (31 to kill); a Deinocheirus claw lands 66 back (10 to kill).",
+          "Allosaurus's bleed builds faster than Deinocheirus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 31,
+            "defenderHit": 66,
+            "attackerBurst": 43,
+            "defenderBurst": 73,
+            "attackerHitsToKill": 31,
+            "defenderHitsToKill": 10,
+            "attackerDps": 23.8,
+            "defenderDps": 46.4,
+            "attackerTimeToKill": 40,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0.077,
+            "defenderBleed": 0.098,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.68,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 13.5
+            }
+          },
+          "label": "3 Allosaurus vs 1 Deinocheirus: the Allosaurus side wins in about 14 s with 68% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Allosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 23 s with 45% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 30% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14796,12 +15015,14 @@
       {
         "id": "tylosaurus",
         "name": "Tylosaurus",
+        "family": "tylosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Tylosaurus can create a very narrow escape window",
-        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
+        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Deinocheirus: the Tylosaurus side wins in about 11 s with 80% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14817,18 +15038,6 @@
           "targetDurationSeconds": 250,
           "durationMarginPct": -11.2,
           "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.91,
-          "cappedPowerRatio": 0.91,
-          "label": "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14847,13 +15056,199 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "2 Tylosaurus vs 1 Deinocheirus: the Tylosaurus side wins in about 11 s with 80% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 54 on Deinocheirus (18 to kill); a Deinocheirus claw lands 50 back (21 to kill).",
           "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 54,
+            "defenderHit": 50,
+            "attackerBurst": 87,
+            "defenderBurst": 55,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 21,
+            "attackerDps": 42.5,
+            "defenderDps": 34.8,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 29,
+            "attackerBleed": 0,
+            "defenderBleed": 0.074,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.8,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 11.25
+            }
+          },
+          "label": "2 Tylosaurus vs 1 Deinocheirus: the Tylosaurus side wins in about 11 s with 80% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 2 Deinocheirus: the Tylosaurus side wins in about 27 s with 33% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 2
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tylosaurus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tylosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "family": "alioramus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Alioramus can create a very narrow escape window",
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 44% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Deinocheirus: the Alioramus side wins in about 11 s with 71% of its health left.",
+        "score": 89,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1150,
+          "targetSpeed": 800,
+          "speedMarginPct": 43.8,
+          "attackerDurationSeconds": 133,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 195.6,
+          "label": "Alioramus is 44% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "cedrus-forest",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "redwoods",
+            "wind-tunnels",
+            "wollemi-forest"
+          ],
+          "overlap": 0.316,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Alioramus is 44% faster on land; a clean escape is unlikely once spotted.",
+          "5 Alioramus vs 1 Deinocheirus: the Alioramus side wins in about 11 s with 71% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 18 on Deinocheirus (54 to kill); a Deinocheirus claw lands 103 back (6 to kill).",
+          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 18,
+            "defenderHit": 103,
+            "attackerBurst": 22,
+            "defenderBurst": 115,
+            "attackerHitsToKill": 54,
+            "defenderHitsToKill": 6,
+            "attackerDps": 19.3,
+            "defenderDps": 72.6,
+            "attackerTimeToKill": 49,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0,
+            "defenderBleed": 0.154,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.71,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7.25
+            }
+          },
+          "label": "5 Alioramus vs 1 Deinocheirus: the Alioramus side wins in about 11 s with 71% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "5 Alioramus vs 2 Deinocheirus: the Deinocheirus side wins in about 23 s with 39% of its health left.",
+            "attackers": 5,
+            "defenders": 2
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 44% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
+        "tags": [
+          "endurance",
           "dangerous-defender"
         ],
         "evidence": [],
@@ -14864,12 +15259,14 @@
       {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
+        "family": "deinosuchus",
         "direction": "opportunity",
-        "band": "severe",
+        "band": "meaningful",
         "kind": "territorial-rival",
-        "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 89,
+        "headline": "Deinosuchus (Shore) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. 1 Deinocheirus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
+        "score": 64,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14885,18 +15282,6 @@
           "targetDurationSeconds": 166.667,
           "durationMarginPct": 50,
           "label": "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.92,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14916,10 +15301,77 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Deinocheirus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinocheirus claw lands 38 on Deinosuchus (Shore) (27 to kill); a Deinosuchus (Shore) bite lands 55 back (18 to kill).",
+          "Deinocheirus's bleed builds faster than Deinosuchus (Shore) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Deinocheirus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 55,
+            "attackerBurst": 42,
+            "defenderBurst": 114,
+            "attackerHitsToKill": 27,
+            "defenderHitsToKill": 18,
+            "attackerDps": 26.4,
+            "defenderDps": 43.3,
+            "attackerTimeToKill": 38,
+            "defenderTimeToKill": 22,
+            "attackerBleed": 0.061,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 22,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.42,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 22
+            }
+          },
+          "label": "1 Deinocheirus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinocheirus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 22 s with 42% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "deinocheirus",
+        "targetId": "deinosuchus-shore",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinocheirus",
+          "targetName": "Deinosuchus (Shore)",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water.",
+          "baseScore": 81,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -14943,12 +15395,14 @@
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
+        "family": "sarcosuchus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "territorial-rival",
         "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it. 1 Deinocheirus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
         "score": 58,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -14964,18 +15418,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": 49.7,
           "label": "This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.22,
-          "cappedPowerRatio": 0.58,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus."
         },
         "encounter": {
           "level": "frequent",
@@ -14995,10 +15437,77 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+          "1 Deinocheirus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinocheirus claw lands 55 on Sarcosuchus (11 to kill); a Sarcosuchus tail lands 30 back (32 to kill).",
+          "Deinocheirus's bleed builds faster than Sarcosuchus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Deinocheirus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 55,
+            "defenderHit": 30,
+            "attackerBurst": 61,
+            "defenderBurst": 156,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 32,
+            "attackerDps": 38.7,
+            "defenderDps": 67.4,
+            "attackerTimeToKill": 16,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0.082,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.9,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.75
+            }
+          },
+          "label": "1 Deinocheirus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinocheirus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 5 s with 90% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "deinocheirus",
+        "targetId": "sarcosuchus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinocheirus",
+          "targetName": "Sarcosuchus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 700 vs 880 units/s, with stamina likely deciding it.",
+          "baseScore": 75,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -15022,12 +15531,14 @@
       {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
+        "family": "deinosuchus",
         "direction": "opportunity",
         "band": "conditional",
         "kind": "territorial-rival",
-        "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 44,
+        "headline": "Deinosuchus (Ocean) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water. 1 Deinocheirus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
+        "score": 35,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -15044,18 +15555,6 @@
           "durationMarginPct": 50,
           "label": "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.92,
-          "cappedPowerRatio": 0.92,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "rare",
           "sharedRegions": [],
@@ -15065,10 +15564,77 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "1 Deinocheirus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
           "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Deinocheirus claw lands 38 on Deinosuchus (Ocean) (27 to kill); a Deinosuchus (Ocean) bite lands 55 back (18 to kill).",
+          "Deinocheirus's bleed builds faster than Deinosuchus (Ocean) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Deinocheirus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 55,
+            "attackerBurst": 42,
+            "defenderBurst": 114,
+            "attackerHitsToKill": 27,
+            "defenderHitsToKill": 18,
+            "attackerDps": 26.4,
+            "defenderDps": 43.3,
+            "attackerTimeToKill": 38,
+            "defenderTimeToKill": 22,
+            "attackerBleed": 0.061,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 22,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.42,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 22
+            }
+          },
+          "label": "1 Deinocheirus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinocheirus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "deinocheirus",
+        "targetId": "deinosuchus-ocean",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinocheirus",
+          "targetName": "Deinosuchus (Ocean)",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (700 vs 700), but Deinocheirus has the pursuit edge in water.",
+          "baseScore": 52,
+          "scoreCap": 44,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -15090,6 +15656,1168 @@
         "confidence": "profile-specific"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "maip",
+          "name": "Maip",
+          "family": "maip",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Maip can create a very narrow escape window",
+          "summary": "Maip is inside the legal hunt range. Maip is 28% faster on land; a clean escape is unlikely once spotted. 3 Maip vs 1 Deinocheirus: the Maip side wins in about 11 s with 77% of its health left.",
+          "score": 89,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 800,
+            "speedMarginPct": 28.1,
+            "attackerDurationSeconds": 90.909,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 102,
+            "label": "Maip is 28% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.316,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Maip is 28% faster on land; a clean escape is unlikely once spotted.",
+            "3 Maip vs 1 Deinocheirus: the Maip side wins in about 11 s with 77% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Maip claw lands 40 on Deinocheirus (24 to kill); a Deinocheirus claw lands 62 back (11 to kill).",
+            "Maip's bleed builds faster than Deinocheirus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 62,
+              "attackerBurst": 60,
+              "defenderBurst": 69,
+              "attackerHitsToKill": 24,
+              "defenderHitsToKill": 11,
+              "attackerDps": 30.4,
+              "defenderDps": 43.5,
+              "attackerTimeToKill": 31,
+              "defenderTimeToKill": 15,
+              "attackerBleed": 0.231,
+              "defenderBleed": 0.092,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 11,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.77,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.5
+              }
+            },
+            "label": "3 Maip vs 1 Deinocheirus: the Maip side wins in about 11 s with 77% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Maip vs 2 Deinocheirus: the Deinocheirus side wins in about 33 s with 6% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "maip",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Maip",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Maip is 28% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 71,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Maip is inside the legal hunt range."
+          },
+          "tags": [
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Achillobator can create a very narrow escape window",
+          "summary": "Achillobator is inside the legal hunt range. Achillobator is 31% faster on land; a clean escape is unlikely once spotted. 5 Achillobator vs 1 Deinocheirus: the Achillobator side wins in about 8 s with 83% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 800,
+            "speedMarginPct": 31.3,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 242.2,
+            "label": "Achillobator is 31% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 31% faster on land; a clean escape is unlikely once spotted.",
+            "5 Achillobator vs 1 Deinocheirus: the Achillobator side wins in about 8 s with 83% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 32 on Deinocheirus (30 to kill); a Deinocheirus claw lands 88 back (7 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 88,
+              "attackerBurst": 65,
+              "defenderBurst": 98,
+              "attackerHitsToKill": 30,
+              "defenderHitsToKill": 7,
+              "attackerDps": 23.1,
+              "defenderDps": 62.2,
+              "attackerTimeToKill": 41,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0,
+              "defenderBleed": 0.132,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.83,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "5 Achillobator vs 1 Deinocheirus: the Achillobator side wins in about 8 s with 83% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Achillobator vs 2 Deinocheirus: the Achillobator side wins in about 24 s with 32% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 31% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a very narrow escape window",
+          "summary": "Ceratosaurus is inside the legal hunt range. Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Deinocheirus: the Ceratosaurus side wins in about 10 s with 77% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 800,
+            "speedMarginPct": 31.3,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 217.8,
+            "label": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.471,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+            "4 Ceratosaurus vs 1 Deinocheirus: the Ceratosaurus side wins in about 10 s with 77% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 17 on Deinocheirus (56 to kill); a Deinocheirus claw lands 95 back (8 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 95,
+              "attackerBurst": 39,
+              "defenderBurst": 106,
+              "attackerHitsToKill": 56,
+              "defenderHitsToKill": 8,
+              "attackerDps": 23.2,
+              "defenderDps": 67,
+              "attackerTimeToKill": 41,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0.142,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.77,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.25
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Deinocheirus: the Ceratosaurus side wins in about 10 s with 77% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "4 Ceratosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 33 s with 12% of its health left, too narrow to call.",
+              "attackers": 4,
+              "defenders": 2
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 31% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a very narrow escape window",
+          "summary": "Latenivenatrix is inside the legal hunt range. Latenivenatrix is 34% faster on land; a clean escape is unlikely once spotted. 8 Latenivenatrix vs 1 Deinocheirus: the Latenivenatrix side wins in about 16 s with 51% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 800,
+            "speedMarginPct": 34.4,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 455.6,
+            "label": "Latenivenatrix is 34% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.444,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Latenivenatrix is 34% faster on land; a clean escape is unlikely once spotted.",
+            "8 Latenivenatrix vs 1 Deinocheirus: the Latenivenatrix side wins in about 16 s with 51% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 9 on Deinocheirus (103 to kill); a Deinocheirus claw lands 177 back (3 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 9,
+              "defenderHit": 177,
+              "attackerBurst": 21,
+              "defenderBurst": 196,
+              "attackerHitsToKill": 103,
+              "defenderHitsToKill": 3,
+              "attackerDps": 9.3,
+              "defenderDps": 124.4,
+              "attackerTimeToKill": 103,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0.263,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 16,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.51,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.25
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Deinocheirus: the Latenivenatrix side wins in about 16 s with 51% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Latenivenatrix vs 2 Deinocheirus: the Deinocheirus side wins in about 16 s with 64% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Latenivenatrix is 34% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "family": "torvosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Torvosaurus can create a very narrow escape window",
+          "summary": "Torvosaurus is inside the legal hunt range. Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted. 6 Torvosaurus vs 1 Deinocheirus: the Torvosaurus side wins in about 5 s with 96% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 800,
+            "speedMarginPct": 18.8,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 53.3,
+            "label": "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "stillwater-bog",
+              "crag-bluffs"
+            ],
+            "overlap": 0.333,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "6 Torvosaurus vs 1 Deinocheirus: the Torvosaurus side wins in about 5 s with 96% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 48 on Deinocheirus (20 to kill); a Deinocheirus claw lands 42 back (17 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 6,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 48,
+              "defenderHit": 42,
+              "attackerBurst": 48,
+              "defenderBurst": 47,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 17,
+              "attackerDps": 32.2,
+              "defenderDps": 29.8,
+              "attackerTimeToKill": 29,
+              "defenderTimeToKill": 24,
+              "attackerBleed": 0,
+              "defenderBleed": 0.082,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.96,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5
+              }
+            },
+            "label": "6 Torvosaurus vs 1 Deinocheirus: the Torvosaurus side wins in about 5 s with 96% of its health left.",
+            "detail": "6 attackers vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 2 Deinocheirus: the Torvosaurus side wins in about 10 s with 89% of its health left.",
+              "attackers": 6,
+              "defenders": 2
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Torvosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Torvosaurus is 19% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Torvosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "pycnonemosaurus",
+          "name": "Pycnonemosaurus",
+          "family": "pycnonemosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Pycnonemosaurus can create a very narrow escape window",
+          "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 34% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Deinocheirus: the Pycnonemosaurus side wins in about 10 s with 74% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 800,
+            "speedMarginPct": 34.4,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 102.2,
+            "label": "Pycnonemosaurus is 34% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cedrus-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "wind-tunnels"
+            ],
+            "overlap": 0.278,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Pycnonemosaurus is 34% faster on land; a clean escape is unlikely once spotted.",
+            "3 Pycnonemosaurus vs 1 Deinocheirus: the Pycnonemosaurus side wins in about 10 s with 74% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Pycnonemosaurus bite lands 29 on Deinocheirus (33 to kill); a Deinocheirus claw lands 71 back (10 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 29,
+              "defenderHit": 71,
+              "attackerBurst": 69,
+              "defenderBurst": 79,
+              "attackerHitsToKill": 33,
+              "defenderHitsToKill": 10,
+              "attackerDps": 31.4,
+              "defenderDps": 49.8,
+              "attackerTimeToKill": 30,
+              "defenderTimeToKill": 13,
+              "attackerBleed": 0,
+              "defenderBleed": 0.105,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.74,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.25
+              }
+            },
+            "label": "3 Pycnonemosaurus vs 1 Deinocheirus: the Pycnonemosaurus side wins in about 10 s with 74% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Pycnonemosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 28 s with 19% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "pycnonemosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Pycnonemosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Pycnonemosaurus is 34% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": []
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-ocean": {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "tylosaurus": {
+        "id": "tylosaurus",
+        "name": "Tylosaurus",
+        "cw": 5000,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 51.46,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bone Snap",
+          "damage": 105,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bone Snap",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "maip": {
+        "id": "maip",
+        "name": "Maip",
+        "cw": 4000,
+        "hp": 650,
+        "armor": 1,
+        "dps": 46,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Claw Charged"
+        ],
+        "bleedPerSecond": 0.317,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Apex",
@@ -15115,7 +16843,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

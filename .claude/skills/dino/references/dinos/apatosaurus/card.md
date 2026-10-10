@@ -52,10 +52,10 @@ You live in a huge nomadic herd made of family pods, each led by its eldest fema
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
-- **Austroraptor** (hoch): Austroraptor can create a real pursuit problem
-- **Rhamphorhynchus** (hoch): Rhamphorhynchus can create a real pursuit problem
+- **Allosaurus** (spürbar): Allosaurus can create a credible fight
+- **Austroraptor** (spürbar): Austroraptor can create a credible fight
+- **Rhamphorhynchus** (spürbar): Rhamphorhynchus can create a credible fight
 - **Therizinosaurus** (spürbar): Therizinosaurus can create a credible fight
 - **Giganotosaurus** (conditional): Giganotosaurus matters only if it gets the right opening
 

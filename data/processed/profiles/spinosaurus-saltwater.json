@@ -10,7 +10,8 @@
     "Salzwasser-Spino",
     "Meeres-Spino",
     "Küsten-Spino",
-    "Küstenwächter",
+    "Eisbär-Spino",
+    "Meeresbär",
     "Spino",
     "Spoon"
   ],
@@ -9607,16 +9608,16 @@
       "height": 874
     },
     "legend": {
-      "territory": "Claimable water territory (green on the profile map). A Spinosaurus holds exactly one territory at a time and roams only inside it",
+      "territory": "Claimable water territory (green on the profile map). A Spinosaurus holds exactly one territory at a time; the saltwater variant also tours the Leedsichthys loop peacefully outside it",
       "neutral": "Neutral / courtship ground (yellow on the profile map)",
-      "saltwater": "Freshwater drinking spot of the saltwater variant: outside its territory, visited to drink, never claimed or defended"
+      "saltwater": "Freshwater drinking spot of the saltwater variant on its tours: outside its home territory, visited to drink, never claimed or defended"
     },
     "variants": [
       {
         "id": "saltwater",
         "name": "Saltwater Spinosaurus",
         "moisture": "aquatic",
-        "note": "Some Spinosaurus prefer saltwater: one claimed sea territory (Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands or Stonebed Shoal), with fresh water to drink outside it that it never defends."
+        "note": "Some Spinosaurus prefer \"a lazy lifestyle touring saltwater areas\": one claimed home sea area (best Kelp Vale or Coastal Bluffs; also Stonebed Shoal, Palm Islands or Abyssal Depths), from which it tours the Leedsichthys migration loop peacefully, hunting only fish, critters, Leedsichthys and Tylosaurus outside its home, and drinks at fresh water it never defends."
       }
     ],
     "anyPoiHunting": {
@@ -9878,7 +9879,7 @@
           "up to Apex tier"
         ],
         "season": null,
-        "note": "Claimable sea territory: northern kelp shallows off the Tallbrush shore, where the Leedsichthys migration begins.",
+        "note": "Claimable sea territory and best home for the polar-bear Spino: the cold northern kelp shallows off the Tallbrush shore, where the Leedsichthys migration begins.",
         "unresolvedRegion": false
       },
       {
@@ -10254,7 +10255,7 @@
           "up to Apex tier"
         ],
         "season": null,
-        "note": "Claimable sea territory: high sea cliffs and the island around Scale Lake (salt water). Rocky shore to bask and nest on.",
+        "note": "Claimable sea territory: high northern sea cliffs and the island around Scale Lake (salt water). Rocky polar-coast shore to bask and nest on.",
         "unresolvedRegion": false
       },
       {
@@ -10475,7 +10476,7 @@
           "up to Apex tier"
         ],
         "season": null,
-        "note": "Claimable sea territory: the deep eastern ocean. Open water with little shore, home of Tylosaurus; no beach to nest on.",
+        "note": "Claimable sea territory: the deep eastern ocean. Open water with little shore, home of Tylosaurus; no beach to bask or nest on, so a poor home.",
         "unresolvedRegion": false
       },
       {
@@ -11046,7 +11047,7 @@
         "variant": "saltwater",
         "prey": null,
         "season": null,
-        "note": "Fresh water on the northern volcanic fringe, nearest for Kelp Vale. Never claimed or defended by you; if a freshwater Spinosaurus holds this water, you are the intruder.",
+        "note": "Fresh water on the northern volcanic fringe, on the Leedsichthys loop and nearest for Kelp Vale. Never claimed or defended by you; if a freshwater Spinosaurus holds this water, you are the intruder.",
         "unresolvedRegion": false
       },
       {
@@ -11079,7 +11080,7 @@
         "variant": "saltwater",
         "prey": null,
         "season": null,
-        "note": "Fresh pond among the Volcano Islands, nearest for Coastal Bluffs and Abyssal Depths. Never claimed or defended by you; if another Spinosaurus holds this water, you are the intruder.",
+        "note": "Fresh pond among the Volcano Islands, on the Leedsichthys loop and nearest for Coastal Bluffs and Abyssal Depths. Never claimed or defended by you; if another Spinosaurus holds this water, you are the intruder.",
         "unresolvedRegion": false
       },
       {
@@ -11629,10 +11630,10 @@
     "id": "saltwater",
     "label": "Saltwater variant",
     "de": "Salzwasser-Variante",
-    "title": "Küstenwächter",
+    "title": "Meeresbär",
     "parentId": "spinosaurus",
     "parentName": "Spinosaurus",
-    "note": "The Spinosaurus that prefers salt water. It claims exactly one of the bright-green sea areas on the profile map (Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands or Stonebed Shoal), roams only inside it, and drinks at fresh water outside it that it never defends. Shares the official Spinosaurus profile with the freshwater variant.",
+    "note": "The Spinosaurus that prefers \"a lazy lifestyle touring saltwater areas\": a polar bear of the sea. It claims exactly one of the bright-green sea areas on the profile map (best Kelp Vale or the Coastal Bluffs) as its home, where it nests, defends and hunts players. From there it tours the Leedsichthys migration loop through foreign sea peacefully, hunting only fish, critters, Leedsichthys and Tylosaurus on the way, and drinks at fresh water it never defends. Shares the official Spinosaurus profile with the freshwater variant.",
     "siblings": [
       {
         "id": "spinosaurus-freshwater",
@@ -11653,46 +11654,48 @@
   "playstyle": {
     "schemaVersion": 1,
     "source": "curated",
-    "reviewedAt": "2026-09-27",
+    "reviewedAt": "2026-10-04",
     "language": "de",
     "solo": {
       "fit": "solo",
-      "note": "Ideal für Solo: Außerhalb einer Paarbindung sind Spinosaurus laut Profil Einzelgänger, und du jagst immer allein. Du brauchst nur dein eines Stück Meer und eine Süßwasserstelle außerhalb, zu der du trinken schwimmst."
+      "note": "Ideal für Solo: Außerhalb einer Paarbindung sind Spinosaurus laut Profil Einzelgänger, und du jagst immer allein. Ein Eisbär ist sowieso der geborene Einzelgänger, der stundenlang allein wartet und allein durchs Meer zieht."
     },
-    "summary": "Du bist der Küstenwächter: der Spinosaurus, der das Salzwasser dem Fluss vorzieht. Du lebst wie ein Seeleopard, der vor seinem eigenen Küstenabschnitt patrouilliert, stundenlang in der Sonne döst und auf die ersten Schwimmversuche der Jungen wartet. Dein Wasser verteidigst du wie ein Grauer Riffhai sein Heimatriff: erst die große Drohgebärde, dann der plötzliche Angriff. Du beanspruchst genau ein Meeresgebiet von der Profilkarte und streifst nur darin umher. Zum Trinken schwimmst du regelmäßig zu einer Süßwasserstelle außerhalb, die du nie verteidigst.",
+    "summary": "Du bist der Meeresbär: der Spinosaurus, der laut Profil „a lazy lifestyle touring saltwater areas“ dem Fluss vorzieht. Du lebst wie ein Eisbär, faul, geduldig und meistens am Dösen, bis der Hunger dich auf Tour schickt. Du ziehst der Leedsichthys-Wanderung hinterher wie ein Bär den Robben, wartest an der Route wie am Atemloch, tauchst lautlos ab und schießt aus dem Wasser. Dein Zuhause ist ein einziges Meeresgebiet, am besten der kalte Norden mit Kelp Vale oder den Coastal Bluffs. Dort nistest du, und dort verteidigst du dein Wasser wie ein Walrossbulle: Segel hoch, drei Rufe, dann der Angriff. Unterwegs bist du friedlich und jagst nur Fisch, Kleintiere, Leedsichthys und Tylosaurus.",
     "parts": [
       {
         "id": "daily",
-        "title": "Alltag: dein eines Stück Meer",
-        "text": "Du wählst genau ein hellgrünes Meeresgebiet der Profilkarte als Revier, und jedes hat seinen eigenen Charakter. Palm Islands mit Castaway Isle ist eine Inselkette mit Stränden zum Sonnen und Nisten, direkt an der Wanderroute der Leedsichthys. Die Coastal Bluffs bieten hohe Klippen und felsige Ufer. Kelp Vale sind die Tangflächen im Norden, wo die Leedsichthys-Wanderung beginnt. Die Stonebed Shoal ist eine Sandbank im offenen Meer, ebenfalls an der Route. Die Abyssal Depths sind tiefes Wasser, die Heimat der Tylosaurier, ohne Strand und ohne Nistplatz. In deinem Revier streifst du umher, bis zehn Körperlängen vom Ufer, und nirgendwo sonst. Du döst wie ein Seeleopard auf seiner Scholle am Strand oder auf einem Felsen, richtest das Segel zur Sonne und gehst immer wieder ins Wasser, damit deine Haut nicht austrocknet und reißt. Deine langen Torpor-Nickerchen hältst du unter Wasser. Das Meer löscht deinen Durst nicht. Deshalb schwimmst du regelmäßig zu Süßwasser außerhalb deines Reviers: von Kelp Vale zum Rocky Lake, von den Coastal Bluffs und den Abyssal Depths zum Dark Pond, von Palm Islands und der Stonebed Shoal zum See an der Lakeside Meadow. Dort trinkst du friedlich und schwimmst gleich zurück. Diese Stelle beanspruchst und verteidigst du nie. Hält dort ein anderer Spinosaurus sein Revier, bist du der Eindringling: Wirst du herausgefordert, ziehst du ab und trinkst woanders. Werden bei dir die Fische knapp, darfst du dir ein neues Revier suchen, aber du hältst immer nur eines."
+        "title": "Alltag: Dösen, Abkühlen, auf Tour gehen",
+        "text": "Du hast genau ein Zuhause, eines der hellgrünen Meeresgebiete der Profilkarte. Am meisten Eisbär steckt im Norden: Kelp Vale mit seinen kalten Tangflächen, wo die Leedsichthys-Wanderung beginnt, ist deine Eiskante. Die Coastal Bluffs mit hohen Klippen und felsigem Ufer sind deine Polarküste. Die Stonebed Shoal, eine Sandbank im offenen Meer, liegt wie eine Eisscholle an der Route. Palm Islands ist erlaubt, aber tropisch. Die Abyssal Depths meidest du als Zuhause, denn dort gibt es weder Strand noch Nistplatz, und ein Eisbär braucht festen Boden unter den Füßen. Den größten Teil des Tages bist du faul wie ein Eisbär, der Energie spart: Du liegst am Strand oder auf einem Felsen, drehst das Segel zur Sonne und gleitest ins Wasser, sobald dir zu warm wird oder deine Haut zu trocknen beginnt, so wie ein Walross rosa anläuft und sich im kalten Wasser wieder abkühlt. Deine langen Torpor-Nickerchen hältst du unter Wasser oder an deinem Lieblingsnistplatz und tauchst nur zum Atmen auf. So überstehst du lange Zeiten ohne Fressen, wie eine Eisbärin in ihrer Wurfhöhle. Wenn der Hunger kommt, gehst du auf Tour. Du folgst der großen Leedsichthys-Schleife durch das Meer, von Kelp Vale an den Coastal Bluffs vorbei nach Palm Islands, Castaway Isle und zur Stonebed Shoal und zurück an den Volcano Islands entlang. Unterwegs trinkst du, denn Salzwasser löscht deinen Durst nicht: am Rocky Lake, am Dark Pond oder am See an der Lakeside Meadow. Diese Stellen und alle fremden Meeresgebiete beanspruchst du nie. Dort bist du ein gelassener, desinteressierter Gast, der Krokodile mit Verachtung beobachtet und weiterzieht, statt Streit zu suchen. Hält ein anderer Spinosaurus das Gebiet, durch das du ziehst, bist du der Eindringling: Zeigt er dir sein Segel, schwimmst du weiter. Danach kehrst du nach Hause zurück. Werden dort die Fische knapp, darfst du dir ein neues Zuhause suchen, aber du hältst immer nur eines."
       },
       {
         "id": "hunt",
-        "title": "Wächter & Jäger: dein Wasser, deine Beute",
-        "text": "In deinem Revier bist du der Riffhai. Kommt etwas in dein Wasser, schwimmst du ihm an der Uferlinie nach, zeigst dein Segel voll und gibst drei aggressive Rufe. Zieht es nach zehn Sekunden nicht ab, trinkt weiter oder fordert dich zurück heraus, schießt du vor, bis es zehn Körperlängen vom Wasser entfernt ist, und keinen Meter weiter. Leedsichthys duldest du in deinem Wasser, und Tylosaurus sind für dich übergroße Fische, solange du nicht nistest oder sie dir zu nahe kommen. Argentinosaurus und Apatosaurus forderst du nie heraus. Verlierst du, duldest du den Sieger 15 Minuten lang. Kämpfst du mit einem Landtier um das Ufer und gehst ins Schwimmen, hast du das Land verloren und es gelten die Regeln für Ressourcenkämpfe. Jagen darfst du Spieler nur, wenn die Jagd in deinem Revier beginnt, dann aber alles bis Apex, und du darfst der Beute danach auch nach draußen folgen. Deinosuchus und Sarcosuchus jagst du zuerst. Kaiwhekea und Eurhinosaurus, die durch dein Wasser ziehen, sind legale Beute. Deine eigentliche Spezialität sind die Jungen der Meeresriesen: Leedsichthys-Kälber auf ihrer Wanderung und junge Tylosaurier. Ein erwachsener Tylosaurus schwimmt dir mit 900 gegen 750 davon und ist riskant. Jagst du, wirst du still wie ein Seeleopard unter der Kolonie: kein Rufen und kein Drohen, laut Profil darfst du vor und während der Jagd weder rufen noch aggressiv callen. Außerhalb deines Reviers, also auch auf dem Weg zum Trinken, darfst du nur Fisch, Kleintiere, Leedsichthys und Tylosaurus jagen und dich sonst nur verteidigen. Du jagst allein, dein Partner hilft nicht mit. Artgenossen und Suchomimus jagst du nie, und Metriacanthosaurus-Kadaver meidest du."
+        "title": "Jagd: Atemloch, Pirsch und Walross-Drohung",
+        "text": "Jagst du, wirst du still wie ein Eisbär am Atemloch. Laut Profil darfst du vor und während der Jagd weder broadcasten noch aggressiv callen. Du wartest an der Wanderroute, bis ein Leedsichthys-Kalb oder ein junger Tylosaurus vorbeizieht, sinkst ab, gleitest unter Wasser heran und schießt heraus, so wie ein Eisbär getaucht an die Scholle schwimmt und auf die Robbe springt. Läuft es schlecht, wechselst du zwischen Wasser und Land. Auf Tour, also außerhalb deines Zuhauses, darfst du nur Fisch, Kleintiere, Leedsichthys und Tylosaurus jagen und dich sonst nur verteidigen. Am liebsten nimmst du die Jungen, wie der Eisbär die Robbenjungen und Walrosskälber. Ein erwachsener Tylosaurus schwimmt dir mit 900 gegen 750 davon und ist so riskant wie ein ausgewachsenes Walross für einen Bären. Das Profil erlaubt Leedsichthys „in any POI“, die Regel-Ausnahme zu 4.2 nennt aber nur Tylosaurus. Frag im Zweifel beim Staff nach, bevor du einen Leedsichthys fern von zu Hause angreifst. Lange tote Kadaver unterwegs frisst du wie Eisbären am alten Walkadaver, um fremde Kadaver streitest du aber nie. Zuhause wirst du zum Walrossbullen. Kommt etwas bis zehn Körperlängen an dein Wasser, schwimmst du ihm an der Uferlinie nach, zeigst dein Segel voll und gibst drei aggressive Rufe. Zieht es nach zehn Sekunden nicht ab, trinkt weiter oder fordert dich heraus, schießt du vor, bis es zehn Körperlängen vom Wasser entfernt ist, und keinen Meter weiter. Leedsichthys duldest du in deinem Wasser, und Tylosaurus sind für dich übergroße Fische, solange du nicht nistest oder sie dir zu nahe kommen. Argentinosaurus und Apatosaurus forderst du nie heraus. Verlierst du, duldest du den Sieger 15 Minuten lang. Kämpfst du mit einem Landtier um das Ufer und gehst ins Schwimmen, hast du das Land verloren und es gelten die Regeln für Ressourcenkämpfe. Spieler jagen darfst du nur, wenn die Jagd in deinem Zuhause beginnt, dann aber alles bis Apex, und du darfst der Beute danach auch nach draußen folgen. Deinosuchus und Sarcosuchus jagst du dort zuerst. Kaiwhekea und Eurhinosaurus, die durch dein Wasser ziehen, sind legale Beute. Du jagst allein, dein Partner hilft nicht mit. Artgenossen und Suchomimus jagst du nie, und Metriacanthosaurus-Kadaver meidest du."
       },
       {
         "id": "courtship",
         "title": "Partnersuche & Balz",
         "fixed": true,
-        "text": "Die Balz läuft wie im Profil ab. Du bist dieselbe Art wie dein Süßwasser-Cousin, und neue Paare finden sich in Triad Falls oder im Wollemi Forest. Du näherst dich seitlich, schüttelst dein Segel und neigst den Kopf, denn frontal wirkt es aggressiv. Dann setzt ihr euch nebeneinander, ruft leise und schüttelt die Hälse. Passt es, schwimmt ihr gemeinsam los und haltet ein Revier, dein Stück Meer oder seinen Fluss, aber nie beides. Etablierte Paare tanzen in ihrem Wasser im Kreis. Genistet wird nur im beanspruchten Revier, bei dir also auf einem Strand von Palm Islands, an den Klippen der Coastal Bluffs oder am Ufer von Kelp Vale oder der Stonebed Shoal. In den Abyssal Depths gibt es keinen Nistplatz. Die Mutter lockt die Schlüpflinge mit sanften Rufen ins Wasser, und am Strand kauen deine Jungen Seemuscheln gegen das Zahnen, auch das steht im Profil. Mit Sub-Adult schickt ihr sie fort nach Triad Falls. Solo musst du dich nicht binden, viele Spinosaurus wünschen sich aber einen Partner fürs Leben."
+        "text": "Die Balz läuft wie im Profil ab. Du bist dieselbe Art wie dein Süßwasser-Cousin, und neue Paare finden sich in Triad Falls oder im Wollemi Forest, wo alle Spinosaurus wie Walrosse am Liegeplatz friedlich in der Sonne liegen. Du näherst dich seitlich, schüttelst dein Segel und neigst den Kopf, denn frontal wirkt es aggressiv. Dann setzt ihr euch nebeneinander, ruft leise und schüttelt die Hälse. Passt es, schwimmt ihr gemeinsam los und haltet ein Zuhause, dein Stück Meer oder seinen Fluss, aber nie beides. Etablierte Paare tanzen in ihrem Wasser im Kreis. Genistet wird nur im beanspruchten Gebiet, bei dir also an den Klippen der Coastal Bluffs, am Ufer von Kelp Vale oder der Stonebed Shoal oder auf einem Strand von Palm Islands. Danach wird es sehr eisbärig: Die Mutter lockt die Schlüpflinge mit sanften Rufen ins Wasser, schirmt sie mit ihrem Körper ab und führt sie mit kräftigen Schwanzschlägen davon, so wie eine Eisbärin ihre Jungen aus der Höhle aufs Eis führt. Der Vater bleibt anfangs auf Abstand, schwimmt aber in der Nähe und wacht, anders als ein Eisbärmännchen. Am Strand kauen deine Jungen Seemuscheln gegen das Zahnen, wie kleine Walrosse. Mit Sub-Adult schickt ihr sie fort nach Triad Falls. Solo musst du dich nicht binden, viele Spinosaurus wünschen sich aber einen Partner fürs Leben."
       }
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Spinosaurus (Saltwater) has 4 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Spinosaurus (Saltwater) has 4 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "tylosaurus",
         "name": "Tylosaurus",
+        "family": "tylosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Tylosaurus can create a very narrow escape window",
-        "summary": "Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+        "summary": "Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
         "score": 102,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11709,18 +11712,6 @@
           "durationMarginPct": 32.9,
           "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.83,
-          "cappedPowerRatio": 1.29,
-          "label": "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11736,10 +11727,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (2 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 49 on Spinosaurus (Saltwater) (23 to kill); a Spinosaurus (Saltwater) claw lands 72 back (14 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 49,
+            "defenderHit": 72,
+            "attackerBurst": 80,
+            "defenderBurst": 204,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 14,
+            "attackerDps": 39,
+            "defenderDps": 87.2,
+            "attackerTimeToKill": 28,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 17,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.27,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 11.5
+            }
+          },
+          "label": "2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tylosaurus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Tylosaurus is linked by a specific profile rule."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -11763,12 +11820,14 @@
       {
         "id": "eurhinosaurus",
         "name": "Eurhinosaurus",
+        "family": "eurhinosaurus",
         "direction": "threat",
         "band": "conditional",
         "kind": "conditional",
         "headline": "Eurhinosaurus matters only if it gets the right opening",
-        "summary": "Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "summary": "Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11786,18 +11845,6 @@
           "durationMarginPct": 32.9,
           "label": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.5,
-          "cappedPowerRatio": 1.05,
-          "label": "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -11813,9 +11860,75 @@
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "5 shared mapped areas make contact plausible."
+          "3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Eurhinosaurus bite lands 18 on Spinosaurus (Saltwater) (61 to kill); a Spinosaurus (Saltwater) claw lands 120 back (5 to kill)."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 18,
+            "defenderHit": 120,
+            "attackerBurst": 30,
+            "defenderBurst": 340,
+            "attackerHitsToKill": 61,
+            "defenderHitsToKill": 5,
+            "attackerDps": 14.9,
+            "defenderDps": 145.3,
+            "attackerTimeToKill": 74,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0.029,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 13,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.66,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.25
+            }
+          },
+          "label": "3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "eurhinosaurus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Eurhinosaurus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Eurhinosaurus is linked by a specific profile rule."
+        },
         "tags": [],
         "evidence": [
           {
@@ -11830,12 +11943,14 @@
       {
         "id": "lurdusaurus",
         "name": "Lurdusaurus",
+        "family": "lurdusaurus",
         "direction": "threat",
         "band": "conditional",
         "kind": "conditional",
         "headline": "Lurdusaurus matters only if it gets the right opening",
-        "summary": "Lurdusaurus is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 1), a committed straight fight favours Spinosaurus (Saltwater).",
+        "summary": "Lurdusaurus is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.",
         "score": 26,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11853,18 +11968,6 @@
           "durationMarginPct": 49.7,
           "label": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3200,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.53,
-          "cappedPowerRatio": 0.53,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Spinosaurus (Saltwater)."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -11878,9 +11981,76 @@
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Spinosaurus (Saltwater).",
-          "They overlap in 3 mapped areas, so the matchup is situational."
+          "1 Lurdusaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Lurdusaurus bite lands 22 on Spinosaurus (Saltwater) (51 to kill); a Spinosaurus (Saltwater) claw lands 113 back (6 to kill).",
+          "Lurdusaurus's bleed builds faster than Spinosaurus (Saltwater) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 113,
+            "attackerBurst": 48,
+            "defenderBurst": 319,
+            "attackerHitsToKill": 51,
+            "defenderHitsToKill": 6,
+            "attackerDps": 32.2,
+            "defenderDps": 136.3,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0.072,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.87,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.5
+            }
+          },
+          "label": "1 Lurdusaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Lurdusaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "lurdusaurus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Lurdusaurus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
+          "baseScore": 43,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Lurdusaurus is linked by a specific profile rule."
+        },
         "tags": [],
         "evidence": [
           {
@@ -11901,12 +12071,14 @@
       {
         "id": "tyrannosaurus",
         "name": "Tyrannosaurus",
+        "family": "tyrannosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Tyrannosaurus can create a very narrow escape window",
-        "summary": "Tyrannosaurus is inside the legal hunt range. Tyrannosaurus is 14% faster on land; a clean escape is unlikely once spotted. At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Tyrannosaurus is inside the legal hunt range. Tyrannosaurus is 14% faster on land; a clean escape is unlikely once spotted. 2 Tyrannosaurus vs 1 Spinosaurus (Saltwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left.",
         "score": 81,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11923,18 +12095,6 @@
           "durationMarginPct": 0,
           "label": "Tyrannosaurus is 14% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1.55,
-          "label": "At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -11946,10 +12106,76 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Tyrannosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (2 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "2 Tyrannosaurus vs 1 Spinosaurus (Saltwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left.",
           "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Tyrannosaurus bite lands 64 on Spinosaurus (Saltwater) (18 to kill); a Spinosaurus (Saltwater) claw lands 55 back (19 to kill).",
           "Tyrannosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 64,
+            "defenderHit": 55,
+            "attackerBurst": 109,
+            "defenderBurst": 155,
+            "attackerHitsToKill": 18,
+            "defenderHitsToKill": 19,
+            "attackerDps": 49.2,
+            "defenderDps": 66.1,
+            "attackerTimeToKill": 22,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.63,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 11.25
+            }
+          },
+          "label": "2 Tyrannosaurus vs 1 Spinosaurus (Saltwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Tyrannosaurus vs 1 Spinosaurus (Saltwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tyrannosaurus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tyrannosaurus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tyrannosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 63,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tyrannosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "endurance"
@@ -11960,12 +12186,14 @@
       {
         "id": "yutyrannus",
         "name": "Yutyrannus",
+        "family": "yutyrannus",
         "direction": "threat",
-        "band": "severe",
+        "band": "high",
         "kind": "predator",
-        "headline": "Yutyrannus can create a very narrow escape window",
-        "summary": "Yutyrannus is inside the legal hunt range. Yutyrannus is 49% faster on land; a clean escape is unlikely once spotted. At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 81,
+        "headline": "Yutyrannus can create a real pursuit problem",
+        "summary": "Yutyrannus is inside the legal hunt range. Yutyrannus is 49% faster on land; a clean escape is unlikely once spotted. 4 Yutyrannus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 19% of its health left, too narrow to call.",
+        "score": 71,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11982,18 +12210,6 @@
           "durationMarginPct": 122.2,
           "label": "Yutyrannus is 49% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.54,
-          "cappedPowerRatio": 1.44,
-          "label": "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12005,10 +12221,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Yutyrannus is 49% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (4 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+          "4 Yutyrannus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 19% of its health left, too narrow to call.",
           "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Yutyrannus bite lands 30 on Spinosaurus (Saltwater) (38 to kill); a Spinosaurus (Saltwater) claw lands 111 back (6 to kill).",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 30,
+            "defenderHit": 111,
+            "attackerBurst": 30,
+            "defenderBurst": 314,
+            "attackerHitsToKill": 38,
+            "defenderHitsToKill": 6,
+            "attackerDps": 19.7,
+            "defenderDps": 134.2,
+            "attackerTimeToKill": 56,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 18,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.19,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.5
+            }
+          },
+          "label": "4 Yutyrannus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 19% of its health left, too narrow to call.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "4 Yutyrannus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 19% of its health left, too narrow to call.",
+            "attackers": 4,
+            "defenders": 1
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yutyrannus",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Yutyrannus is 49% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 63,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Yutyrannus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -12018,12 +12300,14 @@
       {
         "id": "maip",
         "name": "Maip",
+        "family": "maip",
         "direction": "threat",
-        "band": "severe",
+        "band": "high",
         "kind": "predator",
-        "headline": "Maip can create a very narrow escape window",
-        "summary": "Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 80,
+        "headline": "Maip can create a real pursuit problem",
+        "summary": "Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape is unlikely once spotted. 3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call.",
+        "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12040,18 +12324,6 @@
           "durationMarginPct": 102,
           "label": "Maip is 46% faster on land; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.67,
-          "cappedPowerRatio": 1.4,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12063,9 +12335,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Maip is 46% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 1 mapped area, so the matchup is situational."
+          "3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Maip claw lands 36 on Spinosaurus (Saltwater) (31 to kill); a Spinosaurus (Saltwater) claw lands 90 back (8 to kill).",
+          "Maip's bleed builds faster than Spinosaurus (Saltwater) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 90,
+            "attackerBurst": 55,
+            "defenderBurst": 255,
+            "attackerHitsToKill": 31,
+            "defenderHitsToKill": 8,
+            "attackerDps": 27.9,
+            "defenderDps": 109,
+            "attackerTimeToKill": 39,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0.211,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 18,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.09,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6
+            }
+          },
+          "label": "3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "maip",
+        "targetId": "spinosaurus-saltwater",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Maip",
+          "targetName": "Spinosaurus (Saltwater)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Maip is 46% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 62,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Maip is inside the legal hunt range."
+        },
         "tags": [
           "bleed",
           "endurance"
@@ -12078,12 +12417,14 @@
       {
         "id": "leedsichthys",
         "name": "Leedsichthys",
+        "family": "leedsichthys",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 82,
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+        "score": 92,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12099,18 +12440,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": 0,
           "label": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.09,
-          "cappedPowerRatio": 1.09,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12128,9 +12457,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible."
+          "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 33 on Leedsichthys (31 to kill); a Leedsichthys headbutt lands 46 back (25 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 33,
+            "defenderHit": 46,
+            "attackerBurst": 93,
+            "defenderBurst": 46,
+            "attackerHitsToKill": 31,
+            "defenderHitsToKill": 25,
+            "attackerDps": 39.6,
+            "defenderDps": 22.9,
+            "attackerTimeToKill": 25,
+            "defenderTimeToKill": 48,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 25,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.47,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 25.25
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -12151,12 +12546,14 @@
       {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
+        "family": "deinosuchus",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Deinosuchus (Ocean) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Ocean): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12173,18 +12570,6 @@
           "durationMarginPct": 0.2,
           "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12198,9 +12583,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
+          "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Ocean): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+          "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 55 on Deinosuchus (Ocean) (19 to kill); a Deinosuchus (Ocean) bite lands 50 back (23 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 55,
+            "defenderHit": 50,
+            "attackerBurst": 155,
+            "defenderBurst": 105,
+            "attackerHitsToKill": 19,
+            "defenderHitsToKill": 23,
+            "attackerDps": 66.1,
+            "defenderDps": 39.7,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 15,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.45,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 15.25
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Ocean): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Ocean): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "deinosuchus-ocean",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Deinosuchus (Ocean)",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -12221,12 +12672,14 @@
       {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
+        "family": "deinosuchus",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Deinosuchus (Shore) is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "summary": "A profile rule names or prioritises this matchup. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12243,18 +12696,6 @@
           "durationMarginPct": 0.2,
           "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12267,9 +12708,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
-          "The legal groups (1 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 2 mapped areas, so the matchup is situational."
+          "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+          "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 55 on Deinosuchus (Shore) (19 to kill); a Deinosuchus (Shore) bite lands 50 back (23 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 55,
+            "defenderHit": 50,
+            "attackerBurst": 155,
+            "defenderBurst": 105,
+            "attackerHitsToKill": 19,
+            "defenderHitsToKill": 23,
+            "attackerDps": 66.1,
+            "defenderDps": 39.7,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 15,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.45,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 15.25
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "deinosuchus-shore",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Deinosuchus (Shore)",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -12290,12 +12797,14 @@
       {
         "id": "tylosaurus",
         "name": "Tylosaurus",
+        "family": "tylosaurus",
         "direction": "opportunity",
-        "band": "conditional",
-        "kind": "risky-quarry",
-        "headline": "Tylosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 17% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
-        "score": 36,
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Tylosaurus can usually refuse the chase",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 17% faster in water and can normally refuse this fight. 1 Spinosaurus (Saltwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+        "score": 61,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12312,18 +12821,6 @@
           "durationMarginPct": -24.8,
           "label": "Tylosaurus is 17% faster in water and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.77,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12339,10 +12836,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 17% faster in water and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Tylosaurus.",
+          "1 Spinosaurus (Saltwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
           "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 72 on Tylosaurus (14 to kill); a Tylosaurus bite lands 49 back (23 to kill).",
           "Tylosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 72,
+            "defenderHit": 49,
+            "attackerBurst": 204,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 14,
+            "defenderHitsToKill": 23,
+            "attackerDps": 87.2,
+            "defenderDps": 39,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 17,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.27,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 11.5
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Spinosaurus (Saltwater) vs 2 Tylosaurus: the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "tylosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Tylosaurus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tylosaurus is 17% faster in water and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -12365,12 +12928,14 @@
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
+        "family": "sarcosuchus",
         "direction": "opportunity",
         "band": "conditional",
         "kind": "risky-quarry",
         "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Sarcosuchus is 15% faster in water and can normally refuse this fight. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+        "summary": "A profile rule names or prioritises this matchup. Sarcosuchus is 15% faster in water and can normally refuse this fight. 1 Spinosaurus (Saltwater) vs 3 Sarcosuchus: the Sarcosuchus side wins in about 6 s with 68% of its health left.",
         "score": 27,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12387,18 +12952,6 @@
           "durationMarginPct": 0,
           "label": "Sarcosuchus is 15% faster in water and can normally refuse this fight."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.33,
-          "cappedPowerRatio": 0.63,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12410,9 +12963,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Sarcosuchus is 15% faster in water and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
-          "They overlap in 1 mapped area, so the matchup is situational."
+          "1 Spinosaurus (Saltwater) vs 3 Sarcosuchus: the Sarcosuchus side wins in about 6 s with 68% of its health left.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 80 on Sarcosuchus (8 to kill); a Sarcosuchus tail lands 27 back (41 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 80,
+            "defenderHit": 27,
+            "attackerBurst": 227,
+            "defenderBurst": 143,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 41,
+            "attackerDps": 96.9,
+            "defenderDps": 61.8,
+            "attackerTimeToKill": 6,
+            "defenderTimeToKill": 18,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 6,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.68,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 6
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 3 Sarcosuchus: the Sarcosuchus side wins in about 6 s with 68% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 3 Sarcosuchus: the Sarcosuchus side wins in about 6 s with 68% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "sarcosuchus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Sarcosuchus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Sarcosuchus is 15% faster in water and can normally refuse this fight.",
+          "baseScore": 44,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -12433,12 +13052,14 @@
       {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
+        "family": "megalania",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted. 1 Spinosaurus (Saltwater) vs 1 Megalania (Temperate): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
         "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12455,18 +13076,6 @@
           "durationMarginPct": 271.1,
           "label": "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.31,
-          "cappedPowerRatio": 2.31,
-          "label": "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12481,9 +13090,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
-          "4 shared mapped areas make contact plausible."
+          "1 Spinosaurus (Saltwater) vs 1 Megalania (Temperate): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 132 on Megalania (Temperate) (4 to kill); a Megalania (Temperate) bite lands 16 back (70 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 132,
+            "defenderHit": 16,
+            "attackerBurst": 374,
+            "defenderBurst": 32,
+            "attackerHitsToKill": 4,
+            "defenderHitsToKill": 70,
+            "attackerDps": 159.7,
+            "defenderDps": 19.6,
+            "attackerTimeToKill": 3,
+            "defenderTimeToKill": 56,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.94,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.5
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Megalania (Temperate): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Megalania (Temperate): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "megalania-temperate",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Megalania (Temperate)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -12491,12 +13166,14 @@
       {
         "id": "austroraptor",
         "name": "Austroraptor",
+        "family": "austroraptor",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
         "headline": "Austroraptor is a realistic hunting opportunity",
-        "summary": "Austroraptor is within the legal hunt ceiling. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. At the legal limits (1 attacker vs 2 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Austroraptor is within the legal hunt ceiling. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 2 Austroraptor: the Spinosaurus (Saltwater) side wins in about 7 s with 86% of its health left.",
         "score": 76,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12513,18 +13190,6 @@
           "durationMarginPct": -33.2,
           "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.86,
-          "cappedPowerRatio": 1.84,
-          "label": "At the legal limits (1 attacker vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12540,14 +13205,1626 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
-          "At the legal limits (1 attacker vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "5 shared mapped areas make contact plausible."
+          "1 Spinosaurus (Saltwater) vs 2 Austroraptor: the Spinosaurus (Saltwater) side wins in about 7 s with 86% of its health left.",
+          "5 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 171 on Austroraptor (4 to kill); a Austroraptor bite lands 16 back (70 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 171,
+            "defenderHit": 16,
+            "attackerBurst": 486,
+            "defenderBurst": 19,
+            "attackerHitsToKill": 4,
+            "defenderHitsToKill": 70,
+            "attackerDps": 207.6,
+            "defenderDps": 16.1,
+            "attackerTimeToKill": 3,
+            "defenderTimeToKill": 68,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 7,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.86,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.25
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 2 Austroraptor: the Spinosaurus (Saltwater) side wins in about 7 s with 86% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Spinosaurus (Saltwater) vs 2 Austroraptor: the Spinosaurus (Saltwater) side wins in about 7 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Austroraptor is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a real pursuit problem",
+          "summary": "Ceratosaurus is inside the legal hunt range. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.",
+          "score": 64,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 700,
+            "speedMarginPct": 50,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 217.8,
+            "label": "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "wollemi-forest"
+            ],
+            "overlap": 0.05,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.",
+            "4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Ceratosaurus bite lands 16 on Spinosaurus (Saltwater) (70 to kill); a Spinosaurus (Saltwater) claw lands 138 back (6 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 16,
+              "defenderHit": 138,
+              "attackerBurst": 35,
+              "defenderBurst": 392,
+              "attackerHitsToKill": 70,
+              "defenderHitsToKill": 6,
+              "attackerDps": 21.3,
+              "defenderDps": 167.7,
+              "attackerTimeToKill": 52,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 18,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.13,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.5
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.",
+              "attackers": 4,
+              "defenders": 1
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "spinosaurus-saltwater",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Spinosaurus (Saltwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "family": "utahraptor",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Utahraptor can create a real pursuit problem",
+          "summary": "Utahraptor is inside the legal hunt range. Utahraptor is 54% faster on land; a clean escape is unlikely once spotted. 5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.",
+          "score": 64,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 700,
+            "speedMarginPct": 53.6,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 241.9,
+            "label": "Utahraptor is 54% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "wollemi-forest"
+            ],
+            "overlap": 0.059,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Utahraptor is 54% faster on land; a clean escape is unlikely once spotted.",
+            "5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Utahraptor bite lands 16 on Spinosaurus (Saltwater) (70 to kill); a Spinosaurus (Saltwater) claw lands 171 back (4 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 16,
+              "defenderHit": 171,
+              "attackerBurst": 24,
+              "defenderBurst": 486,
+              "attackerHitsToKill": 70,
+              "defenderHitsToKill": 4,
+              "attackerDps": 18.3,
+              "defenderDps": 207.6,
+              "attackerTimeToKill": 60,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 13,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.33,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.75
+              }
+            },
+            "label": "5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "spinosaurus-saltwater",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Utahraptor",
+            "targetName": "Spinosaurus (Saltwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Utahraptor is 54% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Utahraptor is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "family": "daspletosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Daspletosaurus matters only if it gets the right opening",
+          "summary": "Daspletosaurus is inside the legal hunt range. Daspletosaurus is 46% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 89% of its health left.",
+          "score": 46,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 700,
+            "speedMarginPct": 46.4,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 102.2,
+            "label": "Daspletosaurus is 46% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "wollemi-forest"
+            ],
+            "overlap": 0.05,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 46% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 89% of its health left.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Daspletosaurus bite lands 32 on Spinosaurus (Saltwater) (35 to kill); a Spinosaurus (Saltwater) claw lands 103 back (6 to kill).",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 103,
+              "attackerBurst": 48,
+              "defenderBurst": 291,
+              "attackerHitsToKill": 35,
+              "defenderHitsToKill": 6,
+              "attackerDps": 24.5,
+              "defenderDps": 124.6,
+              "attackerTimeToKill": 45,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.89,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5
+              }
+            },
+            "label": "1 Daspletosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 89% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 89% of its health left.",
+              "attackers": 1,
+              "defenders": 1
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "spinosaurus-saltwater",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Spinosaurus (Saltwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 46% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 63,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Daspletosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "concavenator",
+          "name": "Concavenator",
+          "family": "concavenator",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Concavenator is a realistic hunting opportunity",
+          "summary": "Concavenator is within the legal hunt ceiling. Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted. 1 Spinosaurus (Saltwater) vs 4 Concavenator: the Spinosaurus (Saltwater) side wins in about 10 s with 62% of its health left.",
+          "score": 74,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 750,
+            "targetSpeed": 450,
+            "speedMarginPct": 66.7,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 83.5,
+            "label": "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "coastal-bluffs"
+            ],
+            "overlap": 0.05,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.",
+            "1 Spinosaurus (Saltwater) vs 4 Concavenator: the Spinosaurus (Saltwater) side wins in about 10 s with 62% of its health left.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 171 on Concavenator (3 to kill); a Concavenator bite lands 16 back (70 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 171,
+              "defenderHit": 16,
+              "attackerBurst": 486,
+              "defenderBurst": 25,
+              "attackerHitsToKill": 3,
+              "defenderHitsToKill": 70,
+              "attackerDps": 207.6,
+              "defenderDps": 17.1,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 64,
+              "attackerBleed": 0,
+              "defenderBleed": 0.017,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.62,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2.5
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 4 Concavenator: the Spinosaurus (Saltwater) side wins in about 10 s with 62% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 2100,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 4 Concavenator: the Spinosaurus (Saltwater) side wins in about 10 s with 62% of its health left.",
+              "attackers": 1,
+              "defenders": 4
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "concavenator",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Concavenator",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Spinosaurus (Saltwater) is 67% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Concavenator is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Anodontosaurus is a realistic hunting opportunity",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. The speed gap is small (700 vs 660), but Spinosaurus (Saltwater) has the pursuit edge on land. 1 Spinosaurus (Saltwater) vs 1 Anodontosaurus: the Spinosaurus (Saltwater) side wins in about 13 s with 57% of its health left.",
+          "score": 67,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 700,
+            "targetSpeed": 660,
+            "speedMarginPct": 6.1,
+            "attackerDurationSeconds": 45,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -64,
+            "label": "The speed gap is small (700 vs 660), but Spinosaurus (Saltwater) has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "wollemi-forest"
+            ],
+            "overlap": 0.05,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (700 vs 660), but Spinosaurus (Saltwater) has the pursuit edge on land.",
+            "1 Spinosaurus (Saltwater) vs 1 Anodontosaurus: the Spinosaurus (Saltwater) side wins in about 13 s with 57% of its health left.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 53 on Anodontosaurus (16 to kill); a Anodontosaurus tail slam lands 48 back (24 to kill).",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 53,
+              "defenderHit": 48,
+              "attackerBurst": 151,
+              "defenderBurst": 82,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 24,
+              "attackerDps": 64.6,
+              "defenderDps": 36,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 31,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 13,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.57,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 13.25
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 1 Anodontosaurus: the Spinosaurus (Saltwater) side wins in about 13 s with 57% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 1 Anodontosaurus: the Spinosaurus (Saltwater) side wins in about 13 s with 57% of its health left.",
+              "attackers": 1,
+              "defenders": 1
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (700 vs 660), but Spinosaurus (Saltwater) has the pursuit edge on land.",
+            "baseScore": 49,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Deinocheirus is a realistic hunting opportunity",
+          "summary": "Deinocheirus is within the legal hunt ceiling. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 2 Deinocheirus: the Spinosaurus (Saltwater) side wins in about 27 s with 5% of its health left, too narrow to call.",
+          "score": 57,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 750,
+            "targetSpeed": 700,
+            "speedMarginPct": 7.1,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.2,
+            "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "palm-islands",
+              "wollemi-forest"
+            ],
+            "overlap": 0.13,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "1 Spinosaurus (Saltwater) vs 2 Deinocheirus: the Spinosaurus (Saltwater) side wins in about 27 s with 5% of its health left, too narrow to call.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 60 on Deinocheirus (16 to kill); a Deinocheirus claw lands 38 back (30 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 60,
+              "defenderHit": 38,
+              "attackerBurst": 169,
+              "defenderBurst": 42,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 30,
+              "attackerDps": 72.1,
+              "defenderDps": 26.4,
+              "attackerTimeToKill": 13,
+              "defenderTimeToKill": 42,
+              "attackerBleed": 0,
+              "defenderBleed": 0.061,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 27,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.05,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 13.25
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 2 Deinocheirus: the Spinosaurus (Saltwater) side wins in about 27 s with 5% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Spinosaurus (Saltwater) vs 2 Deinocheirus: the Spinosaurus (Saltwater) side wins in about 27 s with 5% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "baseScore": 49,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "family": "suchomimus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Suchomimus is legal quarry, but not a comfortable fight",
+          "summary": "Suchomimus is within the legal hunt ceiling. Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted. 1 Spinosaurus (Saltwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 750,
+            "targetSpeed": 640,
+            "speedMarginPct": 17.2,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 0,
+            "label": "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "abyssal-depths",
+              "palm-islands",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.278,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "1 Spinosaurus (Saltwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 72 on Suchomimus (10 to kill); a Suchomimus bite lands 30 back (37 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 30,
+              "attackerBurst": 204,
+              "defenderBurst": 68,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 37,
+              "attackerDps": 87.2,
+              "defenderDps": 29,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 38,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 15,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.38,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+              "attackers": 1,
+              "defenders": 3
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Suchomimus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [
+            {
+              "profileId": "spinosaurus-saltwater",
+              "profileName": "Spinosaurus (Saltwater)",
+              "section": "Quick View",
+              "text": "Spinosaurus uniquely adopt Suchomimus of any age."
+            },
+            {
+              "profileId": "spinosaurus-saltwater",
+              "profileName": "Spinosaurus (Saltwater)",
+              "section": "Engagement Limits",
+              "text": "Cross-species Adoption: Spinosaurus can adopt Suchomimus of any age."
+            }
+          ],
+          "confidence": "profile-specific"
+        },
+        {
+          "id": "lurdusaurus",
+          "name": "Lurdusaurus",
+          "family": "lurdusaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Lurdusaurus is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus is within the legal hunt ceiling. The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water. 1 Spinosaurus (Saltwater) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 8 s with 66% of its health left.",
+          "score": 32,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 750,
+            "targetSpeed": 700,
+            "speedMarginPct": 7.1,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -33.2,
+            "label": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "palm-islands",
+              "wollemi-forest"
+            ],
+            "overlap": 0.13,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "1 Spinosaurus (Saltwater) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 8 s with 66% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 113 on Lurdusaurus (6 to kill); a Lurdusaurus bite lands 22 back (51 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 5,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 113,
+              "defenderHit": 22,
+              "attackerBurst": 319,
+              "defenderBurst": 48,
+              "attackerHitsToKill": 6,
+              "defenderHitsToKill": 51,
+              "attackerDps": 136.3,
+              "defenderDps": 32.2,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 34,
+              "attackerBleed": 0,
+              "defenderBleed": 0.072,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 8,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.66,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4.5
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 8 s with 66% of its health left.",
+            "detail": "1 attacker vs 5 defenders",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 3200,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 8 s with 66% of its health left.",
+              "attackers": 1,
+              "defenders": 5
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "lurdusaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Lurdusaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (750 vs 700), but Spinosaurus (Saltwater) has the pursuit edge in water.",
+            "baseScore": 49,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lurdusaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "spinosaurus-saltwater": {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "tylosaurus": {
+        "id": "tylosaurus",
+        "name": "Tylosaurus",
+        "cw": 5000,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 51.46,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bone Snap",
+          "damage": 105,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bone Snap",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "eurhinosaurus": {
+        "id": "eurhinosaurus",
+        "name": "Eurhinosaurus",
+        "cw": 3000,
+        "hp": 600,
+        "armor": 1,
+        "dps": 32.74,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Joust",
+          "damage": 65,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Joust",
+          "Thrash"
+        ],
+        "bleedPerSecond": 0.057,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus": {
+        "id": "lurdusaurus",
+        "name": "Lurdusaurus",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "tyrannosaurus": {
+        "id": "tyrannosaurus",
+        "name": "Tyrannosaurus",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Bone Snap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "maip": {
+        "id": "maip",
+        "name": "Maip",
+        "cw": 4000,
+        "hp": 650,
+        "armor": 1,
+        "dps": 46,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Claw Charged"
+        ],
+        "bleedPerSecond": 0.317,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "leedsichthys": {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 2,
+        "dps": 27.5,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-ocean": {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "utahraptor": {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "cw": 2100,
+        "hp": 550,
+        "armor": 1,
+        "dps": 57.57,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunge",
+          "damage": 75,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite",
+          "Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "daspletosaurus": {
+        "id": "daspletosaurus",
+        "name": "Daspletosaurus",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 46.25,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 90,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Crushing Bite",
+          "Bone Snap Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [
       {
         "title": "Same-species territory risk",
@@ -12601,21 +14878,22 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },
   "analog": {
     "schemaVersion": 1,
     "source": "curated",
-    "reviewedAt": "2026-09-27",
-    "label": "Leopard seal + Grey reef shark",
-    "labelDe": "Seeleopard + Grauer Riffhai",
-    "headline": "A leopard seal on its own stretch of sea that guards it like a grey reef shark: the coastal Spinosaurus holds one piece of ocean and takes the young of the giants that swim through.",
-    "playsLike": "You are the Spinosaurus of the sea. You claim one sea territory, for example Palm Islands, the Coastal Bluffs or Kelp Vale, and you roam only inside it, like a leopard seal off its own piece of shore or a grey reef shark on its home reef. Everything in your water is your business. You shadow intruders along the waterline, display your sail and give three aggressive calls, and after 10 seconds you lunge, the Spinosaurus version of the reef shark's hunched threat display. Inside your territory you may start any hunt up to Apex. Your real speciality is the young of the sea giants: Leedsichthys calves on their migration and young Tylosaurus, because an adult Tylosaurus outswims you (900 to 750). You doze on a beach or a rock with your sail turned to the sun, as a leopard seal lies on its floe, and you dip often so your skin doesn't crack. Salt water doesn't quench your thirst, so you swim out regularly to fresh water beyond your borders, drink peacefully and come straight back. You never defend that water.",
+    "reviewedAt": "2026-10-04",
+    "label": "Polar bear + Walrus",
+    "labelDe": "Eisbär + Walross",
+    "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge.",
+    "playsLike": "You are the polar bear among the Spinosaurus. You have one home sea area, ideally Kelp Vale or the Coastal Bluffs in the north. There you nest, defend your water like a walrus bull (sail up, three aggressive calls, then the lunge) and hunt anything up to Apex. Most of your life, though, is lazy: you lie on the beach or a rock with your sail turned to the sun and slip into the water to cool off and keep your skin from cracking. When you get hungry you tour the Leedsichthys migration loop like a bear following the seals, peaceful and without any territorial behaviour, hunting only fish, critters, Leedsichthys and Tylosaurus, their young above all. You wait at the route like a bear at the breathing hole, sink without a sound, glide in under water and burst out. Then you swim home.",
     "setting": {
-      "label": "One sea territory: island chain, sea cliffs, kelp shallows, shoal or deep ocean",
-      "note": "Claims exactly one bright-green sea area on the profile map: Palm Islands with Castaway Isle, Coastal Bluffs, Kelp Vale, Stonebed Shoal or the Abyssal Depths. It drinks outside the territory at fresh water it never defends: Rocky Lake, Dark Pond or the lake at Lakeside Meadow. Neutral gathering and courtship at Triad Falls, Wollemi Forest and Grand Falls.",
+      "label": "One home sea area, best the cold north (Kelp Vale, Coastal Bluffs), plus tours along the Leedsichthys loop",
+      "note": "Claims exactly one bright-green sea area on the profile map as its home: best Kelp Vale or the Coastal Bluffs in the north, otherwise Stonebed Shoal or Palm Islands. The Abyssal Depths have no shore to bask or nest on. From home it tours the Leedsichthys migration loop (Kelp Vale, Coastal Bluffs, Palm Islands, Castaway Isle, Stonebed Shoal, back past the Volcano Islands) peacefully and drinks on the way at Rocky Lake, Dark Pond or the lake at Lakeside Meadow, never defending them. Neutral gathering and courtship at Triad Falls, Wollemi Forest and Grand Falls.",
       "habitats": [
         {
           "id": "sea",
@@ -12626,45 +14904,53 @@
     },
     "analogs": [
       {
-        "id": "leopard-seal",
-        "animal": "Leopard seal",
-        "de": "Seeleopard",
-        "scientific": "Hydrurga leptonyx",
+        "id": "polar-bear",
+        "animal": "Polar bear",
+        "de": "Eisbär",
+        "scientific": "Ursus maritimus",
+        "archetype": "bear",
+        "archetypeLabel": "Bear",
+        "archetypeDe": "Bär",
+        "share": 70,
+        "role": "primary",
+        "covers": "How it lives and hunts: the lazy, patient bear of the sea. It rests most of the day, tours the coast after the seals, waits motionless at the breathing hole, stalks submerged and bursts out of the water onto the floe. It prefers seal pups and calves, survives long fasts, and the mother leads her cubs from the den to the sea alone",
+        "photo": {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
+          "focus": "50% 40%",
+          "credit": {
+            "artist": "Alan Wilson",
+            "license": "CC BY-SA 3.0",
+            "page": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg"
+          }
+        },
+        "relatives": [
+          {
+            "id": "tyrannosaurus",
+            "name": "Tyrannosaurus",
+            "role": "primary",
+            "share": 55,
+            "headline": "A polar bear's patience and power, living like a pair of tawny owls: mated for life, owning a forest, striking from cover."
+          }
+        ]
+      },
+      {
+        "id": "walrus",
+        "animal": "Walrus",
+        "de": "Walross",
+        "scientific": "Odobenus rosmarus",
         "archetype": "seal",
         "archetypeLabel": "Seal & sea lion",
         "archetypeDe": "Robbe & Seelöwe",
-        "share": 55,
-        "role": "primary",
-        "covers": "How it lives and hunts: the solitary apex predator of the coast. It hauls out alone on a floe to doze for hours, patrols the water off its own stretch of shore, and waits for the young penguins' first swims. It takes fish, krill and the pups of other seals, and lunges from the water at the edge",
-        "photo": {
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Antarctic_Sound-2016-Brown_Bluff%E2%80%93Leopard_seal_%28Hydrurga_leptonyx%29_04.jpg/1280px-Antarctic_Sound-2016-Brown_Bluff%E2%80%93Leopard_seal_%28Hydrurga_leptonyx%29_04.jpg",
-          "focus": "72% 45%",
-          "credit": {
-            "artist": "Godot13",
-            "license": "CC BY-SA 4.0",
-            "page": "https://commons.wikimedia.org/wiki/File:Antarctic_Sound-2016-Brown_Bluff%E2%80%93Leopard_seal_(Hydrurga_leptonyx)_04.jpg"
-          }
-        },
-        "relatives": []
-      },
-      {
-        "id": "grey-reef-shark",
-        "animal": "Grey reef shark",
-        "de": "Grauer Riffhai",
-        "scientific": "Carcharhinus amblyrhynchos",
-        "archetype": "shark-fish",
-        "archetypeLabel": "Shark & fish",
-        "archetypeDe": "Hai & Fisch",
-        "share": 45,
+        "share": 30,
         "role": "secondary",
-        "covers": "How it holds ground: a shark that stays faithful to its home reef and patrols it daily. Before it attacks an intruder it performs one of the best-known threat displays in the sea: an arched back, raised snout and lowered fins, then a sudden strike",
+        "covers": "How it holds ground and keeps cool: the bull guards a small stretch of water with tusk displays and loud bellows before it fights. Its skin flushes pink to dump heat and pales in cold water, it hauls out by the hundreds to bask peacefully, and it lives on shellfish",
         "photo": {
-          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Corl0207_%2828225976491%29.jpg/1280px-Corl0207_%2828225976491%29.jpg",
-          "focus": "62% 50%",
+          "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/1280px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
+          "focus": "50% 40%",
           "credit": {
-            "artist": "NOAA Photo Library",
-            "license": "CC BY 2.0",
-            "page": "https://commons.wikimedia.org/wiki/File:Corl0207_(28225976491).jpg"
+            "artist": "Nixette",
+            "license": "CC BY-SA 4.0",
+            "page": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg"
           }
         },
         "relatives": []
@@ -12672,28 +14958,44 @@
     ],
     "why": [
       {
-        "trait": "The profile's saltwater Spinosaurus",
-        "text": "\"Within a lifetime, Spinosaurus will exist both in fresh water and salt water.\" Some end up \"preferring a lazy lifestyle touring saltwater areas, while most possessively claim territory in freshwater lakes and rivers.\" The profile map backs this with bright-green claimable sea areas: Kelp Vale, Coastal Bluffs, Abyssal Depths, Palm Islands and Stonebed Shoal."
+        "trait": "Lazy and touring",
+        "text": "Some Spinosaurus end up \"preferring a lazy lifestyle touring saltwater areas, while most possessively claim territory in freshwater lakes and rivers.\" Polar bears spend most of the day resting and wander the coast after the seals. Their name, Ursus maritimus, means bear of the sea."
+      },
+      {
+        "trait": "Prey anywhere",
+        "text": "\"They may hunt Leedsichthys, Tylosaurus, and fish and eat critters anywhere.\" That is the polar bear's tour: the Leedsichthys loop runs past five sea areas like the seals along the ice edge."
+      },
+      {
+        "trait": "The silent stalk",
+        "text": "\"When hunting, Spinosaurus become alarmingly passive and silent in water.\" \"Rather than aggressing, they silently slip towards their prey.\" A polar bear swims submerged up to the seal on the floe and bursts out of the water, just as the Spinosaurus lunges from the water."
+      },
+      {
+        "trait": "The young first",
+        "text": "Against Tylosaurus Spinosaurus \"prefer to hunt their offspring due to their more manageable size\" and they \"enjoy hunting Leedsichthys offspring\". Polar bears dig ringed seal pups out of their lairs and take walrus calves, while an adult walrus can kill a bear. An adult Tylosaurus outswims you (900 to 750)."
+      },
+      {
+        "trait": "Long fasts",
+        "text": "Torpor lets Spinosaurus \"survive extended periods without eating or drinking.\" Pregnant polar bears spend months in the den without food, and Hudson Bay bears fast through the whole summer."
+      },
+      {
+        "trait": "Heat and skin",
+        "text": "\"The blood vessels on the sail help control their body temperature, either absorbing or releasing heat as needed.\" A walrus does the same with its skin: it flushes pink to dump heat and pales in cold water. Polar bears overheat fast on land and cool off in the water, much as the Spinosaurus needs \"frequent dips to keep themselves hydrated.\""
       },
       {
         "trait": "Display, then strike",
-        "text": "\"To begin this defense, Spinosaurus FIRST display their sail and issue x3 aggressive calls\". After 10 seconds it lunges. A grey reef shark defends its reef the same way: a showy threat display first, then a sudden attack."
+        "text": "\"To begin this defense, Spinosaurus FIRST display their sail and issue x3 aggressive calls\". After 10 seconds it lunges. A walrus bull guards its stretch of water the same way: tusks raised, loud bellows, and only then the fight."
       },
       {
-        "trait": "The young of the giants",
-        "text": "Spinosaurus \"prefer to hunt their offspring\" when they take on Tylosaurus and \"enjoy hunting Leedsichthys offspring\". A leopard seal patrols below the penguin colony for exactly that: the young on their first swims."
+        "trait": "The mother leads",
+        "text": "The mother \"lures them into the water with gentle calls\", hides them with her body and leads them off, while \"Their father remains aloof in the early stages\". A polar bear mother leads her cubs from the den to the sea alone, and the cubs swim close behind her or ride on her back."
       },
       {
-        "trait": "Silent when it hunts",
-        "text": "\"When hunting, Spinosaurus become alarmingly passive and silent in water.\" The display is only for defence. A hunting leopard seal gives no warning either."
+        "trait": "Shells and haul-outs",
+        "text": "\"Young Spinosaurus frequently collect sea shells\" to chew on, and at Triad Falls Spinosaurus \"gather in large numbers to bask, court and lazily relax.\" Walruses live on shellfish and haul out by the hundreds. Male polar bears at Churchill gather peacefully and only play-spar."
       },
       {
-        "trait": "Hauled out in the sun",
-        "text": "\"All Spinosaurus bask frequently, aiming to direct their large sails directly in line of the sun's rays.\" This is the leopard seal's long doze on the floe, on the beaches of Palm Islands or the rocks of the Coastal Bluffs."
-      },
-      {
-        "trait": "One water, and moving on",
-        "text": "\"Spinosaurus can be fickle over their water source, and move on to new territories when resources are low.\" It holds one territory at a time. When the fish run out, it leaves for a new one instead of holding two."
+        "trait": "Following the food",
+        "text": "\"Spinosaurus can be fickle over their water source, and move on to new territories when resources are low.\" Polar bears move with the ice. You still hold only one home area at a time."
       },
       {
         "trait": "Numbers",
@@ -12701,11 +15003,12 @@
       }
     ],
     "notLike": [
-      "Leopard seals and reef sharks never need fresh water. You do, and your drinking spot lies outside your territory, so you use it peacefully and never defend it.",
-      "A grey reef shark often rests in loose groups by day. Outside a pairbond you are a loner, and every other Spinosaurus in your water is a rival.",
-      "Neither animal forms pairbonds, while Spinosaurus yearn for one partner for life."
+      "Polar bears are not territorial; they share huge home ranges. You hold one home sea area and defend it, which is the walrus part.",
+      "Polar bears don't drink and get their water from fat. You need fresh water and swim to it outside your home, peacefully and without ever defending it.",
+      "Polar bear males are no fathers and even kill cubs. A Spinosaurus seeks one partner for life, and the father guards his brood from a distance.",
+      "Outside your home area you are no polar bear on the hunt for everything: you may only take fish, critters, Leedsichthys and Tylosaurus there."
     ],
-    "twist": "The contrast with your freshwater cousin: the grizzly guards a river, you guard a piece of the sea. You are still one species and court together at Triad Falls.",
+    "twist": "The Tyrannosaurus is a polar bear too, the one on land that waits in cover. You are the polar bear of the sea that comes out of the water. Your freshwater cousin is a grizzly on its river; you are still one species and court together at Triad Falls.",
     "moods": [
       {
         "id": "solitary",
@@ -12723,9 +15026,9 @@
         "de": "Spitze der Nahrungskette"
       },
       {
-        "id": "territorial",
-        "label": "Territorial",
-        "de": "Territorial"
+        "id": "nomadic",
+        "label": "Nomad & traveller",
+        "de": "Nomade"
       },
       {
         "id": "ambush",
@@ -12770,7 +15073,7 @@
     "id": "sea",
     "label": "Sea & Coast",
     "de": "Meer & Küste",
-    "reason": "A leopard seal and grey reef shark of the coast: claims one sea area (Palm Islands, Coastal Bluffs, Kelp Vale, Stonebed Shoal or Abyssal Depths) and swims out to fresh water only to drink.",
+    "reason": "A polar bear of the sea with a walrus bull's temper: claims one home sea area (best Kelp Vale or the Coastal Bluffs), tours the Leedsichthys loop through the coastal seas and swims to fresh water only to drink.",
     "also": [
       {
         "id": "freshwater",

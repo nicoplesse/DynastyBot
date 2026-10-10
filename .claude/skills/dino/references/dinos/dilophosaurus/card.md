@@ -61,20 +61,20 @@ You are a medium carnivore in a 'leash': a dominant male with his breeding group
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
-- **Achillobator** (spürbar): Achillobator can create a credible fight
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
+- **Achillobator** (hoch): Achillobator can create a real pursuit problem
 - **Pycnonemosaurus** (conditional): Pycnonemosaurus matters only if it gets the right opening
-- **Utahraptor** (spürbar): Utahraptor can create a credible fight
-- **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
-- **Ceratosaurus** (hoch): Ceratosaurus is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Metriacanthosaurus** (hoch): Metriacanthosaurus is a realistic hunting opportunity
-- **Barsboldia** (hoch): Barsboldia is a realistic hunting opportunity
+- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Cannibalism / offspring risk: Dilophosaurus are tolerant towards other groups of Dilophosaurus. Dilophosaurus are passive towards all other species. Dominant males in leashes may attempt to cannibalize unattended ungrouped Dilophosaurus offspring.

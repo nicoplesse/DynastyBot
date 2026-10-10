@@ -53,20 +53,19 @@ You are a large semi-aquatic carnivore in a 'snare' of up to 3. You fish readily
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
+- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
-- **Achillobator** (hoch): Achillobator can create a real pursuit problem
-- **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
-- **Torvosaurus** (spürbar): Torvosaurus can create a credible fight
-- **Tylosaurus** (spürbar): Tylosaurus can create a credible fight
-- **Deinosuchus (Shore)** (spürbar): Deinosuchus (Shore) can create a credible fight
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
+- **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Barsboldia** (hoch): Barsboldia is a realistic hunting opportunity
-- **Stegosaurus** (hoch): Stegosaurus is a realistic hunting opportunity
+- **Austroraptor** (conditional): Austroraptor can usually refuse the chase
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Concavenator** (spürbar): Concavenator is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

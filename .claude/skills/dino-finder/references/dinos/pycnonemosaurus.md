@@ -55,19 +55,19 @@ You are a large carnivore in a 'drove' of up to 5, with up to 3 in an engagement
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Alioramus** (hoch): Alioramus can create a real pursuit problem
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
+- **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 - **Achillobator** (hoch): Achillobator can create a real pursuit problem
 - **Ceratosaurus** (hoch): Ceratosaurus can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
-- **Latenivenatrix** (hoch): Latenivenatrix can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Tyrannotitan** (sehr hoch): Tyrannotitan is a realistic hunting opportunity
-- **Giganotosaurus** (sehr hoch): Giganotosaurus is a realistic hunting opportunity
-- **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
-- **Achillobator** (sehr hoch): Achillobator is a realistic hunting opportunity
 - **Ceratosaurus** (sehr hoch): Ceratosaurus is a realistic hunting opportunity
-- **Kelenken** (sehr hoch): Kelenken is a realistic hunting opportunity
+- **Megalania (Arid)** (sehr hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Metriacanthosaurus** (hoch): Metriacanthosaurus is a realistic hunting opportunity
+- **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
+- **Torvosaurus** (spürbar): Torvosaurus is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "curated-areas",
   "mapImage": "images/image.png",
-  "note": "Preferred POI areas curated from the profile map. Small named landmarks are represented by their enclosing, black-outlined POI area.",
+  "note": "Preferred POI areas curated from the profile map. Small named landmarks are represented by their enclosing, black-outlined POI area. The archive splits them into a coast variant (beaches, mudflats, swamps, islands, bogs) and an ocean variant that keeps to the open sea; both land on the sea cliffs of the Coastal Bluffs.",
   "pois": [
     {
       "regionId": "tallbrush-coasts",
@@ -10,7 +10,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "kelp-vale",
@@ -18,7 +19,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "coastal-bluffs",
@@ -26,7 +28,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "both"
     },
     {
       "regionId": "volcano-islands",
@@ -34,7 +37,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "abyssal-depths",
@@ -42,7 +46,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "palm-islands",
@@ -50,7 +55,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "big-tree-overlook",
@@ -58,7 +64,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "twisted-forest",
@@ -66,7 +73,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "stillwater-bog",
@@ -74,7 +82,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "mudflats",
@@ -82,7 +91,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "stonebed-shoal",
@@ -90,7 +100,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "ocean"
     },
     {
       "regionId": "coastland-swamp",
@@ -98,7 +109,8 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "east-passage",
@@ -106,9 +118,29 @@
         "territory",
         "hunting",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     }
   ],
   "reviewedAt": "2026-09-24",
-  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed."
+  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed.",
+  "variants": [
+    {
+      "id": "coast",
+      "name": "Coast Tropeognathus",
+      "moisture": "wet",
+      "note": "The gull of beaches, mudflats, swamps, islands and the coastal bogs: sits on rocks and sandbanks, raids kills and harasses everything that moves."
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean Tropeognathus",
+      "moisture": "aquatic",
+      "note": "The ocean wanderer of Kelp Vale, the Abyssal Depths and the Stonebed Shoal: glides over the open sea, plunge-dives for fish, rests and sleeps on the water like an albatross and uses rock and the Coastal Bluffs only to dry off, sit out storms or launch."
+    }
+  ],
+  "legend": {
+    "coast": "Range of the coast variant (beaches, mudflats, swamps, islands and coastal bogs)",
+    "ocean": "Open-sea range of the ocean variant (Kelp Vale, Abyssal Depths, Stonebed Shoal)",
+    "both": "Sea cliffs shared by both variants (Coastal Bluffs)"
+  }
 }

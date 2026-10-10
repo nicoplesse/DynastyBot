@@ -55,14 +55,15 @@ You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
+- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
+- **Tropeognathus (Ocean)** (sehr hoch): Tropeognathus (Ocean) can create a very narrow escape window
 - **Hatzegopteryx** (spürbar): Hatzegopteryx can create a credible fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus can create a credible fight
 - **Thalassodromeus** (spürbar): Thalassodromeus can create a credible fight
 
 **Beute & Chancen:**
-- **Apatosaurus** (hoch): Apatosaurus is legal quarry, but not a comfortable fight
-- **Argentinosaurus** (hoch): Argentinosaurus is legal quarry, but not a comfortable fight
+- **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
+- **Argentinosaurus** (spürbar): Argentinosaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

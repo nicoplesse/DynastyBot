@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
 import { buildProcessedData } from './processor.js';
 import { searchAnalogs } from './analogs.js';
+import { createHerdStore, defaultHerdDir } from './herd.js';
 
 const extensions = new Set(['png', 'jpg', 'jpeg', 'webp']);
 const upload = multer({
@@ -57,10 +58,12 @@ function httpError(status, message) {
 export function createApp({
   dataDir = fileURLToPath(new URL('../../data/raw/', import.meta.url)),
   processedDir = fileURLToPath(new URL('../../data/processed/', import.meta.url)),
+  herdDir = defaultHerdDir,
 } = {}) {
   const app = express();
   const rawDir = resolve(dataDir);
   const derivedDir = resolve(processedDir);
+  const herd = createHerdStore({ herdDir, processedDir: derivedDir });
 
   app.get('/api/catalog', async (_req, res, next) => {
     try { res.json(JSON.parse(await readFile(join(derivedDir, 'index.json'), 'utf8'))); }
@@ -251,6 +254,54 @@ export function createApp({
       await buildProcessedData({ rawDir, processedDir: derivedDir });
       res.status(204).end();
     } catch (error) { next(error); }
+  });
+
+  // Meine Dinos: the player's own dinosaurs with raw screenshots, photo and genetics.
+  app.get('/api/herd', async (req, res, next) => {
+    try {
+      const playable = typeof req.query.playable === 'string' ? req.query.playable : '';
+      const dinos = await herd.all();
+      res.json(playable ? dinos.filter(dino => dino.playableId === playable) : dinos);
+    } catch (error) { next(error); }
+  });
+
+  app.get('/api/herd/:id', async (req, res, next) => {
+    try { res.json(await herd.read(req.params.id)); }
+    catch (error) { next(error); }
+  });
+
+  // Creates a dino by name, or adds screenshots/photo to an existing one (by id, or by an existing name).
+  app.post('/api/herd', upload.any(), async (req, res, next) => {
+    try {
+      const uploaded = req.files || [];
+      if (uploaded.some(file => !['screenshots', 'photo'].includes(file.fieldname))) throw httpError(400, 'Unexpected upload field.');
+      const photos = uploaded.filter(file => file.fieldname === 'photo');
+      if (photos.length > 1) throw httpError(400, 'Only one photo per dino.');
+      const id = typeof req.body.id === 'string' && req.body.id ? req.body.id : undefined;
+      const dino = await herd.addFiles({ id, name: req.body.name, playable: req.body.playableId, screenshots: uploaded.filter(file => file.fieldname === 'screenshots'), photo: photos[0] || null, proofs: { mutation: req.body.mutationProof, nesting: req.body.nestingProof } });
+      res.status(201).json(dino);
+    } catch (error) { next(error); }
+    finally { await Promise.all((req.files || []).map(file => rm(file.path, { force: true }).catch(() => {}))); }
+  });
+
+  app.patch('/api/herd/:id', express.json({ limit: '1mb' }), async (req, res, next) => {
+    try { res.json(await herd.update(req.params.id, req.body)); }
+    catch (error) { next(error); }
+  });
+
+  app.delete('/api/herd/:id', async (req, res, next) => {
+    try { await herd.remove(req.params.id); res.status(204).end(); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/herd/:id/files/*file', async (req, res, next) => {
+    try { res.sendFile(await herd.filePath(req.params.id, [req.params.file].flat().join('/'))); }
+    catch (error) { next(error); }
+  });
+
+  app.delete('/api/herd/:id/files/*file', async (req, res, next) => {
+    try { res.json(await herd.removeFile(req.params.id, [req.params.file].flat().join('/'))); }
+    catch (error) { next(error); }
   });
 
   app.use((error, _req, res, _next) => {

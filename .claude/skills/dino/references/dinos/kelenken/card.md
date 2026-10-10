@@ -60,20 +60,20 @@ You are a medium flightless 'terror bird' (sprint 1,075 for 167 s) in a 'cast' o
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Deinonychus** (spürbar): Deinonychus can create a credible fight
+- **Deinonychus** (sehr hoch): Deinonychus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
+- **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 - **Achillobator** (hoch): Achillobator can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Achillobator** (sehr hoch): Achillobator is a realistic hunting opportunity
-- **Latenivenatrix** (sehr hoch): Latenivenatrix is a realistic hunting opportunity
-- **Deinonychus** (hoch): Deinonychus can usually refuse the chase
-- **Maip** (hoch): Maip is legal quarry, but not a comfortable fight
+- **Maip** (spürbar): Maip is legal quarry, but not a comfortable fight
+- **Achillobator** (spürbar): Achillobator is legal quarry, but not a comfortable fight
+- **Latenivenatrix** (spürbar): Latenivenatrix is legal quarry, but not a comfortable fight
 - **Utahraptor** (spürbar): Utahraptor is legal quarry, but not a comfortable fight
-- **Megalania (Arid)** (sehr hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Deinonychus** (conditional): Deinonychus is legal quarry, but not a comfortable fight
+- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Kelenken can have up to 4 in an engagement or hunting party. In a territory dispute between two full casts, Kelenken may engage with up to 8.

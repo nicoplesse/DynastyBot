@@ -8,14 +8,15 @@ import { PlaystyleView } from './PlaystyleView';
 import { AnimalFinder } from './AnimalFinder';
 import { ProfileShowcase } from './Showcase';
 import { EcosystemsPage } from './EcosystemsView';
+import { HerdPage, HerdStrip } from './HerdView';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './explorer.css';
 
 export function Explorer({ route }: { route: string }) {
-  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : 'profiles';
+  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/herd') ? 'herd' : 'profiles';
   return <div className="app-shell explorer-shell">
     <ExplorerNav active={active} route={route} />
-    <main className="explorer-main">{active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
+    <main className="explorer-main">{active === 'herd' ? <HerdPage route={route} /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
   </div>;
 }
 
@@ -28,7 +29,7 @@ function JumpLink({ id, children }: { id: string; children: ReactNode }) {
 }
 
 // Profiles opens a sub-menu: the full directory, the ecosystem overview and one entry per ecosystem.
-function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems'; route: string }) {
+function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'herd'; route: string }) {
   const [open, setOpen] = useState(true);
   const [ecosystems, setEcosystems] = useState<Ecosystem[]>([]);
   useEffect(() => { api.ecosystems().then(index => setEcosystems(index.ecosystems)).catch(() => setEcosystems([])); }, []);
@@ -39,6 +40,7 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
     <div className="nav-caption">WORKSPACE</div>
     <nav aria-label="Main navigation">
       <button className="nav-item" onClick={() => go('/import')}><span className="nav-symbol">↧</span> Import</button>
+      <button className={`nav-item ${active === 'herd' ? 'active' : ''}`} aria-current={active === 'herd' ? 'page' : undefined} onClick={() => go('/herd')}><span className="nav-symbol">◆</span> My Dinos</button>
       <div className="nav-divider" />
       <div className="nav-group">
         <div className="nav-row">
@@ -133,7 +135,7 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
     <article className="profile-detail">
       <header className="profile-hero with-showcase">
         <ProfileShowcase profile={profile} onOpen={setLightbox} />
-        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.variant && <VariantLine variant={profile.variant} />}{profile.analog && <p className="hero-analog"><JumpLink id="plays-like">≈ Plays like <b>{profile.analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
+        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.variant && <VariantLine variant={profile.variant} />}{profile.analog && <p className="hero-analog"><JumpLink id="plays-like">≈ Plays like <b>{profile.analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}<HerdStrip playableId={profile.id} />{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
       </header>
       <div className="profile-layout">
         <aside className="profile-toc"><strong>ON THIS PROFILE</strong>{profile.playstyle && <JumpLink id="playstyle">So spielst du ihn</JumpLink>}{profile.analog && <JumpLink id="plays-like">Plays Like</JumpLink>}<JumpLink id="quick-view">Quick View</JumpLink><JumpLink id="stats">Playable Stats</JumpLink>{profile.map && <JumpLink id="map">Territory Map</JumpLink>}{profile.matchups && <JumpLink id="counters">Counters</JumpLink>}{profile.media.length > 1 && <JumpLink id="media">Images</JumpLink>}{profile.videos.length > 0 && <JumpLink id="videos">Videos</JumpLink>}{profile.sections.map(section => <JumpLink key={section.id} id={section.id}>{section.title}</JumpLink>)}</aside>
@@ -143,7 +145,7 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
           <section className="quick-view" id="quick-view"><SectionTitle index="01" title="Quick View" /><ul>{profile.quickView.length ? profile.quickView.map((item, index) => <li key={index}><span>✓</span><RichText text={item} /></li>) : <li><span>✓</span><RichText text={profile.summary} /></li>}</ul></section>
           <FullStatsView profile={profile} />
           {profile.map && <MapView profileId={profile.id} name={profile.name} map={profile.map} ecosystem={profile.ecosystem} />}
-          {profile.matchups && <MatchupsView matchups={profile.matchups} name={profile.name} />}
+          {profile.matchups && <MatchupsView matchups={profile.matchups} name={profile.name} id={profile.id} />}
           {profile.media.length > 1 && <section className="media-section" id="media"><SectionTitle index="03" title="Profile Images" /><div className="media-grid">{profile.media.slice(1).map((media, index) => <button type="button" key={media.file} onClick={() => setLightbox(api.imageUrl(profile.id, media.file))}><img src={api.imageUrl(profile.id, media.file)} alt={`${profile.name} reference ${index + 1}`} loading="lazy" /><span>{media.label || (media.role === 'map-or-reference' ? 'Map or profile reference' : `Profile reference ${index + 1}`)}</span></button>)}</div></section>}
           {profile.videos.length > 0 && <section className="video-section" id="videos"><SectionTitle index="04" title="Videos" /><div className="video-grid">{profile.videos.map(video => <div className="video-card" key={video.id}><iframe src={`https://www.youtube-nocookie.com/embed/${video.id}`} title={`${profile.name} YouTube video`} loading="lazy" allowFullScreen /><a href={video.url} target="_blank" rel="noreferrer">Open on YouTube ↗</a></div>)}</div></section>}
           <div className="profile-sections">{profile.sections.map((section, index) => <section id={section.id} key={`${section.id}-${index}`}><h2>{section.title}</h2>{section.blocks.map((block, blockIndex) => <Content key={blockIndex} block={block} />)}</section>)}</div>

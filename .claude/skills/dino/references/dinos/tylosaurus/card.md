@@ -61,16 +61,16 @@ You are an Apex aquatic carnivore. Females live in matrilines of up to 6 related
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
-- **Spinosaurus (Saltwater)** (conditional): Spinosaurus (Saltwater) matters only if it gets the right opening
+- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) can create a real pursuit problem
+- **Spinosaurus (Saltwater)** (hoch): Spinosaurus (Saltwater) can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
 - **Deinosuchus (Ocean)** (sehr hoch): Deinosuchus (Ocean) is a realistic hunting opportunity
-- **Kaiwhekea** (sehr hoch): Kaiwhekea is a realistic hunting opportunity
+- **Spinosaurus (Freshwater)** (spürbar): Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
+- **Spinosaurus (Saltwater)** (spürbar): Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
+- **Eurhinosaurus** (hoch): Eurhinosaurus can usually refuse the chase
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

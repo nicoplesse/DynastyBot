@@ -63,14 +63,16 @@ You are a small daytime flier in an unlimited flock. Fish is your staple, and yo
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus** (conditional): Tropeognathus matters only if it gets the right opening
+- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) matters only if it gets the right opening
+- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) matters only if it gets the right opening
+- **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
+- **Hatzegopteryx** (hoch): Hatzegopteryx can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Quetzalcoatlus** (conditional): Quetzalcoatlus is a realistic hunting opportunity
-- **Hatzegopteryx** (conditional): Hatzegopteryx is a realistic hunting opportunity
-- **Tropeognathus** (conditional): Tropeognathus is a realistic hunting opportunity
-- **Citipati** (hoch): Citipati is a realistic hunting opportunity
-- **Alioramus** (hoch): Alioramus is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
+- **Quetzalcoatlus** (conditional): Quetzalcoatlus is legal quarry, but not a comfortable fight
+- **Hatzegopteryx** (conditional): Hatzegopteryx is legal quarry, but not a comfortable fight
+- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) is legal quarry, but not a comfortable fight
+- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) is legal quarry, but not a comfortable fight
+- **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

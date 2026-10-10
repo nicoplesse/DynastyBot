@@ -13644,256 +13644,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Suchomimus has 3 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Suchomimus has 7 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
-      {
-        "id": "sarcosuchus",
-        "name": "Sarcosuchus",
-        "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Sarcosuchus can create a very narrow escape window",
-        "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 80,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 880,
-          "targetSpeed": 640,
-          "speedMarginPct": 37.5,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 0,
-          "label": "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.9,
-          "cappedPowerRatio": 0.9,
-          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "stillwater-bog",
-            "mudflats",
-            "coastland-swamp",
-            "redwoods"
-          ],
-          "overlap": 0.222,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "4 shared mapped areas make contact plausible.",
-          "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "achillobator",
-        "name": "Achillobator",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Achillobator can create a real pursuit problem",
-        "summary": "Achillobator is inside the legal hunt range. Achillobator is 11% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 950,
-          "speedMarginPct": 10.5,
-          "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 144.4,
-          "label": "Achillobator is 11% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.56,
-          "cappedPowerRatio": 0.85,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "big-tree-overlook",
-            "twisted-forest",
-            "mudflats",
-            "redwoods"
-          ],
-          "overlap": 0.211,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Achillobator is 11% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "4 shared mapped areas make contact plausible.",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-        ],
-        "tags": [
-          "pounce"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "yutyrannus",
-        "name": "Yutyrannus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Yutyrannus can create a real pursuit problem",
-        "summary": "Yutyrannus is inside the legal hunt range. Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted. The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 71,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1040,
-          "targetSpeed": 950,
-          "speedMarginPct": 9.5,
-          "attackerDurationSeconds": 100,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 58.7,
-          "label": "Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.65,
-          "cappedPowerRatio": 0.82,
-          "label": "The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "redwoods"
-          ],
-          "overlap": 0.067,
-          "label": "They overlap in 1 mapped area, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "They overlap in 1 mapped area, so the matchup is situational.",
-          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "torvosaurus",
-        "name": "Torvosaurus",
-        "direction": "threat",
-        "band": "meaningful",
-        "kind": "predator",
-        "headline": "Torvosaurus can create a credible fight",
-        "summary": "Torvosaurus is inside the legal hunt range. This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it. At the legal limits (6 attackers vs 3 defenders), the attacking side has the stronger combat envelope.",
-        "score": 61,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Giant tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 950,
-          "targetSpeed": 950,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 68.966,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 9.5,
-          "label": "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 6,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.9,
-          "cappedPowerRatio": 1.61,
-          "label": "At the legal limits (6 attackers vs 3 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "volcano-islands",
-            "big-tree-overlook",
-            "stillwater-bog"
-          ],
-          "overlap": 0.167,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Giant tier.",
-          "This is a close chase on land: 950 vs 950 units/s, with stamina likely deciding it.",
-          "At the legal limits (6 attackers vs 3 defenders), the attacking side has the stronger combat envelope.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
-        ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
       {
         "id": "tylosaurus",
         "name": "Tylosaurus",
+        "family": "tylosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Tylosaurus can create a credible fight",
-        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (2 vs 3), a committed straight fight favours Suchomimus.",
-        "score": 55,
+        "headline": "Tylosaurus can create a very narrow escape window",
+        "summary": "Tylosaurus is inside the legal hunt range. Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Suchomimus: the Tylosaurus side wins in about 7 s with 87% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13909,18 +13674,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": 32.9,
           "label": "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 0.74,
-          "label": "Even at the legal group cap (2 vs 3), a committed straight fight favours Suchomimus."
         },
         "encounter": {
           "level": "frequent",
@@ -13942,10 +13695,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (2 vs 3), a committed straight fight favours Suchomimus.",
+          "2 Tylosaurus vs 1 Suchomimus: the Tylosaurus side wins in about 7 s with 87% of its health left.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 65 on Suchomimus (11 to kill); a Suchomimus bite lands 40 back (25 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 65,
+            "defenderHit": 40,
+            "attackerBurst": 105,
+            "defenderBurst": 90,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 25,
+            "attackerDps": 51.5,
+            "defenderDps": 38.3,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 26,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 7,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.87,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7
+            }
+          },
+          "label": "2 Tylosaurus vs 1 Suchomimus: the Tylosaurus side wins in about 7 s with 87% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 3 Suchomimus: the Suchomimus side wins in about 28 s with 8% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 3
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tylosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 41% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Tylosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -13956,12 +13775,14 @@
       {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
+        "family": "deinosuchus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Deinosuchus (Shore) can create a credible fight",
-        "summary": "Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
-        "score": 55,
+        "headline": "Deinosuchus (Shore) can create a very narrow escape window",
+        "summary": "Deinosuchus (Shore) is inside the legal hunt range. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. 1 Deinosuchus (Shore) vs 1 Suchomimus: the Deinosuchus (Shore) side wins in about 14 s with 61% of its health left.",
+        "score": 90,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13977,18 +13798,6 @@
           "targetDurationSeconds": 167,
           "durationMarginPct": -0.2,
           "label": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.57,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
         },
         "encounter": {
           "level": "frequent",
@@ -14008,10 +13817,76 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+          "1 Deinosuchus (Shore) vs 1 Suchomimus: the Deinosuchus (Shore) side wins in about 14 s with 61% of its health left.",
           "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinosuchus (Shore) bite lands 66 on Suchomimus (11 to kill); a Suchomimus bite lands 30 back (33 to kill).",
           "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 66,
+            "defenderHit": 30,
+            "attackerBurst": 138,
+            "defenderBurst": 68,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 33,
+            "attackerDps": 52.4,
+            "defenderDps": 29,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 34,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.61,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 13.5
+            }
+          },
+          "label": "1 Deinosuchus (Shore) vs 1 Suchomimus: the Deinosuchus (Shore) side wins in about 14 s with 61% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "deinosuchus-shore",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinosuchus (Shore)",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinosuchus (Shore) is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -14019,14 +13894,484 @@
         "confidence": "derived"
       },
       {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "family": "allosaurus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Allosaurus can create a very narrow escape window",
+        "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 9% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Suchomimus: the Allosaurus side wins in about 8 s with 78% of its health left.",
+        "score": 90,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 950,
+          "speedMarginPct": 9.5,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 63,
+          "durationMarginPct": 44.4,
+          "label": "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "volcano-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog"
+          ],
+          "overlap": 0.222,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "3 Allosaurus vs 1 Suchomimus: the Allosaurus side wins in about 8 s with 78% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 38 on Suchomimus (19 to kill); a Suchomimus bite lands 53 back (13 to kill).",
+          "Allosaurus's bleed builds faster than Suchomimus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 38,
+            "defenderHit": 53,
+            "attackerBurst": 53,
+            "defenderBurst": 120,
+            "attackerHitsToKill": 19,
+            "defenderHitsToKill": 13,
+            "attackerDps": 28.7,
+            "defenderDps": 51.1,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 13,
+            "attackerBleed": 0.085,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.78,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 8.25
+            }
+          },
+          "label": "3 Allosaurus vs 1 Suchomimus: the Allosaurus side wins in about 8 s with 78% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Allosaurus vs 3 Suchomimus: the Suchomimus side wins in about 13 s with 64% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "family": "sarcosuchus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Sarcosuchus can create a very narrow escape window",
+        "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted. 3 Sarcosuchus vs 1 Suchomimus: the Sarcosuchus side wins in about 3 s with 93% of its health left.",
+        "score": 90,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 880,
+          "targetSpeed": 640,
+          "speedMarginPct": 37.5,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 0,
+          "label": "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp",
+            "redwoods"
+          ],
+          "overlap": 0.222,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted.",
+          "3 Sarcosuchus vs 1 Suchomimus: the Sarcosuchus side wins in about 3 s with 93% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Sarcosuchus tail lands 36 on Suchomimus (20 to kill); a Suchomimus bite lands 44 back (14 to kill).",
+          "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 36,
+            "defenderHit": 44,
+            "attackerBurst": 189,
+            "defenderBurst": 100,
+            "attackerHitsToKill": 20,
+            "defenderHitsToKill": 14,
+            "attackerDps": 81.6,
+            "defenderDps": 42.6,
+            "attackerTimeToKill": 9,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 3,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.93,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3
+            }
+          },
+          "label": "3 Sarcosuchus vs 1 Suchomimus: the Sarcosuchus side wins in about 3 s with 93% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Sarcosuchus vs 3 Suchomimus: the Sarcosuchus side wins in about 10 s with 56% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "sarcosuchus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Sarcosuchus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Sarcosuchus is inside the legal hunt range."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Pycnonemosaurus can create a very narrow escape window",
+        "summary": "Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Suchomimus: the Pycnonemosaurus side wins in about 6 s with 82% of its health left.",
+        "score": 86,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1075,
+          "targetSpeed": 950,
+          "speedMarginPct": 13.2,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 63,
+          "durationMarginPct": 44.4,
+          "label": "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "stillwater-bog"
+          ],
+          "overlap": 0.053,
+          "label": "They overlap in 1 mapped area, so the matchup is situational."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted.",
+          "3 Pycnonemosaurus vs 1 Suchomimus: the Pycnonemosaurus side wins in about 6 s with 82% of its health left.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Pycnonemosaurus bite lands 35 on Suchomimus (20 to kill); a Suchomimus bite lands 57 back (12 to kill)."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 35,
+            "defenderHit": 57,
+            "attackerBurst": 84,
+            "defenderBurst": 129,
+            "attackerHitsToKill": 20,
+            "defenderHitsToKill": 12,
+            "attackerDps": 38,
+            "defenderDps": 54.8,
+            "attackerTimeToKill": 18,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 6,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.82,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 6.25
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Suchomimus: the Pycnonemosaurus side wins in about 6 s with 82% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Pycnonemosaurus vs 3 Suchomimus: the Suchomimus side wins in about 14 s with 52% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Pycnonemosaurus is 13% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 68,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "eurhinosaurus",
+        "name": "Eurhinosaurus",
+        "family": "eurhinosaurus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Eurhinosaurus can create a very narrow escape window",
+        "summary": "Eurhinosaurus is inside the legal hunt range. Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Suchomimus: the Eurhinosaurus side wins in about 13 s with 53% of its health left.",
+        "score": 83,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 640,
+          "speedMarginPct": 64.1,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 32.9,
+          "label": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "volcano-islands",
+            "abyssal-depths",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "stonebed-shoal",
+            "coastland-swamp"
+          ],
+          "overlap": 0.917,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
+          "3 Eurhinosaurus vs 1 Suchomimus: the Eurhinosaurus side wins in about 13 s with 53% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Eurhinosaurus bite lands 24 on Suchomimus (30 to kill); a Suchomimus bite lands 67 back (9 to kill).",
+          "Eurhinosaurus's bleed builds faster than Suchomimus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 24,
+            "defenderHit": 67,
+            "attackerBurst": 39,
+            "defenderBurst": 150,
+            "attackerHitsToKill": 30,
+            "defenderHitsToKill": 9,
+            "attackerDps": 19.6,
+            "defenderDps": 63.9,
+            "attackerTimeToKill": 36,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0.034,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 13,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.53,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 9.5
+            }
+          },
+          "label": "3 Eurhinosaurus vs 1 Suchomimus: the Eurhinosaurus side wins in about 13 s with 53% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 10 s with 82% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "eurhinosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Eurhinosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Eurhinosaurus is inside the legal hunt range."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
+        "family": "deinosuchus",
         "direction": "threat",
-        "band": "conditional",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Deinosuchus (Ocean) matters only if it gets the right opening",
-        "summary": "Deinosuchus (Ocean) is inside the legal hunt range. Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
-        "score": 46,
+        "headline": "Deinosuchus (Ocean) can create a very narrow escape window",
+        "summary": "Deinosuchus (Ocean) is inside the legal hunt range. Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted. 1 Deinosuchus (Ocean) vs 1 Suchomimus: the Deinosuchus (Ocean) side wins in about 14 s with 61% of its health left.",
+        "score": 81,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14043,18 +14388,6 @@
           "durationMarginPct": -0.2,
           "label": "Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.2,
-          "cappedPowerRatio": 0.57,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -14068,10 +14401,76 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Suchomimus.",
+          "1 Deinosuchus (Ocean) vs 1 Suchomimus: the Deinosuchus (Ocean) side wins in about 14 s with 61% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Deinosuchus (Ocean) bite lands 66 on Suchomimus (11 to kill); a Suchomimus bite lands 30 back (33 to kill).",
           "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 66,
+            "defenderHit": 30,
+            "attackerBurst": 138,
+            "defenderBurst": 68,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 33,
+            "attackerDps": 52.4,
+            "defenderDps": 29,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 34,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.61,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 13.5
+            }
+          },
+          "label": "1 Deinosuchus (Ocean) vs 1 Suchomimus: the Deinosuchus (Ocean) side wins in about 14 s with 61% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Deinosuchus (Ocean) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "deinosuchus-ocean",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Deinosuchus (Ocean)",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinosuchus (Ocean) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 63,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinosuchus (Ocean) is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -14081,75 +14480,16 @@
     ],
     "opportunities": [
       {
-        "id": "concavenator",
-        "name": "Concavenator",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Concavenator is a realistic hunting opportunity",
-        "summary": "Concavenator is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 4 defenders), the attacking side has the stronger combat envelope.",
-        "score": 83,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 640,
-          "targetSpeed": 450,
-          "speedMarginPct": 42.2,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 91,
-          "durationMarginPct": 83.5,
-          "label": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.38,
-          "cappedPowerRatio": 1.89,
-          "label": "At the legal limits (3 attackers vs 4 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "coastal-bluffs",
-            "volcano-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats",
-            "coastland-swamp"
-          ],
-          "overlap": 0.467,
-          "label": "7 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 4 defenders), the attacking side has the stronger combat envelope.",
-          "7 shared mapped areas make contact plausible."
-        ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
+        "family": "megalania",
         "direction": "opportunity",
         "band": "severe",
         "kind": "quarry",
         "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. 1 Suchomimus vs 1 Megalania (Temperate): the Suchomimus side wins in about 8 s with 72% of its health left.",
         "score": 83,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14165,18 +14505,6 @@
           "targetDurationSeconds": 45,
           "durationMarginPct": 271.1,
           "label": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.92,
-          "cappedPowerRatio": 4.04,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -14194,9 +14522,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "6 shared mapped areas make contact plausible."
+          "1 Suchomimus vs 1 Megalania (Temperate): the Suchomimus side wins in about 8 s with 72% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Suchomimus bite lands 73 on Megalania (Temperate) (8 to kill); a Megalania (Temperate) bite lands 21 back (34 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 73,
+            "defenderHit": 21,
+            "attackerBurst": 165,
+            "defenderBurst": 42,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 34,
+            "attackerDps": 70.2,
+            "defenderDps": 25.8,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 27,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.72,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Suchomimus vs 1 Megalania (Temperate): the Suchomimus side wins in about 8 s with 72% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Suchomimus vs 1 Megalania (Temperate): the Suchomimus side wins in about 3 s with 97% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "suchomimus",
+        "targetId": "megalania-temperate",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Suchomimus",
+          "targetName": "Megalania (Temperate)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -14204,12 +14598,14 @@
       {
         "id": "megalania-arid",
         "name": "Megalania (Arid)",
+        "family": "megalania",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
         "headline": "Megalania (Arid) is a realistic hunting opportunity",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. 1 Suchomimus vs 1 Megalania (Arid): the Suchomimus side wins in about 8 s with 72% of its health left.",
         "score": 74,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14226,18 +14622,6 @@
           "durationMarginPct": 271.1,
           "label": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.92,
-          "cappedPowerRatio": 4.04,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -14250,80 +14634,212 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 2 mapped areas, so the matchup is situational."
+          "1 Suchomimus vs 1 Megalania (Arid): the Suchomimus side wins in about 8 s with 72% of its health left.",
+          "They overlap in 2 mapped areas, so the matchup is situational.",
+          "One-on-one, a Suchomimus bite lands 73 on Megalania (Arid) (8 to kill); a Megalania (Arid) bite lands 21 back (34 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 73,
+            "defenderHit": 21,
+            "attackerBurst": 165,
+            "defenderBurst": 42,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 34,
+            "attackerDps": 70.2,
+            "defenderDps": 25.8,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 27,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.72,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Suchomimus vs 1 Megalania (Arid): the Suchomimus side wins in about 8 s with 72% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Suchomimus vs 1 Megalania (Arid): the Suchomimus side wins in about 3 s with 97% of its health left.",
+            "attackers": 3,
+            "defenders": 1
+          }
+        },
+        "attackerId": "suchomimus",
+        "targetId": "megalania-arid",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Suchomimus",
+          "targetName": "Megalania (Arid)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 56,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       },
       {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "family": "austroraptor",
         "direction": "opportunity",
-        "band": "high",
+        "band": "conditional",
         "kind": "quarry",
-        "headline": "Anodontosaurus is a realistic hunting opportunity",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Suchomimus is 44% faster on land; a clean escape is unlikely once spotted. At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 74,
+        "headline": "Austroraptor can usually refuse the chase",
+        "summary": "Austroraptor is within the legal hunt ceiling. Austroraptor is 9% faster in water and can normally refuse this fight. 1 Suchomimus vs 2 Austroraptor: the Suchomimus side wins in about 14 s with 35% of its health left.",
+        "score": 49,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
           "reason": "Its profile permits hunting through Apex tier."
         },
         "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 950,
-          "targetSpeed": 660,
-          "speedMarginPct": 43.9,
-          "attackerDurationSeconds": 63,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": -49.6,
-          "label": "Suchomimus is 44% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.11,
-          "cappedPowerRatio": 2.33,
-          "label": "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "mode": "water",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 640,
+          "targetSpeed": 700,
+          "speedMarginPct": -8.6,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": -33.2,
+          "label": "Austroraptor is 9% faster in water and can normally refuse this fight."
         },
         "encounter": {
-          "level": "possible",
+          "level": "frequent",
           "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "volcano-islands",
+            "abyssal-depths",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "stonebed-shoal",
+            "coastland-swamp",
             "redwoods"
           ],
-          "overlap": 0.048,
-          "label": "They overlap in 1 mapped area, so the matchup is situational."
+          "overlap": 0.75,
+          "label": "12 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "Suchomimus is 44% faster on land; a clean escape is unlikely once spotted.",
-          "At the legal limits (3 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "They overlap in 1 mapped area, so the matchup is situational.",
-          "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          "Austroraptor is 9% faster in water and can normally refuse this fight.",
+          "1 Suchomimus vs 2 Austroraptor: the Suchomimus side wins in about 14 s with 35% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Suchomimus bite lands 95 on Austroraptor (7 to kill); a Austroraptor bite lands 21 back (34 to kill)."
         ],
-        "tags": [
-          "dangerous-defender"
-        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 95,
+            "defenderHit": 21,
+            "attackerBurst": 214,
+            "defenderBurst": 25,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 34,
+            "attackerDps": 91.3,
+            "defenderDps": 21.3,
+            "attackerTimeToKill": 7,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.35,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.25
+            }
+          },
+          "label": "1 Suchomimus vs 2 Austroraptor: the Suchomimus side wins in about 14 s with 35% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Suchomimus vs 2 Austroraptor: the Suchomimus side wins in about 5 s with 93% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "suchomimus",
+        "targetId": "austroraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Suchomimus",
+          "targetName": "Austroraptor",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Austroraptor is 9% faster in water and can normally refuse this fight.",
+          "baseScore": 31,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Austroraptor is within the legal hunt ceiling."
+        },
+        "tags": [],
         "evidence": [],
         "confidence": "derived"
       },
       {
         "id": "barsboldia",
         "name": "Barsboldia",
+        "family": "barsboldia",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Barsboldia is a realistic hunting opportunity",
-        "summary": "Barsboldia is within the legal hunt ceiling. Suchomimus is 12% faster on land; a clean escape is unlikely once spotted. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+        "summary": "Barsboldia is within the legal hunt ceiling. Suchomimus is 12% faster on land; a clean escape is unlikely once spotted. 1 Suchomimus vs 2 Barsboldia: the Barsboldia side wins in about 5 s with 95% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -14339,18 +14855,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 26,
           "label": "Suchomimus is 12% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.91,
-          "cappedPowerRatio": 1.23,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -14371,106 +14875,105 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Suchomimus is 12% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "9 shared mapped areas make contact plausible."
+          "1 Suchomimus vs 2 Barsboldia: the Barsboldia side wins in about 5 s with 95% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Suchomimus bite lands 33 on Barsboldia (46 to kill); a Barsboldia kick lands 55 back (13 to kill)."
         ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "stegosaurus",
-        "name": "Stegosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Stegosaurus is a realistic hunting opportunity",
-        "summary": "Stegosaurus is within the legal hunt ceiling. The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land. At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-        "score": 67,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 950,
-          "targetSpeed": 900,
-          "speedMarginPct": 5.6,
-          "attackerDurationSeconds": 63,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 0,
-          "label": "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land."
-        },
         "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1.35,
-          "label": "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog"
-          ],
-          "overlap": 0.176,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
-          "At the legal limits (3 attackers vs 2 defenders), the attacking side has the stronger combat envelope.",
-          "They overlap in 3 mapped areas, so the matchup is situational."
-        ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "parasaurolophus",
-        "name": "Parasaurolophus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Parasaurolophus is a realistic hunting opportunity",
-        "summary": "Parasaurolophus is within the legal hunt ceiling. The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land. The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 950,
-          "targetSpeed": 925,
-          "speedMarginPct": 2.7,
-          "attackerDurationSeconds": 63,
-          "targetDurationSeconds": 50,
-          "durationMarginPct": 26,
-          "label": "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 33,
+            "defenderHit": 55,
+            "attackerBurst": 74,
+            "defenderBurst": 165,
+            "attackerHitsToKill": 46,
+            "defenderHitsToKill": 13,
+            "attackerDps": 31.7,
+            "defenderDps": 73.6,
+            "attackerTimeToKill": 47,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.95,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5
+            }
+          },
+          "label": "1 Suchomimus vs 2 Barsboldia: the Barsboldia side wins in about 5 s with 95% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
           "attackerCombatWeight": 5000,
           "targetCombatWeight": 5500,
           "attackerGroupLimit": 3,
           "targetDefenderLimit": 2,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.91,
-          "cappedPowerRatio": 1.23,
-          "label": "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Suchomimus vs 2 Barsboldia: the Barsboldia side wins in about 15 s with 69% of its health left.",
+            "attackers": 3,
+            "defenders": 2
+          }
+        },
+        "attackerId": "suchomimus",
+        "targetId": "barsboldia",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Suchomimus",
+          "targetName": "Barsboldia",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Suchomimus is 12% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Barsboldia is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "family": "concavenator",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Concavenator is legal quarry, but not a comfortable fight",
+        "summary": "Concavenator is within the legal hunt ceiling. Suchomimus is 42% faster in water; a clean escape is unlikely once spotted. 1 Suchomimus vs 4 Concavenator: the Concavenator side wins in about 9 s with 60% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 640,
+          "targetSpeed": 450,
+          "speedMarginPct": 42.2,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 91,
+          "durationMarginPct": 83.5,
+          "label": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
@@ -14481,23 +14984,2409 @@
             "twisted-forest",
             "stillwater-bog",
             "mudflats",
-            "coastland-swamp",
-            "redwoods"
+            "coastland-swamp"
           ],
-          "overlap": 0.25,
-          "label": "8 shared mapped areas make contact plausible."
+          "overlap": 0.467,
+          "label": "7 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land.",
-          "The legal groups (3 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "8 shared mapped areas make contact plausible."
+          "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
+          "1 Suchomimus vs 4 Concavenator: the Concavenator side wins in about 9 s with 60% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Suchomimus bite lands 95 on Concavenator (6 to kill); a Concavenator bite lands 21 back (34 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 95,
+            "defenderHit": 21,
+            "attackerBurst": 214,
+            "defenderBurst": 34,
+            "attackerHitsToKill": 6,
+            "defenderHitsToKill": 34,
+            "attackerDps": 91.3,
+            "defenderDps": 22.5,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 31,
+            "attackerBleed": 0,
+            "defenderBleed": 0.021,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.6,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 5.5
+            }
+          },
+          "label": "1 Suchomimus vs 4 Concavenator: the Concavenator side wins in about 9 s with 60% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Suchomimus vs 4 Concavenator: the Suchomimus side wins in about 8 s with 80% of its health left.",
+            "attackers": 3,
+            "defenders": 4
+          }
+        },
+        "attackerId": "suchomimus",
+        "targetId": "concavenator",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Suchomimus",
+          "targetName": "Concavenator",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Suchomimus is 42% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Concavenator is within the legal hunt ceiling."
+        },
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "kaiwhekea",
+          "name": "Kaiwhekea",
+          "family": "kaiwhekea",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Kaiwhekea can create a very narrow escape window",
+          "summary": "Kaiwhekea is inside the legal hunt range. Kaiwhekea is 55% faster in water; a clean escape is unlikely once spotted. 3 Kaiwhekea vs 1 Suchomimus: the Kaiwhekea side wins in about 5 s with 89% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 990,
+            "targetSpeed": 640,
+            "speedMarginPct": 54.7,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 0,
+            "label": "Kaiwhekea is 55% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "volcano-islands",
+              "abyssal-depths",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "stonebed-shoal",
+              "coastland-swamp"
+            ],
+            "overlap": 0.917,
+            "label": "11 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Kaiwhekea is 55% faster in water; a clean escape is unlikely once spotted.",
+            "3 Kaiwhekea vs 1 Suchomimus: the Kaiwhekea side wins in about 5 s with 89% of its health left.",
+            "11 shared mapped areas make contact plausible.",
+            "One-on-one, a Kaiwhekea bite lands 40 on Suchomimus (18 to kill); a Suchomimus bite lands 50 back (15 to kill)."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 50,
+              "attackerBurst": 68,
+              "defenderBurst": 113,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 15,
+              "attackerDps": 45.5,
+              "defenderDps": 47.9,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 16,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.89,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5.25
+              }
+            },
+            "label": "3 Kaiwhekea vs 1 Suchomimus: the Kaiwhekea side wins in about 5 s with 89% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 4000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Kaiwhekea vs 3 Suchomimus: the Kaiwhekea side wins in about 28 s with 3% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 3
+            }
+          },
+          "attackerId": "kaiwhekea",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Kaiwhekea",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Kaiwhekea is 55% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Kaiwhekea is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
+          "family": "spinosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Spinosaurus (Freshwater) can create a very narrow escape window",
+          "summary": "Spinosaurus (Freshwater) is inside the legal hunt range. Spinosaurus (Freshwater) is 17% faster in water; a clean escape is unlikely once spotted. 1 Spinosaurus (Freshwater) vs 1 Suchomimus: the Spinosaurus (Freshwater) side wins in about 8 s with 78% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 750,
+            "targetSpeed": 640,
+            "speedMarginPct": 17.2,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 0,
+            "label": "Spinosaurus (Freshwater) is 17% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "stillwater-bog",
+              "mudflats",
+              "twisted-forest",
+              "volcano-islands",
+              "big-tree-overlook",
+              "coastland-swamp"
+            ],
+            "overlap": 0.333,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Spinosaurus (Freshwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "1 Spinosaurus (Freshwater) vs 1 Suchomimus: the Spinosaurus (Freshwater) side wins in about 8 s with 78% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Spinosaurus (Freshwater) claw lands 72 on Suchomimus (10 to kill); a Suchomimus bite lands 30 back (37 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 30,
+              "attackerBurst": 204,
+              "defenderBurst": 68,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 37,
+              "attackerDps": 87.2,
+              "defenderDps": 29,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 38,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.78,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "1 Spinosaurus (Freshwater) vs 1 Suchomimus: the Spinosaurus (Freshwater) side wins in about 8 s with 78% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Spinosaurus (Freshwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+              "attackers": 1,
+              "defenders": 3
+            }
+          },
+          "attackerId": "spinosaurus-freshwater",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Spinosaurus (Freshwater)",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Spinosaurus (Freshwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Freshwater) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [
+            {
+              "profileId": "spinosaurus-freshwater",
+              "profileName": "Spinosaurus (Freshwater)",
+              "section": "Quick View",
+              "text": "Spinosaurus uniquely adopt Suchomimus of any age."
+            },
+            {
+              "profileId": "spinosaurus-freshwater",
+              "profileName": "Spinosaurus (Freshwater)",
+              "section": "Engagement Limits",
+              "text": "Cross-species Adoption: Spinosaurus can adopt Suchomimus of any age."
+            }
+          ],
+          "confidence": "profile-specific"
+        },
+        {
+          "id": "spinosaurus-saltwater",
+          "name": "Spinosaurus (Saltwater)",
+          "family": "spinosaurus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Spinosaurus (Saltwater) can create a very narrow escape window",
+          "summary": "Spinosaurus (Saltwater) is inside the legal hunt range. Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted. 1 Spinosaurus (Saltwater) vs 1 Suchomimus: the Spinosaurus (Saltwater) side wins in about 8 s with 78% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 750,
+            "targetSpeed": 640,
+            "speedMarginPct": 17.2,
+            "attackerDurationSeconds": 167,
+            "targetDurationSeconds": 167,
+            "durationMarginPct": 0,
+            "label": "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "kelp-vale",
+              "coastal-bluffs",
+              "abyssal-depths",
+              "palm-islands",
+              "stonebed-shoal"
+            ],
+            "overlap": 0.278,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "1 Spinosaurus (Saltwater) vs 1 Suchomimus: the Spinosaurus (Saltwater) side wins in about 8 s with 78% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Spinosaurus (Saltwater) claw lands 72 on Suchomimus (10 to kill); a Suchomimus bite lands 30 back (37 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 30,
+              "attackerBurst": 204,
+              "defenderBurst": 68,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 37,
+              "attackerDps": 87.2,
+              "defenderDps": 29,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 38,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.78,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "1 Spinosaurus (Saltwater) vs 1 Suchomimus: the Spinosaurus (Saltwater) side wins in about 8 s with 78% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 6000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Spinosaurus (Saltwater) vs 3 Suchomimus: the Suchomimus side wins in about 15 s with 38% of its health left.",
+              "attackers": 1,
+              "defenders": 3
+            }
+          },
+          "attackerId": "spinosaurus-saltwater",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Spinosaurus (Saltwater)",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Spinosaurus (Saltwater) is 17% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Saltwater) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [
+            {
+              "profileId": "spinosaurus-saltwater",
+              "profileName": "Spinosaurus (Saltwater)",
+              "section": "Quick View",
+              "text": "Spinosaurus uniquely adopt Suchomimus of any age."
+            },
+            {
+              "profileId": "spinosaurus-saltwater",
+              "profileName": "Spinosaurus (Saltwater)",
+              "section": "Engagement Limits",
+              "text": "Cross-species Adoption: Spinosaurus can adopt Suchomimus of any age."
+            }
+          ],
+          "confidence": "profile-specific"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Achillobator can create a very narrow escape window",
+          "summary": "Achillobator is inside the legal hunt range. Achillobator is 11% faster on land; a clean escape is unlikely once spotted. 5 Achillobator vs 1 Suchomimus: the Achillobator side wins in about 5 s with 89% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 950,
+            "speedMarginPct": 10.5,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 144.4,
+            "label": "Achillobator is 11% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "twisted-forest",
+              "mudflats",
+              "redwoods"
+            ],
+            "overlap": 0.211,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 11% faster on land; a clean escape is unlikely once spotted.",
+            "5 Achillobator vs 1 Suchomimus: the Achillobator side wins in about 5 s with 89% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 39 on Suchomimus (18 to kill); a Suchomimus bite lands 71 back (9 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 39,
+              "defenderHit": 71,
+              "attackerBurst": 78,
+              "defenderBurst": 161,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 9,
+              "attackerDps": 28,
+              "defenderDps": 68.4,
+              "attackerTimeToKill": 25,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.89,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 5
+              }
+            },
+            "label": "5 Achillobator vs 1 Suchomimus: the Achillobator side wins in about 5 s with 89% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Achillobator vs 3 Suchomimus: the Suchomimus side wins in about 23 s with 23% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 3
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Achillobator is 11% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a very narrow escape window",
+          "summary": "Latenivenatrix is inside the legal hunt range. Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted. 8 Latenivenatrix vs 1 Suchomimus: the Latenivenatrix side wins in about 9 s with 70% of its health left.",
+          "score": 83,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 950,
+            "speedMarginPct": 13.2,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 296.8,
+            "label": "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "twisted-forest",
+              "mudflats",
+              "redwoods"
+            ],
+            "overlap": 0.211,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted.",
+            "8 Latenivenatrix vs 1 Suchomimus: the Latenivenatrix side wins in about 9 s with 70% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 11 on Suchomimus (63 to kill); a Suchomimus bite lands 143 back (4 to kill).",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 11,
+              "defenderHit": 143,
+              "attackerBurst": 25,
+              "defenderBurst": 321,
+              "attackerHitsToKill": 63,
+              "defenderHitsToKill": 4,
+              "attackerDps": 11.2,
+              "defenderDps": 136.9,
+              "attackerTimeToKill": 62,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 9,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.7,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.75
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Suchomimus: the Latenivenatrix side wins in about 9 s with 70% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Latenivenatrix vs 3 Suchomimus: the Suchomimus side wins in about 10 s with 76% of its health left.",
+              "attackers": 8,
+              "defenders": 3
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Latenivenatrix is 13% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "family": "yutyrannus",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Yutyrannus can create a very narrow escape window",
+          "summary": "Yutyrannus is inside the legal hunt range. Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted. 4 Yutyrannus vs 1 Suchomimus: the Yutyrannus side wins in about 7 s with 83% of its health left.",
+          "score": 81,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1040,
+            "targetSpeed": 950,
+            "speedMarginPct": 9.5,
+            "attackerDurationSeconds": 100,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 58.7,
+            "label": "Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "redwoods"
+            ],
+            "overlap": 0.067,
+            "label": "They overlap in 1 mapped area, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted.",
+            "4 Yutyrannus vs 1 Suchomimus: the Yutyrannus side wins in about 7 s with 83% of its health left.",
+            "They overlap in 1 mapped area, so the matchup is situational.",
+            "One-on-one, a Yutyrannus bite lands 39 on Suchomimus (18 to kill); a Suchomimus bite lands 62 back (10 to kill).",
+            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 39,
+              "defenderHit": 62,
+              "attackerBurst": 39,
+              "defenderBurst": 138,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 10,
+              "attackerDps": 26,
+              "defenderDps": 59,
+              "attackerTimeToKill": 27,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 7,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.83,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 6.75
+              }
+            },
+            "label": "4 Yutyrannus vs 1 Suchomimus: the Yutyrannus side wins in about 7 s with 83% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 3250,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Yutyrannus vs 3 Suchomimus: the Suchomimus side wins in about 16 s with 53% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "yutyrannus",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Yutyrannus",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Yutyrannus is 9% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 63,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Yutyrannus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "kelenken",
+          "name": "Kelenken",
+          "family": "kelenken",
+          "direction": "threat",
+          "band": "severe",
+          "kind": "predator",
+          "headline": "Kelenken can create a very narrow escape window",
+          "summary": "Kelenken is inside the legal hunt range. Kelenken is 13% faster on land; a clean escape is unlikely once spotted. 4 Kelenken vs 1 Suchomimus: the Kelenken side wins in about 10 s with 53% of its health left.",
+          "score": 80,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 950,
+            "speedMarginPct": 13.2,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 164.6,
+            "label": "Kelenken is 13% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "redwoods"
+            ],
+            "overlap": 0.105,
+            "label": "They overlap in 2 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Kelenken is 13% faster on land; a clean escape is unlikely once spotted.",
+            "4 Kelenken vs 1 Suchomimus: the Kelenken side wins in about 10 s with 53% of its health left.",
+            "They overlap in 2 mapped areas, so the matchup is situational.",
+            "One-on-one, a Kelenken bite lands 20 on Suchomimus (36 to kill); a Suchomimus bite lands 103 back (5 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 20,
+              "defenderHit": 103,
+              "attackerBurst": 27,
+              "defenderBurst": 231,
+              "attackerHitsToKill": 36,
+              "defenderHitsToKill": 5,
+              "attackerDps": 20.9,
+              "defenderDps": 98.3,
+              "attackerTimeToKill": 33,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0.02,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.53,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 5.25
+              }
+            },
+            "label": "4 Kelenken vs 1 Suchomimus: the Kelenken side wins in about 10 s with 53% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 1950,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "4 Kelenken vs 3 Suchomimus: the Suchomimus side wins in about 7 s with 83% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "kelenken",
+          "targetId": "suchomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Kelenken",
+            "targetName": "Suchomimus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Kelenken is 13% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 62,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Kelenken is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "parasaurolophus",
+          "name": "Parasaurolophus",
+          "family": "parasaurolophus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+          "summary": "Parasaurolophus is within the legal hunt ceiling. The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land. 1 Suchomimus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 9 s with 90% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 950,
+            "targetSpeed": 925,
+            "speedMarginPct": 2.7,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 26,
+            "label": "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.25,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land.",
+            "1 Suchomimus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 9 s with 90% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Suchomimus bite lands 33 on Parasaurolophus (43 to kill); a Parasaurolophus bite lands 28 back (26 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 28,
+              "attackerBurst": 74,
+              "defenderBurst": 88,
+              "attackerHitsToKill": 43,
+              "defenderHitsToKill": 26,
+              "attackerDps": 31.7,
+              "defenderDps": 41.3,
+              "attackerTimeToKill": 44,
+              "defenderTimeToKill": 17,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 9,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.9,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 8.5
+              }
+            },
+            "label": "1 Suchomimus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 9 s with 90% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Suchomimus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 32 s with 35% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "parasaurolophus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Parasaurolophus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (950 vs 925), but Suchomimus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Parasaurolophus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "family": "tyrannotitan",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Tyrannotitan is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannotitan is within the legal hunt ceiling. The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land. 1 Suchomimus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 11 s with 82% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 950,
+            "targetSpeed": 900,
+            "speedMarginPct": 5.6,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 0,
+            "label": "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
+            "1 Suchomimus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 11 s with 82% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Suchomimus bite lands 33 on Tyrannotitan (28 to kill); a Tyrannotitan bite lands 44 back (16 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 33,
+              "defenderHit": 44,
+              "attackerBurst": 74,
+              "defenderBurst": 110,
+              "attackerHitsToKill": 28,
+              "defenderHitsToKill": 16,
+              "attackerDps": 31.7,
+              "defenderDps": 33.7,
+              "attackerTimeToKill": 28,
+              "defenderTimeToKill": 21,
+              "attackerBleed": 0,
+              "defenderBleed": 0.264,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 11,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.82,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 10.5
+              }
+            },
+            "label": "1 Suchomimus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 11 s with 82% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Suchomimus vs 2 Tyrannotitan: the Suchomimus side wins in about 23 s with 48% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (950 vs 900), but Suchomimus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannotitan is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "family": "metriacanthosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Metriacanthosaurus can usually refuse the chase",
+          "summary": "Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 10% faster on land and can normally refuse this fight. 1 Suchomimus vs 2 Metriacanthosaurus: the Suchomimus side wins in about 16 s with 16% of its health left, too narrow to call.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1050,
+            "speedMarginPct": -9.5,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -49.6,
+            "label": "Metriacanthosaurus is 10% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.421,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Metriacanthosaurus is 10% faster on land and can normally refuse this fight.",
+            "1 Suchomimus vs 2 Metriacanthosaurus: the Suchomimus side wins in about 16 s with 16% of its health left, too narrow to call.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Suchomimus bite lands 65 on Metriacanthosaurus (8 to kill); a Metriacanthosaurus v2claw attack lands 25 back (29 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 65,
+              "defenderHit": 25,
+              "attackerBurst": 145,
+              "defenderBurst": 40,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 29,
+              "attackerDps": 61.8,
+              "defenderDps": 24.1,
+              "attackerTimeToKill": 8,
+              "defenderTimeToKill": 29,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 16,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.16,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 8.25
+              }
+            },
+            "label": "1 Suchomimus vs 2 Metriacanthosaurus: the Suchomimus side wins in about 16 s with 16% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Suchomimus vs 2 Metriacanthosaurus: the Suchomimus side wins in about 6 s with 91% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Metriacanthosaurus is 10% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Achillobator can usually refuse the chase",
+          "summary": "Achillobator is within the legal hunt ceiling. Achillobator is 10% faster on land and can normally refuse this fight. 1 Suchomimus vs 2 Achillobator: the Achillobator side wins in about 16 s with 9% of its health left, too narrow to call.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1050,
+            "speedMarginPct": -9.5,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 154,
+            "durationMarginPct": -59.1,
+            "label": "Achillobator is 10% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "twisted-forest",
+              "mudflats",
+              "redwoods"
+            ],
+            "overlap": 0.211,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Achillobator is 10% faster on land and can normally refuse this fight.",
+            "1 Suchomimus vs 2 Achillobator: the Achillobator side wins in about 16 s with 9% of its health left, too narrow to call.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Suchomimus bite lands 71 on Achillobator (9 to kill); a Achillobator bite lands 39 back (18 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 71,
+              "defenderHit": 39,
+              "attackerBurst": 161,
+              "defenderBurst": 78,
+              "attackerHitsToKill": 9,
+              "defenderHitsToKill": 18,
+              "attackerDps": 68.4,
+              "defenderDps": 28,
+              "attackerTimeToKill": 9,
+              "defenderTimeToKill": 25,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 16,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.09,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 9
+              }
+            },
+            "label": "1 Suchomimus vs 2 Achillobator: the Achillobator side wins in about 16 s with 9% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 2800,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Suchomimus vs 2 Achillobator: the Suchomimus side wins in about 6 s with 88% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "achillobator",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Achillobator",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Achillobator is 10% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "amargasaurus",
+          "name": "Amargasaurus",
+          "family": "amargasaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Amargasaurus is legal quarry, but not a comfortable fight",
+          "summary": "Amargasaurus is within the legal hunt ceiling. Suchomimus is 36% faster on land; a clean escape is unlikely once spotted. 1 Suchomimus vs 2 Amargasaurus: the Amargasaurus side wins in about 13 s with 80% of its health left.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 700,
+            "speedMarginPct": 35.7,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 133,
+            "durationMarginPct": -52.6,
+            "label": "Suchomimus is 36% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "mudflats",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.2,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Suchomimus is 36% faster on land; a clean escape is unlikely once spotted.",
+            "1 Suchomimus vs 2 Amargasaurus: the Amargasaurus side wins in about 13 s with 80% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Suchomimus bite lands 40 on Amargasaurus (32 to kill); a Amargasaurus bite lands 30 back (24 to kill).",
+            "Amargasaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 30,
+              "attackerBurst": 90,
+              "defenderBurst": 120,
+              "attackerHitsToKill": 32,
+              "defenderHitsToKill": 24,
+              "attackerDps": 38.3,
+              "defenderDps": 27,
+              "attackerTimeToKill": 33,
+              "defenderTimeToKill": 26,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 13,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.8,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 13
+              }
+            },
+            "label": "1 Suchomimus vs 2 Amargasaurus: the Amargasaurus side wins in about 13 s with 80% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Suchomimus vs 2 Amargasaurus: the Suchomimus side wins in about 25 s with 53% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "amargasaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Amargasaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Suchomimus is 36% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Amargasaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "apatosaurus",
+          "name": "Apatosaurus",
+          "family": "apatosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Apatosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Apatosaurus is within the legal hunt ceiling. Suchomimus is 90% faster on land; a clean escape is unlikely once spotted. 1 Suchomimus vs 1 Apatosaurus: the Apatosaurus side wins in about 18 s with 84% of its health left.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 950,
+            "targetSpeed": 500,
+            "speedMarginPct": 90,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 100,
+            "durationMarginPct": -37,
+            "label": "Suchomimus is 90% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "mudflats",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.188,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Suchomimus is 90% faster on land; a clean escape is unlikely once spotted.",
+            "1 Suchomimus vs 1 Apatosaurus: the Apatosaurus side wins in about 18 s with 84% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Suchomimus bite lands 19 on Apatosaurus (104 to kill); a Apatosaurus tail attack lands 128 back (6 to kill).",
+            "Apatosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 19,
+              "defenderHit": 128,
+              "attackerBurst": 43,
+              "defenderBurst": 192,
+              "attackerHitsToKill": 104,
+              "defenderHitsToKill": 6,
+              "attackerDps": 18.4,
+              "defenderDps": 40,
+              "attackerTimeToKill": 109,
+              "defenderTimeToKill": 18,
+              "attackerBleed": 0,
+              "defenderBleed": 0.019,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 18,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.84,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 17.5
+              }
+            },
+            "label": "1 Suchomimus vs 1 Apatosaurus: the Apatosaurus side wins in about 18 s with 84% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 8000,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Suchomimus vs 1 Apatosaurus: the Apatosaurus side wins in about 53 s with 3% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 1
+            }
+          },
+          "attackerId": "suchomimus",
+          "targetId": "apatosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Suchomimus",
+            "targetName": "Apatosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Suchomimus is 90% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Apatosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "tylosaurus": {
+        "id": "tylosaurus",
+        "name": "Tylosaurus",
+        "cw": 5000,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 51.46,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bone Snap",
+          "damage": 105,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bone Snap",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-shore": {
+        "id": "deinosuchus-shore",
+        "name": "Deinosuchus (Shore)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "eurhinosaurus": {
+        "id": "eurhinosaurus",
+        "name": "Eurhinosaurus",
+        "cw": 3000,
+        "hp": 600,
+        "armor": 1,
+        "dps": 32.74,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Joust",
+          "damage": 65,
+          "cooldown": 7,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Joust",
+          "Thrash"
+        ],
+        "bleedPerSecond": 0.057,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "deinosuchus-ocean": {
+        "id": "deinosuchus-ocean",
+        "name": "Deinosuchus (Ocean)",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 43.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 55,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite Armor",
+          "damage": 115,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bite Armor",
+          "Deathroll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kaiwhekea": {
+        "id": "kaiwhekea",
+        "name": "Kaiwhekea",
+        "cw": 4000,
+        "hp": 750,
+        "armor": 1,
+        "dps": 56.92,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "AOEBarrel Roll",
+          "damage": 85,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Fluke Slap",
+          "AOEBarrel Roll"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-freshwater": {
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-saltwater": {
+        "id": "spinosaurus-saltwater",
+        "name": "Spinosaurus (Saltwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "amargasaurus": {
+        "id": "amargasaurus",
+        "name": "Amargasaurus",
+        "cw": 5000,
+        "hp": 1250,
+        "armor": 1,
+        "dps": 27,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Thrash",
+          "Stomp v2"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "apatosaurus": {
+        "id": "apatosaurus",
+        "name": "Apatosaurus",
+        "cw": 8000,
+        "hp": 2000,
+        "armor": 1.3,
+        "dps": 25,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 4
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Stomp",
+          "Headslam"
+        ],
+        "bleedPerSecond": 0.012,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Large",
@@ -14520,7 +17409,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

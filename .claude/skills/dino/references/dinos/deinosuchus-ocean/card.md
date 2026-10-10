@@ -66,16 +66,15 @@ You live in two halves. By day you are the elephant seal: you lie for hours with
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
+- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
 - **Deinocheirus** (conditional): Deinocheirus matters only if it gets the right opening
-- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
 - **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Deinocheirus** (conditional): Deinocheirus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Austroraptor** (hoch): Austroraptor is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (spürbar): Spinosaurus (Saltwater) is a realistic hunting opportunity
 - **Leedsichthys** (spürbar): Leedsichthys is a realistic hunting opportunity
 - **Suchomimus** (conditional): Suchomimus is legal quarry, but not a comfortable fight
 
@@ -88,6 +87,7 @@ Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachst
 
 ## Dynasty-Anpassungen
 
+- Clamp Weight: Up to 3900 Combat Weight
 - Combat weight increased to 6000 from 5500
 - Increased health from 900 to 1000
 - Sprint speed reduced by 10%

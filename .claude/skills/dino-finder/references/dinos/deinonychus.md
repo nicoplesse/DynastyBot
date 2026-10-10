@@ -60,19 +60,19 @@ You are a small, extremely aggressive raptor in a 'dynasty' ruled by the Mother,
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
+- **Austroraptor** (sehr hoch): Austroraptor can create a very narrow escape window
+- **Tenontosaurus** (hoch): Tenontosaurus can create a real pursuit problem
 - **Kelenken** (hoch): Kelenken can create a real pursuit problem
-- **Austroraptor** (spürbar): Austroraptor can create a credible fight
-- **Tenontosaurus** (conditional): Tenontosaurus matters only if it gets the right opening
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Concavenator** (hoch): Concavenator can create a real pursuit problem
-- **Dilophosaurus** (hoch): Dilophosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Kelenken** (spürbar): Kelenken is legal quarry, but not a comfortable fight
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Achillobator** (hoch): Achillobator is a realistic hunting opportunity
-- **Ceratosaurus** (hoch): Ceratosaurus is a realistic hunting opportunity
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
+- **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
+- **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

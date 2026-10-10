@@ -11868,19 +11868,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Daspletosaurus has 5 high-priority matchups where legal group size, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Daspletosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "yunnanosaurus",
         "name": "Yunnanosaurus",
+        "family": "yunnanosaurus",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "territorial-rival",
-        "headline": "Yunnanosaurus can create a credible fight",
-        "summary": "Yunnanosaurus is linked by a specific profile rule. This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus.",
-        "score": 51,
+        "headline": "Yunnanosaurus can create a very narrow escape window",
+        "summary": "Yunnanosaurus is linked by a specific profile rule. This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it. 1 Yunnanosaurus vs 1 Daspletosaurus: the Yunnanosaurus side wins in about 12 s with 56% of its health left.",
+        "score": 86,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -11896,18 +11898,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": -0.1,
           "label": "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 4500,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.29,
-          "cappedPowerRatio": 0.61,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -11925,9 +11915,76 @@
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
           "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Daspletosaurus.",
-          "6 shared mapped areas make contact plausible."
+          "1 Yunnanosaurus vs 1 Daspletosaurus: the Yunnanosaurus side wins in about 12 s with 56% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Yunnanosaurus claw attack lands 90 on Daspletosaurus (7 to kill); a Daspletosaurus bite lands 47 back (22 to kill).",
+          "Yunnanosaurus's bleed builds faster than Daspletosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 90,
+            "defenderHit": 47,
+            "attackerBurst": 129,
+            "defenderBurst": 70,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 22,
+            "attackerDps": 49.2,
+            "defenderDps": 36,
+            "attackerTimeToKill": 12,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0.198,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 12,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.56,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 12.25
+            }
+          },
+          "label": "1 Yunnanosaurus vs 1 Daspletosaurus: the Yunnanosaurus side wins in about 12 s with 56% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Yunnanosaurus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "yunnanosaurus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yunnanosaurus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1000 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 68,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "Yunnanosaurus is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -11950,12 +12007,14 @@
       {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. Alioramus is 12% faster on land; a clean escape is unlikely once spotted. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 79,
+        "summary": "Alioramus is inside the legal hunt range. Alioramus is 12% faster on land; a clean escape is unlikely once spotted. 5 Alioramus vs 1 Daspletosaurus: the Alioramus side wins in about 4 s with 90% of its health left.",
+        "score": 89,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -11971,18 +12030,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 46.2,
           "label": "Alioramus is 12% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.69,
-          "cappedPowerRatio": 1.04,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12003,9 +12050,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 12% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "9 shared mapped areas make contact plausible."
+          "5 Alioramus vs 1 Daspletosaurus: the Alioramus side wins in about 4 s with 90% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 31 on Daspletosaurus (20 to kill); a Daspletosaurus bite lands 88 back (6 to kill)."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 31,
+            "defenderHit": 88,
+            "attackerBurst": 38,
+            "defenderBurst": 131,
+            "attackerHitsToKill": 20,
+            "defenderHitsToKill": 6,
+            "attackerDps": 33.4,
+            "defenderDps": 67.4,
+            "attackerTimeToKill": 18,
+            "defenderTimeToKill": 8,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.9,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.75
+            }
+          },
+          "label": "5 Alioramus vs 1 Daspletosaurus: the Alioramus side wins in about 4 s with 90% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "5 Alioramus vs 3 Daspletosaurus: the Alioramus side wins in about 18 s with 21% of its health left, too narrow to call.",
+            "attackers": 5,
+            "defenders": 3
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 12% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 71,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -12015,12 +12128,14 @@
       {
         "id": "pycnonemosaurus",
         "name": "Pycnonemosaurus",
+        "family": "pycnonemosaurus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Pycnonemosaurus can create a very narrow escape window",
-        "summary": "Pycnonemosaurus is inside the legal hunt range. The speed gap is small (1075 vs 1025), but Pycnonemosaurus has the pursuit edge on land. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 78,
+        "summary": "Pycnonemosaurus is inside the legal hunt range. The speed gap is small (1075 vs 1025), but Pycnonemosaurus has the pursuit edge on land. 3 Pycnonemosaurus vs 1 Daspletosaurus: the Pycnonemosaurus side wins in about 4 s with 91% of its health left.",
+        "score": 88,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12036,18 +12151,6 @@
           "targetDurationSeconds": 91,
           "durationMarginPct": 0,
           "label": "The speed gap is small (1075 vs 1025), but Pycnonemosaurus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 1,
-          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
         },
         "encounter": {
           "level": "frequent",
@@ -12065,22 +12168,208 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "The speed gap is small (1075 vs 1025), but Pycnonemosaurus has the pursuit edge on land.",
-          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible."
+          "3 Pycnonemosaurus vs 1 Daspletosaurus: the Pycnonemosaurus side wins in about 4 s with 91% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Pycnonemosaurus bite lands 50 on Daspletosaurus (12 to kill); a Daspletosaurus bite lands 60 back (11 to kill)."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 50,
+            "defenderHit": 60,
+            "attackerBurst": 120,
+            "defenderBurst": 90,
+            "attackerHitsToKill": 12,
+            "defenderHitsToKill": 11,
+            "attackerDps": 54.3,
+            "defenderDps": 46.3,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 14,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.91,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 3.75
+            }
+          },
+          "label": "3 Pycnonemosaurus vs 1 Daspletosaurus: the Pycnonemosaurus side wins in about 4 s with 91% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Pycnonemosaurus vs 3 Daspletosaurus: the Pycnonemosaurus side wins in about 14 s with 38% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "pycnonemosaurus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Pycnonemosaurus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1025), but Pycnonemosaurus has the pursuit edge on land.",
+          "baseScore": 70,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Pycnonemosaurus is inside the legal hunt range."
+        },
         "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "family": "kelenken",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Kelenken can create a very narrow escape window",
+        "summary": "Kelenken is inside the legal hunt range. The speed gap is small (1075 vs 1025), but Kelenken has the pursuit edge on land. 4 Kelenken vs 1 Daspletosaurus: the Kelenken side wins in about 5 s with 78% of its health left.",
+        "score": 82,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1025,
+          "speedMarginPct": 4.9,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 91,
+          "durationMarginPct": 83.2,
+          "label": "The speed gap is small (1075 vs 1025), but Kelenken has the pursuit edge on land."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills"
+          ],
+          "overlap": 0.462,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "The speed gap is small (1075 vs 1025), but Kelenken has the pursuit edge on land.",
+          "4 Kelenken vs 1 Daspletosaurus: the Kelenken side wins in about 5 s with 78% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 28 on Daspletosaurus (22 to kill); a Daspletosaurus bite lands 108 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 28,
+            "defenderHit": 108,
+            "attackerBurst": 39,
+            "defenderBurst": 162,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 5,
+            "attackerDps": 29.9,
+            "defenderDps": 83,
+            "attackerTimeToKill": 20,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0.028,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.78,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 5.25
+            }
+          },
+          "label": "4 Kelenken vs 1 Daspletosaurus: the Kelenken side wins in about 5 s with 78% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Kelenken vs 3 Daspletosaurus: the Daspletosaurus side wins in about 9 s with 65% of its health left.",
+            "attackers": 4,
+            "defenders": 3
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1075 vs 1025), but Kelenken has the pursuit edge on land.",
+          "baseScore": 64,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Kelenken is inside the legal hunt range."
+        },
+        "tags": [
+          "endurance"
+        ],
         "evidence": [],
         "confidence": "derived"
       },
       {
         "id": "allosaurus",
         "name": "Allosaurus",
+        "family": "allosaurus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Allosaurus can create a real pursuit problem",
-        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it. The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 67,
+        "summary": "Allosaurus is inside the legal hunt range. This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it. 3 Allosaurus vs 1 Daspletosaurus: the Allosaurus side wins in about 5 s with 89% of its health left.",
+        "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12097,18 +12386,6 @@
           "durationMarginPct": 0,
           "label": "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.07,
-          "cappedPowerRatio": 1.07,
-          "label": "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12123,10 +12400,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it.",
-          "The legal groups (3 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "3 Allosaurus vs 1 Daspletosaurus: the Allosaurus side wins in about 5 s with 89% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 54 on Daspletosaurus (12 to kill); a Daspletosaurus bite lands 56 back (12 to kill).",
+          "Allosaurus's bleed builds faster than Daspletosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 3,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 54,
+            "defenderHit": 56,
+            "attackerBurst": 75,
+            "defenderBurst": 84,
+            "attackerHitsToKill": 12,
+            "defenderHitsToKill": 12,
+            "attackerDps": 41.1,
+            "defenderDps": 43.2,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": 15,
+            "attackerBleed": 0.121,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 3,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.89,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 5
+            }
+          },
+          "label": "3 Allosaurus vs 1 Daspletosaurus: the Allosaurus side wins in about 5 s with 89% of its health left.",
+          "detail": "3 attackers vs 1 defender",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Allosaurus vs 3 Daspletosaurus: the Allosaurus side wins in about 26 s with 6% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Allosaurus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Allosaurus is inside the legal hunt range."
+        },
         "tags": [
           "ambush"
         ],
@@ -12136,12 +12480,14 @@
       {
         "id": "yutyrannus",
         "name": "Yutyrannus",
+        "family": "yutyrannus",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Yutyrannus can create a real pursuit problem",
-        "summary": "Yutyrannus is inside the legal hunt range. This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it. The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 67,
+        "summary": "Yutyrannus is inside the legal hunt range. This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it. 4 Yutyrannus vs 1 Daspletosaurus: the Yutyrannus side wins in about 4 s with 91% of its health left.",
+        "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12158,18 +12504,6 @@
           "durationMarginPct": 9.9,
           "label": "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.93,
-          "cappedPowerRatio": 1.17,
-          "label": "The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
@@ -12184,77 +12518,78 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it.",
-          "The legal groups (4 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
+          "4 Yutyrannus vs 1 Daspletosaurus: the Yutyrannus side wins in about 4 s with 91% of its health left.",
           "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 56 on Daspletosaurus (11 to kill); a Daspletosaurus bite lands 65 back (10 to kill).",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "achillobator",
-        "name": "Achillobator",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Achillobator can create a real pursuit problem",
-        "summary": "Achillobator is inside the legal hunt range. The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land. The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1025,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 91,
-          "durationMarginPct": 69.2,
-          "label": "The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land."
-        },
         "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 2800,
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 56,
+            "defenderHit": 65,
+            "attackerBurst": 56,
+            "defenderBurst": 97,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 10,
+            "attackerDps": 37.1,
+            "defenderDps": 49.8,
+            "attackerTimeToKill": 16,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.91,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.25
+            }
+          },
+          "label": "4 Yutyrannus vs 1 Daspletosaurus: the Yutyrannus side wins in about 4 s with 91% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 3250,
           "targetCombatWeight": 3500,
-          "attackerGroupLimit": 5,
+          "attackerGroupLimit": 4,
           "targetDefenderLimit": 3,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.8,
-          "cappedPowerRatio": 1.22,
-          "label": "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Yutyrannus vs 3 Daspletosaurus: the Yutyrannus side wins in about 17 s with 36% of its health left.",
+            "attackers": 4,
+            "defenders": 3
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "cliff-edge-falls",
-            "east-passage",
-            "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.615,
-          "label": "8 shared mapped areas make contact plausible."
+        "attackerId": "yutyrannus",
+        "targetId": "daspletosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Yutyrannus",
+          "targetName": "Daspletosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1040 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 59,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Yutyrannus is inside the legal hunt range."
         },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land.",
-          "The legal groups (5 vs 3) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "8 shared mapped areas make contact plausible.",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-        ],
         "tags": [
-          "pounce"
+          "ambush"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -12264,12 +12599,14 @@
       {
         "id": "parasaurolophus",
         "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Daspletosaurus is 11% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 2), a committed straight fight favours Parasaurolophus.",
+        "summary": "A profile rule names or prioritises this matchup. Daspletosaurus is 11% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 95% of its health left.",
         "score": 77,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12285,18 +12622,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 82,
           "label": "Daspletosaurus is 11% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.64,
-          "cappedPowerRatio": 0.41,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Parasaurolophus."
         },
         "encounter": {
           "level": "frequent",
@@ -12315,10 +12640,76 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Daspletosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Parasaurolophus.",
+          "1 Daspletosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 95% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Daspletosaurus bite lands 35 on Parasaurolophus (41 to kill); a Parasaurolophus bite lands 39 back (16 to kill).",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 35,
+            "defenderHit": 39,
+            "attackerBurst": 52,
+            "defenderBurst": 126,
+            "attackerHitsToKill": 41,
+            "defenderHitsToKill": 16,
+            "attackerDps": 26.8,
+            "defenderDps": 58.9,
+            "attackerTimeToKill": 52,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 5,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.95,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.25
+            }
+          },
+          "label": "1 Daspletosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 95% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Daspletosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 5 s with 95% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Daspletosaurus is 11% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush"
         ],
@@ -12335,12 +12726,14 @@
       {
         "id": "lambeosaurus",
         "name": "Lambeosaurus",
+        "family": "lambeosaurus",
         "direction": "opportunity",
-        "band": "high",
+        "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Lambeosaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 3), a committed straight fight favours Lambeosaurus.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it. 1 Daspletosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 4 s with 91% of its health left.",
         "score": 64,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -12356,18 +12749,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": -27.2,
           "label": "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1,
-          "cappedPowerRatio": 0.48,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Lambeosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -12388,11 +12769,77 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Lambeosaurus.",
+          "1 Daspletosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 4 s with 91% of its health left.",
           "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Daspletosaurus bite lands 60 on Lambeosaurus (11 to kill); a Lambeosaurus bite lands 30 back (20 to kill).",
           "Lambeosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 60,
+            "defenderHit": 30,
+            "attackerBurst": 90,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 20,
+            "attackerDps": 46.3,
+            "defenderDps": 52.5,
+            "attackerTimeToKill": 14,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.91,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4
+            }
+          },
+          "label": "1 Daspletosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 4 s with 91% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Daspletosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 4 s with 91% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "lambeosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Lambeosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1025 vs 1000 units/s, with stamina likely deciding it.",
+          "baseScore": 81,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -12416,12 +12863,14 @@
       {
         "id": "megalania-arid",
         "name": "Megalania (Arid)",
+        "family": "megalania",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
         "headline": "Megalania (Arid) is a realistic hunting opportunity",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it. 1 Daspletosaurus vs 1 Megalania (Arid): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
         "score": 68,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12437,18 +12886,6 @@
           "targetDurationSeconds": 143,
           "durationMarginPct": -36.4,
           "label": "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.35,
-          "cappedPowerRatio": 1.35,
-          "label": "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "possible",
@@ -12463,10 +12900,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it.",
-          "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+          "1 Daspletosaurus vs 1 Megalania (Arid): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Daspletosaurus bite lands 77 on Megalania (Arid) (7 to kill); a Megalania (Arid) bite lands 30 back (21 to kill).",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 77,
+            "defenderHit": 30,
+            "attackerBurst": 115,
+            "defenderBurst": 59,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 21,
+            "attackerDps": 59.3,
+            "defenderDps": 36.9,
+            "attackerTimeToKill": 9,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.45,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 9
+            }
+          },
+          "label": "1 Daspletosaurus vs 1 Megalania (Arid): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Daspletosaurus vs 1 Megalania (Arid): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "megalania-arid",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Megalania (Arid)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
         "tags": [
           "ambush"
         ],
@@ -12476,12 +12979,14 @@
       {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
+        "family": "megalania",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
         "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it. At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it. 1 Daspletosaurus vs 1 Megalania (Temperate): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
         "score": 68,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12498,18 +13003,6 @@
           "durationMarginPct": -36.4,
           "label": "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it."
         },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 1.35,
-          "cappedPowerRatio": 1.35,
-          "label": "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope."
-        },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
@@ -12523,10 +13016,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it.",
-          "At the legal limits (1 attacker vs 1 defender), the attacking side has the stronger combat envelope.",
+          "1 Daspletosaurus vs 1 Megalania (Temperate): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
           "They overlap in 3 mapped areas, so the matchup is situational.",
+          "One-on-one, a Daspletosaurus bite lands 77 on Megalania (Temperate) (7 to kill); a Megalania (Temperate) bite lands 30 back (21 to kill).",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 77,
+            "defenderHit": 30,
+            "attackerBurst": 115,
+            "defenderBurst": 59,
+            "attackerHitsToKill": 7,
+            "defenderHitsToKill": 21,
+            "attackerDps": 59.3,
+            "defenderDps": 36.9,
+            "attackerTimeToKill": 9,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.45,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 9
+            }
+          },
+          "label": "1 Daspletosaurus vs 1 Megalania (Temperate): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 2600,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Daspletosaurus vs 1 Megalania (Temperate): the Daspletosaurus side wins in about 9 s with 45% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "megalania-temperate",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Megalania (Temperate)",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1025 vs 1025 units/s, with stamina likely deciding it.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+        },
         "tags": [
           "ambush"
         ],
@@ -12536,12 +13095,14 @@
       {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
+        "family": "anodontosaurus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Daspletosaurus is 55% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+        "summary": "Anodontosaurus is within the legal hunt ceiling. Daspletosaurus is 55% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 9 s with 75% of its health left.",
         "score": 55,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12557,18 +13118,6 @@
           "targetDurationSeconds": 125,
           "durationMarginPct": -27.2,
           "label": "Daspletosaurus is 55% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.78,
-          "cappedPowerRatio": 0.78,
-          "label": "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus."
         },
         "encounter": {
           "level": "frequent",
@@ -12590,11 +13139,77 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Daspletosaurus is 55% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 1), a committed straight fight favours Anodontosaurus.",
+          "1 Daspletosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 9 s with 75% of its health left.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Daspletosaurus bite lands 31 on Anodontosaurus (28 to kill); a Anodontosaurus tail slam lands 90 back (7 to kill).",
           "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 31,
+            "defenderHit": 90,
+            "attackerBurst": 47,
+            "defenderBurst": 154,
+            "attackerHitsToKill": 28,
+            "defenderHitsToKill": 7,
+            "attackerDps": 24,
+            "defenderDps": 67.9,
+            "attackerTimeToKill": 35,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.75,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 9
+            }
+          },
+          "label": "1 Daspletosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 9 s with 75% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Daspletosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 9 s with 75% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "anodontosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Anodontosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Daspletosaurus is 55% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+        },
         "tags": [
           "ambush",
           "dangerous-defender"
@@ -12605,12 +13220,14 @@
       {
         "id": "barsboldia",
         "name": "Barsboldia",
+        "family": "barsboldia",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Barsboldia is legal quarry, but not a comfortable fight",
-        "summary": "Barsboldia is within the legal hunt ceiling. Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 2), a committed straight fight favours Barsboldia.",
+        "summary": "Barsboldia is within the legal hunt ceiling. Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left.",
         "score": 55,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12626,18 +13243,6 @@
           "targetDurationSeconds": 50,
           "durationMarginPct": 82,
           "label": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.64,
-          "cappedPowerRatio": 0.41,
-          "label": "Even at the legal group cap (1 vs 2), a committed straight fight favours Barsboldia."
         },
         "encounter": {
           "level": "frequent",
@@ -12659,10 +13264,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 2), a committed straight fight favours Barsboldia.",
+          "1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left.",
           "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Daspletosaurus bite lands 35 on Barsboldia (44 to kill); a Barsboldia kick lands 79 back (8 to kill).",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 35,
+            "defenderHit": 79,
+            "attackerBurst": 52,
+            "defenderBurst": 236,
+            "attackerHitsToKill": 44,
+            "defenderHitsToKill": 8,
+            "attackerDps": 26.8,
+            "defenderDps": 105.1,
+            "attackerTimeToKill": 56,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 3,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3
+            }
+          },
+          "label": "1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "barsboldia",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Barsboldia",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Barsboldia is within the legal hunt ceiling."
+        },
         "tags": [
           "ambush"
         ],
@@ -12672,12 +13343,14 @@
       {
         "id": "sarcosuchus",
         "name": "Sarcosuchus",
+        "family": "sarcosuchus",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
-        "summary": "Sarcosuchus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+        "summary": "Sarcosuchus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
         "score": 55,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -12693,18 +13366,6 @@
           "targetDurationSeconds": 40,
           "durationMarginPct": 127.5,
           "label": "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 3,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.78,
-          "cappedPowerRatio": 0.37,
-          "label": "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus."
         },
         "encounter": {
           "level": "frequent",
@@ -12723,10 +13384,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
-          "Even at the legal group cap (1 vs 3), a committed straight fight favours Sarcosuchus.",
+          "1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
           "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Daspletosaurus bite lands 47 on Sarcosuchus (13 to kill); a Sarcosuchus tail lands 51 back (12 to kill).",
           "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 47,
+            "defenderHit": 51,
+            "attackerBurst": 70,
+            "defenderBurst": 270,
+            "attackerHitsToKill": 13,
+            "defenderHitsToKill": 12,
+            "attackerDps": 36,
+            "defenderDps": 116.6,
+            "attackerTimeToKill": 17,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 3500,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.",
+            "attackers": 1,
+            "defenders": 3
+          }
+        },
+        "attackerId": "daspletosaurus",
+        "targetId": "sarcosuchus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Daspletosaurus",
+          "targetName": "Sarcosuchus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Sarcosuchus is within the legal hunt ceiling."
+        },
         "tags": [
           "ambush"
         ],
@@ -12734,6 +13461,2241 @@
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "achillobator",
+          "name": "Achillobator",
+          "family": "achillobator",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Achillobator can create a real pursuit problem",
+          "summary": "Achillobator is inside the legal hunt range. The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land. 5 Achillobator vs 1 Daspletosaurus: the Achillobator side wins in about 3 s with 94% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1025,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 69.2,
+            "label": "The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land.",
+            "5 Achillobator vs 1 Daspletosaurus: the Achillobator side wins in about 3 s with 94% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 56 on Daspletosaurus (11 to kill); a Daspletosaurus bite lands 75 back (8 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 56,
+              "defenderHit": 75,
+              "attackerBurst": 112,
+              "defenderBurst": 113,
+              "attackerHitsToKill": 11,
+              "defenderHitsToKill": 8,
+              "attackerDps": 40,
+              "defenderDps": 57.8,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.94,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "5 Achillobator vs 1 Daspletosaurus: the Achillobator side wins in about 3 s with 94% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 3 Daspletosaurus: the Achillobator side wins in about 11 s with 61% of its health left.",
+              "attackers": 5,
+              "defenders": 3
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Achillobator",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1050 vs 1025), but Achillobator has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Achillobator is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Ceratosaurus can create a real pursuit problem",
+          "summary": "Ceratosaurus is inside the legal hunt range. The speed gap is small (1050 vs 1025), but Ceratosaurus has the pursuit edge on land. 4 Ceratosaurus vs 1 Daspletosaurus: the Ceratosaurus side wins in about 4 s with 92% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1025,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 57.1,
+            "label": "The speed gap is small (1050 vs 1025), but Ceratosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.667,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1050 vs 1025), but Ceratosaurus has the pursuit edge on land.",
+            "4 Ceratosaurus vs 1 Daspletosaurus: the Ceratosaurus side wins in about 4 s with 92% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 30 on Daspletosaurus (21 to kill); a Daspletosaurus bite lands 81 back (10 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 30,
+              "defenderHit": 81,
+              "attackerBurst": 67,
+              "defenderBurst": 121,
+              "attackerHitsToKill": 21,
+              "defenderHitsToKill": 10,
+              "attackerDps": 40.1,
+              "defenderDps": 62.3,
+              "attackerTimeToKill": 15,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.92,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Daspletosaurus: the Ceratosaurus side wins in about 4 s with 92% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Ceratosaurus vs 3 Daspletosaurus: the Ceratosaurus side wins in about 15 s with 44% of its health left.",
+              "attackers": 4,
+              "defenders": 3
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1050 vs 1025), but Ceratosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Latenivenatrix can create a real pursuit problem",
+          "summary": "Latenivenatrix is inside the legal hunt range. The speed gap is small (1075 vs 1025), but Latenivenatrix has the pursuit edge on land. 8 Latenivenatrix vs 1 Daspletosaurus: the Latenivenatrix side wins in about 5 s with 86% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1075,
+            "targetSpeed": 1025,
+            "speedMarginPct": 4.9,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 174.7,
+            "label": "The speed gap is small (1075 vs 1025), but Latenivenatrix has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1075 vs 1025), but Latenivenatrix has the pursuit edge on land.",
+            "8 Latenivenatrix vs 1 Daspletosaurus: the Latenivenatrix side wins in about 5 s with 86% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 16 on Daspletosaurus (38 to kill); a Daspletosaurus bite lands 150 back (4 to kill).",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 16,
+              "defenderHit": 150,
+              "attackerBurst": 36,
+              "defenderBurst": 225,
+              "attackerHitsToKill": 38,
+              "defenderHitsToKill": 4,
+              "attackerDps": 16,
+              "defenderDps": 115.6,
+              "attackerTimeToKill": 38,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 5,
+              "attackersLeft": 7,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.86,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.5
+              }
+            },
+            "label": "8 Latenivenatrix vs 1 Daspletosaurus: the Latenivenatrix side wins in about 5 s with 86% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Latenivenatrix vs 3 Daspletosaurus: the Daspletosaurus side wins in about 15 s with 46% of its health left.",
+              "attackers": 8,
+              "defenders": 3
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1075 vs 1025), but Latenivenatrix has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is inside the legal hunt range."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Daspletosaurus: the Quetzalcoatlus side wins in about 9 s with 71% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1025,
+            "speedMarginPct": 31.7,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": -45.1,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "black-fern-hills",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.538,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Daspletosaurus: the Quetzalcoatlus side wins in about 9 s with 71% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 63 on Daspletosaurus (10 to kill); a Daspletosaurus bite lands 76 back (8 to kill).",
+            "Quetzalcoatlus's bleed builds faster than Daspletosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 63,
+              "defenderHit": 76,
+              "attackerBurst": 71,
+              "defenderBurst": 115,
+              "attackerHitsToKill": 10,
+              "defenderHitsToKill": 8,
+              "attackerDps": 22.5,
+              "defenderDps": 58.9,
+              "attackerTimeToKill": 27,
+              "defenderTimeToKill": 10,
+              "attackerBleed": 0.039,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 9,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.71,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 9
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Daspletosaurus: the Quetzalcoatlus side wins in about 9 s with 71% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Quetzalcoatlus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 10 s with 74% of its health left.",
+              "attackers": 3,
+              "defenders": 3
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "family": "deinonychus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Deinonychus can create a real pursuit problem",
+          "summary": "Deinonychus is inside the legal hunt range. The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land. 8 Deinonychus vs 1 Daspletosaurus: the Deinonychus side wins in about 8 s with 66% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1025,
+            "speedMarginPct": 7.3,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 119.8,
+            "label": "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land.",
+            "8 Deinonychus vs 1 Daspletosaurus: the Deinonychus side wins in about 8 s with 66% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 11 on Daspletosaurus (53 to kill); a Daspletosaurus bite lands 263 back (3 to kill)."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 11,
+              "defenderHit": 263,
+              "attackerBurst": 11,
+              "defenderBurst": 394,
+              "attackerHitsToKill": 53,
+              "defenderHitsToKill": 3,
+              "attackerDps": 11.4,
+              "defenderDps": 202.3,
+              "attackerTimeToKill": 53,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 6,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.66,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.75
+              }
+            },
+            "label": "8 Deinonychus vs 1 Daspletosaurus: the Deinonychus side wins in about 8 s with 66% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 3 Daspletosaurus: the Daspletosaurus side wins in about 7 s with 79% of its health left.",
+              "attackers": 8,
+              "defenders": 3
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Deinonychus",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinonychus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land. 5 Dilophosaurus vs 1 Daspletosaurus: the Dilophosaurus side wins in about 4 s with 91% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-edge",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1025,
+            "speedMarginPct": 7.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 91,
+            "durationMarginPct": 83.2,
+            "label": "The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.545,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land.",
+            "5 Dilophosaurus vs 1 Daspletosaurus: the Dilophosaurus side wins in about 4 s with 91% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 34 on Daspletosaurus (18 to kill); a Daspletosaurus bite lands 88 back (7 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 34,
+              "defenderHit": 88,
+              "attackerBurst": 34,
+              "defenderBurst": 131,
+              "attackerHitsToKill": 18,
+              "defenderHitsToKill": 7,
+              "attackerDps": 34.3,
+              "defenderDps": 67.4,
+              "attackerTimeToKill": 18,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.91,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Daspletosaurus: the Dilophosaurus side wins in about 4 s with 91% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "5 Dilophosaurus vs 3 Daspletosaurus: the Dilophosaurus side wins in about 16 s with 31% of its health left, too narrow to call.",
+              "attackers": 5,
+              "defenders": 3
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "daspletosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Daspletosaurus",
+            "chaseVerdict": "attacker-edge",
+            "chaseLabel": "The speed gap is small (1100 vs 1025), but Dilophosaurus has the pursuit edge on land.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "family": "therizinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Therizinosaurus is within the legal hunt ceiling. Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 96% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 850,
+            "speedMarginPct": 20.6,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 31.9,
+            "label": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.636,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 96% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 35 on Therizinosaurus (29 to kill); a Therizinosaurus claw attack lands 141 back (5 to kill).",
+            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 35,
+              "defenderHit": 141,
+              "attackerBurst": 52,
+              "defenderBurst": 204,
+              "attackerHitsToKill": 29,
+              "defenderHitsToKill": 5,
+              "attackerDps": 26.8,
+              "defenderDps": 106.9,
+              "attackerTimeToKill": 37,
+              "defenderTimeToKill": 6,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3
+              }
+            },
+            "label": "1 Daspletosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 96% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 2 Therizinosaurus: the Therizinosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "therizinosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Therizinosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "family": "tyrannosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Tyrannosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannosaurus is within the legal hunt ceiling. Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 96% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 800,
+            "speedMarginPct": 28.1,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 102.2,
+            "label": "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.7,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 96% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 32 on Tyrannosaurus (32 to kill); a Tyrannosaurus bite lands 120 back (5 to kill).",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 32,
+              "defenderHit": 120,
+              "attackerBurst": 48,
+              "defenderBurst": 206,
+              "attackerHitsToKill": 32,
+              "defenderHitsToKill": 5,
+              "attackerDps": 24.5,
+              "defenderDps": 92.9,
+              "attackerTimeToKill": 41,
+              "defenderTimeToKill": 6,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.96,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.25
+              }
+            },
+            "label": "1 Daspletosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 96% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 3 s with 96% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "tyrannosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Tyrannosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "deinocheirus",
+          "name": "Deinocheirus",
+          "family": "deinocheirus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+          "summary": "Deinocheirus is within the legal hunt ceiling. Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 91% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 800,
+            "speedMarginPct": 28.1,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 102.2,
+            "label": "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "redwoods",
+              "wind-tunnels",
+              "wollemi-forest"
+            ],
+            "overlap": 0.316,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 91% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 35 on Deinocheirus (28 to kill); a Deinocheirus claw lands 71 back (9 to kill).",
+            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 35,
+              "defenderHit": 71,
+              "attackerBurst": 52,
+              "defenderBurst": 79,
+              "attackerHitsToKill": 28,
+              "defenderHitsToKill": 9,
+              "attackerDps": 26.8,
+              "defenderDps": 49.8,
+              "attackerTimeToKill": 36,
+              "defenderTimeToKill": 12,
+              "attackerBleed": 0,
+              "defenderBleed": 0.105,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.91,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 6.25
+              }
+            },
+            "label": "1 Daspletosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 91% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 91% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "deinocheirus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Deinocheirus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 28% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "stegosaurus",
+          "name": "Stegosaurus",
+          "family": "stegosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Stegosaurus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 3 s with 95% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 900,
+            "speedMarginPct": 13.9,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 44.4,
+            "label": "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "crag-bluffs",
+              "wollemi-forest"
+            ],
+            "overlap": 0.385,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 3 s with 95% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 42 on Stegosaurus (20 to kill); a Stegosaurus tail attack lands 114 back (6 to kill).",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 42,
+              "defenderHit": 114,
+              "attackerBurst": 63,
+              "defenderBurst": 229,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 6,
+              "attackerDps": 32.4,
+              "defenderDps": 128.6,
+              "attackerTimeToKill": 25,
+              "defenderTimeToKill": 5,
+              "attackerBleed": 0,
+              "defenderBleed": 0.937,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 3,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.95,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2.5
+              }
+            },
+            "label": "1 Daspletosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 3 s with 95% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 2 Stegosaurus: the Stegosaurus side wins in about 3 s with 95% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "stegosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Stegosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Stegosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "apatosaurus",
+          "name": "Apatosaurus",
+          "family": "apatosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Apatosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Apatosaurus is within the legal hunt ceiling. Daspletosaurus is 105% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 1 Apatosaurus: the Apatosaurus side wins in about 11 s with 92% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 500,
+            "speedMarginPct": 105,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 100,
+            "durationMarginPct": -9,
+            "label": "Daspletosaurus is 105% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "black-fern-hills",
+              "crag-bluffs",
+              "redwoods"
+            ],
+            "overlap": 0.308,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 105% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 1 Apatosaurus: the Apatosaurus side wins in about 11 s with 92% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 20 on Apatosaurus (100 to kill); a Apatosaurus tail attack lands 183 back (4 to kill).",
+            "Apatosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 20,
+              "defenderHit": 183,
+              "attackerBurst": 30,
+              "defenderBurst": 274,
+              "attackerHitsToKill": 100,
+              "defenderHitsToKill": 4,
+              "attackerDps": 15.6,
+              "defenderDps": 57.1,
+              "attackerTimeToKill": 128,
+              "defenderTimeToKill": 11,
+              "attackerBleed": 0,
+              "defenderBleed": 0.027,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 11,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.92,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 10.5
+              }
+            },
+            "label": "1 Daspletosaurus vs 1 Apatosaurus: the Apatosaurus side wins in about 11 s with 92% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 8000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 1 Apatosaurus: the Apatosaurus side wins in about 11 s with 92% of its health left.",
+              "attackers": 1,
+              "defenders": 1
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "apatosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Apatosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 105% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Apatosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "family": "giganotosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Giganotosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Giganotosaurus is within the legal hunt ceiling. Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 5 s with 94% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 850,
+            "speedMarginPct": 20.6,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 82,
+            "label": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.333,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "1 Daspletosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 5 s with 94% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 35 on Giganotosaurus (29 to kill); a Giganotosaurus bite lands 71 back (9 to kill).",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 35,
+              "defenderHit": 71,
+              "attackerBurst": 52,
+              "defenderBurst": 141,
+              "attackerHitsToKill": 29,
+              "defenderHitsToKill": 9,
+              "attackerDps": 26.8,
+              "defenderDps": 65.2,
+              "attackerTimeToKill": 37,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0.223,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.94,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.75
+              }
+            },
+            "label": "1 Daspletosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 5 s with 94% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Daspletosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 5 s with 94% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "giganotosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Giganotosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Daspletosaurus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Giganotosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "daspletosaurus": {
+        "id": "daspletosaurus",
+        "name": "Daspletosaurus",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 46.25,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 90,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Crushing Bite",
+          "Bone Snap Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "yunnanosaurus": {
+        "id": "yunnanosaurus",
+        "name": "Yunnanosaurus",
+        "cw": 4500,
+        "hp": 1000,
+        "armor": 1,
+        "dps": 38.25,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Body Slam",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Body Slam",
+          "Tail Slam"
+        ],
+        "bleedPerSecond": 0.154,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "pycnonemosaurus": {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 54.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.2
+        },
+        "burst": {
+          "label": "Trick Shot Headbutt",
+          "damage": 120,
+          "cooldown": 7.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Trick Shot Headbutt",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "yutyrannus": {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "cw": 3250,
+        "hp": 600,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "lambeosaurus": {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rodeo Kick",
+          "damage": 80,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rodeo Kick",
+          "Dunking Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "achillobator": {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "cw": 2800,
+        "hp": 600,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 140,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite",
+          "Claw Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "latenivenatrix": {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "cw": 1400,
+        "hp": 500,
+        "armor": 1,
+        "dps": 40,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Shred",
+          "damage": 90,
+          "cooldown": 1.5,
+          "situational": true
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 6,
+        "engagementUnlimited": false
+      },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "tyrannosaurus": {
+        "id": "tyrannosaurus",
+        "name": "Tyrannosaurus",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Bone Snap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "stegosaurus": {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "cw": 5000,
+        "hp": 800,
+        "armor": 1,
+        "dps": 90,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 160,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.656,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "apatosaurus": {
+        "id": "apatosaurus",
+        "name": "Apatosaurus",
+        "cw": 8000,
+        "hp": 2000,
+        "armor": 1.3,
+        "dps": 25,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 4
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Stomp",
+          "Headslam"
+        ],
+        "bleedPerSecond": 0.012,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "giganotosaurus": {
+        "id": "giganotosaurus",
+        "name": "Giganotosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 41.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charged Bite",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bulldoze",
+          "Charged Bite"
+        ],
+        "bleedPerSecond": 0.142,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Large",
@@ -12758,7 +15720,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

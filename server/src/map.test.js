@@ -61,7 +61,7 @@ test('resolves POIs, derives habitat and builds an inverted map index for chatbo
     assert.equal(ghost.habitat.isDry, false);
 
     assert.equal(sand.matchups.traits.combatWeight, 3000);
-    assert.equal(sand.matchups.schemaVersion, 2);
+    assert.equal(sand.matchups.schemaVersion, 3);
     assert.deepEqual(sand.matchups.opportunities, [], 'a test profile without an explicit hunt rule gets no invented prey');
     const newt = JSON.parse(await readFile(join(processedDir, 'profiles', 'pondnewt.json'), 'utf8'));
     assert.deepEqual(newt.matchups.threats, [], 'combat weight alone no longer invents a threat');

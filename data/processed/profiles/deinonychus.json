@@ -13246,96 +13246,21 @@
     ]
   },
   "matchups": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Deinonychus has 4 high-priority matchups where legal group size, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Deinonychus has 6 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.",
     "threats": [
-      {
-        "id": "kelenken",
-        "name": "Kelenken",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Kelenken can create a real pursuit problem",
-        "summary": "Kelenken is linked by a specific profile rule. Deinonychus is 2% faster on land and can normally refuse this fight. At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-        "score": 71,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 1075,
-          "targetSpeed": 1100,
-          "speedMarginPct": -2.3,
-          "attackerDurationSeconds": 166.667,
-          "targetDurationSeconds": 200,
-          "durationMarginPct": -16.7,
-          "label": "Deinonychus is 2% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 1950,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.44,
-          "cappedPowerRatio": 1.33,
-          "label": "At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "tallbrush-coasts",
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "black-fern-hills",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.615,
-          "label": "8 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Deinonychus is 2% faster on land and can normally refuse this fight.",
-          "At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-          "8 shared mapped areas make contact plausible."
-        ],
-        "tags": [
-          "endurance"
-        ],
-        "evidence": [
-          {
-            "profileId": "kelenken",
-            "profileName": "Kelenken",
-            "section": "Quick View",
-            "text": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey."
-          },
-          {
-            "profileId": "kelenken",
-            "profileName": "Kelenken",
-            "section": "Preferred Prey & Diet",
-            "text": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
       {
         "id": "austroraptor",
         "name": "Austroraptor",
+        "family": "austroraptor",
         "direction": "threat",
-        "band": "meaningful",
+        "band": "severe",
         "kind": "predator",
-        "headline": "Austroraptor can create a credible fight",
-        "summary": "Austroraptor is linked by a specific profile rule. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
-        "score": 57,
+        "headline": "Austroraptor can create a very narrow escape window",
+        "summary": "Austroraptor is linked by a specific profile rule. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 1 Austroraptor vs 1 Deinonychus: the Austroraptor side wins in about 4 s with 88% of its health left.",
+        "score": 92,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13351,18 +13276,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": -16.7,
           "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.63,
-          "cappedPowerRatio": 0.54,
-          "label": "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus."
         },
         "encounter": {
           "level": "frequent",
@@ -13383,9 +13296,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
-          "9 shared mapped areas make contact plausible."
+          "1 Austroraptor vs 1 Deinonychus: the Austroraptor side wins in about 4 s with 88% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Austroraptor bite lands 131 on Deinonychus (5 to kill); a Deinonychus bite lands 19 back (35 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 131,
+            "defenderHit": 19,
+            "attackerBurst": 158,
+            "defenderBurst": 19,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 35,
+            "attackerDps": 133,
+            "defenderDps": 19,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 34,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 4,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.88,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.25
+            }
+          },
+          "label": "1 Austroraptor vs 1 Deinonychus: the Austroraptor side wins in about 4 s with 88% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Austroraptor vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 8
+          }
+        },
+        "attackerId": "austroraptor",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Austroraptor",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Austroraptor is linked by a specific profile rule."
+        },
         "tags": [],
         "evidence": [
           {
@@ -13400,12 +13379,14 @@
       {
         "id": "tenontosaurus",
         "name": "Tenontosaurus",
+        "family": "tenontosaurus",
         "direction": "threat",
-        "band": "conditional",
+        "band": "high",
         "kind": "predator",
-        "headline": "Tenontosaurus matters only if it gets the right opening",
-        "summary": "Tenontosaurus is linked by a specific profile rule. Deinonychus is 5% faster on land and can normally refuse this fight. Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
-        "score": 36,
+        "headline": "Tenontosaurus can create a real pursuit problem",
+        "summary": "Tenontosaurus is linked by a specific profile rule. Deinonychus is 5% faster on land and can normally refuse this fight. 1 Tenontosaurus vs 1 Deinonychus: the Tenontosaurus side wins in about 5 s with 86% of its health left.",
+        "score": 71,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13421,18 +13402,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": -33.3,
           "label": "Deinonychus is 5% faster on land and can normally refuse this fight."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 3,
-          "cappedPowerRatio": 0.62,
-          "label": "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus."
         },
         "encounter": {
           "level": "frequent",
@@ -13456,9 +13425,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Deinonychus is 5% faster on land and can normally refuse this fight.",
-          "Even at the legal group cap (1 vs 8), a committed straight fight favours Deinonychus.",
-          "12 shared mapped areas make contact plausible."
+          "1 Tenontosaurus vs 1 Deinonychus: the Tenontosaurus side wins in about 5 s with 86% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Tenontosaurus bite lands 75 on Deinonychus (8 to kill); a Deinonychus bite lands 17 back (34 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 75,
+            "defenderHit": 17,
+            "attackerBurst": 195,
+            "defenderBurst": 17,
+            "attackerHitsToKill": 8,
+            "defenderHitsToKill": 34,
+            "attackerDps": 116.5,
+            "defenderDps": 16.7,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 5,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.86,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 4.75
+            }
+          },
+          "label": "1 Tenontosaurus vs 1 Deinonychus: the Tenontosaurus side wins in about 5 s with 86% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Tenontosaurus vs 8 Deinonychus: the Deinonychus side wins in about 4 s with 89% of its health left.",
+            "attackers": 1,
+            "defenders": 8
+          }
+        },
+        "attackerId": "tenontosaurus",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Tenontosaurus",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Deinonychus is 5% faster on land and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Tenontosaurus is linked by a specific profile rule."
+        },
         "tags": [
           "dangerous-defender"
         ],
@@ -13473,14 +13508,150 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "family": "kelenken",
+        "direction": "threat",
+        "band": "high",
+        "kind": "predator",
+        "headline": "Kelenken can create a real pursuit problem",
+        "summary": "Kelenken is linked by a specific profile rule. Deinonychus is 2% faster on land and can normally refuse this fight. 4 Kelenken vs 1 Deinonychus: the Kelenken side wins in about 1 s with 99% of its health left.",
+        "score": 71,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 1075,
+          "targetSpeed": 1100,
+          "speedMarginPct": -2.3,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 200,
+          "durationMarginPct": -16.7,
+          "label": "Deinonychus is 2% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "black-fern-hills",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.615,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Deinonychus is 2% faster on land and can normally refuse this fight.",
+          "4 Kelenken vs 1 Deinonychus: the Kelenken side wins in about 1 s with 99% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Kelenken bite lands 122 on Deinonychus (5 to kill); a Deinonychus bite lands 21 back (25 to kill).",
+          "Kelenken's bleed builds faster than Deinonychus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 122,
+            "defenderHit": 21,
+            "attackerBurst": 171,
+            "defenderBurst": 21,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 25,
+            "attackerDps": 130.8,
+            "defenderDps": 20.5,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 24,
+            "attackerBleed": 0.122,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.25
+            }
+          },
+          "label": "4 Kelenken vs 1 Deinonychus: the Kelenken side wins in about 1 s with 99% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 1950,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Kelenken vs 8 Deinonychus: the Kelenken side wins in about 10 s with 56% of its health left.",
+            "attackers": 4,
+            "defenders": 8
+          }
+        },
+        "attackerId": "kelenken",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Kelenken",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Deinonychus is 2% faster on land and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Kelenken is linked by a specific profile rule."
+        },
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [
+          {
+            "profileId": "kelenken",
+            "profileName": "Kelenken",
+            "section": "Quick View",
+            "text": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey."
+          },
+          {
+            "profileId": "kelenken",
+            "profileName": "Kelenken",
+            "section": "Preferred Prey & Diet",
+            "text": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
         "id": "alioramus",
         "name": "Alioramus",
+        "family": "alioramus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
         "headline": "Alioramus can create a very narrow escape window",
-        "summary": "Alioramus is inside the legal hunt range. The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land. At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Alioramus is inside the legal hunt range. The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land. 5 Alioramus vs 1 Deinonychus: the Alioramus side wins in about 1 s with 99% of its health left.",
         "score": 84,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13496,18 +13667,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": -33.5,
           "label": "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 3,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13525,9 +13684,75 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land.",
-          "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-          "6 shared mapped areas make contact plausible."
+          "5 Alioramus vs 1 Deinonychus: the Alioramus side wins in about 1 s with 99% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 135 on Deinonychus (5 to kill); a Deinonychus bite lands 17 back (32 to kill)."
         ],
+        "fight": {
+          "attackers": 5,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 135,
+            "defenderHit": 17,
+            "attackerBurst": 165,
+            "defenderBurst": 17,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 32,
+            "attackerDps": 146.3,
+            "defenderDps": 16.7,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 32,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 5,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1
+            }
+          },
+          "label": "5 Alioramus vs 1 Deinonychus: the Alioramus side wins in about 1 s with 99% of its health left.",
+          "detail": "5 attackers vs 1 defender",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 8 Deinonychus: the Alioramus side wins in about 6 s with 82% of its health left.",
+            "attackers": 5,
+            "defenders": 8
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Alioramus",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1150 vs 1100), but Alioramus has the pursuit edge on land.",
+          "baseScore": 66,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Alioramus is inside the legal hunt range."
+        },
         "tags": [
           "endurance"
         ],
@@ -13535,14 +13760,138 @@
         "confidence": "derived"
       },
       {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "family": "compsognathus",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Compsognathus can create a very narrow escape window",
+        "summary": "Compsognathus is inside the legal hunt range. Compsognathus is 14% faster on land; a clean escape is unlikely once spotted. 10 Compsognathus vs 1 Deinonychus: the Compsognathus side wins in about 6 s with 86% of its health left.",
+        "score": 83,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Small tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 1100,
+          "speedMarginPct": 13.6,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 200,
+          "durationMarginPct": 87.5,
+          "label": "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Small tier.",
+          "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "10 Compsognathus vs 1 Deinonychus: the Compsognathus side wins in about 6 s with 86% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 10 on Deinonychus (55 to kill); a Deinonychus bite lands 100 back (4 to kill)."
+        ],
+        "fight": {
+          "attackers": 10,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 10,
+            "defenderHit": 100,
+            "attackerBurst": 10,
+            "defenderBurst": 100,
+            "attackerHitsToKill": 55,
+            "defenderHitsToKill": 4,
+            "attackerDps": 10,
+            "defenderDps": 100,
+            "attackerTimeToKill": 55,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0.01,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 6,
+            "attackersLeft": 9,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.86,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4
+            }
+          },
+          "label": "10 Compsognathus vs 1 Deinonychus: the Compsognathus side wins in about 6 s with 86% of its health left.",
+          "detail": "10 attackers vs 1 defender",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 94% of its health left.",
+            "attackers": 10,
+            "defenders": 8
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Compsognathus",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 14% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Compsognathus is inside the legal hunt range."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "concavenator",
         "name": "Concavenator",
+        "family": "concavenator",
         "direction": "threat",
         "band": "high",
         "kind": "predator",
         "headline": "Concavenator can create a real pursuit problem",
-        "summary": "Concavenator is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
+        "summary": "Concavenator is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 4 Concavenator vs 1 Deinonychus: the Concavenator side wins in about 1 s with 99% of its health left.",
         "score": 70,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13558,18 +13907,6 @@
           "targetDurationSeconds": 200,
           "durationMarginPct": -16.5,
           "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 800,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 8,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 2.63,
-          "cappedPowerRatio": 1.43,
-          "label": "At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
         },
         "encounter": {
           "level": "frequent",
@@ -13588,70 +13925,76 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
-          "At the legal limits (4 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-          "7 shared mapped areas make contact plausible."
+          "4 Concavenator vs 1 Deinonychus: the Concavenator side wins in about 1 s with 99% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Concavenator bite lands 131 on Deinonychus (5 to kill); a Deinonychus bite lands 19 back (27 to kill).",
+          "Concavenator's bleed builds faster than Deinonychus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "dilophosaurus",
-        "name": "Dilophosaurus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Dilophosaurus can create a real pursuit problem",
-        "summary": "Dilophosaurus is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-        "score": 70,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1100,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 166.667,
-          "targetDurationSeconds": 200,
-          "durationMarginPct": -16.7,
-          "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
-        },
         "fight": {
+          "attackers": 4,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 131,
+            "defenderHit": 19,
+            "attackerBurst": 210,
+            "defenderBurst": 19,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 27,
+            "attackerDps": 140.9,
+            "defenderDps": 19,
+            "attackerTimeToKill": 4,
+            "defenderTimeToKill": 26,
+            "attackerBleed": 0.131,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
           "verdict": "attacker-advantage",
-          "attackerCombatWeight": 2400,
+          "sim": {
+            "winner": "attacker",
+            "seconds": 1,
+            "attackersLeft": 4,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.99,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1
+            }
+          },
+          "label": "4 Concavenator vs 1 Deinonychus: the Concavenator side wins in about 1 s with 99% of its health left.",
+          "detail": "4 attackers vs 1 defender",
+          "attackerCombatWeight": 2100,
           "targetCombatWeight": 800,
-          "attackerGroupLimit": 5,
+          "attackerGroupLimit": 4,
           "targetDefenderLimit": 8,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 3,
-          "cappedPowerRatio": 1.98,
-          "label": "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope."
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Concavenator vs 8 Deinonychus: the Concavenator side wins in about 9 s with 63% of its health left.",
+            "attackers": 4,
+            "defenders": 8
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "steep-run",
-            "cedrus-forest",
-            "black-fern-hills",
-            "cliff-edge-falls",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.583,
-          "label": "7 shared mapped areas make contact plausible."
+        "attackerId": "concavenator",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Concavenator",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 52,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Concavenator is inside the legal hunt range."
         },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
-          "At the legal limits (5 attackers vs 8 defenders), the attacking side has the stronger combat envelope.",
-          "7 shared mapped areas make contact plausible."
-        ],
         "tags": [],
         "evidence": [],
         "confidence": "derived"
@@ -13661,12 +14004,14 @@
       {
         "id": "kelenken",
         "name": "Kelenken",
+        "family": "kelenken",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
         "headline": "Kelenken is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1100 vs 1075 units/s, with stamina likely deciding it. Even at the legal group cap (8 vs 4), a committed straight fight favours Kelenken.",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase on land: 1100 vs 1075 units/s, with stamina likely deciding it. 1 Deinonychus vs 4 Kelenken: the Kelenken side wins in about 1 s with 99% of its health left.",
         "score": 57,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": true,
@@ -13682,18 +14027,6 @@
           "targetDurationSeconds": 166.667,
           "durationMarginPct": 20,
           "label": "This is a close chase on land: 1100 vs 1075 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "defender-advantage",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 1950,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.41,
-          "cappedPowerRatio": 0.75,
-          "label": "Even at the legal group cap (8 vs 4), a committed straight fight favours Kelenken."
         },
         "encounter": {
           "level": "frequent",
@@ -13713,9 +14046,75 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 1100 vs 1075 units/s, with stamina likely deciding it.",
-          "Even at the legal group cap (8 vs 4), a committed straight fight favours Kelenken.",
-          "8 shared mapped areas make contact plausible."
+          "1 Deinonychus vs 4 Kelenken: the Kelenken side wins in about 1 s with 99% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 21 on Kelenken (25 to kill); a Kelenken bite lands 122 back (5 to kill)."
         ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 21,
+            "defenderHit": 122,
+            "attackerBurst": 21,
+            "defenderBurst": 171,
+            "attackerHitsToKill": 25,
+            "defenderHitsToKill": 5,
+            "attackerDps": 20.5,
+            "defenderDps": 130.8,
+            "attackerTimeToKill": 24,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0.122,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Deinonychus vs 4 Kelenken: the Kelenken side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 1950,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 4 Kelenken: the Kelenken side wins in about 10 s with 56% of its health left.",
+            "attackers": 8,
+            "defenders": 4
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "kelenken",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Kelenken",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 1100 vs 1075 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
         "tags": [],
         "evidence": [
           {
@@ -13728,14 +14127,16 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "family": "barsboldia",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Megalania (Arid) is a realistic hunting opportunity",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land. At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 76,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Barsboldia is legal quarry, but not a comfortable fight",
+        "summary": "Barsboldia is within the legal hunt ceiling. Deinonychus is 29% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 1 s with 100% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13743,26 +14144,14 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "attacker-edge",
+          "verdict": "attacker-faster",
           "attackerSpeed": 1100,
-          "targetSpeed": 1025,
-          "speedMarginPct": 7.3,
+          "targetSpeed": 850,
+          "speedMarginPct": 29.4,
           "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 39.9,
-          "label": "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "attacker-advantage",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.31,
-          "cappedPowerRatio": 1.49,
-          "label": "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 300,
+          "label": "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
@@ -13773,88 +14162,103 @@
             "volcano-islands",
             "big-tree-overlook",
             "cedrus-forest",
-            "black-fern-hills"
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
           ],
-          "overlap": 0.467,
-          "label": "7 shared mapped areas make contact plausible."
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land.",
-          "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "7 shared mapped areas make contact plausible."
+          "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 1 s with 100% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 7 on Barsboldia (227 to kill); a Barsboldia kick lands 344 back (2 to kill)."
         ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "megalania-temperate",
-        "name": "Megalania (Temperate)",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land. At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-        "score": 76,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1025,
-          "speedMarginPct": 7.3,
-          "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 39.9,
-          "label": "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land."
-        },
         "fight": {
-          "verdict": "attacker-advantage",
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 7,
+            "defenderHit": 344,
+            "attackerBurst": 7,
+            "defenderBurst": 1031,
+            "attackerHitsToKill": 227,
+            "defenderHitsToKill": 2,
+            "attackerDps": 6.6,
+            "defenderDps": 459.9,
+            "attackerTimeToKill": 227,
+            "defenderTimeToKill": 1,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 0.75
+            }
+          },
+          "label": "1 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
           "attackerCombatWeight": 800,
-          "targetCombatWeight": 2600,
+          "targetCombatWeight": 5500,
           "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
+          "targetDefenderLimit": 2,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.31,
-          "cappedPowerRatio": 1.49,
-          "label": "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope."
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 5 s with 95% of its health left.",
+            "attackers": 8,
+            "defenders": 2
+          }
         },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "volcano-islands",
-            "twisted-forest",
-            "stillwater-bog",
-            "cliff-edge-falls"
-          ],
-          "overlap": 0.2,
-          "label": "4 shared mapped areas make contact plausible."
+        "attackerId": "deinonychus",
+        "targetId": "barsboldia",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Barsboldia",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Barsboldia is within the legal hunt ceiling."
         },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1025), but Deinonychus has the pursuit edge on land.",
-          "At the legal limits (8 attackers vs 1 defender), the attacking side has the stronger combat envelope.",
-          "4 shared mapped areas make contact plausible."
-        ],
         "tags": [],
         "evidence": [],
         "confidence": "derived"
       },
       {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "family": "parasaurolophus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Anodontosaurus is a realistic hunting opportunity",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Deinonychus is 67% faster on land; a clean escape is unlikely once spotted. The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 73,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Parasaurolophus is legal quarry, but not a comfortable fight",
+        "summary": "Parasaurolophus is within the legal hunt ceiling. Deinonychus is 19% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 1 s with 100% of its health left.",
+        "score": 48,
+        "visible": true,
         "intent": {
           "allowed": true,
           "explicit": false,
@@ -13864,240 +14268,2766 @@
           "mode": "land",
           "verdict": "attacker-faster",
           "attackerSpeed": 1100,
-          "targetSpeed": 660,
-          "speedMarginPct": 66.7,
+          "targetSpeed": 925,
+          "speedMarginPct": 18.9,
           "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": 60,
-          "label": "Deinonychus is 67% faster on land; a clean escape is unlikely once spotted."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.18,
-          "cappedPowerRatio": 0.86,
-          "label": "The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
+          "targetDurationSeconds": 50,
+          "durationMarginPct": 300,
+          "label": "Deinonychus is 19% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "black-fern-hills",
-            "cliff-edge-falls",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.375,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Deinonychus is 67% faster on land; a clean escape is unlikely once spotted.",
-          "The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "6 shared mapped areas make contact plausible.",
-          "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "achillobator",
-        "name": "Achillobator",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Achillobator is a realistic hunting opportunity",
-        "summary": "Achillobator is within the legal hunt ceiling. The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land. The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1050,
-          "speedMarginPct": 4.8,
-          "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 154,
-          "durationMarginPct": 29.9,
-          "label": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 2800,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.29,
-          "cappedPowerRatio": 0.89,
-          "label": "The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "twisted-forest",
-            "cliff-edge-falls",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.438,
-          "label": "7 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
-          "The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "7 shared mapped areas make contact plausible."
-        ],
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "ceratosaurus",
-        "name": "Ceratosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Ceratosaurus is a realistic hunting opportunity",
-        "summary": "Ceratosaurus is within the legal hunt ceiling. The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land. The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 66,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-edge",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1050,
-          "speedMarginPct": 4.8,
-          "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 39.9,
-          "label": "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.31,
-          "cappedPowerRatio": 1.49,
-          "label": "The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
+            "dry-fang-canyon",
             "tallbrush-coasts",
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "cliff-edge-falls",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.467,
-          "label": "7 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "The speed gap is small (1100 vs 1050), but Deinonychus has the pursuit edge on land.",
-          "The legal groups (8 vs 1) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "7 shared mapped areas make contact plausible.",
-          "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "austroraptor",
-        "name": "Austroraptor",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "quarry",
-        "headline": "Austroraptor is a realistic hunting opportunity",
-        "summary": "Austroraptor is within the legal hunt ceiling. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-        "score": 60,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1100,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 166.667,
-          "durationMarginPct": 20,
-          "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
-        },
-        "fight": {
-          "verdict": "close",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 2100,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "soloWeightRatio": 0.38,
-          "cappedPowerRatio": 1.19,
-          "label": "The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "steep-run",
             "volcano-islands",
             "big-tree-overlook",
             "cedrus-forest",
             "twisted-forest",
             "stillwater-bog",
             "cliff-edge-falls",
-            "redwoods"
+            "redwoods",
+            "wind-tunnels"
           ],
-          "overlap": 0.474,
+          "overlap": 0.333,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Deinonychus is 19% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 1 s with 100% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 7 on Parasaurolophus (212 to kill); a Parasaurolophus bite lands 172 back (4 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 7,
+            "defenderHit": 172,
+            "attackerBurst": 7,
+            "defenderBurst": 550,
+            "attackerHitsToKill": 212,
+            "defenderHitsToKill": 4,
+            "attackerDps": 6.6,
+            "defenderDps": 257.8,
+            "attackerTimeToKill": 212,
+            "defenderTimeToKill": 2,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Deinonychus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 9 s with 91% of its health left.",
+            "attackers": 8,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "parasaurolophus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Parasaurolophus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 19% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Parasaurolophus is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "family": "deinocheirus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
+        "summary": "Deinocheirus is within the legal hunt ceiling. Deinonychus is 38% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 2 Deinocheirus: the Deinocheirus side wins in about 2 s with 99% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 800,
+          "speedMarginPct": 37.5,
+          "attackerDurationSeconds": 200,
+          "targetDurationSeconds": 45,
+          "durationMarginPct": 344.4,
+          "label": "Deinonychus is 38% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.5,
           "label": "9 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
-          "The legal groups (8 vs 2) produce a close fight; positioning and the first clean hit matter more than raw weight.",
-          "9 shared mapped areas make contact plausible."
+          "Deinonychus is 38% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 2 Deinocheirus: the Deinocheirus side wins in about 2 s with 99% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 7 on Deinocheirus (144 to kill); a Deinocheirus claw lands 309 back (2 to kill).",
+          "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
-        "tags": [],
+        "fight": {
+          "attackers": 1,
+          "defenders": 2,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 7,
+            "defenderHit": 309,
+            "attackerBurst": 7,
+            "defenderBurst": 344,
+            "attackerHitsToKill": 144,
+            "defenderHitsToKill": 2,
+            "attackerDps": 6.6,
+            "defenderDps": 217.7,
+            "attackerTimeToKill": 144,
+            "defenderTimeToKill": 3,
+            "attackerBleed": 0,
+            "defenderBleed": 0.461,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 2,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Deinonychus vs 2 Deinocheirus: the Deinocheirus side wins in about 2 s with 99% of its health left.",
+          "detail": "1 attacker vs 2 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 5500,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 2 Deinocheirus: the Deinocheirus side wins in about 10 s with 84% of its health left.",
+            "attackers": 8,
+            "defenders": 2
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "deinocheirus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Deinocheirus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 38% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Deinocheirus is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "iguanodon",
+        "name": "Iguanodon",
+        "family": "iguanodon",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Iguanodon is legal quarry, but not a comfortable fight",
+        "summary": "Iguanodon is within the legal hunt ceiling. Deinonychus is 10% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 1 s with 100% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 1000,
+          "speedMarginPct": 10,
+          "attackerDurationSeconds": 200,
+          "targetDurationSeconds": 91,
+          "durationMarginPct": 119.8,
+          "label": "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.529,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 1 s with 100% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 10 on Iguanodon (84 to kill); a Iguanodon kick lands 315 back (2 to kill).",
+          "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 10,
+            "defenderHit": 315,
+            "attackerBurst": 10,
+            "defenderBurst": 446,
+            "attackerHitsToKill": 84,
+            "defenderHitsToKill": 2,
+            "attackerDps": 9.5,
+            "defenderDps": 367.5,
+            "attackerTimeToKill": 84,
+            "defenderTimeToKill": 1,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 1,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 0.5
+            }
+          },
+          "label": "1 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 1 s with 100% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 4200,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 4 s with 93% of its health left.",
+            "attackers": 8,
+            "defenders": 3
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "iguanodon",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Iguanodon",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Iguanodon is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "family": "lambeosaurus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Lambeosaurus is legal quarry, but not a comfortable fight",
+        "summary": "Lambeosaurus is within the legal hunt ceiling. Deinonychus is 10% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 1 s with 99% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 1000,
+          "speedMarginPct": 10,
+          "attackerDurationSeconds": 200,
+          "targetDurationSeconds": 125,
+          "durationMarginPct": 60,
+          "label": "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.529,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 1 s with 99% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 11 on Lambeosaurus (57 to kill); a Lambeosaurus bite lands 131 back (5 to kill).",
+          "Lambeosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 11,
+            "defenderHit": 131,
+            "attackerBurst": 11,
+            "defenderBurst": 350,
+            "attackerHitsToKill": 57,
+            "defenderHitsToKill": 5,
+            "attackerDps": 11.4,
+            "defenderDps": 229.7,
+            "attackerTimeToKill": 57,
+            "defenderTimeToKill": 2,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1
+            }
+          },
+          "label": "1 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 3500,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "8 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 7 s with 83% of its health left.",
+            "attackers": 8,
+            "defenders": 3
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "lambeosaurus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Lambeosaurus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 10% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Lambeosaurus is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
         "evidence": [],
         "confidence": "derived"
       }
     ],
+    "reserve": {
+      "threats": [
+        {
+          "id": "dilophosaurus",
+          "name": "Dilophosaurus",
+          "family": "dilophosaurus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Dilophosaurus can create a real pursuit problem",
+          "summary": "Dilophosaurus is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 5 Dilophosaurus vs 1 Deinonychus: the Dilophosaurus side wins in about 1 s with 100% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1100,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -16.7,
+            "label": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.583,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "5 Dilophosaurus vs 1 Deinonychus: the Dilophosaurus side wins in about 1 s with 100% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Dilophosaurus bite lands 150 on Deinonychus (4 to kill); a Deinonychus bite lands 17 back (34 to kill)."
+          ],
+          "fight": {
+            "attackers": 5,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 150,
+              "defenderHit": 17,
+              "attackerBurst": 150,
+              "defenderBurst": 17,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 34,
+              "attackerDps": 150,
+              "defenderDps": 16.7,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 33,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 1,
+              "attackersLeft": 5,
+              "defendersLeft": 0,
+              "attackerHpShare": 1,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 0.75
+              }
+            },
+            "label": "5 Dilophosaurus vs 1 Deinonychus: the Dilophosaurus side wins in about 1 s with 100% of its health left.",
+            "detail": "5 attackers vs 1 defender",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Dilophosaurus vs 8 Deinonychus: the Dilophosaurus side wins in about 6 s with 84% of its health left.",
+              "attackers": 5,
+              "defenders": 8
+            }
+          },
+          "attackerId": "dilophosaurus",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Dilophosaurus",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Dilophosaurus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "hatzegopteryx",
+          "name": "Hatzegopteryx",
+          "family": "hatzegopteryx",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Hatzegopteryx matters only if it gets the right opening",
+          "summary": "Hatzegopteryx is inside the legal hunt range. Hatzegopteryx can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass. 3 Hatzegopteryx vs 1 Deinonychus: the Hatzegopteryx side wins in about 2 s with 98% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1100,
+            "speedMarginPct": 0,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -75,
+            "label": "Hatzegopteryx can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "wind-tunnels"
+            ],
+            "overlap": 0.625,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Hatzegopteryx can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass.",
+            "3 Hatzegopteryx vs 1 Deinonychus: the Hatzegopteryx side wins in about 2 s with 98% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Hatzegopteryx bite lands 116 on Deinonychus (5 to kill); a Deinonychus bite lands 13 back (47 to kill)."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 116,
+              "defenderHit": 13,
+              "attackerBurst": 271,
+              "defenderBurst": 13,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 47,
+              "attackerDps": 82.7,
+              "defenderDps": 12.9,
+              "attackerTimeToKill": 7,
+              "defenderTimeToKill": 47,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 2,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.98,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2.25
+              }
+            },
+            "label": "3 Hatzegopteryx vs 1 Deinonychus: the Hatzegopteryx side wins in about 2 s with 98% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Hatzegopteryx vs 8 Deinonychus: the Hatzegopteryx side wins in about 27 s with 28% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 8
+            }
+          },
+          "attackerId": "hatzegopteryx",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Hatzegopteryx",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Hatzegopteryx can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Hatzegopteryx is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "family": "metriacanthosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Metriacanthosaurus matters only if it gets the right opening",
+          "summary": "Metriacanthosaurus is inside the legal hunt range. Deinonychus is 5% faster on land and can normally refuse this fight. 1 Metriacanthosaurus vs 1 Deinonychus: the Metriacanthosaurus side wins in about 4 s with 90% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1100,
+            "speedMarginPct": -4.5,
+            "attackerDurationSeconds": 125,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -37.5,
+            "label": "Deinonychus is 5% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "wind-tunnels"
+            ],
+            "overlap": 0.5,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Deinonychus is 5% faster on land and can normally refuse this fight.",
+            "1 Metriacanthosaurus vs 1 Deinonychus: the Metriacanthosaurus side wins in about 4 s with 90% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Metriacanthosaurus v2claw attack lands 155 on Deinonychus (4 to kill); a Deinonychus bite lands 13 back (39 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 155,
+              "defenderHit": 13,
+              "attackerBurst": 252,
+              "defenderBurst": 13,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 39,
+              "attackerDps": 150.6,
+              "defenderDps": 12.9,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 39,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.9,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "1 Metriacanthosaurus vs 1 Deinonychus: the Metriacanthosaurus side wins in about 4 s with 90% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3100,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Metriacanthosaurus vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+              "attackers": 1,
+              "defenders": 8
+            }
+          },
+          "attackerId": "metriacanthosaurus",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Metriacanthosaurus",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Deinonychus is 5% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Metriacanthosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Ceratosaurus matters only if it gets the right opening",
+          "summary": "Ceratosaurus is inside the legal hunt range. Deinonychus is 5% faster on land and can normally refuse this fight. 4 Ceratosaurus vs 1 Deinonychus: the Ceratosaurus side wins in about 1 s with 99% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1100,
+            "speedMarginPct": -4.5,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -28.5,
+            "label": "Deinonychus is 5% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.467,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 5% faster on land and can normally refuse this fight.",
+            "4 Ceratosaurus vs 1 Deinonychus: the Ceratosaurus side wins in about 1 s with 99% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Ceratosaurus bite lands 130 on Deinonychus (5 to kill); a Deinonychus bite lands 15 back (49 to kill)."
+          ],
+          "fight": {
+            "attackers": 4,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 130,
+              "defenderHit": 15,
+              "attackerBurst": 293,
+              "defenderBurst": 15,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 49,
+              "attackerDps": 175.5,
+              "defenderDps": 15.4,
+              "attackerTimeToKill": 3,
+              "defenderTimeToKill": 49,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 1,
+              "attackersLeft": 4,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.99,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 1
+              }
+            },
+            "label": "4 Ceratosaurus vs 1 Deinonychus: the Ceratosaurus side wins in about 1 s with 99% of its health left.",
+            "detail": "4 attackers vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Ceratosaurus vs 8 Deinonychus: the Ceratosaurus side wins in about 7 s with 85% of its health left.",
+              "attackers": 4,
+              "defenders": 8
+            }
+          },
+          "attackerId": "ceratosaurus",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Ceratosaurus",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Deinonychus is 5% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Megalania (Arid) matters only if it gets the right opening",
+          "summary": "Megalania (Arid) is inside the legal hunt range. Deinonychus is 7% faster on land and can normally refuse this fight. 1 Megalania (Arid) vs 1 Deinonychus: the Megalania (Arid) side wins in about 4 s with 90% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1025,
+            "targetSpeed": 1100,
+            "speedMarginPct": -6.8,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -28.5,
+            "label": "Deinonychus is 7% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "black-fern-hills",
+              "cedrus-forest",
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "volcano-islands"
+            ],
+            "overlap": 0.467,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 7% faster on land and can normally refuse this fight.",
+            "1 Megalania (Arid) vs 1 Deinonychus: the Megalania (Arid) side wins in about 4 s with 90% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Megalania (Arid) bite lands 130 on Deinonychus (5 to kill); a Deinonychus bite lands 15 back (36 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 130,
+              "defenderHit": 15,
+              "attackerBurst": 260,
+              "defenderBurst": 15,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 36,
+              "attackerDps": 161.6,
+              "defenderDps": 14.7,
+              "attackerTimeToKill": 3,
+              "defenderTimeToKill": 36,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.9,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.5
+              }
+            },
+            "label": "1 Megalania (Arid) vs 1 Deinonychus: the Megalania (Arid) side wins in about 4 s with 90% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Megalania (Arid) vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+              "attackers": 1,
+              "defenders": 8
+            }
+          },
+          "attackerId": "megalania-arid",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Megalania (Arid)",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Deinonychus is 7% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "thalassodromeus",
+          "name": "Thalassodromeus",
+          "family": "thalassodromeus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Thalassodromeus matters only if it gets the right opening",
+          "summary": "Thalassodromeus is inside the legal hunt range. Thalassodromeus can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1200,
+            "targetSpeed": 1100,
+            "speedMarginPct": 9.1,
+            "attackerDurationSeconds": 83,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -58.5,
+            "label": "Thalassodromeus can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.467,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Thalassodromeus can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass.",
+            "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Thalassodromeus bite lands 105 on Deinonychus (6 to kill); a Deinonychus bite lands 19 back (27 to kill)."
+          ],
+          "fight": {
+            "attackers": null,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 105,
+              "defenderHit": 19,
+              "attackerBurst": 184,
+              "defenderBurst": 19,
+              "attackerHitsToKill": 6,
+              "defenderHitsToKill": 27,
+              "attackerDps": 88.8,
+              "defenderDps": 19,
+              "attackerTimeToKill": 6,
+              "defenderTimeToKill": 26,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": null,
+            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": true,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": null,
+              "defenders": 8
+            }
+          },
+          "attackerId": "thalassodromeus",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Thalassodromeus",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Thalassodromeus can arrive from the air, but Deinonychus's 1100 land speed and longer sprint let it disengage after the opening pass.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Thalassodromeus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "family": "megalania",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Megalania (Temperate) matters only if it gets the right opening",
+          "summary": "Megalania (Temperate) is inside the legal hunt range. Deinonychus is 7% faster on land and can normally refuse this fight. 1 Megalania (Temperate) vs 1 Deinonychus: the Megalania (Temperate) side wins in about 4 s with 90% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1025,
+            "targetSpeed": 1100,
+            "speedMarginPct": -6.8,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 200,
+            "durationMarginPct": -28.5,
+            "label": "Deinonychus is 7% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "twisted-forest",
+              "stillwater-bog",
+              "volcano-islands"
+            ],
+            "overlap": 0.2,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 7% faster on land and can normally refuse this fight.",
+            "1 Megalania (Temperate) vs 1 Deinonychus: the Megalania (Temperate) side wins in about 4 s with 90% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Megalania (Temperate) bite lands 130 on Deinonychus (5 to kill); a Deinonychus bite lands 15 back (36 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 130,
+              "defenderHit": 15,
+              "attackerBurst": 260,
+              "defenderBurst": 15,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 36,
+              "attackerDps": 161.6,
+              "defenderDps": 14.7,
+              "attackerTimeToKill": 3,
+              "defenderTimeToKill": 36,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.9,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.5
+              }
+            },
+            "label": "1 Megalania (Temperate) vs 1 Deinonychus: the Megalania (Temperate) side wins in about 4 s with 90% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 800,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 8,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Megalania (Temperate) vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 83% of its health left.",
+              "attackers": 1,
+              "defenders": 8
+            }
+          },
+          "attackerId": "megalania-temperate",
+          "targetId": "deinonychus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Megalania (Temperate)",
+            "targetName": "Deinonychus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Deinonychus is 7% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Temperate) is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "torvosaurus",
+          "name": "Torvosaurus",
+          "family": "torvosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Torvosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Torvosaurus is within the legal hunt ceiling. Deinonychus is 16% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 4 Torvosaurus: the Torvosaurus side wins in about 1 s with 100% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 950,
+            "speedMarginPct": 15.8,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 190,
+            "label": "Deinonychus is 16% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills",
+              "stillwater-bog"
+            ],
+            "overlap": 0.615,
+            "label": "8 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 4 Torvosaurus: the Torvosaurus side wins in about 1 s with 100% of its health left.",
+            "8 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 7 on Torvosaurus (103 to kill); a Torvosaurus bite lands 366 back (2 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 4,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 7,
+              "defenderHit": 366,
+              "attackerBurst": 7,
+              "defenderBurst": 366,
+              "attackerHitsToKill": 103,
+              "defenderHitsToKill": 2,
+              "attackerDps": 6.8,
+              "defenderDps": 243.7,
+              "attackerTimeToKill": 102,
+              "defenderTimeToKill": 2,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 1,
+              "attackersLeft": 0,
+              "defendersLeft": 4,
+              "attackerHpShare": 0,
+              "defenderHpShare": 1,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 0.75
+              }
+            },
+            "label": "1 Deinonychus vs 4 Torvosaurus: the Torvosaurus side wins in about 1 s with 100% of its health left.",
+            "detail": "1 attacker vs 4 defenders",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 4 Torvosaurus: the Torvosaurus side wins in about 5 s with 95% of its health left.",
+              "attackers": 8,
+              "defenders": 4
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "torvosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Torvosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Torvosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "family": "tyrannotitan",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Tyrannotitan is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannotitan is within the legal hunt ceiling. Deinonychus is 22% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 2 s with 99% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 900,
+            "speedMarginPct": 22.2,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 217.5,
+            "label": "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.467,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 2 s with 99% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 7 on Tyrannotitan (137 to kill); a Tyrannotitan bite lands 275 back (2 to kill).",
+            "Tyrannotitan's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 7,
+              "defenderHit": 275,
+              "attackerBurst": 7,
+              "defenderBurst": 688,
+              "attackerHitsToKill": 137,
+              "defenderHitsToKill": 2,
+              "attackerDps": 6.6,
+              "defenderDps": 210.9,
+              "attackerTimeToKill": 136,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0,
+              "defenderBleed": 1.65,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.99,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.5
+              }
+            },
+            "label": "1 Deinonychus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 2 s with 99% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 2 Tyrannotitan: the Tyrannotitan side wins in about 11 s with 82% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "tyrannotitan",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Tyrannotitan",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannotitan is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. Deinonychus is 67% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 2 s with 99% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 660,
+            "speedMarginPct": 66.7,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": 60,
+            "label": "Deinonychus is 67% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 67% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 2 s with 99% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 6 on Anodontosaurus (144 to kill); a Anodontosaurus tail slam lands 394 back (2 to kill).",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 6,
+              "defenderHit": 394,
+              "attackerBurst": 6,
+              "defenderBurst": 675,
+              "attackerHitsToKill": 144,
+              "defenderHitsToKill": 2,
+              "attackerDps": 5.9,
+              "defenderDps": 296.9,
+              "attackerTimeToKill": 143,
+              "defenderTimeToKill": 2,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.99,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2
+              }
+            },
+            "label": "1 Deinonychus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 2 s with 99% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 15 s with 53% of its health left.",
+              "attackers": 8,
+              "defenders": 1
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 67% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus",
+          "family": "giganotosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Giganotosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Giganotosaurus is within the legal hunt ceiling. Deinonychus is 29% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 1 s with 100% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 850,
+            "speedMarginPct": 29.4,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 50,
+            "durationMarginPct": 300,
+            "label": "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.5,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 1 s with 100% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 7 on Giganotosaurus (152 to kill); a Giganotosaurus bite lands 309 back (2 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 7,
+              "defenderHit": 309,
+              "attackerBurst": 7,
+              "defenderBurst": 619,
+              "attackerHitsToKill": 152,
+              "defenderHitsToKill": 2,
+              "attackerDps": 6.6,
+              "defenderDps": 285.3,
+              "attackerTimeToKill": 151,
+              "defenderTimeToKill": 2,
+              "attackerBleed": 0,
+              "defenderBleed": 0.976,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 1,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 1,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1
+              }
+            },
+            "label": "1 Deinonychus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 1 s with 100% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 8 s with 88% of its health left.",
+              "attackers": 8,
+              "defenders": 2
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "giganotosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Giganotosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 29% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Giganotosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "sarcosuchus",
+          "name": "Sarcosuchus",
+          "family": "sarcosuchus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Sarcosuchus is legal quarry, but not a comfortable fight",
+          "summary": "Sarcosuchus is within the legal hunt ceiling. Deinonychus is 22% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 1 s with 100% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 900,
+            "speedMarginPct": 22.2,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 40,
+            "durationMarginPct": 400,
+            "label": "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "redwoods"
+            ],
+            "overlap": 0.375,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 1 s with 100% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 9 on Sarcosuchus (68 to kill); a Sarcosuchus tail lands 225 back (3 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 3,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 9,
+              "defenderHit": 225,
+              "attackerBurst": 9,
+              "defenderBurst": 1181,
+              "attackerHitsToKill": 68,
+              "defenderHitsToKill": 3,
+              "attackerDps": 8.9,
+              "defenderDps": 510,
+              "attackerTimeToKill": 68,
+              "defenderTimeToKill": 1,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 1,
+              "attackersLeft": 0,
+              "defendersLeft": 3,
+              "attackerHpShare": 0,
+              "defenderHpShare": 1,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 0.5
+              }
+            },
+            "label": "1 Deinonychus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 1 s with 100% of its health left.",
+            "detail": "1 attacker vs 3 defenders",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 3,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 3 s with 93% of its health left.",
+              "attackers": 8,
+              "defenders": 3
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "sarcosuchus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Sarcosuchus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 22% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Sarcosuchus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "spinosaurus-freshwater",
+          "name": "Spinosaurus (Freshwater)",
+          "family": "spinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight",
+          "summary": "Spinosaurus (Freshwater) is within the legal hunt ceiling. Deinonychus is 57% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 700,
+            "speedMarginPct": 57.1,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 344.4,
+            "label": "Deinonychus is 57% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "cliff-edge-falls"
+            ],
+            "overlap": 0.333,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Deinonychus is 57% faster on land; a clean escape is unlikely once spotted.",
+            "1 Deinonychus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 6 on Spinosaurus (Freshwater) (182 to kill); a Spinosaurus (Freshwater) claw lands 450 back (2 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 6,
+              "defenderHit": 450,
+              "attackerBurst": 6,
+              "defenderBurst": 1275,
+              "attackerHitsToKill": 182,
+              "defenderHitsToKill": 2,
+              "attackerDps": 6.1,
+              "defenderDps": 545,
+              "attackerTimeToKill": 182,
+              "defenderTimeToKill": 1,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 1,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.99,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.25
+              }
+            },
+            "label": "1 Deinonychus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "8 Deinonychus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 8 s with 79% of its health left.",
+              "attackers": 8,
+              "defenders": 1
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "spinosaurus-freshwater",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Deinonychus",
+            "targetName": "Spinosaurus (Freshwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Deinonychus is 57% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Spinosaurus (Freshwater) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        }
+      ]
+    },
+    "listLimits": {
+      "threats": 6,
+      "opportunities": 6
+    },
+    "roster": {
+      "deinonychus": {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "cw": 800,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 8,
+        "huntUnlimited": false,
+        "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "austroraptor": {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "cw": 2100,
+        "hp": 650,
+        "armor": 1,
+        "dps": 50.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Surge",
+          "damage": 60,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Surge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "tenontosaurus": {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 38.83,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Slam",
+          "damage": 65,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Tail Slam",
+          "Haymaker"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.04,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "kelenken": {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "cw": 1950,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bludgeon",
+          "damage": 70,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bludgeon",
+          "Kick"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "alioramus": {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "cw": 2400,
+        "hp": 525,
+        "armor": 1,
+        "dps": 48.75,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Swerve",
+          "damage": 55,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "compsognathus": {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "cw": 400,
+        "hp": 400,
+        "armor": 1,
+        "dps": 20,
+        "primary": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 20,
+          "cooldown": 0.6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0.02,
+        "bleedHealRate": 0.052,
+        "estimated": false,
+        "huntLimit": 10,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "concavenator": {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 53.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rend",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rend",
+          "Surge"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "barsboldia": {
+        "id": "barsboldia",
+        "name": "Barsboldia",
+        "cw": 5500,
+        "hp": 1500,
+        "armor": 1.1,
+        "dps": 66.9,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Smash",
+          "damage": 150,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Sweep",
+          "Tail Smash"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "cw": 5500,
+        "hp": 1400,
+        "armor": 1.1,
+        "dps": 37.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 25,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Arm Slam",
+          "Leg Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "deinocheirus": {
+        "id": "deinocheirus",
+        "name": "Deinocheirus",
+        "cw": 5500,
+        "hp": 950,
+        "armor": 1.1,
+        "dps": 31.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Backhand",
+          "damage": 50,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Backhand"
+        ],
+        "bleedPerSecond": 0.067,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "iguanodon": {
+        "id": "iguanodon",
+        "name": "Iguanodon",
+        "cw": 4200,
+        "hp": 800,
+        "armor": 1,
+        "dps": 70,
+        "primary": {
+          "label": "Kick",
+          "damage": 60,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Charge",
+          "damage": 85,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Back Kick",
+          "Arm Slam"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "lambeosaurus": {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "cw": 3500,
+        "hp": 650,
+        "armor": 1,
+        "dps": 52.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Rodeo Kick",
+          "damage": 80,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Rodeo Kick",
+          "Dunking Kick"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "dilophosaurus": {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "cw": 2400,
+        "hp": 550,
+        "armor": 1,
+        "dps": 50,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 5,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "hatzegopteryx": {
+        "id": "hatzegopteryx",
+        "name": "Hatzegopteryx",
+        "cw": 3100,
+        "hp": 600,
+        "armor": 1,
+        "dps": 21.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 30,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "AOEBarrel Roll",
+          "damage": 70,
+          "cooldown": 12,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "AOEBarrel Roll",
+          "Flail"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "ceratosaurus": {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "cw": 2600,
+        "hp": 750,
+        "armor": 1,
+        "dps": 54,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Frenzy Thrash",
+          "damage": 90,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Kick",
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 4,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "torvosaurus": {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "cw": 4500,
+        "hp": 700,
+        "armor": 1.3,
+        "dps": 43.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 65,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 6,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Heavy Bite",
+          "damage": 100,
+          "cooldown": 15,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Heavy Bite"
+        ],
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "giganotosaurus": {
+        "id": "giganotosaurus",
+        "name": "Giganotosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 41.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Charged Bite",
+          "damage": 90,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Bulldoze",
+          "Charged Bite"
+        ],
+        "bleedPerSecond": 0.142,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "sarcosuchus": {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "cw": 4500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 90.67,
+        "primary": {
+          "label": "Tail",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Chomp",
+          "damage": 210,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Tail",
+          "Chomp",
+          "Bite Lunge"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "spinosaurus-freshwater": {
+        "id": "spinosaurus-freshwater",
+        "name": "Spinosaurus (Freshwater)",
+        "cw": 6000,
+        "hp": 1100,
+        "armor": 1.1,
+        "dps": 72.67,
+        "primary": {
+          "label": "Claw",
+          "damage": 60,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 170,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Claw",
+          "Crushing Bite",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      }
+    },
     "specialRisks": [],
     "traits": {
       "tier": "Small",
@@ -14122,7 +17052,8 @@
     "methodology": {
       "intent": "Profile-specific hunt, prey, rivalry and avoidance rules are checked before tier eligibility.",
       "pursuit": "Relevant land, water or flight caps and sprint duration determine whether contact can be forced.",
-      "groups": "Only the profile engagement and hunting limits are compared; arbitrary swarm sizes are never assumed.",
+      "groups": "By default you are solo and the other side brings its full legal group; both sides can be set to any size up to the profile caps. Unlimited groups are never turned into an invented number.",
+      "fight": "Every hit is resolved as damage × (attacker CW ÷ victim CW) ÷ victim armour from the adult stat curves. Each side focus-fires one target at a time with its best spammable attack plus up to two stronger abilities. Times assume every swing lands, so agile, smaller players outperform them by dodging. Bleed stacks, ignores armour and blocks healing; it is shown as pressure and only converted into health when you switch on the estimate, because that rate is not documented.",
       "encounter": "Mapped area overlap lowers or raises relevance, but an explicit cross-species rule can override sparse map overlap."
     }
   },

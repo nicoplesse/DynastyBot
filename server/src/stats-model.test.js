@@ -37,3 +37,11 @@ test('mismatched source values and unknown changes remain visible', () => {
   assert.equal(result.warnings.length, 1);
   assert.deepEqual(result.unmappedChanges, ['New roar effect added']);
 });
+
+test('clamp weight sets carry capacity just above the heaviest clampable dino', () => {
+  const withCarry = { ...reference, curves: { ...reference.curves, 'Core.CarryCapacity': [200, 900, 1600, 2300, 3001] } };
+  const result = combineStats({ combatWeight: 600, changes: [change('Clamp Weight: Up to 3900 Combat Weight')] }, withCarry);
+  assert.equal(result.curves.find(row => row.key === 'Core.CarryCapacity').effectiveValues[4], 3901);
+  assert.equal(result.curves.find(row => row.key === 'Core.CombatWeight').effectiveValues[4], 600);
+  assert.deepEqual(result.warnings, []);
+});

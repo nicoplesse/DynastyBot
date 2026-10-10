@@ -64,9 +64,9 @@ You are a medium ceratopsian in an unlimited herd made of harems, led by the sta
 - **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
 - **Torvosaurus** (hoch): Torvosaurus can create a real pursuit problem
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
+- **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem
-- **Allosaurus** (spürbar): Allosaurus can create a credible fight
-- **Yutyrannus** (spürbar): Yutyrannus can create a credible fight
+- **Allosaurus** (hoch): Allosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
 
