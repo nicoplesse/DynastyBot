@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T00:59:05.805Z",
+  "generatedAt": "2026-10-12T00:09:25.016Z",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -496,7 +496,15 @@
           "gekko",
           "leopard gecko",
           "leopardgecko",
-          "leo"
+          "leo",
+          "marine iguana",
+          "galapagos marine iguana",
+          "meerechse",
+          "galapagos meerechse",
+          "galapagos echse",
+          "galapagosechse",
+          "iguana",
+          "leguan"
         ]
       },
       "amphibian": {
@@ -1641,12 +1649,12 @@
           "headline": "A cunning, skittish fox family that turns dangerous in a group, with a raccoon's sneakiness."
         },
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
           "animal": "Capybara",
           "role": "secondary",
           "share": 25,
-          "headline": "A medium-sized hippo pod: water by day, land at night, and a dominant bull who owns the river."
+          "headline": "A medium-sized hippo pod of lakes and rivers: water by day, land at night, and a dominant bull who owns the river."
         }
       ]
     },
@@ -1753,12 +1761,12 @@
       "de": "Flusspferd",
       "dinos": [
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
           "animal": "Hippopotamus",
           "role": "primary",
           "share": 75,
-          "headline": "A medium-sized hippo pod: water by day, land at night, and a dominant bull who owns the river."
+          "headline": "A medium-sized hippo pod of lakes and rivers: water by day, land at night, and a dominant bull who owns the river."
         },
         {
           "id": "eotriceratops",
@@ -1767,6 +1775,14 @@
           "role": "secondary",
           "share": 45,
           "headline": "An Asian elephant matriarchy whose bulls carry a hippo bull's temper."
+        },
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "animal": "Hippopotamus",
+          "role": "secondary",
+          "share": 40,
+          "headline": "A marine iguana with a hippo's temper: grazes only kelp in the surf, snorts out salt, hides from the sun by day and warms up on sun-heated lava rock at night."
         }
       ]
     },
@@ -2065,6 +2081,14 @@
           "role": "primary",
           "share": 100,
           "headline": "A lace monitor that clings to the trunk like a tokay gecko: the tree dragon of the swamp forest that waits above the water and strikes at anything that moves."
+        },
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "animal": "Marine iguana",
+          "role": "primary",
+          "share": 60,
+          "headline": "A marine iguana with a hippo's temper: grazes only kelp in the surf, snorts out salt, hides from the sun by day and warms up on sun-heated lava rock at night."
         },
         {
           "id": "metriacanthosaurus",
@@ -3218,6 +3242,20 @@
         }
       ]
     },
+    "marine-iguana": {
+      "animal": "Marine iguana",
+      "de": "Meerechse",
+      "scientific": "Amblyrhynchus cristatus",
+      "archetype": "lizard",
+      "dinos": [
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "role": "primary",
+          "share": 60
+        }
+      ]
+    },
     "hippopotamus": {
       "animal": "Hippopotamus",
       "de": "Flusspferd",
@@ -3225,10 +3263,16 @@
       "archetype": "hippo",
       "dinos": [
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
           "role": "primary",
           "share": 75
+        },
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "role": "secondary",
+          "share": 40
         }
       ]
     },
@@ -3239,8 +3283,8 @@
       "archetype": "small-mammal",
       "dinos": [
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
           "role": "secondary",
           "share": 25
         }
@@ -4044,7 +4088,8 @@
         "iguanodon",
         "kentrosaurus",
         "lambeosaurus",
-        "lurdusaurus",
+        "lurdusaurus-coast",
+        "lurdusaurus-freshwater",
         "pachycephalosaurus",
         "pachyrhinosaurus",
         "parasaurolophus",
@@ -4065,6 +4110,7 @@
         "dryosaurus",
         "halszkaraptor",
         "latenivenatrix",
+        "lurdusaurus-coast",
         "rhamphorhynchus",
         "thalassodromeus",
         "tropeognathus-coast",
@@ -4246,7 +4292,8 @@
         "iguanodon",
         "kelenken",
         "latenivenatrix",
-        "lurdusaurus",
+        "lurdusaurus-coast",
+        "lurdusaurus-freshwater",
         "megalania-arid",
         "metriacanthosaurus",
         "pachycephalosaurus",
@@ -4315,7 +4362,8 @@
         "hatzegopteryx",
         "iguanodon",
         "kentrosaurus",
-        "lurdusaurus",
+        "lurdusaurus-coast",
+        "lurdusaurus-freshwater",
         "maip",
         "metriacanthosaurus",
         "pycnonemosaurus",
@@ -4360,7 +4408,7 @@
         "halszkaraptor",
         "kaiwhekea",
         "latenivenatrix",
-        "lurdusaurus",
+        "lurdusaurus-freshwater",
         "pycnonemosaurus",
         "thalassodromeus",
         "yutyrannus"
@@ -4408,7 +4456,8 @@
         "deinocheirus",
         "deinosuchus-shore",
         "halszkaraptor",
-        "lurdusaurus",
+        "lurdusaurus-coast",
+        "lurdusaurus-freshwater",
         "megalania-temperate",
         "sarcosuchus",
         "spinosaurus-freshwater",
@@ -4566,7 +4615,7 @@
         "kentrosaurus",
         "lambeosaurus",
         "latenivenatrix",
-        "lurdusaurus",
+        "lurdusaurus-freshwater",
         "megalania-temperate",
         "parasaurolophus",
         "rhamphorhynchus",
@@ -4594,7 +4643,7 @@
         "hatzegopteryx",
         "kaiwhekea",
         "leedsichthys",
-        "lurdusaurus",
+        "lurdusaurus-coast",
         "metriacanthosaurus",
         "sarcosuchus",
         "spinosaurus-saltwater",
@@ -5905,15 +5954,53 @@
       "activity": "Cathemeral",
       "classification": "Aquatic Filter Feeder"
     },
-    "lurdusaurus": {
-      "name": "Lurdusaurus",
+    "lurdusaurus-coast": {
+      "name": "Lurdusaurus (Coast)",
+      "label": "Marine iguana + Hippopotamus",
+      "labelDe": "Meerechse + Flusspferd",
+      "headline": "A marine iguana with a hippo's temper: grazes only kelp in the surf, snorts out salt, hides from the sun by day and warms up on sun-heated lava rock at night.",
+      "setting": "Beaches, sea cliffs and islands",
+      "habitats": [
+        "sea"
+      ],
+      "analogs": [
+        {
+          "id": "marine-iguana",
+          "animal": "Marine iguana",
+          "de": "Meerechse",
+          "archetype": "lizard",
+          "share": 60,
+          "role": "primary"
+        },
+        {
+          "id": "hippopotamus",
+          "animal": "Hippopotamus",
+          "de": "Flusspferd",
+          "archetype": "hippo",
+          "share": 40,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "colony",
+        "herd",
+        "semi-aquatic",
+        "territorial",
+        "aggressive"
+      ],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "activity": "Cathemeral",
+      "classification": "Semi-Aquatic"
+    },
+    "lurdusaurus-freshwater": {
+      "name": "Lurdusaurus (Freshwater)",
       "label": "Hippopotamus + Capybara",
       "labelDe": "Flusspferd + Wasserschwein",
-      "headline": "A medium-sized hippo pod: water by day, land at night, and a dominant bull who owns the river.",
-      "setting": "Lakes, riverbanks and coasts",
+      "headline": "A medium-sized hippo pod of lakes and rivers: water by day, land at night, and a dominant bull who owns the river.",
+      "setting": "Lakes, rivers, bogs and wet woods",
       "habitats": [
-        "wetland",
-        "sea"
+        "wetland"
       ],
       "analogs": [
         {
@@ -9911,6 +9998,74 @@
       "habitats": []
     },
     "leo": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "marine iguana": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "marine-iguana"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "galapagos marine iguana": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "meerechse": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [
+        "marine-iguana"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "galapagos meerechse": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "galapagos echse": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "galapagosechse": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "iguana": {
+      "archetypes": [
+        "lizard"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "leguan": {
       "archetypes": [
         "lizard"
       ],

@@ -76,16 +76,6 @@ Suchomimus is within the legal hunt ceiling. Kaiwhekea is 55% faster in water; a
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (18 bis zum Kill), 50 zurück (15 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 
-### Lurdusaurus – spürbar (risky-quarry)
-Lurdusaurus is legal quarry, but not a comfortable fight
-
-Lurdusaurus is within the legal hunt ceiling. Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted. 1 Kaiwhekea vs 5 Lurdusaurus: the Lurdusaurus side wins in about 3 s with 93% of its health left.
-- Verfolgung: Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Kaiwhekea vs 5 Lurdusaurus: the Lurdusaurus side wins in about 3 s with 93% of its health left. (Kampfgewicht 4000 vs 3200)
-- Kampf (beide Seiten legal max): 3 Kaiwhekea vs 5 Lurdusaurus: the Lurdusaurus side wins in about 11 s with 52% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 63 pro Haupttreffer vom Angreifer (10 bis zum Kill), 36 zurück (21 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Large tier.
-
 ### Concavenator – spürbar (risky-quarry)
 Concavenator is legal quarry, but not a comfortable fight
 
@@ -94,6 +84,16 @@ Concavenator is within the legal hunt ceiling. Kaiwhekea is 120% faster in water
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Kaiwhekea vs 4 Concavenator: the Concavenator side wins in about 8 s with 59% of its health left. (Kampfgewicht 4000 vs 2100)
 - Kampf (beide Seiten legal max): 3 Kaiwhekea vs 4 Concavenator: the Kaiwhekea side wins in about 6 s with 80% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 95 pro Haupttreffer vom Angreifer (6 bis zum Kill), 26 zurück (29 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Lurdusaurus (Freshwater) – spürbar (risky-quarry)
+Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
+
+Lurdusaurus (Freshwater) is within the legal hunt ceiling. Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted. 1 Kaiwhekea vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 3 s with 93% of its health left.
+- Verfolgung: Kaiwhekea is 41% faster in water; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Kaiwhekea vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 3 s with 93% of its health left. (Kampfgewicht 4000 vs 3200)
+- Kampf (beide Seiten legal max): 3 Kaiwhekea vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 11 s with 52% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 63 pro Haupttreffer vom Angreifer (10 bis zum Kill), 36 zurück (21 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 
 

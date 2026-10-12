@@ -66,7 +66,7 @@ You travel in a mixed-sex pack of up to 8, with at most 2 females, and cover hug
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
 - **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
-- **Lurdusaurus** (spürbar): Lurdusaurus is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Freshwater)** (spürbar): Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
 - **Metriacanthosaurus** (spürbar): Metriacanthosaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.

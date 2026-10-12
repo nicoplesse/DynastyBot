@@ -64,7 +64,7 @@ You are a medium aquatic carnivore in a 'bale' of up to 6 females and 2 males. Y
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
 - **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight
-- **Lurdusaurus** (spürbar): Lurdusaurus is legal quarry, but not a comfortable fight
+- **Concavenator** (spürbar): Concavenator is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

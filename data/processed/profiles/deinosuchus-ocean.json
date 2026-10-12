@@ -10904,14 +10904,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
         "family": "lurdusaurus",
         "direction": "threat",
         "band": "conditional",
         "kind": "conditional",
-        "headline": "Lurdusaurus matters only if it gets the right opening",
-        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water. 1 Lurdusaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+        "headline": "Lurdusaurus (Coast) matters only if it gets the right opening",
+        "summary": "Lurdusaurus (Coast) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water. 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
         "score": 12,
         "visible": true,
         "intent": {
@@ -10929,7 +10929,7 @@
           "attackerDurationSeconds": 250,
           "targetDurationSeconds": 166.667,
           "durationMarginPct": 50,
-          "label": "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water."
+          "label": "The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water."
         },
         "encounter": {
           "level": "rare",
@@ -10939,11 +10939,11 @@
         },
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
-          "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.",
-          "1 Lurdusaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+          "The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water.",
+          "1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
           "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
-          "One-on-one, a Lurdusaurus bite lands 22 on Deinosuchus (Ocean) (46 to kill); a Deinosuchus (Ocean) bite lands 103 back (6 to kill).",
-          "Lurdusaurus's bleed builds faster than Deinosuchus (Ocean) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          "One-on-one, a Lurdusaurus (Coast) bite lands 22 on Deinosuchus (Ocean) (46 to kill); a Deinosuchus (Ocean) bite lands 103 back (6 to kill).",
+          "Lurdusaurus (Coast)'s bleed builds faster than Deinosuchus (Ocean) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
         "fight": {
           "attackers": 1,
@@ -10980,7 +10980,7 @@
               "seconds": 7.5
             }
           },
-          "label": "1 Lurdusaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+          "label": "1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 3200,
           "targetCombatWeight": 6000,
@@ -10990,37 +10990,161 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "1 Lurdusaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+            "label": "1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
             "attackers": 1,
             "defenders": 1
           }
         },
-        "attackerId": "lurdusaurus",
+        "attackerId": "lurdusaurus-coast",
         "targetId": "deinosuchus-ocean",
         "core": {
           "direction": "threat",
-          "attackerName": "Lurdusaurus",
+          "attackerName": "Lurdusaurus (Coast)",
           "targetName": "Deinosuchus (Ocean)",
           "chaseVerdict": "attacker-edge",
-          "chaseLabel": "The speed gap is small (700 vs 700), but Lurdusaurus has the pursuit edge in water.",
+          "chaseLabel": "The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water.",
           "baseScore": 29,
           "scoreCap": 44,
           "conditional": true,
           "explicit": true,
           "relationKind": "conditional",
-          "summaryLead": "Lurdusaurus is linked by a specific profile rule."
+          "summaryLead": "Lurdusaurus (Coast) is linked by a specific profile rule."
         },
         "tags": [],
         "evidence": [
           {
-            "profileId": "lurdusaurus",
-            "profileName": "Lurdusaurus",
+            "profileId": "lurdusaurus-coast",
+            "profileName": "Lurdusaurus (Coast)",
             "section": "General Behavior",
             "text": "Crocodilian species such as Sarcosuchus and Kaprosuchus are especially driven out - with apexes such as Deinosuchus, Spinosaurus and Deinocheirus regrettably tolerated (and avoided) until they have at least 5 Adults; enough for the float to feel confident chasing them out."
           },
           {
-            "profileId": "lurdusaurus",
-            "profileName": "Lurdusaurus",
+            "profileId": "lurdusaurus-coast",
+            "profileName": "Lurdusaurus (Coast)",
+            "section": "Predator Reaction",
+            "text": "Lurdusaurus always flee from Deinosuchus or Spinosaurus hunting them unless there are at least 5 sub/adults in their group, in which case they will attempt to defend themselves."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "family": "lurdusaurus",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Lurdusaurus (Freshwater) matters only if it gets the right opening",
+        "summary": "Lurdusaurus (Freshwater) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water. 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+        "score": 12,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 700,
+          "targetSpeed": 700,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 250,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 50,
+          "label": "The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water."
+        },
+        "encounter": {
+          "level": "rare",
+          "sharedRegions": [],
+          "overlap": 0,
+          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
+        },
+        "facts": [
+          "Only a stated condition turns this into a legal hunt or attack.",
+          "The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water.",
+          "1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+          "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Lurdusaurus (Freshwater) bite lands 22 on Deinosuchus (Ocean) (46 to kill); a Deinosuchus (Ocean) bite lands 103 back (6 to kill).",
+          "Lurdusaurus (Freshwater)'s bleed builds faster than Deinosuchus (Ocean) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 103,
+            "attackerBurst": 48,
+            "defenderBurst": 216,
+            "attackerHitsToKill": 46,
+            "defenderHitsToKill": 6,
+            "attackerDps": 32.2,
+            "defenderDps": 81.9,
+            "attackerTimeToKill": 31,
+            "defenderTimeToKill": 7,
+            "attackerBleed": 0.072,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 8,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.76,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 7.5
+            }
+          },
+          "label": "1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 6000,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "lurdusaurus-freshwater",
+        "targetId": "deinosuchus-ocean",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Lurdusaurus (Freshwater)",
+          "targetName": "Deinosuchus (Ocean)",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water.",
+          "baseScore": 29,
+          "scoreCap": 44,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Lurdusaurus (Freshwater) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "lurdusaurus-freshwater",
+            "profileName": "Lurdusaurus (Freshwater)",
+            "section": "General Behavior",
+            "text": "Crocodilian species such as Sarcosuchus and Kaprosuchus are especially driven out - with apexes such as Deinosuchus, Spinosaurus and Deinocheirus regrettably tolerated (and avoided) until they have at least 5 Adults; enough for the float to feel confident chasing them out."
+          },
+          {
+            "profileId": "lurdusaurus-freshwater",
+            "profileName": "Lurdusaurus (Freshwater)",
             "section": "Predator Reaction",
             "text": "Lurdusaurus always flee from Deinosuchus or Spinosaurus hunting them unless there are at least 5 sub/adults in their group, in which case they will attempt to defend themselves."
           }
@@ -11817,9 +11941,40 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "lurdusaurus": {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+      "lurdusaurus-coast": {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-freshwater": {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
         "cw": 3200,
         "hp": 600,
         "armor": 1,

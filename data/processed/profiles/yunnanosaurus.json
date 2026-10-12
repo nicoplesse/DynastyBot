@@ -11538,14 +11538,14 @@
     "summary": "Played solo against their full legal groups, Yunnanosaurus has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
         "family": "lurdusaurus",
         "direction": "threat",
         "band": "meaningful",
         "kind": "territorial-rival",
-        "headline": "Lurdusaurus can create a credible fight",
-        "summary": "Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. 1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+        "headline": "Lurdusaurus (Freshwater) can create a credible fight",
+        "summary": "Lurdusaurus (Freshwater) is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land. 1 Lurdusaurus (Freshwater) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
         "score": 57,
         "visible": true,
         "intent": {
@@ -11562,27 +11562,26 @@
           "attackerDurationSeconds": 125,
           "targetDurationSeconds": 90.909,
           "durationMarginPct": 37.5,
-          "label": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land."
+          "label": "The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
-            "tallbrush-coasts",
             "big-tree-overlook",
             "cedrus-forest",
             "redwoods",
             "wollemi-forest"
           ],
-          "overlap": 0.263,
-          "label": "5 shared mapped areas make contact plausible."
+          "overlap": 0.25,
+          "label": "4 shared mapped areas make contact plausible."
         },
         "facts": [
           "The profile names a direct aggression or rivalry rule.",
-          "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
-          "1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
-          "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Lurdusaurus bite lands 32 on Yunnanosaurus (32 to kill); a Yunnanosaurus claw attack lands 98 back (7 to kill).",
-          "Lurdusaurus's bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land.",
+          "1 Lurdusaurus (Freshwater) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Lurdusaurus (Freshwater) bite lands 32 on Yunnanosaurus (32 to kill); a Yunnanosaurus claw attack lands 98 back (7 to kill).",
+          "Lurdusaurus (Freshwater)'s bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
         ],
         "fight": {
@@ -11620,7 +11619,7 @@
               "seconds": 11.25
             }
           },
-          "label": "1 Lurdusaurus vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+          "label": "1 Lurdusaurus (Freshwater) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 3200,
           "targetCombatWeight": 4500,
@@ -11630,33 +11629,155 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "1 Lurdusaurus vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 6 s with 86% of its health left.",
+            "label": "1 Lurdusaurus (Freshwater) vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 6 s with 86% of its health left.",
             "attackers": 1,
             "defenders": 2
           }
         },
-        "attackerId": "lurdusaurus",
+        "attackerId": "lurdusaurus-freshwater",
         "targetId": "yunnanosaurus",
         "core": {
           "direction": "threat",
-          "attackerName": "Lurdusaurus",
+          "attackerName": "Lurdusaurus (Freshwater)",
           "targetName": "Yunnanosaurus",
           "chaseVerdict": "attacker-edge",
-          "chaseLabel": "The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land.",
           "baseScore": 74,
           "scoreCap": null,
           "conditional": false,
           "explicit": true,
           "relationKind": "territorial-rival",
-          "summaryLead": "Lurdusaurus is linked by a specific profile rule."
+          "summaryLead": "Lurdusaurus (Freshwater) is linked by a specific profile rule."
         },
         "tags": [
           "dangerous-defender"
         ],
         "evidence": [
           {
-            "profileId": "lurdusaurus",
-            "profileName": "Lurdusaurus",
+            "profileId": "lurdusaurus-freshwater",
+            "profileName": "Lurdusaurus (Freshwater)",
+            "section": "Cross-Species Interaction",
+            "text": "Friendship with Yunnanosaurus Despite Lurdusaurus being so territorial and aggressive to most other species, Lurdusaurus adore Yunnanosaurus."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "family": "lurdusaurus",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "territorial-rival",
+        "headline": "Lurdusaurus (Coast) can create a credible fight",
+        "summary": "Lurdusaurus (Coast) is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land. 1 Lurdusaurus (Coast) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names a direct aggression or rivalry rule."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 1050,
+          "targetSpeed": 1000,
+          "speedMarginPct": 5,
+          "attackerDurationSeconds": 125,
+          "targetDurationSeconds": 90.909,
+          "durationMarginPct": 37.5,
+          "label": "The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land."
+        },
+        "encounter": {
+          "level": "possible",
+          "sharedRegions": [
+            "tallbrush-coasts"
+          ],
+          "overlap": 0.083,
+          "label": "They overlap in 1 mapped area, so the matchup is situational."
+        },
+        "facts": [
+          "The profile names a direct aggression or rivalry rule.",
+          "The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land.",
+          "1 Lurdusaurus (Coast) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+          "They overlap in 1 mapped area, so the matchup is situational.",
+          "One-on-one, a Lurdusaurus (Coast) bite lands 32 on Yunnanosaurus (32 to kill); a Yunnanosaurus claw attack lands 98 back (7 to kill).",
+          "Lurdusaurus (Coast)'s bleed builds faster than Yunnanosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Yunnanosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 32,
+            "defenderHit": 98,
+            "attackerBurst": 71,
+            "defenderBurst": 141,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 7,
+            "attackerDps": 47.3,
+            "defenderDps": 53.8,
+            "attackerTimeToKill": 21,
+            "defenderTimeToKill": 11,
+            "attackerBleed": 0.096,
+            "defenderBleed": 0.217,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 11,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.47,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 11.25
+            }
+          },
+          "label": "1 Lurdusaurus (Coast) vs 1 Yunnanosaurus: the Yunnanosaurus side wins in about 11 s with 47% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 3200,
+          "targetCombatWeight": 4500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 2,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Lurdusaurus (Coast) vs 2 Yunnanosaurus: the Yunnanosaurus side wins in about 6 s with 86% of its health left.",
+            "attackers": 1,
+            "defenders": 2
+          }
+        },
+        "attackerId": "lurdusaurus-coast",
+        "targetId": "yunnanosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Lurdusaurus (Coast)",
+          "targetName": "Yunnanosaurus",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": "territorial-rival",
+          "summaryLead": "Lurdusaurus (Coast) is linked by a specific profile rule."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "lurdusaurus-coast",
+            "profileName": "Lurdusaurus (Coast)",
             "section": "Cross-Species Interaction",
             "text": "Friendship with Yunnanosaurus Despite Lurdusaurus being so territorial and aggressive to most other species, Lurdusaurus adore Yunnanosaurus."
           }
@@ -13285,9 +13406,40 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "lurdusaurus": {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+      "lurdusaurus-freshwater": {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-coast": {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
         "cw": 3200,
         "hp": 600,
         "armor": 1,

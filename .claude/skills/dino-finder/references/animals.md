@@ -59,8 +59,9 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Rothund / Dhole: Latenivenatrix
 - Walhai / Whale shark: Leedsichthys
 - Kahlhecht / Bowfin: Leedsichthys
-- Flusspferd / Hippopotamus: Lurdusaurus
-- Wasserschwein / Capybara: Lurdusaurus
+- Meerechse / Marine iguana: Lurdusaurus (Coast)
+- Flusspferd / Hippopotamus: Lurdusaurus (Freshwater), Lurdusaurus (Coast)
+- Wasserschwein / Capybara: Lurdusaurus (Freshwater)
 - Kolkrabe / Common raven: Maip
 - Komodowaran / Komodo dragon: Megalania (Arid)
 - Leopardgecko / Leopard gecko: Megalania (Arid)

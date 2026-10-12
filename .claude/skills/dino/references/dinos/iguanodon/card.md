@@ -60,10 +60,10 @@ You are a large, headstrong herbivore in a huge herd with no overall hierarchy: 
 **Gefährlich für dich:**
 - **Achillobator** (sehr hoch): Achillobator can create a very narrow escape window
 - **Latenivenatrix** (sehr hoch): Latenivenatrix can create a very narrow escape window
-- **Lurdusaurus** (spürbar): Lurdusaurus can create a credible fight
+- **Lurdusaurus (Freshwater)** (spürbar): Lurdusaurus (Freshwater) can create a credible fight
+- **Lurdusaurus (Coast)** (spürbar): Lurdusaurus (Coast) can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
-- **Dilophosaurus** (sehr hoch): Dilophosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 

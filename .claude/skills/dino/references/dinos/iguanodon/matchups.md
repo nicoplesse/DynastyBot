@@ -24,13 +24,23 @@ Latenivenatrix is linked by a specific profile rule. The speed gap is small (107
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 13 pro Haupttreffer vom Angreifer (61 bis zum Kill), 180 zurück (3 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Lurdusaurus – spürbar (territorial-rival)
-Lurdusaurus can create a credible fight
+### Lurdusaurus (Freshwater) – spürbar (territorial-rival)
+Lurdusaurus (Freshwater) can create a credible fight
 
-Lurdusaurus is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land. 1 Lurdusaurus vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.
-- Verfolgung: The speed gap is small (1050 vs 1000), but Lurdusaurus has the pursuit edge on land.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left. (Kampfgewicht 3200 vs 4200)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 95% of its health left.
+Lurdusaurus (Freshwater) is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land. 1 Lurdusaurus (Freshwater) vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.
+- Verfolgung: The speed gap is small (1050 vs 1000), but Lurdusaurus (Freshwater) has the pursuit edge on land.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left. (Kampfgewicht 3200 vs 4200)
+- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 95% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 34 pro Haupttreffer vom Angreifer (24 bis zum Kill), 79 zurück (8 bis zum Kill)
+- Profilbezug: The profile names a direct aggression or rivalry rule.
+
+### Lurdusaurus (Coast) – spürbar (territorial-rival)
+Lurdusaurus (Coast) can create a credible fight
+
+Lurdusaurus (Coast) is linked by a specific profile rule. The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land. 1 Lurdusaurus (Coast) vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left.
+- Verfolgung: The speed gap is small (1050 vs 1000), but Lurdusaurus (Coast) has the pursuit edge on land.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Iguanodon: the Iguanodon side wins in about 7 s with 57% of its health left. (Kampfgewicht 3200 vs 4200)
+- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 95% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 34 pro Haupttreffer vom Angreifer (24 bis zum Kill), 79 zurück (8 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 

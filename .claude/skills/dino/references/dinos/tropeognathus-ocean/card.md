@@ -74,7 +74,8 @@ You are the ocean wanderer. Your cluster is a loose flock strung out over the se
 - **Rhamphorhynchus** (sehr hoch): Rhamphorhynchus is a realistic hunting opportunity
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Quetzalcoatlus** (conditional): Quetzalcoatlus is legal quarry, but not a comfortable fight
-- **Lurdusaurus** (conditional): Lurdusaurus is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
 - **Thalassodromeus** (conditional): Thalassodromeus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.

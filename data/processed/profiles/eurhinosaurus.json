@@ -14953,125 +14953,6 @@
           "confidence": "derived"
         },
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
-          "family": "lurdusaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Lurdusaurus is legal quarry, but not a comfortable fight",
-          "summary": "Lurdusaurus is within the legal hunt ceiling. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 2 s with 98% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Large tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1050,
-            "targetSpeed": 700,
-            "speedMarginPct": 50,
-            "attackerDurationSeconds": 222,
-            "targetDurationSeconds": 250,
-            "durationMarginPct": -11.2,
-            "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "coastal-bluffs",
-              "volcano-islands",
-              "palm-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "coastland-swamp"
-            ],
-            "overlap": 0.444,
-            "label": "8 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Large tier.",
-            "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-            "1 Eurhinosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 2 s with 98% of its health left.",
-            "8 shared mapped areas make contact plausible.",
-            "One-on-one, a Eurhinosaurus bite lands 38 on Lurdusaurus (16 to kill); a Lurdusaurus bite lands 48 back (13 to kill).",
-            "Eurhinosaurus's bleed builds faster than Lurdusaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 5,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 38,
-              "defenderHit": 48,
-              "attackerBurst": 61,
-              "defenderBurst": 107,
-              "attackerHitsToKill": 16,
-              "defenderHitsToKill": 13,
-              "attackerDps": 30.7,
-              "defenderDps": 70.9,
-              "attackerTimeToKill": 20,
-              "defenderTimeToKill": 8,
-              "attackerBleed": 0.053,
-              "defenderBleed": 0.144,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 2,
-              "attackersLeft": 0,
-              "defendersLeft": 5,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.98,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 1.75
-              }
-            },
-            "label": "1 Eurhinosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 2 s with 98% of its health left.",
-            "detail": "1 attacker vs 5 defenders",
-            "attackerCombatWeight": 3000,
-            "targetCombatWeight": 3200,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 5,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "3 Eurhinosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 89% of its health left.",
-              "attackers": 3,
-              "defenders": 5
-            }
-          },
-          "attackerId": "eurhinosaurus",
-          "targetId": "lurdusaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Eurhinosaurus",
-            "targetName": "Lurdusaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Lurdusaurus is within the legal hunt ceiling."
-          },
-          "tags": [],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
           "id": "concavenator",
           "name": "Concavenator",
           "family": "concavenator",
@@ -15184,6 +15065,236 @@
             "explicit": false,
             "relationKind": null,
             "summaryLead": "Concavenator is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
+          "family": "lurdusaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus (Freshwater) is within the legal hunt ceiling. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 2 s with 98% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 700,
+            "speedMarginPct": 50,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.294,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+            "1 Eurhinosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 2 s with 98% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Eurhinosaurus bite lands 38 on Lurdusaurus (Freshwater) (16 to kill); a Lurdusaurus (Freshwater) bite lands 48 back (13 to kill).",
+            "Eurhinosaurus's bleed builds faster than Lurdusaurus (Freshwater) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 5,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 48,
+              "attackerBurst": 61,
+              "defenderBurst": 107,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 13,
+              "attackerDps": 30.7,
+              "defenderDps": 70.9,
+              "attackerTimeToKill": 20,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0.053,
+              "defenderBleed": 0.144,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 5,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.75
+              }
+            },
+            "label": "1 Eurhinosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 2 s with 98% of its health left.",
+            "detail": "1 attacker vs 5 defenders",
+            "attackerCombatWeight": 3000,
+            "targetCombatWeight": 3200,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Eurhinosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 5 s with 89% of its health left.",
+              "attackers": 3,
+              "defenders": 5
+            }
+          },
+          "attackerId": "eurhinosaurus",
+          "targetId": "lurdusaurus-freshwater",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Eurhinosaurus",
+            "targetName": "Lurdusaurus (Freshwater)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lurdusaurus (Freshwater) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "family": "lurdusaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Lurdusaurus (Coast) is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus (Coast) is within the legal hunt ceiling. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 2 s with 98% of its health left.",
+          "score": 39,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1050,
+            "targetSpeed": 700,
+            "speedMarginPct": 50,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands"
+            ],
+            "overlap": 0.25,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+            "1 Eurhinosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 2 s with 98% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Eurhinosaurus bite lands 38 on Lurdusaurus (Coast) (16 to kill); a Lurdusaurus (Coast) bite lands 48 back (13 to kill).",
+            "Eurhinosaurus's bleed builds faster than Lurdusaurus (Coast) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 5,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 38,
+              "defenderHit": 48,
+              "attackerBurst": 61,
+              "defenderBurst": 107,
+              "attackerHitsToKill": 16,
+              "defenderHitsToKill": 13,
+              "attackerDps": 30.7,
+              "defenderDps": 70.9,
+              "attackerTimeToKill": 20,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0.053,
+              "defenderBleed": 0.144,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 5,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.75
+              }
+            },
+            "label": "1 Eurhinosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 2 s with 98% of its health left.",
+            "detail": "1 attacker vs 5 defenders",
+            "attackerCombatWeight": 3000,
+            "targetCombatWeight": 3200,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Eurhinosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 5 s with 89% of its health left.",
+              "attackers": 3,
+              "defenders": 5
+            }
+          },
+          "attackerId": "eurhinosaurus",
+          "targetId": "lurdusaurus-coast",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Eurhinosaurus",
+            "targetName": "Lurdusaurus (Coast)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 56,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lurdusaurus (Coast) is within the legal hunt ceiling."
           },
           "tags": [],
           "evidence": [],
@@ -15678,37 +15789,6 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
-      "lurdusaurus": {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
-        "cw": 3200,
-        "hp": 600,
-        "armor": 1,
-        "dps": 66.5,
-        "primary": {
-          "label": "Bite",
-          "damage": 45,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Torpedo",
-          "damage": 100,
-          "cooldown": 8,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Back Kick",
-          "Thumb Attack"
-        ],
-        "bleedPerSecond": 0.135,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 5,
-        "engagementUnlimited": false
-      },
       "concavenator": {
         "id": "concavenator",
         "name": "Concavenator",
@@ -15738,6 +15818,68 @@
         "huntLimit": 4,
         "huntUnlimited": false,
         "engagementLimit": 4,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-freshwater": {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-coast": {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
         "engagementUnlimited": false
       },
       "sarcosuchus": {

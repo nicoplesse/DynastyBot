@@ -74,10 +74,10 @@ You are the polar bear among the Spinosaurus. You have one home sea area, ideall
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
-- **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
+- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) matters only if it gets the right opening
+- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) matters only if it gets the right opening
 - **Tyrannosaurus** (sehr hoch): Tyrannosaurus can create a very narrow escape window
 - **Yutyrannus** (hoch): Yutyrannus can create a real pursuit problem
-- **Maip** (hoch): Maip can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity

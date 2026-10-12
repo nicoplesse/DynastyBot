@@ -69,12 +69,12 @@ You are a large herbivore with two lives. In the dry season you are tolerant and
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Lurdusaurus** (spürbar): Lurdusaurus can create a credible fight
+- **Lurdusaurus (Freshwater)** (spürbar): Lurdusaurus (Freshwater) can create a credible fight
+- **Lurdusaurus (Coast)** (spürbar): Lurdusaurus (Coast) can create a credible fight
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Yutyrannus** (sehr hoch): Yutyrannus can create a very narrow escape window
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Ceratosaurus** (hoch): Ceratosaurus can create a real pursuit problem
-- **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Torvosaurus** (spürbar): Torvosaurus is legal quarry, but not a comfortable fight

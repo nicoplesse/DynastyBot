@@ -16,9 +16,10 @@ Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shape
 8. Tropeognathus (Coast) – Stufe 4, Small, Fleisch, Kampfgewicht 2000
 9. Tropeognathus (Ocean) – Stufe 4, Small, Fleisch, Kampfgewicht 2000
 10. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
-11. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
+11. Lurdusaurus (Coast) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
+12. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
 
-Besucher: Deinosuchus (Shore), Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus, Lurdusaurus
+Besucher: Deinosuchus (Shore), Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus
 
 ## Flüsse, Seen & Sümpfe (Rivers, Lakes & Swamps)
 
@@ -32,7 +33,7 @@ Rivers, lakes, bogs, mudflats and riverbanks: life organised around fresh water.
 6. Thalassodromeus – Stufe 4, Small, Fleisch, Kampfgewicht 2100
 7. Deinocheirus – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
 8. Lambeosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 3500
-9. Lurdusaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
+9. Lurdusaurus (Freshwater) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
 10. Halszkaraptor – Stufe 7, Tiny, Pflanzen, Kampfgewicht 400
 
 Besucher: Spinosaurus (Saltwater), Tyrannotitan, Metriacanthosaurus, Eurhinosaurus, Achillobator, Megalania (Temperate), Austroraptor, Tropeognathus (Coast), Latenivenatrix, Rhamphorhynchus, Apatosaurus, Yunnanosaurus, Albertaceratops, Kentrosaurus
@@ -58,7 +59,7 @@ Redwoods, jungle, woodland clearings and forested hills: cover, ambush and terri
 15. Kentrosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2700
 16. Tenontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2400
 
-Besucher: Spinosaurus (Freshwater), Giganotosaurus, Sarcosuchus, Maip, Pycnonemosaurus, Daspletosaurus, Yutyrannus, Metriacanthosaurus, Utahraptor, Deinonychus, Parasaurolophus, Lambeosaurus, Styracosaurus, Camptosaurus, Dryosaurus
+Besucher: Spinosaurus (Freshwater), Giganotosaurus, Sarcosuchus, Maip, Pycnonemosaurus, Daspletosaurus, Yutyrannus, Metriacanthosaurus, Utahraptor, Deinonychus, Parasaurolophus, Lambeosaurus, Lurdusaurus (Freshwater), Styracosaurus, Camptosaurus, Dryosaurus
 
 ## Ebenen & Savanne (Plains & Savanna)
 

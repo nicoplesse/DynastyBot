@@ -73,7 +73,7 @@ You are an Apex semi-aquatic ambusher with 6,000 combat weight. Every hunt start
 - **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
 - **Deinocheirus** (spürbar): Deinocheirus can create a credible fight
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
-- **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
+- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T00:59:05.983Z",
-  "count": 65,
+  "generatedAt": "2026-10-12T00:09:25.138Z",
+  "count": 66,
   "profiles": [
     {
       "id": "achillobator",
@@ -1844,7 +1844,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 5
       },
       "analog": {
@@ -1949,7 +1949,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 7,
+        "threats": 8,
         "opportunities": 7
       },
       "analog": {
@@ -2731,7 +2731,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 0
       },
       "analog": {
@@ -3379,9 +3379,18 @@
       "importedAt": "2026-09-22T17:12:50.668Z"
     },
     {
-      "id": "lurdusaurus",
-      "name": "Lurdusaurus",
-      "aliases": [],
+      "id": "lurdusaurus-coast",
+      "name": "Lurdusaurus (Coast)",
+      "aliases": [
+        "Lurdusaurus",
+        "Coast Lurdusaurus",
+        "Coastal Lurdusaurus",
+        "Sea Lurdusaurus",
+        "Coast Lurdu",
+        "Küsten-Lurdu",
+        "Meerechsen-Lurdu",
+        "Lavaschnauber"
+      ],
       "summary": "Lurdusaurus originated from the Elrhaz Formation in Niger, found in the Cretaceous period around 112 million years ago. It was an iguanodont that may have been semi-aquatic, living in and around the rivers of ancient tropical forests. Measuring eight meters long (26 feet) and weighing more than five tons, Lurdusaurus were formidable herbivores with a diet consisting primarily of water-plants.",
       "classification": {
         "tier": "Medium",
@@ -3399,14 +3408,121 @@
         "classification": "Semi-Aquatic",
         "moisture": [
           "mesic",
-          "aquatic",
+          "aquatic"
+        ],
+        "biomes": [
+          "coast",
+          "volcanic"
+        ],
+        "regions": 4,
+        "isDry": false,
+        "hasMap": true
+      },
+      "matchups": {
+        "threats": 7,
+        "opportunities": 6
+      },
+      "analog": {
+        "label": "Marine iguana + Hippopotamus",
+        "labelDe": "Meerechse + Flusspferd",
+        "headline": "A marine iguana with a hippo's temper: grazes only kelp in the surf, snorts out salt, hides from the sun by day and warms up on sun-heated lava rock at night.",
+        "analogs": [
+          {
+            "animal": "Marine iguana",
+            "de": "Meerechse",
+            "archetype": "lizard",
+            "archetypeLabel": "Lizard & monitor",
+            "archetypeDe": "Echse & Waran",
+            "share": 60,
+            "role": "primary",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Amblyrhynchus_cristatus_%283838137696%29.jpg/1280px-Amblyrhynchus_cristatus_%283838137696%29.jpg",
+              "focus": "62% 45%"
+            }
+          },
+          {
+            "animal": "Hippopotamus",
+            "de": "Flusspferd",
+            "archetype": "hippo",
+            "archetypeLabel": "Hippo",
+            "archetypeDe": "Flusspferd",
+            "share": 40,
+            "role": "secondary",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/1280px-Portrait_Hippopotamus_in_the_water.jpg",
+              "focus": "50% 40%"
+            }
+          }
+        ],
+        "moods": [
+          "colony",
+          "herd",
+          "semi-aquatic",
+          "territorial",
+          "aggressive"
+        ],
+        "habitats": [
+          "sea"
+        ]
+      },
+      "solo": "group",
+      "variant": {
+        "id": "coast",
+        "label": "Coast variant",
+        "de": "Küsten-Variante",
+        "title": "Lavaschnauber",
+        "parentId": "lurdusaurus",
+        "parentName": "Lurdusaurus"
+      },
+      "ecosystem": {
+        "id": "sea",
+        "level": 6,
+        "also": []
+      },
+      "cover": {
+        "file": "images/image-3.png",
+        "label": "",
+        "originalFileName": "image.png",
+        "role": "cover"
+      },
+      "importedAt": "2026-09-22T18:02:01.917Z"
+    },
+    {
+      "id": "lurdusaurus-freshwater",
+      "name": "Lurdusaurus (Freshwater)",
+      "aliases": [
+        "Lurdusaurus",
+        "Freshwater Lurdusaurus",
+        "River Lurdusaurus",
+        "Freshwater Lurdu",
+        "River Lurdu",
+        "Fluss-Lurdu",
+        "Süßwasser-Lurdu",
+        "Flusspferd-Lurdu",
+        "Schlammbader"
+      ],
+      "summary": "Lurdusaurus originated from the Elrhaz Formation in Niger, found in the Cretaceous period around 112 million years ago. It was an iguanodont that may have been semi-aquatic, living in and around the rivers of ancient tropical forests. Measuring eight meters long (26 feet) and weighing more than five tons, Lurdusaurus were formidable herbivores with a diet consisting primarily of water-plants.",
+      "classification": {
+        "tier": "Medium",
+        "activity": "Cathemeral",
+        "habitat": "Semi-Aquatic",
+        "diet": "Herbivore",
+        "label": "Medium Cathemeral Semi-Aquatic Herbivore"
+      },
+      "stats": {
+        "combatWeight": 3200,
+        "growthMinutes": 120,
+        "changeCount": 2
+      },
+      "habitat": {
+        "classification": "Semi-Aquatic",
+        "moisture": [
+          "mesic",
           "semi-arid",
           "wet",
           "arid"
         ],
         "biomes": [
-          "coast",
-          "volcanic",
           "forest",
           "swamp",
           "mudflat",
@@ -3414,7 +3530,7 @@
           "hills",
           "canyon"
         ],
-        "regions": 15,
+        "regions": 11,
         "isDry": true,
         "hasMap": true
       },
@@ -3425,7 +3541,7 @@
       "analog": {
         "label": "Hippopotamus + Capybara",
         "labelDe": "Flusspferd + Wasserschwein",
-        "headline": "A medium-sized hippo pod: water by day, land at night, and a dominant bull who owns the river.",
+        "headline": "A medium-sized hippo pod of lakes and rivers: water by day, land at night, and a dominant bull who owns the river.",
         "analogs": [
           {
             "animal": "Hippopotamus",
@@ -3462,17 +3578,23 @@
           "playful"
         ],
         "habitats": [
-          "wetland",
-          "sea"
+          "wetland"
         ]
       },
       "solo": "group",
-      "variant": null,
+      "variant": {
+        "id": "freshwater",
+        "label": "Freshwater variant",
+        "de": "Süßwasser-Variante",
+        "title": "Schlammbader",
+        "parentId": "lurdusaurus",
+        "parentName": "Lurdusaurus"
+      },
       "ecosystem": {
         "id": "freshwater",
         "level": 6,
         "also": [
-          "sea"
+          "forest"
         ]
       },
       "cover": {
@@ -4803,7 +4925,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 8
       },
       "analog": {
@@ -4923,7 +5045,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 7
       },
       "analog": {
@@ -5811,7 +5933,7 @@
       },
       "matchups": {
         "threats": 3,
-        "opportunities": 6
+        "opportunities": 7
       },
       "analog": {
         "label": "Herring gull + Great cormorant",
@@ -5925,7 +6047,7 @@
       },
       "matchups": {
         "threats": 2,
-        "opportunities": 5
+        "opportunities": 6
       },
       "analog": {
         "label": "Wandering albatross + Northern gannet",
@@ -6431,7 +6553,7 @@
         "hasMap": true
       },
       "matchups": {
-        "threats": 6,
+        "threats": 7,
         "opportunities": 2
       },
       "analog": {

@@ -81,8 +81,8 @@ You are the gull of Gondwa's beaches. Your day happens on the ground and just ab
 - **Rhamphorhynchus** (sehr hoch): Rhamphorhynchus is a realistic hunting opportunity
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus is legal quarry, but not a comfortable fight
-- **Lurdusaurus** (conditional): Lurdusaurus is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) is legal quarry, but not a comfortable fight
 - **Thalassodromeus** (conditional): Thalassodromeus is legal quarry, but not a comfortable fight
-- **Camptosaurus** (conditional): Camptosaurus can usually refuse the chase
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

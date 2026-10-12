@@ -11090,14 +11090,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
         "family": "lurdusaurus",
         "direction": "opportunity",
         "band": "conditional",
         "kind": "risky-quarry",
-        "headline": "Lurdusaurus is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Ocean) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 99% of its health left.",
+        "headline": "Lurdusaurus (Coast) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 1 s with 99% of its health left.",
         "score": 27,
         "visible": true,
         "intent": {
@@ -11114,23 +11114,23 @@
           "attackerDurationSeconds": 181.818,
           "targetDurationSeconds": 125,
           "durationMarginPct": 45.5,
-          "label": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass."
+          "label": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass."
         },
         "encounter": {
           "level": "possible",
           "sharedRegions": [
             "coastal-bluffs"
           ],
-          "overlap": 0.056,
+          "overlap": 0.143,
           "label": "They overlap in 1 mapped area, so the matchup is situational."
         },
         "facts": [
           "The profile names this playable as prey or a target.",
-          "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass.",
-          "1 Tropeognathus (Ocean) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 99% of its health left.",
+          "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.",
+          "1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 1 s with 99% of its health left.",
           "They overlap in 1 mapped area, so the matchup is situational.",
-          "One-on-one, a Tropeognathus (Ocean) chomp lands 28 on Lurdusaurus (22 to kill); a Lurdusaurus bite lands 72 back (7 to kill).",
-          "Tropeognathus (Ocean)'s bleed builds faster than Lurdusaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          "One-on-one, a Tropeognathus (Ocean) chomp lands 28 on Lurdusaurus (Coast) (22 to kill); a Lurdusaurus (Coast) bite lands 72 back (7 to kill).",
+          "Tropeognathus (Ocean)'s bleed builds faster than Lurdusaurus (Coast) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
         "fight": {
           "attackers": 1,
@@ -11167,7 +11167,7 @@
               "seconds": 1
             }
           },
-          "label": "1 Tropeognathus (Ocean) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 99% of its health left.",
+          "label": "1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 1 s with 99% of its health left.",
           "detail": "1 attacker vs 5 defenders",
           "attackerCombatWeight": 2000,
           "targetCombatWeight": 3200,
@@ -11177,22 +11177,145 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "4 Tropeognathus (Ocean) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 4 s with 95% of its health left.",
+            "label": "4 Tropeognathus (Ocean) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 4 s with 95% of its health left.",
             "attackers": 4,
             "defenders": 5
           }
         },
         "attackerId": "tropeognathus-ocean",
-        "targetId": "lurdusaurus",
+        "targetId": "lurdusaurus-coast",
         "core": {
           "direction": "opportunity",
           "attackerName": "Tropeognathus (Ocean)",
-          "targetName": "Lurdusaurus",
+          "targetName": "Lurdusaurus (Coast)",
           "chaseVerdict": "target-can-disengage",
-          "chaseLabel": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass.",
+          "chaseLabel": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.",
           "baseScore": 44,
           "scoreCap": null,
           "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "tropeognathus-ocean",
+            "profileName": "Tropeognathus (Ocean)",
+            "section": "Preferred Prey & Diet",
+            "text": "Tropeognathus especially enjoy hunting Lurdusaurus, who frequent similar POIs to Tropeognathus."
+          },
+          {
+            "profileId": "tropeognathus-ocean",
+            "profileName": "Tropeognathus (Ocean)",
+            "section": "Cross-Species Interaction",
+            "text": "Tropeognathus especially enjoy hunting Lurdusaurus."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "family": "lurdusaurus",
+        "direction": "opportunity",
+        "band": "conditional",
+        "kind": "risky-quarry",
+        "headline": "Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+        "score": 7,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "air-to-land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 1300,
+          "targetSpeed": 1050,
+          "speedMarginPct": 23.8,
+          "attackerDurationSeconds": 181.818,
+          "targetDurationSeconds": 125,
+          "durationMarginPct": 45.5,
+          "label": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass."
+        },
+        "encounter": {
+          "level": "rare",
+          "sharedRegions": [],
+          "overlap": 0,
+          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass.",
+          "1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+          "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
+          "One-on-one, a Tropeognathus (Ocean) chomp lands 28 on Lurdusaurus (Freshwater) (22 to kill); a Lurdusaurus (Freshwater) bite lands 72 back (7 to kill).",
+          "Tropeognathus (Ocean)'s bleed builds faster than Lurdusaurus (Freshwater) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 5,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 28,
+            "defenderHit": 72,
+            "attackerBurst": 41,
+            "defenderBurst": 160,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 7,
+            "attackerDps": 16.7,
+            "defenderDps": 106.4,
+            "attackerTimeToKill": 36,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0.049,
+            "defenderBleed": 0.216,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 5,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1
+            }
+          },
+          "label": "1 Tropeognathus (Ocean) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 5 defenders",
+          "attackerCombatWeight": 2000,
+          "targetCombatWeight": 3200,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 5,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "4 Tropeognathus (Ocean) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 4 s with 95% of its health left.",
+            "attackers": 4,
+            "defenders": 5
+          }
+        },
+        "attackerId": "tropeognathus-ocean",
+        "targetId": "lurdusaurus-freshwater",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tropeognathus (Ocean)",
+          "targetName": "Lurdusaurus (Freshwater)",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass.",
+          "baseScore": 24,
+          "scoreCap": 44,
+          "conditional": true,
           "explicit": true,
           "relationKind": null,
           "summaryLead": "A profile rule names or prioritises this matchup."
@@ -11705,9 +11828,40 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "lurdusaurus": {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+      "lurdusaurus-coast": {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-freshwater": {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
         "cw": 3200,
         "hp": 600,
         "armor": 1,

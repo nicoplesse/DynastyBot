@@ -38,7 +38,8 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | lambeosaurus | Lambeosaurus | Lamb, Lambeo | Medium Diurnal Terrestrial Herbivore | Sambarhirsch + Schaf (Herde) (Sambar deer + Sheep (flock)) |
 | latenivenatrix | Latenivenatrix | Laten | Small Nocturnal Terrestrial Carnivore | Saatkrähe + Rothund (Rook + Dhole) |
 | leedsichthys | Leedsichthys | Leed | Apex Cathemeral Aquatic Filter Feeder Carnivore | Walhai + Kahlhecht (Whale shark + Bowfin) |
-| lurdusaurus | Lurdusaurus | – | Medium Cathemeral Semi-Aquatic Herbivore | Flusspferd + Wasserschwein (Hippopotamus + Capybara) |
+| lurdusaurus-coast | Lurdusaurus (Coast) | Lurdusaurus, Coast Lurdusaurus, Coastal Lurdusaurus, Sea Lurdusaurus, Coast Lurdu, Küsten-Lurdu, Meerechsen-Lurdu, Lavaschnauber | Medium Cathemeral Semi-Aquatic Herbivore | Meerechse + Flusspferd (Marine iguana + Hippopotamus) |
+| lurdusaurus-freshwater | Lurdusaurus (Freshwater) | Lurdusaurus, Freshwater Lurdusaurus, River Lurdusaurus, Freshwater Lurdu, River Lurdu, Fluss-Lurdu, Süßwasser-Lurdu, Flusspferd-Lurdu, Schlammbader | Medium Cathemeral Semi-Aquatic Herbivore | Flusspferd + Wasserschwein (Hippopotamus + Capybara) |
 | maip | Maip | – | Large Nocturnal Terrestrial Carnivore | Tüpfelhyäne + Kolkrabe (Spotted hyena + Common raven) |
 | megalania-arid | Megalania (Arid) | Megalania, Arid Megalania, Arid Meg, Wüsten-Megalania, Canyon-Drache, Meg | Medium Cathemeral Terrestrial & Semi-Aquatic Carnivore | Komodowaran + Leopardgecko (Komodo dragon + Leopard gecko) |
 | megalania-temperate | Megalania (Temperate) | Megalania, Temperate Megalania, Temperate Meg, Sumpf-Megalania, Feucht-Megalania, Baumdrache, Meg | Medium Cathemeral Terrestrial & Semi-Aquatic Carnivore | Buntwaran + Tokeh (Lace monitor + Tokay gecko) |

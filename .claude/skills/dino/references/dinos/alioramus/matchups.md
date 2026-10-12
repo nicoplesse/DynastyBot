@@ -106,13 +106,13 @@ Lambeosaurus is within the legal hunt ceiling. Alioramus is 15% faster on land; 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 31 pro Haupttreffer vom Angreifer (22 bis zum Kill), 44 zurück (12 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Lurdusaurus – spürbar (risky-quarry)
-Lurdusaurus is legal quarry, but not a comfortable fight
+### Lurdusaurus (Freshwater) – spürbar (risky-quarry)
+Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
 
-Lurdusaurus is within the legal hunt ceiling. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 98% of its health left.
+Lurdusaurus (Freshwater) is within the legal hunt ceiling. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 98% of its health left.
 - Verfolgung: Alioramus is 10% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 98% of its health left. (Kampfgewicht 2400 vs 3200)
-- Kampf (beide Seiten legal max): 5 Alioramus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 7 s with 77% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 98% of its health left. (Kampfgewicht 2400 vs 3200)
+- Kampf (beide Seiten legal max): 5 Alioramus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 7 s with 77% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 34 pro Haupttreffer vom Angreifer (18 bis zum Kill), 60 zurück (9 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

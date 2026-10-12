@@ -69,7 +69,7 @@ You live in two halves. By day you are the elephant seal: you lie for hours with
 - **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
 - **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
 - **Deinocheirus** (conditional): Deinocheirus matters only if it gets the right opening
-- **Lurdusaurus** (conditional): Lurdusaurus matters only if it gets the right opening
+- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Deinocheirus** (conditional): Deinocheirus is legal quarry, but not a comfortable fight

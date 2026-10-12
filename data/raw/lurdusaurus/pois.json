@@ -2,114 +2,147 @@
   "schemaVersion": 1,
   "source": "curated-areas",
   "mapImage": "images/image.png",
-  "note": "Preferred POI areas curated from the profile map. Small named landmarks are represented by their enclosing, black-outlined POI area.",
+  "note": "Preferred POI areas curated from the profile map. The archive splits them into a freshwater variant (lakes, rivers, bogs and the woods around them) and a coast variant that keeps to the beaches, sea cliffs and islands.",
   "pois": [
     {
       "regionId": "tallbrush-coasts",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "coastal-bluffs",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "volcano-islands",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "palm-islands",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "coast"
     },
     {
       "regionId": "big-tree-overlook",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "cedrus-forest",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "twisted-forest",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "stillwater-bog",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "mudflats",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "cliff-edge-falls",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "coastland-swamp",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "crag-bluffs",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "redwoods",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "wind-tunnels",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     },
     {
       "regionId": "wollemi-forest",
       "roles": [
         "territory",
         "nesting"
-      ]
+      ],
+      "variant": "freshwater"
     }
   ],
   "reviewedAt": "2026-09-24",
-  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed."
+  "review": "Checked against the traced POI outlines: every listed area is highlighted on the profile map, and every highlighted area is listed.",
+  "variants": [
+    {
+      "id": "freshwater",
+      "name": "Freshwater Lurdusaurus",
+      "moisture": "wet",
+      "note": "The hippo of lakes, rivers, bogs and wet woods: in the water by day, inland at night, a float whose bull owns his stretch of water."
+    },
+    {
+      "id": "coast",
+      "name": "Coast Lurdusaurus",
+      "moisture": "aquatic",
+      "note": "The marine iguana of the beaches, sea cliffs and islands: grazes only kelp, snorts out salt, shelters from the sun by day and warms up on sun-heated rock at night. Needs no fresh water and keeps close to shore."
+    }
+  ],
+  "legend": {
+    "freshwater": "Range of the freshwater variant (lakes, rivers, bogs and the woods around them)",
+    "coast": "Range of the coast variant (Tallbrush Coasts, Coastal Bluffs, Volcano Islands, Palm Islands)"
+  }
 }

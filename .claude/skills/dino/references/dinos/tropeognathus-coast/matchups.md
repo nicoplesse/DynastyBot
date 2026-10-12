@@ -66,13 +66,23 @@ A profile rule names or prioritises this matchup. Tropeognathus (Coast) can appr
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 33 pro Haupttreffer vom Angreifer (19 bis zum Kill), 110 zurück (5 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Lurdusaurus – conditional (risky-quarry)
-Lurdusaurus is legal quarry, but not a comfortable fight
+### Lurdusaurus (Freshwater) – conditional (risky-quarry)
+Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
 
-A profile rule names or prioritises this matchup. Tropeognathus (Coast) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Coast) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 99% of its health left.
-- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Lurdusaurus's 1050 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Tropeognathus (Coast) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 1 s with 99% of its health left. (Kampfgewicht 2000 vs 3200)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 5 Lurdusaurus: the Lurdusaurus side wins in about 4 s with 95% of its health left.
+A profile rule names or prioritises this matchup. Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Coast) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 99% of its health left.
+- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Freshwater)'s 1050 land speed and longer sprint let it disengage after the opening pass.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Tropeognathus (Coast) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 1 s with 99% of its health left. (Kampfgewicht 2000 vs 3200)
+- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 4 s with 95% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (22 bis zum Kill), 72 zurück (7 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Lurdusaurus (Coast) – conditional (risky-quarry)
+Lurdusaurus (Coast) is legal quarry, but not a comfortable fight
+
+A profile rule names or prioritises this matchup. Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus (Coast) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 1 s with 99% of its health left.
+- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Tropeognathus (Coast) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 1 s with 99% of its health left. (Kampfgewicht 2000 vs 3200)
+- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 4 s with 95% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (22 bis zum Kill), 72 zurück (7 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 

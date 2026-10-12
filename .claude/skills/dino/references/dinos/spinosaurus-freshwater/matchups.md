@@ -24,13 +24,23 @@ Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (61 bis zum Kill), 120 zurück (5 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
-### Lurdusaurus – conditional (conditional)
-Lurdusaurus matters only if it gets the right opening
+### Lurdusaurus (Freshwater) – conditional (conditional)
+Lurdusaurus (Freshwater) matters only if it gets the right opening
 
-Lurdusaurus is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
+Lurdusaurus (Freshwater) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
 - Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
+- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
+- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
+
+### Lurdusaurus (Coast) – conditional (conditional)
+Lurdusaurus (Coast) matters only if it gets the right opening
+
+Lurdusaurus (Coast) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
+- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
+- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 

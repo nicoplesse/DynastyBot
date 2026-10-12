@@ -14916,14 +14916,14 @@
           "confidence": "derived"
         },
         {
-          "id": "lurdusaurus",
-          "name": "Lurdusaurus",
+          "id": "lurdusaurus-freshwater",
+          "name": "Lurdusaurus (Freshwater)",
           "family": "lurdusaurus",
           "direction": "opportunity",
           "band": "meaningful",
           "kind": "risky-quarry",
-          "headline": "Lurdusaurus is legal quarry, but not a comfortable fight",
-          "summary": "Lurdusaurus is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
+          "headline": "Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus (Freshwater) is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 5 s with 87% of its health left.",
           "score": 55,
           "visible": true,
           "intent": {
@@ -14945,23 +14945,20 @@
           "encounter": {
             "level": "frequent",
             "sharedRegions": [
-              "coastal-bluffs",
-              "volcano-islands",
-              "palm-islands",
               "big-tree-overlook",
               "twisted-forest",
               "stillwater-bog",
               "mudflats"
             ],
-            "overlap": 0.389,
-            "label": "7 shared mapped areas make contact plausible."
+            "overlap": 0.235,
+            "label": "4 shared mapped areas make contact plausible."
           },
           "facts": [
             "Its profile permits hunting through Apex tier.",
             "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
-            "1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
-            "7 shared mapped areas make contact plausible.",
-            "One-on-one, a Tylosaurus bite lands 102 on Lurdusaurus (6 to kill); a Lurdusaurus bite lands 29 back (35 to kill).",
+            "1 Tylosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 5 s with 87% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Tylosaurus bite lands 102 on Lurdusaurus (Freshwater) (6 to kill); a Lurdusaurus (Freshwater) bite lands 29 back (35 to kill).",
             "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
           ],
           "fight": {
@@ -14999,7 +14996,7 @@
                 "seconds": 4.75
               }
             },
-            "label": "1 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 5 s with 87% of its health left.",
+            "label": "1 Tylosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 5 s with 87% of its health left.",
             "detail": "1 attacker vs 5 defenders",
             "attackerCombatWeight": 5000,
             "targetCombatWeight": 3200,
@@ -15009,17 +15006,17 @@
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "defender-advantage",
-              "label": "2 Tylosaurus vs 5 Lurdusaurus: the Lurdusaurus side wins in about 11 s with 56% of its health left.",
+              "label": "2 Tylosaurus vs 5 Lurdusaurus (Freshwater): the Lurdusaurus (Freshwater) side wins in about 11 s with 56% of its health left.",
               "attackers": 2,
               "defenders": 5
             }
           },
           "attackerId": "tylosaurus",
-          "targetId": "lurdusaurus",
+          "targetId": "lurdusaurus-freshwater",
           "core": {
             "direction": "opportunity",
             "attackerName": "Tylosaurus",
-            "targetName": "Lurdusaurus",
+            "targetName": "Lurdusaurus (Freshwater)",
             "chaseVerdict": "attacker-faster",
             "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
             "baseScore": 72,
@@ -15027,7 +15024,124 @@
             "conditional": false,
             "explicit": false,
             "relationKind": null,
-            "summaryLead": "Lurdusaurus is within the legal hunt ceiling."
+            "summaryLead": "Lurdusaurus (Freshwater) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "lurdusaurus-coast",
+          "name": "Lurdusaurus (Coast)",
+          "family": "lurdusaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Lurdusaurus (Coast) is legal quarry, but not a comfortable fight",
+          "summary": "Lurdusaurus (Coast) is within the legal hunt ceiling. Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 5 s with 87% of its health left.",
+          "score": 46,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "water",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 700,
+            "speedMarginPct": 28.6,
+            "attackerDurationSeconds": 222,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -11.2,
+            "label": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands"
+            ],
+            "overlap": 0.273,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "1 Tylosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 5 s with 87% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Tylosaurus bite lands 102 on Lurdusaurus (Coast) (6 to kill); a Lurdusaurus (Coast) bite lands 29 back (35 to kill).",
+            "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 5,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 102,
+              "defenderHit": 29,
+              "attackerBurst": 164,
+              "defenderBurst": 64,
+              "attackerHitsToKill": 6,
+              "defenderHitsToKill": 35,
+              "attackerDps": 80.4,
+              "defenderDps": 42.6,
+              "attackerTimeToKill": 7,
+              "defenderTimeToKill": 23,
+              "attackerBleed": 0,
+              "defenderBleed": 0.086,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 5,
+              "attackersLeft": 0,
+              "defendersLeft": 5,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.87,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 4.75
+              }
+            },
+            "label": "1 Tylosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 5 s with 87% of its health left.",
+            "detail": "1 attacker vs 5 defenders",
+            "attackerCombatWeight": 5000,
+            "targetCombatWeight": 3200,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "2 Tylosaurus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 11 s with 56% of its health left.",
+              "attackers": 2,
+              "defenders": 5
+            }
+          },
+          "attackerId": "tylosaurus",
+          "targetId": "lurdusaurus-coast",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tylosaurus",
+            "targetName": "Lurdusaurus (Coast)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tylosaurus is 29% faster in water; a clean escape is unlikely once spotted.",
+            "baseScore": 63,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Lurdusaurus (Coast) is within the legal hunt ceiling."
           },
           "tags": [
             "ambush",
@@ -15534,9 +15648,40 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "lurdusaurus": {
-        "id": "lurdusaurus",
-        "name": "Lurdusaurus",
+      "lurdusaurus-freshwater": {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "cw": 3200,
+        "hp": 600,
+        "armor": 1,
+        "dps": 66.5,
+        "primary": {
+          "label": "Bite",
+          "damage": 45,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Torpedo",
+          "damage": 100,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Back Kick",
+          "Thumb Attack"
+        ],
+        "bleedPerSecond": 0.135,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "lurdusaurus-coast": {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
         "cw": 3200,
         "hp": 600,
         "armor": 1,

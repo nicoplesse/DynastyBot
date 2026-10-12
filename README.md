@@ -97,6 +97,11 @@ Tropeognathus is split into a coast and an ocean playable, since its profile pla
 - **Tropeognathus (Coast)**, the "Strandpirat": a Baltic beach gull (herring gull) with a cormorant's dive. It rests on sandbanks and rocks along beaches, mudflats, swamps and islands, raids other predators' kills, cracks mussels on stone and follows land animals inland to the bogs.
 - **Tropeognathus (Ocean)**, the "Sturmsegler": a wandering albatross that plunge-dives like a northern gannet. It glides over Kelp Vale, the Abyssal Depths and the Stonebed Shoal, rests and sleeps on the water like an albatross and touches rock only to dry its wings or sit out a storm.
 
+Lurdusaurus is split into a freshwater and a coast playable. Its profile says it lives "along lakes and riverbanks - with some even in coastal regions", processes salt water and gives coastal Lurdusaurus "more blue, gray and white in their colors":
+
+- **Lurdusaurus (Freshwater)**, the "Schlammbader": the hippo (with a capybara's downtime) of lakes, rivers, bogs and the woods around them, in the water by day and inland at night.
+- **Lurdusaurus (Coast)**, the "Lavaschnauber": a marine iguana with a hippo's temper on the Tallbrush Coasts, the Coastal Bluffs, the Volcano Islands and the Palm Islands. It grazes only kelp, snorts out salt and keeps close to shore. Because the profile's Lurdusaurus burns in the sun, the iguana's day is turned around: it shelters in the shallows, shade and mud by day and warms up on sun-heated rock at night.
+
 Sibling variants are one species unless the profile says otherwise, and in the bounded threat and prey lists the variants of one profile share a single slot. The Spinosaurus variants never appear as each other's prey, while the Megalania variants may hunt each other.
 
 ## Counters and matchups
