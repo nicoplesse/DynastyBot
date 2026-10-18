@@ -3,7 +3,7 @@
 //   node server/scripts/herd.mjs show <name|id>       one dino with absolute screenshot paths (JSON)
 //   node server/scripts/herd.mjs apply <name|id> <payload.json>
 //                                                     validated update, then prints what changed
-// The payload may hold playableId, sex, genetics, proofs, notes, transcripts and processed
+// The payload may hold playableId, sex, genetics, bonds, character, proofs, notes, transcripts and processed
 // ("pending" marks every unread screenshot as read). Screenshots themselves are never touched.
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -26,7 +26,9 @@ function summary(dino) {
   return {
     bloodlines: g?.bloodlines || [], dominant: g?.skins.dominant || [], recessive: g?.skins.recessive || [],
     mutations: (g?.mutations || []).map(item => item.name), extra: (g?.extra || []).map(item => `${item.label}: ${item.value}`),
-    playableId: dino.playableId, sex: dino.sex, proofs: dino.proofs,
+    bonds: (dino.bonds || []).map(item => [item.name, item.sex, item.kind, item.status, item.note].filter(Boolean).join(' · ')),
+    traits: dino.character?.traits || [], character: dino.character?.text || '',
+    playableId: dino.playableId, sex: dino.sex, proofs: dino.proofs, notes: dino.notes,
   };
 }
 

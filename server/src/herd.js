@@ -1,5 +1,6 @@
 // "Meine Dinos": the player's own dinosaurs. Each one is a folder data/herd/<id>/ with
-//   dino.json        structured record (genetics filled by the /aktualisiere skill, links and photo from the UI)
+//   dino.json        structured record (genetics filled by the /aktualisiere skill, links and photo from the UI;
+//                    bonds and character for social playables, from the UI or the skill)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
 //   photo-*.<ext>    optional photo of the dino
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
@@ -77,6 +78,23 @@ export function normalizeGenetics(value) {
   };
 }
 
+// Relationships to other dinos (pair bonds, harem, family …), written in the player's own words.
+export function normalizeBonds(value) {
+  if (value == null) return [];
+  if (!Array.isArray(value)) throw herdError(400, 'Bonds must be a list.');
+  return value.map(item => {
+    if (!item || typeof item !== 'object' || Array.isArray(item)) throw herdError(400, 'Each bond must be an object.');
+    if (item.sex != null && item.sex !== '' && !sexes.has(item.sex)) throw herdError(400, 'Bond sex must be female or male.');
+    return { name: text(item.name, 80), sex: item.sex || null, kind: text(item.kind, 60), status: text(item.status, 60), note: text(item.note, 400) };
+  }).filter(item => item.name);
+}
+
+export function normalizeCharacter(value) {
+  if (value == null) return { traits: [], text: '' };
+  if (typeof value !== 'object' || Array.isArray(value)) throw herdError(400, 'Character must be an object.');
+  return { traits: list(value.traits, 'Character traits'), text: text(value.text, 2000) };
+}
+
 async function knownPlayables(processedDir) {
   try {
     const index = JSON.parse(await readFile(join(processedDir, 'index.json'), 'utf8'));
@@ -151,7 +169,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
         if (error.status !== 404) throw error;
         const now = new Date().toISOString();
         created = true;
-        dino = { schemaVersion: 1, id: slug, name: cleanName, playableId: null, sex: null, photo: null, proofs: { mutation: '', nesting: '' }, notes: '', genetics: null, screenshots: [], createdAt: now, updatedAt: now };
+        dino = { schemaVersion: 1, id: slug, name: cleanName, playableId: null, sex: null, photo: null, proofs: { mutation: '', nesting: '' }, notes: '', genetics: null, bonds: [], character: normalizeCharacter(null), screenshots: [], createdAt: now, updatedAt: now };
         await mkdir(join(folder(slug), 'screenshots'), { recursive: true });
       }
     }
@@ -217,6 +235,8 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
       const genetics = normalizeGenetics(patch.genetics);
       dino.genetics = genetics && { ...genetics, updatedAt: new Date().toISOString() };
     }
+    if ('bonds' in patch) dino.bonds = normalizeBonds(patch.bonds);
+    if ('character' in patch) dino.character = normalizeCharacter(patch.character);
     if ('transcripts' in patch) {
       const transcripts = patch.transcripts || {};
       for (const [file, value] of Object.entries(transcripts)) {

@@ -1,6 +1,6 @@
 ---
 name: aktualisiere
-description: Aktualisiert einen eigenen Dino unter „My Dinos“ (DynastyBot) aus importierten Screenshots. Liest Bloodlines, dominante und rezessive Skins, Mutationen, Geschlecht und Playable aus den rohen Screenshots und trägt sie sauber in data/herd/<dino>/dino.json ein. Nutze diesen Skill, wenn der Nutzer „/aktualisiere“, „aktualisiere Malekit“, „lies meine Dino-Screenshots ein“, „trag die neuen Skins ein“ oder „setz den Mutation-Proof-Link“ sagt, oder allgemein seine eigenen Dinos, deren Bloodlines, Skins, Mutationen oder Proof-Links pflegen will.
+description: Aktualisiert einen eigenen Dino unter „My Dinos“ (DynastyBot) aus importierten Screenshots. Liest Bloodlines, dominante und rezessive Skins, Mutationen, Geschlecht und Playable aus den rohen Screenshots und trägt sie sauber in data/herd/<dino>/dino.json ein. Nutze diesen Skill, wenn der Nutzer „/aktualisiere“, „aktualisiere Malekit“, „lies meine Dino-Screenshots ein“, „trag die neuen Skins ein“ oder „setz den Mutation-Proof-Link“ sagt, oder allgemein seine eigenen Dinos, deren Bloodlines, Skins, Mutationen, Bindungen (Bonds), Charakter oder Proof-Links pflegen will, z. B. „Torfin bondet jetzt mit Kamoda“.
 ---
 
 # /aktualisiere – eigenen Dino aus Screenshots aktualisieren
@@ -30,6 +30,8 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
    - **sex**: `female` / `male`, nur wenn sichtbar.
    - **playableId**: nur setzen, wenn noch leer oder eindeutig anders; die id aus `playables` nehmen (Varianten wie `deinosuchus-shore` beachten, sonst nachfragen).
    - **extra**: weitere sichtbare, für den Dino wichtige Angaben als `{ "label", "value" }` (z. B. Generation, Wachstum, Eltern). Kein Rauschen wie UI-Buttons.
+   - **bonds** (Bindungen): Beziehungen zu anderen Dinos, vor allem bei sozialen Playables wie Parasaurolophus (Paarbindung, Harem, Lebenspartner, Familie). Je Eintrag `{ "name", "sex", "kind", "status", "note" }`: `sex` ist `female`/`male`/`null`, `kind` z. B. „Bindung“, „Lebenspartner“, „Harem“, „Familie“, „Freund“, `status` z. B. „bondet gerade“, „fest“, „beendet“, `note` kurz (Skin, Herkunft). Meist nennt der Nutzer sie im Chat. `bonds` wird als Ganzes ersetzt, schick also immer die vollständige Liste mit den bisherigen Einträgen aus `show`.
+   - **character**: `{ "traits": ["ruhig", …], "text": "…" }`, also Charakterzüge als kurze Stichworte und ein freier Text zur Persönlichkeit. Nur eintragen, was der Nutzer sagt. Wird ebenfalls als Ganzes ersetzt.
    - **proofs**: Links nur setzen, wenn der Nutzer sie im Chat nennt oder sie lesbar im Screenshot stehen (`mutation` = Discord-Link als Mutationsbeweis, `nesting` = Nest-Beweis). Nur vollständige `https://`-Links.
 
    Screenshots zeigen den **aktuellen Stand**. Übernimm eine Liste komplett aus dem Screenshot, wenn er diesen Bereich zeigt. Zeigt kein neuer Screenshot einen Bereich, behalte die bisherigen Werte aus `show` unverändert. Schicke `genetics` immer **vollständig** (alle vier Felder), weil es als Ganzes ersetzt wird.
@@ -45,6 +47,8 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
        "mutations": [{ "name": "...", "note": "" }],
        "extra": [{ "label": "...", "value": "..." }]
      },
+     "bonds": [{ "name": "...", "sex": "female", "kind": "Bindung", "status": "bondet gerade", "note": "" }],
+     "character": { "traits": ["..."], "text": "" },
      "transcripts": { "screenshots/20261001-201500-1.png": "wortgetreuer Text …" },
      "processed": "pending"
    }

@@ -54,6 +54,16 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { proofs: { nesting: 'javascript:alert(1)' } })).status, 400);
     assert.equal((await patch('malekit', { sex: 'other' })).status, 400);
 
+    assert.deepEqual(dino.bonds, []);
+    assert.deepEqual(dino.character, { traits: [], text: '' });
+    const bonded = await (await patch('malekit', { bonds: [{ name: ' Kamoda Fern ', sex: 'female', kind: 'Bindung', status: 'bondet gerade', note: 'grüner Skin' }, { name: ' ' }], character: { traits: ['ruhig', 'ruhig', 'wachsam'], text: 'Hält Abstand zu Fremden.' } })).json();
+    assert.deepEqual(bonded.bonds, [{ name: 'Kamoda Fern', sex: 'female', kind: 'Bindung', status: 'bondet gerade', note: 'grüner Skin' }]);
+    assert.deepEqual(bonded.character, { traits: ['ruhig', 'wachsam'], text: 'Hält Abstand zu Fremden.' });
+    assert.deepEqual(bonded.genetics.bloodlines, ['Ashfang']);
+    assert.equal((await patch('malekit', { bonds: [{ name: 'X', sex: 'other' }] })).status, 400);
+    assert.equal((await patch('malekit', { bonds: 'Kamoda' })).status, 400);
+    assert.equal((await patch('malekit', { character: ['ruhig'] })).status, 400);
+
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
     assert.equal((await fetch(`${base}/api/herd?playable=spinosaurus`).then(response => response.json())).length, 0);
     const image = await fetch(`${base}/api/herd/malekit/files/${updated.screenshots[1].file}`);

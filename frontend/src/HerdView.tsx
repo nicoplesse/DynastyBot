@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, type Catalog, type CatalogItem } from './api';
-import { herdApi, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdDino, type HerdGenetics } from './herd';
+import { bondsOf, characterOf, herdApi, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './herd.css';
 
@@ -47,7 +47,7 @@ function HerdOverview({ catalog }: { catalog: Catalog }) {
     if (!needle) return true;
     const g = dino.genetics;
     const playable = dino.playableId ? playables.get(dino.playableId) : null;
-    return [dino.name, playable?.name || '', ...(playable?.aliases || []), ...(g ? [...g.bloodlines, ...g.skins.dominant, ...g.skins.recessive, ...g.mutations.map(item => item.name)] : [])].join(' ').toLowerCase().includes(needle);
+    return [dino.name, playable?.name || '', ...(playable?.aliases || []), ...(g ? [...g.bloodlines, ...g.skins.dominant, ...g.skins.recessive, ...g.mutations.map(item => item.name)] : []), ...bondsOf(dino).map(bond => bond.name), ...characterOf(dino).traits].join(' ').toLowerCase().includes(needle);
   });
   const pending = dinos.filter(dino => pendingCount(dino) > 0);
   return <>
@@ -55,7 +55,7 @@ function HerdOverview({ catalog }: { catalog: Catalog }) {
     <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · YOUR HERD</div><h1>My Dinos</h1><p>Bloodlines, skins, mutations and proof for every dino you own. Screenshots stay stored exactly as imported.</p></div><div className="directory-actions"><button type="button" className="primary-button" onClick={() => setImportOpen(open => !open)} aria-expanded={importOpen}>{importOpen ? 'Close import' : '+ Import screenshots'}</button><div className="archive-metric"><strong>{dinos.length}</strong><span>{dinos.length === 1 ? 'dino' : 'dinos'} in your herd</span></div></div></header>
     {importOpen && <HerdImport catalog={catalog} dinos={dinos} onSaved={() => void refresh()} />}
     {pending.length > 0 && <SkillHint dinos={pending} />}
-    {dinos.length > 0 && <section className="filter-bar herd-filter" aria-label="Filter dinos"><label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search name, playable, bloodline, skin or mutation…" aria-label="Search your dinos" /></label></section>}
+    {dinos.length > 0 && <section className="filter-bar herd-filter" aria-label="Filter dinos"><label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search name, playable, bloodline, skin, mutation or bond…" aria-label="Search your dinos" /></label></section>}
     {dinos.length === 0 ? null : filtered.length ? <section className="herd-grid" aria-label="Your dinos">{filtered.map(dino => <HerdCard key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section> : <div className="catalog-empty"><strong>No matching dinos</strong><p>Try another name, skin or mutation.</p></div>}
   </>;
 }
@@ -182,6 +182,15 @@ export function GeneticsRows({ genetics, proofs, full = false }: { genetics: Her
   return <dl className="herd-genetics">{rows.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>;
 }
 
+const bondLabel = (bond: HerdBond) => [`${bond.name}${bond.sex ? ` ${sexSymbol(bond.sex)}` : ''}`, bond.status || bond.kind].filter(Boolean).join(' · ');
+
+// One line for cards and the profile strip: the first bond, and how many more there are.
+function BondLine({ dino }: { dino: HerdDino }) {
+  const bonds = bondsOf(dino);
+  if (!bonds.length) return null;
+  return <p className="herd-bond-line" title={bonds.map(bondLabel).join('\n')}><span aria-hidden="true">♥</span>{bondLabel(bonds[0])}{bonds.length > 1 && <i> +{bonds.length - 1}</i>}</p>;
+}
+
 function DinoImage({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
   if (dino.photo) return <img src={herdApi.fileUrl(dino, dino.photo)} alt={dino.name} loading="lazy" />;
   if (playable?.cover) return <img className="herd-fallback" src={api.imageUrl(playable.id, playable.cover.file)} alt="" loading="lazy" />;
@@ -196,6 +205,7 @@ function HerdCard({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }
       <div className="herd-card-title"><h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2><span aria-hidden="true">↗</span></div>
       <div className="herd-card-playable">{playable ? playable.name : 'Playable unknown'}</div>
       <GeneticsRows genetics={dino.genetics} proofs={dino.proofs} />
+      <BondLine dino={dino} />
       {(dino.proofs.mutation || dino.proofs.nesting) && <div className="herd-proof-flags">{dino.proofs.mutation && <span>✓ Mutation proof</span>}{dino.proofs.nesting && <span>✓ Nesting proof</span>}</div>}
     </div>
   </button>;
@@ -269,6 +279,8 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
         </>}
       </section>
 
+      <BondsPanel dino={dino} busy={busy} onSave={patch => run(() => herdApi.update(dino.id, patch), 'Bonds and character saved.')} />
+
       <section className="herd-panel">
         <div className="herd-panel-head"><h2>Screenshots</h2><span className="small-tag">STORED RAW · NEVER CHANGED</span></div>
         {dino.screenshots.length ? <div className="herd-shots">{[...dino.screenshots].reverse().map(shot => <figure key={shot.file} className={shot.processedAt ? '' : 'pending'}>
@@ -340,6 +352,60 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
   </form>;
 }
 
+// Bonds (pair bonds, harem, family …) and character, for playables with a social life.
+function BondsPanel({ dino, busy, onSave }: { dino: HerdDino; busy: boolean; onSave: (patch: { bonds: HerdBond[]; character: HerdCharacter }) => Promise<boolean> }) {
+  const [editing, setEditing] = useState(false);
+  const bonds = bondsOf(dino);
+  const character = characterOf(dino);
+  const empty = !bonds.length && !character.traits.length && !character.text;
+  return <section className="herd-panel">
+    <div className="herd-panel-head"><h2>Bonds &amp; character</h2>{!editing && <button type="button" className="secondary-button" onClick={() => setEditing(true)}>Edit</button>}</div>
+    {editing ? <BondsEditor dino={dino} busy={busy} onCancel={() => setEditing(false)} onSave={async patch => { if (await onSave(patch)) setEditing(false); }} />
+      : empty ? <p className="herd-empty-genetics">No bonds or character noted yet.</p> : <>
+        {bonds.length > 0 && <ul className="herd-bonds">{bonds.map((bond, index) => <li key={`${bond.name}-${index}`}>
+          <strong>{bond.name}{bond.sex && <span className={`herd-sex ${bond.sex}`} title={bond.sex}>{sexSymbol(bond.sex)}</span>}</strong>
+          {bond.kind && <span className="herd-chip bond">{bond.kind}</span>}{bond.status && <span className="herd-bond-status">{bond.status}</span>}
+          {bond.note && <small>{bond.note}</small>}
+        </li>)}</ul>}
+        {(character.traits.length > 0 || character.text) && <dl className="herd-genetics herd-character">
+          {character.traits.length > 0 && <div><dt>Traits</dt><dd><Chips items={character.traits} kind="trait" /></dd></div>}
+          {character.text && <div><dt>Character</dt><dd><LinkedText text={character.text} /></dd></div>}
+        </dl>}
+      </>}
+  </section>;
+}
+
+const bondKinds = ['Bindung', 'Lebenspartner', 'Harem', 'Familie', 'Freund'];
+const bondStatuses = ['bondet gerade', 'fest', 'beendet'];
+
+function BondsEditor({ dino, busy, onSave, onCancel }: { dino: HerdDino; busy: boolean; onSave: (patch: { bonds: HerdBond[]; character: HerdCharacter }) => void; onCancel: () => void }) {
+  const character = characterOf(dino);
+  const [bonds, setBonds] = useState<HerdBond[]>(bondsOf(dino));
+  const [traits, setTraits] = useState(character.traits.join('\n'));
+  const [text, setText] = useState(character.text);
+  const change = (index: number, field: keyof HerdBond, value: string) => setBonds(list => list.map((bond, at) => at === index ? { ...bond, [field]: field === 'sex' ? (value || null) : value } : bond));
+  return <form className="herd-editor" onSubmit={event => { event.preventDefault(); onSave({ bonds: bonds.filter(bond => bond.name.trim()), character: { traits: lines(traits), text } }); }}>
+    <div className="herd-bond-rows">
+      {bonds.map((bond, index) => <div key={index} className="herd-bond-row">
+        <label><span>Name</span><input value={bond.name} onChange={event => change(index, 'name', event.target.value)} placeholder="e.g. Kamoda Fern" /></label>
+        <label><span>Sex</span><select value={bond.sex || ''} onChange={event => change(index, 'sex', event.target.value)}><option value="">Unknown</option><option value="female">♀ Female</option><option value="male">♂ Male</option></select></label>
+        <label><span>Kind</span><input value={bond.kind} onChange={event => change(index, 'kind', event.target.value)} list="herd-bond-kinds" /></label>
+        <label><span>Status</span><input value={bond.status} onChange={event => change(index, 'status', event.target.value)} list="herd-bond-statuses" /></label>
+        <label className="wide"><span>Note</span><input value={bond.note} onChange={event => change(index, 'note', event.target.value)} placeholder="Skin, how you met …" /></label>
+        <button type="button" className="text-button danger" onClick={() => setBonds(list => list.filter((_, at) => at !== index))} aria-label={`Remove bond ${bond.name || index + 1}`}>Remove</button>
+      </div>)}
+      <button type="button" className="secondary-button" onClick={() => setBonds(list => [...list, { name: '', sex: null, kind: 'Bindung', status: '', note: '' }])}>+ Add bond</button>
+      <datalist id="herd-bond-kinds">{bondKinds.map(kind => <option key={kind} value={kind} />)}</datalist>
+      <datalist id="herd-bond-statuses">{bondStatuses.map(status => <option key={status} value={status} />)}</datalist>
+    </div>
+    <div className="herd-editor-grid two">
+      <label><span>Traits <small>one per line</small></span><textarea value={traits} onChange={event => setTraits(event.target.value)} rows={3} /></label>
+      <label><span>Character <small>free text</small></span><textarea value={text} onChange={event => setText(event.target.value)} rows={3} /></label>
+    </div>
+    <div className="herd-editor-actions"><button type="button" className="secondary-button" onClick={onCancel} disabled={busy}>Cancel</button><button type="submit" className="primary-button" disabled={busy}>{busy ? 'Saving…' : 'Save changes'}</button></div>
+  </form>;
+}
+
 // Small collapsed bar on a playable's profile: which of your dinos are this playable.
 export function HerdStrip({ playableId }: { playableId: string }) {
   const [dinos, setDinos] = useState<HerdDino[]>([]);
@@ -349,7 +415,7 @@ export function HerdStrip({ playableId }: { playableId: string }) {
     <summary><span className="herd-strip-mark" aria-hidden="true">◆</span><span>Your {dinos.length === 1 ? 'dino' : 'dinos'}</span><b>{dinos.map(dino => `${dino.name}${dino.sex ? ` ${sexSymbol(dino.sex)}` : ''}`).join(', ')}</b><i aria-hidden="true">▾</i></summary>
     <div className="herd-strip-list">{dinos.map(dino => <div key={dino.id} className="herd-strip-item">
       <div className="herd-strip-photo">{dino.photo ? <img src={herdApi.fileUrl(dino, dino.photo)} alt="" loading="lazy" /> : <span>{dino.name.charAt(0)}</span>}</div>
-      <div className="herd-strip-body"><a href={`#/herd/${dino.id}`}><strong>{dino.name}</strong> open →</a><GeneticsRows genetics={dino.genetics} proofs={dino.proofs} />{dino.proofs.nesting && <ExternalLink className="herd-proof-mini" url={dino.proofs.nesting}>nesting proof ↗</ExternalLink>}</div>
+      <div className="herd-strip-body"><a href={`#/herd/${dino.id}`}><strong>{dino.name}</strong> open →</a><GeneticsRows genetics={dino.genetics} proofs={dino.proofs} /><BondLine dino={dino} />{dino.proofs.nesting && <ExternalLink className="herd-proof-mini" url={dino.proofs.nesting}>nesting proof ↗</ExternalLink>}</div>
     </div>)}</div>
   </details>;
 }

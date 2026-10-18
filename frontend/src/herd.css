@@ -130,7 +130,24 @@ a.herd-proof:hover{border-color:#8fc3e6}
 .herd-strip-body>a:first-child:hover{text-decoration:underline}
 .herd-strip-body .herd-proof-mini{align-self:flex-start}
 
-@media(max-width:900px){.herd-hero{grid-template-columns:1fr}.herd-hero-image{min-height:240px}.herd-editor-grid{grid-template-columns:1fr}}
+.herd-bond-line{display:flex;align-items:baseline;gap:6px;color:#e6c2d3;font-size:11px;font-weight:700}
+.herd-bond-line span{color:#e3a6c4}
+.herd-bond-line i{color:#9a8790;font-style:normal}
+.herd-bonds{display:grid;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+.herd-bonds li{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 12px;border:1px solid #4a3a44;border-radius:7px;background:#1f1a1e}
+.herd-bonds strong{color:#f1e4ea;font-size:14px}
+.herd-bonds small{flex-basis:100%;color:#a99aa2;font-size:11px}
+.herd-chip.bond{border-color:#b98aa388;background:#2f2129;color:#efd3e0}
+.herd-chip.trait{border-color:#7c8fb588;background:#1e2433;color:#d3dcf0}
+.herd-bond-status{color:#e3a6c4;font-size:11px;font-weight:700}
+.herd-character dd{white-space:pre-wrap}
+.herd-bond-rows{display:grid;gap:10px}
+.herd-bond-rows>.secondary-button{justify-self:start}
+.herd-bond-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr) auto;align-items:end;gap:10px;padding:10px;border:1px solid #2f3f31;border-radius:7px}
+.herd-bond-row .wide{grid-column:1 / -2}
+.herd-bond-row>.text-button{grid-column:-2;padding-bottom:12px}
+
+@media(max-width:900px){.herd-bond-row{grid-template-columns:repeat(2,minmax(0,1fr))}.herd-bond-row .wide{grid-column:1 / -1}.herd-bond-row>.text-button{grid-column:auto;justify-self:start;padding:0}.herd-hero{grid-template-columns:1fr}.herd-hero-image{min-height:240px}.herd-editor-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.herd-import{padding:18px 14px}.herd-import-fields,.herd-editor-grid.two{grid-template-columns:1fr}.herd-grid{grid-template-columns:1fr}.herd-skill-hint{flex-wrap:wrap}.herd-genetics>div,.herd-panel .herd-genetics>div{grid-template-columns:1fr;gap:3px}.herd-strip-photo{display:none}.herd-hero-copy{padding:20px 18px}}
 .herd-import-links{margin:14px 0 0}
 .herd-import-fields label>span i{margin-left:6px;color:#7f9283;font-size:10px;font-style:normal;font-weight:500}

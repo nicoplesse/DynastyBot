@@ -8,12 +8,15 @@ export interface HerdGenetics {
   extra: Array<{ label: string; value: string }>;
   updatedAt: string;
 }
+export interface HerdBond { name: string; sex: 'female' | 'male' | null; kind: string; status: string; note: string }
+export interface HerdCharacter { traits: string[]; text: string }
 export interface HerdDino {
   schemaVersion: number; id: string; name: string; playableId: string | null; sex: 'female' | 'male' | null;
   photo: string | null; proofs: { mutation: string; nesting: string }; notes: string;
-  genetics: HerdGenetics | null; screenshots: HerdScreenshot[]; createdAt: string; updatedAt: string;
+  genetics: HerdGenetics | null; bonds?: HerdBond[]; character?: HerdCharacter;
+  screenshots: HerdScreenshot[]; createdAt: string; updatedAt: string;
 }
-export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'notes' | 'proofs'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
+export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'notes' | 'proofs' | 'bonds' | 'character'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
 
 async function result<T>(response: Response): Promise<T> {
   if (!response.ok) {
@@ -37,6 +40,9 @@ export const herdApi = {
 };
 
 export const pendingCount = (dino: HerdDino) => dino.screenshots.filter(shot => !shot.processedAt).length;
+// Older records were saved before bonds and character existed.
+export const bondsOf = (dino: HerdDino) => dino.bonds || [];
+export const characterOf = (dino: HerdDino): HerdCharacter => dino.character || { traits: [], text: '' };
 export const sexSymbol = (sex: HerdDino['sex']) => sex === 'female' ? '♀' : sex === 'male' ? '♂' : '';
 
 // Discord web links (discord.com, ptb./canary., discordapp.com) open in the desktop app via its own protocol.
