@@ -23,7 +23,7 @@ Kurzbeschreibung (offiziell): Suchomimus are cunning and opportunistic semi-aqua
 
 **Solo-Eignung: Solo eingeschränkt** – Solo spielbar: Das Profil sagt ausdrücklich, dass manche Suchomimus „erschreckend kompetent“ ganz allein durchs Leben gehen. Dein natürlicher Solo-Plan ist aber ein anderer: Such dir einen Spinosaurus, der dich adoptiert. Dann bist du formal allein, wirst aber gefüttert und beschützt.
 
-Du bist ein Gavial mit dem Kopf eines Kojoten: ein langschnäuziger Fischjäger an Flüssen und Küsten, der trotzdem an Land bis Apex jagt, und ein berechnender Opportunist, der immer den leichtesten Weg wählt. Du lebst von Gewässer zu Gewässer, schläfst viel im Flachwasser oder am Strand auf einem Bett aus Seetang und knackst zum Zeitvertreib Muscheln. Dein großer Traum: Ein Spinosaurus hält dich für ein verkümmertes Junges und versorgt dich für immer. Alles, was dieser Stellung gefährlich wird, also fremde Suchomimus und Concavenator, verjagst du.
+Du bist ein Riesenotter mit dem Kopf eines Kojoten: ein lauter, geselliger Fischjäger an Flüssen und Küsten, der sich auch an Krokodile wagt und an Land bis Apex jagt, und ein berechnender Opportunist, der immer den leichtesten Weg wählt. Du lebst von Gewässer zu Gewässer, schläfst viel im Flachwasser oder am Strand auf einem Bett aus Seetang und knackst zum Zeitvertreib Muscheln. Dein großer Traum: Ein Spinosaurus hält dich für ein verkümmertes Junges und versorgt dich für immer. Alles, was dieser Stellung gefährlich wird, also fremde Suchomimus und Concavenator, verjagst du.
 
 ### Alltag: Ufer, Nickerchen, Spinosaurus suchen
 Du ziehst zwischen reichen Seen, Flüssen und Küsten umher: Stillwater Bog, Mudflats, Coastland Swamp, Twisted Forest, Redwoods, die Volcano Islands, Palm Islands, East Passage, Kelp Vale und Stonebed Shoal. Du bist mal im Wasser, mal auf Patrouille an der Uferlinie. Du schläfst oft und gern, am liebsten im Flachwasser oder am Strand, wo du dir Seetang oder Wasserpflanzen zu einem Bett stapelst. Vor dem Schlafen knackst du Muscheln. Solo gehst du einem Spinosaurus nach und hältst dich in seiner Nähe, denn je kleiner du bist, desto eher adoptiert er dich. Gegenüber Spinosaurus bist du nie aggressiv. Jagt er dich, fliehst du. Fremde Suchomimus in der Nähe deines Spinosaurus drohst du mit Rufen weg und greifst an, bis sie fliehen oder einer Todesnarben hat. Concavenator verjagst du immer. Aasfresser duldest du nur, wenn du satt bist. Du bist laut: Du drohst mit Schreien und Brüllen, kämpfst aber selten.
@@ -36,15 +36,19 @@ Die Balz läuft wie im Profil. Männchen beanspruchen einen kleinen Balzplatz am
 
 ## Spielt sich wie (echte Tiere)
 
-**Gangesgavial + Kojote (Gharial + Coyote)**: A fish-snatching gharial with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young.
+**Riesenotter + Kojote (Giant otter + Coyote)**: A screaming giant otter with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young.
 
 You are a large semi-aquatic carnivore in a 'snare' of up to 3. You fish readily, stalk other semi-aquatics and take to land to hunt dinosaurs up to Apex tier (never Spinosaurus). You prefer vocal intimidation to real fights. Your master plan is to be 'adopted' by a Spinosaurus that feeds you, and to nest right next to it so it mistakes your young for its own. Any other Suchomimus near 'your' Spinosaurus is attacked. Against land predators you retreat into the water.
 
-- Gangesgavial / Gharial – 50 %: Body and niche: a long-snouted, fish-snatching river hunter
-- Kojote / Coyote – 50 %: Mind: a calculating opportunist in small loose groups that bluffs with its voice rather than fighting
+- Riesenotter / Giant otter – 50 %: Body and daily life: a loud, sociable river fisher that rests on the banks in a small group and takes on crocodilians
+- Kojote / Coyote – 50 %: Mind: a calculating opportunist in small loose groups that bluffs with its voice and profits from a bigger partner
 - Lebensraum: Drifts between resource-rich lakes and rivers. Nomadic and semi-aquatic; hunts in water and on land, and tries to stay and nest close to a Spinosaurus.
-- Anders als die Tiere: Gharials are nearly helpless on land; Suchomimus hunts land prey up to Apex tier. Coyotes have no big patron; Suchomimus's whole strategy revolves around Spinosaurus.
-- Besonderheit: Bottlenose dolphins (official inspiration) for the sociable swimming and floating together.
+- Anders als die Tiere: Giant otters are territorial and mark their stretch of river; Suchomimus is nomadic and claims no territory. Giant otters are small; Suchomimus is a Large-tier carnivore that chases land prey up to Apex tier without limit. Coyotes have no big patron; Suchomimus's whole strategy revolves around Spinosaurus.
+- Besonderheit: Looks like a gharial (official inspiration) with its long fishing snout, chews shells and piles kelp into a bed like a sea otter, and floats together like bottlenose dolphins (official inspiration).
+
+## Solo oder Gruppe
+
+**Gleiches Tier:** Kojoten leben allein wie im Rudel, und auch Riesenotter streifen mal als Einzelgänger umher. Ob solo oder vom Spinosaurus adoptiert, das Tier bleibt.
 
 ## Karte & POIs
 

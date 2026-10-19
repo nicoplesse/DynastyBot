@@ -57,7 +57,7 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | stegosaurus | Stegosaurus | Stego | Large Cathemeral Terrestrial Herbivore | Spitzmaulnashorn + Grevyzebra (Black rhinoceros + Grévy's zebra) |
 | struthiomimus | Struthiomimus | – | Small Cathemeral Terrestrial Herbivore | Strauß (Ostrich) |
 | styracosaurus | Styracosaurus | – | Medium Cathemeral Terrestrial Herbivore | Moschusochse + Spießbock (Oryx) (Musk ox + Gemsbok (oryx)) |
-| suchomimus | Suchomimus | Sucho | Large Cathemeral Semi-Aquatic Carnivore | Gangesgavial + Kojote (Gharial + Coyote) |
+| suchomimus | Suchomimus | Sucho | Large Cathemeral Semi-Aquatic Carnivore | Riesenotter + Kojote (Giant otter + Coyote) |
 | tenontosaurus | Tenontosaurus | – | Medium Cathemeral Terrestrial Herbivore | Weißbartpekari + Weißbüscheläffchen (White-lipped peccary + Common marmoset) |
 | thalassodromeus | Thalassodromeus | – | Small Diurnal Aerial Carnivore | Taube + Lachmöwe (Pigeon + Black-headed gull) |
 | therizinosaurus | Therizinosaurus | Theri, Therizino | Apex Nocturnal Terrestrial Herbivore | Kasuar (Cassowary) |
