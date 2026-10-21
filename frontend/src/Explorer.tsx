@@ -40,12 +40,12 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
     <div className="brand"><div className="brand-mark" aria-hidden="true">D</div><div><strong>DYNASTY BOT</strong><span>REALISM ARCHIVE</span></div></div>
     <div className="nav-caption">WORKSPACE</div>
     <nav aria-label="Main navigation">
-      <button className="nav-item" onClick={() => go('/import')}><span className="nav-symbol">↧</span> Import</button>
-      <button className={`nav-item ${active === 'herd' ? 'active' : ''}`} aria-current={active === 'herd' ? 'page' : undefined} onClick={() => go('/herd')}><span className="nav-symbol">◆</span> My Dinos</button>
+      <button className="nav-item" onClick={() => go('/import')}><span className="nav-symbol">↧</span> <span className="nav-label">Import</span></button>
+      <button className={`nav-item ${active === 'herd' ? 'active' : ''}`} aria-current={active === 'herd' ? 'page' : undefined} onClick={() => go('/herd')}><span className="nav-symbol">◆</span> <span className="nav-label">My Dinos</span></button>
       <div className="nav-divider" />
       <div className="nav-group">
         <div className="nav-row">
-          <button className={`nav-item ${inProfiles ? 'active' : ''}`} aria-current={inProfiles ? 'page' : undefined} onClick={() => go('/profiles')}><span className="nav-symbol">▤</span> Profiles</button>
+          <button className={`nav-item ${inProfiles ? 'active' : ''}`} aria-current={inProfiles ? 'page' : undefined} onClick={() => go('/profiles')}><span className="nav-symbol">▤</span> <span className="nav-label">Profiles</span></button>
           <button type="button" className={`nav-toggle ${open ? 'open' : ''}`} aria-expanded={open} aria-controls="nav-profiles-sub" aria-label={open ? 'Collapse profile views' : 'Expand profile views'} onClick={() => setOpen(value => !value)}>▾</button>
         </div>
         {open && <div className="nav-sub" id="nav-profiles-sub">
@@ -54,13 +54,13 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
           {ecosystems.map(ecosystem => <button type="button" key={ecosystem.id} className={sub(`/ecosystems/${ecosystem.id}`) ? 'active' : ''} style={{ '--eco': ecosystem.accent } as CSSProperties} onClick={() => go(`/ecosystems/${ecosystem.id}`)} title={ecosystem.de}><i>{ecosystem.symbol}</i>{ecosystem.label}</button>)}
         </div>}
       </div>
-      <button className={`nav-item ${active === 'rules' ? 'active' : ''}`} aria-current={active === 'rules' ? 'page' : undefined} onClick={() => go('/rules')}><span className="nav-symbol">≡</span> Rules</button>
-      <button className={`nav-item ${active === 'animals' ? 'active' : ''}`} aria-current={active === 'animals' ? 'page' : undefined} onClick={() => go('/animals')}><span className="nav-symbol">≈</span> Animal Finder</button>
-      <button className="nav-item" disabled><span className="nav-symbol">◇</span> Playable Finder <span className="soon">Soon</span></button>
-      <button className="nav-item" disabled><span className="nav-symbol">▢</span> Chat <span className="soon">Soon</span></button>
+      <button className={`nav-item ${active === 'rules' ? 'active' : ''}`} aria-current={active === 'rules' ? 'page' : undefined} onClick={() => go('/rules')}><span className="nav-symbol">≡</span> <span className="nav-label">Rules</span></button>
+      <button className={`nav-item ${active === 'animals' ? 'active' : ''}`} aria-current={active === 'animals' ? 'page' : undefined} onClick={() => go('/animals')}><span className="nav-symbol">≈</span> <span className="nav-label" data-short="Finder">Animal Finder</span></button>
+      <button className="nav-item" disabled><span className="nav-symbol">◇</span> <span className="nav-label">Playable Finder</span> <span className="soon">Soon</span></button>
+      <button className="nav-item" disabled><span className="nav-symbol">▢</span> <span className="nav-label">Chat</span> <span className="soon">Soon</span></button>
       <div className="nav-divider" />
       <div className="nav-caption nav-caption-inline">EXKURS</div>
-      <button className={`nav-item nav-isle ${active === 'isle' ? 'active' : ''}`} aria-current={active === 'isle' ? 'page' : undefined} onClick={() => go('/isle')} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> The Isle</button>
+      <button className={`nav-item nav-isle ${active === 'isle' ? 'active' : ''}`} aria-current={active === 'isle' ? 'page' : undefined} onClick={() => go('/isle')} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> <span className="nav-label">The Isle</span></button>
     </nav>
     <div className="sidebar-foot"><span className="status-dot" /> STRUCTURED ARCHIVE <small>Generated views read from processed data.</small></div>
   </aside>;

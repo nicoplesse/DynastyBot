@@ -215,13 +215,17 @@ function ImportApp() {
         <div className="brand"><div className="brand-mark" aria-hidden="true">D</div><div><strong>DYNASTY BOT</strong><span>REALISM ARCHIVE</span></div></div>
         <div className="nav-caption">WORKSPACE</div>
         <nav aria-label="Main navigation">
-          <button className="nav-item active" aria-current="page" onClick={() => { window.location.hash = '#/import'; }}><span className="nav-symbol">↧</span> Import</button>
-          <button className="nav-item" onClick={() => { window.location.hash = '#/herd'; }}><span className="nav-symbol">◆</span> My Dinos</button>
+          <button className="nav-item active" aria-current="page" onClick={() => { window.location.hash = '#/import'; }}><span className="nav-symbol">↧</span> <span className="nav-label">Import</span></button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/herd'; }}><span className="nav-symbol">◆</span> <span className="nav-label">My Dinos</span></button>
           <div className="nav-divider" />
-          <button className="nav-item" onClick={() => { window.location.hash = '#/profiles'; }}><span className="nav-symbol">▤</span> Profiles</button>
-          <button className="nav-item" onClick={() => { window.location.hash = '#/rules'; }}><span className="nav-symbol">≡</span> Rules</button>
-          <button className="nav-item" disabled><span className="nav-symbol">◇</span> Playable Finder <span className="soon">Soon</span></button>
-          <button className="nav-item" disabled><span className="nav-symbol">▢</span> Chat <span className="soon">Soon</span></button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/profiles'; }}><span className="nav-symbol">▤</span> <span className="nav-label">Profiles</span></button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/rules'; }}><span className="nav-symbol">≡</span> <span className="nav-label">Rules</span></button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/animals'; }}><span className="nav-symbol">≈</span> <span className="nav-label" data-short="Finder">Animal Finder</span></button>
+          <button className="nav-item" disabled><span className="nav-symbol">◇</span> <span className="nav-label">Playable Finder</span> <span className="soon">Soon</span></button>
+          <button className="nav-item" disabled><span className="nav-symbol">▢</span> <span className="nav-label">Chat</span> <span className="soon">Soon</span></button>
+          <div className="nav-divider" />
+          <div className="nav-caption nav-caption-inline">EXKURS</div>
+          <button className="nav-item nav-isle" onClick={() => { window.location.hash = '#/isle'; }} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> <span className="nav-label">The Isle</span></button>
         </nav>
         <div className="sidebar-foot"><span className="status-dot" /> LOCAL ARCHIVE <small>Raw profiles stay on this device.</small></div>
       </aside>

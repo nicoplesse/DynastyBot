@@ -5,6 +5,7 @@
   "workspaces": ["frontend", "server"],
   "scripts": {
     "dev": "concurrently -k -n API,UI -c green,cyan \"npm run dev -w server\" \"npm run dev -w frontend\"",
+    "dev:lan": "concurrently -k -n API,UI -c green,cyan \"npm run dev -w server\" \"npm run dev:lan -w frontend\"",
     "build": "npm run build -w frontend",
     "process": "npm run process -w server",
     "curate:pois": "npm run curate:pois -w server",

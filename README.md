@@ -16,6 +16,18 @@ npm run dev
 
 Open the Vite address shown in the terminal (normally `http://localhost:5173`). The local API runs on `http://127.0.0.1:3001`; Vite forwards `/api` requests to it. The API reads its port from `API_PORT`, not `PORT`, so a `PORT` meant for Vite cannot move it.
 
+### Open it on your phone
+
+To use DynastyBot on an iPhone or another device in the same Wi-Fi, start it with:
+
+```bash
+npm run dev:lan
+```
+
+Vite then prints a second address next to `Local`, for example `Network: http://192.168.178.23:5173/`. Open that address in Safari on the phone. On Windows, allow Node.js through the firewall for private networks when asked. In Safari, *Share → Add to Home Screen* gives the app its own icon. Only the web page listens on the network; the API stays on `127.0.0.1` and is reached through Vite. Anyone in the same network can open the page while `dev:lan` runs, including imports and edits, so use it only at home and use `npm run dev` otherwise.
+
+On screens up to 850 px wide the sidebar becomes a tab bar at the bottom of the screen.
+
 ## Files
 
 ```text
