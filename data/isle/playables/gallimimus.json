@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "gallimimus",
+  "name": "Gallimimus",
+  "nickname": "Galli",
+  "diet": "omnivore",
+  "role": "Sprinter im Schwarm",
+  "order": 22,
+  "tagline": "Je besser die Ernährung, desto schneller. Mit vollem Speiseplan fast so schnell wie ein Carno.",
+  "summary": "Der Gallimimus ist ein lauter, schneller Allesfresser, der nicht kämpft, sondern rennt. Je mehr Nährstoffe er gefüllt hat, desto schneller ist er, mit allen dreien läuft er über 55 km/h. Im Schwarm zieht der Anführer schwächere Tiere mit, und mit dem Mobilisierungsruf wird der ganze Schwarm kurz schneller. Er gräbt Frösche, Krabben und Compys aus ihren Bauen.",
+  "stats": {
+    "adultWeightKg": 535,
+    "primeWeightKg": 560,
+    "sprintKmh": 45.6,
+    "bite": 25,
+    "groupLimit": 8,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 45,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 15, "juvenile": 80, "subadult": 110, "adult": 120 }
+  },
+  "nutrients": {
+    "alpha": ["Krabbe", "Variegated Orange", "Marigold", "Mountain Ash", "Banana", "Jackfruit"],
+    "beta": ["Ochsenfrosch", "Agave", "Sunchoke Flowers", "Radish Flower", "Fireweed", "Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Pumpkin", "Radish Root", "Violet Apollan", "Papaya", "Brazil Nuts"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du bist für die offenen Ebenen gebaut. Dort spielst du dein Tempo aus, und auf Grasland wachsen Agaven, Topinambur, Kürbisse und Orangen. Dschungelfrüchte und Highland-Pflanzen füllen den Rest. Mit Q findest du Baue, aus denen du mit gehaltenem E Frösche, Krabben und Compys gräbst, schnapp sie dir, bevor sie flüchten. Du bist sehr laut, und im Dschungel hörst du gelegentlich Schritte und knackende Äste, die gar nicht da sind. Nicht jedes Geräusch ist ein Jäger."
+    },
+    {
+      "id": "social",
+      "title": "Schwarm & Nachwuchs",
+      "text": "Bis zu acht Gallis bilden einen Schwarm. Hat der Anführer eine bessere Ernährung als andere, werden diese in seiner Nähe schneller, damit der Schwarm zusammenbleibt. Mit dem Ruf auf Taste 1 mobilisierst du den Schwarm: Alle in der Nähe werden kurz schneller. Allein wirkt der Ruf nicht. Euer Erdhügel-Nest fasst bis zu 6 Eier, die Jungen betteln nur 15 Minuten."
+    }
+  ],
+  "hunt": {
+    "title": "Futtersuche & Gefahr",
+    "text": "Dich jagen Rexe, Carnos, Deinos, Dilos, Herreras und Omnis. Deine Antwort ist Tempo, und das hängt an deiner Ernährung: Ohne Nährstoffe läufst du knapp 47 km/h, mit einem gut 49, mit zwei fast 53 und mit allen dreien über 55 km/h, nur 0,2 km/h langsamer als ein ausgewachsener Carno. Bis zur Höchstgeschwindigkeit brauchst du etwa 3 Sekunden, also lauf rechtzeitig los. Anlauf vor einem Sprung macht ihn weiter. Wehren kannst du dich mit Fußkrallen: im Stand gezielt in Kamerarichtung, im Lauf mit kleinem Rückstoß und im Sprung frontal. Kleine Gegner kannst du mit einem Tritt aus dem Lauf auch umwerfen. Das sind Notlösungen, deine eigentliche Verteidigung bleibt die Flucht."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Nur 15 Minuten Betteln, dann läufst du schon über 21 km/h. Bleib trotzdem im Schwarm, denn mit der Ernährung deiner Eltern startest du gleich schneller." },
+    { "stage": "juvenile", "text": "Du spawnst mit knapp 13 kg und fast 47 km/h. Gut 80 Minuten lang füllst du deine drei Nährstoffe, denn jeder macht dich schneller. Ins Sanctuary, Baue ausgraben, schnell weiter." },
+    { "stage": "subadult", "text": "Fast zwei Stunden lang wächst du auf 535 kg. Halte alle drei Nährstoffe voll, so bleibst du über 55 km/h. Such dir einen Schwarm." },
+    { "stage": "adult", "text": "535 kg, mit vollem Speiseplan fast Carno-Tempo. Als Prime Elder steigt dein Grundtempo bis 87,5 % auf bis zu 54 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB (im Stand)", "name": "Krallentritt", "text": "Tritt mit einem Fuß in Kamerarichtung, du bleibst dabei stehen." },
+    { "keys": "RMB (im Stand)", "name": "Tiefer Biss", "text": "Biss nach unten in Kamerarichtung." },
+    { "keys": "LMB oder RMB (im Lauf)", "name": "Lauftritt", "text": "Tritt mit linkem oder rechtem Fuß, kleiner Rückstoß. Kostet Ausdauer." },
+    { "keys": "LMB oder RMB (im Sprung)", "name": "Sprungtritt", "text": "Frontaler Tritt in der Luft. Kostet Ausdauer." },
+    { "keys": "Alt + LMB", "name": "Richtungskralle", "text": "Krallenhieb in Kamerarichtung, du bleibst dabei stehen." },
+    { "keys": "1", "name": "Mobilisierungsruf", "text": "Macht Schwarmmitglieder in der Nähe kurz schneller. Ohne Abklingzeit, wirkt nicht allein." },
+    { "keys": "Q halten + E halten", "name": "Baue ausgraben", "text": "Baue erschnuppern und Frösche, Krabben und Compys ausgraben." }
+  ],
+  "tips": [
+    "Jeder gefüllte Nährstoff macht dich schneller, bis über 55 km/h.",
+    "3 Sekunden bis Vollgas: Lauf los, bevor der Jäger springt.",
+    "Taste 1 mobilisiert den Schwarm."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Gallimimus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-omnivores/gallimimus" },
+    { "label": "Evrima Quick Guide – Rudel & Herden", "url": "https://www.evrimaquickguide.com/gameplay/group-play/packs-herds" }
+  ]
+}

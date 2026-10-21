@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "deinosuchus",
+  "name": "Deinosuchus",
+  "nickname": "Deino",
+  "diet": "carnivore",
+  "role": "Lauerjäger im Wasser",
+  "order": 5,
+  "tagline": "Riesenkrokodil: Unter Wasser König, an Land fast hilflos.",
+  "summary": "Der Deinosuchus ist ein Riesenkrokodil, das in Flüssen, Seen und Sümpfen lauert. Aus dem Wasser schnellt er hervor, packt Tiere bis zur Hälfte seines Gewichts und zieht sie unter Wasser. An Land ist er das langsamste Tier im Spiel und trocknet schnell aus. Er wächst langsam, dafür zählt er zu den fünf Arten, die schon durch ihre Art eine Prime-Bedingung erfüllen.",
+  "stats": {
+    "adultWeightKg": 8000,
+    "primeWeightKg": 10700,
+    "sprintKmh": 18,
+    "bite": 500,
+    "groupLimit": 2,
+    "nest": "debris",
+    "eggs": 5,
+    "hungerMinutes": 90,
+    "thirstMinutes": 10,
+    "growthMinutes": { "hatchling": 33, "juvenile": 200, "subadult": 500, "adult": 650 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Tenontosaurus", "Pachycephalosaurus", "Ceratosaurus", "Kentrosaurus"],
+    "beta": ["Carnotaurus", "Omniraptor", "Diabloceratops", "Deinosuchus", "Troodon", "Ochsenfrosch"],
+    "gamma": ["Elite-Fisch", "Gallimimus", "Beipiaosaurus", "Maiasaura", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Leben spielt sich im Wasser ab. Trübe Flüsse, Sumpfarme und Seen mit flachen Trinkstellen sind ideal, denn dort kommt jeder Pflanzenfresser früher oder später zum Trinken vorbei. Unter Wasser schwimmst du etwa 30 km/h und rund 500 Meter weit, an der Oberfläche 27 km/h und etwa 450 Meter. Ist die Ausdauer leer, sinkst du, bis sie nachlädt oder du den Grund erreichst. An Land bist du mit etwa 18 km/h das langsamste Tier, wendest schlecht, nimmst leichter Sturzschaden und dein Wasser sinkt schnell. Geh also nur kurz an Land, etwa um Beute aus dem Wasser zu ziehen. Rufe funktionieren nicht unter Wasser, Suhlen kannst du dich nicht, und überfressen kannst du dich auch nicht."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Mit einem Gruppenlimit von 2 lebst du allein oder als Paar. Die Balz muss an der Wasseroberfläche stattfinden. Euer Reisignest fasst bis zu 5 Eier. Deino-Schlüpflinge betteln nicht, sie fressen von Anfang an selbst. Pass auf deine Jungen auf: Elite-Fische fressen kleine Dinosaurier, auch junge Deinos."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Du jagst aus dem Hinterhalt an der Trinkstelle. Lieg knapp unter der Oberfläche, warte, bis ein Tier trinkt, und schnell mit der rechten Maustaste hervor. Halte die Taste gedrückt, um den Griff zu halten, und zieh die Beute ins tiefe Wasser, wo sie ertrinkt und dir nicht mehr entkommt. Packen kannst du nur Tiere, die höchstens halb so viel wiegen wie du. Schwimmt das Ziel, darf es schwerer sein, so kannst du sogar einen ausgewachsenen Stegosaurus im Wasser greifen. Schwerere Tiere an Land kannst du nur verletzen. Mit gepackter Beute kannst du an Land nicht sprinten, bleib also am Ufer. Seit einem Patch spürst du andere Tiere unter Wasser nicht mehr, du musst also hinschauen und hinhören. Im Wasser fängst du außerdem Elite-Fische und Meeresschildkröten."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Gut 30 Minuten als winziges Krokodil: Du frisst selbst, statt zu betteln. Bleib im flachen Wasser bei den Eltern, denn große Fische fressen dich." },
+    { "stage": "juvenile", "text": "Über drei Stunden lang jagst du Ochsenfrösche an Ufern und kleine Beute am Wasser. Weil schon die Art Deinosuchus eine Prime-Bedingung erfüllt, fehlen dir nur noch vier weitere, etwa ein Sanctuary und Patrol-Zonen. Bleib in Gewässern, in denen kein großer Deino lauert." },
+    { "stage": "subadult", "text": "Mehr als acht Stunden lang wächst du von 2,2 auf 8 Tonnen. Ab jetzt lohnen sich Trinkstellen: Junge Pflanzenfresser und kleinere Raubtiere passen in deinen Griff. Iss ausgewogen, denn mit 23 Stunden Gesamtwachstum macht das Tempo einen riesigen Unterschied." },
+    { "stage": "adult", "text": "Mit 8 Tonnen packst du Tiere bis 4 Tonnen an Land und noch schwerere im Wasser. Als Prime Elder wirst du über 10 Tonnen schwer und ein wenig schneller." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Rundum-Biss", "text": "Biss in Kamerarichtung, auch seitlich und nach hinten." },
+    { "keys": "RMB (halten)", "name": "Ausfall & Griff", "text": "Schnellt aus dem Wasser vor und packt zu. Halte die Taste, um festzuhalten. Funktioniert nur bei Zielen bis zur Hälfte deines Gewichts, schwimmende dürfen schwerer sein." }
+  ],
+  "tips": [
+    "Dein Wasser sinkt an Land rasend schnell. Bleib so wenig wie möglich draußen.",
+    "Zieh Beute ins tiefe Wasser, dort entkommt sie dir nicht mehr.",
+    "Balz nur an der Wasseroberfläche."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Deinosuchus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/deinosuchus" },
+    { "label": "Evrima Quick Guide – Jagd & KI", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/hunting-ai" }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "beipiaosaurus",
+  "name": "Beipiaosaurus",
+  "nickname": "Beipi",
+  "diet": "omnivore",
+  "role": "Halbwassertier & Krabbensammler",
+  "order": 21,
+  "tagline": "Flussgrund statt Festland: gräbt nach Krabben und springt aus dem Wasser.",
+  "summary": "Der Beipiaosaurus ist ein kleiner Allesfresser, der im Wasser zu Hause ist. Er krallt sich am Flussgrund fest, schnuppert nach Krabben, gräbt sie aus und springt in hohen Bögen aus dem Wasser. An Land ist er langsam und zerbrechlich. Mit Gruppen aus bis zu zwölf Tieren und acht Eiern pro Nest ist er sehr gesellig. Er gehört zu den fünf Arten, die schon als Art eine Prime-Bedingung erfüllen.",
+  "stats": {
+    "adultWeightKg": 90,
+    "primeWeightKg": 90,
+    "sprintKmh": 32,
+    "bite": 20,
+    "groupLimit": 12,
+    "nest": "debris",
+    "eggs": 8,
+    "hungerMinutes": 30,
+    "thirstMinutes": 20,
+    "growthMinutes": { "hatchling": 20, "juvenile": 40, "subadult": 70, "adult": 90 }
+  },
+  "nutrients": {
+    "alpha": ["Krabbe", "Schwarmfisch", "Horned Melon", "Mountain Ash", "Marigold", "Banana", "Jackfruit", "Red Currant", "Azure Apollan"],
+    "beta": ["Ochsenfrosch", "Sumac", "Chanterelle", "Crimson Apollan", "Radish Flower", "Fireweed", "Fiddlehead", "Trillium", "Wild Potato Root"],
+    "gamma": ["Russula", "Radish Root", "Violet Apollan", "Papaya", "Brazil Nuts", "Wild Potato Vine"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du lebst in und an Flüssen, Seen und Sümpfen. Weil du sehr leicht bist, treibst du nach oben. Um am Grund zu bleiben, schwimmst du hinunter und krallst dich mit Strg fest, dann kannst du am Grund entlanglaufen und mit Sprint schneller werden. Unter Wasser hast du 1 Minute 45 Luft, an der Oberfläche schwimmst du etwa 750 Meter, unter Wasser 600. An Land dürstest du schnell, dein Wasser reicht dort nur 20 Minuten. Dein Speiseplan ist riesig, von Krabben, Fischen und Fröschen bis zu Dschungelfrüchten und Sumpfpflanzen."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Mit bis zu zwölf Tieren habt ihr die größte erlaubte Gruppe im Spiel. Euer Reisignest fasst bis zu 8 Eier. Weil ihr in knapp vier Stunden auswachst, könnt ihr an einem Abend eine ganze Generation großziehen."
+    }
+  ],
+  "hunt": {
+    "title": "Futtersuche & Gefahr",
+    "text": "Krabben findest du am Flussgrund. Kralle dich fest, halte Q zum Schnuppern und folge dem Blasen-Symbol oben auf dem Kompass. Am Fundort steigen feine Bläschen auf. Halte dort E zum Graben, die Krabbe treibt dann nach oben, und eventuell musst du sie einmal anbeißen, bevor du sie greifen kannst. Durch Fischschwärme schwimmst du hindurch und schnappst zu. Ochsenfrösche kannst du ab etwa 38 % tragen und fressen. Dich jagen Rexe, Ceratos, Deinos, Herreras, Pteranodons und Austroraptoren, im Wasser vor allem Deinos und Elite-Fische. Am Grund im Seegras bist du gut versteckt. Mit gehaltener Leertaste springst du aus dem Wasser. Je tiefer du vorher tauchst, desto höher der Sprung, und mit Shift wirst du schneller. Alle Angriffe gehen auch im Sprung, so erwischst du sogar tief fliegende Pteranodons. An Land kratzt die linke Maustaste mit Blutung, im Wasser die rechte."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten Betteln, am besten im flachen Wasser bei den Eltern. Du erbst die Ernährung dessen, der dich füttert. Tiefes Wasser meidest du noch, dort lauern Elite-Fische." },
+    { "stage": "juvenile", "text": "40 Minuten mit knapp 3 kg. Übe Festkrallen und Krabbensuche in flachen, ruhigen Gewässern ohne Deinos. Weil der Beipi schon als Art eine Prime-Bedingung erfüllt, brauchst du nur vier weitere, etwa Sanctuary, perfekte Ernährung, Migrations- und Patrol-Zonen." },
+    { "stage": "subadult", "text": "Gut eine Stunde lang wächst du auf 90 kg. Ab etwa 38 % kannst du Ochsenfrösche fressen. Übe den Wassersprung mit Angriff." },
+    { "stage": "adult", "text": "90 kg, flink im Wasser, zerbrechlich an Land. Als Prime Elder bleibt dein Gewicht gleich, Tempo und Biss steigen leicht." }
+  ],
+  "abilities": [
+    { "keys": "LMB (Land) / RMB (Wasser)", "name": "Krallenhieb", "text": "Großer Schaden mit Blutung." },
+    { "keys": "RMB (Land) / LMB (Wasser)", "name": "Schnabelhieb", "text": "Schneller Hieb mit dem Schnabel." },
+    { "keys": "Alt + LMB", "name": "Rundum-Kombo", "text": "Zwei Krallenhiebe und ein Schnabelhieb in Kamerarichtung." },
+    { "keys": "Strg (am Grund)", "name": "Festkrallen", "text": "Hält dich am Flussgrund, Sprint lässt dich dort entlanglaufen, Leertaste lässt los." },
+    { "keys": "Leertaste halten (im Wasser)", "name": "Wassersprung", "text": "Springt in Bögen aus dem Wasser, die Kamera steuert die Höhe, Shift macht schneller. Alle Angriffe gehen auch im Sprung." },
+    { "keys": "Q halten + E halten", "name": "Krabben graben", "text": "Am Grund schnuppern, dem Blasen-Symbol folgen, an den Bläschen graben." }
+  ],
+  "tips": [
+    "Krall dich am Grund fest. Sonst treibst du nach oben und wirst gesehen.",
+    "An Land reicht dein Wasser nur 20 Minuten.",
+    "Tief tauchen, dann hoch springen: So erwischst du Pteranodons."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Beipiaosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-omnivores/beipiaosaurus" },
+    { "label": "Evrima Quick Guide – Schwimmen & Festkrallen", "url": "https://www.evrimaquickguide.com/gameplay/travel/swimming-latching" },
+    { "label": "Evrima Quick Guide – Fischen & Sammeln", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/fishing-foraging" }
+  ]
+}

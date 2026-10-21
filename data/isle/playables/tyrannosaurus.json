@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "tyrannosaurus",
+  "name": "Tyrannosaurus",
+  "nickname": "Rex",
+  "diet": "carnivore",
+  "role": "Apex-Raubtier",
+  "order": 1,
+  "since": "Patch 0.21.321 (Dezember 2025)",
+  "tagline": "Der schwerste Jäger der Insel: knochenbrechende Bisse, langer Weg nach oben.",
+  "summary": "Der Rex ist seit Patch 0.21.321 wieder spielbar und das stärkste Raubtier an Land. Jeder seiner Bisse kann Knochen brechen, mit Crush packt er kleinere Tiere und wirft sie tot zur Seite. Dafür ist er langsam, wendet schwerfällig und braucht mit rund 35 Stunden länger als jedes andere Tier, bis er ausgewachsen ist. Du spielst ihn als geduldigen Lauerjäger, nicht als Sprinter.",
+  "stats": {
+    "adultWeightKg": 9300,
+    "primeWeightKg": 12300,
+    "sprintKmh": 29,
+    "bite": 700,
+    "groupLimit": 2,
+    "nest": "debris",
+    "eggs": 5,
+    "hungerMinutes": 75,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 70, "juvenile": 613, "subadult": 840, "adult": 610 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Tenontosaurus", "Pachycephalosaurus", "Kentrosaurus", "Wildschwein", "Krabbe"],
+    "beta": ["Diabloceratops", "Triceratops", "Hypsilophodon", "Hirsch", "Huhn", "Hase"],
+    "gamma": ["Maiasaura", "Gallimimus", "Dryosaurus", "Beipiaosaurus", "Ziege", "Psittacosaurus", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Ein Rex lebt dort, wo große Pflanzenfresser fressen und trinken: an Flüssen, Seen und rund um die Migrationszonen der Herden. Weil du langsam bist, wählst du deine Plätze so, dass Beute zu dir kommt, statt hinterherzulaufen. Ab etwa 5 Tonnen werden deine Schritte deutlich lauter, Beute hört dich also früh. Bleib deshalb nah an Deckung, bewege dich ruhig und lauf nicht unnötig. Zwischen den Jagden legst du dich hin, denn Ausdauer und Leben laden im Liegen am schnellsten."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Mit einem Gruppenlimit von 2 lebst du allein oder als Paar. Andere Rexe und Triceratops ziehen dich in den Sparring-Modus, sobald ihr kämpft. Dort weichst du mit der Leertaste seitlich aus und betäubst mit gehaltener linker Maustaste. Euer Nest ist ein Reisignest mit bis zu 5 Eiern. Plane ein Nest bewusst: Rex-Jungtiere sind über 11 Stunden lang klein und verletzlich, bevor sie Sub-Adult werden, und brauchen in der Zeit Schutz und Futter."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Deine Stärke ist der erste Treffer. Lauere an Wasserstellen oder Futterbüschen, komm geduckt näher und eröffne mit Crush: Kleinere oder verwundete Tiere unter etwa der Hälfte deines Gewichts nagelst du damit fest und kannst sie mit einem Wurf sofort töten, gleich große Tiere bringst du ins Wanken. Weil all deine Bisse Brüche verursachen, wird angeschlagene Beute schnell langsamer als du. Für den letzten Sprint nutzt du Ambush, das deine Höchstgeschwindigkeit 15 Sekunden lang ohne Ausdauerverbrauch anhebt. Verfehlt dein Crush, stehst du eine Sekunde lang wehrlos da. Gegen Rudel aus Omniraptoren oder Troodons hilft der schwere Kopfstoß, der kleine Angreifer umwirft. Pass auf Blutungen auf, denn große Rudel und Allosaurier können dich ausbluten lassen, auch wenn deine Lebensleiste noch gut aussieht."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "70 Minuten als Schlüpfling: Bleib dicht bei deinen Eltern, bettle mit E und versteck dich bei Gefahr unter ihnen. Du bist so klein, dass dich fast alles töten kann." },
+    { "stage": "juvenile", "text": "Gut 10 Stunden bleibst du Juvenile, und das ist die gefährlichste Phase. Such früh ein Sanctuary auf und jag dort und in der Nähe Hühner, Hasen, Krabben und Wildschweine, damit alle drei Nährstoffe gefüllt sind. Um 45 % bist du so schnell wie nie wieder im Leben, nutze das zur Flucht. Erfülle jetzt die Prime-Bedingungen wie Sanctuary, zwei Migrationszonen und vier Patrol-Zonen, solange du noch weit von 75 % entfernt bist." },
+    { "stage": "subadult", "text": "Ab 50 % schaltet sich Ambush frei, und dein Biss wächst von rund 320 auf 700. Jetzt kannst du Dryosaurier, Hypsis und junge Pflanzenfresser zuverlässig erlegen. Erwachsene Trikes und Stegos meidest du noch. Diese Phase dauert 14 Stunden: Hab Geduld, iss ausgewogen und vermeide Stürze, denn mehrere Brüche können dir dauerhaft Glasknochen einbringen." },
+    { "stage": "adult", "text": "Mit 9,3 Tonnen und 700 Biss bist du an Land fast unschlagbar. Als Prime Elder wächst du bis 87,5 % noch auf 12,3 Tonnen und 770 Biss, danach lässt deine Kraft langsam nach. Bei 100 % kannst du dich einbalsamieren lassen und mit verstärkten Mutationen neu beginnen." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss mit Bruchwirkung." },
+    { "keys": "Alt + LMB", "name": "Richtungsbiss", "text": "Beißt in Blickrichtung, kostet 2 % Ausdauer und geht auch im Wasser." },
+    { "keys": "LMB halten, loslassen", "name": "Crush", "text": "Stürzt nach vorn mit einem wuchtigen Biss voller Bruchschaden. Tiere unter etwa der Hälfte deines Gewichts oder verwundete Tiere werden festgenagelt und können hingerichtet werden, gleich große geraten ins Wanken. Ein Fehlschlag betäubt dich 1 Sekunde, danach 5 Sekunden Abklingzeit. Leertaste bricht ab." },
+    { "keys": "RMB nach Crush", "name": "Wurf", "text": "Wirft das gepackte Tier in Blickrichtung und tötet es immer. Geht mit allem, was du tragen kannst." },
+    { "keys": "RMB / Alt + RMB", "name": "Schnauzenhieb", "text": "Leichter Kopfstoß, gerade oder in Blickrichtung, der kleinere Tiere umwirft." },
+    { "keys": "RMB halten", "name": "Schwerer Schnauzenhieb", "text": "Wirft Tiere bis etwa drei Viertel deines Gewichts um oder tötet kleine sofort und bringt ähnlich große ins Wanken." },
+    { "keys": "Leertaste (ab Sub-Adult)", "name": "Ambush", "text": "Erhöht im Lauf 15 Sekunden lang dein Sprinttempo ohne Ausdauerkosten, danach 1 Minute Abklingzeit." },
+    { "keys": "F halten + 1 oder RMB (Adult)", "name": "Paläo-Rufe", "text": "Besondere Rufe ohne Spielwirkung, nur für die Stimmung." },
+    { "keys": "G halten + LMB", "name": "Kadaver öffnen", "text": "Schüttle einen Kadaver mit der Maus, damit die Organe herausfallen." }
+  ],
+  "tips": [
+    "Crush ist dein Eröffnungsangriff. Verfehlst du ihn, stehst du eine Sekunde lang wehrlos da.",
+    "Rex kann keine Knochen fressen, ein abgenagter Kadaver bringt dir nichts.",
+    "Ab 5 Tonnen hört man dich kommen. Lauer an Wasserstellen, statt Beute zu verfolgen."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Tyrannosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/tyrannosaurus" },
+    { "label": "Steam: Patch 0.21.321", "url": "https://store.steampowered.com/news/app/376210/view/507348444540569206" }
+  ]
+}

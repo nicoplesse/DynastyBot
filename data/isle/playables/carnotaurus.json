@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "carnotaurus",
+  "name": "Carnotaurus",
+  "nickname": "Carno",
+  "diet": "carnivore",
+  "role": "Sprinter der Ebenen",
+  "order": 3,
+  "tagline": "Das schnellste Raubtier: Sprint, Rammstoß, Biss.",
+  "summary": "Der Carnotaurus ist das schnellste Raubtier der Insel und für offenes Gelände gebaut. Mit seinem aufgeladenen Kopfstoß wirft er Beute um oder bringt sie ins Wanken und beißt dann zu. Im Wald dreht er zu langsam, und seine Ausdauer lädt in Bewegung schlecht nach, deshalb jagt er in kurzen, entschlossenen Sprints über freie Flächen.",
+  "stats": {
+    "adultWeightKg": 1300,
+    "primeWeightKg": 1800,
+    "sprintKmh": 49.5,
+    "bite": 150,
+    "groupLimit": 3,
+    "nest": "debris",
+    "eggs": 3,
+    "hungerMinutes": 75,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 40, "juvenile": 90, "subadult": 120, "adult": 210 }
+  },
+  "nutrients": {
+    "alpha": ["Pachycephalosaurus", "Tenontosaurus", "Herrerasaurus", "Wildschwein"],
+    "beta": ["Omniraptor", "Diabloceratops", "Troodon", "Hirsch"],
+    "gamma": ["Dryosaurus", "Gallimimus", "Maiasaura"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Zuhause sind die offenen Ebenen, Grasländer und breiten Ufer. Dort spielst du dein Tempo aus, und Beute kann nicht hinter Bäumen abschlagen. In dichten Wäldern bist du im Nachteil, weil du im Lauf schlecht wendest. Lauf nicht ziellos herum: Such von Hügeln oder Waldrändern nach Herden, sprinte gezielt los und ruh dich danach aus, denn deine Ausdauer lädt nur im Stehen oder Liegen ordentlich nach."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu drei Carnos dürfen eine Gruppe bilden, meist ein Paar mit einem Jungtier oder ein kleines Jagdtrio. Euer Reisignest fasst bis zu 3 Eier. Jungtiere spawnen erfreulich groß und schnell, nach 40 Minuten Betteln sind sie mit fast 500 kg und über 43 km/h schon brauchbare Läufer."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Klassische Carno-Jagd: Anpirschen, aus dem Sprint den Kopfstoß aufladen (rechte Maustaste halten, dann linke drücken) und das Ziel umwerfen. Ein länger aufgeladener Stoß wirft auch schwerere Tiere um, bei deutlich größeren reicht es nur für ein Taumeln. Liegt die Beute, setzt du mit Bissen nach, bevor sie aufsteht. Gallimimus mit voller Ernährung sind fast so schnell wie du. Bei ihnen zählt der Überraschungsmoment, eine lange Verfolgung gewinnst du nicht. Gegen kleine, flinke Gegner am Boden hilft der schnelle, tiefe Biss mit Alt und linker Maustaste. Springt dir ein Omniraptor auf den Rücken, wirfst du ihn mit gehaltenem E ab. Allein gegen drei oder mehr Omnis solltest du dich nicht stellen, sondern fliehen, denn das kannst du besser als jeder andere."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Nur 40 Minuten: Bleib bei den Eltern und bettle regelmäßig, damit du ihre Ernährung übernimmst." },
+    { "stage": "juvenile", "text": "Du spawnst schon mit knapp 500 kg und über 43 km/h, als Juvenile bist du für viele Jäger also kein leichtes Ziel. Jag Hirschkitze und Wildschweine und probiere den Kopfstoß an kleinen Dryosauriern aus. Besuche ein Sanctuary für die Prime-Bedingungen, auch wenn du dort wegen der Bienen nicht lange bleiben kannst." },
+    { "stage": "subadult", "text": "Zwei Stunden lang wächst du auf 1,3 Tonnen und fast 50 km/h. Jetzt jagst du Dryosaurier, Gallimimus und junge Pachys. Achte darauf, alle drei Nährstoffe gefüllt zu halten, denn mit 300 % Wachstumstempo ist diese Phase schnell vorbei." },
+    { "stage": "adult", "text": "Mit 1,3 Tonnen bist du kein Schwergewicht, aber ein Albtraum für alles bis zur Größe eines Tenontosaurus. Als Prime Elder bekommst du bis 87,5 % noch 500 kg und rund 6 km/h dazu und bist mit über 55 km/h das schnellste Raubtier im Spiel." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Schneller Tiefbiss", "text": "Schnellerer Biss, der tiefer zum Boden geht. Kostet Ausdauer und eignet sich gegen kleine Ziele und Aufsitzer." },
+    { "keys": "RMB halten + LMB", "name": "Kopfstoß", "text": "Laden mit gehaltener rechter Maustaste, auslösen mit linker. Geht im Stehen und im Lauf. Je nach Ladezeit und Gewichtsverhältnis wirft er das Ziel um oder bringt es ins Wanken. Danach folgt eine Abklingzeit." }
+  ],
+  "tips": [
+    "Jag über freie Flächen. Im Wald drehst du zu langsam.",
+    "Kopfstoß umwerfen, dann beißen: Liegende Beute kann sich nicht wehren.",
+    "Gegen drei oder mehr Omniraptoren lieber wegsprinten."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Carnotaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/carnotaurus" },
+    { "label": "Steam: Patch 0.21.321 (neuer Kopfstoß)", "url": "https://store.steampowered.com/news/app/376210/view/507348444540569206" }
+  ]
+}

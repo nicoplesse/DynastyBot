@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "pachycephalosaurus",
+  "name": "Pachycephalosaurus",
+  "nickname": "Pachy",
+  "diet": "herbivore",
+  "role": "Knochenbrecher mit Dickschädel",
+  "order": 18,
+  "tagline": "Ein Sprung, ein Kopfstoß, ein gebrochener Knochen.",
+  "summary": "Der Pachycephalosaurus springt mit seinem Knochenschädel voraus in den Gegner und bricht ihm dabei oft einen Knochen. Sein Kopf steckt Treffer gut weg, sein Kopfstoß kostet wenig Ausdauer. Gegen Tiere über drei Tonnen richtet der Kopfstoß aber nichts aus, und er schwimmt schlecht und nimmt viel Sturzschaden. Er ist ein flinker Nahkämpfer, der sich mit Brüchen den Rückzug erkämpft.",
+  "stats": {
+    "adultWeightKg": 700,
+    "primeWeightKg": 910,
+    "sprintKmh": 41.8,
+    "bite": 30,
+    "groupLimit": 8,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 45,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 25, "juvenile": 50, "subadult": 140, "adult": 160 }
+  },
+  "nutrients": {
+    "alpha": ["Azure Apollan", "Mango", "Variegated Orange", "Marigold", "Banana", "Jackfruit"],
+    "beta": ["Fireweed", "Agave", "Sunchoke Flowers", "Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Russula", "Coconut", "Cashew", "Pumpkin", "Papaya", "Brazil Nuts"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Speiseplan ist breit: Dschungelfrüchte, Grasland-Pflanzen wie Agave, Topinambur, Cashews und Kürbisse, dazu Mangos und Kokosnüsse an der Küste. Kokosnüsse holst du mit dem Kopf herunter: auf den Stamm zulaufen, leicht nach unten schauen und mit der rechten Maustaste gegen den Stamm stoßen, dann die Nuss mit zwei weiteren Stößen öffnen. Meide tiefes Wasser und hohe Kanten, denn du schwimmst schlecht und verträgst Stürze kaum. Mit dem Stegosaurus teilst du keine Migrationszonen."
+    },
+    {
+      "id": "social",
+      "title": "Herde & Nachwuchs",
+      "text": "Bis zu acht Pachys bilden eine Herde. Mehrere Kopfstöße von verschiedenen Seiten brechen einem Angreifer schnell die Knochen. Euer Erdhügel-Nest fasst bis zu 6 Eier, die Jungen betteln bis 18 %."
+    }
+  ],
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Dich jagen Rexe, Carnos, Ceratos, Herreras, Omnis, Troodons und Deinos. Dein Sprung-Kopfstoß mit der rechten Maustaste (tippen oder halten und loslassen) bricht meistens einen Knochen. Ein Jäger mit Bruch ist langsamer und kann dir schlechter folgen. Du hörst ein Ladegeräusch, wenn der Stoß bereit ist. Mit Alt und linker Maustaste schwingst du den Kopf seitlich und wirfst Gegner um, das bringt sie auch ins Wanken. Wiegt der Gegner mehr als drei Tonnen, macht dein Kopfstoß keinen Schaden mehr, dann hilft nur noch der Biss oder die Flucht. Gegen große Jäger heißt das: nicht kämpfen, sondern weglaufen und dabei Höhenunterschiede meiden."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "25 Minuten im Nest, bis 18 % bettelst du. Bleib dicht bei den Eltern. Kanten und tiefes Wasser sind für dich schon jetzt gefährlich." },
+    { "stage": "juvenile", "text": "Nur 50 Minuten, aber du spawnst schon mit 147 kg und über 44 km/h. Sanctuary besuchen und alle drei Nährstoffe füllen." },
+    { "stage": "subadult", "text": "Gut zwei Stunden lang wächst du auf 700 kg. Jetzt bricht dein Kopfstoß Herreras, Omnis und Dilos die Knochen. Übe Kokosnuss-Ernte und Kopfstoß-Timing." },
+    { "stage": "adult", "text": "700 kg mit knochenbrechendem Kopfstoß. Als Prime Elder wächst du bis 87,5 % auf 910 kg und über 46 km/h." }
+  ],
+  "abilities": [
+    { "keys": "RMB (tippen oder halten)", "name": "Sprung-Kopfstoß", "text": "Springt nach vorn und rammt den Schädel in den Gegner. Bricht meistens einen Knochen, kostet wenig Ausdauer. Wirkungslos gegen Tiere über 3 Tonnen." },
+    { "keys": "Alt + LMB", "name": "Kopfschwung", "text": "Wirft Gegner um und bringt sie ins Wanken." },
+    { "keys": "LMB", "name": "Biss", "text": "Schwacher Biss, der einzige Schaden gegen Tiere über 3 Tonnen." }
+  ],
+  "tips": [
+    "Gegen Tiere über 3 Tonnen bringt dein Kopfstoß nichts.",
+    "Erst einen Bruch setzen, dann weglaufen.",
+    "Wenig Sturzschaden-Toleranz: Kanten meiden."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Pachycephalosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/pachycephalosaurus" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

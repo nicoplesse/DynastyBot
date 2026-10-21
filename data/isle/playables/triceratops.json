@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "triceratops",
+  "name": "Triceratops",
+  "nickname": "Trike",
+  "diet": "herbivore",
+  "role": "Gepanzerter Riese",
+  "order": 12,
+  "since": "Patch 0.20.109 (Juni 2025)",
+  "tagline": "Der beste Einzelkämpfer: Hörner nach vorn, Kopf geschützt, Gegner umgeworfen.",
+  "summary": "Der Triceratops ist der schwerste Pflanzenfresser und im Zweikampf kaum zu schlagen. Sein Kopf steckt Treffer besser weg, er blockt Angriffe darauf und spießt Tiere auf, die ihm auf den Kopf springen. Er wirft Gegner um und setzt mit wildem Hornschlagen nach. Dafür ist er langsam und braucht fast 30 Stunden, bis er ausgewachsen ist.",
+  "stats": {
+    "adultWeightKg": 9500,
+    "primeWeightKg": 12500,
+    "sprintKmh": 23.4,
+    "bite": 900,
+    "groupLimit": 4,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 90,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 60, "juvenile": 200, "subadult": 640, "adult": 850 }
+  },
+  "nutrients": {
+    "alpha": ["Variegated Orange", "Marigold", "Banana", "Jackfruit"],
+    "beta": ["Agave", "Sunchoke Flowers", "Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Cashew", "Pumpkin", "Papaya", "Brazil Nuts"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Futter wächst an zwei Orten: Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium im Dschungel, Agaven, Topinambur, Cashews und Kürbisse auf Grasland und Ebenen. Am wohlsten fühlst du dich am Übergang zwischen beiden, wo du schnell zwischen Deckung und Weide wechseln kannst. Mit 90 Minuten Magen und 60 Minuten Durst hältst du lange durch. Meide gelbe Pilze, sie stehen nicht auf deinem Speiseplan und machen dich krank."
+    },
+    {
+      "id": "social",
+      "title": "Herde & Nachwuchs",
+      "text": "Höchstens vier Trikes bilden eine Herde, meist ein Paar mit Jungtieren. Kämpfe unter Trikes und gegen Rexe laufen im Sparring-Modus (Strg): Jeder Angriff verbraucht einen Punkt unter dem Ausdauersymbol, jeder Punkt lädt in 30 Sekunden nach. Ohne Punkte kostet jeder Angriff Ausdauer. Hörner können sich verhaken, mit Leertaste und einer Richtungstaste löst ihr sie. Euer Erdhügel-Nest fasst bis zu 6 Eier."
+    }
+  ],
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Als Adult jagen dich vor allem Rexe und Allosaurier, und gegen einen einzelnen Angreifer bist du klar im Vorteil. Zeig ihm die Hörner und halt die rechte Maustaste, um Treffer auf den Kopf zu blocken. Wer dir auf den Kopf springt, wird aufgespießt. Halt die linke Maustaste, um den Gegner umzuwerfen, und klick doppelt, um am Liegenden mit wildem Hornschlagen nachzusetzen. Angriffe aus dem Lauf treffen härter, Sprint plus Angriff schiebt den Gegner zurück. Gefährlich sind Rudel, die von hinten und von der Seite kommen, und Blutungen. Stell dich mit dem Rücken an einen Felsen oder in den Kreis deiner Herde. Jung bist du dagegen langsam und lecker. Bis Sub-Adult lebst du von Deckung und deinen Eltern."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Eine Stunde lang bettelst du bei deinen Eltern. Bleib zwischen ihren Beinen, fast jeder Jäger kann dich töten." },
+    { "stage": "juvenile", "text": "Über drei Stunden bist du mit 85 kg und gut 16 km/h langsam. Geh ins Sanctuary und füll dort mit den roten Sanctuary-Pilzen alle drei Nährstoffe auf einmal. Erledige früh die Prime-Bedingungen, du hast dafür viel Zeit." },
+    { "stage": "subadult", "text": "Fast elf Stunden lang wächst du von 3,6 auf 9,5 Tonnen, dein Biss steigt von 435 auf 900. Ab der Mitte dieser Phase kannst du dich gegen Carnos und Ceratos behaupten. Iss ausgewogen, denn jedes Prozent Wachstumstempo spart dir hier Stunden." },
+    { "stage": "adult", "text": "9,5 Tonnen und 900 Schaden: Du bist der König der Weide. Als Prime Elder wächst du bis 87,5 % auf 12,5 Tonnen und über 1000 Schaden, danach lässt deine Kraft langsam nach." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Kopfstoß", "text": "Einfacher Hornstoß. Aus dem Lauf trifft er härter." },
+    { "keys": "LMB halten", "name": "Umwerfen", "text": "Wirft das Ziel um. Geht auch im Sparring, ohne einen Angriffspunkt zu verbrauchen." },
+    { "keys": "2× LMB", "name": "Wüten", "text": "Wildes Hornschlagen mit zusätzlichem Schaden an umgeworfenen Zielen. Geht auch im Sparring, ohne einen Angriffspunkt zu verbrauchen." },
+    { "keys": "Alt + LMB", "name": "Rundum-Angriff", "text": "Schnelle Drehung für Ziele neben oder hinter dir." },
+    { "keys": "RMB halten", "name": "Block / Seitwärtsgang", "text": "Kopf senken und Kopftreffer blocken. Im Sparring langsamer, aber mit weniger Kopfschaden." },
+    { "keys": "Strg", "name": "Sparring", "text": "Sparring-Modus an oder aus. Leertaste weicht seitlich aus, LMB kontert einen Schub, LMB halten betäubt." },
+    { "keys": "Sprint + Angriff", "name": "Schub", "text": "Schiebt den Gegner zurück." }
+  ],
+  "tips": [
+    "Kopf zum Gegner, rechte Maustaste halten: So blockst du Kopftreffer.",
+    "Wer dir auf den Kopf springt, wird aufgespießt.",
+    "Rücken an den Felsen, damit Rudel nicht von hinten kommen."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Triceratops", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/triceratops" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

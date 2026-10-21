@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "austroraptor",
+  "name": "Austroraptor",
+  "nickname": "Austro",
+  "diet": "carnivore",
+  "role": "Fischjäger am Ufer",
+  "order": 10,
+  "since": "Patch 0.21.772 (August 2026)",
+  "tagline": "Halb Raptor, halb Reiher: fischt am Ufer und springt aus dem Wasser.",
+  "summary": "Der Austroraptor ist das neueste Tier im Spiel. Er ist ein schneller, gefiederter Räuber, der an Land und im Wasser gleich gut zurechtkommt. Er fischt am Ufer wie der Pteranodon, schießt aus dem Wasser hoch und nagelt kleinere Beute mit einem Sprung fest. In einem offenen Kampf gegen gleich große Gegner ist er schwach, er lebt von Überraschung und Wasser.",
+  "stats": {
+    "adultWeightKg": 240,
+    "primeWeightKg": 350,
+    "sprintKmh": 48.1,
+    "bite": 40,
+    "groupLimit": 8,
+    "nest": "debris",
+    "eggs": 4,
+    "hungerMinutes": 75,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": null, "juvenile": null, "subadult": null, "adult": null }
+  },
+  "nutrients": {
+    "alpha": ["Krabbe", "Schwarmfisch", "Muschel"],
+    "beta": ["Hypsilophodon", "Deinosuchus", "Ochsenfrosch", "Huhn", "Hase"],
+    "gamma": ["Beipiaosaurus", "Elite-Fisch", "Psittacosaurus", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du lebst an Flussufern, Seen, Mangroven und Küsten. Dort findest du fast alles, was du brauchst: Krabben, Muscheln, Fische, Frösche und Meeresschildkröten. Tagsüber fischst du am Wasserrand, nachts streifst du am Ufer nach Hühnern, Hasen und Psittacosauriern. Dein Trab ist langsam, dafür springst du weit. Im Wasser bist du beweglich, achte aber auf Deinosuchus und große Elite-Fische. Knochen kannst du nicht fressen."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu acht Austroraptoren dürfen eine Gruppe bilden. Euer Reisignest fasst bis zu 4 Eier. Weil die Art erst seit August 2026 spielbar ist, sind Wachstumszeiten und Feinheiten noch nicht sauber dokumentiert und können sich mit den nächsten Patches ändern."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Tagsüber gehst du mit G an Wasser oder Schlamm in die Speerfisch-Haltung. Fische und Muscheln schwimmen heran, und wenn eines markiert ist, schnappst du mit der linken Maustaste zu. Muscheln öffnest du, indem du sie auf harten Fels schlägst. Nachts funktioniert das nicht. Zur Jagd auf Land nutzt du den Sprung mit der rechten Maustaste: Er nagelt kleinere Beute fest wie beim Omniraptor, danach beißt du in Ruhe zu. Aus dem Schwimmen an der Oberfläche schießt du mit der Leertaste aus dem Wasser, ideal, um Tiere am Ufer zu überraschen. Du kannst auch im Sprung angreifen. Stell dich nicht gegen gleich schwere oder schwerere Jäger, sondern verschwinde im Wasser oder im Ufergebüsch."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Bleib im Nest und bei den Eltern und lass dich füttern. Ihre Ernährung geht auf dich über." },
+    { "stage": "juvenile", "text": "Mit 12 kg bist du klein. Bleib nah am Wasser, fang Krabben und Frösche und probier tagsüber das Speerfischen. Für Prime helfen ein Sanctuary, Patrol-Zonen und eine volle Ernährung aus Krabben (α), Fröschen (β) und Psittacosauriern oder Schildkröten (γ)." },
+    { "stage": "subadult", "text": "Von 120 auf 240 kg und bis 48 km/h. Jetzt nagelst du Hypsis und Psittacosaurier fest und kannst junge Beipiaosaurier im Wasser jagen." },
+    { "stage": "adult", "text": "240 kg und 40 Biss: Ein flinker Uferjäger, kein Kämpfer. Als Prime Elder wächst du bis 87,5 % auf 350 kg und über 55 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss, auch im Sprung." },
+    { "keys": "Alt + LMB", "name": "Richtungsbiss", "text": "Biss in Kamerarichtung." },
+    { "keys": "RMB", "name": "Sprung & Festnageln", "text": "Springt auf das Ziel und nagelt kleinere Tiere fest, ähnlich wie beim Omniraptor." },
+    { "keys": "Leertaste (im Wasser)", "name": "Wassersprung", "text": "Springt beim Schwimmen an der Oberfläche aus dem Wasser. Du kannst in der Luft angreifen." },
+    { "keys": "G", "name": "Speerfischen", "text": "Nur tagsüber: Haltung am Wasser, die Fische und Muscheln anlockt. Markierte Ziele fängst du mit LMB." }
+  ],
+  "tips": [
+    "Speerfischen geht nur tagsüber.",
+    "Muscheln auf Fels schlagen, um sie zu öffnen.",
+    "Bei Gefahr ins Wasser oder ins Ufergebüsch, nicht kämpfen."
+  ],
+  "notes": ["Neue Art: Wachstumszeiten sind noch nicht verlässlich erfasst, Werte können sich mit Patches ändern."],
+  "sources": [
+    { "label": "Steam: Patch 0.21.772", "url": "https://steamcommunity.com/app/376210/discussions/14/581678695778878798/" },
+    { "label": "Evrima Quick Guide – Austroraptor", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/austroraptor" }
+  ]
+}

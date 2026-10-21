@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "ceratosaurus",
+  "name": "Ceratosaurus",
+  "nickname": "Cera",
+  "diet": "carnivore",
+  "role": "Aasfresser & Kadaverwächter",
+  "order": 4,
+  "tagline": "Frisst alles, verteidigt jeden Kadaver und lässt Gegner sich übergeben.",
+  "summary": "Der Ceratosaurus ist der zäheste Fresser der Insel: Er frisst Aas, Knochen und sogar die eigene Art, ohne krank zu werden. Was er frisst, wird zu Bakterien, die er mit seinen Bissen weitergibt, bis das Opfer sich übergibt und Nährstoffe verliert. In der Nähe eines Kadavers steckt er weniger Schaden ein. Er ist kein Sprinter, sondern ein Tier, das Druck aufbaut und Stellung hält.",
+  "stats": {
+    "adultWeightKg": 1450,
+    "primeWeightKg": 1950,
+    "sprintKmh": 40.3,
+    "bite": 150,
+    "groupLimit": 5,
+    "nest": "debris",
+    "eggs": 3,
+    "hungerMinutes": 60,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 30, "juvenile": 60, "subadult": 120, "adult": 150 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Tenontosaurus", "Pachycephalosaurus", "Ceratosaurus", "Kentrosaurus"],
+    "beta": ["Carnotaurus", "Deinosuchus", "Omniraptor", "Diabloceratops", "Hirsch"],
+    "gamma": ["Dilophosaurus", "Beipiaosaurus", "Ziege"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du hast die beste Nase aller Tiere, bei verwesendem Fleisch reicht sie noch weiter. Dein Alltag besteht darum aus Suchen: Kadaver, Knochen und Reste, die andere Jäger liegen lassen. Knochen geben dir als einzigem Tier alle drei Nährstoffe. Weil du nicht springen kannst, meidest du zerklüftetes Felsgelände und bleibst in Wäldern, Sümpfen und flachem Land. Mit 45 Minuten Durst musst du öfter trinken als die meisten Jäger, ein Revier nah am Wasser ist Pflicht."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Ein Rudel kann bis zu fünf Ceratosaurier haben. Euer Nest baut ihr in zwei Schritten: erst halb aus Zweigen bauen, dann die bis zu 3 Eier hineinlegen und danach mit weiteren Zweigen zudecken, damit sie warm bleiben. Kannibalismus macht dich nicht krank, Artgenossen stehen sogar auf deinem α-Speiseplan."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Dein Kampf beginnt beim Fressen: Wenn du nicht satt bist und an verdorbenem Fleisch frisst, füllt sich hinter dem Magensymbol dein Bakterienvorrat. Jeder Biss gibt davon ab. Erreichen die Bakterien den Magenstand des Opfers, übergibt es sich, verliert Nahrung und bekommt beim Weiterfressen keine Nährstoffe mehr. Kleine Tiere erwischt es schon nach einem Biss, schwere brauchen mehrere. Erbrochenes kannst du mit Q verfolgen. Am Kadaver bist du am stärksten: Liegt im Umkreis von 30 Metern ein Körper von mindestens 130 kg, bekommst du automatisch 25 % Schadensreduktion, bei einem ausgewachsenen Körper sogar 50 %. Kommt jemand näher als 5 Meter, schnaubst du warnend. Dein stärkster Schlag ist der aufgeladene Biss mit gehaltener rechter Maustaste, der vor allem am Kopf enorm trifft. Deine Opfer werden die Bakterien an einem Salzleckstein wieder los, bleib also an ihnen dran, bevor sie einen erreichen."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "30 Minuten im zugedeckten Nest und bei den Eltern. Bettle viel, du erbst ihre Ernährung." },
+    { "stage": "juvenile", "text": "Eine Stunde, in der du Reste findest statt jagst: Folge mit Q Knochen- und Fleischsymbolen und friss Knochen, denn sie füllen alle drei Nährstoffe auf einmal. Halte Abstand zu den Jägern, deren Beute du klaust. Ein Sanctuary-Besuch zählt für Prime." },
+    { "stage": "subadult", "text": "Zwei Stunden lang wächst du auf 1,45 Tonnen. Jetzt kannst du Kadaver gegen Dilophosaurier und Omniraptoren verteidigen. Lerne den aufgeladenen Biss und wie du Bakterien sammelst." },
+    { "stage": "adult", "text": "Mit 150 Biss, Bakterienbiss und Kadaverschutz behauptest du dich gegen Carnos und Allos. Als Prime Elder wächst du bis 87,5 % auf 1,95 Tonnen." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss, 150 Schaden und 225 am Kopf. Überträgt Bakterien." },
+    { "keys": "Alt + LMB", "name": "Rundum-Biss", "text": "Biss in Kamerarichtung mit doppeltem Kopfschaden." },
+    { "keys": "RMB halten", "name": "Aufgeladener Biss", "text": "Langsam aufladen: Du wirst 10 % langsamer, voll geladen verbrauchst du Ausdauer. Bis zu 517 Schaden am Kopf." },
+    { "keys": "3× RMB schnell", "name": "Erbrechen", "text": "Du übergibst dich selbst. Du verlierst 20 % Nährstoffe, Futter und Wasser. In der Nähe eines Kadavers lässt das ihn fünfmal schneller verwesen und dir so schneller Bakterien liefern." },
+    { "keys": "passiv", "name": "Kadaverschutz", "text": "Bis zu 50 % weniger Schaden, wenn ein großer Körper im Umkreis von 30 Metern liegt. Ducken oder Hinlegen unterbricht den Schutz." }
+  ],
+  "tips": [
+    "Knochen geben dir alle drei Nährstoffe, für andere Tiere sind sie Gift.",
+    "Bakterien bekommst du nur aus verdorbenem Fleisch und nur, wenn du nicht satt bist.",
+    "Bleib am Kadaver stehen, statt zu fliehen. Dort bist du am zähesten."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Ceratosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/ceratosaurus" },
+    { "label": "Evrima Quick Guide – Kampf & Effekte", "url": "https://www.evrimaquickguide.com/gameplay/group-play/fighting-effects" }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "diabloceratops",
+  "name": "Diabloceratops",
+  "nickname": "Diablo",
+  "diet": "herbivore",
+  "role": "Wendiger Hornträger",
+  "order": 15,
+  "tagline": "Kleiner, schneller und frecher als der Trike, stark im Herdenverband.",
+  "summary": "Der Diabloceratops ist ein kompakter Hornträger, der eng wendet und seitlich ausweicht. Er stößt Gegner im Lauf um oder betäubt sie, wenn sie zu schwer sind. Gegen Kopftreffer ist er zäh. Allein ist er verwundbar, in einer Herde aus bis zu sechs Diablos hält er die meisten mittelgroßen Jäger auf Abstand.",
+  "stats": {
+    "adultWeightKg": 3000,
+    "primeWeightKg": 3900,
+    "sprintKmh": 34.2,
+    "bite": 275,
+    "groupLimit": 6,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 80,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 45, "juvenile": 90, "subadult": 140, "adult": 190 }
+  },
+  "nutrients": {
+    "alpha": ["Horned Melon", "Azure Apollan", "Mango", "Mountain Ash"],
+    "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Fireweed", "Radish Flower"],
+    "gamma": ["Russula", "Coconut", "Radish Root", "Violet Apollan"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Speiseplan führt dich in zwei Landschaften: Sümpfe mit Hornmelonen, Sumach, Pfifferlingen und Täublingen und die Highlands mit Eberesche, Radieschen und Weidenröschen. Dazu kommen Mangos und Kokosnüsse an Küsten und Schlammflächen. Anders als viele Pflanzenfresser verträgst du Pfifferlinge. Weil du im Lauf schnell wendest, bist du auch in hügeligem Gelände wendig."
+    },
+    {
+      "id": "social",
+      "title": "Herde & Nachwuchs",
+      "text": "Bis zu sechs Diablos bilden eine Herde. Ihr seid stark, wenn ihr zusammenbleibt und Jägern gemeinsam die Hörner zeigt. Untereinander kämpft ihr im Sparring-Modus (Strg) mit Angriffspunkten, die alle 30 Sekunden nachladen. Größere Diablos haben im Schieben den Vorteil. Euer Erdhügel-Nest fasst bis zu 6 Eier."
+    }
+  ],
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Dich jagen viele: Rexe, Allosaurier, Carnos, Ceratos, Dilos, Omnis und Deinos am Wasser. Deine beste Waffe ist der Stoß aus dem Lauf. Ist das Ziel weniger als doppelt so schwer wie du, wirfst du es um, ist es schwerer, betäubst du es kurz. Mit A und D schiebst du dich seitlich und behältst den Gegner im Blick. Oft ist es schneller, im Lauf herumzuschwenken und zuzustoßen, als den Alt-Angriff zu nutzen. Kopftreffer machen dir weniger aus. Halt die rechte Maustaste, um den Kopf zu senken und Treffer abzufangen. Schau nach unten und klick, für einen Stoß nach unten mit so viel Schaden wie ein Alt-Angriff, gut gegen kleine Springer."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "45 Minuten bettelst du mit E bei den Eltern und übernimmst dabei ihre Ernährung. Bleib in der Mitte der Herde, am Rand holen dich Omnis und Dilos." },
+    { "stage": "juvenile", "text": "Anderthalb Stunden bist du langsam. Ab ins Sanctuary, die roten Pilze fressen und Prime-Bedingungen sammeln. Pfifferlinge darfst du fressen, sie stehen auf deinem Speiseplan." },
+    { "stage": "subadult", "text": "Gut zwei Stunden lang wächst du von 1,5 auf 3 Tonnen, dein Stoß von 130 auf 275 Schaden. Übe Schieben und Umwerfen im Sparring mit der Herde." },
+    { "stage": "adult", "text": "3 Tonnen und 275 Schaden: Gegen alles bis Carno-Größe kannst du dich stellen. Als Prime Elder wächst du bis 87,5 % auf 3,9 Tonnen und gut 37 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Kopfstoß", "text": "Einfacher Hornstoß." },
+    { "keys": "Laufen + LMB", "name": "Schub / Umwerfen", "text": "Schiebt Artgenossen zurück. Ziele unter dem doppelten Gewicht wirfst du um, schwerere betäubst du kurz." },
+    { "keys": "Nach unten schauen + LMB", "name": "Stoß nach unten", "text": "Längere Animation, aber so viel Schaden wie ein Alt-Angriff." },
+    { "keys": "RMB halten", "name": "Seitwärtsgang", "text": "Kopf gesenkt, langsamer, weniger Kopfschaden. In diesem Modus kannst du nicht stoßen." },
+    { "keys": "Strg", "name": "Sparring", "text": "Sparring-Modus mit Seitwärtsbewegung. Leertaste und eine Richtungstaste lösen verhakte Hörner." }
+  ],
+  "tips": [
+    "Im Lauf herumschwenken und zustoßen ist schneller als der Alt-Angriff.",
+    "Ziele unter deinem doppelten Gewicht wirfst du um.",
+    "Bleib in der Herde, allein bist du Beute."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Diabloceratops", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/diabloceratops" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "dilophosaurus",
+  "name": "Dilophosaurus",
+  "nickname": "Dilo",
+  "diet": "carnivore",
+  "role": "Giftjäger mit Halluzinationen",
+  "order": 6,
+  "tagline": "Vergiften, verwirren, zermürben: Seine Doppelgänger sieht nur das Opfer.",
+  "summary": "Der Dilophosaurus ist ein leichter, schneller Jäger, der seine Beute mit Gift in Halluzinationen stürzt. Ist das Opfer voll vergiftet, schickt er Trugbilder von sich los, die nur das Opfer sieht und die es angreifen. Er kämpft nicht frontal, sondern beißt zu, zieht sich zurück und wartet, bis die Beute zermürbt ist. Er ist wendig und hat gute Ausdauer, verträgt aber Blutungen schlecht.",
+  "stats": {
+    "adultWeightKg": 700,
+    "primeWeightKg": 977,
+    "sprintKmh": 47.5,
+    "bite": 85,
+    "groupLimit": 4,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 60,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 20, "juvenile": 60, "subadult": 120, "adult": 160 }
+  },
+  "nutrients": {
+    "alpha": ["Tenontosaurus", "Herrerasaurus", "Ceratosaurus", "Wildschwein"],
+    "beta": ["Diabloceratops", "Carnotaurus", "Hypsilophodon", "Hirsch", "Huhn"],
+    "gamma": ["Gallimimus", "Maiasaura", "Dryosaurus", "Ziege", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du fühlst dich in Wäldern, Dschungel und an Waldrändern am wohlsten, wo du zwischen Bäumen auftauchen und wieder verschwinden kannst. Trab, Wendigkeit und Sprint sind gut, deine Ausdauer auch. Dein Schwachpunkt sind Blutungen. Meide deshalb Allosaurier, Omniraptor-Rudel und Stegosaurier, deren Treffer dich schnell ausbluten lassen."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu vier Dilos bilden ein Rudel. Beachte, dass sich eure Halluzinationen nicht addieren, jeder stapelt sein eigenes Gift. Teilt euch also die Ziele auf oder lasst einen vergiften, während die anderen Druck machen. Euer Nest ist ein Erdhügel mit bis zu 6 Eiern, und Schlüpflinge betteln nur 20 Minuten."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Deine Grundattacke ist ein sehr schneller Biss, und jeder Treffer vergiftet. Kopftreffer stapeln die Halluzinationen am besten. Das Opfer sieht schlechter, hört Dinge und sieht falsche Dilos. Leuchtet es lila, ist es voll vergiftet. Jetzt beschwörst du mit der rechten Maustaste Trugbilder, die das Opfer angreifen. Sie verschwinden, sobald sie treffen oder getroffen werden, und du kannst sie etwa alle 10 Sekunden neu rufen. Mit Q siehst du die Halluzinationen deines Opfers. Bleib nach jedem Biss in Bewegung und lass dich nie in einen langen Schlagabtausch ziehen. Schnellere Tiere und Rudel sind gefährlich, und Blutungen sind dein größtes Risiko. Hängt sich etwas auf dich, wirfst du es sehr schnell ab."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten Betteln am Erdhügel. Die Eltern füttern dich mit gehaltenem E und geben dir ihre Ernährung mit. Danach frisst du selbst, zuerst Hühner und anderes Kleinzeug." },
+    { "stage": "juvenile", "text": "Mit 20 kg bist du klein, aber schon 25 km/h schnell. Jag Hühner und Ziegen und meide Wildschweine, die zurückbeißen. Im Sanctuary wächst du sicher und erfüllst eine Prime-Bedingung." },
+    { "stage": "subadult", "text": "Zu Beginn dieser Phase bist du mit über 50 km/h schneller als später als Adult. Nutze das zum Jagen von Gallimimus und Dryosauriern und zum Üben der Gift-Taktik." },
+    { "stage": "adult", "text": "700 kg und 85 Biss: Mit Gift und Trugbildern zermürbst du auch Diabloceratops und Maiasaurier. Als Prime Elder wächst du bis 87,5 % auf fast eine Tonne und über 52 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Giftbiss", "text": "Sehr schneller Biss, der Halluzinationen stapelt. Kopftreffer wirken am stärksten." },
+    { "keys": "Alt + LMB", "name": "Schneller Richtungsbiss", "text": "Noch schnellerer Biss mit schneller Drehung." },
+    { "keys": "RMB", "name": "Trugbilder", "text": "Nur gegen voll vergiftete, lila leuchtende Ziele: Ruft Doppelgänger, die nur das Opfer sieht und die es angreifen. Etwa 10 Sekunden Abklingzeit." }
+  ],
+  "tips": [
+    "Nur dein eigenes Gift zählt. Mehrere Dilos auf einem Ziel stapeln nicht zusammen.",
+    "Mit Q siehst du, welche Halluzinationen dein Opfer gerade sieht.",
+    "Blutungen sind dein größter Feind. Meide Allos, Omnis und Stegos."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Dilophosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/dilophosaurus" }
+  ]
+}

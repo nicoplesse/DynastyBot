@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "pteranodon",
+  "name": "Pteranodon",
+  "nickname": "Ptera",
+  "diet": "carnivore",
+  "role": "Einziger Flieger",
+  "order": 11,
+  "tagline": "Fischt aus der Luft, schläft an Felswänden, flieht nach oben.",
+  "summary": "Der Pteranodon ist das einzige fliegende Tier der Insel. Er fängt Fische im Tiefflug und am Ufer, trägt kleine Beute davon und rettet sich vor fast allem in die Luft. Am Boden ist er langsam und zerbrechlich, deshalb ruht er an Bäumen und Felswänden. Er wächst schnell, aber jeder Fehler beim Fliegen kann tödlich enden.",
+  "stats": {
+    "adultWeightKg": 90,
+    "primeWeightKg": 120,
+    "sprintKmh": 37.8,
+    "bite": 20,
+    "groupLimit": 6,
+    "nest": "debris",
+    "eggs": 4,
+    "hungerMinutes": 50,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 20, "juvenile": 40, "subadult": 90, "adult": 120 }
+  },
+  "nutrients": {
+    "alpha": ["Schwarmfisch", "Krabbe", "Muschel"],
+    "beta": ["Hypsilophodon", "Troodon", "Ochsenfrosch", "Huhn", "Hase"],
+    "gamma": ["Beipiaosaurus", "Psittacosaurus", "Pterodactylus", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du lebst an Küsten, Seen und Flüssen, wo Fischschwärme springen, und schläfst an hohen Felswänden oder Baumstämmen. Dort klammerst du dich fest, lädst Ausdauer nach (wenn noch mindestens 20 % übrig sind) und kannst sogar fressen. Hohe Startpunkte sind wichtig: Läufst du über eine Kante, fliegst du automatisch los. Warmluft und Windströmungen geben dir Auftrieb ohne Ausdauerkosten. Mit gebrochenem Kopf oder Körper kannst du noch fliegen, mit gebrochenem Bein nicht. Aus Schlammlöchern kannst du nicht starten."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu sechs Pteranodons bilden einen Schwarm. Euer Reisignest fasst bis zu 4 Eier. Schlüpflinge betteln bis 18 % Wachstum und können noch keine Schwarmfische fangen. Ausgewachsene können Schlüpflinge und kleine Jungtiere tragen und so in Sicherheit bringen."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Zum Abschöpfen fliegst du knapp über springende Fische, hältst die rechte Maustaste, damit dein Schnabel ins Wasser taucht, und lässt beim Durchfliegen los. Schwarmfische wiegen höchstens 10 kg. Tippe zwischendurch auf die Leertaste, um die Höhe zu halten, denn wer ins Wasser fällt, wird schnell von einem Deinosuchus oder Elite-Fisch gefressen. Tagsüber kannst du dich mit G an Wasser oder Schlamm stellen und Fische und Muscheln anlocken. Das dauert manchmal anderthalb Minuten, dann schnappst du mit der linken Maustaste zu. Muscheln öffnest du, indem du sie auf Fels wirfst. An Land fängst du Hühner, Hasen, Frösche und Krabben und kannst sie als Adult davontragen. Auch Kadaver sind eine Nahrungsquelle, aber nur in sicherem Abstand zu ihren Besitzern."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten, bis 18 % bettelst du. Fischen kannst du noch nicht, du bleibst ganz auf die Eltern angewiesen." },
+    { "stage": "juvenile", "text": "Mit gut einem Kilo bist du winzig und fliegst unsicher. Übe Starts und Landungen an hohen Felsen und das Festklammern, bevor du übers Wasser fliegst. Krabben, Frösche und Hühner sind am Anfang sicherer als Fischen. Ein Sanctuary-Besuch zählt für Prime." },
+    { "stage": "subadult", "text": "In anderthalb Stunden wächst du von 35 auf 90 kg. Jetzt lohnt sich das Abschöpfen über Fischschwärmen. Übe Luftbremse (Z) und Sturzflug (Strg) in sicherer Höhe." },
+    { "stage": "adult", "text": "90 kg: Du trägst Beute davon und fliegst sicher. Als Prime Elder wächst du bis 87,5 % auf 120 kg." }
+  ],
+  "abilities": [
+    { "keys": "Leertaste 3×", "name": "Start", "text": "Abheben. Leertaste halten zum Steigen, Shift + Leertaste steigt schneller und spart Ausdauer." },
+    { "keys": "Kante herunterlaufen", "name": "Absprung", "text": "Läufst du über eine Kante, fliegst du automatisch los. Tippe die Leertaste, wenn du nach einem Zusammenstoß fällst." },
+    { "keys": "Shift", "name": "Tempo", "text": "Nur 1 bis 2 Sekunden halten. Der Schub hält noch eine Weile an und spart Ausdauer." },
+    { "keys": "Z", "name": "Luftbremse", "text": "Bremst stark ab, fast bis zum Schweben, und erhöht beim Wenden die Drehrate. Zu lange gehalten stürzt du ab." },
+    { "keys": "Strg / Z + Strg", "name": "Sturzflug / Sinkflug", "text": "Strg stürzt dich in einen Sturzflug, Z + Strg lässt dich langsam senkrecht sinken." },
+    { "keys": "2× Strg (im Flug)", "name": "Fassrolle", "text": "Ausweichmanöver oder Einstieg in einen Sturzflug." },
+    { "keys": "Z halten + RMB", "name": "Festklammern", "text": "Abbremsen, auf einen Baumstamm oder eine Felswand zufliegen und kurz vor dem Kontakt RMB halten. Leertaste gleitet ab, RMB lässt dich fallen." },
+    { "keys": "RMB über Fischen", "name": "Abschöpfen", "text": "Schnabel ins Wasser, beim Durchfliegen loslassen, um einen Fisch zu fangen." },
+    { "keys": "G", "name": "Speerfischen", "text": "Nur tagsüber am Wasser oder Schlamm: Fische und Muscheln anlocken, markierte Ziele mit LMB fangen." },
+    { "keys": "LMB / Alt + LMB", "name": "Biss", "text": "Biss nach unten. Alt + LMB ist am Boden ein Vorstoßbiss in Kamerarichtung." }
+  ],
+  "tips": [
+    "Übe das Fliegen hoch über dem Boden. Dann hast du nach einem Fehler Zeit, dich zu fangen.",
+    "Halte über Wasser die Höhe. Wer reinfällt, ist Futter.",
+    "Mit gebrochenem Bein fliegst du nicht."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Pteranodon", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/pteranodon" },
+    { "label": "Evrima Quick Guide – Fliegen", "url": "https://www.evrimaquickguide.com/gameplay/travel/flying-latching" },
+    { "label": "Steam: Patch 0.21.321 (Flug und Speerfischen)", "url": "https://store.steampowered.com/news/app/376210/view/507348444540569206" }
+  ]
+}

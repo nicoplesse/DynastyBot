@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "allosaurus",
+  "name": "Allosaurus",
+  "nickname": "Allo",
+  "diet": "carnivore",
+  "role": "Großes Rudelraubtier",
+  "order": 2,
+  "since": "Patch 0.21.321 (Dezember 2025)",
+  "tagline": "Schnell, aggressiv, blutig: Hetzjäger im Dreierrudel.",
+  "summary": "Der Allosaurus lebt von Druck statt roher Kraft. Er ist schneller als der Rex, reißt mit Krallenhieb und Sprungangriff schwere Blutungen und kann Beute festnageln, wenn sie leicht genug oder erschöpft ist. Im Rudel aus bis zu drei Tieren zählt euer Gewicht zusammen, sodass ihr auch schwerere Ziele zu Boden drückt.",
+  "stats": {
+    "adultWeightKg": 2600,
+    "primeWeightKg": 3700,
+    "sprintKmh": 39.8,
+    "bite": 175,
+    "groupLimit": 3,
+    "nest": "debris",
+    "eggs": 4,
+    "hungerMinutes": 60,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 60, "juvenile": 120, "subadult": 200, "adult": 220 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Tenontosaurus", "Kentrosaurus", "Wildschwein"],
+    "beta": ["Diabloceratops", "Triceratops", "Hirsch"],
+    "gamma": ["Maiasaura", "Dryosaurus", "Ziege"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Allosaurier jagen am liebsten dort, wo Herden ziehen: auf offenen Ebenen, an Waldrändern und rund um die Migrationszonen. Du hast mehr Ausdauer als die schweren Jäger und kannst Beute ein Stück hetzen, bis sie Fehler macht. Mit nur neun Futterarten ist dein Speiseplan schmal. Präge dir also ein, wo Hirsche, Ziegen und Wildschweine leben und wo Tenontosaurier, Maiasaurier und Dryosaurier fressen."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu drei Allosaurier bilden ein Rudel, und genau dafür ist die Art gebaut: Beim Festnageln zählt euer gemeinsames Gewicht gegen das des Ziels. Ein Paar baut ein Reisignest mit bis zu 4 Eiern. Jungtiere sind mit 60 Minuten als Schlüpfling und 2 Stunden als Juvenile vergleichsweise schnell aus dem Gröbsten heraus, ein Nest lohnt sich also, wenn ihr ein festes Revier habt."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Eröffne mit dem Sprungangriff aus der Deckung: Rechte Maustaste halten, zielen, loslassen. Du hängst dich ans Ziel und machst mit der Zeit immer mehr Schaden und Blutung. Wiegt die Beute höchstens halb so viel wie du, nagelst du sie fest und sie kann sich nicht mehr bewegen. Ist sie erschöpft, stark blutend oder unter 20 % Leben, reichen schon drei Viertel deines Gewichts. Abwerfen kann sie dich trotzdem mit gehaltenem E. Im Lauf reißt du mit gehaltener linker Maustaste einen Krallenhieb, der schwer blutet und dich ein Stück nach vorn trägt. Jede Blutung hat ihren eigenen Timer, mehrere Treffer stapeln sich also. Du musst nicht bis zum Tod festhalten: Reiß zwei, drei Wunden, lass los und folge der Blutspur mit Q, bis die Beute zusammenbricht. Meide Frontalangriffe auf ausgewachsene Trikes und Stegos, deren Hörner und Schwanzhiebe treffen dich härter als umgekehrt."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Eine Stunde lang bettelst du bei den Eltern. Bleib nah bei ihnen und versteck dich im Gebüsch, wenn sie kämpfen." },
+    { "stage": "juvenile", "text": "Du spawnst mit knapp 50 kg und bist damit selbst Beute. Geh ins Sanctuary oder in dessen Nähe und jag Kitze, Ziegen und vorsichtig auch Wildschweine, die sich wehren. So füllst du α, β und γ. Zwei Stunden sind schnell vorbei, erledige also früh die Prime-Bedingungen wie Sanctuary, Migrations- und Patrol-Zonen." },
+    { "stage": "subadult", "text": "Von gut einer auf 2,6 Tonnen und bis 41 km/h: Jetzt bist du so schnell wie nie. Such dir ein Rudelmitglied und übe das gemeinsame Festnageln an Dryosauriern und jungen Tenontosauriern. Ausgewachsene Maiasaurier in der Herde sind noch zu stark." },
+    { "stage": "adult", "text": "Mit 2,6 Tonnen und 175 Biss jagst du im Trio Tenontosaurier, Maiasaurier und Diabloceratops. Als Prime Elder wächst du bis 87,5 % auf 3,7 Tonnen, danach lassen Tempo und Biss langsam nach." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Schneller Biss nach unten mit kurzer Abklingzeit." },
+    { "keys": "Alt + LMB", "name": "Richtungsbiss", "text": "Beißt dorthin, wohin deine Kamera zeigt." },
+    { "keys": "Laufen + LMB halten", "name": "Krallenhieb", "text": "Mittelschwerer Hieb mit starker Blutung, der dich ein Stück in Blickrichtung trägt, um Abstand zu schließen." },
+    { "keys": "RMB halten, loslassen", "name": "Sprungangriff", "text": "Springt ab und hängt sich ans Ziel, Schaden und Blutung steigen mit der Zeit. Leertaste lässt los. Ziele bis zur Hälfte deines Gewichts werden festgenagelt, erschöpfte oder schwer verletzte bis drei Viertel. Zwei Allosaurier rechnen ihr Gewicht zusammen." }
+  ],
+  "tips": [
+    "Blutungen stapeln sich. Mehrere kurze Angriffe bringen oft mehr als langes Festhalten.",
+    "Beute kann dich mit E abwerfen. Halte deine Ausdauer hoch, bevor du springst.",
+    "Zu dritt nagelt ihr auch Tiere fest, die schwerer sind als jeder Einzelne von euch."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Allosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/allosaurus" },
+    { "label": "Steam: Patch 0.21.321", "url": "https://store.steampowered.com/news/app/376210/view/507348444540569206" }
+  ]
+}

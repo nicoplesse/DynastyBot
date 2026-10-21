@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "hypsilophodon",
+  "name": "Hypsilophodon",
+  "nickname": "Hypsi",
+  "diet": "herbivore",
+  "role": "Winziger Säurespucker",
+  "order": 20,
+  "tagline": "Nur 20 kg, aber er spuckt Säure in die Augen und klettert auf Bäume.",
+  "summary": "Der Hypsilophodon ist das kleinste spielbare Tier und in unter zwei Stunden ausgewachsen. Er spuckt Mageninhalt als Säure und blendet so seine Verfolger, klettert auf Bäume und springt auf Felsen und Gebäude. Kämpfen kann er nicht, aber kaum ein Tier ist so schwer zu fangen. Auch er erfüllt schon als Art eine Prime-Bedingung.",
+  "stats": {
+    "adultWeightKg": 20,
+    "primeWeightKg": 23,
+    "sprintKmh": 39.6,
+    "bite": 2,
+    "groupLimit": 10,
+    "nest": "debris",
+    "eggs": 6,
+    "hungerMinutes": 30,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 20, "juvenile": 20, "subadult": 30, "adult": 40 }
+  },
+  "nutrients": {
+    "alpha": ["Horned Melon", "Azure Apollan", "Mango", "Banana", "Jackfruit"],
+    "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Fireweed", "Fiddlehead", "Trillium"],
+    "gamma": ["Russula", "Coconut", "Papaya", "Brazil Nuts"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Du lebst im Dschungel und im Sumpf. Dort wachsen Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium, im Sumpf Sumach, Pfifferlinge und Täublinge. Bäume und Felsen sind dein Rückzugsort. Du kletterst seit Patch 0.20.109, kannst über Äste laufen und nimmst weniger Sturzschaden. Hältst du die Leertaste vor dem Sprung gedrückt, springst du höher, gut für Felsen und Dächer. Dein Magen leert sich nach 30 Minuten. Iss oft, und bedenk, dass jeder Spuckangriff Futter kostet."
+    },
+    {
+      "id": "social",
+      "title": "Herde & Nachwuchs",
+      "text": "Bis zu zehn Hypsis bilden eine Gruppe. Männchen erkennst du an den abstehenden Augenbrauen. Euer Reisignest fasst bis zu 6 Eier, die Jungen betteln bis 44 %, also fast die Hälfte ihrer Kindheit. Schlüpflinge können noch nicht spucken. Vorsicht: Eure Säure kann fremde Schlüpflinge töten."
+    }
+  ],
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Dich jagen Rexe, Dilos, Herreras, Troodons, Pteranodons und Austroraptoren. Halt die linke Maustaste zum Zielen und lass los, um einen Säureklumpen zu spucken: Getroffene sehen eine Zeit lang fast nichts, bis sie die Säure mit gehaltenem E wegwischen. Diese Sekunden nutzt du zur Flucht. Mit R brichst du das Zielen ab. Spucken kostet Futter, also ist ein voller Magen auch eine volle Waffe. Kletternde Herreras schießt du mit einem Treffer von der Wand. Danach rauf auf den nächsten Baum oder Felsen, wo dir die meisten Jäger nicht folgen. Gegen Herreras und Pteranodons ist ein Baum allerdings kein sicherer Ort."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten, und du bettelst bis 44 %. Spucken kannst du noch nicht, bleib also immer bei den Eltern." },
+    { "stage": "juvenile", "text": "Nur 20 Minuten. Ab ins Sanctuary und Nährstoffe füllen. Plane Prime sofort, denn bei 1 Stunde 50 Gesamtwachstum bist du schnell bei 75 %. Der Hypsi erfüllt schon als Art eine Bedingung." },
+    { "stage": "subadult", "text": "30 Minuten lang wächst du von knapp 6 auf 20 kg und bis fast 40 km/h. Übe Klettern und das Zielen beim Spucken." },
+    { "stage": "adult", "text": "20 kg, Säure und Klettern. Als Prime Elder bekommst du etwas mehr Gewicht, deine Stärke bleibt die Flucht." }
+  ],
+  "abilities": [
+    { "keys": "LMB halten, loslassen", "name": "Säurespucke", "text": "Zielen und loslassen. Blendet das Ziel, bis es mit E die Säure wegwischt. Kostet Futter, R bricht ab. Schießt Herreras von der Wand." },
+    { "keys": "RMB halten + Leertaste", "name": "Klettern", "text": "Auf eine Fläche zielen und hinspringen. Für jeden weiteren Sprung wiederholen, mit kurzen Pausen lädt Ausdauer nach. Du kannst über Äste laufen." },
+    { "keys": "Leertaste halten", "name": "Hoher Sprung", "text": "Vor dem Sprung halten, dann springst du höher, etwa auf Felsen und Gebäude." },
+    { "keys": "LMB", "name": "Biss", "text": "Sehr schwacher Biss." }
+  ],
+  "tips": [
+    "Voller Magen, volle Waffe: Spucken kostet Futter.",
+    "Herrera an der Wand? Ein Treffer holt ihn runter.",
+    "Plane Prime ab der ersten Minute, du wächst in unter zwei Stunden aus."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Hypsilophodon", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/hypsilophodon" },
+    { "label": "Evrima Quick Guide – Klettern", "url": "https://www.evrimaquickguide.com/gameplay/travel/climbing-sliding-tripping" }
+  ]
+}

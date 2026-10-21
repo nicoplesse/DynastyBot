@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "herrerasaurus",
+  "name": "Herrerasaurus",
+  "nickname": "Herrera",
+  "diet": "carnivore",
+  "role": "Kletternder Fallenjäger",
+  "order": 7,
+  "tagline": "Lebt in den Bäumen und springt von oben auf seine Beute.",
+  "summary": "Der Herrerasaurus ist das einzige Raubtier, das fast jede Fläche hinaufklettern kann: Bäume, Felsen, Zäune. Von oben springt er auf Tiere darunter, je schwerer das Ziel, desto mehr Schaden. Jeder Treffer blutet. Er ist leicht und zerbrechlich, deshalb jagt er aus der Höhe und flieht zurück in die Bäume, bevor große Gegner zurückschlagen.",
+  "stats": {
+    "adultWeightKg": 175,
+    "primeWeightKg": 225,
+    "sprintKmh": 45,
+    "bite": 30,
+    "groupLimit": 10,
+    "nest": "debris",
+    "eggs": 6,
+    "hungerMinutes": 50,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 25, "juvenile": 50, "subadult": 110, "adult": 140 }
+  },
+  "nutrients": {
+    "alpha": ["Tenontosaurus", "Pachycephalosaurus", "Wildschwein", "Krabbe", "Schwarmfisch"],
+    "beta": ["Omniraptor", "Hypsilophodon", "Ochsenfrosch", "Huhn"],
+    "gamma": ["Dryosaurus", "Pteranodon", "Beipiaosaurus", "Gallimimus", "Ziege", "Meeresschildkröte"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Dein Revier ist der Wald mit dichtem Kronendach, am besten nahe Wasser. Von Baum zu Baum kannst du dich weit bewegen, ohne den Boden zu berühren, und dort oben bist du vor den meisten Jägern sicher. Du kannst auch tauchen: Unter Wasser hast du Nachtsicht und etwa 25 Sekunden Luft, gut für Krabben, Fische und Ochsenfrösche. Mit 0 Ausdauer kannst du nicht klettern, halte also immer etwas Ausdauer übrig, wenn ein Jäger unter dir steht. Seit Patch 0.21.772 melden viele Spieler fehlerhafte Kletterstellen, vor allem an Sumpfbäumen. Teste neue Bäume, bevor du dich auf sie verlässt."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Mit bis zu zehn Tieren ist das Rudel groß, aber Herreras jagen meist allein oder zu zweit aus dem Hinterhalt. Mit dem Kehllappen (F und rechte Maustaste halten) leuchtest du für andere Herreras: gelb als Männchen, grün als Weibchen. Nur deine Art sieht das. Euer Reisignest fasst bis zu 6 Eier."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Klettere an einer Futterstelle, Wasserstelle oder einem Weg auf einen Baum und warte. Kommt Beute darunter vorbei, zielst du mit gehaltener rechter Maustaste und springst mit der Leertaste ab. Der Sprungschaden steigt mit dem Gewicht des Ziels, große Tiere treffen dich also hart, aber du machst ihnen auch viel Schaden. Nach einem Treffer von oben bist du nicht mehr betäubt, kannst also sofort weiterbeißen oder zurück auf den Baum springen. Jeder Biss blutet: Zwei, drei Treffer, dann hoch in den Baum und von oben zusehen, wie die Beute ausblutet. Hypsilophodons können dich mit ihrer Säure von der Wand schießen, sei bei ihnen vorsichtig."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "25 Minuten winzig mit gut 200 Gramm. Bleib nah bei den Eltern und lass dich füttern. Bis du größer bist, schützt dich vor allem das Rudel." },
+    { "stage": "juvenile", "text": "Ab 64 kg kannst du schon klettern. Jag Hühner, Ochsenfrösche, Krabben und Fische am Wasser. Weil du klettern kannst, bist du einer der sichersten Juveniles im Spiel, solange du in den Bäumen bleibst." },
+    { "stage": "subadult", "text": "Fast zwei Stunden lang wird dein Sprung gefährlicher. Übe das Abspringen auf Hypsis, Dryosaurier und Gallimimus und füll alle drei Nährstoffe." },
+    { "stage": "adult", "text": "175 kg und 45 km/h: Aus der Höhe greifst du auch Tenontosaurier und Pachys an. Als Prime Elder wächst du bis 87,5 % auf 225 kg." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss mit Blutung." },
+    { "keys": "Alt + LMB", "name": "Schneller Biss", "text": "Schnellerer Biss mit schneller Drehung." },
+    { "keys": "RMB halten + Leertaste", "name": "Klettern", "text": "Mit der rechten Maustaste auf eine Fläche zielen, mit der Leertaste hinspringen. Danach mit W hoch und runter, mit Shift + W schneller klettern. Du kannst zwischen nahen Bäumen springen und rutschst selten ab." },
+    { "keys": "RMB halten + Leertaste (auf ein Tier)", "name": "Sprungangriff", "text": "Zielen und von oben abspringen. Der Schaden steigt mit dem Gewicht des Ziels." },
+    { "keys": "F + RMB halten", "name": "Kehllappen", "text": "Leuchtsignal, das nur andere Herreras sehen: gelb für Männchen, grün für Weibchen." }
+  ],
+  "tips": [
+    "Ohne Ausdauer kannst du nicht klettern. Behalte immer eine Reserve.",
+    "Je schwerer das Ziel, desto mehr Schaden macht dein Sprung.",
+    "Hypsi-Säure schießt dich von der Wand."
+  ],
+  "notes": ["Seit Patch 0.21.772 berichten viele Spieler von Fehlern beim Klettern."],
+  "sources": [
+    { "label": "Evrima Quick Guide – Herrerasaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/herrerasaurus" },
+    { "label": "Evrima Quick Guide – Klettern", "url": "https://www.evrimaquickguide.com/gameplay/travel/climbing-sliding-tripping" },
+    { "label": "Steam: Diskussion zu Patch 0.21.772", "url": "https://steamcommunity.com/app/376210/discussions/14/581678695778878798/" }
+  ]
+}

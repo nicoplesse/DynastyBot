@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "troodon",
+  "name": "Troodon",
+  "diet": "carnivore",
+  "role": "Nächtlicher Giftjäger im Schwarm",
+  "order": 9,
+  "tagline": "Klein, nachtaktiv, giftig: Zehn Troodons fällen auch einen Riesen.",
+  "summary": "Der Troodon ist ein winziger Nachtjäger, der mit giftigen Sprüngen angreift. Drei Treffer bringen das Opfer in den vergifteten Zustand, ab dann trifft jeder Angriff des Rudels härter. Allein ist er schwach, in einem großen Rudel bringt er Tiere zur Strecke, die hundertmal so schwer sind wie er. Er wächst schnell und gehört zu den fünf Arten, die schon als Art eine Prime-Bedingung erfüllen.",
+  "stats": {
+    "adultWeightKg": 60,
+    "primeWeightKg": 80,
+    "sprintKmh": 44,
+    "bite": 15,
+    "groupLimit": 10,
+    "nest": "mound",
+    "eggs": 5,
+    "hungerMinutes": 60,
+    "thirstMinutes": 50,
+    "growthMinutes": { "hatchling": 20, "juvenile": 40, "subadult": 60, "adult": 70 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Pachycephalosaurus", "Tenontosaurus", "Kentrosaurus", "Krabbe"],
+    "beta": ["Hypsilophodon", "Ochsenfrosch", "Huhn", "Hirsch", "Hase", "Compsognathus"],
+    "gamma": ["Dryosaurus", "Pteranodon", "Maiasaura", "Ziege", "Psittacosaurus"]
+  },
+  "life": [
+    {
+      "id": "habitat",
+      "title": "Lebensraum & Alltag",
+      "text": "Troodons sind Nachtjäger. Tagsüber ruhst du im dichten Unterholz oder zwischen Felsen, nachts ziehst du mit Nachtsicht (X) los. Mit 60 kg bist du für fast jeden Jäger ein Snack. Weich offenem Gelände bei Tageslicht aus und bleib immer in der Nähe von Deckung. Dein Speiseplan reicht von Compys und Fröschen bis zu Stegosauriern, die nur das Rudel schafft."
+    },
+    {
+      "id": "social",
+      "title": "Gruppe & Nachwuchs",
+      "text": "Bis zu zehn Troodons dürfen zusammen jagen, und das große Rudel ist der Kern der Art. Absprache ist wichtig, denn das Gift funktioniert nur, wenn ihr nacheinander und nicht gleichzeitig springt. Euer Nest ist ein Erdhügel mit bis zu 5 Eiern. Weil ihr nur gut drei Stunden bis 100 % braucht, könnt ihr in einer Spielsitzung ein ganzes Leben mit Nachwuchs erleben."
+    }
+  ],
+  "hunt": {
+    "title": "Jagd",
+    "text": "Ab Sub-Adult ist dein Sprung mit der rechten Maustaste giftig. Jeder Sprung ist eine Giftstufe. Ein Zirpen zeigt dir, dass du wieder springen darfst. Nach drei Stufen ist das Opfer vergiftet: Es schimmert blaugrün, du hörst ein lauteres Zirpen, und für etwa 45 Sekunden nimmt es maximalen Giftschaden und mehr Schaden von allen Troodon-Angriffen. Jetzt springt das ganze Rudel. Springt ihr dagegen gleichzeitig, bevor Stufe 3 erreicht ist, setzt sich das Gift zurück. Jeder weitere Sprung in Stufe 3 verlängert den Zustand ein wenig. Deine Giftbisse erzeugen Bodennebel, in dem man euch schwer sieht. Verfolgst du ein Ziel mit Q, zeigt dir eine Aura, dass du auf der richtigen Spur bist. Kleine Beute wie Compys und Frösche erledigst du mit Bissen allein."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten winzig im Erdhügel-Nest. Bleib dicht bei den Eltern und versteck dich tagsüber im Unterholz, bis das Rudel nachts loszieht." },
+    { "stage": "juvenile", "text": "40 Minuten, in denen du noch kein Gift hast. Jag Compys, Frösche, Hühner und Hasen und schau dir an, wie das Rudel arbeitet. Weil der Troodon schon als Art eine Prime-Bedingung erfüllt, fehlen dir nur vier weitere, zum Beispiel ein Sanctuary, vier Patrol-Zonen, zwei Migrationszonen und eine perfekte Ernährung. Bei nur gut drei Stunden Gesamtwachstum musst du dich beeilen." },
+    { "stage": "subadult", "text": "Ab jetzt giftet dein Sprung. Übt das Rhythmusspiel aus Springen und Warten an Dryosauriern und Hypsis." },
+    { "stage": "adult", "text": "60 kg, 15 Biss, aber im Rudel Gift auf Stufe 3: Ihr jagt Tenontosaurier, Pachys und Maiasaurier. Als Prime Elder bekommst du bis 87,5 % noch etwas Gewicht und über 52 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Sprintbiss", "text": "Biss in Kamerarichtung mit kurzem Vorstoß." },
+    { "keys": "RMB", "name": "Giftsprung", "text": "Sprung in jede Richtung, ab Sub-Adult giftig. Kostet etwa 5 % Ausdauer, Festhalten 2 % alle 1,2 Sekunden. Drei Sprünge vergiften das Ziel." }
+  ],
+  "tips": [
+    "Erst nacheinander bis Stufe 3 springen, dann alle gleichzeitig.",
+    "Warte auf das Zirpen, bevor du erneut springst.",
+    "Vergiftet heißt: blaugrüner Schimmer, etwa 45 Sekunden lang."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Troodon", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/troodon" },
+    { "label": "Evrima Quick Guide – Kampf & Effekte", "url": "https://www.evrimaquickguide.com/gameplay/group-play/fighting-effects" }
+  ]
+}

@@ -8,6 +8,7 @@ import { tmpdir } from 'node:os';
 import { buildProcessedData } from './processor.js';
 import { searchAnalogs } from './analogs.js';
 import { createHerdStore, defaultHerdDir } from './herd.js';
+import { defaultIsleDir, isleSummary, loadIsle } from './isle.js';
 
 const extensions = new Set(['png', 'jpg', 'jpeg', 'webp']);
 const upload = multer({
@@ -59,6 +60,7 @@ export function createApp({
   dataDir = fileURLToPath(new URL('../../data/raw/', import.meta.url)),
   processedDir = fileURLToPath(new URL('../../data/processed/', import.meta.url)),
   herdDir = defaultHerdDir,
+  isleDir = defaultIsleDir,
 } = {}) {
   const app = express();
   const rawDir = resolve(dataDir);
@@ -253,6 +255,26 @@ export function createApp({
       await rm(directory, { recursive: true });
       await buildProcessedData({ rawDir, processedDir: derivedDir });
       res.status(204).end();
+    } catch (error) { next(error); }
+  });
+
+  // The Isle: a separate game, served straight from its curated files under data/isle/.
+  app.get('/api/isle', async (_req, res, next) => {
+    try {
+      const { basics, playables } = await loadIsle(isleDir);
+      res.json({ basics, count: playables.length, playables: playables.map(isleSummary) });
+    } catch (error) { next(error); }
+  });
+
+  app.get('/api/isle/:id', async (req, res, next) => {
+    try {
+      const id = req.params.id;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw httpError(400, 'Invalid playable ID.');
+      const { playables } = await loadIsle(isleDir);
+      const index = playables.findIndex(playable => playable.id === id);
+      if (index < 0) throw httpError(404, 'The Isle playable not found.');
+      const neighbour = offset => isleSummary(playables[(index + offset + playables.length) % playables.length]);
+      res.json({ ...playables[index], position: index + 1, count: playables.length, previous: neighbour(-1), next: neighbour(1) });
     } catch (error) { next(error); }
   });
 

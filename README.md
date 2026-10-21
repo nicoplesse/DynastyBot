@@ -26,6 +26,7 @@ data/map/        Shared world gazetteer: named regions with coordinates and biom
 data/reference/  Local snapshot of publicly listed default stat curves
 data/processed/  Generated profile JSON, catalog, structured rules and the map index
 data/herd/       Your own dinos (My Dinos): raw screenshots, photo and dino.json
+data/isle/       The Isle (Evrima) short profiles: basics.json and playables/<id>.json
 ```
 
 Each `data/raw/<slug>/` directory contains `manifest.json`, the original `profile.txt`, regular image files in `images/`, and an optional `pois.json` (points of interest for the map, see below). `data/raw/` is intentionally **not** ignored by Git. Generated files include `data/processed/index.json`, one JSON document per profile, `data/processed/rules.json`, `data/processed/map.json` and `data/processed/map-index.json`. This gives later search or chat features a stable structured source while keeping raw data intact.
@@ -65,6 +66,14 @@ The **My Dinos** tab (`#/herd`) keeps your own dinosaurs: bloodlines, dominant a
 1. In **My Dinos → Import screenshots**, enter the dino's name (e.g. Malekit), optionally pick the playable, and drop or paste (Ctrl+V) screenshots. The mutation proof and nesting proof links are optional fields there too; an empty field keeps a link the dino already has. An existing name adds the screenshots to that dino.
 2. In Claude, type `/aktualisiere`. It asks which dino to update, reads the new screenshots and writes the details through `node server/scripts/herd.mjs apply` (`list` and `show` are there too). Every read screenshot keeps the text Claude read from it, so the values can be checked later.
 3. Links, photo and corrections can also be edited on the dino's page. On a playable's profile, a small collapsed line under the ecosystem lists your dinos of that playable; it expands to their genetics.
+
+## The Isle (Exkurs)
+
+**The Isle** in the sidebar (under *Exkurs*, `#/isle`) is a side trip to a different game. It has nothing to do with Path of Titans or Dynasty, so it has its own data, its own amber accent and no profile rules. It holds a German short profile for every playable on the Evrima branch (22 as of patch 0.21.772, August 2026). Each profile covers life (habitat and daily routine, group and offspring), the hunt (or "Gefahr & Verteidigung" for herbivores), a growth guide for hatchling, juvenile, sub-adult and adult/elder, how every ability works with its keys, and the food for each nutrient (α carbs, β proteins, γ lipids). The overview also has the shared basics: life stages, nutrients, Prime Elder and Entomb, sanctuaries and migration, nesting, injuries and the most important keys.
+
+- `data/isle/basics.json` holds the shared mechanics, `data/isle/playables/<id>.json` one hand-written profile per playable. Numbers are community data for official server settings (mainly the [Evrima Quick Guide](https://www.evrimaquickguide.com/home)), checked against the official Steam patch notes; every profile lists its sources.
+- The files are served as they are, without the Dynasty processor: `GET /api/isle` returns the basics and a summary per playable, and `GET /api/isle/:id` returns one full profile with its neighbours. `server/src/isle.js` also links the profiles: a predator that lists another playable among its foods hunts it, so each page shows who it hunts and who hunts it.
+- Playables that are only announced or in Hordetest (Baryonyx, Oviraptor and others) get no profile until they are live. When a patch adds one, add its JSON file; `npm test` checks that every profile is complete German prose with all four growth stages, abilities and sources.
 
 ## Variants: one profile, several playables
 

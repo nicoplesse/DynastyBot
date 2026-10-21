@@ -9,14 +9,15 @@ import { AnimalFinder } from './AnimalFinder';
 import { ProfileShowcase } from './Showcase';
 import { EcosystemsPage } from './EcosystemsView';
 import { HerdPage, HerdStrip } from './HerdView';
+import { IslePage } from './IsleView';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './explorer.css';
 
 export function Explorer({ route }: { route: string }) {
-  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/herd') ? 'herd' : 'profiles';
+  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/herd') ? 'herd' : route.startsWith('/isle') ? 'isle' : 'profiles';
   return <div className="app-shell explorer-shell">
     <ExplorerNav active={active} route={route} />
-    <main className="explorer-main">{active === 'herd' ? <HerdPage route={route} /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
+    <main className="explorer-main">{active === 'isle' ? <IslePage route={route} /> : active === 'herd' ? <HerdPage route={route} /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
   </div>;
 }
 
@@ -29,7 +30,7 @@ function JumpLink({ id, children }: { id: string; children: ReactNode }) {
 }
 
 // Profiles opens a sub-menu: the full directory, the ecosystem overview and one entry per ecosystem.
-function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'herd'; route: string }) {
+function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'herd' | 'isle'; route: string }) {
   const [open, setOpen] = useState(true);
   const [ecosystems, setEcosystems] = useState<Ecosystem[]>([]);
   useEffect(() => { api.ecosystems().then(index => setEcosystems(index.ecosystems)).catch(() => setEcosystems([])); }, []);
@@ -57,6 +58,9 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
       <button className={`nav-item ${active === 'animals' ? 'active' : ''}`} aria-current={active === 'animals' ? 'page' : undefined} onClick={() => go('/animals')}><span className="nav-symbol">≈</span> Animal Finder</button>
       <button className="nav-item" disabled><span className="nav-symbol">◇</span> Playable Finder <span className="soon">Soon</span></button>
       <button className="nav-item" disabled><span className="nav-symbol">▢</span> Chat <span className="soon">Soon</span></button>
+      <div className="nav-divider" />
+      <div className="nav-caption nav-caption-inline">EXKURS</div>
+      <button className={`nav-item nav-isle ${active === 'isle' ? 'active' : ''}`} aria-current={active === 'isle' ? 'page' : undefined} onClick={() => go('/isle')} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> The Isle</button>
     </nav>
     <div className="sidebar-foot"><span className="status-dot" /> STRUCTURED ARCHIVE <small>Generated views read from processed data.</small></div>
   </aside>;
