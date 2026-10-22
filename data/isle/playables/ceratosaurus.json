@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "ceratosaurus",
+  "name": "Ceratosaurus",
+  "nickname": "Cera",
+  "diet": "carnivore",
+  "role": "Aasfresser & Kadaverwächter",
+  "order": 4,
+  "tagline": "Frisst alles, verteidigt jeden Kadaver und lässt Gegner sich übergeben.",
+  "summary": "Der Ceratosaurus ist der zäheste Fresser der Insel: Er frisst Aas, Knochen und sogar die eigene Art, ohne krank zu werden. Was er frisst, wird zu Bakterien, die er mit seinen Bissen weitergibt, bis das Opfer sich übergibt und Nährstoffe verliert. In der Nähe eines Kadavers steckt er weniger Schaden ein. Er ist kein Sprinter, sondern ein Tier, das Druck aufbaut und Stellung hält.",
+  "stats": {
+    "adultWeightKg": 1450,
+    "primeWeightKg": 1950,
+    "sprintKmh": 40.3,
+    "bite": 150,
+    "groupLimit": 5,
+    "nest": "debris",
+    "eggs": 3,
+    "hungerMinutes": 60,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 30, "juvenile": 60, "subadult": 120, "adult": 150 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Tenontosaurus", "Pachycephalosaurus", "Ceratosaurus", "Kentrosaurus"],
+    "beta": ["Carnotaurus", "Deinosuchus", "Omniraptor", "Diabloceratops", "Hirsch"],
+    "gamma": ["Dilophosaurus", "Beipiaosaurus", "Ziege"]
+  },
+  "behavior": {
+    "essence": "Ein Kadaverwächter: Du findest, was andere getötet haben, und gibst es nicht mehr her, bis nur noch Knochen übrig sind. Und die frisst du auch.",
+    "traits": { "activity": "Dämmerungs- und nachtaktiv", "range": "Umherstreifend, am Kadaver sesshaft", "social": "Clan bis fünf", "rest": "Ruht am Kadaver, abwechselnd" },
+    "needs": "Du brauchst Kadaver, und du findest sie besser als jedes andere Tier: Deine Nase ist die beste der Insel, bei verwesendem Fleisch reicht sie noch weiter. Knochen geben dir als einzigem Tier alle drei Nährstoffe, und verdorbenes Fleisch liefert dir Bakterien, solange du nicht satt bist. Dazu brauchst du viel Wasser, denn dein Durst kommt schon nach 45 Minuten, und flaches Gelände, weil du nicht springen kannst.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "An dem Kadaver, den er getötet hat oder zurückwill.",
+        "answer": "Selbst mit Kadaverschutz verlierst du gegen einen Rex. Du wartest, bis er satt ist und geht, und holst dir dann Reste und Knochen."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Wenn ein Trio an deinen Kadaver kommt.",
+        "answer": "Am Kadaver steckst du bis zu 50 % weniger Schaden ein. Bleib stehen, schnaub und beiß mit Bakterien zu. Weglaufen nimmt dir den Schutz."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Beim Trinken.",
+        "answer": "Mit 1,45 Tonnen passt du in seinen Griff. Du musst oft trinken, also suchst du flache, klare Stellen und trinkst nie lange am selben trüben Ufer."
+      },
+      {
+        "name": "Stegosaurus",
+        "id": "stegosaurus",
+        "level": "medium",
+        "where": "Wenn du ihn selbst jagst.",
+        "answer": "Sein Schwanz bricht dir die Knochen und lässt dich ausbluten. Lebende Stegos überlässt du anderen und wartest auf das, was übrig bleibt."
+      },
+      {
+        "name": "Zerklüftetes Gelände",
+        "level": "low",
+        "where": "Felsen, Klippen und steile Hänge.",
+        "answer": "Du kannst nicht springen. Wer dich zwischen Felsen treibt, hat dich in der Falle. Du bleibst in Wald, Sumpf und flachem Land."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Deine Nase ist die beste im Spiel, und Knochen geben dir alle drei Nährstoffe, während sie für andere wertlos sind.",
+        "so": "Du lebst von dem, was andere zurücklassen. Wo Kompys durchs Gras hüpfen und Aas-Pteranodons kreisen, liegt ein Kadaver, und dorthin gehst du."
+      },
+      {
+        "because": "Liegt ein großer Körper im Umkreis von 30 Metern, steckst du bis zu 50 % weniger Schaden ein. Ducken und Hinlegen heben den Schutz auf.",
+        "so": "Ein Kadaver ist deine Festung. Hast du einen, bleibst du stehend bei ihm, bis er aufgefressen ist, und fliehst nicht."
+      },
+      {
+        "because": "Große Jäger ruhen nach dem Fressen oder ziehen weiter, und deine Nase arbeitet im Dunkeln wie am Tag.",
+        "so": "Du bist vor allem in der Dämmerung und nachts unterwegs, wenn die Besitzer der Kadaver schlafen und keiner mehr Wache hält."
+      },
+      {
+        "because": "Bakterien sammelst du nur aus verdorbenem Fleisch und nur, wenn du nicht satt bist.",
+        "so": "Du frisst nicht sofort alles. Du lässt Fleisch altern, frisst gezielt Verdorbenes und gehst mit vollem Bakterienvorrat in jeden Streit."
+      },
+      {
+        "because": "Ein Rex oder ein ausgewachsener Trike ist dir auch mit Kadaverschutz überlegen.",
+        "so": "Du bist geduldig, nicht lebensmüde. Bei ihnen wartest du am Rand, bis sie gehen. Gegen Dilos, Omnis und Carnos verteidigst du deinen Fund."
+      },
+      {
+        "because": "Kannibalismus macht dich nicht krank, Artgenossen stehen sogar auf deinem α-Speiseplan.",
+        "so": "Ein toter Ceratosaurus ist für dich Nahrung wie jede andere. Fremde Ceratos sind keine Freunde, sondern Konkurrenz."
+      },
+      {
+        "because": "Dein Durst kommt nach 45 Minuten, schneller als bei den meisten Jägern.",
+        "so": "Dein Streifgebiet hängt am Wasser: Sümpfe, Flussauen und Waldseen. Weit weg vom Wasser hältst du es nicht lange aus."
+      }
+    ],
+    "home": "Du streifst durch Wälder, Sümpfe und flache Flussauen, wo viele Jäger töten und Wasser nie weit ist. Felsige Highlands meidest du, denn ohne Sprung kommst du dort nicht weiter. Dein eigentliches Zuhause ist der Kadaver, den du gerade besitzt: Dort stehst du, bis er abgenagt ist, und ziehst dann zum nächsten. Gute Gebiete erkennst du an Rex- und Allo-Spuren, an Kompys im Gras und an kreisenden Aas-Pteranodons. Du hältst dich an den Rändern der Reviere großer Jäger, nah genug, um ihre Reste zu riechen, weit genug, um nicht selbst ihre nächste Beute zu werden.",
+    "day": [
+      { "phase": "dawn", "text": "Du kommst vom Kadaver der Nacht und trinkst. Danach folgst du mit Q den Knochen- und Fleischsymbolen, die die Nacht hinterlassen hat." },
+      { "phase": "day", "text": "Tagsüber sind frische Kadaver oft noch bewacht. Du ruhst in der Nähe im Wald, riechst, was sich tut, und frisst Knochen und Reste, die andere schon aufgegeben haben." },
+      { "phase": "dusk", "text": "Die großen Jäger werden satt und ziehen sich zurück. Jetzt gehst du an ihre Kadaver und verteidigst sie gegen alle, die du schlagen kannst." },
+      { "phase": "night", "text": "Die Nacht verbringst du stehend am Kadaver, im Clan abwechselnd: Einer frisst oder wacht, die anderen ruhen. Wer sich hinlegt, verliert den Schutz, also schläft nie der ganze Clan zugleich." }
+    ],
+    "group": "Ein Clan aus bis zu fünf Ceratosauriern ist stark genug, um einen Kadaver gegen Carnos, Dilos und Omnis zu halten. Ihr lauft lose zusammen, verteilt euch beim Suchen und ruft die anderen, wenn einer etwas gefunden hat. Euer Nest baut ihr in zwei Schritten: halb aus Zweigen bauen, die bis zu 3 Eier hineinlegen und dann mit Zweigen zudecken, damit sie warm bleiben. Es liegt im Wald nahe Wasser, wo ihr regelmäßig Kadaver findet. Die Jungen betteln nur 30 Minuten und lernen danach als Erstes, Knochen zu fressen, denn die machen sie nicht krank.",
+    "analog": {
+      "animals": "Tüpfelhyäne",
+      "text": "Die Tüpfelhyäne lebt im Clan, findet Aas über weite Strecken mit der Nase, verteidigt Kadaver lautstark gegen Konkurrenten und knackt Knochen, die kein anderes Tier verwerten kann. Sie ist vor allem nachts unterwegs. Anders als Hyänen jagst du selten selbst: Dein Kampf beginnt erst am Kadaver."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Dein Kampf beginnt beim Fressen: Wenn du nicht satt bist und an verdorbenem Fleisch frisst, füllt sich hinter dem Magensymbol dein Bakterienvorrat. Jeder Biss gibt davon ab. Erreichen die Bakterien den Magenstand des Opfers, übergibt es sich, verliert Nahrung und bekommt beim Weiterfressen keine Nährstoffe mehr. Kleine Tiere erwischt es schon nach einem Biss, schwere brauchen mehrere. Erbrochenes kannst du mit Q verfolgen. Am Kadaver bist du am stärksten: Liegt im Umkreis von 30 Metern ein Körper von mindestens 130 kg, bekommst du automatisch 25 % Schadensreduktion, bei einem ausgewachsenen Körper sogar 50 %. Kommt jemand näher als 5 Meter, schnaubst du warnend. Dein stärkster Schlag ist der aufgeladene Biss mit gehaltener rechter Maustaste, der vor allem am Kopf enorm trifft. Deine Opfer werden die Bakterien an einem Salzleckstein wieder los, bleib also an ihnen dran, bevor sie einen erreichen."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "30 Minuten im zugedeckten Nest und bei den Eltern. Bettle viel, du erbst ihre Ernährung." },
+    { "stage": "juvenile", "text": "Eine Stunde, in der du Reste findest statt jagst: Folge mit Q Knochen- und Fleischsymbolen und friss Knochen, denn sie füllen alle drei Nährstoffe auf einmal. Halte Abstand zu den Jägern, deren Beute du klaust. Ein Sanctuary-Besuch zählt für Prime." },
+    { "stage": "subadult", "text": "Zwei Stunden lang wächst du auf 1,45 Tonnen. Jetzt kannst du Kadaver gegen Dilophosaurier und Omniraptoren verteidigen. Lerne den aufgeladenen Biss und wie du Bakterien sammelst." },
+    { "stage": "adult", "text": "Mit 150 Biss, Bakterienbiss und Kadaverschutz behauptest du dich gegen Carnos und Allos. Als Prime Elder wächst du bis 87,5 % auf 1,95 Tonnen." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss, 150 Schaden und 225 am Kopf. Überträgt Bakterien." },
+    { "keys": "Alt + LMB", "name": "Rundum-Biss", "text": "Biss in Kamerarichtung mit doppeltem Kopfschaden." },
+    { "keys": "RMB halten", "name": "Aufgeladener Biss", "text": "Langsam aufladen: Du wirst 10 % langsamer, voll geladen verbrauchst du Ausdauer. Bis zu 517 Schaden am Kopf." },
+    { "keys": "3× RMB schnell", "name": "Erbrechen", "text": "Du übergibst dich selbst. Du verlierst 20 % Nährstoffe, Futter und Wasser. In der Nähe eines Kadavers lässt das ihn fünfmal schneller verwesen und dir so schneller Bakterien liefern." },
+    { "keys": "passiv", "name": "Kadaverschutz", "text": "Bis zu 50 % weniger Schaden, wenn ein großer Körper im Umkreis von 30 Metern liegt. Ducken oder Hinlegen unterbricht den Schutz." }
+  ],
+  "tips": [
+    "Knochen geben dir alle drei Nährstoffe, für andere Tiere sind sie Gift.",
+    "Bakterien bekommst du nur aus verdorbenem Fleisch und nur, wenn du nicht satt bist.",
+    "Bleib am Kadaver stehen, statt zu fliehen. Dort bist du am zähesten."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Ceratosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/ceratosaurus" },
+    { "label": "Evrima Quick Guide – Kampf & Effekte", "url": "https://www.evrimaquickguide.com/gameplay/group-play/fighting-effects" }
+  ]
+}

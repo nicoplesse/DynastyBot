@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "dilophosaurus",
+  "name": "Dilophosaurus",
+  "nickname": "Dilo",
+  "diet": "carnivore",
+  "role": "Giftjäger mit Halluzinationen",
+  "order": 6,
+  "tagline": "Vergiften, verwirren, zermürben: Seine Doppelgänger sieht nur das Opfer.",
+  "summary": "Der Dilophosaurus ist ein leichter, schneller Jäger, der seine Beute mit Gift in Halluzinationen stürzt. Ist das Opfer voll vergiftet, schickt er Trugbilder von sich los, die nur das Opfer sieht und die es angreifen. Er kämpft nicht frontal, sondern beißt zu, zieht sich zurück und wartet, bis die Beute zermürbt ist. Er ist wendig und hat gute Ausdauer, verträgt aber Blutungen schlecht.",
+  "stats": {
+    "adultWeightKg": 700,
+    "primeWeightKg": 977,
+    "sprintKmh": 47.5,
+    "bite": 85,
+    "groupLimit": 4,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 60,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 20, "juvenile": 60, "subadult": 120, "adult": 160 }
+  },
+  "nutrients": {
+    "alpha": ["Tenontosaurus", "Herrerasaurus", "Ceratosaurus", "Wildschwein"],
+    "beta": ["Diabloceratops", "Carnotaurus", "Hypsilophodon", "Hirsch", "Huhn"],
+    "gamma": ["Gallimimus", "Maiasaura", "Dryosaurus", "Ziege", "Meeresschildkröte"]
+  },
+  "behavior": {
+    "essence": "Ein Zermürber der Dämmerung: Du vergiftest, verschwindest zwischen Bäumen und lässt die Halluzinationen für dich arbeiten.",
+    "traits": { "activity": "Dämmerungs- und nachtaktiv", "range": "Festes Streifgebiet am Waldrand", "social": "Paar oder kleine Familie", "rest": "Schläft tagsüber im Dickicht" },
+    "needs": "Du brauchst Deckung, aus der du auftauchen und in die du verschwinden kannst: Wälder, Dschungel und Waldränder. Deine Beute reicht von Hühnern und Ziegen bis zu Tenontosauriern, Maiasauriern und Diabloceratops. Weil du Blutungen schlecht verträgst, brauchst du außerdem ein Schlammloch in Reichweite, in dem du dich suhlst, und einen ruhigen Platz, an dem du dich hinlegen und Wunden auskurieren kannst.",
+    "threats": [
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "high",
+        "where": "Überall, wo ein Trio jagt.",
+        "answer": "Ihre Krallenhiebe und Sprünge lassen dich ausbluten. Du weichst ihnen aus und streitest nie mit ihnen um Beute."
+      },
+      {
+        "name": "Omniraptor-Rudel",
+        "id": "omniraptor",
+        "level": "high",
+        "where": "Vor allem im Offenen.",
+        "answer": "Sie springen dich an und reißen Blutungen. Wirf Springer sofort ab und flieh durch dichten Wald: Läufst du an Bäumen entlang, streifst du sie ab."
+      },
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "medium",
+        "where": "An Wasserstellen und Kadavern.",
+        "answer": "Ein Crush tötet dich. Du hältst Abstand und überlässt ihm alles."
+      },
+      {
+        "name": "Stegosaurus",
+        "id": "stegosaurus",
+        "level": "medium",
+        "where": "Wenn du ihn vergiftest.",
+        "answer": "Ein Schwanzhieb und seine Blutung erledigen dich. Stegos lässt du in Ruhe, Gift hin oder her."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Beim Trinken.",
+        "answer": "Mit 700 kg passt du in jeden Deino-Griff. Trink an flachen, klaren Stellen und nie lange."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Gift trübt die Sicht des Opfers und lässt es Dinge hören und sehen, die nicht da sind.",
+        "so": "Du jagst, wenn ohnehin wenig Licht ist: in der Dämmerung und nachts. Im Halbdunkel unterscheidet dein Opfer dich noch schlechter von deinen Trugbildern."
+      },
+      {
+        "because": "Blutungen sind dein größter Feind, und Hinlegen heilt sie.",
+        "so": "Du kämpfst nie lange. Biss, zurückziehen, warten. Bist du verletzt, legst du dich sofort in ein Versteck."
+      },
+      {
+        "because": "Du bist wendig und hast gute Ausdauer, aber wenig rohe Kraft.",
+        "so": "Du bleibst zwischen Bäumen, wo du ständig die Richtung wechseln und aus dem Blick verschwinden kannst. Offenes Gelände meidest du."
+      },
+      {
+        "because": "Nur dein eigenes Gift zählt, das Gift deiner Gruppe addiert sich nicht.",
+        "so": "Ihr jagt nicht im Pulk. Jeder hat sein Ziel, oder einer vergiftet und die anderen halten Abstand und machen Druck."
+      },
+      {
+        "because": "Dein Magen hält 60 Minuten, ein Tag dauert 30.",
+        "so": "Nach der Nachtjagd schläfst du den hellen Tag über im Dickicht, wo dich Jäger mit langer Sicht nicht finden."
+      },
+      {
+        "because": "Suhlen stoppt Blutungen und überdeckt deinen Geruch.",
+        "so": "Du kennst die Schlammlöcher deines Gebiets und kehrst nach jeder Jagd zu einem zurück. Dein Streifgebiet liegt deshalb zwischen Waldrand, Wasser und Schlamm."
+      }
+    ],
+    "home": "Dein Streifgebiet ist ein Wald- oder Dschungelstück mit Rand zu offenem Land, einem Bach oder Teich und mindestens einem Schlammloch. Am Waldrand fressen und trinken die Pflanzenfresser, die du jagst, im Inneren findest du Ruhe. Tagsüber liegst du im dichtesten Dickicht, umgeben von Farnen und Gebüsch, durch das niemand leise kommt. Du jagst entlang der Ränder: aus den Bäumen heraus, zurück in die Bäume. Weite Ebenen sind für dich Durchgangsland, nie Zuhause.",
+    "day": [
+      { "phase": "dawn", "text": "Letzte Runde der Nacht. Du verfolgst ein vergiftetes Ziel bis zum Ende oder lässt es laufen, wenn das Licht kommt. Dann trinkst du und ziehst dich zurück." },
+      { "phase": "day", "text": "Du schläfst im Dickicht und lädst Leben und Ausdauer. Hast du Hunger, holst du dir Hühner oder Ziegen in der Nähe, ohne dein Versteck weit zu verlassen." },
+      { "phase": "dusk", "text": "Du wachst auf, trinkst und gehst an den Waldrand. Pflanzenfresser auf dem Weg zum Wasser sind jetzt dein Ziel." },
+      { "phase": "night", "text": "Deine Hauptjagdzeit. Du beißt, verschwindest, beißt wieder. Leuchtet das Opfer lila, rufst du die Trugbilder. Nach einer Verletzung gehst du sofort ins Schlammloch." }
+    ],
+    "group": "Bis zu vier Dilos dürfen zusammen sein, realistisch seid ihr ein Paar oder eine kleine Familie, die sich dasselbe Streifgebiet teilt. Ihr jagt nebeneinander, nicht übereinander: Jeder vergiftet sein eigenes Ziel. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt tief im Dickicht nahe dem Schlammloch. Die Jungen betteln nur 20 Minuten. Danach jagen sie Hühner und Ziegen am Waldrand und meiden Wildschweine, die zurückbeißen. Bis sie Sub-Adult sind, bleiben sie nachts beim Nest, denn nachts sind auch die Troodons unterwegs.",
+    "analog": {
+      "animals": "Komodowaran",
+      "text": "Der Komodowaran beißt große Beute einmal, lässt sie gehen und folgt ihr, bis Gift und Blutverlust sie niederstrecken. Offene Kämpfe meidet er, er wartet. Anders als der Waran jagst du vor allem in der Dämmerung und nachts, wenn deine Trugbilder am besten wirken."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Deine Grundattacke ist ein sehr schneller Biss, und jeder Treffer vergiftet. Kopftreffer stapeln die Halluzinationen am besten. Das Opfer sieht schlechter, hört Dinge und sieht falsche Dilos. Leuchtet es lila, ist es voll vergiftet. Jetzt beschwörst du mit der rechten Maustaste Trugbilder, die das Opfer angreifen. Sie verschwinden, sobald sie treffen oder getroffen werden, und du kannst sie etwa alle 10 Sekunden neu rufen. Mit Q siehst du die Halluzinationen deines Opfers. Bleib nach jedem Biss in Bewegung und lass dich nie in einen langen Schlagabtausch ziehen. Schnellere Tiere und Rudel sind gefährlich, und Blutungen sind dein größtes Risiko. Hängt sich etwas auf dich, wirfst du es sehr schnell ab."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten Betteln am Erdhügel. Die Eltern füttern dich mit gehaltenem E und geben dir ihre Ernährung mit. Danach frisst du selbst, zuerst Hühner und anderes Kleinzeug." },
+    { "stage": "juvenile", "text": "Mit 20 kg bist du klein, aber schon 25 km/h schnell. Jag Hühner und Ziegen und meide Wildschweine, die zurückbeißen. Im Sanctuary wächst du sicher und erfüllst eine Prime-Bedingung." },
+    { "stage": "subadult", "text": "Zu Beginn dieser Phase bist du mit über 50 km/h schneller als später als Adult. Nutze das zum Jagen von Gallimimus und Dryosauriern und zum Üben der Gift-Taktik." },
+    { "stage": "adult", "text": "700 kg und 85 Biss: Mit Gift und Trugbildern zermürbst du auch Diabloceratops und Maiasaurier. Als Prime Elder wächst du bis 87,5 % auf fast eine Tonne und über 52 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Giftbiss", "text": "Sehr schneller Biss, der Halluzinationen stapelt. Kopftreffer wirken am stärksten." },
+    { "keys": "Alt + LMB", "name": "Schneller Richtungsbiss", "text": "Noch schnellerer Biss mit schneller Drehung." },
+    { "keys": "RMB", "name": "Trugbilder", "text": "Nur gegen voll vergiftete, lila leuchtende Ziele: Ruft Doppelgänger, die nur das Opfer sieht und die es angreifen. Etwa 10 Sekunden Abklingzeit." }
+  ],
+  "tips": [
+    "Nur dein eigenes Gift zählt. Mehrere Dilos auf einem Ziel stapeln nicht zusammen.",
+    "Mit Q siehst du, welche Halluzinationen dein Opfer gerade sieht.",
+    "Blutungen sind dein größter Feind. Meide Allos, Omnis und Stegos."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Dilophosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/dilophosaurus" }
+  ]
+}

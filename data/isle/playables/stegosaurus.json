@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "stegosaurus",
+  "name": "Stegosaurus",
+  "nickname": "Stego",
+  "diet": "herbivore",
+  "role": "Schwanzschwinger des Dschungels",
+  "order": 13,
+  "tagline": "Langsam und geduldig, aber ein Schwanzhieb trifft härter als jeder Biss.",
+  "summary": "Der Stegosaurus ist langsam, wendet schwer und braucht fast 18 Stunden bis 100 %. Dafür trägt er die gefährlichste Waffe der Insel: Sein Stachelschwanz macht den höchsten Einzelschaden und die stärkste Blutung aller spielbaren Tiere. Wer geduldig bleibt, den Kopf schützt und erst im richtigen Moment schwingt, schlägt fast jeden Jäger in die Flucht.",
+  "stats": {
+    "adultWeightKg": 6000,
+    "primeWeightKg": 9300,
+    "sprintKmh": 29.1,
+    "bite": 50,
+    "groupLimit": 5,
+    "nest": "mound",
+    "eggs": 5,
+    "hungerMinutes": 90,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 45, "juvenile": 180, "subadult": 405, "adult": 445 }
+  },
+  "nutrients": {
+    "alpha": ["Marigold", "Banana", "Jackfruit"],
+    "beta": ["Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Papaya", "Brazil Nuts"]
+  },
+  "behavior": {
+    "essence": "Ein geduldiger Dschungelbewohner: Du verlässt den Wald nie, hältst den Kopf am Fels und lässt den Schwanz sprechen.",
+    "traits": { "activity": "Tagaktiv", "range": "Sesshaft im Dschungel", "social": "Kleine Herde", "rest": "Schläft mit dem Kopf am Fels" },
+    "needs": "Dein ganzer Speiseplan wächst im Dschungel: Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium. Du brauchst also nichts außerhalb des Waldes. Dazu Wasser spätestens nach einer Stunde und Felsen oder dicke Bäume, an die du deinen Kopf lehnen kannst, denn der Kopf ist deine Schwachstelle. Dein Magen hält 90 Minuten.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "Im Dschungel und an Wasserstellen.",
+        "answer": "Er will an deinen Kopf. Halt ihn am Fels, dreh ihm den Schwanz zu und schwing erst, wenn er nah genug ist. Ein Treffer an seinem Kopf macht etwa 1800 Schaden."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "high",
+        "where": "Wenn ein Trio dich im Offenen umkreist.",
+        "answer": "Zu dritt kommen sie von allen Seiten. Im Offenen stellt ihr euch als Plus-Zeichen auf, Köpfe zueinander, Schwänze nach außen."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Überall, wo sie springen.",
+        "answer": "Sie weichen Schwänzen oft aus. Beiß sie herunter, statt wild zu schwingen."
+      },
+      {
+        "name": "Troodon-Rudel",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts.",
+        "answer": "Ein Rudel vergiftet dich Stufe für Stufe. Schlaf nicht allein und nicht im Offenen."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "low",
+        "where": "Beim Schwimmen.",
+        "answer": "An Land kann er dich mit 6 Tonnen nicht packen, im Wasser schon. Du trinkst am Ufer und schwimmst nicht."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Alles, was du frisst, wächst im Dschungel.",
+        "so": "Du bist sesshaft im Dschungel. Es gibt keinen Grund, den Wald zu verlassen, und viele Gründe, es nicht zu tun."
+      },
+      {
+        "because": "Du bist mit 29 km/h langsam und wendest schwer.",
+        "so": "Du überquerst nie weite Ebenen. Wer dich im Offenen erwischt, kann dich umkreisen, zwischen Bäumen und Felsen nicht."
+      },
+      {
+        "because": "Dein Kopf ist die Schwachstelle, dein Schwanz die stärkste Waffe der Insel.",
+        "so": "Du stehst, frisst und schläfst mit dem Kopf an einem Felsen oder dicken Baum. Was hinter dir ist, trifft dein Schwanz."
+      },
+      {
+        "because": "Deine Panzerung hält lange genug, um auf einen sauberen Treffer zu warten.",
+        "so": "Du bleibst ruhig. Kein panisches Schwingen, kein Weglaufen. Du wartest, bis der Angreifer zu nah kommt."
+      },
+      {
+        "because": "Blutungen werden beim Laufen schlimmer: im Trab 1,7-mal, im Sprint 2,4-mal.",
+        "so": "Bist du verletzt, bleibst du stehen und legst dich hin, sobald der Angreifer weg ist."
+      },
+      {
+        "because": "Dein Magen hält 90 Minuten, eine Nacht dauert 30.",
+        "so": "Du frisst am Tag und schläfst nachts, ohne Hunger zu leiden."
+      }
+    ],
+    "home": "Dein Zuhause ist ein Stück Dschungel mit Felsen, dicken Stämmen, Fruchtbäumen und einem Bach oder Tümpel. Du kennst die Felsen, an die du dich anlehnen kannst, und die Wege zwischen ihnen. Gut ist ein Platz mit Felswand oder Felsblöcken nahe dem Wasser, wo du trinkst und gleichzeitig den Kopf geschützt hast. Offene Lichtungen nutzt du nur am Rand, und den Waldrand zum Grasland überquerst du nicht. Mit Pachycephalosauriern teilst du keine Migrationszonen, ihr lebt nebeneinander her.",
+    "day": [
+      { "phase": "dawn", "text": "Du stehst auf, trinkst am Bach und frisst die ersten Früchte in Reichweite deines Felsens." },
+      { "phase": "day", "text": "Langsames Fressen zwischen den Fruchtbäumen, immer von Fels zu Fels. Mittags ruhst du im Schatten mit dem Kopf am Stein." },
+      { "phase": "dusk", "text": "Letzter Gang zum Wasser. Danach suchst du deinen Schlafplatz auf, bevor es dunkel wird." },
+      { "phase": "night", "text": "Du schläfst mit dem Kopf an der Felswand und dem Schwanz nach außen und loggst dort aus. Die Herde liegt dicht beieinander, Jungtiere in der Mitte." }
+    ],
+    "group": "Bis zu fünf Stegos dürfen eine Herde bilden, realistisch eine Familie oder ein paar Tiere, die dasselbe Waldstück teilen. Im Offenen stellt ihr euch als Plus-Zeichen auf: Köpfe zueinander, Jungtiere in der Mitte, Schwänze nach außen. Dabei bewegt ihr euch wenig, sonst trefft ihr euch gegenseitig. Euer Erdhügel-Nest mit bis zu 5 Eiern liegt im Dschungel zwischen Felsen. Die Jungen betteln nur bis 10 %, danach fressen sie selbst. Weil ihr fast 18 Stunden bis 100 % braucht, bleiben sie lange in der Mitte der Herde.",
+    "analog": {
+      "animals": "Stachelschwein",
+      "text": "Das Stachelschwein greift nie an, sondern dreht dem Angreifer den Rücken zu und lässt ihn in die Stacheln laufen. Selbst Löwen holen sich daran blutige Wunden. Anders als das Stachelschwein bist du tagaktiv und schwingst deine Waffe selbst: Dein Schwanz trifft härter als jeder Biss auf der Insel."
+    }
+  },
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Dein Schwanzhieb macht 1200 Schaden, am Kopf etwa 1800. Halt Alt und die linke Maustaste und lenk den Hieb mit der Kamera. Schnelle Hiebe gehen zur Seite (90° und 270°) und schräg nach vorn, die schrägen versetzen dich dabei ein Stück. Nicht panisch schwingen: Deine Panzerung hält lange genug, um auf einen sauberen Treffer zu warten, und manchmal lohnt es sich, einen Treffer einzustecken, damit der Gegner zu nah kommt. Mit abwechselnd A und D tänzelst du Kopftreffern aus dem Weg. Gegen springende Omnis hilft Beißen, weil sie den Schwänzen oft ausweichen. Häng deinen Kopf an einen Felsen oder Baum, damit niemand an ihn herankommt. Jagen tun dich fast alle großen Fleischfresser, vom Rex bis zu Troodon-Rudeln."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "45 Minuten, und schon bei 10 % hört das Betteln auf. Ab dann frisst du selbst, bleib aber unter dem Schwanz deiner Eltern." },
+    { "stage": "juvenile", "text": "Drei Stunden lang bist du ein dankbares Ziel. Geh ins Sanctuary: Dichte Bäume bremsen große Jäger, Bienen vertreiben sie, und rote Sanctuary-Pilze füllen alle drei Nährstoffe." },
+    { "stage": "subadult", "text": "Fast sieben Stunden lang wächst du von 2,9 auf 6 Tonnen. Dein Biss ist schon jetzt brauchbar gegen kleine Springer. Übe das Schwanzspiel: zur Seite schwingen, A und D zum Ausweichen, mit S rückwärts traben nach einem Hieb. Halt deinen Speiseplan voll, der Dschungel hat alles, was du brauchst." },
+    { "stage": "adult", "text": "6 Tonnen und ein Schwanz für 1200 Schaden. Als Prime Elder wächst du bis 87,5 % auf 9,3 Tonnen." }
+  ],
+  "abilities": [
+    { "keys": "Alt + LMB halten", "name": "Schwanzhieb", "text": "Richtung über die Kamera. 1200 Schaden, Kopftreffer etwa 1800, gegen andere Stegos noch mehr. Stärkste Blutung im Spiel." },
+    { "keys": "RMB halten", "name": "Sturmangriff", "text": "Ohne Abklingzeit, kostet Ausdauer." },
+    { "keys": "LMB", "name": "Biss", "text": "50 Biss, nützlich gegen springende Omnis und für Körpertreffer zwischen den Hieben." },
+    { "keys": "A und D abwechselnd", "name": "Tänzeln", "text": "Weicht Kopftreffern aus. Beißen während des Tänzelns lockt Gegner für Körpertreffer an." }
+  ],
+  "tips": [
+    "Kopf an Felsen oder Baum. So kommt niemand an deine Schwachstelle.",
+    "Blutest du, bleib stehen: Trab lässt dich 1,7-mal, Sprint 2,4-mal so stark bluten.",
+    "Schwing gezielt, nicht panisch."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Stegosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/stegosaurus" },
+    { "label": "Evrima Quick Guide – Migration", "url": "https://www.evrimaquickguide.com/gameplay/group-play/migrations-patrol-zones" }
+  ]
+}

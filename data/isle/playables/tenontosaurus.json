@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "tenontosaurus",
+  "name": "Tenontosaurus",
+  "nickname": "Teno",
+  "diet": "herbivore",
+  "role": "Ausdauernder Allrounder",
+  "order": 16,
+  "tagline": "Tritte, Krallen, Schwanzschlag: der Pflanzenfresser mit den meisten Angriffen.",
+  "summary": "Der Tenontosaurus hat mehr Angriffe als jedes andere Tier: Hinterbeintritt, Krallenhieb, Schwanzschlag und Biss. Tritt und Schwanzschlag werfen Gegner um oder bringen sie ins Wanken, Tritt und Krallen lassen sie bluten. Er ist für seine Größe flott, trabt so schnell wie kein anderer und wächst in nicht einmal sechs Stunden aus. Seine Schwäche ist der Durst.",
+  "stats": {
+    "adultWeightKg": 1600,
+    "primeWeightKg": 1830,
+    "sprintKmh": 40.7,
+    "bite": 35,
+    "groupLimit": 8,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 60,
+    "thirstMinutes": 30,
+    "growthMinutes": { "hatchling": 20, "juvenile": 90, "subadult": 110, "adult": 120 }
+  },
+  "nutrients": {
+    "alpha": ["Azure Apollan", "Mango", "Marigold", "Banana", "Jackfruit", "Red Currant"],
+    "beta": ["Fireweed", "Fiddlehead", "Trillium", "Crimson Apollan", "Wild Potato Root"],
+    "gamma": ["Russula", "Coconut", "Papaya", "Brazil Nuts", "Wild Potato Vine"]
+  },
+  "behavior": {
+    "essence": "Ein Kämpfer am Fluss: Du kannst keinem Jäger davonlaufen, also bleibst du nah am Wasser, in der Herde und bereit zum Tritt.",
+    "traits": { "activity": "Tagaktiv, trinkt auch nachts", "range": "Sesshaft an einem Flussabschnitt", "social": "Herde", "rest": "Schläft in Schichten nahe dem Wasser" },
+    "needs": "Du lebst zwischen Dschungel und Flussdelta: Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium im Dschungel, rote Johannisbeeren und wilde Kartoffeln im Delta, Mangos und Kokosnüsse an der Küste. Kokosnüsse holst du selbst herunter: Schwanzschläge gegen den Stamm lassen sie fallen, zwei weitere auf die Nuss öffnen sie. Vor allem brauchst du Wasser, denn dein Durst kommt schon nach 30 Minuten. Hornmelonen lässt du liegen, sie geben dir Muskelkrämpfe und kosten dich die Prime-Chance.",
+    "threats": [
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "Am Ufer, an dem du ständig trinkst.",
+        "answer": "Mit 1,6 Tonnen passt du locker in seinen Griff. Trink an flachen, klaren Stellen, nie an tiefen, trüben Rändern, und immer mit einem Wachposten."
+      },
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "An Wasserstellen und am Waldrand.",
+        "answer": "Ein Crush tötet dich, gegen ihn hilft kein Tritt. Du weichst früh aus und hältst dich an dichtem Dschungel."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "high",
+        "where": "Im Dschungel und im Delta.",
+        "answer": "Fast jeder Jäger ist schneller als du, weglaufen klappt selten. Also trittst du: Der Hinterbeintritt wirft um und blutet stark, am Kopf noch mehr."
+      },
+      {
+        "name": "Omni- und Troodon-Rudel",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Wenn sie auf dir oder deinen Herdenmitgliedern hängen.",
+        "answer": "Euer Schwanzschlag wirft sie um und betäubt. Schlagt sie euch gegenseitig vom Rücken."
+      },
+      {
+        "name": "Dilophosaurus",
+        "id": "dilophosaurus",
+        "level": "medium",
+        "where": "In der Dämmerung am Waldrand.",
+        "answer": "Er vergiftet dich, bis du Trugbilder siehst. Bleib in der Herde, dann merkst du, wer echt ist und wer nicht."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Durst kommt nach 30 Minuten, genauso lang wie eine Nacht.",
+        "so": "Du lebst am Wasser. Dein Zuhause ist ein Flussabschnitt, und ihr trinkt auch nachts einmal."
+      },
+      {
+        "because": "Fast alle Jäger sind schneller als du, nur der Deino nicht, und der Cerato ist gleich schnell.",
+        "so": "Flucht ist kein Plan. Du verlässt dich auf deine Tritte und deine Herde und lebst dort, wo Deckung nah ist."
+      },
+      {
+        "because": "Dein Trab ist mit 21,6 km/h der schnellste im Spiel.",
+        "so": "Du bewegst dich im Trab, nicht im Sprint. So kommst du flott voran und hast im Ernstfall die volle Ausdauer."
+      },
+      {
+        "because": "Gehen, Traben und Sprinten verstärken Blutungen, Tritt und Schwanzschlag scheinen es nicht zu tun.",
+        "so": "Bist du verletzt, bleibst du stehen und kämpfst im Stand. Erst wenn der Angreifer weg ist, legst du dich hin."
+      },
+      {
+        "because": "Dein Futter wächst im Dschungel, im Delta und an der Küste, alles nah am Wasser.",
+        "so": "Du bist sesshaft an deinem Flussabschnitt. Alles, was du brauchst, liegt wenige Minuten vom Ufer entfernt."
+      },
+      {
+        "because": "Gemeinsam schlagt ihr Omnis und Troodons vom Rücken eurer Herdenmitglieder.",
+        "so": "Du lebst in der Herde und bleibst nah bei den anderen, in Reichweite deines Schwanzes."
+      }
+    ],
+    "home": "Euer Zuhause ist ein Flussabschnitt, an dem Dschungel und Delta zusammenkommen: Fruchtbäume am Ufer, Johannisbeeren und wilde Kartoffeln in den Auen, im besten Fall Kokospalmen in der Nähe. Ihr kennt die flachen, klaren Trinkstellen und meidet die tiefen, trüben Ränder, an denen Deinos liegen. Gerastet wird ein Stück vom Ufer entfernt im Dschungel, mit dichtem Bewuchs im Rücken und freiem Blick zum Wasser. Hornmelonen, die im Sumpf wachsen, lasst ihr stehen.",
+    "day": [
+      { "phase": "dawn", "text": "Die Herde trinkt an einer flachen Stelle, einer hält Wache. Danach fresst ihr Früchte am Waldrand." },
+      { "phase": "day", "text": "Ihr trabt zwischen Dschungel und Delta hin und her, schlagt Kokosnüsse vom Stamm und kehrt etwa jede halbe Stunde zum Wasser zurück." },
+      { "phase": "dusk", "text": "Letzter großer Trinkgang und satt fressen. Dann zieht ihr euch ein Stück vom Ufer zurück." },
+      { "phase": "night", "text": "Ihr schlaft in Schichten mit dem Rücken zum Dickicht und loggt dort aus. Einmal in der Nacht geht die Herde gemeinsam trinken, nie einer allein." }
+    ],
+    "group": "Bis zu acht Tenos bilden eine Herde, realistisch eine Großfamilie, die sich einen Flussabschnitt teilt. Ihr steht nah beieinander, damit jeder dem anderen mit dem Schwanz einen Springer vom Rücken schlagen kann. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt im Dschungel nahe dem Wasser, aber nicht direkt am Ufer. Die Jungen betteln bis 14 % und wachsen in weniger als sechs Stunden aus. Bis dahin trinken sie nur gemeinsam mit der Herde.",
+    "analog": {
+      "animals": "Weißbartpekari",
+      "text": "Weißbartpekaris leben in großen Rotten im Regenwald, bleiben nah am Wasser und wehren sich gemeinsam so heftig, dass selbst Jaguare lieber ein Einzeltier suchen. Anders als Pekaris schlägst du mit Schwanz und Tritten statt mit Hauern."
+    }
+  },
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Fast alle Fleischfresser sind schneller als du, nur der Deinosuchus nicht, und der Ceratosaurus ist gleich schnell. Weglaufen klappt also selten. Kämpfen kannst du dafür gut. Der Hinterbeintritt mit der rechten Maustaste wirft um, bringt ins Wanken und blutet kräftig, am Kopf noch mehr. Der Schwanzschlag mit Alt und rechter Maustaste macht wenig Schaden, wirft aber um und betäubt, ideal gegen kleine Springer. Die Kralle mit Alt und linker Maustaste schlägt in Kamerarichtung, auch nach hinten, und geht im Stehen, Gehen und Traben. Eine gute Kombination ist ein Krallenhieb nach hinten mit schnellem Schwanzschlag. Blutest du, beweg dich so wenig wie möglich: Gehen, Traben und Sprinten verstärken die Blutung. Tritt und Schwanzschlag scheinen sie nicht zu verschlimmern."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Nur 20 Minuten, bis 14 % bettelst du. Danach frisst du selbst. Bleib nah an Wasser und Herde, denn Tenos bekommen schnell Durst." },
+    { "stage": "juvenile", "text": "Du spawnst schon mit 520 kg und fast 42 km/h, kein schlechter Start. Anderthalb Stunden lang füllst du im Sanctuary oder am Dschungelrand deine Nährstoffe und meidest Hornmelonen, damit du keine Krämpfe bekommst." },
+    { "stage": "subadult", "text": "Knapp zwei Stunden lang wächst du auf 1,6 Tonnen. Übe Tritt und Schwanzschlag und such dir eine Herde. Je größer du wirst, desto leichter klappt auch die Kokosnuss-Ernte." },
+    { "stage": "adult", "text": "1,6 Tonnen und die meisten Angriffe im Spiel. Als Prime Elder wächst du bis 87,5 % auf 1,83 Tonnen und gut 43 km/h." }
+  ],
+  "abilities": [
+    { "keys": "RMB", "name": "Hinterbeintritt", "text": "275 Schaden, am Kopf 412. Wirft um, bringt ins Wanken und blutet stark." },
+    { "keys": "Alt + RMB", "name": "Schwanzschlag", "text": "Richtung über die Kamera. Nur 150 Schaden, wirft aber um oder bringt ins Wanken. Ideal gegen Omnis und Troodons." },
+    { "keys": "Alt + LMB", "name": "Krallenhieb", "text": "125 Schaden mit Blutung in Kamerarichtung, auch nach hinten. Im Stehen, Gehen und Traben, nicht im Sprint." },
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss. Mit Alt beißen, wenn du blutest, weil du dich dabei weniger bewegst." }
+  ],
+  "tips": [
+    "Hornmelonen geben dir Muskelkrämpfe und kosten dich die Prime-Chance.",
+    "Dein Trab ist mit 21,6 km/h der schnellste im Spiel. Nutze ihn, statt zu sprinten.",
+    "Kokosnüsse: mit dem Schwanz vom Stamm schlagen, mit zwei weiteren Schlägen öffnen."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Tenontosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/tenontosaurus" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

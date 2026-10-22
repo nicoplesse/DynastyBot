@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "triceratops",
+  "name": "Triceratops",
+  "nickname": "Trike",
+  "diet": "herbivore",
+  "role": "Gepanzerter Riese",
+  "order": 12,
+  "since": "Patch 0.20.109 (Juni 2025)",
+  "tagline": "Der beste Einzelkämpfer: Hörner nach vorn, Kopf geschützt, Gegner umgeworfen.",
+  "summary": "Der Triceratops ist der schwerste Pflanzenfresser und im Zweikampf kaum zu schlagen. Sein Kopf steckt Treffer besser weg, er blockt Angriffe darauf und spießt Tiere auf, die ihm auf den Kopf springen. Er wirft Gegner um und setzt mit wildem Hornschlagen nach. Dafür ist er langsam und braucht fast 30 Stunden, bis er ausgewachsen ist.",
+  "stats": {
+    "adultWeightKg": 9500,
+    "primeWeightKg": 12500,
+    "sprintKmh": 23.4,
+    "bite": 900,
+    "groupLimit": 4,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 90,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 60, "juvenile": 200, "subadult": 640, "adult": 850 }
+  },
+  "nutrients": {
+    "alpha": ["Variegated Orange", "Marigold", "Banana", "Jackfruit"],
+    "beta": ["Agave", "Sunchoke Flowers", "Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Cashew", "Pumpkin", "Papaya", "Brazil Nuts"]
+  },
+  "behavior": {
+    "essence": "Ein Riese, der nicht weicht: Du lebst am Rand von Dschungel und Grasland und stellst dich jedem, der zu dir kommt.",
+    "traits": { "activity": "Tagaktiv", "range": "Kleines Revier am Waldrand", "social": "Familie bis vier", "rest": "Schläft nachts mit dem Rücken zum Fels" },
+    "needs": "Dein Futter wächst an zwei Orten: Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium im Dschungel, Agaven, Topinambur, Cashews und Kürbisse auf Grasland und Ebenen. Du brauchst also beides in Reichweite. Mit 90 Minuten Magen und 60 Minuten Durst hältst du lange durch. Und du brauchst Felsen oder deine Familie im Rücken, denn deine Gefahr kommt von hinten und von der Seite.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "Am Waldrand und an Wasserstellen.",
+        "answer": "Er ist so schwer wie du. Zeig ihm die Hörner, block Kopftreffer mit der rechten Maustaste und wirf ihn um. Weglaufen kannst du nicht, also bleibst du stehen."
+      },
+      {
+        "name": "Allosaurier-Trio",
+        "id": "allosaurus",
+        "level": "high",
+        "where": "Im Offenen, wenn sie dich umkreisen.",
+        "answer": "Sie reißen Blutungen von hinten und von der Seite. Rücken an den Felsen, Hörner nach vorn. Blutest du, bleibst du stehen, statt zu laufen."
+      },
+      {
+        "name": "Omni- und Troodon-Rudel",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Nachts und in Senken.",
+        "answer": "Kleine Springer kommen von allen Seiten. Wer auf deinen Kopf springt, wird aufgespießt. Rücken frei halten und nie zwischen Büschen schlafen."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Beim Schwimmen.",
+        "answer": "An Land packt er dich nicht, schwimmende Tiere darf er aber auch schwerer greifen. Du überquerst Flüsse nur an Furten."
+      },
+      {
+        "name": "Deine eigene Kindheit",
+        "level": "high",
+        "where": "Fast 30 Stunden bis 100 %.",
+        "answer": "Als Jungtier bist du langsam und lecker. Bis Sub-Adult lebst du von Deckung und deinen Eltern, nicht von deinen Hörnern."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Futter wächst zur Hälfte im Dschungel und zur Hälfte auf Grasland.",
+        "so": "Du lebst am Übergang zwischen beiden. Dein Revier ist ein Waldrand, von dem aus du in wenigen Schritten in beiden Landschaften fressen kannst."
+      },
+      {
+        "because": "Mit 23 km/h kannst du fast keinem Jäger davonlaufen, aber im Zweikampf bist du der Stärkste.",
+        "so": "Du fliehst nicht. Du stellst dich, Hörner nach vorn, und lässt den Angreifer kommen."
+      },
+      {
+        "because": "Rudel kommen von hinten und von der Seite.",
+        "so": "Du ruhst und schläfst nie mitten im Offenen. Dein Rücken gehört an einen Felsen, eine Wand oder in den Kreis deiner Familie."
+      },
+      {
+        "because": "Dein Magen hält 90 Minuten, eine Nacht dauert 30.",
+        "so": "Du frisst tagsüber, wenn du siehst, wer kommt, und schläfst nachts durch. Hunger zwingt dich nachts nirgendwohin."
+      },
+      {
+        "because": "Du bist langsam, und weite Wege kosten Zeit, in der du verwundbar bist.",
+        "so": "Dein Revier ist klein. Eine Migrationszone besuchst du nur, wenn sie nah an deinem Waldrand liegt."
+      },
+      {
+        "because": "Schwimmende Tiere darf ein Deino auch schwerer greifen.",
+        "so": "Du trinkst an flachen Ufern und meidest tiefes Wasser."
+      }
+    ],
+    "home": "Dein Revier ist ein Waldrand, an dem Dschungel und Grasland aufeinandertreffen, mit einer flachen Wasserstelle in der Nähe und Felsen, an die du dich anlehnen kannst. Von dort aus frisst du Früchte zwischen den Bäumen und Agaven und Kürbisse auf der Wiese, ohne je weit zu laufen. Dein Schlafplatz liegt an einer Felswand oder einem großen Felsblock, mit freiem Blick nach vorn. Die dichte Dschungelmitte meidest du, dort kommen Jäger zu nah heran, bevor du dich drehen kannst. Gelbe Pilze lässt du stehen, sie stehen nicht auf deinem Speiseplan und machen dich krank.",
+    "day": [
+      { "phase": "dawn", "text": "Du stehst auf, trinkst an der flachen Stelle und frisst Früchte am Waldrand, solange die Jäger der Nacht noch satt sind." },
+      { "phase": "day", "text": "Du wechselst zwischen Wiese und Waldrand und füllst alle drei Nährstoffe. Mittags ruhst du im Schatten, Rücken zum Wald, Blick aufs Offene." },
+      { "phase": "dusk", "text": "Letztes Fressen und Trinken, dann zurück an deinen Felsen. In der Dämmerung bist du wachsam, denn jetzt jagen Rexe." },
+      { "phase": "night", "text": "Du schläfst mit dem Rücken zum Fels, die Familie dicht bei dir, Jungtiere zwischen den Erwachsenen. Dort loggst du aus." }
+    ],
+    "group": "Höchstens vier Trikes bilden eine Herde, und realistisch ist das eine Familie: ein Paar mit Jungtieren. Fremde Trikes duldest du nicht in deinem Revier. Kämpfe unter Trikes und gegen Rexe laufen im Sparring-Modus (Strg): Jeder Angriff verbraucht einen Punkt unter dem Ausdauersymbol, jeder Punkt lädt in 30 Sekunden nach, ohne Punkte kostet jeder Angriff Ausdauer. Verhakte Hörner löst ihr mit Leertaste und Richtungstaste. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt am Waldrand im Gebüsch, nah an deinem Felsen. Weil Trikes fast 30 Stunden bis 100 % brauchen, bleibt die Familie lange zusammen: Die Eltern stehen zwischen den Jungen und jedem Jäger, bis sie Sub-Adult sind.",
+    "analog": {
+      "animals": "Spitzmaulnashorn",
+      "text": "Das Spitzmaulnashorn lebt allein oder mit seinem Kalb in einem kleinen Revier am Rand von Busch und Grasland, frisst Zweige und Früchte und stellt sich allem, was ihm zu nahe kommt. Löwen meiden ausgewachsene Nashörner. Anders als das Nashorn musst du nicht losstürmen: Du wartest mit gesenktem Kopf, bis der Gegner zu dir kommt."
+    }
+  },
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Als Adult jagen dich vor allem Rexe und Allosaurier, und gegen einen einzelnen Angreifer bist du klar im Vorteil. Zeig ihm die Hörner und halt die rechte Maustaste, um Treffer auf den Kopf zu blocken. Wer dir auf den Kopf springt, wird aufgespießt. Halt die linke Maustaste, um den Gegner umzuwerfen, und klick doppelt, um am Liegenden mit wildem Hornschlagen nachzusetzen. Angriffe aus dem Lauf treffen härter, Sprint plus Angriff schiebt den Gegner zurück. Gefährlich sind Rudel, die von hinten und von der Seite kommen, und Blutungen. Stell dich mit dem Rücken an einen Felsen oder in den Kreis deiner Herde. Jung bist du dagegen langsam und lecker. Bis Sub-Adult lebst du von Deckung und deinen Eltern."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Eine Stunde lang bettelst du bei deinen Eltern. Bleib zwischen ihren Beinen, fast jeder Jäger kann dich töten." },
+    { "stage": "juvenile", "text": "Über drei Stunden bist du mit 85 kg und gut 16 km/h langsam. Geh ins Sanctuary und füll dort mit den roten Sanctuary-Pilzen alle drei Nährstoffe auf einmal. Erledige früh die Prime-Bedingungen, du hast dafür viel Zeit." },
+    { "stage": "subadult", "text": "Fast elf Stunden lang wächst du von 3,6 auf 9,5 Tonnen, dein Biss steigt von 435 auf 900. Ab der Mitte dieser Phase kannst du dich gegen Carnos und Ceratos behaupten. Iss ausgewogen, denn jedes Prozent Wachstumstempo spart dir hier Stunden." },
+    { "stage": "adult", "text": "9,5 Tonnen und 900 Schaden: Du bist der König der Weide. Als Prime Elder wächst du bis 87,5 % auf 12,5 Tonnen und über 1000 Schaden, danach lässt deine Kraft langsam nach." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Kopfstoß", "text": "Einfacher Hornstoß. Aus dem Lauf trifft er härter." },
+    { "keys": "LMB halten", "name": "Umwerfen", "text": "Wirft das Ziel um. Geht auch im Sparring, ohne einen Angriffspunkt zu verbrauchen." },
+    { "keys": "2× LMB", "name": "Wüten", "text": "Wildes Hornschlagen mit zusätzlichem Schaden an umgeworfenen Zielen. Geht auch im Sparring, ohne einen Angriffspunkt zu verbrauchen." },
+    { "keys": "Alt + LMB", "name": "Rundum-Angriff", "text": "Schnelle Drehung für Ziele neben oder hinter dir." },
+    { "keys": "RMB halten", "name": "Block / Seitwärtsgang", "text": "Kopf senken und Kopftreffer blocken. Im Sparring langsamer, aber mit weniger Kopfschaden." },
+    { "keys": "Strg", "name": "Sparring", "text": "Sparring-Modus an oder aus. Leertaste weicht seitlich aus, LMB kontert einen Schub, LMB halten betäubt." },
+    { "keys": "Sprint + Angriff", "name": "Schub", "text": "Schiebt den Gegner zurück." }
+  ],
+  "tips": [
+    "Kopf zum Gegner, rechte Maustaste halten: So blockst du Kopftreffer.",
+    "Wer dir auf den Kopf springt, wird aufgespießt.",
+    "Rücken an den Felsen, damit Rudel nicht von hinten kommen."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Triceratops", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/triceratops" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

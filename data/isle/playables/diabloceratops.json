@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "diabloceratops",
+  "name": "Diabloceratops",
+  "nickname": "Diablo",
+  "diet": "herbivore",
+  "role": "Wendiger Hornträger",
+  "order": 15,
+  "tagline": "Kleiner, schneller und frecher als der Trike, stark im Herdenverband.",
+  "summary": "Der Diabloceratops ist ein kompakter Hornträger, der eng wendet und seitlich ausweicht. Er stößt Gegner im Lauf um oder betäubt sie, wenn sie zu schwer sind. Gegen Kopftreffer ist er zäh. Allein ist er verwundbar, in einer Herde aus bis zu sechs Diablos hält er die meisten mittelgroßen Jäger auf Abstand.",
+  "stats": {
+    "adultWeightKg": 3000,
+    "primeWeightKg": 3900,
+    "sprintKmh": 34.2,
+    "bite": 275,
+    "groupLimit": 6,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 80,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 45, "juvenile": 90, "subadult": 140, "adult": 190 }
+  },
+  "nutrients": {
+    "alpha": ["Horned Melon", "Azure Apollan", "Mango", "Mountain Ash"],
+    "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Fireweed", "Radish Flower"],
+    "gamma": ["Russula", "Coconut", "Radish Root", "Violet Apollan"]
+  },
+  "behavior": {
+    "essence": "Ein Herdentier der Hügel: Gemeinsam zeigt ihr die Hörner, allein wärt ihr Beute.",
+    "traits": { "activity": "Tagaktiv", "range": "Pendelt zwischen Sumpf und Hügeln", "social": "Herde", "rest": "Schläft in der Herde auf Anhöhen" },
+    "needs": "Dein Speiseplan führt dich in zwei Landschaften: in Sümpfe mit Hornmelonen, Sumach, Pfifferlingen und Täublingen und in die Highlands mit Eberesche, Radieschen und Weidenröschen. Dazu kommen Mangos und Kokosnüsse an Küsten und Schlammflächen. Pfifferlinge verträgst du, anders als viele andere Pflanzenfresser. Dein Magen hält 80 Minuten, dein Wasser 60. Vor allem aber brauchst du deine Herde.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "In Sümpfen und an Waldrändern.",
+        "answer": "Er ist dreimal so schwer wie du, und dein Stoß betäubt ihn nur kurz. Die Herde bleibt zusammen und zieht sich in die Hügel zurück."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "In Sümpfen und an Ufern.",
+        "answer": "Mit 3 Tonnen passt du in seinen Griff, auch an Land. Im Sumpf frisst ihr am Rand, nicht im Wasser, und einer schaut immer aufs Wasser."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Wenn ein Trio dich allein erwischt.",
+        "answer": "Einzeln wirfst du jeden Allo mit einem Stoß aus dem Lauf um, zu dritt nageln sie dich fest. In der Herde dreht ihr den Spieß um."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "medium",
+        "where": "Auf Ebenen.",
+        "answer": "Er ist schneller, aber leichter als du: Ein Stoß aus dem Lauf wirft ihn um. In hügeligem Gelände spielt er seinen Sprint nicht aus."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Überall, wo sie springen.",
+        "answer": "Schau nach unten und stoß zu, das trifft kleine Springer. In der Herde stoßt ihr sie euch gegenseitig vom Rücken."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Futter wächst in Sümpfen und in den Highlands.",
+        "so": "Du pendelst. Die Herde frisst eine Weile im Sumpf, zieht dann in die Hügel und wieder zurück, je nachdem, welcher Nährstoff fehlt."
+      },
+      {
+        "because": "Im Lauf wendest du eng, und hügeliges Gelände macht dich wendig.",
+        "so": "Die Hügel sind euer sicheres Land. Dort ruht ihr, dorthin flieht ihr, und dort verliert ein Sprinter wie der Carno seinen Vorteil."
+      },
+      {
+        "because": "Sümpfe sind Deino- und Elite-Fisch-Land, und mit 3 Tonnen passt du in jeden Deino-Griff.",
+        "so": "Im Sumpf frisst ihr am Rand und in der Gruppe, nie bis zum Bauch im Wasser. Ihr bleibt dort nur so lange, wie ihr müsst."
+      },
+      {
+        "because": "Ziele unter deinem doppelten Gewicht wirfst du mit einem Stoß aus dem Lauf um.",
+        "so": "Gegen mittelgroße Jäger wehrst du dich. Du rennst nicht weg, du schwenkst im Lauf herum und stößt zu."
+      },
+      {
+        "because": "Allein bist du verwundbar, eine Herde aus sechs hält die meisten Jäger auf Abstand.",
+        "so": "Du verlässt die Herde nie. Wer zurückbleibt, wird zur Beute."
+      },
+      {
+        "because": "Dein Magen hält 80 Minuten, eine Nacht dauert 30.",
+        "so": "Ihr frisst tagsüber und schlaft nachts durch, gemeinsam auf einer Anhöhe mit Blick in alle Richtungen."
+      }
+    ],
+    "home": "Euer Land sind die Hügel: Highlands und Hanglagen mit Eberesche, Radieschen und Weidenröschen, mit Sümpfen in Reichweite für Hornmelonen, Sumach, Pfifferlinge und Täublinge. Dazwischen liegen die Wege, die eure Herde regelmäßig nimmt. Die Nacht verbringt ihr auf einer Anhöhe mit Blick in alle Richtungen, nicht in einer Senke und nicht am Sumpf. Gute Trinkstellen sind klare Bäche in den Hügeln, in denen sich kein Deino versteckt. Mangos und Kokosnüsse holt ihr euch an der Küste nur, wenn ihr ohnehin in der Nähe seid.",
+    "day": [
+      { "phase": "dawn", "text": "Die Herde steigt von der Anhöhe ab, trinkt an einem Bach und frisst in den Hügeln." },
+      { "phase": "day", "text": "Fehlt ein Nährstoff aus dem Sumpf, zieht ihr gemeinsam hinunter, frisst am Rand und kehrt zurück, bevor es dunkel wird." },
+      { "phase": "dusk", "text": "Zurück in die Hügel, bevor das Licht geht. Jungtiere in die Mitte, die Stärksten an den Rand, und noch einmal trinken an einem klaren Bach." },
+      { "phase": "night", "text": "Ihr schlaft dicht beieinander auf eurer Anhöhe und loggt dort aus. Kommt ein Jäger, steht die Herde mit den Hörnern nach außen." }
+    ],
+    "group": "Bis zu sechs Diablos bilden eine Herde, und die Herde ist dein Schutz. Untereinander messt ihr euch im Sparring-Modus, größere Diablos haben beim Schieben den Vorteil, und so entsteht eine Rangordnung. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt in den Hügeln, nicht am Sumpf. Die Herde bleibt während der Brut in der Nähe und frisst in Schichten, damit nie alle gleichzeitig vom Nest weg sind.",
+    "analog": {
+      "animals": "Moschusochse",
+      "text": "Moschusochsen leben in kleinen Herden und bilden bei Gefahr einen Kreis, die Hörner nach außen, die Kälber in der Mitte. Wölfe kommen so kaum an sie heran. Anders als Moschusochsen stellst du dich nicht nur auf, sondern stößt im Lauf zu und wirfst Angreifer um."
+    }
+  },
+  "hunt": {
+    "title": "Gefahr & Verteidigung",
+    "text": "Dich jagen viele: Rexe, Allosaurier, Carnos, Ceratos, Dilos, Omnis und Deinos am Wasser. Deine beste Waffe ist der Stoß aus dem Lauf. Ist das Ziel weniger als doppelt so schwer wie du, wirfst du es um, ist es schwerer, betäubst du es kurz. Mit A und D schiebst du dich seitlich und behältst den Gegner im Blick. Oft ist es schneller, im Lauf herumzuschwenken und zuzustoßen, als den Alt-Angriff zu nutzen. Kopftreffer machen dir weniger aus. Halt die rechte Maustaste, um den Kopf zu senken und Treffer abzufangen. Schau nach unten und klick, für einen Stoß nach unten mit so viel Schaden wie ein Alt-Angriff, gut gegen kleine Springer."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "45 Minuten bettelst du mit E bei den Eltern und übernimmst dabei ihre Ernährung. Bleib in der Mitte der Herde, am Rand holen dich Omnis und Dilos." },
+    { "stage": "juvenile", "text": "Anderthalb Stunden bist du langsam. Ab ins Sanctuary, die roten Pilze fressen und Prime-Bedingungen sammeln. Pfifferlinge darfst du fressen, sie stehen auf deinem Speiseplan." },
+    { "stage": "subadult", "text": "Gut zwei Stunden lang wächst du von 1,5 auf 3 Tonnen, dein Stoß von 130 auf 275 Schaden. Übe Schieben und Umwerfen im Sparring mit der Herde." },
+    { "stage": "adult", "text": "3 Tonnen und 275 Schaden: Gegen alles bis Carno-Größe kannst du dich stellen. Als Prime Elder wächst du bis 87,5 % auf 3,9 Tonnen und gut 37 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Kopfstoß", "text": "Einfacher Hornstoß." },
+    { "keys": "Laufen + LMB", "name": "Schub / Umwerfen", "text": "Schiebt Artgenossen zurück. Ziele unter dem doppelten Gewicht wirfst du um, schwerere betäubst du kurz." },
+    { "keys": "Nach unten schauen + LMB", "name": "Stoß nach unten", "text": "Längere Animation, aber so viel Schaden wie ein Alt-Angriff." },
+    { "keys": "RMB halten", "name": "Seitwärtsgang", "text": "Kopf gesenkt, langsamer, weniger Kopfschaden. In diesem Modus kannst du nicht stoßen." },
+    { "keys": "Strg", "name": "Sparring", "text": "Sparring-Modus mit Seitwärtsbewegung. Leertaste und eine Richtungstaste lösen verhakte Hörner." }
+  ],
+  "tips": [
+    "Im Lauf herumschwenken und zustoßen ist schneller als der Alt-Angriff.",
+    "Ziele unter deinem doppelten Gewicht wirfst du um.",
+    "Bleib in der Herde, allein bist du Beute."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Diabloceratops", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/diabloceratops" },
+    { "label": "Evrima Quick Guide – Pflanzen & Fundorte", "url": "https://www.evrimaquickguide.com/gameplay/diet-food/gathering-flora" }
+  ]
+}

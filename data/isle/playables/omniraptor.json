@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "omniraptor",
+  "name": "Omniraptor",
+  "nickname": "Omni",
+  "diet": "carnivore",
+  "role": "Springender Rudeljäger",
+  "order": 8,
+  "tagline": "Springt auf, krallt sich fest, reißt Wunden. Allein flink, im Rudel tödlich.",
+  "summary": "Der Omniraptor ist ein kleiner, sehr schneller Räuber, der sich auf seine Beute stürzt. Leichtere Tiere nagelt er fest, an schwereren hängt er sich fest und entscheidet selbst, ob er rohen Schaden oder Blutung austeilt. Mehrere Omnis auf einem Ziel reißen es zu Boden. Allein kommt er gut zurecht, im Rudel jagt er auch Tiere, die viel größer sind als er.",
+  "stats": {
+    "adultWeightKg": 395,
+    "primeWeightKg": 660,
+    "sprintKmh": 46.8,
+    "bite": 65,
+    "groupLimit": 8,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 50,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 25, "juvenile": 60, "subadult": 120, "adult": 150 }
+  },
+  "nutrients": {
+    "alpha": ["Herrerasaurus", "Pachycephalosaurus", "Ceratosaurus", "Stegosaurus", "Kentrosaurus", "Wildschwein"],
+    "beta": ["Carnotaurus", "Diabloceratops", "Troodon", "Hirsch", "Hase"],
+    "gamma": ["Dryosaurus", "Gallimimus", "Maiasaura", "Psittacosaurus"]
+  },
+  "behavior": {
+    "essence": "Ein Rudeljäger im Felsland: Ihr springt gemeinsam, reißt Beute zu Boden und rettet euch auf Felsen, wenn etwas Größeres kommt.",
+    "traits": { "activity": "Tag und Dämmerung", "range": "Festes Streifgebiet", "social": "Rudel", "rest": "Ruht auf hohen Felsen" },
+    "needs": "Du brauchst Felsen und Wald im Wechsel: Felsen, auf die du dich mit einem Sprung rettest, und offenes Gelände dazwischen, auf dem ihr Beute einkreist. Dein Speiseplan ist breit, von Hasen und Psittacosauriern bis zu Stegosauriern. Dein Magen leert sich schon nach 50 Minuten, du brauchst also regelmäßig Beute. Und du brauchst ein Rudel, denn erst zu mehreren reißt ihr Tiere zu Boden, die schwerer sind als ihr.",
+    "threats": [
+      {
+        "name": "Stegosaurus",
+        "id": "stegosaurus",
+        "level": "high",
+        "where": "Hinter und neben seinem Schwanz.",
+        "answer": "Ein Treffer reißt dich vom Ziel und lässt dich ausbluten. Mit A und D wechselst du weg vom Schwanz, und Stegos greift ihr nur mit dem ganzen Rudel an."
+      },
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "medium",
+        "where": "An Kadavern und Wasserstellen.",
+        "answer": "Sein schwerer Kopfstoß wirft dich um oder tötet dich. Rette dich auf einen Felsen, dorthin folgt er nicht."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "medium",
+        "where": "Auf offenen Flächen.",
+        "answer": "Er ist schneller als du und frisst Omnis. Allein meidest du ihn, ab drei Omnis wird er selbst zur Beute."
+      },
+      {
+        "name": "Tenontosaurus und Triceratops",
+        "id": "tenontosaurus",
+        "level": "medium",
+        "where": "Wenn du dich an ihnen festkrallst.",
+        "answer": "Tenos schlagen dich mit dem Schwanz vom Rücken, Trikes spießen jeden auf, der ihnen auf den Kopf springt. Häng dich an die Flanke."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Am Ufer.",
+        "answer": "Mit 395 kg passt du in seinen Griff, und auf ein Tier, das ein Deino gepackt hat, kannst du nicht springen. Trink an flachen Stellen."
+      },
+      {
+        "name": "Bäume und Felsen am Fluchtweg der Beute",
+        "level": "low",
+        "where": "Wenn die Beute an Hindernissen entlangläuft.",
+        "answer": "Sie streift dich ab, und du landest betäubt am Boden. Ihr treibt Beute ins Offene, bevor ihr springt."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Springen zwei oder mehr Omnis auf dasselbe Ziel, reißen sie es zu Boden.",
+        "so": "Du lebst im Rudel. Allein jagst du Hasen, Psittacosaurier und Tiere bis zu deinem Gewicht, im Rudel alles bis zum Stegosaurus."
+      },
+      {
+        "because": "Beute, die an Bäumen oder Felsen entlangläuft, streift dich ab.",
+        "so": "Ihr jagt im Offenen. Ihr treibt Beute aus dem Wald auf Lichtungen und Ebenen und springt erst dort."
+      },
+      {
+        "because": "Festhalten kostet viel Ausdauer, mit leerer Ausdauer fällst du betäubt herunter.",
+        "so": "Ihr greift nur mit voller Ausdauer an und lasst los, bevor sie leer ist. Zwischen den Angriffen ruht ihr."
+      },
+      {
+        "because": "Du springst hoch genug, um dich auf Felsen und Gebäude zu retten.",
+        "so": "Euer Streifgebiet hat Felsen. Kommt ein Rex, ein Carno oder ein Allo-Trio, ist das Rudel in Sekunden oben, wo keiner folgen kann."
+      },
+      {
+        "because": "Dein Magen leert sich nach 50 Minuten.",
+        "so": "Ihr jagt in festen Runden durch euer Gebiet und lasst keine Mahlzeit aus. Vor der Nacht frisst sich jeder voll."
+      },
+      {
+        "because": "Dein Speiseplan reicht von Hasen bis Stegosaurier, du bist auf keine bestimmte Beute angewiesen.",
+        "so": "Ihr bleibt in eurem Gebiet und nehmt, was es gerade hergibt, statt einer bestimmten Herde hinterherzuziehen."
+      }
+    ],
+    "home": "Euer Gebiet ist gemischtes Gelände: felsige Hügel, Waldstücke und offene Lichtungen dazwischen, mit einer Wasserstelle in der Mitte. Auf den Felsen ruht ihr und haltet Ausschau, in den Waldstücken leben Hirsche, Wildschweine und Dryosaurier, auf den Lichtungen jagt ihr sie. Ein guter Ruheplatz ist ein hoher Felsblock, auf den alle springen können und auf den kein großer Jäger kommt. Reine Ebenen ohne Felsen meidet ihr, dort gehört euch nichts, wenn ein Carno kommt.",
+    "day": [
+      { "phase": "dawn", "text": "Das Rudel springt vom Ruhefelsen und zieht auf die erste Jagdrunde. Ihr sucht Herden am Waldrand und treibt ein Tier ins Offene." },
+      { "phase": "day", "text": "Ihr jagt, fresst und ruht abwechselnd auf den Felsen. Wer satt ist, hält Wache, während die anderen fressen." },
+      { "phase": "dusk", "text": "Letzte große Jagd des Tages. Vor der Dunkelheit ist jeder satt, hat getrunken und sitzt wieder auf dem Ruhefelsen." },
+      { "phase": "night", "text": "Ihr schlaft gemeinsam auf eurem Ruhefelsen und loggt dort aus. Mit 50 Minuten Magen reicht eine volle Mahlzeit knapp durch die Nacht, also geht es im ersten Licht wieder los." }
+    ],
+    "group": "Bis zu acht Omnis dürfen ein Rudel bilden, und das Rudel ist eure Waffe. Gut funktionieren vier bis sechs Tiere: genug, um Maiasaurier, Diabloceratops und Stegos zu Boden zu reißen, aber nicht so viele, dass die Beute nicht für alle reicht. Beim Sprung bekommt jeder einen eigenen Platz am Körper. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt am Fuß eures Ruhefelsens. Die Jungen betteln nur 25 Minuten und üben danach an Hasen und Psittacosauriern das Springen, bis sie mit dem Rudel jagen.",
+    "analog": {
+      "animals": "Afrikanischer Wildhund",
+      "text": "Wildhunde jagen in eingespielten Rudeln, reißen gemeinsam Tiere, die viel größer sind als sie, und teilen die Beute. Sie ruhen gemeinsam und jagen in festen Runden am Morgen und am Abend. Anders als sie springst du deine Beute an und krallst dich fest, statt sie über weite Strecken zu hetzen."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Dein Hauptwerkzeug ist der Sprung mit der rechten Maustaste. Wiegt das Ziel höchstens so viel wie du, nagelst du es fest. Ist es schwerer, hängst du dich daran: Halte die linke Maustaste für reinen Schaden oder die rechte für reine Blutung und wechsle mit A und D deinen Platz am Körper, zum Beispiel weg vom Kopf oder Schwanz. Du kannst dich an jede Seite hängen, auch hinten. Festhalten kostet viel Ausdauer. Ist sie leer, fällst du herunter und bist kurz betäubt, genauso, wenn dich das Opfer abwirft oder an Bäumen oder Felsen abstreift. Im Rudel springt ihr gleichzeitig, reißt das Ziel zu Boden und teilt euch den Schaden. Auf ein Tier, das gerade ein Deinosuchus gepackt hat, kannst du nicht springen. Halt dich von Stegosaurier-Schwänzen und Tenontosaurier-Tritten fern."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "25 Minuten Betteln, dann geht es los. Bleib im Rudel deiner Eltern, denn mit dem Futter bekommst du auch ihre Nährstoffe." },
+    { "stage": "juvenile", "text": "Du spawnst mit 130 kg und fast 47 km/h, für einen Juvenile sehr stark. Jag Hasen, Psittacosaurier und Kitze und übe den Sprung an kleinen Dryosauriern. Ein Sanctuary-Besuch zählt für Prime." },
+    { "stage": "subadult", "text": "Zu Beginn bist du mit über 50 km/h am schnellsten. Such dir ein Rudel und übt gemeinsame Sprünge auf Gallimimus und Dryosaurier. Wechsle beim Festhalten mit A und D den Platz, bevor dich ein Schwanz trifft." },
+    { "stage": "adult", "text": "395 kg und 65 Biss: Allein jagst du alles bis zu deinem Gewicht, im Rudel auch Maiasaurier, Diabloceratops und sogar Stegosaurier. Als Prime Elder wächst du bis 87,5 % auf 660 kg." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Rundum-Biss", "text": "Biss in Kamerarichtung." },
+    { "keys": "RMB", "name": "Sprung", "text": "Hängt dich an schwerere Ziele. Dann LMB halten für Schaden oder RMB halten für Blutung, A oder D wechselt den Platz. Kostet laufend Ausdauer." },
+    { "keys": "RMB (leichtes Ziel)", "name": "Festnageln", "text": "Ziele bis zu deinem Gewicht werden zu Boden gedrückt." },
+    { "keys": "RMB (zu zweit oder mehr)", "name": "Niederreißen", "text": "Springen mehrere Omnis auf dasselbe Ziel, reißen sie es zu Boden und machen massiven Schaden." },
+    { "keys": "Springen + nach oben schauen + LMB", "name": "Sprungbiss", "text": "Biss in der Luft." },
+    { "keys": "Springen + nach unten schauen + LMB", "name": "Sprungtritt", "text": "Tritt im Sprung nach unten." }
+  ],
+  "tips": [
+    "Wenn die Ausdauer leer ist, fällst du herunter und bist betäubt. Lass vorher selbst los.",
+    "A und D wechseln deinen Platz am Ziel: weg vom Schwanz, hin zur Flanke.",
+    "Bäume und Felsen streifen dich ab, wenn das Opfer daran entlangläuft."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Omniraptor", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/omniraptor" },
+    { "label": "Evrima Quick Guide – Kampf & Effekte", "url": "https://www.evrimaquickguide.com/gameplay/group-play/fighting-effects" }
+  ]
+}

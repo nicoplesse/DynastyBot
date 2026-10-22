@@ -1,0 +1,214 @@
+/* The Isle: a separate game, so the tab trades the archive's green for a warm amber. */
+.isle{--isle-accent:#e0aa5e;--isle-soft:#f0d6a8;--isle-panel:#18160f;--isle-panel-2:#1f1b13;--isle-line:#3b3223;--isle-text:#d9d2c3;--isle-muted:#a39a88;--isle-faint:#7d7564}
+.isle .topline{border-bottom-color:#3a3122;color:#a08c6c}
+.diet-carnivore{--diet:#e3866a}.diet-herbivore{--diet:#a9cf82}.diet-omnivore{--diet:#dcbb62}
+.nut-alpha{--nut:#86bede}.nut-beta{--nut:#e3866a}.nut-gamma{--nut:#dcbb62}
+.isle-dot{display:inline-block;flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--diet,var(--isle-accent))}
+
+/* Sidebar entry */
+.nav-caption-inline{padding:2px 15px 6px}
+.nav-item.nav-isle.active{background:#30271a;border-color:#5b4829;color:#f0d6a8}
+
+/* Directory head */
+.isle-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;padding:36px 0 26px}
+.isle-eyebrow{color:var(--isle-accent);font-size:10px;font-weight:800;letter-spacing:.2em}
+.isle-head h1{margin:9px 0 6px;font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-.055em;color:#f4ecdc}
+.isle-sub{color:var(--isle-muted);font-size:12px}
+.isle-intro{max-width:760px;margin-top:14px!important;color:var(--isle-text);font-size:13px;line-height:1.7}
+.isle-metrics{display:grid;gap:8px;min-width:190px}
+.isle-metrics>*{display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid var(--isle-line);border-radius:7px;background:var(--isle-panel);color:inherit;text-decoration:none}
+.isle-metrics strong{color:var(--isle-accent);font-size:26px;line-height:1}
+.isle-metrics span{color:var(--isle-muted);font-size:11px;line-height:1.35}
+.isle-metrics a:hover{border-color:#6b5532}
+
+/* Filter */
+.isle-filter{display:flex;align-items:center;gap:12px;padding:13px;border:1px solid var(--isle-line);border-radius:8px;background:var(--isle-panel)}
+.isle-filter .search-field input{border-color:#3d3426;background:#100e09}
+.isle-filter .search-field input:focus{border-color:var(--isle-accent);box-shadow:0 0 0 3px #e0aa5e1f}
+.isle-filter .search-field>span{color:var(--isle-accent)}
+.isle-diets{display:flex;flex-wrap:wrap;gap:6px}
+.isle-diets button{display:inline-flex;align-items:center;gap:7px;height:41px;padding:0 13px;border:1px solid #3d3426;border-radius:5px;background:#100e09;color:var(--isle-muted);font-size:12px;font-weight:700}
+.isle-diets button b{color:var(--isle-faint);font-size:10px}
+.isle-diets button:hover{border-color:#6b5532;color:var(--isle-text)}
+.isle-diets button.active{border-color:var(--diet,var(--isle-accent));background:#2a2316;color:#f4ecdc}
+.isle-diets button.active b{color:var(--diet,var(--isle-accent))}
+
+/* Groups and cards */
+.isle-group{margin-top:26px}
+.isle-group>h2{display:flex;align-items:center;gap:9px;margin-bottom:12px;color:#efe6d4;font-size:15px}
+.isle-group>h2 b{color:var(--isle-faint);font-size:11px}
+.isle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.isle-card{display:flex;flex-direction:column;min-width:0;padding:16px;border:1px solid var(--isle-line);border-top:3px solid var(--diet);border-radius:8px;background:var(--isle-panel);color:inherit;text-align:left;transition:transform .16s,border-color .16s,background .16s}
+.isle-card:hover{transform:translateY(-2px);border-color:#6b5532;border-top-color:var(--diet);background:var(--isle-panel-2)}
+.isle-card-top{display:flex;align-items:flex-start;gap:12px}
+.isle-card-top>div{flex:1;min-width:0}
+.isle-mono{display:grid;flex:0 0 auto;width:42px;height:42px;place-items:center;border:1px solid color-mix(in srgb,var(--diet) 45%,transparent);border-radius:7px;background:color-mix(in srgb,var(--diet) 13%,#100e09);color:var(--diet);font-family:Georgia,serif;font-size:19px;font-weight:700}
+.isle-card h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;margin:1px 0 3px;color:#f4ecdc;font-size:16px}
+.isle-card h3 small{color:var(--isle-muted);font-size:11px;font-weight:600}
+.isle-role{color:var(--diet);font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.isle-since{flex:0 0 auto;padding:3px 6px;border:1px solid #5b4829;border-radius:3px;color:var(--isle-soft);font-size:9px;font-weight:800;white-space:nowrap}
+.isle-card>p{flex:1;margin:12px 0 14px;color:var(--isle-muted);font-size:12px;line-height:1.55}
+.isle-card-facts{display:flex;gap:18px;padding-top:11px;border-top:1px solid #2f281c}
+.isle-card-facts span{color:var(--isle-faint);font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+.isle-card-facts b{display:block;margin-bottom:3px;color:#e6dcc8;font-size:12px;letter-spacing:0;text-transform:none}
+
+/* Basics */
+.isle-basics{margin-top:42px;padding:26px 28px;border:1px solid var(--isle-line);border-radius:9px;background:linear-gradient(170deg,#211c13,#15130d 55%);scroll-margin-top:20px}
+.isle-section-head{display:flex;align-items:center;gap:13px;margin-bottom:6px}
+.isle-section-head>span{display:grid;width:38px;height:38px;place-items:center;border:1px solid #6b5532;border-radius:6px;color:var(--isle-accent);font-size:18px}
+.isle-section-head h2{margin-top:4px;color:#f4ecdc;font-size:21px}
+.isle-basics-title{margin:24px 0 11px;color:var(--isle-soft);font-size:13px}
+.isle-stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.isle-stages li{position:relative;padding:14px 14px 13px;border:1px solid #352d1f;border-radius:7px;background:#120f0a}
+.isle-stage-no{position:absolute;top:12px;right:12px;color:#5b4f3a;font-size:22px;font-weight:800}
+.isle-stages h4{margin:0;color:#f0e6d2;font-size:13px}
+.isle-stages b{display:block;margin:3px 0 8px;color:var(--isle-accent);font-size:11px}
+.isle-stages p,.isle-topics p{margin:0;color:var(--isle-muted);font-size:12px;line-height:1.65}
+.isle-nutrients{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.isle-nutrients>div{display:flex;gap:12px;padding:13px 14px;border:1px solid #352d1f;border-left:3px solid var(--nut);border-radius:6px;background:#120f0a}
+.isle-nutrients strong{color:var(--nut);font-family:Georgia,serif;font-size:26px;line-height:1}
+.isle-nutrients b{color:#f0e6d2;font-size:13px}
+.isle-nutrients small{color:var(--isle-faint);font-size:10px}
+.isle-nutrients p{margin:4px 0 0;color:var(--isle-muted);font-size:11.5px;line-height:1.5}
+.isle-topics{display:grid;gap:8px;margin-top:22px}
+.isle-topics details{border:1px solid #352d1f;border-radius:7px;background:#120f0a}
+.isle-topics summary{padding:13px 16px;color:#efe6d4;font-size:13px;font-weight:700;cursor:pointer}
+.isle-topics summary::marker{color:var(--isle-accent)}
+.isle-topics details[open] summary{border-bottom:1px solid #2b2419}
+.isle-topics details p{padding:12px 16px 15px}
+.isle-keys dl{display:grid;grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:6px 12px;margin:0}
+.isle-keys dl>dt,.isle-keys dl>dd{margin:0}
+.isle-keys dl>dd{margin-right:12px}
+.isle-keys dd{color:var(--isle-muted);font-size:12px;line-height:1.5}
+.isle kbd{display:inline-block;min-width:24px;padding:3px 7px;border:1px solid #574631;border-bottom-width:2px;border-radius:4px;background:#241e14;color:var(--isle-soft);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;font-weight:700;text-align:center;white-space:nowrap}
+.isle-upcoming{margin-top:22px!important;padding:12px 15px;border-left:2px solid var(--isle-accent);background:#221c12;color:var(--isle-text);font-size:12px;line-height:1.6}
+.isle-upcoming b{color:var(--isle-soft)}
+.isle-sources{margin-top:20px;color:var(--isle-faint);font-size:11px}
+.isle-sources strong{display:block;margin-bottom:6px;color:#cbbfa7;font-size:11px}
+.isle-sources p{margin:0 0 6px;line-height:1.5}
+.isle-sources ul{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;padding:0;list-style:none}
+.isle-sources a{color:var(--isle-accent);text-decoration:none}
+.isle-sources a:hover{text-decoration:underline}
+
+/* Detail */
+.isle .back-link{color:var(--isle-accent)}
+.isle-detail{overflow:hidden;border:1px solid var(--isle-line);border-radius:9px;background:#14120d}
+.isle-hero{display:flex;align-items:flex-start;gap:28px;padding:40px 44px 30px;border-bottom:1px solid #2f281c;background:radial-gradient(circle at 12% 0,color-mix(in srgb,var(--diet) 16%,transparent),transparent 55%),linear-gradient(180deg,#1d1912,#14120d)}
+.isle-hero-mono{display:grid;flex:0 0 auto;width:96px;height:96px;place-items:center;border:1px solid color-mix(in srgb,var(--diet) 50%,transparent);border-radius:12px;background:color-mix(in srgb,var(--diet) 14%,#100e09);color:var(--diet);font-family:Georgia,serif;font-size:42px;font-weight:700}
+.isle-hero-copy{min-width:0;max-width:760px}
+.isle-kicker{color:var(--diet);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.isle-hero h1{margin:8px 0 2px;color:#f6efe1;font-size:clamp(36px,5vw,60px);line-height:1;font-weight:800;letter-spacing:-.055em}
+.isle-nick{color:var(--isle-muted);font-size:13px}
+.isle-tagline{margin-top:14px!important;color:var(--isle-soft);font-size:15px;font-weight:700;line-height:1.45}
+.isle-summary{margin-top:12px!important;color:var(--isle-text);font-size:13px;line-height:1.72}
+.isle .hero-pills span{border-color:#5b4a3199;background:#1f1a12;color:#e4d6bc}
+.isle-statstrip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin:0;border-bottom:1px solid #2f281c}
+.isle-statstrip>div{padding:14px 18px;border-right:1px solid #2a2419}
+.isle-statstrip>div:last-child{border-right:0}
+.isle-statstrip dt{color:var(--isle-faint);font-size:8.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.isle-statstrip dd{margin:6px 0 0;color:#f0e2c4;font-size:17px;font-weight:700}
+.isle-note{margin:18px 44px 0!important;padding:11px 14px;border:1px solid #6d4d2a;border-radius:6px;background:#2a1f12;color:#f0d6a8;font-size:12px;line-height:1.55}
+.isle-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:36px;padding:30px 44px 50px}
+.isle-toc{position:sticky;top:24px;align-self:start;display:flex;flex-direction:column;padding:14px 16px;border-left:1px solid #3d3426}
+.isle-toc strong{margin-bottom:10px;color:#857a66;font-size:9px;letter-spacing:.14em}
+.isle-toc a{padding:6px 0;color:var(--isle-muted);font-size:11px;text-decoration:none}
+.isle-toc a:hover{color:var(--isle-soft)}
+.isle-body{min-width:0;max-width:900px}
+.isle-body>section{scroll-margin-top:20px}
+.isle .detail-section-title>span{border-color:#6b5532;background:#2a2316;color:var(--isle-accent)}
+.isle .detail-section-title h2{color:#f2e9d7}
+.isle-tips{padding:16px 20px;border:1px solid color-mix(in srgb,var(--diet) 40%,#3b3223);border-radius:8px;background:color-mix(in srgb,var(--diet) 7%,#16130d)}
+.isle-tips h2{margin-bottom:9px;color:var(--diet);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.isle-tips ul{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.isle-tips li{position:relative;padding-left:18px;color:#e6dcc8;font-size:13px;line-height:1.55}
+.isle-tips li::before{content:'›';position:absolute;left:2px;color:var(--diet);font-weight:800}
+.isle-section{padding:30px 0;border-bottom:1px solid #2b2419}
+.isle-life{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.isle-life article{padding:15px 17px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-life h3,.isle-relations h3{margin:0 0 8px;color:var(--isle-soft);font-size:12.5px}
+.isle-life p,.isle-prose,.isle-timeline p,.isle-abilities p{margin:0;color:#c7bea9;font-size:12.5px;line-height:1.75}
+.isle-relations{display:grid;gap:14px;margin-top:20px;padding:15px 17px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-chips{display:flex;flex-wrap:wrap;gap:6px}
+.isle-chips a{display:inline-flex;align-items:center;gap:7px;padding:5px 9px;border:1px solid #42382a;border-radius:14px;background:#120f0a;color:#e6dcc8;font-size:11.5px;text-decoration:none}
+.isle-chips a:hover{border-color:var(--diet)}
+.isle-chips b{color:var(--isle-faint);font-family:Georgia,serif;font-size:12px}
+.isle-legend{margin-top:10px!important;color:var(--isle-faint);font-size:11px;line-height:1.55}
+.isle-legend b{color:#cbbfa7}
+.isle-legend a,.isle-food a{color:var(--isle-accent)}
+.isle-growthbar{display:flex;gap:3px;overflow:hidden;border-radius:6px}
+.isle-growthbar span{min-width:0;padding:9px 10px;overflow:hidden;color:#16120b;font-size:10.5px;font-weight:800;text-overflow:ellipsis;white-space:nowrap}
+.stage-hatchling{--stage:#f0d6a8}.stage-juvenile{--stage:#e0aa5e}.stage-subadult{--stage:#c9853e}.stage-adult{--stage:#9c6a3a}
+.isle-growthbar span{background:var(--stage)}
+.isle-growthbar .stage-adult{color:#f6ead2}
+.isle-timeline{display:grid;gap:0;margin:18px 0 0;padding:0;list-style:none}
+.isle-timeline li{position:relative;padding:0 0 18px 26px;border-left:2px solid #3b3223;margin-left:6px}
+.isle-timeline li:last-child{padding-bottom:0;border-left-color:transparent}
+.isle-timeline li::before{content:'';position:absolute;left:-8px;top:2px;width:14px;height:14px;border:2px solid #14120d;border-radius:50%;background:var(--stage)}
+.isle-timeline-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-bottom:6px}
+.isle-timeline-head h3{margin:0;color:#f2e9d7;font-size:14px}
+.isle-timeline-head span{color:var(--isle-faint);font-size:11px}
+.isle-timeline-head b{margin-left:auto;color:var(--stage);font-size:12px}
+.isle-abilities{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.isle-abilities li{display:grid;grid-template-columns:minmax(170px,240px) minmax(0,1fr);gap:16px;align-items:start;padding:13px 15px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-keycaps{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.isle-keycaps i{color:var(--isle-faint);font-style:normal;font-size:11px}
+.isle-keycaps kbd{white-space:normal;text-align:left}
+.isle-abilities h3{margin:0 0 4px;color:#f2e9d7;font-size:13px}
+.isle-food{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.isle-food>div{padding:14px 15px;border:1px solid #352d1f;border-top:3px solid var(--nut);border-radius:7px;background:#18150f}
+.isle-food h3{display:flex;align-items:center;gap:8px;margin:0;color:#f2e9d7;font-size:13px}
+.isle-food h3 strong{color:var(--nut);font-family:Georgia,serif;font-size:20px}
+.isle-food p{margin:5px 0 10px;color:var(--isle-faint);font-size:11px;line-height:1.45}
+.isle-food ul{display:grid;gap:5px;margin:0;padding:0;list-style:none}
+.isle-food li{color:#d9cfba;font-size:12px}
+.isle-food li::before{content:'·';margin-right:7px;color:var(--nut);font-weight:800}
+/* Behaviour: needs, dangers and what follows from them */
+.isle-behavior{padding-top:4px}
+.isle-essence{margin:0 0 16px!important;padding:4px 0 4px 16px;border-left:3px solid var(--diet);color:#f4ecdc;font-family:Georgia,serif;font-size:19px;line-height:1.5}
+.isle-traits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 18px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-traits>div{padding:11px 14px;border-right:1px solid #2a2419}
+.isle-traits>div:last-child{border-right:0}
+.isle-traits dt{color:var(--isle-faint);font-size:8.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.isle-traits dd{margin:5px 0 0;color:#f0e2c4;font-size:13px;font-weight:700;line-height:1.35}
+.isle-pressures{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:12px}
+.isle-pressures>article{padding:15px 17px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-pressures h3,.isle-analog h3{margin:0 0 8px;color:var(--isle-soft);font-size:12.5px}
+.isle-needs p{margin:0;color:#c7bea9;font-size:12.5px;line-height:1.75}
+.isle-threats ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.isle-threats li{padding:9px 11px;border:1px solid #2f281c;border-left:3px solid var(--threat);border-radius:5px;background:#120f0a}
+.threat-high{--threat:#e3866a}.threat-medium{--threat:#dcbb62}.threat-low{--threat:#86bede}
+.isle-threat-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.isle-threat-head a,.isle-threat-head strong{display:inline-flex;align-items:center;gap:7px;color:#f2e9d7;font-size:12.5px;font-weight:700;text-decoration:none}
+.isle-threat-head a:hover{color:var(--isle-soft)}
+.isle-threat-head span{flex:0 0 auto;color:var(--threat);font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.isle-threats p{margin:0;color:#c7bea9;font-size:12px;line-height:1.6}
+.isle-threats .isle-threat-where{margin-bottom:3px;color:var(--isle-faint);font-size:11px}
+.isle-subhead{margin:26px 0 11px;color:var(--isle-soft);font-size:13px}
+.isle-logic{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.isle-logic li{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:stretch;gap:0;border:1px solid #352d1f;border-radius:7px;background:#18150f;overflow:hidden}
+.isle-logic p{margin:0;padding:11px 14px;color:#c7bea9;font-size:12.5px;line-height:1.65}
+.isle-logic p:last-child{background:color-mix(in srgb,var(--diet) 7%,#16130d);color:#e6dcc8}
+.isle-logic b{display:block;margin-bottom:3px;color:var(--isle-faint);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase}
+.isle-logic p:last-child b{color:var(--diet)}
+.isle-logic span{display:grid;place-items:center;padding:0 8px;border-inline:1px solid #2a2419;color:var(--diet);font-weight:800}
+.isle-day{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.isle-day li{padding:13px 14px;border:1px solid #352d1f;border-top:3px solid var(--phase);border-radius:7px;background:#18150f}
+.phase-dawn{--phase:#f0b878}.phase-day{--phase:#f0d6a8}.phase-dusk{--phase:#c9853e}.phase-night{--phase:#7f8fc4}
+.isle-day h4{display:flex;align-items:center;gap:7px;margin:0 0 6px;color:#f2e9d7;font-size:12.5px}
+.isle-day h4 i{width:8px;height:8px;border-radius:50%;background:var(--phase)}
+.isle-day p{margin:0;color:#c7bea9;font-size:12px;line-height:1.65}
+.isle-behavior .isle-life{margin-top:20px}
+.isle-analog{border-style:dashed!important}
+.isle-card-traits{display:flex;flex-wrap:wrap;gap:5px;margin:-4px 0 13px}
+.isle-card-traits span{padding:3px 7px;border:1px solid #42382a;border-radius:10px;color:var(--isle-soft);font-size:10px;font-weight:700}
+.isle .hero-pills .isle-pill-trait{border-color:color-mix(in srgb,var(--diet) 55%,transparent);color:var(--diet)}
+
+.isle-section#isle-sources{border-bottom:0;padding-bottom:10px}
+.isle-section#isle-sources .isle-sources{margin-top:0}
+.isle .profile-pagination{border-top-color:#3b3223}
+.isle .profile-pagination button{color:var(--isle-muted)}
+.isle .profile-pagination strong{color:#efe6d4}
+
+@media(max-width:1200px){.isle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-statstrip{grid-template-columns:repeat(3,minmax(0,1fr))}.isle-statstrip>div:nth-child(3n){border-right:0}.isle-layout{grid-template-columns:170px minmax(0,1fr);gap:26px;padding:28px}}
+@media(max-width:850px){.isle-head{flex-direction:column;align-items:stretch}.isle-filter{flex-direction:column;align-items:stretch}.isle-layout{grid-template-columns:1fr}.isle-toc{display:none}.isle-hero{padding:30px 24px 24px}.isle-hero-mono{width:64px;height:64px;font-size:28px}.isle-note{margin:16px 24px 0!important}.isle-life,.isle-food,.isle-nutrients{grid-template-columns:1fr}.isle-abilities li{grid-template-columns:1fr;gap:8px}.isle-keys dl{grid-template-columns:auto minmax(0,1fr)}.isle-pressures{grid-template-columns:1fr}.isle-day{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.isle-grid,.isle-stages{grid-template-columns:1fr}.isle-hero{flex-direction:column;gap:16px}.isle-statstrip{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-statstrip>div:nth-child(3n){border-right:1px solid #2a2419}.isle-statstrip>div:nth-child(2n){border-right:0}.isle-basics{padding:20px 16px}.isle-layout{padding:22px 16px 40px}.isle-growthbar{flex-direction:column}.isle-growthbar span{flex-grow:0!important}.isle-traits{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-traits>div:nth-child(2){border-right:0}.isle-traits>div:nth-child(-n+2){border-bottom:1px solid #2a2419}.isle-logic li{grid-template-columns:1fr}.isle-logic span{display:none}.isle-day{grid-template-columns:1fr}.isle-essence{font-size:17px}}

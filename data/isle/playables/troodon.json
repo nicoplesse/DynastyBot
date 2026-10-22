@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "troodon",
+  "name": "Troodon",
+  "diet": "carnivore",
+  "role": "Nächtlicher Giftjäger im Schwarm",
+  "order": 9,
+  "tagline": "Klein, nachtaktiv, giftig: Zehn Troodons fällen auch einen Riesen.",
+  "summary": "Der Troodon ist ein winziger Nachtjäger, der mit giftigen Sprüngen angreift. Drei Treffer bringen das Opfer in den vergifteten Zustand, ab dann trifft jeder Angriff des Rudels härter. Allein ist er schwach, in einem großen Rudel bringt er Tiere zur Strecke, die hundertmal so schwer sind wie er. Er wächst schnell und gehört zu den fünf Arten, die schon als Art eine Prime-Bedingung erfüllen.",
+  "stats": {
+    "adultWeightKg": 60,
+    "primeWeightKg": 80,
+    "sprintKmh": 44,
+    "bite": 15,
+    "groupLimit": 10,
+    "nest": "mound",
+    "eggs": 5,
+    "hungerMinutes": 60,
+    "thirstMinutes": 50,
+    "growthMinutes": { "hatchling": 20, "juvenile": 40, "subadult": 60, "adult": 70 }
+  },
+  "nutrients": {
+    "alpha": ["Stegosaurus", "Pachycephalosaurus", "Tenontosaurus", "Kentrosaurus", "Krabbe"],
+    "beta": ["Hypsilophodon", "Ochsenfrosch", "Huhn", "Hirsch", "Hase", "Compsognathus"],
+    "gamma": ["Dryosaurus", "Pteranodon", "Maiasaura", "Ziege", "Psittacosaurus"]
+  },
+  "behavior": {
+    "essence": "Ein Nachtjäger im Schwarm: Tagsüber unsichtbar im Unterholz, nachts zehn Augenpaare und zehn Giftsprünge.",
+    "traits": { "activity": "Nachtaktiv", "range": "Fester Schlafplatz, nächtliche Streifzüge", "social": "Großes Familienrudel", "rest": "Schläft tagsüber versteckt" },
+    "needs": "Du brauchst Dunkelheit, Deckung und dein Rudel. Mit 60 kg bist du für fast jeden Jäger ein Snack, also brauchst du für den Tag ein Versteck in dichtem Unterholz oder zwischen Felsen. Nachts brauchst du Beute: Kompys, Ochsenfrösche, Hühner und Hasen holst du allein, Hirsche, Ziegen, Dryosaurier und sogar Stegosaurier nur mit dem Rudel. Dein Magen hält 60 Minuten, dein Wasser 50.",
+    "threats": [
+      {
+        "name": "Pteranodon",
+        "id": "pteranodon",
+        "level": "high",
+        "where": "Am Tag, wenn du offen läufst.",
+        "answer": "Für ihn bist du Proteine, und er sieht dich von oben. Tagsüber bleibst du unter Blättern und Felsen."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "high",
+        "where": "Am Waldrand und auf Lichtungen.",
+        "answer": "Er frisst Troodons, ist schwerer als du und nagelt dich fest. Im Unterholz bist du schwer zu fassen, im Offenen nicht."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "medium",
+        "where": "Auf Ebenen.",
+        "answer": "Er frisst Troodons und ist schneller als du. Auf offener Fläche kannst du nicht fliehen, also bleibst du nah am Unterholz."
+      },
+      {
+        "name": "Tenontosaurus",
+        "id": "tenontosaurus",
+        "level": "medium",
+        "where": "Wenn ihr ein Teno oder seine Herde angreift.",
+        "answer": "Sein Schwanzschlag wirft euch um und betäubt, und Herden schlagen sich gegenseitig die Springer vom Rücken. Ihr nehmt Einzeltiere am Herdenrand."
+      },
+      {
+        "name": "Deinos und Elite-Fische",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Am Wasser.",
+        "answer": "Du bist klein genug für einen Elite-Fisch und für jeden Deino. Trink an Rinnsalen und kleinen Tümpeln, nicht an großen Flüssen."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Mit 60 kg ist fast jedes Raubtier eine Gefahr für dich, und viele davon jagen bei Licht.",
+        "so": "Du bist nachtaktiv. Tagsüber schläfst du versteckt, nachts gehört das Unterholz dir und deinem Rudel."
+      },
+      {
+        "because": "Dein Gift wirkt erst ab drei Sprüngen, und nur, wenn ihr nacheinander springt.",
+        "so": "Ihr jagt als eingespieltes Rudel mit festen Rollen: drei springen nacheinander, dann das ganze Rudel. Ohne Absprache jagt ihr nur Kleinzeug."
+      },
+      {
+        "because": "Deine Giftbisse erzeugen Bodennebel, in dem man euch schwer sieht.",
+        "so": "Dunkelheit und Nebel verstärken sich gegenseitig. Euer Opfer weiß nie, wie viele ihr seid."
+      },
+      {
+        "because": "Pteranodons jagen dich von oben, und sie sind am Tag unterwegs.",
+        "so": "Dein Tagesversteck liegt unter dichtem Blätterdach oder in einer Felsspalte, nicht auf Lichtungen, wo man dich aus der Luft sieht."
+      },
+      {
+        "because": "Dein Magen hält 60 Minuten, Tag und Nacht dauern je 30.",
+        "so": "Du frisst dich nachts satt und verschläfst den ganzen Tag. Am Morgen muss jeder im Rudel voll sein, sonst wird der Tag zu lang."
+      },
+      {
+        "because": "Du wächst in gut drei Stunden aus.",
+        "so": "Dein Leben ist kurz und schnell. In einer Spielsitzung erlebst du Schlüpfen, Jagen, Balz und Nachwuchs, und das Rudel ist meist eine Familie."
+      }
+    ],
+    "home": "Dein Revier hat einen Mittelpunkt: das Tagesversteck des Rudels. Ein guter Platz ist dichtes Unterholz unter hohen Bäumen, eine Senke voller Farne oder eine Felsspalte, in die nichts Großes hineinkommt und die aus der Luft nicht zu sehen ist. Von dort aus streift ihr nachts in die Umgebung: an Waldränder, an denen Herden ruhen, auf Wiesen mit Hühnern und Hasen und zu Kadavern, an denen Kompys fressen. Ein Rinnsal oder kleiner Tümpel in der Nähe ersetzt dir den großen Fluss. Offene Ebenen überquerst du nur im Dunkeln.",
+    "day": [
+      { "phase": "dawn", "text": "Das Rudel kehrt zum Tagesversteck zurück. Wer nicht satt ist, fängt auf dem Weg noch einen Frosch oder ein Huhn." },
+      { "phase": "day", "text": "Ihr schlaft dicht zusammen im Unterholz und loggt dort aus. Draußen jagen Pteranodons, Carnos und Omnis, dein Platz ist im Schatten." },
+      { "phase": "dusk", "text": "Ihr wacht auf, trinkt und schnuppert mit Q nach Spuren. Die Aura auf einer Fährte zeigt euch, dass ihr der richtigen Beute folgt." },
+      { "phase": "night", "text": "Jagdzeit. Ihr sucht ein Tier am Rand einer ruhenden Herde, springt nacheinander bis zur dritten Giftstufe und dann alle zugleich. Mit Nachtsicht (X) bewegt ihr euch sicher durch das Dunkel." }
+    ],
+    "group": "Bis zu zehn Troodons dürfen zusammen jagen, und das große Rudel ist der Kern der Art. Weil ihr in gut drei Stunden auswachst, ist ein Rudel oft eine Familie über mehrere Generationen. Euer Erdhügel-Nest mit bis zu 5 Eiern liegt im Tagesversteck, wo immer jemand schläft und aufpasst. Die Jungen jagen zuerst Kompys, Frösche und Hühner. Erst ab Sub-Adult ist ihr Sprung giftig, dann jagen sie mit. Ein einzelner Troodon ist kein Jäger, sondern Beute.",
+    "analog": {
+      "animals": "Rothund",
+      "text": "Rothunde leben in großen Familienrudeln, verständigen sich mit Pfiffen und reißen gemeinsam Hirsche, die viel größer sind als sie. Anders als sie jagst du nachts, und statt deine Beute zu hetzen, vergiftest du sie Stufe für Stufe."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Ab Sub-Adult ist dein Sprung mit der rechten Maustaste giftig. Jeder Sprung ist eine Giftstufe. Ein Zirpen zeigt dir, dass du wieder springen darfst. Nach drei Stufen ist das Opfer vergiftet: Es schimmert blaugrün, du hörst ein lauteres Zirpen, und für etwa 45 Sekunden nimmt es maximalen Giftschaden und mehr Schaden von allen Troodon-Angriffen. Jetzt springt das ganze Rudel. Springt ihr dagegen gleichzeitig, bevor Stufe 3 erreicht ist, setzt sich das Gift zurück. Jeder weitere Sprung in Stufe 3 verlängert den Zustand ein wenig. Deine Giftbisse erzeugen Bodennebel, in dem man euch schwer sieht. Verfolgst du ein Ziel mit Q, zeigt dir eine Aura, dass du auf der richtigen Spur bist. Kleine Beute wie Compys und Frösche erledigst du mit Bissen allein."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "20 Minuten winzig im Erdhügel-Nest. Bleib dicht bei den Eltern und versteck dich tagsüber im Unterholz, bis das Rudel nachts loszieht." },
+    { "stage": "juvenile", "text": "40 Minuten, in denen du noch kein Gift hast. Jag Compys, Frösche, Hühner und Hasen und schau dir an, wie das Rudel arbeitet. Weil der Troodon schon als Art eine Prime-Bedingung erfüllt, fehlen dir nur vier weitere, zum Beispiel ein Sanctuary, vier Patrol-Zonen, zwei Migrationszonen und eine perfekte Ernährung. Bei nur gut drei Stunden Gesamtwachstum musst du dich beeilen." },
+    { "stage": "subadult", "text": "Ab jetzt giftet dein Sprung. Übt das Rhythmusspiel aus Springen und Warten an Dryosauriern und Hypsis." },
+    { "stage": "adult", "text": "60 kg, 15 Biss, aber im Rudel Gift auf Stufe 3: Ihr jagt Tenontosaurier, Pachys und Maiasaurier. Als Prime Elder bekommst du bis 87,5 % noch etwas Gewicht und über 52 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Sprintbiss", "text": "Biss in Kamerarichtung mit kurzem Vorstoß." },
+    { "keys": "RMB", "name": "Giftsprung", "text": "Sprung in jede Richtung, ab Sub-Adult giftig. Kostet etwa 5 % Ausdauer, Festhalten 2 % alle 1,2 Sekunden. Drei Sprünge vergiften das Ziel." }
+  ],
+  "tips": [
+    "Erst nacheinander bis Stufe 3 springen, dann alle gleichzeitig.",
+    "Warte auf das Zirpen, bevor du erneut springst.",
+    "Vergiftet heißt: blaugrüner Schimmer, etwa 45 Sekunden lang."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Troodon", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/troodon" },
+    { "label": "Evrima Quick Guide – Kampf & Effekte", "url": "https://www.evrimaquickguide.com/gameplay/group-play/fighting-effects" }
+  ]
+}

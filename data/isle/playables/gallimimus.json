@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "gallimimus",
+  "name": "Gallimimus",
+  "nickname": "Galli",
+  "diet": "omnivore",
+  "role": "Sprinter im Schwarm",
+  "order": 22,
+  "tagline": "Je besser die Ernährung, desto schneller. Mit vollem Speiseplan fast so schnell wie ein Carno.",
+  "summary": "Der Gallimimus ist ein lauter, schneller Allesfresser, der nicht kämpft, sondern rennt. Je mehr Nährstoffe er gefüllt hat, desto schneller ist er, mit allen dreien läuft er über 55 km/h. Im Schwarm zieht der Anführer schwächere Tiere mit, und mit dem Mobilisierungsruf wird der ganze Schwarm kurz schneller. Er gräbt Frösche, Krabben und Compys aus ihren Bauen.",
+  "stats": {
+    "adultWeightKg": 535,
+    "primeWeightKg": 560,
+    "sprintKmh": 45.6,
+    "bite": 25,
+    "groupLimit": 8,
+    "nest": "mound",
+    "eggs": 6,
+    "hungerMinutes": 45,
+    "thirstMinutes": 45,
+    "growthMinutes": { "hatchling": 15, "juvenile": 80, "subadult": 110, "adult": 120 }
+  },
+  "nutrients": {
+    "alpha": ["Krabbe", "Variegated Orange", "Marigold", "Mountain Ash", "Banana", "Jackfruit"],
+    "beta": ["Ochsenfrosch", "Agave", "Sunchoke Flowers", "Radish Flower", "Fireweed", "Fiddlehead", "Trillium", "Crimson Apollan"],
+    "gamma": ["Pumpkin", "Radish Root", "Violet Apollan", "Papaya", "Brazil Nuts"]
+  },
+  "behavior": {
+    "essence": "Ein Läufer der offenen Ebene: Je besser du isst, desto schneller rennst du, und Rennen ist dein einziger Schutz.",
+    "traits": { "activity": "Tagaktiv", "range": "Streift über die Ebenen", "social": "Schwarm", "rest": "Kurze Nachtruhe im Offenen" },
+    "needs": "Du brauchst offene Ebenen, auf denen du dein Tempo ausspielst, und alle drei Nährstoffe, denn davon hängt dein Tempo ab: ohne Nährstoffe knapp 47 km/h, mit allen dreien über 55. Auf Grasland wachsen Agaven, Topinambur, Kürbisse und Orangen, im Dschungel und in den Highlands der Rest. Mit Q findest du Baue, aus denen du Frösche, Krabben und Kompys gräbst. Magen und Durst halten 45 Minuten.",
+    "threats": [
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "high",
+        "where": "Auf offenen Ebenen.",
+        "answer": "Voll ernährt bist du nur 0,2 km/h langsamer als er. Lauf los, bevor er springt, denn du brauchst 3 Sekunden bis Vollgas."
+      },
+      {
+        "name": "Herrerasaurus",
+        "id": "herrerasaurus",
+        "level": "high",
+        "where": "Im Dschungel, aus den Bäumen.",
+        "answer": "Er springt von oben, bevor du Tempo hast. Den Dschungel betrittst du nur am Rand."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Am Waldrand und zwischen Felsen.",
+        "answer": "Er springt dich an, bevor du losrennst. Halte Abstand zu Gebüsch und Felsen, aus denen er kommen kann."
+      },
+      {
+        "name": "Dilophosaurus",
+        "id": "dilophosaurus",
+        "level": "medium",
+        "where": "In Wäldern und in der Dämmerung.",
+        "answer": "Sein Gift trübt deine Sicht. Wer nicht sieht, wohin er rennt, verliert seinen einzigen Schutz."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "An Ufern.",
+        "answer": "Am Wasser stehst du still, und Stillstand ist für dich das Gefährlichste. Kurz trinken, Blick aufs Wasser, weiter."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Jeder gefüllte Nährstoff macht dich schneller, bis über 55 km/h.",
+        "so": "Ausgewogenes Fressen ist deine Lebensversicherung. Fehlt ein Nährstoff, holst du ihn sofort, auch wenn das einen Ausflug bedeutet."
+      },
+      {
+        "because": "Auf freier Fläche bist du fast so schnell wie der schnellste Jäger, zwischen Bäumen erwischt dich jeder Springer.",
+        "so": "Du lebst auf offenen Ebenen und Grasland. In den Dschungel gehst du nur kurz für Früchte, nie zum Rasten."
+      },
+      {
+        "because": "Du brauchst 3 Sekunden bis Höchsttempo.",
+        "so": "Deine Fluchtdistanz ist groß. Du rennst, sobald du einen Jäger siehst, nicht erst, wenn er losläuft."
+      },
+      {
+        "because": "Im Dschungel hörst du manchmal Schritte und knackende Äste, die gar nicht da sind.",
+        "so": "Dort bist du nervös und trennst echte von falschen Geräuschen schlecht. Ein Grund mehr, das offene Land zu bevorzugen."
+      },
+      {
+        "because": "Der Anführer mit der besten Ernährung zieht schwächere Tiere mit, und der Ruf auf Taste 1 macht den Schwarm kurz schneller.",
+        "so": "Ihr lebt im Schwarm und folgt dem am besten ernährten Tier. Auf der Flucht ruft es, und alle rennen gemeinsam."
+      },
+      {
+        "because": "Magen und Durst halten 45 Minuten, eine Nacht dauert 30.",
+        "so": "Du schläfst nur kurz. Vor der Nacht frisst du dich voll, gegen Morgen grabt ihr in der Ebene nach Fröschen und Krabben."
+      }
+    ],
+    "home": "Dein Land ist die offene Ebene: Grasland mit Agaven, Topinambur, Kürbissen und Orangen, weite Wiesen, auf denen du einen Jäger von weitem siehst. Am Rand liegen Dschungel und Highlands für die übrigen Nährstoffe und Bäche oder Seen mit flachen Ufern. Gute Rastplätze liegen mitten in der Ebene, weit weg von Gebüsch und Waldrand, sodass ein Jäger erst übers Offene muss, bevor er dich erreicht. Dichte Wälder, Schluchten und Sümpfe meidest du.",
+    "day": [
+      { "phase": "dawn", "text": "Der Schwarm trinkt an einem flachen Ufer und gräbt Frösche und Krabben aus ihren Bauen." },
+      { "phase": "day", "text": "Ihr streift über die Ebene und frisst. Fehlt ein Nährstoff, macht ihr einen kurzen Ausflug an den Dschungelrand oder in die Hügel und kehrt sofort zurück." },
+      { "phase": "dusk", "text": "Satt fressen und trinken, damit dein Tempo die ganze Nacht hält. Dann zurück in die offene Ebene." },
+      { "phase": "night", "text": "Ihr ruht mitten in der Ebene, nicht im Gebüsch, und loggt dort aus. Ihr seid laut: Hört einer etwas, weiß es der ganze Schwarm." }
+    ],
+    "group": "Bis zu acht Gallis bilden einen Schwarm. An der Spitze läuft das Tier mit der besten Ernährung, denn in seiner Nähe werden die anderen schneller. Auf der Flucht ruft es mit Taste 1, und der ganze Schwarm zieht an. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt in der offenen Ebene mit Blick in alle Richtungen. Die Jungen betteln nur 15 Minuten. Danach laufen sie mit dem Schwarm und lernen als Erstes: Wer zuerst rennt, überlebt.",
+    "analog": {
+      "animals": "Strauß",
+      "text": "Strauße leben in offenen Savannen, fressen Pflanzen und kleine Tiere und vertrauen auf ihr Tempo. Sie ziehen in lockeren Trupps, schauen ständig in die Runde und rennen früh. Mit kräftigen Tritten wehren sie sich nur, wenn sie müssen. Wie der Strauß bist du laut und gut zu sehen, und deine Antwort auf Gefahr ist Abstand."
+    }
+  },
+  "hunt": {
+    "title": "Futtersuche & Gefahr",
+    "text": "Dich jagen Rexe, Carnos, Deinos, Dilos, Herreras und Omnis. Deine Antwort ist Tempo, und das hängt an deiner Ernährung: Ohne Nährstoffe läufst du knapp 47 km/h, mit einem gut 49, mit zwei fast 53 und mit allen dreien über 55 km/h, nur 0,2 km/h langsamer als ein ausgewachsener Carno. Bis zur Höchstgeschwindigkeit brauchst du etwa 3 Sekunden, also lauf rechtzeitig los. Anlauf vor einem Sprung macht ihn weiter. Wehren kannst du dich mit Fußkrallen: im Stand gezielt in Kamerarichtung, im Lauf mit kleinem Rückstoß und im Sprung frontal. Kleine Gegner kannst du mit einem Tritt aus dem Lauf auch umwerfen. Das sind Notlösungen, deine eigentliche Verteidigung bleibt die Flucht."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Nur 15 Minuten Betteln, dann läufst du schon über 21 km/h. Bleib trotzdem im Schwarm, denn mit der Ernährung deiner Eltern startest du gleich schneller." },
+    { "stage": "juvenile", "text": "Du spawnst mit knapp 13 kg und fast 47 km/h. Gut 80 Minuten lang füllst du deine drei Nährstoffe, denn jeder macht dich schneller. Ins Sanctuary, Baue ausgraben, schnell weiter." },
+    { "stage": "subadult", "text": "Fast zwei Stunden lang wächst du auf 535 kg. Halte alle drei Nährstoffe voll, so bleibst du über 55 km/h. Such dir einen Schwarm." },
+    { "stage": "adult", "text": "535 kg, mit vollem Speiseplan fast Carno-Tempo. Als Prime Elder steigt dein Grundtempo bis 87,5 % auf bis zu 54 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB (im Stand)", "name": "Krallentritt", "text": "Tritt mit einem Fuß in Kamerarichtung, du bleibst dabei stehen." },
+    { "keys": "RMB (im Stand)", "name": "Tiefer Biss", "text": "Biss nach unten in Kamerarichtung." },
+    { "keys": "LMB oder RMB (im Lauf)", "name": "Lauftritt", "text": "Tritt mit linkem oder rechtem Fuß, kleiner Rückstoß. Kostet Ausdauer." },
+    { "keys": "LMB oder RMB (im Sprung)", "name": "Sprungtritt", "text": "Frontaler Tritt in der Luft. Kostet Ausdauer." },
+    { "keys": "Alt + LMB", "name": "Richtungskralle", "text": "Krallenhieb in Kamerarichtung, du bleibst dabei stehen." },
+    { "keys": "1", "name": "Mobilisierungsruf", "text": "Macht Schwarmmitglieder in der Nähe kurz schneller. Ohne Abklingzeit, wirkt nicht allein." },
+    { "keys": "Q halten + E halten", "name": "Baue ausgraben", "text": "Baue erschnuppern und Frösche, Krabben und Compys ausgraben." }
+  ],
+  "tips": [
+    "Jeder gefüllte Nährstoff macht dich schneller, bis über 55 km/h.",
+    "3 Sekunden bis Vollgas: Lauf los, bevor der Jäger springt.",
+    "Taste 1 mobilisiert den Schwarm."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Gallimimus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-omnivores/gallimimus" },
+    { "label": "Evrima Quick Guide – Rudel & Herden", "url": "https://www.evrimaquickguide.com/gameplay/group-play/packs-herds" }
+  ]
+}

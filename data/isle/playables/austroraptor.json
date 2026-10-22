@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "austroraptor",
+  "name": "Austroraptor",
+  "nickname": "Austro",
+  "diet": "carnivore",
+  "role": "Ansitzfischer an stillen Gewässern",
+  "order": 10,
+  "since": "Patch 0.21.772 (August 2026)",
+  "tagline": "Halb Raptor, halb Reiher: fischt am Ufer und springt aus dem Wasser.",
+  "summary": "Der Austroraptor ist das neueste Tier im Spiel. Er ist ein schneller, gefiederter Räuber, der an Land und im Wasser gleich gut zurechtkommt. Er fischt am Ufer wie der Pteranodon, schießt aus dem Wasser hoch und nagelt kleinere Beute mit einem Sprung fest. In einem offenen Kampf gegen gleich große Gegner ist er schwach, er lebt von Überraschung und Wasser.",
+  "stats": {
+    "adultWeightKg": 240,
+    "primeWeightKg": 350,
+    "sprintKmh": 48.1,
+    "bite": 40,
+    "groupLimit": 8,
+    "nest": "debris",
+    "eggs": 4,
+    "hungerMinutes": 75,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": null, "juvenile": null, "subadult": null, "adult": null }
+  },
+  "nutrients": {
+    "alpha": ["Krabbe", "Schwarmfisch", "Muschel"],
+    "beta": ["Hypsilophodon", "Deinosuchus", "Ochsenfrosch", "Huhn", "Hase"],
+    "gamma": ["Beipiaosaurus", "Elite-Fisch", "Psittacosaurus", "Meeresschildkröte"]
+  },
+  "behavior": {
+    "essence": "Ein Ansitzfischer: Du suchst dir einen abgelegenen, sicheren Angelplatz und verlässt ihn kaum noch.",
+    "traits": { "activity": "Tagaktiv", "range": "Sesshaft", "social": "Allein oder als Paar", "rest": "Schläft nachts durch" },
+    "needs": "Fast alles, was du brauchst, kommt zu dir: Beim Speerfischen schwimmen Fische heran, im Schlamm findest du Muscheln, am Ufer Krabben und Ochsenfrösche. Damit deckt ein einziger guter Platz deine Kohlenhydrate (α) und Proteine (β). Für die Fette (γ) brauchst du ab und zu ein Psittacosaurus, eine Meeresschildkröte, einen Elite-Fisch oder einen jungen Beipiaosaurus. Dazu kommt harter Fels, an dem du Muscheln aufschlägst, und ein Schlafplatz, an den nachts niemand herankommt. Knochen kannst du nicht fressen, Kadaverreste anderer Jäger bringen dir also wenig.",
+    "threats": [
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "Im Wasser, vor allem in großen, tiefen und trüben Flüssen, Seen und Sümpfen.",
+        "answer": "Ein ausgewachsener Deino packt dich, bevor du ihn siehst, und zieht dich unter Wasser. Fisch nur dort, wo du bis auf den Grund schauen kannst, und geh nachts nicht ins Wasser."
+      },
+      {
+        "name": "Jäger in deinem Rücken",
+        "level": "high",
+        "where": "Am Ufer, während du in der Speerfisch-Haltung aufs Wasser starrst.",
+        "answer": "Omniraptoren, Allosaurier, Carnos und Dilos sind schwerer als du und kommen aus dem Ufergebüsch. Fisch von einem Platz, an den sich niemand unbemerkt anschleicht, und flieh ins Wasser oder auf deinen Stein, nicht ins offene Land."
+      },
+      {
+        "name": "Troodon-Rudel",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts im Unterholz und entlang der Ufer.",
+        "answer": "Ein Rudel vergiftet dich im Schlaf. Schlaf erhöht auf Fels mit dem Rücken zur Wand, nie im dichten Gebüsch."
+      },
+      {
+        "name": "Beipiaosaurus-Gruppen",
+        "id": "beipiaosaurus",
+        "level": "medium",
+        "where": "Im Wasser, wenn sie zu mehreren unterwegs sind.",
+        "answer": "Ein einzelner junger Beipi ist Beute, eine ganze Gruppe reißt dir im Wasser blutende Wunden. Raus aufs Trockene, an Land sind sie langsam."
+      },
+      {
+        "name": "Elite-Fische",
+        "level": "low",
+        "where": "In Flüssen und Sümpfen.",
+        "answer": "Für dich als Jungtier tödlich, denn sie fressen kleine Dinosaurier. Als Juvenile fischst du vom Ufer aus und schwimmst nicht in tiefem Flusswasser."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Speerfischen klappt nur am Tag, und nachts siehst du unter Wasser kaum etwas.",
+        "so": "Du bist tagaktiv. Der Tag gehört dem Fischen, nachts hast du im Wasser nichts verloren."
+      },
+      {
+        "because": "Ein guter Platz liefert immer wieder Fisch, Muscheln und Krabben. Du musst der Nahrung nicht hinterherlaufen.",
+        "so": "Du bist sesshaft. Jeder Weg über Land ist ein Risiko, das du nicht eingehen musst."
+      },
+      {
+        "because": "Deinos liegen dort, wo das Wasser tief und trüb ist: in großen Flüssen, Seen und Sümpfen.",
+        "so": "Du meidest die großen Flussregionen und suchst kleine, klare, abgeschnittene Gewässer: Tümpel, Becken unter Wasserfällen, Bachabschnitte zwischen Felsen."
+      },
+      {
+        "because": "In der Speerfisch-Haltung schaust du aufs Wasser, nicht auf das Land hinter dir.",
+        "so": "Du fischst von Steinen oder Stämmen im Wasser oder von hohen Felsen am Ufer. Dorthin kommt kein Landjäger unbemerkt, und mit deiner Sprungweite bist du trotzdem schnell oben."
+      },
+      {
+        "because": "Dein Magen hält 75 Minuten, eine Nacht dauert auf offiziellen Servern nur 30 Minuten.",
+        "so": "Frisst du dich abends satt, schläfst du die ganze Nacht durch. Das kannst du dir leisten, viele kleine Tiere nicht."
+      },
+      {
+        "because": "Du bist leicht und verlierst jeden offenen Kampf gegen gleich schwere Jäger.",
+        "so": "Du kämpfst nie um deinen Platz. Kommt etwas Großes, springst du ins Wasser oder auf deinen Stein und wartest, bis es weiterzieht. Dann kommst du zurück."
+      },
+      {
+        "because": "Junge Deinos stehen als Proteine (β) auf deinem Speiseplan.",
+        "so": "Taucht ein kleiner Deino in deinem Tümpel auf, frisst du ihn, bevor er groß wird. So bleibt dein Platz sicher."
+      }
+    ],
+    "home": "Der perfekte Platz ist ein kleines, klares Gewässer abseits der großen Flüsse: ein Tümpel, ein Becken unter einem Wasserfall oder ein Bachabschnitt zwischen Felsen. Das Wasser ist so flach und hell, dass du bis auf den Grund siehst und sich kein Deino darin verstecken kann. Im oder am Wasser liegen Steine, ein umgestürzter Stamm oder ein hoher Felsen, von denen aus du fischst. Daneben gibt es Schlamm für Muscheln und harten Fels, um sie zu öffnen. Am besten ist der Platz von Felsen oder dichtem Gelände eingerahmt, sodass es nur wenige Zugänge gibt, die du beim Fischen im Blick hast. In der Nähe leben Hühner und Hasen (β) und Psittacosaurier (γ). Hast du so einen Platz gefunden, gibst du ihn nicht wieder her.",
+    "day": [
+      { "phase": "dawn", "text": "Mit dem ersten Licht prüfst du deinen Platz: Spuren am Ufer, Schatten im Wasser. Erst wenn alles ruhig ist, steigst du auf deinen Stein und fängst an zu fischen." },
+      { "phase": "day", "text": "Du fischst in Ruhe, bis α und β gefüllt sind, und schlägst Muscheln am Fels auf. Einmal am Tag gehst du kurz an Land und holst dir mit einem Sprung ein Huhn, einen Hasen oder ein Psittacosaurus, ohne dich weit vom Wasser zu entfernen." },
+      { "phase": "dusk", "text": "Vor Sonnenuntergang frisst und trinkst du dich voll, denn bis zum Morgen gibt es nichts mehr. Dann verlässt du das Wasser." },
+      { "phase": "night", "text": "Du schläfst erhöht auf Fels mit dem Rücken zum Stein, nah am Platz, aber außerhalb der Reichweite eines Deinos. Dort loggst du auch aus. Nachts fischst du nicht und schwimmst nicht." }
+    ],
+    "group": "Acht Austroraptoren dürfen eine Gruppe bilden, aber ein kleiner Tümpel ernährt nur ein oder zwei Fischer. Realistisch lebst du allein oder als Paar: Einer fischt, der andere hält Wache und warnt mit einem Ruf. Euer Reisignest mit bis zu 4 Eiern baut ihr in Sichtweite des Angelplatzes, aber ein Stück vom Wasser weg, denn Elite-Fische und Deinos fressen kleine Tiere. Der Platz wird so zur Kinderstube: Fisch ist immer in der Nähe, und ihr füttert die Jungen, ohne weit zu laufen. Bis sie Sub-Adult sind, halten sie sich vom tiefen Wasser fern.",
+    "analog": {
+      "animals": "Graureiher",
+      "text": "Der Graureiher steht reglos an seinem Angelplatz, am liebsten auf einem Stein oder Pfahl im flachen Wasser, und jagt nebenbei Frösche und Mäuse an Land. Anders als er kannst du nicht wegfliegen: Deine Flucht führt ins Wasser oder auf deinen Felsen."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Tagsüber gehst du mit G an Wasser oder Schlamm in die Speerfisch-Haltung. Fische und Muscheln schwimmen heran, und wenn eines markiert ist, schnappst du mit der linken Maustaste zu. Muscheln öffnest du, indem du sie auf harten Fels schlägst. Nachts funktioniert das nicht. Zur Jagd auf Land nutzt du den Sprung mit der rechten Maustaste: Er nagelt kleinere Beute fest wie beim Omniraptor, danach beißt du in Ruhe zu. Aus dem Schwimmen an der Oberfläche schießt du mit der Leertaste aus dem Wasser, ideal, um Tiere am Ufer zu überraschen. Du kannst auch im Sprung angreifen. Stell dich nicht gegen gleich schwere oder schwerere Jäger, sondern verschwinde im Wasser oder im Ufergebüsch."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Bleib im Nest und bei den Eltern und lass dich füttern. Ihre Ernährung geht auf dich über." },
+    { "stage": "juvenile", "text": "Mit 12 kg bist du klein. Bleib nah am Wasser, fang Krabben und Frösche und probier tagsüber das Speerfischen. Für Prime helfen ein Sanctuary, Patrol-Zonen und eine volle Ernährung aus Krabben (α), Fröschen (β) und Psittacosauriern oder Schildkröten (γ)." },
+    { "stage": "subadult", "text": "Von 120 auf 240 kg und bis 48 km/h. Jetzt nagelst du Hypsis und Psittacosaurier fest und kannst junge Beipiaosaurier im Wasser jagen." },
+    { "stage": "adult", "text": "240 kg und 40 Biss: Ein flinker Uferjäger, kein Kämpfer. Als Prime Elder wächst du bis 87,5 % auf 350 kg und über 55 km/h." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss, auch im Sprung." },
+    { "keys": "Alt + LMB", "name": "Richtungsbiss", "text": "Biss in Kamerarichtung." },
+    { "keys": "RMB", "name": "Sprung & Festnageln", "text": "Springt auf das Ziel und nagelt kleinere Tiere fest, ähnlich wie beim Omniraptor." },
+    { "keys": "Leertaste (im Wasser)", "name": "Wassersprung", "text": "Springt beim Schwimmen an der Oberfläche aus dem Wasser. Du kannst in der Luft angreifen." },
+    { "keys": "G", "name": "Speerfischen", "text": "Nur tagsüber: Haltung am Wasser, die Fische und Muscheln anlockt. Markierte Ziele fängst du mit LMB." }
+  ],
+  "tips": [
+    "Speerfischen geht nur tagsüber.",
+    "Muscheln auf Fels schlagen, um sie zu öffnen.",
+    "Bei Gefahr ins Wasser oder ins Ufergebüsch, nicht kämpfen."
+  ],
+  "notes": ["Neue Art: Wachstumszeiten sind noch nicht verlässlich erfasst, Werte können sich mit Patches ändern."],
+  "sources": [
+    { "label": "Steam: Patch 0.21.772", "url": "https://steamcommunity.com/app/376210/discussions/14/581678695778878798/" },
+    { "label": "Evrima Quick Guide – Austroraptor", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/austroraptor" }
+  ]
+}

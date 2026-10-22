@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "source": "curated",
+  "language": "de",
+  "id": "carnotaurus",
+  "name": "Carnotaurus",
+  "nickname": "Carno",
+  "diet": "carnivore",
+  "role": "Sprinter der Ebenen",
+  "order": 3,
+  "tagline": "Das schnellste Raubtier: Sprint, Rammstoß, Biss.",
+  "summary": "Der Carnotaurus ist das schnellste Raubtier der Insel und für offenes Gelände gebaut. Mit seinem aufgeladenen Kopfstoß wirft er Beute um oder bringt sie ins Wanken und beißt dann zu. Im Wald dreht er zu langsam, und seine Ausdauer lädt in Bewegung schlecht nach, deshalb jagt er in kurzen, entschlossenen Sprints über freie Flächen.",
+  "stats": {
+    "adultWeightKg": 1300,
+    "primeWeightKg": 1800,
+    "sprintKmh": 49.5,
+    "bite": 150,
+    "groupLimit": 3,
+    "nest": "debris",
+    "eggs": 3,
+    "hungerMinutes": 75,
+    "thirstMinutes": 60,
+    "growthMinutes": { "hatchling": 40, "juvenile": 90, "subadult": 120, "adult": 210 }
+  },
+  "nutrients": {
+    "alpha": ["Pachycephalosaurus", "Tenontosaurus", "Herrerasaurus", "Wildschwein"],
+    "beta": ["Omniraptor", "Diabloceratops", "Troodon", "Hirsch"],
+    "gamma": ["Dryosaurus", "Gallimimus", "Maiasaura"]
+  },
+  "behavior": {
+    "essence": "Ein Sprinter des offenen Landes: Du beobachtest von oben, rennst einmal entschlossen los und ruhst danach.",
+    "traits": { "activity": "Tagaktiv", "range": "Weit umherstreifend", "social": "Paar oder Trio", "rest": "Schläft nachts im Offenen" },
+    "needs": "Du brauchst freie Flächen, auf denen du dein Tempo ausspielst, und die Beute, die dort lebt: Gallimimus, Dryosaurier und Maiasaurier (γ), Hirsche, Diabloceratops, Omniraptoren und Troodons (β), Pachys, Tenontosaurier, Herrerasaurier und Wildschweine (α). Dazu Hügel oder Waldränder mit Überblick und Zeit zum Ausruhen, denn deine Ausdauer lädt in Bewegung schlecht nach. Dein Magen hält 75 Minuten, eine gute Beute reicht also eine Weile.",
+    "threats": [
+      {
+        "name": "Omniraptor-Rudel",
+        "id": "omniraptor",
+        "level": "high",
+        "where": "Im Wald und überall, wo sie zu dritt oder mehr auftauchen.",
+        "answer": "Sie springen dir auf den Rücken und reißen dich zu Boden. Abwerfen mit E, dann wegsprinten. Gegen drei oder mehr kämpfst du nicht."
+      },
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "An Wasserstellen und Waldrändern, aus dem Hinterhalt.",
+        "answer": "Ein Crush tötet dich. Halte Abstand zu Waldrändern, an denen ein Rex stehen könnte. Auf freier Fläche holt er dich nie ein."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Wenn ein Trio dich in die Enge treibt.",
+        "answer": "Zu dritt nageln sie dich fest. Lass dich nicht in Wald oder Senken drängen, wo du nicht wenden kannst."
+      },
+      {
+        "name": "Troodon-Rudel",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts, wenn du im Dickicht schläfst.",
+        "answer": "Ein Rudel vergiftet dich, bevor du aufstehst. Du schläfst im Offenen, wo du sie kommen siehst."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Am Ufer.",
+        "answer": "Mit 1,3 Tonnen passt du locker in seinen Griff. Trink an flachen Stellen mit Rundumblick."
+      },
+      {
+        "name": "Ceratosaurus",
+        "id": "ceratosaurus",
+        "level": "low",
+        "where": "An Kadavern.",
+        "answer": "Am Kadaver steckt er bis zur Hälfte weniger Schaden ein und macht dich mit Bakterien krank. Um einen Kadaver streitest du nicht mit ihm, du jagst neu."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Du bist das schnellste Raubtier, wendest aber im Lauf schlecht.",
+        "so": "Du lebst auf Ebenen, Grasland und breiten Ufern. Im Wald, wo Beute hinter Bäumen abschlägt, jagst du nicht."
+      },
+      {
+        "because": "Deine Ausdauer lädt nur im Stehen oder Liegen ordentlich nach.",
+        "so": "Du läufst nicht ziellos herum. Du suchst von Hügeln aus nach Beute, sprintest einmal und ruhst danach, bis die Ausdauer wieder voll ist."
+      },
+      {
+        "because": "Gallimimus mit voller Ernährung sind fast so schnell wie du.",
+        "so": "Eine lange Verfolgung gewinnst du nicht. Du schleichst dich so nah wie möglich heran, damit dein Kopfstoß sitzt, bevor die Beute Höchsttempo erreicht."
+      },
+      {
+        "because": "Auf freier Fläche siehst du weit, im Dunkeln nicht.",
+        "so": "Du jagst bei Tageslicht. Nachts liegst du im Offenen mit freier Sicht, wo sich kein Rudel ungesehen nähert."
+      },
+      {
+        "because": "Gegen drei oder mehr Omnis oder ein Allo-Trio verlierst du, aber du fliehst besser als jeder andere.",
+        "so": "Du bist mutig, aber nicht dumm: Bei Überzahl rennst du, und zwar ins offene Gelände, nie in den Wald."
+      },
+      {
+        "because": "Die Läufer der Ebene ziehen umher, Herden wechseln zwischen Migrationszonen.",
+        "so": "Du streifst weit umher und folgst der Beute, statt ein festes Revier zu halten."
+      }
+    ],
+    "home": "Dein Land ist offen: Grasland, weite Ebenen, breite Kiesufer und lichte Hügel. Ein guter Platz hat eine Erhebung mit Blick über die Fläche, einen Waldrand, an dem du dich zum Anschleichen versteckst, und eine flache Trinkstelle mit Rundumblick. Dichte Wälder, Sümpfe und enge Schluchten meidest du, dort verlierst du deinen einzigen Vorteil. Geschlafen wird im Offenen auf einer leichten Anhöhe, wo du jeden Angreifer früh siehst und in jede Richtung losrennen kannst.",
+    "day": [
+      { "phase": "dawn", "text": "Du steigst auf deinen Aussichtshügel und suchst die Ebene nach Herden und Einzelgängern ab. Danach trinkst du an einer offenen Stelle." },
+      { "phase": "day", "text": "Hast du ein Ziel, schleichst du dich über den Waldrand heran, sprintest los, wirfst es mit dem Kopfstoß um und beißt nach. Danach fressen, trinken und hinlegen, bis die Ausdauer voll ist." },
+      { "phase": "dusk", "text": "Letzte Jagd des Tages, solange du noch weit sehen kannst. Wer nicht satt ist, frisst jetzt." },
+      { "phase": "night", "text": "Du schläfst im Offenen auf einer Anhöhe mit freier Sicht und loggst dort aus. In den Wald gehst du nachts nicht, dort warten Rudel auf Tiere wie dich." }
+    ],
+    "group": "Bis zu drei Carnos dürfen zusammen sein, meist ein Paar mit einem Jungtier oder ein kleines Jagdtrio. Ihr jagt nebeneinander: Einer treibt die Beute auf den anderen zu, der aus der Deckung startet. Euer Reisignest mit bis zu 3 Eiern liegt am Rand der Ebene im ersten Gebüsch vor dem Wald, damit ihr von dort aus jagen könnt. Die Jungen betteln nur 40 Minuten und spawnen danach mit fast 500 kg, schnell genug, um mitzulaufen. Ab dann gilt für sie dasselbe wie für dich: Freie Fläche ist Sicherheit.",
+    "analog": {
+      "animals": "Gepard",
+      "text": "Der Gepard lebt in offenen Savannen, späht von Erhebungen aus, sprintet kurz und muss sich danach lange erholen. Größeren Räubern weicht er aus und überlässt ihnen sogar seine Beute. Anders als er wirfst du deine Beute mit einem Kopfstoß um, und gegen Kleinere wehrst du dich durchaus."
+    }
+  },
+  "hunt": {
+    "title": "Jagd",
+    "text": "Klassische Carno-Jagd: Anpirschen, aus dem Sprint den Kopfstoß aufladen (rechte Maustaste halten, dann linke drücken) und das Ziel umwerfen. Ein länger aufgeladener Stoß wirft auch schwerere Tiere um, bei deutlich größeren reicht es nur für ein Taumeln. Liegt die Beute, setzt du mit Bissen nach, bevor sie aufsteht. Gallimimus mit voller Ernährung sind fast so schnell wie du. Bei ihnen zählt der Überraschungsmoment, eine lange Verfolgung gewinnst du nicht. Gegen kleine, flinke Gegner am Boden hilft der schnelle, tiefe Biss mit Alt und linker Maustaste. Springt dir ein Omniraptor auf den Rücken, wirfst du ihn mit gehaltenem E ab. Allein gegen drei oder mehr Omnis solltest du dich nicht stellen, sondern fliehen, denn das kannst du besser als jeder andere."
+  },
+  "growth": [
+    { "stage": "hatchling", "text": "Nur 40 Minuten: Bleib bei den Eltern und bettle regelmäßig, damit du ihre Ernährung übernimmst." },
+    { "stage": "juvenile", "text": "Du spawnst schon mit knapp 500 kg und über 43 km/h, als Juvenile bist du für viele Jäger also kein leichtes Ziel. Jag Hirschkitze und Wildschweine und probiere den Kopfstoß an kleinen Dryosauriern aus. Besuche ein Sanctuary für die Prime-Bedingungen, auch wenn du dort wegen der Bienen nicht lange bleiben kannst." },
+    { "stage": "subadult", "text": "Zwei Stunden lang wächst du auf 1,3 Tonnen und fast 50 km/h. Jetzt jagst du Dryosaurier, Gallimimus und junge Pachys. Achte darauf, alle drei Nährstoffe gefüllt zu halten, denn mit 300 % Wachstumstempo ist diese Phase schnell vorbei." },
+    { "stage": "adult", "text": "Mit 1,3 Tonnen bist du kein Schwergewicht, aber ein Albtraum für alles bis zur Größe eines Tenontosaurus. Als Prime Elder bekommst du bis 87,5 % noch 500 kg und rund 6 km/h dazu und bist mit über 55 km/h das schnellste Raubtier im Spiel." }
+  ],
+  "abilities": [
+    { "keys": "LMB", "name": "Biss", "text": "Normaler Biss." },
+    { "keys": "Alt + LMB", "name": "Schneller Tiefbiss", "text": "Schnellerer Biss, der tiefer zum Boden geht. Kostet Ausdauer und eignet sich gegen kleine Ziele und Aufsitzer." },
+    { "keys": "RMB halten + LMB", "name": "Kopfstoß", "text": "Laden mit gehaltener rechter Maustaste, auslösen mit linker. Geht im Stehen und im Lauf. Je nach Ladezeit und Gewichtsverhältnis wirft er das Ziel um oder bringt es ins Wanken. Danach folgt eine Abklingzeit." }
+  ],
+  "tips": [
+    "Jag über freie Flächen. Im Wald drehst du zu langsam.",
+    "Kopfstoß umwerfen, dann beißen: Liegende Beute kann sich nicht wehren.",
+    "Gegen drei oder mehr Omniraptoren lieber wegsprinten."
+  ],
+  "sources": [
+    { "label": "Evrima Quick Guide – Carnotaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-carnivores/carnotaurus" },
+    { "label": "Steam: Patch 0.21.321 (neuer Kopfstoß)", "url": "https://store.steampowered.com/news/app/376210/view/507348444540569206" }
+  ]
+}
