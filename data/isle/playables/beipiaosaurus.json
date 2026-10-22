@@ -27,21 +27,87 @@
     "beta": ["Ochsenfrosch", "Sumac", "Chanterelle", "Crimson Apollan", "Radish Flower", "Fireweed", "Fiddlehead", "Trillium", "Wild Potato Root"],
     "gamma": ["Russula", "Radish Root", "Violet Apollan", "Papaya", "Brazil Nuts", "Wild Potato Vine"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Du lebst in und an Flüssen, Seen und Sümpfen. Weil du sehr leicht bist, treibst du nach oben. Um am Grund zu bleiben, schwimmst du hinunter und krallst dich mit Strg fest, dann kannst du am Grund entlanglaufen und mit Sprint schneller werden. Unter Wasser hast du 1 Minute 45 Luft, an der Oberfläche schwimmst du etwa 750 Meter, unter Wasser 600. An Land dürstest du schnell, dein Wasser reicht dort nur 20 Minuten. Dein Speiseplan ist riesig, von Krabben, Fischen und Fröschen bis zu Dschungelfrüchten und Sumpfpflanzen."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Mit bis zu zwölf Tieren habt ihr die größte erlaubte Gruppe im Spiel. Euer Reisignest fasst bis zu 8 Eier. Weil ihr in knapp vier Stunden auswachst, könnt ihr an einem Abend eine ganze Generation großziehen."
+  "behavior": {
+    "essence": "Ein Flussbewohner: Du lebst am Grund, gräbst nach Krabben und tauchst nur auf, wenn du musst.",
+    "traits": { "activity": "Rund um die Uhr in kurzen Etappen", "range": "Sesshaft an einem Flussabschnitt", "social": "Große Familie", "rest": "Kurze Nickerchen im Flachwasser" },
+    "needs": "Du brauchst Wasser, und zwar ständig: An Land reicht dein Wasser nur 20 Minuten, dein Magen leert sich nach 30. Im Wasser findest du fast alles: Krabben am Grund, Fischschwärme und Ochsenfrösche. Am Ufer wachsen deine Pflanzen, von Sumach und Pfifferlingen im Sumpf bis zu Dschungelfrüchten. Unter Wasser hast du 1:45 Minuten Luft, und weil du so leicht bist, treibst du nach oben, wenn du dich nicht am Grund festkrallst.",
+    "threats": [
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "In tiefen, trüben Flüssen und Sümpfen.",
+        "answer": "Ein Deino frisst dich mit einem Biss. Du lebst in Gewässern, in denen du bis zum Grund siehst und kein großer Deino liegt."
+      },
+      {
+        "name": "Elite-Fische",
+        "level": "high",
+        "where": "In Flüssen und Sümpfen.",
+        "answer": "Sie fressen kleine Dinosaurier. Am Grund im Seegras bist du versteckt, im offenen Wasser bist du Futter."
+      },
+      {
+        "name": "Austroraptor",
+        "id": "austroraptor",
+        "level": "medium",
+        "where": "An klaren Tümpeln und Bächen, in denen er fischt.",
+        "answer": "Für ihn bist du Fett (γ). Allein meidest du seinen Angelplatz, als Gruppe reißt ihr ihm im Wasser blutende Wunden."
+      },
+      {
+        "name": "Pteranodon",
+        "id": "pteranodon",
+        "level": "medium",
+        "where": "An der Wasseroberfläche.",
+        "answer": "Er frisst Beipis. Aufgetaucht wird gemeinsam und kurz. Tief tauchen, hoch springen, und ihr erwischt ihn selbst."
+      },
+      {
+        "name": "Jäger an Land",
+        "level": "medium",
+        "where": "Am Ufer und auf Futtersuche an Land.",
+        "answer": "An Land bist du langsam und zerbrechlich, Rexe, Ceratos und Herreras holen dich ein. Du gehst nur kurz und nur ufernah an Land."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Magen hält 30 Minuten, genauso lang wie eine Nacht.",
+        "so": "Du kannst keine Nacht durchschlafen. Du frisst rund um die Uhr in kleinen Etappen und machst dazwischen kurze Nickerchen."
+      },
+      {
+        "because": "An Land reicht dein Wasser nur 20 Minuten, im Wasser findest du fast alles.",
+        "so": "Du lebst im Wasser und gehst nur kurz an Land, um Pflanzen zu fressen. Jeder Landgang endet wieder im Fluss."
+      },
+      {
+        "because": "Am Grund im Seegras bist du gut versteckt, an der Oberfläche treibst du sichtbar.",
+        "so": "Du bleibst festgekrallt am Grund und läufst dort entlang. Auftauchen ist eine Ausnahme, kein Zustand."
+      },
+      {
+        "because": "Deinos und Elite-Fische leben in großen, trüben Flüssen und Sümpfen.",
+        "so": "Dein Abschnitt ist ein klarer, mittelgroßer Fluss oder Bach mit Seegras, Krabbengrund und flachem Ufer. In Deino-Gewässer gehst du nicht."
+      },
+      {
+        "because": "Ein Abschnitt mit Krabbengrund liefert immer wieder Krabben, und dein Futter wächst am Ufer.",
+        "so": "Du bist sesshaft. Ihr bleibt an eurem Flussabschnitt, statt durch die Insel zu ziehen."
+      },
+      {
+        "because": "Bis zu zwölf Beipis dürfen eine Gruppe bilden, und eure Krallenhiebe lassen bluten.",
+        "so": "Allein bist du Beute, als Gruppe bist du gefährlich. Ihr schwimmt zusammen, taucht zusammen auf und greift Eindringlinge im Wasser gemeinsam an."
+      }
+    ],
+    "home": "Dein Zuhause ist ein Flussabschnitt mit klarem Wasser, Seegras am Grund und Krabben im Kies: ein mittelgroßer Fluss, ein Bach mit tiefen Becken oder der Rand eines klaren Sees. Am Ufer wachsen Pflanzen aus Sumpf und Dschungel, und die Böschung ist flach genug, um schnell hinaus und wieder hinein zu kommen. Tiefe, trübe Hauptarme und Sümpfe, in denen Deinos und Elite-Fische liegen, meidest du. Geruht wird im flachen Wasser am Ufer zwischen Seegras und Steinen, von wo du mit einem Zug wieder im tiefen Becken bist.",
+    "day": [
+      { "phase": "dawn", "text": "Du gräbst am Grund nach Krabben, folgst dem Blasen-Symbol und frisst dich nach der Nacht wieder satt." },
+      { "phase": "day", "text": "Du wechselst zwischen Grund und Ufer: Krabben und Fische im Wasser, Pflanzen am Ufer. An Land bleibst du nie lange, schon wegen deines Wassers." },
+      { "phase": "dusk", "text": "Die Gruppe sammelt sich. Ihr fresst gemeinsam am Ufer, einer bleibt im Wasser und hält Ausschau." },
+      { "phase": "night", "text": "Du machst nur kurze Nickerchen im Flachwasser und frisst zwischendurch, denn dein Magen hält keine ganze Nacht. Ans Ufer gehst du nachts nur, wenn du musst." }
+    ],
+    "group": "Mit bis zu zwölf Tieren habt ihr die größte erlaubte Gruppe im Spiel, und das passt: Ihr lebt wie eine große Otterfamilie am selben Flussabschnitt. Viele Augen sehen den Deino früher, viele Krallen vertreiben Austroraptoren. Euer Reisignest mit bis zu 8 Eiern liegt am Ufer eures Abschnitts, ein Stück oberhalb des Wassers im Gebüsch. Ihr wachst in knapp vier Stunden aus, an einem Abend zieht ihr also eine ganze Generation groß. Ochsenfrösche können die Jungen erst ab etwa 38 % tragen, bis dahin helft ihr ihnen beim Fressen.",
+    "analog": {
+      "animals": "Riesenotter",
+      "text": "Riesenotter leben in großen Familien an einem festen Flussabschnitt, fressen Krebse und Fische und vertreiben sogar Kaimane gemeinsam. Anders als Otter läufst du festgekrallt über den Grund, ähnlich wie eine Wasseramsel, und gräbst Krabben aus dem Kies."
     }
-  ],
+  },
   "hunt": {
     "title": "Futtersuche & Gefahr",
-    "text": "Krabben findest du am Flussgrund. Kralle dich fest, halte Q zum Schnuppern und folge dem Blasen-Symbol oben auf dem Kompass. Am Fundort steigen feine Bläschen auf. Halte dort E zum Graben, die Krabbe treibt dann nach oben, und eventuell musst du sie einmal anbeißen, bevor du sie greifen kannst. Durch Fischschwärme schwimmst du hindurch und schnappst zu. Ochsenfrösche kannst du ab etwa 38 % tragen und fressen. Dich jagen Rexe, Ceratos, Deinos, Herreras, Pteranodons und Austroraptoren, im Wasser vor allem Deinos und Elite-Fische. Am Grund im Seegras bist du gut versteckt. Mit gehaltener Leertaste springst du aus dem Wasser. Je tiefer du vorher tauchst, desto höher der Sprung, und mit Shift wirst du schneller. Alle Angriffe gehen auch im Sprung, so erwischst du sogar tief fliegende Pteranodons. An Land kratzt die linke Maustaste mit Blutung, im Wasser die rechte."
+    "text": "Krabben findest du am Flussgrund. Kralle dich fest, halte Q zum Schnuppern und folge dem Blasen-Symbol oben auf dem Kompass. Am Fundort steigen feine Bläschen auf. Halte dort E zum Graben, die Krabbe treibt dann nach oben, und eventuell musst du sie einmal anbeißen, bevor du sie greifen kannst. Durch Fischschwärme schwimmst du hindurch und schnappst zu. Ochsenfrösche kannst du ab etwa 38 % tragen und fressen. Dich jagen Rexe, Ceratos, Deinos, Herreras, Pteranodons und Austroraptoren, im Wasser vor allem Deinos und Elite-Fische. Am Grund im Seegras bist du gut versteckt. Mit gehaltener Leertaste springst du aus dem Wasser. Je tiefer du vorher tauchst, desto höher der Sprung, und mit Shift wirst du schneller. Alle Angriffe gehen auch im Sprung, so erwischst du sogar tief fliegende Pteranodons. An Land kratzt die linke Maustaste mit Blutung, im Wasser die rechte. An der Oberfläche schwimmst du etwa 750 Meter weit, unter Wasser 600, und am Grund läufst du festgekrallt mit Sprint schneller."
   },
   "growth": [
     { "stage": "hatchling", "text": "20 Minuten Betteln, am besten im flachen Wasser bei den Eltern. Du erbst die Ernährung dessen, der dich füttert. Tiefes Wasser meidest du noch, dort lauern Elite-Fische." },

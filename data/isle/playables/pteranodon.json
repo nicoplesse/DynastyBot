@@ -27,18 +27,89 @@
     "beta": ["Hypsilophodon", "Troodon", "Ochsenfrosch", "Huhn", "Hase"],
     "gamma": ["Beipiaosaurus", "Psittacosaurus", "Pterodactylus", "Meeresschildkröte"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Du lebst an Küsten, Seen und Flüssen, wo Fischschwärme springen, und schläfst an hohen Felswänden oder Baumstämmen. Dort klammerst du dich fest, lädst Ausdauer nach (wenn noch mindestens 20 % übrig sind) und kannst sogar fressen. Hohe Startpunkte sind wichtig: Läufst du über eine Kante, fliegst du automatisch los. Warmluft und Windströmungen geben dir Auftrieb ohne Ausdauerkosten. Mit gebrochenem Kopf oder Körper kannst du noch fliegen, mit gebrochenem Bein nicht. Aus Schlammlöchern kannst du nicht starten."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Bis zu sechs Pteranodons bilden einen Schwarm. Euer Reisignest fasst bis zu 4 Eier. Schlüpflinge betteln bis 18 % Wachstum und können noch keine Schwarmfische fangen. Ausgewachsene können Schlüpflinge und kleine Jungtiere tragen und so in Sicherheit bringen."
+  "behavior": {
+    "essence": "Ein Küstenflieger: Du lebst an Felswänden, fischst im Überflug und kommst nur auf den Boden, wenn es sein muss.",
+    "traits": { "activity": "Tagaktiv", "range": "Felsküste und Gewässer", "social": "Kolonie", "rest": "Schläft an der Felswand" },
+    "needs": "Du brauchst Höhe: Felswände oder hohe Stämme, an denen du dich festklammerst, Ausdauer lädst (solange noch mindestens 20 % übrig sind) und frisst, und Kanten, von denen du abhebst. Dazu Wasser mit springenden Fischen, Muscheln im Schlamm und Krabben an der Küste. Warmluft und Windströmungen tragen dich, ohne Ausdauer zu kosten. Dein Magen leert sich nach 50 Minuten, dein Wasser nach 45, du musst also oft fressen und trinken. Und du brauchst ein gesundes Bein, denn mit gebrochenem Bein fliegst du nicht.",
+    "threats": [
+      {
+        "name": "Deinos und Elite-Fische",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "Wenn du beim Fischen ins Wasser fällst.",
+        "answer": "Wer reinfällt, ist Futter. Halte beim Abschöpfen mit der Leertaste die Höhe und fisch über Wasser, in das du hineinsehen kannst."
+      },
+      {
+        "name": "Jäger am Boden",
+        "level": "high",
+        "where": "Sobald du landest.",
+        "answer": "Am Boden bist du langsam und zerbrechlich, fast alles frisst dich. Lande nur dort, wo du sofort wieder abheben kannst, und nie in einem Schlammloch, aus dem du nicht startest."
+      },
+      {
+        "name": "Beipiaosaurus",
+        "id": "beipiaosaurus",
+        "level": "medium",
+        "where": "Über Flüssen und Seen, wenn du tief fliegst.",
+        "answer": "Beipis springen aus dem Wasser und greifen dich in der Luft an. Fisch nicht über Gewässern, in denen eine Gruppe lebt."
+      },
+      {
+        "name": "Herrerasaurus",
+        "id": "herrerasaurus",
+        "level": "medium",
+        "where": "An Baumstämmen und Felsen in Waldnähe.",
+        "answer": "Er klettert dorthin, wo du dich festklammerst, und du stehst auf seinem Speiseplan. Schlaf an hohen Felswänden weit weg vom Wald."
+      },
+      {
+        "name": "Troodon",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts am Boden.",
+        "answer": "Troodons fressen Pteranodons. Nachts bist du nie am Boden, sondern hoch oben an der Wand."
+      }
+    ],
+    "logic": [
+      {
+        "because": "In der Luft holt dich fast nichts ein, am Boden fast alles.",
+        "so": "Du verbringst so wenig Zeit wie möglich am Boden. Gelandet wird zum Trinken und Speerfischen, und immer nahe einer Kante, von der du sofort abheben kannst."
+      },
+      {
+        "because": "An Felswänden und Stämmen klammerst du dich fest, lädst Ausdauer und kannst sogar fressen.",
+        "so": "Dein Zuhause ist eine hohe Felswand. Dort ruhst, frisst und schläfst du, unerreichbar für alles, was nicht klettern oder fliegen kann."
+      },
+      {
+        "because": "Speerfischen geht nur tagsüber, und im Dunkeln ist jeder Flugfehler über Wasser tödlich.",
+        "so": "Du bist tagaktiv. Nachts hängst du an deiner Wand und fliegst nicht."
+      },
+      {
+        "because": "Warmluft und Windströmungen tragen dich, ohne Ausdauer zu kosten.",
+        "so": "Du fliegst nicht kreuz und quer, sondern auf festen Wegen entlang der Küste und über Hänge, an denen Wind und Warmluft aufsteigen."
+      },
+      {
+        "because": "Herreras klettern auf Bäume und Felsen, Troodons jagen nachts am Boden.",
+        "so": "Dein Schlafplatz ist eine hohe, glatte Felswand an der Küste oder einer Schlucht, weit weg vom Wald, und kein Baumstamm."
+      },
+      {
+        "because": "Als Adult kannst du kleine Beute und Jungtiere tragen.",
+        "so": "Du frisst nicht am Boden. Hühner, Hasen und Frösche trägst du an deine Wand und frisst dort in Ruhe."
+      },
+      {
+        "because": "Dein Magen hält 50 Minuten, eine Nacht dauert 30.",
+        "so": "Vor Sonnenuntergang fischst du dich satt. Mit vollem Magen kommst du durch die Nacht, aber am Morgen ist die erste Runde übers Wasser Pflicht."
+      }
+    ],
+    "home": "Dein Zuhause ist eine Felsküste oder eine Schlucht mit Wasser darunter: hohe Wände zum Festklammern, Kanten zum Abheben, darunter Wasser mit Fischschwärmen, Schlamm mit Muscheln und Strände mit Krabben. Gut ist ein Platz, an dem Wind und Warmluft aufsteigen, sodass du ohne Ausdauerkosten in die Höhe kommst. Der Schlafplatz ist eine glatte Wand hoch über dem Boden, weit weg von Wäldern, aus denen Herreras klettern könnten. Fischgründe suchst du an klaren Gewässern ohne Deinos und Beipi-Gruppen. Weite Wälder und Ebenen überfliegst du, du lebst nicht dort.",
+    "day": [
+      { "phase": "dawn", "text": "Erster Flug: Du gleitest von deiner Wand übers Wasser und schöpfst Fische ab, bis der Magen wieder voll ist. Dann trinkst du an einer Stelle mit Kante in der Nähe." },
+      { "phase": "day", "text": "Du fischst im Überflug, stellst dich zum Speerfischen an flaches Wasser oder suchst Krabben am Strand. Kleinbeute trägst du an deine Wand. Kadaver anderer nutzt du nur mit großem Abstand zu ihren Besitzern." },
+      { "phase": "dusk", "text": "Letzte Fischrunde, dann trinken. Bevor es dunkel wird, bist du zurück an deiner Wand." },
+      { "phase": "night", "text": "Du hängst an der Felswand und schläfst, unerreichbar für alles am Boden. Dort loggst du auch aus. Fliegen im Dunkeln vermeidest du." }
+    ],
+    "group": "Bis zu sechs Pteranodons dürfen einen Schwarm bilden, und eine Felswand hat Platz für eine ganze Kolonie. Ihr ruht nebeneinander an derselben Wand, fischt aber jeder für sich, denn am Speerfischplatz schnappen andere Pteranodons dir den Fang weg. Euer Reisignest mit bis zu 4 Eiern liegt oben auf der Klippe oder auf einem Felsplateau, an das von unten nichts herankommt. Schlüpflinge betteln bis 18 % und können noch keine Schwarmfische fangen, also fischen die Eltern für sie. Droht Gefahr, tragt ihr Schlüpflinge und kleine Jungtiere davon.",
+    "analog": {
+      "animals": "Fregattvogel",
+      "text": "Der Fregattvogel lebt in Kolonien an Küsten, schöpft Fische im Flug von der Wasseroberfläche und landet nie auf dem Wasser, weil er von dort nicht mehr hochkommt. Er segelt mit Aufwinden fast ohne Flügelschlag und stiehlt anderen gern die Beute. Wie er meidest du das Wasser, und wie er bist du in der Luft zu Hause und am Boden ein Fremder."
     }
-  ],
+  },
   "hunt": {
     "title": "Jagd",
     "text": "Zum Abschöpfen fliegst du knapp über springende Fische, hältst die rechte Maustaste, damit dein Schnabel ins Wasser taucht, und lässt beim Durchfliegen los. Schwarmfische wiegen höchstens 10 kg. Tippe zwischendurch auf die Leertaste, um die Höhe zu halten, denn wer ins Wasser fällt, wird schnell von einem Deinosuchus oder Elite-Fisch gefressen. Tagsüber kannst du dich mit G an Wasser oder Schlamm stellen und Fische und Muscheln anlocken. Das dauert manchmal anderthalb Minuten, dann schnappst du mit der linken Maustaste zu. Muscheln öffnest du, indem du sie auf Fels wirfst. An Land fängst du Hühner, Hasen, Frösche und Krabben und kannst sie als Adult davontragen. Auch Kadaver sind eine Nahrungsquelle, aber nur in sicherem Abstand zu ihren Besitzern."

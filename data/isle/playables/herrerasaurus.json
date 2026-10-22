@@ -27,18 +27,81 @@
     "beta": ["Omniraptor", "Hypsilophodon", "Ochsenfrosch", "Huhn"],
     "gamma": ["Dryosaurus", "Pteranodon", "Beipiaosaurus", "Gallimimus", "Ziege", "Meeresschildkröte"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Revier ist der Wald mit dichtem Kronendach, am besten nahe Wasser. Von Baum zu Baum kannst du dich weit bewegen, ohne den Boden zu berühren, und dort oben bist du vor den meisten Jägern sicher. Du kannst auch tauchen: Unter Wasser hast du Nachtsicht und etwa 25 Sekunden Luft, gut für Krabben, Fische und Ochsenfrösche. Mit 0 Ausdauer kannst du nicht klettern, halte also immer etwas Ausdauer übrig, wenn ein Jäger unter dir steht. Seit Patch 0.21.772 melden viele Spieler fehlerhafte Kletterstellen, vor allem an Sumpfbäumen. Teste neue Bäume, bevor du dich auf sie verlässt."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Mit bis zu zehn Tieren ist das Rudel groß, aber Herreras jagen meist allein oder zu zweit aus dem Hinterhalt. Mit dem Kehllappen (F und rechte Maustaste halten) leuchtest du für andere Herreras: gelb als Männchen, grün als Weibchen. Nur deine Art sieht das. Euer Reisignest fasst bis zu 6 Eier."
+  "behavior": {
+    "essence": "Ein Baumjäger: Du lebst in den Kronen, wartest über den Wegen und springst nur hinunter, wenn sich der Sprung lohnt.",
+    "traits": { "activity": "Dämmerungsaktiv, nachts im Wasser", "range": "Sesshaft im eigenen Wald", "social": "Einzelgänger, die sich dulden", "rest": "Ruht erhöht" },
+    "needs": "Du brauchst Bäume und Felsen zum Klettern, und zwar so dicht, dass du von Krone zu Krone kommst, ohne den Boden zu berühren. Dazu Wasser in der Nähe, denn dort leben Krabben, Fische und Ochsenfrösche, und dort kommen Pflanzenfresser vorbei. Dein Magen leert sich schon nach 50 Minuten, du jagst also oft. Und du brauchst immer etwas Ausdauer, denn ohne Ausdauer kannst du nicht klettern.",
+    "threats": [
+      {
+        "name": "Jäger am Boden",
+        "level": "high",
+        "where": "Wenn du unten bist und keine Ausdauer zum Klettern hast.",
+        "answer": "Mit 175 kg bist du für Carnos, Omnis, Dilos und Rexe eine leichte Mahlzeit. Geh nie mit leerer Ausdauer auf den Boden."
+      },
+      {
+        "name": "Hypsilophodon",
+        "id": "hypsilophodon",
+        "level": "medium",
+        "where": "Wenn du an einer Wand oder einem Stamm hängst.",
+        "answer": "Ein Säuretreffer schießt dich herunter und blendet dich. Hypsis jagst du am Boden oder gar nicht."
+      },
+      {
+        "name": "Deinos und Elite-Fische",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Beim Tauchen in großen Flüssen und Sümpfen.",
+        "answer": "Unter Wasser hast du nur etwa 25 Sekunden Luft. Du tauchst in Bächen und Tümpeln, nicht in Deino-Gewässern."
+      },
+      {
+        "name": "Unsichere Kletterstellen",
+        "level": "low",
+        "where": "Seit Patch 0.21.772 an manchen Bäumen, vor allem im Sumpf.",
+        "answer": "Ein Baum, der dich abrutschen lässt, ist eine Falle. Teste jeden Fluchtbaum, bevor du dich auf ihn verlässt."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Du kletterst fast jede Fläche hinauf, und dort oben erreichen dich die meisten Jäger nicht.",
+        "so": "Dein Leben spielt in den Bäumen. Du bewegst dich von Krone zu Krone und kommst nur zum Jagen, Trinken und Tauchen herunter."
+      },
+      {
+        "because": "Dein Sprungangriff von oben macht mehr Schaden, je schwerer das Ziel ist.",
+        "so": "Du jagst als Lauerer über Wegen, Wasserstellen und Futterbüschen. Du wartest, bis etwas unter dir vorbeikommt, statt am Boden zu pirschen."
+      },
+      {
+        "because": "Jeder Biss blutet, aber du bist leicht und zerbrechlich.",
+        "so": "Du triffst, kletterst zurück und schaust von oben zu, wie die Beute ausblutet. Einen Schlagabtausch am Boden gibt es nicht."
+      },
+      {
+        "because": "Ohne Ausdauer kannst du nicht klettern.",
+        "so": "Du gehst nur mit voller Ausdauer auf den Boden und kehrst um, bevor sie knapp wird. Deine Fluchtreserve ist heilig."
+      },
+      {
+        "because": "Unter Wasser hast du Nachtsicht und etwa 25 Sekunden Luft, und dort leben Krabben, Fische und Ochsenfrösche.",
+        "so": "Nachts, wenn unter deinem Baum wenig vorbeikommt, tauchst du in Bächen und Tümpeln nach Kleinzeug. Große Flüsse mit Deinos und Elite-Fischen meidest du."
+      },
+      {
+        "because": "Dein Magen hält nur 50 Minuten.",
+        "so": "Du kannst nicht ewig auf große Beute warten. Zwischen den großen Sprüngen fängst du Hühner, Frösche und Krabben, damit du nie hungrig auf den Boden musst."
+      },
+      {
+        "because": "Ein Wald hat nur so viele Bäume über guten Wegen.",
+        "so": "Du bist sesshaft in deinem Wald und kennst jeden Ansitzbaum. Andere Herreras duldest du, aber jeder hat seine eigenen Bäume."
+      }
+    ],
+    "home": "Dein Zuhause ist ein Wald mit dichtem Kronendach, Felsen dazwischen und Wasser in der Nähe: ein Bach, ein Tümpel oder ein Waldsee. Über Wildwechseln, Trinkstellen und Futterbüschen hast du deine Ansitzbäume, von denen aus du springst. Zwischen ihnen kommst du über die Kronen, ohne den Boden zu berühren. Geruht wird hoch oben auf Felsvorsprüngen, Felsköpfen oder in Bäumen, die nur Kletterer erreichen. Offene Ebenen, wo es nichts zum Hochklettern gibt, sind für dich tödlich. Bevor du einem neuen Baum vertraust, testest du ihn, denn seit dem letzten Patch lassen manche Bäume Kletterer abrutschen.",
+    "day": [
+      { "phase": "dawn", "text": "Du sitzt auf deinem Ansitzbaum über der Trinkstelle. Wer morgens trinkt, ist abgelenkt, und genau dann springst du." },
+      { "phase": "day", "text": "Tagsüber ruhst du oben, lädst Ausdauer und fängst zwischendurch Hühner und Frösche am Waldboden. Große Jäger lässt du unter dir vorbeiziehen." },
+      { "phase": "dusk", "text": "Zweite Ansitzzeit über Wegen und Wasserstellen. Gelingt ein Sprung, beißt du zwei-, dreimal und kletterst zurück." },
+      { "phase": "night", "text": "Du ruhst erhöht und loggst dort aus, wo dich niemand erreicht. Bist du hungrig, tauchst du mit deiner Nachtsicht in einem Bach oder Tümpel nach Krabben und Fischen." }
+    ],
+    "group": "Bis zu zehn Herreras dürfen eine Gruppe bilden, aber ein Ansitzjäger braucht keine Mitspieler. Realistisch lebt ihr wie Leoparden: Jeder hat seine Bäume, man kennt sich, man duldet sich. Mit dem Kehllappen zeigst du anderen Herreras, ob du Männchen (gelb) oder Weibchen (grün) bist, nur deine Art sieht das. Zur Brut tut ihr euch zusammen: Euer Reisignest mit bis zu 6 Eiern liegt am Fuß eurer Kletterbäume im dichten Unterholz. Die Jungen sind 25 Minuten winzig und ab 64 kg selbst Kletterer. Ab dann sind sie einer der sichersten Juveniles im Spiel, solange sie oben bleiben.",
+    "analog": {
+      "animals": "Leopard",
+      "text": "Der Leopard ruht und lauert in Bäumen, springt von oben auf seine Beute und zieht sich zurück, bevor Löwen oder Hyänen zurückschlagen. Er lebt allein in einem festen Revier. Anders als er trägst du deine Beute nicht in den Baum: Du lässt sie unten ausbluten und schaust von oben zu."
     }
-  ],
+  },
   "hunt": {
     "title": "Jagd",
     "text": "Klettere an einer Futterstelle, Wasserstelle oder einem Weg auf einen Baum und warte. Kommt Beute darunter vorbei, zielst du mit gehaltener rechter Maustaste und springst mit der Leertaste ab. Der Sprungschaden steigt mit dem Gewicht des Ziels, große Tiere treffen dich also hart, aber du machst ihnen auch viel Schaden. Nach einem Treffer von oben bist du nicht mehr betäubt, kannst also sofort weiterbeißen oder zurück auf den Baum springen. Jeder Biss blutet: Zwei, drei Treffer, dann hoch in den Baum und von oben zusehen, wie die Beute ausblutet. Hypsilophodons können dich mit ihrer Säure von der Wand schießen, sei bei ihnen vorsichtig."

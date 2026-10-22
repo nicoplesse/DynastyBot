@@ -1,12 +1,13 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
-  dietLabels, formatMinutes, formatNumber, formatWeight, isleApi, nestLabels,
-  type IsleBasics, type IsleDiet, type IsleIndex, type IsleLink, type IslePlayable, type IsleSource, type IsleSummary,
+  dietLabels, formatMinutes, formatNumber, formatWeight, isleApi, nestLabels, phaseLabels, threatLabels, traitLabels,
+  type IsleBasics, type IsleBehavior, type IsleDiet, type IsleIndex, type IsleLink, type IslePlayable, type IsleSource, type IsleSummary, type IsleTraitId,
 } from './isle';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './isle.css';
 
 const DIETS: IsleDiet[] = ['carnivore', 'herbivore', 'omnivore'];
+const TRAITS: IsleTraitId[] = ['activity', 'range', 'social', 'rest'];
 const dietPlural: Record<IsleDiet, string> = { carnivore: 'Fleischfresser', herbivore: 'Pflanzenfresser', omnivore: 'Allesfresser' };
 const patchOf = (since: string | null) => since?.match(/\d+\.\d+\.\d+/)?.[0] || null;
 function formatDay(value: string) { return new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(value)); }
@@ -30,7 +31,7 @@ function IsleDirectory() {
   const [diet, setDiet] = useState<IsleDiet | 'all'>('all');
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return (index?.playables || []).filter(item => !needle || [item.name, item.nickname, item.role, item.tagline].join(' ').toLowerCase().includes(needle));
+    return (index?.playables || []).filter(item => !needle || [item.name, item.nickname, item.role, item.tagline, item.essence, ...Object.values(item.traits)].join(' ').toLowerCase().includes(needle));
   }, [index, query]);
   if (error) return <PageError message={error} />;
   if (!index) return <PageLoading label="Lade The-Isle-Profile…" />;
@@ -51,7 +52,7 @@ function IsleDirectory() {
       </div>
     </header>
     <section className="isle-filter" aria-label="Filter">
-      <label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Name, Spitzname oder Rolle suchen…" aria-label="The-Isle-Profile durchsuchen" /></label>
+      <label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Name, Rolle oder Verhalten suchen, z. B. nachtaktiv…" aria-label="The-Isle-Profile durchsuchen" /></label>
       <div className="isle-diets" role="group" aria-label="Ernährung">
         {(['all', ...DIETS] as const).map(value => <button type="button" key={value} className={`${diet === value ? 'active' : ''} ${value === 'all' ? '' : `diet-${value}`}`} aria-pressed={diet === value} onClick={() => setDiet(value)}>
           {value !== 'all' && <i className="isle-dot" aria-hidden="true" />}{value === 'all' ? 'Alle' : dietPlural[value]}
@@ -79,7 +80,8 @@ function IsleCard({ item }: { item: IsleSummary }) {
       <div><h3>{item.name}{item.nickname && <small>„{item.nickname}“</small>}</h3><span className="isle-role">{item.role}</span></div>
       {patch && <span className="isle-since" title={item.since || undefined}>seit {patch}</span>}
     </div>
-    <p>{item.tagline}</p>
+    <p>{item.essence}</p>
+    <div className="isle-card-traits">{(['activity', 'range', 'social'] as const).map(trait => <span key={trait}>{item.traits[trait]}</span>)}</div>
     <div className="isle-card-facts">
       <span><b>{formatMinutes(item.growthTotalMinutes)}</b>Wachstum</span>
       <span><b>{item.stats.groupLimit}</b>Gruppe max.</span>
@@ -146,6 +148,8 @@ function IsleDetail({ id }: { id: string }) {
           <p className="isle-tagline">{playable.tagline}</p>
           <p className="isle-summary">{playable.summary}</p>
           <div className="hero-pills">
+            <span className="isle-pill-trait">{playable.behavior.traits.activity}</span>
+            <span className="isle-pill-trait">{playable.behavior.traits.range}</span>
             <span>{dietLabels[playable.diet]}</span>
             <span>Gruppe max. {stats.groupLimit}</span>
             <span>{nestLabels[stats.nest]} · bis {stats.eggs} Eier</span>
@@ -165,15 +169,15 @@ function IsleDetail({ id }: { id: string }) {
       {playable.notes?.map(note => <p className="isle-note" key={note}><b>Hinweis:</b> {note}</p>)}
       <div className="isle-layout">
         <aside className="isle-toc"><strong>AUF DIESER SEITE</strong>
-          <Jump id="isle-tips">Merke dir</Jump><Jump id="isle-life">Leben</Jump><Jump id="isle-hunt">{playable.hunt.title}</Jump>
+          <Jump id="isle-behavior">Verhalten</Jump><Jump id="isle-tips">Merke dir</Jump><Jump id="isle-hunt">{playable.hunt.title}</Jump>
           <Jump id="isle-growth">Aufwachsen</Jump><Jump id="isle-abilities">Fähigkeiten</Jump><Jump id="isle-food">Nahrung</Jump><Jump id="isle-sources">Quellen</Jump>
         </aside>
         <div className="isle-body">
-          <section className="isle-tips" id="isle-tips"><h2>Merke dir</h2><ul>{playable.tips.map(tip => <li key={tip}>{tip}</li>)}</ul></section>
-          <section className="isle-section" id="isle-life">
-            <SectionHead index="01" title="Leben" />
-            <div className="isle-life">{playable.life.map(part => <article key={part.id}><h3>{part.title}</h3><p>{part.text}</p></article>)}</div>
+          <section className="isle-section isle-behavior" id="isle-behavior">
+            <SectionHead index="01" title="Verhalten in der Wildnis" />
+            <Behavior behavior={playable.behavior} playables={index.playables} />
           </section>
+          <section className="isle-tips" id="isle-tips"><h2>Merke dir</h2><ul>{playable.tips.map(tip => <li key={tip}>{tip}</li>)}</ul></section>
           <section className="isle-section" id="isle-hunt">
             <SectionHead index="02" title={playable.hunt.title} />
             <p className="isle-prose">{playable.hunt.text}</p>
@@ -211,6 +215,49 @@ function IsleDetail({ id }: { id: string }) {
       </div>
     </article>
   </div>;
+}
+
+// The realism core of a profile: what the animal needs, what kills it, and the behaviour that
+// follows from both, read as "because … so …" steps rather than as a list of stats.
+function Behavior({ behavior, playables }: { behavior: IsleBehavior; playables: IsleSummary[] }) {
+  const byId = new Map(playables.map(item => [item.id, item]));
+  return <>
+    <p className="isle-essence">{behavior.essence}</p>
+    <dl className="isle-traits">{TRAITS.map(trait => <div key={trait}><dt>{traitLabels[trait]}</dt><dd>{behavior.traits[trait]}</dd></div>)}</dl>
+    <div className="isle-pressures">
+      <article className="isle-needs"><h3>Was du zum Leben brauchst</h3><p>{behavior.needs}</p></article>
+      <article className="isle-threats"><h3>Was dir gefährlich wird</h3>
+        <ul>{behavior.threats.map(threat => {
+          const target = threat.id ? byId.get(threat.id) : undefined;
+          return <li key={threat.name} className={`threat-${threat.level}`}>
+            <div className="isle-threat-head">
+              {target ? <a className={`diet-${target.diet}`} href={`#/isle/${target.id}`}><i className="isle-dot" aria-hidden="true" />{threat.name}</a> : <strong>{threat.name}</strong>}
+              <span>{threatLabels[threat.level]}</span>
+            </div>
+            <p className="isle-threat-where">{threat.where}</p>
+            <p>{threat.answer}</p>
+          </li>;
+        })}</ul>
+      </article>
+    </div>
+    <h3 className="isle-subhead">Was daraus folgt</h3>
+    <ol className="isle-logic">{behavior.logic.map(step => <li key={step.because}>
+      <p><b>Weil</b>{step.because}</p>
+      <span aria-hidden="true">→</span>
+      <p><b>Darum</b>{step.so}</p>
+    </li>)}</ol>
+    <h3 className="isle-subhead">Dein Platz</h3>
+    <p className="isle-prose">{behavior.home}</p>
+    <h3 className="isle-subhead">Ein Tag in deinem Leben</h3>
+    <ol className="isle-day">{behavior.day.map(step => <li key={step.phase} className={`phase-${step.phase}`}>
+      <h4><i aria-hidden="true" />{phaseLabels[step.phase]}</h4><p>{step.text}</p>
+    </li>)}</ol>
+    <p className="isle-legend">Auf offiziellen Servern dauert ein Spieltag 60 Minuten: 30 Minuten Tag (6 bis 18 Uhr) und 30 Minuten Nacht. Wo du schläfst, loggst du auch aus.</p>
+    <div className="isle-life">
+      <article><h3>Gruppe & Nachwuchs</h3><p>{behavior.group}</p></article>
+      <article className="isle-analog"><h3>Vorbild in der Natur: {behavior.analog.animals}</h3><p>{behavior.analog.text}</p></article>
+    </div>
+  </>;
 }
 
 // "Strg / Z + Strg" reads as two alternatives, the second a combination.

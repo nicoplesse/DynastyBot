@@ -27,18 +27,86 @@
     "beta": ["Agave", "Sunchoke Flowers", "Radish Flower", "Fireweed", "Wild Potato Root", "Crimson Apollan"],
     "gamma": ["Cashew", "Pumpkin", "Radish Root", "Violet Apollan", "Wild Potato Vine"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Du bist ein Tier der offenen Landschaft. Auf Grasland und Ebenen wachsen Agaven, Topinambur, Cashews, Kürbisse und Orangen, in den Highlands Eberesche und Radieschen und im Flussdelta rote Johannisbeeren und wilde Kartoffeln. Mit 30 Minuten Durst musst du sehr oft trinken. Plant eure Herdenrouten deshalb von Wasser zu Wasser und haltet die Ufer im Blick, denn Deinos lauern dort."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Mit bis zu zehn Tieren sind Maiasaurier eine der größten Herden im Spiel, und genau darin liegt ihre Stärke. Gegen kleine Jäger seid ihr in der Gruppe sehr gefährlich. Mit bis zu 8 Eiern im Erdhügel-Nest ist Brutpflege euer Ding: Jungtiere in die Mitte, Erwachsene außen. Wer Junge bis Sub-Adult großzieht, erfüllt eine Prime-Bedingung."
+  "behavior": {
+    "essence": "Eine wandernde Großherde: Ihr zieht von Wasser zu Wasser, trinkt gemeinsam und zieht eure Jungen gemeinsam groß.",
+    "traits": { "activity": "Tagaktiv, trinkt auch nachts", "range": "Wandert mit den Migrationszonen", "social": "Große Herde", "rest": "Schläft in Schichten" },
+    "needs": "Du brauchst offenes Land mit Futter: Agaven, Topinambur, Cashews, Kürbisse und Orangen auf Grasland und Ebenen, Eberesche und Radieschen in den Highlands, rote Johannisbeeren und wilde Kartoffeln im Flussdelta. Vor allem brauchst du Wasser: Dein Durst kommt schon nach 30 Minuten, schneller als bei fast jedem anderen Tier. Und du brauchst die Herde, denn allein bist du für viele Jäger erreichbar.",
+    "threats": [
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "An jeder Trinkstelle.",
+        "answer": "Mit 3,7 Tonnen passt du in seinen Griff, auch an Land, und du musst öfter trinken als fast jedes andere Tier. Trinkt an breiten, flachen Ufern und immer mit Wachen."
+      },
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "Am Herdenrand und an Wasserstellen.",
+        "answer": "Er wartet dort, wo ihr trinken müsst. Zum Fliehen geht ihr auf zwei Beine, und die Herde rennt gemeinsam."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "high",
+        "where": "Am Herdenrand.",
+        "answer": "Allos suchen das schwächste Tier. Jungtiere, Verletzte und Nachzügler gehören in die Mitte."
+      },
+      {
+        "name": "Omni- und Troodon-Rudel",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts am Rand der ruhenden Herde.",
+        "answer": "Auf vier Beinen trittst du in jede Richtung. Gegen kleine Jäger ist die Herde gemeinsam sehr gefährlich."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "medium",
+        "where": "Auf offenen Ebenen.",
+        "answer": "Er ist schneller als du. Statt einzeln zu fliehen, bleibt die Herde auf vier Beinen stehen und tritt."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Durst kommt nach 30 Minuten, genauso lang wie eine Nacht.",
+        "so": "Ihr kommt nicht ohne Wasser durch die Nacht. Eure Route führt von Wasser zu Wasser, und ihr trinkt in der Abenddämmerung und noch einmal nachts oder im ersten Licht."
+      },
+      {
+        "because": "An jeder Trinkstelle kann ein Deino liegen, und du passt in seinen Griff.",
+        "so": "Ihr trinkt an breiten, flachen Ufern mit klarem Wasser, nie an tiefen, trüben Rändern. Ein Teil der Herde trinkt, der Rest schaut aufs Wasser und ins Land."
+      },
+      {
+        "because": "In Migrationszonen gibt dein bevorzugtes Futter deutlich mehr Nährstoffe, und die Zonen wandern weiter, wenn genug gefressen wurde.",
+        "so": "Ihr seid eine wandernde Herde. Ihr folgt den Migrationszonen über offenes Land und lasst euch von ihnen den Weg zeigen."
+      },
+      {
+        "because": "Auf zwei Beinen bist du schnell, auf vier stehst du stabil und trittst in jede Richtung.",
+        "so": "Flucht und Kampf haben feste Regeln: Vor großen Jägern flieht die Herde auf zwei Beinen, gegen kleine bleibt sie auf vier Beinen stehen und tritt."
+      },
+      {
+        "because": "Bis zu zehn Tiere dürfen eine Herde bilden, und ein Nest fasst bis zu acht Eier.",
+        "so": "Ihr seid eine Großfamilie. Ihr nistet nah beieinander und zieht die Jungen gemeinsam groß, Erwachsene außen, Jungtiere innen."
+      },
+      {
+        "because": "Dein Magen hält 60 Minuten, und im Dunkeln siehst du Jäger erst spät.",
+        "so": "Ihr schlaft in Schichten. Ein Teil der Herde ruht, der andere hält Wache, und vor der Nacht frisst sich jeder satt."
+      }
+    ],
+    "home": "Euer Zuhause ist eine Route über offenes Land: Grasland, Ebenen, Highlands und das Flussdelta, verbunden durch Trinkstellen. Gute Rastplätze liegen auf offenem Gelände mit weitem Blick, ein Stück vom Wasser entfernt, aber nah genug, um nachts noch einmal zu trinken. Dichte Wälder meidet ihr, dort verliert eine große Herde den Überblick. Die besten Trinkstellen sind breite, flache Furten mit klarem Wasser, an denen viele Tiere gleichzeitig trinken können und sich kein Deino im Tiefen versteckt.",
+    "day": [
+      { "phase": "dawn", "text": "Die Herde trinkt gemeinsam an der Furt und zieht dann zur nächsten Futterfläche oder Migrationszone." },
+      { "phase": "day", "text": "Ihr fresst in der Migrationszone, Jungtiere in der Mitte. Zwischendurch geht es wieder zum Wasser, denn nach spätestens 30 Minuten braucht jeder einen Schluck." },
+      { "phase": "dusk", "text": "Letzter großer Trinkgang, dann satt fressen und den Rastplatz für die Nacht wählen: offen und mit Blick." },
+      { "phase": "night", "text": "Ihr schlaft in Schichten, auf vier Beinen bereit zum Treten, und loggt am Rastplatz aus. Einmal in der Nacht zieht die Herde gemeinsam zum Trinken und zurück." }
+    ],
+    "group": "Mit bis zu zehn Tieren seid ihr eine der größten Herden im Spiel, und genau darin liegt eure Stärke. Brutpflege ist euer Ding: Mehrere Paare nisten nah beieinander, jedes Erdhügel-Nest fasst bis zu 8 Eier, und die ganze Herde bewacht die Nester. Wer Junge bis Sub-Adult großzieht, erfüllt eine Prime-Bedingung. Während der Brut bleibt die Herde an einem Ort mit Wasser in der Nähe. Danach zieht sie mit den Jungen weiter, und die Jungen laufen immer in der Mitte.",
+    "analog": {
+      "animals": "Streifengnu",
+      "text": "Gnus ziehen in großen Herden dem Gras hinterher, müssen täglich trinken und überqueren dabei Flüsse voller Krokodile. Die Kälber kommen fast gleichzeitig zur Welt und laufen in der Mitte der Herde. Anders als Gnus wehrt ihr euch mit Tritten in jede Richtung, statt nur zu rennen."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Dich jagen Rexe, Allosaurier, Carnos, Dilos, Omnis, Troodons und Deinos. Auf vier Beinen stehst du stabil und trittst in jede Richtung, die Kamera bestimmt wohin: nach vorn ein Frontalangriff, nach hinten ein Huftritt, schräg nach hinten ein Schrägtritt, zur Seite ein Seitentritt. Auf zwei Beinen (Strg oder Leertaste zum Wechseln) bist du schneller und schlägst mit den Krallen. Im Stehen geht das rundum, im Lauf gibt es eine Serie von Hieben nach vorn, mit der rechten Maustaste schubst du. Zum Flüchten gehst du auf zwei Beine, zum Kämpfen in der Herde auf vier. Auf zwei Beinen regenerierst du Ausdauer übrigens schneller."

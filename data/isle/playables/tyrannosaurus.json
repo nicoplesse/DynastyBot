@@ -28,18 +28,95 @@
     "beta": ["Diabloceratops", "Triceratops", "Hypsilophodon", "Hirsch", "Huhn", "Hase"],
     "gamma": ["Maiasaura", "Gallimimus", "Dryosaurus", "Beipiaosaurus", "Ziege", "Psittacosaurus", "Meeresschildkröte"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Ein Rex lebt dort, wo große Pflanzenfresser fressen und trinken: an Flüssen, Seen und rund um die Migrationszonen der Herden. Weil du langsam bist, wählst du deine Plätze so, dass Beute zu dir kommt, statt hinterherzulaufen. Ab etwa 5 Tonnen werden deine Schritte deutlich lauter, Beute hört dich also früh. Bleib deshalb nah an Deckung, bewege dich ruhig und lauf nicht unnötig. Zwischen den Jagden legst du dich hin, denn Ausdauer und Leben laden im Liegen am schnellsten."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Mit einem Gruppenlimit von 2 lebst du allein oder als Paar. Andere Rexe und Triceratops ziehen dich in den Sparring-Modus, sobald ihr kämpft. Dort weichst du mit der Leertaste seitlich aus und betäubst mit gehaltener linker Maustaste. Euer Nest ist ein Reisignest mit bis zu 5 Eiern. Plane ein Nest bewusst: Rex-Jungtiere sind über 11 Stunden lang klein und verletzlich, bevor sie Sub-Adult werden, und brauchen in der Zeit Schutz und Futter."
+  "behavior": {
+    "essence": "Ein geduldiger Revierherr: Du lässt die Beute zu dir kommen, schlägst einmal hart zu und ruhst danach lange.",
+    "traits": { "activity": "Dämmerungsaktiv", "range": "Großes Revier", "social": "Einzelgänger, zur Brut als Paar", "rest": "Schläft nach der Mahlzeit" },
+    "needs": "Du brauchst große Mengen Fleisch, und die liefern nur große Tiere: Stegosaurier, Tenontosaurier und Kentrosaurier (α), Triceratops und Diabloceratops (β), Maiasaurier und Gallimimus (γ). Hühner, Hasen und Ziegen halten dich als Adult kaum satt. Knochen kannst du nicht fressen, du brauchst also frische Kadaver. Wasser brauchst du spätestens nach einer Stunde, und dein Körper braucht Ruhe: Ausdauer und Leben laden im Liegen am schnellsten.",
+    "threats": [
+      {
+        "name": "Triceratops",
+        "id": "triceratops",
+        "level": "high",
+        "where": "Frontal, vor allem ausgewachsen und bei seiner Familie.",
+        "answer": "Ein Trike ist im Zweikampf so stark wie du und spießt dich auf. Greif ihn nie von vorn an. Nimm Jungtiere, Verletzte oder Tiere, die gerade trinken."
+      },
+      {
+        "name": "Stegosaurus",
+        "id": "stegosaurus",
+        "level": "high",
+        "where": "Im Dschungel, wenn er dir den Schwanz zudreht.",
+        "answer": "Ein Schwanzhieb macht 1200 Schaden und die stärkste Blutung im Spiel. Du gehst nur an seinen Kopf, und nur, wenn er ihn nicht an einen Felsen gelehnt hat."
+      },
+      {
+        "name": "Rudel aus Allosauriern oder Omniraptoren",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Im Offenen, wenn sie dich zu mehreren umkreisen.",
+        "answer": "Rudel lassen dich ausbluten, obwohl deine Lebensleiste noch gut aussieht. Rücken an Fels, Kopfstoß gegen Springer, und lieber einen Kadaver aufgeben als verbluten."
+      },
+      {
+        "name": "Andere Rexe",
+        "level": "medium",
+        "where": "An Reviergrenzen und an Kadavern.",
+        "answer": "Zwei Rexe verletzen sich gegenseitig schwer. Meide fremde Reviere und kämpf im Sparring nur um Partner oder Revier, nie um einen Kadaver, den du nicht brauchst."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Beim Schwimmen in tiefen Flüssen.",
+        "answer": "An Land packt dich kein Deino, schwimmende Tiere darf er aber auch schwerer greifen. Du überquerst Flüsse an Furten und trinkst an flachen Stellen."
+      },
+      {
+        "name": "Stürze",
+        "level": "low",
+        "where": "An Klippen und steilen Hängen.",
+        "answer": "Jeder Bruch macht dich langsam, mehrere Brüche in einem Leben können dir dauerhaft Glasknochen einbringen. Nimm den Umweg."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Du bist mit 29 km/h langsam, und ab etwa 5 Tonnen hört man deine Schritte von weitem.",
+        "so": "Du jagst nicht hinterher, sondern lauerst. Du wartest an Wasserstellen, Futterbüschen und Wildwechseln, bis Beute in Reichweite kommt."
+      },
+      {
+        "because": "Crush tötet kleinere oder verwundete Tiere mit einem Wurf, ein Fehlschlag macht dich eine Sekunde wehrlos.",
+        "so": "Du greifst nur an, wenn der erste Treffer sitzt: aus der Deckung, auf kurze Distanz, auf ein Tier, das abgelenkt ist, etwa beim Trinken."
+      },
+      {
+        "because": "Ambush gibt dir 15 Sekunden Höchsttempo ohne Ausdauer, danach eine Minute Pause.",
+        "so": "Deine Jagd dauert eine Viertelminute. Was du in der Zeit nicht erwischst, lässt du laufen und lauerst neu."
+      },
+      {
+        "because": "Ein großes Tier füllt deinen Magen, und der hält 75 Minuten.",
+        "so": "Nach einer großen Mahlzeit ruhst du lange in der Nähe des Kadavers und jagst erst wieder, wenn du hungrig wirst. Du tötest nicht mehr, als du fressen kannst."
+      },
+      {
+        "because": "Beute muss regelmäßig trinken, und im Halbdunkel ist ein großer Körper zwischen Bäumen schwer zu erkennen.",
+        "so": "Deine beste Jagdzeit ist die Dämmerung an der Wasserstelle. Den hellen Mittag verbringst du ruhend im Schatten am Waldrand."
+      },
+      {
+        "because": "Nur zwei Rexe dürfen zusammen sein, und eure Jungen bleiben über elf Stunden klein und verletzlich.",
+        "so": "Du lebst allein und duldest keinen zweiten Rex in deinem Revier. Für die Brut tut ihr euch zu zweit zusammen und bleibt, bis die Jungen allein zurechtkommen."
+      },
+      {
+        "because": "Schwimmende Tiere darf ein Deino auch schwerer greifen.",
+        "so": "Tiefes Wasser ist für dich tabu. Du trinkst an flachen Ufern und überquerst Flüsse an Furten."
+      }
+    ],
+    "home": "Dein Revier ist groß und umfasst alles, was Pflanzenfresser zum Leben brauchen: Wasserstellen, Futterflächen und am besten eine Migrationszone, durch die Herden ziehen. Am Rand liegt Wald oder hohes Gestrüpp, in dem dein Körper verschwindet. Du kennst die Wildwechsel, die Furten und die Stellen, an denen Beute zum Trinken den Kopf senkt. Dein Ruheplatz liegt im Wald, mit Fels im Rücken und Blick auf die Lichtung, nie direkt am Wasser. Steile Klippen und tiefe Flüsse meidest du, denn Stürze und Schwimmen sind für dich gefährlicher als fast jeder Gegner.",
+    "day": [
+      { "phase": "dawn", "text": "Die beste Jagdzeit. Du stehst still am Waldrand nahe der Wasserstelle und wartest, bis ein Tier trinkt oder frisst. Dann Crush aus kurzer Distanz, notfalls Ambush für den letzten Sprint." },
+      { "phase": "day", "text": "Hast du gefressen, ruhst du im Schatten nahe der Beute und lässt Leben und Ausdauer laden. Bist du hungrig, ziehst du langsam und leise an den Rand der nächsten Futterfläche oder Migrationszone." },
+      { "phase": "dusk", "text": "Zweite Jagdzeit. Herden ziehen zum Wasser, und im Halbdunkel bist du zwischen den Bäumen kaum zu sehen." },
+      { "phase": "night", "text": "Mit vollem Magen schläfst du die Nacht an deinem Ruheplatz durch, Rücken an Fels, und loggst dort aus. Bist du hungrig, wartest du mit Nachtsicht an der Wasserstelle, statt durchs Revier zu streifen." }
+    ],
+    "group": "Rexe sind Einzelgänger. Zwei dürfen eine Gruppe bilden, und genau dafür ist das Limit da: für ein Brutpaar. Kämpfe gegen andere Rexe und gegen Triceratops laufen im Sparring-Modus: Mit der Leertaste weichst du seitlich aus, mit gehaltener linker Maustaste betäubst du. Ihr messt euch, ohne euch zu töten, und der Schwächere zieht ab. Euer Reisignest mit bis zu 5 Eiern liegt im Kern des Reviers, versteckt im Wald und nah am Wasser, damit die Eltern nie weit weg müssen. Die Jungen betteln 70 Minuten und bleiben danach über zehn Stunden Juvenile. Um 45 % sind sie so schnell wie nie wieder: Ihr Überleben ist die Flucht, nicht der Kampf.",
+    "analog": {
+      "animals": "Tiger",
+      "text": "Der Tiger lebt allein in einem großen Revier, lauert an Wasserstellen und Wildwechseln, tötet mit einem einzigen Angriff und ruht danach lange neben seiner Beute. Anders als er bist du nicht leise: Ab 5 Tonnen hört dich jeder kommen, also wartest du, statt zu schleichen."
     }
-  ],
+  },
   "hunt": {
     "title": "Jagd",
     "text": "Deine Stärke ist der erste Treffer. Lauere an Wasserstellen oder Futterbüschen, komm geduckt näher und eröffne mit Crush: Kleinere oder verwundete Tiere unter etwa der Hälfte deines Gewichts nagelst du damit fest und kannst sie mit einem Wurf sofort töten, gleich große Tiere bringst du ins Wanken. Weil all deine Bisse Brüche verursachen, wird angeschlagene Beute schnell langsamer als du. Für den letzten Sprint nutzt du Ambush, das deine Höchstgeschwindigkeit 15 Sekunden lang ohne Ausdauerverbrauch anhebt. Verfehlt dein Crush, stehst du eine Sekunde lang wehrlos da. Gegen Rudel aus Omniraptoren oder Troodons hilft der schwere Kopfstoß, der kleine Angreifer umwirft. Pass auf Blutungen auf, denn große Rudel und Allosaurier können dich ausbluten lassen, auch wenn deine Lebensleiste noch gut aussieht."

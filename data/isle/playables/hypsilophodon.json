@@ -27,18 +27,86 @@
     "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Fireweed", "Fiddlehead", "Trillium"],
     "gamma": ["Russula", "Coconut", "Papaya", "Brazil Nuts"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Du lebst im Dschungel und im Sumpf. Dort wachsen Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium, im Sumpf Sumach, Pfifferlinge und Täublinge. Bäume und Felsen sind dein Rückzugsort. Du kletterst seit Patch 0.20.109, kannst über Äste laufen und nimmst weniger Sturzschaden. Hältst du die Leertaste vor dem Sprung gedrückt, springst du höher, gut für Felsen und Dächer. Dein Magen leert sich nach 30 Minuten. Iss oft, und bedenk, dass jeder Spuckangriff Futter kostet."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Bis zu zehn Hypsis bilden eine Gruppe. Männchen erkennst du an den abstehenden Augenbrauen. Euer Reisignest fasst bis zu 6 Eier, die Jungen betteln bis 44 %, also fast die Hälfte ihrer Kindheit. Schlüpflinge können noch nicht spucken. Vorsicht: Eure Säure kann fremde Schlüpflinge töten."
+  "behavior": {
+    "essence": "Ein Kletterer im Unterholz: Du frisst am Boden, flüchtest nach oben und spuckst jedem Säure ins Gesicht, der dir folgt.",
+    "traits": { "activity": "Rund um die Uhr in kurzen Etappen", "range": "Kleines Revier um deine Bäume", "social": "Gruppe", "rest": "Nickerchen auf Ästen und Felsen" },
+    "needs": "Dein Futter wächst im Dschungel und im Sumpf: Bananen, Jackfrüchte, Papayas, Paranüsse, Farnsprosse und Trillium im Dschungel, Sumach, Pfifferlinge und Täublinge im Sumpf. Dein Magen leert sich nach 30 Minuten, und jeder Spuckangriff kostet Futter. Ein voller Magen ist also auch eine volle Waffe. Dazu brauchst du Bäume und Felsen, auf die du klettern und springen kannst.",
+    "threats": [
+      {
+        "name": "Herrerasaurus",
+        "id": "herrerasaurus",
+        "level": "high",
+        "where": "In Bäumen und an Felsen, also genau dort, wo du dich rettest.",
+        "answer": "Er klettert dir nach. Ein Säuretreffer schießt ihn von der Wand, dann springst du auf den nächsten Fels oder rennst ins Dickicht."
+      },
+      {
+        "name": "Pteranodon",
+        "id": "pteranodon",
+        "level": "high",
+        "where": "Tagsüber, von oben.",
+        "answer": "Für ihn bist du Proteine, und ein Baum schützt dich nicht vor ihm. Tagsüber frisst du unter dichtem Blätterdach."
+      },
+      {
+        "name": "Troodon",
+        "id": "troodon",
+        "level": "high",
+        "where": "Nachts am Boden.",
+        "answer": "Ein Rudel fängt dich im Dunkeln. Nachts bist du oben auf einem Baum oder Felsen, wohin Troodons nicht klettern."
+      },
+      {
+        "name": "Austroraptor",
+        "id": "austroraptor",
+        "level": "medium",
+        "where": "An Ufern und Tümpeln.",
+        "answer": "Er springt dich am Wasser an. Trink nur dort, wo ein Baum in Sprungweite steht."
+      },
+      {
+        "name": "Dilophosaurus",
+        "id": "dilophosaurus",
+        "level": "medium",
+        "where": "Am Waldboden.",
+        "answer": "Bodenjäger kommen nicht auf deinen Baum. Spuck, kletter, warte, bis er geht."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Du kletterst auf Bäume, läufst über Äste und springst auf Felsen, die meisten Jäger können das nicht.",
+        "so": "Dein Leben hat zwei Etagen: Unten frisst du, oben bist du sicher. Du bist nie weiter als ein paar Sprünge von einem Baum oder Felsen entfernt."
+      },
+      {
+        "because": "Herreras klettern dir nach, Pteranodons kommen von oben.",
+        "so": "Oben ist nicht gegen alle sicher. Gegen Pteranodons bleibst du unter Blättern, gegen Herreras spuckst du und wechselst auf Felsen."
+      },
+      {
+        "because": "Spucken kostet Futter, und dein Magen leert sich in 30 Minuten.",
+        "so": "Du frisst ständig und gehst nie hungrig in die Nacht. Ein leerer Magen heißt: keine Säure."
+      },
+      {
+        "because": "Dein Magen hält nur so lang wie eine Nacht.",
+        "so": "Du schläfst in Nickerchen. Zwischen kurzen Ruhephasen in einer Astgabel kletterst du herunter und frisst."
+      },
+      {
+        "because": "Troodons jagen nachts am Boden, Pteranodons am Tag aus der Luft.",
+        "so": "Nachts bleibst du so viel wie möglich oben, tagsüber unter dem Blätterdach."
+      },
+      {
+        "because": "Eure Säure kann fremde Schlüpflinge töten.",
+        "so": "Du hältst Abstand zu den Nestern anderer und spuckst nie blind in eine Gruppe Jungtiere."
+      }
+    ],
+    "home": "Dein Revier ist klein: ein Stück Dschungel oder Sumpfwald mit Fruchtbäumen, dichtem Blätterdach, kletterbaren Stämmen und ein paar Felsen, auf die du springen kannst. Du kennst jeden Fluchtbaum und jeden Felsen und den kürzesten Weg dorthin. Ein guter Ruheplatz ist ein Ast unter dichten Blättern oder ein hoher Felskopf, auf den kein Bodenjäger kommt. Offene Wiesen überquerst du schnell, und an Wasser trinkst du nur dort, wo ein Baum in Sprungweite steht.",
+    "day": [
+      { "phase": "dawn", "text": "Du kletterst herunter und frisst Früchte am Waldboden, bis dein Magen voll ist. Voller Magen, volle Waffe." },
+      { "phase": "day", "text": "Du frisst unter dem Blätterdach und schaust nach oben, ob ein Pteranodon kreist. Zwischen den Mahlzeiten ruhst du auf einem Ast." },
+      { "phase": "dusk", "text": "Satt fressen, trinken, dann hinauf auf deinen Baum oder Felsen. Die Nachtjäger wachen auf, und unten gehört der Boden bald den Troodons." },
+      { "phase": "night", "text": "Du verbringst die Nacht oben auf Ästen und Felsen, loggst dort aus und kommst nur kurz zum Fressen herunter. Unten jagen Troodons, oben bist du vor ihnen sicher." }
+    ],
+    "group": "Bis zu zehn Hypsis dürfen eine Gruppe bilden, und eine Gruppe in einem Baum ist eine Säurebatterie. Männchen erkennst du an den abstehenden Augenbrauen. Euer Reisignest mit bis zu 6 Eiern liegt am Fuß eurer Kletterbäume im Dickicht. Die Jungen betteln bis 44 %, also fast ihre halbe Kindheit, und können als Schlüpflinge noch nicht spucken. In der Zeit bewacht immer ein Erwachsener mit vollem Magen das Nest von einem Ast darüber.",
+    "analog": {
+      "animals": "Eichhörnchen",
+      "text": "Das Eichhörnchen frisst am Boden, flieht bei der kleinsten Gefahr den nächsten Stamm hinauf und kennt jeden Baum in seinem kleinen Revier. Greifvögel sind seine größte Gefahr, denn vor ihnen schützt der Baum nicht. Anders als ein Eichhörnchen hast du eine Waffe: Wer dir folgt, bekommt Säure ins Gesicht."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Dich jagen Rexe, Dilos, Herreras, Troodons, Pteranodons und Austroraptoren. Halt die linke Maustaste zum Zielen und lass los, um einen Säureklumpen zu spucken: Getroffene sehen eine Zeit lang fast nichts, bis sie die Säure mit gehaltenem E wegwischen. Diese Sekunden nutzt du zur Flucht. Mit R brichst du das Zielen ab. Spucken kostet Futter, also ist ein voller Magen auch eine volle Waffe. Kletternde Herreras schießt du mit einem Treffer von der Wand. Danach rauf auf den nächsten Baum oder Felsen, wo dir die meisten Jäger nicht folgen. Gegen Herreras und Pteranodons ist ein Baum allerdings kein sicherer Ort."

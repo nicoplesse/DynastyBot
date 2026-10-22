@@ -19,14 +19,26 @@ export interface IsleStats {
   nest: 'mound' | 'debris'; eggs: number; hungerMinutes: number; thirstMinutes: number;
   growthMinutes: Record<IsleStageId, number | null>;
 }
+export type IsleTraitId = 'activity' | 'range' | 'social' | 'rest';
+export type IslePhase = 'dawn' | 'day' | 'dusk' | 'night';
+export type IsleThreatLevel = 'high' | 'medium' | 'low';
+export interface IsleThreat { name: string; id?: string; level: IsleThreatLevel; where: string; answer: string }
+// Natural behaviour, reasoned from the game's mechanics: what the animal needs, what kills it,
+// and what follows from both for its place, its day and its group.
+export interface IsleBehavior {
+  essence: string; traits: Record<IsleTraitId, string>; needs: string; threats: IsleThreat[];
+  logic: Array<{ because: string; so: string }>; home: string;
+  day: Array<{ phase: IslePhase; text: string }>; group: string; analog: { animals: string; text: string };
+}
 export interface IsleSummary {
   id: string; name: string; nickname: string | null; diet: IsleDiet; role: string; tagline: string; since: string | null; order: number;
-  growthTotalMinutes: number | null; stats: Pick<IsleStats, 'adultWeightKg' | 'sprintKmh' | 'groupLimit'>;
+  growthTotalMinutes: number | null; essence: string; traits: IsleBehavior['traits'];
+  stats: Pick<IsleStats, 'adultWeightKg' | 'sprintKmh' | 'groupLimit'>;
 }
 export interface IsleLink { id: string; name: string; diet: IsleDiet; nutrient: IsleNutrientId }
 export interface IslePlayable extends Omit<IsleSummary, 'stats'> {
   summary: string; stats: IsleStats; nutrients: Record<IsleNutrientId, string[]>;
-  life: Array<{ id: 'habitat' | 'social'; title: string; text: string }>;
+  behavior: IsleBehavior;
   hunt: { title: string; text: string };
   growth: Array<{ stage: IsleStageId; text: string }>;
   abilities: Array<{ keys: string; name: string; text: string }>;
@@ -53,6 +65,9 @@ export const isleApi = {
 
 export const dietLabels: Record<IsleDiet, string> = { carnivore: 'Fleischfresser', herbivore: 'Pflanzenfresser', omnivore: 'Allesfresser' };
 export const nestLabels: Record<IsleStats['nest'], string> = { mound: 'Erdhügel', debris: 'Reisignest' };
+export const traitLabels: Record<IsleTraitId, string> = { activity: 'Aktiv', range: 'Raum', social: 'Sozial', rest: 'Schlaf' };
+export const phaseLabels: Record<IslePhase, string> = { dawn: 'Morgen', day: 'Tag', dusk: 'Abend', night: 'Nacht' };
+export const threatLabels: Record<IsleThreatLevel, string> = { high: 'Lebensgefahr', medium: 'Gefahr', low: 'Vorsicht' };
 
 export function formatMinutes(minutes: number | null | undefined) {
   if (minutes == null) return 'unbekannt';
