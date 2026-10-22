@@ -49,6 +49,24 @@ You are a large, aggressive tyrannosaurid in a pack of up to 6 led by a dominant
 - Lebensraum: Forests and cliffsides. Nomadic; 'primarily travel through forests and cliffsides in search of their next meal'.
 - Anders als die Tiere: Dingo packs revolve around one breeding pair; Daspletosaurus males may court up to four females each. Cougars are solitary, while Daspletosaurus prefers the pack.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Allein wirst du laut Profil leiser und strategischer, lauerst aus dem Hinterhalt und gehst anderen Daspletosaurus und Apex-Paaren aus dem Weg. Das ist der Puma, der Dingo-Rudelteil schrumpft.
+
+**Solo spielt er sich wie:**
+**Puma + Dingo (Cougar + Dingo)**: A lone cougar of the forests and cliffs: silent, strategic, ambushing prey up to Large tier and any young it can reach.
+
+Solo you are less haughty and far more careful about the sound you make and how you move. You ambush targets from cover, raid nests, and hunt up to Large tier plus offspring up to Adolescent of any tier, even when an adult guards them; if no Lambeosaurus is around, you go for those young. You tuck yourself into underbrush and dark corners to sleep unseen, avoid other Daspletosaurus unless you mean to join or take over a pack, and steer clear of Apex carnivore pairs. To court, a solitary male must prove himself, often by securing a meal for the female.
+
+- Puma / Cougar – 70 %: Solo life: a quiet forest-and-cliff ambusher that hunts big prey alone and sleeps hidden in cover
+- Dingo / Dingo – 30 %: Nomad roots: a roaming hunter that also takes the young and raids nests when no pack backs it up
+- Lebensraum: Forests and cliffsides. Nomadic; 'primarily travel through forests and cliffsides in search of their next meal'.
+- Anders als die Tiere: Cougars stay solitary for life; a lone Daspletosaurus may still try to join or take over a pack. Cougars hunt mostly at dusk and by night; Daspletosaurus hunts at any hour.
+
+Solo bist du ein Puma der Wälder und Klippen: leise, berechnend und geduldig. Du achtest genau auf jedes Geräusch und jede Bewegung, lauerst aus der Deckung, plünderst Nester und jagst bis Large, dazu Jungtiere jeder Stufe bis Adolescent, auch wenn ein Erwachsener sie bewacht. Geschlafen wird versteckt im Unterholz oder in dunklen Ecken. Anderen Daspletosaurus gehst du aus dem Weg, außer du willst einem Rudel beitreten oder es übernehmen, und Apex-Paaren weichst du immer aus. Willst du als Männchen balzen, musst du dich beweisen, meist mit einer Mahlzeit für das Weibchen.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Steep Run, Cedrus Forest, Black Fern Hills, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

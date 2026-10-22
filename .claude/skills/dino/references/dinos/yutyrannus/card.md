@@ -50,6 +50,25 @@ You are a large, feathered tyrannosaurid in a group of up to 6: a related 'clowd
 - Anders als die Tiere: Snow leopards are solitary; Yutyrannus is intensely social. Arctic foxes are small scavengers; Yutyrannus is a Large-tier hunter.
 - Besonderheit: Birds of paradise (official inspiration): males court with song-and-dance performances they perfect over a lifetime.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Allein wird Yutyrannus laut Profil still, streift durch ein kleines Lieblingsgebiet, lauert flach am Boden und sonnt sich an Felswänden. Das ist der Schneeleopard pur, die verspielte Fuchsfamilie fehlt.
+
+**Solo spielt er sich wie:**
+**Schneeleopard + Polarfuchs (Snow leopard + Arctic fox)**: A lone snow leopard of the cool hills: silent, low to the ground, sunning on rock faces in its small favourite range.
+
+Solo you are quieter than any grouped Yutyrannus, knowing that without a hunting party you can be hunted yourself. You keep to a small area you like, looking for other Yutyrannus to group with or a comfortable place to nap and preen. You ambush smaller and weaker prey, staying low and moving in complete silence, and hunt only up to Medium tier. You sleep on rock faces and cliffsides, soaking in the sun. Groups will posture at you and may challenge you out. The dry-season heat still wears you down.
+
+- Schneeleopard / Snow leopard – 80 %: Solo life: a silent, cold-loving ambusher with a small home range, sunning itself on rock faces
+- Polarfuchs / Arctic fox – 20 %: Seasons and den: the changing coat, and the search for a family to join
+- Lebensraum: Cool, rainy-season forests and hills; dens. Thrives in the cooler rainy season and struggles in dry-season heat, becoming lazy and hunting only at night then. Claims whole POIs in full groups and defends resting and nesting dens.
+- Anders als die Tiere: Snow leopards are solitary for life; a lone Yutyrannus is always also looking for a group. Snow leopards kill prey several times their own weight; a solo Yutyrannus hunts only up to Medium tier.
+- Besonderheit: Birds of paradise (official inspiration): males court with song-and-dance performances they perfect over a lifetime.
+
+Solo bist du ein Schneeleopard: still, geduldig und immer auf der Hut, weil du ohne Jagdgruppe selbst zur Beute werden kannst. Du streifst durch ein kleines Lieblingsgebiet und suchst nebenbei nach anderen Yutyrannus und nach einem gemütlichen Platz zum Dösen und Putzen. Du jagst nur bis Medium, lauerst flach am Boden und bewegst dich völlig lautlos. Geschlafen wird an Felswänden und Klippen in der Sonne. Gruppen drohen dir und können dich aus dem POI fordern. Die Hitze der Trockenzeit macht dir allein genauso zu schaffen.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

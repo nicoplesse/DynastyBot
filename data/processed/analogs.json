@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T00:09:25.016Z",
+  "generatedAt": "2026-10-20T17:04:59.043Z",
+  "mode": "solo",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
     "schemaVersion": 1,
@@ -113,6 +114,8 @@
           "polarfuchs",
           "mähnenwolf",
           "dingo",
+          "black-backed jackal",
+          "schabrackenschakal",
           "mammal",
           "säugetier"
         ]
@@ -126,6 +129,10 @@
           "spotted hyena",
           "hyäne",
           "tüpfelhyäne",
+          "brown hyena",
+          "schabrackenhyäne",
+          "braune hyäne",
+          "strandwolf",
           "mammal",
           "säugetier"
         ]
@@ -151,6 +158,10 @@
           "wiesel",
           "marder",
           "vielfraß",
+          "eurasian otter",
+          "river otter",
+          "fischotter",
+          "flussotter",
           "mammal",
           "säugetier"
         ]
@@ -183,6 +194,8 @@
           "nagetier",
           "wasserschwein",
           "capybara",
+          "european hare",
+          "feldhase",
           "mammal",
           "säugetier"
         ]
@@ -269,6 +282,20 @@
           "säugetier"
         ]
       },
+      "tapir": {
+        "label": "Tapir",
+        "de": "Tapir",
+        "synonyms": [
+          "tapir",
+          "lowland tapir",
+          "south american tapir",
+          "tapire",
+          "flachlandtapir",
+          "schabrackentapir",
+          "mammal",
+          "säugetier"
+        ]
+      },
       "cattle": {
         "label": "Cattle, buffalo & ox",
         "de": "Rind, Büffel & Ochse",
@@ -331,6 +358,10 @@
           "spießbock",
           "elenantilope",
           "sambarhirsch",
+          "duiker",
+          "common duiker",
+          "ducker",
+          "kronenducker",
           "mammal",
           "säugetier"
         ]
@@ -362,6 +393,8 @@
         "synonyms": [
           "giraffe",
           "giraffe",
+          "okapi",
+          "waldgiraffe",
           "mammal",
           "säugetier"
         ]
@@ -647,6 +680,9 @@
           "blatthühnchen",
           "flamingo",
           "wasservogel",
+          "egret",
+          "cattle egret",
+          "kuhreiher",
           "bird",
           "birds",
           "vogel",
@@ -1357,12 +1393,28 @@
           "headline": "A lion pride: the females hunt by day, the male guards the pride and fights off takeovers, and neighbouring prides team up on giants."
         },
         {
+          "id": "yutyrannus",
+          "name": "Yutyrannus",
+          "animal": "Snow leopard",
+          "role": "primary",
+          "share": 80,
+          "headline": "A lone snow leopard of the cool hills: silent, low to the ground, sunning on rock faces in its small favourite range."
+        },
+        {
           "id": "allosaurus",
           "name": "Allosaurus",
-          "animal": "Asiatic lion",
+          "animal": "Cougar",
           "role": "primary",
-          "share": 60,
-          "headline": "An Asiatic lion of the dry country, living in coalitions of two or three and hunting with a bobcat's night-time stealth."
+          "share": 70,
+          "headline": "A lone cougar of the dry country: a silent night stalker that tolerates every other species, drives out its own kind and hides in caves by day."
+        },
+        {
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "animal": "Cougar",
+          "role": "primary",
+          "share": 70,
+          "headline": "A lone cougar of the forests and cliffs: silent, strategic, ambushing prey up to Large tier and any young it can reach."
         },
         {
           "id": "tyrannotitan",
@@ -1371,22 +1423,6 @@
           "role": "primary",
           "share": 60,
           "headline": "A nocturnal tiger with a great white shark's bite: booming calls in the dark, then prey bleeding out behind it."
-        },
-        {
-          "id": "yutyrannus",
-          "name": "Yutyrannus",
-          "animal": "Snow leopard",
-          "role": "primary",
-          "share": 60,
-          "headline": "A snow leopard that lives in a playful arctic-fox family: cold-loving, den-dwelling, and bold enough to hunt the biggest predators."
-        },
-        {
-          "id": "daspletosaurus",
-          "name": "Daspletosaurus",
-          "animal": "Cougar",
-          "role": "secondary",
-          "share": 45,
-          "headline": "A dingo pack led by dominant males that herds prey into dead ends, with a cougar's forest-and-cliff ambush."
         },
         {
           "id": "pycnonemosaurus",
@@ -1423,8 +1459,8 @@
           "name": "Allosaurus",
           "animal": "Bobcat",
           "role": "secondary",
-          "share": 40,
-          "headline": "An Asiatic lion of the dry country, living in coalitions of two or three and hunting with a bobcat's night-time stealth."
+          "share": 30,
+          "headline": "A lone cougar of the dry country: a silent night stalker that tolerates every other species, drives out its own kind and hides in caves by day."
         }
       ]
     },
@@ -1479,20 +1515,20 @@
           "headline": "A forest wolf pack that would rather steal a kill than make one."
         },
         {
-          "id": "utahraptor",
-          "name": "Utahraptor",
-          "animal": "Grey wolf (family pack)",
+          "id": "compsognathus",
+          "name": "Compsognathus",
+          "animal": "Golden jackal",
           "role": "primary",
           "share": 70,
-          "headline": "A Yellowstone-style wolf family pack around an alpha pair, at war with rival packs, where suitors court with bowerbird gifts."
+          "headline": "A lone jackal that has adopted a giant: it follows one big carnivore everywhere, calls for company and lives on bones and stolen scraps."
         },
         {
-          "id": "daspletosaurus",
-          "name": "Daspletosaurus",
-          "animal": "Dingo",
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "animal": "Grey wolf",
           "role": "primary",
-          "share": 55,
-          "headline": "A dingo pack led by dominant males that herds prey into dead ends, with a cougar's forest-and-cliff ambush."
+          "share": 60,
+          "headline": "A lone dispersing wolf that trails the sauropod herds in silence and courts at the edge of other packs' land with a bowerbird's gifts."
         },
         {
           "id": "dilophosaurus",
@@ -1508,7 +1544,15 @@
           "animal": "Coyote",
           "role": "secondary",
           "share": 50,
-          "headline": "A fish-snatching gharial with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young."
+          "headline": "A screaming giant otter with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young."
+        },
+        {
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "animal": "Black-backed jackal",
+          "role": "secondary",
+          "share": 45,
+          "headline": "A lone brown hyena with a jackal's patience: quiet, cautious and clever, trailing the herds and the Apex hunters for whatever they leave behind."
         },
         {
           "id": "achillobator",
@@ -1519,28 +1563,20 @@
           "headline": "A night-hunting caracal that lives as a lifelong maned-wolf pair and hunts big game with its rook-like Latenivenatrix partners."
         },
         {
-          "id": "compsognathus",
-          "name": "Compsognathus",
-          "animal": "Golden jackal",
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "animal": "Dingo",
           "role": "secondary",
-          "share": 40,
-          "headline": "A swarm of rats with a jackal's knack for shadowing the big predators."
-        },
-        {
-          "id": "latenivenatrix",
-          "name": "Latenivenatrix",
-          "animal": "Dhole",
-          "role": "secondary",
-          "share": 40,
-          "headline": "A noisy rook colony that hunts at night like a dhole pack and rides along on Achillobator hunts."
+          "share": 30,
+          "headline": "A lone cougar of the forests and cliffs: silent, strategic, ambushing prey up to Large tier and any young it can reach."
         },
         {
           "id": "yutyrannus",
           "name": "Yutyrannus",
           "animal": "Arctic fox",
           "role": "secondary",
-          "share": 40,
-          "headline": "A snow leopard that lives in a playful arctic-fox family: cold-loving, den-dwelling, and bold enough to hunt the biggest predators."
+          "share": 20,
+          "headline": "A lone snow leopard of the cool hills: silent, low to the ground, sunning on rock faces in its small favourite range."
         }
       ]
     },
@@ -1559,10 +1595,10 @@
         {
           "id": "deinonychus",
           "name": "Deinonychus",
-          "animal": "Spotted hyena",
+          "animal": "Brown hyena",
           "role": "primary",
           "share": 55,
-          "headline": "A spotted-hyena clan shrunk to mongoose size: noisy, female-ruled and deadly in numbers."
+          "headline": "A lone brown hyena with a jackal's patience: quiet, cautious and clever, trailing the herds and the Apex hunters for whatever they leave behind."
         }
       ]
     },
@@ -1573,10 +1609,10 @@
         {
           "id": "concavenator",
           "name": "Concavenator",
-          "animal": "Giant otter + Stoat",
+          "animal": "Wolverine + Eurasian otter",
           "role": "primary",
           "share": 100,
-          "headline": "A gang of giant otters, the 'river wolves' that kill crocodiles, with a stoat's ferocity and a hoarder's temper."
+          "headline": "A lone wolverine of the riverbanks: it scavenges, ambushes from the water, hoards like a miser and snarls at anything that comes too close to its kill."
         },
         {
           "id": "albertaceratops",
@@ -1585,6 +1621,14 @@
           "role": "primary",
           "share": 60,
           "headline": "A badger sett in a ceratopsian body: sow-led, bold sentries, pushy at food, and as fierce as a wild-boar sow once cubs are around."
+        },
+        {
+          "id": "suchomimus",
+          "name": "Suchomimus",
+          "animal": "Giant otter",
+          "role": "primary",
+          "share": 50,
+          "headline": "A screaming giant otter with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young."
         },
         {
           "id": "anodontosaurus",
@@ -1601,12 +1645,12 @@
       "de": "Kleinsäuger",
       "dinos": [
         {
-          "id": "compsognathus",
-          "name": "Compsognathus",
-          "animal": "Brown rat",
+          "id": "dryosaurus",
+          "name": "Dryosaurus",
+          "animal": "European hare + Wild rabbit",
           "role": "primary",
-          "share": 60,
-          "headline": "A swarm of rats with a jackal's knack for shadowing the big predators."
+          "share": 100,
+          "headline": "A lone hare instead of a warren bully: small, fast and much less sure of itself, it trails other herbivore herds and still elbows its way to the best berries."
         },
         {
           "id": "psittacosaurus",
@@ -1617,14 +1661,6 @@
           "headline": "A meerkat mob of sentries led by an elder, surviving through vigilance and an opossum's clever evasion."
         },
         {
-          "id": "dryosaurus",
-          "name": "Dryosaurus",
-          "animal": "Wild rabbit",
-          "role": "primary",
-          "share": 50,
-          "headline": "A rabbit warren with a baboon troop's attitude and chihuahua energy."
-        },
-        {
           "id": "camptosaurus",
           "name": "Camptosaurus",
           "animal": "American pika",
@@ -1633,20 +1669,20 @@
           "headline": "A quokka colony where every neighbour guards its own little patch like a pika."
         },
         {
-          "id": "deinonychus",
-          "name": "Deinonychus",
-          "animal": "Dwarf mongoose",
-          "role": "secondary",
-          "share": 45,
-          "headline": "A spotted-hyena clan shrunk to mongoose size: noisy, female-ruled and deadly in numbers."
-        },
-        {
           "id": "dilophosaurus",
           "name": "Dilophosaurus",
           "animal": "Raccoon",
           "role": "secondary",
           "share": 45,
           "headline": "A cunning, skittish fox family that turns dangerous in a group, with a raccoon's sneakiness."
+        },
+        {
+          "id": "compsognathus",
+          "name": "Compsognathus",
+          "animal": "Brown rat",
+          "role": "secondary",
+          "share": 30,
+          "headline": "A lone jackal that has adopted a giant: it follows one big carnivore everywhere, calls for company and lives on bones and stolen scraps."
         },
         {
           "id": "lurdusaurus-freshwater",
@@ -1705,24 +1741,8 @@
           "name": "Argentinosaurus",
           "animal": "Gorilla (silverback troop)",
           "role": "secondary",
-          "share": 50,
-          "headline": "A gentle giant: a silverback's family life inside a giraffe's body, scaled up to the largest land animal ever."
-        },
-        {
-          "id": "dryosaurus",
-          "name": "Dryosaurus",
-          "animal": "Baboon troop",
-          "role": "secondary",
-          "share": 50,
-          "headline": "A rabbit warren with a baboon troop's attitude and chihuahua energy."
-        },
-        {
-          "id": "tenontosaurus",
-          "name": "Tenontosaurus",
-          "animal": "Common marmoset",
-          "role": "secondary",
-          "share": 35,
-          "headline": "A peccary herd sharing one scent and fighting as a team, run marmoset-style by one matriarch with doting fathers."
+          "share": 30,
+          "headline": "A lone giraffe giant that cannot bear being alone: it seeks the company of any sauropod and even follows carnivores, calling sadly when they chase it off."
         }
       ]
     },
@@ -1742,9 +1762,9 @@
           "id": "eotriceratops",
           "name": "Eotriceratops",
           "animal": "Asian elephant",
-          "role": "primary",
-          "share": 55,
-          "headline": "An Asian elephant matriarchy whose bulls carry a hippo bull's temper."
+          "role": "secondary",
+          "share": 45,
+          "headline": "A lone bull with a hippo bull's temper and an elephant bull's memory: he learns the migration paths and fights every rival who uses them."
         },
         {
           "id": "barsboldia",
@@ -1772,9 +1792,9 @@
           "id": "eotriceratops",
           "name": "Eotriceratops",
           "animal": "Hippopotamus (bull)",
-          "role": "secondary",
-          "share": 45,
-          "headline": "An Asian elephant matriarchy whose bulls carry a hippo bull's temper."
+          "role": "primary",
+          "share": 55,
+          "headline": "A lone bull with a hippo bull's temper and an elephant bull's memory: he learns the migration paths and fights every rival who uses them."
         },
         {
           "id": "lurdusaurus-coast",
@@ -1795,8 +1815,22 @@
           "name": "Stegosaurus",
           "animal": "Black rhinoceros",
           "role": "primary",
+          "share": 75,
+          "headline": "A lone black rhino bull on his known paths: grumpy, armoured, never fleeing, and always looking for a zeal whose bull he can challenge."
+        }
+      ]
+    },
+    "tapir": {
+      "label": "Tapir",
+      "de": "Tapir",
+      "dinos": [
+        {
+          "id": "tenontosaurus",
+          "name": "Tenontosaurus",
+          "animal": "Lowland tapir",
+          "role": "primary",
           "share": 55,
-          "headline": "A grumpy black rhino with a zebra stallion's family: one bull, three cows, and every bush within 10 body lengths is his."
+          "headline": "A shy lowland tapir with a duiker's hiding reflex: an orphan grown up alone, it avoids almost everyone and vanishes into cover when danger comes."
         }
       ]
     },
@@ -1835,12 +1869,12 @@
       "de": "Hirsch & Antilope",
       "dinos": [
         {
-          "id": "amargasaurus",
-          "name": "Amargasaurus",
-          "animal": "Wildebeest",
+          "id": "parasaurolophus",
+          "name": "Parasaurolophus",
+          "animal": "Red deer",
           "role": "primary",
-          "share": 55,
-          "headline": "A chatty wildebeest in a giraffe's body, living in the shadow of the giant sauropods."
+          "share": 75,
+          "headline": "A lone red stag on the move: shunned or searching, he roams the ancestral routes and calls across open ground until another herd answers."
         },
         {
           "id": "lambeosaurus",
@@ -1849,14 +1883,6 @@
           "role": "primary",
           "share": 55,
           "headline": "A river-hugging sambar deer herd that moves like one flock of sheep."
-        },
-        {
-          "id": "parasaurolophus",
-          "name": "Parasaurolophus",
-          "animal": "Red deer",
-          "role": "primary",
-          "share": 55,
-          "headline": "A red-deer herd with a head stag and his does, migrating along ancestral routes like wild horses."
         },
         {
           "id": "yunnanosaurus",
@@ -1883,6 +1909,22 @@
           "headline": "A lifelong swan pair in a moose's body: a gentle lake giant and fierce parent that splashes predators away."
         },
         {
+          "id": "tenontosaurus",
+          "name": "Tenontosaurus",
+          "animal": "Common duiker",
+          "role": "secondary",
+          "share": 45,
+          "headline": "A shy lowland tapir with a duiker's hiding reflex: an orphan grown up alone, it avoids almost everyone and vanishes into cover when danger comes."
+        },
+        {
+          "id": "amargasaurus",
+          "name": "Amargasaurus",
+          "animal": "Wildebeest",
+          "role": "secondary",
+          "share": 40,
+          "headline": "A lone okapi in a sauropod's body: the shy forest giraffe that hides in thick woodland, tags along with any friendly herbivore and uses bigger sauropods as a shield."
+        },
+        {
           "id": "pachyrhinosaurus",
           "name": "Pachyrhinosaurus",
           "animal": "Caribou / reindeer",
@@ -1901,16 +1943,16 @@
           "name": "Parasaurolophus",
           "animal": "Przewalski's horse",
           "role": "secondary",
-          "share": 45,
-          "headline": "A red-deer herd with a head stag and his does, migrating along ancestral routes like wild horses."
+          "share": 25,
+          "headline": "A lone red stag on the move: shunned or searching, he roams the ancestral routes and calls across open ground until another herd answers."
         },
         {
           "id": "stegosaurus",
           "name": "Stegosaurus",
           "animal": "Grévy's zebra",
           "role": "secondary",
-          "share": 45,
-          "headline": "A grumpy black rhino with a zebra stallion's family: one bull, three cows, and every bush within 10 body lengths is his."
+          "share": 25,
+          "headline": "A lone black rhino bull on his known paths: grumpy, armoured, never fleeing, and always looking for a zeal whose bull he can challenge."
         }
       ]
     },
@@ -1923,16 +1965,16 @@
           "name": "Argentinosaurus",
           "animal": "Giraffe",
           "role": "primary",
-          "share": 50,
-          "headline": "A gentle giant: a silverback's family life inside a giraffe's body, scaled up to the largest land animal ever."
+          "share": 70,
+          "headline": "A lone giraffe giant that cannot bear being alone: it seeks the company of any sauropod and even follows carnivores, calling sadly when they chase it off."
         },
         {
           "id": "amargasaurus",
           "name": "Amargasaurus",
-          "animal": "Giraffe",
-          "role": "secondary",
-          "share": 45,
-          "headline": "A chatty wildebeest in a giraffe's body, living in the shadow of the giant sauropods."
+          "animal": "Okapi",
+          "role": "primary",
+          "share": 60,
+          "headline": "A lone okapi in a sauropod's body: the shy forest giraffe that hides in thick woodland, tags along with any friendly herbivore and uses bigger sauropods as a shield."
         }
       ]
     },
@@ -1965,10 +2007,10 @@
         {
           "id": "pachycephalosaurus",
           "name": "Pachycephalosaurus",
-          "animal": "Mountain goat + Bighorn sheep",
+          "animal": "Bighorn sheep + Mountain goat",
           "role": "primary",
           "share": 100,
-          "headline": "A mountain goat band on the cliffs, with bighorn rams' head-butting duels."
+          "headline": "A lone bighorn ram on the cliffs: exiled from the band, he shadows it from a distance and waits for his chance to ram the lead buck."
         },
         {
           "id": "lambeosaurus",
@@ -1984,14 +2026,6 @@
       "label": "Wild boar & pig",
       "de": "Wildschwein & Schwein",
       "dinos": [
-        {
-          "id": "tenontosaurus",
-          "name": "Tenontosaurus",
-          "animal": "White-lipped peccary",
-          "role": "primary",
-          "share": 65,
-          "headline": "A peccary herd sharing one scent and fighting as a team, run marmoset-style by one matriarch with doting fathers."
-        },
         {
           "id": "pycnonemosaurus",
           "name": "Pycnonemosaurus",
@@ -2041,16 +2075,8 @@
           "name": "Sarcosuchus",
           "animal": "Mugger crocodile",
           "role": "primary",
-          "share": 60,
-          "headline": "A nomadic marsh crocodile trio run jacana-style by one fierce female, walking overland at night to hunt."
-        },
-        {
-          "id": "suchomimus",
-          "name": "Suchomimus",
-          "animal": "Gharial",
-          "role": "primary",
-          "share": 50,
-          "headline": "A fish-snatching gharial with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young."
+          "share": 100,
+          "headline": "A lone mugger crocodile on the move: it hops from water to water in search of company, gives way to every float and every Deinosuchus, and walks overland at night to hunt."
         },
         {
           "id": "spinosaurus-freshwater",
@@ -2165,10 +2191,10 @@
         {
           "id": "latenivenatrix",
           "name": "Latenivenatrix",
-          "animal": "Rook",
+          "animal": "Common raven + Rook",
           "role": "primary",
-          "share": 60,
-          "headline": "A noisy rook colony that hunts at night like a dhole pack and rides along on Achillobator hunts."
+          "share": 100,
+          "headline": "A lone raven in the night: quiet and watchful, it trails herds and Apex hunters for scraps, hunts small prey alone and finds comfort in an Achillobator companion."
         },
         {
           "id": "maip",
@@ -2177,14 +2203,6 @@
           "role": "secondary",
           "share": 40,
           "headline": "A bone-crunching, night-shrieking hyena pair with a raven's cruel intelligence."
-        },
-        {
-          "id": "halszkaraptor",
-          "name": "Halszkaraptor",
-          "animal": "Magpie",
-          "role": "secondary",
-          "share": 30,
-          "headline": "A raft of mallards that mobs anything near the nest, with a magpie's eye for shiny things."
         }
       ]
     },
@@ -2193,20 +2211,12 @@
       "de": "Seevogel",
       "dinos": [
         {
-          "id": "tropeognathus-coast",
-          "name": "Tropeognathus (Coast)",
-          "animal": "Herring gull + Great cormorant",
+          "id": "tropeognathus",
+          "name": "Tropeognathus",
+          "animal": "Northern gannet + Great cormorant",
           "role": "primary",
           "share": 100,
-          "headline": "A Baltic beach gull with a cormorant's dive: sits on sand and rocks, raids every kill on the shore, cracks mussels on stone and turns into a pack hunter at night."
-        },
-        {
-          "id": "tropeognathus-ocean",
-          "name": "Tropeognathus (Ocean)",
-          "animal": "Wandering albatross + Northern gannet",
-          "role": "primary",
-          "share": 100,
-          "headline": "An albatross over the open sea that dives like a gannet: rides the wind from Kelp Vale to the Stonebed Shoal, rests and sleeps on the waves and touches rock only to dry its wings, to sit out a storm or to breed."
+          "headline": "A gannet with a cormorant's dive: one ledge on the sea cliffs as home, long fishing trips along the coast, deep dives for fish and always back to the same rock."
         },
         {
           "id": "austroraptor",
@@ -2233,10 +2243,10 @@
         {
           "id": "halszkaraptor",
           "name": "Halszkaraptor",
-          "animal": "Mallard",
+          "animal": "Mallard + Cattle egret",
           "role": "primary",
-          "share": 70,
-          "headline": "A raft of mallards that mobs anything near the nest, with a magpie's eye for shiny things."
+          "share": 100,
+          "headline": "A lost duckling with a cattle egret's trick: extremely flighty alone, it sticks close to a Lurdusaurus or Deinocheirus until it finds a raft again."
         },
         {
           "id": "deinocheirus",
@@ -2245,14 +2255,6 @@
           "role": "primary",
           "share": 55,
           "headline": "A lifelong swan pair in a moose's body: a gentle lake giant and fierce parent that splashes predators away."
-        },
-        {
-          "id": "sarcosuchus",
-          "name": "Sarcosuchus",
-          "animal": "Jacana",
-          "role": "secondary",
-          "share": 40,
-          "headline": "A nomadic marsh crocodile trio run jacana-style by one fierce female, walking overland at night to hunt."
         }
       ]
     },
@@ -2311,8 +2313,8 @@
           "name": "Utahraptor",
           "animal": "Bowerbird",
           "role": "secondary",
-          "share": 30,
-          "headline": "A Yellowstone-style wolf family pack around an alpha pair, at war with rival packs, where suitors court with bowerbird gifts."
+          "share": 40,
+          "headline": "A lone dispersing wolf that trails the sauropod herds in silence and courts at the edge of other packs' land with a bowerbird's gifts."
         }
       ]
     },
@@ -2490,17 +2492,23 @@
         }
       ]
     },
-    "asiatic-lion": {
-      "animal": "Asiatic lion",
-      "de": "Asiatischer Löwe",
-      "scientific": "Panthera leo leo (Gir population)",
+    "cougar": {
+      "animal": "Cougar",
+      "de": "Puma",
+      "scientific": "Puma concolor",
       "archetype": "big-cat",
       "dinos": [
         {
           "id": "allosaurus",
           "name": "Allosaurus",
           "role": "primary",
-          "share": 60
+          "share": 70
+        },
+        {
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "role": "primary",
+          "share": 70
         }
       ]
     },
@@ -2514,7 +2522,21 @@
           "id": "allosaurus",
           "name": "Allosaurus",
           "role": "secondary",
-          "share": 40
+          "share": 30
+        }
+      ]
+    },
+    "okapi": {
+      "animal": "Okapi",
+      "de": "Okapi",
+      "scientific": "Okapia johnstoni",
+      "archetype": "giraffe",
+      "dinos": [
+        {
+          "id": "amargasaurus",
+          "name": "Amargasaurus",
+          "role": "primary",
+          "share": 60
         }
       ]
     },
@@ -2527,28 +2549,8 @@
         {
           "id": "amargasaurus",
           "name": "Amargasaurus",
-          "role": "primary",
-          "share": 55
-        }
-      ]
-    },
-    "giraffe": {
-      "animal": "Giraffe",
-      "de": "Giraffe",
-      "scientific": "Giraffa camelopardalis",
-      "archetype": "giraffe",
-      "dinos": [
-        {
-          "id": "argentinosaurus",
-          "name": "Argentinosaurus",
-          "role": "primary",
-          "share": 50
-        },
-        {
-          "id": "amargasaurus",
-          "name": "Amargasaurus",
           "role": "secondary",
-          "share": 45
+          "share": 40
         }
       ]
     },
@@ -2594,6 +2596,20 @@
         }
       ]
     },
+    "giraffe": {
+      "animal": "Giraffe",
+      "de": "Giraffe",
+      "scientific": "Giraffa camelopardalis",
+      "archetype": "giraffe",
+      "dinos": [
+        {
+          "id": "argentinosaurus",
+          "name": "Argentinosaurus",
+          "role": "primary",
+          "share": 70
+        }
+      ]
+    },
     "gorilla-silverback-troop": {
       "animal": "Gorilla (silverback troop)",
       "de": "Gorilla (Silberrücken)",
@@ -2604,7 +2620,7 @@
           "id": "argentinosaurus",
           "name": "Argentinosaurus",
           "role": "secondary",
-          "share": 50
+          "share": 30
         }
       ]
     },
@@ -2703,6 +2719,12 @@
           "name": "Ceratosaurus",
           "role": "primary",
           "share": 100
+        },
+        {
+          "id": "utahraptor",
+          "name": "Utahraptor",
+          "role": "primary",
+          "share": 60
         }
       ]
     },
@@ -2720,20 +2742,6 @@
         }
       ]
     },
-    "brown-rat": {
-      "animal": "Brown rat",
-      "de": "Wanderratte",
-      "scientific": "Rattus norvegicus",
-      "archetype": "small-mammal",
-      "dinos": [
-        {
-          "id": "compsognathus",
-          "name": "Compsognathus",
-          "role": "primary",
-          "share": 60
-        }
-      ]
-    },
     "golden-jackal": {
       "animal": "Golden jackal",
       "de": "Goldschakal",
@@ -2743,15 +2751,29 @@
         {
           "id": "compsognathus",
           "name": "Compsognathus",
-          "role": "secondary",
-          "share": 40
+          "role": "primary",
+          "share": 70
         }
       ]
     },
-    "giant-otter": {
-      "animal": "Giant otter",
-      "de": "Riesenotter",
-      "scientific": "Pteronura brasiliensis",
+    "brown-rat": {
+      "animal": "Brown rat",
+      "de": "Wanderratte",
+      "scientific": "Rattus norvegicus",
+      "archetype": "small-mammal",
+      "dinos": [
+        {
+          "id": "compsognathus",
+          "name": "Compsognathus",
+          "role": "secondary",
+          "share": 30
+        }
+      ]
+    },
+    "wolverine": {
+      "animal": "Wolverine",
+      "de": "Vielfraß",
+      "scientific": "Gulo gulo",
       "archetype": "mustelid",
       "dinos": [
         {
@@ -2762,10 +2784,10 @@
         }
       ]
     },
-    "stoat": {
-      "animal": "Stoat",
-      "de": "Hermelin",
-      "scientific": "Mustela erminea",
+    "eurasian-otter": {
+      "animal": "Eurasian otter",
+      "de": "Eurasischer Fischotter",
+      "scientific": "Lutra lutra",
       "archetype": "mustelid",
       "dinos": [
         {
@@ -2785,22 +2807,8 @@
         {
           "id": "daspletosaurus",
           "name": "Daspletosaurus",
-          "role": "primary",
-          "share": 55
-        }
-      ]
-    },
-    "cougar": {
-      "animal": "Cougar",
-      "de": "Puma",
-      "scientific": "Puma concolor",
-      "archetype": "big-cat",
-      "dinos": [
-        {
-          "id": "daspletosaurus",
-          "name": "Daspletosaurus",
           "role": "secondary",
-          "share": 45
+          "share": 30
         }
       ]
     },
@@ -2838,18 +2846,12 @@
         }
       ]
     },
-    "spotted-hyena": {
-      "animal": "Spotted hyena",
-      "de": "Tüpfelhyäne",
-      "scientific": "Crocuta crocuta",
+    "brown-hyena": {
+      "animal": "Brown hyena",
+      "de": "Schabrackenhyäne",
+      "scientific": "Parahyaena brunnea",
       "archetype": "hyena",
       "dinos": [
-        {
-          "id": "maip",
-          "name": "Maip",
-          "role": "primary",
-          "share": 60
-        },
         {
           "id": "deinonychus",
           "name": "Deinonychus",
@@ -2858,11 +2860,11 @@
         }
       ]
     },
-    "dwarf-mongoose": {
-      "animal": "Dwarf mongoose",
-      "de": "Zwergmanguste",
-      "scientific": "Helogale parvula",
-      "archetype": "small-mammal",
+    "black-backed-jackal": {
+      "animal": "Black-backed jackal",
+      "de": "Schabrackenschakal",
+      "scientific": "Lupulella mesomelas",
+      "archetype": "canine",
       "dinos": [
         {
           "id": "deinonychus",
@@ -2948,6 +2950,20 @@
         }
       ]
     },
+    "european-hare": {
+      "animal": "European hare",
+      "de": "Feldhase",
+      "scientific": "Lepus europaeus",
+      "archetype": "small-mammal",
+      "dinos": [
+        {
+          "id": "dryosaurus",
+          "name": "Dryosaurus",
+          "role": "primary",
+          "share": 60
+        }
+      ]
+    },
     "wild-rabbit": {
       "animal": "Wild rabbit",
       "de": "Wildkaninchen",
@@ -2957,30 +2973,16 @@
         {
           "id": "dryosaurus",
           "name": "Dryosaurus",
-          "role": "primary",
-          "share": 50
-        }
-      ]
-    },
-    "baboon-troop": {
-      "animal": "Baboon troop",
-      "de": "Pavian (Trupp)",
-      "scientific": "Papio spp.",
-      "archetype": "primate",
-      "dinos": [
-        {
-          "id": "dryosaurus",
-          "name": "Dryosaurus",
           "role": "secondary",
-          "share": 50
+          "share": 40
         }
       ]
     },
-    "asian-elephant": {
-      "animal": "Asian elephant",
-      "de": "Asiatischer Elefant",
-      "scientific": "Elephas maximus",
-      "archetype": "elephant",
+    "hippopotamus-bull": {
+      "animal": "Hippopotamus (bull)",
+      "de": "Flusspferd (Bulle)",
+      "scientific": "Hippopotamus amphibius",
+      "archetype": "hippo",
       "dinos": [
         {
           "id": "eotriceratops",
@@ -2990,11 +2992,11 @@
         }
       ]
     },
-    "hippopotamus-bull": {
-      "animal": "Hippopotamus (bull)",
-      "de": "Flusspferd (Bulle)",
-      "scientific": "Hippopotamus amphibius",
-      "archetype": "hippo",
+    "asian-elephant": {
+      "animal": "Asian elephant",
+      "de": "Asiatischer Elefant",
+      "scientific": "Elephas maximus",
+      "archetype": "elephant",
       "dinos": [
         {
           "id": "eotriceratops",
@@ -3042,21 +3044,21 @@
           "id": "halszkaraptor",
           "name": "Halszkaraptor",
           "role": "primary",
-          "share": 70
+          "share": 60
         }
       ]
     },
-    "magpie": {
-      "animal": "Magpie",
-      "de": "Elster",
-      "scientific": "Pica pica",
-      "archetype": "corvid",
+    "cattle-egret": {
+      "animal": "Cattle egret",
+      "de": "Kuhreiher",
+      "scientific": "Bubulcus ibis",
+      "archetype": "waterbird",
       "dinos": [
         {
           "id": "halszkaraptor",
           "name": "Halszkaraptor",
           "role": "secondary",
-          "share": 30
+          "share": 40
         }
       ]
     },
@@ -3186,10 +3188,10 @@
         }
       ]
     },
-    "rook": {
-      "animal": "Rook",
-      "de": "Saatkrähe",
-      "scientific": "Corvus frugilegus",
+    "common-raven": {
+      "animal": "Common raven",
+      "de": "Kolkrabe",
+      "scientific": "Corvus corax",
       "archetype": "corvid",
       "dinos": [
         {
@@ -3197,14 +3199,20 @@
           "name": "Latenivenatrix",
           "role": "primary",
           "share": 60
+        },
+        {
+          "id": "maip",
+          "name": "Maip",
+          "role": "secondary",
+          "share": 40
         }
       ]
     },
-    "dhole": {
-      "animal": "Dhole",
-      "de": "Rothund",
-      "scientific": "Cuon alpinus",
-      "archetype": "canine",
+    "rook": {
+      "animal": "Rook",
+      "de": "Saatkrähe",
+      "scientific": "Corvus frugilegus",
+      "archetype": "corvid",
       "dinos": [
         {
           "id": "latenivenatrix",
@@ -3290,17 +3298,17 @@
         }
       ]
     },
-    "common-raven": {
-      "animal": "Common raven",
-      "de": "Kolkrabe",
-      "scientific": "Corvus corax",
-      "archetype": "corvid",
+    "spotted-hyena": {
+      "animal": "Spotted hyena",
+      "de": "Tüpfelhyäne",
+      "scientific": "Crocuta crocuta",
+      "archetype": "hyena",
       "dinos": [
         {
           "id": "maip",
           "name": "Maip",
-          "role": "secondary",
-          "share": 40
+          "role": "primary",
+          "share": 60
         }
       ]
     },
@@ -3388,20 +3396,6 @@
         }
       ]
     },
-    "mountain-goat": {
-      "animal": "Mountain goat",
-      "de": "Schneeziege",
-      "scientific": "Oreamnos americanus",
-      "archetype": "goat-sheep",
-      "dinos": [
-        {
-          "id": "pachycephalosaurus",
-          "name": "Pachycephalosaurus",
-          "role": "primary",
-          "share": 60
-        }
-      ]
-    },
     "bighorn-sheep": {
       "animal": "Bighorn sheep",
       "de": "Dickhornschaf",
@@ -3411,8 +3405,22 @@
         {
           "id": "pachycephalosaurus",
           "name": "Pachycephalosaurus",
+          "role": "primary",
+          "share": 55
+        }
+      ]
+    },
+    "mountain-goat": {
+      "animal": "Mountain goat",
+      "de": "Schneeziege",
+      "scientific": "Oreamnos americanus",
+      "archetype": "goat-sheep",
+      "dinos": [
+        {
+          "id": "pachycephalosaurus",
+          "name": "Pachycephalosaurus",
           "role": "secondary",
-          "share": 40
+          "share": 45
         }
       ]
     },
@@ -3460,7 +3468,7 @@
           "id": "parasaurolophus",
           "name": "Parasaurolophus",
           "role": "primary",
-          "share": 55
+          "share": 75
         }
       ]
     },
@@ -3474,7 +3482,7 @@
           "id": "parasaurolophus",
           "name": "Parasaurolophus",
           "role": "secondary",
-          "share": 45
+          "share": 25
         }
       ]
     },
@@ -3586,21 +3594,7 @@
           "id": "sarcosuchus",
           "name": "Sarcosuchus",
           "role": "primary",
-          "share": 60
-        }
-      ]
-    },
-    "jacana": {
-      "animal": "Jacana",
-      "de": "Blatthühnchen",
-      "scientific": "Jacanidae",
-      "archetype": "waterbird",
-      "dinos": [
-        {
-          "id": "sarcosuchus",
-          "name": "Sarcosuchus",
-          "role": "secondary",
-          "share": 40
+          "share": 100
         }
       ]
     },
@@ -3676,7 +3670,7 @@
           "id": "stegosaurus",
           "name": "Stegosaurus",
           "role": "primary",
-          "share": 55
+          "share": 75
         }
       ]
     },
@@ -3690,7 +3684,7 @@
           "id": "stegosaurus",
           "name": "Stegosaurus",
           "role": "secondary",
-          "share": 45
+          "share": 25
         }
       ]
     },
@@ -3722,11 +3716,11 @@
         }
       ]
     },
-    "gharial": {
-      "animal": "Gharial",
-      "de": "Gangesgavial",
-      "scientific": "Gavialis gangeticus",
-      "archetype": "crocodilian",
+    "giant-otter": {
+      "animal": "Giant otter",
+      "de": "Riesenotter",
+      "scientific": "Pteronura brasiliensis",
+      "archetype": "mustelid",
       "dinos": [
         {
           "id": "suchomimus",
@@ -3750,31 +3744,31 @@
         }
       ]
     },
-    "white-lipped-peccary": {
-      "animal": "White-lipped peccary",
-      "de": "Weißbartpekari",
-      "scientific": "Tayassu pecari",
-      "archetype": "pig",
+    "lowland-tapir": {
+      "animal": "Lowland tapir",
+      "de": "Flachlandtapir",
+      "scientific": "Tapirus terrestris",
+      "archetype": "tapir",
       "dinos": [
         {
           "id": "tenontosaurus",
           "name": "Tenontosaurus",
           "role": "primary",
-          "share": 65
+          "share": 55
         }
       ]
     },
-    "common-marmoset": {
-      "animal": "Common marmoset",
-      "de": "Weißbüscheläffchen",
-      "scientific": "Callithrix jacchus",
-      "archetype": "primate",
+    "common-duiker": {
+      "animal": "Common duiker",
+      "de": "Kronenducker",
+      "scientific": "Sylvicapra grimmia",
+      "archetype": "deer-antelope",
       "dinos": [
         {
           "id": "tenontosaurus",
           "name": "Tenontosaurus",
           "role": "secondary",
-          "share": 35
+          "share": 45
         }
       ]
     },
@@ -3834,15 +3828,15 @@
         }
       ]
     },
-    "herring-gull": {
-      "animal": "Herring gull",
-      "de": "Silbermöwe",
-      "scientific": "Larus argentatus",
+    "northern-gannet": {
+      "animal": "Northern gannet",
+      "de": "Basstölpel",
+      "scientific": "Morus bassanus",
       "archetype": "seabird",
       "dinos": [
         {
-          "id": "tropeognathus-coast",
-          "name": "Tropeognathus (Coast)",
+          "id": "tropeognathus",
+          "name": "Tropeognathus",
           "role": "primary",
           "share": 65
         }
@@ -3855,38 +3849,10 @@
       "archetype": "seabird",
       "dinos": [
         {
-          "id": "tropeognathus-coast",
-          "name": "Tropeognathus (Coast)",
+          "id": "tropeognathus",
+          "name": "Tropeognathus",
           "role": "secondary",
           "share": 35
-        }
-      ]
-    },
-    "wandering-albatross": {
-      "animal": "Wandering albatross",
-      "de": "Wanderalbatros",
-      "scientific": "Diomedea exulans",
-      "archetype": "seabird",
-      "dinos": [
-        {
-          "id": "tropeognathus-ocean",
-          "name": "Tropeognathus (Ocean)",
-          "role": "primary",
-          "share": 60
-        }
-      ]
-    },
-    "northern-gannet": {
-      "animal": "Northern gannet",
-      "de": "Basstölpel",
-      "scientific": "Morus bassanus",
-      "archetype": "seabird",
-      "dinos": [
-        {
-          "id": "tropeognathus-ocean",
-          "name": "Tropeognathus (Ocean)",
-          "role": "secondary",
-          "share": 40
         }
       ]
     },
@@ -3932,20 +3898,6 @@
         }
       ]
     },
-    "grey-wolf-family-pack": {
-      "animal": "Grey wolf (family pack)",
-      "de": "Grauwolf (Familienrudel)",
-      "scientific": "Canis lupus",
-      "archetype": "canine",
-      "dinos": [
-        {
-          "id": "utahraptor",
-          "name": "Utahraptor",
-          "role": "primary",
-          "share": 70
-        }
-      ]
-    },
     "bowerbird": {
       "animal": "Bowerbird",
       "de": "Laubenvogel",
@@ -3956,7 +3908,7 @@
           "id": "utahraptor",
           "name": "Utahraptor",
           "role": "secondary",
-          "share": 30
+          "share": 40
         }
       ]
     },
@@ -3984,7 +3936,7 @@
           "id": "yutyrannus",
           "name": "Yutyrannus",
           "role": "primary",
-          "share": 60
+          "share": 80
         }
       ]
     },
@@ -3998,7 +3950,7 @@
           "id": "yutyrannus",
           "name": "Yutyrannus",
           "role": "secondary",
-          "share": 40
+          "share": 20
         }
       ]
     }
@@ -4008,17 +3960,32 @@
       "label": "Solitary",
       "de": "Einzelgänger",
       "dinoIds": [
+        "allosaurus",
         "anodontosaurus",
         "camptosaurus",
+        "compsognathus",
+        "concavenator",
+        "daspletosaurus",
+        "deinonychus",
         "deinosuchus-ocean",
         "deinosuchus-shore",
+        "dryosaurus",
+        "eotriceratops",
         "giganotosaurus",
+        "latenivenatrix",
         "leedsichthys",
         "megalania-arid",
         "megalania-temperate",
+        "pachycephalosaurus",
+        "parasaurolophus",
+        "sarcosuchus",
         "spinosaurus-freshwater",
         "spinosaurus-saltwater",
-        "tyrannotitan"
+        "stegosaurus",
+        "tenontosaurus",
+        "tyrannotitan",
+        "utahraptor",
+        "yutyrannus"
       ]
     },
     "pair": {
@@ -4026,7 +3993,6 @@
       "de": "Feste Partnerschaft",
       "dinoIds": [
         "achillobator",
-        "allosaurus",
         "austroraptor",
         "deinocheirus",
         "giganotosaurus",
@@ -4048,9 +4014,7 @@
         "apatosaurus",
         "ceratosaurus",
         "dilophosaurus",
-        "tylosaurus",
-        "utahraptor",
-        "yutyrannus"
+        "tylosaurus"
       ]
     },
     "pack": {
@@ -4059,19 +4023,13 @@
       "dinoIds": [
         "alioramus",
         "ceratosaurus",
-        "concavenator",
-        "daspletosaurus",
-        "deinonychus",
         "dilophosaurus",
         "eurhinosaurus",
         "kaiwhekea",
         "kelenken",
-        "latenivenatrix",
         "pycnonemosaurus",
         "suchomimus",
-        "torvosaurus",
-        "utahraptor",
-        "yutyrannus"
+        "torvosaurus"
       ]
     },
     "herd": {
@@ -4079,24 +4037,19 @@
       "de": "Große Herde",
       "dinoIds": [
         "albertaceratops",
-        "amargasaurus",
         "apatosaurus",
         "barsboldia",
         "citipati",
         "deinocheirus",
-        "eotriceratops",
         "iguanodon",
         "kentrosaurus",
         "lambeosaurus",
         "lurdusaurus-coast",
         "lurdusaurus-freshwater",
-        "pachycephalosaurus",
         "pachyrhinosaurus",
-        "parasaurolophus",
         "psittacosaurus",
         "struthiomimus",
         "styracosaurus",
-        "tenontosaurus",
         "yunnanosaurus"
       ]
     },
@@ -4106,39 +4059,28 @@
       "dinoIds": [
         "austroraptor",
         "camptosaurus",
-        "compsognathus",
-        "dryosaurus",
-        "halszkaraptor",
-        "latenivenatrix",
         "lurdusaurus-coast",
         "rhamphorhynchus",
         "thalassodromeus",
-        "tropeognathus-coast",
-        "tropeognathus-ocean"
+        "tropeognathus"
       ]
     },
     "harem": {
       "label": "Harem life",
       "de": "Harem",
       "dinoIds": [
-        "argentinosaurus",
         "barsboldia",
         "camptosaurus",
         "citipati",
         "dilophosaurus",
-        "eotriceratops",
         "iguanodon",
-        "pachycephalosaurus",
         "pachyrhinosaurus",
-        "parasaurolophus",
         "pycnonemosaurus",
         "rhamphorhynchus",
-        "stegosaurus",
         "struthiomimus",
         "styracosaurus",
         "torvosaurus",
-        "tropeognathus-coast",
-        "tropeognathus-ocean",
+        "tropeognathus",
         "yunnanosaurus"
       ]
     },
@@ -4148,13 +4090,9 @@
       "dinoIds": [
         "albertaceratops",
         "apatosaurus",
-        "deinonychus",
-        "eotriceratops",
         "lambeosaurus",
         "maip",
         "pachyrhinosaurus",
-        "sarcosuchus",
-        "tenontosaurus",
         "therizinosaurus",
         "tylosaurus"
       ]
@@ -4181,6 +4119,7 @@
         "amargasaurus",
         "camptosaurus",
         "citipati",
+        "dryosaurus",
         "halszkaraptor",
         "kentrosaurus",
         "lambeosaurus",
@@ -4229,6 +4168,7 @@
         "achillobator",
         "allosaurus",
         "ceratosaurus",
+        "concavenator",
         "daspletosaurus",
         "deinosuchus-ocean",
         "deinosuchus-shore",
@@ -4269,13 +4209,13 @@
         "concavenator",
         "deinonychus",
         "dilophosaurus",
+        "latenivenatrix",
         "megalania-arid",
         "megalania-temperate",
         "metriacanthosaurus",
         "quetzalcoatlus",
         "rhamphorhynchus",
-        "thalassodromeus",
-        "tropeognathus-coast"
+        "thalassodromeus"
       ]
     },
     "territorial": {
@@ -4287,27 +4227,22 @@
         "camptosaurus",
         "deinosuchus-ocean",
         "deinosuchus-shore",
-        "dryosaurus",
+        "eotriceratops",
         "hatzegopteryx",
         "iguanodon",
         "kelenken",
-        "latenivenatrix",
         "lurdusaurus-coast",
         "lurdusaurus-freshwater",
         "megalania-arid",
         "metriacanthosaurus",
         "pachycephalosaurus",
-        "sarcosuchus",
         "spinosaurus-freshwater",
         "stegosaurus",
-        "tenontosaurus",
         "therizinosaurus",
         "torvosaurus",
         "tyrannosaurus",
         "tyrannotitan",
-        "utahraptor",
-        "yunnanosaurus",
-        "yutyrannus"
+        "yunnanosaurus"
       ]
     },
     "nomadic": {
@@ -4319,6 +4254,7 @@
         "alioramus",
         "amargasaurus",
         "apatosaurus",
+        "argentinosaurus",
         "austroraptor",
         "barsboldia",
         "citipati",
@@ -4343,9 +4279,9 @@
         "styracosaurus",
         "suchomimus",
         "thalassodromeus",
-        "tropeognathus-coast",
-        "tropeognathus-ocean",
+        "tropeognathus",
         "tylosaurus",
+        "utahraptor",
         "yunnanosaurus"
       ]
     },
@@ -4354,9 +4290,6 @@
       "de": "Hitzkopf",
       "dinoIds": [
         "concavenator",
-        "daspletosaurus",
-        "deinonychus",
-        "dryosaurus",
         "eotriceratops",
         "giganotosaurus",
         "hatzegopteryx",
@@ -4399,19 +4332,15 @@
       "label": "Playful & social",
       "de": "Verspielt",
       "dinoIds": [
-        "amargasaurus",
         "austroraptor",
         "ceratosaurus",
         "citipati",
         "compsognathus",
         "eurhinosaurus",
-        "halszkaraptor",
         "kaiwhekea",
-        "latenivenatrix",
         "lurdusaurus-freshwater",
         "pycnonemosaurus",
-        "thalassodromeus",
-        "yutyrannus"
+        "thalassodromeus"
       ]
     },
     "parental": {
@@ -4419,16 +4348,11 @@
       "de": "Fürsorgliche Eltern",
       "dinoIds": [
         "albertaceratops",
-        "argentinosaurus",
         "barsboldia",
         "citipati",
         "deinocheirus",
-        "eotriceratops",
-        "halszkaraptor",
         "hatzegopteryx",
         "leedsichthys",
-        "parasaurolophus",
-        "tenontosaurus",
         "therizinosaurus"
       ]
     },
@@ -4463,7 +4387,7 @@
         "spinosaurus-freshwater",
         "spinosaurus-saltwater",
         "suchomimus",
-        "tropeognathus-coast"
+        "tropeognathus"
       ]
     },
     "aquatic": {
@@ -4474,7 +4398,6 @@
         "eurhinosaurus",
         "kaiwhekea",
         "leedsichthys",
-        "tropeognathus-ocean",
         "tylosaurus"
       ]
     },
@@ -4486,8 +4409,7 @@
         "quetzalcoatlus",
         "rhamphorhynchus",
         "thalassodromeus",
-        "tropeognathus-coast",
-        "tropeognathus-ocean"
+        "tropeognathus"
       ]
     }
   },
@@ -4544,7 +4466,6 @@
         "albertaceratops",
         "alioramus",
         "allosaurus",
-        "amargasaurus",
         "anodontosaurus",
         "apatosaurus",
         "argentinosaurus",
@@ -4623,7 +4544,6 @@
         "spinosaurus-freshwater",
         "suchomimus",
         "thalassodromeus",
-        "tropeognathus-coast",
         "tyrannotitan",
         "yunnanosaurus"
       ]
@@ -4648,8 +4568,7 @@
         "sarcosuchus",
         "spinosaurus-saltwater",
         "suchomimus",
-        "tropeognathus-coast",
-        "tropeognathus-ocean",
+        "tropeognathus",
         "tylosaurus"
       ]
     },
@@ -4784,9 +4703,9 @@
     },
     "allosaurus": {
       "name": "Allosaurus",
-      "label": "Asiatic lion + Bobcat",
-      "labelDe": "Asiatischer Löwe + Rotluchs",
-      "headline": "An Asiatic lion of the dry country, living in coalitions of two or three and hunting with a bobcat's night-time stealth.",
+      "label": "Cougar + Bobcat",
+      "labelDe": "Puma + Rotluchs",
+      "headline": "A lone cougar of the dry country: a silent night stalker that tolerates every other species, drives out its own kind and hides in caves by day.",
       "setting": "Arid canyons, rock and scrub",
       "habitats": [
         "arid",
@@ -4795,11 +4714,11 @@
       ],
       "analogs": [
         {
-          "id": "asiatic-lion",
-          "animal": "Asiatic lion",
-          "de": "Asiatischer Löwe",
+          "id": "cougar",
+          "animal": "Cougar",
+          "de": "Puma",
           "archetype": "big-cat",
-          "share": 60,
+          "share": 70,
           "role": "primary"
         },
         {
@@ -4807,12 +4726,12 @@
           "animal": "Bobcat",
           "de": "Rotluchs",
           "archetype": "small-cat",
-          "share": 40,
+          "share": 30,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pair",
+        "solitary",
         "nocturnal",
         "ambush",
         "territorial"
@@ -4824,39 +4743,36 @@
     },
     "amargasaurus": {
       "name": "Amargasaurus",
-      "label": "Wildebeest + Giraffe",
-      "labelDe": "Gnu + Giraffe",
-      "headline": "A chatty wildebeest in a giraffe's body, living in the shadow of the giant sauropods.",
-      "setting": "Wherever the sauropod herds go; dense woodland when alone",
+      "label": "Okapi + Wildebeest",
+      "labelDe": "Okapi + Gnu",
+      "headline": "A lone okapi in a sauropod's body: the shy forest giraffe that hides in thick woodland, tags along with any friendly herbivore and uses bigger sauropods as a shield.",
+      "setting": "Dense woodland, close to any sauropod it can find",
       "habitats": [
-        "open",
         "forest",
         "wetland"
       ],
       "analogs": [
         {
+          "id": "okapi",
+          "animal": "Okapi",
+          "de": "Okapi",
+          "archetype": "giraffe",
+          "share": 60,
+          "role": "primary"
+        },
+        {
           "id": "wildebeest",
           "animal": "Wildebeest",
           "de": "Gnu",
           "archetype": "deer-antelope",
-          "share": 55,
-          "role": "primary"
-        },
-        {
-          "id": "giraffe",
-          "animal": "Giraffe",
-          "de": "Giraffe",
-          "archetype": "giraffe",
-          "share": 45,
+          "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "herd",
         "prey",
         "gentle",
-        "nomadic",
-        "playful"
+        "nomadic"
       ],
       "tier": "Large",
       "diet": "Herbivore",
@@ -4939,7 +4855,7 @@
       "name": "Argentinosaurus",
       "label": "Giraffe + Gorilla (silverback troop)",
       "labelDe": "Giraffe + Gorilla (Silberrücken)",
-      "headline": "A gentle giant: a silverback's family life inside a giraffe's body, scaled up to the largest land animal ever.",
+      "headline": "A lone giraffe giant that cannot bear being alone: it seeks the company of any sauropod and even follows carnivores, calling sadly when they chase it off.",
       "setting": "Open country with food and water, never dense forest",
       "habitats": [
         "open",
@@ -4951,7 +4867,7 @@
           "animal": "Giraffe",
           "de": "Giraffe",
           "archetype": "giraffe",
-          "share": 50,
+          "share": 70,
           "role": "primary"
         },
         {
@@ -4959,15 +4875,14 @@
           "animal": "Gorilla (silverback troop)",
           "de": "Gorilla (Silberrücken)",
           "archetype": "primate",
-          "share": 50,
+          "share": 30,
           "role": "secondary"
         }
       ],
       "moods": [
-        "harem",
         "gentle",
         "tank",
-        "parental"
+        "nomadic"
       ],
       "tier": "Giant",
       "diet": "Herbivore",
@@ -5162,9 +5077,9 @@
     },
     "compsognathus": {
       "name": "Compsognathus",
-      "label": "Brown rat + Golden jackal",
-      "labelDe": "Wanderratte + Goldschakal",
-      "headline": "A swarm of rats with a jackal's knack for shadowing the big predators.",
+      "label": "Golden jackal + Brown rat",
+      "labelDe": "Goldschakal + Wanderratte",
+      "headline": "A lone jackal that has adopted a giant: it follows one big carnivore everywhere, calls for company and lives on bones and stolen scraps.",
       "setting": "Everywhere, scurrying between POIs",
       "habitats": [
         "forest",
@@ -5173,24 +5088,24 @@
       ],
       "analogs": [
         {
-          "id": "brown-rat",
-          "animal": "Brown rat",
-          "de": "Wanderratte",
-          "archetype": "small-mammal",
-          "share": 60,
-          "role": "primary"
-        },
-        {
           "id": "golden-jackal",
           "animal": "Golden jackal",
           "de": "Goldschakal",
           "archetype": "canine",
-          "share": 40,
+          "share": 70,
+          "role": "primary"
+        },
+        {
+          "id": "brown-rat",
+          "animal": "Brown rat",
+          "de": "Wanderratte",
+          "archetype": "small-mammal",
+          "share": 30,
           "role": "secondary"
         }
       ],
       "moods": [
-        "colony",
+        "solitary",
         "scavenger",
         "fast",
         "playful",
@@ -5203,9 +5118,9 @@
     },
     "concavenator": {
       "name": "Concavenator",
-      "label": "Giant otter + Stoat",
-      "labelDe": "Riesenotter + Hermelin",
-      "headline": "A gang of giant otters, the 'river wolves' that kill crocodiles, with a stoat's ferocity and a hoarder's temper.",
+      "label": "Wolverine + Eurasian otter",
+      "labelDe": "Vielfraß + Eurasischer Fischotter",
+      "headline": "A lone wolverine of the riverbanks: it scavenges, ambushes from the water, hoards like a miser and snarls at anything that comes too close to its kill.",
       "setting": "Rivers, marshes and shores",
       "habitats": [
         "wetland",
@@ -5213,27 +5128,28 @@
       ],
       "analogs": [
         {
-          "id": "giant-otter",
-          "animal": "Giant otter",
-          "de": "Riesenotter",
+          "id": "wolverine",
+          "animal": "Wolverine",
+          "de": "Vielfraß",
           "archetype": "mustelid",
           "share": 60,
           "role": "primary"
         },
         {
-          "id": "stoat",
-          "animal": "Stoat",
-          "de": "Hermelin",
+          "id": "eurasian-otter",
+          "animal": "Eurasian otter",
+          "de": "Eurasischer Fischotter",
           "archetype": "mustelid",
           "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pack",
+        "solitary",
         "semi-aquatic",
+        "scavenger",
         "aggressive",
-        "scavenger"
+        "ambush"
       ],
       "tier": "Medium",
       "diet": "Carnivore",
@@ -5242,9 +5158,9 @@
     },
     "daspletosaurus": {
       "name": "Daspletosaurus",
-      "label": "Dingo + Cougar",
-      "labelDe": "Dingo + Puma",
-      "headline": "A dingo pack led by dominant males that herds prey into dead ends, with a cougar's forest-and-cliff ambush.",
+      "label": "Cougar + Dingo",
+      "labelDe": "Puma + Dingo",
+      "headline": "A lone cougar of the forests and cliffs: silent, strategic, ambushing prey up to Large tier and any young it can reach.",
       "setting": "Forests and cliffsides",
       "habitats": [
         "forest",
@@ -5252,26 +5168,25 @@
       ],
       "analogs": [
         {
-          "id": "dingo",
-          "animal": "Dingo",
-          "de": "Dingo",
-          "archetype": "canine",
-          "share": 55,
-          "role": "primary"
-        },
-        {
           "id": "cougar",
           "animal": "Cougar",
           "de": "Puma",
           "archetype": "big-cat",
-          "share": 45,
+          "share": 70,
+          "role": "primary"
+        },
+        {
+          "id": "dingo",
+          "animal": "Dingo",
+          "de": "Dingo",
+          "archetype": "canine",
+          "share": 30,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pack",
+        "solitary",
         "ambush",
-        "aggressive",
         "nomadic"
       ],
       "tier": "Large",
@@ -5321,36 +5236,34 @@
     },
     "deinonychus": {
       "name": "Deinonychus",
-      "label": "Spotted hyena + Dwarf mongoose",
-      "labelDe": "Tüpfelhyäne + Zwergmanguste",
-      "headline": "A spotted-hyena clan shrunk to mongoose size: noisy, female-ruled and deadly in numbers.",
-      "setting": "Nomad of open and wooded ground",
+      "label": "Brown hyena + Black-backed jackal",
+      "labelDe": "Schabrackenhyäne + Schabrackenschakal",
+      "headline": "A lone brown hyena with a jackal's patience: quiet, cautious and clever, trailing the herds and the Apex hunters for whatever they leave behind.",
+      "setting": "Behind herds and Apex hunters, across open and wooded ground",
       "habitats": [
         "open",
         "forest"
       ],
       "analogs": [
         {
-          "id": "spotted-hyena",
-          "animal": "Spotted hyena",
-          "de": "Tüpfelhyäne",
+          "id": "brown-hyena",
+          "animal": "Brown hyena",
+          "de": "Schabrackenhyäne",
           "archetype": "hyena",
           "share": 55,
           "role": "primary"
         },
         {
-          "id": "dwarf-mongoose",
-          "animal": "Dwarf mongoose",
-          "de": "Zwergmanguste",
-          "archetype": "small-mammal",
+          "id": "black-backed-jackal",
+          "animal": "Black-backed jackal",
+          "de": "Schabrackenschakal",
+          "archetype": "canine",
           "share": 45,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pack",
-        "matriarchal",
-        "aggressive",
+        "solitary",
         "scavenger",
         "nomadic"
       ],
@@ -5472,9 +5385,9 @@
     },
     "dryosaurus": {
       "name": "Dryosaurus",
-      "label": "Wild rabbit + Baboon troop",
-      "labelDe": "Wildkaninchen + Pavian (Trupp)",
-      "headline": "A rabbit warren with a baboon troop's attitude and chihuahua energy.",
+      "label": "European hare + Wild rabbit",
+      "labelDe": "Feldhase + Wildkaninchen",
+      "headline": "A lone hare instead of a warren bully: small, fast and much less sure of itself, it trails other herbivore herds and still elbows its way to the best berries.",
       "setting": "Caves, perches and food spots in forests and hills",
       "habitats": [
         "mountain",
@@ -5482,26 +5395,25 @@
       ],
       "analogs": [
         {
+          "id": "european-hare",
+          "animal": "European hare",
+          "de": "Feldhase",
+          "archetype": "small-mammal",
+          "share": 60,
+          "role": "primary"
+        },
+        {
           "id": "wild-rabbit",
           "animal": "Wild rabbit",
           "de": "Wildkaninchen",
           "archetype": "small-mammal",
-          "share": 50,
-          "role": "primary"
-        },
-        {
-          "id": "baboon-troop",
-          "animal": "Baboon troop",
-          "de": "Pavian (Trupp)",
-          "archetype": "primate",
-          "share": 50,
+          "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "colony",
-        "aggressive",
-        "territorial",
+        "solitary",
+        "prey",
         "fast"
       ],
       "tier": "Small",
@@ -5511,40 +5423,38 @@
     },
     "eotriceratops": {
       "name": "Eotriceratops",
-      "label": "Asian elephant + Hippopotamus (bull)",
-      "labelDe": "Asiatischer Elefant + Flusspferd (Bulle)",
-      "headline": "An Asian elephant matriarchy whose bulls carry a hippo bull's temper.",
-      "setting": "Nomad between courtship and nesting grounds in forest and hill country",
+      "label": "Hippopotamus (bull) + Asian elephant",
+      "labelDe": "Flusspferd (Bulle) + Asiatischer Elefant",
+      "headline": "A lone bull with a hippo bull's temper and an elephant bull's memory: he learns the migration paths and fights every rival who uses them.",
+      "setting": "The migration paths it has learned, between courtship and nesting grounds",
       "habitats": [
         "forest",
         "open"
       ],
       "analogs": [
         {
-          "id": "asian-elephant",
-          "animal": "Asian elephant",
-          "de": "Asiatischer Elefant",
-          "archetype": "elephant",
-          "share": 55,
-          "role": "primary"
-        },
-        {
           "id": "hippopotamus-bull",
           "animal": "Hippopotamus (bull)",
           "de": "Flusspferd (Bulle)",
           "archetype": "hippo",
+          "share": 55,
+          "role": "primary"
+        },
+        {
+          "id": "asian-elephant",
+          "animal": "Asian elephant",
+          "de": "Asiatischer Elefant",
+          "archetype": "elephant",
           "share": 45,
           "role": "secondary"
         }
       ],
       "moods": [
-        "herd",
-        "matriarchal",
+        "solitary",
         "aggressive",
+        "territorial",
         "nomadic",
-        "parental",
-        "tank",
-        "harem"
+        "tank"
       ],
       "tier": "Apex",
       "diet": "Herbivore",
@@ -5618,9 +5528,9 @@
     },
     "halszkaraptor": {
       "name": "Halszkaraptor",
-      "label": "Mallard + Magpie",
-      "labelDe": "Stockente + Elster",
-      "headline": "A raft of mallards that mobs anything near the nest, with a magpie's eye for shiny things.",
+      "label": "Mallard + Cattle egret",
+      "labelDe": "Stockente + Kuhreiher",
+      "headline": "A lost duckling with a cattle egret's trick: extremely flighty alone, it sticks close to a Lurdusaurus or Deinocheirus until it finds a raft again.",
       "setting": "Ponds, lakes, rivers and coasts",
       "habitats": [
         "wetland",
@@ -5632,25 +5542,22 @@
           "animal": "Mallard",
           "de": "Stockente",
           "archetype": "waterbird",
-          "share": 70,
+          "share": 60,
           "role": "primary"
         },
         {
-          "id": "magpie",
-          "animal": "Magpie",
-          "de": "Elster",
-          "archetype": "corvid",
-          "share": 30,
+          "id": "cattle-egret",
+          "animal": "Cattle egret",
+          "de": "Kuhreiher",
+          "archetype": "waterbird",
+          "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "colony",
         "prey",
         "semi-aquatic",
-        "gentle",
-        "playful",
-        "parental"
+        "gentle"
       ],
       "tier": "Tiny",
       "diet": "Herbivore",
@@ -5876,38 +5783,36 @@
     },
     "latenivenatrix": {
       "name": "Latenivenatrix",
-      "label": "Rook + Dhole",
-      "labelDe": "Saatkrähe + Rothund",
-      "headline": "A noisy rook colony that hunts at night like a dhole pack and rides along on Achillobator hunts.",
-      "setting": "Nomadic rookeries in forests and wetlands, with small nest territories",
+      "label": "Common raven + Rook",
+      "labelDe": "Kolkrabe + Saatkrähe",
+      "headline": "A lone raven in the night: quiet and watchful, it trails herds and Apex hunters for scraps, hunts small prey alone and finds comfort in an Achillobator companion.",
+      "setting": "Forests and wetlands, behind herds and Apex hunters",
       "habitats": [
         "forest",
         "wetland"
       ],
       "analogs": [
         {
-          "id": "rook",
-          "animal": "Rook",
-          "de": "Saatkrähe",
+          "id": "common-raven",
+          "animal": "Common raven",
+          "de": "Kolkrabe",
           "archetype": "corvid",
           "share": 60,
           "role": "primary"
         },
         {
-          "id": "dhole",
-          "animal": "Dhole",
-          "de": "Rothund",
-          "archetype": "canine",
+          "id": "rook",
+          "animal": "Rook",
+          "de": "Saatkrähe",
+          "archetype": "corvid",
           "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "colony",
-        "pack",
+        "solitary",
         "nocturnal",
-        "playful",
-        "territorial"
+        "scavenger"
       ],
       "tier": "Small",
       "diet": "Carnivore",
@@ -6196,36 +6101,35 @@
     },
     "pachycephalosaurus": {
       "name": "Pachycephalosaurus",
-      "label": "Mountain goat + Bighorn sheep",
-      "labelDe": "Schneeziege + Dickhornschaf",
-      "headline": "A mountain goat band on the cliffs, with bighorn rams' head-butting duels.",
+      "label": "Bighorn sheep + Mountain goat",
+      "labelDe": "Dickhornschaf + Schneeziege",
+      "headline": "A lone bighorn ram on the cliffs: exiled from the band, he shadows it from a distance and waits for his chance to ram the lead buck.",
       "setting": "Mountains, cliffs, ledges and caves",
       "habitats": [
         "mountain"
       ],
       "analogs": [
         {
-          "id": "mountain-goat",
-          "animal": "Mountain goat",
-          "de": "Schneeziege",
-          "archetype": "goat-sheep",
-          "share": 60,
-          "role": "primary"
-        },
-        {
           "id": "bighorn-sheep",
           "animal": "Bighorn sheep",
           "de": "Dickhornschaf",
           "archetype": "goat-sheep",
-          "share": 40,
+          "share": 55,
+          "role": "primary"
+        },
+        {
+          "id": "mountain-goat",
+          "animal": "Mountain goat",
+          "de": "Schneeziege",
+          "archetype": "goat-sheep",
+          "share": 45,
           "role": "secondary"
         }
       ],
       "moods": [
-        "herd",
-        "prey",
+        "solitary",
         "territorial",
-        "harem"
+        "prey"
       ],
       "tier": "Small",
       "diet": "Herbivore",
@@ -6276,7 +6180,7 @@
       "name": "Parasaurolophus",
       "label": "Red deer + Przewalski's horse",
       "labelDe": "Rothirsch + Przewalski-Pferd",
-      "headline": "A red-deer herd with a head stag and his does, migrating along ancestral routes like wild horses.",
+      "headline": "A lone red stag on the move: shunned or searching, he roams the ancestral routes and calls across open ground until another herd answers.",
       "setting": "Long generational migration loops",
       "habitats": [
         "forest",
@@ -6289,7 +6193,7 @@
           "animal": "Red deer",
           "de": "Rothirsch",
           "archetype": "deer-antelope",
-          "share": 55,
+          "share": 75,
           "role": "primary"
         },
         {
@@ -6297,17 +6201,15 @@
           "animal": "Przewalski's horse",
           "de": "Przewalski-Pferd",
           "archetype": "horse",
-          "share": 45,
+          "share": 25,
           "role": "secondary"
         }
       ],
       "moods": [
-        "herd",
-        "harem",
+        "solitary",
         "prey",
         "gentle",
-        "nomadic",
-        "parental"
+        "nomadic"
       ],
       "tier": "Apex",
       "diet": "Herbivore",
@@ -6474,9 +6376,9 @@
     },
     "sarcosuchus": {
       "name": "Sarcosuchus",
-      "label": "Mugger crocodile + Jacana",
-      "labelDe": "Sumpfkrokodil + Blatthühnchen",
-      "headline": "A nomadic marsh crocodile trio run jacana-style by one fierce female, walking overland at night to hunt.",
+      "label": "Mugger crocodile",
+      "labelDe": "Sumpfkrokodil",
+      "headline": "A lone mugger crocodile on the move: it hops from water to water in search of company, gives way to every float and every Deinosuchus, and walks overland at night to hunt.",
       "setting": "Swamps, coastal passages and forest rivers",
       "habitats": [
         "wetland",
@@ -6489,24 +6391,15 @@
           "animal": "Mugger crocodile",
           "de": "Sumpfkrokodil",
           "archetype": "crocodilian",
-          "share": 60,
+          "share": 100,
           "role": "primary"
-        },
-        {
-          "id": "jacana",
-          "animal": "Jacana",
-          "de": "Blatthühnchen",
-          "archetype": "waterbird",
-          "share": 40,
-          "role": "secondary"
         }
       ],
       "moods": [
+        "solitary",
         "semi-aquatic",
         "ambush",
-        "nomadic",
-        "matriarchal",
-        "territorial"
+        "nomadic"
       ],
       "tier": "Large",
       "diet": "Carnivore",
@@ -6598,7 +6491,7 @@
       "name": "Stegosaurus",
       "label": "Black rhinoceros + Grévy's zebra",
       "labelDe": "Spitzmaulnashorn + Grevyzebra",
-      "headline": "A grumpy black rhino with a zebra stallion's family: one bull, three cows, and every bush within 10 body lengths is his.",
+      "headline": "A lone black rhino bull on his known paths: grumpy, armoured, never fleeing, and always looking for a zeal whose bull he can challenge.",
       "setting": "Nomad of forests and hills, camping on resource-rich spots",
       "habitats": [
         "forest",
@@ -6610,7 +6503,7 @@
           "animal": "Black rhinoceros",
           "de": "Spitzmaulnashorn",
           "archetype": "rhino",
-          "share": 55,
+          "share": 75,
           "role": "primary"
         },
         {
@@ -6618,12 +6511,12 @@
           "animal": "Grévy's zebra",
           "de": "Grevyzebra",
           "archetype": "horse",
-          "share": 45,
+          "share": 25,
           "role": "secondary"
         }
       ],
       "moods": [
-        "harem",
+        "solitary",
         "aggressive",
         "tank",
         "territorial",
@@ -6708,9 +6601,9 @@
     },
     "suchomimus": {
       "name": "Suchomimus",
-      "label": "Gharial + Coyote",
-      "labelDe": "Gangesgavial + Kojote",
-      "headline": "A fish-snatching gharial with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young.",
+      "label": "Giant otter + Coyote",
+      "labelDe": "Riesenotter + Kojote",
+      "headline": "A screaming giant otter with a coyote's calculating mind, and a cuckoo's trick for getting Spinosaurus to raise its young.",
       "setting": "Drifts between resource-rich lakes and rivers",
       "habitats": [
         "wetland",
@@ -6718,10 +6611,10 @@
       ],
       "analogs": [
         {
-          "id": "gharial",
-          "animal": "Gharial",
-          "de": "Gangesgavial",
-          "archetype": "crocodilian",
+          "id": "giant-otter",
+          "animal": "Giant otter",
+          "de": "Riesenotter",
+          "archetype": "mustelid",
           "share": 50,
           "role": "primary"
         },
@@ -6746,36 +6639,33 @@
     },
     "tenontosaurus": {
       "name": "Tenontosaurus",
-      "label": "White-lipped peccary + Common marmoset",
-      "labelDe": "Weißbartpekari + Weißbüscheläffchen",
-      "headline": "A peccary herd sharing one scent and fighting as a team, run marmoset-style by one matriarch with doting fathers.",
+      "label": "Lowland tapir + Common duiker",
+      "labelDe": "Flachlandtapir + Kronenducker",
+      "headline": "A shy lowland tapir with a duiker's hiding reflex: an orphan grown up alone, it avoids almost everyone and vanishes into cover when danger comes.",
       "setting": "Forest territories, dug up for tubers",
       "habitats": [
         "forest"
       ],
       "analogs": [
         {
-          "id": "white-lipped-peccary",
-          "animal": "White-lipped peccary",
-          "de": "Weißbartpekari",
-          "archetype": "pig",
-          "share": 65,
+          "id": "lowland-tapir",
+          "animal": "Lowland tapir",
+          "de": "Flachlandtapir",
+          "archetype": "tapir",
+          "share": 55,
           "role": "primary"
         },
         {
-          "id": "common-marmoset",
-          "animal": "Common marmoset",
-          "de": "Weißbüscheläffchen",
-          "archetype": "primate",
-          "share": 35,
+          "id": "common-duiker",
+          "animal": "Common duiker",
+          "de": "Kronenducker",
+          "archetype": "deer-antelope",
+          "share": 45,
           "role": "secondary"
         }
       ],
       "moods": [
-        "herd",
-        "matriarchal",
-        "territorial",
-        "parental",
+        "solitary",
         "prey"
       ],
       "tier": "Medium",
@@ -6888,21 +6778,20 @@
       "activity": "Cathemeral",
       "classification": "Terrestrial"
     },
-    "tropeognathus-coast": {
-      "name": "Tropeognathus (Coast)",
-      "label": "Herring gull + Great cormorant",
-      "labelDe": "Silbermöwe + Kormoran",
-      "headline": "A Baltic beach gull with a cormorant's dive: sits on sand and rocks, raids every kill on the shore, cracks mussels on stone and turns into a pack hunter at night.",
-      "setting": "Beaches, mudflats, swamps, islands and the coast inland to the bogs",
+    "tropeognathus": {
+      "name": "Tropeognathus",
+      "label": "Northern gannet + Great cormorant",
+      "labelDe": "Basstölpel + Kormoran",
+      "headline": "A gannet with a cormorant's dive: one ledge on the sea cliffs as home, long fishing trips along the coast, deep dives for fish and always back to the same rock.",
+      "setting": "Sea cliffs, coasts and the shallow sea, with one home ledge",
       "habitats": [
-        "sea",
-        "wetland"
+        "sea"
       ],
       "analogs": [
         {
-          "id": "herring-gull",
-          "animal": "Herring gull",
-          "de": "Silbermöwe",
+          "id": "northern-gannet",
+          "animal": "Northern gannet",
+          "de": "Basstölpel",
           "archetype": "seabird",
           "share": 65,
           "role": "primary"
@@ -6919,47 +6808,7 @@
       "moods": [
         "colony",
         "flying",
-        "scavenger",
         "semi-aquatic",
-        "nomadic",
-        "harem"
-      ],
-      "tier": "Small",
-      "diet": "Carnivore",
-      "activity": "Cathemeral",
-      "classification": "Aerial"
-    },
-    "tropeognathus-ocean": {
-      "name": "Tropeognathus (Ocean)",
-      "label": "Wandering albatross + Northern gannet",
-      "labelDe": "Wanderalbatros + Basstölpel",
-      "headline": "An albatross over the open sea that dives like a gannet: rides the wind from Kelp Vale to the Stonebed Shoal, rests and sleeps on the waves and touches rock only to dry its wings, to sit out a storm or to breed.",
-      "setting": "The open sea: kelp shallows, the deep ocean and the offshore shoal, with sea cliffs to land on",
-      "habitats": [
-        "sea"
-      ],
-      "analogs": [
-        {
-          "id": "wandering-albatross",
-          "animal": "Wandering albatross",
-          "de": "Wanderalbatros",
-          "archetype": "seabird",
-          "share": 60,
-          "role": "primary"
-        },
-        {
-          "id": "northern-gannet",
-          "animal": "Northern gannet",
-          "de": "Basstölpel",
-          "archetype": "seabird",
-          "share": 40,
-          "role": "secondary"
-        }
-      ],
-      "moods": [
-        "colony",
-        "flying",
-        "aquatic",
         "nomadic",
         "harem"
       ],
@@ -7085,10 +6934,10 @@
     },
     "utahraptor": {
       "name": "Utahraptor",
-      "label": "Grey wolf (family pack) + Bowerbird",
-      "labelDe": "Grauwolf (Familienrudel) + Laubenvogel",
-      "headline": "A Yellowstone-style wolf family pack around an alpha pair, at war with rival packs, where suitors court with bowerbird gifts.",
-      "setting": "Pack territories in canyons, hills and forests",
+      "label": "Grey wolf + Bowerbird",
+      "labelDe": "Grauwolf (Einzelwolf) + Laubenvogel",
+      "headline": "A lone dispersing wolf that trails the sauropod herds in silence and courts at the edge of other packs' land with a bowerbird's gifts.",
+      "setting": "Nomad between other packs' territories",
       "habitats": [
         "arid",
         "open",
@@ -7096,11 +6945,11 @@
       ],
       "analogs": [
         {
-          "id": "grey-wolf-family-pack",
-          "animal": "Grey wolf (family pack)",
-          "de": "Grauwolf (Familienrudel)",
+          "id": "grey-wolf",
+          "animal": "Grey wolf",
+          "de": "Grauwolf (Einzelwolf)",
           "archetype": "canine",
-          "share": 70,
+          "share": 60,
           "role": "primary"
         },
         {
@@ -7108,14 +6957,13 @@
           "animal": "Bowerbird",
           "de": "Laubenvogel",
           "archetype": "songbird",
-          "share": 30,
+          "share": 40,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pack",
-        "family",
-        "territorial",
+        "solitary",
+        "nomadic",
         "chaser"
       ],
       "tier": "Medium",
@@ -7168,7 +7016,7 @@
       "name": "Yutyrannus",
       "label": "Snow leopard + Arctic fox",
       "labelDe": "Schneeleopard + Polarfuchs",
-      "headline": "A snow leopard that lives in a playful arctic-fox family: cold-loving, den-dwelling, and bold enough to hunt the biggest predators.",
+      "headline": "A lone snow leopard of the cool hills: silent, low to the ground, sunning on rock faces in its small favourite range.",
       "setting": "Cool, rainy-season forests and hills; dens",
       "habitats": [
         "forest",
@@ -7180,7 +7028,7 @@
           "animal": "Snow leopard",
           "de": "Schneeleopard",
           "archetype": "big-cat",
-          "share": 60,
+          "share": 80,
           "role": "primary"
         },
         {
@@ -7188,15 +7036,12 @@
           "animal": "Arctic fox",
           "de": "Polarfuchs",
           "archetype": "canine",
-          "share": 40,
+          "share": 20,
           "role": "secondary"
         }
       ],
       "moods": [
-        "pack",
-        "family",
-        "playful",
-        "territorial",
+        "solitary",
         "ambush"
       ],
       "tier": "Large",
@@ -7373,6 +7218,7 @@
         "elephant",
         "hippo",
         "rhino",
+        "tapir",
         "cattle",
         "deer-antelope",
         "horse",
@@ -7401,6 +7247,7 @@
         "elephant",
         "hippo",
         "rhino",
+        "tapir",
         "cattle",
         "deer-antelope",
         "horse",
@@ -7751,9 +7598,7 @@
       "archetypes": [
         "canine"
       ],
-      "animals": [
-        "dhole"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -7845,9 +7690,7 @@
       "archetypes": [
         "canine"
       ],
-      "animals": [
-        "dhole"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -7907,6 +7750,26 @@
       "moods": [],
       "habitats": []
     },
+    "black backed jackal": {
+      "archetypes": [
+        "canine"
+      ],
+      "animals": [
+        "black-backed-jackal"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "schabrackenschakal": {
+      "archetypes": [
+        "canine"
+      ],
+      "animals": [
+        "black-backed-jackal"
+      ],
+      "moods": [],
+      "habitats": []
+    },
     "hyena": {
       "archetypes": [
         "hyena"
@@ -7948,6 +7811,42 @@
       "animals": [
         "spotted-hyena"
       ],
+      "moods": [],
+      "habitats": []
+    },
+    "brown hyena": {
+      "archetypes": [
+        "hyena"
+      ],
+      "animals": [
+        "brown-hyena"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "schabrackenhyane": {
+      "archetypes": [
+        "hyena"
+      ],
+      "animals": [
+        "brown-hyena"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "braune hyane": {
+      "archetypes": [
+        "hyena"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "strandwolf": {
+      "archetypes": [
+        "hyena"
+      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -8007,9 +7906,7 @@
       "archetypes": [
         "mustelid"
       ],
-      "animals": [
-        "stoat"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -8033,7 +7930,9 @@
       "archetypes": [
         "mustelid"
       ],
-      "animals": [],
+      "animals": [
+        "wolverine"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -8077,9 +7976,7 @@
       "archetypes": [
         "mustelid"
       ],
-      "animals": [
-        "stoat"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -8100,6 +7997,42 @@
       "habitats": []
     },
     "vielfrass": {
+      "archetypes": [
+        "mustelid"
+      ],
+      "animals": [
+        "wolverine"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "eurasian otter": {
+      "archetypes": [
+        "mustelid"
+      ],
+      "animals": [
+        "eurasian-otter"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "river otter": {
+      "archetypes": [
+        "mustelid"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "fischotter": {
+      "archetypes": [
+        "mustelid"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "flussotter": {
       "archetypes": [
         "mustelid"
       ],
@@ -8300,6 +8233,26 @@
       "moods": [],
       "habitats": []
     },
+    "european hare": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "european-hare"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "feldhase": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "european-hare"
+      ],
+      "moods": [],
+      "habitats": []
+    },
     "kangaroo marsupial": {
       "archetypes": [
         "marsupial"
@@ -8462,9 +8415,7 @@
       "archetypes": [
         "primate"
       ],
-      "animals": [
-        "baboon-troop"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -8480,9 +8431,7 @@
       "archetypes": [
         "primate"
       ],
-      "animals": [
-        "common-marmoset"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -8635,6 +8584,58 @@
       "animals": [
         "black-rhinoceros"
       ],
+      "moods": [],
+      "habitats": []
+    },
+    "tapir": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "lowland tapir": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [
+        "lowland-tapir"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "south american tapir": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "tapire": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "flachlandtapir": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [
+        "lowland-tapir"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "schabrackentapir": {
+      "archetypes": [
+        "tapir"
+      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -9054,6 +9055,42 @@
       "moods": [],
       "habitats": []
     },
+    "duiker": {
+      "archetypes": [
+        "deer-antelope"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "common duiker": {
+      "archetypes": [
+        "deer-antelope"
+      ],
+      "animals": [
+        "common-duiker"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "ducker": {
+      "archetypes": [
+        "deer-antelope"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "kronenducker": {
+      "archetypes": [
+        "deer-antelope"
+      ],
+      "animals": [
+        "common-duiker"
+      ],
+      "moods": [],
+      "habitats": []
+    },
     "horse zebra": {
       "archetypes": [
         "horse"
@@ -9157,6 +9194,24 @@
       "animals": [
         "giraffe"
       ],
+      "moods": [],
+      "habitats": []
+    },
+    "okapi": {
+      "archetypes": [
+        "giraffe"
+      ],
+      "animals": [
+        "okapi"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "waldgiraffe": {
+      "archetypes": [
+        "giraffe"
+      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -9699,9 +9754,7 @@
       "archetypes": [
         "crocodilian"
       ],
-      "animals": [
-        "gharial"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10477,9 +10530,7 @@
       "archetypes": [
         "corvid"
       ],
-      "animals": [
-        "magpie"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10539,9 +10590,7 @@
       "archetypes": [
         "corvid"
       ],
-      "animals": [
-        "magpie"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10637,9 +10686,7 @@
       "archetypes": [
         "seabird"
       ],
-      "animals": [
-        "herring-gull"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10693,9 +10740,7 @@
       "archetypes": [
         "seabird"
       ],
-      "animals": [
-        "herring-gull"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10713,9 +10758,7 @@
       "archetypes": [
         "seabird"
       ],
-      "animals": [
-        "wandering-albatross"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10723,9 +10766,7 @@
       "archetypes": [
         "seabird"
       ],
-      "animals": [
-        "wandering-albatross"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10833,9 +10874,7 @@
       "archetypes": [
         "waterbird"
       ],
-      "animals": [
-        "jacana"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10935,9 +10974,7 @@
       "archetypes": [
         "waterbird"
       ],
-      "animals": [
-        "jacana"
-      ],
+      "animals": [],
       "moods": [],
       "habitats": []
     },
@@ -10946,6 +10983,34 @@
         "waterbird"
       ],
       "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "egret": {
+      "archetypes": [
+        "waterbird"
+      ],
+      "animals": [],
+      "moods": [],
+      "habitats": []
+    },
+    "cattle egret": {
+      "archetypes": [
+        "waterbird"
+      ],
+      "animals": [
+        "cattle-egret"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "kuhreiher": {
+      "archetypes": [
+        "waterbird"
+      ],
+      "animals": [
+        "cattle-egret"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -14262,26 +14327,6 @@
       "moods": [],
       "habitats": []
     },
-    "asiatic lion": {
-      "archetypes": [
-        "big-cat"
-      ],
-      "animals": [
-        "asiatic-lion"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "asiatischer lowe": {
-      "archetypes": [
-        "big-cat"
-      ],
-      "animals": [
-        "asiatic-lion"
-      ],
-      "moods": [],
-      "habitats": []
-    },
     "african savanna elephant": {
       "archetypes": [
         "elephant"
@@ -14387,8 +14432,7 @@
         "canine"
       ],
       "animals": [
-        "grey-wolf",
-        "grey-wolf-family-pack"
+        "grey-wolf"
       ],
       "moods": [],
       "habitats": []
@@ -14398,8 +14442,7 @@
         "canine"
       ],
       "animals": [
-        "grey-wolf",
-        "grey-wolf-family-pack"
+        "grey-wolf"
       ],
       "moods": [],
       "habitats": []
@@ -14424,26 +14467,6 @@
       "moods": [],
       "habitats": []
     },
-    "brown rat": {
-      "archetypes": [
-        "small-mammal"
-      ],
-      "animals": [
-        "brown-rat"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "wanderratte": {
-      "archetypes": [
-        "small-mammal"
-      ],
-      "animals": [
-        "brown-rat"
-      ],
-      "moods": [],
-      "habitats": []
-    },
     "golden jackal": {
       "archetypes": [
         "canine"
@@ -14464,32 +14487,42 @@
       "moods": [],
       "habitats": []
     },
+    "brown rat": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "brown-rat"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "wanderratte": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "brown-rat"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "eurasischer fischotter": {
+      "archetypes": [
+        "mustelid"
+      ],
+      "animals": [
+        "eurasian-otter"
+      ],
+      "moods": [],
+      "habitats": []
+    },
     "mute swan": {
       "archetypes": [
         "waterbird"
       ],
       "animals": [
         "mute-swan"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "dwarf mongoose": {
-      "archetypes": [
-        "small-mammal"
-      ],
-      "animals": [
-        "dwarf-mongoose"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "zwergmanguste": {
-      "archetypes": [
-        "small-mammal"
-      ],
-      "animals": [
-        "dwarf-mongoose"
       ],
       "moods": [],
       "habitats": []
@@ -14530,26 +14563,6 @@
       ],
       "animals": [
         "wild-rabbit"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "baboon troop": {
-      "archetypes": [
-        "primate"
-      ],
-      "animals": [
-        "baboon-troop"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "pavian trupp": {
-      "archetypes": [
-        "primate"
-      ],
-      "animals": [
-        "baboon-troop"
       ],
       "moods": [],
       "habitats": []
@@ -14804,46 +14817,6 @@
       "moods": [],
       "habitats": []
     },
-    "gangesgavial": {
-      "archetypes": [
-        "crocodilian"
-      ],
-      "animals": [
-        "gharial"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "white lipped peccary": {
-      "archetypes": [
-        "pig"
-      ],
-      "animals": [
-        "white-lipped-peccary"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "weissbartpekari": {
-      "archetypes": [
-        "pig"
-      ],
-      "animals": [
-        "white-lipped-peccary"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "common marmoset": {
-      "archetypes": [
-        "primate"
-      ],
-      "animals": [
-        "common-marmoset"
-      ],
-      "moods": [],
-      "habitats": []
-    },
     "black headed gull": {
       "archetypes": [
         "seabird"
@@ -14894,22 +14867,12 @@
       "moods": [],
       "habitats": []
     },
-    "grey wolf family pack": {
+    "grauwolf einzelwolf": {
       "archetypes": [
         "canine"
       ],
       "animals": [
-        "grey-wolf-family-pack"
-      ],
-      "moods": [],
-      "habitats": []
-    },
-    "grauwolf familienrudel": {
-      "archetypes": [
-        "canine"
-      ],
-      "animals": [
-        "grey-wolf-family-pack"
+        "grey-wolf"
       ],
       "moods": [],
       "habitats": []

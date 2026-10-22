@@ -59,6 +59,10 @@ You are a medium, skittish but aggressive herbivore in a 'bristle' of up to 8 wi
 - Anders als die Tiere: Llamas only kick and spit; Kentrosaurus carries a spiked tail that makes predators bleed. Porcupines are solitary; Kentrosaurus lives in a bristle.
 - Besonderheit: Alpacas and hedgehogs are official inspirations too.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo wirst du zum Wachlama eines einzelnen Stegosaurus, und genau dafür steht das Lama schon im Basis-Tier.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Steep Run, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Crag Bluffs, Wollemi Forest

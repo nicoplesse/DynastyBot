@@ -55,6 +55,10 @@ You are an Apex nocturnal carnivore living alone or in a related same-sex pair: 
 - Anders als die Tiere: Tigers are silent stalkers; Tyrannotitan is usually heard before it is seen. Sharks don't form sibling pairs.
 - Besonderheit: No official inspiration is listed; this pairing follows its territory system and bite style.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Tyrannotitan leben allein oder höchstens mit einem Geschwister. Ein Tigerpaar bleibt ein Tiger.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Steep Run, Volcano Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs

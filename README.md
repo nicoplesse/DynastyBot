@@ -122,6 +122,16 @@ Every playable is matched to the one or two real animals it plays most like, so 
 
 Animal families, moods and habitats form a controlled vocabulary with English and German synonyms in `data/reference/analog-vocabulary.json`. At processing time (`server/src/analogs.js`) each profile gains an `analog` block with the curated content, the official "Profile inspired by…" credit, live stat facts (tier, combat weight, HP, sprint speeds, hunt ceiling) and links to other playables built on the same animal. The processor also writes `data/processed/analogs.json`: an index of playables by animal family, animal, mood and habitat, plus a synonym lookup. `GET /api/analogs` serves it and `GET /api/analogs/search?q=…` ranks playables for free text in German or English ("ochse", "Großkatze im Dschungel", "Rudel Wolf", "Krokodil im Sumpf"). The main animal ranks ahead of a partial match, and family words only name an animal as a whole word ("Moschusochse" is not an ox; "Seelöwe" is not a lion). A matched phrase owns its words ("See-Elefant" is an elephant seal, not an elephant), and when a query names a specific animal, other members of its family rank below the playables built on that animal. The frontend shows a **Plays Like** section at the top of every profile and an **Animal Finder** page (families, habitat, play-feel and diet filters, free-text search).
 
+### Solo or group
+
+A switch in the sidebar (**Spielweise: Solo ⇄ Gruppe**, also on the profile list, the Animal Finder and every Plays Like section) shows each playable as you play it: alone or in a group. Solo is the default, and the choice is remembered per browser. Where playing alone or in a group changes the core of a playable, it gets its own animal. `data/raw/<id>/modes.json` (next to `analog.json`) records the verdict for every playable:
+
+- `base`: which mode `analog.json` describes (`solo`, `group` or `both`).
+- `verdict`: `same` (the same animal either way, e.g. a lone Tyrannosaurus is still the polar bear), `rebalanced` (the same animals with other shares, e.g. a solo Daspletosaurus is 70 % cougar instead of 55 % dingo) or `different` (another animal, e.g. a solo Deinonychus is a brown hyena and black-backed jackal instead of a spotted-hyena clan). A German `note` explains why.
+- For `rebalanced` and `different`, the other mode's key (`solo` or `group`) holds the changed analog fields, laid over `analog.json`, and a German `summary` that replaces the play guide's summary in that mode.
+
+The processor resolves both modes into each profile's `modes` block, writes one Animal Finder index per mode (`analogs.json` for solo, `analogs-group.json` for group; `GET /api/analogs?mode=group`) and lists only the changed mode in the catalog. `server/src/modes.test.js` checks every verdict, and checks that every “quoted” reason appears verbatim in the profile.
+
 ## Profile images: animal first, then the game
 
 Each profile card shows a photo of the animal with the highest share, e.g. "60% Grizzly bear" for Spinosaurus. The profile page opens with three images: **1** the main animal, **2** the second animal (only for mixed profiles), **3** Dynasty's in-game title card, which shows the dino with its name on it.

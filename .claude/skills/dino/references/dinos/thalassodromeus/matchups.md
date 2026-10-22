@@ -1,25 +1,15 @@
 # Thalassodromeus – Matchups
 
-Played solo against their full legal groups, Thalassodromeus has 2 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Thalassodromeus has 2 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
-### Tropeognathus (Coast) – conditional (predator)
-Tropeognathus (Coast) matters only if it gets the right opening
+### Tropeognathus – conditional (predator)
+Tropeognathus matters only if it gets the right opening
 
-Tropeognathus (Coast) is linked by a specific profile rule. Tropeognathus (Coast) can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Coast) vs 1 Thalassodromeus: the Tropeognathus (Coast) side wins in about 5 s with 90% of its health left.
-- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Coast) vs 1 Thalassodromeus: the Tropeognathus (Coast) side wins in about 5 s with 90% of its health left. (Kampfgewicht 2000 vs 2100)
-- Kampf (beide Seiten legal max): Thalassodromeus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 43 pro Haupttreffer vom Angreifer (12 bis zum Kill), 42 zurück (11 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Tropeognathus (Ocean) – conditional (predator)
-Tropeognathus (Ocean) matters only if it gets the right opening
-
-Tropeognathus (Ocean) is linked by a specific profile rule. Tropeognathus (Ocean) can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Ocean) vs 1 Thalassodromeus: the Tropeognathus (Ocean) side wins in about 5 s with 90% of its health left.
-- Verfolgung: Tropeognathus (Ocean) can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Ocean) vs 1 Thalassodromeus: the Tropeognathus (Ocean) side wins in about 5 s with 90% of its health left. (Kampfgewicht 2000 vs 2100)
+Tropeognathus is linked by a specific profile rule. Tropeognathus can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus vs 1 Thalassodromeus: the Tropeognathus side wins in about 5 s with 90% of its health left.
+- Verfolgung: Tropeognathus can arrive from the air, but Thalassodromeus's 1025 land speed and longer sprint let it disengage after the opening pass.
+- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus vs 1 Thalassodromeus: the Tropeognathus side wins in about 5 s with 90% of its health left. (Kampfgewicht 2000 vs 2100)
 - Kampf (beide Seiten legal max): Thalassodromeus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 43 pro Haupttreffer vom Angreifer (12 bis zum Kill), 42 zurück (11 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
@@ -66,22 +56,12 @@ A profile rule names or prioritises this matchup. Thalassodromeus can approach a
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 27 pro Haupttreffer vom Angreifer (23 bis zum Kill), 44 zurück (12 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
-### Tropeognathus (Coast) – conditional (conditional)
-Tropeognathus (Coast) is legal quarry, but not a comfortable fight
+### Tropeognathus – conditional (conditional)
+Tropeognathus is legal quarry, but not a comfortable fight
 
-A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 4 Tropeognathus (Coast): the Tropeognathus (Coast) side wins in about 5 s with 90% of its health left.
+A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 4 Tropeognathus: the Tropeognathus side wins in about 5 s with 90% of its health left.
 - Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 4 Tropeognathus (Coast): the Tropeognathus (Coast) side wins in about 5 s with 90% of its health left. (Kampfgewicht 2100 vs 2000)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 42 pro Haupttreffer vom Angreifer (11 bis zum Kill), 43 zurück (12 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Tropeognathus (Ocean) – conditional (conditional)
-Tropeognathus (Ocean) is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 4 Tropeognathus (Ocean): the Tropeognathus (Ocean) side wins in about 5 s with 90% of its health left.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 4 Tropeognathus (Ocean): the Tropeognathus (Ocean) side wins in about 5 s with 90% of its health left. (Kampfgewicht 2100 vs 2000)
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 4 Tropeognathus: the Tropeognathus side wins in about 5 s with 90% of its health left. (Kampfgewicht 2100 vs 2000)
 - Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 42 pro Haupttreffer vom Angreifer (11 bis zum Kill), 43 zurück (12 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.

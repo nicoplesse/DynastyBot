@@ -54,6 +54,10 @@ You are a medium ceratopsian in an unlimited herd made of harems, led by the sta
 - Anders als die Tiere: Musk oxen rarely chase far; Styracosaurus defenders chase forfeiting predators until they leave the herd's line of sight.
 - Besonderheit: The profile even lists an 'Albino Oryx' skin.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Das Profil kennt keine Einzelgänger. Solo bist du höchstens ein Junggesellen-Hirsch auf Herdensuche, und das ist dasselbe Tier.
+
 ## Karte & POIs
 
 - **Nisten + Balz:** Dry Fang Canyon, Cedrus Forest, Wollemi Forest

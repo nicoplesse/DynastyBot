@@ -62,8 +62,7 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | thalassodromeus | Thalassodromeus | – | Small Diurnal Aerial Carnivore | Taube + Lachmöwe (Pigeon + Black-headed gull) |
 | therizinosaurus | Therizinosaurus | Theri, Therizino | Apex Nocturnal Terrestrial Herbivore | Kasuar (Cassowary) |
 | torvosaurus | Torvosaurus | Torvo | Large Cathemeral Terrestrial Carnivore | Afrikanischer Löwe (African lion) |
-| tropeognathus-coast | Tropeognathus (Coast) | Tropeognathus, Coast Tropeognathus, Beach Tropeognathus, Coast Trope, Beach Trope, Strand-Trope, Küsten-Trope, Möwen-Trope, Strandpirat | Small Cathemeral Aerial Carnivore | Silbermöwe + Kormoran (Herring gull + Great cormorant) |
-| tropeognathus-ocean | Tropeognathus (Ocean) | Tropeognathus, Ocean Tropeognathus, Sea Tropeognathus, Ocean Trope, Sea Trope, Hochsee-Trope, Meeres-Trope, Albatros-Trope, Sturmsegler | Small Cathemeral Aerial Carnivore | Wanderalbatros + Basstölpel (Wandering albatross + Northern gannet) |
+| tropeognathus | Tropeognathus | – | Small Cathemeral Aerial Carnivore | Basstölpel + Kormoran (Northern gannet + Great cormorant) |
 | tylosaurus | Tylosaurus | Ty, Tylo | Apex Cathemeral Aquatic Carnivore | Orca (Schwertwal) (Orca) |
 | tyrannosaurus | Tyrannosaurus | Rex, T Rex | Apex Cathemeral Terrestrial Carnivore | Eisbär + Waldkauz (Polar bear + Tawny owl) |
 | tyrannotitan | Tyrannotitan | TT, Tyranno, Titan | Apex Nocturnal Terrestrial Carnivore | Tiger + Weißer Hai (Tiger + Great white shark) |

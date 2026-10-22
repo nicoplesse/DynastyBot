@@ -48,6 +48,10 @@ You are an Apex carnivore (6,000 combat weight) that lives alone or with a partn
 - Lebensraum: Forest and hill territories. Primarily found in forests. Claims large territories: the northern and southern Redwoods, the western and eastern southern hills, and upper and lower Wollemi (see map).
 - Anders als die Tiere: Polar bears are nomads of the sea ice; Tyrannosaurus holds a fixed forest territory. Owls are small; Tyrannosaurus is one of the heaviest predators on the roster.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Der Rex ist Einzelgänger, bis er sich bindet, und das Paar steckt im Basis-Tier schon drin.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Northern Redwoods Territory, Southern Redwoods Territory, Western Hills Territory, Eastern Hills Territory, Upper Wollemi Territory, Lower Wollemi Territory

@@ -55,6 +55,10 @@ You are a medium nocturnal carnivore in a close, loyal pack of up to 6 that stay
 - Anders als die Tiere: Wolves defend territories against other packs; Ceratosaurus is not territorial and never lets pack encounters go beyond displays. Contesting a claimed carcass before hunting is kleptoparasitism, closer to a spotted hyena than a wolf.
 - Besonderheit: A wolf pack with a spotted hyena's habit: the first move is always to steal the nearest claimed carcass.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du ein einsamer Wolf. Ceratosaurus gehen laut Profil ohnehin gern allein auf Patrouille, und ein Einzelner wartet am POI-Rand auf Anschluss an ein Rudel.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Tallbrush Coasts, Steep Run, Big Tree Overlook, Cedrus Forest, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Wollemi Forest

@@ -1,26 +1,16 @@
 # Lurdusaurus (Coast) – Matchups
 
-Played solo against their full legal groups, Lurdusaurus (Coast) has 5 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Lurdusaurus (Coast) has 5 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
-### Tropeognathus (Coast) – spürbar (predator)
-Tropeognathus (Coast) can create a credible fight
+### Tropeognathus – spürbar (predator)
+Tropeognathus can create a credible fight
 
-Tropeognathus (Coast) is linked by a specific profile rule. Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Coast) vs 1 Lurdusaurus (Coast): the Tropeognathus (Coast) side wins in about 12 s with 31% of its health left, too narrow to call.
-- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Coast) vs 1 Lurdusaurus (Coast): the Tropeognathus (Coast) side wins in about 12 s with 31% of its health left, too narrow to call. (Kampfgewicht 2000 vs 3200)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 4 s with 95% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (22 bis zum Kill), 72 zurück (7 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Tropeognathus (Ocean) – spürbar (predator)
-Tropeognathus (Ocean) can create a credible fight
-
-Tropeognathus (Ocean) is linked by a specific profile rule. Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Ocean) vs 1 Lurdusaurus (Coast): the Tropeognathus (Ocean) side wins in about 12 s with 31% of its health left, too narrow to call.
-- Verfolgung: Tropeognathus (Ocean) can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Ocean) vs 1 Lurdusaurus (Coast): the Tropeognathus (Ocean) side wins in about 12 s with 31% of its health left, too narrow to call. (Kampfgewicht 2000 vs 3200)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Ocean) vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 4 s with 95% of its health left.
+Tropeognathus is linked by a specific profile rule. Tropeognathus can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus vs 1 Lurdusaurus (Coast): the Tropeognathus side wins in about 12 s with 31% of its health left, too narrow to call.
+- Verfolgung: Tropeognathus can arrive from the air, but Lurdusaurus (Coast)'s 1050 land speed and longer sprint let it disengage after the opening pass.
+- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus vs 1 Lurdusaurus (Coast): the Tropeognathus side wins in about 12 s with 31% of its health left, too narrow to call. (Kampfgewicht 2000 vs 3200)
+- Kampf (beide Seiten legal max): 4 Tropeognathus vs 5 Lurdusaurus (Coast): the Lurdusaurus (Coast) side wins in about 4 s with 95% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (22 bis zum Kill), 72 zurück (7 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 

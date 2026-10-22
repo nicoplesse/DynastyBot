@@ -12695,6 +12695,321 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Rotfüchse jagen ohnehin allein. Solo bist du der schlaue Einzelgänger, der Aas frisst und heimlich balzt, in der Leash wirst du gefährlich. Das Tier bleibt der Fuchs.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Red fox + Raccoon",
+        "labelDe": "Rotfuchs + Waschbär",
+        "headline": "A cunning, skittish fox family that turns dangerous in a group, with a raccoon's sneakiness.",
+        "playsLike": "You are a medium carnivore in a 'leash': a dominant male with his breeding group and their grown offspring, up to 8. Alone you prefer to scavenge and hunt up to Medium tier; 2–4 of you hunt Large; a full party of 5 can take solitary Apex herbivores. Hunts are bait-and-dart: one calls and postures as bait while the others dart in for bleeding bites. You are skittish and always flee Apex carnivores, and subordinates sneak courtship behind the boss's back.",
+        "setting": {
+          "label": "Woods, hills and dry canyons",
+          "note": "Sedentary; the dominant male leads the leash whenever it relocates. Optional chromatophores let it blend into its surroundings.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "red-fox",
+            "animal": "Red fox",
+            "de": "Rotfuchs",
+            "scientific": "Vulpes vulpes",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 55,
+            "role": "primary",
+            "covers": "Life and temperament: a cunning, skittish opportunist living in a family group with a dominant breeder",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/1280px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "ClaudiaTen",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "raccoon",
+            "animal": "Raccoon",
+            "de": "Waschbär",
+            "scientific": "Procyon lotor",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Mischief: sneaky, masked, same-sex gangs, always on the lookout for an easy meal",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/1280px-Raccoon_in_Central_Park_%2835264%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Rhododendrites",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "A leash",
+            "text": "A group of foxes is called a 'leash', and fox families keep grown offspring as helpers around the breeding animals (official inspiration: foxes)."
+          },
+          {
+            "trait": "Opportunist",
+            "text": "Solitary animals prefer to scavenge, even from claimed corpses, and always put their own life first."
+          },
+          {
+            "trait": "Skittish",
+            "text": "Always flees Apex carnivores and flees anything its group is too small to hunt."
+          },
+          {
+            "trait": "Mask gangs and sneaking",
+            "text": "Same-sex 'mask' groups and sneaky courtship by subordinates carry the raccoon's masked, mischievous streak (official inspiration)."
+          },
+          {
+            "trait": "Bait and bleed",
+            "text": "One member reveals itself and calls loudly as bait while hidden packmates dart in to land bleeding bites."
+          }
+        ],
+        "notLike": [
+          "Foxes don't hunt in groups; a full Dilophosaurus party can bleed down a solitary Apex herbivore."
+        ],
+        "twist": "Optional chameleon-style colour shifting to blend in and regulate temperature (official inspiration).",
+        "moods": [
+          {
+            "id": "family",
+            "label": "Family group",
+            "de": "Familiengruppe"
+          },
+          {
+            "id": "pack",
+            "label": "Pack hunter",
+            "de": "Rudel"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "raccoons & foxes, chameleons (for color changing), and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "growthMinutes": 120,
+          "landSprint": 1100,
+          "landSprintSeconds": 166.667,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 5,
+          "engagementLimit": 5,
+          "mapBiomes": [
+            "canyon",
+            "hills",
+            "forest",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Red fox + Raccoon",
+        "labelDe": "Rotfuchs + Waschbär",
+        "headline": "A cunning, skittish fox family that turns dangerous in a group, with a raccoon's sneakiness.",
+        "playsLike": "You are a medium carnivore in a 'leash': a dominant male with his breeding group and their grown offspring, up to 8. Alone you prefer to scavenge and hunt up to Medium tier; 2–4 of you hunt Large; a full party of 5 can take solitary Apex herbivores. Hunts are bait-and-dart: one calls and postures as bait while the others dart in for bleeding bites. You are skittish and always flee Apex carnivores, and subordinates sneak courtship behind the boss's back.",
+        "setting": {
+          "label": "Woods, hills and dry canyons",
+          "note": "Sedentary; the dominant male leads the leash whenever it relocates. Optional chromatophores let it blend into its surroundings.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "red-fox",
+            "animal": "Red fox",
+            "de": "Rotfuchs",
+            "scientific": "Vulpes vulpes",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 55,
+            "role": "primary",
+            "covers": "Life and temperament: a cunning, skittish opportunist living in a family group with a dominant breeder",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/1280px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "ClaudiaTen",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "raccoon",
+            "animal": "Raccoon",
+            "de": "Waschbär",
+            "scientific": "Procyon lotor",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Mischief: sneaky, masked, same-sex gangs, always on the lookout for an easy meal",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/1280px-Raccoon_in_Central_Park_%2835264%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Rhododendrites",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "A leash",
+            "text": "A group of foxes is called a 'leash', and fox families keep grown offspring as helpers around the breeding animals (official inspiration: foxes)."
+          },
+          {
+            "trait": "Opportunist",
+            "text": "Solitary animals prefer to scavenge, even from claimed corpses, and always put their own life first."
+          },
+          {
+            "trait": "Skittish",
+            "text": "Always flees Apex carnivores and flees anything its group is too small to hunt."
+          },
+          {
+            "trait": "Mask gangs and sneaking",
+            "text": "Same-sex 'mask' groups and sneaky courtship by subordinates carry the raccoon's masked, mischievous streak (official inspiration)."
+          },
+          {
+            "trait": "Bait and bleed",
+            "text": "One member reveals itself and calls loudly as bait while hidden packmates dart in to land bleeding bites."
+          }
+        ],
+        "notLike": [
+          "Foxes don't hunt in groups; a full Dilophosaurus party can bleed down a solitary Apex herbivore."
+        ],
+        "twist": "Optional chameleon-style colour shifting to blend in and regulate temperature (official inspiration).",
+        "moods": [
+          {
+            "id": "family",
+            "label": "Family group",
+            "de": "Familiengruppe"
+          },
+          {
+            "id": "pack",
+            "label": "Pack hunter",
+            "de": "Rudel"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "raccoons & foxes, chameleons (for color changing), and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "growthMinutes": 120,
+          "landSprint": 1100,
+          "landSprintSeconds": 166.667,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 5,
+          "engagementLimit": 5,
+          "mapBiomes": [
+            "canyon",
+            "hills",
+            "forest",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "forest",
     "label": "Forest",
@@ -12714,5 +13029,638 @@
       "derived": true,
       "reason": null
     }
+  },
+  "bleed": {
+    "attack": {
+      "label": "Bite Ripping",
+      "damage": 20,
+      "bleed": 0.75,
+      "cooldown": 3
+    },
+    "setup": "Solo",
+    "maxHits": 30,
+    "assumption": "Bleed drains 1 % of max health per point per second (community reading, not documented).",
+    "rows": [
+      {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 0.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 51
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 45
+        },
+        "direct": 29
+      },
+      {
+        "id": "citipati",
+        "name": "Citipati",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.75,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 71
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 36
+        },
+        "direct": 28
+      },
+      {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 49
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 42
+        },
+        "direct": 25
+      },
+      {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.75,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 70
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 35
+        },
+        "direct": 27
+      },
+      {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 48
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 41
+        },
+        "direct": 22
+      },
+      {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.923,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 42
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 34
+        },
+        "direct": 21
+      },
+      {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 0.692,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 48
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 48
+        },
+        "direct": 41
+      },
+      {
+        "id": "kentrosaurus",
+        "name": "Kentrosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 0.667,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 52
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 36
+        },
+        "direct": 43
+      },
+      {
+        "id": "styracosaurus",
+        "name": "Styracosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.643,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 55
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 38
+        },
+        "direct": 41
+      },
+      {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.643,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 54
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 36
+        },
+        "direct": 35
+      },
+      {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.75,
+        "healRate": 0.04,
+        "trot": {
+          "hits": 4,
+          "seconds": 44
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 42
+        },
+        "direct": 28
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.692,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 46
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 43
+        },
+        "direct": 30
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.692,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 46
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 43
+        },
+        "direct": 30
+      },
+      {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.581,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 68
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 43
+        },
+        "direct": 33
+      },
+      {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 0.514,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 5,
+          "seconds": 59
+        },
+        "sit": {
+          "hits": 7,
+          "seconds": 45
+        },
+        "direct": 48
+      },
+      {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.514,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 5,
+          "seconds": 58
+        },
+        "sit": {
+          "hits": 7,
+          "seconds": 44
+        },
+        "direct": 44
+      },
+      {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.563,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 5,
+          "seconds": 49
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 52
+        },
+        "direct": 40
+      },
+      {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.563,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 5,
+          "seconds": 49
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 52
+        },
+        "direct": 40
+      },
+      {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 850,
+        "bleedPerHit": 0.4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 7,
+          "seconds": 62
+        },
+        "sit": {
+          "hits": 9,
+          "seconds": 57
+        },
+        "direct": 120
+      },
+      {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 2.25,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 57
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 22
+        },
+        "direct": 10
+      },
+      {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 1.714,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 30
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 43
+        },
+        "direct": 16
+      },
+      {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 1.286,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 45
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 30
+        },
+        "direct": 15
+      },
+      {
+        "id": "psittacosaurus",
+        "name": "Psittacosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 23
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 26
+        },
+        "direct": 10
+      },
+      {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 1.286,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 44
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 28
+        },
+        "direct": 14
+      },
+      {
+        "id": "dryosaurus",
+        "name": "Dryosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.8,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 25
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 30
+        },
+        "direct": 9
+      },
+      {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.9,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 44
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 36
+        },
+        "direct": 21
+      },
+      {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 48
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 41
+        },
+        "direct": 22
+      },
+      {
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 0.9,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 43
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 35
+        },
+        "direct": 19
+      },
+      {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4.5,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 17
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 20
+        },
+        "direct": 4
+      },
+      {
+        "id": "halszkaraptor",
+        "name": "Halszkaraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4.5,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 17
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 20
+        },
+        "direct": 4
+      },
+      {
+        "id": "rhamphorhynchus",
+        "name": "Rhamphorhynchus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.6,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 23
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 28
+        },
+        "direct": 5
+      }
+    ]
   }
 }

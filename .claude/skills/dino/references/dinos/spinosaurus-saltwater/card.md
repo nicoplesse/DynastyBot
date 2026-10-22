@@ -49,6 +49,10 @@ You are the polar bear among the Spinosaurus. You have one home sea area, ideall
 - Anders als die Tiere: Polar bears are not territorial; they share huge home ranges. You hold one home sea area and defend it, which is the walrus part. Polar bears don't drink and get their water from fat. You need fresh water and swim to it outside your home, peacefully and without ever defending it. Polar bear males are no fathers and even kill cubs. A Spinosaurus seeks one partner for life, and the father guards his brood from a distance. Outside your home area you are no polar bear on the hunt for everything: you may only take fish, critters, Leedsichthys and Tylosaurus there.
 - Besonderheit: The Tyrannosaurus is a polar bear too, the one on land that waits in cover. You are the polar bear of the sea that comes out of the water. Your freshwater cousin is a grizzly on its river; you are still one species and court together at Triad Falls.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Spinosaurus jagen immer allein, auch im Paar. Der Eisbär bleibt Einzelgänger.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Kelp Vale, Stonebed Shoal

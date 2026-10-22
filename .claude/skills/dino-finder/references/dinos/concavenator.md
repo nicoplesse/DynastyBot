@@ -45,6 +45,25 @@ You are a swift, medium semi-aquatic carnivore in a leaderless gang of up to 8. 
 - Lebensraum: Rivers, marshes and shores. Semi-aquatic and sedentary; uses water to its advantage in every situation. Stashes trinkets in caverns or dug-out holes along shores and marshes, and nests communally at its marsh nesting ground.
 - Anders als die Tiere: Giant otters are close family groups; Concavenator gangs are loose and selfish. Stoats are solitary, while Concavenator hunts as a team.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Der Riesenotter lebt von seiner Gang. Ein allein aufgewachsener Concavenator ist laut Profil vorsichtig, frisst Aas und bewacht Beute und Schätze noch wilder. Das ist der Vielfraß, und am Wasser jagt er wie ein einzelner Fischotter.
+
+**Solo spielt er sich wie:**
+**Vielfraß + Eurasischer Fischotter (Wolverine + Eurasian otter)**: A lone wolverine of the riverbanks: it scavenges, ambushes from the water, hoards like a miser and snarls at anything that comes too close to its kill.
+
+Solo you are cautious of others. You patrol your surroundings regularly, guard your kills and hoards more fiercely and tolerate intrusions even less, above all near food or your stash. You scavenge when you can (only solitary Concavenator may scavenge), avoid confrontations and rely on ambush, and you hunt up to Medium tier. Raised alone, you are more aggressive and reluctant to share space, and outside Sharptooth Marsh you avoid being seen by gangs. If you want company, you go to Sharptooth Marsh to join a gang or form a new one with other loners.
+
+- Vielfraß / Wolverine – 60 %: Solo temper: a lone, possessive scavenger-hunter that guards its kills and caches against anyone
+- Eurasischer Fischotter / Eurasian otter – 40 %: Water life: a solitary river otter that hunts from the water along its own stretch of shore
+- Lebensraum: Rivers, marshes and shores. Semi-aquatic and sedentary; uses water to its advantage in every situation. Stashes trinkets in caverns or dug-out holes along shores and marshes, and nests communally at its marsh nesting ground.
+- Anders als die Tiere: Wolverines live in snow and taiga; Concavenator lives on rivers, marshes and shores. Eurasian otters avoid trouble; a solo-grown Concavenator drives off anything that comes too close during a meal, even its own kind.
+- Besonderheit: Its trinket stash works like a wolverine's food caches: hidden, remembered and defended.
+
+Solo bist du kein Riesenotter in der Gang, sondern ein Vielfraß am Flussufer, der im Wasser wie ein einzelner Fischotter jagt. Allein bist du misstrauisch: Du kontrollierst regelmäßig deine Umgebung, bewachst Beute und Schätze noch wilder und duldest kaum jemanden in deiner Nähe, schon gar nicht beim Fressen oder an deinem Versteck. Du frisst Aas, wann immer du kannst, denn nur einzelne Concavenator dürfen das, gehst Streit aus dem Weg und jagst aus dem Hinterhalt bis Medium. Außerhalb von Sharptooth Marsh lässt du dich von Gangs nicht blicken. Willst du doch Gesellschaft, gehst du nach Sharptooth Marsh und suchst dir dort eine Gang oder gründest mit anderen Einzelgängern eine neue.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Tallbrush Coasts, Coastal Bluffs, Volcano Islands, Big Tree Overlook, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp

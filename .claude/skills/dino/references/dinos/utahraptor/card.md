@@ -55,6 +55,25 @@ You are a medium carnivore in a family pack around an alpha pair (up to 20 adult
 - Anders als die Tiere: Wolf pups don't get exiled for their coat colour; Utahraptor packs enforce the alpha pair's colour scheme.
 - Besonderheit: Birds of prey (official inspiration) for its keen eyesight.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Solo bleibst du ein Wolf, aber ein abgewanderter Einzelwolf statt eines Familienrudels. Rudelkriege und Ränge fallen weg, die Partnersuche mit Geschenken wird dein eigentliches Ziel, deshalb wiegt der Laubenvogel mehr.
+
+**Solo spielt er sich wie:**
+**Grauwolf (Einzelwolf) + Laubenvogel (Grey wolf + Bowerbird)**: A lone dispersing wolf that trails the sauropod herds in silence and courts at the edge of other packs' land with a bowerbird's gifts.
+
+Solo you are a quiet, watchful nomad. You avoid other Utahraptor, scout herds and carnivores with your keen eyes, and trail sauropod herds at a distance, using them as an early warning and waiting for a weak calf in the breeding season. You hunt only up to Medium tier, mostly the young of herbivores, and you never eat carrion. When you want a mate you linger at the edge of a pack's territory, tolerated there in the rainy season, and win your partner through a bonding period of at least 30 minutes with gifts, play and grooming. Your path runs from loner to pair to your own pack.
+
+- Grauwolf (Einzelwolf) / Grey wolf – 60 %: Solo life: a dispersing lone wolf, quiet and watchful, trailing herds at a distance and taking calves
+- Laubenvogel / Bowerbird – 40 %: The goal of the lone life: winning a mate with chosen gifts at the edge of a pack's territory
+- Lebensraum: Nomad between other packs' territories. Solitary Utahraptor are nomadic. They avoid occupied territories and linger at their edges only to court.
+- Anders als die Tiere: Lone wolves scavenge when they can; a Utahraptor never eats carrion. Wolves don't trail giant herds for safety; Utahraptor uses sauropods as its early warning system.
+- Besonderheit: Birds of prey (official inspiration) for its keen eyesight.
+
+Solo bist du ein abgewanderter Einzelwolf: still, aufmerksam und immer unterwegs. Du meidest andere Utahraptor, beobachtest mit deinen scharfen Augen Herden und Räuber und folgst Sauropoden-Herden auf Abstand, weil sie dich vor Gefahren warnen. Du jagst nur bis Medium, am liebsten die Jungen von Pflanzenfressern, und Aas frisst du nicht. Willst du einen Partner, wartest du am Rand eines fremden Reviers und gewinnst ihn wie ein Laubenvogel mit Geschenken, Spiel und Fellpflege. Dein Weg führt vom Einzelgänger zum Paar und dann zum eigenen Rudel. Dryosaurus greifst du auch allein sofort an.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Hollow Hills, Wollemi Forest

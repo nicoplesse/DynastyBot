@@ -45,6 +45,24 @@ You are a small daytime herbivore in a 'band' of unlimited females with one adul
 - Lebensraum: Mountains, cliffs, ledges and caves. Thrives in mountainous regions and travels along migratory paths, but settles around a chosen rock, cliff or cave. Flighty on open terrain.
 - Anders als die Tiere: Mountain goats stab with their horns rather than ramming heads; the dome-bashing comes from bighorn sheep. It eats berries, but also carrion and bones.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Solo bist du fast immer ein erwachsener Bock, den die Band verstoßen hat. Er folgt Bands mit Abstand und wartet auf das Duell um die Führung, das ist der Dickhornwidder. Die Band der Schneeziegen rückt nach hinten.
+
+**Solo spielt er sich wie:**
+**Dickhornschaf + Schneeziege (Bighorn sheep + Mountain goat)**: A lone bighorn ram on the cliffs: exiled from the band, he shadows it from a distance and waits for his chance to ram the lead buck.
+
+Solo you are almost always an adult buck. As soon as your mature colours show you are chased from the band, even by your mother, and you cannot group with other adult males. You follow bands at a distance, waiting to challenge their buck, keep a strong sense of escape routes and rarely stray from defensible terrain. Out of boredom or curiosity you may trail other herbivores, but you never become part of their herd; only at night you may settle quietly near a sleeping herd and use its bulk as a shield. Alone you are at much higher risk of being picked off. A solitary female, by contrast, always wants to get back into a band.
+
+- Dickhornschaf / Bighorn sheep – 55 %: Solo buck: a ram living apart from the band, waiting for the head-ramming duel that wins him females
+- Schneeziege / Mountain goat – 45 %: Terrain: a cliff dweller that never strays far from defensible rock
+- Lebensraum: Mountains, cliffs, ledges and caves. Thrives in mountainous regions and travels along migratory paths, but settles around a chosen rock, cliff or cave. Flighty on open terrain.
+- Anders als die Tiere: Bighorn rams form bachelor bands outside the rut; adult Pachycephalosaurus bucks cannot group with other adult males. It eats berries, but also carrion and bones.
+
+Solo bist du fast immer ein erwachsener Bock, also ein einsamer Dickhornwidder an den Klippen. Sobald deine Erwachsenenfarben kommen, jagt dich die Band davon, sogar die eigene Mutter, und mit anderen erwachsenen Böcken darfst du dich nicht zusammentun. Du folgst Bands mit Abstand und wartest auf die Gelegenheit, ihren Bock herauszufordern. Wie eine Schneeziege kennst du immer deinen Fluchtweg und bleibst nah an sicherem Fels. Aus Langeweile läufst du manchmal anderen Pflanzenfressern hinterher, gehörst aber nie dazu. Nur nachts legst du dich leise neben eine schlafende Herde. Eine einzelne Geiß will dagegen immer zurück in eine Band.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Steep Run, Cedrus Forest, Cliffedge Falls, Crag Bluffs, East Passage, Wind Tunnels, Hollow Hills, Wollemi Forest

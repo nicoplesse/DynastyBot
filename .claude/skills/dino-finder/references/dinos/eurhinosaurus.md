@@ -49,6 +49,10 @@ You are a medium, very fast aquatic carnivore (cruise 700, sprint 1,050) in an u
 - Anders als die Tiere: Dolphins fear little in the sea; Eurhinosaurus flees Tylosaurus, Spinosaurus and Deinosuchus.
 - Besonderheit: Add a swordfish's bill and a salmon-like return to the breeding grounds (official inspirations: salmon, trout, dolphins).
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Erwachsene Einzelgänger kennt das Profil nicht, nur Waisen, die sich im Kelp verstecken, bis sie einen Schwarm finden. Das ist ein verirrter Delfin, kein anderes Tier.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Kelp Vale, Coastal Bluffs, Volcano Islands, Abyssal Depths, Palm Islands, Big Tree Overlook, Twisted Forest, Stillwater Bog, Mudflats, Stonebed Shoal, Coastland Swamp

@@ -50,6 +50,10 @@ You are an Apex nocturnal herbivore that stands its ground and never flees. Fema
 - Anders als die Tiere: Cassowaries are solitary and active by day; Therizinosaurus lives in small groups and is nocturnal.
 - Besonderheit: Flamingo and peacock are official inspirations too: flamboyant courtship displays.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Kasuar-Hennen leben allein, und die Sect mit sanften Hähnen, die die Küken aufziehen, steckt im Basis-Tier schon drin.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Steep Run, Cedrus Forest, Stillwater Bog, Cliffedge Falls, East Passage, Redwoods, Hollow Hills, Wollemi Forest

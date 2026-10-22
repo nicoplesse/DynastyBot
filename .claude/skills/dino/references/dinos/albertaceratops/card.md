@@ -55,6 +55,10 @@ You live in a sett: an unlimited group run by a dominant sow who chooses the dom
 - Lebensraum: Mixed ceratopsian herds, riverside mud in the dry season. Nomadic. The dry season pulls the sett to rivers, overturned roots and mud pits; the rainy season sends it inland to lush courtship areas. Claims small territories only around nests on the courtship grounds.
 - Anders als die Tiere: Badgers dig burrows and are nocturnal; Albertaceratops is cathemeral and lives above ground in a big herd. The defensive circle is a musk-ox tactic that it shares with Pachyrhinosaurus and Styracosaurus. Badgers also eat earthworms and small animals; Albertaceratops is a strict herbivore (flowers, nuts, roots, fruit).
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein einzelner Albertaceratops ist ein Dachs ohne Bau, der vor jedem Apex flieht und einen Sett sucht. Das ist ein Übergang, kein anderes Tier.
+
 ## Karte & POIs
 
 - **Nisten + Balz:** Dry Fang Canyon, Cedrus Forest, Wollemi Forest

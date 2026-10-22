@@ -47,6 +47,10 @@ You are a quiet, medium-sized night stalker with long legs and sickle claws, liv
 - Lebensraum: Night roamer of woods, hills and wetland edges. Nomadic and strictly nocturnal for hunting. Holds no big territory of its own; only the small nest territory it shares with its bonded Latenivenatrix rookery.
 - Anders als die Tiere: Caracals are solitary; Achillobator is built around its mate. Maned wolves eat mostly fruit and small animals; Achillobator is a pure carnivore that targets Iguanodon, Parasaurolophus or Eotriceratops when its partners are along.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Der Karakal ist ohnehin Einzelgänger, und das Mähnenwolf-Paar mit Latenivenatrix-Anhang ist nur die volle Ausbaustufe. Solo fällt die Kolonie weg, das Tier bleibt.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Steep Run, Big Tree Overlook, Cedrus Forest, Twisted Forest, Mudflats, Cliffedge Falls, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

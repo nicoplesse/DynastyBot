@@ -55,6 +55,10 @@ You live among the trunks and the water of Twisted Forest, Wollemi Forest and th
 - Anders als die Tiere: A tokay gecko fits in your hand and hunts at night. You are a cathemeral predator with 2,600 combat weight, so you take the gecko's pose and temper, not its size. Climbing is for lurking, basking and watching, not for escaping a lost fight. Climbing out of reach on heavy deathscars is body denial (server rule 4.6). Lace monitors are loners. Temperate Megalania share riverbanks with two or three others, which is the Nile monitor side of the official inspiration.
 - Besonderheit: The profile names the Nile monitor as this variant's inspiration. It is the river monitor that basks on branches over the water and drops in when disturbed, and that is your escape route too.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Du lebst allein und liegst höchstens mit zwei, drei anderen am Ufer. Der Mob für Apex-Beute ist nur kurz.
+
 ## Karte & POIs
 
 - **Revier:** Cliffedge Falls, Coastland Swamp, East Passage, Roots Pond, Grand Falls

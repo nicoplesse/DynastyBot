@@ -53,6 +53,10 @@ You are an Apex semi-aquatic ambusher with 6,000 combat weight. Every hunt start
 - Anders als die Tiere: Nile crocodiles are mostly freshwater animals; Deinosuchus also lives on beaches and crosses the open sea like a saltwater crocodile.
 - Besonderheit: Give the Nile crocodile a saltwater crocodile's sea legs and you have Deinosuchus.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Deinosuchus bilden keine echten Gruppen, und es greift immer nur einer an, auch ein Partner hilft nicht. Solo und Gruppe sind dasselbe Nilkrokodil.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp

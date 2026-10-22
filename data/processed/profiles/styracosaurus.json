@@ -11266,6 +11266,343 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Das Profil kennt keine Einzelgänger. Solo bist du höchstens ein Junggesellen-Hirsch auf Herdensuche, und das ist dasselbe Tier.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Musk ox + Gemsbok (oryx)",
+        "labelDe": "Moschusochse + Spießbock (Oryx)",
+        "headline": "The 'attack dog' of the ceratopsian herd: a musk-ox wall with oryx-style hit-and-run chargers.",
+        "playsLike": "You are a medium ceratopsian in an unlimited herd made of harems, led by the stag with the largest harem. You are aggressive to any species outside your ceratopsian herd. You mock-charge predators twice and then attack if they don't back off. The herd forms a defensive formation while up to 4 defenders, usually stags, charge around outside with hit-and-run attacks and chase predators out of sight. You flee pairs of Apex carnivores and grow nervous around Daspletosaurus.",
+        "setting": {
+          "label": "Nomad of dense forests and arid grasslands",
+          "note": "Roams dense forests or arid grasslands in huge herds. Cools off in shallow water and mud, and marks trees by sharpening its horns on them.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "musk-ox",
+            "animal": "Musk ox",
+            "de": "Moschusochse",
+            "scientific": "Ovibos moschatus",
+            "archetype": "cattle",
+            "archetypeLabel": "Cattle, buffalo & ox",
+            "archetypeDe": "Rind, Büffel & Ochse",
+            "share": 50,
+            "role": "primary",
+            "covers": "Herd defence: the defensive wall and harem bulls",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg/1280px-Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "pachyrhinosaurus",
+                "name": "Pachyrhinosaurus",
+                "role": "primary",
+                "share": 60,
+                "headline": "A musk ox wall on a caribou-style migration, led by the eldest cow."
+              }
+            ]
+          },
+          {
+            "id": "gemsbok-oryx",
+            "animal": "Gemsbok (oryx)",
+            "de": "Spießbock (Oryx)",
+            "scientific": "Oryx gazella",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 50,
+            "role": "secondary",
+            "covers": "Fighting style: a sharp-horned antelope that charges predators in hit-and-run attacks, led by a dominant bull",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Gemsbok_%28Oryx_gazella%29_male.jpg/1280px-Gemsbok_%28Oryx_gazella%29_male.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Gemsbok_(Oryx_gazella)_male.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "The wall",
+            "text": "Unlimited defensive formation with the young and injured behind it, the musk ox tactic (official inspiration)."
+          },
+          {
+            "trait": "Hit-and-run chargers",
+            "text": "Up to 4 'active' defenders charge in, land a blow and dart away, the way oryx fend off lions with their horns."
+          },
+          {
+            "trait": "Attack dog",
+            "text": "'Often referred to as attack dogs' of the mixed ceratopsian herd. It is the most aggressive ceratopsian in the group."
+          },
+          {
+            "trait": "Harems and a lead stag",
+            "text": "Each stag has a harem and the stag with the most does leads. Gemsbok herds are also led by a dominant bull."
+          },
+          {
+            "trait": "Horn marks",
+            "text": "Sharpens and scratches its horns on rocks and trees, leaving marks as high as it can reach."
+          }
+        ],
+        "notLike": [
+          "Musk oxen rarely chase far; Styracosaurus defenders chase forfeiting predators until they leave the herd's line of sight."
+        ],
+        "twist": "The profile even lists an 'Albino Oryx' skin.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "tank",
+            "label": "Tanky — stands its ground",
+            "de": "Panzer / hält stand"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Musk Oxen",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2800,
+          "maxHealth": 700,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Musk ox + Gemsbok (oryx)",
+        "labelDe": "Moschusochse + Spießbock (Oryx)",
+        "headline": "The 'attack dog' of the ceratopsian herd: a musk-ox wall with oryx-style hit-and-run chargers.",
+        "playsLike": "You are a medium ceratopsian in an unlimited herd made of harems, led by the stag with the largest harem. You are aggressive to any species outside your ceratopsian herd. You mock-charge predators twice and then attack if they don't back off. The herd forms a defensive formation while up to 4 defenders, usually stags, charge around outside with hit-and-run attacks and chase predators out of sight. You flee pairs of Apex carnivores and grow nervous around Daspletosaurus.",
+        "setting": {
+          "label": "Nomad of dense forests and arid grasslands",
+          "note": "Roams dense forests or arid grasslands in huge herds. Cools off in shallow water and mud, and marks trees by sharpening its horns on them.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "musk-ox",
+            "animal": "Musk ox",
+            "de": "Moschusochse",
+            "scientific": "Ovibos moschatus",
+            "archetype": "cattle",
+            "archetypeLabel": "Cattle, buffalo & ox",
+            "archetypeDe": "Rind, Büffel & Ochse",
+            "share": 50,
+            "role": "primary",
+            "covers": "Herd defence: the defensive wall and harem bulls",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg/1280px-Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "pachyrhinosaurus",
+                "name": "Pachyrhinosaurus",
+                "role": "primary",
+                "share": 60,
+                "headline": "A musk ox wall on a caribou-style migration, led by the eldest cow."
+              }
+            ]
+          },
+          {
+            "id": "gemsbok-oryx",
+            "animal": "Gemsbok (oryx)",
+            "de": "Spießbock (Oryx)",
+            "scientific": "Oryx gazella",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 50,
+            "role": "secondary",
+            "covers": "Fighting style: a sharp-horned antelope that charges predators in hit-and-run attacks, led by a dominant bull",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Gemsbok_%28Oryx_gazella%29_male.jpg/1280px-Gemsbok_%28Oryx_gazella%29_male.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Gemsbok_(Oryx_gazella)_male.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "The wall",
+            "text": "Unlimited defensive formation with the young and injured behind it, the musk ox tactic (official inspiration)."
+          },
+          {
+            "trait": "Hit-and-run chargers",
+            "text": "Up to 4 'active' defenders charge in, land a blow and dart away, the way oryx fend off lions with their horns."
+          },
+          {
+            "trait": "Attack dog",
+            "text": "'Often referred to as attack dogs' of the mixed ceratopsian herd. It is the most aggressive ceratopsian in the group."
+          },
+          {
+            "trait": "Harems and a lead stag",
+            "text": "Each stag has a harem and the stag with the most does leads. Gemsbok herds are also led by a dominant bull."
+          },
+          {
+            "trait": "Horn marks",
+            "text": "Sharpens and scratches its horns on rocks and trees, leaving marks as high as it can reach."
+          }
+        ],
+        "notLike": [
+          "Musk oxen rarely chase far; Styracosaurus defenders chase forfeiting predators until they leave the herd's line of sight."
+        ],
+        "twist": "The profile even lists an 'Albino Oryx' skin.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "tank",
+            "label": "Tanky — stands its ground",
+            "de": "Panzer / hält stand"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Musk Oxen",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2800,
+          "maxHealth": 700,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "plains",
     "label": "Plains & Savanna",
@@ -11290,5 +11627,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

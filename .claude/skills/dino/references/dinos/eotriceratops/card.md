@@ -49,6 +49,24 @@ Cows live in matriarchies of up to 12, led by an experienced matriarch who remem
 - Lebensraum: Nomad between courtship and nesting grounds in forest and hill country. The matriarch leads migrations from the courtship grounds to the nesting grounds along memorised routes. A bull that owns a herd guards 5 body lengths around it.
 - Anders als die Tiere: Elephants have no horns; Eotriceratops fights with horned charges, rhino-style. Hippos live in water; Eotriceratops is fully terrestrial.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Solo spielst du am besten einen Einzelgänger-Bullen. Er lernt die Wanderrouten, bewacht sie und vertreibt Rivalen, und genau dieses Temperament ist der Flusspferdbulle. Die Matriarchie des Elefanten tritt zurück.
+
+**Solo spielt er sich wie:**
+**Flusspferd (Bulle) + Asiatischer Elefant (Hippopotamus (bull) + Asian elephant)**: A lone bull with a hippo bull's temper and an elephant bull's memory: he learns the migration paths and fights every rival who uses them.
+
+Solo you are best played as a bull. Solitary bulls thrive alone: younger bulls and those who want their own matriarchy learn the regular migration paths and fiercely patrol and defend them from rival bulls. You flush with testosterone in the rainy season, bullfights are always one against one, and you win a herd by courting a matriarchy, which may accept a single bull or a bonded pair. Bulls raised as orphans are more aggressive and struggle socially. A solitary cow, by contrast, keeps migrating and seeks a matriarchy, often with a tiny Psittacosaurus as company.
+
+- Flusspferd (Bulle) / Hippopotamus (bull) – 55 %: Solo bull: a short-tempered loner that patrols and defends its paths against rival bulls
+- Asiatischer Elefant / Asian elephant – 45 %: Bull life: lives apart from the cows, remembers the routes and surges with testosterone in season
+- Lebensraum: The migration paths it has learned, between courtship and nesting grounds. A solitary bull roams and guards the regular migration routes. Solitary bulls stay out of the nesting areas unless they have successfully courted females nesting there.
+- Anders als die Tiere: Elephants have no horns; Eotriceratops fights with horned charges, rhino-style. Hippos live in water; Eotriceratops is fully terrestrial.
+
+Solo spielst du am besten einen Einzelgänger-Bullen: einen Flusspferdbullen mit dem Gedächtnis eines Elefantenbullen. Du lernst die Wanderrouten, patrouillierst sie und verteidigst sie gegen jeden rivalisierenden Bullen. In der Regenzeit kocht dein Testosteron hoch. Bullenkämpfe laufen immer eins gegen eins, und eine Herde gewinnst du nur, indem du um eine Matriarchie wirbst, die einen einzelnen Bullen oder ein festes Paar aufnimmt. In die Nistgebiete gehst du erst, wenn dich dort nistende Kühe angenommen haben. Spielst du eine einzelne Kuh, wanderst du weiter und suchst eine Matriarchie, oft mit einem kleinen Psittacosaurus als Begleiter.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Nisten:** Tallbrush Coasts, Hollow Hills

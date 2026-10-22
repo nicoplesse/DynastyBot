@@ -13961,6 +13961,328 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "different",
+    "changes": "solo",
+    "note": "In der Herde bist du ein geschwätziges Gnu. Allein suchst du laut Profil instinktiv dichten Wald und tarnst dich im Unterholz. Das ist das Okapi, die Waldgiraffe. Vom Gnu bleibt nur die Unruhe, die dich zu anderen Pflanzenfressern treibt.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Okapi + Wildebeest",
+        "labelDe": "Okapi + Gnu",
+        "headline": "A lone okapi in a sauropod's body: the shy forest giraffe that hides in thick woodland, tags along with any friendly herbivore and uses bigger sauropods as a shield.",
+        "playsLike": "Alone you instinctively seek out dense woodland like the place you hatched in, where close-packed trees and thick undergrowth hide you from predators. You are uneasy without a herd and gladly accept the company of other herbivore species until you reunite with a sauropod group. If another sauropod is near, you keep it between you and the predator as a meat-shield; if none is near, you rear your head and whip your tail anxiously. You don't chase fleeing predators, but you may charge to drive them off and then back away, and you move to a more defensible spot when you can. You still flee Allosaurus and Torvosaurus.",
+        "setting": {
+          "label": "Dense woodland, close to any sauropod it can find",
+          "note": "A solitary Amargasaurus hides in dense woodland like the woods it hatched in, and joins other herbivores or sauropods it meets along the way.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "okapi",
+            "animal": "Okapi",
+            "de": "Okapi",
+            "scientific": "Okapia johnstoni",
+            "archetype": "giraffe",
+            "archetypeLabel": "Giraffe",
+            "archetypeDe": "Giraffe",
+            "share": 60,
+            "role": "primary",
+            "covers": "Solo life: the shy forest giraffe that hides in dense woodland and browses unseen",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/1280px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Daniel Jolivet",
+                "license": "CC BY 2.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "wildebeest",
+            "animal": "Wildebeest",
+            "de": "Gnu",
+            "scientific": "Connochaetes taurinus",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Restlessness: uneasy alone, it tags along with other herbivores until it finds a herd again",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Blue_Wildebeest%2C_Ngorongoro.jpg/1280px-Blue_Wildebeest%2C_Ngorongoro.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Muhammad Mahdi Karim",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Blue_Wildebeest,_Ngorongoro.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Into the woods",
+            "text": "“When traveling alone, Amargasaurus instinctively seek out dense woodlands”, where trees and undergrowth give it camouflage. Okapis live hidden in dense rainforest."
+          },
+          {
+            "trait": "Strangers welcome",
+            "text": "A loner “may attract the company of other herbivore species” and enjoys it until it finds a sauropod group again, as a stray wildebeest joins zebras."
+          },
+          {
+            "trait": "Living shield",
+            "text": "Alone it may use another sauropod species “as a meat-shield if they are available”, keeping the bigger animal between itself and the predator."
+          },
+          {
+            "trait": "Charge, then retreat",
+            "text": "It does not chase fleeing predators, but “may charge to drive them away from them, backing off once they retreat”."
+          },
+          {
+            "trait": "Never quite at ease",
+            "text": "Amargasaurus are “uneasy when alone and require constant reassurance of their herd's presence”. The okapi's solitude is its own choice; this one only puts up with it."
+          }
+        ],
+        "notLike": [
+          "Okapis are content alone; a lone Amargasaurus is anxious and always looking for a herd.",
+          "Okapis never leave the forest; Amargasaurus still travels the sauropod routes to its nesting grounds."
+        ],
+        "twist": "Courtship works like a salmon run: gorge on berries, flush bright colours and migrate back to the same nesting grounds.",
+        "moods": [
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Salmo Salar and paleontological speculation on its closest well-known relative, Diplodocus",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 5000,
+          "maxHealth": 1250,
+          "growthMinutes": 180,
+          "landSprint": 700,
+          "landSprintSeconds": 133,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "canyon",
+            "hills",
+            "mudflat",
+            "swamp",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": "Solo bist du kein Gnu in der Herde, sondern ein Okapi: die scheue Waldgiraffe, die sich im dichten Wald versteckt. Allein zieht es dich instinktiv in dichtes Gehölz wie das, in dem du geschlüpft bist, denn zwischen eng stehenden Bäumen und im Unterholz sieht dich kein Räuber. Ganz wohl ist dir allein nie: Du schließt dich gern anderen Pflanzenfressern an, bis du wieder zu Sauropoden findest. Ist ein anderer Sauropode in der Nähe, hältst du ihn zwischen dir und dem Räuber. Ist keiner da, wirst du nervös, reckst den Kopf und peitschst mit dem Schwanz. Fliehenden Räubern jagst du nicht nach, du scheuchst sie höchstens kurz weg. Vor Allosaurus und Torvosaurus fliehst du immer."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Wildebeest + Giraffe",
+        "labelDe": "Gnu + Giraffe",
+        "headline": "A chatty wildebeest in a giraffe's body, living in the shadow of the giant sauropods.",
+        "playsLike": "You are a gentle, highly social large herbivore that almost never stops calling to your herd. You tag along with bigger sauropods and keep them between you and predators. You flee Allosaurus and Torvosaurus, and at most two of you charge a predator, mostly to intimidate it. Calves are raised by whichever adult they follow, fed berries almost by hand.",
+        "setting": {
+          "label": "Wherever the sauropod herds go; dense woodland when alone",
+          "note": "Nomadic along sauropod migration routes and returns to fixed nesting grounds. Loves wading and brief swims in shallow water; a solitary Amargasaurus hides in dense woodland.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "wildebeest",
+            "animal": "Wildebeest",
+            "de": "Gnu",
+            "scientific": "Connochaetes taurinus",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 55,
+            "role": "primary",
+            "covers": "Herd life: huge, noisy, fluid herds that migrate together and flee rather than fight",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Blue_Wildebeest%2C_Ngorongoro.jpg/1280px-Blue_Wildebeest%2C_Ngorongoro.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Muhammad Mahdi Karim",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Blue_Wildebeest,_Ngorongoro.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "giraffe",
+            "animal": "Giraffe",
+            "de": "Giraffe",
+            "scientific": "Giraffa camelopardalis",
+            "archetype": "giraffe",
+            "archetypeLabel": "Giraffe",
+            "archetypeDe": "Giraffe",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Body and defence: long-necked browser with neck smacks and tail whips, calves watched communally",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/1280px-Giraffe_Mikumi_National_Park.jpg",
+              "focus": "50% 10%",
+              "credit": {
+                "artist": "Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH. (Submit your project!) For all the files concerned, please see the category Supported by Wikimedia CH. العربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Giraffe_Mikumi_National_Park.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "argentinosaurus",
+                "name": "Argentinosaurus",
+                "role": "primary",
+                "share": 50,
+                "headline": "A gentle giant: a silverback's family life inside a giraffe's body, scaled up to the largest land animal ever."
+              }
+            ]
+          }
+        ],
+        "why": [
+          {
+            "trait": "Herd without a leader",
+            "text": "Unlimited herd of any relation with fluid leadership; friends drift together and apart. Wildebeest move through the great migration the same way."
+          },
+          {
+            "trait": "Never quiet",
+            "text": "Constantly coos and chatters, even at rest, and its wails carry across biomes. Wildebeest herds are known for their non-stop grunting."
+          },
+          {
+            "trait": "Prey logic",
+            "text": "Passive, Flighty/Defensive, only 2 engage; flees Allosaurus and Torvosaurus and hides behind bigger sauropods. A grazer that survives through numbers and bigger neighbours."
+          },
+          {
+            "trait": "Neck and tail",
+            "text": "Defends with intimidating charges, neck smacks and tail whips, and browses berries off bushes. Its body language is giraffe-like."
+          },
+          {
+            "trait": "Shared calves",
+            "text": "Hatchlings accept any adult and adults adopt freely, much like giraffe crèches where calves are watched by the group."
+          }
+        ],
+        "notLike": [
+          "Wildebeest graze grass; Amargasaurus eats berries, melons and bananas.",
+          "Neither animal changes colour to breed; that part is borrowed from salmon (official inspiration)."
+        ],
+        "twist": "Courtship works like a salmon run: gorge on berries, flush bright colours and migrate back to the same nesting grounds.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "playful",
+            "label": "Playful & social",
+            "de": "Verspielt"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Salmo Salar and paleontological speculation on its closest well-known relative, Diplodocus",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 5000,
+          "maxHealth": 1250,
+          "growthMinutes": 180,
+          "landSprint": 700,
+          "landSprintSeconds": 133,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "canyon",
+            "hills",
+            "mudflat",
+            "swamp",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "plains",
     "label": "Plains & Savanna",
@@ -13974,5 +14296,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

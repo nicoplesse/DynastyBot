@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "note": "Curated hunting web per carnivore, read from the official profiles. Every priority, exception and 'never' rule carries a verbatim profile quote; the processor fails if a quote is not in the profile. Setups are the hunting-party options that change the hunt ceiling (tier). Targets may name a family (deinosuchus, megalania, spinosaurus, tropeognathus, lurdusaurus) for both variants. Everything not named is derived: a target is legal prey when its tier is within the setup ceiling and its habitat is reachable.",
+  "hunters": {
+    "achillobator": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Large" },
+        { "id": "lateni", "label": "+ 3 Latenivenatrix", "size": 4, "tier": "Apex", "with": "1–2 Achillobator mit 3 Latenivenatrix, nur nachts", "single": { "minTier": "Apex", "diet": "Carnivore" } }
+      ],
+      "priorities": [
+        { "setups": ["lateni"], "label": "Mit Latenivenatrix: große Beute zuerst", "targets": ["iguanodon", "parasaurolophus", "pachyrhinosaurus", "eotriceratops"], "quote": "When hunting alongside Latenivenatrix companions, Achillobator target larger prey first, such as; Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements." }
+      ],
+      "never": [
+        { "label": "Keine Sauropoden", "targets": ["amargasaurus", "apatosaurus", "argentinosaurus"], "quote": "Achillobator do not hunt Amargasaurus, Apatosaurus, or Argentinosaurus." },
+        { "setups": ["lateni"], "label": "Mit Latenivenatrix nie Deinonychus", "targets": ["deinonychus"], "quote": "Achillobator do not hunt Deinonychus when with Latenivenatrix companions." }
+      ],
+      "notes": [
+        "Darf Jungtiere bis Adolescent jagen, auch wenn Apex-Eltern dabei sind.",
+        "Meidet Apex-Fleischfresser-Paare und andere Achillobator-Paare.",
+        "Kein Aas: Achillobator dürfen nicht scavengen.",
+        "Mit Latenivenatrix wird nur nachts gejagt."
+      ]
+    },
+    "alioramus": {
+      "setups": [
+        { "id": "solo", "label": "1–4", "size": 1, "tier": "Large" },
+        { "id": "pack", "label": "5er-Rudel", "size": 5, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "label": "Medium und kleiner zuerst", "filter": { "maxTier": "Medium" }, "quote": "Alioramus must prioritize Medium tier or lower if multiple prey options are within LOS" }
+      ],
+      "last": [
+        { "label": "Apex nur, wenn sonst nichts in Sicht ist", "filter": { "minTier": "Apex" }, "quote": "Alioramus only hunts Apex when no other prey options are available in line of sight." }
+      ],
+      "special": [
+        { "targets": ["amargasaurus", "apatosaurus", "argentinosaurus"], "young": true, "condition": "nur Jungtiere bis Adolescent", "quote": "Alioramus cannot hunt Amargasaurus, Apatosaurus, Ampelosaurus or Argentinosaurus unless these species are Adolescent or younger." }
+      ],
+      "never": [
+        { "label": "Keine Apex-Fleischfresser", "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "Alioramus do not hunt Apex carnivores." }
+      ],
+      "notes": [
+        "Darf Schlüpflinge und Juvenile jeder Stufe jagen, auch mit Eltern – muss aber klar das Jungtier angreifen.",
+        "Keine bewachten Jungtiere von Apex-Fleischfressern.",
+        "Hetzt Beute im Wechsel: beißen, ausweichen, der Nächste beißt."
+      ]
+    },
+    "allosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "group", "label": "2–3", "size": 2, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "label": "Sauropoden-Jungtiere vor allem anderen", "targets": ["amargasaurus", "apatosaurus"], "young": true, "condition": "nur Jungtiere bis Adolescent, bewacht oder nicht", "quote": "All Allosaurus prioritize Adolescent and below Amargasaurus and Apatosaurus before all other prey options, whether they’re attended or not." },
+        { "label": "Dann Stegosaurier", "targets": ["stegosaurus", "kentrosaurus"], "quote": "Next, Allosaurus must prioritize Stegosaurus, Kentrosaurus, and Miragaia." },
+        { "label": "Dann große Pflanzenfresser (Large & Apex)", "filter": { "diet": "Herbivore", "minTier": "Large", "maxTier": "Apex" }, "quote": "Then, Allosaurus must prioritize any Large or Apex herbivores within LOS, if they are able to." }
+      ],
+      "never": [
+        { "label": "Keine einzelnen adulten Quetzalcoatlus", "targets": ["quetzalcoatlus"], "quote": "Allosaurus do not hunt solitary adult Quetzalcoatlus." }
+      ],
+      "notes": [
+        "Muss vor der Jagd fremde Allosaurus im POI herausfordern und vertreiben.",
+        "Solo muss es bewachte Apatosaurus-Jungtiere nicht zuerst angehen, darf aber.",
+        "Kein Aas. Männchen dürfen fremde, ungeschützte Allosaurus-Jungtiere bis Adolescent fressen.",
+        "Pirscht und lauert am liebsten."
+      ]
+    },
+    "austroraptor": {
+      "setups": [
+        { "id": "solo", "label": "1–2", "size": 1, "tier": "Medium" },
+        { "id": "mob", "label": "Mob (4)", "size": 4, "tier": "Large", "minTier": "Large", "single": { "minTier": "Large" } }
+      ],
+      "priorities": [
+        { "label": "Lieblingsbeute zum Packen und Ertränken", "targets": ["deinonychus"], "quote": "They may also prioritize Deinonychus and  small Desmatosuchus, Anodontosaurus, and Peloroplites that can be carried." },
+        { "rank": 1, "label": "Lieblingsbeute zum Packen und Ertränken", "targets": ["anodontosaurus"], "young": true, "condition": "nur Jungtiere, die es noch tragen kann", "quote": "They may also prioritize Deinonychus and  small Desmatosuchus, Anodontosaurus, and Peloroplites that can be carried." }
+      ],
+      "special": [
+        { "targets": ["leedsichthys"], "young": true, "condition": "nur Jungtiere, auch bewacht", "quote": "Austroraptor may still hunt attended Leedsichthys offspring." }
+      ],
+      "never": [
+        { "label": "Flieht vor Apex-Fleischfressern", "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "Austroraptor avoid all Apex tier carnivores and will flee if challenged or attacked by them." }
+      ],
+      "notes": [
+        "Scavengt zuerst, wenn ein Kadaver da ist.",
+        "Jagt alle Jungtiere bis Adolescent – außer Sauropoden und solche, die ein Apex-Fleischfresser bewacht.",
+        "Ein Mob aus 4 jagt ausschließlich einzelne Large-Tiere.",
+        "Liebt Fisch, Krabben und Kleintiere, die es wegtragen kann."
+      ]
+    },
+    "ceratosaurus": {
+      "setups": [
+        { "id": "small", "label": "1–3", "size": 1, "tier": "Large" },
+        { "id": "pack", "label": "4er-Rudel", "size": 4, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "label": "Albertaceratops oder Medium und kleiner", "targets": ["albertaceratops"], "filter": { "maxTier": "Medium" }, "quote": "Ceratosaurus, however, will prioritise Albertaceratops and Nasutoceratops, or Medium tier and below dinosaurs, if within LOS." }
+      ],
+      "notes": [
+        "Fordert zuerst jeden beanspruchten Kadaver im POI heraus, bevor es lebende Beute jagt – zu jeder Tageszeit.",
+        "Kein Aas; toleriert Scavenger, wenn genug Fleisch da ist.",
+        "Frisst Metriacanthosaurus ohne Nebenwirkungen."
+      ]
+    },
+    "compsognathus": {
+      "setups": [
+        { "id": "swarm", "label": "1–10", "size": 1, "tier": "Small" }
+      ],
+      "priorities": [
+        { "label": "Dryosaurus & Psittacosaurus zuerst", "targets": ["dryosaurus", "psittacosaurus"], "quote": "When hunting, Compsognathus firstly target unattended babies, Dryosaurus, Psittacosaurus and death-scarred individuals of any tier." }
+      ],
+      "notes": [
+        "Scavengt vor allem und jagt erst, wenn kein Aas da ist.",
+        "Zielt zuerst auf unbewachte Jungtiere und Tiere auf Deathscars jeder Stufe.",
+        "Flieht vor Hatzegopteryx und Quetzalcoatlus."
+      ]
+    },
+    "concavenator": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "small", "label": "2–3", "size": 2, "tier": "Large" },
+        { "id": "full", "label": "4er-Gruppe", "size": 4, "tier": "Apex", "single": { "minTier": "Apex" }, "exclude": ["amargasaurus", "apatosaurus", "argentinosaurus"] }
+      ],
+      "priorities": [
+        { "label": "Krokodile & Megalania", "targets": ["sarcosuchus", "deinosuchus", "megalania"], "conditions": { "sarcosuchus": "nur einzeln oder zu zweit", "deinosuchus": "nur einzelne" }, "quote": "Solitary or paired Sarcosuchus, solitary Deinosuchus, and Megalania" }
+      ],
+      "notes": [
+        "Darf fremde Jagden übernehmen, wenn jagbare Beute bis 2 Körperlängen an sein Gewässer kommt.",
+        "Nur einzelne Concavenator scavengen.",
+        "Flieht vor Spinosaurus, wenn dieser aggressiv wird."
+      ]
+    },
+    "daspletosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Apex" },
+        { "id": "pack", "label": "3er-Rudel", "size": 3, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "setups": ["solo", "pair"], "label": "Lambeosaurus vor allem anderen", "targets": ["lambeosaurus"], "quote": "1-2 Daspletosaurus hunt Lambeosaurus before all other prey." },
+        { "rank": 1, "setups": ["pack"], "label": "Volles Rudel: Parasaurolophus oder Lambeosaurus", "targets": ["parasaurolophus", "lambeosaurus"], "quote": "Full hunting parties of 3 target Parasaurolophus or Lambeosaurus before all other prey." },
+        { "label": "Dann Pflanzenfresser vor Fleischfressern", "filter": { "diet": "Herbivore" }, "quote": "Daspletosaurus target herbivores over carnivores if given multiple options." }
+      ],
+      "notes": [
+        "Solo ohne Lambeosaurus: zuerst Jungtiere bis Adolescent jeder Stufe – per Hinterhalt oder am Nest.",
+        "Darf bewachte und unbewachte Jungtiere jederzeit jagen.",
+        "Solo meidet es Apex-Fleischfresser-Paare.",
+        "Kein Aas."
+      ]
+    },
+    "deinonychus": {
+      "setups": [
+        { "id": "small", "label": "1–3", "size": 1, "tier": "Medium" },
+        { "id": "mid", "label": "4–7", "size": 4, "tier": "Large" },
+        { "id": "full", "label": "8er-Gruppe", "size": 8, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "label": "Tenontosaurus vor allem anderen", "targets": ["tenontosaurus"], "quote": "Deinonychus target Tenontosaurus over any other prey if there are multiple prey options in the POI." }
+      ],
+      "allow": [
+        { "label": "Citipati-Hähne und -Küken gezielt", "targets": ["citipati"], "quote": "To maintain their position, Deinonychus may actively target Citipati roosters and offspring." }
+      ],
+      "special": [
+        { "targets": ["kelenken"], "young": true, "condition": "unbewachte Küken unter Sub-Adult, ganzes Nest, ohne Timer", "quote": "Deinonychus may cull unattended Kelenken offspring under Sub-Adult without gaining a species timer, and can wipe out a full nest if able." }
+      ],
+      "never": [
+        { "label": "Keine Apex-Sauropoden", "targets": ["apatosaurus"], "quote": "Deinonychus do not hunt Apex sauropods such as Apatosaurus." },
+        { "label": "Nie Latenivenatrix", "targets": ["latenivenatrix"], "quote": "Deinonychus do not hunt Latenivenatrix." }
+      ],
+      "notes": [
+        "Jagt und streitet um Kadaver nur tagsüber.",
+        "Tötet unbewachte, fremde Jungtiere unter Adolescent ohne Hunger- oder Tageszeitregel.",
+        "1–2 Tiere dürfen bei jedem Räuber scavengen, ab 3 nur bei Apex-Kills.",
+        "Flieht vor Quetzalcoatlus und Hatzegopteryx."
+      ]
+    },
+    "deinosuchus": {
+      "setups": [
+        { "id": "solo", "label": "Solo, aus dem Wasser", "size": 1, "tier": "Giant", "when": "Jede Jagd beginnt im Wasser" }
+      ],
+      "priorities": [
+        { "label": "Sarcosuchus zuerst", "targets": ["sarcosuchus"], "quote": "Sarcosuchus are a priority target for Deinosuchus." }
+      ],
+      "special": [
+        { "targets": ["deinocheirus"], "condition": "Adulte nur als Albino oder mit offenen Wunden; ungeschützte Jungtiere bis Adolescent", "quote": "Deinosuchus may only hunt solo adult Deinocheirus that are albino or have open wounds." }
+      ],
+      "never": [
+        { "label": "Lohnt sich nicht", "targets": ["rhamphorhynchus", "compsognathus"], "quote": "They do not bother to hunt Rhamphorhynchus or Compsognathus." }
+      ],
+      "notes": [
+        "Jede Jagd beginnt im Wasser; an Land nur bis die Ausdauer endet – ohne Fraktur oder Deathscars muss es zurück ins Wasser.",
+        "Darf Kämpfe bis 2 Körperlängen vom Wasser übernehmen.",
+        "Jagt unbewachte Jungtiere bis Adolescent; kommt ein Elternteil zurück, wird aufgegeben.",
+        "Frisst Albino-Artgenossen; toleriert Scavenger."
+      ]
+    },
+    "dilophosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "small", "label": "2–4", "size": 2, "tier": "Large" },
+        { "id": "full", "label": "5er-Gruppe", "size": 5, "tier": "Apex", "single": { "minTier": "Apex" } }
+      ],
+      "special": [
+        { "targets": ["compsognathus"], "condition": "nur bei großem Hunger – klappt meist nicht", "quote": "However, if desperate hunger, they may attempt to hunt the Compsognathus - though this typically fails!" }
+      ],
+      "never": [
+        { "label": "Keine Apex-Fleischfresser oder Apex-Sauropoden", "targets": ["apatosaurus"], "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "A full hunting party of 5 Dilophosaurus may hunt solitary Apex tier, excluding Apex sauropods and carnivores." }
+      ],
+      "notes": [
+        "Solo lieber scavengen als jagen.",
+        "Darf Jungtiere von Apex-Fleischfressern jagen, muss aber fliehen, wenn die Eltern zurückkommen.",
+        "Flieht vor Apex-Fleischfressern, wenn sie es jagen.",
+        "Regurgitate erst im Kampf, auf der Flucht oder nach dem Aufgeben."
+      ]
+    },
+    "eurhinosaurus": {
+      "setups": [
+        { "id": "shoal", "label": "1–3", "size": 1, "tier": "Large" }
+      ],
+      "priorities": [
+        { "label": "Kaiwhekea & Leedsichthys-Jungtiere vor allem", "targets": ["kaiwhekea"], "quote": "Eurhinosaurus hunt unattended Leedsichthys offspring and Kaiwhekea first before anything else." },
+        { "rank": 1, "label": "Kaiwhekea & Leedsichthys-Jungtiere vor allem", "targets": ["leedsichthys"], "young": true, "condition": "nur unbewachte Jungtiere", "quote": "Eurhinosaurus hunt unattended Leedsichthys offspring and Kaiwhekea first before anything else." }
+      ],
+      "never": [
+        { "label": "Flieht vor Apex-Fleischfressern", "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "Eurhinosaurus flee from Apex carnivores." }
+      ],
+      "notes": [
+        "Lebt sonst friedlich von Fisch und Krebstieren.",
+        "Jagd ist Sport: laut und chaotisch oder lautlos von unten."
+      ]
+    },
+    "giganotosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Giant" },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Giant" }
+      ],
+      "priorities": [
+        { "label": "Apex-Pflanzenfresser zuerst", "filter": { "diet": "Herbivore", "minTier": "Apex" }, "quote": "Giganotosaurus target any Apex herbivores first, then Large if available." },
+        { "label": "Dann Large", "filter": { "minTier": "Large", "maxTier": "Large" }, "quote": "Giganotosaurus target any Apex herbivores first, then Large if available." }
+      ],
+      "special": [
+        { "targets": ["tyrannosaurus", "tyrannotitan"], "condition": "nur Albino, Deathscar oder bis Adolescent – sonst Revierkampf", "quote": "Giganotosaurus may hunt Tyrannosaurus, Tyrannotitan or Giganotosaurus who are Albino, deathscarred, or Adolescent and below." },
+        { "setups": ["solo"], "targets": ["apatosaurus", "argentinosaurus"], "condition": "solo nur, wenn ein Kill wahrscheinlich ist: Deathscar, bis Adolescent oder Albino", "quote": "Solitary Giganotosaurus do not hunt Apatosaurus or Argentinosaurus unless a kill seems likely (the individual is deathscarred, Adolescent or below, or Albino)." }
+      ],
+      "notes": [
+        "Muss Tyrannosaurus, Tyrannotitan und fremde Giganotosaurus im POI erst herausfordern – oder selbst gehen –, bevor es irgendetwas jagt.",
+        "Darf von Kadavern dieser Rivalen fressen.",
+        "Frisst Albino-Artgenossen und unbewachte fremde Jungtiere bis Adolescent."
+      ]
+    },
+    "hatzegopteryx": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "group", "label": "2–3", "size": 2, "tier": "Large" }
+      ],
+      "priorities": [
+        { "label": "Quetzalcoatlus jagen oder vertreiben – immer", "targets": ["quetzalcoatlus"], "ignoreTier": true, "condition": "zu jeder Zeit und bei jedem Hunger; solo nur einzelne Quetzalcoatlus", "quote": "Hatzegopteryx hunt and chase out Quetzalcoatlus whenever possible." },
+        { "label": "Raptoren – am liebsten", "targets": ["deinonychus", "latenivenatrix", "utahraptor"], "quote": "They have a strong preference for Deinonychus, Latenivenatrix and Utahraptor." },
+        { "label": "Revier: andere Flugsaurier jagen oder vertreiben", "targets": ["rhamphorhynchus", "thalassodromeus", "tropeognathus"], "quote": "Hatzegopteryx defend their territories from all other aerial species  and must chase them out upon seeing them." }
+      ],
+      "notes": [
+        "Bevorzugt Beute, die es packen und tragen kann, und lässt sie aus großer Höhe fallen.",
+        "Darf Schlüpflinge und Juvenile jeder Stufe jagen, auch bewacht.",
+        "Kann keine schwimmende Beute greifen.",
+        "Kein Aas. Paare beanspruchen einen ganzen POI als Revier."
+      ]
+    },
+    "kaiwhekea": {
+      "setups": [
+        { "id": "pod", "label": "1–3", "size": 1, "tier": "Large" }
+      ],
+      "priorities": [
+        { "label": "Unbewachte Leedsichthys-Jungtiere zuerst", "targets": ["leedsichthys"], "young": true, "condition": "nur unbewachte Jungtiere", "quote": "However, if unattended Leedsichthys offspring are available, they must hunt these first." },
+        { "label": "Dann Medium vor Large", "filter": { "minTier": "Medium", "maxTier": "Medium" }, "quote": "Afterwards, Kaiwhekea must hunt suitable Medium tier options before targeting Large tiers." }
+      ],
+      "special": [
+        { "targets": ["spinosaurus", "deinosuchus"], "young": true, "condition": "nur Jungtiere bis Adolescent", "quote": "Offspring of these species, of adolescent and below, may be hunted." }
+      ],
+      "never": [
+        { "label": "Flieht vor adulten Spinosaurus & Deinosuchus", "targets": ["spinosaurus", "deinosuchus"], "quote": "Kaiwhekea flee from adult Spinosaurus and Deinosuchus." }
+      ],
+      "notes": [
+        "Kein Aas.",
+        "Jagt koordiniert: die Gruppe schwimmt abwechselnd zum Biss heran."
+      ]
+    },
+    "kelenken": {
+      "setups": [
+        { "id": "cast", "label": "1–4", "size": 1, "tier": "Large", "single": { "minTier": "Large" } }
+      ],
+      "priorities": [
+        { "label": "Latenivenatrix & Deinonychus zuerst", "targets": ["latenivenatrix", "deinonychus"], "quote": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey." },
+        { "label": "Dann Achillobator & Utahraptor", "targets": ["achillobator", "utahraptor"], "quote": "Kelenken will hunt Latenivenatrix or Deinonychus first, and Achillobator or Utahraptor next, before all other prey." },
+        { "label": "Dann Medium und kleiner vor einzelnen Large", "filter": { "maxTier": "Medium" }, "quote": "If a Medium or lower tier is present in the POI, it must be targeted by Kelenken before solo Large tier." }
+      ],
+      "never": [
+        { "label": "Flieht vor adulten Apex-Fleischfressern & Maip", "targets": ["maip"], "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "Kelenken flee from adult Apex carnivores and Maip." }
+      ],
+      "notes": [
+        "Darf Schlüpflinge und Juvenile jeder Stufe jagen, auch bewacht – außer von Apex-Fleischfressern oder Maip bewacht.",
+        "Kein Aas; Kelenken jagen nie andere Kelenken.",
+        "Ein volles Cast (8) duldet keine anderen Kelenken im POI."
+      ]
+    },
+    "latenivenatrix": {
+      "setups": [
+        { "id": "small", "label": "1–5", "size": 1, "tier": "Medium" },
+        { "id": "six", "label": "6er-Gruppe", "size": 6, "tier": "Large" },
+        { "id": "achillo", "label": "2–3 + Achillobator", "size": 3, "tier": "Apex", "with": "mindestens 1 Achillobator, nur nachts", "single": { "minTier": "Apex", "diet": "Carnivore" } }
+      ],
+      "priorities": [
+        { "setups": ["small", "six"], "label": "Lieblingsbeute", "targets": ["lambeosaurus", "styracosaurus", "pachycephalosaurus", "citipati", "camptosaurus", "dryosaurus"], "quote": "Latenivenatrix target Lambeosaurus, Styracosaurus, Pachycephalosaurus, Citipati, Camptosaurus and Dryosaurus first and foremost if multiple prey options are available in the POI, within hunting limit requirements." },
+        { "rank": 1, "setups": ["achillo"], "label": "Mit Achillobator: große Beute zuerst", "targets": ["iguanodon", "parasaurolophus", "pachyrhinosaurus", "eotriceratops"], "quote": "When hunting alongside Achillobator companions, Latenivenatrix target larger prey first, such as; Iguanodon, Parasaurolophus, Pachyrhinosaurus and Eotriceratops if multiple prey options are available in the POI, within hunting limit requirements." }
+      ],
+      "special": [
+        { "targets": ["amargasaurus"], "young": true, "condition": "nur Jungtiere bis Adolescent", "quote": "They may hunt Adolescent and below Amargasaurus." }
+      ],
+      "never": [
+        { "label": "Keine Sub/Adulten Sauropoden", "targets": ["amargasaurus", "apatosaurus", "argentinosaurus"], "quote": "Latenivenatrix do not hunt Sub/Adult Amargasaurus, Apatosaurus or Argentinosaurus." },
+        { "label": "Nie Deinonychus", "targets": ["deinonychus"], "quote": "Latenivenatrix do not hunt Deinonychus." },
+        { "label": "Flieht vor Kelenken, Hatzegopteryx & Quetzalcoatlus", "targets": ["kelenken", "hatzegopteryx", "quetzalcoatlus"], "quote": "Latenivenatrix flee from Hatzegopteryx, Quetzalcoatlus, and Kelenken, regardless of whether they are with Achillobator companions or not." }
+      ],
+      "notes": [
+        "Jagt ausschließlich nachts.",
+        "Darf scavengen, duldet selbst aber keine Scavenger.",
+        "Die ganze Rookery darf Deinonychus aus dem POI vertreiben."
+      ]
+    },
+    "maip": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "group", "label": "2–3", "size": 2, "tier": "Apex", "single": { "minTier": "Apex" } }
+      ],
+      "special": [
+        { "targets": ["tyrannotitan"], "young": true, "condition": "nur einzelne Jungtiere bis Adolescent", "quote": "While Maip actively avoids adult Tyrannotitan, they will hunt and even target lone Tyrannotitan offspring of Adolescent and below." }
+      ],
+      "never": [
+        { "label": "Flieht vor adulten Tyrannotitan", "targets": ["tyrannotitan"], "quote": "Maip flee from Adult Tyrannotitan." }
+      ],
+      "notes": [
+        "Zielt zuerst auf Verwundbare: Schlüpflinge, Juvenile, Kranke, Schlafende und Alte.",
+        "Ausdauerjäger: hetzt Beute über weite Strecken und lässt sie ausbluten.",
+        "Kein Aas-Scavengen, frisst aber verrottendes Fleisch und Knochenmark problemlos.",
+        "Frisst Albino-Artgenossen und Metriacanthosaurus ohne Folgen."
+      ]
+    },
+    "megalania": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "mob", "label": "Mob 2–5", "size": 2, "tier": "Apex", "minTier": "Apex" }
+      ],
+      "allow": [
+        { "label": "Adulte der anderen Variante", "targets": ["megalania"], "quote": "Megalania cannibalize other adults of the opposite variant." }
+      ],
+      "notes": [
+        "Scavengt zuerst, wenn ein Kadaver da ist – auf eigenes Risiko.",
+        "Reagiert stark auf Bewegung: jede Art bis Large ist Ziel.",
+        "Ein Mob (2–5) bildet sich nur für Apex-Beute.",
+        "Frisst ungruppierte Jungtiere der eigenen Variante bis Adolescent."
+      ]
+    },
+    "metriacanthosaurus": {
+      "setups": [
+        { "id": "pair", "label": "1–2", "size": 1, "tier": "Large" }
+      ],
+      "priorities": [
+        { "label": "Struthiomimus, Citipati, Utahraptor, Kelenken", "targets": ["struthiomimus", "citipati", "utahraptor", "kelenken"], "quote": "Then, Metriacanthosaurus target Struthiomimus, Citipati, Utah, and Kelenken." },
+        { "label": "Dann junge Therizinosaurus", "targets": ["therizinosaurus"], "young": true, "condition": "nur Jungtiere bis Adolescent", "quote": "Then, Metriacanthosaurus target adolescent and below Therizinosaurus." }
+      ],
+      "never": [
+        { "label": "Meidet Apex-Fleischfresser", "filter": { "minTier": "Apex", "diet": "Carnivore" }, "except": ["leedsichthys"], "quote": "Metriacanthosaurus do not flee from anything, but will avoid Apex tier carnivores." }
+      ],
+      "notes": [
+        "Fordert zuerst andere Metriacanthosaurus heraus (Adulte) oder frisst sie (Jungtiere).",
+        "Darf scavengen.",
+        "Giftig: Wer es frisst, kann krank werden – nur wenige Arten vertragen es."
+      ]
+    },
+    "pycnonemosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "group", "label": "2–3", "size": 2, "tier": "Giant" }
+      ],
+      "priorities": [
+        { "label": "Fleischfresser zuerst", "filter": { "diet": "Carnivore" }, "quote": "Pycnonemosaurus always target carnivores first when hunting." }
+      ],
+      "never": [
+        { "label": "Ignoriert kleine Fleischfresser (nur zur Verteidigung)", "filter": { "diet": "Carnivore", "maxTier": "Small" }, "quote": "Pycnonemosaurus ignore all Small tier and below carnivores, and only kill them in defence." }
+      ],
+      "notes": [
+        "Darf keinen Pflanzenfresser jagen, solange passende Fleischfresser-Beute in Sicht ist.",
+        "Darf bewachte wie unbewachte Schlüpflinge und Juvenile jederzeit jagen.",
+        "Solo flieht es vor Apex-Fleischfressern.",
+        "Kein Aas, kein Kannibalismus."
+      ]
+    },
+    "quetzalcoatlus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "group", "label": "2–3", "size": 2, "tier": "Large" }
+      ],
+      "special": [
+        { "targets": ["hatzegopteryx"], "condition": "nur in Überzahl – sonst ausweichen", "quote": "Quetzalcoatlus will also hunt Hatzegopteryx if they outnumber them." }
+      ],
+      "never": [
+        { "label": "Jagt nie Allosaurus (Partnerschaft)", "targets": ["allosaurus"], "quote": "Allosaurus are, in return, not hunted by Quetzalcoatlus, even when in large groups." }
+      ],
+      "notes": [
+        "Faul: vertreibt lieber andere Fleischfresser von ihren Kills, als selbst zu jagen.",
+        "Zuerst: Jungtiere bis Adolescent und Tiere auf Deathscars jeder Stufe.",
+        "Dann: Verletzte, Kranke und Albinos bis Large (in der Gruppe Albinos bis Apex).",
+        "Erst zuletzt gesunde Tiere bis Medium (solo) bzw. Large (Gruppe).",
+        "Solo darf es auf eigenes Risiko scavengen."
+      ]
+    },
+    "sarcosuchus": {
+      "setups": [
+        { "id": "water", "label": "Vom Wasser aus", "size": 1, "tier": "Apex", "when": "Beute im Wasser oder höchstens 2 Körperlängen vom Ufer – tags und nachts" },
+        { "id": "land", "label": "An Land (nachts)", "size": 1, "tier": "Large", "single": { "minTier": "Large" }, "when": "nur nachts, einzelne Beute bis Large" }
+      ],
+      "allow": [
+        { "label": "Leckerbissen", "targets": ["halszkaraptor"], "quote": "Halzkaraptor prove to be a delicious snack for Sarcosuchus stealthy enough to catch them." }
+      ],
+      "special": [
+        { "targets": ["deinocheirus"], "condition": "nur ungeschützte Jungtiere bis Adolescent – oder Albino/Deathscar", "quote": "Sarcosuchus does not hunt healthy adult Deinocheirus, but may attempt to hunt unprotected Deinocheirus offspring, up to adolescent." }
+      ],
+      "never": [
+        { "label": "Keine adulten Spinosaurus", "targets": ["spinosaurus"], "quote": "Sarcosuchus does not hunt adult Spinosaurus." }
+      ],
+      "notes": [
+        "Lauerjäger: tagsüber beginnt jede Jagd im Wasser oder bis 2 Körperlängen davon; nach einem Treffer darf es an Land verfolgen.",
+        "Nachts darf es an Land jagen, dort nur einzelne Tiere bis Large.",
+        "Bevorzugt kleinere Beute, die es packen und ertränken kann.",
+        "Flieht an Land vor Apex-Fleischfressern, im Wasser nicht.",
+        "Weibchen fressen fremde Sarcosuchus-Jungtiere bis Adolescent."
+      ]
+    },
+    "spinosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Apex", "when": "nur im eigenen Revier – Leedsichthys und Tylosaurus überall" },
+        { "id": "pair", "label": "Paar (nur Krokodile)", "size": 2, "tier": "Apex", "only": ["deinosuchus", "sarcosuchus"], "when": "ein Paar darf gemeinsam Krokodile im Revier töten" }
+      ],
+      "priorities": [
+        { "label": "Im Revier: Krokodile zuerst", "targets": ["deinosuchus", "sarcosuchus"], "quote": "Hunting in Claimed Territory Only: Deinosuchus and Sarcosuchus are hunted first." }
+      ],
+      "allow": [
+        { "label": "Überall jagbar – riskant, lieber Jungtiere", "targets": ["leedsichthys", "tylosaurus"], "quote": "Hunting in any POI: Fish, ai corpses or critters, Leedsichthys, and Tylosaurus - though this is risky, and offspring are preferred." }
+      ],
+      "last": [
+        { "label": "Geduldete Concavenator: niedrige Priorität", "targets": ["concavenator"], "quote": "Concavenator is another low priority target when Spinosaurus are tolerating them in their water source." }
+      ],
+      "never": [
+        { "label": "Sub/Adulte Riesen-Sauropoden nie", "targets": ["apatosaurus", "argentinosaurus"], "quote": "Avoidance: Sub/Adult Argentinosaurus & Apatosaurus are never hunted or challenged out of Spinosaurus territory." }
+      ],
+      "notes": [
+        "Jagt allein; der Partner hilft nicht bei der Jagd.",
+        "Jagt nur im eigenen Revier (siehe Profilkarte) – Leedsichthys und Tylosaurus überall.",
+        "Adoptiert Suchomimus jeden Alters und verteidigt sie.",
+        "Kein Scavenger, teilt aber Kills von Concavenator und Suchomimus."
+      ]
+    },
+    "suchomimus": {
+      "setups": [
+        { "id": "small", "label": "1–2", "size": 1, "tier": "Apex", "exclude": ["deinosuchus"] },
+        { "id": "snare", "label": "3er-Snare", "size": 3, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "label": "Krokodile bevorzugt (Fischbestand)", "targets": ["sarcosuchus"], "quote": "Suchomimus readily target the crocodilian species: Deinosuchus (only if they have 3 sub-adult/adults in their snare) and Sarcosuchus." },
+        { "rank": 1, "setups": ["snare"], "label": "Krokodile bevorzugt (Fischbestand)", "targets": ["deinosuchus"], "condition": "nur mit 3 Sub/Adulten", "quote": "Suchomimus readily target the crocodilian species: Deinosuchus (only if they have 3 sub-adult/adults in their snare) and Sarcosuchus." }
+      ],
+      "allow": [
+        { "label": "Ab und zu Concavenator", "targets": ["concavenator"], "quote": "Suchomimus may also hunt Concavenator from time to time." }
+      ],
+      "never": [
+        { "label": "Nie Spinosaurus", "targets": ["spinosaurus"], "quote": "Suchomimus never hunt Spinosaurus." }
+      ],
+      "notes": [
+        "Fischt gern; jagt halbaquatische Tiere in der Nähe und geht auch an Land auf Jagd.",
+        "Kein aktiver Kannibalismus.",
+        "Von Spinosaurus adoptiert: schleicht sich zum Jagen weg, weil der Spinosaurus jeden Kampf unterbricht."
+      ]
+    },
+    "thalassodromeus": {
+      "setups": [
+        { "id": "flock", "label": "Beliebig viele", "size": 1, "tier": "Medium" }
+      ],
+      "never": [
+        { "label": "Flieht vor Tropeognathus, Hatzegopteryx & Quetzalcoatlus", "targets": ["tropeognathus", "hatzegopteryx", "quetzalcoatlus"], "quote": "Thalassodromeus flee from Hatzegopteryx, Quetzalcoatlus and Tropeognathus." }
+      ],
+      "notes": [
+        "Jagt am liebsten gar nicht: Süßwasserfisch und Aas zuerst.",
+        "Gesunde Tiere bis Medium, dazu jedes Jungtier ohne Adulten in 2 Körperlängen und jedes Tier auf Deathscars.",
+        "Wehrt sich beim Scavengen nicht, fliegt einfach weg."
+      ]
+    },
+    "torvosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },
+        { "id": "party", "label": "2–3 Weibchen", "size": 2, "tier": "Giant" },
+        { "id": "mob", "label": "Mob bis 6 (Allianz)", "size": 4, "tier": "Giant", "only": ["apatosaurus", "argentinosaurus"], "when": "zwei Rudel verbünden sich kurz gegen große Sauropoden" }
+      ],
+      "priorities": [
+        { "label": "Amargasaurus vor allem anderen", "targets": ["amargasaurus"], "quote": "Priority hunting targets for Torvosaurus are Amargasaurus." },
+        { "rank": 1, "setups": ["mob"], "label": "Mob: große Sauropoden", "targets": ["apatosaurus", "argentinosaurus"], "quote": "If there are two packs in the area and these sauropods are present, these species must be the primary target for Torvosaurus." },
+        { "label": "Dann Ceratopsier", "targets": ["eotriceratops", "pachyrhinosaurus", "styracosaurus", "albertaceratops"], "quote": "When Amargasaurus is not available, and mobbing larger sauropods is not possible, they prioritize hunting ceratopsian species (Eotriceratops, Pachyrhinosaurus, Nasutoceratops, Styracosaurus and Albertaceratops)." }
+      ],
+      "special": [
+        { "targets": ["thalassodromeus"], "condition": "nicht, wenn eine Bindung zu diesen Thalassodromeus besteht", "quote": "Torvosaurus that forge these bonds with Thalassodromeus will no longer hunt them, and will permit them to come quite close to them at rest times." }
+      ],
+      "notes": [
+        "Jagt nur tagsüber.",
+        "Nur Weibchen jagen; Männchen streiten lieber um Kadaver bis Medium und springen nur ein, wenn weniger als 3 Weibchen da sind.",
+        "Kein Aas.",
+        "Jagt und frisst auch Artgenossen."
+      ]
+    },
+    "tropeognathus": {
+      "setups": [
+        { "id": "small", "label": "1–2", "size": 1, "tier": "Medium", "when": "gesunde Tiere nur nachts" },
+        { "id": "big", "label": "3–4", "size": 3, "tier": "Medium", "when": "gesunde Tiere nur nachts" }
+      ],
+      "priorities": [
+        { "label": "Thalassodromeus – bei jeder Gelegenheit", "targets": ["thalassodromeus"], "condition": "nur in den eigenen bevorzugten POIs, ohne Hungerregel", "quote": "Tropeognathus hunt Thalassodromeus at any opportunity, regardless of hunger requirements." },
+        { "rank": 1, "label": "Lurdusaurus – Lieblingsjagd", "targets": ["lurdusaurus"], "quote": "Tropeognathus especially enjoy hunting Lurdusaurus, who frequent similar POIs to Tropeognathus." }
+      ],
+      "special": [
+        { "setups": ["big"], "targets": ["hatzegopteryx", "quetzalcoatlus"], "ignoreTier": true, "condition": "nur einzelne Tiere, mit 3–4 Adulten", "quote": "Tropeognathus may also hunt lone Hatzegopteryx and lone Quetzalcoatlus in a group of 3 or more members." }
+      ],
+      "never": [
+        { "label": "Nie Rhamphorhynchus (nur vom Futter verscheuchen)", "targets": ["rhamphorhynchus"], "quote": "Tropeognathus do not hunt Rhamphorhynchus, but will aggress them away from their food." }
+      ],
+      "notes": [
+        "Gesunde Tiere nur nachts; Schlüpflinge und Juvenile jeder Stufe jederzeit, auch bewacht.",
+        "Lebt am liebsten von Fisch und Muscheln, frisst notfalls Knochen, Obst und Insekten.",
+        "Darf Kills anderer auf eigenes Risiko scavengen."
+      ]
+    },
+    "tylosaurus": {
+      "setups": [
+        { "id": "pair", "label": "1–2 (+1 Adolescent)", "size": 1, "tier": "Apex" }
+      ],
+      "shore": "nur schwimmend oder höchstens 1 Körperlänge vom Wasser",
+      "priorities": [
+        { "label": "Kaiwhekea, Eurhinosaurus, Leedsichthys zuerst", "targets": ["kaiwhekea", "eurhinosaurus", "leedsichthys"], "quote": "Kaiwheka, Eurhinosaurus, and Leedsichthys must be hunted before all other prey in the POI." },
+        { "label": "Dann Hadrosaurier & Lurdusaurus am Wasser", "targets": ["parasaurolophus", "lambeosaurus"], "condition": "am Strand oder schwimmend", "quote": "Parasaurolophus and Lambeosaurus are the next preferred targets when they are on the beach or when swimming." },
+        { "rank": 2, "label": "Dann Hadrosaurier & Lurdusaurus am Wasser", "targets": ["lurdusaurus"], "condition": "aus Damm oder Herde gepackt und ins Meer gezogen", "quote": "Lurdusaurus are also favored prey of Tylosaurus - often grabbed from their dams and herds and dragged deep into the sea, where they are less likely to escape, and struggle to defend themselves." }
+      ],
+      "last": [
+        { "label": "Iguanodon weniger beliebt (Daumenstachel)", "targets": ["iguanodon"], "quote": "Though these hadrosaurus usually migrate alongside Iguanodon, Iguanodon are less preferred as prey due to their sharp, piercing thumb spikes." }
+      ],
+      "special": [
+        { "targets": ["spinosaurus", "deinosuchus"], "condition": "Adulte nur bei großem Hunger (35 %); ihre Jungtiere frei", "quote": "Tylosaurus will not hunt Spinosaurus or Deinosuchus unless 35% hunger, but may respond to territory challenges from them." },
+        { "filter": { "minTier": "Apex", "diet": "Carnivore", "habitat": "Terrestrial" }, "condition": "nur, wenn sie schwimmen", "quote": "Tylosaurus will only hunt adult Apex terrestrial carnivores if they are swimming in water." },
+        { "targets": ["tropeognathus", "thalassodromeus", "rhamphorhynchus", "halszkaraptor"], "ignoreTier": true, "condition": "wenn sie nach Futter tauchen oder im Wasser sind", "quote": "Tylosaurus can also be observed killing Tropeognathus, Thalassodromeus, Rhamphornhychus, and Halzskaraptor when they dive for food or are in the water nearby them." }
+      ],
+      "notes": [
+        "Darf Tiere bis 1 Körperlänge vom Wasser jagen und packt zuerst, was es ins Wasser ziehen kann.",
+        "Darf Kämpfe übernehmen, die ins Wasser oder bis 1 Körperlänge ans Wasser kommen.",
+        "Kein Aas. Fremde Tylosaurus nur bei großem Hunger (35 %)."
+      ]
+    },
+    "tyrannosaurus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Giant" },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Giant" }
+      ],
+      "priorities": [
+        { "label": "Lieblingsbeute", "targets": ["eotriceratops", "barsboldia", "parasaurolophus", "anodontosaurus"], "quote": "Eotriceratops, Barsboldia, Parasaurolophus, Anodontosaurus. These species are targeted first in the POI." }
+      ],
+      "special": [
+        { "targets": ["giganotosaurus", "tyrannotitan"], "condition": "nur bei großem Hunger (≤ 35 %) per Hinterhalt – oder Albino, Deathscar, bis Adolescent", "quote": "Tyrannosaurus only hunt Giganotosaurus or Tyrannotitan when at desperate hunger (35% or below), unless the target is Albino, deathscarred, or aged Adolescent and below." }
+      ],
+      "never": [
+        { "label": "Nie Compsognathus", "targets": ["compsognathus"], "quote": "Tyrannosaurus never hunt Compsognathus." }
+      ],
+      "notes": [
+        "Muss zuerst alle terrestrischen Apex-Fleischfresser aus dem POI drängen – erst dann darf gejagt werden.",
+        "Hinterhaltjäger: Landet vor dem Ende der Ausdauer kein Biss, wird abgebrochen.",
+        "Duldet keine Large+-Fleischfresser im Revier.",
+        "Kein Aas. Frisst fremde Jungtiere bis Adolescent und Albinos der eigenen Art."
+      ]
+    },
+    "tyrannotitan": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Giant", "exclude": ["argentinosaurus"] },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Giant" },
+        { "id": "mob", "label": "Mob bis 3 (Argentinosaurus)", "size": 3, "tier": "Giant", "only": ["argentinosaurus"], "when": "nur verpaarte Tiere, mindestens 2" }
+      ],
+      "priorities": [
+        { "label": "Immer zuerst", "targets": ["therizinosaurus", "parasaurolophus", "eotriceratops", "apatosaurus", "barsboldia"], "conditions": { "therizinosaurus": "Pflicht, wenn in Sicht und hungrig – sonst herausfordern" }, "quote": "Tyrannotitan may hunt any tier, but will always hunt Therizinosaurus, Parasaurolophus, Eotriceratops, Apatosaurus, and Barsboldia before all other prey." }
+      ],
+      "allow": [
+        { "label": "Darf Austroraptor jagen (am Nistplatz geduldet)", "targets": ["austroraptor"], "quote": "They may, however, hunt Austroraptor." }
+      ],
+      "last": [
+        { "label": "Maip nur, wenn nichts anderes in Sicht ist", "targets": ["maip"], "quote": "Tyrannotitan do not hunt Maip if other options are within LOS and rarely challenge them from the POI." }
+      ],
+      "special": [
+        { "targets": ["giganotosaurus", "tyrannosaurus"], "condition": "nur Albino, Deathscar oder bis Adolescent", "quote": "Tyrannotitan may not hunt healthy adult Giganotosaurus and Tyrannosaurus unless the rival is Albino, deathscarred, or aged Adolescent and below." }
+      ],
+      "notes": [
+        "Darf nicht jagen, solange gleichgeschlechtliche Rivalen, Tyrannosaurus, Giganotosaurus oder Therizinosaurus im POI sind – erst herausfordern.",
+        "Adolescent-Tyrannotitan gelten als Beute; unbewachte fremde Jungtiere bis Juvenile werden getötet.",
+        "Albino-Artgenossen werden gefressen."
+      ]
+    },
+    "utahraptor": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "small", "label": "2–4", "size": 2, "tier": "Large" },
+        { "id": "pack", "label": "5er-Rudel", "size": 5, "tier": "Apex" }
+      ],
+      "last": [
+        { "label": "Apex nur, wenn sonst nichts in Sicht ist", "filter": { "minTier": "Apex" }, "quote": "Exception: Utahraptor will only hunt Apex tier if there are no other prey options in LOS." }
+      ],
+      "notes": [
+        "Darf keine Jagd beginnen, wenn fremde Utahraptor in der Nähe sind.",
+        "Kein Aas.",
+        "Fordert andere Arten nicht aus dem POI heraus, verteidigt sich aber."
+      ]
+    },
+    "yutyrannus": {
+      "setups": [
+        { "id": "solo", "label": "Solo", "size": 1, "tier": "Medium" },
+        { "id": "pair", "label": "Paar", "size": 2, "tier": "Large" },
+        { "id": "party", "label": "3–4", "size": 3, "tier": "Apex" }
+      ],
+      "priorities": [
+        { "setups": ["party"], "label": "Mit 3–4: Apex-Fleischfresser", "targets": ["tyrannosaurus", "giganotosaurus", "tyrannotitan"], "quote": "Yutyrannus, with 3 or 4 adult individuals in their hunting party, enjoy hunting Apex carnivores such as Tyrannosaurus, Giganotosaurus, and Tyrannotitan." }
+      ],
+      "notes": [
+        "Darf bewachte und unbewachte Jungtiere immer jagen – von Apex-Eltern bewachte erst ab 3 Adulten.",
+        "Trockenzeit: nur nachts jagen, leichte Ziele zuerst (Schlafende, Verletzte, Albinos, Jungtiere).",
+        "Kein Aas."
+      ]
+    }
+  },
+  "nonHunters": {
+    "leedsichthys": { "note": "Jagt keine Spieler und frisst nur Krill entlang seiner Wanderrouten.", "quote": "Leedsichthys do not hunt other players." },
+    "rhamphorhynchus": { "note": "Jagt keine Spieler: nur Fisch, Aas und Kleintiere (Critter).", "quote": "Rhamphorhynchus have no engagement limit, but do not hunt." }
+  }
+}

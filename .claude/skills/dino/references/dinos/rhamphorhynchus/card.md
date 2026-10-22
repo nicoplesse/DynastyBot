@@ -48,6 +48,10 @@ You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200
 - Lebensraum: Wherever the sauropods roam, plus fishing waters. Nomadic. Roosts on sauropod companions (Amargasaurus, Apatosaurus, Argentinosaurus), which shelter its chicks, and fishes and scavenges nearby.
 - Anders als die Tiere: Oxpeckers call alarms to warn their hosts; Rhamphorhynchus goes silent and flies away when a carnivore approaches a herd. Parakeets eat seeds and fruit; Rhamphorhynchus lives on fish, carrion and critters.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du ein Madenhacker, der mit einem Sauropoden zieht. Fischen und Aas musst du dann selbst finden, das Tier bleibt.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Kelp Vale, Coastal Bluffs, Volcano Islands, Abyssal Depths, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Stonebed Shoal, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest
@@ -55,8 +59,7 @@ You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
-- **Tropeognathus (Ocean)** (sehr hoch): Tropeognathus (Ocean) can create a very narrow escape window
+- **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
 - **Hatzegopteryx** (spürbar): Hatzegopteryx can create a credible fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus can create a credible fight
 - **Thalassodromeus** (spürbar): Thalassodromeus can create a credible fight

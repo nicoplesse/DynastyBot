@@ -11,6 +11,8 @@ Du beantwortest Fragen zu einem (oder wenigen) Dynasty-Realism-Playables. Alle D
 
 ```
 references/
+  routes.md                   Migrationsrouten: Routen, POI-Folgen, wer wo durchzieht
+  clamps.md                   Clamp-Tabelle: wer wen bis zu welcher Wachstumsstufe packen kann
   dinos.md                    Verzeichnis: id, Name, Aliase, Klasse, Tier-Analog (61 Zeilen)
   dinos/<id>/card.md          Steckbrief: Eckdaten, Quick View, Spielleitfaden, Tier-Analog,
                               POIs, Matchup-Auszug, Dynasty-Anpassungen, Liste der Profilabschnitte
@@ -40,6 +42,8 @@ Die Pfade sind relativ zum Ordner dieses Skills.
 | Wo lebt er, wohin zieht er | card: Karte & POIs, Ökosystem | sections mit Lebensraum-Hinweisen (overview, general-behavior) |
 | Wer ist gefährlich, wen kann ich jagen | card: Matchups (Auszug) | matchups.md |
 | Werte, Tempo, Anpassungen | card: Eckdaten, Dynasty-Anpassungen | stats.md |
+| Clampen/Packen: wen, bis zu welcher Stufe | clamps.md (alle Clamper, Profil-Anpassungen eingerechnet) | stats.md der Beute |
+| Migrationsrouten: wer zieht wo lang, nächste Station, wer kommt hier vorbei | routes.md (alle Routen, POI-Folgen, pro POI) | card: Karte & POIs |
 | „Wie spiele ich ihn wie das echte Tier?“ | card: Spielleitfaden + „Spielt sich wie“ | passende sections für Details |
 | Vergleich zweier Dinos | beide card.md | matchups.md des einen, falls es um das direkte Duell geht |
 

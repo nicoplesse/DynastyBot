@@ -1,16 +1,16 @@
 # Hatzegopteryx – Matchups
 
-Played solo against their full legal groups, Hatzegopteryx has 3 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Hatzegopteryx has 2 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
-### Tropeognathus (Coast) – sehr hoch (predator)
-Tropeognathus (Coast) can create a very narrow escape window
+### Tropeognathus – sehr hoch (predator)
+Tropeognathus can create a very narrow escape window
 
-Tropeognathus (Coast) is linked by a specific profile rule. Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Coast) vs 1 Hatzegopteryx: the Tropeognathus (Coast) side wins in about 9 s with 84% of its health left.
-- Verfolgung: Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Coast) vs 1 Hatzegopteryx: the Tropeognathus (Coast) side wins in about 9 s with 84% of its health left. (Kampfgewicht 2000 vs 3100)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 3 Hatzegopteryx: the Hatzegopteryx side wins in about 22 s with 51% of its health left.
+Tropeognathus is linked by a specific profile rule. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus vs 1 Hatzegopteryx: the Tropeognathus side wins in about 9 s with 84% of its health left.
+- Verfolgung: Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.
+- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus vs 1 Hatzegopteryx: the Tropeognathus side wins in about 9 s with 84% of its health left. (Kampfgewicht 2000 vs 3100)
+- Kampf (beide Seiten legal max): 4 Tropeognathus vs 3 Hatzegopteryx: the Hatzegopteryx side wins in about 22 s with 51% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 29 pro Haupttreffer vom Angreifer (21 bis zum Kill), 47 zurück (10 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
@@ -22,16 +22,6 @@ Quetzalcoatlus is linked by a specific profile rule. Quetzalcoatlus can approach
 - Kampf (du solo gegen ihre volle legale Gruppe): 3 Quetzalcoatlus vs 1 Hatzegopteryx: the Quetzalcoatlus side wins in about 8 s with 89% of its health left. (Kampfgewicht 2750 vs 3100)
 - Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 3 Hatzegopteryx: the Quetzalcoatlus side wins in about 40 s with 10% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 71 pro Haupttreffer vom Angreifer (9 bis zum Kill), 34 zurück (18 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
-
-### Tropeognathus (Ocean) – sehr hoch (predator)
-Tropeognathus (Ocean) can create a very narrow escape window
-
-Tropeognathus (Ocean) is linked by a specific profile rule. Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Ocean) vs 1 Hatzegopteryx: the Tropeognathus (Ocean) side wins in about 9 s with 84% of its health left.
-- Verfolgung: Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Ocean) vs 1 Hatzegopteryx: the Tropeognathus (Ocean) side wins in about 9 s with 84% of its health left. (Kampfgewicht 2000 vs 3100)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Ocean) vs 3 Hatzegopteryx: the Hatzegopteryx side wins in about 22 s with 51% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 29 pro Haupttreffer vom Angreifer (21 bis zum Kill), 47 zurück (10 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Thalassodromeus – conditional (conditional)

@@ -18118,6 +18118,331 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "solo",
+    "verdict": "same",
+    "changes": null,
+    "note": "Metriacanthosaurus kommen laut Profil allein hervorragend zurecht. Ein Paar ändert am Leben der Gila-Krustenechse nichts.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Gila monster + Poison dart frog",
+        "labelDe": "Gila-Krustenechse + Pfeilgiftfrosch",
+        "headline": "A poisonous, neon-bright night hunter: a Gila monster's lifestyle with a poison dart frog's toxins and turf wars.",
+        "playsLike": "You are a medium nocturnal carnivore living in a mated pair (a 'quiver'). Your flesh is poisonous, so most carnivores that eat you get sick or die. Before hunting you must challenge any other adult Metriacanthosaurus in sight; the brighter one usually wins without a fight. You hunt up to Large tier, with Struthiomimus, Citipati, Utahraptor and Kelenken first, then young Therizinosaurus. You scavenge freely, avoid Apex carnivores and never flee from anything else. Mushrooms keep your toxins topped up.",
+        "setting": {
+          "label": "Coastal country; shade, caves or shallow water by day",
+          "note": "Prefers coastal environments. Must rest in shade, caves, deep foliage or shallow water to avoid overheating or drying out, especially in the dry season. Courtship happens on the mudflats.",
+          "habitats": [
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "gila-monster",
+            "animal": "Gila monster",
+            "de": "Gila-Krustenechse",
+            "scientific": "Heloderma suspectum",
+            "archetype": "lizard",
+            "archetypeLabel": "Lizard & monitor",
+            "archetypeDe": "Echse & Waran",
+            "share": 55,
+            "role": "primary",
+            "covers": "Lifestyle: a brightly warning-coloured, toxic night hunter that hides from the heat",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Gila_monster2.JPG/1280px-Gila_monster2.JPG",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Blueag9",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Gila_monster2.JPG"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "poison-dart-frog",
+            "animal": "Poison dart frog",
+            "de": "Pfeilgiftfrosch",
+            "scientific": "Dendrobatidae",
+            "archetype": "amphibian",
+            "archetypeLabel": "Frog",
+            "archetypeDe": "Frosch",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Toxin rules: diet-made poison, brighter means more toxic, turf wars with its own kind, must not dry out",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg/1280px-Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "H. Zell",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Warning colours",
+            "text": "Vibrant scales warn predators, and the brightest individuals are the most toxic and most avoided, just like poison dart frogs (official inspiration)."
+          },
+          {
+            "trait": "Toxins from food",
+            "text": "Keeps its toxins by eating mushrooms and other Metriacanthosaurus. Dart frogs likewise get their poison from their diet."
+          },
+          {
+            "trait": "Turf wars",
+            "text": "Tolerant of other species but always challenges its own kind first. Dart frogs are fiercely territorial towards their own species."
+          },
+          {
+            "trait": "Heat-shy night hunter",
+            "text": "Nocturnal, overheats and dries out by day and hides in shade or water. The Gila monster spends the hot hours in burrows (official inspiration)."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Medium tier, 3,100 combat weight, 500 HP, sprint 1,050 held for 125 s."
+          }
+        ],
+        "notLike": [
+          "Gila monsters are slow; Metriacanthosaurus sprints like any medium theropod.",
+          "Poison dart frogs are tiny; Metriacanthosaurus is a Medium-tier predator."
+        ],
+        "twist": "It fixes Therizinosaurus with a shoebill stork's patient stare (official inspiration), and it has a black-widow ending: the female eats her mate for her last clutch.",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Gila Monsters, Poison Dart Frogs, Shoebill Storks, and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 3100,
+          "maxHealth": 500,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Large",
+          "huntGroupSize": 1,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Gila monster + Poison dart frog",
+        "labelDe": "Gila-Krustenechse + Pfeilgiftfrosch",
+        "headline": "A poisonous, neon-bright night hunter: a Gila monster's lifestyle with a poison dart frog's toxins and turf wars.",
+        "playsLike": "You are a medium nocturnal carnivore living in a mated pair (a 'quiver'). Your flesh is poisonous, so most carnivores that eat you get sick or die. Before hunting you must challenge any other adult Metriacanthosaurus in sight; the brighter one usually wins without a fight. You hunt up to Large tier, with Struthiomimus, Citipati, Utahraptor and Kelenken first, then young Therizinosaurus. You scavenge freely, avoid Apex carnivores and never flee from anything else. Mushrooms keep your toxins topped up.",
+        "setting": {
+          "label": "Coastal country; shade, caves or shallow water by day",
+          "note": "Prefers coastal environments. Must rest in shade, caves, deep foliage or shallow water to avoid overheating or drying out, especially in the dry season. Courtship happens on the mudflats.",
+          "habitats": [
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "gila-monster",
+            "animal": "Gila monster",
+            "de": "Gila-Krustenechse",
+            "scientific": "Heloderma suspectum",
+            "archetype": "lizard",
+            "archetypeLabel": "Lizard & monitor",
+            "archetypeDe": "Echse & Waran",
+            "share": 55,
+            "role": "primary",
+            "covers": "Lifestyle: a brightly warning-coloured, toxic night hunter that hides from the heat",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Gila_monster2.JPG/1280px-Gila_monster2.JPG",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Blueag9",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Gila_monster2.JPG"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "poison-dart-frog",
+            "animal": "Poison dart frog",
+            "de": "Pfeilgiftfrosch",
+            "scientific": "Dendrobatidae",
+            "archetype": "amphibian",
+            "archetypeLabel": "Frog",
+            "archetypeDe": "Frosch",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Toxin rules: diet-made poison, brighter means more toxic, turf wars with its own kind, must not dry out",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg/1280px-Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "H. Zell",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Warning colours",
+            "text": "Vibrant scales warn predators, and the brightest individuals are the most toxic and most avoided, just like poison dart frogs (official inspiration)."
+          },
+          {
+            "trait": "Toxins from food",
+            "text": "Keeps its toxins by eating mushrooms and other Metriacanthosaurus. Dart frogs likewise get their poison from their diet."
+          },
+          {
+            "trait": "Turf wars",
+            "text": "Tolerant of other species but always challenges its own kind first. Dart frogs are fiercely territorial towards their own species."
+          },
+          {
+            "trait": "Heat-shy night hunter",
+            "text": "Nocturnal, overheats and dries out by day and hides in shade or water. The Gila monster spends the hot hours in burrows (official inspiration)."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Medium tier, 3,100 combat weight, 500 HP, sprint 1,050 held for 125 s."
+          }
+        ],
+        "notLike": [
+          "Gila monsters are slow; Metriacanthosaurus sprints like any medium theropod.",
+          "Poison dart frogs are tiny; Metriacanthosaurus is a Medium-tier predator."
+        ],
+        "twist": "It fixes Therizinosaurus with a shoebill stork's patient stare (official inspiration), and it has a black-widow ending: the female eats her mate for her last clutch.",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Gila Monsters, Poison Dart Frogs, Shoebill Storks, and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 3100,
+          "maxHealth": 500,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Large",
+          "huntGroupSize": 1,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "sea",
     "label": "Sea & Coast",
@@ -18142,5 +18467,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

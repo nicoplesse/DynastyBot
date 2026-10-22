@@ -15574,6 +15574,351 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "both",
+    "verdict": "same",
+    "changes": null,
+    "note": "Maip kommen laut Profil allein problemlos zurecht, nur vorsichtiger. Zu zweit kommen einzelne Apex-Tiere als Beute dazu, die Hyäne bleibt.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Spotted hyena + Common raven",
+        "labelDe": "Tüpfelhyäne + Kolkrabe",
+        "headline": "A bone-crunching, night-shrieking hyena pair with a raven's cruel intelligence.",
+        "playsLike": "You are a large nocturnal carnivore living as a lifelong pair with a favoured adult offspring (a 'skulk') or as a trio of bonded siblings (a 'cackle'). Alone you hunt up to Large tier; 2–3 hunt solo Apex animals, but never adult Tyrannotitan, which you flee unless your bonded partner is attacked. You are an endurance bleeder: slash, retreat, repeat, with one member baiting while the others strike. The vulnerable go first: babies, the sick, the sleeping, the elderly. You torment other species with shrieks and air snaps even when you aren't hunting.",
+        "setting": {
+          "label": "Nomadic night stalker of forests and rocky outcrops",
+          "note": "Nomadic. Loses pursuers in complicated terrain such as forests or rocky outcrops, and travels to specific forests to find a mate.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "spotted-hyena",
+            "animal": "Spotted hyena",
+            "de": "Tüpfelhyäne",
+            "scientific": "Crocuta crocuta",
+            "archetype": "hyena",
+            "archetypeLabel": "Hyena",
+            "archetypeDe": "Hyäne",
+            "share": 60,
+            "role": "primary",
+            "covers": "Body and hunting: night-shrieking endurance biter, bone-cracker, dominant females and submissive males",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/1280px-Spotted_hyena_%28Crocuta_crocuta%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "common-raven",
+            "animal": "Common raven",
+            "de": "Kolkrabe",
+            "scientific": "Corvus corax",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Mind: clever, cruel teasing of other species, bait tactics, lifelong pairs",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg/1280px-Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Frank Schulenburg",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "latenivenatrix",
+                "name": "Latenivenatrix",
+                "role": "primary",
+                "share": 60,
+                "headline": "A lone raven in the night: quiet and watchful, it trails herds and Apex hunters for scraps, hunts small prey alone and finds comfort in an Achillobator companion."
+              }
+            ]
+          }
+        ],
+        "why": [
+          {
+            "trait": "Laughs and shrieks",
+            "text": "Howling shrieks, hoots and laughs, and a sibling group is called a 'cackle', the collective noun for hyenas (official inspiration)."
+          },
+          {
+            "trait": "Iron stomach",
+            "text": "Consumes rotting carrion without issue and gnaws bones for marrow. Hyenas are the bone-crushers of the savanna."
+          },
+          {
+            "trait": "Female swagger",
+            "text": "Females are boisterous and dominant, while males are shy and show their bellies, as in spotted hyenas."
+          },
+          {
+            "trait": "Bleed and run",
+            "text": "Chases prey down, inflicts bleeding wounds, backs off a few body lengths and repeats until the prey falls."
+          },
+          {
+            "trait": "Cruel cleverness",
+            "text": "Highly intelligent, uses baits and distractions and frightens victims for fun. That is the raven side (official inspiration: corvids)."
+          }
+        ],
+        "notLike": [
+          "Spotted hyenas live in big clans; Maip lives in groups of at most 3.",
+          "Hyenas steal other predators' kills; Maip is not a scavenger and must make its own."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "chaser",
+            "label": "Runs prey down",
+            "de": "Hetzjäger"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "hyenas, and members of the corvid family (crows, magpies)",
+        "facts": {
+          "tier": "Large",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 4000,
+          "maxHealth": 650,
+          "growthMinutes": 180,
+          "landSprint": 1025,
+          "landSprintSeconds": 90.909,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 3,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Spotted hyena + Common raven",
+        "labelDe": "Tüpfelhyäne + Kolkrabe",
+        "headline": "A bone-crunching, night-shrieking hyena pair with a raven's cruel intelligence.",
+        "playsLike": "You are a large nocturnal carnivore living as a lifelong pair with a favoured adult offspring (a 'skulk') or as a trio of bonded siblings (a 'cackle'). Alone you hunt up to Large tier; 2–3 hunt solo Apex animals, but never adult Tyrannotitan, which you flee unless your bonded partner is attacked. You are an endurance bleeder: slash, retreat, repeat, with one member baiting while the others strike. The vulnerable go first: babies, the sick, the sleeping, the elderly. You torment other species with shrieks and air snaps even when you aren't hunting.",
+        "setting": {
+          "label": "Nomadic night stalker of forests and rocky outcrops",
+          "note": "Nomadic. Loses pursuers in complicated terrain such as forests or rocky outcrops, and travels to specific forests to find a mate.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "spotted-hyena",
+            "animal": "Spotted hyena",
+            "de": "Tüpfelhyäne",
+            "scientific": "Crocuta crocuta",
+            "archetype": "hyena",
+            "archetypeLabel": "Hyena",
+            "archetypeDe": "Hyäne",
+            "share": 60,
+            "role": "primary",
+            "covers": "Body and hunting: night-shrieking endurance biter, bone-cracker, dominant females and submissive males",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/1280px-Spotted_hyena_%28Crocuta_crocuta%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "deinonychus",
+                "name": "Deinonychus",
+                "role": "primary",
+                "share": 55,
+                "headline": "A spotted-hyena clan shrunk to mongoose size: noisy, female-ruled and deadly in numbers."
+              }
+            ]
+          },
+          {
+            "id": "common-raven",
+            "animal": "Common raven",
+            "de": "Kolkrabe",
+            "scientific": "Corvus corax",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Mind: clever, cruel teasing of other species, bait tactics, lifelong pairs",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg/1280px-Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Frank Schulenburg",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Laughs and shrieks",
+            "text": "Howling shrieks, hoots and laughs, and a sibling group is called a 'cackle', the collective noun for hyenas (official inspiration)."
+          },
+          {
+            "trait": "Iron stomach",
+            "text": "Consumes rotting carrion without issue and gnaws bones for marrow. Hyenas are the bone-crushers of the savanna."
+          },
+          {
+            "trait": "Female swagger",
+            "text": "Females are boisterous and dominant, while males are shy and show their bellies, as in spotted hyenas."
+          },
+          {
+            "trait": "Bleed and run",
+            "text": "Chases prey down, inflicts bleeding wounds, backs off a few body lengths and repeats until the prey falls."
+          },
+          {
+            "trait": "Cruel cleverness",
+            "text": "Highly intelligent, uses baits and distractions and frightens victims for fun. That is the raven side (official inspiration: corvids)."
+          }
+        ],
+        "notLike": [
+          "Spotted hyenas live in big clans; Maip lives in groups of at most 3.",
+          "Hyenas steal other predators' kills; Maip is not a scavenger and must make its own."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "chaser",
+            "label": "Runs prey down",
+            "de": "Hetzjäger"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "hyenas, and members of the corvid family (crows, magpies)",
+        "facts": {
+          "tier": "Large",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 4000,
+          "maxHealth": 650,
+          "growthMinutes": 180,
+          "landSprint": 1025,
+          "landSprintSeconds": 90.909,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 3,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "mountains",
     "label": "Mountains & Cliffs",
@@ -15593,5 +15938,958 @@
       "derived": true,
       "reason": null
     }
+  },
+  "bleed": {
+    "attack": {
+      "label": "Claw Charged",
+      "damage": 90,
+      "bleed": 1,
+      "cooldown": 5
+    },
+    "setup": "Solo",
+    "maxHits": 30,
+    "assumption": "Bleed drains 1 % of max health per point per second (community reading, not documented).",
+    "rows": [
+      {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "tier": "Apex",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 900,
+        "bleedPerHit": 0.727,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 77
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 35
+        },
+        "direct": 16
+      },
+      {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 1.067,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 51
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 28
+        },
+        "direct": 7
+      },
+      {
+        "id": "pycnonemosaurus",
+        "name": "Pycnonemosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 1.143,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 43
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 24
+        },
+        "direct": 7
+      },
+      {
+        "id": "daspletosaurus",
+        "name": "Daspletosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.143,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 41
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 22
+        },
+        "direct": 6
+      },
+      {
+        "id": "hatzegopteryx",
+        "name": "Hatzegopteryx",
+        "tier": "Large",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.29,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 31
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 17
+        },
+        "direct": 6
+      },
+      {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.455,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 25
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 31
+        },
+        "direct": 5
+      },
+      {
+        "id": "sarcosuchus",
+        "name": "Sarcosuchus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.889,
+        "healRate": 0.024,
+        "trot": {
+          "hits": 2,
+          "seconds": 69
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 37
+        },
+        "direct": 8
+      },
+      {
+        "id": "yutyrannus",
+        "name": "Yutyrannus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.231,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 35
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 19
+        },
+        "direct": 6
+      },
+      {
+        "id": "amargasaurus",
+        "name": "Amargasaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 1250,
+        "bleedPerHit": 0.8,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 58
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 51
+        },
+        "direct": 18
+      },
+      {
+        "id": "yunnanosaurus",
+        "name": "Yunnanosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 1000,
+        "bleedPerHit": 0.889,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 43
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 33
+        },
+        "direct": 13
+      },
+      {
+        "id": "iguanodon",
+        "name": "Iguanodon",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 800,
+        "bleedPerHit": 0.952,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 35
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 26
+        },
+        "direct": 10
+      },
+      {
+        "id": "pachyrhinosaurus",
+        "name": "Pachyrhinosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 800,
+        "bleedPerHit": 0.889,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 39
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 29
+        },
+        "direct": 10
+      },
+      {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 800,
+        "bleedPerHit": 0.8,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 49
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 36
+        },
+        "direct": 12
+      },
+      {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.8,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 46
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 33
+        },
+        "direct": 10
+      },
+      {
+        "id": "torvosaurus",
+        "name": "Torvosaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.889,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 42
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 31
+        },
+        "direct": 12
+      },
+      {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 1.905,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 66
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 17
+        },
+        "direct": 4
+      },
+      {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 1.905,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 56
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 13
+        },
+        "direct": 4
+      },
+      {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 1.905,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 51
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 11
+        },
+        "direct": 3
+      },
+      {
+        "id": "kelenken",
+        "name": "Kelenken",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 2.051,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 40
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 9
+        },
+        "direct": 3
+      },
+      {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 1.538,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 26
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 32
+        },
+        "direct": 6
+      },
+      {
+        "id": "kentrosaurus",
+        "name": "Kentrosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 1.481,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 28
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 37
+        },
+        "direct": 6
+      },
+      {
+        "id": "styracosaurus",
+        "name": "Styracosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 1.429,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 28
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 43
+        },
+        "direct": 6
+      },
+      {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 1.143,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 43
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 24
+        },
+        "direct": 7
+      },
+      {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.429,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 26
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 33
+        },
+        "direct": 5
+      },
+      {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.143,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 41
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 22
+        },
+        "direct": 6
+      },
+      {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.25,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 33
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 18
+        },
+        "direct": 6
+      },
+      {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 1.25,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 33
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 18
+        },
+        "direct": 6
+      },
+      {
+        "id": "citipati",
+        "name": "Citipati",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 1.667,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 17
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 19
+        },
+        "direct": 4
+      },
+      {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 1.667,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 17
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 19
+        },
+        "direct": 4
+      },
+      {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 1.667,
+        "healRate": 0.04,
+        "trot": {
+          "hits": 2,
+          "seconds": 18
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 20
+        },
+        "direct": 4
+      },
+      {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 1.667,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 17
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 18
+        },
+        "direct": 4
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 1.538,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 21
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 23
+        },
+        "direct": 4
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 1.538,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 21
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 23
+        },
+        "direct": 4
+      },
+      {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 1.29,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 27
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 14
+        },
+        "direct": 5
+      },
+      {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 850,
+        "bleedPerHit": 0.889,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 46
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 37
+        },
+        "direct": 16
+      },
+      {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 3.81,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 14
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 15
+        },
+        "direct": 3
+      },
+      {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 5,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 4
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 4
+        },
+        "direct": 2
+      },
+      {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 2.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 18
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 23
+        },
+        "direct": 2
+      },
+      {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 43
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 10
+        },
+        "direct": 3
+      },
+      {
+        "id": "psittacosaurus",
+        "name": "Psittacosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 4.444,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 5
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 5
+        },
+        "direct": 2
+      },
+      {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 1.905,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 51
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 11
+        },
+        "direct": 3
+      },
+      {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 2.857,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 16
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 19
+        },
+        "direct": 2
+      },
+      {
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 39
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 8
+        },
+        "direct": 3
+      },
+      {
+        "id": "dryosaurus",
+        "name": "Dryosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 3
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 3
+        },
+        "direct": 2
+      },
+      {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 10,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "halszkaraptor",
+        "name": "Halszkaraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 10,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "rhamphorhynchus",
+        "name": "Rhamphorhynchus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 8,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      }
+    ]
   }
 }

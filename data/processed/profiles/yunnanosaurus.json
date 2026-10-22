@@ -14048,6 +14048,349 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Ein einzelner Yunnanosaurus ist ängstlich und sucht Artgenossen. In der Trockenzeit findest du schnell eine Rove oder Ramble, das Tier bleibt.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Moose + Red kangaroo",
+        "labelDe": "Elch + Rotes Riesenkänguru",
+        "headline": "Calm and sociable in the dry season, furious as a rutting moose in the rain: it rears up like a boxing kangaroo, beats its chest and stomps small predators.",
+        "playsLike": "You are a large herbivore with two lives. In the dry season you are tolerant and nomadic in single-sex groups of up to 12 (female 'roves', male 'rambles'), led by the most popular individual. In the rainy season you form mixed 'clades' of up to 2 males and 6 females, claim territory and turn aggressive to nearly everything. You attack Large-or-smaller carnivores that come within 5 body lengths (Torvosaurus and Daspletosaurus on sight), always chase ceratopsians away from your group, and ignore Apex carnivores unless they hunt you, which makes you flee.",
+        "setting": {
+          "label": "Seasonal: arid ground in the rains, lush waterside in the dry",
+          "note": "Prefers arid habitats in the rainy season to avoid humidity and moves back to lush areas and water in the dry season. Migrates mostly at night and enjoys shallow water.",
+          "habitats": [
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "moose",
+            "animal": "Moose",
+            "de": "Elch",
+            "scientific": "Alces alces",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 55,
+            "role": "primary",
+            "covers": "Temper: calm most of the year, furious in the breeding season, stomps mid-sized predators but leaves the biggest alone",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/1280px-Alaska_moose.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Paxson Woelber",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "deinocheirus",
+                "name": "Deinocheirus",
+                "role": "secondary",
+                "share": 45,
+                "headline": "A lifelong swan pair in a moose's body: a gentle lake giant and fierce parent that splashes predators away."
+              }
+            ]
+          },
+          {
+            "id": "red-kangaroo",
+            "animal": "Red kangaroo",
+            "de": "Rotes Riesenkänguru",
+            "scientific": "Osphranter rufus",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Body language: rears up tall on its hind legs to box and display, and moves on two or four legs",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Red_kangaroo_-_melbourne_zoo.jpg/1280px-Red_kangaroo_-_melbourne_zoo.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Red_kangaroo_-_melbourne_zoo.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Seasonal switch",
+            "text": "Rainy season: territorial, aggressive, harem clades. Dry season: nomadic, tolerant, single-sex groups. Moose likewise turn from placid to furious in the rut (official inspiration)."
+          },
+          {
+            "trait": "Stomps predators",
+            "text": "Aggressive toward carnivores up to Large tier and won't tolerate them near the group. Moose kill wolves with their hooves."
+          },
+          {
+            "trait": "Knows its limits",
+            "text": "Ignores Apex carnivores and flees if one hunts it."
+          },
+          {
+            "trait": "Rear up and drum",
+            "text": "Rises onto its hind legs to show its height and beats its chest, and males swing their necks at each other. Kangaroos rear up and box the same way (official inspiration: marsupials)."
+          },
+          {
+            "trait": "Single-sex groups",
+            "text": "Outside the breeding season males ('rambles') and females ('roves') travel apart, the way many large grazers split into bachelor and female herds."
+          }
+        ],
+        "notLike": [
+          "Moose are solitary; Yunnanosaurus is highly social.",
+          "Kangaroos hop; Yunnanosaurus walks on two or four legs."
+        ],
+        "twist": "Giraffes (official inspiration) for the neck-swinging contests between males.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Giraffes, Moose and other large ungulate and marsupial species",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 4500,
+          "maxHealth": 1000,
+          "growthMinutes": 180,
+          "landSprint": 1000,
+          "landSprintSeconds": 90.909,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Moose + Red kangaroo",
+        "labelDe": "Elch + Rotes Riesenkänguru",
+        "headline": "Calm and sociable in the dry season, furious as a rutting moose in the rain: it rears up like a boxing kangaroo, beats its chest and stomps small predators.",
+        "playsLike": "You are a large herbivore with two lives. In the dry season you are tolerant and nomadic in single-sex groups of up to 12 (female 'roves', male 'rambles'), led by the most popular individual. In the rainy season you form mixed 'clades' of up to 2 males and 6 females, claim territory and turn aggressive to nearly everything. You attack Large-or-smaller carnivores that come within 5 body lengths (Torvosaurus and Daspletosaurus on sight), always chase ceratopsians away from your group, and ignore Apex carnivores unless they hunt you, which makes you flee.",
+        "setting": {
+          "label": "Seasonal: arid ground in the rains, lush waterside in the dry",
+          "note": "Prefers arid habitats in the rainy season to avoid humidity and moves back to lush areas and water in the dry season. Migrates mostly at night and enjoys shallow water.",
+          "habitats": [
+            {
+              "id": "arid",
+              "label": "Dry country & desert",
+              "de": "Trockengebiete & Wüste"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "moose",
+            "animal": "Moose",
+            "de": "Elch",
+            "scientific": "Alces alces",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 55,
+            "role": "primary",
+            "covers": "Temper: calm most of the year, furious in the breeding season, stomps mid-sized predators but leaves the biggest alone",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/1280px-Alaska_moose.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Paxson Woelber",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "deinocheirus",
+                "name": "Deinocheirus",
+                "role": "secondary",
+                "share": 45,
+                "headline": "A lifelong swan pair in a moose's body: a gentle lake giant and fierce parent that splashes predators away."
+              }
+            ]
+          },
+          {
+            "id": "red-kangaroo",
+            "animal": "Red kangaroo",
+            "de": "Rotes Riesenkänguru",
+            "scientific": "Osphranter rufus",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Body language: rears up tall on its hind legs to box and display, and moves on two or four legs",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Red_kangaroo_-_melbourne_zoo.jpg/1280px-Red_kangaroo_-_melbourne_zoo.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Red_kangaroo_-_melbourne_zoo.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Seasonal switch",
+            "text": "Rainy season: territorial, aggressive, harem clades. Dry season: nomadic, tolerant, single-sex groups. Moose likewise turn from placid to furious in the rut (official inspiration)."
+          },
+          {
+            "trait": "Stomps predators",
+            "text": "Aggressive toward carnivores up to Large tier and won't tolerate them near the group. Moose kill wolves with their hooves."
+          },
+          {
+            "trait": "Knows its limits",
+            "text": "Ignores Apex carnivores and flees if one hunts it."
+          },
+          {
+            "trait": "Rear up and drum",
+            "text": "Rises onto its hind legs to show its height and beats its chest, and males swing their necks at each other. Kangaroos rear up and box the same way (official inspiration: marsupials)."
+          },
+          {
+            "trait": "Single-sex groups",
+            "text": "Outside the breeding season males ('rambles') and females ('roves') travel apart, the way many large grazers split into bachelor and female herds."
+          }
+        ],
+        "notLike": [
+          "Moose are solitary; Yunnanosaurus is highly social.",
+          "Kangaroos hop; Yunnanosaurus walks on two or four legs."
+        ],
+        "twist": "Giraffes (official inspiration) for the neck-swinging contests between males.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Giraffes, Moose and other large ungulate and marsupial species",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 4500,
+          "maxHealth": 1000,
+          "growthMinutes": 180,
+          "landSprint": 1000,
+          "landSprintSeconds": 90.909,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "arid",
     "label": "Desert & Canyons",
@@ -14067,5 +14410,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

@@ -49,6 +49,10 @@ You are a passive medium herbivore in an unlimited herd where the does are domin
 - Anders als die Tiere: Deer stags dominate the rut; in Lambeosaurus the does are the dominant sex. Sheep don't use water to escape; Lambeosaurus depends on it.
 - Besonderheit: Dik-dik (official inspiration) for the long gazes and pair bonds that can become lifelong.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein einzelner Lambeosaurus ist ein verlorenes Schaf: ängstlich, ständig rufend, auf der Suche nach der Herde. Kein anderes Tier, nur ein schlechter Tag.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Coastal Bluffs, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

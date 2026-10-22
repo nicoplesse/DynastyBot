@@ -53,6 +53,10 @@ You are a large herbivore with two lives. In the dry season you are tolerant and
 - Anders als die Tiere: Moose are solitary; Yunnanosaurus is highly social. Kangaroos hop; Yunnanosaurus walks on two or four legs.
 - Besonderheit: Giraffes (official inspiration) for the neck-swinging contests between males.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein einzelner Yunnanosaurus ist ängstlich und sucht Artgenossen. In der Trockenzeit findest du schnell eine Rove oder Ramble, das Tier bleibt.
+
 ## Karte & POIs
 
 - **Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Big Tree Overlook, Cedrus Forest, Black Fern Hills, Redwoods, Hollow Hills, Wollemi Forest

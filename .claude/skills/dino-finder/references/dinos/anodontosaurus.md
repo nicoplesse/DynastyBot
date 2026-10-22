@@ -47,6 +47,10 @@ You are a medium, armoured herbivore that prefers its own company. Whatever food
 - Anders als die Tiere: Wombats dig burrows and bolt into them; Anodontosaurus has nowhere to hide and simply stands its ground. Honey badgers are predators; Anodontosaurus is a strict herbivore.
 - Besonderheit: The official inspirations also include pangolins and sea turtles: armour that predators can't bite through.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein Wombat bleibt ein Wombat. Die Tumble ist laut Profil nur ein kleiner Zweckverband zum Reisen, Nisten und gemeinsamen Aufpassen, kein anderes Leben.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Steep Run, Cedrus Forest, Black Fern Hills, Cliffedge Falls, East Passage, Redwoods, Hollow Hills, Wollemi Forest

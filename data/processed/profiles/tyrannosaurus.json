@@ -16215,6 +16215,341 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "both",
+    "verdict": "same",
+    "changes": null,
+    "note": "Der Rex ist Einzelgänger, bis er sich bindet, und das Paar steckt im Basis-Tier schon drin.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Polar bear + Tawny owl",
+        "labelDe": "Eisbär + Waldkauz",
+        "headline": "A polar bear's patience and power, living like a pair of tawny owls: mated for life, owning a forest, striking from cover.",
+        "playsLike": "You are an Apex carnivore (6,000 combat weight) that lives alone or with a partner for life. Your territory is huge and you push every Large-or-bigger carnivore out of it; all terrestrial Apex carnivores must be pushed out of the POI before you may hunt anything. You are a strict ambusher: lie in wait, strike, and if you haven't landed a bite before your stamina runs out (sprint 800 for 45 s), the hunt is over. In a pair, one distracts while the other takes the prey down. Compsognathus are your tolerated little shadows.",
+        "setting": {
+          "label": "Forest and hill territories",
+          "note": "Primarily found in forests. Claims large territories: the northern and southern Redwoods, the western and eastern southern hills, and upper and lower Wollemi (see map).",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "polar-bear",
+            "animal": "Polar bear",
+            "de": "Eisbär",
+            "scientific": "Ursus maritimus",
+            "archetype": "bear",
+            "archetypeLabel": "Bear",
+            "archetypeDe": "Bär",
+            "share": 55,
+            "role": "primary",
+            "covers": "Hunting and presence: the largest land predator, patient still-hunter with no stamina for long chases, followed by a small scavenger",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Alan Wilson",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "spinosaurus-saltwater",
+                "name": "Spinosaurus (Saltwater)",
+                "role": "primary",
+                "share": 70,
+                "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge."
+              }
+            ]
+          },
+          {
+            "id": "tawny-owl",
+            "animal": "Tawny owl",
+            "de": "Waldkauz",
+            "scientific": "Strix aluco",
+            "archetype": "bird-of-prey",
+            "archetypeLabel": "Bird of prey & owl",
+            "archetypeDe": "Greifvogel & Eule",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Life: a mated-for-life pair holding one forest territory and striking silently from cover",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Strix_aluco_3_%28Martin_Mecnarowski%29.jpg",
+              "focus": "50% 20%",
+              "credit": {
+                "artist": "Martin Mecnarowski (http://www.photomecan.eu/)",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Strix_aluco_3_(Martin_Mecnarowski).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Patient ambush",
+            "text": "'Strict ambush predators' that 'lay in wait for long periods for the perfect opportunity'. Polar bears still-hunt for hours at a seal's breathing hole (official inspiration)."
+          },
+          {
+            "trait": "No marathons",
+            "text": "Must land a bite before its stamina runs out and cannot stop to recover. Polar bears overheat quickly and don't chase far either."
+          },
+          {
+            "trait": "Tag-along scavengers",
+            "text": "Always tolerates Compsognathus and shares kills with them, just as arctic foxes trail polar bears for scraps."
+          },
+          {
+            "trait": "Mated for life, one forest",
+            "text": "A lifelong pair holding a large forest territory, raising young together and defending it fiercely. That is the tawny owl (official inspiration)."
+          },
+          {
+            "trait": "Territorial king",
+            "text": "Pushes all Large-or-bigger carnivores out of its territory, and never shares a POI with another terrestrial Apex."
+          }
+        ],
+        "notLike": [
+          "Polar bears are nomads of the sea ice; Tyrannosaurus holds a fixed forest territory.",
+          "Owls are small; Tyrannosaurus is one of the heaviest predators on the roster."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "apex",
+            "label": "Apex — fears little",
+            "de": "Spitze der Nahrungskette"
+          },
+          {
+            "id": "ambush",
+            "label": "Ambush hunter",
+            "de": "Lauerjäger"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "tawny owls, polar bears, and creative liberty",
+        "facts": {
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 6000,
+          "maxHealth": 1000,
+          "growthMinutes": 240,
+          "landSprint": 800,
+          "landSprintSeconds": 45,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Giant",
+          "huntGroupSize": 2,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "forest",
+            "hills",
+            "freshwater",
+            "canyon",
+            "coast"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Polar bear + Tawny owl",
+        "labelDe": "Eisbär + Waldkauz",
+        "headline": "A polar bear's patience and power, living like a pair of tawny owls: mated for life, owning a forest, striking from cover.",
+        "playsLike": "You are an Apex carnivore (6,000 combat weight) that lives alone or with a partner for life. Your territory is huge and you push every Large-or-bigger carnivore out of it; all terrestrial Apex carnivores must be pushed out of the POI before you may hunt anything. You are a strict ambusher: lie in wait, strike, and if you haven't landed a bite before your stamina runs out (sprint 800 for 45 s), the hunt is over. In a pair, one distracts while the other takes the prey down. Compsognathus are your tolerated little shadows.",
+        "setting": {
+          "label": "Forest and hill territories",
+          "note": "Primarily found in forests. Claims large territories: the northern and southern Redwoods, the western and eastern southern hills, and upper and lower Wollemi (see map).",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "polar-bear",
+            "animal": "Polar bear",
+            "de": "Eisbär",
+            "scientific": "Ursus maritimus",
+            "archetype": "bear",
+            "archetypeLabel": "Bear",
+            "archetypeDe": "Bär",
+            "share": 55,
+            "role": "primary",
+            "covers": "Hunting and presence: the largest land predator, patient still-hunter with no stamina for long chases, followed by a small scavenger",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Alan Wilson",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "spinosaurus-saltwater",
+                "name": "Spinosaurus (Saltwater)",
+                "role": "primary",
+                "share": 70,
+                "headline": "A polar bear of the sea that guards its home water like a walrus bull: lazy and patient, it tours the Leedsichthys route, then slips under water without a sound and bursts out at the edge."
+              }
+            ]
+          },
+          {
+            "id": "tawny-owl",
+            "animal": "Tawny owl",
+            "de": "Waldkauz",
+            "scientific": "Strix aluco",
+            "archetype": "bird-of-prey",
+            "archetypeLabel": "Bird of prey & owl",
+            "archetypeDe": "Greifvogel & Eule",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Life: a mated-for-life pair holding one forest territory and striking silently from cover",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Strix_aluco_3_%28Martin_Mecnarowski%29.jpg",
+              "focus": "50% 20%",
+              "credit": {
+                "artist": "Martin Mecnarowski (http://www.photomecan.eu/)",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Strix_aluco_3_(Martin_Mecnarowski).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Patient ambush",
+            "text": "'Strict ambush predators' that 'lay in wait for long periods for the perfect opportunity'. Polar bears still-hunt for hours at a seal's breathing hole (official inspiration)."
+          },
+          {
+            "trait": "No marathons",
+            "text": "Must land a bite before its stamina runs out and cannot stop to recover. Polar bears overheat quickly and don't chase far either."
+          },
+          {
+            "trait": "Tag-along scavengers",
+            "text": "Always tolerates Compsognathus and shares kills with them, just as arctic foxes trail polar bears for scraps."
+          },
+          {
+            "trait": "Mated for life, one forest",
+            "text": "A lifelong pair holding a large forest territory, raising young together and defending it fiercely. That is the tawny owl (official inspiration)."
+          },
+          {
+            "trait": "Territorial king",
+            "text": "Pushes all Large-or-bigger carnivores out of its territory, and never shares a POI with another terrestrial Apex."
+          }
+        ],
+        "notLike": [
+          "Polar bears are nomads of the sea ice; Tyrannosaurus holds a fixed forest territory.",
+          "Owls are small; Tyrannosaurus is one of the heaviest predators on the roster."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "pair",
+            "label": "Pair-bonded",
+            "de": "Feste Partnerschaft"
+          },
+          {
+            "id": "apex",
+            "label": "Apex — fears little",
+            "de": "Spitze der Nahrungskette"
+          },
+          {
+            "id": "ambush",
+            "label": "Ambush hunter",
+            "de": "Lauerjäger"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "tawny owls, polar bears, and creative liberty",
+        "facts": {
+          "tier": "Apex",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 6000,
+          "maxHealth": 1000,
+          "growthMinutes": 240,
+          "landSprint": 800,
+          "landSprintSeconds": 45,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Giant",
+          "huntGroupSize": 2,
+          "engagementLimit": 2,
+          "mapBiomes": [
+            "forest",
+            "hills",
+            "freshwater",
+            "canyon",
+            "coast"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "forest",
     "label": "Forest",
@@ -16228,5 +16563,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

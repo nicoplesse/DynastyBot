@@ -38,6 +38,10 @@ You are a small, extremely fast herbivore: sprint 1,150 held for 323 s, one of t
 - Anders als die Tiere: An ostrich is a giant among birds; Struthiomimus is Small tier (1,400 combat weight) on this roster and has to run.
 - Besonderheit: Emu, rhea and cassowary are official inspirations too.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Strauße mischen sich in der Savanne ohnehin unter Zebras und Gnus. Als Wachposten einer fremden Herde bleibst du ein Strauß.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

@@ -1,6 +1,6 @@
 # Camptosaurus – Matchups
 
-Played solo against their full legal groups, Camptosaurus has 1 high-priority matchup where fight maths, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Camptosaurus has 1 high-priority matchup where fight maths, pursuit and profile intent align. Against 3 listed threats, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -33,16 +33,6 @@ Concavenator is inside the legal hunt range. Camptosaurus is 2% faster on land a
 - Kampf (beide Seiten legal max): 4 Concavenator vs 1 Camptosaurus: the Concavenator side wins in about 2 s with 99% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 100 pro Haupttreffer vom Angreifer (7 bis zum Kill), 15 zurück (34 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
-
-### Tropeognathus (Coast) – conditional (predator)
-Tropeognathus (Coast) matters only if it gets the right opening
-
-Tropeognathus (Coast) is inside the legal hunt range. Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.
-- Verfolgung: Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left. (Kampfgewicht 2000 vs 1050)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 86 pro Haupttreffer vom Angreifer (9 bis zum Kill), 16 zurück (29 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Giant tier.
 
 ### Kelenken – conditional (predator)
 Kelenken matters only if it gets the right opening

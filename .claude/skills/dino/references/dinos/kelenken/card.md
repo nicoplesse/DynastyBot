@@ -53,6 +53,10 @@ You are a medium flightless 'terror bird' (sprint 1,075 for 167 s) in a 'cast' o
 - Anders als die Tiere: Secretary birds fly; Kelenken is flightless. Secretary birds live in pairs, not in casts of 8.
 - Besonderheit: Its closest living relatives are the seriemas, and its pair bond is as jealous as a swan's (official inspirations: secretary birds, penguins, swans).
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Sekretäre leben paarweise und jagen zu Fuß. Ein einzelner Kelenken ist laut Profil Nomade und jagt dasselbe wie im Cast.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Big Tree Overlook, Cedrus Forest, Black Fern Hills, Redwoods, Wind Tunnels, Hollow Hills

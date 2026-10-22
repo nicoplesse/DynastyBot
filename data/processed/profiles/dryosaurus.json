@@ -14004,6 +14004,310 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "different",
+    "changes": "solo",
+    "note": "Die Pavian-Attitüde gibt es nur im Warren. Allein ist ein Dryosaurus laut Profil viel weniger selbstbewusst und läuft anderen Pflanzenfresser-Herden hinterher. Das ist der Feldhase, der allein lebt und sich auf seine Beine verlässt. Vom Kaninchen bleibt die Flucht in Höhle und Gebüsch.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "European hare + Wild rabbit",
+        "labelDe": "Feldhase + Wildkaninchen",
+        "headline": "A lone hare instead of a warren bully: small, fast and much less sure of itself, it trails other herbivore herds and still elbows its way to the best berries.",
+        "playsLike": "Alone you lack much of the confidence you have among your own kind. You trail behind other herbivore herds, hoping for their protection and foraging chances, and still muscle your way in to claim the best spots. That tolerance for other herbivores only lasts until you find other Dryosaurus. When danger gets close you rely on your speed and dive into a small cave or under thick bushes. A lone Dryosaurus that wants to join a warren is closely examined and harassed by the whole group first.",
+        "setting": {
+          "label": "Caves, perches and food spots in forests and hills",
+          "note": "Nomadic, but claims small territories around caves, perches and resources. Flees into small caves or under thick bushes.",
+          "habitats": [
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "european-hare",
+            "animal": "European hare",
+            "de": "Feldhase",
+            "scientific": "Lepus europaeus",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 60,
+            "role": "primary",
+            "covers": "Solo life: a solitary, nervous runner that relies on speed and keeps to the edge of other animals' grazing",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/1280px-European_hare_%28_Lepus_europaeus%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Nagusb",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:European_hare_(_Lepus_europaeus).jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "wild-rabbit",
+            "animal": "Wild rabbit",
+            "de": "Wildkaninchen",
+            "scientific": "Oryctolagus cuniculus",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Safety: still bolts into small caves and under thick bushes when things go wrong",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
+              "focus": "50% 30%",
+              "credit": {
+                "artist": "euqirneto",
+                "license": "CC BY 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Less bold",
+            "text": "“When solitary, Dryosaurus tend to be less bold than when they are in a group.” A hare lives alone and survives by caution and speed."
+          },
+          {
+            "trait": "Tagging along",
+            "text": "Loners “trail behind other herbivore herds, hoping to benefit from the potential protection and foraging opportunities”."
+          },
+          {
+            "trait": "Still pushy",
+            "text": "It still muscles its way in to claim prime berry spots, a leftover of the warren attitude, and drops its tolerance as soon as it finds its own kind."
+          },
+          {
+            "trait": "Bolt-holes",
+            "text": "When a fight turns against it, it dives into small caves or under thick bushes, the rabbit's escape."
+          },
+          {
+            "trait": "Built to run",
+            "text": "Small tier and 1,000 combat weight, with a sprint of 1,150 held for 182 s: a runner, not a fighter."
+          }
+        ],
+        "notLike": [
+          "Hares never follow other animals; a lone Dryosaurus trails other herbivore herds for safety.",
+          "Hares escape across open ground; Dryosaurus still hides in caves and bushes like a rabbit."
+        ],
+        "twist": "The chihuahua energy (official inspiration) is still there, just much quieter until it finds a warren.",
+        "moods": [
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "wild rabbits, baboons and the chihuahua dog breed stereotype",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 1000,
+          "maxHealth": 400,
+          "growthMinutes": 90,
+          "landSprint": 1150,
+          "landSprintSeconds": 181.818,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 8,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "forest",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Solo bist du kein Kaninchen im frechen Warren, sondern ein Feldhase: klein, schnell und deutlich weniger selbstbewusst. Allein läufst du anderen Pflanzenfresser-Herden hinterher, weil sie dir Schutz und gute Futterplätze bieten, und drängelst dich trotzdem an die besten Beerenbüsche. Deine Duldung für andere Arten hält nur, bis du wieder Artgenossen findest. Wird es gefährlich, verlässt du dich auf deine Beine und verschwindest wie ein Kaninchen in einer kleinen Höhle oder unter dichtem Gebüsch. Willst du in einen Warren, wirst du dort erst einmal von allen gründlich beäugt und bedrängt."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Wild rabbit + Baboon troop",
+        "labelDe": "Wildkaninchen + Pavian (Trupp)",
+        "headline": "A rabbit warren with a baboon troop's attitude and chihuahua energy.",
+        "playsLike": "You are a small, fast herbivore (sprint 1,150 for 182 s) in an unlimited 'warren' led by a dominant pair who keep the berries for themselves. In a group you grow bold and aggress every other species: up to 8 of you gang up on small and medium predators, nip and kick them out, and raid unguarded Utahraptor nests. You only flee when a fight turns against you, diving into caves or bushes.",
+        "setting": {
+          "label": "Caves, perches and food spots in forests and hills",
+          "note": "Nomadic, but claims small territories around caves, perches and resources. Flees into small caves or under thick bushes.",
+          "habitats": [
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "wild-rabbit",
+            "animal": "Wild rabbit",
+            "de": "Wildkaninchen",
+            "scientific": "Oryctolagus cuniculus",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 50,
+            "role": "primary",
+            "covers": "Body and safety: a small, fast warren animal that bolts into caves and bushes",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
+              "focus": "50% 30%",
+              "credit": {
+                "artist": "euqirneto",
+                "license": "CC BY 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "baboon-troop",
+            "animal": "Baboon troop",
+            "de": "Pavian (Trupp)",
+            "scientific": "Papio spp.",
+            "archetype": "primate",
+            "archetypeLabel": "Primate",
+            "archetypeDe": "Affe",
+            "share": 50,
+            "role": "secondary",
+            "covers": "Attitude: a ranked gang that claims sleeping spots and mobs predators",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Olive_baboon_Ngorongoro.jpg/1280px-Olive_baboon_Ngorongoro.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Muhammad Mahdi Karim",
+                "license": "GFDL 1.2",
+                "page": "https://commons.wikimedia.org/wiki/File:Olive_baboon_Ngorongoro.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Warren and bolt-holes",
+            "text": "The group is called a warren, and when a fight goes wrong it dives into small caves or under thick bushes. That is pure rabbit (official inspiration)."
+          },
+          {
+            "trait": "Rank perks",
+            "text": "The dominant pair have exclusive access to berries, and pink berry juice is a status symbol. Baboon hierarchies work the same way (official inspiration)."
+          },
+          {
+            "trait": "Mobbing",
+            "text": "Up to 8 gang up on small and medium predators to harass and nip them out of the area, the way baboons mob leopards."
+          },
+          {
+            "trait": "Claims spots",
+            "text": "Territorial over caves, perches and resources, much like baboons guarding their sleeping cliffs."
+          },
+          {
+            "trait": "Aggressive to all",
+            "text": "Tolerant of its own kind, fiercely aggressive to every other species, with an innate hatred of Utahraptor."
+          }
+        ],
+        "notLike": [
+          "Rabbits never pick fights; Dryosaurus picks fights with almost everyone.",
+          "Baboons are big and strong; Dryosaurus is Small tier (1,000 combat weight, 400 HP) and often only notices it's in danger when it's too late."
+        ],
+        "twist": "Chihuahua energy (official inspiration): tiny, loud and convinced it can take anyone.",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "wild rabbits, baboons and the chihuahua dog breed stereotype",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 1000,
+          "maxHealth": 400,
+          "growthMinutes": 90,
+          "landSprint": 1150,
+          "landSprintSeconds": 181.818,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 8,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "forest",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "mountains",
     "label": "Mountains & Cliffs",
@@ -14023,5 +14327,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

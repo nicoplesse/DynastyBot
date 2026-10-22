@@ -55,6 +55,10 @@ You are a small daytime flier in an unlimited flock. Fish is your staple, and yo
 - Anders als die Tiere: Pigeons are vegetarians; Thalassodromeus is a carnivore that eats fish and scavenges.
 - Besonderheit: Its bond with Torvosaurus works like ravens and wolves: it warns its pack of rival Torvosaurus in exchange for scraps.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ganz allein leben nur Albinos und Melanisten, sonst bist du mit Partner und ein, zwei befreundeten Paaren unterwegs. Taube und Möwe bleiben.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Steep Run, Cedrus Forest, Black Fern Hills, Crag Bluffs, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest
@@ -63,16 +67,14 @@ You are a small daytime flier in an unlimited flock. Fish is your staple, and yo
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) matters only if it gets the right opening
-- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) matters only if it gets the right opening
+- **Tropeognathus** (conditional): Tropeognathus matters only if it gets the right opening
 - **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 - **Hatzegopteryx** (hoch): Hatzegopteryx can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Quetzalcoatlus** (conditional): Quetzalcoatlus is legal quarry, but not a comfortable fight
 - **Hatzegopteryx** (conditional): Hatzegopteryx is legal quarry, but not a comfortable fight
-- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) is legal quarry, but not a comfortable fight
-- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) is legal quarry, but not a comfortable fight
+- **Tropeognathus** (conditional): Tropeognathus is legal quarry, but not a comfortable fight
 - **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.

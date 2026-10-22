@@ -1,0 +1,3 @@
+# Tropeognathus – Downtime Behavior
+
+Tropeognathus are typically less active during the daytime, where they will find rocks and cliffsides to temporarily construct nests where they will rest. Males may practice courtship performances at this time, while females preen themselves and socialize with those they have bonded with. Some males may use the time where the flock sleeps to practice sparring - which often is interrupted by frustrated females who are trying to sleep, especially if offspring are present. Females will cluster together when roosting, and males will hover around the outskirts, to act as the first line of defense as well as to be the first to alert to potential threats.

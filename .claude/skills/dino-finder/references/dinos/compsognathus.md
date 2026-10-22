@@ -47,6 +47,25 @@ You are the smallest carnivore on the roster (Tiny, 400 combat weight) in an unl
 - Anders als die Tiere: Rats don't follow predators, and jackals live in pairs rather than swarms.
 - Besonderheit: The Tyrannosaurus bond works like arctic foxes trailing a polar bear across the ice.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Allein überlebst du laut Profil kaum und folgst einem großen Fleischfresser als Freund. Genau das tun einzelne Goldschakale, die sich einem Tiger anschließen. Der Rattenschwarm tritt in den Hintergrund.
+
+**Solo spielt er sich wie:**
+**Goldschakal + Wanderratte (Golden jackal + Brown rat)**: A lone jackal that has adopted a giant: it follows one big carnivore everywhere, calls for company and lives on bones and stolen scraps.
+
+Alone, a Compsognathus barely survives. You pick a large carnivorous friend, usually a Tyrannosaurus or Giganotosaurus, and follow it for scraps, or you call until other Compsognathus form a swarm with you. You eat bones, rotting corpses and chunks stolen from other predators' kills, keep a wide berth from herbivores (except Citipati, who may adopt you) and approach any carnivore with curiosity. Around your chosen giant you nip at other scavengers, up to 3 times without it counting as an engagement. You sleep on high perches out of the way of trampling feet.
+
+- Goldschakal / Golden jackal – 70 %: Solo life: a lone outcast that attaches itself to one big predator, lives off its kills and calls loudly for company
+- Wanderratte / Brown rat – 30 %: Diet and caution: bones and rotting scraps, and a sleeping spot tucked away from big feet
+- Lebensraum: Everywhere, scurrying between POIs. Nomadic. Spends its life moving between POIs and following one trusted large carnivore, most often Tyrannosaurus or Giganotosaurus.
+- Anders als die Tiere: Jackals are much bigger relative to their prey; Compsognathus is the smallest carnivore on the roster (Tiny, 400 combat weight). A jackal never pesters lions to play; a solitary Compsognathus screeches at other dinosaurs and darts off until they finally aggress it.
+- Besonderheit: The Tyrannosaurus bond works like arctic foxes trailing a polar bear across the ice.
+
+Solo bist du ein einsamer Goldschakal, der sich einen Riesen ausgesucht hat. Allein kommst du kaum zurecht, also folgst du einem großen Fleischfresser, meist einem Tyrannosaurus oder Giganotosaurus, und lebst von seinen Resten, oder du rufst so lange, bis sich andere Compsognathus mit dir zu einem Schwarm zusammentun. Du frisst Knochen, verrottende Kadaver und stibitzt Brocken von fremden Rissen. Du rufst ständig nach Gesellschaft, neckst andere Dinosaurier mit Gekreisch und flitzt davon. Pflanzenfressern gehst du aus dem Weg, außer Citipati, die dich adoptieren können. Andere Aasfresser an deinem Riesen zwickst du weg, höchstens dreimal, ohne dass es als Kampf zählt. Geschlafen wird hoch oben, wo dich keiner zertrampelt.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

@@ -56,6 +56,10 @@ You are an Apex semi-aquatic herbivore (5,500 combat weight) that pairs for life
 - Anders als die Tiere: Moose are solitary; Deinocheirus is highly social. Swans chase off intruders; Deinocheirus calmly retreats into the water from other herbivores.
 - Besonderheit: The hippo (official inspiration) supplies the idea of a bulky animal that uses water as its refuge, but Deinocheirus has a far calmer temper.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein echtes Solo-Leben beschreibt das Profil nicht. Unverpaarte Tiere bleiben in der Gathering bei den Spinster- oder Bachelor-Flocks, wie ledige Höckerschwäne in ihrem Schwarm. Der Elch-Körper bleibt sowieso.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, Redwoods, Wind Tunnels, Wollemi Forest

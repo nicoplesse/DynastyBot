@@ -16044,6 +16044,321 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Ein einzelnes Erdmännchen ruft ständig nach seinem Mob, und genau das tut ein einzelner Psittacosaurus laut Profil. Allein bleibst du Wachposten, nur eben für eine fremde Herde.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Meerkat + Virginia opossum",
+        "labelDe": "Erdmännchen + Opossum",
+        "headline": "A meerkat mob of sentries led by an elder, surviving through vigilance and an opossum's clever evasion.",
+        "playsLike": "You are a small herbivore in an unlimited 'passel' led by one elder, the Quillguard, who secures the best food, water and nesting grounds and oversees the group's grooming rituals. Everyone may fight back against Tiny and Small species and against a single Medium one. You flee from 2+ Medium, Large or Apex carnivores, and young ones always flee and try to evade attention. You survive through cooperation, vigilance and clever evasion rather than brute strength.",
+        "setting": {
+          "label": "Travels with ceratopsian herds",
+          "note": "Nomadic. Readily welcomed into ceratopsian herds (Eotriceratops, Styracosaurus, Albertaceratops, Pachyrhinosaurus) as a sentry species.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "meerkat",
+            "animal": "Meerkat",
+            "de": "Erdmännchen",
+            "scientific": "Suricata suricatta",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 60,
+            "role": "primary",
+            "covers": "Group life: a vigilant mob of sentries with an elder in charge, grooming, mobbing small threats",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/1280px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "virginia-opossum",
+            "animal": "Virginia opossum",
+            "de": "Opossum",
+            "scientific": "Didelphis virginiana",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Survival style: clever evasion instead of strength, eats almost anything",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Opossum_2.jpg/1280px-Opossum_2.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Cody Pope",
+                "license": "CC BY-SA 2.5",
+                "page": "https://commons.wikimedia.org/wiki/File:Opossum_2.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Sentries",
+            "text": "'A keen sentry species', welcomed into bigger herds for its vigilance. Meerkats are the archetypal sentinels (official inspiration)."
+          },
+          {
+            "trait": "Elder in charge",
+            "text": "One elderly Quillguard keeps order, shares the best resources and runs grooming rituals so the whole passel works together."
+          },
+          {
+            "trait": "Mob the small stuff",
+            "text": "Unlimited numbers retaliate against Tiny and Small threats or a lone Medium, as meerkats mob snakes and small predators together."
+          },
+          {
+            "trait": "A passel",
+            "text": "A group of opossums is called a 'passel', and its survival rests on clever evasion (official inspiration: opossums)."
+          },
+          {
+            "trait": "Quick and small",
+            "text": "Small tier, 900 combat weight, sprint 1,150 held for 167 s. It eats fruit, roots, nuts, berries and insects."
+          }
+        ],
+        "notLike": [
+          "Meerkats are predators; Psittacosaurus is a herbivore that snacks on insects.",
+          "Opossums are loners; Psittacosaurus lives in a big group."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "Opossum & Meerkats",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 900,
+          "maxHealth": 500,
+          "growthMinutes": 90,
+          "landSprint": 1150,
+          "landSprintSeconds": 166.667,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": "unlimited",
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Meerkat + Virginia opossum",
+        "labelDe": "Erdmännchen + Opossum",
+        "headline": "A meerkat mob of sentries led by an elder, surviving through vigilance and an opossum's clever evasion.",
+        "playsLike": "You are a small herbivore in an unlimited 'passel' led by one elder, the Quillguard, who secures the best food, water and nesting grounds and oversees the group's grooming rituals. Everyone may fight back against Tiny and Small species and against a single Medium one. You flee from 2+ Medium, Large or Apex carnivores, and young ones always flee and try to evade attention. You survive through cooperation, vigilance and clever evasion rather than brute strength.",
+        "setting": {
+          "label": "Travels with ceratopsian herds",
+          "note": "Nomadic. Readily welcomed into ceratopsian herds (Eotriceratops, Styracosaurus, Albertaceratops, Pachyrhinosaurus) as a sentry species.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "meerkat",
+            "animal": "Meerkat",
+            "de": "Erdmännchen",
+            "scientific": "Suricata suricatta",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 60,
+            "role": "primary",
+            "covers": "Group life: a vigilant mob of sentries with an elder in charge, grooming, mobbing small threats",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/1280px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "virginia-opossum",
+            "animal": "Virginia opossum",
+            "de": "Opossum",
+            "scientific": "Didelphis virginiana",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Survival style: clever evasion instead of strength, eats almost anything",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Opossum_2.jpg/1280px-Opossum_2.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Cody Pope",
+                "license": "CC BY-SA 2.5",
+                "page": "https://commons.wikimedia.org/wiki/File:Opossum_2.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Sentries",
+            "text": "'A keen sentry species', welcomed into bigger herds for its vigilance. Meerkats are the archetypal sentinels (official inspiration)."
+          },
+          {
+            "trait": "Elder in charge",
+            "text": "One elderly Quillguard keeps order, shares the best resources and runs grooming rituals so the whole passel works together."
+          },
+          {
+            "trait": "Mob the small stuff",
+            "text": "Unlimited numbers retaliate against Tiny and Small threats or a lone Medium, as meerkats mob snakes and small predators together."
+          },
+          {
+            "trait": "A passel",
+            "text": "A group of opossums is called a 'passel', and its survival rests on clever evasion (official inspiration: opossums)."
+          },
+          {
+            "trait": "Quick and small",
+            "text": "Small tier, 900 combat weight, sprint 1,150 held for 167 s. It eats fruit, roots, nuts, berries and insects."
+          }
+        ],
+        "notLike": [
+          "Meerkats are predators; Psittacosaurus is a herbivore that snacks on insects.",
+          "Opossums are loners; Psittacosaurus lives in a big group."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "Opossum & Meerkats",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 900,
+          "maxHealth": 500,
+          "growthMinutes": 90,
+          "landSprint": 1150,
+          "landSprintSeconds": 166.667,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": "unlimited",
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "plains",
     "label": "Plains & Savanna",
@@ -16057,5 +16372,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

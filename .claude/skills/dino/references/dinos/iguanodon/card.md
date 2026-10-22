@@ -51,6 +51,10 @@ You are a large, headstrong herbivore in a huge herd with no overall hierarchy: 
 - Lebensraum: Nomad of forests and hills that claims food and water on the way. Nomadic, but temporarily territorial over food and water. Herds happily with Parasaurolophus and Lambeosaurus while still pushing to the front of every bush.
 - Anders als die Tiere: Buffalo defend every herd member; Iguanodon does not defend the other species it herds with.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du ein versprengter Kaffernbüffel auf der Suche nach seiner Herde. Die Büffelverteidigung fehlt dir dann, aber das Tier bleibt.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Coastal Bluffs, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

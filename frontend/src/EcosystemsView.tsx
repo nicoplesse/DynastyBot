@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react';
 import { api, type Catalog, type CatalogItem, type Ecosystem, type EcosystemIndex, type EcosystemMember } from './api';
+import { ModeFlag, PlayModeSwitch, catalogAnalog, usePlayMode } from './PlayMode';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './ecosystems.css';
 
@@ -62,6 +63,7 @@ export function EcosystemsPage({ route }: { route: string }) {
         <span className="eco-switch-track" aria-hidden="true"><span /></span>
         <span className="eco-switch-text"><b>Include “Also seen here”</b><small lang="de">Besucher mit einsortieren</small></span>
       </button>
+      <PlayModeSwitch compact />
     </div>
     {shown.map((ecosystem, position) => <EcosystemSection key={ecosystem.id} ecosystem={ecosystem} chain={chainOf(ecosystem, members, withVisitors)} withVisitors={withVisitors} number={index.ecosystems.indexOf(ecosystem) + 1} index={index} catalog={catalog} divider={position > 0} />)}
   </>;
@@ -111,7 +113,9 @@ function EcosystemSection({ ecosystem, chain, withVisitors, number, index, catal
 }
 
 function EcoCard({ member, profile, home }: { member: EcosystemMember; profile: CatalogItem | undefined; home?: Ecosystem }) {
-  const main = profile?.analog?.analogs[0];
+  // The photo and the animal line follow the solo/group switch.
+  const mode = usePlayMode();
+  const main = (profile ? catalogAnalog(profile, mode) : null)?.analogs[0];
   const title = home ? `Also seen here · home: ${home.label}\n${member.reason}` : member.reason;
   return <button type="button" className={`eco-card ${home ? 'visitor' : ''}`} onClick={() => go(`/profiles/${member.id}`)} title={title}>
     <span className="eco-card-image">
@@ -119,6 +123,7 @@ function EcoCard({ member, profile, home }: { member: EcosystemMember; profile: 
       {main?.photo ? <img className="eco-card-photo" src={main.photo.image} alt="" style={{ objectPosition: main.photo.focus }} loading="lazy" referrerPolicy="no-referrer" /> : <span className="eco-card-fallback">{member.name.charAt(0)}</span>}
       {profile?.cover && <img className="eco-card-ingame" src={api.imageUrl(member.id, profile.cover.file)} alt="" loading="lazy" />}
       <span className="eco-rank">#{member.rank}</span>
+      {profile && <ModeFlag modes={profile.modes} mode={mode} />}
     </span>
     <span className="eco-card-body">
       <strong>{member.name}</strong>

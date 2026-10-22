@@ -46,6 +46,10 @@ You are a large aerial carnivore in a 'committee' of up to 3 with temporary bond
 - Lebensraum: Everywhere the herds and predators go. Found across the entire map. Follows migrating herds and predators and feeds at common dying grounds.
 - Anders als die Tiere: Vultures rarely kill; Quetzalcoatlus readily hunts offspring and easy targets.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Geier suchen allein und sammeln sich erst am Kadaver. Quetzalcoatlus-Gruppen sind laut Profil kurzlebig, das Tier bleibt dasselbe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Steep Run, Black Fern Hills, Mudflats, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Hollow Hills, Wollemi Forest
@@ -54,9 +58,8 @@ You are a large aerial carnivore in a 'committee' of up to 3 with temporary bond
 
 **Gefährlich für dich:**
 - **Hatzegopteryx** (sehr hoch): Hatzegopteryx can create a very narrow escape window
-- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
+- **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
 - **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
-- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight

@@ -14748,6 +14748,321 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "different",
+    "changes": "solo",
+    "note": "Allein fehlt dir der Raft, der Nester verteidigt und Junge gemeinsam aufzieht. Du bist dann extrem schreckhaft und suchst Schutz bei Lurdusaurus oder Deinocheirus. Das ist der Kuhreiher, der neben Flusspferden und Büffeln lebt. Die Stockente bleibt, die Elster fällt weg.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Mallard + Cattle egret",
+        "labelDe": "Stockente + Kuhreiher",
+        "headline": "A lost duckling with a cattle egret's trick: extremely flighty alone, it sticks close to a Lurdusaurus or Deinocheirus until it finds a raft again.",
+        "playsLike": "Alone you struggle to survive, because you are deeply social by nature. Your one goal is to find a raft to join, or failing that, temporary protection from the much larger Lurdusaurus or Deinocheirus. Without your raft or other species to group with you are extremely flighty and flee almost every predator. You still skim the water for lakeweed, small fish and roots. When you do find a raft, you bathe in mud before it accepts you.",
+        "setting": {
+          "label": "Ponds, lakes, rivers and coasts",
+          "note": "Sedentary semi-aquatic. Skims the water for lakeweed, small fish and roots, and seeks protection from larger herbivores such as Deinocheirus and Lurdusaurus when separated from the raft.",
+          "habitats": [
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "mallard",
+            "animal": "Mallard",
+            "de": "Stockente",
+            "scientific": "Anas platyrhynchos",
+            "archetype": "waterbird",
+            "archetypeLabel": "Duck, swan & heron",
+            "archetypeDe": "Ente, Schwan & Reiher",
+            "share": 60,
+            "role": "primary",
+            "covers": "Body and goal: a small, flighty water bird that skims for food and wants nothing more than its raft back",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/1280px-Anas_platyrhynchos_male_female_quadrat.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
+                "license": "CC BY-SA 2.5",
+                "page": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "cattle-egret",
+            "animal": "Cattle egret",
+            "de": "Kuhreiher",
+            "scientific": "Bubulcus ibis",
+            "archetype": "waterbird",
+            "archetypeLabel": "Duck, swan & heron",
+            "archetypeDe": "Ente, Schwan & Reiher",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Survival: sticks close to a big herbivore, as egrets keep beside hippos and buffalo",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cattle_Egret_in_breeding_plumage%2C_Wakodahatchee_Wetlands.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Pedro Lastra",
+                "license": "CC BY-SA 2.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Cattle_Egret_in_breeding_plumage,_Wakodahatchee_Wetlands.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Raft first",
+            "text": "Their “sole focus is finding a raft to join”. A lost duckling calls and searches until it finds a flock again."
+          },
+          {
+            "trait": "A big protector",
+            "text": "Failing that, it seeks “temporary protection from the much larger Lurdusaurus or Deinocheirus”. Cattle egrets live beside hippos and buffalo, and Lurdusaurus plays like a hippo."
+          },
+          {
+            "trait": "Flighty",
+            "text": "“Solo Halszkaraptor are extremely flighty without the protection of their raft”."
+          },
+          {
+            "trait": "Same diet",
+            "text": "It still skims the water for lakeweed, small fish and roots, with a soft spot for fruit."
+          }
+        ],
+        "notLike": [
+          "Cattle egrets follow big animals for the insects they stir up; Halszkaraptor wants their protection.",
+          "Mallards and egrets can fly away; Halszkaraptor can only swim or run."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "semi-aquatic",
+            "label": "Shore & water",
+            "de": "Ufer & Wasser"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "mallard ducks, loons, magpies and coots",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Semi-Aquatic",
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 1150,
+          "landSprintSeconds": 375,
+          "waterSprint": 1350,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": "unlimited",
+          "mapBiomes": [
+            "coast",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater",
+            "hills",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Allein bist du ein verlorenes Entenküken mit dem Trick eines Kuhreihers. Ohne Raft hast du es schwer, denn du bist durch und durch gesellig. Du suchst nur eines: einen Raft, dem du dich anschließen kannst. Bis dahin bleibst du dicht bei einem großen Lurdusaurus oder Deinocheirus, wie ein Kuhreiher neben dem Flusspferd. Ohne Raft oder großen Beschützer bist du extrem schreckhaft und fliehst vor fast jedem Räuber. Du filterst weiter Seegras, kleine Fische und Wurzeln aus dem Wasser. Findest du einen Raft, nimmst du erst ein Schlammbad, bevor er dich aufnimmt."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Mallard + Magpie",
+        "labelDe": "Stockente + Elster",
+        "headline": "A raft of mallards that mobs anything near the nest, with a magpie's eye for shiny things.",
+        "playsLike": "You are a Tiny, quick semi-aquatic herbivore (water sprint 1,350) living in an unlimited 'raft' that raises all the ducklings together. You flee almost every predator from Small tier upward. When a Small-tier carnivore threatens the nests, though, the whole raft mobs it, and you always stand your ground against Compsognathus and Rhamphorhynchus. Newcomers must bathe in mud before they are accepted.",
+        "setting": {
+          "label": "Ponds, lakes, rivers and coasts",
+          "note": "Sedentary semi-aquatic. Skims the water for lakeweed, small fish and roots, and seeks protection from larger herbivores such as Deinocheirus and Lurdusaurus when separated from the raft.",
+          "habitats": [
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "mallard",
+            "animal": "Mallard",
+            "de": "Stockente",
+            "scientific": "Anas platyrhynchos",
+            "archetype": "waterbird",
+            "archetypeLabel": "Duck, swan & heron",
+            "archetypeDe": "Ente, Schwan & Reiher",
+            "share": 70,
+            "role": "primary",
+            "covers": "Almost everything: a raft of ducks that skims the water, raises young together and flees danger",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/1280px-Anas_platyrhynchos_male_female_quadrat.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
+                "license": "CC BY-SA 2.5",
+                "page": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "magpie",
+            "animal": "Magpie",
+            "de": "Elster",
+            "scientific": "Pica pica",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 30,
+            "role": "secondary",
+            "covers": "Personality: curious collector of shiny things that decorates its nest",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Eurasian_magpie_2024_03_03_02.jpg/1280px-Eurasian_magpie_2024_03_03_02.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Alexis Lours",
+                "license": "CC BY 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "A raft",
+            "text": "A group of ducks on water is literally a 'raft', the profile's name for its groups (official inspiration: mallards)."
+          },
+          {
+            "trait": "Communal young",
+            "text": "Promiscuous courtship and every adult shows love to every offspring. The whole raft raises the young."
+          },
+          {
+            "trait": "Skimming diet",
+            "text": "Feeds by skimming through water for lakeweed, small fish and roots, with a soft spot for fruit."
+          },
+          {
+            "trait": "Nest mob",
+            "text": "Unlimited numbers team up to mob Small-tier carnivores that threaten the nests, as aggressive as coots at a nest (official inspiration: coots)."
+          },
+          {
+            "trait": "Shiny things",
+            "text": "Fascinated by shiny objects and decorates its nest with them. Curious, dancing, singing (official inspiration: magpies)."
+          }
+        ],
+        "notLike": [
+          "Mallards escape by flying; Halszkaraptor can't fly and relies on its swimming speed and bigger herbivore friends."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "semi-aquatic",
+            "label": "Shore & water",
+            "de": "Ufer & Wasser"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "playful",
+            "label": "Playful & social",
+            "de": "Verspielt"
+          },
+          {
+            "id": "parental",
+            "label": "Devoted parent",
+            "de": "Fürsorgliche Eltern"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "mallard ducks, loons, magpies and coots",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Semi-Aquatic",
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 1150,
+          "landSprintSeconds": 375,
+          "waterSprint": 1350,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": "unlimited",
+          "mapBiomes": [
+            "coast",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater",
+            "hills",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "freshwater",
     "label": "Rivers, Lakes & Swamps",
@@ -14761,5 +15076,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

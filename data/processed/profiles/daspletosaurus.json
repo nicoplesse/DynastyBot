@@ -15872,6 +15872,318 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "rebalanced",
+    "changes": "solo",
+    "note": "Allein wirst du laut Profil leiser und strategischer, lauerst aus dem Hinterhalt und gehst anderen Daspletosaurus und Apex-Paaren aus dem Weg. Das ist der Puma, der Dingo-Rudelteil schrumpft.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Cougar + Dingo",
+        "labelDe": "Puma + Dingo",
+        "headline": "A lone cougar of the forests and cliffs: silent, strategic, ambushing prey up to Large tier and any young it can reach.",
+        "playsLike": "Solo you are less haughty and far more careful about the sound you make and how you move. You ambush targets from cover, raid nests, and hunt up to Large tier plus offspring up to Adolescent of any tier, even when an adult guards them; if no Lambeosaurus is around, you go for those young. You tuck yourself into underbrush and dark corners to sleep unseen, avoid other Daspletosaurus unless you mean to join or take over a pack, and steer clear of Apex carnivore pairs. To court, a solitary male must prove himself, often by securing a meal for the female.",
+        "setting": {
+          "label": "Forests and cliffsides",
+          "note": "Nomadic; 'primarily travel through forests and cliffsides in search of their next meal'.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "cougar",
+            "animal": "Cougar",
+            "de": "Puma",
+            "scientific": "Puma concolor",
+            "archetype": "big-cat",
+            "archetypeLabel": "Big cat",
+            "archetypeDe": "Großkatze",
+            "share": 70,
+            "role": "primary",
+            "covers": "Solo life: a quiet forest-and-cliff ambusher that hunts big prey alone and sleeps hidden in cover",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/1280px-Mountain_Lion_in_Glacier_National_Park.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "National Park Service",
+                "license": "Public domain",
+                "page": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "allosaurus",
+                "name": "Allosaurus",
+                "role": "primary",
+                "share": 70,
+                "headline": "A lone cougar of the dry country: a silent night stalker that tolerates every other species, drives out its own kind and hides in caves by day."
+              }
+            ]
+          },
+          {
+            "id": "dingo",
+            "animal": "Dingo",
+            "de": "Dingo",
+            "scientific": "Canis dingo",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 30,
+            "role": "secondary",
+            "covers": "Nomad roots: a roaming hunter that also takes the young and raids nests when no pack backs it up",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg/1280px-Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Dingo_(Canis_lupus_dingo)_Kakadu_2.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Strategic and silent",
+            "text": "Solitary Daspletosaurus “become more strategic about the sound they make and their movements”. Cougars are the quiet stalkers of the Americas (official inspiration)."
+          },
+          {
+            "trait": "Ambush alone",
+            "text": "Without help it will “attempt to ambush potential targets, or target offspring in nests”, the way a cougar ambushes deer from cover."
+          },
+          {
+            "trait": "Hidden bed",
+            "text": "It tucks itself away “in underbrush and dark corners to comfortably sleep without disturbance”, like a cougar bedding down in thick cover."
+          },
+          {
+            "trait": "Picks its fights",
+            "text": "A solitary animal avoids other Daspletosaurus and Apex carnivore pairs entirely; only in a pack does it fear no other dinosaur. Lone cougars also give way to wolf packs and bears."
+          },
+          {
+            "trait": "Young of any tier",
+            "text": "Solo it may take offspring up to Adolescent of any tier, even if guarded, which keeps a lone hunter fed between big kills."
+          }
+        ],
+        "notLike": [
+          "Cougars stay solitary for life; a lone Daspletosaurus may still try to join or take over a pack.",
+          "Cougars hunt mostly at dusk and by night; Daspletosaurus hunts at any hour."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "ambush",
+            "label": "Ambush hunter",
+            "de": "Lauerjäger"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "cougars, dingoes, and creative liberty",
+        "facts": {
+          "tier": "Large",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 3500,
+          "maxHealth": 600,
+          "growthMinutes": 180,
+          "landSprint": 1025,
+          "landSprintSeconds": 91,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 1,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Solo bist du ein Puma der Wälder und Klippen: leise, berechnend und geduldig. Du achtest genau auf jedes Geräusch und jede Bewegung, lauerst aus der Deckung, plünderst Nester und jagst bis Large, dazu Jungtiere jeder Stufe bis Adolescent, auch wenn ein Erwachsener sie bewacht. Geschlafen wird versteckt im Unterholz oder in dunklen Ecken. Anderen Daspletosaurus gehst du aus dem Weg, außer du willst einem Rudel beitreten oder es übernehmen, und Apex-Paaren weichst du immer aus. Willst du als Männchen balzen, musst du dich beweisen, meist mit einer Mahlzeit für das Weibchen."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Dingo + Cougar",
+        "labelDe": "Dingo + Puma",
+        "headline": "A dingo pack led by dominant males that herds prey into dead ends, with a cougar's forest-and-cliff ambush.",
+        "playsLike": "You are a large, aggressive tyrannosaurid in a pack of up to 6 led by a dominant male or a bonded male pair. Females raise the cubs and defend them fiercely. Hunts are teamwork: one herder flushes prey toward two hidden ambushers, then the party corners it. Solo you take prey up to Large tier, ambush or raid nests; 2+ of you can take Apex. Unless you are alone, you fear no other dinosaur.",
+        "setting": {
+          "label": "Forests and cliffsides",
+          "note": "Nomadic; 'primarily travel through forests and cliffsides in search of their next meal'.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "mountain",
+              "label": "Mountains, cliffs & rock",
+              "de": "Berge, Klippen & Fels"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "dingo",
+            "animal": "Dingo",
+            "de": "Dingo",
+            "scientific": "Canis dingo",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 55,
+            "role": "primary",
+            "covers": "Pack and hunting: a loud nomadic pack that drives prey into dead ends and corners",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg/1280px-Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Dingo_(Canis_lupus_dingo)_Kakadu_2.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "cougar",
+            "animal": "Cougar",
+            "de": "Puma",
+            "scientific": "Puma concolor",
+            "archetype": "big-cat",
+            "archetypeLabel": "Big cat",
+            "archetypeDe": "Großkatze",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Terrain and solo play: forest-and-cliffside ambusher, able to hunt big prey alone",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/1280px-Mountain_Lion_in_Glacier_National_Park.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "National Park Service",
+                "license": "Public domain",
+                "page": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Herding into dead ends",
+            "text": "Works together to herd prey into dead ends and corners, with one 'herder' and two ambushers. Dingoes drive prey into fences, water and gullies (official inspiration)."
+          },
+          {
+            "trait": "Forest and cliffs",
+            "text": "Travels through forests and cliffsides, and a solo animal ambushes its targets. That is cougar country and cougar style (official inspiration)."
+          },
+          {
+            "trait": "Male leadership",
+            "text": "Dominant males lead hunting, migration and courtship and fight bloody takeover battles; ungrouped males must submit or be chased out."
+          },
+          {
+            "trait": "Loud, then silent",
+            "text": "Packs are loud but go 'dangerously quiet when in pursuit of prey'."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Large tier, 3,500 combat weight, 600 HP, sprint 1,025 held for 91 s."
+          }
+        ],
+        "notLike": [
+          "Dingo packs revolve around one breeding pair; Daspletosaurus males may court up to four females each.",
+          "Cougars are solitary, while Daspletosaurus prefers the pack."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "pack",
+            "label": "Pack hunter",
+            "de": "Rudel"
+          },
+          {
+            "id": "ambush",
+            "label": "Ambush hunter",
+            "de": "Lauerjäger"
+          },
+          {
+            "id": "aggressive",
+            "label": "Hot-headed",
+            "de": "Hitzkopf"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "cougars, dingoes, and creative liberty",
+        "facts": {
+          "tier": "Large",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 3500,
+          "maxHealth": 600,
+          "growthMinutes": 180,
+          "landSprint": 1025,
+          "landSprintSeconds": 91,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 1,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "mountains",
     "label": "Mountains & Cliffs",
@@ -15891,5 +16203,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

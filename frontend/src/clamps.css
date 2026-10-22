@@ -1,0 +1,90 @@
+.clamp-head h1 span{margin-left:8px;color:#7f9584;font-size:.5em;font-weight:700;letter-spacing:-.01em}
+.clamp-head p{max-width:760px;line-height:1.6}
+
+/* Reach badges: the brighter, the further up the growth stages the prey can still be clamped. */
+.reach{display:inline-flex;align-items:center;justify-content:center;min-width:52px;padding:4px 8px;border-radius:5px;font-size:11px;font-weight:800;font-style:normal;white-space:nowrap}
+.reach.s4{background:#b6d48d;color:#132016}
+.reach.s3{background:#7fa760;color:#0f1a10}
+.reach.s2{background:#4f7444;color:#e6f2dc}
+.reach.s1{background:#33503a;color:#cfe2c4}
+.reach.s0{background:#263b2c;color:#b4c9ad}
+.reach.none{background:transparent;color:#56685a;box-shadow:inset 0 0 0 1px #2a382d}
+.reach.gap{background:transparent;color:#d9c88f;box-shadow:inset 0 0 0 1px #4d4a2c}
+
+.clamper-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin-bottom:16px}
+.clamper-cards button{display:flex;flex-direction:column;gap:9px;min-width:0;padding:12px 14px;border:1px solid #2d3c30;border-radius:8px;background:#162019;color:#aebcaa;text-align:left;transition:border-color .15s,background .15s}
+.clamper-cards button:hover{border-color:#4a6250}
+.clamper-cards button.active{border-color:#b6d48d;background:#1d2d21;color:#eef4ea}
+.clamper-name{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.clamper-name b{min-width:0;font-size:13px;line-height:1.25;color:#e3ece0}
+.ability{flex:0 0 auto;padding:2px 6px;border-radius:4px;font-size:9px;font-style:normal;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.ability.clamp{background:#2c4330;color:#c6e2a6}
+.ability.grab{background:#2c3a47;color:#a9cbe6}
+.clamper-cap strong{display:block;color:#cce7a5;font-size:22px;line-height:1}
+.clamper-cap small{display:block;margin-top:4px;color:#7f9283;font-size:10px}
+.clamper-flag{color:#d9c88f;font-size:10px;font-weight:700}
+
+.clamp-filters{flex-wrap:wrap}
+.clamp-filters .search-field{min-width:240px}
+.stage-picker>span{display:block;margin:0 0 7px 2px;color:#819182;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.stage-picker>div{display:flex;height:43px;padding:3px;border:1px solid #354538;border-radius:5px;background:#0f1812}
+.stage-picker button{padding:0 11px;border:0;border-radius:3px;background:transparent;color:#9aab9e;font-size:11px;font-weight:700}
+.stage-picker button:hover{color:#e0e8dc}
+.stage-picker button.active{background:#b6d48d;color:#132016}
+
+.clamp-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:14px 2px 12px;color:#819182;font-size:11px}
+.clamp-legend>span{margin-right:4px}
+.clamp-legend .reach{min-width:0;font-size:10px}
+
+.clamp-table-wrap{overflow:auto;max-height:calc(100vh - 120px);border:1px solid #2c3a2e;border-radius:8px;background:#131c16}
+.clamp-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12px}
+.clamp-table th,.clamp-table td{padding:7px 8px;border-bottom:1px solid #223026;text-align:center;vertical-align:middle}
+.clamp-table thead th{position:sticky;top:0;z-index:2;background:#18241b;border-bottom:1px solid #34463a}
+.clamp-table thead th button{display:flex;flex-direction:column;align-items:center;gap:2px;width:100%;min-width:84px;padding:2px;border:0;background:transparent;color:#d6e3d2}
+.clamp-table thead th button:hover b{text-decoration:underline}
+.clamp-table thead th b{font-size:11px}
+.clamp-table thead th em{color:#d9c88f;font-size:10px;font-style:normal;font-weight:700}
+.clamp-table thead th small{color:#8fa38f;font-size:10px;font-weight:600}
+.clamp-table .prey-col{position:sticky;left:0;z-index:1;min-width:200px;background:#131c16;text-align:left;border-right:1px solid #2c3a2e}
+.clamp-table thead .prey-col{z-index:3;background:#18241b;color:#d6e3d2;font-size:11px}
+.clamp-table thead .prey-col small{display:block;margin-top:3px;color:#7f9283;font-size:9px;font-weight:600}
+.clamp-table tbody .prey-col a{display:flex;align-items:baseline;gap:7px;color:#e3ece0;text-decoration:none}
+.clamp-table tbody .prey-col a:hover b{text-decoration:underline}
+.clamp-table tbody .prey-col small{color:#6f8373;font-size:9px}
+.cw-curve{display:block;margin-top:2px;color:#7d917f;font-size:10px;font-variant-numeric:tabular-nums}
+.clamp-table tbody tr:hover th,.clamp-table tbody tr:hover td{background:#1a271e}
+.clamp-table .focus{background:#1b2a1f}
+.clamp-table thead th.focus{background:#24382a;box-shadow:inset 0 -2px #b6d48d}
+.clamp-foot{margin-top:12px;color:#7f9283;font-size:11px;line-height:1.6}
+.clamp-foot b{color:#c6dbb8}
+
+.clamper-detail{margin-bottom:18px;padding:20px 22px;border:1px solid #4f6b48;border-radius:10px;background:radial-gradient(120% 140% at 0% 0%,#1f3123 0%,#141f17 60%)}
+.clamper-detail>header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.clamper-detail h2{margin-top:6px;font-size:22px;letter-spacing:-.03em}
+.clamper-detail h2 a{color:#eef4ea;text-decoration:none}
+.clamper-detail h2 a:hover{text-decoration:underline}
+.clamper-detail h2 span{display:block;margin-top:4px;color:#a9c48d;font-size:14px;font-weight:700;letter-spacing:0}
+.clamp-close{width:30px;height:30px;border:1px solid #45594a;border-radius:50%;background:#162019;color:#cbd9c6;font-size:18px;line-height:1}
+.clamper-detail-grid{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:22px}
+.capacity-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.capacity-table caption{margin-bottom:6px;color:#819182;font-size:9px;font-weight:800;letter-spacing:.12em;text-align:left;text-transform:uppercase}
+.capacity-table td{padding:7px 4px;border:1px solid #2c3a2e;background:#121b15;text-align:center}
+.capacity-table td small{display:block;overflow:hidden;color:#7f9283;font-size:8px;text-overflow:ellipsis;white-space:nowrap}
+.capacity-table td b{display:block;margin-top:3px;color:#d6e3d2;font-size:12px;font-variant-numeric:tabular-nums}
+.capacity-table td.current{background:#2a4130;box-shadow:inset 0 0 0 1px #b6d48d}
+.buff-toggle{display:flex;align-items:center;gap:8px;margin-top:10px;color:#d9c88f;font-size:12px;font-weight:700}
+.clamp-adjust{display:flex;flex-direction:column;gap:3px;margin-top:12px;padding:9px 12px;border-left:2px solid #d9c88f;background:#232517;font-size:11px;color:#e3dcb8}
+.clamp-adjust strong{color:#d9c88f;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.clamp-notes{margin:12px 0 0;padding-left:18px;color:#b4c3b0;font-size:12px;line-height:1.55}
+.clamp-notes li+li{margin-top:5px}
+.reach-groups{display:flex;flex-direction:column;gap:12px}
+.reach-group h3{display:flex;align-items:center;gap:9px;margin:0 0 7px;color:#dfe9db;font-size:13px}
+.reach-group h3 i{color:#7f9283;font-size:11px;font-style:normal}
+.reach-chips{display:flex;flex-wrap:wrap;gap:5px}
+.reach-chips a{display:inline-flex;align-items:baseline;gap:6px;padding:5px 9px;border:1px solid #2f4033;border-radius:5px;background:#121b15;color:#d6e3d2;font-size:12px;text-decoration:none}
+.reach-chips a:hover{border-color:#6f8f62}
+.reach-chips small{color:#9fbd85;font-size:10px;font-variant-numeric:tabular-nums}
+.reach-chips em{color:#d9c88f;font-size:10px;font-style:normal}
+
+@media(max-width:900px){.clamper-detail-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.clamper-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.stage-picker>div{overflow-x:auto}.clamp-table .prey-col{min-width:150px}.clamper-detail{padding:16px}.clamp-table-wrap{max-height:none}}

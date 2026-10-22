@@ -16453,6 +16453,321 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "different",
+    "changes": "solo",
+    "note": "Die laute Saatkrähen-Kolonie und das Rothund-Rudel gibt es nur in der Rookery. Allein wirst du laut Profil still und zurückhaltend, folgst Herden oder Apex-Räubern und bedienst dich an Rissen. Das ist der Kolkrabe, der Wölfen folgt, gern auch einem Achillobator.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Common raven + Rook",
+        "labelDe": "Kolkrabe + Saatkrähe",
+        "headline": "A lone raven in the night: quiet and watchful, it trails herds and Apex hunters for scraps, hunts small prey alone and finds comfort in an Achillobator companion.",
+        "playsLike": "Alone you can get by for long stretches, but you become quieter and more reserved, singing and chattering far less than in a rookery. You often trail herbivore herds or Apex carnivores that tolerate you, scavenge from kills when permitted and patiently watch your surroundings. You hunt alone up to Medium tier, mostly small prey and critters. An Achillobator companion keeps loneliness away, and lonely Latenivenatrix seek one out themselves when they can't find their way back to their rookery. You hunt at night and still flee Hatzegopteryx, Quetzalcoatlus and Kelenken.",
+        "setting": {
+          "label": "Forests and wetlands, behind herds and Apex hunters",
+          "note": "A loner roams forests and wetlands, trailing herbivore herds or tolerant Apex carnivores.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "common-raven",
+            "animal": "Common raven",
+            "de": "Kolkrabe",
+            "scientific": "Corvus corax",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 60,
+            "role": "primary",
+            "covers": "Solo life: a quiet, watchful loner that follows big hunters and herds and scavenges from their kills",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg/1280px-Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Frank Schulenburg",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "maip",
+                "name": "Maip",
+                "role": "secondary",
+                "share": 40,
+                "headline": "A bone-crunching, night-shrieking hyena pair with a raven's cruel intelligence."
+              }
+            ]
+          },
+          {
+            "id": "rook",
+            "animal": "Rook",
+            "de": "Saatkrähe",
+            "scientific": "Corvus frugilegus",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Heart: a colony bird by nature that misses its rookery and keeps its curiosity",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Rook_%28Corvus_frugilegus%29_Heligan.jpg/1280px-Rook_%28Corvus_frugilegus%29_Heligan.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Rook_(Corvus_frugilegus)_Heligan.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Quiet loner",
+            "text": "“Solo individuals become quieter and more reserved, and show less communicative chatter or singing as opposed to those within a rookery.” A raven is far quieter than a rook colony."
+          },
+          {
+            "trait": "Following hunters",
+            "text": "Solitary Latenivenatrix “often trail behind herbivore herds or Apex carnivores that tolerate them” and scavenge from kills when permitted, as ravens follow wolves."
+          },
+          {
+            "trait": "Achillobator companion",
+            "text": "“Achillobator companions help to stave away feelings of loneliness”, and loners may seek one out themselves. The raven-and-wolf partnership in miniature."
+          },
+          {
+            "trait": "Small prey",
+            "text": "Orphans grow into capable solitary hunters of small prey and critters, as ravens also kill small animals."
+          }
+        ],
+        "notLike": [
+          "Ravens are mostly active by day; Latenivenatrix hunts at night.",
+          "Ravens are content as a pair; Latenivenatrix is social by nature and does best with a companion."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "rooks",
+        "facts": {
+          "tier": "Small",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 1400,
+          "maxHealth": 500,
+          "growthMinutes": 90,
+          "landSprint": 1075,
+          "landSprintSeconds": 250,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 8,
+          "engagementLimit": 6,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "mudflat",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Solo bist du ein Kolkrabe in der Nacht. Allein kommst du lange zurecht, wirst aber still und zurückhaltend und singst und plauderst viel weniger als in der Rookery. Du folgst Pflanzenfresser-Herden oder Apex-Räubern, die dich dulden, bedienst dich an ihren Rissen, wenn sie dich lassen, und beobachtest geduldig deine Umgebung. Allein jagst du bis Medium, meist kleine Beute und Kleintiere. Am besten geht es dir mit einem Achillobator als Gefährten, und findest du nicht zurück zur Rookery, suchst du dir selbst einen. Vor Hatzegopteryx, Quetzalcoatlus und Kelenken fliehst du weiter."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Rook + Dhole",
+        "labelDe": "Saatkrähe + Rothund",
+        "headline": "A noisy rook colony that hunts at night like a dhole pack and rides along on Achillobator hunts.",
+        "playsLike": "You are a small nocturnal carnivore in a rookery of up to 16 that constantly sings, dances and chatters. One or more of you hunt up to Medium tier, 6 hunt Large, and adult sauropods are off-limits. With bonded Achillobator, 2–3 of you can hunt Apex. Hunts go like this: spread out, cut off the escape routes, rush in, leap onto the flanks and cling. The whole rookery shares the kill. You flee Hatzegopteryx, Quetzalcoatlus and Kelenken and drive Deinonychus out of your POI.",
+        "setting": {
+          "label": "Nomadic rookeries in forests and wetlands, with small nest territories",
+          "note": "Somewhat nomadic. When the rookery settles for the day it claims a small territory around its nest cluster (creche) and the whole group defends it.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "rook",
+            "animal": "Rook",
+            "de": "Saatkrähe",
+            "scientific": "Corvus frugilegus",
+            "archetype": "corvid",
+            "archetypeLabel": "Crow & raven",
+            "archetypeDe": "Krähe & Rabe",
+            "share": 60,
+            "role": "primary",
+            "covers": "Social life: a huge, noisy, playful rookery that nests together and investigates everything",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Rook_%28Corvus_frugilegus%29_Heligan.jpg/1280px-Rook_%28Corvus_frugilegus%29_Heligan.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Rook_(Corvus_frugilegus)_Heligan.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "dhole",
+            "animal": "Dhole",
+            "de": "Rothund",
+            "scientific": "Cuon alpinus",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Hunting: a chattering pack that spreads out, cuts off escape and leaps onto the prey's flanks",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Dhole_%28Asiatic_wild_dog%29_cropped.jpg/1280px-Dhole_%28Asiatic_wild_dog%29_cropped.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Davidvraju",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Dhole_(Asiatic_wild_dog)_cropped.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Rookery",
+            "text": "The group is literally a rookery: large, social, noisy, with nest clusters defended by everyone (official inspiration: rooks)."
+          },
+          {
+            "trait": "Corvid brains",
+            "text": "Singing, dancing, jumping and playing, very curious about new objects and species, and happy to follow newcomers around."
+          },
+          {
+            "trait": "Pack encirclement",
+            "text": "The hunting party grows quiet, spreads out to cut off escape routes, then rushes in to slash and cling. Dholes hunt the same way."
+          },
+          {
+            "trait": "Shared table",
+            "text": "No feeding hierarchy: the corpse is shared by the whole rookery, as dhole packs share kills."
+          },
+          {
+            "trait": "Partnership",
+            "text": "Bonds with Achillobator, which leads while the Latenivenatrix jump on the prey's sides, much like ravens accompanying wolves."
+          }
+        ],
+        "notLike": [
+          "Rooks don't hunt big animals.",
+          "Dholes hunt by day; Latenivenatrix hunts only at night."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "pack",
+            "label": "Pack hunter",
+            "de": "Rudel"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "playful",
+            "label": "Playful & social",
+            "de": "Verspielt"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "rooks",
+        "facts": {
+          "tier": "Small",
+          "diet": "Carnivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 1400,
+          "maxHealth": 500,
+          "growthMinutes": 90,
+          "landSprint": 1075,
+          "landSprintSeconds": 250,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Apex",
+          "huntGroupSize": 8,
+          "engagementLimit": 6,
+          "mapBiomes": [
+            "hills",
+            "forest",
+            "mudflat",
+            "freshwater",
+            "coast",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "forest",
     "label": "Forest",
@@ -16472,5 +16787,594 @@
       "derived": true,
       "reason": null
     }
+  },
+  "bleed": {
+    "attack": {
+      "label": "Mangle",
+      "damage": 30,
+      "bleed": 0.4,
+      "cooldown": 5
+    },
+    "setup": "1–5",
+    "maxHits": 30,
+    "assumption": "Bleed drains 1 % of max health per point per second (community reading, not documented).",
+    "rows": [
+      {
+        "id": "citipati",
+        "name": "Citipati",
+        "tier": "Medium",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.233,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 13,
+          "seconds": 99
+        },
+        "sit": {
+          "hits": 15,
+          "seconds": 78
+        },
+        "direct": 32
+      },
+      {
+        "id": "styracosaurus",
+        "name": "Styracosaurus",
+        "tier": "Medium",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 20,
+          "seconds": 109
+        },
+        "sit": {
+          "hits": 21,
+          "seconds": 106
+        },
+        "direct": 47
+      },
+      {
+        "id": "lambeosaurus",
+        "name": "Lambeosaurus",
+        "tier": "Medium",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 0.16,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 55
+      },
+      {
+        "id": "dryosaurus",
+        "name": "Dryosaurus",
+        "tier": "Small",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.56,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 48
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 36
+        },
+        "direct": 10
+      },
+      {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "tier": "Small",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.533,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 5,
+          "seconds": 51
+        },
+        "sit": {
+          "hits": 6,
+          "seconds": 45
+        },
+        "direct": 18
+      },
+      {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "tier": "Small",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.28,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 10,
+          "seconds": 71
+        },
+        "sit": {
+          "hits": 11,
+          "seconds": 69
+        },
+        "direct": 24
+      },
+      {
+        "id": "amargasaurus",
+        "name": "Amargasaurus",
+        "tier": "Large",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 1250,
+        "bleedPerHit": 0.112,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 149
+      },
+      {
+        "id": "austroraptor",
+        "name": "Austroraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 650,
+        "bleedPerHit": 0.267,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 11,
+          "seconds": 87
+        },
+        "sit": {
+          "hits": 13,
+          "seconds": 71
+        },
+        "direct": 33
+      },
+      {
+        "id": "utahraptor",
+        "name": "Utahraptor",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.267,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 11,
+          "seconds": 76
+        },
+        "sit": {
+          "hits": 13,
+          "seconds": 65
+        },
+        "direct": 28
+      },
+      {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.267,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 11,
+          "seconds": 71
+        },
+        "sit": {
+          "hits": 12,
+          "seconds": 67
+        },
+        "direct": 25
+      },
+      {
+        "id": "dilophosaurus",
+        "name": "Dilophosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.233,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 13,
+          "seconds": 99
+        },
+        "sit": {
+          "hits": 15,
+          "seconds": 78
+        },
+        "direct": 32
+      },
+      {
+        "id": "alioramus",
+        "name": "Alioramus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.233,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 13,
+          "seconds": 91
+        },
+        "sit": {
+          "hits": 15,
+          "seconds": 75
+        },
+        "direct": 30
+      },
+      {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.215,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 16,
+          "seconds": 91
+        },
+        "sit": {
+          "hits": 17,
+          "seconds": 87
+        },
+        "direct": 35
+      },
+      {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 525,
+        "bleedPerHit": 0.215,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 16,
+          "seconds": 91
+        },
+        "sit": {
+          "hits": 17,
+          "seconds": 87
+        },
+        "direct": 35
+      },
+      {
+        "id": "ceratosaurus",
+        "name": "Ceratosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 0.215,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 17,
+          "seconds": 103
+        },
+        "sit": {
+          "hits": 19,
+          "seconds": 94
+        },
+        "direct": 47
+      },
+      {
+        "id": "kentrosaurus",
+        "name": "Kentrosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 750,
+        "bleedPerHit": 0.207,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 18,
+          "seconds": 115
+        },
+        "sit": {
+          "hits": 20,
+          "seconds": 101
+        },
+        "direct": 49
+      },
+      {
+        "id": "tenontosaurus",
+        "name": "Tenontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.233,
+        "healRate": 0.04,
+        "trot": {
+          "hits": 18,
+          "seconds": 100
+        },
+        "sit": {
+          "hits": 19,
+          "seconds": 93
+        },
+        "direct": 32
+      },
+      {
+        "id": "achillobator",
+        "name": "Achillobator",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 19,
+          "seconds": 105
+        },
+        "sit": {
+          "hits": 20,
+          "seconds": 100
+        },
+        "direct": 40
+      },
+      {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.181,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 23,
+          "seconds": 114
+        },
+        "sit": {
+          "hits": 23,
+          "seconds": 116
+        },
+        "direct": 37
+      },
+      {
+        "id": "lurdusaurus-coast",
+        "name": "Lurdusaurus (Coast)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.175,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 27,
+          "seconds": 139
+        },
+        "sit": {
+          "hits": 28,
+          "seconds": 135
+        },
+        "direct": 46
+      },
+      {
+        "id": "lurdusaurus-freshwater",
+        "name": "Lurdusaurus (Freshwater)",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.175,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 27,
+          "seconds": 139
+        },
+        "sit": {
+          "hits": 28,
+          "seconds": 135
+        },
+        "direct": 46
+      },
+      {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 850,
+        "bleedPerHit": 0.124,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 137
+      },
+      {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "tier": "Medium",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 600,
+        "bleedPerHit": 0.16,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 50
+      },
+      {
+        "id": "psittacosaurus",
+        "name": "Psittacosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.622,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 4,
+          "seconds": 44
+        },
+        "sit": {
+          "hits": 5,
+          "seconds": 34
+        },
+        "direct": 11
+      },
+      {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 0.4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 6,
+          "seconds": 58
+        },
+        "sit": {
+          "hits": 7,
+          "seconds": 54
+        },
+        "direct": 15
+      },
+      {
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 0.28,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 10,
+          "seconds": 65
+        },
+        "sit": {
+          "hits": 11,
+          "seconds": 60
+        },
+        "direct": 22
+      },
+      {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.267,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 11,
+          "seconds": 71
+        },
+        "sit": {
+          "hits": 12,
+          "seconds": 67
+        },
+        "direct": 25
+      },
+      {
+        "id": "compsognathus",
+        "name": "Compsognathus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.4,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 2,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 11
+        },
+        "direct": 4
+      },
+      {
+        "id": "halszkaraptor",
+        "name": "Halszkaraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.4,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 2,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 11
+        },
+        "direct": 4
+      },
+      {
+        "id": "rhamphorhynchus",
+        "name": "Rhamphorhynchus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.12,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 36
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 18
+        },
+        "direct": 5
+      }
+    ]
   }
 }

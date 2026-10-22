@@ -16698,6 +16698,327 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Ein einzelner Lambeosaurus ist ein verlorenes Schaf: ängstlich, ständig rufend, auf der Suche nach der Herde. Kein anderes Tier, nur ein schlechter Tag.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Sambar deer + Sheep (flock)",
+        "labelDe": "Sambarhirsch + Schaf (Herde)",
+        "headline": "A river-hugging sambar deer herd that moves like one flock of sheep.",
+        "playsLike": "You are a passive medium herbivore in an unlimited herd where the does are dominant and court the gift-giving bucks. You always flee Apex carnivores, and a herd of 5 or fewer also flees 3+ Large ones. Against smaller hunters the one attacked plus 2 defenders form a barrier while everyone else runs. The herd flees in massive synchronised movements, pushing young, injured and elderly into the middle, and uses river crossings to escape.",
+        "setting": {
+          "label": "Along rivers and waterways",
+          "note": "Nomadic. Travels closely along waterways and uses them as an escape route, crossing back and forth to shake off predators.",
+          "habitats": [
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "sambar-deer",
+            "animal": "Sambar deer",
+            "de": "Sambarhirsch",
+            "scientific": "Rusa unicolor",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 55,
+            "role": "primary",
+            "covers": "Body and escape: a river-loving deer that flees predators through water, with does, bucks and fawns",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Sambar_%28Cervus_unicolor_unicolor%29_male.jpg/1280px-Sambar_%28Cervus_unicolor_unicolor%29_male.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Sambar_(Cervus_unicolor_unicolor)_male.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "sheep-flock",
+            "animal": "Sheep (flock)",
+            "de": "Schaf (Herde)",
+            "scientific": "Ovis aries",
+            "archetype": "goat-sheep",
+            "archetypeLabel": "Goat & sheep",
+            "archetypeDe": "Ziege & Schaf",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Herd behaviour: the flock moves as one mass, young in the middle, anxious when alone",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/1280px-Flock_of_sheep.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Keith Weller",
+                "license": "Public domain",
+                "page": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Water escape",
+            "text": "Moves along waterways precisely so it has an escape route, and may cross back and forth. Sambar deer escape predators by running into water (official inspiration)."
+          },
+          {
+            "trait": "One flock",
+            "text": "Flees 'in massive synchronous movements' with the vulnerable pushed to the centre, like a flock of sheep bunching under attack (official inspiration)."
+          },
+          {
+            "trait": "Does, bucks, fawns",
+            "text": "A deer's life, except that here the does are dominant, build nests and court submissive, gift-giving bucks."
+          },
+          {
+            "trait": "Anxious alone",
+            "text": "A solitary Lambeosaurus struggles with anxiety and looks for any hadrosaur or Iguanodon herd to join. Sheep panic when separated too."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Medium tier, 3,500 combat weight, 650 HP, sprint 1,000 held for 125 s."
+          }
+        ],
+        "notLike": [
+          "Deer stags dominate the rut; in Lambeosaurus the does are the dominant sex.",
+          "Sheep don't use water to escape; Lambeosaurus depends on it."
+        ],
+        "twist": "Dik-dik (official inspiration) for the long gazes and pair bonds that can become lifelong.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "sheep, sambar deer, dik-dik, and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 3500,
+          "maxHealth": 650,
+          "growthMinutes": 120,
+          "landSprint": 1000,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "coast",
+            "forest",
+            "hills",
+            "swamp",
+            "freshwater",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Sambar deer + Sheep (flock)",
+        "labelDe": "Sambarhirsch + Schaf (Herde)",
+        "headline": "A river-hugging sambar deer herd that moves like one flock of sheep.",
+        "playsLike": "You are a passive medium herbivore in an unlimited herd where the does are dominant and court the gift-giving bucks. You always flee Apex carnivores, and a herd of 5 or fewer also flees 3+ Large ones. Against smaller hunters the one attacked plus 2 defenders form a barrier while everyone else runs. The herd flees in massive synchronised movements, pushing young, injured and elderly into the middle, and uses river crossings to escape.",
+        "setting": {
+          "label": "Along rivers and waterways",
+          "note": "Nomadic. Travels closely along waterways and uses them as an escape route, crossing back and forth to shake off predators.",
+          "habitats": [
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "sambar-deer",
+            "animal": "Sambar deer",
+            "de": "Sambarhirsch",
+            "scientific": "Rusa unicolor",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 55,
+            "role": "primary",
+            "covers": "Body and escape: a river-loving deer that flees predators through water, with does, bucks and fawns",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Sambar_%28Cervus_unicolor_unicolor%29_male.jpg/1280px-Sambar_%28Cervus_unicolor_unicolor%29_male.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Sambar_(Cervus_unicolor_unicolor)_male.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "sheep-flock",
+            "animal": "Sheep (flock)",
+            "de": "Schaf (Herde)",
+            "scientific": "Ovis aries",
+            "archetype": "goat-sheep",
+            "archetypeLabel": "Goat & sheep",
+            "archetypeDe": "Ziege & Schaf",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Herd behaviour: the flock moves as one mass, young in the middle, anxious when alone",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/1280px-Flock_of_sheep.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Keith Weller",
+                "license": "Public domain",
+                "page": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Water escape",
+            "text": "Moves along waterways precisely so it has an escape route, and may cross back and forth. Sambar deer escape predators by running into water (official inspiration)."
+          },
+          {
+            "trait": "One flock",
+            "text": "Flees 'in massive synchronous movements' with the vulnerable pushed to the centre, like a flock of sheep bunching under attack (official inspiration)."
+          },
+          {
+            "trait": "Does, bucks, fawns",
+            "text": "A deer's life, except that here the does are dominant, build nests and court submissive, gift-giving bucks."
+          },
+          {
+            "trait": "Anxious alone",
+            "text": "A solitary Lambeosaurus struggles with anxiety and looks for any hadrosaur or Iguanodon herd to join. Sheep panic when separated too."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Medium tier, 3,500 combat weight, 650 HP, sprint 1,000 held for 125 s."
+          }
+        ],
+        "notLike": [
+          "Deer stags dominate the rut; in Lambeosaurus the does are the dominant sex.",
+          "Sheep don't use water to escape; Lambeosaurus depends on it."
+        ],
+        "twist": "Dik-dik (official inspiration) for the long gazes and pair bonds that can become lifelong.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "sheep, sambar deer, dik-dik, and creative liberty",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 3500,
+          "maxHealth": 650,
+          "growthMinutes": 120,
+          "landSprint": 1000,
+          "landSprintSeconds": 125,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 3,
+          "mapBiomes": [
+            "coast",
+            "forest",
+            "hills",
+            "swamp",
+            "freshwater",
+            "canyon"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "freshwater",
     "label": "Rivers, Lakes & Swamps",
@@ -16717,5 +17038,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

@@ -45,6 +45,10 @@ You live in a huge nomadic herd made of family pods, each led by its eldest fema
 - Lebensraum: Nomadic across open country, mud pools as waypoints. Mud wallows are key stops during migrations. Calves stay in forest 'nurseries' where adults are too big to follow.
 - Anders als die Tiere: Elephants defend calves as a group; Apatosaurus adults stay out of the forest nursery because they would trample the calves. Only 1 adult engages per attack (2 against two Apex carnivores), so there is no full-herd mob.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du ein älterer Bulle, der hinten mit der Herde zieht oder sich irgendwann abspaltet. Afrikanische Elefantenbullen leben genauso.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Steep Run, Black Fern Hills, Mudflats, Coastland Swamp, Crag Bluffs, Redwoods

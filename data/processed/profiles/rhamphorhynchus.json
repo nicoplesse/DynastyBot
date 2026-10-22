@@ -19475,17 +19475,17 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Rhamphorhynchus has 2 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Rhamphorhynchus has 1 high-priority matchup where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
-        "id": "tropeognathus-coast",
-        "name": "Tropeognathus (Coast)",
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
         "family": "tropeognathus",
         "direction": "threat",
         "band": "severe",
         "kind": "predator",
-        "headline": "Tropeognathus (Coast) can create a very narrow escape window",
-        "summary": "Tropeognathus (Coast) is linked by a specific profile rule. Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Coast) vs 1 Rhamphorhynchus: the Tropeognathus (Coast) side wins in about 1 s with 100% of its health left.",
+        "headline": "Tropeognathus can create a very narrow escape window",
+        "summary": "Tropeognathus is linked by a specific profile rule. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus vs 1 Rhamphorhynchus: the Tropeognathus side wins in about 1 s with 100% of its health left.",
         "score": 98,
         "visible": true,
         "intent": {
@@ -19502,31 +19502,34 @@
           "attackerDurationSeconds": 181.818,
           "targetDurationSeconds": 133,
           "durationMarginPct": 36.7,
-          "label": "Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters."
+          "label": "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "tallbrush-coasts",
+            "kelp-vale",
             "coastal-bluffs",
             "volcano-islands",
+            "abyssal-depths",
             "palm-islands",
             "big-tree-overlook",
             "twisted-forest",
             "stillwater-bog",
             "mudflats",
+            "stonebed-shoal",
             "coastland-swamp",
             "east-passage"
           ],
-          "overlap": 0.435,
-          "label": "10 shared mapped areas make contact plausible."
+          "overlap": 0.565,
+          "label": "13 shared mapped areas make contact plausible."
         },
         "facts": [
           "The profile names this playable as prey or a target.",
-          "Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters.",
-          "4 Tropeognathus (Coast) vs 1 Rhamphorhynchus: the Tropeognathus (Coast) side wins in about 1 s with 100% of its health left.",
-          "10 shared mapped areas make contact plausible.",
-          "Tropeognathus (Coast)'s bleed builds faster than Rhamphorhynchus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.",
+          "4 Tropeognathus vs 1 Rhamphorhynchus: the Tropeognathus side wins in about 1 s with 100% of its health left.",
+          "13 shared mapped areas make contact plausible.",
+          "Tropeognathus's bleed builds faster than Rhamphorhynchus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
         ],
         "fight": {
           "attackers": 4,
@@ -19563,7 +19566,7 @@
               "seconds": 1
             }
           },
-          "label": "4 Tropeognathus (Coast) vs 1 Rhamphorhynchus: the Tropeognathus (Coast) side wins in about 1 s with 100% of its health left.",
+          "label": "4 Tropeognathus vs 1 Rhamphorhynchus: the Tropeognathus side wins in about 1 s with 100% of its health left.",
           "detail": "4 attackers vs 1 defender",
           "attackerCombatWeight": 2000,
           "targetCombatWeight": 500,
@@ -19573,164 +19576,37 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "4 Tropeognathus (Coast) vs 1 Rhamphorhynchus: the Tropeognathus (Coast) side wins in about 1 s with 100% of its health left.",
+            "label": "4 Tropeognathus vs 1 Rhamphorhynchus: the Tropeognathus side wins in about 1 s with 100% of its health left.",
             "attackers": 4,
             "defenders": 1
           }
         },
-        "attackerId": "tropeognathus-coast",
+        "attackerId": "tropeognathus",
         "targetId": "rhamphorhynchus",
         "core": {
           "direction": "threat",
-          "attackerName": "Tropeognathus (Coast)",
+          "attackerName": "Tropeognathus",
           "targetName": "Rhamphorhynchus",
           "chaseVerdict": "approach-advantage",
-          "chaseLabel": "Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters.",
+          "chaseLabel": "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.",
           "baseScore": 80,
           "scoreCap": null,
           "conditional": false,
           "explicit": true,
           "relationKind": null,
-          "summaryLead": "Tropeognathus (Coast) is linked by a specific profile rule."
+          "summaryLead": "Tropeognathus is linked by a specific profile rule."
         },
         "tags": [],
         "evidence": [
           {
-            "profileId": "tropeognathus-coast",
-            "profileName": "Tropeognathus (Coast)",
+            "profileId": "tropeognathus",
+            "profileName": "Tropeognathus",
             "section": "Preferred Prey & Diet",
             "text": "Tropeognathus do not hunt Rhamphorhynchus, but will aggress them away from their food."
           },
           {
-            "profileId": "tropeognathus-coast",
-            "profileName": "Tropeognathus (Coast)",
-            "section": "Cross-Species Interaction",
-            "text": "Though Tropeognathus will not hunt Rhamphorhynchus, they may kill them (even accidentally) if this smaller pterosaur does not respect their boundaries with food."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "tropeognathus-ocean",
-        "name": "Tropeognathus (Ocean)",
-        "family": "tropeognathus",
-        "direction": "threat",
-        "band": "severe",
-        "kind": "predator",
-        "headline": "Tropeognathus (Ocean) can create a very narrow escape window",
-        "summary": "Tropeognathus (Ocean) is linked by a specific profile rule. Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Ocean) vs 1 Rhamphorhynchus: the Tropeognathus (Ocean) side wins in about 1 s with 100% of its health left.",
-        "score": 98,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1300,
-          "targetSpeed": 600,
-          "speedMarginPct": 116.7,
-          "attackerDurationSeconds": 181.818,
-          "targetDurationSeconds": 133,
-          "durationMarginPct": 36.7,
-          "label": "Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "abyssal-depths",
-            "stonebed-shoal"
-          ],
-          "overlap": 0.174,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters.",
-          "4 Tropeognathus (Ocean) vs 1 Rhamphorhynchus: the Tropeognathus (Ocean) side wins in about 1 s with 100% of its health left.",
-          "4 shared mapped areas make contact plausible.",
-          "Tropeognathus (Ocean)'s bleed builds faster than Rhamphorhynchus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-        ],
-        "fight": {
-          "attackers": 4,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 180,
-            "defenderHit": 0,
-            "attackerBurst": 260,
-            "defenderBurst": 0,
-            "attackerHitsToKill": 3,
-            "defenderHitsToKill": null,
-            "attackerDps": 106.8,
-            "defenderDps": 0,
-            "attackerTimeToKill": 4,
-            "defenderTimeToKill": null,
-            "attackerBleed": 0.312,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 1,
-            "attackersLeft": 4,
-            "defendersLeft": 0,
-            "attackerHpShare": 1,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 1
-            }
-          },
-          "label": "4 Tropeognathus (Ocean) vs 1 Rhamphorhynchus: the Tropeognathus (Ocean) side wins in about 1 s with 100% of its health left.",
-          "detail": "4 attackers vs 1 defender",
-          "attackerCombatWeight": 2000,
-          "targetCombatWeight": 500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "4 Tropeognathus (Ocean) vs 1 Rhamphorhynchus: the Tropeognathus (Ocean) side wins in about 1 s with 100% of its health left.",
-            "attackers": 4,
-            "defenders": 1
-          }
-        },
-        "attackerId": "tropeognathus-ocean",
-        "targetId": "rhamphorhynchus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Tropeognathus (Ocean)",
-          "targetName": "Rhamphorhynchus",
-          "chaseVerdict": "approach-advantage",
-          "chaseLabel": "Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters.",
-          "baseScore": 80,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": true,
-          "relationKind": null,
-          "summaryLead": "Tropeognathus (Ocean) is linked by a specific profile rule."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "tropeognathus-ocean",
-            "profileName": "Tropeognathus (Ocean)",
-            "section": "Preferred Prey & Diet",
-            "text": "Tropeognathus do not hunt Rhamphorhynchus, but will aggress them away from their food."
-          },
-          {
-            "profileId": "tropeognathus-ocean",
-            "profileName": "Tropeognathus (Ocean)",
+            "profileId": "tropeognathus",
+            "profileName": "Tropeognathus",
             "section": "Cross-Species Interaction",
             "text": "Though Tropeognathus will not hunt Rhamphorhynchus, they may kill them (even accidentally) if this smaller pterosaur does not respect their boundaries with food."
           }
@@ -20372,39 +20248,9 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "tropeognathus-coast": {
-        "id": "tropeognathus-coast",
-        "name": "Tropeognathus (Coast)",
-        "cw": 2000,
-        "hp": 450,
-        "armor": 1,
-        "dps": 26.71,
-        "primary": {
-          "label": "Chomp",
-          "damage": 45,
-          "cooldown": 1.75
-        },
-        "burst": {
-          "label": "Ramming Rampage",
-          "damage": 65,
-          "cooldown": 20,
-          "situational": false
-        },
-        "attacks": [
-          "Chomp",
-          "Ramming Rampage"
-        ],
-        "bleedPerSecond": 0.078,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 4,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
-        "engagementUnlimited": false
-      },
-      "tropeognathus-ocean": {
-        "id": "tropeognathus-ocean",
-        "name": "Tropeognathus (Ocean)",
+      "tropeognathus": {
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
         "cw": 2000,
         "hp": 450,
         "armor": 1,
@@ -20771,6 +20617,333 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Solo bist du ein Madenhacker, der mit einem Sauropoden zieht. Fischen und Aas musst du dann selbst finden, das Tier bleibt.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Oxpecker + Parakeet",
+        "labelDe": "Madenhacker + Sittich",
+        "headline": "An oxpecker riding the sauropods, living in a noisy parakeet colony that copies every sound.",
+        "playsLike": "You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200 s). You don't hunt players: only fish, carrion and critters, and you flee if aggressed while scavenging. You clean parasites from sauropods and ride them, and up to 4 of you may stay latched on a sauropod companion while it's being hunted. Your colony has resident males with harems, and you mimic every sound you hear. As a last resort you can 'sting' an attacker, which leaves it hungry, thirsty and itchy but kills you within 30 minutes.",
+        "setting": {
+          "label": "Wherever the sauropods roam, plus fishing waters",
+          "note": "Nomadic. Roosts on sauropod companions (Amargasaurus, Apatosaurus, Argentinosaurus), which shelter its chicks, and fishes and scavenges nearby.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "oxpecker",
+            "animal": "Oxpecker",
+            "de": "Madenhacker",
+            "scientific": "Buphagus spp.",
+            "archetype": "songbird",
+            "archetypeLabel": "Pigeon, parrot & songbird",
+            "archetypeDe": "Taube, Sittich & Singvogel",
+            "share": 60,
+            "role": "primary",
+            "covers": "Role: a tiny cleaner that rides big herbivores, picks off parasites and has a taste for wounds",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Buphagus_erythrorhynchus00.jpg",
+              "focus": "50% 15%",
+              "credit": {
+                "artist": "Gerrie van Vuuren",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Buphagus_erythrorhynchus00.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "parakeet",
+            "animal": "Parakeet",
+            "de": "Sittich",
+            "scientific": "Psittacula / Melopsittacus",
+            "archetype": "songbird",
+            "archetypeLabel": "Pigeon, parrot & songbird",
+            "archetypeDe": "Taube, Sittich & Singvogel",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Social life: a noisy colony with harems, preening and begging, that mimics every sound",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/African_Rose-ringed_Parakeet%2C_Tendaba%2C_Gambia_1.jpg/1280px-African_Rose-ringed_Parakeet%2C_Tendaba%2C_Gambia_1.jpg",
+              "focus": "50% 4%",
+              "credit": {
+                "artist": "danielskatz",
+                "license": "CC BY 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:African_Rose-ringed_Parakeet,_Tendaba,_Gambia_1.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Cleaner and rider",
+            "text": "Mutualism with sauropods: cleans their parasites and uses them as roosts for its chicks. Oxpeckers and cattle egrets ride big grazers the same way (official inspiration: cattle egret)."
+          },
+          {
+            "trait": "Blood nod",
+            "text": "The 'Rhamph sting' latches on and drains the victim's condition, a nod to vampire bats (official inspiration) and to oxpeckers that peck at wounds."
+          },
+          {
+            "trait": "Mimic",
+            "text": "'Naturally mimic all sounds that they hear'. Parakeets do the same (official inspiration)."
+          },
+          {
+            "trait": "Colony with harems",
+            "text": "Unlimited colonies of female groups with resident males, bonding by preening and begging each other for food."
+          },
+          {
+            "trait": "Fisher",
+            "text": "Fishes from the air and bobs in the water, grebe-like (official inspiration)."
+          }
+        ],
+        "notLike": [
+          "Oxpeckers call alarms to warn their hosts; Rhamphorhynchus goes silent and flies away when a carnivore approaches a herd.",
+          "Parakeets eat seeds and fruit; Rhamphorhynchus lives on fish, carrion and critters."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "flying",
+            "label": "Flier",
+            "de": "Flieger"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "vampire bats, parakeets, Clark’s grebe, cattle egret, and creative liberty",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Aerial",
+          "combatWeight": 500,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 600,
+          "landSprintSeconds": 133,
+          "waterSprint": null,
+          "airSprint": 1300,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 1,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "ocean",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Oxpecker + Parakeet",
+        "labelDe": "Madenhacker + Sittich",
+        "headline": "An oxpecker riding the sauropods, living in a noisy parakeet colony that copies every sound.",
+        "playsLike": "You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200 s). You don't hunt players: only fish, carrion and critters, and you flee if aggressed while scavenging. You clean parasites from sauropods and ride them, and up to 4 of you may stay latched on a sauropod companion while it's being hunted. Your colony has resident males with harems, and you mimic every sound you hear. As a last resort you can 'sting' an attacker, which leaves it hungry, thirsty and itchy but kills you within 30 minutes.",
+        "setting": {
+          "label": "Wherever the sauropods roam, plus fishing waters",
+          "note": "Nomadic. Roosts on sauropod companions (Amargasaurus, Apatosaurus, Argentinosaurus), which shelter its chicks, and fishes and scavenges nearby.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "oxpecker",
+            "animal": "Oxpecker",
+            "de": "Madenhacker",
+            "scientific": "Buphagus spp.",
+            "archetype": "songbird",
+            "archetypeLabel": "Pigeon, parrot & songbird",
+            "archetypeDe": "Taube, Sittich & Singvogel",
+            "share": 60,
+            "role": "primary",
+            "covers": "Role: a tiny cleaner that rides big herbivores, picks off parasites and has a taste for wounds",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Buphagus_erythrorhynchus00.jpg",
+              "focus": "50% 15%",
+              "credit": {
+                "artist": "Gerrie van Vuuren",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Buphagus_erythrorhynchus00.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "parakeet",
+            "animal": "Parakeet",
+            "de": "Sittich",
+            "scientific": "Psittacula / Melopsittacus",
+            "archetype": "songbird",
+            "archetypeLabel": "Pigeon, parrot & songbird",
+            "archetypeDe": "Taube, Sittich & Singvogel",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Social life: a noisy colony with harems, preening and begging, that mimics every sound",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/African_Rose-ringed_Parakeet%2C_Tendaba%2C_Gambia_1.jpg/1280px-African_Rose-ringed_Parakeet%2C_Tendaba%2C_Gambia_1.jpg",
+              "focus": "50% 4%",
+              "credit": {
+                "artist": "danielskatz",
+                "license": "CC BY 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:African_Rose-ringed_Parakeet,_Tendaba,_Gambia_1.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Cleaner and rider",
+            "text": "Mutualism with sauropods: cleans their parasites and uses them as roosts for its chicks. Oxpeckers and cattle egrets ride big grazers the same way (official inspiration: cattle egret)."
+          },
+          {
+            "trait": "Blood nod",
+            "text": "The 'Rhamph sting' latches on and drains the victim's condition, a nod to vampire bats (official inspiration) and to oxpeckers that peck at wounds."
+          },
+          {
+            "trait": "Mimic",
+            "text": "'Naturally mimic all sounds that they hear'. Parakeets do the same (official inspiration)."
+          },
+          {
+            "trait": "Colony with harems",
+            "text": "Unlimited colonies of female groups with resident males, bonding by preening and begging each other for food."
+          },
+          {
+            "trait": "Fisher",
+            "text": "Fishes from the air and bobs in the water, grebe-like (official inspiration)."
+          }
+        ],
+        "notLike": [
+          "Oxpeckers call alarms to warn their hosts; Rhamphorhynchus goes silent and flies away when a carnivore approaches a herd.",
+          "Parakeets eat seeds and fruit; Rhamphorhynchus lives on fish, carrion and critters."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "flying",
+            "label": "Flier",
+            "de": "Flieger"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          },
+          {
+            "id": "gentle",
+            "label": "Gentle & peaceful",
+            "de": "Friedlich"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "vampire bats, parakeets, Clark’s grebe, cattle egret, and creative liberty",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Aerial",
+          "combatWeight": 500,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 600,
+          "landSprintSeconds": 133,
+          "waterSprint": null,
+          "airSprint": 1300,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 1,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "ocean",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "plains",
     "label": "Plains & Savanna",
@@ -20790,5 +20963,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

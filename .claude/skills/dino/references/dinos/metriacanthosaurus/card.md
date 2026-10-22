@@ -51,6 +51,10 @@ You are a medium nocturnal carnivore living in a mated pair (a 'quiver'). Your f
 - Anders als die Tiere: Gila monsters are slow; Metriacanthosaurus sprints like any medium theropod. Poison dart frogs are tiny; Metriacanthosaurus is a Medium-tier predator.
 - Besonderheit: It fixes Therizinosaurus with a shoebill stork's patient stare (official inspiration), and it has a black-widow ending: the female eats her mate for her last clutch.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Metriacanthosaurus kommen laut Profil allein hervorragend zurecht. Ein Paar ändert am Leben der Gila-Krustenechse nichts.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Wind Tunnels

@@ -1,4 +1,5 @@
-import { type AnalogFacts, type ProfileAnalog } from './api';
+import { type AnalogFacts, type PlayMode, type ProfileAnalog, type ProfileModes } from './api';
+import { PlayModeSwitch, modeLabels, setPlayMode, verdictLabels } from './PlayMode';
 import './plays-like.css';
 
 function go(path: string) { window.location.hash = `#${path}`; }
@@ -17,13 +18,28 @@ function factTiles(facts: AnalogFacts) {
   return tiles;
 }
 
-export function PlaysLikeView({ analog, name }: { analog: ProfileAnalog; name: string }) {
+// Says whether the solo/group switch changes this playable's animal, and what the other mode plays like.
+function ModeNote({ modes, mode }: { modes: ProfileModes; mode: PlayMode }) {
+  const other: PlayMode = mode === 'solo' ? 'group' : 'solo';
+  const changed = modes.changes;
+  return <div className={`pl-mode verdict-${modes.verdict}`} lang="de">
+    <PlayModeSwitch compact />
+    <div className="pl-mode-copy">
+      <strong>{changed ? <>{modeLabels[changed]}: <em>{verdictLabels[modes.verdict]}</em></> : <>Solo und Gruppe: <em>{verdictLabels.same}</em></>}</strong>
+      <p>{modes.note}</p>
+      {changed && <button type="button" onClick={() => setPlayMode(other)}>{modeLabels[other]} spielt sich wie {modes[other].analog.labelDe} →</button>}
+    </div>
+  </div>;
+}
+
+export function PlaysLikeView({ analog, name, modes, mode }: { analog: ProfileAnalog; name: string; modes: ProfileModes | null; mode: PlayMode }) {
   const primary = analog.analogs[0];
   return <section className="plays-like" id="plays-like">
     <div className="detail-section-title"><span>≈</span><h2>Plays Like</h2></div>
+    {modes && <ModeNote modes={modes} mode={mode} />}
     <div className="pl-brief">
       <div className="pl-brief-copy">
-        <span className="source-kicker">REAL-ANIMAL ANALOG · {analog.analogs.length > 1 ? 'MIX OF TWO' : 'ONE ANIMAL'}</span>
+        <span className="source-kicker">REAL-ANIMAL ANALOG · {analog.analogs.length > 1 ? 'MIX OF TWO' : 'ONE ANIMAL'}{modes?.[mode].own ? ` · ${mode === 'solo' ? 'SOLO' : 'GROUP'}` : ''}</span>
         <h3>{name} plays like <em>{analog.label}</em></h3>
         <p className="pl-de" lang="de">{analog.labelDe}</p>
         <p className="pl-headline">{analog.headline}</p>

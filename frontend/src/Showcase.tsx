@@ -1,4 +1,4 @@
-import { api, type AnalogAnimal, type ProcessedProfile } from './api';
+import { api, type AnalogAnimal, type ProcessedProfile, type ProfileAnalog } from './api';
 import './showcase.css';
 
 function shortArtist(artist: string) {
@@ -23,9 +23,9 @@ function AnimalTile({ analog, index, onOpen }: { analog: AnalogAnimal; index: nu
 
 // Profile header gallery: the real animal it mostly plays like, the second animal when the profile
 // is a mix, then Dynasty's in-game title card, so the choice "which animal do I want to play" is
-// made from the first screen.
-export function ProfileShowcase({ profile, onOpen }: { profile: ProcessedProfile; onOpen: (url: string) => void }) {
-  const animals = profile.analog?.analogs || [];
+// made from the first screen. `analog` is the one for the current solo/group mode.
+export function ProfileShowcase({ profile, analog, onOpen }: { profile: ProcessedProfile; analog: ProfileAnalog | null; onOpen: (url: string) => void }) {
+  const animals = analog?.analogs || [];
   const ingameUrl = profile.ingame?.file ? api.imageUrl(profile.id, profile.ingame.file) : null;
   const layout = `animals-${animals.length}${ingameUrl ? '' : ' no-ingame'}`;
   return <div className={`showcase-grid ${layout}`}>

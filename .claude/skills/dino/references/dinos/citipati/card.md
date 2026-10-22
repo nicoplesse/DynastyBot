@@ -50,6 +50,10 @@ You are a medium, very noisy and sociable herbivore in a flock built from harems
 - Lebensraum: Clearings and open land beside big calm herbivores. Prefers clearings and open land where danger can be seen coming. Nomadic, often travels with slow sauropods, loves sand baths, water baths and sunbathing.
 - Anders als die Tiere: Chickens can't hold off predators; up to 4 harem members can gang up on a solo or paired Medium-or-smaller predator.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ungebunden bist du ein Hahn oder eine Henne ohne Harem, die sich einer fremden Herde anschließt. Das bleibt ein Huhn, nur ohne eigenen Hof.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Big Tree Overlook, Cedrus Forest, Black Fern Hills, Stillwater Bog, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

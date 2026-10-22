@@ -59,6 +59,24 @@ You are a large semi-aquatic carnivore in a 'float' of up to 3: one female with 
 - Anders als die Tiere: Muggers are solitary; Sarcosuchus lives in affectionate trios that nuzzle and gift each other fish. Jacanas are small birds; they only explain the family arrangement.
 - Besonderheit: The Bornean crocodile is its named inspiration; the mugger is the closest well-known relative in lifestyle.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Das Blatthühnchen steht nur für die Familie aus einem Weibchen und bis zu zwei Männchen. Allein bleibt davon nichts, übrig ist das Sumpfkrokodil, das von Gewässer zu Gewässer zieht.
+
+**Solo spielt er sich wie:**
+**Sumpfkrokodil (Mugger crocodile)**: A lone mugger crocodile on the move: it hops from water to water in search of company, gives way to every float and every Deinosuchus, and walks overland at night to hunt.
+
+Solo you travel more often, keen to find companionship. You ignore other loners unless they crowd your space, always back down from a float of 2 or more, and leave the POI for safer water if you meet any Deinosuchus. You hunt the same prey as a float: from the water up to Apex tier, and on land at night up to solitary Large tier. In the dry season you coat yourself in mud and hold a prized mud pool. A float of just 2 may take you in.
+
+- Sumpfkrokodil / Mugger crocodile – 100 %: Everything solo: a nomadic marsh croc that hops between waters, walks overland at night and wallows in mud
+- Lebensraum: Swamps, coastal passages and forest rivers. Nomadic between water bodies with only short stops (15 min) in small ponds. Defends prized mud pools in the dry season and ventures onto land at night.
+- Anders als die Tiere: Muggers are content alone; a solo Sarcosuchus is always looking for a float to join.
+- Besonderheit: The Bornean crocodile is its named inspiration; the mugger is the closest well-known relative in lifestyle.
+
+Solo bist du ein Sumpfkrokodil auf Wanderschaft. Du ziehst häufiger von Gewässer zu Gewässer als eine Float, weil du Gesellschaft suchst. Andere Einzelgänger ignorierst du, solange sie dir nicht zu nahe kommen. Vor jeder Float mit zwei oder mehr Tieren weichst du, und triffst du einen Deinosuchus, verlässt du den POI. Jagen darfst du dasselbe wie in der Gruppe: aus dem Wasser bis Apex, nachts an Land bis zu einzelnen Large-Tieren. In der Trockenzeit suhlst du dich im Schlamm und hältst ein gutes Schlammloch. Eine Float aus nur zwei Tieren nimmt dich vielleicht auf.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Jagd:** Steep Run, Cedrus Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, Redwoods, Wollemi Forest

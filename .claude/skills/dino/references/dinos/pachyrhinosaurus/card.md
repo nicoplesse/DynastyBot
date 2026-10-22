@@ -48,6 +48,10 @@ You are a large, docile ceratopsian in an unlimited 'migration' guided by the el
 - Lebensraum: Long migrations between feeding areas and nesting grounds. Nomadic, migrating long distances in search of food. Males become territorial around food sources at the nesting grounds.
 - Anders als die Tiere: Musk oxen live in small herds; Pachyrhinosaurus migrations are unlimited and mixed with other ceratopsians. Caribou flee rather than form walls.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du ein nervöser Einzelwanderer, der sich einer Wanderung anschließen will, wie ein versprengtes Karibu. Kein anderes Tier.
+
 ## Karte & POIs
 
 - **Nisten + Balz:** Dry Fang Canyon, Cedrus Forest, Wollemi Forest

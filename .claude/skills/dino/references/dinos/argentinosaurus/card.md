@@ -57,6 +57,25 @@ You are the heaviest and slowest-walking animal on the map: 9,000 combat weight,
 - Anders als die Tiere: Giraffes are fast runners; Argentinosaurus is the slowest land-walker on the roster. Gorillas live in forests; Argentinosaurus avoids them.
 - Besonderheit: Scale it up: a blue-whale-sized land animal that simply walks through most problems.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Allein fällt das Familienleben des Silberrückens weg, übrig bleibt die Giraffe, ein Riese, der über offenes Land zieht. Der Gorilla steht nur noch für die tiefe Einsamkeit und die Suche nach einer Familie.
+
+**Solo spielt er sich wie:**
+**Giraffe + Gorilla (Silberrücken) (Giraffe + Gorilla (silverback troop))**: A lone giraffe giant that cannot bear being alone: it seeks the company of any sauropod and even follows carnivores, calling sadly when they chase it off.
+
+Alone, an Argentinosaurus feels a deep sense of loneliness. You seek out any company you can find: your own kind, other sauropods, or other dinosaurs altogether. You may follow carnivores below Apex tier just for interaction, and when they aggress you away you call out sadly. As a bull alone you wear dull, desaturated colours. You group with other sauropods and are more sociable than in a tower or village. You still fear almost nothing but pairs of Apex carnivores, never panic-flee and stand your ground.
+
+- Giraffe / Giraffe – 70 %: Body and life alone: a towering browser roaming open country, avoiding dense forest and deep water
+- Gorilla (Silberrücken) / Gorilla (silverback troop) – 30 %: Heart: a deeply social gentle giant that grieves, grows lonely and searches for a family
+- Lebensraum: Open country with food and water, never dense forest. Sedentary: stays until food runs out or Apex predators push it on. Struggles in forests, loves soaking in pools it can stand in, avoids water too deep to touch the bottom.
+- Anders als die Tiere: Lone giraffe bulls are content on their own; a solitary Argentinosaurus grows depressed if alone for too long. Giraffes are fast runners; Argentinosaurus is the slowest land-walker on the roster.
+- Besonderheit: Scale it up: a blue-whale-sized land animal that simply walks through most problems.
+
+Allein bist du eine riesige Giraffe, die das Alleinsein kaum erträgt. Du suchst jede Gesellschaft, die du finden kannst: Artgenossen, andere Sauropoden oder ganz andere Dinosaurier. Du folgst sogar Fleischfressern unter Apex, nur um nicht allein zu sein, und rufst traurig, wenn sie dich verjagen. Als Bulle trägst du allein matte, blasse Farben. Fürchten musst du fast nichts außer Apex-Paaren, und du fliehst nie, du bleibst stehen. Dein Ziel bleibt eine Village mit Geschwistern oder ein Tower.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Nisten + Balz:** Dry Fang Canyon, Black Fern Hills, Coastland Swamp, Crag Bluffs, Redwoods

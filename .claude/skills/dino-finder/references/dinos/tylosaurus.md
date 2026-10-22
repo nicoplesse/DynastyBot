@@ -54,6 +54,10 @@ You are an Apex aquatic carnivore. Females live in matrilines of up to 6 related
 - Anders als die Tiere: Orcas answer to no one in the sea; Tylosaurus leaves adult Spinosaurus and Deinosuchus alone unless it is desperately hungry.
 - Besonderheit: Leopard seal (official inspiration) for the lone, edgy ambusher at the shoreline.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Einzelne Tylosaurus sind laut Profil ängstlicher oder gereizter, bleiben aber Orcas: Eine Kuh sucht eine Matrilinie, ein Bulle zieht allein. Kein anderes Tier.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Kelp Vale, Coastal Bluffs, Volcano Islands, Abyssal Depths, Palm Islands, Big Tree Overlook, Twisted Forest, Stillwater Bog, Mudflats, Stonebed Shoal

@@ -53,6 +53,25 @@ You are a small, extremely aggressive raptor in a 'dynasty' ruled by the Mother,
 - Lebensraum: Nomad of open and wooded ground. Diurnal hunter and nomadic. Some individuals stay solitary and trail large herds or Apex carnivores to scavenge.
 - Anders als die Tiere: Spotted hyenas are big bone-crushers; Deinonychus is small and wins only through numbers. Mongoose groups are cooperative; Deinonychus females are constantly scheming against each other.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Die Tüpfelhyäne lebt vom lauten, weiblich geführten Clan. Solo ist davon nichts übrig: Du bist still, vorsichtig und lebst vor allem von Aas, indem du Herden und Apex-Räubern folgst. Das ist eine Schabrackenhyäne, die allein auf Nahrungssuche geht, mit der Geduld eines Schakals.
+
+**Solo spielt er sich wie:**
+**Schabrackenhyäne + Schabrackenschakal (Brown hyena + Black-backed jackal)**: A lone brown hyena with a jackal's patience: quiet, cautious and clever, trailing the herds and the Apex hunters for whatever they leave behind.
+
+Solo you are quieter and more cautious than any Deinonychus in a troop or dynasty. You avoid unnecessary conflict and rely on stealth, patience and careful observation. You spend a lot of time watching other species and honing your hunting through trial and error, but scavenging is how you usually eat: alone or as a pair you may try to scavenge from any predator's kill, and you hunt only up to Medium tier. Many loners trail large herds or Apex carnivores for scraps. Orphans and exiles are anxious and often call out when alone. A solitary male may join a dynasty as a mate or band together with other males into a troop; a solitary female can only start her own dynasty with a male.
+
+- Schabrackenhyäne / Brown hyena – 55 %: Solo life: a shy, quiet hyena that forages alone and lives mostly on what others leave
+- Schabrackenschakal / Black-backed jackal – 45 %: Strategy: trails the big hunters at a distance, watches, learns and darts in for scraps
+- Lebensraum: Behind herds and Apex hunters, across open and wooded ground. Nomadic and diurnal. A loner follows large herds or Apex carnivores at a distance and waits for scraps.
+- Anders als die Tiere: Brown hyenas forage mostly at night; Deinonychus is a diurnal hunter. Jackals live in lifelong pairs; a solo Deinonychus stays alone until it joins a dynasty or a troop.
+- Besonderheit: Lonely orphans and exiles call out often, more like a jackal's wailing than a hyena's whoop.
+
+Solo bist du keine Tüpfelhyäne im Clan, sondern eine Schabrackenhyäne mit der Geduld eines Schabrackenschakals. Du bist still und vorsichtig, gehst unnötigem Streit aus dem Weg und verlässt dich auf Tarnung, Geduld und genaues Beobachten. Du schaust anderen Arten lange zu und lernst durch Versuch und Irrtum, satt wirst du aber meist durch Aas: Allein oder zu zweit darfst du dich an jedem Räuberfang versuchen, jagen darfst du nur bis Medium. Viele Einzelgänger folgen großen Herden oder Apex-Räubern auf Abstand. Jagen und Kadaver streitig machen geht nur tagsüber. Vor Quetzalcoatlus und Hatzegopteryx fliehst du, Latenivenatrix meidest du allein. Als Männchen kannst du später einer Dynastie oder einem Troop beitreten, als Weibchen gründest du nur mit einem Männchen eine eigene Dynastie.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Volcano Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Cliffedge Falls, Redwoods, Wind Tunnels

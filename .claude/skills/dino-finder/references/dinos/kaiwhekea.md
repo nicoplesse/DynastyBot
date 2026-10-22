@@ -48,6 +48,10 @@ You are a medium aquatic carnivore in a 'bale' of up to 6 females and 2 males. Y
 - Lebensraum: Open sea, coasts and beaches. Nomadic aquatic. Swims near the surface and basks in shallows or briefly on land.
 - Anders als die Tiere: Sea turtles don't hunt big prey; Kaiwhekea takes up to Large tier. Sea lions haul out on land for long stretches; Kaiwhekea only basks on land for a short time.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Kaiwhekea verbringen laut Profil gern Zeit allein, sonnen sich und schwimmen verstreut, wie Seelöwen am Strand. Die Jagdgrenze hängt nicht an der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Kelp Vale, Coastal Bluffs, Volcano Islands, Abyssal Depths, Palm Islands, Big Tree Overlook, Twisted Forest, Stillwater Bog, Mudflats, Stonebed Shoal, Coastland Swamp

@@ -52,6 +52,24 @@ You are a Tiny, quick semi-aquatic herbivore (water sprint 1,350) living in an u
 - Lebensraum: Ponds, lakes, rivers and coasts. Sedentary semi-aquatic. Skims the water for lakeweed, small fish and roots, and seeks protection from larger herbivores such as Deinocheirus and Lurdusaurus when separated from the raft.
 - Anders als die Tiere: Mallards escape by flying; Halszkaraptor can't fly and relies on its swimming speed and bigger herbivore friends.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Allein fehlt dir der Raft, der Nester verteidigt und Junge gemeinsam aufzieht. Du bist dann extrem schreckhaft und suchst Schutz bei Lurdusaurus oder Deinocheirus. Das ist der Kuhreiher, der neben Flusspferden und Büffeln lebt. Die Stockente bleibt, die Elster fällt weg.
+
+**Solo spielt er sich wie:**
+**Stockente + Kuhreiher (Mallard + Cattle egret)**: A lost duckling with a cattle egret's trick: extremely flighty alone, it sticks close to a Lurdusaurus or Deinocheirus until it finds a raft again.
+
+Alone you struggle to survive, because you are deeply social by nature. Your one goal is to find a raft to join, or failing that, temporary protection from the much larger Lurdusaurus or Deinocheirus. Without your raft or other species to group with you are extremely flighty and flee almost every predator. You still skim the water for lakeweed, small fish and roots. When you do find a raft, you bathe in mud before it accepts you.
+
+- Stockente / Mallard – 60 %: Body and goal: a small, flighty water bird that skims for food and wants nothing more than its raft back
+- Kuhreiher / Cattle egret – 40 %: Survival: sticks close to a big herbivore, as egrets keep beside hippos and buffalo
+- Lebensraum: Ponds, lakes, rivers and coasts. Sedentary semi-aquatic. Skims the water for lakeweed, small fish and roots, and seeks protection from larger herbivores such as Deinocheirus and Lurdusaurus when separated from the raft.
+- Anders als die Tiere: Cattle egrets follow big animals for the insects they stir up; Halszkaraptor wants their protection. Mallards and egrets can fly away; Halszkaraptor can only swim or run.
+
+Allein bist du ein verlorenes Entenküken mit dem Trick eines Kuhreihers. Ohne Raft hast du es schwer, denn du bist durch und durch gesellig. Du suchst nur eines: einen Raft, dem du dich anschließen kannst. Bis dahin bleibst du dicht bei einem großen Lurdusaurus oder Deinocheirus, wie ein Kuhreiher neben dem Flusspferd. Ohne Raft oder großen Beschützer bist du extrem schreckhaft und fliehst vor fast jedem Räuber. Du filterst weiter Seegras, kleine Fische und Wurzeln aus dem Wasser. Findest du einen Raft, nimmst du erst ein Schlammbad, bevor er dich aufnimmt.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, Redwoods, Wind Tunnels, Wollemi Forest

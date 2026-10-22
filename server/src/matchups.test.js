@@ -18,7 +18,7 @@ test('organic matchup map covers every profile with inspectable evidence and bou
   const ids = new Set(profiles.map(profile => profile.id));
   const familyOf = new Map(profiles.map(profile => [profile.id, profile.variant?.parentId || profile.id]));
 
-  assert.equal(profiles.length, 66);
+  assert.equal(profiles.length, 65);
   assert.deepEqual(Object.keys(map).sort(), [...ids].sort());
 
   for (const profile of profiles) {

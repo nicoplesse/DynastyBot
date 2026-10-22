@@ -48,6 +48,10 @@ You are a large carnivore in a 'drove' of up to 5, with up to 3 in an engagement
 - Anders als die Tiere: Wild boars are omnivores that rarely hunt large animals; Pycnonemosaurus is a pure predator. Lions spend most of the day asleep; Pycnonemosaurus is always on the move.
 - Besonderheit: Bison (official inspiration) for the shoving bulk.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Einzelne Pycnonemosaurus behalten laut Profil ihr Verhalten, und alte Keiler leben ohnehin oft allein. Nur die wilde Unerschrockenheit gibt es erst in der Drove.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Steep Run, Cedrus Forest, Stillwater Bog, Cliffedge Falls, Crag Bluffs, Wind Tunnels, Hollow Hills

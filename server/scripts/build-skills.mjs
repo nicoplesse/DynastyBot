@@ -77,6 +77,21 @@ function analogLines(analog) {
   return lines;
 }
 
+// Solo or group (modes.json): whether the real animal changes with the way you play.
+function modeLines(profile) {
+  const modes = profile.modes;
+  if (!modes) return [];
+  const verdict = { same: 'Gleiches Tier', rebalanced: 'Anders gewichtet', different: 'Anderes Tier' }[modes.verdict];
+  const lines = ['## Solo oder Gruppe', '', `**${verdict}:** ${modes.note}`];
+  if (modes.changes) {
+    const own = modes[modes.changes];
+    lines.push('', `**${modes.changes === 'solo' ? 'Solo' : 'In der Gruppe'} spielt er sich wie:**`, ...analogLines(own.analog));
+    if (own.summary) lines.push('', own.summary);
+    lines.push('', `Das Tier oben unter „Spielt sich wie“ gilt ${modes.changes === 'solo' ? 'in der Gruppe' : 'solo'}.`);
+  }
+  return [...lines, ''];
+}
+
 function playstyleLines(profile) {
   const ps = profile.playstyle;
   if (!ps) return ['Kein Spielleitfaden hinterlegt.'];
@@ -112,6 +127,7 @@ function card(profile, { sectionFiles, forFinder }) {
     '## Quick View (offiziell)', '', ...profile.quickView.map(q => `- ${q}`), '',
     `## Spielleitfaden „So spielst du ${profile.name}“ (persönlich, nicht offiziell – das Profil gilt immer)`, '', ...playstyleLines(profile),
     '## Spielt sich wie (echte Tiere)', '', ...analogLines(profile.analog), '',
+    ...modeLines(profile),
     '## Karte & POIs', '', ...poiLines(profile), '',
     '## Matchups (Auszug)', '',
     '**Gefährlich für dich:**', ...(m.threats.slice(0, 6).map(matchupLine)), '',
@@ -202,11 +218,11 @@ function firstSentence(text, max = 170) {
 function catalog(profiles, analogs) {
   const lines = ['# Dino-Katalog für die Auswahl', '',
     `Alle ${profiles.length} Playables in einer Zeile. Spalten: Tier = Spielgröße (Tiny < Small < Medium < Large < Apex); Aktiv = Tageszeit; Raum = Land/Wasser/Luft; Solo = Solo-Eignung laut Spielleitfaden; Jagdgruppe = max. Tiere in einer Jagd (Gruppengröße steht im Steckbrief); Jagt bis = höchste erlaubte Beute-Stufe. Steckbrief: \`references/dinos/<id>.md\`.`, '',
-    '| id | Name | Tier | Kost | Aktiv | Raum | Ökosystem | Solo | Jagdgruppe | Jagt bis | Spielt sich wie | Kurz |', '|---|---|---|---|---|---|---|---|---|---|---|---|'];
+    '| id | Name | Tier | Kost | Aktiv | Raum | Ökosystem | Solo | Jagdgruppe | Jagt bis | Spielt sich wie (solo) | Kurz |', '|---|---|---|---|---|---|---|---|---|---|---|---|'];
   for (const p of profiles) {
     const c = p.classification;
     const t = p.matchups?.traits ?? {};
-    lines.push(`| ${p.id} | ${p.name} | ${c.tier} | ${de('diet', c.diet)} | ${de('activity', c.activity)} | ${de('habitat', c.habitat)} | ${p.ecosystem?.de ?? '–'} | ${p.playstyle ? de('solo', p.playstyle.solo.fit) : '–'} | ${c.diet === 'Herbivore' ? '–' : t.huntGroupUnlimited ? 'unbegrenzt' : t.huntGroupSize || '–'} | ${c.diet === 'Herbivore' ? '–' : t.huntTier ?? '–'} | ${cell(p.analog?.analogs.map(a => `${a.de} ${a.share}%`).join(' + '))} | ${cell(firstSentence(p.playstyle?.summary ?? p.summary))} |`);
+    lines.push(`| ${p.id} | ${p.name} | ${c.tier} | ${de('diet', c.diet)} | ${de('activity', c.activity)} | ${de('habitat', c.habitat)} | ${p.ecosystem?.de ?? '–'} | ${p.playstyle ? de('solo', p.playstyle.solo.fit) : '–'} | ${c.diet === 'Herbivore' ? '–' : t.huntGroupUnlimited ? 'unbegrenzt' : t.huntGroupSize || '–'} | ${c.diet === 'Herbivore' ? '–' : t.huntTier ?? '–'} | ${cell((p.modes?.solo.analog ?? p.analog)?.analogs.map(a => `${a.de} ${a.share}%`).join(' + '))} | ${cell(firstSentence(p.modes?.solo.summary ?? p.playstyle?.summary ?? p.summary))} |`);
   }
   const bySolo = fit => profiles.filter(p => p.playstyle?.solo.fit === fit).map(p => p.name).join(', ');
   lines.push('', '## Nach Solo-Eignung', '', `- **Solo spielbar:** ${bySolo('solo')}`, `- **Solo eingeschränkt:** ${bySolo('solo-possible')}`, `- **Gruppentier:** ${bySolo('group')}`);
@@ -242,6 +258,58 @@ function ecosystemsFile(ecosystems) {
     lines.push('');
   }
   return lines.join('\n');
+}
+
+// Migration routes (same data as the website's route map): every named route with its POIs,
+// which POIs follow each other and who walks it; then per POI who passes there.
+function routesFile(index, regionName) {
+  const usage = { full: 'ganze Route', partial: 'nur ein Teilstück', profile: 'laut Profiltext' };
+  const lines = ['# Migrationsrouten', '', 'Aus den Profilkarten nachgezeichnet (weiße bzw. rosa Routenlinien). Wandern ist nur in den aktiven Stunden erlaubt (Regel 1.4). Die Reihenfolge der POIs steht unter „Verbindungen“: dort geht die Route von einem POI direkt in den nächsten über.', ''];
+  for (const route of index.routes) {
+    lines.push(`## ${route.de} (${route.name})`, '', route.note, '');
+    lines.push(`- **Wer:** ${route.members.map(m => `${m.name} (${usage[m.usage]}${m.note ? `: ${m.note}` : ''})`).join(', ')}`);
+    lines.push(`- **POIs:** ${route.regions.map(regionName).join(', ')}${route.landmarks.length ? `; vorbei an ${route.landmarks.map(regionName).join(', ')}` : ''}`);
+    lines.push(`- **Verbindungen:** ${route.links.map(([a, b]) => `${regionName(a)} ↔ ${regionName(b)}`).join('; ')}`);
+    for (const m of route.members.filter(m => m.usage === 'partial')) lines.push(`- **${m.name} nur durch:** ${m.regions.map(regionName).join(', ')}`);
+    lines.push('');
+  }
+  lines.push('## Wer zieht wo durch (pro POI)', '');
+  for (const poi of Object.values(index.pois).filter(p => !p.landmark).sort((a, b) => b.routes.length - a.routes.length)) {
+    lines.push(`- **${poi.name}** – ${poi.routes.length} Route(n): ${poi.playables.map(id => index.playables[id]?.name || id).join(', ')}`);
+  }
+  return lines.join('\n') + '\n';
+}
+
+// Clamp overview (same data as the website's clamp table): per clamper the heaviest clampable
+// combat weight and, grouped by stage, how far up each playable can still be clamped.
+function clampsFile(index) {
+  const short = ['Hatchling', 'Juvenile', 'Adolescent', 'Sub-Adult', 'Adult'];
+  const reach = (capacity, weights) => {
+    const fits = weights.map(weight => capacity > 0 && weight < capacity);
+    return { max: fits.lastIndexOf(true), gaps: fits.slice(0, Math.max(fits.lastIndexOf(true), 0)).flatMap((fit, i) => fit ? [] : [short[i]]) };
+  };
+  const lines = ['# Clamp-Tabelle', '', 'Wer wen clampen (packen) kann, und bis zu welcher Entwicklungsstufe der Beute. Regel: Beute passt, solange ihr Kampfgewicht unter der Tragkraft (Carry Capacity) des Clampers liegt. Dynasty schreibt das als „Clamp Weight: Up to X“ (= Tragkraft X + 1). Profil-Anpassungen sind eingerechnet. Ob die Beute auch gejagt werden darf, regelt das Profil.', ''];
+  for (const clamper of index.clampers) {
+    const columns = [{ label: '', bonus: 0 }, ...clamper.buffs.map(buff => ({ label: ` mit ${buff.label}`, bonus: buff.bonus }))];
+    for (const { label, bonus } of columns) {
+      lines.push(`## ${clamper.name}${label} (${clamper.ability === 'grab' ? 'Grab' : 'Clamp'})`, '');
+      lines.push(`Clamp-Grenze je eigener Stufe (max. Kampfgewicht der Beute): ${clamper.capacity.map((cap, i) => `${short[i]} ${cap > 0 ? cap - 1 + bonus : '–'}`).join(' · ')}`);
+      if (clamper.adjustments.length) lines.push(`Dynasty-Anpassung: ${clamper.adjustments.join('; ')}`);
+      for (const note of clamper.notes) lines.push(`- ${note}`);
+      const capacity = clamper.capacity.at(-1) + bonus;
+      lines.push('', `Als Adult (bis ${capacity - 1} CW):`);
+      for (const max of [4, 3, 2, 1, 0, -1]) {
+        const members = index.prey.map(prey => ({ prey, ...reach(capacity, prey.combatWeight) })).filter(item => item.max === max);
+        if (!members.length) continue;
+        const title = max === 4 ? 'Bis Adult (alle Stufen)' : max < 0 ? 'Gar nicht' : `Bis ${short[max]}`;
+        lines.push(`- **${title}:** ${members.sort((a, b) => max < 0 ? a.prey.name.localeCompare(b.prey.name) : b.prey.combatWeight[max] - a.prey.combatWeight[max]).map(item => max < 0 ? item.prey.name : `${item.prey.name} ${item.prey.combatWeight[max]}${item.gaps.length ? ` (außer ${item.gaps.join(', ')})` : ''}`).join(', ')}`);
+      }
+      lines.push('');
+    }
+  }
+  lines.push('## Kampfgewicht aller Playables je Stufe', '', '| Playable | Hatchling | Juvenile | Adolescent | Sub-Adult | Adult |', '|---|---|---|---|---|---|');
+  for (const prey of index.prey) lines.push(`| ${prey.name} | ${prey.combatWeight.join(' | ')} |`);
+  return lines.join('\n') + '\n';
 }
 
 // Minimal ZIP writer (deflate), so packaging needs no extra dependency.
@@ -291,11 +359,17 @@ export async function buildSkills() {
   const rules = await readJson(join(processed, 'rules.json'));
   const analogs = await readJson(join(processed, 'analogs.json'));
   const ecosystems = await readJson(join(processed, 'ecosystems.json'));
+  const clamps = await readJson(join(processed, 'clamps.json'));
+  const migration = await readJson(join(processed, 'migration.json'));
+  const world = await readJson(join(processed, 'map.json'));
+  const regionNames = new Map(world.regions.map(region => [region.id, region.name]));
 
   const dinoRefs = join(skillsDir, 'dino', 'references');
   await rm(dinoRefs, { recursive: true, force: true });
   await mkdir(dinoRefs, { recursive: true });
   await writeFile(join(dinoRefs, 'dinos.md'), lookupTable(profiles));
+  await writeFile(join(dinoRefs, 'clamps.md'), clampsFile(clamps));
+  await writeFile(join(dinoRefs, 'routes.md'), routesFile(migration, id => regionNames.get(id) || id));
   await writeRules(join(dinoRefs, 'rules'), rules);
   for (const profile of profiles) await writeProfileFiles(join(dinoRefs, 'dinos', profile.id), profile);
 

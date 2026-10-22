@@ -48,6 +48,24 @@ You are a large, bad-tempered herbivore in a 'zeal' of 1 male and up to 3 unrela
 - Lebensraum: Nomad of forests and hills, camping on resource-rich spots. Roams between resource-rich areas and claims a small territory around a food bush or drinkable water. Lounges and basks by day and is most active at night.
 - Anders als die Tiere: Black rhinos are loners; Stegosaurus lives with its harem inside a mixed stegosaurid herd. Zebras flee predators; Stegosaurus never does.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Ein Stegosaurus-Bulle lebt laut Profil oft von Natur aus allein und zieht auf bekannten Pfaden umher. Das ist das Spitzmaulnashorn pur. Das Zebra steht nur noch für die Zeal, die er sucht.
+
+**Solo spielt er sich wie:**
+**Spitzmaulnashorn + Grevyzebra (Black rhinoceros + Grévy's zebra)**: A lone black rhino bull on his known paths: grumpy, armoured, never fleeing, and always looking for a zeal whose bull he can challenge.
+
+Solo you are best played as a bull, often alone by nature. You walk well-known paths between the instinctual nesting locations, hoping to meet a zeal whose male you can challenge for his females. Brothers may loosely follow each other for a while, but never defend each other and fight over any females they meet. You never flee, you chase threats away, and you claim the bush or water you are standing at.
+
+- Spitzmaulnashorn / Black rhinoceros – 75 %: Solo bull: a grumpy, solitary tank that walks its known paths, never runs and drives off anything near its bush
+- Grevyzebra / Grévy's zebra – 25 %: The goal: a zeal of females he can win from another stallion
+- Lebensraum: Nomad of forests and hills, camping on resource-rich spots. Roams between resource-rich areas and claims a small territory around a food bush or drinkable water. Lounges and basks by day and is most active at night.
+- Anders als die Tiere: Black rhinos are loners for life; a Stegosaurus bull is alone only until he wins a zeal.
+
+Solo bist du am besten ein Bulle, ein mürrisches Spitzmaulnashorn auf seinen bekannten Pfaden. Männchen leben oft von Natur aus allein und wandern zwischen den Nistplätzen, immer auf der Suche nach einer Zeal, deren Bullen sie herausfordern können. Brüder laufen dir vielleicht eine Weile hinterher, aber verteidigen dich nie. Du fliehst nie, jagst Bedrohungen davon und beanspruchst den Busch oder das Wasser, an dem du stehst. Du brauchst niemanden, bis du deine eigenen Weibchen hast.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Steep Run, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Crag Bluffs, Wollemi Forest

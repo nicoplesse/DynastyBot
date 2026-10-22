@@ -1,0 +1,1395 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T17:04:59.076Z",
+  "stages": [
+    "Hatchling",
+    "Juvenile",
+    "Adolescent",
+    "Sub-Adult",
+    "Adult"
+  ],
+  "rule": "A target can be clamped while its combat weight is below the clamper's carry capacity.",
+  "clampers": [
+    {
+      "id": "austroraptor",
+      "name": "Austroraptor",
+      "tier": "Medium",
+      "habitat": "Semi-Aquatic",
+      "ability": "clamp",
+      "capacity": [
+        100,
+        300,
+        500,
+        700,
+        1200
+      ],
+      "baseCapacity": [
+        100,
+        300,
+        500,
+        700,
+        1200
+      ],
+      "adjustments": [],
+      "buffs": [],
+      "notes": [
+        "Packt bevorzugt Beute, die es tragen kann, und ertränkt sie oder bringt sie Partner und Küken.",
+        "Lieblingsziele: Deinonychus und kleine Anodontosaurus, die sich noch tragen lassen.",
+        "Dynasty: Clamp-Schaden fast null, weniger Ausdauerverlust beim Tragen."
+      ]
+    },
+    {
+      "id": "citipati",
+      "name": "Citipati",
+      "tier": "Medium",
+      "habitat": "Terrestrial",
+      "ability": "grab",
+      "capacity": [
+        100,
+        400,
+        600,
+        800,
+        1000
+      ],
+      "baseCapacity": [
+        100,
+        400,
+        600,
+        800,
+        1400
+      ],
+      "adjustments": [
+        "Carry capacity increased to 1000 from 951"
+      ],
+      "buffs": [],
+      "notes": [
+        "Grab ist hier kein Jagd-Clamp: Glucken tragen Küken und adoptierte Jungtiere fremder Arten herum.",
+        "Ist das adoptierte Jungtier zu schwer für Grab, lässt die Henne es gehen und ignoriert es danach.",
+        "Dynasty: Tragkraft 1000 statt 951, Grab-Tragekosten reduziert."
+      ]
+    },
+    {
+      "id": "deinosuchus-ocean",
+      "name": "Deinosuchus (Ocean)",
+      "tier": "Apex",
+      "habitat": "Semi-Aquatic",
+      "ability": "clamp",
+      "capacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3901
+      ],
+      "baseCapacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3001
+      ],
+      "adjustments": [
+        "Clamp Weight: Up to 3900 Combat Weight"
+      ],
+      "buffs": [],
+      "notes": [
+        "Dynasty: Clamp Weight bis 3900 Kampfgewicht.",
+        "Im Wasser: Beute clampen und mit dem Death Roll zerreißen.",
+        "Deinocheirus nur als Albino oder verwundet bzw. ungeschützter Nachwuchs bis Adolescent; Sarcosuchus sind Vorrangziel."
+      ]
+    },
+    {
+      "id": "deinosuchus-shore",
+      "name": "Deinosuchus (Shore)",
+      "tier": "Apex",
+      "habitat": "Semi-Aquatic",
+      "ability": "clamp",
+      "capacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3901
+      ],
+      "baseCapacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3001
+      ],
+      "adjustments": [
+        "Clamp Weight: Up to 3900 Combat Weight"
+      ],
+      "buffs": [],
+      "notes": [
+        "Dynasty: Clamp Weight bis 3900 Kampfgewicht.",
+        "Im Wasser: Beute clampen und mit dem Death Roll zerreißen.",
+        "Deinocheirus nur als Albino oder verwundet bzw. ungeschützter Nachwuchs bis Adolescent; Sarcosuchus sind Vorrangziel."
+      ]
+    },
+    {
+      "id": "hatzegopteryx",
+      "name": "Hatzegopteryx",
+      "tier": "Large",
+      "habitat": "Aerial",
+      "ability": "grab",
+      "capacity": [
+        100,
+        800,
+        1300,
+        1700,
+        2350
+      ],
+      "baseCapacity": [
+        100,
+        800,
+        1300,
+        1700,
+        2100
+      ],
+      "adjustments": [
+        "Carry capacity increased to 2350 from 2100"
+      ],
+      "buffs": [],
+      "notes": [
+        "Jagt bevorzugt, was es tragen kann: packen, so hoch wie möglich fliegen, fallen lassen.",
+        "Darf auch im Flug greifen, aber keine schwimmende Beute.",
+        "Dynasty: Tragkraft 2350 statt 2100."
+      ]
+    },
+    {
+      "id": "sarcosuchus",
+      "name": "Sarcosuchus",
+      "tier": "Large",
+      "habitat": "Semi-Aquatic",
+      "ability": "clamp",
+      "capacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3101
+      ],
+      "baseCapacity": [
+        200,
+        900,
+        1600,
+        2300,
+        3001
+      ],
+      "adjustments": [
+        "Clamp Weight: Up to 3100 Combat Weight.",
+        "Carry capacity increased to 3101 from 3001"
+      ],
+      "buffs": [],
+      "notes": [
+        "Dynasty: Clamp Weight bis 3100 Kampfgewicht.",
+        "Tagsüber nur aus dem Wasser (Beute höchstens 2 Körperlängen vom Ufer), nachts an Land bis Solo-Large.",
+        "Kleinere Beute packen und in die Tiefe ziehen. Kein adulter Spinosaurus, Deinocheirus nur ungeschützt bis Adolescent."
+      ]
+    },
+    {
+      "id": "tylosaurus",
+      "name": "Tylosaurus",
+      "tier": "Apex",
+      "habitat": "Aquatic",
+      "ability": "clamp",
+      "capacity": [
+        200,
+        900,
+        1600,
+        2400,
+        3000
+      ],
+      "baseCapacity": [
+        200,
+        900,
+        1600,
+        2400,
+        3000
+      ],
+      "adjustments": [],
+      "buffs": [
+        {
+          "key": "WideGapeCarryCapacityBuff",
+          "label": "Wide Gape",
+          "bonus": 700
+        }
+      ],
+      "notes": [
+        "Jagt bis 1 Körperlänge vom Wasser und nimmt zuerst, was es leicht clampen kann, um es ins Wasser zu ziehen.",
+        "Kaiwhekea, Eurhinosaurus und Leedsichthys müssen im POI zuerst gejagt werden.",
+        "Mit Wide Gape steigt die Tragkraft um 700 (Spalte „Wide Gape“)."
+      ]
+    },
+    {
+      "id": "tyrannosaurus",
+      "name": "Tyrannosaurus",
+      "tier": "Apex",
+      "habitat": "Terrestrial",
+      "ability": "clamp",
+      "capacity": [
+        0,
+        800,
+        1400,
+        1900,
+        2700
+      ],
+      "baseCapacity": [
+        0,
+        800,
+        1400,
+        1900,
+        2700
+      ],
+      "adjustments": [],
+      "buffs": [],
+      "notes": [
+        "Als Hatchling kein Clamp (Tragkraft 0).",
+        "Dynasty: kein Clamp-Schaden, kein Knochenbruch durch Clamp, keine Start-Ausdauerkosten, 25 % weniger Ausdauerverlust beim Tragen."
+      ]
+    }
+  ],
+  "prey": [
+    {
+      "id": "achillobator",
+      "name": "Achillobator",
+      "aliases": [
+        "Achillo"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        400,
+        800,
+        1200,
+        1700,
+        2800
+      ]
+    },
+    {
+      "id": "albertaceratops",
+      "name": "Albertaceratops",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1000,
+        1750,
+        2500,
+        3500
+      ]
+    },
+    {
+      "id": "alioramus",
+      "name": "Alioramus",
+      "aliases": [
+        "Alio"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        975,
+        1600,
+        2000,
+        2400
+      ]
+    },
+    {
+      "id": "allosaurus",
+      "name": "Allosaurus",
+      "aliases": [
+        "Allo"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        1100,
+        2000,
+        2750,
+        3750
+      ]
+    },
+    {
+      "id": "amargasaurus",
+      "name": "Amargasaurus",
+      "aliases": [
+        "Amarg",
+        "Amarga"
+      ],
+      "tier": "Large",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        600,
+        1200,
+        2100,
+        3200,
+        5000
+      ]
+    },
+    {
+      "id": "anodontosaurus",
+      "name": "Anodontosaurus",
+      "aliases": [
+        "Ano"
+      ],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1000,
+        2000,
+        3250,
+        4500
+      ]
+    },
+    {
+      "id": "apatosaurus",
+      "name": "Apatosaurus",
+      "aliases": [
+        "Apa",
+        "Apato"
+      ],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        800,
+        2650,
+        3500,
+        5000,
+        8000
+      ]
+    },
+    {
+      "id": "argentinosaurus",
+      "name": "Argentinosaurus",
+      "aliases": [],
+      "tier": "Giant",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        1050,
+        3100,
+        5650,
+        6000,
+        9000
+      ]
+    },
+    {
+      "id": "austroraptor",
+      "name": "Austroraptor",
+      "aliases": [
+        "Austro"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        300,
+        750,
+        1200,
+        1400,
+        2100
+      ]
+    },
+    {
+      "id": "barsboldia",
+      "name": "Barsboldia",
+      "aliases": [],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "camptosaurus",
+      "name": "Camptosaurus",
+      "aliases": [
+        "Campto"
+      ],
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        750,
+        1100,
+        1400,
+        1050
+      ]
+    },
+    {
+      "id": "ceratosaurus",
+      "name": "Ceratosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        200,
+        800,
+        1100,
+        1700,
+        2600
+      ]
+    },
+    {
+      "id": "citipati",
+      "name": "Citipati",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        400,
+        800,
+        1200,
+        1700,
+        2400
+      ]
+    },
+    {
+      "id": "compsognathus",
+      "name": "Compsognathus",
+      "aliases": [
+        "Compy"
+      ],
+      "tier": "Tiny",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        100,
+        205,
+        330,
+        375,
+        400
+      ]
+    },
+    {
+      "id": "concavenator",
+      "name": "Concavenator",
+      "aliases": [
+        "Conc",
+        "Concav",
+        "Concave"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        300,
+        750,
+        1200,
+        1400,
+        2100
+      ]
+    },
+    {
+      "id": "daspletosaurus",
+      "name": "Daspletosaurus",
+      "aliases": [
+        "Dasp",
+        "Daspleto"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        1850,
+        2600,
+        3500
+      ]
+    },
+    {
+      "id": "deinocheirus",
+      "name": "Deinocheirus",
+      "aliases": [],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "deinonychus",
+      "name": "Deinonychus",
+      "aliases": [
+        "Deinony"
+      ],
+      "tier": "Small",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        100,
+        325,
+        550,
+        600,
+        800
+      ]
+    },
+    {
+      "id": "deinosuchus-ocean",
+      "name": "Deinosuchus (Ocean)",
+      "aliases": [
+        "Deinosuchus",
+        "Ocean Deinosuchus",
+        "Ocean Deino",
+        "Sea Deino",
+        "Hochsee-Deino",
+        "Meeres-Deino",
+        "Hai-Deino",
+        "Hochseehai"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        300,
+        1700,
+        2500,
+        4775,
+        6000
+      ]
+    },
+    {
+      "id": "deinosuchus-shore",
+      "name": "Deinosuchus (Shore)",
+      "aliases": [
+        "Deinosuchus",
+        "Shore Deinosuchus",
+        "Shore Deino",
+        "Ufer-Deino",
+        "Uferlauerer"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        300,
+        1700,
+        2500,
+        4775,
+        6000
+      ]
+    },
+    {
+      "id": "dilophosaurus",
+      "name": "Dilophosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        200,
+        700,
+        1000,
+        1600,
+        2400
+      ]
+    },
+    {
+      "id": "dryosaurus",
+      "name": "Dryosaurus",
+      "aliases": [
+        "Dryo"
+      ],
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        100,
+        250,
+        550,
+        750,
+        1000
+      ]
+    },
+    {
+      "id": "eotriceratops",
+      "name": "Eotriceratops",
+      "aliases": [
+        "Eo",
+        "Eotrike",
+        "Trike"
+      ],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "eurhinosaurus",
+      "name": "Eurhinosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Aquatic",
+      "combatWeight": [
+        800,
+        1200,
+        1800,
+        2400,
+        3000
+      ]
+    },
+    {
+      "id": "giganotosaurus",
+      "name": "Giganotosaurus",
+      "aliases": [
+        "Giga"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "halszkaraptor",
+      "name": "Halszkaraptor",
+      "aliases": [],
+      "tier": "Tiny",
+      "diet": "Herbivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        100,
+        205,
+        250,
+        305,
+        400
+      ]
+    },
+    {
+      "id": "hatzegopteryx",
+      "name": "Hatzegopteryx",
+      "aliases": [
+        "Hatz",
+        "Hatze"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Aerial",
+      "combatWeight": [
+        250,
+        1000,
+        2100,
+        2700,
+        3100
+      ]
+    },
+    {
+      "id": "iguanodon",
+      "name": "Iguanodon",
+      "aliases": [
+        "Iggy",
+        "Iggie"
+      ],
+      "tier": "Large",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        400,
+        1100,
+        2250,
+        3200,
+        4200
+      ]
+    },
+    {
+      "id": "kaiwhekea",
+      "name": "Kaiwhekea",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Aquatic",
+      "combatWeight": [
+        300,
+        1500,
+        2400,
+        3000,
+        4000
+      ]
+    },
+    {
+      "id": "kelenken",
+      "name": "Kelenken",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        625,
+        1150,
+        1550,
+        1950
+      ]
+    },
+    {
+      "id": "kentrosaurus",
+      "name": "Kentrosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        350,
+        800,
+        1100,
+        2000,
+        2700
+      ]
+    },
+    {
+      "id": "lambeosaurus",
+      "name": "Lambeosaurus",
+      "aliases": [
+        "Lamb",
+        "Lambeo"
+      ],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        2200,
+        3000,
+        3500
+      ]
+    },
+    {
+      "id": "latenivenatrix",
+      "name": "Latenivenatrix",
+      "aliases": [
+        "Laten"
+      ],
+      "tier": "Small",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        200,
+        425,
+        650,
+        950,
+        1400
+      ]
+    },
+    {
+      "id": "leedsichthys",
+      "name": "Leedsichthys",
+      "aliases": [
+        "Leed"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Aquatic Filter Feeder",
+      "combatWeight": [
+        300,
+        1500,
+        2750,
+        3750,
+        5500
+      ]
+    },
+    {
+      "id": "lurdusaurus-coast",
+      "name": "Lurdusaurus (Coast)",
+      "aliases": [
+        "Lurdusaurus",
+        "Coast Lurdusaurus",
+        "Coastal Lurdusaurus",
+        "Sea Lurdusaurus",
+        "Coast Lurdu",
+        "Küsten-Lurdu",
+        "Meerechsen-Lurdu",
+        "Lavaschnauber"
+      ],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        400,
+        1100,
+        1250,
+        2100,
+        3200
+      ]
+    },
+    {
+      "id": "lurdusaurus-freshwater",
+      "name": "Lurdusaurus (Freshwater)",
+      "aliases": [
+        "Lurdusaurus",
+        "Freshwater Lurdusaurus",
+        "River Lurdusaurus",
+        "Freshwater Lurdu",
+        "River Lurdu",
+        "Fluss-Lurdu",
+        "Süßwasser-Lurdu",
+        "Flusspferd-Lurdu",
+        "Schlammbader"
+      ],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        400,
+        1100,
+        1250,
+        2100,
+        3200
+      ]
+    },
+    {
+      "id": "maip",
+      "name": "Maip",
+      "aliases": [],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        1850,
+        2750,
+        4000
+      ]
+    },
+    {
+      "id": "megalania-arid",
+      "name": "Megalania (Arid)",
+      "aliases": [
+        "Megalania",
+        "Arid Megalania",
+        "Arid Meg",
+        "Wüsten-Megalania",
+        "Canyon-Drache",
+        "Meg"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial & Semi-Aquatic",
+      "combatWeight": [
+        350,
+        800,
+        1100,
+        2000,
+        2600
+      ]
+    },
+    {
+      "id": "megalania-temperate",
+      "name": "Megalania (Temperate)",
+      "aliases": [
+        "Megalania",
+        "Temperate Megalania",
+        "Temperate Meg",
+        "Sumpf-Megalania",
+        "Feucht-Megalania",
+        "Baumdrache",
+        "Meg"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial & Semi-Aquatic",
+      "combatWeight": [
+        350,
+        800,
+        1100,
+        2000,
+        2600
+      ]
+    },
+    {
+      "id": "metriacanthosaurus",
+      "name": "Metriacanthosaurus",
+      "aliases": [
+        "Metri"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        200,
+        800,
+        1300,
+        2300,
+        3100
+      ]
+    },
+    {
+      "id": "pachycephalosaurus",
+      "name": "Pachycephalosaurus",
+      "aliases": [
+        "Pachy",
+        "Pachycep"
+      ],
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        750,
+        1300,
+        1700,
+        2000
+      ]
+    },
+    {
+      "id": "pachyrhinosaurus",
+      "name": "Pachyrhinosaurus",
+      "aliases": [
+        "Pachyr",
+        "Pachyrhino",
+        "Pachy"
+      ],
+      "tier": "Large",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1000,
+        1750,
+        2500,
+        4500
+      ]
+    },
+    {
+      "id": "parasaurolophus",
+      "name": "Parasaurolophus",
+      "aliases": [
+        "Para"
+      ],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "psittacosaurus",
+      "name": "Psittacosaurus",
+      "aliases": [
+        "Taco"
+      ],
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        450,
+        650,
+        800,
+        900
+      ]
+    },
+    {
+      "id": "pycnonemosaurus",
+      "name": "Pycnonemosaurus",
+      "aliases": [
+        "Pycno"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1000,
+        1700,
+        2500,
+        3500
+      ]
+    },
+    {
+      "id": "quetzalcoatlus",
+      "name": "Quetzalcoatlus",
+      "aliases": [
+        "Quetz",
+        "Quetzal"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Aerial",
+      "combatWeight": [
+        500,
+        925,
+        1650,
+        2055,
+        2750
+      ]
+    },
+    {
+      "id": "rhamphorhynchus",
+      "name": "Rhamphorhynchus",
+      "aliases": [
+        "Rhamph",
+        "Rhamphy"
+      ],
+      "tier": "Tiny",
+      "diet": "Carnivore",
+      "habitat": "Aerial",
+      "combatWeight": [
+        100,
+        200,
+        300,
+        400,
+        500
+      ]
+    },
+    {
+      "id": "sarcosuchus",
+      "name": "Sarcosuchus",
+      "aliases": [],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        300,
+        1500,
+        2500,
+        3500,
+        4500
+      ]
+    },
+    {
+      "id": "spinosaurus-freshwater",
+      "name": "Spinosaurus (Freshwater)",
+      "aliases": [
+        "Spinosaurus",
+        "Freshwater Spinosaurus",
+        "Freshwater Spino",
+        "Süßwasser-Spino",
+        "Fluss-Spino",
+        "Flussherr",
+        "Spino",
+        "Spoon"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        6000
+      ]
+    },
+    {
+      "id": "spinosaurus-saltwater",
+      "name": "Spinosaurus (Saltwater)",
+      "aliases": [
+        "Spinosaurus",
+        "Saltwater Spinosaurus",
+        "Saltwater Spino",
+        "Sea Spino",
+        "Salzwasser-Spino",
+        "Meeres-Spino",
+        "Küsten-Spino",
+        "Eisbär-Spino",
+        "Meeresbär",
+        "Spino",
+        "Spoon"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        6000
+      ]
+    },
+    {
+      "id": "stegosaurus",
+      "name": "Stegosaurus",
+      "aliases": [
+        "Stego"
+      ],
+      "tier": "Large",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        2200,
+        3325,
+        5000
+      ]
+    },
+    {
+      "id": "struthiomimus",
+      "name": "Struthiomimus",
+      "aliases": [],
+      "tier": "Small",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        200,
+        550,
+        800,
+        1050,
+        1400
+      ]
+    },
+    {
+      "id": "styracosaurus",
+      "name": "Styracosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        400,
+        800,
+        1000,
+        1600,
+        2800
+      ]
+    },
+    {
+      "id": "suchomimus",
+      "name": "Suchomimus",
+      "aliases": [
+        "Sucho"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Semi-Aquatic",
+      "combatWeight": [
+        450,
+        1200,
+        2500,
+        3500,
+        5000
+      ]
+    },
+    {
+      "id": "tenontosaurus",
+      "name": "Tenontosaurus",
+      "aliases": [],
+      "tier": "Medium",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        400,
+        600,
+        850,
+        1250,
+        2400
+      ]
+    },
+    {
+      "id": "thalassodromeus",
+      "name": "Thalassodromeus",
+      "aliases": [],
+      "tier": "Small",
+      "diet": "Carnivore",
+      "habitat": "Aerial",
+      "combatWeight": [
+        250,
+        425,
+        650,
+        855,
+        2100
+      ]
+    },
+    {
+      "id": "therizinosaurus",
+      "name": "Therizinosaurus",
+      "aliases": [
+        "Theri",
+        "Therizino"
+      ],
+      "tier": "Apex",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        2600,
+        4250,
+        5500
+      ]
+    },
+    {
+      "id": "torvosaurus",
+      "name": "Torvosaurus",
+      "aliases": [
+        "Torvo"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        1100,
+        2000,
+        3250,
+        4500
+      ]
+    },
+    {
+      "id": "tropeognathus",
+      "name": "Tropeognathus",
+      "aliases": [],
+      "tier": "Small",
+      "diet": "Carnivore",
+      "habitat": "Aerial",
+      "combatWeight": [
+        250,
+        500,
+        1500,
+        1700,
+        2000
+      ]
+    },
+    {
+      "id": "tylosaurus",
+      "name": "Tylosaurus",
+      "aliases": [
+        "Ty",
+        "Tylo"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Aquatic",
+      "combatWeight": [
+        300,
+        1500,
+        2750,
+        3750,
+        5000
+      ]
+    },
+    {
+      "id": "tyrannosaurus",
+      "name": "Tyrannosaurus",
+      "aliases": [
+        "Rex",
+        "T Rex"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        6000
+      ]
+    },
+    {
+      "id": "tyrannotitan",
+      "name": "Tyrannotitan",
+      "aliases": [
+        "TT",
+        "Tyranno",
+        "Titan"
+      ],
+      "tier": "Apex",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1750,
+        2500,
+        3500,
+        5500
+      ]
+    },
+    {
+      "id": "utahraptor",
+      "name": "Utahraptor",
+      "aliases": [
+        "Utah"
+      ],
+      "tier": "Medium",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        300,
+        750,
+        1200,
+        1600,
+        2100
+      ]
+    },
+    {
+      "id": "yunnanosaurus",
+      "name": "Yunnanosaurus",
+      "aliases": [],
+      "tier": "Large",
+      "diet": "Herbivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1650,
+        2700,
+        3550,
+        4500
+      ]
+    },
+    {
+      "id": "yutyrannus",
+      "name": "Yutyrannus",
+      "aliases": [
+        "Yuty"
+      ],
+      "tier": "Large",
+      "diet": "Carnivore",
+      "habitat": "Terrestrial",
+      "combatWeight": [
+        500,
+        1100,
+        1850,
+        2600,
+        3250
+      ]
+    }
+  ]
+}

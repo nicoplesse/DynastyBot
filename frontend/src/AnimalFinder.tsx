@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { api, type AnalogIndex, type AnalogSearchResult, type Catalog } from './api';
+import { PlayModeSwitch, usePlayMode } from './PlayMode';
 import './plays-like.css';
 
 function go(path: string) { window.location.hash = `#${path}`; }
@@ -19,18 +20,19 @@ export function AnimalFinder({ route }: { route: string }) {
   const [error, setError] = useState('');
   const [text, setText] = useState('');
   const [search, setSearch] = useState<AnalogSearchResult | null>(null);
+  const mode = usePlayMode();
   const query = params(route);
   const filters: Filters = { archetype: query.get('archetype') || '', mood: query.get('mood') || '', habitat: query.get('habitat') || '', diet: query.get('diet') || 'All' };
 
   useEffect(() => {
-    Promise.all([api.analogs(), api.catalog()]).then(([analogs, profiles]) => { setIndex(analogs); setCatalog(profiles); }).catch(cause => setError((cause as Error).message));
-  }, []);
+    Promise.all([api.analogs(mode), api.catalog()]).then(([analogs, profiles]) => { setIndex(analogs); setCatalog(profiles); }).catch(cause => setError((cause as Error).message));
+  }, [mode]);
   useEffect(() => {
     const trimmed = text.trim();
     if (!trimmed) { setSearch(null); return; }
-    const timer = window.setTimeout(() => { api.analogSearch(trimmed).then(setSearch).catch(() => setSearch(null)); }, 180);
+    const timer = window.setTimeout(() => { api.analogSearch(trimmed, 24, mode).then(setSearch).catch(() => setSearch(null)); }, 180);
     return () => window.clearTimeout(timer);
-  }, [text]);
+  }, [text, mode]);
 
   const covers = useMemo(() => new Map((catalog?.profiles || []).map(profile => [profile.id, profile.cover])), [catalog]);
   const setFilter = (key: keyof Filters, value: string) => go(withFilters({ ...filters, [key]: filters[key] === value ? '' : value }));
@@ -62,7 +64,7 @@ export function AnimalFinder({ route }: { route: string }) {
 
   return <>
     <div className="topline"><span>ARCHIVE / ANIMAL FINDER</span><span>{Object.keys(index.dinos).length} PLAYABLES · {Object.keys(index.animals).length} REAL ANIMALS</span></div>
-    <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · PLAYS LIKE</div><h1>Animal Finder</h1><p>Every playable is matched to the one or two real animals it plays most like. Pick the animal you're in the mood to play, or just describe it.</p></div><div className="archive-metric"><strong>{archetypeCounts.length}</strong><span>animal families</span></div></header>
+    <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · PLAYS LIKE</div><h1>Animal Finder</h1><p>Every playable is matched to the one or two real animals it plays most like. Pick the animal you're in the mood to play, or just describe it.</p></div><div className="directory-actions"><PlayModeSwitch compact /><div className="archive-metric"><strong>{archetypeCounts.length}</strong><span>animal families</span></div></div></header>
 
     <section className="filter-bar af-search" aria-label="Describe the animal you want to play">
       <label className="search-field"><span aria-hidden="true">⌕</span><input value={text} onChange={event => setText(event.target.value)} placeholder="Try “ox”, “Großkatze im Dschungel”, “Rudel Wolf”, “Krokodil im Sumpf”…" aria-label="Describe the animal you want to play" /></label>

@@ -140,6 +140,15 @@ export interface ProfileAnalog {
   notLike: string[]; twist: string; moods: VocabRef[];
   confidence: 'high' | 'medium'; officialInspiration: string | null; facts: AnalogFacts;
 }
+// Solo or group (data/raw/<id>/modes.json): whether the real animal changes with the way you play.
+export type PlayMode = 'solo' | 'group';
+export type ModeVerdict = 'same' | 'rebalanced' | 'different';
+export interface ProfileModes {
+  base: PlayMode | 'both'; verdict: ModeVerdict; changes: PlayMode | null; note: string; reviewedAt: string | null;
+  solo: { own: boolean; analog: ProfileAnalog; summary: string | null };
+  group: { own: boolean; analog: ProfileAnalog; summary: string | null };
+}
+export interface CatalogModes { base: PlayMode | 'both'; verdict: ModeVerdict; changes: PlayMode | null; note: string; solo: CatalogAnalog | null; group: CatalogAnalog | null }
 export interface CatalogAnalog {
   label: string; labelDe: string; headline: string;
   analogs: Array<Pick<AnalogAnimal, 'animal' | 'de' | 'archetype' | 'archetypeLabel' | 'archetypeDe' | 'share' | 'role' | 'photo'>>;
@@ -147,7 +156,7 @@ export interface CatalogAnalog {
 }
 export interface VocabEntry { label: string; de: string; synonyms: string[] }
 export interface AnalogIndex {
-  schemaVersion: number; generatedAt: string; note: string;
+  schemaVersion: number; generatedAt: string; note: string; mode: PlayMode | null;
   vocabulary: { archetypes: Record<string, VocabEntry>; moods: Record<string, VocabEntry>; habitats: Record<string, VocabEntry> };
   archetypes: Record<string, { label: string; de: string; dinos: Array<{ id: string; name: string; animal: string; role: AnalogRole; share: number | null; headline: string }> }>;
   animals: Record<string, { animal: string; de: string | null; scientific: string | null; archetype: string; dinos: Array<{ id: string; name: string; role: AnalogRole; share: number | null }> }>;
@@ -181,8 +190,17 @@ export interface ProcessedProfile {
   habitat: Habitat | null;
   matchups: Matchups | null;
   analog: ProfileAnalog | null;
+  modes: ProfileModes | null;
   variant: ProfileVariant | null;
+  bleed: BleedTable | null;
   source: { importedAt: string; profileFile: string; statsSource: string; rawId?: string };
+}
+// Hits of the hunter's strongest bleeding attack until each prey is down, hit and run (assumed bleed rate).
+export interface BleedHits { hits: number; seconds: number }
+export interface BleedTable {
+  attack: { label: string; damage: number; bleed: number; cooldown: number };
+  setup: string; maxHits: number; assumption: string;
+  rows: Array<{ id: string; name: string; tier: string | null; rank: number | null; kind: string; young: boolean; hp: number; bleedPerHit: number; healRate: number; trot: BleedHits | null; sit: BleedHits | null; direct: number }>;
 }
 // A playable split from a shared official profile (Megalania arid / temperate).
 export interface ProfileVariant {
@@ -195,6 +213,7 @@ export interface CatalogItem {
   habitat: { classification: string | null; moisture: string[]; biomes: string[]; regions: number; isDry: boolean; hasMap: boolean } | null;
   matchups: { threats: number; opportunities: number } | null;
   analog: CatalogAnalog | null;
+  modes: CatalogModes | null;
   ecosystem: { id: string; level: number; also: string[] } | null;
   solo: SoloFit | null;
   variant: Pick<ProfileVariant, 'id' | 'label' | 'de' | 'title' | 'parentId' | 'parentName'> | null;
@@ -222,6 +241,60 @@ export interface Ecosystem {
   foodChain: EcosystemMember[]; visitors: Array<{ id: string; name: string; level: number; home: string }>;
 }
 export interface EcosystemIndex { schemaVersion: number; generatedAt: string; levels: FoodChainLevel[]; ecosystems: Ecosystem[] }
+export interface Clamper {
+  id: string; name: string; tier: string | null; habitat: string | null; ability: 'clamp' | 'grab';
+  capacity: number[]; baseCapacity: number[]; adjustments: string[];
+  buffs: Array<{ key: string; label: string; bonus: number }>; notes: string[];
+}
+export interface ClampPrey { id: string; name: string; aliases: string[]; tier: string | null; diet: string | null; habitat: string | null; combatWeight: number[] }
+export interface ClampIndex { schemaVersion: number; generatedAt: string; stages: string[]; rule: string; clampers: Clamper[]; prey: ClampPrey[] }
+export interface MigrationMember { id: string; name: string; usage: 'full' | 'partial' | 'profile'; layer: string | null; file: string | null; note?: string; regions: string[] }
+export interface MigrationRoute {
+  id: string; name: string; de: string; color: string; note: string;
+  source: { profile: string; image: string; colour: string }; layer: string | null;
+  lines: number[][][]; regions: string[]; landmarks: string[]; links: string[][]; members: MigrationMember[];
+}
+export interface MigrationPlayable { id: string; name: string; tier: string | null; diet: string | null; activity: string | null; habitat: string | null; combatWeight: number | null; animal: string | null }
+export interface MigrationHunter extends MigrationPlayable { huntTier: string; prey: Array<{ id: string; band: string | null; headline: string | null }>; pois: string[] }
+export interface MigrationIndex {
+  schemaVersion: number; generatedAt: string; note: string; routes: MigrationRoute[];
+  pois: Record<string, { id: string; name: string; routes: string[]; playables: string[]; landmark?: boolean }>;
+  playables: Record<string, MigrationPlayable & { routes: Array<{ id: string; usage: string }> }>;
+  hunters: Record<string, MigrationHunter>;
+}
+export type FoodWebKind = 'priority' | 'allowed' | 'legal' | 'last' | 'special' | 'never' | 'locked' | 'out';
+export interface FoodWebNode {
+  id: string; name: string; family: string; variant: { label: string; de: string; title: string | null } | null;
+  tier: string | null; diet: string | null; habitat: string | null; activity: string | null; combatWeight: number | null;
+  ecosystem: string | null; also: string[]; level: number | null;
+}
+/** One hunter x target x setup: kind, priority rank and stage, rule label, quote index, conditions, needed setup. */
+export interface FoodWebVerdict { k: FoodWebKind; r?: number; st?: number; l?: string; q?: number; c?: string[]; need?: number }
+export interface FoodWebSetup { id: string; label: string; size: number; tier: string; with?: string; when?: string; minTier?: string; only?: string[] }
+export interface FoodWebHunter {
+  none?: string; noneSection?: string; noneQuote?: string;
+  setups: FoodWebSetup[]; stages: Array<{ rank: number; label: string; setups: string[] | null }>; notes: string[];
+  quotes: Array<{ text: string; section: string }>; edges: Array<{ t: string; per: FoodWebVerdict[]; contact: number }>;
+}
+export interface FoodWebIndex {
+  schemaVersion: number; generatedAt: string; tiers: string[]; levels: FoodChainLevel[]; note: string;
+  nodes: Record<string, FoodWebNode>; hunters: Record<string, FoodWebHunter>;
+}
+/** a = hunt legal, e = named by a profile rule, c = only under a condition, v = pursuit verdict, m = speed margin %. */
+export interface RadarPair { v: string; m: number; a?: 1; e?: 1; c?: 1 }
+export interface RadarDino {
+  name: string; tier: string | null; diet: string | null; activity: string | null; habitat: string | null;
+  land: [number, number] | null; water: [number, number] | null; air: [number, number] | null;
+  cw: Array<number | null>; clamp: { ability: 'clamp' | 'grab'; capacity: number } | null;
+  home: string[]; route: string[];
+}
+export interface PoiRadar {
+  schemaVersion: number; generatedAt: string; note: string;
+  areas: Array<{ id: string; name: string; ecosystems: string[]; landmarks: string[] }>;
+  dinos: Record<string, RadarDino>;
+  pairs: Record<string, Record<string, RadarPair>>;
+  cards: Record<string, CombatStats>;
+}
 export interface Catalog { schemaVersion: number; generatedAt: string; count: number; profiles: CatalogItem[] }
 export interface RulesData {
   schemaVersion: number; id: string; title: string; introduction: ContentBlock[];
@@ -252,12 +325,16 @@ export const api = {
   imageUrl: (id: string, file: string) => `/api/profiles/${encodeURIComponent(id)}/images/${encodeURIComponent(file.split('/').pop() || '')}`,
   catalog: async () => result<Catalog>(await fetch('/api/catalog')),
   ecosystems: async () => result<EcosystemIndex>(await fetch('/api/ecosystems')),
+  clamps: async () => result<ClampIndex>(await fetch('/api/clamps')),
+  migration: async () => result<MigrationIndex>(await fetch('/api/migration')),
+  foodWeb: async () => result<FoodWebIndex>(await fetch('/api/foodweb')),
+  poiRadar: async () => result<PoiRadar>(await fetch('/api/poi-radar')),
   processedProfile: async (id: string) => result<ProcessedProfile>(await fetch(`/api/catalog/${encodeURIComponent(id)}`)),
   rules: async () => result<RulesData>(await fetch('/api/rules')),
   worldMap: async () => result<WorldMap>(await fetch('/api/map')),
   mapLayerUrl: (file: string) => `/api/map/${file}`,
   mapIndex: async () => result<MapIndex>(await fetch('/api/map-index')),
   matchups: async () => result<MatchupsIndex>(await fetch('/api/matchups')),
-  analogs: async () => result<AnalogIndex>(await fetch('/api/analogs')),
-  analogSearch: async (query: string, limit = 24) => result<AnalogSearchResult>(await fetch(`/api/analogs/search?q=${encodeURIComponent(query)}&limit=${limit}`)),
+  analogs: async (mode: PlayMode = 'solo') => result<AnalogIndex>(await fetch(`/api/analogs?mode=${mode}`)),
+  analogSearch: async (query: string, limit = 24, mode: PlayMode = 'solo') => result<AnalogSearchResult>(await fetch(`/api/analogs/search?q=${encodeURIComponent(query)}&limit=${limit}&mode=${mode}`)),
 };

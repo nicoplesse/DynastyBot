@@ -53,6 +53,25 @@ You are a medium herbivore with strong sex roles. A 'glade' is ruled by one matr
 - Anders als die Tiere: Peccaries are not matriarchies with submissive males. Marmosets are tiny tree-dwellers; they only explain the family system.
 - Besonderheit: Horses and rock hyraxes are official inspirations too.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Das Pekari lebt von seiner Herde mit einem gemeinsamen Geruch, das Weißbüscheläffchen von der Familie. Ein Einzelgänger ist laut Profil meist eine Waise ohne Anschluss: scheu, meidet fast alle Tiere und versteckt sich bei Gefahr. Das ist der Flachlandtapir, der allein durch den Wald zieht, mit dem Versteckreflex eines Duckers.
+
+**Solo spielt er sich wie:**
+**Flachlandtapir + Kronenducker (Lowland tapir + Common duiker)**: A shy lowland tapir with a duiker's hiding reflex: an orphan grown up alone, it avoids almost everyone and vanishes into cover when danger comes.
+
+Some Tenontosaurus prefer a solitary life, most often orphaned fawns that never found other young or adoptive parents. Lacking socialisation, you actively avoid most other animals, are much more skittish and prefer to hide when danger comes. You still trample through the forest digging for tubers and cool off in mud or water on the hottest days. Looser ways to live than a glade are a kindle, the leaderless band of bucks, or, as an expelled elder doe, following a Barsboldia herd.
+
+- Flachlandtapir / Lowland tapir – 55 %: Solo life: a shy, solitary forest herbivore that avoids company and crashes into cover when threatened
+- Kronenducker / Common duiker – 45 %: Escape: the "diver" that ducks into thick cover at the first sign of danger
+- Lebensraum: Forest territories, dug up for tubers. Glades claim medium territories; all-male kindles are nomadic. Tramples through forest digging for tubers, rolls in mud or water on the hottest days, and often leaves by following a Barsboldia herd.
+- Anders als die Tiere: Tapirs often escape into rivers; a lone Tenontosaurus simply hides in cover. Duikers are tiny antelopes; Tenontosaurus is Medium tier with 2,400 combat weight.
+- Besonderheit: The white-lipped peccary herds it would belong to share their forest with tapirs in real life.
+
+Solo bist du ein scheuer Flachlandtapir mit dem Versteckreflex eines Duckers. Einzelgänger sind laut Profil meist Waisen, die nie Anschluss an andere Junge oder Adoptiveltern gefunden haben. Dir fehlt das Miteinander, also gehst du fast allen anderen Tieren aus dem Weg, bist viel schreckhafter und versteckst dich, wenn Gefahr droht, statt zu kämpfen. Du trampelst weiter durch den Wald, gräbst nach Knollen und kühlst dich an heißen Tagen im Schlamm oder Wasser. Lockerere Wege als die Glade sind eine Kindle, ein Trupp Böcke ohne Anführer, oder als verstoßene alte Ricke der Anschluss an eine Barsboldia-Herde.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

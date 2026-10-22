@@ -49,6 +49,10 @@ You are a large nocturnal carnivore living as a lifelong pair with a favoured ad
 - Lebensraum: Nomadic night stalker of forests and rocky outcrops. Nomadic. Loses pursuers in complicated terrain such as forests or rocky outcrops, and travels to specific forests to find a mate.
 - Anders als die Tiere: Spotted hyenas live in big clans; Maip lives in groups of at most 3. Hyenas steal other predators' kills; Maip is not a scavenger and must make its own.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Maip kommen laut Profil allein problemlos zurecht, nur vorsichtiger. Zu zweit kommen einzelne Apex-Tiere als Beute dazu, die Hyäne bleibt.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Steep Run, Cedrus Forest, Black Fern Hills, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

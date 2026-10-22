@@ -46,6 +46,10 @@ You are an Apex-sized filter feeder that eats only krill along its migration pat
 - Lebensraum: Open-sea migration loop. Follows a great loop through the north-eastern seas (Kelp Vale, Coastal Bluffs, Scale Lake, Palm Islands, Castaway Isle, the Stonebed shoals, the mudflats and back), plus fixed courtship and nursery grounds.
 - Anders als die Tiere: Whale sharks give birth to live young and give no parental care; Leedsichthys fathers guard huge nursery groups.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Erwachsene Leedsichthys leben allein. Die Nursery-Gruppe der Väter gehört schon zum Walhai-Profil.
+
 ## Karte & POIs
 
 - **Balz + Nisten:** Big Tree Overlook, Cedar Valley

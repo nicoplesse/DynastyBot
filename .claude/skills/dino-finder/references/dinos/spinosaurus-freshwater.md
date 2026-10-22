@@ -49,6 +49,10 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 - Anders als die Tiere: Grizzlies roam widely to hunt; Spinosaurus may hunt only in its claimed water territory (fish, Leedsichthys and Tylosaurus excepted). Crocodiles don't adopt; Spinosaurus adopts Suchomimus of any age.
 - Besonderheit: Your cousin is the saltwater variant, a polar bear of the sea with one home sea area that tours the Leedsichthys route. You are still one species and court together at Triad Falls.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Spinosaurus jagen immer allein, auch im Paar. Solo und Paar sind derselbe Grizzly.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Stillwater Bog, Mudflats, Twisted Forest, Volcano Islands, Redwood Wind, Big Tree Overlook, Tallbrush Coasts, Cliffedge Falls, Coastland Swamp

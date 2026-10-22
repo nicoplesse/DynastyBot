@@ -1,0 +1,3 @@
+# Tropeognathus – Orphaned Behavior
+
+Orphaned Tropeognathus tend to fare decently well compared to other aerial species. If hatched on the communal nesting grounds with other adults and offspring, the orphan usually wiggles its way towards a mother with a smaller clutch, and more often than not gets adopted and provided for. However, if hatching entirely alone - orphaned Tropeognathus still have a decent chance of survival, driven entirely by their bold and curious nature, and instincts to take to both the air and water. Orphaned fledglings will still meet all the same milestones as those raised with parents - but orphaned Tropeognathus will leave Ocean Pillars much sooner if hatched there alone, in the pursuit of others of their kind.

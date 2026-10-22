@@ -19278,6 +19278,302 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "different",
+    "changes": "solo",
+    "note": "Das Pekari lebt von seiner Herde mit einem gemeinsamen Geruch, das Weißbüscheläffchen von der Familie. Ein Einzelgänger ist laut Profil meist eine Waise ohne Anschluss: scheu, meidet fast alle Tiere und versteckt sich bei Gefahr. Das ist der Flachlandtapir, der allein durch den Wald zieht, mit dem Versteckreflex eines Duckers.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Lowland tapir + Common duiker",
+        "labelDe": "Flachlandtapir + Kronenducker",
+        "headline": "A shy lowland tapir with a duiker's hiding reflex: an orphan grown up alone, it avoids almost everyone and vanishes into cover when danger comes.",
+        "playsLike": "Some Tenontosaurus prefer a solitary life, most often orphaned fawns that never found other young or adoptive parents. Lacking socialisation, you actively avoid most other animals, are much more skittish and prefer to hide when danger comes. You still trample through the forest digging for tubers and cool off in mud or water on the hottest days. Looser ways to live than a glade are a kindle, the leaderless band of bucks, or, as an expelled elder doe, following a Barsboldia herd.",
+        "setting": {
+          "label": "Forest territories, dug up for tubers",
+          "note": "Glades claim medium territories; all-male kindles are nomadic. Tramples through forest digging for tubers, rolls in mud or water on the hottest days, and often leaves by following a Barsboldia herd.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "lowland-tapir",
+            "animal": "Lowland tapir",
+            "de": "Flachlandtapir",
+            "scientific": "Tapirus terrestris",
+            "archetype": "tapir",
+            "archetypeLabel": "Tapir",
+            "archetypeDe": "Tapir",
+            "share": 55,
+            "role": "primary",
+            "covers": "Solo life: a shy, solitary forest herbivore that avoids company and crashes into cover when threatened",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/1280px-South_American_tapir_%28Tapirus_terrestris%29.JPG",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "common-duiker",
+            "animal": "Common duiker",
+            "de": "Kronenducker",
+            "scientific": "Sylvicapra grimmia",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Escape: the \"diver\" that ducks into thick cover at the first sign of danger",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/C%C3%A9phalophe_de_grimm%2C_crop.jpg/1280px-C%C3%A9phalophe_de_grimm%2C_crop.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Farid AMADOU BAHLEMAN",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:C%C3%A9phalophe_de_grimm,_crop.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Orphan loner",
+            "text": "“Despite their typically social nature, some Tenontosaurus prefer a solitary life.” This is most common when an orphaned fawn finds no other young or adoptive parents."
+          },
+          {
+            "trait": "Avoids everyone",
+            "text": "Lacking socialisation, “these individuals actively avoid most other animals”, as tapirs live alone and keep out of sight."
+          },
+          {
+            "trait": "Hide, don't fight",
+            "text": "“They are much more skittish, and prefer to hide when faced with danger.” Duikers are named for diving into cover."
+          },
+          {
+            "trait": "Forest digger",
+            "text": "It still tramples through forest digging for tubers and wallows on the hottest days, as tapirs browse the forest floor and wallow in mud."
+          }
+        ],
+        "notLike": [
+          "Tapirs often escape into rivers; a lone Tenontosaurus simply hides in cover.",
+          "Duikers are tiny antelopes; Tenontosaurus is Medium tier with 2,400 combat weight."
+        ],
+        "twist": "The white-lipped peccary herds it would belong to share their forest with tapirs in real life.",
+        "moods": [
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "paleontological speculation, horses, white-lipped peccary, rock hyrax, buffy-headed marmoset",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 133.333,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Solo bist du ein scheuer Flachlandtapir mit dem Versteckreflex eines Duckers. Einzelgänger sind laut Profil meist Waisen, die nie Anschluss an andere Junge oder Adoptiveltern gefunden haben. Dir fehlt das Miteinander, also gehst du fast allen anderen Tieren aus dem Weg, bist viel schreckhafter und versteckst dich, wenn Gefahr droht, statt zu kämpfen. Du trampelst weiter durch den Wald, gräbst nach Knollen und kühlst dich an heißen Tagen im Schlamm oder Wasser. Lockerere Wege als die Glade sind eine Kindle, ein Trupp Böcke ohne Anführer, oder als verstoßene alte Ricke der Anschluss an eine Barsboldia-Herde."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "White-lipped peccary + Common marmoset",
+        "labelDe": "Weißbartpekari + Weißbüscheläffchen",
+        "headline": "A peccary herd sharing one scent and fighting as a team, run marmoset-style by one matriarch with doting fathers.",
+        "playsLike": "You are a medium herbivore with strong sex roles. A 'glade' is ruled by one matriarch doe who decides nesting, territory and who eats first; subordinate does must submit, and bucks are gentle, parental and conflict-shy. All-male 'kindles' wander and adopt orphans. Up to 4 fight predators, does first and headstrong, and the whole glade despises raptors. You flee 3+ Large or any Apex carnivore. Infanticide by the matriarch and a 'blight' illness keep the glade tense.",
+        "setting": {
+          "label": "Forest territories, dug up for tubers",
+          "note": "Glades claim medium territories; all-male kindles are nomadic. Tramples through forest digging for tubers, rolls in mud or water on the hottest days, and often leaves by following a Barsboldia herd.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "white-lipped-peccary",
+            "animal": "White-lipped peccary",
+            "de": "Weißbartpekari",
+            "scientific": "Tayassu pecari",
+            "archetype": "pig",
+            "archetypeLabel": "Wild boar & pig",
+            "archetypeDe": "Wildschwein & Schwein",
+            "share": 65,
+            "role": "primary",
+            "covers": "Group life: a herd that shares one scent, digs tubers, tramples the forest and fights predators together",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/White-lipped_peccary_%28Tayassu_pecari%29_Rio_Negro.jpg/1280px-White-lipped_peccary_%28Tayassu_pecari%29_Rio_Negro.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:White-lipped_peccary_(Tayassu_pecari)_Rio_Negro.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "common-marmoset",
+            "animal": "Common marmoset",
+            "de": "Weißbüscheläffchen",
+            "scientific": "Callithrix jacchus",
+            "archetype": "primate",
+            "archetypeLabel": "Primate",
+            "archetypeDe": "Affe",
+            "share": 35,
+            "role": "secondary",
+            "covers": "Family system: one dominant breeding female, several males, and fathers who carry and raise the young",
+            "photo": {
+              "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Wei%C3%9Fb%C3%BCschelaffe_%28Callithrix_jacchus%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Raimond Spekking",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Wei%C3%9Fb%C3%BCschelaffe_(Callithrix_jacchus).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "One herd scent",
+            "text": "Scent glands on the neck are rubbed against glade members so everyone smells of the matriarch, as peccaries share one herd odour (official inspiration: white-lipped peccary)."
+          },
+          {
+            "trait": "Diggers",
+            "text": "Tramples through forest digging for tubers and knocks down small trees, reshaping the forest the way peccary herds do."
+          },
+          {
+            "trait": "Team defence",
+            "text": "Takes turns running back and forth at predators with kicks and tail slams to overwhelm them, the way peccaries fight jaguars as a group."
+          },
+          {
+            "trait": "One matriarch, many dads",
+            "text": "Polyandrous bonds, a single dominant breeding female, and bucks that universally nurture and adopt young. Marmoset groups work this way (official inspiration)."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Medium tier, 2,400 combat weight, 550 HP, sprint 1,050 held for 133 s."
+          }
+        ],
+        "notLike": [
+          "Peccaries are not matriarchies with submissive males.",
+          "Marmosets are tiny tree-dwellers; they only explain the family system."
+        ],
+        "twist": "Horses and rock hyraxes are official inspirations too.",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "parental",
+            "label": "Devoted parent",
+            "de": "Fürsorgliche Eltern"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "paleontological speculation, horses, white-lipped peccary, rock hyrax, buffy-headed marmoset",
+        "facts": {
+          "tier": "Medium",
+          "diet": "Herbivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 2400,
+          "maxHealth": 550,
+          "growthMinutes": 120,
+          "landSprint": 1050,
+          "landSprintSeconds": 133.333,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "forest",
     "label": "Forest",
@@ -19291,5 +19587,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

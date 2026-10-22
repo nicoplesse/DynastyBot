@@ -53,6 +53,10 @@ You are a large, aggressive carnivore that hunts only by day. A 'pack' is 1 unre
 - Anders als die Tiere: Lions scavenge readily; Torvosaurus may not scavenge. Real prides can hold many females; Torvosaurus packs cap at 3 adult females plus daughters.
 - Besonderheit: Its Thalassodromeus sentinels act like the ravens and vultures that give away rival predators.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Einzelne Männchen sind nomadische Löwenmännchen, die anderen die Beute abnehmen, einzelne Weibchen jagen erfolgreich, werden aber einsam. Beides ist Löwe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Volcano Islands, Big Tree Overlook, Cedrus Forest, Black Fern Hills, Stillwater Bog, Crag Bluffs

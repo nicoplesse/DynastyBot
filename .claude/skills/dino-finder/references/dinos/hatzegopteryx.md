@@ -48,6 +48,10 @@ You are a Large daytime flier (air sprint 1,100). Once you have paired for life 
 - Anders als die Tiere: A golden eagle is small next to most of its targets; Hatzegopteryx is a Large-tier giant (3,100 combat weight) that also walks and fights on the ground.
 - Besonderheit: Marsh harriers and barn owls are official inspirations too: aerial courtship displays and a hunter's eye for movement.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein unverpaarter Steinadler streift ohne Revier umher, bis er einen Partner findet. Revierkämpfe und Large-Beute kommen erst als Paar dazu, das Tier bleibt dasselbe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage
@@ -56,9 +60,8 @@ You are a Large daytime flier (air sprint 1,100). Once you have paired for life 
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus (Coast)** (sehr hoch): Tropeognathus (Coast) can create a very narrow escape window
+- **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus can create a very narrow escape window
-- **Tropeognathus (Ocean)** (sehr hoch): Tropeognathus (Ocean) can create a very narrow escape window
 - **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
 
 **Beute & Chancen:**

@@ -51,7 +51,7 @@ export default function App() {
     window.addEventListener('hashchange', update);
     return () => window.removeEventListener('hashchange', update);
   }, []);
-  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd')) return <Explorer route={route} />;
+  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/clamps') || route.startsWith('/routes') || route.startsWith('/foodweb') || route.startsWith('/radar') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd')) return <Explorer route={route} />;
   return <ImportApp />;
 }
 

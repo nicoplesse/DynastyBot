@@ -54,6 +54,10 @@ You are the coastal Lurdusaurus, a medium semi-aquatic herbivore in a 'float' of
 - Anders als die Tiere: The day is turned around. A marine iguana is cold-blooded and basks in the sun to warm up; the Lurdusaurus is "incredibly prone to overheating or even burning from the sun". So you shelter by day (shallows, shade, mud) and warm up on the sun-heated rock after dark. This is a reading of the profile, not a rule from it. Kelp only is a choice for this variant. The profile also allows lakeweed, reeds, berries, shellfish, fruits and salt. A rock shelter is a short refuge at the waterline, not a place to spend the day: the profile says they "almost exclusively prefer to remain in water" by day. Marine iguanas are a metre long and harmless; you are Medium tier (3,200 combat weight, 600 HP), fight with thumb spikes and live in a float with a dominant bull.
 - Besonderheit: The coast half of the profile: an iguana that has to hide from the sun it would love, and gets its warmth from the lava at night instead. Your river cousin, the Schlammbader, plays the same profile as a hippo.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du eine umherziehende Kuh auf der Suche nach einer Float. Meerechse bleibt Meerechse, nur ohne Kolonie.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Coastal Bluffs, Volcano Islands, Palm Islands
@@ -65,12 +69,12 @@ You are the coastal Lurdusaurus, a medium semi-aquatic herbivore in a 'float' of
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus (Coast)** (spürbar): Tropeognathus (Coast) can create a credible fight
-- **Tropeognathus (Ocean)** (spürbar): Tropeognathus (Ocean) can create a credible fight
+- **Tropeognathus** (spürbar): Tropeognathus can create a credible fight
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Deinosuchus (Shore)** (hoch): Deinosuchus (Shore) can create a real pursuit problem
 - **Eurhinosaurus** (hoch): Eurhinosaurus can create a real pursuit problem
+- **Kaiwhekea** (hoch): Kaiwhekea can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight

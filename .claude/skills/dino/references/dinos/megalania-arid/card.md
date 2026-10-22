@@ -55,6 +55,10 @@ You are the loner of the red rock, and you live on the ground. Where your temper
 - Anders als die Tiere: A leopard gecko is palm-sized and mostly active at dusk and night. You are a cathemeral predator with 2,600 combat weight, so you take its ground life, its stalk and its temper, not its size. Leopard geckos avoid the midday sun and warm up under stones. You also bask openly on rock, the way a Komodo does. Real monitors don't wage war on a neighbouring population. Arid Megalania challenge temperate ones out of their POIs and may hunt their adults.
 - Besonderheit: The gecko pair: your temperate cousin is the tokay that clings to trunks, you are the leopard gecko that keeps to the ground between the rocks. Scaled up, Megalania (Varanus priscus, one of the profile's male subspecies) was an Australian giant of dry country.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Der Komodowaran lebt allein und frisst nur gelegentlich mit anderen. Der kurze Mob für Apex-Beute löst sich sofort wieder auf.
+
 ## Karte & POIs
 
 - **Revier + Sonnen + Nisten:** Dry Fang Canyon

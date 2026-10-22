@@ -83,6 +83,26 @@ export function createApp({
     catch (error) { next(error); }
   });
 
+  app.get('/api/migration', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'migration.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/foodweb', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'foodweb.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/poi-radar', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'poi-radar.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/clamps', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'clamps.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
   app.get('/api/rules', async (_req, res, next) => {
     try { res.json(JSON.parse(await readFile(join(derivedDir, 'rules.json'), 'utf8'))); }
     catch (error) { next(error); }
@@ -104,8 +124,10 @@ export function createApp({
     catch (error) { next(error); }
   });
 
-  app.get('/api/analogs', async (_req, res, next) => {
-    try { res.json(JSON.parse(await readFile(join(derivedDir, 'analogs.json'), 'utf8'))); }
+  // ?mode=group serves the group index; solo (analogs.json) is the default.
+  const analogFile = req => (req.query.mode === 'group' ? 'analogs-group.json' : 'analogs.json');
+  app.get('/api/analogs', async (req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, analogFile(req)), 'utf8'))); }
     catch (error) { next(error); }
   });
 
@@ -113,7 +135,7 @@ export function createApp({
     try {
       const query = typeof req.query.q === 'string' ? req.query.q.slice(0, 200) : '';
       const limit = Math.min(61, Math.max(1, Number(req.query.limit) || 12));
-      const index = JSON.parse(await readFile(join(derivedDir, 'analogs.json'), 'utf8'));
+      const index = JSON.parse(await readFile(join(derivedDir, analogFile(req)), 'utf8'));
       res.json(searchAnalogs(index, query, { limit }));
     } catch (error) { next(error); }
   });

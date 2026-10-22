@@ -56,6 +56,10 @@ You are an Apex hadrosaur in a family herd of up to 10, led by a lead male or an
 - Lebensraum: Arid, desert-roaming nomad. Primarily arid-dwelling. Travels vast distances to Salt Rocks, can go long without water, and the herd stands shoulder to shoulder in the midday heat of the dry season.
 - Anders als die Tiere: Camels are not territorial; Barsboldia defends nests and food sources. Sprint stamina is short (50 s), so it cannot run far.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein einzelnes Wildkamel mit einem kleinen Gefährten wie Struthiomimus zieht genauso durch die Wüste wie die Herde, nur stiller.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

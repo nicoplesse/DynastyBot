@@ -47,6 +47,10 @@ You are a small nocturnal herbivore living in a large colony, yet each Camptosau
 - Lebensraum: Coasts, island scrub and forest edges. Nocturnal, though it can switch to a daytime rhythm inside mixed-species herds. The profile map marks coastal, island and forest-edge areas.
 - Anders als die Tiere: Quokkas are famously unafraid of people; Camptosaurus is a nervous prey animal. Pikas live in mountain rock fields, not on coasts.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Camptosaurus sind laut Profil Einzelgänger, auch in der Kolonie. Jeder hütet sein eigenes Fleckchen wie ein Pfeifhase, mit Nachbarn oder ohne.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Tallbrush Coasts, Volcano Islands, Coastland Swamp
@@ -57,7 +61,6 @@ You are a small nocturnal herbivore living in a large colony, yet each Camptosau
 - **Latenivenatrix** (conditional): Latenivenatrix matters only if it gets the right opening
 - **Compsognathus** (hoch): Compsognathus can create a real pursuit problem
 - **Concavenator** (conditional): Concavenator matters only if it gets the right opening
-- **Tropeognathus (Coast)** (conditional): Tropeognathus (Coast) matters only if it gets the right opening
 - **Kelenken** (conditional): Kelenken matters only if it gets the right opening
 - **Allosaurus** (conditional): Allosaurus matters only if it gets the right opening
 

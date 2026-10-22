@@ -47,6 +47,25 @@ You are a small, fast herbivore (sprint 1,150 for 182 s) in an unlimited 'warren
 - Anders als die Tiere: Rabbits never pick fights; Dryosaurus picks fights with almost everyone. Baboons are big and strong; Dryosaurus is Small tier (1,000 combat weight, 400 HP) and often only notices it's in danger when it's too late.
 - Besonderheit: Chihuahua energy (official inspiration): tiny, loud and convinced it can take anyone.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Die Pavian-Attitüde gibt es nur im Warren. Allein ist ein Dryosaurus laut Profil viel weniger selbstbewusst und läuft anderen Pflanzenfresser-Herden hinterher. Das ist der Feldhase, der allein lebt und sich auf seine Beine verlässt. Vom Kaninchen bleibt die Flucht in Höhle und Gebüsch.
+
+**Solo spielt er sich wie:**
+**Feldhase + Wildkaninchen (European hare + Wild rabbit)**: A lone hare instead of a warren bully: small, fast and much less sure of itself, it trails other herbivore herds and still elbows its way to the best berries.
+
+Alone you lack much of the confidence you have among your own kind. You trail behind other herbivore herds, hoping for their protection and foraging chances, and still muscle your way in to claim the best spots. That tolerance for other herbivores only lasts until you find other Dryosaurus. When danger gets close you rely on your speed and dive into a small cave or under thick bushes. A lone Dryosaurus that wants to join a warren is closely examined and harassed by the whole group first.
+
+- Feldhase / European hare – 60 %: Solo life: a solitary, nervous runner that relies on speed and keeps to the edge of other animals' grazing
+- Wildkaninchen / Wild rabbit – 40 %: Safety: still bolts into small caves and under thick bushes when things go wrong
+- Lebensraum: Caves, perches and food spots in forests and hills. Nomadic, but claims small territories around caves, perches and resources. Flees into small caves or under thick bushes.
+- Anders als die Tiere: Hares never follow other animals; a lone Dryosaurus trails other herbivore herds for safety. Hares escape across open ground; Dryosaurus still hides in caves and bushes like a rabbit.
+- Besonderheit: The chihuahua energy (official inspiration) is still there, just much quieter until it finds a warren.
+
+Solo bist du kein Kaninchen im frechen Warren, sondern ein Feldhase: klein, schnell und deutlich weniger selbstbewusst. Allein läufst du anderen Pflanzenfresser-Herden hinterher, weil sie dir Schutz und gute Futterplätze bieten, und drängelst dich trotzdem an die besten Beerenbüsche. Deine Duldung für andere Arten hält nur, bis du wieder Artgenossen findest. Wird es gefährlich, verlässt du dich auf deine Beine und verschwindest wie ein Kaninchen in einer kleinen Höhle oder unter dichtem Gebüsch. Willst du in einen Warren, wirst du dort erst einmal von allen gründlich beäugt und bedrängt.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

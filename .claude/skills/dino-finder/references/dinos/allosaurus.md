@@ -49,6 +49,24 @@ You are a large, hardy night hunter who can survive alone or in a pair or coalit
 - Lebensraum: Arid canyons, rock and scrub. Profile: prefers arid environments, travels long distances at night and shelters in caves, overhangs or dense foliage through the brightest part of the day.
 - Anders als die Tiere: Lions rest in the open; Allosaurus hides from daylight in caves. Lions scavenge freely; Allosaurus may not scavenge.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** In Paar oder Koalition bleibst du der Löwe der Trockengebiete. Allein beschreibt das Profil einen Einzelgänger fürs Leben, der nur Artgenossen bekämpft, lautlos aus der Deckung pirscht, kein Aas frisst und sich höchstens ein paar Tage zusammentut. Das ist der Puma, der Rotluchs bleibt für Nacht und Höhle.
+
+**Solo spielt er sich wie:**
+**Puma + Rotluchs (Cougar + Bobcat)**: A lone cougar of the dry country: a silent night stalker that tolerates every other species, drives out its own kind and hides in caves by day.
+
+Alone you hunt up to Large tier, at night only. Young Apatosaurus and Amargasaurus come first, but you need not take guarded or Adolescent Apatosaurus; next you try to surprise stegosaurids. You go silent, crouch low behind foliage and rocks and pick a lone or sleeping target. Every other species is tolerated and you may follow it out of curiosity, but any other Allosaurus in the POI must be challenged out before you hunt or nest. You do not scavenge. If you fail to bring down large prey for days or want to nest, you may team up for a few days, then leave again without a goodbye. As a solitary male you may leave the family once the clutch has succeeded.
+
+- Puma / Cougar – 70 %: Solo life: a lifelong loner that fights only its own kind, stalks big prey from cover, eats only its own kills and meets others just briefly to mate
+- Rotluchs / Bobcat – 30 %: Night routine: a nocturnal stalker that sleeps in caves and overhangs by day and curiously shadows other animals
+- Lebensraum: Arid canyons, rock and scrub. Profile: prefers arid environments, travels long distances at night and shelters in caves, overhangs or dense foliage through the brightest part of the day.
+- Anders als die Tiere: Cougars kill with a bite to the neck or throat; Allosaurus prefers to bleed its prey out. Cougars hold their range year-round; a solo Allosaurus only claims a POI when it wants to hunt or nest there.
+
+Solo bist du ein Puma der Trockengebiete: ein Einzelgänger, oft fürs ganze Leben, der gut allein zurechtkommt. Du jagst nur nachts und bis Large, zuerst junge Apatosaurus und Amargasaurus, wobei du bewachte oder halbstarke Apatosaurus auslassen darfst, danach versuchst du Stegosaurier zu überraschen. Auf der Pirsch wirst du still, duckst dich hinter Büsche und Felsen und suchst dir ein einzelnes oder schlafendes Tier. Andere Arten duldest du und folgst ihnen manchmal neugierig, aber jeden anderen Allosaurus im POI forderst du heraus, bevor du jagst oder nistest. Aas frisst du nicht. Klappt die große Beute tagelang nicht oder willst du nisten, tust du dich für ein paar Tage mit anderen zusammen und ziehst danach ohne Abschied weiter. Tagsüber schläfst du versteckt in Höhlen, unter Überhängen oder im Dickicht.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Volcano Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Crag Bluffs

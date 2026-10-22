@@ -49,6 +49,25 @@ You are an Apex-sized (5,500 combat weight) but passive herbivore in a herd of u
 - Anders als die Tiere: Wild horses kick hard; Parasaurolophus limits defence to 2 active defenders and a circle around the young.
 - Besonderheit: Eland (official inspiration) for the scale: the biggest antelope, still a flight animal.
 
+## Solo oder Gruppe
+
+**Anders gewichtet:** Einzelne Parasaurolophus sind meist Hirsche, die verstoßen wurden oder neue Bindungen suchen und laut rufend umherziehen. Das ist der Rothirsch allein, die Herdenführung der Wildpferde fällt größtenteils weg.
+
+**Solo spielt er sich wie:**
+**Rothirsch + Przewalski-Pferd (Red deer + Przewalski's horse)**: A lone red stag on the move: shunned or searching, he roams the ancestral routes and calls across open ground until another herd answers.
+
+Solitary Parasaurolophus are rare, and almost always stags who travel alone for a while, recently shunned from a herd or looking for new bonds. On open ground you call loudly, hoping to hear other herds echo back, either to reconnect with old herd mates or to find new ones. Alone you flee every Apex carnivore, and when attacked you keep fleeing or turn defensive. Herds take in strangers readily: does and stags even adopt orphans, young Iguanodon and Lambeosaurus and lone Barsboldia.
+
+- Rothirsch / Red deer – 75 %: Solo stag: a lone, calling stag roaming between herds in search of new bonds
+- Przewalski-Pferd / Przewalski's horse – 25 %: Herd memory: the ancestral routes it still follows, and the herd discipline that may have shunned it
+- Lebensraum: Long generational migration loops. Its own species route loops the north (Triad Falls, Tallbrush Coasts, Rocky Lake, Coastal Bluffs, Scale Lake, Volcano Islands, the mudflats, Cedar Valley, Sharptooth Oasis, Dry Fang Canyon), plus a shared mixed-species loop through the southern range. Territorial only around nests.
+- Anders als die Tiere: Red deer stags are quiet outside the rut; a lone Parasaurolophus calls constantly to find a herd.
+- Besonderheit: Eland (official inspiration) for the scale: the biggest antelope, still a flight animal.
+
+Solo bist du ein einzelner Rothirsch auf Wanderschaft, fast immer ein Hirsch, der aus einer Herde verstoßen wurde oder neue Bindungen sucht. Du ziehst die alten Wanderrouten entlang und rufst auf offenem Gelände laut, damit dir andere Herden antworten, ob alte Herdengenossen oder neue. Vor Apex-Räubern fliehst du allein immer, und wirst du angegriffen, fliehst du weiter oder wehrst dich. Herden nehmen Fremde gern auf, also ist dein Alleinsein meist nur eine Phase.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Volcano Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Mudflats, Cliffedge Falls, Coastland Swamp, Redwoods, Hollow Hills

@@ -54,6 +54,10 @@ You are a medium semi-aquatic herbivore in a 'float' of up to 10 (max 5 males) l
 - Anders als die Tiere: Hippos are giants; Lurdusaurus is Medium tier (3,200 combat weight, 600 HP) and must respect Deinosuchus and Spinosaurus. Hippos don't have thumb spikes; Lurdusaurus stabs with them.
 - Besonderheit: The river half of the profile. Your coastal cousin, the Lavaschnauber, plays the same profile as a marine iguana on the beaches and islands.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Solo bist du eine nomadische Flusspferdkuh auf der Suche nach einer Float. Ohne Gruppe fliehst du öfter, das Tier bleibt.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, Redwoods, Wind Tunnels, Wollemi Forest
@@ -72,12 +76,12 @@ You are a medium semi-aquatic herbivore in a 'float' of up to 10 (max 5 males) l
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Tropeognathus (Coast)** (spürbar): Tropeognathus (Coast) can create a credible fight
-- **Tropeognathus (Ocean)** (conditional): Tropeognathus (Ocean) matters only if it gets the right opening
+- **Tropeognathus** (spürbar): Tropeognathus can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
+- **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight

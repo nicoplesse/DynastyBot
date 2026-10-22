@@ -45,6 +45,10 @@ You are a small herbivore in an unlimited 'passel' led by one elder, the Quillgu
 - Lebensraum: Travels with ceratopsian herds. Nomadic. Readily welcomed into ceratopsian herds (Eotriceratops, Styracosaurus, Albertaceratops, Pachyrhinosaurus) as a sentry species.
 - Anders als die Tiere: Meerkats are predators; Psittacosaurus is a herbivore that snacks on insects. Opossums are loners; Psittacosaurus lives in a big group.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein einzelnes Erdmännchen ruft ständig nach seinem Mob, und genau das tut ein einzelner Psittacosaurus laut Profil. Allein bleibst du Wachposten, nur eben für eine fremde Herde.
+
 ## Karte & POIs
 
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

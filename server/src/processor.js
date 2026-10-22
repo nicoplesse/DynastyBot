@@ -1,14 +1,32 @@
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile as writeFileOnce } from 'node:fs/promises';
+import { setTimeout as sleep } from 'node:timers/promises';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 import { combineStats } from './stats-model.js';
-import { buildMatchups } from './matchups.js';
-import { attachAnalogRelatives, buildAnalogIndex, resolveAnalog } from './analogs.js';
+import { buildHuntPairs, buildMatchups } from './matchups.js';
+import { PLAY_MODES, attachAnalogRelatives, buildAnalogIndex, resolveAnalog, resolveModes } from './analogs.js';
 import { buildEcosystemIndex, resolveEcosystem } from './ecosystems.js';
+import { buildClampIndex } from './clamps.js';
+import { buildMigrationIndex } from './migration.js';
+import { buildFoodWeb } from './foodweb.js';
 import { readVariants } from './playables.js';
+import { buildPoiRadar } from './poi-radar.js';
+import { buildBleedTables } from './bleed.js';
 
 const projectRoot = fileURLToPath(new URL('../../', import.meta.url));
+
+// Windows briefly locks a file that was just written or is being read (scanner, the API serving
+// it), which fails the next write with UNKNOWN/EBUSY/EPERM. Retry a few times before giving up.
+async function writeFile(path, data) {
+  for (let attempt = 0; ; attempt++) {
+    try { return await writeFileOnce(path, data); }
+    catch (error) {
+      if (attempt >= 5 || !['UNKNOWN', 'EBUSY', 'EPERM'].includes(error.code)) throw error;
+      await sleep(150 * (attempt + 1));
+    }
+  }
+}
 const defaultRawDir = join(projectRoot, 'data', 'raw');
 const defaultProcessedDir = join(projectRoot, 'data', 'processed');
 
@@ -562,6 +580,14 @@ function parseRules(manifest, raw) {
   };
 }
 
+function catalogAnalog(analog) {
+  return analog ? {
+    label: analog.label, labelDe: analog.labelDe, headline: analog.headline,
+    analogs: analog.analogs.map(({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo }) => ({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo: photo ? { image: photo.image, focus: photo.focus } : null })),
+    moods: analog.moods.map(mood => mood.id), habitats: analog.setting.habitats.map(habitat => habitat.id),
+  } : null;
+}
+
 export async function buildProcessedData({ rawDir = defaultRawDir, processedDir = defaultProcessedDir } = {}) {
   const rawRoot = resolve(rawDir);
   const outputRoot = resolve(processedDir);
@@ -586,7 +612,15 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   const animalPhotos = (await optionalReference('animal-photos.json'))?.animals || {};
   const ingameCovers = (await optionalReference('ingame-covers.json'))?.profiles || {};
   const ecosystemDoc = await optionalReference('ecosystems.json');
+  const clampDoc = await optionalReference('clamps.json');
+  const migrationDoc = await optionalReference('migration-routes.json');
+  const foodWebDoc = await optionalReference('food-web.json');
+  const routeTrace = await readFile(join(dirname(rawRoot), 'map', 'routes.json'), 'utf8').then(JSON.parse).catch(error => {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  });
   const analogDocs = new Map();
+  const modeDocs = new Map();
   const regions = await loadRegions(join(dirname(rawRoot), 'map', 'regions.json'));
   const mapIndex = { schemaVersion: 1, generatedAt: null, dryMoisture: [...DRY_MOISTURE], groups: { dry: [], aquatic: [], migration: [] }, moisture: {}, biome: {}, landscape: {}, regions: {}, dinos: {} };
   const profileOutput = join(outputRoot, 'profiles');
@@ -625,6 +659,12 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
             throw error;
           });
           if (analogDoc) analogDocs.set(profile.id, analogDoc);
+          // Solo or group: whether playing alone or in a group changes the real animal (curated).
+          const modesDoc = await readFile(join(contentDir, 'modes.json'), 'utf8').then(JSON.parse).catch(error => {
+            if (error.code === 'ENOENT') return null;
+            throw error;
+          });
+          if (modesDoc) modeDocs.set(profile.id, modesDoc);
           // Personal play guide ("profile above the profile"): curated prose, the profile stays the law.
           profile.playstyle = await readFile(join(contentDir, 'playstyle.json'), 'utf8').then(JSON.parse).catch(error => {
             if (error.code === 'ENOENT') return null;
@@ -642,15 +682,40 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
     profile.matchups = matchups[profile.id] || null;
     // Resolved after matchups so the analog's stat facts can reuse the parsed hunt/group traits.
     profile.analog = resolveAnalog(analogDocs.get(profile.id), profile, analogVocabulary);
-    for (const analog of profile.analog?.analogs || []) analog.photo = animalPhoto(animalPhotos[analog.id]);
+    profile.modes = resolveModes(modeDocs.get(profile.id), analogDocs.get(profile.id), profile, analogVocabulary);
+    for (const own of [profile.analog, ...PLAY_MODES.map(mode => profile.modes?.[mode].analog)]) {
+      for (const analog of own?.analogs || []) analog.photo = animalPhoto(animalPhotos[analog.id]);
+    }
     profile.ecosystem = resolveEcosystem(ecosystemDoc, profile);
   }
   attachAnalogRelatives(profiles);
-  for (const profile of profiles) await writeFile(join(profileOutput, `${profile.id}.json`), JSON.stringify(profile, null, 2) + '\n');
-  const analogIndex = buildAnalogIndex(profiles, analogVocabulary);
-  if (ecosystemDoc) await writeFile(join(outputRoot, 'ecosystems.json'), JSON.stringify(buildEcosystemIndex(profiles, ecosystemDoc), null, 2) + '\n');
+  for (const mode of PLAY_MODES) attachAnalogRelatives(profiles, profile => profile.modes?.[mode].analog);
+  // The Animal Finder follows the solo/group switch: one index per play mode, solo by default.
+  const modeAnalog = mode => profile => profile.modes?.[mode].analog ?? profile.analog;
+  const analogIndex = buildAnalogIndex(profiles, analogVocabulary, { pick: modeAnalog('solo'), mode: 'solo' });
+  const groupAnalogIndex = buildAnalogIndex(profiles, analogVocabulary, { pick: modeAnalog('group'), mode: 'group' });
+  const ecosystemIndex = ecosystemDoc ? buildEcosystemIndex(profiles, ecosystemDoc) : null;
+  if (ecosystemIndex) await writeFile(join(outputRoot, 'ecosystems.json'), JSON.stringify(ecosystemIndex, null, 2) + '\n');
   else await rm(join(outputRoot, 'ecosystems.json'), { force: true });
   await writeFile(join(outputRoot, 'analogs.json'), JSON.stringify(analogIndex, null, 2) + '\n');
+  await writeFile(join(outputRoot, 'analogs-group.json'), JSON.stringify(groupAnalogIndex, null, 2) + '\n');
+  await writeFile(join(outputRoot, 'clamps.json'), JSON.stringify(buildClampIndex(profiles, clampDoc), null, 2) + '\n');
+  // Compact: the web holds one small verdict per hunter, target and group setup.
+  const foodWeb = buildFoodWeb(profiles, foodWebDoc, ecosystemIndex);
+  if (foodWeb) await writeFile(join(outputRoot, 'foodweb.json'), JSON.stringify(foodWeb) + '\n');
+  else await rm(join(outputRoot, 'foodweb.json'), { force: true });
+  // Bleed table per hunter (hits of its bleeding attack until each prey is down); needs the food web.
+  const bleedTables = buildBleedTables(profiles, foodWeb);
+  for (const profile of profiles) {
+    profile.bleed = bleedTables[profile.id] || null;
+    await writeFile(join(profileOutput, `${profile.id}.json`), JSON.stringify(profile, null, 2) + '\n');
+  }
+  const migration = buildMigrationIndex(profiles, routeTrace, migrationDoc, regions.list);
+  if (migration) await writeFile(join(outputRoot, 'migration.json'), JSON.stringify(migration, null, 2) + '\n');
+  else await rm(join(outputRoot, 'migration.json'), { force: true });
+  // POI radar: who is at each POI and every hunter-target pair, for the hover map.
+  if (regions.list.length) await writeFile(join(outputRoot, 'poi-radar.json'), JSON.stringify(buildPoiRadar(profiles, { regions: regions.list, migration, hunts: buildHuntPairs(profiles) })) + '\n');
+  else await rm(join(outputRoot, 'poi-radar.json'), { force: true });
   const speedKnown = profiles.length > 0 && profiles.every(profile => profile.speed?.land?.sprint > 0);
   const matchupMap = { schemaVersion: 3, generatedAt: new Date().toISOString(), speedKnown, methodology: 'intent-contact-pursuit-groups', dinos: matchups };
   await writeFile(join(outputRoot, 'matchups.json'), JSON.stringify(matchupMap, null, 2) + '\n');
@@ -660,10 +725,11 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
     classification: profile.classification, stats: { combatWeight: profile.stats.combatWeight, growthMinutes: profile.stats.growthMinutes, changeCount: profile.stats.changes.length },
     habitat: profile.habitat ? { classification: profile.habitat.classification, moisture: profile.habitat.moisture, biomes: profile.habitat.biomes, regions: profile.habitat.regions.length, isDry: profile.habitat.isDry, hasMap: Boolean(profile.map) } : null,
     matchups: profile.matchups ? { threats: profile.matchups.threats.length, opportunities: profile.matchups.opportunities.length } : null,
-    analog: profile.analog ? {
-      label: profile.analog.label, labelDe: profile.analog.labelDe, headline: profile.analog.headline,
-      analogs: profile.analog.analogs.map(({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo }) => ({ animal, de, archetype, archetypeLabel, archetypeDe, share, role, photo: photo ? { image: photo.image, focus: photo.focus } : null })),
-      moods: profile.analog.moods.map(mood => mood.id), habitats: profile.analog.setting.habitats.map(habitat => habitat.id),
+    analog: catalogAnalog(profile.analog),
+    // Only the mode that differs from analog.json carries its own compact analog.
+    modes: profile.modes ? {
+      base: profile.modes.base, verdict: profile.modes.verdict, changes: profile.modes.changes, note: profile.modes.note,
+      ...Object.fromEntries(PLAY_MODES.map(mode => [mode, profile.modes[mode].own ? catalogAnalog(profile.modes[mode].analog) : null])),
     } : null,
     solo: profile.playstyle?.solo?.fit || null,
     variant: profile.variant ? { id: profile.variant.id, label: profile.variant.label, de: profile.variant.de, title: profile.variant.title, parentId: profile.variant.parentId, parentName: profile.variant.parentName } : null,

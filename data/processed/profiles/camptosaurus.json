@@ -8249,7 +8249,7 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Camptosaurus has 1 high-priority matchup where fight maths, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Camptosaurus has 1 high-priority matchup where fight maths, pursuit and profile intent align. Against 3 listed threats, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "latenivenatrix",
@@ -8592,120 +8592,6 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Concavenator is inside the legal hunt range."
-        },
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "tropeognathus-coast",
-        "name": "Tropeognathus (Coast)",
-        "family": "tropeognathus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "predator",
-        "headline": "Tropeognathus (Coast) matters only if it gets the right opening",
-        "summary": "Tropeognathus (Coast) is inside the legal hunt range. Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass. 4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
-        "score": 49,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Giant tier."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 1300,
-          "targetSpeed": 1125,
-          "speedMarginPct": 15.6,
-          "attackerDurationSeconds": 181.818,
-          "targetDurationSeconds": 250,
-          "durationMarginPct": -27.3,
-          "label": "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "volcano-islands",
-            "coastland-swamp"
-          ],
-          "overlap": 0.3,
-          "label": "3 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Giant tier.",
-          "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass.",
-          "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
-          "3 shared mapped areas make contact plausible.",
-          "One-on-one, a Tropeognathus (Coast) chomp lands 86 on Camptosaurus (9 to kill); a Camptosaurus bite lands 16 back (29 to kill).",
-          "Tropeognathus (Coast)'s bleed builds faster than Camptosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-        ],
-        "fight": {
-          "attackers": 4,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 86,
-            "defenderHit": 16,
-            "attackerBurst": 124,
-            "defenderBurst": 16,
-            "attackerHitsToKill": 9,
-            "defenderHitsToKill": 29,
-            "attackerDps": 50.9,
-            "defenderDps": 15.8,
-            "attackerTimeToKill": 14,
-            "defenderTimeToKill": 29,
-            "attackerBleed": 0.149,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 4,
-            "attackersLeft": 4,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.97,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 3.5
-            }
-          },
-          "label": "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
-          "detail": "4 attackers vs 1 defender",
-          "attackerCombatWeight": 2000,
-          "targetCombatWeight": 1050,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "4 Tropeognathus (Coast) vs 1 Camptosaurus: the Tropeognathus (Coast) side wins in about 4 s with 97% of its health left.",
-            "attackers": 4,
-            "defenders": 1
-          }
-        },
-        "attackerId": "tropeognathus-coast",
-        "targetId": "camptosaurus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Tropeognathus (Coast)",
-          "targetName": "Camptosaurus",
-          "chaseVerdict": "target-can-disengage",
-          "chaseLabel": "Tropeognathus (Coast) can arrive from the air, but Camptosaurus's 1125 land speed and longer sprint let it disengage after the opening pass.",
-          "baseScore": 31,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Tropeognathus (Coast) is inside the legal hunt range."
         },
         "tags": [],
         "evidence": [],
@@ -9070,36 +8956,6 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "tropeognathus-coast": {
-        "id": "tropeognathus-coast",
-        "name": "Tropeognathus (Coast)",
-        "cw": 2000,
-        "hp": 450,
-        "armor": 1,
-        "dps": 26.71,
-        "primary": {
-          "label": "Chomp",
-          "damage": 45,
-          "cooldown": 1.75
-        },
-        "burst": {
-          "label": "Ramming Rampage",
-          "damage": 65,
-          "cooldown": 20,
-          "situational": false
-        },
-        "attacks": [
-          "Chomp",
-          "Ramming Rampage"
-        ],
-        "bleedPerSecond": 0.078,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 4,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
-        "engagementUnlimited": false
-      },
       "kelenken": {
         "id": "kelenken",
         "name": "Kelenken",
@@ -9360,6 +9216,341 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "both",
+    "verdict": "same",
+    "changes": null,
+    "note": "Camptosaurus sind laut Profil Einzelgänger, auch in der Kolonie. Jeder hütet sein eigenes Fleckchen wie ein Pfeifhase, mit Nachbarn oder ohne.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Quokka + American pika",
+        "labelDe": "Quokka + Pfeifhase",
+        "headline": "A quokka colony where every neighbour guards its own little patch like a pika.",
+        "playsLike": "You are a small nocturnal herbivore living in a large colony, yet each Camptosaurus is really a loner holding its own small home range next to the neighbours'. You rarely interact outside courtship, nesting and border disputes. Only one of you engages a threat, and you flee Achillobator and every Large or bigger carnivore. Your stamina carries you far (sprint 1,125 for 250 s), and you remember faces, places and sounds.",
+        "setting": {
+          "label": "Coasts, island scrub and forest edges",
+          "note": "Nocturnal, though it can switch to a daytime rhythm inside mixed-species herds. The profile map marks coastal, island and forest-edge areas.",
+          "habitats": [
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "quokka",
+            "animal": "Quokka",
+            "de": "Quokka",
+            "scientific": "Setonix brachyurus",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 55,
+            "role": "primary",
+            "covers": "Body and nights: a small nocturnal browser of coast and island scrub that escapes by speed",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Setonix_brachyurus_on_Rottnest_Island_1.jpg/1280px-Setonix_brachyurus_on_Rottnest_Island_1.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Christophe95",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Setonix_brachyurus_on_Rottnest_Island_1.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "american-pika",
+            "animal": "American pika",
+            "de": "Pfeifhase",
+            "scientific": "Ochotona princeps",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Society: a colony of loners, each guarding its own little patch beside the neighbours",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/American_pika_%28Ochotona_princeps_princeps%29_haying_spotted_saxifrage_%28Saxifraga_bronchialis%29_Moraine_Lake.jpg/1280px-American_pika_%28Ochotona_princeps_princeps%29_haying_spotted_saxifrage_%28Saxifraga_bronchialis%29_Moraine_Lake.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:American_pika_(Ochotona_princeps_princeps)_haying_spotted_saxifrage_(Saxifraga_bronchialis)_Moraine_Lake.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Colony of loners",
+            "text": "Lives in large colonies, but each individual keeps a home range that borders the others' and rarely interacts with them. Pikas live exactly like this, each defending its own patch inside the colony (official inspiration)."
+          },
+          {
+            "trait": "Small night browser",
+            "text": "Small, nocturnal, eats berries but anything else too, and escapes by running. That is the quokka and wallaby lifestyle (official inspiration)."
+          },
+          {
+            "trait": "Prey animal",
+            "text": "Flighty/Defensive with only 1 engaging (a male may defend a female raising his young). Flees Achillobator and Large+ carnivores."
+          },
+          {
+            "trait": "Memory",
+            "text": "Recalls locations, sounds and faces, which offsets its motion-based eyesight when spotting danger."
+          },
+          {
+            "trait": "Harem",
+            "text": "Harem bonds: a male defends the female raising his offspring."
+          }
+        ],
+        "notLike": [
+          "Quokkas are famously unafraid of people; Camptosaurus is a nervous prey animal.",
+          "Pikas live in mountain rock fields, not on coasts."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Quokka, Wallaby, Pica and some creative liberty",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 1050,
+          "maxHealth": 700,
+          "growthMinutes": 90,
+          "landSprint": 1125,
+          "landSprintSeconds": 250,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 1,
+          "mapBiomes": [
+            "coast",
+            "volcanic",
+            "swamp"
+          ],
+          "isDry": false,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Quokka + American pika",
+        "labelDe": "Quokka + Pfeifhase",
+        "headline": "A quokka colony where every neighbour guards its own little patch like a pika.",
+        "playsLike": "You are a small nocturnal herbivore living in a large colony, yet each Camptosaurus is really a loner holding its own small home range next to the neighbours'. You rarely interact outside courtship, nesting and border disputes. Only one of you engages a threat, and you flee Achillobator and every Large or bigger carnivore. Your stamina carries you far (sprint 1,125 for 250 s), and you remember faces, places and sounds.",
+        "setting": {
+          "label": "Coasts, island scrub and forest edges",
+          "note": "Nocturnal, though it can switch to a daytime rhythm inside mixed-species herds. The profile map marks coastal, island and forest-edge areas.",
+          "habitats": [
+            {
+              "id": "sea",
+              "label": "Sea & coast",
+              "de": "Meer & Küste"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "quokka",
+            "animal": "Quokka",
+            "de": "Quokka",
+            "scientific": "Setonix brachyurus",
+            "archetype": "marsupial",
+            "archetypeLabel": "Kangaroo & marsupial",
+            "archetypeDe": "Känguru & Beuteltier",
+            "share": 55,
+            "role": "primary",
+            "covers": "Body and nights: a small nocturnal browser of coast and island scrub that escapes by speed",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Setonix_brachyurus_on_Rottnest_Island_1.jpg/1280px-Setonix_brachyurus_on_Rottnest_Island_1.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Christophe95",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Setonix_brachyurus_on_Rottnest_Island_1.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "american-pika",
+            "animal": "American pika",
+            "de": "Pfeifhase",
+            "scientific": "Ochotona princeps",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 45,
+            "role": "secondary",
+            "covers": "Society: a colony of loners, each guarding its own little patch beside the neighbours",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/American_pika_%28Ochotona_princeps_princeps%29_haying_spotted_saxifrage_%28Saxifraga_bronchialis%29_Moraine_Lake.jpg/1280px-American_pika_%28Ochotona_princeps_princeps%29_haying_spotted_saxifrage_%28Saxifraga_bronchialis%29_Moraine_Lake.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:American_pika_(Ochotona_princeps_princeps)_haying_spotted_saxifrage_(Saxifraga_bronchialis)_Moraine_Lake.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Colony of loners",
+            "text": "Lives in large colonies, but each individual keeps a home range that borders the others' and rarely interacts with them. Pikas live exactly like this, each defending its own patch inside the colony (official inspiration)."
+          },
+          {
+            "trait": "Small night browser",
+            "text": "Small, nocturnal, eats berries but anything else too, and escapes by running. That is the quokka and wallaby lifestyle (official inspiration)."
+          },
+          {
+            "trait": "Prey animal",
+            "text": "Flighty/Defensive with only 1 engaging (a male may defend a female raising his young). Flees Achillobator and Large+ carnivores."
+          },
+          {
+            "trait": "Memory",
+            "text": "Recalls locations, sounds and faces, which offsets its motion-based eyesight when spotting danger."
+          },
+          {
+            "trait": "Harem",
+            "text": "Harem bonds: a male defends the female raising his offspring."
+          }
+        ],
+        "notLike": [
+          "Quokkas are famously unafraid of people; Camptosaurus is a nervous prey animal.",
+          "Pikas live in mountain rock fields, not on coasts."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "prey",
+            "label": "Prey animal — lives alert",
+            "de": "Beutetier"
+          },
+          {
+            "id": "nocturnal",
+            "label": "Night-active",
+            "de": "Nachtaktiv"
+          },
+          {
+            "id": "territorial",
+            "label": "Territorial",
+            "de": "Territorial"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "medium",
+        "officialInspiration": "Quokka, Wallaby, Pica and some creative liberty",
+        "facts": {
+          "tier": "Small",
+          "diet": "Herbivore",
+          "activity": "Nocturnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 1050,
+          "maxHealth": 700,
+          "growthMinutes": 90,
+          "landSprint": 1125,
+          "landSprintSeconds": 250,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 1,
+          "mapBiomes": [
+            "coast",
+            "volcanic",
+            "swamp"
+          ],
+          "isDry": false,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "sea",
     "label": "Sea & Coast",
@@ -9379,5 +9570,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

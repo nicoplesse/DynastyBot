@@ -7,13 +7,14 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Europäischer Dachs / European badger: Albertaceratops
 - Wildschwein / Wild boar: Pycnonemosaurus, Albertaceratops
 - Afrikanischer Wildhund / African wild dog: Alioramus
-- Asiatischer Löwe / Asiatic lion: Allosaurus
+- Puma / Cougar: Allosaurus, Daspletosaurus
 - Rotluchs / Bobcat: Allosaurus
+- Okapi / Okapi: Amargasaurus
 - Gnu / Wildebeest: Amargasaurus
-- Giraffe / Giraffe: Argentinosaurus, Amargasaurus
 - Wombat / Wombat: Anodontosaurus
 - Honigdachs / Honey badger: Anodontosaurus
 - Afrikanischer Elefant / African savanna elephant: Apatosaurus
+- Giraffe / Giraffe: Argentinosaurus
 - Gorilla (Silberrücken) / Gorilla (silverback troop): Argentinosaurus
 - EKH-Hauskatze / European Shorthair: Austroraptor
 - Kaiserpinguin / Emperor penguin: Austroraptor
@@ -21,31 +22,30 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Wüstenelefant / Desert elephant: Barsboldia
 - Quokka / Quokka: Camptosaurus
 - Pfeifhase / American pika: Camptosaurus
-- Grauwolf / Grey wolf: Ceratosaurus
+- Grauwolf / Grey wolf: Ceratosaurus, Utahraptor
 - Huhn (Bankivahuhn) / Chicken (red junglefowl): Citipati
-- Wanderratte / Brown rat: Compsognathus
 - Goldschakal / Golden jackal: Compsognathus
-- Riesenotter / Giant otter: Concavenator
-- Hermelin / Stoat: Concavenator
+- Wanderratte / Brown rat: Compsognathus
+- Vielfraß / Wolverine: Concavenator
+- Eurasischer Fischotter / Eurasian otter: Concavenator
 - Dingo / Dingo: Daspletosaurus
-- Puma / Cougar: Daspletosaurus
 - Höckerschwan / Mute swan: Deinocheirus
 - Elch / Moose: Yunnanosaurus, Deinocheirus
-- Tüpfelhyäne / Spotted hyena: Maip, Deinonychus
-- Zwergmanguste / Dwarf mongoose: Deinonychus
+- Schabrackenhyäne / Brown hyena: Deinonychus
+- Schabrackenschakal / Black-backed jackal: Deinonychus
 - Weißer Hai / Great white shark: Deinosuchus (Ocean), Tyrannotitan
 - See-Elefant / Southern elephant seal: Deinosuchus (Ocean)
 - Nilkrokodil / Nile crocodile: Deinosuchus (Shore)
 - Rotfuchs / Red fox: Dilophosaurus
 - Waschbär / Raccoon: Dilophosaurus
+- Feldhase / European hare: Dryosaurus
 - Wildkaninchen / Wild rabbit: Dryosaurus
-- Pavian (Trupp) / Baboon troop: Dryosaurus
-- Asiatischer Elefant / Asian elephant: Eotriceratops
 - Flusspferd (Bulle) / Hippopotamus (bull): Eotriceratops
+- Asiatischer Elefant / Asian elephant: Eotriceratops
 - Großer Tümmler / Bottlenose dolphin: Eurhinosaurus
 - Jaguar / Jaguar: Giganotosaurus
 - Stockente / Mallard: Halszkaraptor
-- Elster / Magpie: Halszkaraptor
+- Kuhreiher / Cattle egret: Halszkaraptor
 - Steinadler / Golden eagle: Hatzegopteryx
 - Kaffernbüffel / Cape buffalo: Iguanodon
 - Seelöwe / Sea lion: Kaiwhekea
@@ -55,22 +55,22 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Stachelschwein / Porcupine: Kentrosaurus
 - Sambarhirsch / Sambar deer: Lambeosaurus
 - Schaf (Herde) / Sheep (flock): Lambeosaurus
+- Kolkrabe / Common raven: Latenivenatrix, Maip
 - Saatkrähe / Rook: Latenivenatrix
-- Rothund / Dhole: Latenivenatrix
 - Walhai / Whale shark: Leedsichthys
 - Kahlhecht / Bowfin: Leedsichthys
 - Meerechse / Marine iguana: Lurdusaurus (Coast)
 - Flusspferd / Hippopotamus: Lurdusaurus (Freshwater), Lurdusaurus (Coast)
 - Wasserschwein / Capybara: Lurdusaurus (Freshwater)
-- Kolkrabe / Common raven: Maip
+- Tüpfelhyäne / Spotted hyena: Maip
 - Komodowaran / Komodo dragon: Megalania (Arid)
 - Leopardgecko / Leopard gecko: Megalania (Arid)
 - Buntwaran / Lace monitor: Megalania (Temperate)
 - Tokeh / Tokay gecko: Megalania (Temperate)
 - Gila-Krustenechse / Gila monster: Metriacanthosaurus
 - Pfeilgiftfrosch / Poison dart frog: Metriacanthosaurus
-- Schneeziege / Mountain goat: Pachycephalosaurus
 - Dickhornschaf / Bighorn sheep: Pachycephalosaurus
+- Schneeziege / Mountain goat: Pachycephalosaurus
 - Moschusochse / Musk ox: Pachyrhinosaurus, Styracosaurus
 - Karibu / Rentier / Caribou / reindeer: Pachyrhinosaurus
 - Rothirsch / Red deer: Parasaurolophus
@@ -83,7 +83,6 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Madenhacker / Oxpecker: Rhamphorhynchus
 - Sittich / Parakeet: Rhamphorhynchus
 - Sumpfkrokodil / Mugger crocodile: Sarcosuchus
-- Blatthühnchen / Jacana: Sarcosuchus
 - Grizzlybär / Grizzly bear: Spinosaurus (Freshwater)
 - Leistenkrokodil / Saltwater crocodile: Spinosaurus (Freshwater)
 - Eisbär / Polar bear: Spinosaurus (Saltwater), Tyrannosaurus
@@ -92,22 +91,19 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Grevyzebra / Grévy's zebra: Stegosaurus
 - Strauß / Ostrich: Struthiomimus
 - Spießbock (Oryx) / Gemsbok (oryx): Styracosaurus
-- Gangesgavial / Gharial: Suchomimus
+- Riesenotter / Giant otter: Suchomimus
 - Kojote / Coyote: Suchomimus
-- Weißbartpekari / White-lipped peccary: Tenontosaurus
-- Weißbüscheläffchen / Common marmoset: Tenontosaurus
+- Flachlandtapir / Lowland tapir: Tenontosaurus
+- Kronenducker / Common duiker: Tenontosaurus
 - Taube / Pigeon: Thalassodromeus
 - Lachmöwe / Black-headed gull: Thalassodromeus
 - Kasuar / Cassowary: Therizinosaurus
 - Afrikanischer Löwe / African lion: Torvosaurus
-- Silbermöwe / Herring gull: Tropeognathus (Coast)
-- Kormoran / Great cormorant: Tropeognathus (Coast)
-- Wanderalbatros / Wandering albatross: Tropeognathus (Ocean)
-- Basstölpel / Northern gannet: Tropeognathus (Ocean)
+- Basstölpel / Northern gannet: Tropeognathus
+- Kormoran / Great cormorant: Tropeognathus
 - Orca (Schwertwal) / Orca: Tylosaurus
 - Waldkauz / Tawny owl: Tyrannosaurus
 - Tiger / Tiger: Tyrannotitan
-- Grauwolf (Familienrudel) / Grey wolf (family pack): Utahraptor
 - Laubenvogel / Bowerbird: Utahraptor
 - Rotes Riesenkänguru / Red kangaroo: Yunnanosaurus
 - Schneeleopard / Snow leopard: Yutyrannus

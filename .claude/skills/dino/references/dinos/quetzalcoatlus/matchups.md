@@ -14,13 +14,13 @@ Hatzegopteryx is linked by a specific profile rule. Hatzegopteryx can approach a
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 34 pro Haupttreffer vom Angreifer (18 bis zum Kill), 71 zurück (9 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Tropeognathus (Coast) – sehr hoch (predator)
-Tropeognathus (Coast) can create a very narrow escape window
+### Tropeognathus – sehr hoch (predator)
+Tropeognathus can create a very narrow escape window
 
-Tropeognathus (Coast) is linked by a specific profile rule. Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Coast) vs 1 Quetzalcoatlus: the Tropeognathus (Coast) side wins in about 8 s with 83% of its health left.
-- Verfolgung: Tropeognathus (Coast) can approach at 1300 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Coast) vs 1 Quetzalcoatlus: the Tropeognathus (Coast) side wins in about 8 s with 83% of its health left. (Kampfgewicht 2000 vs 2750)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Coast) vs 1 Quetzalcoatlus: the Tropeognathus (Coast) side wins in about 8 s with 83% of its health left.
+Tropeognathus is linked by a specific profile rule. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus vs 1 Quetzalcoatlus: the Tropeognathus side wins in about 8 s with 83% of its health left.
+- Verfolgung: Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.
+- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus vs 1 Quetzalcoatlus: the Tropeognathus side wins in about 8 s with 83% of its health left. (Kampfgewicht 2000 vs 2750)
+- Kampf (beide Seiten legal max): 4 Tropeognathus vs 1 Quetzalcoatlus: the Tropeognathus side wins in about 8 s with 83% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 33 pro Haupttreffer vom Angreifer (19 bis zum Kill), 110 zurück (5 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
@@ -33,16 +33,6 @@ Thalassodromeus is linked by a specific profile rule. Thalassodromeus can approa
 - Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 31 pro Haupttreffer vom Angreifer (20 bis zum Kill), 105 zurück (5 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Tropeognathus (Ocean) – conditional (predator)
-Tropeognathus (Ocean) matters only if it gets the right opening
-
-Tropeognathus (Ocean) is linked by a specific profile rule. Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters. 4 Tropeognathus (Ocean) vs 1 Quetzalcoatlus: the Tropeognathus (Ocean) side wins in about 8 s with 83% of its health left.
-- Verfolgung: Tropeognathus (Ocean) can approach at 1300 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Tropeognathus (Ocean) vs 1 Quetzalcoatlus: the Tropeognathus (Ocean) side wins in about 8 s with 83% of its health left. (Kampfgewicht 2000 vs 2750)
-- Kampf (beide Seiten legal max): 4 Tropeognathus (Ocean) vs 1 Quetzalcoatlus: the Tropeognathus (Ocean) side wins in about 8 s with 83% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 33 pro Haupttreffer vom Angreifer (19 bis zum Kill), 110 zurück (5 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
 
 ## Chancen (wen du jagen/schlagen kannst)
 

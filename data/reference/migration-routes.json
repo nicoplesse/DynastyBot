@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "note": "Named migration routes for the route overview. Each route is drawn from one reference layer traced by server/scripts/trace-routes.mjs (map + line colour, see data/map/routes.json). Members are found automatically: a playable whose own map line covers the reference line uses the whole route, one whose line lies on part of it uses that part. `extra` adds members the profile text names but the map does not draw.",
+  "matchFull": 0.85,
+  "matchPart": 0.85,
+  "routes": [
+    {
+      "id": "mixed",
+      "name": "Mixed Species Migration Route",
+      "de": "Gemischte Herden-Route",
+      "color": "#f2c14e",
+      "layer": "parasaurolophus:white",
+      "note": "The big shared loop of the hadrosaur herds: from Tallbrush Coasts and Kelp Vale along the volcano coast, down through Stillwater Bog and Coastland Swamp to East Passage and Wollemi, back west over Hollow Hills and the Redwoods."
+    },
+    {
+      "id": "parasaurolophus",
+      "name": "Parasaurolophus Migration Route",
+      "de": "Parasaurolophus-Route",
+      "color": "#f28ba8",
+      "layer": "parasaurolophus:pink",
+      "note": "The Parasaurolophus' own northern loop (pink on its profile map); each herd keeps its own generational route."
+    },
+    {
+      "id": "ceratopsian",
+      "name": "Ceratopsian Migration Route",
+      "de": "Ceratopsier-Route",
+      "color": "#b48cff",
+      "layer": "pachyrhinosaurus:white",
+      "note": "From the northern nesting canyon via Steep Run, Cedrus Forest and Cliff Edge Falls through the Redwoods and Hollow Hills to the Wollemi nesting grounds. Pachyrhinosaurus, Styracosaurus and Albertaceratops share it as a mixed ceratopsian herd."
+    },
+    {
+      "id": "eotriceratops",
+      "name": "Eotriceratops Migration Route",
+      "de": "Eotriceratops-Route",
+      "color": "#ff8a4c",
+      "layer": "eotriceratops:white",
+      "note": "The matriarchies' route between their seasonal nesting grounds in the north and the south, along the western forests (Dry Fang Canyon, Black Fern Hills, Redwoods) with a branch over Cedrus Forest to Stillwater Bog. Psittacosaurus follow it too."
+    },
+    {
+      "id": "sauropod",
+      "name": "Sauropod Migration Route",
+      "de": "Sauropoden-Route",
+      "color": "#4fd6e0",
+      "layer": "apatosaurus:white",
+      "note": "The giants' corridors: the western route from Dry Fang Canyon over Steep Run and Cedrus Forest to Stillwater Bog and Cliff Edge Falls (Argentinosaurus and Amargasaurus use this part), and the Apatosaurus branch from Tallbrush Coasts over the Volcano Islands nursery to the Mudflats."
+    },
+    {
+      "id": "leedsichthys",
+      "name": "Leedsichthys Migration Route",
+      "de": "Leedsichthys-Route",
+      "color": "#6fa8ff",
+      "layer": "leedsichthys:white",
+      "note": "The great sea loop through the north-eastern waters around the Coastal Bluffs, Palm Islands and Stonebed Shoal.",
+      "extra": [
+        { "id": "spinosaurus-saltwater", "note": "Tours the Leedsichthys loop peacefully outside its own sea territory (profile variant)." }
+      ]
+    }
+  ]
+}

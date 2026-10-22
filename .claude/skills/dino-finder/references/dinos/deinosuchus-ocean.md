@@ -54,6 +54,10 @@ You live in two halves. By day you are the elephant seal: you lie for hours with
 - Anders als die Tiere: Elephant seals fast for weeks ashore. You hunt; the lazy day is only the pause between your nights. A great white can outswim most prey. You cannot: everything in your ocean is faster than you, so every hunt is an ambush. No clamping and dragging land animals into the water. That is the shore Deinosuchus's game; out here your prey is already swimming.
 - Besonderheit: The shore Deinosuchus is the crocodile at the riverbank; you are the same animal as a sunbathing seal by day and a shark by night.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Deinosuchus bilden keine echten Gruppen, und es greift immer nur einer an. Solo und Gruppe sind hier derselbe Hai.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Kelp Vale, Abyssal Depths, Stonebed Shoal

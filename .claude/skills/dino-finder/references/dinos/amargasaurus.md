@@ -47,6 +47,25 @@ You are a gentle, highly social large herbivore that almost never stops calling 
 - Anders als die Tiere: Wildebeest graze grass; Amargasaurus eats berries, melons and bananas. Neither animal changes colour to breed; that part is borrowed from salmon (official inspiration).
 - Besonderheit: Courtship works like a salmon run: gorge on berries, flush bright colours and migrate back to the same nesting grounds.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** In der Herde bist du ein geschwätziges Gnu. Allein suchst du laut Profil instinktiv dichten Wald und tarnst dich im Unterholz. Das ist das Okapi, die Waldgiraffe. Vom Gnu bleibt nur die Unruhe, die dich zu anderen Pflanzenfressern treibt.
+
+**Solo spielt er sich wie:**
+**Okapi + Gnu (Okapi + Wildebeest)**: A lone okapi in a sauropod's body: the shy forest giraffe that hides in thick woodland, tags along with any friendly herbivore and uses bigger sauropods as a shield.
+
+Alone you instinctively seek out dense woodland like the place you hatched in, where close-packed trees and thick undergrowth hide you from predators. You are uneasy without a herd and gladly accept the company of other herbivore species until you reunite with a sauropod group. If another sauropod is near, you keep it between you and the predator as a meat-shield; if none is near, you rear your head and whip your tail anxiously. You don't chase fleeing predators, but you may charge to drive them off and then back away, and you move to a more defensible spot when you can. You still flee Allosaurus and Torvosaurus.
+
+- Okapi / Okapi – 60 %: Solo life: the shy forest giraffe that hides in dense woodland and browses unseen
+- Gnu / Wildebeest – 40 %: Restlessness: uneasy alone, it tags along with other herbivores until it finds a herd again
+- Lebensraum: Dense woodland, close to any sauropod it can find. A solitary Amargasaurus hides in dense woodland like the woods it hatched in, and joins other herbivores or sauropods it meets along the way.
+- Anders als die Tiere: Okapis are content alone; a lone Amargasaurus is anxious and always looking for a herd. Okapis never leave the forest; Amargasaurus still travels the sauropod routes to its nesting grounds.
+- Besonderheit: Courtship works like a salmon run: gorge on berries, flush bright colours and migrate back to the same nesting grounds.
+
+Solo bist du kein Gnu in der Herde, sondern ein Okapi: die scheue Waldgiraffe, die sich im dichten Wald versteckt. Allein zieht es dich instinktiv in dichtes Gehölz wie das, in dem du geschlüpft bist, denn zwischen eng stehenden Bäumen und im Unterholz sieht dich kein Räuber. Ganz wohl ist dir allein nie: Du schließt dich gern anderen Pflanzenfressern an, bis du wieder zu Sauropoden findest. Ist ein anderer Sauropode in der Nähe, hältst du ihn zwischen dir und dem Räuber. Ist keiner da, wirst du nervös, reckst den Kopf und peitschst mit dem Schwanz. Fliehenden Räubern jagst du nicht nach, du scheuchst sie höchstens kurz weg. Vor Allosaurus und Torvosaurus fliehst du immer.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Balz + Neutral:** Dry Fang Canyon, Mudflats, Coastland Swamp, Crag Bluffs, Redwoods

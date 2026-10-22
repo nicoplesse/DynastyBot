@@ -49,6 +49,24 @@ You are a small nocturnal carnivore in a rookery of up to 16 that constantly sin
 - Lebensraum: Nomadic rookeries in forests and wetlands, with small nest territories. Somewhat nomadic. When the rookery settles for the day it claims a small territory around its nest cluster (creche) and the whole group defends it.
 - Anders als die Tiere: Rooks don't hunt big animals. Dholes hunt by day; Latenivenatrix hunts only at night.
 
+## Solo oder Gruppe
+
+**Anderes Tier:** Die laute Saatkrähen-Kolonie und das Rothund-Rudel gibt es nur in der Rookery. Allein wirst du laut Profil still und zurückhaltend, folgst Herden oder Apex-Räubern und bedienst dich an Rissen. Das ist der Kolkrabe, der Wölfen folgt, gern auch einem Achillobator.
+
+**Solo spielt er sich wie:**
+**Kolkrabe + Saatkrähe (Common raven + Rook)**: A lone raven in the night: quiet and watchful, it trails herds and Apex hunters for scraps, hunts small prey alone and finds comfort in an Achillobator companion.
+
+Alone you can get by for long stretches, but you become quieter and more reserved, singing and chattering far less than in a rookery. You often trail herbivore herds or Apex carnivores that tolerate you, scavenge from kills when permitted and patiently watch your surroundings. You hunt alone up to Medium tier, mostly small prey and critters. An Achillobator companion keeps loneliness away, and lonely Latenivenatrix seek one out themselves when they can't find their way back to their rookery. You hunt at night and still flee Hatzegopteryx, Quetzalcoatlus and Kelenken.
+
+- Kolkrabe / Common raven – 60 %: Solo life: a quiet, watchful loner that follows big hunters and herds and scavenges from their kills
+- Saatkrähe / Rook – 40 %: Heart: a colony bird by nature that misses its rookery and keeps its curiosity
+- Lebensraum: Forests and wetlands, behind herds and Apex hunters. A loner roams forests and wetlands, trailing herbivore herds or tolerant Apex carnivores.
+- Anders als die Tiere: Ravens are mostly active by day; Latenivenatrix hunts at night. Ravens are content as a pair; Latenivenatrix is social by nature and does best with a companion.
+
+Solo bist du ein Kolkrabe in der Nacht. Allein kommst du lange zurecht, wirst aber still und zurückhaltend und singst und plauderst viel weniger als in der Rookery. Du folgst Pflanzenfresser-Herden oder Apex-Räubern, die dich dulden, bedienst dich an ihren Rissen, wenn sie dich lassen, und beobachtest geduldig deine Umgebung. Allein jagst du bis Medium, meist kleine Beute und Kleintiere. Am besten geht es dir mit einem Achillobator als Gefährten, und findest du nicht zurück zur Rookery, suchst du dir selbst einen. Vor Hatzegopteryx, Quetzalcoatlus und Kelenken fliehst du weiter.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Steep Run, Big Tree Overlook, Cedrus Forest, Twisted Forest, Mudflats, Cliffedge Falls, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

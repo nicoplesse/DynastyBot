@@ -48,6 +48,10 @@ You are an Apex daytime hunter who thrives alone. Bonds are fragile: brothers, a
 - Anders als die Tiere: Jaguars are night-leaning ambushers; Giganotosaurus hunts by day and is described as an endurance hunter that runs prey down. Jaguars hunt alone; a solo Giganotosaurus teams up temporarily to take giant sauropods.
 - Besonderheit: Think one of the biggest, boldest cats on the map; peregrine falcons are also named as inspiration for its drive.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Der Jaguar lebt allein. Für Apatosaurus und Argentinosaurus holst du dir nur kurz einen Jagdpartner.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Cedrus Forest, Black Fern Hills, Cliffedge Falls

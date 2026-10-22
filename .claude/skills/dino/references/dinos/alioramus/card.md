@@ -47,6 +47,10 @@ You travel in a mixed-sex pack of up to 8, with at most 2 females, and cover hug
 - Anders als die Tiere: Wild dog packs centre on one breeding pair; Alioramus packs revolve around a bonded female pair with up to six males in a fluid dominance hierarchy.
 - Besonderheit: Social flavour from mandrills (official inspiration): males jostle for rank and bully at kills, while the females keep the peace.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Ein Einzelgänger-Rüde ist ein abgewanderter Afrikanischer Wildhund, der laut Profil stabil allein lebt und nur kleiner jagt. Weibchen suchen sofort eine Gefährtin. Das Tier bleibt der Wildhund.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Steep Run, Cedrus Forest, Cliffedge Falls, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest

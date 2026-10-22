@@ -50,6 +50,10 @@ You are a medium semi-aquatic hunter bonded to one mate for life. On land you ar
 - Anders als die Tiere: House cats avoid water; Austroraptor dives for fun. That half is the penguin. Cats hunt alone; Austroraptor hunts as a pair and joins four-strong mobs. Penguins can't run; Austroraptor is quick on land.
 - Besonderheit: The fishing pose comes from the heron, the profile's other official inspiration: standing motionless in the shallows with wings spread as shade, or waiting on a fallen log above the water. Even the word for its gatherings, a 'siege', is borrowed from herons.
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Einzelne Austroraptor unterscheiden sich laut Profil kaum von Paaren. Der Viererschwarm für Large-Beute ist nur eine kurze Jagdgemeinschaft.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Tallbrush Coasts, Steep Run, Kelp Vale, Coastal Bluffs, Volcano Islands, Abyssal Depths, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Stillwater Bog, Mudflats, Stonebed Shoal, Cliffedge Falls, Coastland Swamp, Redwoods

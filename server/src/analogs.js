@@ -95,18 +95,41 @@ export function resolveAnalog(doc, profile, vocabulary) {
   };
 }
 
-// Links each analog animal to the other playables built on the same animal, so a profile can
-// show how its "wolf" or "hyena" differs from the other ones on the roster.
-export function attachAnalogRelatives(profiles) {
-  const byAnimal = new Map();
-  for (const profile of profiles) for (const analog of profile.analog?.analogs || []) {
-    const key = analog.id.replace(/-(family-pack|bull|flock|troop|silverback-troop)$/, '');
-    if (!byAnimal.has(key)) byAnimal.set(key, []);
-    byAnimal.get(key).push({ id: profile.id, name: profile.name, role: analog.role, share: analog.share, headline: profile.analog.headline });
+export const PLAY_MODES = ['solo', 'group'];
+const VERDICTS = ['same', 'rebalanced', 'different'];
+
+// Solo or group: data/raw/<slug>/modes.json records whether playing alone or in a group changes
+// the real animal a playable resembles. analog.json describes the `base` mode. The other mode
+// either keeps it (`same`), shifts the shares of the same animals (`rebalanced`), or swaps in
+// another animal (`different`). That mode's key holds a partial analog doc laid over the base one,
+// plus an optional German `summary` that replaces the play guide's summary in that mode.
+// Both modes come back fully resolved, so each can carry its own relatives.
+export function resolveModes(modesDoc, baseDoc, profile, vocabulary) {
+  if (!modesDoc || !baseDoc || !VERDICTS.includes(modesDoc.verdict)) return null;
+  const changes = modesDoc.verdict === 'same' ? null : PLAY_MODES.find(mode => mode !== modesDoc.base && modesDoc[mode]) || null;
+  const modes = { base: modesDoc.base || 'both', verdict: modesDoc.verdict, changes, note: modesDoc.note || '', reviewedAt: modesDoc.reviewedAt || null };
+  for (const mode of PLAY_MODES) {
+    const { summary = null, ...overlay } = mode === changes ? modesDoc[mode] : {};
+    modes[mode] = { own: mode === changes, analog: resolveAnalog({ ...baseDoc, ...overlay }, profile, vocabulary), summary };
   }
-  for (const profile of profiles) for (const analog of profile.analog?.analogs || []) {
-    const key = analog.id.replace(/-(family-pack|bull|flock|troop|silverback-troop)$/, '');
-    analog.relatives = byAnimal.get(key).filter(entry => entry.id !== profile.id);
+  return modes;
+}
+
+// Links each analog animal to the other playables built on the same animal, so a profile can
+// show how its "wolf" or "hyena" differs from the other ones on the roster. `pick` chooses which
+// analog to compare (the base one, or the one a play mode shows).
+export function attachAnalogRelatives(profiles, pick = profile => profile.analog) {
+  const key = analog => analog.id.replace(/-(family-pack|bull|flock|troop|silverback-troop)$/, '');
+  const byAnimal = new Map();
+  for (const profile of profiles) {
+    const own = pick(profile);
+    for (const analog of own?.analogs || []) {
+      if (!byAnimal.has(key(analog))) byAnimal.set(key(analog), []);
+      byAnimal.get(key(analog)).push({ id: profile.id, name: profile.name, role: analog.role, share: analog.share, headline: own.headline });
+    }
+  }
+  for (const profile of profiles) for (const analog of pick(profile)?.analogs || []) {
+    analog.relatives = byAnimal.get(key(analog)).filter(entry => entry.id !== profile.id);
   }
 }
 
@@ -117,10 +140,11 @@ function addLookup(lookup, term, kind, id) {
   if (!entry[kind].includes(id)) entry[kind].push(id);
 }
 
-export function buildAnalogIndex(profiles, vocabulary) {
+export function buildAnalogIndex(profiles, vocabulary, { pick = profile => profile.analog, mode = null } = {}) {
   const index = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
+    mode,
     note: 'Real-animal "plays like" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as "ochse" or "großkatze dschungel".',
     vocabulary: vocabulary || { archetypes: {}, moods: {}, habitats: {} },
     archetypes: {},
@@ -143,7 +167,7 @@ export function buildAnalogIndex(profiles, vocabulary) {
     for (const term of [habitat.label, habitat.de, ...(habitat.synonyms || [])]) addLookup(index.lookup, term, 'habitats', id);
   }
   for (const profile of profiles) {
-    const analog = profile.analog;
+    const analog = pick(profile);
     if (!analog) continue;
     index.dinos[profile.id] = {
       name: profile.name,

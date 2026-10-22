@@ -15795,6 +15795,340 @@
       "isAquatic": true
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "rebalanced",
+    "changes": "solo",
+    "note": "Allein überlebst du laut Profil kaum und folgst einem großen Fleischfresser als Freund. Genau das tun einzelne Goldschakale, die sich einem Tiger anschließen. Der Rattenschwarm tritt in den Hintergrund.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": true,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Golden jackal + Brown rat",
+        "labelDe": "Goldschakal + Wanderratte",
+        "headline": "A lone jackal that has adopted a giant: it follows one big carnivore everywhere, calls for company and lives on bones and stolen scraps.",
+        "playsLike": "Alone, a Compsognathus barely survives. You pick a large carnivorous friend, usually a Tyrannosaurus or Giganotosaurus, and follow it for scraps, or you call until other Compsognathus form a swarm with you. You eat bones, rotting corpses and chunks stolen from other predators' kills, keep a wide berth from herbivores (except Citipati, who may adopt you) and approach any carnivore with curiosity. Around your chosen giant you nip at other scavengers, up to 3 times without it counting as an engagement. You sleep on high perches out of the way of trampling feet.",
+        "setting": {
+          "label": "Everywhere, scurrying between POIs",
+          "note": "Nomadic. Spends its life moving between POIs and following one trusted large carnivore, most often Tyrannosaurus or Giganotosaurus.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "golden-jackal",
+            "animal": "Golden jackal",
+            "de": "Goldschakal",
+            "scientific": "Canis aureus",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 70,
+            "role": "primary",
+            "covers": "Solo life: a lone outcast that attaches itself to one big predator, lives off its kills and calls loudly for company",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg/1280px-033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Giles Laurent",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "brown-rat",
+            "animal": "Brown rat",
+            "de": "Wanderratte",
+            "scientific": "Rattus norvegicus",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 30,
+            "role": "secondary",
+            "covers": "Diet and caution: bones and rotting scraps, and a sleeping spot tucked away from big feet",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Brown_Rat_%28Rattus_norvegicus%29.jpg/1280px-Brown_Rat_%28Rattus_norvegicus%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Dunpharlain",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Brown_Rat_(Rattus_norvegicus).jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "A giant friend",
+            "text": "Solitary Compsognathus “seek out a large carnivorous friend to follow, relying on it to provide scavenging opportunities”. In India lone golden jackals are known to attach themselves to a tiger and live off its kills."
+          },
+          {
+            "trait": "Calling for company",
+            "text": "Solitary Compsognathus “are very vocal and call out frequently for a companion”, as jackals wail to keep contact."
+          },
+          {
+            "trait": "Leftovers",
+            "text": "On its own it lives “mainly on bones, rotting corpses, and stealing chunks” from other predators' kills, a jackal's and a rat's menu at once."
+          },
+          {
+            "trait": "Guarding its giant",
+            "text": "Around its chosen carnivore it nips other scavengers, up to 3 times without starting an engagement, the way a jackal snaps at rivals at a lion's kill."
+          },
+          {
+            "trait": "Safe sleep",
+            "text": "It finds high perches and comfortable places to sleep, out of the way of larger dinosaurs that might trample it."
+          }
+        ],
+        "notLike": [
+          "Jackals are much bigger relative to their prey; Compsognathus is the smallest carnivore on the roster (Tiny, 400 combat weight).",
+          "A jackal never pesters lions to play; a solitary Compsognathus screeches at other dinosaurs and darts off until they finally aggress it."
+        ],
+        "twist": "The Tyrannosaurus bond works like arctic foxes trailing a polar bear across the ice.",
+        "moods": [
+          {
+            "id": "solitary",
+            "label": "Solitary",
+            "de": "Einzelgänger"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          },
+          {
+            "id": "playful",
+            "label": "Playful & social",
+            "de": "Verspielt"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "brown and black rats and jerboas",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 1250,
+          "landSprintSeconds": 375,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Small",
+          "huntGroupSize": 10,
+          "engagementLimit": 10,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": "Solo bist du ein einsamer Goldschakal, der sich einen Riesen ausgesucht hat. Allein kommst du kaum zurecht, also folgst du einem großen Fleischfresser, meist einem Tyrannosaurus oder Giganotosaurus, und lebst von seinen Resten, oder du rufst so lange, bis sich andere Compsognathus mit dir zu einem Schwarm zusammentun. Du frisst Knochen, verrottende Kadaver und stibitzt Brocken von fremden Rissen. Du rufst ständig nach Gesellschaft, neckst andere Dinosaurier mit Gekreisch und flitzt davon. Pflanzenfressern gehst du aus dem Weg, außer Citipati, die dich adoptieren können. Andere Aasfresser an deinem Riesen zwickst du weg, höchstens dreimal, ohne dass es als Kampf zählt. Geschlafen wird hoch oben, wo dich keiner zertrampelt."
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Brown rat + Golden jackal",
+        "labelDe": "Wanderratte + Goldschakal",
+        "headline": "A swarm of rats with a jackal's knack for shadowing the big predators.",
+        "playsLike": "You are the smallest carnivore on the roster (Tiny, 400 combat weight) in an unlimited swarm led by one dominant male and several dominant females. You scavenge first and hunt second: unattended babies, Dryosaurus, Psittacosaurus and anything death-scarred, with up to 10 of you on one target. You are fast with enormous stamina (sprint 1,250 for 375 s) and spend your life trailing a trusted giant for scraps.",
+        "setting": {
+          "label": "Everywhere, scurrying between POIs",
+          "note": "Nomadic. Spends its life moving between POIs and following one trusted large carnivore, most often Tyrannosaurus or Giganotosaurus.",
+          "habitats": [
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            },
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "wetland",
+              "label": "Rivers, lakes & swamps",
+              "de": "Flüsse, Seen & Sümpfe"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "brown-rat",
+            "animal": "Brown rat",
+            "de": "Wanderratte",
+            "scientific": "Rattus norvegicus",
+            "archetype": "small-mammal",
+            "archetypeLabel": "Small mammal",
+            "archetypeDe": "Kleinsäuger",
+            "share": 60,
+            "role": "primary",
+            "covers": "Swarm life: a huge, ranked, playful group of tiny scavengers",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Brown_Rat_%28Rattus_norvegicus%29.jpg/1280px-Brown_Rat_%28Rattus_norvegicus%29.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Dunpharlain",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Brown_Rat_(Rattus_norvegicus).jpg"
+              }
+            },
+            "relatives": []
+          },
+          {
+            "id": "golden-jackal",
+            "animal": "Golden jackal",
+            "de": "Goldschakal",
+            "scientific": "Canis aureus",
+            "archetype": "canine",
+            "archetypeLabel": "Wolf, dog & fox",
+            "archetypeDe": "Wolf, Wildhund & Fuchs",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Strategy: shadowing the big predators for scraps and picking off the helpless",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg/1280px-033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Giles Laurent",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "Swarm and rank",
+            "text": "Unlimited swarm with one dominant male, several dominant females and challenges for rank. Brown-rat colonies are organised the same way (official inspiration: rats)."
+          },
+          {
+            "trait": "Scavenger first",
+            "text": "Primarily scavenges and 'will do so before attempting to hunt'."
+          },
+          {
+            "trait": "Shadowing giants",
+            "text": "Forms a lifelong 'relationship' with a trusted large carnivore, which shares its kills. Jackals follow lions for the same reason."
+          },
+          {
+            "trait": "Mob of ten",
+            "text": "Up to 10 in an engagement, but only against Small tier or the helpless."
+          },
+          {
+            "trait": "Playful and fast",
+            "text": "Highly affectionate and playful, with the fastest land sprint on the roster: 1,250, held for 375 s (jerboa-like, official inspiration)."
+          }
+        ],
+        "notLike": [
+          "Rats don't follow predators, and jackals live in pairs rather than swarms."
+        ],
+        "twist": "The Tyrannosaurus bond works like arctic foxes trailing a polar bear across the ice.",
+        "moods": [
+          {
+            "id": "colony",
+            "label": "Colony & swarm",
+            "de": "Kolonie & Schwarm"
+          },
+          {
+            "id": "scavenger",
+            "label": "Opportunist & scavenger",
+            "de": "Opportunist & Aasfresser"
+          },
+          {
+            "id": "fast",
+            "label": "Fast & enduring",
+            "de": "Schnell & ausdauernd"
+          },
+          {
+            "id": "playful",
+            "label": "Playful & social",
+            "de": "Verspielt"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "brown and black rats and jerboas",
+        "facts": {
+          "tier": "Tiny",
+          "diet": "Carnivore",
+          "activity": "Cathemeral",
+          "habitat": "Terrestrial",
+          "combatWeight": 400,
+          "maxHealth": 400,
+          "growthMinutes": 60,
+          "landSprint": 1250,
+          "landSprintSeconds": 375,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": "Small",
+          "huntGroupSize": 10,
+          "engagementLimit": 10,
+          "mapBiomes": [
+            "canyon",
+            "coast",
+            "hills",
+            "volcanic",
+            "forest",
+            "swamp",
+            "mudflat",
+            "freshwater"
+          ],
+          "isDry": true,
+          "isAquatic": true
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "forest",
     "label": "Forest",
@@ -15814,5 +16148,184 @@
       "derived": true,
       "reason": null
     }
+  },
+  "bleed": {
+    "attack": {
+      "label": "Bite",
+      "damage": 20,
+      "bleed": 0.02,
+      "cooldown": 1
+    },
+    "setup": "1–10",
+    "maxHits": 30,
+    "assumption": "Bleed drains 1 % of max health per point per second (community reading, not documented).",
+    "rows": [
+      {
+        "id": "psittacosaurus",
+        "name": "Psittacosaurus",
+        "tier": "Small",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.009,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 57
+      },
+      {
+        "id": "dryosaurus",
+        "name": "Dryosaurus",
+        "tier": "Small",
+        "rank": 1,
+        "kind": "priority",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.008,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 50
+      },
+      {
+        "id": "camptosaurus",
+        "name": "Camptosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 700,
+        "bleedPerHit": 0.008,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 92
+      },
+      {
+        "id": "deinonychus",
+        "name": "Deinonychus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 550,
+        "bleedPerHit": 0.01,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 55
+      },
+      {
+        "id": "latenivenatrix",
+        "name": "Latenivenatrix",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.006,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 88
+      },
+      {
+        "id": "pachycephalosaurus",
+        "name": "Pachycephalosaurus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.004,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 125
+      },
+      {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 500,
+        "bleedPerHit": 0.004,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 132
+      },
+      {
+        "id": "struthiomimus",
+        "name": "Struthiomimus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 0.006,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 79
+      },
+      {
+        "id": "tropeognathus",
+        "name": "Tropeognathus",
+        "tier": "Small",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 450,
+        "bleedPerHit": 0.004,
+        "healRate": 0.032,
+        "trot": null,
+        "sit": null,
+        "direct": 113
+      },
+      {
+        "id": "halszkaraptor",
+        "name": "Halszkaraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.02,
+        "healRate": 0.052,
+        "trot": {
+          "hits": 20,
+          "seconds": 19
+        },
+        "sit": {
+          "hits": 20,
+          "seconds": 19
+        },
+        "direct": 20
+      },
+      {
+        "id": "rhamphorhynchus",
+        "name": "Rhamphorhynchus",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.016,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "direct": 25
+      }
+    ]
   }
 }

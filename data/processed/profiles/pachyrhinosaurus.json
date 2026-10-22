@@ -10924,6 +10924,335 @@
       "isAquatic": false
     }
   },
+  "modes": {
+    "base": "group",
+    "verdict": "same",
+    "changes": null,
+    "note": "Solo bist du ein nervöser Einzelwanderer, der sich einer Wanderung anschließen will, wie ein versprengtes Karibu. Kein anderes Tier.",
+    "reviewedAt": "2026-10-13",
+    "solo": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Musk ox + Caribou / reindeer",
+        "labelDe": "Moschusochse + Karibu / Rentier",
+        "headline": "A musk ox wall on a caribou-style migration, led by the eldest cow.",
+        "playsLike": "You are a large, docile ceratopsian in an unlimited 'migration' guided by the eldest cow, with related males (a father and his sons) forming 'shields' at the rear. When a dangerous predator comes within 10 body lengths, an unlimited defensive formation closes, and up to 4 adults break out to charge. Grouped ceratopsians (Albertaceratops, Styracosaurus, Psittacosaurus) are protected inside the formation. Your eyesight is poor but your memory is long, so a remembered powerful predator may trigger a stampede instead.",
+        "setting": {
+          "label": "Long migrations between feeding areas and nesting grounds",
+          "note": "Nomadic, migrating long distances in search of food. Males become territorial around food sources at the nesting grounds.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "musk-ox",
+            "animal": "Musk ox",
+            "de": "Moschusochse",
+            "scientific": "Ovibos moschatus",
+            "archetype": "cattle",
+            "archetypeLabel": "Cattle, buffalo & ox",
+            "archetypeDe": "Rind, Büffel & Ochse",
+            "share": 60,
+            "role": "primary",
+            "covers": "Defence: the unbreakable ring or wall with a few bulls charging out",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg/1280px-Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "styracosaurus",
+                "name": "Styracosaurus",
+                "role": "primary",
+                "share": 50,
+                "headline": "The 'attack dog' of the ceratopsian herd: a musk-ox wall with oryx-style hit-and-run chargers."
+              }
+            ]
+          },
+          {
+            "id": "caribou-reindeer",
+            "animal": "Caribou / reindeer",
+            "de": "Karibu / Rentier",
+            "scientific": "Rangifer tarandus",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Life on the move: a huge nomadic migration guided by an experienced cow, bulls trailing behind",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg/1280px-Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Are G Nilsen",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "The wall",
+            "text": "An unlimited defensive formation where individuals step forward only one body length to strike. That is the musk ox ring (official inspiration)."
+          },
+          {
+            "trait": "Bulls charge out",
+            "text": "Up to 4 adults, usually males, break the formation to charge the predator, as musk ox bulls do."
+          },
+          {
+            "trait": "Cow-led migration",
+            "text": "Led by the eldest cow with the most allies, 'in the constant hunt for food'. Caribou migrations are guided by experienced cows."
+          },
+          {
+            "trait": "Bulls behind",
+            "text": "Male 'shields' follow at the rear and paw the ground to hurry stragglers along."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Large tier, 4,500 combat weight, 800 HP, sprint 900 held for 100 s."
+          }
+        ],
+        "notLike": [
+          "Musk oxen live in small herds; Pachyrhinosaurus migrations are unlimited and mixed with other ceratopsians.",
+          "Caribou flee rather than form walls."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          },
+          {
+            "id": "tank",
+            "label": "Tanky — stands its ground",
+            "de": "Panzer / hält stand"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "Musk Oxen",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 4500,
+          "maxHealth": 800,
+          "growthMinutes": 180,
+          "landSprint": 900,
+          "landSprintSeconds": 100,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    },
+    "group": {
+      "own": false,
+      "analog": {
+        "schemaVersion": 1,
+        "source": "curated",
+        "reviewedAt": "2026-09-23",
+        "label": "Musk ox + Caribou / reindeer",
+        "labelDe": "Moschusochse + Karibu / Rentier",
+        "headline": "A musk ox wall on a caribou-style migration, led by the eldest cow.",
+        "playsLike": "You are a large, docile ceratopsian in an unlimited 'migration' guided by the eldest cow, with related males (a father and his sons) forming 'shields' at the rear. When a dangerous predator comes within 10 body lengths, an unlimited defensive formation closes, and up to 4 adults break out to charge. Grouped ceratopsians (Albertaceratops, Styracosaurus, Psittacosaurus) are protected inside the formation. Your eyesight is poor but your memory is long, so a remembered powerful predator may trigger a stampede instead.",
+        "setting": {
+          "label": "Long migrations between feeding areas and nesting grounds",
+          "note": "Nomadic, migrating long distances in search of food. Males become territorial around food sources at the nesting grounds.",
+          "habitats": [
+            {
+              "id": "open",
+              "label": "Open country & savanna",
+              "de": "Offenes Land & Savanne"
+            },
+            {
+              "id": "forest",
+              "label": "Forest & jungle",
+              "de": "Wald & Dschungel"
+            }
+          ]
+        },
+        "analogs": [
+          {
+            "id": "musk-ox",
+            "animal": "Musk ox",
+            "de": "Moschusochse",
+            "scientific": "Ovibos moschatus",
+            "archetype": "cattle",
+            "archetypeLabel": "Cattle, buffalo & ox",
+            "archetypeDe": "Rind, Büffel & Ochse",
+            "share": 60,
+            "role": "primary",
+            "covers": "Defence: the unbreakable ring or wall with a few bulls charging out",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg/1280px-Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Charles J. Sharp",
+                "license": "CC BY-SA 4.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg"
+              }
+            },
+            "relatives": [
+              {
+                "id": "styracosaurus",
+                "name": "Styracosaurus",
+                "role": "primary",
+                "share": 50,
+                "headline": "The 'attack dog' of the ceratopsian herd: a musk-ox wall with oryx-style hit-and-run chargers."
+              }
+            ]
+          },
+          {
+            "id": "caribou-reindeer",
+            "animal": "Caribou / reindeer",
+            "de": "Karibu / Rentier",
+            "scientific": "Rangifer tarandus",
+            "archetype": "deer-antelope",
+            "archetypeLabel": "Deer & antelope",
+            "archetypeDe": "Hirsch & Antilope",
+            "share": 40,
+            "role": "secondary",
+            "covers": "Life on the move: a huge nomadic migration guided by an experienced cow, bulls trailing behind",
+            "photo": {
+              "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg/1280px-Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg",
+              "focus": "50% 40%",
+              "credit": {
+                "artist": "Are G Nilsen",
+                "license": "CC BY-SA 3.0",
+                "page": "https://commons.wikimedia.org/wiki/File:Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg"
+              }
+            },
+            "relatives": []
+          }
+        ],
+        "why": [
+          {
+            "trait": "The wall",
+            "text": "An unlimited defensive formation where individuals step forward only one body length to strike. That is the musk ox ring (official inspiration)."
+          },
+          {
+            "trait": "Bulls charge out",
+            "text": "Up to 4 adults, usually males, break the formation to charge the predator, as musk ox bulls do."
+          },
+          {
+            "trait": "Cow-led migration",
+            "text": "Led by the eldest cow with the most allies, 'in the constant hunt for food'. Caribou migrations are guided by experienced cows."
+          },
+          {
+            "trait": "Bulls behind",
+            "text": "Male 'shields' follow at the rear and paw the ground to hurry stragglers along."
+          },
+          {
+            "trait": "Numbers",
+            "text": "Large tier, 4,500 combat weight, 800 HP, sprint 900 held for 100 s."
+          }
+        ],
+        "notLike": [
+          "Musk oxen live in small herds; Pachyrhinosaurus migrations are unlimited and mixed with other ceratopsians.",
+          "Caribou flee rather than form walls."
+        ],
+        "twist": "",
+        "moods": [
+          {
+            "id": "herd",
+            "label": "Big herd",
+            "de": "Große Herde"
+          },
+          {
+            "id": "matriarchal",
+            "label": "Female-led",
+            "de": "Weibchen führen"
+          },
+          {
+            "id": "tank",
+            "label": "Tanky — stands its ground",
+            "de": "Panzer / hält stand"
+          },
+          {
+            "id": "nomadic",
+            "label": "Nomad & traveller",
+            "de": "Nomade"
+          },
+          {
+            "id": "harem",
+            "label": "Harem life",
+            "de": "Harem"
+          }
+        ],
+        "confidence": "high",
+        "officialInspiration": "Musk Oxen",
+        "facts": {
+          "tier": "Large",
+          "diet": "Herbivore",
+          "activity": "Diurnal",
+          "habitat": "Terrestrial",
+          "combatWeight": 4500,
+          "maxHealth": 800,
+          "growthMinutes": 180,
+          "landSprint": 900,
+          "landSprintSeconds": 100,
+          "waterSprint": null,
+          "airSprint": null,
+          "huntTier": null,
+          "huntGroupSize": null,
+          "engagementLimit": 4,
+          "mapBiomes": [
+            "canyon",
+            "forest"
+          ],
+          "isDry": true,
+          "isAquatic": false
+        }
+      },
+      "summary": null
+    }
+  },
   "ecosystem": {
     "id": "plains",
     "label": "Plains & Savanna",
@@ -10937,5 +11266,6 @@
       "derived": true,
       "reason": null
     }
-  }
+  },
+  "bleed": null
 }

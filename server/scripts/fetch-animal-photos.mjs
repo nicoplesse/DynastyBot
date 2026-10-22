@@ -84,6 +84,9 @@ async function analogAnimals() {
   for (const playable of await listPlayables(rawDir)) {
     const doc = await readFile(join(playable.dir, 'analog.json'), 'utf8').then(JSON.parse).catch(() => null);
     for (const analog of doc?.analogs || []) animals.set(animalId(analog.animal), analog.animal);
+    // A solo or group mode can bring its own animals (modes.json).
+    const modes = await readFile(join(playable.dir, 'modes.json'), 'utf8').then(JSON.parse).catch(() => null);
+    for (const mode of ['solo', 'group']) for (const analog of modes?.[mode]?.analogs || []) animals.set(animalId(analog.animal), analog.animal);
   }
   return animals;
 }

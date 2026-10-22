@@ -381,6 +381,24 @@ function unitFromProfile(profile) {
   };
 }
 
+// Every ordered pair, compact, for the POI radar: the bounded lists above drop most pairs, but a
+// POI shows whoever is there. `a` = a hunt is legal (intent), `e` = a profile rule names it,
+// `v`/`m` = pursuit verdict and speed margin; `cards` holds every combat card.
+export function buildHuntPairs(profiles) {
+  const units = profiles.map(unitFromProfile);
+  const pairs = {};
+  for (const attacker of units) {
+    const row = pairs[attacker.id] = {};
+    for (const target of units) {
+      if (target.id === attacker.id) continue;
+      const intent = canInitiateHunt(attacker, target, relationEvidence(attacker, target));
+      const chase = chaseAnalysis(attacker, target);
+      row[target.id] = { v: chase.verdict, m: chase.speedMarginPct, ...(intent.allowed ? { a: 1, ...(intent.explicit ? { e: 1 } : {}), ...(intent.conditional ? { c: 1 } : {}) } : {}) };
+    }
+  }
+  return { pairs, cards: Object.fromEntries(units.map(unit => [unit.id, rosterStats(unit)])) };
+}
+
 export function buildMatchups(profiles) {
   const units = profiles.map(unitFromProfile);
   const result = {};

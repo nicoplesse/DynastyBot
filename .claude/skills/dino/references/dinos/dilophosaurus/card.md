@@ -54,6 +54,10 @@ You are a medium carnivore in a 'leash': a dominant male with his breeding group
 - Anders als die Tiere: Foxes don't hunt in groups; a full Dilophosaurus party can bleed down a solitary Apex herbivore.
 - Besonderheit: Optional chameleon-style colour shifting to blend in and regulate temperature (official inspiration).
 
+## Solo oder Gruppe
+
+**Gleiches Tier:** Rotfüchse jagen ohnehin allein. Solo bist du der schlaue Einzelgänger, der Aas frisst und heimlich balzt, in der Leash wirst du gefährlich. Das Tier bleibt der Fuchs.
+
 ## Karte & POIs
 
 - **Revier + Jagd + Nisten:** Dry Fang Canyon, Steep Run, Cedrus Forest, Black Fern Hills, Cliffedge Falls, Redwoods, Wind Tunnels
