@@ -27,18 +27,92 @@
     "beta": ["Fireweed", "Agave", "Sunchoke Flowers", "Fiddlehead", "Trillium", "Crimson Apollan"],
     "gamma": ["Russula", "Coconut", "Cashew", "Pumpkin", "Papaya", "Brazil Nuts"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Speiseplan ist breit: Dschungelfrüchte, Grasland-Pflanzen wie Agave, Topinambur, Cashews und Kürbisse, dazu Mangos und Kokosnüsse an der Küste. Kokosnüsse holst du mit dem Kopf herunter: auf den Stamm zulaufen, leicht nach unten schauen und mit der rechten Maustaste gegen den Stamm stoßen, dann die Nuss mit zwei weiteren Stößen öffnen. Meide tiefes Wasser und hohe Kanten, denn du schwimmst schlecht und verträgst Stürze kaum. Mit dem Stegosaurus teilst du keine Migrationszonen."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Bis zu acht Pachys bilden eine Herde. Mehrere Kopfstöße von verschiedenen Seiten brechen einem Angreifer schnell die Knochen. Euer Erdhügel-Nest fasst bis zu 6 Eier, die Jungen betteln bis 18 %."
+  "behavior": {
+    "essence": "Ein Raufbold der Ebene: Du brichst einem Jäger einen Knochen und rennst, bevor er sich davon erholt.",
+    "traits": { "activity": "Tagaktiv", "range": "Streift über flaches Land", "social": "Herde", "rest": "Kurze Nachtruhe, trinkt vor dem Morgen" },
+    "needs": "Dein Speiseplan ist breit: Dschungelfrüchte, Grasland-Pflanzen wie Agaven, Topinambur, Cashews und Kürbisse, dazu Mangos und Kokosnüsse an der Küste. Kokosnüsse holst du mit dem Kopf herunter: auf den Stamm zulaufen, leicht nach unten schauen und mit der rechten Maustaste stoßen, dann die Nuss mit zwei weiteren Stößen öffnen. Magen und Durst halten nur 45 Minuten, du musst also häufig fressen und trinken. Und du brauchst flaches Gelände, denn du schwimmst schlecht und verträgst Stürze kaum.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "Überall, wo er lauert.",
+        "answer": "Gegen Tiere über 3 Tonnen bringt dein Kopfstoß nichts. Du rennst, und zwar auf einem Weg ohne Kanten und tiefes Wasser."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "high",
+        "where": "Auf offenen Flächen.",
+        "answer": "Er ist schneller und frisst Pachys. Brich ihm mit dem Sprung-Kopfstoß einen Knochen, dann ist er langsamer als du."
+      },
+      {
+        "name": "Herrerasaurus",
+        "id": "herrerasaurus",
+        "level": "medium",
+        "where": "Im Dschungel, von oben aus den Bäumen.",
+        "answer": "Er springt dich aus der Krone an. Im Dschungel schaust du nach oben und frisst nicht unter dichten Ästen."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "In tiefem Wasser und am Ufer.",
+        "answer": "Du schwimmst schlecht und passt in seinen Griff. Flüsse nur an Furten, trinken nur an flachen Stellen."
+      },
+      {
+        "name": "Omni- und Troodon-Rudel",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Im Offenen und nachts.",
+        "answer": "Der Kopfschwung mit Alt und linker Maustaste wirft sie um. Die Herde greift von verschiedenen Seiten an und bricht Knochen."
+      },
+      {
+        "name": "Stürze",
+        "level": "low",
+        "where": "An Kanten und steilen Hängen.",
+        "answer": "Du nimmst viel Sturzschaden. Eine Flucht über eine Klippe endet mit einem Bruch. Nimm den flachen Weg, auch wenn er länger ist."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Sprung-Kopfstoß bricht meistens einen Knochen, und ein Jäger mit Bruch ist langsamer.",
+        "so": "Du kämpfst, um fliehen zu können. Ein Stoß, ein Bruch, und du bist weg."
+      },
+      {
+        "because": "Gegen Tiere über 3 Tonnen macht dein Kopfstoß keinen Schaden.",
+        "so": "Bei Rex, Deino und den großen Pflanzenfressern gibt es nur eine Antwort: Abstand. Mit allem darunter legst du dich an."
+      },
+      {
+        "because": "Du schwimmst schlecht und verträgst Stürze kaum.",
+        "so": "Du lebst auf flachem Land: Grasland, lichte Wälder, sanfte Hügel. Klippen, Schluchten und tiefe Flüsse meidest du, auch auf der Flucht."
+      },
+      {
+        "because": "Herreras springen im Dschungel von oben.",
+        "so": "Den Dschungel betrittst du nur am Rand und nur für Früchte. Fressen unter dichtem Kronendach ist ein Risiko."
+      },
+      {
+        "because": "Magen und Durst halten 45 Minuten, eine Nacht dauert 30.",
+        "so": "Eine Nacht durchzuschlafen ist knapp. Du frisst dich abends satt, ruhst und gehst vor dem Morgen noch einmal trinken."
+      },
+      {
+        "because": "Mehrere Kopfstöße von verschiedenen Seiten brechen einem Angreifer schnell die Knochen.",
+        "so": "In der Herde seid ihr gefährlich. Gemeinsam umstellt ihr einen mittelgroßen Jäger, statt euch einzeln jagen zu lassen."
+      }
+    ],
+    "home": "Dein Land ist flach und abwechslungsreich: Grasland mit Agaven und Kürbissen, Waldränder mit Früchten, Küste mit Kokospalmen. Gute Plätze haben kurze Wege zwischen diesen Landschaften, eine flache Trinkstelle und keine Kanten, über die du stürzen kannst. Geruht wird auf offenem, ebenem Boden mit Blick in alle Richtungen. Highlands mit steilen Hängen und Schluchten meidest du. Mit dem Stegosaurus teilst du keine Migrationszonen, ihr kommt euch selten in die Quere.",
+    "day": [
+      { "phase": "dawn", "text": "Trinken an der flachen Stelle, dann Kokosnüsse oder Früchte. Nach der Nacht ist dein Magen fast leer." },
+      { "phase": "day", "text": "Ihr streift über Grasland und Waldränder und füllt alle drei Nährstoffe. Spätestens alle 45 Minuten zieht ihr wieder zum Wasser." },
+      { "phase": "dusk", "text": "Satt fressen und trinken. Bevor es dunkel wird, sucht ihr euch eine ebene, offene Fläche zum Ruhen." },
+      { "phase": "night", "text": "Ihr ruht dicht beieinander, Köpfe nach außen, und loggt dort aus. Vor dem Morgen geht ihr gemeinsam trinken." }
+    ],
+    "group": "Bis zu acht Pachys bilden eine Herde. Ihr seid Raufbolde: Mehrere Kopfstöße von verschiedenen Seiten brechen einem Angreifer schnell die Knochen. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt auf ebenem Boden am Waldrand, weit weg von Klippen und tiefem Wasser. Die Jungen betteln bis 18 %. Bis sie den Kopfstoß beherrschen, laufen sie in der Mitte der Herde.",
+    "analog": {
+      "animals": "Dickhornschaf",
+      "text": "Dickhornschafe leben in Herden, rammen mit ihren schweren Schädeln aufeinander und wehren Angreifer mit Kopfstößen ab. Anders als sie lebst du nicht an Felswänden, sondern meidest Kanten, weil dir jeder Sturz Knochen bricht."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Dich jagen Rexe, Carnos, Ceratos, Herreras, Omnis, Troodons und Deinos. Dein Sprung-Kopfstoß mit der rechten Maustaste (tippen oder halten und loslassen) bricht meistens einen Knochen. Ein Jäger mit Bruch ist langsamer und kann dir schlechter folgen. Du hörst ein Ladegeräusch, wenn der Stoß bereit ist. Mit Alt und linker Maustaste schwingst du den Kopf seitlich und wirfst Gegner um, das bringt sie auch ins Wanken. Wiegt der Gegner mehr als drei Tonnen, macht dein Kopfstoß keinen Schaden mehr, dann hilft nur noch der Biss oder die Flucht. Gegen große Jäger heißt das: nicht kämpfen, sondern weglaufen und dabei Höhenunterschiede meiden."

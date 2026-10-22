@@ -162,6 +162,47 @@
 .isle-food ul{display:grid;gap:5px;margin:0;padding:0;list-style:none}
 .isle-food li{color:#d9cfba;font-size:12px}
 .isle-food li::before{content:'·';margin-right:7px;color:var(--nut);font-weight:800}
+/* Behaviour: needs, dangers and what follows from them */
+.isle-behavior{padding-top:4px}
+.isle-essence{margin:0 0 16px!important;padding:4px 0 4px 16px;border-left:3px solid var(--diet);color:#f4ecdc;font-family:Georgia,serif;font-size:19px;line-height:1.5}
+.isle-traits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 18px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-traits>div{padding:11px 14px;border-right:1px solid #2a2419}
+.isle-traits>div:last-child{border-right:0}
+.isle-traits dt{color:var(--isle-faint);font-size:8.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.isle-traits dd{margin:5px 0 0;color:#f0e2c4;font-size:13px;font-weight:700;line-height:1.35}
+.isle-pressures{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:12px}
+.isle-pressures>article{padding:15px 17px;border:1px solid #352d1f;border-radius:7px;background:#18150f}
+.isle-pressures h3,.isle-analog h3{margin:0 0 8px;color:var(--isle-soft);font-size:12.5px}
+.isle-needs p{margin:0;color:#c7bea9;font-size:12.5px;line-height:1.75}
+.isle-threats ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.isle-threats li{padding:9px 11px;border:1px solid #2f281c;border-left:3px solid var(--threat);border-radius:5px;background:#120f0a}
+.threat-high{--threat:#e3866a}.threat-medium{--threat:#dcbb62}.threat-low{--threat:#86bede}
+.isle-threat-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.isle-threat-head a,.isle-threat-head strong{display:inline-flex;align-items:center;gap:7px;color:#f2e9d7;font-size:12.5px;font-weight:700;text-decoration:none}
+.isle-threat-head a:hover{color:var(--isle-soft)}
+.isle-threat-head span{flex:0 0 auto;color:var(--threat);font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.isle-threats p{margin:0;color:#c7bea9;font-size:12px;line-height:1.6}
+.isle-threats .isle-threat-where{margin-bottom:3px;color:var(--isle-faint);font-size:11px}
+.isle-subhead{margin:26px 0 11px;color:var(--isle-soft);font-size:13px}
+.isle-logic{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.isle-logic li{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:stretch;gap:0;border:1px solid #352d1f;border-radius:7px;background:#18150f;overflow:hidden}
+.isle-logic p{margin:0;padding:11px 14px;color:#c7bea9;font-size:12.5px;line-height:1.65}
+.isle-logic p:last-child{background:color-mix(in srgb,var(--diet) 7%,#16130d);color:#e6dcc8}
+.isle-logic b{display:block;margin-bottom:3px;color:var(--isle-faint);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase}
+.isle-logic p:last-child b{color:var(--diet)}
+.isle-logic span{display:grid;place-items:center;padding:0 8px;border-inline:1px solid #2a2419;color:var(--diet);font-weight:800}
+.isle-day{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.isle-day li{padding:13px 14px;border:1px solid #352d1f;border-top:3px solid var(--phase);border-radius:7px;background:#18150f}
+.phase-dawn{--phase:#f0b878}.phase-day{--phase:#f0d6a8}.phase-dusk{--phase:#c9853e}.phase-night{--phase:#7f8fc4}
+.isle-day h4{display:flex;align-items:center;gap:7px;margin:0 0 6px;color:#f2e9d7;font-size:12.5px}
+.isle-day h4 i{width:8px;height:8px;border-radius:50%;background:var(--phase)}
+.isle-day p{margin:0;color:#c7bea9;font-size:12px;line-height:1.65}
+.isle-behavior .isle-life{margin-top:20px}
+.isle-analog{border-style:dashed!important}
+.isle-card-traits{display:flex;flex-wrap:wrap;gap:5px;margin:-4px 0 13px}
+.isle-card-traits span{padding:3px 7px;border:1px solid #42382a;border-radius:10px;color:var(--isle-soft);font-size:10px;font-weight:700}
+.isle .hero-pills .isle-pill-trait{border-color:color-mix(in srgb,var(--diet) 55%,transparent);color:var(--diet)}
+
 .isle-section#isle-sources{border-bottom:0;padding-bottom:10px}
 .isle-section#isle-sources .isle-sources{margin-top:0}
 .isle .profile-pagination{border-top-color:#3b3223}
@@ -169,5 +210,5 @@
 .isle .profile-pagination strong{color:#efe6d4}
 
 @media(max-width:1200px){.isle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-statstrip{grid-template-columns:repeat(3,minmax(0,1fr))}.isle-statstrip>div:nth-child(3n){border-right:0}.isle-layout{grid-template-columns:170px minmax(0,1fr);gap:26px;padding:28px}}
-@media(max-width:850px){.isle-head{flex-direction:column;align-items:stretch}.isle-filter{flex-direction:column;align-items:stretch}.isle-layout{grid-template-columns:1fr}.isle-toc{display:none}.isle-hero{padding:30px 24px 24px}.isle-hero-mono{width:64px;height:64px;font-size:28px}.isle-note{margin:16px 24px 0!important}.isle-life,.isle-food,.isle-nutrients{grid-template-columns:1fr}.isle-abilities li{grid-template-columns:1fr;gap:8px}.isle-keys dl{grid-template-columns:auto minmax(0,1fr)}}
-@media(max-width:600px){.isle-grid,.isle-stages{grid-template-columns:1fr}.isle-hero{flex-direction:column;gap:16px}.isle-statstrip{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-statstrip>div:nth-child(3n){border-right:1px solid #2a2419}.isle-statstrip>div:nth-child(2n){border-right:0}.isle-basics{padding:20px 16px}.isle-layout{padding:22px 16px 40px}.isle-growthbar{flex-direction:column}.isle-growthbar span{flex-grow:0!important}}
+@media(max-width:850px){.isle-head{flex-direction:column;align-items:stretch}.isle-filter{flex-direction:column;align-items:stretch}.isle-layout{grid-template-columns:1fr}.isle-toc{display:none}.isle-hero{padding:30px 24px 24px}.isle-hero-mono{width:64px;height:64px;font-size:28px}.isle-note{margin:16px 24px 0!important}.isle-life,.isle-food,.isle-nutrients{grid-template-columns:1fr}.isle-abilities li{grid-template-columns:1fr;gap:8px}.isle-keys dl{grid-template-columns:auto minmax(0,1fr)}.isle-pressures{grid-template-columns:1fr}.isle-day{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.isle-grid,.isle-stages{grid-template-columns:1fr}.isle-hero{flex-direction:column;gap:16px}.isle-statstrip{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-statstrip>div:nth-child(3n){border-right:1px solid #2a2419}.isle-statstrip>div:nth-child(2n){border-right:0}.isle-basics{padding:20px 16px}.isle-layout{padding:22px 16px 40px}.isle-growthbar{flex-direction:column}.isle-growthbar span{flex-grow:0!important}.isle-traits{grid-template-columns:repeat(2,minmax(0,1fr))}.isle-traits>div:nth-child(2){border-right:0}.isle-traits>div:nth-child(-n+2){border-bottom:1px solid #2a2419}.isle-logic li{grid-template-columns:1fr}.isle-logic span{display:none}.isle-day{grid-template-columns:1fr}.isle-essence{font-size:17px}}

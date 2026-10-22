@@ -8,6 +8,9 @@ import { fileURLToPath } from 'node:url';
 export const defaultIsleDir = fileURLToPath(new URL('../../data/isle/', import.meta.url));
 export const ISLE_STAGES = ['hatchling', 'juvenile', 'subadult', 'adult'];
 export const ISLE_NUTRIENTS = ['alpha', 'beta', 'gamma'];
+export const ISLE_TRAITS = ['activity', 'range', 'social', 'rest'];
+export const ISLE_PHASES = ['dawn', 'day', 'dusk', 'night'];
+export const ISLE_THREAT_LEVELS = ['high', 'medium', 'low'];
 const PREDATOR_DIETS = new Set(['carnivore', 'omnivore']);
 
 function growthTotal(minutes) {
@@ -55,6 +58,10 @@ export async function loadIsle(isleDir = defaultIsleDir) {
 }
 
 export function isleSummary(playable) {
-  const { id, name, nickname = null, diet, role, tagline, since = null, order, stats, growthTotalMinutes } = playable;
-  return { id, name, nickname, diet, role, tagline, since, order, growthTotalMinutes, stats: { adultWeightKg: stats.adultWeightKg, sprintKmh: stats.sprintKmh, groupLimit: stats.groupLimit } };
+  const { id, name, nickname = null, diet, role, tagline, since = null, order, stats, growthTotalMinutes, behavior } = playable;
+  return {
+    id, name, nickname, diet, role, tagline, since, order, growthTotalMinutes,
+    essence: behavior.essence, traits: behavior.traits,
+    stats: { adultWeightKg: stats.adultWeightKg, sprintKmh: stats.sprintKmh, groupLimit: stats.groupLimit },
+  };
 }

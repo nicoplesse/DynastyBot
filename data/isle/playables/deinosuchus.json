@@ -27,21 +27,83 @@
     "beta": ["Carnotaurus", "Omniraptor", "Diabloceratops", "Deinosuchus", "Troodon", "Ochsenfrosch"],
     "gamma": ["Elite-Fisch", "Gallimimus", "Beipiaosaurus", "Maiasaura", "Meeresschildkröte"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Leben spielt sich im Wasser ab. Trübe Flüsse, Sumpfarme und Seen mit flachen Trinkstellen sind ideal, denn dort kommt jeder Pflanzenfresser früher oder später zum Trinken vorbei. Unter Wasser schwimmst du etwa 30 km/h und rund 500 Meter weit, an der Oberfläche 27 km/h und etwa 450 Meter. Ist die Ausdauer leer, sinkst du, bis sie nachlädt oder du den Grund erreichst. An Land bist du mit etwa 18 km/h das langsamste Tier, wendest schlecht, nimmst leichter Sturzschaden und dein Wasser sinkt schnell. Geh also nur kurz an Land, etwa um Beute aus dem Wasser zu ziehen. Rufe funktionieren nicht unter Wasser, Suhlen kannst du dich nicht, und überfressen kannst du dich auch nicht."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Mit einem Gruppenlimit von 2 lebst du allein oder als Paar. Die Balz muss an der Wasseroberfläche stattfinden. Euer Reisignest fasst bis zu 5 Eier. Deino-Schlüpflinge betteln nicht, sie fressen von Anfang an selbst. Pass auf deine Jungen auf: Elite-Fische fressen kleine Dinosaurier, auch junge Deinos."
+  "behavior": {
+    "essence": "Ein Lauerer im Wasser: Du wählst ein Gewässer, an dem alle trinken müssen, und wartest dort, so lange es dauert.",
+    "traits": { "activity": "Tag und Nacht, am liebsten in der Dämmerung", "range": "Sesshaft in einem Gewässer", "social": "Einzelgänger", "rest": "Ruht im Flachwasser" },
+    "needs": "Du brauchst Wasser, immer: An Land sinkt dein Wasser so schnell, dass es nach etwa 10 Minuten leer ist. Im Wasser brauchst du Tiefe, um unsichtbar zu liegen, und davor ein flaches Ufer, an dem andere Tiere trinken. Dein Magen hält 90 Minuten, länger als bei fast jedem anderen Tier, du kannst also lange warten. Nebenbei holst du dir Elite-Fische, Meeresschildkröten und Ochsenfrösche.",
+    "threats": [
+      {
+        "name": "Größere Deinos",
+        "level": "high",
+        "where": "In jedem Gewässer, in dem schon ein großer Artgenosse liegt.",
+        "answer": "Deinos fressen Deinos. Als Jungtier meidest du Gewässer mit einem großen Artgenossen, als Adult duldest du keinen zweiten."
+      },
+      {
+        "name": "Elite-Fische",
+        "level": "high",
+        "where": "In Flüssen und Sümpfen.",
+        "answer": "Sie fressen kleine Dinosaurier, auch junge Deinos. Bis du größer bist, bleibst du im flachen Wasser und in kleinen Tümpeln."
+      },
+      {
+        "name": "Das Land",
+        "level": "high",
+        "where": "Sobald du das Wasser verlässt.",
+        "answer": "An Land bist du mit 18 km/h das langsamste Tier, wendest schlecht, nimmst leicht Sturzschaden und verdurstest schnell. Raus gehst du nur, um Beute ins Wasser zu ziehen."
+      },
+      {
+        "name": "Austroraptor",
+        "id": "austroraptor",
+        "level": "medium",
+        "where": "In kleinen, klaren Tümpeln, in denen er fischt.",
+        "answer": "Junge Deinos sind für ihn Proteine. Als Juvenile meidest du klare Becken mit fischenden Austroraptoren, als Adult ist er deine Beute."
+      }
+    ],
+    "logic": [
+      {
+        "because": "An Land sinkt dein Wasser rasend schnell, und du bist dort das langsamste Tier.",
+        "so": "Du verlässt das Wasser fast nie. Dein ganzes Leben spielt in einem Gewässer und an dessen Ufer."
+      },
+      {
+        "because": "Jedes Tier muss trinken, viele Pflanzenfresser schon nach 30 bis 60 Minuten.",
+        "so": "Du musst der Beute nicht nachlaufen. Du wählst die beliebteste Trinkstelle und wartest. Darum bist du sesshaft."
+      },
+      {
+        "because": "Unter Wasser spürst du andere Tiere seit einem Patch nicht mehr, du musst hinsehen und hinhören.",
+        "so": "Du liegst knapp unter der Oberfläche nahe am Ufer, mit Blick auf die Trinkstelle, statt tief am Grund zu warten."
+      },
+      {
+        "because": "An Land packst du nur Tiere bis zur Hälfte deines Gewichts, schwimmende auch schwerere.",
+        "so": "Am Ufer greifst du nur Passendes an. Das große Ziel ist das Tier, das ins Wasser kommt: Wer schwimmt, gehört dir."
+      },
+      {
+        "because": "Dein Magen hält 90 Minuten, länger als bei fast jedem anderen Tier.",
+        "so": "Ein großer Fang reicht dir lange. Zwischen den Mahlzeiten ruhst du im Flachwasser und lässt die Trinkstelle eine Weile in Ruhe, damit die Tiere sie wieder für sicher halten."
+      },
+      {
+        "because": "Größere Deinos fressen kleinere.",
+        "so": "Ein Gewässer hat einen Besitzer. Du lebst allein und vertreibst oder frisst jeden kleineren Deino, der in dein Wasser kommt."
+      },
+      {
+        "because": "Trübes Wasser und Seegras verbergen deinen Körper, klares Wasser verrät dich.",
+        "so": "Dein Gewässer ist trüb und am Ufer tief, mit flachen Trinkstellen davor: Flussbiegungen, Sumpfarme, Seen. Klare Tümpel überlässt du den Fischern."
+      }
+    ],
+    "home": "Dein Revier ist ein Gewässer: eine Flussbiegung, ein Sumpfarm oder ein See, an dem viele Tiere trinken. Am besten fällt der Grund nah am Ufer steil ab, sodass tiefes Wasser direkt an eine flache Trinkstelle grenzt. Dorthin ziehst du Beute, wo sie ertrinkt und dir nicht mehr entkommt. Trübes Wasser und Seegras verbergen dich. Furten, an denen Herden durch den Fluss ziehen, sind besonders wertvoll, denn wer schwimmt, darf schwerer sein als die Hälfte deines Gewichts. Dein Ruheplatz ist flaches Wasser am Rand deines Gewässers, wo du liegen kannst, ohne auszutrocknen.",
+    "day": [
+      { "phase": "dawn", "text": "Die Tiere der Nacht kommen trinken. Du liegst knapp unter der Oberfläche vor der Trinkstelle und wartest." },
+      { "phase": "day", "text": "Hast du gefressen, ruhst du im Flachwasser. Bist du hungrig, holst du dir Elite-Fische, Schildkröten und Frösche oder wartest, bis ein Tier ins Wasser kommt." },
+      { "phase": "dusk", "text": "Herden ziehen zum Wasser, und im Halbdunkel ist deine Silhouette kaum zu sehen. Das ist deine beste Zeit." },
+      { "phase": "night", "text": "Nachts wartest du weiter oder ruhst im Flachwasser und loggst dort aus. An Land gehst du auch für einen Kadaver nicht: Was du nicht ins Wasser ziehen kannst, lässt du liegen." }
+    ],
+    "group": "Ein Gewässer ernährt einen großen Deino, und ihr fresst euch gegenseitig. Du lebst also allein. Nur zur Paarung dürft ihr zu zweit sein, und die Balz muss an der Wasseroberfläche stattfinden. Euer Reisignest mit bis zu 5 Eiern liegt am Ufer deines Gewässers, ein Stück oberhalb der Wasserlinie. Deino-Schlüpflinge betteln nicht, sie fressen vom ersten Moment an selbst. Realistisch bewacht die Mutter das Nest vom Wasser aus, und die Jungen bleiben im Flachwasser davor, wohin keine Elite-Fische kommen. Sobald sie größer werden, ziehen sie in ein eigenes Gewässer, denn ab dann sind sie Konkurrenz.",
+    "analog": {
+      "animals": "Nilkrokodil",
+      "text": "Das Nilkrokodil lebt in einem Fluss, wartet an Trinkstellen und Furten, an denen Gnus und Zebras durchs Wasser müssen, und zehrt lange von einer großen Mahlzeit. Große Krokodile fressen kleinere. Anders als echte Krokodile kannst du dich nicht stundenlang an Land sonnen: Dein Wasser hält dort nur Minuten."
     }
-  ],
+  },
   "hunt": {
     "title": "Jagd",
-    "text": "Du jagst aus dem Hinterhalt an der Trinkstelle. Lieg knapp unter der Oberfläche, warte, bis ein Tier trinkt, und schnell mit der rechten Maustaste hervor. Halte die Taste gedrückt, um den Griff zu halten, und zieh die Beute ins tiefe Wasser, wo sie ertrinkt und dir nicht mehr entkommt. Packen kannst du nur Tiere, die höchstens halb so viel wiegen wie du. Schwimmt das Ziel, darf es schwerer sein, so kannst du sogar einen ausgewachsenen Stegosaurus im Wasser greifen. Schwerere Tiere an Land kannst du nur verletzen. Mit gepackter Beute kannst du an Land nicht sprinten, bleib also am Ufer. Seit einem Patch spürst du andere Tiere unter Wasser nicht mehr, du musst also hinschauen und hinhören. Im Wasser fängst du außerdem Elite-Fische und Meeresschildkröten."
+    "text": "Du jagst aus dem Hinterhalt an der Trinkstelle. Lieg knapp unter der Oberfläche, warte, bis ein Tier trinkt, und schnell mit der rechten Maustaste hervor. Halte die Taste gedrückt, um den Griff zu halten, und zieh die Beute ins tiefe Wasser, wo sie ertrinkt und dir nicht mehr entkommt. Packen kannst du nur Tiere, die höchstens halb so viel wiegen wie du. Schwimmt das Ziel, darf es schwerer sein, so kannst du sogar einen ausgewachsenen Stegosaurus im Wasser greifen. Schwerere Tiere an Land kannst du nur verletzen. Mit gepackter Beute kannst du an Land nicht sprinten, bleib also am Ufer. Seit einem Patch spürst du andere Tiere unter Wasser nicht mehr, du musst also hinschauen und hinhören. Im Wasser fängst du außerdem Elite-Fische und Meeresschildkröten. Unter Wasser schwimmst du etwa 30 km/h und rund 500 Meter weit, an der Oberfläche 27 km/h und etwa 450 Meter. Ist die Ausdauer leer, sinkst du, bis sie nachlädt oder du den Grund erreichst. Rufe funktionieren unter Wasser nicht, suhlen kannst du dich nicht, und überfressen kannst du dich auch nicht."
   },
   "growth": [
     { "stage": "hatchling", "text": "Gut 30 Minuten als winziges Krokodil: Du frisst selbst, statt zu betteln. Bleib im flachen Wasser bei den Eltern, denn große Fische fressen dich." },

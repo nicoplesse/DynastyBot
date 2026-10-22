@@ -28,18 +28,86 @@
     "beta": ["Diabloceratops", "Triceratops", "Hirsch"],
     "gamma": ["Maiasaura", "Dryosaurus", "Ziege"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Allosaurier jagen am liebsten dort, wo Herden ziehen: auf offenen Ebenen, an Waldrändern und rund um die Migrationszonen. Du hast mehr Ausdauer als die schweren Jäger und kannst Beute ein Stück hetzen, bis sie Fehler macht. Mit nur neun Futterarten ist dein Speiseplan schmal. Präge dir also ein, wo Hirsche, Ziegen und Wildschweine leben und wo Tenontosaurier, Maiasaurier und Dryosaurier fressen."
-    },
-    {
-      "id": "social",
-      "title": "Gruppe & Nachwuchs",
-      "text": "Bis zu drei Allosaurier bilden ein Rudel, und genau dafür ist die Art gebaut: Beim Festnageln zählt euer gemeinsames Gewicht gegen das des Ziels. Ein Paar baut ein Reisignest mit bis zu 4 Eiern. Jungtiere sind mit 60 Minuten als Schlüpfling und 2 Stunden als Juvenile vergleichsweise schnell aus dem Gröbsten heraus, ein Nest lohnt sich also, wenn ihr ein festes Revier habt."
+  "behavior": {
+    "essence": "Ein Rudelnomade: Ihr folgt den Herden, reißt Wunden und lasst die Beute ausbluten, statt sie festzuhalten.",
+    "traits": { "activity": "Dämmerungsaktiv", "range": "Nomadisch, folgt den Herden", "social": "Rudel aus drei", "rest": "Schläft gemeinsam nach dem Fressen" },
+    "needs": "Dein Speiseplan ist schmal: Stegosaurier, Tenontosaurier, Kentrosaurier und Wildschweine (α), Triceratops, Diabloceratops und Hirsche (β), Maiasaurier, Dryosaurier und Ziegen (γ). Fast alles davon sind Herdentiere, die durch das Land ziehen. Du brauchst also Herden in Reichweite, ein Rudel, das mit dir festnagelt, und genug Ausdauer, um verletzter Beute zu folgen. Dein Magen hält nur 60 Minuten, ihr müsst also regelmäßig Beute machen.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "An Wasserstellen und an eurem Kadaver.",
+        "answer": "Ein Rex ist dreimal so schwer wie du, sein Crush packt dich, sein Biss bricht Knochen. Kommt er an euren Kadaver, gebt ihr ihn auf."
+      },
+      {
+        "name": "Triceratops",
+        "id": "triceratops",
+        "level": "high",
+        "where": "Frontal, und wenn ihr ein ausgewachsenes Tier angeht.",
+        "answer": "Hörner treffen dich härter als du ihn. Ihr greift Jungtiere, Verletzte und Tiere am Herdenrand an, nie den Bullen in der Mitte."
+      },
+      {
+        "name": "Stegosaurus",
+        "id": "stegosaurus",
+        "level": "high",
+        "where": "Hinter und neben seinem Schwanz.",
+        "answer": "Sein Schwanz macht 1200 Schaden und blutet stärker als alles andere. Springt nur an, wenn er euch den Kopf zeigt."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Am Ufer beim Trinken.",
+        "answer": "Mit 2,6 Tonnen passt du in seinen Griff, auch an Land. Trinkt an flachen, klaren Stellen und nie alle gleichzeitig: Einer hält Wache."
+      },
+      {
+        "name": "Kentrosaurus",
+        "id": "kentrosaurus",
+        "level": "low",
+        "where": "Wenn du in seine Stacheln springst.",
+        "answer": "Jeder Treffer an Schulter oder Schwanz tut dir selbst weh. Lass ihn in Ruhe oder nimm die Flanke, die er gerade nicht verteidigt."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Fast alle deine Beutetiere leben in Herden, und Herden ziehen von Migrationszone zu Migrationszone.",
+        "so": "Du hast kein festes Revier. Ihr folgt den Herden und kennt ihre Routen, Furten und Futterplätze."
+      },
+      {
+        "because": "Beim Festnageln zählt euer gemeinsames Gewicht gegen das des Ziels.",
+        "so": "Ihr lebt und jagt als Trio. Allein bleiben dir nur Kleinwild und Tiere bis 1,3 Tonnen."
+      },
+      {
+        "because": "Blutungen stapeln sich, jede hat ihren eigenen Timer, und mit Q folgt ihr der Blutspur.",
+        "so": "Ihr kämpft nicht bis zum Ende. Zwei, drei Wunden, loslassen, folgen. Die Beute erschöpft sich selbst, und keiner von euch nimmt unnötig Treffer."
+      },
+      {
+        "because": "Erschöpfte oder stark blutende Tiere nagelt ihr schon mit drei Vierteln eures Gewichts fest.",
+        "so": "Ihr sucht das schwächste Tier: das Jungtier, den Verletzten, den Nachzügler am Herdenrand. Die gesunde Herdenmitte greift ihr nicht an."
+      },
+      {
+        "because": "Ihr habt mehr Ausdauer als die schweren Jäger, aber Rex und Trike schlagen härter als ihr.",
+        "so": "Ihr weicht großen Gegnern aus, statt sie herauszufordern. Ein Kadaver ist es nicht wert, gegen einen Rex zu sterben."
+      },
+      {
+        "because": "Dein Magen hält 60 Minuten, eine Nacht dauert 30.",
+        "so": "Ihr fresst euch in der Dämmerung satt und schlaft die Nacht gemeinsam durch, eng zusammen, sodass einer aufwacht, wenn sich etwas nähert."
+      }
+    ],
+    "home": "Euer Zuhause ist kein Ort, sondern eine Route: die Migrationszonen und Futterflächen der Pflanzenfresser, die Furten dazwischen und die offenen Ebenen und Waldränder, über die Herden ziehen. Ihr bewegt euch in der Nähe der Herde, aber nicht in ihr, meist im Schutz eines Waldrandes, von dem aus ihr die Tiere beobachtet. Zum Ruhen sucht ihr eine Senke oder einen Felsvorsprung im Wald, abseits der Wasserstelle, an der die Herde trinkt und die Deinos warten. Rex-Reviere umgeht ihr: Ihr erkennt sie an großen Kadavern und tiefen Spuren.",
+    "day": [
+      { "phase": "dawn", "text": "Ihr nähert euch der Herde aus dem Wald heraus und sucht euch ein Ziel. Einer eröffnet mit dem Sprungangriff, die anderen reißen mit Krallenhieben nach." },
+      { "phase": "day", "text": "Ihr folgt der Blutspur, bis die Beute zusammenbricht, fresst und zieht mit der Herde weiter. Zwischen den Jagden ruht ihr im Schatten und haltet die Ausdauer hoch." },
+      { "phase": "dusk", "text": "Zweite Jagd oder letzte Mahlzeit. Bevor es dunkel wird, sollten alle drei satt sein und getrunken haben." },
+      { "phase": "night", "text": "Ihr schlaft dicht beieinander an einem geschützten Platz im Wald und loggt dort aus. Ist die Herde nachts weitergezogen, folgt ihr am Morgen ihren Spuren." }
+    ],
+    "group": "Das Trio ist der Kern deines Lebens: zwei Erwachsene mit einem Jungtier oder drei Jäger, die einander vertrauen. Mehr erlaubt das Spiel nicht, und mehr braucht es auch nicht. Zur Brut bleibt ihr eine Weile an einem Ort: Euer Reisignest mit bis zu 4 Eiern liegt im Wald nahe einer Futterfläche, die Herden regelmäßig besuchen. Die Jungen betteln eine Stunde und sind nach weiteren zwei Stunden aus dem Gröbsten heraus. In der Zeit jagen die Eltern abwechselnd, einer bleibt immer am Nest. Danach zieht ihr wieder mit den Herden.",
+    "analog": {
+      "animals": "Löwenrudel",
+      "text": "Löwen jagen gemeinsam große Herdentiere, suchen sich das schwächste Tier aus und ziehen den Herden hinterher, wenn diese wandern. Anders als Löwen reißt du Wunden und lässt die Beute ausbluten, statt sie zu erwürgen, und dein Rudel ist mit drei Tieren klein."
     }
-  ],
+  },
   "hunt": {
     "title": "Jagd",
     "text": "Eröffne mit dem Sprungangriff aus der Deckung: Rechte Maustaste halten, zielen, loslassen. Du hängst dich ans Ziel und machst mit der Zeit immer mehr Schaden und Blutung. Wiegt die Beute höchstens halb so viel wie du, nagelst du sie fest und sie kann sich nicht mehr bewegen. Ist sie erschöpft, stark blutend oder unter 20 % Leben, reichen schon drei Viertel deines Gewichts. Abwerfen kann sie dich trotzdem mit gehaltenem E. Im Lauf reißt du mit gehaltener linker Maustaste einen Krallenhieb, der schwer blutet und dich ein Stück nach vorn trägt. Jede Blutung hat ihren eigenen Timer, mehrere Treffer stapeln sich also. Du musst nicht bis zum Tod festhalten: Reiß zwei, drei Wunden, lass los und folge der Blutspur mit Q, bis die Beute zusammenbricht. Meide Frontalangriffe auf ausgewachsene Trikes und Stegos, deren Hörner und Schwanzhiebe treffen dich härter als umgekehrt."

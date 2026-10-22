@@ -27,18 +27,86 @@
     "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Fireweed", "Radish Flower"],
     "gamma": ["Russula", "Coconut", "Radish Root", "Violet Apollan"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Speiseplan führt dich in zwei Landschaften: Sümpfe mit Hornmelonen, Sumach, Pfifferlingen und Täublingen und die Highlands mit Eberesche, Radieschen und Weidenröschen. Dazu kommen Mangos und Kokosnüsse an Küsten und Schlammflächen. Anders als viele Pflanzenfresser verträgst du Pfifferlinge. Weil du im Lauf schnell wendest, bist du auch in hügeligem Gelände wendig."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Bis zu sechs Diablos bilden eine Herde. Ihr seid stark, wenn ihr zusammenbleibt und Jägern gemeinsam die Hörner zeigt. Untereinander kämpft ihr im Sparring-Modus (Strg) mit Angriffspunkten, die alle 30 Sekunden nachladen. Größere Diablos haben im Schieben den Vorteil. Euer Erdhügel-Nest fasst bis zu 6 Eier."
+  "behavior": {
+    "essence": "Ein Herdentier der Hügel: Gemeinsam zeigt ihr die Hörner, allein wärt ihr Beute.",
+    "traits": { "activity": "Tagaktiv", "range": "Pendelt zwischen Sumpf und Hügeln", "social": "Herde", "rest": "Schläft in der Herde auf Anhöhen" },
+    "needs": "Dein Speiseplan führt dich in zwei Landschaften: in Sümpfe mit Hornmelonen, Sumach, Pfifferlingen und Täublingen und in die Highlands mit Eberesche, Radieschen und Weidenröschen. Dazu kommen Mangos und Kokosnüsse an Küsten und Schlammflächen. Pfifferlinge verträgst du, anders als viele andere Pflanzenfresser. Dein Magen hält 80 Minuten, dein Wasser 60. Vor allem aber brauchst du deine Herde.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "In Sümpfen und an Waldrändern.",
+        "answer": "Er ist dreimal so schwer wie du, und dein Stoß betäubt ihn nur kurz. Die Herde bleibt zusammen und zieht sich in die Hügel zurück."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "In Sümpfen und an Ufern.",
+        "answer": "Mit 3 Tonnen passt du in seinen Griff, auch an Land. Im Sumpf frisst ihr am Rand, nicht im Wasser, und einer schaut immer aufs Wasser."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Wenn ein Trio dich allein erwischt.",
+        "answer": "Einzeln wirfst du jeden Allo mit einem Stoß aus dem Lauf um, zu dritt nageln sie dich fest. In der Herde dreht ihr den Spieß um."
+      },
+      {
+        "name": "Carnotaurus",
+        "id": "carnotaurus",
+        "level": "medium",
+        "where": "Auf Ebenen.",
+        "answer": "Er ist schneller, aber leichter als du: Ein Stoß aus dem Lauf wirft ihn um. In hügeligem Gelände spielt er seinen Sprint nicht aus."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Überall, wo sie springen.",
+        "answer": "Schau nach unten und stoß zu, das trifft kleine Springer. In der Herde stoßt ihr sie euch gegenseitig vom Rücken."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Futter wächst in Sümpfen und in den Highlands.",
+        "so": "Du pendelst. Die Herde frisst eine Weile im Sumpf, zieht dann in die Hügel und wieder zurück, je nachdem, welcher Nährstoff fehlt."
+      },
+      {
+        "because": "Im Lauf wendest du eng, und hügeliges Gelände macht dich wendig.",
+        "so": "Die Hügel sind euer sicheres Land. Dort ruht ihr, dorthin flieht ihr, und dort verliert ein Sprinter wie der Carno seinen Vorteil."
+      },
+      {
+        "because": "Sümpfe sind Deino- und Elite-Fisch-Land, und mit 3 Tonnen passt du in jeden Deino-Griff.",
+        "so": "Im Sumpf frisst ihr am Rand und in der Gruppe, nie bis zum Bauch im Wasser. Ihr bleibt dort nur so lange, wie ihr müsst."
+      },
+      {
+        "because": "Ziele unter deinem doppelten Gewicht wirfst du mit einem Stoß aus dem Lauf um.",
+        "so": "Gegen mittelgroße Jäger wehrst du dich. Du rennst nicht weg, du schwenkst im Lauf herum und stößt zu."
+      },
+      {
+        "because": "Allein bist du verwundbar, eine Herde aus sechs hält die meisten Jäger auf Abstand.",
+        "so": "Du verlässt die Herde nie. Wer zurückbleibt, wird zur Beute."
+      },
+      {
+        "because": "Dein Magen hält 80 Minuten, eine Nacht dauert 30.",
+        "so": "Ihr frisst tagsüber und schlaft nachts durch, gemeinsam auf einer Anhöhe mit Blick in alle Richtungen."
+      }
+    ],
+    "home": "Euer Land sind die Hügel: Highlands und Hanglagen mit Eberesche, Radieschen und Weidenröschen, mit Sümpfen in Reichweite für Hornmelonen, Sumach, Pfifferlinge und Täublinge. Dazwischen liegen die Wege, die eure Herde regelmäßig nimmt. Die Nacht verbringt ihr auf einer Anhöhe mit Blick in alle Richtungen, nicht in einer Senke und nicht am Sumpf. Gute Trinkstellen sind klare Bäche in den Hügeln, in denen sich kein Deino versteckt. Mangos und Kokosnüsse holt ihr euch an der Küste nur, wenn ihr ohnehin in der Nähe seid.",
+    "day": [
+      { "phase": "dawn", "text": "Die Herde steigt von der Anhöhe ab, trinkt an einem Bach und frisst in den Hügeln." },
+      { "phase": "day", "text": "Fehlt ein Nährstoff aus dem Sumpf, zieht ihr gemeinsam hinunter, frisst am Rand und kehrt zurück, bevor es dunkel wird." },
+      { "phase": "dusk", "text": "Zurück in die Hügel, bevor das Licht geht. Jungtiere in die Mitte, die Stärksten an den Rand, und noch einmal trinken an einem klaren Bach." },
+      { "phase": "night", "text": "Ihr schlaft dicht beieinander auf eurer Anhöhe und loggt dort aus. Kommt ein Jäger, steht die Herde mit den Hörnern nach außen." }
+    ],
+    "group": "Bis zu sechs Diablos bilden eine Herde, und die Herde ist dein Schutz. Untereinander messt ihr euch im Sparring-Modus, größere Diablos haben beim Schieben den Vorteil, und so entsteht eine Rangordnung. Euer Erdhügel-Nest mit bis zu 6 Eiern liegt in den Hügeln, nicht am Sumpf. Die Herde bleibt während der Brut in der Nähe und frisst in Schichten, damit nie alle gleichzeitig vom Nest weg sind.",
+    "analog": {
+      "animals": "Moschusochse",
+      "text": "Moschusochsen leben in kleinen Herden und bilden bei Gefahr einen Kreis, die Hörner nach außen, die Kälber in der Mitte. Wölfe kommen so kaum an sie heran. Anders als Moschusochsen stellst du dich nicht nur auf, sondern stößt im Lauf zu und wirfst Angreifer um."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Dich jagen viele: Rexe, Allosaurier, Carnos, Ceratos, Dilos, Omnis und Deinos am Wasser. Deine beste Waffe ist der Stoß aus dem Lauf. Ist das Ziel weniger als doppelt so schwer wie du, wirfst du es um, ist es schwerer, betäubst du es kurz. Mit A und D schiebst du dich seitlich und behältst den Gegner im Blick. Oft ist es schneller, im Lauf herumzuschwenken und zuzustoßen, als den Alt-Angriff zu nutzen. Kopftreffer machen dir weniger aus. Halt die rechte Maustaste, um den Kopf zu senken und Treffer abzufangen. Schau nach unten und klick, für einen Stoß nach unten mit so viel Schaden wie ein Alt-Angriff, gut gegen kleine Springer."

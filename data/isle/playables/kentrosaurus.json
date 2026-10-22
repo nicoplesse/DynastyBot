@@ -28,18 +28,86 @@
     "beta": ["Fireweed", "Radish Flower", "Sunchoke Flowers", "Agave"],
     "gamma": ["Coconut", "Russula", "Radish Root", "Violet Apollan"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Futter wächst in den Highlands (Eberesche, Radieschen, Weidenröschen), an Küsten und Schlammflächen (Mango, Kokosnuss, Täublinge) und auf Grasland (Agave, Topinambur). Zusammen mit dir kamen die Redwoods als neues Gebiet ins Spiel. Du bist mit knapp 40 km/h deutlich flinker als ein Stego und musst nicht jeden Kampf annehmen. Ein scheues Leben mit Rückzug in Deckung passt zu dir. Kokosnüsse kannst du nicht selbst herunterholen, also halt nach heruntergefallenen Ausschau."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Bis zu fünf Kentros bilden eine Herde. Eure ungeschützte Seite ist die Schwachstelle, deshalb lohnt es sich, Seite an Seite zu stehen, damit jeder die offene Flanke des anderen deckt. Euer Erdhügel-Nest fasst bis zu 5 Eier."
+  "behavior": {
+    "essence": "Ein scheuer Wanderer mit Stacheln: Du weichst aus, wo du kannst, und lässt Angreifer in deine Stacheln laufen, wo du musst.",
+    "traits": { "activity": "Tagaktiv", "range": "Wandert zwischen drei Landschaften", "social": "Paar oder kleine Herde", "rest": "Schläft Flanke an Flanke" },
+    "needs": "Dein Futter wächst in drei Landschaften: in den Highlands Eberesche, Radieschen und Weidenröschen, an Küsten und Schlammflächen Mangos, Kokosnüsse und Täublinge, auf Grasland Agaven und Topinambur. Du musst also regelmäßig zwischen ihnen wechseln. Kokosnüsse kannst du nicht selbst herunterholen, du brauchst heruntergefallene. Mit 90 Minuten Magen und 60 Minuten Durst hältst du lange durch, und mit knapp 40 km/h bist du schnell genug, um vielen Kämpfen aus dem Weg zu gehen.",
+    "threats": [
+      {
+        "name": "Tyrannosaurus",
+        "id": "tyrannosaurus",
+        "level": "high",
+        "where": "Im Offenen und an Wasserstellen.",
+        "answer": "Mit Crush packt er dich, Stacheln hin oder her. Einem Rex weichst du aus, und ab 5 Tonnen hörst du ihn früh genug."
+      },
+      {
+        "name": "Deinosuchus",
+        "id": "deinosuchus",
+        "level": "high",
+        "where": "An Küsten, Schlammflächen und Ufern.",
+        "answer": "Mit 1,95 Tonnen passt du in seinen Griff, auch an Land. Trink an klaren, flachen Stellen und schau vorher ins Wasser."
+      },
+      {
+        "name": "Allosaurus",
+        "id": "allosaurus",
+        "level": "medium",
+        "where": "Wenn ein Trio dich von der Seite angeht.",
+        "answer": "Springer erwischen die Seite, die du gerade nicht verteidigst. Dreh dich mit oder stell dich Flanke an Flanke mit deinem Partner."
+      },
+      {
+        "name": "Omni- und Troodon-Rudel",
+        "id": "omniraptor",
+        "level": "medium",
+        "where": "Auf offenen Flächen und nachts.",
+        "answer": "Kleine Springer kommen von allen Seiten. Die Abwehrhaltung mit Strg erhöht den Rückschaden, und die offene Flanke deckt dein Partner."
+      },
+      {
+        "name": "Ceratosaurus",
+        "id": "ceratosaurus",
+        "level": "medium",
+        "where": "Wenn er dich jagt.",
+        "answer": "Er macht dich mit Bakterien krank, aber jeder Biss in deine Stacheln tut ihm weh. Lass ihn kommen und schlag mit dem Power-Hieb zu, wenn er sich verausgabt hat."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Futter ist auf Highlands, Küste und Grasland verteilt.",
+        "so": "Du hast kein festes Revier, sondern eine feste Runde. Du wanderst zwischen den drei Landschaften und kennst die Übergänge."
+      },
+      {
+        "because": "Wer deine Stacheln trifft, nimmt selbst Schaden, du musst also nicht als Erster zuschlagen.",
+        "so": "Du greifst nie an. Du weichst aus, und wenn das nicht geht, stellst du dich so, dass der Angreifer in die Stacheln laufen muss."
+      },
+      {
+        "because": "Mit knapp 40 km/h bist du deutlich schneller als ein Stego.",
+        "so": "Du bist scheu. Siehst du einen Jäger früh, gehst du. Kämpfen ist der Notfall, nicht der Plan."
+      },
+      {
+        "because": "Deine ungeschützte Seite ist die Schwachstelle.",
+        "so": "Du lebst am liebsten zu zweit. Ihr ruht und schlaft so, dass jeder die offene Seite des anderen deckt."
+      },
+      {
+        "because": "Mit 1,95 Tonnen bist du an Küste und Ufer für Deinos greifbar.",
+        "so": "An Schlammflächen und Ufern frisst und trinkst du nur an klaren, flachen Stellen und nie lange am selben trüben Wasser."
+      },
+      {
+        "because": "Dein Magen hält 90 Minuten, eine Nacht dauert 30.",
+        "so": "Du wanderst am Tag und schläfst nachts durch. Im Dunkeln ziehst du nicht über offenes Land."
+      }
+    ],
+    "home": "Dein Leben ist eine Runde: Highlands mit Eberesche und Radieschen, Grasland mit Agaven, Küste und Schlammflächen mit Mangos, Kokosnüssen und Täublingen. Gute Rastplätze liegen an den Übergängen, etwa in den Redwoods, die mit dir ins Spiel kamen, oder an Waldrändern mit Blick in beide Richtungen. Geschlafen wird an einem Platz mit Deckung von einer Seite, einem Felsen oder einem dicken Stamm, und dein Partner deckt die andere. An der Küste suchst du heruntergefallene Kokosnüsse, am Ufer trinkst du nur dort, wo das Wasser flach und klar ist.",
+    "day": [
+      { "phase": "dawn", "text": "Du frisst dort, wo du geschlafen hast, und schaust, welcher Nährstoff fehlt. In diese Richtung geht die Runde heute." },
+      { "phase": "day", "text": "Du wanderst ruhig weiter, frisst, trinkst an flachen Stellen und hältst Abstand zu allem, was nach Jäger aussieht." },
+      { "phase": "dusk", "text": "Du suchst deinen Schlafplatz am nächsten Übergang: Deckung auf einer Seite, freier Blick auf der anderen." },
+      { "phase": "night", "text": "Ihr schlaft Flanke an Flanke, Köpfe in verschiedene Richtungen, und loggt dort aus. Weckt dich etwas, gehst du in die Abwehrhaltung, statt in die Dunkelheit zu fliehen." }
+    ],
+    "group": "Bis zu fünf Kentros dürfen eine Herde bilden, realistisch seid ihr ein Paar oder eine kleine Familie, die gemeinsam ihre Runde zieht. Zu zweit deckt ihr eure offenen Flanken, mehr braucht es dafür nicht. Euer Erdhügel-Nest mit bis zu 5 Eiern liegt an einem Übergang mit viel Futter, zum Beispiel am Rand der Redwoods. Während der Brut bleibt ihr dort sesshaft und nehmt die Runde erst wieder auf, wenn die Jungen Schritt halten können.",
+    "analog": {
+      "animals": "Ameisenigel",
+      "text": "Der Ameisenigel ist scheu, wandert durch ein großes Gebiet und wehrt sich, indem er sich mit den Stacheln nach außen fest an den Boden drückt. Fressfeinde verletzen sich an ihm, statt ihn zu fressen. Anders als er lebst du gern zu zweit, weil ihr euch gegenseitig die Flanke deckt."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Du musst nicht als Erster zuschlagen. Wer deine Schulter- oder Schwanzstacheln trifft, nimmt passiv Schaden. Mit Strg gehst du in die Abwehrhaltung: Der zurückgeworfene Schaden steigt, du wirst schwerer umzuwerfen, und bestimmte Fähigkeiten werden geblockt, wenn sie deine Stacheln treffen. Springer können dich aber auf der Seite erwischen, die du gerade nicht verteidigst, also dreh dich mit. Hat sich ein Angreifer verausgabt, lädst du mit gehaltener rechter Maustaste den Power-Hieb auf und löst ihn mit der linken aus. Fernangriffe wie Säure lösen seit Patch 0.21.772 keine Stacheln mehr aus. Dich jagen vor allem Rexe, Allosaurier, Ceratos und Rudel aus Omnis und Troodons."

@@ -4,10 +4,32 @@ import { mkdtemp, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createApp } from './app.js';
-import { ISLE_NUTRIENTS, ISLE_STAGES, defaultIsleDir, loadIsle } from './isle.js';
+import { ISLE_NUTRIENTS, ISLE_PHASES, ISLE_STAGES, ISLE_THREAT_LEVELS, ISLE_TRAITS, defaultIsleDir, loadIsle } from './isle.js';
 
 const DIETS = ['carnivore', 'herbivore', 'omnivore'];
 const prose = (text, min) => typeof text === 'string' && text.length > min && !/^\s*[-*•]/m.test(text);
+
+// Behaviour is the core of a profile: needs, dangers and the steps reasoned from them.
+function assertBehavior({ id, behavior }, ids) {
+  assert.ok(behavior, `${id}: behavior missing`);
+  assert.ok(prose(behavior.essence, 40), `${id}: essence too short`);
+  assert.deepEqual(Object.keys(behavior.traits), ISLE_TRAITS, `${id}: traits must be ${ISLE_TRAITS.join(', ')}`);
+  for (const trait of ISLE_TRAITS) assert.ok(behavior.traits[trait]?.length > 3, `${id}: trait ${trait} empty`);
+  assert.ok(prose(behavior.needs, 200), `${id}: needs too thin`);
+  assert.ok(behavior.threats.length >= 3 && behavior.threats.length <= 6, `${id}: three to six threats`);
+  for (const threat of behavior.threats) {
+    assert.ok(threat.name && prose(threat.where, 5) && prose(threat.answer, 60), `${id}: incomplete threat ${threat.name}`);
+    assert.ok(ISLE_THREAT_LEVELS.includes(threat.level), `${id}: threat ${threat.name} has invalid level ${threat.level}`);
+    if (threat.id) assert.ok(ids.has(threat.id) && threat.id !== id, `${id}: threat ${threat.name} links unknown playable ${threat.id}`);
+  }
+  assert.ok(behavior.logic.length >= 5 && behavior.logic.length <= 8, `${id}: five to eight reasoning steps`);
+  for (const step of behavior.logic) assert.ok(prose(step.because, 30) && prose(step.so, 40), `${id}: reasoning step too thin: ${step.because}`);
+  assert.ok(prose(behavior.home, 300), `${id}: home too thin`);
+  assert.deepEqual(behavior.day.map(step => step.phase), ISLE_PHASES, `${id}: day needs dawn, day, dusk, night`);
+  for (const step of behavior.day) assert.ok(prose(step.text, 80), `${id}: day phase ${step.phase} too thin`);
+  assert.ok(prose(behavior.group, 200), `${id}: group too thin`);
+  assert.ok(behavior.analog?.animals && prose(behavior.analog.text, 80), `${id}: analog incomplete`);
+}
 
 test('every The Isle playable has a complete German short profile', async () => {
   const files = (await readdir(join(defaultIsleDir, 'playables'))).filter(file => file.endsWith('.json'));
@@ -30,8 +52,8 @@ test('every The Isle playable has a complete German short profile', async () => 
     assert.ok(['mound', 'debris'].includes(playable.stats.nest), `${id}: nest must be mound or debris`);
     assert.deepEqual(Object.keys(playable.stats.growthMinutes), ISLE_STAGES, `${id}: growth minutes per stage`);
     for (const nutrient of ISLE_NUTRIENTS) assert.ok(playable.nutrients[nutrient]?.length, `${id}: ${nutrient} food missing`);
-    assert.deepEqual(playable.life.map(part => part.id), ['habitat', 'social'], `${id}: life parts must be habitat, social`);
-    for (const part of playable.life) assert.ok(part.title && prose(part.text, 150), `${id}: life part ${part.id} too thin`);
+    assert.equal(playable.life, undefined, `${id}: life was replaced by behavior`);
+    assertBehavior(playable, new Set(playables.map(other => other.id)));
     assert.ok(playable.hunt.title && prose(playable.hunt.text, 300), `${id}: hunt section too thin`);
     assert.deepEqual(playable.growth.map(stage => stage.stage), ISLE_STAGES, `${id}: growth guide needs all four stages`);
     for (const stage of playable.growth) assert.ok(prose(stage.text, 80), `${id}: growth stage ${stage.stage} too thin`);
@@ -63,7 +85,8 @@ test('serves the The Isle index and single profiles', async () => {
     assert.equal(index.count, index.playables.length);
     assert.equal(index.basics.branch, 'Evrima');
     assert.equal(index.playables[0].id, 'tyrannosaurus');
-    assert.equal(index.playables[0].life, undefined, 'index carries summaries only');
+    assert.equal(index.playables[0].behavior, undefined, 'index carries summaries only');
+    assert.ok(index.playables.every(item => item.essence && item.traits.activity), 'summaries carry essence and traits');
 
     const rex = await fetch(`${base}/api/isle/tyrannosaurus`).then(response => response.json());
     assert.equal(rex.name, 'Tyrannosaurus');

@@ -27,18 +27,85 @@
     "beta": ["Sumac", "Chanterelle", "Crimson Apollan", "Agave", "Sunchoke Flowers", "Wild Potato Root"],
     "gamma": ["Russula", "Cashew", "Pumpkin", "Wild Potato Vine"]
   },
-  "life": [
-    {
-      "id": "habitat",
-      "title": "Lebensraum & Alltag",
-      "text": "Dein Futter wächst in drei Landschaften: im Sumpf (Hornmelonen, Sumach, Pfifferlinge, Täublinge), im Flussdelta (rote Johannisbeeren, wilde Kartoffeln) und auf Grasland (Agave, Topinambur, Cashews, Kürbisse, Orangen). Mit 30 Minuten Magen musst du ständig fressen. Bleib nah an Deckung, iss in kurzen Etappen und schau dich zwischendurch um. Pfifferlinge darfst du fressen, sie stehen auf deinem Speiseplan."
-    },
-    {
-      "id": "social",
-      "title": "Herde & Nachwuchs",
-      "text": "Bis zu zehn Dryos bilden eine Herde. Mehr Augen sehen Jäger früher. Euer Erdhügel-Nest fasst bis zu 8 Eier. Die Jungen betteln bis 30 %, also recht lange, und brauchen in der Zeit Schutz. Laut DevBlog #73 soll der Dryo bald wieder Baue graben können."
+  "behavior": {
+    "essence": "Ein ewig hungriger Flüchter: Du frisst in kurzen Bissen, schaust nach jedem auf, und wenn ein Jäger springt, bist du schon zur Seite weg.",
+    "traits": { "activity": "Rund um die Uhr in kurzen Etappen", "range": "Kleines Streifgebiet nah an Deckung", "social": "Herde", "rest": "Nickerchen statt Nachtruhe" },
+    "needs": "Dein Futter wächst in drei Landschaften: im Sumpf Hornmelonen, Sumach, Pfifferlinge und Täublinge, im Flussdelta rote Johannisbeeren und wilde Kartoffeln, auf Grasland Agaven, Topinambur, Cashews, Kürbisse und Orangen. Pfifferlinge darfst du fressen. Dein Magen leert sich nach nur 30 Minuten, du musst also fast ständig fressen. Und du brauchst Deckung in der Nähe und deine zwei Ausweichsprünge.",
+    "threats": [
+      {
+        "name": "Fast jeder Fleischfresser",
+        "level": "high",
+        "where": "Überall, wo du frisst.",
+        "answer": "Rex, Allo, Carno, Dilo, Herrera, Omni und Troodon haben dich auf dem Speiseplan. Du frisst nah an Deckung und schaust nach jedem Bissen auf."
+      },
+      {
+        "name": "Omniraptor",
+        "id": "omniraptor",
+        "level": "high",
+        "where": "Am Waldrand und im Offenen.",
+        "answer": "Er springt dich an und nagelt dich fest. Spar deinen Ausweichsprung genau für diesen Moment."
+      },
+      {
+        "name": "Herrerasaurus",
+        "id": "herrerasaurus",
+        "level": "medium",
+        "where": "Unter Bäumen.",
+        "answer": "Er springt von oben. Im Sumpfwald schaust du nach oben, bevor du dich zum Fressen hinstellst."
+      },
+      {
+        "name": "Troodon",
+        "id": "troodon",
+        "level": "medium",
+        "where": "Nachts.",
+        "answer": "Ein Rudel jagt dich im Dunkeln. Nachts frisst du nur nah bei deiner Herde und an Stellen mit genug offenem Boden zum Ausweichen."
+      },
+      {
+        "name": "Deinos und Elite-Fische",
+        "id": "deinosuchus",
+        "level": "medium",
+        "where": "Im Sumpf und im Delta.",
+        "answer": "Du bist klein genug für einen Elite-Fisch. Frisst du im Sumpf, dann am Rand, nie im Wasser."
+      }
+    ],
+    "logic": [
+      {
+        "because": "Dein Magen hält nur 30 Minuten, genauso lang wie eine Nacht.",
+        "so": "Du kannst keine Nacht durchschlafen. Du frisst rund um die Uhr in kleinen Etappen und schläfst in kurzen Nickerchen dazwischen."
+      },
+      {
+        "because": "Fast jeder Fleischfresser jagt dich.",
+        "so": "Du bist ständig wachsam. Fressen, aufschauen, fressen. Nie lange mit dem Kopf unten."
+      },
+      {
+        "because": "Dein Ausweichsprung hat zwei Ladungen, kostet keine Ausdauer und geht nicht mit Futter im Maul.",
+        "so": "Du trägst kein Futter herum, du frisst an Ort und Stelle. Den Sprung sparst du für den Moment, in dem ein Jäger springt oder zubeißt."
+      },
+      {
+        "because": "Du wendest eng und lädst Ausdauer schnell nach, aber du kämpfst nicht.",
+        "so": "Du lebst nah an Deckung: Gebüsch, Waldränder, Schilf. Dort schlägst du Haken und verschwindest."
+      },
+      {
+        "because": "Mehr Augen sehen Jäger früher, und bis zu zehn Dryos dürfen eine Herde bilden.",
+        "so": "Ihr lebt in der Herde und fresst abwechselnd. Einer schaut immer auf."
+      },
+      {
+        "because": "Dein Futter wächst im Sumpf, im Delta und auf Grasland, oft nicht weit auseinander.",
+        "so": "Dein Streifgebiet ist klein. Du musst nicht wandern, du brauchst kurze Wege zwischen Futter und Deckung."
+      }
+    ],
+    "home": "Dein Platz ist dort, wo Sumpfrand, Flussdelta und Grasland nah beieinander liegen: Pfifferlinge und Sumach am Sumpfrand, Johannisbeeren und wilde Kartoffeln im Delta, Agaven und Kürbisse auf der Wiese. Überall ist Deckung nicht weit, Gebüsch, Schilf oder ein Waldrand, und dazwischen gibt es genug offenen Boden zum Ausweichen. Mitten im Sumpfwasser und tief im Wald fühlst du dich unwohl, dort warten Deinos, Elite-Fische und Herreras. Geruht wird am Rand eines Gebüschs, nie mitten darin.",
+    "day": [
+      { "phase": "dawn", "text": "Du hast die Nacht über nur geknabbert. Jetzt frisst du dich im Delta satt, die Herde verteilt, aber in Rufweite." },
+      { "phase": "day", "text": "Kurze Fressetappen, dazwischen kurze Pausen. Fehlt ein Nährstoff, zieht ihr zum nächsten Rand, nie weit." },
+      { "phase": "dusk", "text": "Jetzt jagen viele. Ihr bleibt nah an Deckung, fresst schnell, schaut oft auf und sammelt euch, bevor es dunkel wird." },
+      { "phase": "night", "text": "Keine Nachtruhe, nur Nickerchen. Zwischendurch frisst du, nah bei der Herde und nah am offenen Boden, auf dem du ausweichen kannst. Ausloggen tust du am Rand eines Gebüschs." }
+    ],
+    "group": "Bis zu zehn Dryos dürfen eine Herde bilden, und jedes Tier mehr ist ein Augenpaar mehr. Ihr fresst abwechselnd, einer schaut immer. Euer Erdhügel-Nest mit bis zu 8 Eiern liegt im Gebüsch am Rand eures Streifgebiets. Die Jungen betteln bis 30 %, also recht lange, und brauchen in der Zeit Schutz. Weil der Dryo schon als Art eine Prime-Bedingung erfüllt und in gut vier Stunden auswächst, zieht ihr an einem Abend eine ganze Generation groß.",
+    "analog": {
+      "animals": "Thomson-Gazelle",
+      "text": "Thomson-Gazellen fressen fast pausenlos, schauen nach jedem Bissen auf und entkommen Geparden mit Haken statt mit Ausdauer. Sie leben in Herden, weil viele Augen mehr sehen. Wie sie fliehst du nicht geradeaus, sondern im letzten Moment zur Seite."
     }
-  ],
+  },
   "hunt": {
     "title": "Gefahr & Verteidigung",
     "text": "Fast jeder Fleischfresser jagt dich, von Rex und Allo über Carno, Dilo, Herrera und Omni bis zum Troodon. Deine Rettung ist der Ausweichsprung mit der rechten Maustaste. Du hast zwei Ladungen, die nach 10 Sekunden zurückkommen. Die Richtung bestimmst du mit der Kamera, auch eine halbe Drehung ist möglich, und Ausdauer kostet er keine. Spar ihn für den Moment, in dem ein Jäger springt oder zubeißt. Mit Futter im Maul kannst du nicht ausweichen, lass es fallen. Wehren kannst du dich mit Tritten nach vorn, Bissen im Sprint und einem Schwanzschlag zur Seite oder nach hinten. Das reicht gegen Kleinzeug, nicht gegen echte Jäger."
@@ -63,5 +130,6 @@
   "sources": [
     { "label": "Evrima Quick Guide – Dryosaurus", "url": "https://www.evrimaquickguide.com/playables/quick-facts-herbivores/dryosaurus" },
     { "label": "Steam: DevBlog #73", "url": "https://store.steampowered.com/news/app/376210" }
-  ]
+  ],
+  "notes": ["Laut DevBlog #73 soll der Dryosaurus bald wieder Baue graben können. Dann bekommt er, was ihm heute fehlt: einen sicheren Schlafplatz, und sein Verhalten wird sich ändern."]
 }
