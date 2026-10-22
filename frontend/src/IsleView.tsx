@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
   dietLabels, formatMinutes, formatNumber, formatWeight, isleApi, nestLabels, phaseLabels, threatLabels, traitLabels,
-  type IsleBasics, type IsleBehavior, type IsleDiet, type IsleIndex, type IsleLink, type IslePlayable, type IsleSource, type IsleSummary, type IsleTraitId,
+  type IsleBasics, type IsleBehavior, type IsleDiet, type IsleIndex, type IsleLink, type IslePlayable, type IslePrime, type IsleSource, type IsleSummary, type IsleTraitId,
 } from './isle';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './isle.css';
@@ -134,7 +134,9 @@ function IsleDetail({ id }: { id: string }) {
   if (!playable || !index) return <PageLoading label="Lade Profil…" />;
   const { basics } = index;
   const ids = new Map(index.playables.map(item => [item.name, item.id]));
-  const { stats } = playable;
+  const { stats, prime } = playable;
+  // The Prime guide slots in after growth, so the later sections move up one number when it exists.
+  const number = (base: number) => String(prime ? base + 1 : base).padStart(2, '0');
   return <div className="isle" lang="de">
     <ExplorerTopline section="THE ISLE / PROFIL" count={`${playable.position} VON ${playable.count}`} />
     <button className="back-link" type="button" onClick={() => go('/isle')}>← Alle The-Isle-Profile</button>
@@ -170,7 +172,7 @@ function IsleDetail({ id }: { id: string }) {
       <div className="isle-layout">
         <aside className="isle-toc"><strong>AUF DIESER SEITE</strong>
           <Jump id="isle-behavior">Verhalten</Jump><Jump id="isle-tips">Merke dir</Jump><Jump id="isle-hunt">{playable.hunt.title}</Jump>
-          <Jump id="isle-growth">Aufwachsen</Jump><Jump id="isle-abilities">Fähigkeiten</Jump><Jump id="isle-food">Nahrung</Jump><Jump id="isle-sources">Quellen</Jump>
+          <Jump id="isle-growth">Aufwachsen</Jump>{prime && <Jump id="isle-prime">Prime-Guide</Jump>}<Jump id="isle-abilities">Fähigkeiten</Jump><Jump id="isle-food">Nahrung</Jump><Jump id="isle-sources">Quellen</Jump>
         </aside>
         <div className="isle-body">
           <section className="isle-section isle-behavior" id="isle-behavior">
@@ -187,8 +189,12 @@ function IsleDetail({ id }: { id: string }) {
             <SectionHead index="03" title="Aufwachsen" />
             <GrowthGuide playable={playable} basics={basics} />
           </section>
+          {prime && <section className="isle-section" id="isle-prime">
+            <SectionHead index="04" title="Prime-Guide" />
+            <PrimeGuide prime={prime} />
+          </section>}
           <section className="isle-section" id="isle-abilities">
-            <SectionHead index="04" title="Fähigkeiten" />
+            <SectionHead index={number(4)} title="Fähigkeiten" />
             <ul className="isle-abilities">{playable.abilities.map(ability => <li key={`${ability.keys}-${ability.name}`}>
               <Keycaps keys={ability.keys} />
               <div><h3>{ability.name}</h3><p>{ability.text}</p></div>
@@ -196,7 +202,7 @@ function IsleDetail({ id }: { id: string }) {
             <p className="isle-legend">LMB / RMB = linke / rechte Maustaste. Belegung wie in den Standard-Einstellungen.</p>
           </section>
           <section className="isle-section" id="isle-food">
-            <SectionHead index="05" title="Nahrung" />
+            <SectionHead index={number(5)} title="Nahrung" />
             <div className="isle-food">{basics.nutrients.map(nutrient => <div key={nutrient.id} className={`nut-${nutrient.id}`}>
               <h3><strong>{nutrient.symbol}</strong> {nutrient.label}</h3>
               <p>{nutrient.bonus}</p>
@@ -297,7 +303,7 @@ function GrowthGuide({ playable, basics }: { playable: IslePlayable; basics: Isl
         </span>;
       })}
     </div>
-    <p className="isle-legend">{known ? <>Gesamt bis 100 %: <b>{formatMinutes(known)}</b> bei offiziellen Einstellungen.</> : 'Die Wachstumszeiten dieser Art sind noch nicht verlässlich erfasst.'} Prime Elder: fünf Bedingungen vor 75 %, siehe <a href="#/isle" onClick={event => { event.preventDefault(); go('/isle'); setTimeout(() => document.getElementById('grundwissen')?.scrollIntoView({ behavior: 'smooth' }), 120); }}>Grundwissen</a>.</p>
+    <p className="isle-legend">{known ? <>Gesamt bis 100 %: <b>{formatMinutes(known)}</b> bei offiziellen Einstellungen.</> : 'Die Wachstumszeiten dieser Art sind noch nicht verlässlich erfasst.'} Prime Elder: fünf Bedingungen vor 75 %, siehe {playable.prime ? 'Prime-Guide und ' : ''}<a href="#/isle" onClick={event => { event.preventDefault(); go('/isle'); setTimeout(() => document.getElementById('grundwissen')?.scrollIntoView({ behavior: 'smooth' }), 120); }}>Grundwissen</a>.</p>
     <ol className="isle-timeline">{playable.growth.map(step => {
       const stage = stages.get(step.stage);
       return <li key={step.stage} className={`stage-${step.stage}`}>
@@ -305,5 +311,22 @@ function GrowthGuide({ playable, basics }: { playable: IslePlayable; basics: Isl
         <p>{step.text}</p>
       </li>;
     })}</ol>
+  </>;
+}
+
+function PrimeGuide({ prime }: { prime: IslePrime }) {
+  const checked = new Date(prime.checkedAt).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+  return <>
+    <p className="isle-prose">{prime.summary}</p>
+    <ol className="isle-prime-steps">{prime.steps.map((step, index) => <li key={step.title}>
+      <span className="isle-prime-num" aria-hidden="true">{index + 1}</span>
+      <div><div className="isle-prime-head"><h3>{step.title}</h3><span>{step.when}</span></div><p>{step.text}</p></div>
+    </li>)}</ol>
+    <h3 className="isle-subhead">Nach Prime</h3>
+    <p className="isle-prose">{prime.afterPrime}</p>
+    <div className="isle-tips isle-prime-pitfalls"><h2>Stolperfallen</h2><ul>{prime.pitfalls.map(pitfall => <li key={pitfall}>{pitfall}</li>)}</ul></div>
+    <footer className="isle-sources isle-prime-videos"><strong>Aus diesen YouTube-Videos</strong><p>Stand {checked}. Wo sich die Creator widersprechen, steht das im Text.</p>
+      <ul>{prime.videos.map(video => <li key={video.url}><a href={video.url} target="_blank" rel="noreferrer">{video.channel}: {video.title} ↗</a> <span>{new Date(video.date).toLocaleDateString('de-DE', { month: 'short', year: 'numeric' })}</span></li>)}</ul>
+    </footer>
   </>;
 }

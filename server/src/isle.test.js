@@ -64,6 +64,26 @@ test('every The Isle playable has a complete German short profile', async () => 
   }
 });
 
+// A Prime guide is optional, but when a profile has one it must be a full route backed by dated videos.
+test('Prime guides are complete routes backed by dated YouTube videos', async () => {
+  const { playables } = await loadIsle();
+  const guided = playables.filter(playable => playable.prime);
+  assert.deepEqual(guided.map(playable => playable.id).sort(), ['deinosuchus', 'pteranodon']);
+  for (const { id, prime } of guided) {
+    assert.ok(prose(prime.summary, 200), `${id}: prime summary too thin`);
+    assert.ok(prime.steps.length >= 4 && prime.steps.length <= 7, `${id}: four to seven prime steps`);
+    for (const step of prime.steps) assert.ok(step.title && step.when && prose(step.text, 120), `${id}: prime step too thin: ${step.title}`);
+    assert.ok(prose(prime.afterPrime, 200), `${id}: afterPrime too thin`);
+    assert.ok(prime.pitfalls.length >= 3 && prime.pitfalls.length <= 6, `${id}: three to six pitfalls`);
+    assert.ok(prime.videos.length >= 3, `${id}: at least three videos`);
+    for (const video of prime.videos) {
+      assert.match(video.url, /^https:\/\/www\.youtube\.com\/watch\?v=[\w-]{11}$/, `${id}: video link ${video.url}`);
+      assert.ok(video.channel && video.title && /^\d{4}-\d{2}-\d{2}$/.test(video.date), `${id}: video needs channel, title and date`);
+      assert.ok(video.date <= prime.checkedAt, `${id}: video ${video.url} dated after the check`);
+    }
+  }
+});
+
 test('predator nutrient lists link playables both ways', async () => {
   const { playables } = await loadIsle();
   const byId = Object.fromEntries(playables.map(playable => [playable.id, playable]));

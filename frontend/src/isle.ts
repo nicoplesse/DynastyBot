@@ -30,6 +30,12 @@ export interface IsleBehavior {
   logic: Array<{ because: string; so: string }>; home: string;
   day: Array<{ phase: IslePhase; text: string }>; group: string; analog: { animals: string; text: string };
 }
+// Optional route to Prime Elder for one playable, distilled from current creator videos.
+export interface IslePrimeVideo { channel: string; title: string; date: string; url: string }
+export interface IslePrime {
+  summary: string; steps: Array<{ title: string; when: string; text: string }>;
+  afterPrime: string; pitfalls: string[]; videos: IslePrimeVideo[]; checkedAt: string;
+}
 export interface IsleSummary {
   id: string; name: string; nickname: string | null; diet: IsleDiet; role: string; tagline: string; since: string | null; order: number;
   growthTotalMinutes: number | null; essence: string; traits: IsleBehavior['traits'];
@@ -42,7 +48,7 @@ export interface IslePlayable extends Omit<IsleSummary, 'stats'> {
   hunt: { title: string; text: string };
   growth: Array<{ stage: IsleStageId; text: string }>;
   abilities: Array<{ keys: string; name: string; text: string }>;
-  tips: string[]; notes?: string[]; sources: IsleSource[];
+  tips: string[]; notes?: string[]; prime?: IslePrime; sources: IsleSource[];
   eats: IsleLink[]; eatenBy: IsleLink[];
   position: number; count: number; previous: IsleSummary; next: IsleSummary;
 }
