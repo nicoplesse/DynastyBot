@@ -328,6 +328,7 @@ function resolveMap(poiDoc, routeDoc, regions) {
     legend: (poiDoc && poiDoc.legend) || null,
     variants: (poiDoc && poiDoc.variants) || null,
     anyPoiHunting: (poiDoc && poiDoc.anyPoiHunting) || null,
+    provisional: (poiDoc && poiDoc.provisional) || null,
     markers,
     routes,
   };

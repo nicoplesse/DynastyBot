@@ -64,6 +64,7 @@ export interface ProfileMap {
   legend: Record<string, string> | null;
   variants: Array<{ id: string; name: string; moisture?: string; note?: string }> | null;
   anyPoiHunting: { prey: string[]; note: string } | null;
+  provisional: { quote: string; since: string | null; note: string } | null;
   markers: PoiMarker[];
   routes: MapRoute[];
 }

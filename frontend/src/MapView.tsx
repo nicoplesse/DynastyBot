@@ -171,6 +171,7 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
       </div>}
 
       {map.anyPoiHunting && <p className="map-footnote"><strong>Any POI:</strong> {map.anyPoiHunting.note}</p>}
+      {map.provisional && <p className="map-footnote"><strong>Temporary map:</strong> “{map.provisional.quote}” {map.provisional.note}</p>}
       <p className="map-footnote subtle">Area outlines are traced from the POI borders of the map images; small landmarks are approximate.</p>
     </section>
   );

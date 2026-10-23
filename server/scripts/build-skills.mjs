@@ -60,6 +60,7 @@ function poiLines(profile) {
     if (bits.length) lines.push(`  - ${m.name}: ${bits.join(' · ')}`);
   }
   for (const route of profile.map?.routes ?? []) lines.push(`- **Route ${route.name}:** ${route.waypoints.map(w => w.name).join(' → ')}${route.note ? ` (${route.note})` : ''}`);
+  if (profile.map.provisional) lines.unshift(`> **Vorläufige Karte:** Das Profil nennt die Karte nur vorübergehend („${profile.map.provisional.quote}“), Dynasty hat eine überarbeitete Karte angekündigt. Die POIs folgen bis zum Profil-Update der alten Karte und können sich noch ändern.`, '');
   return lines;
 }
 

@@ -62,6 +62,8 @@ You are an Apex hadrosaur in a family herd of up to 10, led by a lead male or an
 
 ## Karte & POIs
 
+> **Vorläufige Karte:** Das Profil nennt die Karte nur vorübergehend („This map is a temporary map, and will be updated soon!“), Dynasty hat eine überarbeitete Karte angekündigt. Die POIs folgen bis zum Profil-Update der alten Karte und können sich noch ändern.
+
 - **Revier + Nisten:** Dry Fang Canyon, Tallbrush Coasts, Steep Run, Coastal Bluffs, Volcano Islands, Palm Islands, Big Tree Overlook, Cedrus Forest, Twisted Forest, Black Fern Hills, Stillwater Bog, Mudflats, Cliffedge Falls, Coastland Swamp, Crag Bluffs, East Passage, Redwoods, Wind Tunnels, Hollow Hills, Wollemi Forest
 
 ## Matchups (Auszug)
