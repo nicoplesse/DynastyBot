@@ -56,7 +56,22 @@ You are an Apex aquatic carnivore. Females live in matrilines of up to 6 related
 
 ## Solo oder Gruppe
 
-**Gleiches Tier:** Einzelne Tylosaurus sind laut Profil ängstlicher oder gereizter, bleiben aber Orcas: Eine Kuh sucht eine Matrilinie, ein Bulle zieht allein. Kein anderes Tier.
+**Anderes Tier:** In der Matrilinie bist du der Orca. Allein beschreibt das Profil ein anderes Leben: ängstlich oder gereizt, kurze Nickerchen in Höhlen, weg vom Flachwasser, laut drohend in jeden Konflikt und als Waise mit eigener Jagdweise. Das ist der Seeleopard, den das Profil selbst als Vorbild nennt. Vom Orca bleiben der Stress ohne Familie und die Suche nach einer Matrilinie.
+
+**Solo spielt er sich wie:**
+**Seeleopard + Orca (Schwertwal) (Leopard seal + Orca)**: A lone leopard seal of the coasts: it lies in wait off beaches and drinking spots, toys with its catch and carries an orca's restlessness without a family.
+
+Alone you are anxious or aggressive. You hunt up to Apex tier: Kaiwhekea, Eurhinosaurus and Leedsichthys come first in a POI, then Parasaurolophus and Lambeosaurus on the beach or swimming, then anything else. You never scavenge. You lie in wait off the shore and lunge at most one body length out of the water to clamp or bonebreak prey and drag it under, playing with it and cutting it off from land first. Adult land Apexes only when they swim, Spinosaurus and Deinosuchus only in desperate hunger. When threatened you rush in calling loudly, whip with head and tail, and flee through underwater caves and tunnels when badly hurt. You nap briefly in caves and keep out of shallow water. As a bull you ram rocks to release stress and reject calves; as a cow you roam far and quietly to find a matriline, and with calves of your own you tuck them beneath you. Raised by a matriline you keep its hunting style; raised alone you develop your own.
+
+- Seeleopard / Leopard seal – 65 %: Solo life: a lone, edgy ambusher that waits off the shore for prey entering the water, plays with its catch and hunts in its own individual style
+- Orca (Schwertwal) / Orca – 35 %: The family it lacks: a social animal under stress when alone, rubbing on objects to calm down, cows roaming far to find a matriline, bulls roving
+- Lebensraum: Shorelines and open sea. Nomadic. Alone you nap in underwater caves and kelp, stay out of the shallows and lie in wait just off beaches where prey drinks, basks or swims across.
+- Anders als die Tiere: Leopard seals haul out on ice floes to rest; a Tylosaurus never rests on land, its beaching is a short lunge of at most one body length. A leopard seal is content alone; a solo Tylosaurus is stressed by it, and a lone cow keeps looking for a matriline.
+- Besonderheit: Rubbing against objects to calm down is pure orca: northern resident orcas rub themselves on smooth pebble beaches.
+
+Solo bist du kein Orca in der Familie, sondern ein Seeleopard der Küsten, der die Unruhe eines Orcas ohne Familie in sich trägt. Allein bist du ängstlich oder gereizt. Du schläfst kurz in Unterwasserhöhlen oder im Tang und bleibst aus dem Flachwasser. Du jagst bis Apex, zuerst Kaiwhekea, Eurhinosaurus und Leedsichthys, dann Parasaurolophus und Lambeosaurus am Strand oder im Wasser, Aas frisst du nie. Du lauerst knapp vor der Uferkante, wo Tiere trinken, sich sonnen oder hinüberschwimmen, schnellst höchstens eine Körperlänge heraus, packst zu und ziehst die Beute ins Wasser, wo du mit ihr spielst und ihr den Weg zum Land abschneidest. Bedroht stürmst du laut rufend hinein und fliehst schwer verletzt durch Höhlen und Tunnel. Als Bulle rammst du Felsen, um Stress abzubauen, als Kuh ziehst du leise und weit auf der Suche nach einer Matrilinie. Als Waise entwickelst du deine eigene Jagdweise.
+
+Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 
 ## Karte & POIs
 

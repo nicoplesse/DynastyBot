@@ -101,6 +101,7 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Afrikanischer Löwe / African lion: Torvosaurus
 - Basstölpel / Northern gannet: Tropeognathus
 - Kormoran / Great cormorant: Tropeognathus
+- Seeleopard / Leopard seal: Tylosaurus
 - Orca (Schwertwal) / Orca: Tylosaurus
 - Waldkauz / Tawny owl: Tyrannosaurus
 - Tiger / Tiger: Tyrannotitan

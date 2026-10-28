@@ -63,7 +63,7 @@ Alle 65 Playables in einer Zeile. Spalten: Tier = Spielgröße (Tiny < Small < M
 | therizinosaurus | Therizinosaurus | Apex | Pflanzen | nachtaktiv | Land | Wald | Solo spielbar | – | – | Kasuar 100% | Du bist ein Kasuar: ein nachtaktiver Riese des tiefen Waldes mit tödlichen Klauen. |
 | torvosaurus | Torvosaurus | Large | Fleisch | tag- & nachtaktiv | Land | Ebenen & Savanne | Solo eingeschränkt | 6 | Giant | Afrikanischer Löwe 100% | Du bist ein Löwe: Ein Rudel besteht aus einem Männchen und bis zu drei jagenden Weibchen. |
 | tropeognathus | Tropeognathus | Small | Fleisch | tag- & nachtaktiv | Luft | Meer & Küste | Gruppentier | 4 | Giant | Basstölpel 65% + Kormoran 35% | Du bist der Klippenfischer: ein Basstölpel, der wie ein Kormoran taucht. |
-| tylosaurus | Tylosaurus | Apex | Fleisch | tag- & nachtaktiv | Wasser | Meer & Küste | Solo eingeschränkt | 2 | Apex | Orca (Schwertwal) 100% | Du bist ein Orca: Die älteste Kuh führt die Matrilinie, Bullen ziehen als Rover umher, und jede Familie hat ihre eigene Jagdkultur. |
+| tylosaurus | Tylosaurus | Apex | Fleisch | tag- & nachtaktiv | Wasser | Meer & Küste | Solo eingeschränkt | 2 | Apex | Seeleopard 65% + Orca (Schwertwal) 35% | Solo bist du kein Orca in der Familie, sondern ein Seeleopard der Küsten, der die Unruhe eines Orcas ohne Familie in sich trägt. |
 | tyrannosaurus | Tyrannosaurus | Apex | Fleisch | tag- & nachtaktiv | Land | Wald | Solo spielbar | 2 | Giant | Eisbär 55% + Waldkauz 45% | Du bist ein Eisbär im Körper eines Rex: der schwerste Jäger an Land, aber ohne Ausdauer für lange Verfolgungen. |
 | tyrannotitan | Tyrannotitan | Apex | Fleisch | nachtaktiv | Land | Wald | Solo spielbar | 2 | Giant | Tiger 60% + Weißer Hai 40% | Du bist ein Tiger mit den Zähnen eines Weißen Hais: ein nachtaktiver Apex, der gern schwimmt. |
 | utahraptor | Utahraptor | Medium | Fleisch | tag- & nachtaktiv | Land | Wüste & Canyons | Solo eingeschränkt | 5 | Apex | Grauwolf (Einzelwolf) 60% + Laubenvogel 40% | Solo bist du ein abgewanderter Einzelwolf: still, aufmerksam und immer unterwegs. |
@@ -111,26 +111,26 @@ Für grobe Wünsche wie „irgendwas Katzenhaftes“ oder „wie ein Wolf“ (An
 - Ente, Schwan & Reiher / Duck, swan & heron: Halszkaraptor (Mallard + Cattle egret 100%), Deinocheirus (Mute swan 55%)
 - Strauß, Kasuar & Huhn / Ostrich, cassowary & fowl: Citipati (Chicken (red junglefowl) 100%), Struthiomimus (Ostrich 100%), Therizinosaurus (Cassowary 100%)
 - Taube, Sittich & Singvogel / Pigeon, parrot & songbird: Rhamphorhynchus (Oxpecker + Parakeet 100%), Thalassodromeus (Pigeon 55%), Utahraptor (Bowerbird 40%)
-- Wal & Delfin / Whale & dolphin: Eurhinosaurus (Bottlenose dolphin 100%), Tylosaurus (Orca 100%)
-- Robbe & Seelöwe / Seal & sea lion: Kaiwhekea (Sea lion 60%), Deinosuchus (Ocean) (Southern elephant seal 45%), Spinosaurus (Saltwater) (Walrus 30%)
+- Wal & Delfin / Whale & dolphin: Eurhinosaurus (Bottlenose dolphin 100%), Tylosaurus (Orca 35%)
+- Robbe & Seelöwe / Seal & sea lion: Tylosaurus (Leopard seal 65%), Kaiwhekea (Sea lion 60%), Deinosuchus (Ocean) (Southern elephant seal 45%), Spinosaurus (Saltwater) (Walrus 30%)
 - Hai & Fisch / Shark & fish: Leedsichthys (Whale shark + Bowfin 100%), Deinosuchus (Ocean) (Great white shark 55%), Tyrannotitan (Great white shark 40%)
 - Schildkröte / Turtle: Kaiwhekea (Sea turtle 40%)
 
 ## Spielstil-Merkmale → Playables
 
-- Einzelgänger / Solitary: Allosaurus, Anodontosaurus, Camptosaurus, Compsognathus, Concavenator, Daspletosaurus, Deinonychus, Deinosuchus (Ocean), Deinosuchus (Shore), Dryosaurus, Eotriceratops, Giganotosaurus, Latenivenatrix, Leedsichthys, Megalania (Arid), Megalania (Temperate), Pachycephalosaurus, Parasaurolophus, Sarcosuchus, Spinosaurus (Freshwater), Spinosaurus (Saltwater), Stegosaurus, Tenontosaurus, Tyrannotitan, Utahraptor, Yutyrannus
+- Einzelgänger / Solitary: Allosaurus, Anodontosaurus, Camptosaurus, Compsognathus, Concavenator, Daspletosaurus, Deinonychus, Deinosuchus (Ocean), Deinosuchus (Shore), Dryosaurus, Eotriceratops, Giganotosaurus, Latenivenatrix, Leedsichthys, Megalania (Arid), Megalania (Temperate), Pachycephalosaurus, Parasaurolophus, Sarcosuchus, Spinosaurus (Freshwater), Spinosaurus (Saltwater), Stegosaurus, Tenontosaurus, Tylosaurus, Tyrannotitan, Utahraptor, Yutyrannus
 - Feste Partnerschaft / Pair-bonded: Achillobator, Austroraptor, Deinocheirus, Giganotosaurus, Hatzegopteryx, Kelenken, Maip, Metriacanthosaurus, Spinosaurus (Freshwater), Spinosaurus (Saltwater), Thalassodromeus, Tyrannosaurus, Tyrannotitan
-- Familiengruppe / Family group: Apatosaurus, Ceratosaurus, Dilophosaurus, Tylosaurus
+- Familiengruppe / Family group: Apatosaurus, Ceratosaurus, Dilophosaurus
 - Rudel / Pack hunter: Alioramus, Ceratosaurus, Dilophosaurus, Eurhinosaurus, Kaiwhekea, Kelenken, Pycnonemosaurus, Suchomimus, Torvosaurus
 - Große Herde / Big herd: Albertaceratops, Apatosaurus, Barsboldia, Citipati, Deinocheirus, Iguanodon, Kentrosaurus, Lambeosaurus, Lurdusaurus (Coast), Lurdusaurus (Freshwater), Pachyrhinosaurus, Psittacosaurus, Struthiomimus, Styracosaurus, Yunnanosaurus
 - Kolonie & Schwarm / Colony & swarm: Austroraptor, Camptosaurus, Lurdusaurus (Coast), Rhamphorhynchus, Thalassodromeus, Tropeognathus
 - Harem / Harem life: Barsboldia, Camptosaurus, Citipati, Dilophosaurus, Iguanodon, Pachyrhinosaurus, Pycnonemosaurus, Rhamphorhynchus, Struthiomimus, Styracosaurus, Torvosaurus, Tropeognathus, Yunnanosaurus
-- Weibchen führen / Female-led: Albertaceratops, Apatosaurus, Lambeosaurus, Maip, Pachyrhinosaurus, Therizinosaurus, Tylosaurus
+- Weibchen führen / Female-led: Albertaceratops, Apatosaurus, Lambeosaurus, Maip, Pachyrhinosaurus, Therizinosaurus
 - Spitze der Nahrungskette / Apex — fears little: Deinosuchus (Ocean), Deinosuchus (Shore), Giganotosaurus, Spinosaurus (Freshwater), Spinosaurus (Saltwater), Tylosaurus, Tyrannosaurus, Tyrannotitan
 - Beutetier / Prey animal — lives alert: Albertaceratops, Amargasaurus, Camptosaurus, Citipati, Dryosaurus, Halszkaraptor, Kentrosaurus, Lambeosaurus, Leedsichthys, Pachycephalosaurus, Parasaurolophus, Psittacosaurus, Struthiomimus, Tenontosaurus
 - Panzer / hält stand / Tanky — stands its ground: Anodontosaurus, Apatosaurus, Argentinosaurus, Barsboldia, Eotriceratops, Iguanodon, Pachyrhinosaurus, Stegosaurus, Styracosaurus, Therizinosaurus
 - Schnell & ausdauernd / Fast & enduring: Alioramus, Camptosaurus, Compsognathus, Dryosaurus, Eurhinosaurus, Kelenken, Psittacosaurus, Struthiomimus
-- Lauerjäger / Ambush hunter: Achillobator, Allosaurus, Ceratosaurus, Concavenator, Daspletosaurus, Deinosuchus (Ocean), Deinosuchus (Shore), Megalania (Arid), Megalania (Temperate), Sarcosuchus, Spinosaurus (Saltwater), Tyrannosaurus, Yutyrannus
+- Lauerjäger / Ambush hunter: Achillobator, Allosaurus, Ceratosaurus, Concavenator, Daspletosaurus, Deinosuchus (Ocean), Deinosuchus (Shore), Megalania (Arid), Megalania (Temperate), Sarcosuchus, Spinosaurus (Saltwater), Tylosaurus, Tyrannosaurus, Yutyrannus
 - Kletterer / Climber: Megalania (Temperate)
 - Hetzjäger / Runs prey down: Alioramus, Giganotosaurus, Kelenken, Maip, Megalania (Arid), Tyrannotitan, Utahraptor
 - Opportunist & Aasfresser / Opportunist & scavenger: Austroraptor, Compsognathus, Concavenator, Deinonychus, Dilophosaurus, Latenivenatrix, Megalania (Arid), Megalania (Temperate), Metriacanthosaurus, Quetzalcoatlus, Rhamphorhynchus, Thalassodromeus
