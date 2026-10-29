@@ -1,9 +1,11 @@
 // Command line for "Meine Dinos", used by the /aktualisiere skill:
 //   node server/scripts/herd.mjs list                 all dinos with pending screenshots (JSON)
 //   node server/scripts/herd.mjs show <name|id>       one dino with absolute screenshot paths (JSON)
+//   node server/scripts/herd.mjs create <name> [playableId]
+//                                                     new dino without screenshots (photo and files follow in the UI)
 //   node server/scripts/herd.mjs apply <name|id> <payload.json>
 //                                                     validated update, then prints what changed
-// The payload may hold playableId, sex, genetics, bonds, character, proofs, notes, transcripts and processed
+// The payload may hold playableId, sex, genetics, bonds, character, family, proofs, notes, transcripts and processed
 // ("pending" marks every unread screenshot as read). Screenshots themselves are never touched.
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -28,6 +30,11 @@ function summary(dino) {
     mutations: (g?.mutations || []).map(item => item.name), extra: (g?.extra || []).map(item => `${item.label}: ${item.value}`),
     bonds: (dino.bonds || []).map(item => [item.name, item.sex, item.kind, item.status, item.note].filter(Boolean).join(' · ')),
     traits: dino.character?.traits || [], character: dino.character?.text || '',
+    family: dino.family ? {
+      ...Object.fromEntries(['catalogId', 'subspecies', 'origin', 'mother', 'father'].map(field => [field, dino.family[field]]).filter(([, value]) => value)),
+      offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.born, item.status].filter(Boolean).join(' · ')),
+      log: dino.family.log.map(item => `${item.date} ${item.text}`),
+    } : null,
     playableId: dino.playableId, sex: dino.sex, proofs: dino.proofs, notes: dino.notes,
   };
 }
@@ -60,6 +67,11 @@ try {
       screenshots: dino.screenshots.map(shot => ({ ...shot, path: join(folder, shot.file), pending: !shot.processedAt })),
       playables: names,
     }, null, 2));
+  } else if (command === 'create' && key) {
+    const existing = await store.find(key).catch(error => { if (error.status === 404) return null; throw error; });
+    if (existing) throw new Error(`${existing.name} already exists (data/herd/${existing.id}/).`);
+    const dino = await store.addFiles({ name: key, playable: payloadFile });
+    console.log(`Created ${dino.name} (data/herd/${dino.id}/dino.json)${dino.playableId ? `, playable ${names[dino.playableId] || dino.playableId}` : ''}`);
   } else if (command === 'apply' && key && payloadFile) {
     const dino = await store.find(key);
     const payload = JSON.parse(await readFile(payloadFile, 'utf8'));
@@ -70,7 +82,7 @@ try {
     console.log(diff.length ? diff.map(line => `  ${line}`).join('\n') : '  no field changes');
     console.log(`  screenshots marked as read: ${read}, still pending: ${updated.screenshots.filter(shot => !shot.processedAt).length}`);
   } else {
-    console.error('Usage: herd.mjs list | show <name|id> | apply <name|id> <payload.json>');
+    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | apply <name|id> <payload.json>');
     process.exitCode = 2;
   }
 } catch (error) {

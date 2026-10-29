@@ -1,8 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, type Catalog, type CatalogItem } from './api';
-import { bondsOf, characterOf, herdApi, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
+import { TyloFile } from './TyloFile';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './herd.css';
+
+// Your own Tylosaurus get the photo-ID file instead of the standard hero.
+const hasIdFile = (dino: HerdDino) => dino.playableId === 'tylosaurus';
 
 const imageTypes = new Set(['image/png', 'image/jpeg', 'image/webp']);
 const imageName = /\.(png|jpe?g|webp)$/i;
@@ -199,8 +203,9 @@ function DinoImage({ dino, playable }: { dino: HerdDino; playable?: CatalogItem 
 
 function HerdCard({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
   const pending = pendingCount(dino);
-  return <button type="button" className="herd-card" onClick={() => go(`/herd/${dino.id}`)}>
-    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{!dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
+  const catalogId = hasIdFile(dino) ? familyOf(dino).catalogId : '';
+  return <button type="button" className={`herd-card${hasIdFile(dino) ? ' tylo' : ''}`} onClick={() => go(`/herd/${dino.id}`)}>
+    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{catalogId && <span className="herd-card-id">{catalogId}</span>}{!dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
     <div className="herd-card-body">
       <div className="herd-card-title"><h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2><span aria-hidden="true">↗</span></div>
       <div className="herd-card-playable">{playable ? playable.name : 'Playable unknown'}</div>
@@ -224,6 +229,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
   const [newShots, setNewShots] = useState<File[]>([]);
   const [newPhoto, setNewPhoto] = useState<File | null>(null);
   const [busy, setBusy] = useState(false);
+  const tools = useRef<HTMLDetailsElement>(null);
   const playables = useMemo(() => playableMap(catalog), [catalog]);
   useEffect(() => { setDino(null); herdApi.get(id).then(setDino).catch(cause => setError((cause as Error).message)); window.scrollTo(0, 0); }, [id]);
   if (error) return <PageError message={error} />;
@@ -250,12 +256,22 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
     try { await herdApi.remove(dino!.id); go('/herd'); }
     catch (cause) { setNotice({ type: 'error', text: (cause as Error).message }); setBusy(false); setConfirmDelete(false); }
   }
+  const idFile = hasIdFile(dino);
+  const openTools = () => {
+    if (!tools.current) return;
+    tools.current.open = true;
+    (tools.current.querySelector('.herd-photo-pick') || tools.current).scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  // On an ID file the editing panels fold away below the file.
+  const foldTools = (children: React.ReactNode) => idFile
+    ? <details ref={tools} className="tf-tools"><summary>Akte bearbeiten <small>Genetik, Bindungen, Foto und Screenshots</small></summary><div className="tf-tools-body">{children}</div></details>
+    : children;
 
   return <>
     <ExplorerTopline section="MY DINOS / DETAIL" count={dino.name.toUpperCase()} />
     <button className="back-link" type="button" onClick={() => go('/herd')}>← All my dinos</button>
     <article className="herd-detail">
-      <header className="herd-hero">
+      {idFile ? <TyloFile dino={dino} playable={playable} onOpenPhoto={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} onAddPhoto={openTools} /> : <header className="herd-hero">
         <button type="button" className="herd-hero-image" onClick={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} disabled={!dino.photo} aria-label={dino.photo ? 'Open photo' : 'No photo yet'}><DinoImage dino={dino} playable={playable} />{!dino.photo && <span className="herd-no-photo">No photo yet</span>}</button>
         <div className="herd-hero-copy">
           <div className="profile-kicker">MY DINO{playable?.classification.label ? ` · ${playable.classification.label}` : ''}</div>
@@ -267,9 +283,10 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
           </div>
           <p className="herd-hero-meta">{dino.screenshots.length} {dino.screenshots.length === 1 ? 'screenshot' : 'screenshots'}{pending > 0 && <> · <b>{pending} waiting for /aktualisiere</b></>} · updated {formatDate(dino.updatedAt)}</p>
         </div>
-      </header>
+      </header>}
       {notice && <div className={`notice ${notice.type}`} role="status"><span>{notice.type === 'success' ? '✓' : '!'}</span>{notice.text}<button type="button" onClick={() => setNotice(null)} aria-label="Dismiss message">×</button></div>}
 
+      {foldTools(<>
       <section className="herd-panel">
         <div className="herd-panel-head"><h2>Genetics &amp; proof</h2>{!editing && <button type="button" className="secondary-button" onClick={() => setEditing(true)}>Edit</button>}</div>
         {editing ? <HerdEditor dino={dino} catalog={catalog} busy={busy} onCancel={() => setEditing(false)} onSave={async patch => { if (await run(() => herdApi.update(dino.id, patch), 'Changes saved.')) setEditing(false); }} /> : <>
@@ -297,6 +314,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
           {(newShots.length > 0 || newPhoto) && <div className="save-row"><div><strong>Ready to add?</strong><span>Files are stored exactly as captured.</span></div><button type="button" className="primary-button" disabled={busy} onClick={() => void upload()}>{busy ? 'Saving…' : 'Save files'} <span aria-hidden="true">→</span></button></div>}
         </div>
       </section>
+      </>)}
 
       <div className="herd-danger"><button type="button" className="text-button danger" onClick={() => setConfirmDelete(true)}>Delete {dino.name}…</button></div>
     </article>

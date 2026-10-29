@@ -1,6 +1,6 @@
 // "Meine Dinos": the player's own dinosaurs. Each one is a folder data/herd/<id>/ with
 //   dino.json        structured record (genetics filled by the /aktualisiere skill, links and photo from the UI;
-//                    bonds and character for social playables, from the UI or the skill)
+//                    bonds and character for social playables, from the UI or the skill; family for the ID file)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
 //   photo-*.<ext>    optional photo of the dino
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
@@ -93,6 +93,40 @@ export function normalizeCharacter(value) {
   if (value == null) return { traits: [], text: '' };
   if (typeof value !== 'object' || Array.isArray(value)) throw herdError(400, 'Character must be an object.');
   return { traits: list(value.traits, 'Character traits'), text: text(value.text, 2000) };
+}
+
+const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+
+function day(value, label, required = false) {
+  const trimmed = text(value, 10);
+  if (!trimmed && !required) return '';
+  if (!datePattern.test(trimmed) || Number.isNaN(Date.parse(trimmed))) throw herdError(400, `${label} must be a date like 2026-10-29.`);
+  return trimmed;
+}
+
+// The family file (catalogue number, origin, calves, chronicle). Mates stay in bonds;
+// each calf names its mother, so calves hang under the right mate in the family tree.
+export function normalizeFamily(value) {
+  if (value == null) return null;
+  if (typeof value !== 'object' || Array.isArray(value)) throw herdError(400, 'Family must be an object.');
+  const entries = (items, label) => {
+    if (items == null) return [];
+    if (!Array.isArray(items)) throw herdError(400, `${label} must be a list.`);
+    return items.map(item => {
+      if (!item || typeof item !== 'object' || Array.isArray(item)) throw herdError(400, `Each ${label.toLowerCase()} entry must be an object.`);
+      return item;
+    });
+  };
+  const offspring = entries(value.offspring, 'Offspring').map(item => {
+    if (item.sex != null && item.sex !== '' && !sexes.has(item.sex)) throw herdError(400, 'Offspring sex must be female or male.');
+    return { name: text(item.name, 80), sex: item.sex || null, mother: text(item.mother, 80), born: day(item.born, 'Offspring born'), status: text(item.status, 60), note: text(item.note, 400) };
+  }).filter(item => item.name);
+  const log = entries(value.log, 'Log').map(item => ({ date: day(item.date, 'Log date', true), text: text(item.text, 400), place: text(item.place, 80) }))
+    .filter(item => item.text).sort((a, b) => a.date.localeCompare(b.date));
+  return {
+    catalogId: text(value.catalogId, 16), subspecies: text(value.subspecies, 40), origin: text(value.origin, 200),
+    mother: text(value.mother, 80), father: text(value.father, 80), offspring, log,
+  };
 }
 
 async function knownPlayables(processedDir) {
@@ -237,6 +271,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     }
     if ('bonds' in patch) dino.bonds = normalizeBonds(patch.bonds);
     if ('character' in patch) dino.character = normalizeCharacter(patch.character);
+    if ('family' in patch) dino.family = normalizeFamily(patch.family);
     if ('transcripts' in patch) {
       const transcripts = patch.transcripts || {};
       for (const [file, value] of Object.entries(transcripts)) {

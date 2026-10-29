@@ -1,6 +1,6 @@
 ---
 name: aktualisiere
-description: Aktualisiert einen eigenen Dino unter „My Dinos“ (DynastyBot) aus importierten Screenshots. Liest Bloodlines, dominante und rezessive Skins, Mutationen, Geschlecht und Playable aus den rohen Screenshots und trägt sie sauber in data/herd/<dino>/dino.json ein. Nutze diesen Skill, wenn der Nutzer „/aktualisiere“, „aktualisiere Malekit“, „lies meine Dino-Screenshots ein“, „trag die neuen Skins ein“ oder „setz den Mutation-Proof-Link“ sagt, oder allgemein seine eigenen Dinos, deren Bloodlines, Skins, Mutationen, Bindungen (Bonds), Charakter oder Proof-Links pflegen will, z. B. „Torfin bondet jetzt mit Kamoda“.
+description: Aktualisiert einen eigenen Dino unter „My Dinos“ (DynastyBot) aus importierten Screenshots. Liest Bloodlines, dominante und rezessive Skins, Mutationen, Geschlecht und Playable aus den rohen Screenshots und trägt sie sauber in data/herd/<dino>/dino.json ein. Nutze diesen Skill, wenn der Nutzer „/aktualisiere“, „aktualisiere Malekit“, „lies meine Dino-Screenshots ein“, „trag die neuen Skins ein“ oder „setz den Mutation-Proof-Link“ sagt, oder allgemein seine eigenen Dinos, deren Bloodlines, Skins, Mutationen, Bindungen (Bonds), Charakter, Stammbaum (Partnerinnen, Kälber, Chronik der ID-Akte) oder Proof-Links pflegen will, z. B. „Torfin bondet jetzt mit Kamoda“, „Mistral hat zwei Kälber mit Arachu“ oder „ich habe einen neuen Tylo“.
 ---
 
 # /aktualisiere – eigenen Dino aus Screenshots aktualisieren
@@ -32,6 +32,14 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
    - **extra**: weitere sichtbare, für den Dino wichtige Angaben als `{ "label", "value" }` (z. B. Generation, Wachstum, Eltern). Kein Rauschen wie UI-Buttons.
    - **bonds** (Bindungen): Beziehungen zu anderen Dinos, vor allem bei sozialen Playables wie Parasaurolophus (Paarbindung, Harem, Lebenspartner, Familie). Je Eintrag `{ "name", "sex", "kind", "status", "note" }`: `sex` ist `female`/`male`/`null`, `kind` z. B. „Bindung“, „Lebenspartner“, „Harem“, „Familie“, „Freund“, `status` z. B. „bondet gerade“, „fest“, „beendet“, `note` kurz (Skin, Herkunft). Meist nennt der Nutzer sie im Chat. `bonds` wird als Ganzes ersetzt, schick also immer die vollständige Liste mit den bisherigen Einträgen aus `show`.
    - **character**: `{ "traits": ["ruhig", …], "text": "…" }`, also Charakterzüge als kurze Stichworte und ein freier Text zur Persönlichkeit. Nur eintragen, was der Nutzer sagt. Wird ebenfalls als Ganzes ersetzt.
+   - **family** (die ID-Akte, die eigene Tylosaurus als Photo-ID-Katalog mit Stammbaum zeigen, z. B. Mistral): `{ "catalogId", "subspecies", "origin", "mother", "father", "offspring": [...], "log": [...] }`.
+     - `catalogId` ist die Katalog-Nr. Tylos werden fortlaufend `TY-01`, `TY-02` … nummeriert, ein neuer Tylo bekommt die nächste freie Nummer.
+     - `subspecies` gilt laut Profil nach Geschlecht: Bullen proriger, kansasensis oder rex, Kühe nepaeolicus.
+     - `origin` ist frei, z. B. „Wild Spawn“ oder „genistet von …“; `mother`/`father` sind die Namen der Eltern.
+     - **Partnerinnen sind Einträge in `bonds`** mit `kind` „Partnerin“ (bzw. „Partner“); die Reihenfolge ergibt „1. Partnerin“, „2. Partnerin“. Eine beendete Bindung bekommt `status` „beendet“ und bleibt mit ihren Kälbern im Stammbaum.
+     - **Kälber** stehen in `offspring` als `{ "name", "sex", "mother", "born", "status", "note" }`. `mother` muss genau wie der Name der Partnerin in `bonds` geschrieben sein, sonst landet das Kalb unter „Mutter offen“. `born` ist `JJJJ-MM-TT` oder leer. `status` ist z. B. „lebend“, „verstorben“ (wird im Stammbaum durchgestrichen) oder „eigene Matrilinie“.
+     - **Chronik** in `log` als `{ "date": "JJJJ-MM-TT", "text", "place" }` (Sichtungsprotokoll, z. B. Gelege, Schlupf, Tod, neue Partnerin; `place` optional ein POI).
+     - `family` wird als Ganzes ersetzt: Schick immer die vollständigen Listen aus `show` mit. Ein neues Kalb bekommt meist auch einen Chronik-Eintrag.
    - **proofs**: Links nur setzen, wenn der Nutzer sie im Chat nennt oder sie lesbar im Screenshot stehen (`mutation` = Discord-Link als Mutationsbeweis, `nesting` = Nest-Beweis). Nur vollständige `https://`-Links.
 
    Screenshots zeigen den **aktuellen Stand**. Übernimm eine Liste komplett aus dem Screenshot, wenn er diesen Bereich zeigt. Zeigt kein neuer Screenshot einen Bereich, behalte die bisherigen Werte aus `show` unverändert. Schicke `genetics` immer **vollständig** (alle vier Felder), weil es als Ganzes ersetzt wird.
@@ -49,6 +57,7 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
      },
      "bonds": [{ "name": "...", "sex": "female", "kind": "Bindung", "status": "bondet gerade", "note": "" }],
      "character": { "traits": ["..."], "text": "" },
+     "family": { "catalogId": "TY-01", "subspecies": "", "origin": "", "mother": "", "father": "", "offspring": [{ "name": "...", "sex": "female", "mother": "...", "born": "2026-11-02", "status": "lebend", "note": "" }], "log": [{ "date": "2026-11-02", "text": "...", "place": "" }] },
      "transcripts": { "screenshots/20261001-201500-1.png": "wortgetreuer Text …" },
      "processed": "pending"
    }
@@ -65,4 +74,5 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
 - Nichts erfinden: Nur was lesbar im Bild steht oder der Nutzer sagt. Unleserliches als offen melden.
 - Schreibweise der Namen exakt übernehmen (Groß/Klein, Bindestriche), damit Suche und Abgleich funktionieren.
 - Niemals Screenshots oder Fotos löschen, umbenennen oder bearbeiten, und `dino.json` nie direkt editieren, sondern immer `herd.mjs apply`.
+- Einen Dino ohne Screenshots (z. B. „ich habe einen neuen Tylo, Bild folgt“) legst du mit `node server/scripts/herd.mjs create "<Name>" <playableId>` an und füllst ihn dann mit `apply`.
 - Die App zeigt die Änderung sofort (Reiter *My Dinos* und eingeklappt auf der Profilseite des Playables); ein Neustart ist nicht nötig.

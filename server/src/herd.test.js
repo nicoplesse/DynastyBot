@@ -64,6 +64,21 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { bonds: 'Kamoda' })).status, 400);
     assert.equal((await patch('malekit', { character: ['ruhig'] })).status, 400);
 
+    assert.equal(bonded.family, undefined);
+    const family = await (await patch('malekit', { family: {
+      catalogId: ' TY-01 ', mother: 'Nerea',
+      offspring: [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', born: '2026-11-02', status: 'lebend' }, { name: ' ' }],
+      log: [{ date: '2026-11-02', text: 'Erstes Kalb mit Kamoda.' }, { date: '2026-10-29', text: 'Ins Register aufgenommen.', place: 'Kelp Vale' }],
+    } })).json();
+    assert.equal(family.family.catalogId, 'TY-01');
+    assert.deepEqual(family.family.offspring, [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', born: '2026-11-02', status: 'lebend', note: '' }]);
+    assert.deepEqual(family.family.log.map(item => item.date), ['2026-10-29', '2026-11-02']);
+    assert.equal(family.family.log[0].place, 'Kelp Vale');
+    assert.deepEqual(family.bonds, bonded.bonds);
+    assert.equal((await patch('malekit', { family: { log: [{ date: '29.10.2026', text: 'x' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', sex: 'calf' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: [] })).status, 400);
+
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
     assert.equal((await fetch(`${base}/api/herd?playable=spinosaurus`).then(response => response.json())).length, 0);
     const image = await fetch(`${base}/api/herd/malekit/files/${updated.screenshots[1].file}`);
