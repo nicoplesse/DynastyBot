@@ -83,8 +83,18 @@ function Node({ sex, name, caption, unknown = false, focus = false, small = fals
 }
 
 function Calf({ calf }: { calf: HerdOffspring }) {
-  const caption = [calf.born && `geb. ${formatDay(calf.born)}`, calf.status].filter(Boolean).join(' · ');
+  const caption = [calf.clutch && `Gelege ${calf.clutch}`, calf.born && `geb. ${formatDay(calf.born)}`, calf.status].filter(Boolean).join(' · ');
   return <li><Node sex={calf.sex} name={calf.name} caption={caption || undefined} small gone={deceased.test(calf.status)} /></li>;
+}
+
+// The mother's bloodline as a water column around her and her calves: they all carry its name.
+function Lineage({ bloodline, children }: { bloodline?: string; children: React.ReactNode }) {
+  if (!bloodline) return <>{children}</>;
+  return <div className="tf-lineage">
+    <span className="tf-lineage-name"><i aria-hidden="true">≋</i><small>BLOODLINE</small><b>{bloodline}</b></span>
+    {children}
+    <small className="tf-lineage-foot">Die Kälber tragen den Namen der Mutter</small>
+  </div>;
 }
 
 function Pedigree({ dino }: { dino: HerdDino }) {
@@ -108,8 +118,10 @@ function Pedigree({ dino }: { dino: HerdDino }) {
               const calves = calvesOf(mate);
               return <li key={`${mate.name}-${index}`} className={ended.test(mate.status) ? 'tf-ended' : undefined}>
                 <span className="tf-pairing">{mateRole(mate, index)}</span>
-                <Node sex={mate.sex} name={mate.name} caption={mate.status || mate.note || undefined} />
-                <ul>{calves.length ? calves.map(calf => <Calf key={calf.name} calf={calf} />) : <li className="tf-pending"><Node sex={null} name="Kälber folgen" unknown small /></li>}</ul>
+                <Lineage bloodline={mate.bloodline}>
+                  <Node sex={mate.sex} name={mate.name} caption={mate.status || mate.note || undefined} />
+                  <ul>{calves.length ? calves.map(calf => <Calf key={calf.name} calf={calf} />) : <li className="tf-pending"><Node sex={null} name="Kälber folgen" unknown small /></li>}</ul>
+                </Lineage>
               </li>;
             })}
             {orphans.length > 0 && <li>
@@ -146,13 +158,16 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
   const origin = family.origin || (family.mother || family.father ? [family.mother, family.father].filter(Boolean).join(' × ') : '');
   const catalogId = family.catalogId || 'TY–';
   const mateWord = dino.sex === 'female' ? 'Partner' : mates.length === 1 ? 'Partnerin' : 'Partnerinnen';
+  // Clutches are numbered across all mates, so the highest number is the count so far.
+  const clutches = Math.max(0, ...family.offspring.map(calf => calf.clutch || 0));
   const facts: Array<[string, React.ReactNode, string?]> = [
     ['Geschlecht', sexInfo ? `${sexSymbol(dino.sex)} ${sexInfo.role}` : <i>offen</i>],
     ['Unterart', family.subspecies || <i>offen</i>, family.subspecies ? undefined : sexInfo?.subspecies],
     ['Herkunft', origin || <i>offen</i>],
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
     ['Im Register seit', formatDay(dino.createdAt)],
-    ['Familie', `${mates.length} ${mateWord} · ${family.offspring.length} ${family.offspring.length === 1 ? 'Kalb' : 'Kälber'}`],
+    ['Familie', [`${mates.length} ${mateWord}`, clutches > 0 && `${clutches} Gelege`, `${family.offspring.length} ${family.offspring.length === 1 ? 'Kalb' : 'Kälber'}`].filter(Boolean).join(' · ')],
+    ...(dino.diedAt ? [['Verstorben', `† ${formatDay(dino.diedAt)}`] as [string, string]] : []),
   ];
   return <article className="tf" aria-label={`ID-Akte ${dino.name}`}>
     <header className="tf-head">

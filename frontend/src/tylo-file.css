@@ -123,8 +123,15 @@
 .tf-branch li:first-child::before,.tf-branch li:last-child::after{border:0}
 .tf-branch li:last-child::before{border-right:1px solid var(--tf-line);border-radius:0 8px 0 0}
 .tf-branch li:first-child::after{border-radius:8px 0 0 0}
-.tf-pairing{margin-bottom:8px;padding:3px 8px;border:1px solid var(--tf-line);border-radius:999px;background:var(--tf-abyss);color:var(--tf-glass);font-size:9px;letter-spacing:.16em;white-space:nowrap}
-.tf-branch li.tf-ended>.tf-node{opacity:.6}
+.tf-pairing{position:relative;z-index:1;margin-bottom:8px;padding:3px 8px;border:1px solid var(--tf-line);border-radius:999px;background:var(--tf-abyss);color:var(--tf-glass);font-size:9px;letter-spacing:.16em;white-space:nowrap}
+.tf-lineage{position:relative;display:flex;flex-direction:column;align-items:center;min-width:260px;margin-top:14px;padding:32px 22px 14px;border:1px solid #86cfc440;border-bottom-color:transparent;border-radius:22px 22px 0 0;background:linear-gradient(180deg,#86cfc41c,#0e2a3830 45%,transparent 94%),repeating-linear-gradient(180deg,transparent 0 17px,#86cfc40b 17px 18px)}
+.tf-lineage::before{content:'';position:absolute;top:-22px;left:50%;height:22px;border-left:1px solid var(--tf-line)}
+.tf-lineage-name{position:absolute;top:0;left:50%;z-index:1;display:flex;align-items:baseline;gap:8px;padding:5px 13px 6px;border:1px solid #86cfc466;border-radius:999px;background:var(--tf-abyss);box-shadow:0 0 22px #86cfc424;transform:translate(-50%,-50%);white-space:nowrap}
+.tf-lineage-name i{align-self:center;color:var(--tf-glass);font-size:15px;font-style:normal;line-height:1}
+.tf-lineage-name small{color:var(--tf-muted);font-size:8.5px;font-weight:800;letter-spacing:.2em}
+.tf-lineage-name b{color:#f1f7f5;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-style:italic;font-weight:400}
+.tf-lineage-foot{margin-top:14px;color:var(--tf-faint);font-size:10px;font-style:italic}
+.tf-branch li.tf-ended>.tf-node,.tf-branch li.tf-ended>.tf-lineage>.tf-node{opacity:.6}
 .tf-branch li.tf-ended>.tf-pairing{color:var(--tf-faint);text-decoration:line-through}
 .tf-tree-empty{margin-top:14px;color:var(--tf-faint);font-size:12px;font-style:italic}
 .tf-tree-note{margin-top:20px;color:var(--tf-muted);font-size:12px;text-align:center}

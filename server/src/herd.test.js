@@ -4,6 +4,7 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createApp } from './app.js';
+import { createHerdStore } from './herd.js';
 
 const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/YQAAAABJRU5ErkJggg==', 'base64');
 
@@ -53,11 +54,14 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal(updated.screenshots[0].transcript, 'Bloodline: Ashfang');
     assert.equal((await patch('malekit', { proofs: { nesting: 'javascript:alert(1)' } })).status, 400);
     assert.equal((await patch('malekit', { sex: 'other' })).status, 400);
+    assert.equal((await (await patch('malekit', { diedAt: '2026-10-30' })).json()).diedAt, '2026-10-30');
+    assert.equal((await (await patch('malekit', { diedAt: '' })).json()).diedAt, '');
+    assert.equal((await patch('malekit', { diedAt: '30.10.2026' })).status, 400);
 
     assert.deepEqual(dino.bonds, []);
     assert.deepEqual(dino.character, { traits: [], text: '' });
-    const bonded = await (await patch('malekit', { bonds: [{ name: ' Kamoda Fern ', sex: 'female', kind: 'Bindung', status: 'bondet gerade', note: 'grüner Skin' }, { name: ' ' }], character: { traits: ['ruhig', 'ruhig', 'wachsam'], text: 'Hält Abstand zu Fremden.' } })).json();
-    assert.deepEqual(bonded.bonds, [{ name: 'Kamoda Fern', sex: 'female', kind: 'Bindung', status: 'bondet gerade', note: 'grüner Skin' }]);
+    const bonded = await (await patch('malekit', { bonds: [{ name: ' Kamoda Fern ', sex: 'female', kind: 'Bindung', status: 'bondet gerade', bloodline: ' The Endless Depths ', note: 'grüner Skin' }, { name: ' ' }], character: { traits: ['ruhig', 'ruhig', 'wachsam'], text: 'Hält Abstand zu Fremden.' } })).json();
+    assert.deepEqual(bonded.bonds, [{ name: 'Kamoda Fern', sex: 'female', kind: 'Bindung', status: 'bondet gerade', bloodline: 'The Endless Depths', note: 'grüner Skin' }]);
     assert.deepEqual(bonded.character, { traits: ['ruhig', 'wachsam'], text: 'Hält Abstand zu Fremden.' });
     assert.deepEqual(bonded.genetics.bloodlines, ['Ashfang']);
     assert.equal((await patch('malekit', { bonds: [{ name: 'X', sex: 'other' }] })).status, 400);
@@ -67,16 +71,21 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal(bonded.family, undefined);
     const family = await (await patch('malekit', { family: {
       catalogId: ' TY-01 ', mother: 'Nerea',
-      offspring: [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', born: '2026-11-02', status: 'lebend' }, { name: ' ' }],
+      offspring: [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', clutch: '2', born: '2026-11-02', status: 'lebend' }, { name: 'Gischt' }, { name: ' ' }],
       log: [{ date: '2026-11-02', text: 'Erstes Kalb mit Kamoda.' }, { date: '2026-10-29', text: 'Ins Register aufgenommen.', place: 'Kelp Vale' }],
     } })).json();
     assert.equal(family.family.catalogId, 'TY-01');
-    assert.deepEqual(family.family.offspring, [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', born: '2026-11-02', status: 'lebend', note: '' }]);
+    assert.deepEqual(family.family.offspring, [
+      { name: 'Brise', sex: 'female', mother: 'Kamoda Fern', clutch: 2, born: '2026-11-02', status: 'lebend', note: '' },
+      { name: 'Gischt', sex: null, mother: '', clutch: null, born: '', status: '', note: '' },
+    ]);
     assert.deepEqual(family.family.log.map(item => item.date), ['2026-10-29', '2026-11-02']);
     assert.equal(family.family.log[0].place, 'Kelp Vale');
     assert.deepEqual(family.bonds, bonded.bonds);
     assert.equal((await patch('malekit', { family: { log: [{ date: '29.10.2026', text: 'x' }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', sex: 'calf' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 1.5 }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 0 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: [] })).status, 400);
 
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
@@ -91,6 +100,34 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await fetch(`${base}/api/herd/malekit`)).status, 404);
   } finally {
     server.close();
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test('herd: a dead dino keeps its folder and a new dino of the same name gets its own', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'dynasty-herd-test-'));
+  const processedDir = join(root, 'processed');
+  const herdDir = join(root, 'herd');
+  await mkdir(processedDir, { recursive: true });
+  await writeFile(join(processedDir, 'index.json'), JSON.stringify({ profiles: [{ id: 'tyrannotitan', name: 'Tyrannotitan' }] }));
+  const store = createHerdStore({ herdDir, processedDir });
+  const shot = join(root, 'shot.png');
+  await writeFile(shot, png);
+  try {
+    const first = await store.addFiles({ name: 'Malekith', playable: 'tyrannotitan', screenshots: [{ path: shot, originalname: 'a.png' }] });
+    await store.update(first.id, { diedAt: '2026-10-30' });
+    const second = await store.addFiles({ name: 'Malekith', playable: 'tyrannotitan' });
+    assert.equal(second.id, 'malekith-2');
+    assert.equal(second.screenshots.length, 0);
+    assert.equal((await store.find('Malekith')).id, 'malekith-2');
+    assert.equal((await store.find('malekith')).id, 'malekith-2');
+    const appended = await store.addFiles({ name: 'malekith', screenshots: [{ path: shot, originalname: 'b.png' }] });
+    assert.equal(appended.id, 'malekith-2');
+    assert.equal((await store.find('malekith-2')).screenshots.length, 1);
+    const dead = (await store.all()).find(dino => dino.id === 'malekith');
+    assert.equal(dead.diedAt, '2026-10-30');
+    assert.equal(dead.screenshots.length, 1);
+  } finally {
     await rm(root, { recursive: true, force: true });
   }
 });

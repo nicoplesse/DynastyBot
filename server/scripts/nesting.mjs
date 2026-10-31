@@ -46,11 +46,12 @@ try {
       if (candidates.length === 1 && dino.playableId && dino.playableId !== candidates[0].id) {
         result.warning = `${dino.name} ist als ${dino.playableId} eingetragen, nicht als ${candidates[0].id}.`;
       }
+      if (dino.diedAt) result.warning = `${dino.name} ist am ${dino.diedAt} verstorben. Regel 9.3: Beide Eltern müssen leben.`;
     }
     if (candidates.length === 1) {
       result.species = speciesFacts(await loadProfile(candidates[0].id));
       const herd = await store.all();
-      result.herdOfSpecies = herd.filter(item => item.playableId === candidates[0].id).map(item => ({ name: item.name, sex: item.sex }));
+      result.herdOfSpecies = herd.filter(item => item.playableId === candidates[0].id && !item.diedAt).map(item => ({ name: item.name, sex: item.sex }));
     } else {
       result.candidates = candidates.map(item => ({ id: item.id, name: item.name }));
     }

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, type Catalog, type CatalogItem } from './api';
-import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDeceased, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
 import { TyloFile } from './TyloFile';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './herd.css';
@@ -12,6 +12,13 @@ const imageTypes = new Set(['image/png', 'image/jpeg', 'image/webp']);
 const imageName = /\.(png|jpe?g|webp)$/i;
 
 function formatDate(value: string) { return new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).format(new Date(value)); }
+const diedLabel = (dino: HerdDino) => dino.diedAt ? `† Died ${formatDate(`${dino.diedAt}T12:00:00`)}` : '';
+const germanDate = (value: string) => new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(value));
+// Days between joining the herd (createdAt) and death; the hatch day itself is not recorded.
+function herdDays(dino: HerdDino) {
+  const days = Math.round((Date.parse(`${dino.diedAt}T12:00:00`) - Date.parse(`${dino.createdAt.slice(0, 10)}T12:00:00`)) / 86400000);
+  return days >= 0 ? days : null;
+}
 function playableMap(catalog: Catalog | null) { return new Map((catalog?.profiles || []).map(profile => [profile.id, profile])); }
 
 // Discord links open straight in the desktop app (discord://); other links open in a new tab.
@@ -36,6 +43,42 @@ export function HerdPage({ route }: { route: string }) {
   return id ? <HerdDetail id={id} catalog={catalog} /> : <HerdOverview catalog={catalog} />;
 }
 
+// "Friedhof": dead dinos leave My Dinos and rest here with all their data, newest grave first.
+export function CemeteryPage() {
+  const [catalog, setCatalog] = useState<Catalog | null>(null);
+  const [dead, setDead] = useState<HerdDino[] | null>(null);
+  const [error, setError] = useState('');
+  useEffect(() => {
+    api.catalog().then(setCatalog).catch(() => setCatalog({ schemaVersion: 1, generatedAt: '', count: 0, profiles: [] }));
+    herdApi.list().then(list => setDead(list.filter(isDeceased).sort((a, b) => b.diedAt!.localeCompare(a.diedAt!) || a.name.localeCompare(b.name, 'de')))).catch(cause => setError((cause as Error).message));
+  }, []);
+  const playables = useMemo(() => playableMap(catalog), [catalog]);
+  if (error) return <PageError message={error} />;
+  if (!dead || !catalog) return <PageLoading label="Loading the cemetery…" />;
+  return <>
+    <ExplorerTopline section="MY DINOS / FRIEDHOF" count={`${dead.length} ${dead.length === 1 ? 'GRAB' : 'GRÄBER'}`} />
+    <header className="directory-head cemetery-head"><div><div className="eyebrow">DYNASTY REALISM · IN MEMORIAM</div><h1>Friedhof</h1><p>Hier ruhen deine verstorbenen Dinos. Bloodlines, Skins, Beweise und Screenshots bleiben erhalten.</p></div><div className="directory-actions"><button type="button" className="secondary-button" onClick={() => go('/herd')}>← My Dinos</button><div className="archive-metric cemetery-metric"><strong>{dead.length}</strong><span>{dead.length === 1 ? 'Grab' : 'Gräber'}</span></div></div></header>
+    {dead.length ? <section className="cemetery-grid" aria-label="Verstorbene Dinos">{dead.map(dino => <Grave key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section>
+      : <div className="catalog-empty"><strong>Noch keine Gräber</strong><p>Alle deine Dinos leben.</p></div>}
+  </>;
+}
+
+function Grave({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
+  const days = herdDays(dino);
+  const g = dino.genetics;
+  return <button type="button" className="grave" onClick={() => go(`/herd/${dino.id}`)}>
+    <div className="grave-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" /></div>
+    <div className="grave-body">
+      <span className="grave-cross" aria-hidden="true">†</span>
+      <h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2>
+      <div className="grave-playable">{playable ? playable.name : 'Playable unbekannt'}</div>
+      <div className="grave-date">† {germanDate(`${dino.diedAt}T12:00:00`)}</div>
+      {days != null && <div className="grave-span">{days === 0 ? 'Am ersten Tag in deiner Herde gestorben' :`${days} ${days === 1 ? 'Tag' : 'Tage'} in deiner Herde`} · seit {germanDate(dino.createdAt)}</div>}
+      {g && (g.bloodlines.length > 0 || g.skins.dominant.length > 0) && <div className="grave-genes">{g.bloodlines.map(item => <span key={item} className="herd-chip bloodline">{item}</span>)}{g.skins.dominant.map(item => <span key={item} className="herd-chip dominant">{item}</span>)}{g.mutations.map(item => <span key={item.name} className="herd-chip mutation">{item.name}</span>)}</div>}
+    </div>
+  </button>;
+}
+
 function HerdOverview({ catalog }: { catalog: Catalog }) {
   const [dinos, setDinos] = useState<HerdDino[] | null>(null);
   const [error, setError] = useState('');
@@ -46,8 +89,10 @@ function HerdOverview({ catalog }: { catalog: Catalog }) {
   useEffect(() => { void refresh(); }, [refresh]);
   if (error) return <PageError message={error} />;
   if (!dinos) return <PageLoading label="Loading your dinos…" />;
+  const living = dinos.filter(dino => !isDeceased(dino)); // the dead rest in the Friedhof
+  const dead = dinos.filter(isDeceased);
   const needle = query.trim().toLowerCase();
-  const filtered = dinos.filter(dino => {
+  const filtered = living.filter(dino => {
     if (!needle) return true;
     const g = dino.genetics;
     const playable = dino.playableId ? playables.get(dino.playableId) : null;
@@ -55,12 +100,13 @@ function HerdOverview({ catalog }: { catalog: Catalog }) {
   });
   const pending = dinos.filter(dino => pendingCount(dino) > 0);
   return <>
-    <ExplorerTopline section="MY DINOS" count={`${dinos.length} ${dinos.length === 1 ? 'DINO' : 'DINOS'}`} />
-    <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · YOUR HERD</div><h1>My Dinos</h1><p>Bloodlines, skins, mutations and proof for every dino you own. Screenshots stay stored exactly as imported.</p></div><div className="directory-actions"><button type="button" className="primary-button" onClick={() => setImportOpen(open => !open)} aria-expanded={importOpen}>{importOpen ? 'Close import' : '+ Import screenshots'}</button><div className="archive-metric"><strong>{dinos.length}</strong><span>{dinos.length === 1 ? 'dino' : 'dinos'} in your herd</span></div></div></header>
+    <ExplorerTopline section="MY DINOS" count={`${living.length} ${living.length === 1 ? 'DINO' : 'DINOS'}`} />
+    <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · YOUR HERD</div><h1>My Dinos</h1><p>Bloodlines, skins, mutations and proof for every dino you own. Screenshots stay stored exactly as imported.</p></div><div className="directory-actions"><button type="button" className="primary-button" onClick={() => setImportOpen(open => !open)} aria-expanded={importOpen}>{importOpen ? 'Close import' : '+ Import screenshots'}</button><div className="archive-metric"><strong>{living.length}</strong><span>{living.length === 1 ? 'dino' : 'dinos'} in your herd</span></div></div></header>
     {importOpen && <HerdImport catalog={catalog} dinos={dinos} onSaved={() => void refresh()} />}
     {pending.length > 0 && <SkillHint dinos={pending} />}
-    {dinos.length > 0 && <section className="filter-bar herd-filter" aria-label="Filter dinos"><label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search name, playable, bloodline, skin, mutation or bond…" aria-label="Search your dinos" /></label></section>}
-    {dinos.length === 0 ? null : filtered.length ? <section className="herd-grid" aria-label="Your dinos">{filtered.map(dino => <HerdCard key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section> : <div className="catalog-empty"><strong>No matching dinos</strong><p>Try another name, skin or mutation.</p></div>}
+    {living.length > 0 && <section className="filter-bar herd-filter" aria-label="Filter dinos"><label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search name, playable, bloodline, skin, mutation or bond…" aria-label="Search your dinos" /></label></section>}
+    {living.length === 0 ? null : filtered.length ? <section className="herd-grid" aria-label="Your dinos">{filtered.map(dino => <HerdCard key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section> : <div className="catalog-empty"><strong>No matching dinos</strong><p>Try another name, skin or mutation.</p></div>}
+    {dead.length > 0 && <button type="button" className="cemetery-link" onClick={() => go('/friedhof')}><span aria-hidden="true">†</span><div><strong>Friedhof</strong><small>{dead.map(dino => dino.name).join(' · ')}</small></div><b>{dead.length} {dead.length === 1 ? 'Grab' : 'Gräber'} →</b></button>}
   </>;
 }
 
@@ -132,7 +178,7 @@ function HerdImport({ catalog, dinos, onSaved }: { catalog: Catalog; dinos: Herd
   const [nestingProof, setNestingProof] = useState('');
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
-  const existing = dinos.find(dino => dino.name.trim().toLowerCase() === name.trim().toLowerCase());
+  const existing = dinos.find(dino => !isDeceased(dino) && dino.name.trim().toLowerCase() === name.trim().toLowerCase()); // a dead namesake gets a successor
   useEffect(() => { if (existing?.playableId) setPlayable(existing.playableId); }, [existing?.id]);
   async function save() {
     if (!name.trim()) { setNotice({ type: 'error', text: 'Enter the name of your dino.' }); return; }
@@ -157,7 +203,7 @@ function HerdImport({ catalog, dinos, onSaved }: { catalog: Catalog; dinos: Herd
     <div className="section-heading"><div><span className="step">↧</span><h2 id="herd-import-title">Import screenshots</h2></div><span className="small-tag">STORED RAW</span></div>
     {notice && <div className={`notice ${notice.type}`} role="status"><span>{notice.type === 'success' ? '✓' : '!'}</span>{notice.text}<button type="button" onClick={() => setNotice(null)} aria-label="Dismiss message">×</button></div>}
     <div className="herd-import-fields">
-      <label><span>Dino name <b className="required">*</b></span><input value={name} onChange={event => setName(event.target.value)} list="herd-names" placeholder="e.g. Malekit" autoComplete="off" /><datalist id="herd-names">{dinos.map(dino => <option key={dino.id} value={dino.name} />)}</datalist><small>{existing ? <>Adds to <b>{existing.name}</b> ({existing.screenshots.length} screenshots so far)</> : name.trim() ? 'New dino' : 'An existing name adds the screenshots to that dino'}</small></label>
+      <label><span>Dino name <b className="required">*</b></span><input value={name} onChange={event => setName(event.target.value)} list="herd-names" placeholder="e.g. Malekit" autoComplete="off" /><datalist id="herd-names">{dinos.filter(dino => !isDeceased(dino)).map(dino => <option key={dino.id} value={dino.name} />)}</datalist><small>{existing ? <>Adds to <b>{existing.name}</b> ({existing.screenshots.length} screenshots so far)</> : name.trim() ? 'New dino' : 'An existing name adds the screenshots to that dino'}</small></label>
       <label><span>Playable</span><PlayableSelect id="herd-playable" catalog={catalog} value={playable} onChange={setPlayable} /><small>Optional. The skill can also read it from the screenshot.</small></label>
     </div>
     <ImageDrop files={screenshots} onFiles={setScreenshots} label="Drop screenshots here" hint="Bloodline, skin and mutation screens, nest or Discord posts" />
@@ -204,8 +250,8 @@ function DinoImage({ dino, playable }: { dino: HerdDino; playable?: CatalogItem 
 function HerdCard({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
   const pending = pendingCount(dino);
   const catalogId = hasIdFile(dino) ? familyOf(dino).catalogId : '';
-  return <button type="button" className={`herd-card${hasIdFile(dino) ? ' tylo' : ''}`} onClick={() => go(`/herd/${dino.id}`)}>
-    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{catalogId && <span className="herd-card-id">{catalogId}</span>}{!dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
+  return <button type="button" className={`herd-card${hasIdFile(dino) ? ' tylo' : ''}${isDeceased(dino) ? ' deceased' : ''}`} onClick={() => go(`/herd/${dino.id}`)}>
+    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{catalogId && <span className="herd-card-id">{catalogId}</span>}{isDeceased(dino) ? <span className="herd-died">{diedLabel(dino)}</span> : !dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
     <div className="herd-card-body">
       <div className="herd-card-title"><h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2><span aria-hidden="true">↗</span></div>
       <div className="herd-card-playable">{playable ? playable.name : 'Playable unknown'}</div>
@@ -269,7 +315,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
 
   return <>
     <ExplorerTopline section="MY DINOS / DETAIL" count={dino.name.toUpperCase()} />
-    <button className="back-link" type="button" onClick={() => go('/herd')}>← All my dinos</button>
+    {isDeceased(dino) ? <button className="back-link" type="button" onClick={() => go('/friedhof')}>← Friedhof</button> : <button className="back-link" type="button" onClick={() => go('/herd')}>← All my dinos</button>}
     <article className="herd-detail">
       {idFile ? <TyloFile dino={dino} playable={playable} onOpenPhoto={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} onAddPhoto={openTools} /> : <header className="herd-hero">
         <button type="button" className="herd-hero-image" onClick={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} disabled={!dino.photo} aria-label={dino.photo ? 'Open photo' : 'No photo yet'}><DinoImage dino={dino} playable={playable} />{!dino.photo && <span className="herd-no-photo">No photo yet</span>}</button>
@@ -277,6 +323,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
           <div className="profile-kicker">MY DINO{playable?.classification.label ? ` · ${playable.classification.label}` : ''}</div>
           <h1>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h1>
           <p className="herd-hero-playable">{playable ? <a href={`#/profiles/${playable.id}`}>{playable.name} profile →</a> : 'Playable not set yet'}</p>
+          {isDeceased(dino) && <p className="herd-hero-died">{diedLabel(dino)}</p>}
           <div className="herd-hero-proofs">
             {dino.proofs.mutation ? <ExternalLink className="herd-proof" url={dino.proofs.mutation}><b>Mutation proof</b><span>{isDiscordUrl(dino.proofs.mutation) ? 'Discord ↗' : 'Open ↗'}</span></ExternalLink> : <span className="herd-proof missing"><b>Mutation proof</b><span>not linked</span></span>}
             {dino.proofs.nesting ? <ExternalLink className="herd-proof" url={dino.proofs.nesting}><b>Nesting proof</b><span>{isDiscordUrl(dino.proofs.nesting) ? 'Discord ↗' : 'Open ↗'}</span></ExternalLink> : <span className="herd-proof missing"><b>Nesting proof</b><span>not linked</span></span>}
@@ -328,6 +375,7 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
   const [name, setName] = useState(dino.name);
   const [playable, setPlayable] = useState(dino.playableId || '');
   const [sex, setSex] = useState(dino.sex || '');
+  const [diedAt, setDiedAt] = useState(dino.diedAt || '');
   const [bloodlines, setBloodlines] = useState(g?.bloodlines.join('\n') || '');
   const [dominant, setDominant] = useState(g?.skins.dominant.join('\n') || '');
   const [recessive, setRecessive] = useState(g?.skins.recessive.join('\n') || '');
@@ -344,13 +392,14 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
       extra: lines(extra).map(line => { const [label, value] = splitPair(line, /:\s*/); return { label, value }; }),
     };
     const empty = !genetics.bloodlines.length && !genetics.skins.dominant.length && !genetics.skins.recessive.length && !genetics.mutations.length && !genetics.extra.length;
-    onSave({ name, playableId: playable || null, sex: (sex || null) as HerdDino['sex'], notes, proofs: { mutation: mutationProof, nesting: nestingProof }, genetics: empty && !g ? null : genetics });
+    onSave({ name, playableId: playable || null, sex: (sex || null) as HerdDino['sex'], diedAt, notes, proofs: { mutation: mutationProof, nesting: nestingProof }, genetics: empty && !g ? null : genetics });
   }
   return <form className="herd-editor" onSubmit={event => { event.preventDefault(); submit(); }}>
-    <div className="herd-editor-grid">
+    <div className="herd-editor-grid four">
       <label><span>Name</span><input value={name} onChange={event => setName(event.target.value)} required /></label>
       <label><span>Playable</span><PlayableSelect id="herd-edit-playable" catalog={catalog} value={playable} onChange={setPlayable} /></label>
       <label><span>Sex</span><select value={sex} onChange={event => setSex(event.target.value)}><option value="">Unknown</option><option value="female">♀ Female</option><option value="male">♂ Male</option></select></label>
+      <label><span>Died on <small>empty = alive</small></span><input type="date" value={diedAt} onChange={event => setDiedAt(event.target.value)} /></label>
     </div>
     <div className="herd-editor-grid">
       <label><span>Bloodlines <small>one per line</small></span><textarea value={bloodlines} onChange={event => setBloodlines(event.target.value)} rows={3} /></label>
@@ -382,7 +431,7 @@ function BondsPanel({ dino, busy, onSave }: { dino: HerdDino; busy: boolean; onS
       : empty ? <p className="herd-empty-genetics">No bonds or character noted yet.</p> : <>
         {bonds.length > 0 && <ul className="herd-bonds">{bonds.map((bond, index) => <li key={`${bond.name}-${index}`}>
           <strong>{bond.name}{bond.sex && <span className={`herd-sex ${bond.sex}`} title={bond.sex}>{sexSymbol(bond.sex)}</span>}</strong>
-          {bond.kind && <span className="herd-chip bond">{bond.kind}</span>}{bond.status && <span className="herd-bond-status">{bond.status}</span>}
+          {bond.kind && <span className="herd-chip bond">{bond.kind}</span>}{bond.status && <span className="herd-bond-status">{bond.status}</span>}{bond.bloodline && <span className="herd-chip bloodline">{bond.bloodline}</span>}
           {bond.note && <small>{bond.note}</small>}
         </li>)}</ul>}
         {(character.traits.length > 0 || character.text) && <dl className="herd-genetics herd-character">
@@ -409,10 +458,11 @@ function BondsEditor({ dino, busy, onSave, onCancel }: { dino: HerdDino; busy: b
         <label><span>Sex</span><select value={bond.sex || ''} onChange={event => change(index, 'sex', event.target.value)}><option value="">Unknown</option><option value="female">♀ Female</option><option value="male">♂ Male</option></select></label>
         <label><span>Kind</span><input value={bond.kind} onChange={event => change(index, 'kind', event.target.value)} list="herd-bond-kinds" /></label>
         <label><span>Status</span><input value={bond.status} onChange={event => change(index, 'status', event.target.value)} list="herd-bond-statuses" /></label>
+        <label className="half"><span>Bloodline</span><input value={bond.bloodline || ''} onChange={event => change(index, 'bloodline', event.target.value)} placeholder="e.g. The Endless Depths" /></label>
         <label className="wide"><span>Note</span><input value={bond.note} onChange={event => change(index, 'note', event.target.value)} placeholder="Skin, how you met …" /></label>
         <button type="button" className="text-button danger" onClick={() => setBonds(list => list.filter((_, at) => at !== index))} aria-label={`Remove bond ${bond.name || index + 1}`}>Remove</button>
       </div>)}
-      <button type="button" className="secondary-button" onClick={() => setBonds(list => [...list, { name: '', sex: null, kind: 'Bindung', status: '', note: '' }])}>+ Add bond</button>
+      <button type="button" className="secondary-button" onClick={() => setBonds(list => [...list, { name: '', sex: null, kind: 'Bindung', status: '', bloodline: '', note: '' }])}>+ Add bond</button>
       <datalist id="herd-bond-kinds">{bondKinds.map(kind => <option key={kind} value={kind} />)}</datalist>
       <datalist id="herd-bond-statuses">{bondStatuses.map(status => <option key={status} value={status} />)}</datalist>
     </div>
@@ -430,7 +480,7 @@ export function HerdStrip({ playableId }: { playableId: string }) {
   useEffect(() => { setDinos([]); herdApi.list(playableId).then(setDinos).catch(() => setDinos([])); }, [playableId]);
   if (!dinos.length) return null;
   return <details className="herd-strip">
-    <summary><span className="herd-strip-mark" aria-hidden="true">◆</span><span>Your {dinos.length === 1 ? 'dino' : 'dinos'}</span><b>{dinos.map(dino => `${dino.name}${dino.sex ? ` ${sexSymbol(dino.sex)}` : ''}`).join(', ')}</b><i aria-hidden="true">▾</i></summary>
+    <summary><span className="herd-strip-mark" aria-hidden="true">◆</span><span>Your {dinos.length === 1 ? 'dino' : 'dinos'}</span><b>{dinos.map(dino => `${dino.name}${dino.sex ? ` ${sexSymbol(dino.sex)}` : ''}${isDeceased(dino) ? ' †' : ''}`).join(', ')}</b><i aria-hidden="true">▾</i></summary>
     <div className="herd-strip-list">{dinos.map(dino => <div key={dino.id} className="herd-strip-item">
       <div className="herd-strip-photo">{dino.photo ? <img src={herdApi.fileUrl(dino, dino.photo)} alt="" loading="lazy" /> : <span>{dino.name.charAt(0)}</span>}</div>
       <div className="herd-strip-body"><a href={`#/herd/${dino.id}`}><strong>{dino.name}</strong> open →</a><GeneticsRows genetics={dino.genetics} proofs={dino.proofs} /><BondLine dino={dino} />{dino.proofs.nesting && <ExternalLink className="herd-proof-mini" url={dino.proofs.nesting}>nesting proof ↗</ExternalLink>}</div>

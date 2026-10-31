@@ -3,12 +3,14 @@
 //   node server/scripts/herd.mjs show <name|id>       one dino with absolute screenshot paths (JSON)
 //   node server/scripts/herd.mjs create <name> [playableId]
 //                                                     new dino without screenshots (photo and files follow in the UI)
+//   node server/scripts/herd.mjs photo <name|id> <image>
+//                                                     sets the dino's photo (png, jpg or webp; replaces the old one)
 //   node server/scripts/herd.mjs apply <name|id> <payload.json>
 //                                                     validated update, then prints what changed
-// The payload may hold playableId, sex, genetics, bonds, character, family, proofs, notes, transcripts and processed
+// The payload may hold playableId, sex, diedAt, genetics, bonds, character, family, proofs, notes, transcripts and processed
 // ("pending" marks every unread screenshot as read). Screenshots themselves are never touched.
 import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { basename, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHerdStore } from '../src/herd.js';
 
@@ -28,14 +30,14 @@ function summary(dino) {
   return {
     bloodlines: g?.bloodlines || [], dominant: g?.skins.dominant || [], recessive: g?.skins.recessive || [],
     mutations: (g?.mutations || []).map(item => item.name), extra: (g?.extra || []).map(item => `${item.label}: ${item.value}`),
-    bonds: (dino.bonds || []).map(item => [item.name, item.sex, item.kind, item.status, item.note].filter(Boolean).join(' · ')),
+    bonds: (dino.bonds || []).map(item => [item.name, item.sex, item.kind, item.status, item.bloodline && `Bloodline ${item.bloodline}`, item.note].filter(Boolean).join(' · ')),
     traits: dino.character?.traits || [], character: dino.character?.text || '',
     family: dino.family ? {
       ...Object.fromEntries(['catalogId', 'subspecies', 'origin', 'mother', 'father'].map(field => [field, dino.family[field]]).filter(([, value]) => value)),
-      offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.born, item.status].filter(Boolean).join(' · ')),
+      offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.clutch && `Gelege ${item.clutch}`, item.born, item.status].filter(Boolean).join(' · ')),
       log: dino.family.log.map(item => `${item.date} ${item.text}`),
     } : null,
-    playableId: dino.playableId, sex: dino.sex, proofs: dino.proofs, notes: dino.notes,
+    playableId: dino.playableId, sex: dino.sex, diedAt: dino.diedAt || '', proofs: dino.proofs, notes: dino.notes,
   };
 }
 
@@ -56,7 +58,7 @@ try {
     console.log(JSON.stringify(dinos.map(dino => ({
       id: dino.id, name: dino.name, playable: dino.playableId ? names[dino.playableId] || dino.playableId : null,
       pending: dino.screenshots.filter(shot => !shot.processedAt).length, screenshots: dino.screenshots.length,
-      hasGenetics: !!dino.genetics, updatedAt: dino.updatedAt,
+      hasGenetics: !!dino.genetics, ...(dino.diedAt && { diedAt: dino.diedAt }), updatedAt: dino.updatedAt,
     })).sort((a, b) => b.pending - a.pending || b.updatedAt.localeCompare(a.updatedAt)), null, 2));
   } else if (command === 'show' && key) {
     const dino = await store.find(key);
@@ -69,9 +71,13 @@ try {
     }, null, 2));
   } else if (command === 'create' && key) {
     const existing = await store.find(key).catch(error => { if (error.status === 404) return null; throw error; });
-    if (existing) throw new Error(`${existing.name} already exists (data/herd/${existing.id}/).`);
+    if (existing && !existing.diedAt) throw new Error(`${existing.name} already exists (data/herd/${existing.id}/).`); // a dead namesake may be succeeded
     const dino = await store.addFiles({ name: key, playable: payloadFile });
     console.log(`Created ${dino.name} (data/herd/${dino.id}/dino.json)${dino.playableId ? `, playable ${names[dino.playableId] || dino.playableId}` : ''}`);
+  } else if (command === 'photo' && key && payloadFile) {
+    const dino = await store.find(key);
+    const updated = await store.addFiles({ id: dino.id, photo: { path: resolve(payloadFile), originalname: basename(payloadFile) } });
+    console.log(`Photo for ${updated.name}: data/herd/${updated.id}/${updated.photo}${dino.photo ? ` (replaces ${dino.photo})` : ''}`);
   } else if (command === 'apply' && key && payloadFile) {
     const dino = await store.find(key);
     const payload = JSON.parse(await readFile(payloadFile, 'utf8'));
@@ -82,7 +88,7 @@ try {
     console.log(diff.length ? diff.map(line => `  ${line}`).join('\n') : '  no field changes');
     console.log(`  screenshots marked as read: ${read}, still pending: ${updated.screenshots.filter(shot => !shot.processedAt).length}`);
   } else {
-    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | apply <name|id> <payload.json>');
+    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | photo <name|id> <image> | apply <name|id> <payload.json>');
     process.exitCode = 2;
   }
 } catch (error) {

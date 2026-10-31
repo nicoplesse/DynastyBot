@@ -3,6 +3,7 @@
 //                    bonds and character for social playables, from the UI or the skill; family for the ID file)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
 //   photo-*.<ext>    optional photo of the dino
+// A dead dino keeps its folder; diedAt (YYYY-MM-DD) marks it as deceased.
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
 import { copyFile, mkdir, open, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
@@ -85,7 +86,7 @@ export function normalizeBonds(value) {
   return value.map(item => {
     if (!item || typeof item !== 'object' || Array.isArray(item)) throw herdError(400, 'Each bond must be an object.');
     if (item.sex != null && item.sex !== '' && !sexes.has(item.sex)) throw herdError(400, 'Bond sex must be female or male.');
-    return { name: text(item.name, 80), sex: item.sex || null, kind: text(item.kind, 60), status: text(item.status, 60), note: text(item.note, 400) };
+    return { name: text(item.name, 80), sex: item.sex || null, kind: text(item.kind, 60), status: text(item.status, 60), bloodline: text(item.bloodline, 120), note: text(item.note, 400) };
   }).filter(item => item.name);
 }
 
@@ -104,6 +105,14 @@ function day(value, label, required = false) {
   return trimmed;
 }
 
+// Clutch number, counted across all of the dino's mates (1st clutch, 2nd clutch …); empty = unknown.
+function clutchNo(value) {
+  if (value == null || value === '') return null;
+  const number = Number(value);
+  if (!Number.isInteger(number) || number < 1 || number > 999) throw herdError(400, 'Offspring clutch must be a whole number from 1.');
+  return number;
+}
+
 // The family file (catalogue number, origin, calves, chronicle). Mates stay in bonds;
 // each calf names its mother, so calves hang under the right mate in the family tree.
 export function normalizeFamily(value) {
@@ -119,7 +128,7 @@ export function normalizeFamily(value) {
   };
   const offspring = entries(value.offspring, 'Offspring').map(item => {
     if (item.sex != null && item.sex !== '' && !sexes.has(item.sex)) throw herdError(400, 'Offspring sex must be female or male.');
-    return { name: text(item.name, 80), sex: item.sex || null, mother: text(item.mother, 80), born: day(item.born, 'Offspring born'), status: text(item.status, 60), note: text(item.note, 400) };
+    return { name: text(item.name, 80), sex: item.sex || null, mother: text(item.mother, 80), clutch: clutchNo(item.clutch), born: day(item.born, 'Offspring born'), status: text(item.status, 60), note: text(item.note, 400) };
   }).filter(item => item.name);
   const log = entries(value.log, 'Log').map(item => ({ date: day(item.date, 'Log date', true), text: text(item.text, 400), place: text(item.place, 80) }))
     .filter(item => item.text).sort((a, b) => a.date.localeCompare(b.date));
@@ -177,12 +186,13 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     return dinos.sort((a, b) => a.name.localeCompare(b.name, 'de'));
   }
 
-  // Resolves a dino by id or by name ("Malekit", "malekit").
+  // Resolves a dino by id or by name ("Malekit", "malekit"). A name can come back after a death
+  // ("Neuer Malekith"): the living namesake wins over the dead.
   async function find(key) {
     const slug = herdSlug(key);
     if (!slug) throw herdError(404, 'Dino not found.');
-    const dinos = await all();
-    const match = dinos.find(dino => dino.id === slug) || dinos.find(dino => herdSlug(dino.name) === slug);
+    const matches = (await all()).filter(dino => dino.id === slug || herdSlug(dino.name) === slug);
+    const match = matches.find(dino => !dino.diedAt) || matches.find(dino => dino.id === slug) || matches[0];
     if (!match) throw herdError(404, `Dino not found: ${key}`);
     return match;
   }
@@ -198,13 +208,17 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
       const cleanName = text(name, 80);
       const slug = herdSlug(cleanName);
       if (!cleanName || !slug) throw herdError(400, 'Dino name is required and must contain Latin letters or numbers.');
-      try { dino = await read(slug); }
-      catch (error) {
-        if (error.status !== 404) throw error;
+      // Screenshots go to the living dino of that name; a dead namesake stays untouched and the new one gets a free id.
+      const dinos = await all();
+      dino = dinos.find(item => !item.diedAt && (item.id === slug || herdSlug(item.name) === slug));
+      if (!dino) {
+        const taken = new Set(dinos.map(item => item.id));
+        let newId = slug;
+        for (let n = 2; taken.has(newId); n += 1) newId = `${slug}-${n}`;
         const now = new Date().toISOString();
         created = true;
-        dino = { schemaVersion: 1, id: slug, name: cleanName, playableId: null, sex: null, photo: null, proofs: { mutation: '', nesting: '' }, notes: '', genetics: null, bonds: [], character: normalizeCharacter(null), screenshots: [], createdAt: now, updatedAt: now };
-        await mkdir(join(folder(slug), 'screenshots'), { recursive: true });
+        dino = { schemaVersion: 1, id: newId, name: cleanName, playableId: null, sex: null, photo: null, proofs: { mutation: '', nesting: '' }, notes: '', genetics: null, bonds: [], character: normalizeCharacter(null), screenshots: [], createdAt: now, updatedAt: now };
+        await mkdir(join(folder(newId), 'screenshots'), { recursive: true });
       }
     }
     if (playable !== undefined && text(playable, 80)) dino.playableId = await playableId(playable);
@@ -257,6 +271,8 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
       if (patch.sex != null && patch.sex !== '' && !sexes.has(patch.sex)) throw herdError(400, 'Sex must be female or male.');
       dino.sex = patch.sex || null;
     }
+    // A dino that died stays in the herd with its date of death; empty = alive.
+    if ('diedAt' in patch) dino.diedAt = day(patch.diedAt, 'Died at');
     if ('notes' in patch) dino.notes = text(patch.notes, 4000);
     if ('proofs' in patch) {
       const proofs = patch.proofs || {};

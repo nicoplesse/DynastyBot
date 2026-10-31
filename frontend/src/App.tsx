@@ -51,7 +51,7 @@ export default function App() {
     window.addEventListener('hashchange', update);
     return () => window.removeEventListener('hashchange', update);
   }, []);
-  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/clamps') || route.startsWith('/routes') || route.startsWith('/foodweb') || route.startsWith('/radar') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd') || route.startsWith('/isle')) return <Explorer route={route} />;
+  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/clamps') || route.startsWith('/routes') || route.startsWith('/foodweb') || route.startsWith('/radar') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd') || route.startsWith('/friedhof') || route.startsWith('/isle')) return <Explorer route={route} />;
   return <ImportApp />;
 }
 
@@ -217,6 +217,7 @@ function ImportApp() {
         <nav aria-label="Main navigation">
           <button className="nav-item active" aria-current="page" onClick={() => { window.location.hash = '#/import'; }}><span className="nav-symbol">↧</span> <span className="nav-label">Import</span></button>
           <button className="nav-item" onClick={() => { window.location.hash = '#/herd'; }}><span className="nav-symbol">◆</span> <span className="nav-label">My Dinos</span></button>
+          <button className="nav-item" onClick={() => { window.location.hash = '#/friedhof'; }}><span className="nav-symbol">†</span> <span className="nav-label">Friedhof</span></button>
           <div className="nav-divider" />
           <button className="nav-item" onClick={() => { window.location.hash = '#/profiles'; }}><span className="nav-symbol">▤</span> <span className="nav-label">Profiles</span></button>
           <button className="nav-item" onClick={() => { window.location.hash = '#/rules'; }}><span className="nav-symbol">≡</span> <span className="nav-label">Rules</span></button>

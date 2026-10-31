@@ -13,17 +13,17 @@ import { ClampsPage } from './ClampsView';
 import { RoutesPage } from './RoutesView';
 import { FoodWebPage } from './FoodWebView';
 import { PoiRadarPage } from './PoiRadarView';
-import { HerdPage, HerdStrip } from './HerdView';
+import { CemeteryPage, HerdPage, HerdStrip } from './HerdView';
 import { ModeFlag, PlayModeSwitch, catalogAnalog, modeLabels, profileAnalog, usePlayMode } from './PlayMode';
 import { IslePage } from './IsleView';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './explorer.css';
 
 export function Explorer({ route }: { route: string }) {
-  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/clamps') ? 'clamps' : route.startsWith('/routes') ? 'routes' : route.startsWith('/foodweb') ? 'foodweb' : route.startsWith('/radar') ? 'radar' : route.startsWith('/herd') ? 'herd' : route.startsWith('/isle') ? 'isle' : 'profiles';
+  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/clamps') ? 'clamps' : route.startsWith('/routes') ? 'routes' : route.startsWith('/foodweb') ? 'foodweb' : route.startsWith('/radar') ? 'radar' : route.startsWith('/herd') ? 'herd' : route.startsWith('/friedhof') ? 'friedhof' : route.startsWith('/isle') ? 'isle' : 'profiles';
   return <div className="app-shell explorer-shell">
     <ExplorerNav active={active} route={route} />
-    <main className="explorer-main">{active === 'isle' ? <IslePage route={route} /> : active === 'herd' ? <HerdPage route={route} /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : active === 'clamps' ? <ClampsPage route={route} /> : active === 'routes' ? <RoutesPage route={route} /> : active === 'foodweb' ? <FoodWebPage route={route} /> : active === 'radar' ? <PoiRadarPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
+    <main className="explorer-main">{active === 'isle' ? <IslePage route={route} /> : active === 'herd' ? <HerdPage route={route} /> : active === 'friedhof' ? <CemeteryPage /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : active === 'clamps' ? <ClampsPage route={route} /> : active === 'routes' ? <RoutesPage route={route} /> : active === 'foodweb' ? <FoodWebPage route={route} /> : active === 'radar' ? <PoiRadarPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
   </div>;
 }
 
@@ -36,7 +36,7 @@ function JumpLink({ id, children }: { id: string; children: ReactNode }) {
 }
 
 // Profiles opens a sub-menu: the full directory, the ecosystem overview and one entry per ecosystem.
-function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'clamps' | 'routes' | 'foodweb' | 'radar' | 'herd' | 'isle'; route: string }) {
+function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'clamps' | 'routes' | 'foodweb' | 'radar' | 'herd' | 'friedhof' | 'isle'; route: string }) {
   const [open, setOpen] = useState(true);
   const [ecosystems, setEcosystems] = useState<Ecosystem[]>([]);
   useEffect(() => { api.ecosystems().then(index => setEcosystems(index.ecosystems)).catch(() => setEcosystems([])); }, []);
@@ -48,6 +48,7 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
     <nav aria-label="Main navigation">
       <button className="nav-item" onClick={() => go('/import')}><span className="nav-symbol">↧</span> <span className="nav-label">Import</span></button>
       <button className={`nav-item ${active === 'herd' ? 'active' : ''}`} aria-current={active === 'herd' ? 'page' : undefined} onClick={() => go('/herd')}><span className="nav-symbol">◆</span> <span className="nav-label">My Dinos</span></button>
+      <button className={`nav-item ${active === 'friedhof' ? 'active' : ''}`} aria-current={active === 'friedhof' ? 'page' : undefined} onClick={() => go('/friedhof')}><span className="nav-symbol">†</span> <span className="nav-label">Friedhof</span></button>
       <div className="nav-divider" />
       <div className="nav-group">
         <div className="nav-row">

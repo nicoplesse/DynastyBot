@@ -36,6 +36,10 @@
 .herd-card-image img,.herd-hero-image img{width:100%;height:100%;object-fit:cover}
 img.herd-fallback{opacity:.38;filter:grayscale(.45)}
 .herd-initial{display:grid;width:100%;height:100%;place-items:center;color:#5d7a5a;font-size:52px;font-family:Georgia,serif}
+.herd-card.deceased .herd-card-image img{filter:grayscale(1) brightness(.7)}
+.herd-card.deceased .herd-card-body{opacity:.72}
+.herd-died{position:absolute;left:10px;bottom:9px;padding:4px 8px;border:1px solid #8d8d8d88;border-radius:11px;background:#1b1d1ce6;color:#d5d8d3;font-size:10px;font-weight:800;letter-spacing:.04em}
+.herd-hero-died{margin-top:6px;color:#c9cdc6;font-size:12px;font-weight:800;letter-spacing:.04em}
 .herd-no-photo{position:absolute;left:12px;bottom:10px;color:#a6b6a3;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .herd-pending{position:absolute;top:10px;right:10px;padding:4px 8px;border:1px solid #c9b36f88;border-radius:11px;background:#2c2919e6;color:#ecd99a;font-size:10px;font-weight:800}
 .herd-card-body{display:flex;flex-direction:column;gap:9px;padding:14px 16px 16px}
@@ -108,6 +112,7 @@ a.herd-proof:hover{border-color:#8fc3e6}
 .herd-editor{display:grid;gap:14px}
 .herd-editor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .herd-editor-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.herd-editor-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
 .herd-editor-actions{display:flex;justify-content:flex-end;gap:9px}
 
 .herd-strip{width:fit-content;max-width:100%;margin:8px 0 0}
@@ -144,12 +149,43 @@ a.herd-proof:hover{border-color:#8fc3e6}
 .herd-bond-rows{display:grid;gap:10px}
 .herd-bond-rows>.secondary-button{justify-self:start}
 .herd-bond-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr) auto;align-items:end;gap:10px;padding:10px;border:1px solid #2f3f31;border-radius:7px}
-.herd-bond-row .wide{grid-column:1 / -2}
+.herd-bond-row .half{grid-column:1 / 3}
+.herd-bond-row .wide{grid-column:3 / -2}
 .herd-bond-row>.text-button{grid-column:-2;padding-bottom:12px}
 
-@media(max-width:900px){.herd-bond-row{grid-template-columns:repeat(2,minmax(0,1fr))}.herd-bond-row .wide{grid-column:1 / -1}.herd-bond-row>.text-button{grid-column:auto;justify-self:start;padding:0}.herd-hero{grid-template-columns:1fr}.herd-hero-image{min-height:240px}.herd-editor-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.herd-bond-row{grid-template-columns:repeat(2,minmax(0,1fr))}.herd-bond-row :is(.wide,.half){grid-column:1 / -1}.herd-bond-row>.text-button{grid-column:auto;justify-self:start;padding:0}.herd-hero{grid-template-columns:1fr}.herd-hero-image{min-height:240px}.herd-editor-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.herd-import{padding:18px 14px}.herd-import-fields,.herd-editor-grid.two{grid-template-columns:1fr}.herd-grid{grid-template-columns:1fr}.herd-skill-hint{flex-wrap:wrap}.herd-genetics>div,.herd-panel .herd-genetics>div{grid-template-columns:1fr;gap:3px}.herd-strip-photo{display:none}.herd-hero-copy{padding:20px 18px}}
 .herd-import-links{margin:14px 0 0}
 .herd-import-fields label>span i{margin-left:6px;color:#7f9283;font-size:10px;font-style:normal;font-weight:500}
 .herd-text-link{color:#a9cbe0;font-weight:700;text-decoration:none}
 .herd-text-link:hover{text-decoration:underline}
+/* Friedhof: dead dinos as weathered stones, newest grave first */
+.cemetery-link{display:flex;align-items:center;gap:14px;width:100%;margin-top:22px;padding:14px 18px;border:1px solid #3a3f3c;border-radius:8px;background:linear-gradient(100deg,#1d201f,#161a18 70%);color:inherit;text-align:left}
+.cemetery-link:hover{border-color:#6b726d}
+.cemetery-link>span{display:grid;place-items:center;width:32px;height:32px;border:1px solid #8d948f66;border-radius:50%;color:#cfd3cd;font-family:Georgia,serif;font-size:17px}
+.cemetery-link>div{flex:1;min-width:0}
+.cemetery-link strong{display:block;color:#e0e3de;font-size:13px}
+.cemetery-link small{display:block;margin-top:3px;overflow:hidden;color:#959c96;font-size:11px;text-overflow:ellipsis;white-space:nowrap}
+.cemetery-link b{color:#b9beb8;font-size:11px;white-space:nowrap}
+.cemetery-head .eyebrow{color:#aeb3ad}
+.cemetery-head .secondary-button{white-space:nowrap}
+.cemetery-metric{border-color:#41463f;background:#1a1d1b}
+.cemetery-metric strong{color:#d8dcd5}
+.cemetery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.grave{display:flex;flex-direction:column;min-width:0;padding:0;overflow:hidden;border:1px solid #3a3f3c;border-radius:110px 110px 8px 8px;background:#191c1b;color:inherit;text-align:center;transition:transform .16s,border-color .16s}
+.grave:hover{transform:translateY(-2px);border-color:#6b726d}
+.grave-image{position:relative;aspect-ratio:1.5;overflow:hidden;background:#232725}
+.grave-image img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.62) contrast(1.05)}
+.grave-image img.herd-fallback{opacity:.5}
+.grave-image .herd-initial{color:#6f7671}
+.grave-image .card-scrim{background:linear-gradient(transparent,#191c1b)}
+.grave-body{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;padding:4px 16px 20px}
+.grave-cross{margin-top:-24px;color:#d6dad3;font-family:Georgia,serif;font-size:30px;line-height:1;text-shadow:0 2px 8px #000}
+.grave h2{color:#eceee9;font-family:Georgia,serif;font-size:22px;font-weight:400;letter-spacing:.02em}
+.grave h2 .herd-sex{color:#9da49e}
+.grave-playable{color:#9aa19b;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.grave-date{margin-top:6px;padding:4px 10px;border-top:1px solid #3a3f3c;border-bottom:1px solid #3a3f3c;color:#d5d9d2;font-size:13px;font-weight:700;letter-spacing:.03em}
+.grave-span{color:#858c86;font-size:11px}
+.grave-genes{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin-top:8px}
+.grave-genes .herd-chip{filter:saturate(.35)}
+@media(max-width:600px){.cemetery-grid{grid-template-columns:1fr}.cemetery-link{flex-wrap:wrap}.cemetery-link small{white-space:normal}}
