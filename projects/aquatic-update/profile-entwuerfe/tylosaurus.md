@@ -9,7 +9,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 | Pflicht-Beute | Kai, Eurhino, Leeds zuerst | unverändert |
 | Xiphactinus | – | darf gejagt werden, wenn er allein oder in Gruppen bis 3 ist; ein einzelner Tylo greift keinen größeren Schwarm an |
 | Prognathodon | – | wie Spino und Deino: Adulte nur bei Hunger ≤ 35 %, Junge frei; nimmt Revier-Herausforderungen an |
-| Livyatan | – | Stufe Giant, für Tylo nicht jagbar; Tylo flieht, allein und als Paar; ein Paar darf sich wehren, verliert aber; Livy kommt nie nach Palm Islands |
+| Livyatan | – | Stufe Giant; als einzige Ausnahme von der Apex-Grenze darf ein Tylo-Paar einen adulten Livy jagen, bei jedem Hunger (entschieden am 03.11.); sehr gefährlich, denn im Bissduell gewinnt der Livy; ein einzelner Tylo flieht; Junge frei; Livy kommt nie nach Palm Islands |
 | Lebensraum | – | unverändert; Tylo ist der einzige Apex, der Ozeane und Flussengen teilt |
 | Xiph-Angst | – | Xiph flieht vor Tylo wie der Weiße Hai vor dem Orca, weil Tylo ihn clampen kann (Tragkraft 3000 gegen CW 2400) |
 | Mischgruppen | – | in einer Gruppe aus Kai, Eurhino und Leeds darf Tylo das Ziel wechseln (Regel 4.5) |
@@ -28,7 +28,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 
 - **Xiphactinus:** Ein einzelner Tylo verliert gegen einen vollen Schwarm. Deshalb die Grenze von 3.
 - **Prognathodon:** Ein Tylo-Paar schlägt einen einzelnen Prog, verliert aber gegen ein Prog-Paar. Revierkämpfe bleiben also offen und hängen von der Gruppengröße ab.
-- **Livyatan:** Livy jagt immer allein. Ein einzelner Tylo verliert gegen ihn (18 s), ein Tylo-Paar auch (35 s). Tylo flieht deshalb vor ihm, allein und als Paar. Wehren darf er sich immer.
+- **Livyatan:** Livy jagt immer allein. Ein einzelner Tylo verliert gegen ihn (18 s) und flieht. Ein Tylo-Paar darf ihn jagen, verliert das reine Bissduell aber auch (35 s). Gewinnen kann es nur wie Orcas gegen Großwale: zubeißen, abdrehen, heilen, wieder zubeißen. Dafür hat Tylo das Tempo (900 gegen 750), den längeren Sprint (3:42 gegen 2:47) und die schnellere Heilung (2,0 gegen 1,5/s). Das ist eine Einschätzung, denn die Simulation bildet Hit-and-Run nicht ab.
 - **Kaiwhekea:** Eine Kai-Gruppe mit 3 Verteidigern würde jeden Tylo schlagen. Kai fliehen aber vor Apexen auf Sicht, wie der Para, und helfen sich dabei nicht gegenseitig. Den Schutzring gibt es nur gegen Jäger, die kein Apex sind.
 
 ---
@@ -41,7 +41,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 - **Rival apex species:**
   - Tylosaurus do not hunt adult Spinosaurus, Deinosuchus or Prognathodon unless at desperate hunger (35%).
   - They may respond to territory challenges from these species, and may hunt their offspring freely.
-- **Livyatan:** Livyatan are Giant tier and always hunt alone. Tylosaurus cannot hunt adult Livyatan, but may hunt their offspring freely. Tylosaurus flee from adult Livyatan, alone or in pairs. They may still defend themselves when caught, but even a pair rarely wins.
+- **Livyatan:** Livyatan are Giant tier and always hunt alone. As the only exception to their Apex limit, Tylosaurus pairs may hunt adult Livyatan, at any hunger level. This is a very dangerous hunt: in a straight fight, a Livyatan beats a pair. A solitary Tylosaurus never hunts an adult Livyatan, and flees from it. Livyatan offspring may be hunted freely.
 - **Order of targets:** Kaiwhekea, Eurhinosaurus and Leedsichthys must be the first targets in the POI when hunting.
 - **Solo adolescents:** Solo Adolescent Tylosaurus do not hunt other species.
 
@@ -64,7 +64,8 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 ## Cross-Species Interaction (additions)
 
 - **Livyatan:**
-  - Livyatan are the only animals adult Tylosaurus truly fear.
+  - Livyatan are the only animals adult Tylosaurus truly fear, and the greatest prize a pair can take.
+  - Pairs hunt them the way orcas hunt great whales: they strike, pull away, and strike again until the giant tires. A pair that stays in a straight fight loses.
   - When clicking echoes through open water, matrilines turn towards the coast. Livyatan do not follow prey into the shallows.
   - The Abyssal Depths are entered with caution, or not at all. Livyatan never enter Palm Islands.
 - **Prognathodon:**

@@ -125,7 +125,7 @@ Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 8
 
 Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen Arten:
 - **Beute:** Xiphactinus kommt zur Beute dazu.
-- **Livyatan:** Tylo flieht vor Livy, allein und als Paar. Ein Paar darf sich wehren, verliert aber gegen einen adulten Livy mit CW 8000 und Health 2000 (Livy behält 22 %).
+- **Livyatan:** Ein einzelner Tylo flieht vor Livy. Ein Tylo-Paar darf ihn jagen, bei jedem Hunger, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.). Im Bissduell verliert es gegen einen adulten Livy mit CW 8000 und Health 2000 (Livy behält 22 %), gewinnen kann es nur durch Hit-and-Run.
 - **Prognathodon:** Adulte Prog jagt Tylo nur bei Hunger ≤ 35 %, wie Spino und Deino. Revier-Herausforderungen nimmt er an: Verliert er, muss er gehen (6.7.2). Gewinnt er, muss der Prog ihn 15 min dulden (6.7.3.1).
 - **Xiphactinus:** Tylo darf ihn jagen, wenn er allein oder in Gruppen bis 3 ist. Gegen 6 Xiph verliert ein einzelner Tylo.
 - Entwurf: `profile-entwuerfe/tylosaurus.md`.
@@ -172,7 +172,7 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen.
 
 **Im Entwurf (`profile-entwuerfe/livyatan.md`) festgelegt:**
-- **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Tylo und Prog dürfen nur bis Apex jagen und können einen adulten Livy daher nicht jagen, nur sich wehren. Adoleszente Livys zählen als Apex.
+- **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Prog darf nur bis Apex jagen und sich gegen einen adulten Livy nur wehren. **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger; das ist die einzige Ausnahme von der Apex-Grenze. Adoleszente Livys zählen als Apex.
 - Höchstens 2 Weibchen, die sich mit demselben Bullen gepaart haben (oder nur eine von beiden), Bullen immer allein (entschieden am 03.11.). Große Gruppen würden den stillen Jäger verraten. Er lebt in allen Ozeanen außer Palm Islands. **Gejagt wird nur allein** (entschieden am 03.11.), wie bei echten Pottwalen, die in Familien leben, aber einzeln in die Tiefe tauchen. Leviathan's Call dient nur der Verteidigung der Kälber.
 - Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden. Paare von Tylo und Prog darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
 - Er kommt nicht ins Flachwasser, außer zum Nisten an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.
@@ -182,7 +182,7 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
   - Ein Tylo-Paar schlägt er in 35 s (22 %), ein Prog-Paar knapp in 40 s (7 %). Mit Sonic Disruption bleiben ihm 38 % bzw. 26 %.
 - Gegen eine Kai-Gruppe mit 3 Verteidigern verliert ein einzelner Livy in 26 s. Genau so steht auch ein einzelner T-Rex gegen 3 Paras da. Deshalb müssen Kai wie der Para vor Apexen fliehen, statt sich zu stellen.
 
-**Folge für Tylosaurus und Prognathodon:** Beide fliehen vor Livy, allein und als Paar. Ein Paar darf sich wehren, verliert aber. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/prognathodon.md`.
+**Folge für Tylosaurus und Prognathodon:** Ein einzelner Tylo flieht vor Livy, ein Tylo-Paar darf ihn jagen. Prog flieht, allein und als Paar; ein Prog-Paar darf sich wehren, verliert aber knapp. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/prognathodon.md`.
 
 ### Xiphactinus als Raptor
 
@@ -335,7 +335,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 - **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen. Prog könnte ihn clampen (2500), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
 - **Krokodile jagen ist für Xiph ein gefährliches Vergnügen.** Einen einzelnen Sarco darf ein Schwarm ab 4 jagen: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 5 Tieren, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.): 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute und werden nur mit großer Vorsicht gejagt.
 - **Palm Islands ist die Front.** Prog, Deino und Spino kämpfen dort um Reviere, und Livy kommt nie hin. Für Prog ist Palm damit das sicherste und zugleich härteste Revier.
-- **Ein adulter Livy hat keinen Jäger mehr.** Jagen dürfte ihn als Giant nur Deinosuchus, und der lebt nicht mehr in Livys Ozeanen. Gebremst wird Livy nur durch die Solo-Jagd, sein geringes Tempo, das Flachwasser und Kai-Gruppen ab 3 Tieren.
+- **Ein adulter Livy hat genau einen Jäger: Tylo-Paare** (entschieden am 03.11.). Sie dürfen ihn bei jedem Hunger jagen, verlieren aber das Bissduell und gewinnen nur durch Hit-and-Run. Tylo ist schneller (900 gegen 750), sprintet länger (3:42 gegen 2:47) und heilt schneller (2,0 gegen 1,5/s). Deinosuchus dürfte ihn als Giant ebenfalls jagen, lebt aber nicht mehr in Livys Ozeanen. Gebremst wird Livy außerdem durch die Solo-Jagd, sein geringes Tempo, das Flachwasser und Kai-Gruppen ab 3 Tieren.
 
 **Prog gegen Deino und Spino** (neue Werte, ohne Blutung):
 
