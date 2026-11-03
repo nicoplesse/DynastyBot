@@ -11,7 +11,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 | Fähigkeiten in der Mischgruppe | – | Looming Presence nicht erlaubt; Fähigkeiten gegen andere Tiere nur, wenn er selbst angegriffen wird |
 | Kai und Eurhino | Hauptfeinde der Jungen; Weibchen töten deren Junge | harmlose Gruppenpartner; die Tötungsregel entfällt |
 | Feinde der Jungen | Tylo, Kai, Eurhino, Austroraptor, Concavenator | Tylo, Xiphactinus-Rudel, Austroraptor, Concavenator |
-| Feind der Adulten | Tylosaurus | Livyatan (allein, Kampf auf Messers Schneide), Tylosaurus |
+| Feind der Adulten | Tylosaurus | Livyatan (allein; Livy gewinnt klar, Rettung ist das Flachwasser), Tylosaurus |
 | Health | „Boosted health“ ohne Wert | Wert festlegen (offen) |
 | Wanderroute | Schleife durchs Meer und die Kanäle | dieselbe Schleife durch die warmen Salzwasser-Flussengen, dazu regelmäßige Abstecher in die Ozeane Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal; Kai und Eurhino ziehen dieselbe Route |
 | Schlaf | kurze Schübe, egal wo und wann | schläft nachts meist bei seiner Gruppe, wenn er eine hat |
@@ -73,7 +73,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 - Fathers recognise their silhouettes and gather their pups at the first sight of a pack.
 
 **Livyatan.**
-- Livyatan are the only predators that regularly target adult Leedsichthys. They always come alone, rising from the deep, and an adult Leedsichthys is strong enough to win such a fight.
+- Livyatan are the only predators that regularly target adult Leedsichthys. They always come alone, rising from the deep, and an adult Leedsichthys rarely wins such a fight. Its best defence is to reach shallow water, where Livyatan do not follow.
 - Livyatan hunt in every ocean on the route except Palm Islands. Leedsichthys that sense clicking in the water turn away from open, deep water and seek shallower ground.
 
 **Tylosaurus.**

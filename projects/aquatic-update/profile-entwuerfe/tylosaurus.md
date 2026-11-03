@@ -9,7 +9,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 | Pflicht-Beute | Kai, Eurhino, Leeds zuerst | unverändert |
 | Xiphactinus | – | darf gejagt werden, wenn er allein oder in Gruppen bis 3 ist; ein einzelner Tylo greift keinen größeren Schwarm an |
 | Prognathodon | – | wie Spino und Deino: Adulte nur bei Hunger ≤ 35 %, Junge frei; nimmt Revier-Herausforderungen an |
-| Livyatan | – | Stufe Giant, für Tylo nicht jagbar; ein einzelner Tylo flieht, ein Tylo-Paar darf sich zur Verteidigung stellen; Livy kommt nie nach Palm Islands |
+| Livyatan | – | Stufe Giant, für Tylo nicht jagbar; Tylo flieht, allein und als Paar; ein Paar darf sich wehren, verliert aber; Livy kommt nie nach Palm Islands |
 | Lebensraum | – | unverändert; Tylo ist der einzige Apex, der Ozeane und Flussengen teilt |
 | Xiph-Angst | – | Xiph flieht vor Tylo wie der Weiße Hai vor dem Orca, weil Tylo ihn clampen kann (Tragkraft 3000 gegen CW 2400) |
 | Mischgruppen | – | in einer Gruppe aus Kai, Eurhino und Leeds darf Tylo das Ziel wechseln (Regel 4.5) |
@@ -23,12 +23,12 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 | 2 Tylo gegen 6 Xiph | Tylo gewinnt (20 s) |
 | 2 Tylo gegen 1 Prog | Tylo gewinnt (11 s) |
 | 2 Tylo gegen 2 Prog | Tylo verliert |
-| 2 Tylo gegen 1 Livy | Tylo gewinnt (16 s) |
+| 2 Tylo gegen 1 Livy (CW 8000, Health 2000) | Tylo verliert (Livy gewinnt in 35 s mit 22 % Health) |
 | 1 Tylo gegen 3 Kai | Tylo verliert (8 s) |
 
 - **Xiphactinus:** Ein einzelner Tylo verliert gegen einen vollen Schwarm. Deshalb die Grenze von 3.
 - **Prognathodon:** Ein Tylo-Paar schlägt einen einzelnen Prog, verliert aber gegen ein Prog-Paar. Revierkämpfe bleiben also offen und hängen von der Gruppengröße ab.
-- **Livyatan:** Livy jagt immer allein. Ein einzelner Tylo verliert gegen ihn (24 s) und flieht. Ein Tylo-Paar schlägt ihn (16 s) und darf sich stellen. Livy greift deshalb keine Tylo-Paare an.
+- **Livyatan:** Livy jagt immer allein. Ein einzelner Tylo verliert gegen ihn (18 s), ein Tylo-Paar auch (35 s). Tylo flieht deshalb vor ihm, allein und als Paar. Wehren darf er sich immer.
 - **Kaiwhekea:** Eine Kai-Gruppe mit 3 Verteidigern würde jeden Tylo schlagen. Kai fliehen aber vor Apexen auf Sicht, wie der Para, und helfen sich dabei nicht gegenseitig. Den Schutzring gibt es nur gegen Jäger, die kein Apex sind.
 
 ---
@@ -41,7 +41,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 - **Rival apex species:**
   - Tylosaurus do not hunt adult Spinosaurus, Deinosuchus or Prognathodon unless at desperate hunger (35%).
   - They may respond to territory challenges from these species, and may hunt their offspring freely.
-- **Livyatan:** Livyatan are Giant tier and always hunt alone. Tylosaurus cannot hunt adult Livyatan, but may hunt their offspring freely. A solitary Tylosaurus flees from an adult Livyatan, while a Tylosaurus pair may stand its ground in defence.
+- **Livyatan:** Livyatan are Giant tier and always hunt alone. Tylosaurus cannot hunt adult Livyatan, but may hunt their offspring freely. Tylosaurus flee from adult Livyatan, alone or in pairs. They may still defend themselves when caught, but even a pair rarely wins.
 - **Order of targets:** Kaiwhekea, Eurhinosaurus and Leedsichthys must be the first targets in the POI when hunting.
 - **Solo adolescents:** Solo Adolescent Tylosaurus do not hunt other species.
 

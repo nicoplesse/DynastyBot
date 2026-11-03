@@ -23,7 +23,8 @@ Neues Profil für den Mod `ArazoaProg` (`UGC_M_Z857QV302V_SK`). Dynasty hat daf�
 | 1 Prog gegen 2 Kai, die sich stellen | verliert (9 s) | verliert (13 s) |
 | 2 Prog gegen 1 Leeds | gewinnt (20 s) | gewinnt (20 s) |
 | 1 Prog gegen 6 Xiph | verliert | verliert |
-| 1 Prog gegen 1 Livy (Health 1200) | verliert | verliert (27 s) |
+| 1 Prog gegen 1 Livy (CW 8000, Health 2000) | verliert | verliert (20 s) |
+| 2 Prog gegen 1 Livy | verliert | verliert knapp (Livy behält 7 % Health) |
 
 - Mit den Mod-Werten könnte er kein Revier gegen Tylo halten. Mit den neuen Werten kann er es, gegen Livyatan aber nicht.
 - Gegen Beute ändert sich fast nichts. Ein Kai fällt in beiden Fällen nach 15 s.
@@ -118,7 +119,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 - **Numbers:** Up to 2 grouped Prognathodon may take part in a hunt or a territory challenge.
 - **Tiers:** Prognathodon may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace or drift.
-- **Fleeing:** Prognathodon flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Prognathodon, but a brace may stand its ground in defence.
+- **Fleeing:** Prognathodon flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Prognathodon. A brace may stand its ground in defence, but loses against a grown Livyatan, if only narrowly.
 - **Spinosaurus & Deinosuchus:** Prognathodon may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
 - **Adolescents:** Adolescent Prognathodon do not assist with hunts.
 - **Defence:** Females always defend their grouped offspring of Adolescent and below.

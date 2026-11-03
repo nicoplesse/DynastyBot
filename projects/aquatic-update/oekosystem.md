@@ -125,7 +125,7 @@ Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 8
 
 Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen Arten:
 - **Beute:** Xiphactinus kommt zur Beute dazu.
-- **Livyatan:** Ein einzelner Tylo flieht vor Livy. Ein Tylo-Paar darf sich stellen, denn es schlägt den immer allein jagenden Livy (16 s).
+- **Livyatan:** Tylo flieht vor Livy, allein und als Paar. Ein Paar darf sich wehren, verliert aber gegen einen adulten Livy mit CW 8000 und Health 2000 (Livy behält 22 %).
 - **Prognathodon:** Adulte Prog jagt Tylo nur bei Hunger ≤ 35 %, wie Spino und Deino. Revier-Herausforderungen nimmt er an: Verliert er, muss er gehen (6.7.2). Gewinnt er, muss der Prog ihn 15 min dulden (6.7.3.1).
 - **Xiphactinus:** Tylo darf ihn jagen, wenn er allein oder in Gruppen bis 3 ist. Gegen 6 Xiph verliert ein einzelner Tylo.
 - Entwurf: `profile-entwuerfe/tylosaurus.md`.
@@ -167,23 +167,22 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 
 **Widersprüche:**
 1. **Er ist der langsamste Apex.** Auf freier Strecke holt er weder Tylo noch Prog ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. Optional: Schwimmen 500 → 550, damit er einem gemütlich schwimmenden Tylo überhaupt folgen kann.
-2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → Health 950 → 1200. Dann gewinnt er gegen Tylo und Prog. Gegen Leeds verliert er nach reinen Werten hauchdünn, mit seinen schwächenden Fähigkeiten gewinnt er knapp.
+2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → **Entschieden (03.11.): CW 6000 → 8000, Health 950 → 2000.** Dann schlägt er einzelne Tylo, Prog und Leeds klar und auch Paare von Tylo und Prog. Nur Kai-Gruppen ab 3 Tieren schlagen ihn noch.
 3. **Die Tiefsee ist kreative Freiheit.** Die Fossilien stammen aus einem Küstenmeer in Peru. Belegt ist dagegen, dass er die größte Beute seiner Zeit jagte, nämlich Bartenwale. Deshalb sollte Leeds, als Pendant zu den Bartenwalen, seine Hauptbeute sein, Tylo und Prog kommen danach.
 4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen.
 
 **Im Entwurf (`profile-entwuerfe/livyatan.md`) festgelegt:**
 - **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Tylo und Prog dürfen nur bis Apex jagen und können einen adulten Livy daher nicht jagen, nur sich wehren. Adoleszente Livys zählen als Apex.
 - Höchstens 2 Weibchen, die sich mit demselben Bullen gepaart haben (oder nur eine von beiden), Bullen immer allein (entschieden am 03.11.). Große Gruppen würden den stillen Jäger verraten. Er lebt in allen Ozeanen außer Palm Islands. **Gejagt wird nur allein** (entschieden am 03.11.), wie bei echten Pottwalen, die in Familien leben, aber einzeln in die Tiefe tauchen. Leviathan's Call dient nur der Verteidigung der Kälber.
-- Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden. Paare von Tylo und Prog greift er nicht an, denn sie schlagen ihn (16 s bzw. 15 s). Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
+- Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden. Paare von Tylo und Prog darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
 - Er kommt nicht ins Flachwasser, außer zum Nisten an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.
-- Simulation:
-  - Livy schlägt einen einzelnen Tylo (24 s) und einen einzelnen Prog (27 s).
-  - Gegen Leeds verliert er nach reinen Werten hauchdünn: Leeds behält 4 % Health.
-  - Mit Sonic Disruption (−20 % Schaden beim Leeds) gewinnt er nach 52 s mit 16 % Health. Mit Piercing Bite (−10 %) gewinnt er mit 6 % Health.
-  - Die Leeds-Jagd ist also ein langer Kampf, den kluges Spiel entscheidet.
-- Gegen eine Kai-Gruppe mit 3 Verteidigern verliert ein einzelner Livy in 12 s. Genau so steht auch ein einzelner T-Rex gegen 3 Paras da. Deshalb müssen Kai wie der Para vor Apexen fliehen, statt sich zu stellen.
+- Simulation mit CW 8000 und Health 2000 (% = Health, die dem Livy bleibt):
+  - Livy schlägt einen einzelnen Tylo (18 s, 74 %) und einen einzelnen Prog (20 s, 69 %).
+  - Einen Leeds schlägt er klar: 39 s mit 65 %, wenn der Leeds 1000 Health hat, 78 s mit 29 % bei 2000. Der Dynasty-Wert des Leeds ist unbekannt.
+  - Ein Tylo-Paar schlägt er in 35 s (22 %), ein Prog-Paar knapp in 40 s (7 %). Mit Sonic Disruption bleiben ihm 38 % bzw. 26 %.
+- Gegen eine Kai-Gruppe mit 3 Verteidigern verliert ein einzelner Livy in 26 s. Genau so steht auch ein einzelner T-Rex gegen 3 Paras da. Deshalb müssen Kai wie der Para vor Apexen fliehen, statt sich zu stellen.
 
-**Folge für Tylosaurus:** Ein einzelner Tylo flieht vor Livy, ein Tylo-Paar darf sich stellen. Das steht so in `profile-entwuerfe/tylosaurus.md`.
+**Folge für Tylosaurus und Prognathodon:** Beide fliehen vor Livy, allein und als Paar. Ein Paar darf sich wehren, verliert aber. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/prognathodon.md`.
 
 ### Xiphactinus als Raptor
 
@@ -244,7 +243,8 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 | Prognathodon | Health | 700 | **900** | Revier halten heißt wiederholt kämpfen |
 | Prognathodon | Armor | 1 | **1,1** | wie Tyrannotitan |
 | Prognathodon | Heilung/s | 0,83 | **1,5** | wie Tyrannotitan |
-| Livyatan | Health | 950 | **1200** | soll Tylo und Prog sicher schlagen |
+| Livyatan | CW | 6000 | **8000** | zweiter Giant nach Argentinosaurus (9000) |
+| Livyatan | Health | 950 | **2000** | soll Tylo und Prog sicher schlagen, auch als Paar |
 | Livyatan | Schwimmen | 500 | 550 (optional) | einem gemütlichen Tylo folgen können |
 
 Tylosaurus, Eurhinosaurus, Leedsichthys und Xiphactinus bleiben unverändert.
@@ -253,15 +253,15 @@ Tylosaurus, Eurhinosaurus, Leedsichthys und Xiphactinus bleiben unverändert.
 
 | Angreifer ↓ / Ziel → | Tylo | Kai | Eurhino | Leeds | Prog | Xiph | Livy | Bilanz |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Tylo | – | 16 s | 7 s | 43 s | 22 s | 6 s | 31 s | 3–3 |
-| Kai | 22 s | – | 8 s | 48 s | 25 s | 6 s | 35 s | 2–4 |
-| Eurhino | 51 s | 41 s | – | 112 s | 57 s | 15 s | 81 s | 1–5 |
-| Leeds | 31 s | 25 s | 11 s | – | 35 s | 9 s | 49 s | 6–0 |
-| Prog | 18 s | 15 s | 7 s | 40 s | – | 5 s | 29 s | 4–2 |
-| Xiph | 56 s | 45 s | 20 s | 124 s | 63 s | – | 89 s | 0–6 |
-| Livy | 23 s | 19 s | 8 s | 52 s | 26 s | 7 s | – | 5–1 |
+| Tylo | – | 16 s | 7 s | 43 s | 22 s | 6 s | 68 s | 3–3 |
+| Kai | 22 s | – | 8 s | 48 s | 25 s | 6 s | 77 s | 2–4 |
+| Eurhino | 51 s | 41 s | – | 112 s | 57 s | 15 s | 179 s | 1–5 |
+| Leeds | 31 s | 25 s | 11 s | – | 35 s | 9 s | 110 s | 5–1 |
+| Prog | 18 s | 15 s | 7 s | 40 s | – | 5 s | 64 s | 4–2 |
+| Xiph | 56 s | 45 s | 20 s | 124 s | 63 s | – | 198 s | 0–6 |
+| Livy | 18 s | 14 s | 6 s | 39 s | 20 s | 5 s | – | 6–0 |
 
-Daraus ergibt sich diese Rangordnung: Leeds ist unangreifbar, jagt aber nie. Danach kommen Livy, Prog und Tylo. Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
+Daraus ergibt sich diese Rangordnung: Livy (CW 8000, Health 2000) gewinnt jedes Duell, auch gegen Leeds. Leeds schlägt alle anderen, jagt aber nie. Danach kommen Prog und Tylo. Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
 
 ### Rudel gegen Einzeltier
 
@@ -335,7 +335,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 - **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen. Prog könnte ihn clampen (2500), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
 - **Krokodile jagen ist für Xiph ein gefährliches Vergnügen.** Einen einzelnen Sarco darf ein Schwarm ab 4 jagen: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 5 Tieren, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.): 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute und werden nur mit großer Vorsicht gejagt.
 - **Palm Islands ist die Front.** Prog, Deino und Spino kämpfen dort um Reviere, und Livy kommt nie hin. Für Prog ist Palm damit das sicherste und zugleich härteste Revier.
-- **Ein adulter Livy hat keinen Jäger mehr.** Jagen dürfte ihn als Giant nur Deinosuchus, und der lebt nicht mehr in Livys Ozeanen. Gebremst wird Livy nur durch die Solo-Jagd und durch Paare, die ihn schlagen.
+- **Ein adulter Livy hat keinen Jäger mehr.** Jagen dürfte ihn als Giant nur Deinosuchus, und der lebt nicht mehr in Livys Ozeanen. Gebremst wird Livy nur durch die Solo-Jagd, sein geringes Tempo, das Flachwasser und Kai-Gruppen ab 3 Tieren.
 
 **Prog gegen Deino und Spino** (neue Werte, ohne Blutung):
 

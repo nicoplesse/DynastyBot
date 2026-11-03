@@ -26,18 +26,20 @@ So ergibt sich die Jagd:
 
 Unter Concussive Blast fällt Tylo von 900 auf 675 und Prog von 820 auf 615. Livyatan selbst sprintet mit 750.
 
-**Kampfwerte mit Health 1200** (Simulation, ohne Blutung):
+**Kampfwerte mit CW 8000 und Health 2000** (Simulation, ohne Blutung; % = Health, die dem Sieger bleibt):
 
 | Kampf | Ergebnis |
 | --- | --- |
-| 1 Livy gegen 1 Tylo | Livy gewinnt (24 s) |
-| 1 Livy gegen 1 Prog (Health 900, Armor 1,1) | Livy gewinnt (27 s) |
-| 1 Livy gegen 1 Leeds, nur Werte | Livy verliert hauchdünn (50 s, Leeds behält 4 % Health) |
-| 1 Livy gegen 1 Leeds mit Sonic Disruption (Leeds −20 % Schaden) | Livy gewinnt (52 s, mit 16 % Health) |
-| 1 Livy gegen 1 Leeds mit Piercing Bite (Leeds −10 % Schaden) | Livy gewinnt (52 s, mit 6 % Health) |
-| 1 Livy gegen 2 Tylo | Livy verliert (16 s) |
-| 1 Livy gegen 2 Prog | Livy verliert (15 s) |
-| 1 Livy gegen 3 Kai | Livy verliert (12 s) |
+| 1 Livy gegen 1 Tylo | Livy gewinnt (18 s, 74 %) |
+| 1 Livy gegen 1 Prog (Health 900, Armor 1,1) | Livy gewinnt (20 s, 69 %) |
+| 1 Livy gegen 1 Leeds (Health 1000) | Livy gewinnt (39 s, 65 %) |
+| 1 Livy gegen 1 Leeds (Health 2000) | Livy gewinnt (78 s, 29 %) |
+| 1 Livy gegen 2 Tylo | Livy gewinnt (35 s, 22 %); mit Sonic Disruption 38 % |
+| 1 Livy gegen 2 Prog | Livy gewinnt knapp (40 s, 7 %); mit Sonic Disruption 26 % |
+| 1 Livy gegen 6 Xiph | Livy gewinnt (31 s, 46 %) |
+| 1 Livy gegen 3 Kai | Livy verliert (26 s, die Kai behalten 52 %) |
+
+Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“), deshalb stehen zwei Annahmen in der Tabelle.
 
 **Entscheidungen im Entwurf:**
 - **Stufe Giant** (entschieden am 03.11.), wie bisher nur Argentinosaurus.
@@ -48,11 +50,12 @@ Unter Concussive Blast fällt Tylo von 900 auf 675 und Prog von 820 auf 615. Liv
 - **Gruppe** (entschieden am 03.11.): höchstens 2 Weibchen, die sich mit demselben Bullen gepaart haben. Hat sich nur eine von beiden mit ihm gepaart, ist das auch in Ordnung, etwa bei Mutter und Tochter. Bullen bleiben immer allein. Große Gruppen würden den Livy verraten, denn er jagt durch Stille und Überraschung.
 - **Livyatan jagt nur allein** (entschieden am 03.11.). Das passt zum Vorbild: Pottwale leben in Familien, tauchen und jagen in der Tiefe aber jeder für sich.
   - Leviathan's Call nutzt die Familie nur zur Verteidigung der Kälber.
-  - Paare von Tylo und Prog sind vor ihm sicher, denn beide schlagen einen einzelnen Livy (16 s bzw. 15 s). Seine Beute sind Einzeltiere.
-- **Leeds ist ein Kampf auf Messers Schneide.** Nur nach Werten verliert Livy knapp. Jede seiner schwächenden Fähigkeiten dreht den Kampf, aber er endet mit wenig Health. Gewonnen wird durch kluges Spiel, ohne zusätzliche Werte.
+  - Paare von Tylo und Prog sind vor ihm nicht mehr sicher: Er schlägt ein Tylo-Paar (35 s, mit 22 % Health) und knapp auch ein Prog-Paar (40 s, mit 7 %). Er darf beide jagen, zieht aber Einzeltiere vor.
+  - Gefährlich bleiben ihm nur Kai-Gruppen ab 3 Tieren, die sich stellen. Kai fliehen aber vor Giants auf Sicht.
+- **Leeds ist seine Hauptbeute, und der Livy ist ihm klar überlegen** (39 s mit 65 % Health bei einem Leeds mit 1000 Health, 78 s mit 29 % bei 2000). Den Leeds rettet nicht der Kampf, sondern das Flachwasser, in das der Livy ihm nicht folgt.
 - **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Prog oder Xiph.
-- **Werte:** Health 950 → 1200. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
+- **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 5500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
 
 **Realismus:** Die Tiefsee ist kreative Freiheit, denn die Fossilien stammen aus einem Küstenmeer in Peru. Belegt sind die riesigen Zähne in beiden Kiefern, und dass er große Beute jagte, vermutlich Bartenwale. Leeds als Hauptbeute ist deshalb die realistischste Beziehung im ganzen Ökosystem.
 
@@ -95,9 +98,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 ## Preferred Prey
 
-- **Large prey first:** Livyatan must target solitary Leedsichthys, Tylosaurus and Prognathodon first, if they are present in the POI. Livyatan do not attack Tylosaurus or Prognathodon pairs.
+- **Large prey first:** Livyatan must target solitary Leedsichthys, Tylosaurus and Prognathodon first, if they are present in the POI. Tylosaurus and Prognathodon pairs may be hunted as well.
 - **Smaller prey:** Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
-- **Leedsichthys:** An adult Leedsichthys is a match for a Livyatan. The hunt is long, and only won by weakening the giant: Dreadful Clicking before the attack, then Sonic Disruption and Piercing Bite.
+- **Leedsichthys:** Leedsichthys are Livyatan's main prey. A grown Livyatan overpowers an adult Leedsichthys, but the hunt is long, and the Leedsichthys will try to reach shallow water, where Livyatan do not follow.
 - **Spinosaurus & Deinosuchus:** Both keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
 - **Third-party:** Livyatan do not third-party engagements (3.18).
 
@@ -173,7 +176,7 @@ Livyatan hunt from below and by sound, not by speed.
 4. **Stunning:** At close range, Concussive Blast stuns the water around the target. It loses speed and acceleration, and the hunter can close the gap.
 5. **Striking:** Piercing Bite tears deep wounds and weakens the target's own bite. Tail Slam drives it away from the shore.
 
-A Livyatan always hunts alone, and picks targets that are alone too. Against a pair, the odds turn against it. When a hunt fails and the target escapes into the shallows, Livyatan let it go.
+A Livyatan always hunts alone. It prefers targets that are alone, but a grown Livyatan can overpower a Tylosaurus or Prognathodon pair as well. Only a bale of three or more Kaiwhekea standing together could turn the fight against it. When a hunt fails and the target escapes into the shallows, Livyatan let it go.
 
 ## Courtship & Parenthood
 
@@ -193,8 +196,8 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 ## Dynasty Adjusted Stats
 
 - Growth Time (hatchling–juvenile, juvenile–adolescent, adolescent–sub, sub–adult, in minutes): 20–60–75–85 = 240 total (proposal, like Leedsichthys)
-- Combat Weight: 6000 (mod default)
-- Adjusted Stats: Health 1200 (mod default 950)
+- Combat Weight: 8000 (mod default 6000)
+- Adjusted Stats: Health 2000 (mod default 950)
 
 ## Profile – Quick View
 
@@ -202,6 +205,6 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - Cows live in units of two, usually sharing the same bull. Bulls are always solitary.
 - They live in every ocean except Palm Islands, centred on the Abyssal Depths.
 - Livyatan always hunt alone.
-- They must target solitary Leedsichthys, Tylosaurus and Prognathodon first, and never attack Tylosaurus or Prognathodon pairs.
+- They must target solitary Leedsichthys, Tylosaurus and Prognathodon first. Pairs of Tylosaurus or Prognathodon are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
 - They never follow prey into the shallows.
