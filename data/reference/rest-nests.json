@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "note": "Curated rest-nest overview: may a playable place an in-game nest just to rest or sleep in, without offspring? Rule 9.8 allows it for everyone; the profile decides how well it fits (profiles override server rules, 1.1). One entry per playable or variant family (deinosuchus, lurdusaurus, megalania, spinosaurus). Every quote must be verbatim in the profile, every rule number must exist in the server rules, or the processor fails.",
+  "verdicts": [
+    { "id": "profile", "label": "Ruhenest im Profil", "description": "Das Profil beschreibt Nester oder nestartige Schlafplätze zum Ruhen, auch ohne Brut." },
+    { "id": "rule", "label": "Erlaubt, passt", "description": "Das Profil sagt nichts zu Ruhenestern. Regel 9.8 erlaubt es, und die Art hat einen festen Platz (sesshaft, Revier oder Höhle)." },
+    { "id": "brief", "label": "Nur kurz", "description": "Das Profil sagt nichts zu Ruhenestern, aber die Art zieht umher. Regel 9.8 erlaubt es, als festes Zuhause passt es aber nicht, nur für eine kurze Rast." },
+    { "id": "against", "label": "Widerspricht dem Profil", "description": "Das Profil sagt, dass die Art an Ruheplätzen kein Nest baut." },
+    { "id": "check", "label": "Prüfen", "description": "Im gespeicherten Profil nicht eindeutig. Vermutlich gibt es eine neuere Profilversion auf Discord." }
+  ],
+  "rules": [
+    { "number": "9.8", "de": "Erlaubt: Ein Vanilla-Nest darf als Deko- oder Ruheplatz ohne Nachwuchs stehen. Das gilt für jeden Playable, auch solo." },
+    { "number": "1.1", "de": "Das Profil geht vor. Verbietet oder regelt ein Profil etwas anders, gilt das Profil." },
+    { "number": "1.5", "de": "Nisten nur in den bevorzugten POIs. Für reine Ruhenester steht es nicht ausdrücklich da, sicherer ist trotzdem der bevorzugte POI." },
+    { "number": "1.4", "de": "In der inaktiven Zeit ruhst du (schlafen, sitzen, entspannen). Ein Ruhenest im POI passt genau dazu." },
+    { "number": "6.8.1.1", "de": "Ohne lebenden Nachwuchs ist ein Nestplatz kein verteidigbares Revier. Dein Ruhenest verteidigst du also nicht wie ein Revier." },
+    { "number": "6.8.3", "de": "Fremde Nester nur nach gewonnener Nestplatz-Challenge zerstören. Ist niemand da, erst 10 Minuten warten." },
+    { "number": "9.3", "de": "Eier gibt es nur mit Partner: erwachsen, unterschiedliches Geschlecht, beide online. Solo bleibt das Nest ein Ruheplatz." }
+  ],
+  "playables": {
+    "achillobator": {
+      "verdict": "profile", "life": "nomadisch",
+      "where": "Höhlen, hohle Bäume, dichtes Laub; gern in Latenivenatrix-Krippen",
+      "hint": "Hat feste Lieblings-Schlafplätze und baut darüber aufwendige Nester. Ruht auch in den Nest-Krippen von Latenivenatrix, wenn welche dabei sind.",
+      "quotes": [
+        "Achillobator typically develop preferred sleeping and resting places, and construct elaborate nests over them.",
+        "During rest periods, Achillobator curl up within the nesting creches of Latenivenatrix, if they are attended by Latenivenatrix or find a rookery."
+      ]
+    },
+    "albertaceratops": {
+      "verdict": "brief", "life": "nomadisch, kleines Revier am Nistplatz",
+      "where": "Nest-Bucht der Weibchen in Wald und Grasland",
+      "hint": "Auf dem Nest ruhen gehört zur Balz in der Nest-Bucht der Weibchen. Sonst zieht die Herde weiter, ein Ruhenest also nur für eine kurze Rast.",
+      "quotes": [
+        "Albertaceratops are nomadic but claim small territories in their courting grounds around nests.",
+        "The rest of the sows lay in wait in the cove, resting on top of their nests."
+      ]
+    },
+    "alioramus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "dichtes Laub",
+      "hint": "Fast immer unterwegs und hält nur zum Schlafen, Fressen oder Nisten an. Kurze Nickerchen gern an sonnigen Plätzen.",
+      "quotes": [
+        "Maintaining an active lifestyle, Alioramus are almost constantly on the move - pausing only to sleep, eat, or nest.",
+        "They often take brief naps in particularly sunny spots, relishing in the warmth against their feathers."
+      ]
+    },
+    "allosaurus": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "dichtes Laub, Höhlen, hohle Bäume",
+      "hint": "Schläft tagsüber im Unterholz oder in Höhlen und wartet auf die Nacht. Ein Ruhenest dort passt zum sesshaften Leben.",
+      "quotes": [
+        "Allosaurus are sedentary.",
+        "As a nocturnal creature, Allosaurus spend a significant amount of the daytime sleeping in underbrush and caves as they wait for nightfall."
+      ]
+    },
+    "amargasaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Nisten nur in Impact Crater, Grand Plains Forest und Birchwoods",
+      "hint": "Zieht mit Herden über die Sauropoden-Routen und schläft in der Herde. Ein festes Ruhenest passt nicht, höchstens für eine Rast.",
+      "quotes": [
+        "Amargasaurus are nomadic.",
+        "Amargasaurus nest in specific POIs: Impact Crater, Grand Plains Forest, and Birchwoods."
+      ]
+    },
+    "anodontosaurus": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "dichtes Laub und Büsche",
+      "hint": "Schläft am liebsten auf oder direkt neben einer Futterquelle. Ein Ruhenest neben dem Lieblingsbusch passt.",
+      "quotes": [
+        "Anodontosaurus are sedentary.",
+        "Often, an Anodontosaurus prefers to sleep on top of, or directly next to, an available food source, particularly those that they enjoy."
+      ]
+    },
+    "apatosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Nisten nur auf Volcano Island (Riparia) und im Burned Forest (Gondwa)",
+      "hint": "Döst nachts im Stehen mit gesenktem Kopf. Nach dem Eierlegen zieht die Herde weiter, ein Ruhenest gehört nicht zum Alltag.",
+      "quotes": [
+        "Apatosaurus are nomadic.",
+        "Apatosaurus take short naps overnight, with many individuals preferring to doze standing up, their heads lowered."
+      ]
+    },
+    "argentinosaurus": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "nur an den POIs der Profilkarte, Nester aus Steinen und Schlamm",
+      "hint": "Bleibt lange im selben POI. Das Profil sagt nichts zu Ruhenestern; nach Regel 9.8 erlaubt, aber nur an den Orten aus der Karte.",
+      "quotes": [
+        "Argentinosaurus are sedentary.",
+        "Argentinosaurus only nest in the locations listed in their preferred POIs map."
+      ]
+    },
+    "austroraptor": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "offen am Strand, auf gemeinsamen Nistplätzen",
+      "hint": "Wandert entlang von Flüssen und Stränden. Nester sind offen und ohne Deko, ein verstecktes Deko-Ruhenest passt nicht zum Stil.",
+      "quotes": [
+        "Austroraptor are nomadic.",
+        "Their nests lack any form of decoration or coverage."
+      ]
+    },
+    "barsboldia": {
+      "verdict": "brief", "life": "nomadisch, territorial um Nester und Futter",
+      "where": "offenes Gelände mit guter Sicht",
+      "hint": "Schläft nur kurz und abwechselnd, damit immer einer Wache hält. Ein Ruhenest gehört nicht zum Alltag.",
+      "quotes": [
+        "Barsboldia are territorial around nests and food sources, but otherwise nomadic.",
+        "Barsboldia sleep for short periods, with individuals taking it in turns to nap to ensure that at least one Barsboldia keeps watch."
+      ]
+    },
+    "camptosaurus": {
+      "verdict": "profile", "life": "territorial (Heimrevier)",
+      "where": "überall im eigenen Heimrevier; ohne Revier Busch oder Höhle",
+      "hint": "Das Nest ist Teil des gepflegten, geschmückten Heimreviers. Manche verteidigen ihren Schlafplatz sogar gegen andere Arten. Ohne Revier schläft er nur vorübergehend in Busch oder Höhle.",
+      "quotes": [
+        "Camptosaurus take great care in ensuring their home-range, and their nest in particular, are tidy and beautifully decorated, as these efforts signify a keen eye and a healthy Camptosaurus that is able to maintain constant upkeep.",
+        "If a Camptosaurus is without a territory, they will find a bush or cave to sleep in temporarily.",
+        "Some Camptosaurus may still express instinctual territorial behaviours around their sleeping spots during this time too, and may go as far as aggressing another species for it."
+      ]
+    },
+    "ceratosaurus": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "Höhlen oder Felsen im bevorzugten POI",
+      "hint": "Das Rudel trifft sich jeden Morgen an einem festen, geschützten Schlafplatz (Den-Site). Ein Ruhenest dort passt gut.",
+      "quotes": [
+        "Ceratosaurus are sedentary.",
+        "At dawn, the pack gathers at a chosen sheltered location known as a den-site."
+      ]
+    },
+    "citipati": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "überall im bevorzugten POI, wo sie sich sicher fühlen",
+      "hint": "Das Profil sagt nichts zu Ruhenestern. Als Nomade passt ein Ruhenest nach Regel 9.8 nur für eine kurze Rast.",
+      "quotes": [
+        "Citipati are nomadic.",
+        "Citipati nest anywhere within their preferred POIs, where they feel safe."
+      ]
+    },
+    "compsognathus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "offen, meist unter einem Busch",
+      "hint": "Fast ständig unterwegs, nur kurze Nickerchen. Allein sucht er hohe, bequeme Schlafplätze, wo ihn niemand zertrampelt.",
+      "quotes": [
+        "Compsognathus are nearly constantly on the move, only requiring several brief naps throughout the day to keep their energy up.",
+        "Solitary Compsognathus enjoy finding high perches and comfortable places to sleep, out of the way of larger dinosaurs that may trample them accidentally."
+      ]
+    },
+    "concavenator": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "Sharptooth Marsh, zwischen Büschen und Schilf am Wasser",
+      "hint": "Schläft am Ufer, im seichten Wasser oder im Gebüsch, gern auf seinem Schatzhaufen. Ein Ruhenest passt, Nisten aber nur in Sharptooth Marsh.",
+      "quotes": [
+        "Concavenator are sedentary.",
+        "Concavenator sleep in short bursts both during the day and at night, typically curled up together with bonded individuals on banks, in shallow water, small islands, or in deep brush.",
+        "They often sleep on top of piles of trinkets, both as a show of possessiveness and for comfortability (even on top of typically rough objects!)."
+      ]
+    },
+    "daspletosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Höhlen, dichtes Laub, Felsspalten, unter Baumwurzeln",
+      "hint": "Das Rudel zieht weiter, sobald die Jungen Juvenile sind. Allein versteckt er sich zum Schlafen im Unterholz oder in dunklen Ecken.",
+      "quotes": [
+        "Daspletosaurus are nomadic.",
+        "Solitary Daspletosaurus tuck themselves away in underbrush and dark corners to comfortably sleep without disturbance or risk of being spotted."
+      ]
+    },
+    "deinocheirus": {
+      "verdict": "check", "life": "sesshaft",
+      "where": "überall im bevorzugten POI am Wasser, gern Green Valley",
+      "hint": "Im gespeicherten Profil (Import vom 22.09.2026) steht kein Verbot, ein Nest als Ruheplatz zu nutzen. Es nennt nur Nickerchen am Ufer. Das gespeicherte Profil kündigt am Ende eine neue Profilversion an. Steht dort ein Verbot, das Profil neu importieren, dann wird der Satz hier zitiert.",
+      "quotes": [
+        "Deinocheirus are sedentary.",
+        "They also forage for fruits and berries along the shores, explore the coastline for shellfish, fish in the water, and take leisurely naps on the shore."
+      ]
+    },
+    "deinonychus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Klippenränder oder tief in Höhlen",
+      "hint": "Zieht zwischen POIs und rastet über Nacht vorübergehend in Höhlen oder hoch an Klippen. Die Gruppe verteidigt den Rastplatz, solange sie dort ist.",
+      "quotes": [
+        "Deinonychus are nomadic, and spend their time travelling between their preferred POIs, with temporary overnight rest stops in caves or high up cliff sites.",
+        "If a spot they have chosen already has an occupant, they will attempt to root out the dinosaur so that they may use it for resting at night, or nesting."
+      ]
+    },
+    "deinosuchus": {
+      "verdict": "rule", "life": "Weibchen sesshaft, Männchen territorial",
+      "where": "Ufer von Gewässern im bevorzugten POI",
+      "hint": "Schläft auch unter Wasser und taucht nur zum Atmen auf. Ein Ruhenest am Ufer ist nach Regel 9.8 erlaubt, das Profil sagt nichts dazu.",
+      "quotes": [
+        "Deinosuchus females are sedentary unless in a mated pair - in which case they are territorial.",
+        "Even when sleeping beneath the water, they are awake enough to rise to the top to breathe when necessary."
+      ]
+    },
+    "dilophosaurus": {
+      "verdict": "profile", "life": "sesshaft",
+      "where": "sehr dichtes Unterholz oder Höhlen",
+      "hint": "Weibchen (Vixens) bauen Deko-Nester nah beieinander und ruhen, schlafen und sitzen darauf. Ohne Nachwuchs werden diese Nester nicht verteidigt.",
+      "quotes": [
+        "Vixens build decorative nests close together and lay on them to rest, socialize, and sleep.",
+        "These nests are not protected, unless offspring are present."
+      ]
+    },
+    "dryosaurus": {
+      "verdict": "rule", "life": "nomadisch, territorial um Höhlen und Sitzplätze",
+      "where": "Höhlen",
+      "hint": "Beansprucht Höhlen als Zuhause und verteidigt sie heftig gegen andere Arten. Ein Ruhenest in der eigenen Höhle passt.",
+      "quotes": [
+        "Dryosaurus are territorial over caves, perches, and resources, and claim small territories, but are nomadic in general.",
+        "They lay claim to caves to use as a home, and defend them fiercely from other species."
+      ]
+    },
+    "eotriceratops": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "gemeinsame Nistplätze je nach Saison",
+      "hint": "Matriarchate sind fast immer unterwegs und halten nur zum Balzen, Nisten oder Schlafen an.",
+      "quotes": [
+        "Eotriceratops are nomadic.",
+        "Eotriceratops matriarchies are almost always on the move, other than when being courted by a bull, nesting, or sleeping."
+      ]
+    },
+    "eurhinosaurus": {
+      "verdict": "rule", "life": "sesshaft (Wasser)",
+      "where": "Salzwasserfluss südlich des Grand Plains River",
+      "hint": "Wassertier, das im POI feste Runden schwimmt. Ein Ruhenest ist nach Regel 9.8 erlaubt, Nester stehen aber nur am Salzwasserfluss.",
+      "quotes": [
+        "Eurhinosaurus are sedentary.",
+        "Eurhinosaurus nest in at the saltwater river south of Grand Plains river."
+      ]
+    },
+    "giganotosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "dichtes Laub im bevorzugten POI",
+      "hint": "Das Profil sagt nichts zu Ruhenestern. Als Nomade passt ein Ruhenest nur für eine kurze Rast.",
+      "quotes": [
+        "Giganatosaurus are nomadic.",
+        "Giganotosaurus nest in dense foliage within their preferred POIs."
+      ]
+    },
+    "halszkaraptor": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "dichtes Laub an Flüssen und Teichen, gern auf kleinen Inseln",
+      "hint": "Hortet glänzende Steine und Blumen in Nestern oder an Ruheplätzen und schläft sehr tief, weil er seinem Platz vertraut. Ein Ruhenest passt gut.",
+      "quotes": [
+        "Halszkaraptor are sedentary.",
+        "They often get distracted by bright flowers or shining pebbles, hoarding these items like treasures in their nests or resting places."
+      ]
+    },
+    "hatzegopteryx": {
+      "verdict": "profile", "life": "Paar mit Revier, jährliche Wanderung nach Red Island",
+      "where": "hoch oben: Klippen, Hügel, Berge",
+      "hint": "Schlafplätze werden heftig geschützt und sind meist dieselben Stellen, an denen das Paar im Revier nistet.",
+      "quotes": [
+        "They are at their most vulnerable when sleeping, so these roosting spots are fiercely protected, and commonly the same places a pair nests within their territory.",
+        "Hatzegopteryx nest in high up places in their preferred POIs such as cliff faces, hilltops and mountains."
+      ]
+    },
+    "iguanodon": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "überall im bevorzugten POI",
+      "hint": "Die Herde schläft zusammen, Bullen halten abwechselnd Wache. Ein festes Ruhenest passt nicht.",
+      "quotes": [
+        "Iguandon are nomadic but become temporarily territorial over food and water resources.",
+        "When resting, bulls take turns on surveillance duty, inspecting the area around the sleeping herd, and keeping a watchful eye for any predators that might sneak up under the cloak of darkness."
+      ]
+    },
+    "kaiwhekea": {
+      "verdict": "brief", "life": "nomadisch (Wasser)",
+      "where": "Küste oder flache Becken auf Küsteninseln",
+      "hint": "Wassertier, das nur kurz im Flachen oder an Land döst. Ein Ruhenest passt kaum.",
+      "quotes": [
+        "Kaiwhekea are nomadic.",
+        "They can be spotted basking in shallow waters or even on land for a short period of time."
+      ]
+    },
+    "kelenken": {
+      "verdict": "brief", "life": "in Gruppe sesshaft, allein nomadisch",
+      "where": "überall im bevorzugten POI",
+      "hint": "Allein ist Kelenken nomadisch und bleibt nicht lange in einem POI. Bei Regen oder Schnee sucht er zum Schlafen einen Unterschlupf.",
+      "quotes": [
+        "Solitary Kelenken are nomadic, which means they do not stay in a particular POI for a long.",
+        "To stay dry, they often seek shelter to sleep in when it rains or snows."
+      ]
+    },
+    "kentrosaurus": {
+      "verdict": "brief", "life": "nomadisch, mit Stegosaurus sesshaft",
+      "where": "dichtes Laub im bevorzugten POI",
+      "hint": "Allein oder nur mit Miragaia bleibt er nomadisch. In einer Stegosaurus-Herde lebt er im Stego-Revier, dann passt ein Ruhenest eher.",
+      "quotes": [
+        "Kentrosaurus are not territorial, and remain nomadic for all of their lives.",
+        "This means they will confine themselves to a Stegosaurus' territory when grouped with them, but remain nomadic when alone or just with Miragaia."
+      ]
+    },
+    "lambeosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "dichtes Laub nahe Süßwasser",
+      "hint": "Schläft eng in der Herde. Selbst Eltern schlafen nicht bei den Nestern, sondern bei der Herde.",
+      "quotes": [
+        "Lambeosaurus are nomadic.",
+        "When sleeping, Lambeosaurus tend to herd close together, with their faces close to those that they care about.",
+        "They do not sleep nearby the nests, not wanting to risk the safety of their offspring."
+      ]
+    },
+    "latenivenatrix": {
+      "verdict": "profile", "life": "etwas nomadisch, kleine Reviere",
+      "where": "Nest-Krippe der Gruppe; allein an einem versteckten Platz",
+      "hint": "Das klarste Solo-Beispiel: Auch allein legt sie tagsüber ein Nest zum Ruhen hin, nur versteckter. In der Gruppe werden die Nester jeden Tag neu gelegt, auch ohne Brut.",
+      "quotes": [
+        "They still place a nest down during the day which they rest in, but tend to place this in a less exposed - and more hidden - location for their own safety.",
+        "These nest sites are placed every day to form a small territory, regardless of whether the group is nesting or not."
+      ]
+    },
+    "leedsichthys": {
+      "verdict": "brief", "life": "nomadisch (Wasser)",
+      "where": "Profil nennt keinen Ort",
+      "hint": "Schläft in kurzen Etappen, ohne bevorzugten Ort oder Zeitpunkt. Ein Ruhenest passt nicht.",
+      "quotes": [
+        "Leedsichthys are nomadic.",
+        "Leedsichthys sleep in short bursts, with no particular preference in where and when they choose to do so."
+      ]
+    },
+    "lurdusaurus": {
+      "verdict": "rule", "life": "Bullen territorial, Kühe ohne Float nomadisch",
+      "where": "nahe am Wasser im bevorzugten POI",
+      "hint": "Bullen halten ein Wasserrevier, dort passt ein Ruhenest. Kühe ohne Float sind nomadisch und ruhen eher kurz am Ufer.",
+      "quotes": [
+        "Male Lurdusaurus work together with other males to claim territories in water, while females remain nomadic until they find a male's float to be part of.",
+        "Lurdusaurus nest close to water in their preferred POIs."
+      ]
+    },
+    "maip": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Höhlen, sonst dichtes, schattiges Laub",
+      "hint": "Nomade. Ruheplätze kommen in der Balz vor: Das Weibchen sucht sich einen Ruheplatz, jedes Männchen muss einen eigenen in der Nähe finden.",
+      "quotes": [
+        "Maip are nomadic.",
+        "Each male must find their own, separate place to rest nearby, to wait it out until the female moves again."
+      ]
+    },
+    "megalania": {
+      "verdict": "rule", "life": "sesshaft",
+      "where": "überall im bevorzugten POI, mit dichtem Laub versteckt",
+      "hint": "Ruht an Sonnenplätzen und kühlen, schlammigen Stellen. Nester werden versteckt, vor allem vor anderen Megalania.",
+      "quotes": [
+        "Megalania are sedentary.",
+        "Megalania nest anywhere in their preferred POIs, and opt to decorate their nests with thick foliage to keep them hidden - especially from other Megalania."
+      ]
+    },
+    "metriacanthosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Sumpf, Küste oder Höhlen",
+      "hint": "In der Trockenzeit sucht er Höhlen mit Wasser, um beim Ruhen die Schuppen zu kühlen. Schläft lieber an eigenen Plätzen, auch in der Gruppe.",
+      "quotes": [
+        "Metriacanthosaurus are nomadic.",
+        "Dry season is especially brutal, and lots of Metriacanthosaurus seek caves with a water source where they can soak their scales in an attempt to cool themselves as they rest."
+      ]
+    },
+    "pachycephalosaurus": {
+      "verdict": "rule", "life": "sesshaft, kleines Revier auf Fels, Klippe oder in Höhle",
+      "where": "Weibchen nisten allein in Höhlen, auf Klippen und Felsen",
+      "hint": "Verteidigt Nest, Klippe, Höhle oder Felsen erst, wenn ein Rivale näher als 10 Körperlängen kommt. Der Bock schläft oben auf dem höchsten Felsen.",
+      "quotes": [
+        "Pachycephalosaurus travel along migratory paths and are sedentary.",
+        "Additionally, they defend small territories on a rock, cliff or within caves.",
+        "When their nest/cliff/cave/rock is approached or they are approaching a chosen territory, Pachycephalosaurus only show aggression if the rival character(s) is within 10 body lengths of thier chosen territory."
+      ]
+    },
+    "pachyrhinosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "Harem-Nester am Futterbusch des Bullen",
+      "hint": "Zieht in der Migration und ruht mit Schlammbad und Seite an Seite in der Herde. Ein Ruhenest gehört nicht zum Alltag.",
+      "quotes": [
+        "Pachyrhinosaurus are nomadic.",
+        "During rest, they enjoy mud rolling to soothe itchy skin, and when near rivers they walk in the shallow water, cooling their calloused feet in the mud."
+      ]
+    },
+    "parasaurolophus": {
+      "verdict": "brief", "life": "nomadisch, beim Nisten territorial",
+      "where": "überall im bevorzugten POI, nahe viel Futter",
+      "hint": "Die Herde sucht nachts einen Platz und schläft dicht gedrängt, ein bis zwei Hirsche halten Wache.",
+      "quotes": [
+        "Parasaurolophus are nomadic, but become territorial when nesting and claim small territories around nesting sites.",
+        "At night, they locate a place to settle and rest, preferring to clump together in a large group for protection."
+      ]
+    },
+    "psittacosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "dichtes Gestrüpp, Höhlen, Baue",
+      "hint": "Macht häufig Rast und schläft eng zusammen im dichten Laub. Kann sich eingraben.",
+      "quotes": [
+        "Psittacosaurus are nomadic.",
+        "Psittacosaurus prefer to sleep in dense foliage, where they can huddle together under the branches and avoid being noticed by passing species."
+      ]
+    },
+    "pycnonemosaurus": {
+      "verdict": "against", "life": "nomadisch",
+      "where": "überall im bevorzugten POI (nur zum Brüten)",
+      "hint": "Laut Profil bauen sie an Ruheplätzen meist kein Nest, weil sie bei Gefahr oder wandernder Beute sofort weiterziehen. Kurze Nickerchen an warmen Sonnenplätzen statt Ruhenest.",
+      "quotes": [
+        "They do not often build nests as they will quickly move on from these resting locations at the sight of a threat or prey moving elsewhere.",
+        "They take short, frequent naps - especially in a warm spot where they can bask."
+      ]
+    },
+    "quetzalcoatlus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "hohe Orte: steile Klippen, hohe Felsen",
+      "hint": "Fast immer unterwegs. Schläft gemeinsam auf Sitzplätzen und verteidigt Ruheplätze und Lieblingssitze leicht gegen andere Quetzalcoatlus.",
+      "quotes": [
+        "Quetzalcoatlus are almost always on the move, looking for prey to follow.",
+        "They will often be slightly more possessive of their resources (resting places, favored perches, food, etc) and will peck at other Quetzalcoatlus that attempt to intrude on their space."
+      ]
+    },
+    "rhamphorhynchus": {
+      "verdict": "profile", "life": "nomadisch",
+      "where": "hohe Vorsprünge in Höhlen; Nisten an Klippen am Wasser",
+      "hint": "Schläft selten, dann aber in einem gemütlichen Nest hoch in einer Höhle. Ganze Schwärme übernehmen dabei auch fremde Nester.",
+      "quotes": [
+        "Rhamphorhynchus do not sleep often, but when they do, will find high safe perches within caves to construct cozy nests on and curl up within.",
+        "Often, entire swarms will flock to the same nests - even if it means stealing the nest from whoever had it before!"
+      ]
+    },
+    "sarcosuchus": {
+      "verdict": "brief", "life": "nomadisch, bleibt bei viel Beute",
+      "where": "Ufer von Gewässern im bevorzugten POI",
+      "hint": "Sonnt sich lange am Ufer im Bewuchs. Bleibt in einem Gebiet, solange es dort viel Beute gibt.",
+      "quotes": [
+        "All Sarcosuchus are nomadic, but may opt to stay in one particular area if it is especially abundant in prey and resources.",
+        "They adore the heat, and spend a lot of time basking on river banks while nestled in vegetation."
+      ]
+    },
+    "spinosaurus": {
+      "verdict": "rule", "life": "territorial in festen Revieren (Karte)",
+      "where": "überall im eigenen Revier",
+      "hint": "Nistet nur im beanspruchten Revier. Ein Ruhenest gehört genauso dorthin.",
+      "quotes": [
+        "Spinosaurus can be territorial in specific territory areas.",
+        "Spinosaurus nest anywhere in their claimed territory."
+      ]
+    },
+    "stegosaurus": {
+      "verdict": "brief", "life": "nomadisch, kleines Revier um Futter oder Wasser",
+      "where": "eigene Nistplätze",
+      "hint": "Schläft in kurzen Etappen, richtig tief nur im Liegen, wenn er sich in der Herde sicher fühlt. Nester nur auf den Nistplätzen.",
+      "quotes": [
+        "Stegosaurus are nomadic but inherently territorial over food and drinkable water and claim small territories around these resources.",
+        "Stegosaurus will only achieve deep sleep by lying down - typically when they feel safe with their herd."
+      ]
+    },
+    "struthiomimus": {
+      "verdict": "brief", "life": "nomadisch, mit Deinocheirus sesshaft",
+      "where": "überall im bevorzugten POI",
+      "hint": "Allein nomadisch. Mit Deinocheirus wird er sesshaft, dann passt ein Ruhenest eher.",
+      "quotes": [
+        "Struthiomimus are nomadic, but become territorial when nesting and form small territories.",
+        "Struthiomimus with Deinocheirus are sedentary."
+      ]
+    },
+    "styracosaurus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "in großer Herde offen, in kleiner Herde dichtes Laub",
+      "hint": "Zieht in großen Herden. Beim Ruhen hält immer ein Erwachsener Wache.",
+      "quotes": [
+        "Styracosaurus are nomadic.",
+        "Although they are not territorial creatures, there will always be at least one adult member (usually a male) watching in case of danger, while the rest of the herd is resting."
+      ]
+    },
+    "suchomimus": {
+      "verdict": "brief", "life": "nomadisch, ohne Revier",
+      "where": "Ufer im bevorzugten POI",
+      "hint": "Nomade ohne Revier, bleibt aber, solange es ihm passt. Ein Ruhenest also eher für ein paar Tage als für immer.",
+      "quotes": [
+        "Suchomimus are nomadic, and do not claim territory.",
+        "This behavior can be considered somewhat sedentary - with Suchomimus only moving on when they feel the need to do so."
+      ]
+    },
+    "tenontosaurus": {
+      "verdict": "rule", "life": "mit Weibchen territorial, Männergruppen nomadisch",
+      "where": "an Klippen, Felsen und Felsspalten",
+      "hint": "Gruppen mit Weibchen halten ein Revier, dort passt ein Ruhenest. Reine Männergruppen sind nomadisch.",
+      "quotes": [
+        "Tenontosaurus are territorial and claim medium territories when in groups containing a female.",
+        "Tenontosaurus nest near cliffs, rocks and crevices between rocks."
+      ]
+    },
+    "thalassodromeus": {
+      "verdict": "brief", "life": "nomadisch",
+      "where": "nur gemeinsam am Big Quill Lake",
+      "hint": "Zieht oft jeden Morgen weiter. Vor der Nacht sucht die Schar gemeinsam einen Felsvorsprung zum Schlafen.",
+      "quotes": [
+        "Flocks are mostly nomadic, moving to a new spot every morning if they so choose.",
+        "As they have poor night vision, Thalassodromeus always choose to find a place to perch before nightfall, with flocks gathering together on one ledge or a series of ledges nearby."
+      ]
+    },
+    "therizinosaurus": {
+      "verdict": "profile", "life": "Männchen sesshaft, Weibchen territorial",
+      "where": "dichtes Laub und Bäume, sonst Schatten und Felsen",
+      "hint": "Kehrt tagsüber immer an denselben Platz zum Schlafen und Nisten zurück. Das Weibchen verjagt am Tag andere Arten (außer Apex-Fleischfressern) aus ihrem Schlafbereich.",
+      "quotes": [
+        "They will always return to the same spot to sleep and nest throughout the daytime.",
+        "She will only issue challenges towards other species that are not Apex carnivores in the day if they enter her or her sect's sleeping area."
+      ]
+    },
+    "torvosaurus": {
+      "verdict": "profile", "life": "sesshaft, allein lebende Männchen nomadisch",
+      "where": "überall im bevorzugten POI, gern bei Wurzeln oder Knochen",
+      "hint": "Baut nachts provisorische Schlafnester in dichtem Laub oder Höhlen, vor allem mit Jungen. Allein lebende Männchen sind nomadisch.",
+      "quotes": [
+        "Torvosaurus primarily rest at night, typically finding deep foliage or dens to construct temporary nests in to sleep, especially when cubs are present.",
+        "Solitary males or coalitions are nomadic, in search of opportunities and females."
+      ]
+    },
+    "tropeognathus": {
+      "verdict": "profile", "life": "nomadisch",
+      "where": "Felsen, kleine Inseln, Küstenklippen; Nisten an den Ocean Pillars",
+      "hint": "Baut tagsüber provisorische Ruhenester auf Felsen und Klippen, am liebsten von Wasser umgeben. Danach geht es weiter.",
+      "quotes": [
+        "Tropeognathus are typically less active during the daytime, where they will find rocks and cliffsides to temporarily construct nests where they will rest.",
+        "They prefer to sleep somewhere surrounded by water - ideally a rock, small island, or coastal cliffside - and take it in turns when in a group so that someone is always watching over the others."
+      ]
+    },
+    "tylosaurus": {
+      "verdict": "brief", "life": "nomadisch (Wasser)",
+      "where": "flaches Wasser im bevorzugten POI",
+      "hint": "Allein döst er kurz in Höhlen und meidet flaches Wasser. Ein Ruhenest passt nicht.",
+      "quotes": [
+        "Tylosaurus are nomadic.",
+        "Solitary Tylosaurus often take short naps in caves for shelter, and prefer to stay out of shallow waters in order to avoid the risk of being hunted by terrestrial and aerial predators."
+      ]
+    },
+    "tyrannosaurus": {
+      "verdict": "rule", "life": "territorial",
+      "where": "überall im bevorzugten POI mit dichter Deckung",
+      "hint": "Hält ein Revier. In der Trockenzeit ruht er auch im flachen Wasser zum Abkühlen. Bullen auf Partnersuche sind zeitweise nomadisch.",
+      "quotes": [
+        "Tyrannosaurus are highly aggressive, territorial carnivores that do not tolerate any Large+ carnivores in their territories.",
+        "In the Dry Season, they can be observed resting in shallow banks of water in order to cool down, drawing their muzzle through the water."
+      ]
+    },
+    "tyrannotitan": {
+      "verdict": "rule", "life": "Eber territorial, Sauen nomadisch",
+      "where": "dichtes Laub und Felsvorsprünge im bevorzugten POI",
+      "hint": "Eber halten ein ganzes POI als Revier und schlafen viel, dort passt ein Ruhenest. Sauen sind nomadisch und nur beim Nisten territorial.",
+      "quotes": [
+        "Tyrannotitan males are territorial and claim large territories, consisting of an entire POI.",
+        "Tyrannotitan females are nomadic, but become territorial and claim large territories when nesting.",
+        "Boars only host patrols of their territory if woken by something; but do not express much effort in the patrol, and will go back to sleep as soon as they find a suitable spot again, or the sun gets too bright for them."
+      ]
+    },
+    "utahraptor": {
+      "verdict": "profile", "life": "allein und als Paar nomadisch, Familienrudel territorial",
+      "where": "das Nest heißt „Den“, im Rudelrevier",
+      "hint": "Das Nest ist zugleich Schlafplatz und wird sauber gehalten. Allein bist du nomadisch, ein Ruhenest also eher für eine Rast.",
+      "quotes": [
+        "Utahraptor maintain their nests during this time, and ensure they remain clean for future offspring, as well as for being a place to sleep.",
+        "Solitary Utahraptor are nomadic."
+      ]
+    },
+    "yunnanosaurus": {
+      "verdict": "rule", "life": "Regenzeit territorial, Trockenzeit nomadisch",
+      "where": "nahe Süßwasser",
+      "hint": "In der Regenzeit mit Revier passt ein Ruhenest. In der Trockenzeit ziehen sie meist nachts weiter.",
+      "quotes": [
+        "Rainy Season: territorial and form medium territories, have an aggressive nature, and form harem bonds.",
+        "Dry Season: nomadic, have a tolerant nature, and form temporary pairbonds."
+      ]
+    },
+    "yutyrannus": {
+      "verdict": "profile", "life": "sesshaft",
+      "where": "Höhlen mit mehreren Kammern",
+      "hint": "Baut an festen Schlafplätzen sorgfältig Nester. Ruhe- und Nisthöhlen werden gegen andere Yutyrannus verteidigt.",
+      "quotes": [
+        "Yutyrannus take time to meticulously construct their nests, especially when it comes to regular sleeping places.",
+        "Even if the group is not full, they will simply be nipped at and driven away from resting or nesting dens claimed by the group."
+      ]
+    }
+  }
+}

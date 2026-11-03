@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die halben Prog-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd).",
+  "view": { "x": 0.35, "y": 0, "width": 0.65, "height": 0.64 },
+  "roles": {
+    "home": "Lebt hier",
+    "route": "Wanderroute",
+    "trip": "Abstecher ins Meer",
+    "territory": "Reviere",
+    "front": "Revierkämpfe",
+    "nest": "Nest und Kinderstube"
+  },
+  "zones": [
+    {
+      "id": "ocean", "label": "Ozeane",
+      "text": "Kühles, offenes Wasser mit den wertvollsten Fischen. Hier jagen Tylo, nachts Prog und außer bei Palm Islands Livy.",
+      "areas": ["kelp-vale", "coastal-bluffs", "abyssal-depths", "palm-islands", "stonebed-shoal"]
+    },
+    {
+      "id": "channels", "label": "Salzwasser-Flussengen",
+      "text": "Warme, flache Kanäle zwischen den Inseln. Hier leben Xiph, Deino und Spino, Tylo zieht durch. Krokodile und Tylo jagen hier die Xiph.",
+      "areas": ["volcano-islands", "twisted-forest", "stillwater-bog", "mudflats", "coastland-swamp"]
+    },
+    {
+      "id": "fresh", "label": "Süßwasser-Flüsse",
+      "text": "Reine Süßwasser-Flüsse im Westen, dazu Redwood Wind weiter im Südwesten. Von den Wasser-Jägern lebt hier nur Spino; Leeds nistet am Fluss von Big Tree Overlook.",
+      "areas": ["big-tree-overlook", "tallbrush-coasts", "cliff-edge-falls"]
+    }
+  ],
+  "territories": [
+    { "id": "kelp-west", "name": "Western Kelp Territory", "label": "Kelp West", "parent": "kelp-vale", "axis": "x", "half": "low" },
+    { "id": "kelp-east", "name": "Eastern Kelp Territory", "label": "Kelp Ost", "parent": "kelp-vale", "axis": "x", "half": "high" },
+    { "id": "bluffs-north", "name": "Northern Bluffs Territory", "label": "Bluffs Nord", "parent": "coastal-bluffs", "axis": "y", "half": "low" },
+    { "id": "bluffs-south", "name": "Southern Bluffs Territory", "label": "Bluffs Süd", "parent": "coastal-bluffs", "axis": "y", "half": "high" },
+    { "id": "palm-north", "name": "Northern Palm Territory", "label": "Palm Nord", "parent": "palm-islands", "axis": "y", "half": "low" },
+    { "id": "palm-south", "name": "Southern Palm Territory", "label": "Palm Süd", "parent": "palm-islands", "axis": "y", "half": "high" },
+    { "id": "stonebed-north", "name": "Northern Stonebed Territory", "label": "Stonebed Nord", "parent": "stonebed-shoal", "axis": "y", "half": "low" },
+    { "id": "stonebed-south", "name": "Southern Stonebed Territory", "label": "Stonebed Süd", "parent": "stonebed-shoal", "axis": "y", "half": "high" }
+  ],
+  "route": {
+    "label": "Route des Leedsichthys",
+    "layer": "layers/route-leedsichthys-white.png",
+    "text": "Die Schleife der Leeds-Profilkarte durch die warmen Flussengen, dazu regelmäßige Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal. Leeds kühlt sich dort ab, Kai und Eurhino finden dort ihre wertvollsten Fische."
+  },
+  "species": [
+    {
+      "id": "leedsichthys", "route": true,
+      "text": "Zieht durch die warmen Flussengen und kühlt sich in den Ozeanen ab. Schläft nachts meist bei seiner Gruppe.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["route"] }, { "id": "twisted-forest", "roles": ["route"] }, { "id": "stillwater-bog", "roles": ["route"] },
+        { "id": "mudflats", "roles": ["route"] }, { "id": "coastland-swamp", "roles": ["route"] }, { "id": "coastal-bluffs", "roles": ["route"] },
+        { "id": "kelp-vale", "roles": ["trip"] }, { "id": "abyssal-depths", "roles": ["trip"] }, { "id": "palm-islands", "roles": ["trip"] }, { "id": "stonebed-shoal", "roles": ["trip"] },
+        { "id": "big-tree-overlook", "roles": ["nest"] }
+      ]
+    },
+    {
+      "id": "kaiwhekea", "route": true,
+      "text": "Folgt der Route des Leeds, mit oder ohne ihn. In den Ozeanen liegen die besten Fischgründe.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["route", "nest"] }, { "id": "twisted-forest", "roles": ["route"] }, { "id": "stillwater-bog", "roles": ["route"] },
+        { "id": "mudflats", "roles": ["route"] }, { "id": "coastland-swamp", "roles": ["route"] }, { "id": "coastal-bluffs", "roles": ["route"] },
+        { "id": "kelp-vale", "roles": ["trip"] }, { "id": "abyssal-depths", "roles": ["trip"] }, { "id": "palm-islands", "roles": ["trip", "nest"] }, { "id": "stonebed-shoal", "roles": ["trip"] }
+      ]
+    },
+    {
+      "id": "eurhinosaurus", "route": true,
+      "text": "Zieht dieselbe Route wie Kai, oft in derselben Gruppe. Zum Nisten geht es an den Fluss wie bisher.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["route"] }, { "id": "twisted-forest", "roles": ["route"] }, { "id": "stillwater-bog", "roles": ["route"] },
+        { "id": "mudflats", "roles": ["route"] }, { "id": "coastland-swamp", "roles": ["route"] }, { "id": "coastal-bluffs", "roles": ["route"] },
+        { "id": "kelp-vale", "roles": ["trip"] }, { "id": "abyssal-depths", "roles": ["trip"] }, { "id": "palm-islands", "roles": ["trip"] }, { "id": "stonebed-shoal", "roles": ["trip"] }
+      ]
+    },
+    {
+      "id": "xiphactinus",
+      "text": "Lebt nur in den Flussengen und wartet dort auf durchziehende Gruppen. Flieht vor Tylo und den Krokodilen, die ihn clampen können. Spino und Xiph ignorieren sich vollständig.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["home"] }, { "id": "twisted-forest", "roles": ["home"] }, { "id": "stillwater-bog", "roles": ["home"] },
+        { "id": "mudflats", "roles": ["home", "nest"] }, { "id": "coastland-swamp", "roles": ["home", "nest"] }
+      ]
+    },
+    {
+      "id": "tylosaurus",
+      "text": "Unverändert: Ozeane und Flussengen. Der einzige Apex in beiden. Xiph flieht vor ihm wie der Weiße Hai vor dem Orca.",
+      "areas": [
+        { "id": "kelp-vale", "roles": ["home"] }, { "id": "coastal-bluffs", "roles": ["home"] }, { "id": "abyssal-depths", "roles": ["home"] },
+        { "id": "palm-islands", "roles": ["home"] }, { "id": "stonebed-shoal", "roles": ["home"] },
+        { "id": "volcano-islands", "roles": ["home"] }, { "id": "twisted-forest", "roles": ["home"] }, { "id": "stillwater-bog", "roles": ["home"] },
+        { "id": "mudflats", "roles": ["home"] }, { "id": "big-tree-overlook", "roles": ["home"] }
+      ]
+    },
+    {
+      "id": "prognathodon", "territories": true,
+      "text": "Lebt nur in den Ozeanen. Ein Männchen hält einen halben Ozean-POI. Abyssal Depths hat keine Reviere, Palm Islands ist die Front zu Deino und Spino.",
+      "areas": [
+        { "id": "kelp-vale", "roles": ["territory"] }, { "id": "coastal-bluffs", "roles": ["territory"] },
+        { "id": "palm-islands", "roles": ["territory", "front"] }, { "id": "stonebed-shoal", "roles": ["territory"] },
+        { "id": "abyssal-depths", "roles": ["home"] }
+      ]
+    },
+    {
+      "id": "livyatan",
+      "text": "Alle Ozeane außer Palm Islands, Zuhause in Abyssal Depths. Nistet an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.",
+      "areas": [
+        { "id": "kelp-vale", "roles": ["home"] }, { "id": "coastal-bluffs", "roles": ["home", "nest"] },
+        { "id": "abyssal-depths", "roles": ["home"] }, { "id": "stonebed-shoal", "roles": ["home", "nest"] }
+      ]
+    },
+    {
+      "id": "deinosuchus",
+      "text": "Nur noch Flussengen und Palm Islands, mit Spinos geteilten Revieren. Jagt Xiph mit Vergnügen. Auf Palm harte Revierkämpfe mit Prog.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["territory"] }, { "id": "twisted-forest", "roles": ["territory"] }, { "id": "stillwater-bog", "roles": ["territory"] },
+        { "id": "mudflats", "roles": ["territory"] }, { "id": "coastland-swamp", "roles": ["territory"] },
+        { "id": "palm-islands", "roles": ["territory", "front"] }
+      ]
+    },
+    {
+      "id": "spinosaurus",
+      "text": "Seen, Flüsse und Flussengen wie bisher. Vom Meer bleibt nur Palm Islands, wo er mit Prog um Reviere kämpft.",
+      "areas": [
+        { "id": "volcano-islands", "roles": ["territory"] }, { "id": "twisted-forest", "roles": ["territory"] }, { "id": "stillwater-bog", "roles": ["territory"] },
+        { "id": "mudflats", "roles": ["territory"] }, { "id": "coastland-swamp", "roles": ["territory"] },
+        { "id": "big-tree-overlook", "roles": ["territory"] }, { "id": "tallbrush-coasts", "roles": ["territory"] }, { "id": "cliff-edge-falls", "roles": ["territory"] },
+        { "id": "palm-islands", "roles": ["territory", "front"] }
+      ]
+    }
+  ]
+}

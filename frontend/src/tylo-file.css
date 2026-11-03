@@ -163,9 +163,20 @@
 .tf-tools[open]>summary::after{content:'▴'}
 .tf-tools-body{display:grid;gap:18px;padding:0 14px 14px}
 
-.herd-card.tylo{border-color:#24495a;background:linear-gradient(180deg,#0c2230,#0a1c27)}
-.herd-card.tylo:hover{border-color:#86cfc4}
-.herd-card-id{position:absolute;right:10px;bottom:9px;z-index:2;padding:4px 8px;border:1px solid #86cfc466;border-radius:3px;background:#05111acc;color:#86cfc4;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.06em}
+/* My Dinos overview: the Tylosaurus band, one catalogue entry per Tylo */
+.tf-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);border-bottom:1px solid var(--tf-line-soft);color:inherit;text-decoration:none;transition:background .16s}
+.tf-entry:last-child{border-bottom:0}
+.tf-entry:hover{background:#86cfc40a}
+.tf-entry:hover .tf-plate{border-color:var(--tf-glass)}
+.tf-entry:hover .tf-entry-open{color:#f1f7f5}
+.tf-entry .tf-plate{min-height:0;aspect-ratio:1.8;margin:24px 20px 40px 26px}
+.tf-entry .tf-plate img,.tf-entry .tf-plate-empty{height:100%;min-height:0}
+.tf-entry .tf-plate-empty .tf-sketch{width:70%}
+.tf-entry-body{display:flex;flex-direction:column;gap:10px;min-width:0;padding:26px 28px 24px 8px}
+.tf-entry-body h2{display:flex;align-items:baseline;gap:10px;color:#f4f8f6;font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,3.6vw,46px);font-weight:400;line-height:1}
+.tf-entry .tf-facts{margin-top:4px}
+.tf-entry .tf-facts dd{font-size:13px}
+.tf-entry-open{margin-top:auto;padding-top:4px;color:var(--tf-glass);font-size:12px;font-weight:700;transition:color .16s}
 
-@media(max-width:980px){.tf-hero{grid-template-columns:1fr}.tf-ident{padding:0 26px 26px}.tf-marks-grid,.tf-split{grid-template-columns:1fr}.tf-split>.tf-section+.tf-section{border-top:1px solid var(--tf-line-soft);border-left:0}}
-@media(max-width:560px){.tf-head{flex-direction:column;align-items:flex-start;padding:18px 16px 28px}.tf-head-id{justify-items:start}.tf-ruler{right:16px;left:16px}.tf-plate{margin:18px 16px 36px}.tf-plate,.tf-plate>button,.tf-plate img{min-height:220px}.tf-ident{padding:0 16px 22px}.tf-facts{grid-template-columns:1fr}.tf-facts>div:nth-child(odd){padding-right:0;border-right:0}.tf-facts>div:nth-child(even){padding-left:0}.tf-section{padding:22px 16px}.tf-section-head{flex-wrap:wrap}.tf-sketch .tf-note{display:none}.tf-note-list{display:grid}.tf-section-aside{width:100%;margin-left:0}.tf-foot{padding:14px 16px}}
+@media(max-width:980px){.tf-hero,.tf-entry{grid-template-columns:1fr}.tf-ident,.tf-entry-body{padding:0 26px 26px}.tf-marks-grid,.tf-split{grid-template-columns:1fr}.tf-split>.tf-section+.tf-section{border-top:1px solid var(--tf-line-soft);border-left:0}}
+@media(max-width:560px){.tf-head{flex-direction:column;align-items:flex-start;padding:18px 16px 28px}.tf-head-id{justify-items:start}.tf-ruler{right:16px;left:16px}.tf-plate{margin:18px 16px 36px}.tf-plate,.tf-plate>button,.tf-plate img{min-height:220px}.tf-entry .tf-plate{margin:18px 16px 36px}.tf-ident,.tf-entry-body{padding:0 16px 22px}.tf-facts{grid-template-columns:1fr}.tf-facts>div:nth-child(odd){padding-right:0;border-right:0}.tf-facts>div:nth-child(even){padding-left:0}.tf-section{padding:22px 16px}.tf-section-head{flex-wrap:wrap}.tf-sketch .tf-note{display:none}.tf-note-list{display:grid}.tf-section-aside{width:100%;margin-left:0}.tf-foot{padding:14px 16px}}

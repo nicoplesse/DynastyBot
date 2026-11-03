@@ -149,6 +149,56 @@ function Proof({ url, label }: { url: string; label: string }) {
   return <a href={linkHref(url)} title={url} {...(discord ? {} : { target: '_blank', rel: 'noreferrer' })}>{label} ↗</a>;
 }
 
+const catalogOrder = (a: HerdDino, b: HerdDino) => (familyOf(a).catalogId || '~').localeCompare(familyOf(b).catalogId || '~', 'de', { numeric: true }) || a.name.localeCompare(b.name, 'de');
+const familyLine = (dino: HerdDino, mates: HerdBond[]) => {
+  const { offspring } = familyOf(dino);
+  // Clutches are numbered across all mates, so the highest number is the count so far.
+  const clutches = Math.max(0, ...offspring.map(calf => calf.clutch || 0));
+  return [`${mates.length} ${dino.sex === 'female' ? 'Partner' : mates.length === 1 ? 'Partnerin' : 'Partnerinnen'}`, clutches > 0 && `${clutches} Gelege`, `${offspring.length} ${offspring.length === 1 ? 'Kalb' : 'Kälber'}`].filter(Boolean).join(' · ');
+};
+
+// My Dinos overview: your Tylosaurus as entries of the photo-ID catalogue, by catalogue number.
+export function TyloCatalog({ dinos }: { dinos: HerdDino[] }) {
+  return <section className="tf tf-catalog" aria-label="Photo-ID-Katalog Tylosaurus">
+    <header className="tf-head">
+      <Contours />
+      <div className="tf-head-copy"><span>PHOTO-ID-KATALOG · TYLOSAURUS</span><strong>Küsten &amp; offene See</strong></div>
+      <div className="tf-head-id"><span>IM KATALOG</span><strong>{String(dinos.length).padStart(2, '0')}</strong></div>
+      <div className="tf-ruler" aria-hidden="true" />
+    </header>
+    {[...dinos].sort(catalogOrder).map(dino => <TyloEntry key={dino.id} dino={dino} />)}
+  </section>;
+}
+
+function TyloEntry({ dino }: { dino: HerdDino }) {
+  const family = familyOf(dino);
+  const sexInfo = dino.sex ? bySex[dino.sex] : null;
+  const mates = bondsOf(dino).filter(bond => mateKind.test(bond.kind));
+  const catalogId = family.catalogId || 'TY–';
+  const latest = [...family.log].sort((a, b) => a.date.localeCompare(b.date)).pop();
+  const g = dino.genetics;
+  const facts: Array<[string, React.ReactNode]> = [
+    ['Unterart', family.subspecies || <i>offen</i>],
+    ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
+    ['Familie', familyLine(dino, mates)],
+    ['Letzte Sichtung', latest ? <>{formatDay(latest.date)}<small>{latest.text}</small></> : <i>noch keine</i>],
+  ];
+  return <a className="tf-entry" href={`#/herd/${dino.id}`} aria-label={`ID-Akte ${catalogId} ${dino.name} öffnen`}>
+    <figure className={`tf-plate${dino.photo ? '' : ' empty'}`}>
+      {dino.photo ? <img src={herdApi.fileUrl(dino, dino.photo)} alt={dino.name} loading="lazy" /> : <span className="tf-plate-empty"><TyloSketch sex={dino.sex} faint /><span><b>ID-Foto folgt</b></span></span>}
+      <i className="tf-crop tl" /><i className="tf-crop tr" /><i className="tf-crop bl" /><i className="tf-crop br" />
+      <figcaption><span>{catalogId} · {dino.name.toUpperCase()}</span><span>{dino.photo ? 'ID-FOTO' : 'KEIN FOTO'}</span></figcaption>
+    </figure>
+    <div className="tf-entry-body">
+      <div className="tf-kicker">KATALOG-NR. {catalogId}{sexInfo ? ` · ${sexInfo.role.toUpperCase()}` : ''}</div>
+      <h2>{dino.name}{dino.sex && <span className={`tf-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2>
+      <p className="tf-epithet">{mates.length ? `${dino.sex === 'female' ? 'Partnerin' : 'Partner'} von ${mates.map(mate => mate.name).join(', ')}` : 'noch ungebunden'}</p>
+      <dl className="tf-facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+      <span className="tf-entry-open">ID-Akte öffnen →</span>
+    </div>
+  </a>;
+}
+
 export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; onOpenPhoto: () => void; onAddPhoto: () => void }) {
   const family = familyOf(dino);
   const sexInfo = dino.sex ? bySex[dino.sex] : null;
@@ -157,16 +207,13 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
   const others = bondsOf(dino).filter(bond => !mateKind.test(bond.kind));
   const origin = family.origin || (family.mother || family.father ? [family.mother, family.father].filter(Boolean).join(' × ') : '');
   const catalogId = family.catalogId || 'TY–';
-  const mateWord = dino.sex === 'female' ? 'Partner' : mates.length === 1 ? 'Partnerin' : 'Partnerinnen';
-  // Clutches are numbered across all mates, so the highest number is the count so far.
-  const clutches = Math.max(0, ...family.offspring.map(calf => calf.clutch || 0));
   const facts: Array<[string, React.ReactNode, string?]> = [
     ['Geschlecht', sexInfo ? `${sexSymbol(dino.sex)} ${sexInfo.role}` : <i>offen</i>],
     ['Unterart', family.subspecies || <i>offen</i>, family.subspecies ? undefined : sexInfo?.subspecies],
     ['Herkunft', origin || <i>offen</i>],
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
     ['Im Register seit', formatDay(dino.createdAt)],
-    ['Familie', [`${mates.length} ${mateWord}`, clutches > 0 && `${clutches} Gelege`, `${family.offspring.length} ${family.offspring.length === 1 ? 'Kalb' : 'Kälber'}`].filter(Boolean).join(' · ')],
+    ['Familie', familyLine(dino, mates)],
     ...(dino.diedAt ? [['Verstorben', `† ${formatDay(dino.diedAt)}`] as [string, string]] : []),
   ];
   return <article className="tf" aria-label={`ID-Akte ${dino.name}`}>

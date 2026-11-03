@@ -13,17 +13,20 @@ import { ClampsPage } from './ClampsView';
 import { RoutesPage } from './RoutesView';
 import { FoodWebPage } from './FoodWebView';
 import { PoiRadarPage } from './PoiRadarView';
+import { RestNestsPage } from './RestNestsView';
+import { TemperaturePage } from './TemperatureView';
 import { CemeteryPage, HerdPage, HerdStrip } from './HerdView';
 import { ModeFlag, PlayModeSwitch, catalogAnalog, modeLabels, profileAnalog, usePlayMode } from './PlayMode';
 import { IslePage } from './IsleView';
+import { AquaticPage } from './AquaticView';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './explorer.css';
 
 export function Explorer({ route }: { route: string }) {
-  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/clamps') ? 'clamps' : route.startsWith('/routes') ? 'routes' : route.startsWith('/foodweb') ? 'foodweb' : route.startsWith('/radar') ? 'radar' : route.startsWith('/herd') ? 'herd' : route.startsWith('/friedhof') ? 'friedhof' : route.startsWith('/isle') ? 'isle' : 'profiles';
+  const active = route.startsWith('/rules') ? 'rules' : route.startsWith('/animals') ? 'animals' : route.startsWith('/ecosystems') ? 'ecosystems' : route.startsWith('/clamps') ? 'clamps' : route.startsWith('/routes') ? 'routes' : route.startsWith('/foodweb') ? 'foodweb' : route.startsWith('/radar') ? 'radar' : route.startsWith('/restnests') ? 'restnests' : route.startsWith('/temperature') ? 'temperature' : route.startsWith('/herd') ? 'herd' : route.startsWith('/friedhof') ? 'friedhof' : route.startsWith('/isle') ? 'isle' : route.startsWith('/aquatic') ? 'aquatic' : 'profiles';
   return <div className="app-shell explorer-shell">
     <ExplorerNav active={active} route={route} />
-    <main className="explorer-main">{active === 'isle' ? <IslePage route={route} /> : active === 'herd' ? <HerdPage route={route} /> : active === 'friedhof' ? <CemeteryPage /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : active === 'clamps' ? <ClampsPage route={route} /> : active === 'routes' ? <RoutesPage route={route} /> : active === 'foodweb' ? <FoodWebPage route={route} /> : active === 'radar' ? <PoiRadarPage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
+    <main className="explorer-main">{active === 'aquatic' ? <AquaticPage route={route} /> : active === 'isle' ? <IslePage route={route} /> :active === 'herd' ? <HerdPage route={route} /> : active === 'friedhof' ? <CemeteryPage /> : active === 'rules' ? <RulesPage /> : active === 'animals' ? <AnimalFinder route={route} /> : active === 'ecosystems' ? <EcosystemsPage route={route} /> : active === 'clamps' ? <ClampsPage route={route} /> : active === 'routes' ? <RoutesPage route={route} /> : active === 'foodweb' ? <FoodWebPage route={route} /> : active === 'radar' ? <PoiRadarPage route={route} /> : active === 'restnests' ? <RestNestsPage route={route} /> : active === 'temperature' ? <TemperaturePage route={route} /> : <ProfilesPage profileId={route.split('/')[2] || null} />}</main>
   </div>;
 }
 
@@ -36,11 +39,11 @@ function JumpLink({ id, children }: { id: string; children: ReactNode }) {
 }
 
 // Profiles opens a sub-menu: the full directory, the ecosystem overview and one entry per ecosystem.
-function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'clamps' | 'routes' | 'foodweb' | 'radar' | 'herd' | 'friedhof' | 'isle'; route: string }) {
+function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animals' | 'ecosystems' | 'clamps' | 'routes' | 'foodweb' | 'radar' | 'restnests' | 'temperature' | 'herd' | 'friedhof' | 'isle' | 'aquatic'; route: string }) {
   const [open, setOpen] = useState(true);
   const [ecosystems, setEcosystems] = useState<Ecosystem[]>([]);
   useEffect(() => { api.ecosystems().then(index => setEcosystems(index.ecosystems)).catch(() => setEcosystems([])); }, []);
-  const inProfiles = active === 'profiles' || active === 'ecosystems' || active === 'clamps' || active === 'routes' || active === 'foodweb' || active === 'radar';
+  const inProfiles = active === 'profiles' || active === 'ecosystems' || active === 'clamps' || active === 'routes' || active === 'foodweb' || active === 'radar' || active === 'restnests' || active === 'temperature';
   const sub = (path: string) => route === path;
   return <aside className="sidebar">
     <div className="brand"><div className="brand-mark" aria-hidden="true">D</div><div><strong>DYNASTY BOT</strong><span>REALISM ARCHIVE</span></div></div>
@@ -62,6 +65,8 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
           <button type="button" className={route.startsWith('/routes') ? 'active' : ''} onClick={() => go('/routes')}><i>⇢</i>Migration routes</button>
           <button type="button" className={route.startsWith('/foodweb') ? 'active' : ''} onClick={() => go('/foodweb')}><i>⋔</i>Food web</button>
           <button type="button" className={route.startsWith('/radar') ? 'active' : ''} onClick={() => go('/radar')}><i>⌖</i>POI radar</button>
+          <button type="button" className={route.startsWith('/restnests') ? 'active' : ''} onClick={() => go('/restnests')}><i>⌂</i>Rest nests</button>
+          <button type="button" className={route.startsWith('/temperature') ? 'active' : ''} onClick={() => go('/temperature')}><i>°</i>Temperatur-Map</button>
           {ecosystems.map(ecosystem => <button type="button" key={ecosystem.id} className={sub(`/ecosystems/${ecosystem.id}`) ? 'active' : ''} style={{ '--eco': ecosystem.accent } as CSSProperties} onClick={() => go(`/ecosystems/${ecosystem.id}`)} title={ecosystem.de}><i>{ecosystem.symbol}</i>{ecosystem.label}</button>)}
         </div>}
       </div>
@@ -69,6 +74,9 @@ function ExplorerNav({ active, route }: { active: 'profiles' | 'rules' | 'animal
       <button className={`nav-item ${active === 'animals' ? 'active' : ''}`} aria-current={active === 'animals' ? 'page' : undefined} onClick={() => go('/animals')}><span className="nav-symbol">≈</span> <span className="nav-label" data-short="Finder">Animal Finder</span></button>
       <button className="nav-item" disabled><span className="nav-symbol">◇</span> <span className="nav-label">Playable Finder</span> <span className="soon">Soon</span></button>
       <button className="nav-item" disabled><span className="nav-symbol">▢</span> <span className="nav-label">Chat</span> <span className="soon">Soon</span></button>
+      <div className="nav-divider" />
+      <div className="nav-caption nav-caption-inline">PROJEKT</div>
+      <button className={`nav-item nav-aquatic ${active === 'aquatic' ? 'active' : ''}`} aria-current={active === 'aquatic' ? 'page' : undefined} onClick={() => go('/aquatic')} title="Eigene Suggestion an Dynasty Realism"><span className="nav-symbol">≋</span> <span className="nav-label" data-short="Aquatic">Aquatic Update</span></button>
       <div className="nav-divider" />
       <div className="nav-caption nav-caption-inline">EXKURS</div>
       <button className={`nav-item nav-isle ${active === 'isle' ? 'active' : ''}`} aria-current={active === 'isle' ? 'page' : undefined} onClick={() => go('/isle')} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> <span className="nav-label">The Isle</span></button>

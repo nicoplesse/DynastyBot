@@ -6,7 +6,7 @@
 
 import { clampAbility } from './clamps.js';
 
-function inside([x, y], points) {
+export function inside([x, y], points) {
   let hit = false;
   for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
     const [xi, yi] = points[i], [xj, yj] = points[j];

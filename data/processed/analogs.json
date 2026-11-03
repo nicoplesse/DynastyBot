@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T17:04:59.043Z",
+  "generatedAt": "2026-11-03T21:08:37.418Z",
   "mode": "solo",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
@@ -2334,9 +2334,9 @@
           "id": "tylosaurus",
           "name": "Tylosaurus",
           "animal": "Orca",
-          "role": "primary",
-          "share": 100,
-          "headline": "An orca matriline: the eldest mother leads, every family has its own hunting culture, and nothing in the sea is safe."
+          "role": "secondary",
+          "share": 35,
+          "headline": "A lone leopard seal of the coasts: it lies in wait off beaches and drinking spots, toys with its catch and carries an orca's restlessness without a family."
         }
       ]
     },
@@ -2344,6 +2344,14 @@
       "label": "Seal & sea lion",
       "de": "Robbe & Seelöwe",
       "dinos": [
+        {
+          "id": "tylosaurus",
+          "name": "Tylosaurus",
+          "animal": "Leopard seal",
+          "role": "primary",
+          "share": 65,
+          "headline": "A lone leopard seal of the coasts: it lies in wait off beaches and drinking spots, toys with its catch and carries an orca's restlessness without a family."
+        },
         {
           "id": "kaiwhekea",
           "name": "Kaiwhekea",
@@ -3856,6 +3864,20 @@
         }
       ]
     },
+    "leopard-seal": {
+      "animal": "Leopard seal",
+      "de": "Seeleopard",
+      "scientific": "Hydrurga leptonyx",
+      "archetype": "seal",
+      "dinos": [
+        {
+          "id": "tylosaurus",
+          "name": "Tylosaurus",
+          "role": "primary",
+          "share": 65
+        }
+      ]
+    },
     "orca": {
       "animal": "Orca",
       "de": "Orca (Schwertwal)",
@@ -3865,8 +3887,8 @@
         {
           "id": "tylosaurus",
           "name": "Tylosaurus",
-          "role": "primary",
-          "share": 100
+          "role": "secondary",
+          "share": 35
         }
       ]
     },
@@ -3983,6 +4005,7 @@
         "spinosaurus-saltwater",
         "stegosaurus",
         "tenontosaurus",
+        "tylosaurus",
         "tyrannotitan",
         "utahraptor",
         "yutyrannus"
@@ -4013,8 +4036,7 @@
       "dinoIds": [
         "apatosaurus",
         "ceratosaurus",
-        "dilophosaurus",
-        "tylosaurus"
+        "dilophosaurus"
       ]
     },
     "pack": {
@@ -4093,8 +4115,7 @@
         "lambeosaurus",
         "maip",
         "pachyrhinosaurus",
-        "therizinosaurus",
-        "tylosaurus"
+        "therizinosaurus"
       ]
     },
     "apex": {
@@ -4176,6 +4197,7 @@
         "megalania-temperate",
         "sarcosuchus",
         "spinosaurus-saltwater",
+        "tylosaurus",
         "tyrannosaurus",
         "yutyrannus"
       ]
@@ -6819,28 +6841,36 @@
     },
     "tylosaurus": {
       "name": "Tylosaurus",
-      "label": "Orca",
-      "labelDe": "Orca (Schwertwal)",
-      "headline": "An orca matriline: the eldest mother leads, every family has its own hunting culture, and nothing in the sea is safe.",
-      "setting": "Open sea and coastlines",
+      "label": "Leopard seal + Orca",
+      "labelDe": "Seeleopard + Orca (Schwertwal)",
+      "headline": "A lone leopard seal of the coasts: it lies in wait off beaches and drinking spots, toys with its catch and carries an orca's restlessness without a family.",
+      "setting": "Shorelines and open sea",
       "habitats": [
         "sea"
       ],
       "analogs": [
         {
+          "id": "leopard-seal",
+          "animal": "Leopard seal",
+          "de": "Seeleopard",
+          "archetype": "seal",
+          "share": 65,
+          "role": "primary"
+        },
+        {
           "id": "orca",
           "animal": "Orca",
           "de": "Orca (Schwertwal)",
           "archetype": "whale-dolphin",
-          "share": 100,
-          "role": "primary"
+          "share": 35,
+          "role": "secondary"
         }
       ],
       "moods": [
-        "family",
-        "matriarchal",
+        "solitary",
         "aquatic",
         "apex",
+        "ambush",
         "aggressive",
         "nomadic"
       ],
@@ -11482,7 +11512,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "leopard-seal"
+      ],
       "moods": [],
       "habitats": []
     },
@@ -11518,7 +11550,9 @@
       "archetypes": [
         "seal"
       ],
-      "animals": [],
+      "animals": [
+        "leopard-seal"
+      ],
       "moods": [],
       "habitats": []
     },

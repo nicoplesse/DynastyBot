@@ -12,6 +12,9 @@ import { buildMigrationIndex } from './migration.js';
 import { buildFoodWeb } from './foodweb.js';
 import { readVariants } from './playables.js';
 import { buildPoiRadar } from './poi-radar.js';
+import { buildRestNests } from './rest-nests.js';
+import { buildClimate } from './climate.js';
+import { buildThermo } from './thermo.js';
 import { buildBleedTables } from './bleed.js';
 
 const projectRoot = fileURLToPath(new URL('../../', import.meta.url));
@@ -615,6 +618,9 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   const clampDoc = await optionalReference('clamps.json');
   const migrationDoc = await optionalReference('migration-routes.json');
   const foodWebDoc = await optionalReference('food-web.json');
+  const restNestDoc = await optionalReference('rest-nests.json');
+  const climateDoc = await optionalReference('climate.json');
+  const thermoDoc = await optionalReference('thermo.json');
   const routeTrace = await readFile(join(dirname(rawRoot), 'map', 'routes.json'), 'utf8').then(JSON.parse).catch(error => {
     if (error.code === 'ENOENT') return null;
     throw error;
@@ -704,6 +710,10 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   const foodWeb = buildFoodWeb(profiles, foodWebDoc, ecosystemIndex);
   if (foodWeb) await writeFile(join(outputRoot, 'foodweb.json'), JSON.stringify(foodWeb) + '\n');
   else await rm(join(outputRoot, 'foodweb.json'), { force: true });
+  // Rest nests: rule 9.8 for everyone, rated per playable against its own profile.
+  const restNests = buildRestNests(profiles, restNestDoc, rules);
+  if (restNests) await writeFile(join(outputRoot, 'rest-nests.json'), JSON.stringify(restNests, null, 2) + '\n');
+  else await rm(join(outputRoot, 'rest-nests.json'), { force: true });
   // Bleed table per hunter (hits of its bleeding attack until each prey is down); needs the food web.
   const bleedTables = buildBleedTables(profiles, foodWeb);
   for (const profile of profiles) {
@@ -714,8 +724,14 @@ export async function buildProcessedData({ rawDir = defaultRawDir, processedDir 
   if (migration) await writeFile(join(outputRoot, 'migration.json'), JSON.stringify(migration, null, 2) + '\n');
   else await rm(join(outputRoot, 'migration.json'), { force: true });
   // POI radar: who is at each POI and every hunter-target pair, for the hover map.
-  if (regions.list.length) await writeFile(join(outputRoot, 'poi-radar.json'), JSON.stringify(buildPoiRadar(profiles, { regions: regions.list, migration, hunts: buildHuntPairs(profiles) })) + '\n');
+  const radar = regions.list.length ? buildPoiRadar(profiles, { regions: regions.list, migration, hunts: buildHuntPairs(profiles) }) : null;
+  if (radar) await writeFile(join(outputRoot, 'poi-radar.json'), JSON.stringify(radar) + '\n');
   else await rm(join(outputRoot, 'poi-radar.json'), { force: true });
+  // Temperature map: hourly air, ground and wind per POI area and season, plus each playable's comfort band.
+  const climate = regions.list.length ? buildClimate(regions.list, climateDoc) : null;
+  if (climate) climate.thermo = buildThermo(profiles, thermoDoc, radar?.dinos);
+  if (climate) await writeFile(join(outputRoot, 'climate.json'), JSON.stringify(climate) + '\n');
+  else await rm(join(outputRoot, 'climate.json'), { force: true });
   const speedKnown = profiles.length > 0 && profiles.every(profile => profile.speed?.land?.sprint > 0);
   const matchupMap = { schemaVersion: 3, generatedAt: new Date().toISOString(), speedKnown, methodology: 'intent-contact-pursuit-groups', dinos: matchups };
   await writeFile(join(outputRoot, 'matchups.json'), JSON.stringify(matchupMap, null, 2) + '\n');

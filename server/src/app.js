@@ -9,6 +9,7 @@ import { buildProcessedData } from './processor.js';
 import { searchAnalogs } from './analogs.js';
 import { createHerdStore, defaultHerdDir } from './herd.js';
 import { defaultIsleDir, isleSummary, loadIsle } from './isle.js';
+import { aquaticSummary, defaultAquaticDir, loadAquatic } from './aquatic.js';
 
 const extensions = new Set(['png', 'jpg', 'jpeg', 'webp']);
 const upload = multer({
@@ -61,6 +62,7 @@ export function createApp({
   processedDir = fileURLToPath(new URL('../../data/processed/', import.meta.url)),
   herdDir = defaultHerdDir,
   isleDir = defaultIsleDir,
+  aquaticDir = defaultAquaticDir,
 } = {}) {
   const app = express();
   const rawDir = resolve(dataDir);
@@ -97,6 +99,16 @@ export function createApp({
 
   app.get('/api/poi-radar', async (_req, res, next) => {
     try { res.json(JSON.parse(await readFile(join(derivedDir, 'poi-radar.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/climate', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'climate.json'), 'utf8'))); }
+    catch (error) { next(error); }
+  });
+
+  app.get('/api/rest-nests', async (_req, res, next) => {
+    try { res.json(JSON.parse(await readFile(join(derivedDir, 'rest-nests.json'), 'utf8'))); }
     catch (error) { next(error); }
   });
 
@@ -297,6 +309,26 @@ export function createApp({
       if (index < 0) throw httpError(404, 'The Isle playable not found.');
       const neighbour = offset => isleSummary(playables[(index + offset + playables.length) % playables.length]);
       res.json({ ...playables[index], position: index + 1, count: playables.length, previous: neighbour(-1), next: neighbour(1) });
+    } catch (error) { next(error); }
+  });
+
+  // Aquatic Update: the user's own suggestion, read straight from the Markdown drafts in projects/.
+  app.get('/api/aquatic', async (_req, res, next) => {
+    try {
+      const { overview, profiles, habitat, relations } = await loadAquatic(aquaticDir);
+      res.json({ ...overview, count: profiles.length, profiles: profiles.map(aquaticSummary), habitat, relations });
+    } catch (error) { next(error); }
+  });
+
+  app.get('/api/aquatic/:id', async (req, res, next) => {
+    try {
+      const id = req.params.id;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw httpError(400, 'Invalid profile ID.');
+      const { profiles } = await loadAquatic(aquaticDir);
+      const index = profiles.findIndex(profile => profile.id === id);
+      if (index < 0) throw httpError(404, 'Aquatic profile not found.');
+      const neighbour = offset => aquaticSummary(profiles[(index + offset + profiles.length) % profiles.length]);
+      res.json({ ...profiles[index], position: index + 1, count: profiles.length, previous: neighbour(-1), next: neighbour(1) });
     } catch (error) { next(error); }
   });
 

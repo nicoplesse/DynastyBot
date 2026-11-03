@@ -29,6 +29,13 @@
 .herd-skill-hint p{margin-top:3px;color:#b7ad8b;font-size:11px}
 .herd-skill-hint code{padding:7px 11px;border:1px solid #c9b36f66;border-radius:5px;background:#0f1510;color:#ecd99a;font-size:12px;font-weight:700}
 .herd-filter{margin-bottom:16px}
+/* Species groups: two or more dinos of one species under a heading */
+.herd-sections{display:grid;gap:30px}
+.herd-species-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid #2a392c}
+.herd-species-head h2{font-size:19px;letter-spacing:-.02em}
+.herd-species-head span{color:#8fa38f;font-size:11px;font-weight:700;letter-spacing:.05em}
+.herd-species-head a{margin-left:auto;color:#b6d48d;font-size:12px;font-weight:700;text-decoration:none}
+.herd-species-head a:hover{text-decoration:underline}
 .herd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .herd-card{display:flex;flex-direction:column;min-width:0;padding:0;overflow:hidden;border:1px solid #2d3c30;border-radius:8px;background:#17221a;color:inherit;text-align:left;transition:transform .16s,border-color .16s}
 .herd-card:hover{transform:translateY(-2px);border-color:#55704f}

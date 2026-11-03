@@ -1,12 +1,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, type Catalog, type CatalogItem } from './api';
-import { bondsOf, characterOf, familyOf, herdApi, isDeceased, isDiscordUrl, linkHref, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
-import { TyloFile } from './TyloFile';
+import { bondsOf, characterOf, herdApi, isDeceased, isDiscordUrl, pendingCount, sexSymbol, type HerdBond, type HerdCharacter, type HerdDino, type HerdGenetics } from './herd';
+import { DietPlace } from './DietPlaces';
+import { ExternalLink, LinkedText } from './HerdLinks';
+import { TitanFile, TitanHall } from './TitanFile';
+import { TyloCatalog, TyloFile } from './TyloFile';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './herd.css';
 
-// Your own Tylosaurus get the photo-ID file instead of the standard hero.
+// Your own Tylosaurus get the photo-ID file instead of the standard hero, your Tyrannotitan the Elden Ring hall.
 const hasIdFile = (dino: HerdDino) => dino.playableId === 'tylosaurus';
+const isTitan = (dino: HerdDino) => dino.playableId === 'tyrannotitan';
 
 const imageTypes = new Set(['image/png', 'image/jpeg', 'image/webp']);
 const imageName = /\.(png|jpe?g|webp)$/i;
@@ -20,18 +24,24 @@ function herdDays(dino: HerdDino) {
   return days >= 0 ? days : null;
 }
 function playableMap(catalog: Catalog | null) { return new Map((catalog?.profiles || []).map(profile => [profile.id, profile])); }
+const byName = (a: HerdDino, b: HerdDino) => a.name.localeCompare(b.name, 'de');
 
-// Discord links open straight in the desktop app (discord://); other links open in a new tab.
-function ExternalLink({ url, className, title, children }: { url: string; className?: string; title?: string; children: React.ReactNode }) {
-  const discord = isDiscordUrl(url);
-  return <a className={className} href={linkHref(url)} title={title || url} {...(discord ? {} : { target: '_blank', rel: 'noreferrer' })}>{children}</a>;
+// Your dinos by species, so two or more of one kind stand together. Variants of one profile
+// (Spinosaurus freshwater / saltwater …) count as one species; the link only fits a single playable.
+interface SpeciesGroup { key: string; name: string; profileId: string | null; dinos: HerdDino[] }
+function speciesGroups(dinos: HerdDino[], playables: Map<string, CatalogItem>) {
+  const groups = new Map<string, SpeciesGroup>();
+  for (const dino of dinos) {
+    const playable = dino.playableId ? playables.get(dino.playableId) : undefined;
+    const key = playable?.variant?.parentId || playable?.id || '';
+    const group = groups.get(key) || { key, name: playable?.variant?.parentName || playable?.name || 'Playable unknown', profileId: playable?.id || null, dinos: [] };
+    if (group.profileId !== (playable?.id || null)) group.profileId = null;
+    group.dinos.push(dino);
+    groups.set(key, group);
+  }
+  return [...groups.values()].sort((a, b) => a.name.localeCompare(b.name, 'de')).map(group => ({ ...group, dinos: group.dinos.sort(byName) }));
 }
-
-function LinkedText({ text }: { text: string }) {
-  return <>{text.split(/(https?:\/\/\S+)/).map((part, index) => index % 2
-    ? <ExternalLink key={index} url={part} className="herd-text-link">{isDiscordUrl(part) ? 'Open in Discord ↗' : part}</ExternalLink>
-    : part)}</>;
-}
+const sexTally = (dinos: HerdDino[]) => (['female', 'male'] as const).map(sex => [sex, dinos.filter(dino => dino.sex === sex).length] as const).filter(([, count]) => count).map(([sex, count]) => `${sexSymbol(sex)} ${count}`).join(' · ');
 
 // "My Dinos": your own dinosaurs. Screenshots are stored raw; the /aktualisiere skill in Claude reads
 // them and fills bloodlines, skins and mutations. Links, photo and corrections are edited here.
@@ -99,13 +109,43 @@ function HerdOverview({ catalog }: { catalog: Catalog }) {
     return [dino.name, playable?.name || '', ...(playable?.aliases || []), ...(g ? [...g.bloodlines, ...g.skins.dominant, ...g.skins.recessive, ...g.mutations.map(item => item.name)] : []), ...bondsOf(dino).map(bond => bond.name), ...characterOf(dino).traits].join(' ').toLowerCase().includes(needle);
   });
   const pending = dinos.filter(dino => pendingCount(dino) > 0);
+  // Tylosaurus have their own catalogue band on top, Tyrannotitan their hall below it. The rest live
+  // by diet on the flower meadow or in the bone pit; a species with two or more dinos gets a heading there.
+  const tylos = filtered.filter(hasIdFile);
+  const titans = filtered.filter(isTitan);
+  const rest = filtered.filter(dino => !hasIdFile(dino) && !isTitan(dino));
+  const dietOf = (dino: HerdDino) => (dino.playableId && playables.get(dino.playableId)?.classification.diet) || '';
+  const herbivores = rest.filter(dino => dietOf(dino) === 'Herbivore');
+  const carnivores = rest.filter(dino => dietOf(dino) === 'Carnivore');
+  const unsorted = rest.filter(dino => !['Herbivore', 'Carnivore'].includes(dietOf(dino))).sort(byName);
+  const card = (dino: HerdDino, grouped = false) => <HerdCard key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} grouped={grouped} />;
+  const bySpecies = (list: HerdDino[]) => {
+    const groups = speciesGroups(list, playables);
+    const singles = groups.filter(group => group.dinos.length === 1).flatMap(group => group.dinos);
+    return <>
+      {groups.filter(group => group.dinos.length > 1).map(group => <section key={group.key} className="herd-species" aria-label={group.name}>
+        <header className="herd-species-head"><h2>{group.name}</h2><span>{group.dinos.length} dinos{sexTally(group.dinos) && ` · ${sexTally(group.dinos)}`}</span>{group.profileId && <a href={`#/profiles/${group.profileId}`}>Profile →</a>}</header>
+        <div className="herd-grid">{group.dinos.map(dino => card(dino, true))}</div>
+      </section>)}
+      {singles.length > 0 && <div className="herd-grid">{singles.map(dino => card(dino))}</div>}
+    </>;
+  };
   return <>
     <ExplorerTopline section="MY DINOS" count={`${living.length} ${living.length === 1 ? 'DINO' : 'DINOS'}`} />
     <header className="directory-head"><div><div className="eyebrow">DYNASTY REALISM · YOUR HERD</div><h1>My Dinos</h1><p>Bloodlines, skins, mutations and proof for every dino you own. Screenshots stay stored exactly as imported.</p></div><div className="directory-actions"><button type="button" className="primary-button" onClick={() => setImportOpen(open => !open)} aria-expanded={importOpen}>{importOpen ? 'Close import' : '+ Import screenshots'}</button><div className="archive-metric"><strong>{living.length}</strong><span>{living.length === 1 ? 'dino' : 'dinos'} in your herd</span></div></div></header>
     {importOpen && <HerdImport catalog={catalog} dinos={dinos} onSaved={() => void refresh()} />}
     {pending.length > 0 && <SkillHint dinos={pending} />}
     {living.length > 0 && <section className="filter-bar herd-filter" aria-label="Filter dinos"><label className="search-field"><span aria-hidden="true">⌕</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Search name, playable, bloodline, skin, mutation or bond…" aria-label="Search your dinos" /></label></section>}
-    {living.length === 0 ? null : filtered.length ? <section className="herd-grid" aria-label="Your dinos">{filtered.map(dino => <HerdCard key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section> : <div className="catalog-empty"><strong>No matching dinos</strong><p>Try another name, skin or mutation.</p></div>}
+    {living.length === 0 ? null : filtered.length ? <div className="herd-sections">
+      {tylos.length > 0 && <TyloCatalog dinos={tylos} />}
+      {titans.length > 0 && <TitanHall dinos={titans} playable={playables.get('tyrannotitan')} />}
+      {herbivores.length > 0 && <DietPlace diet="herbivore" count={herbivores.length}>{bySpecies(herbivores)}</DietPlace>}
+      {carnivores.length > 0 && <DietPlace diet="carnivore" count={carnivores.length}>{bySpecies(carnivores)}</DietPlace>}
+      {unsorted.length > 0 && <section className="herd-species" aria-label="Playable not set">
+        <header className="herd-species-head"><h2>Playable not set</h2><span>run /aktualisiere to read it</span></header>
+        <div className="herd-grid">{unsorted.map(dino => card(dino))}</div>
+      </section>}
+    </div> : <div className="catalog-empty"><strong>No matching dinos</strong><p>Try another name, skin or mutation.</p></div>}
     {dead.length > 0 && <button type="button" className="cemetery-link" onClick={() => go('/friedhof')}><span aria-hidden="true">†</span><div><strong>Friedhof</strong><small>{dead.map(dino => dino.name).join(' · ')}</small></div><b>{dead.length} {dead.length === 1 ? 'Grab' : 'Gräber'} →</b></button>}
   </>;
 }
@@ -247,14 +287,15 @@ function DinoImage({ dino, playable }: { dino: HerdDino; playable?: CatalogItem 
   return <span className="herd-initial">{dino.name.charAt(0)}</span>;
 }
 
-function HerdCard({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
+// Under a species heading the playable line only names a variant (Spinosaurus (Saltwater) …).
+function HerdCard({ dino, playable, grouped = false }: { dino: HerdDino; playable?: CatalogItem; grouped?: boolean }) {
   const pending = pendingCount(dino);
-  const catalogId = hasIdFile(dino) ? familyOf(dino).catalogId : '';
-  return <button type="button" className={`herd-card${hasIdFile(dino) ? ' tylo' : ''}${isDeceased(dino) ? ' deceased' : ''}`} onClick={() => go(`/herd/${dino.id}`)}>
-    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{catalogId && <span className="herd-card-id">{catalogId}</span>}{isDeceased(dino) ? <span className="herd-died">{diedLabel(dino)}</span> : !dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
+  const playableLine = !grouped ? playable ? playable.name : 'Playable unknown' : playable?.variant ? playable.name : '';
+  return <button type="button" className={`herd-card${isDeceased(dino) ? ' deceased' : ''}`} onClick={() => go(`/herd/${dino.id}`)}>
+    <div className="herd-card-image"><DinoImage dino={dino} playable={playable} /><div className="card-scrim" />{isDeceased(dino) ? <span className="herd-died">{diedLabel(dino)}</span> : !dino.photo && <span className="herd-no-photo">No photo yet</span>}{pending > 0 && <span className="herd-pending">{pending} to read</span>}</div>
     <div className="herd-card-body">
       <div className="herd-card-title"><h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2><span aria-hidden="true">↗</span></div>
-      <div className="herd-card-playable">{playable ? playable.name : 'Playable unknown'}</div>
+      {playableLine && <div className="herd-card-playable">{playableLine}</div>}
       <GeneticsRows genetics={dino.genetics} proofs={dino.proofs} />
       <BondLine dino={dino} />
       {(dino.proofs.mutation || dino.proofs.nesting) && <div className="herd-proof-flags">{dino.proofs.mutation && <span>✓ Mutation proof</span>}{dino.proofs.nesting && <span>✓ Nesting proof</span>}</div>}
@@ -303,21 +344,24 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
     catch (cause) { setNotice({ type: 'error', text: (cause as Error).message }); setBusy(false); setConfirmDelete(false); }
   }
   const idFile = hasIdFile(dino);
+  const titan = isTitan(dino);
   const openTools = () => {
     if (!tools.current) return;
     tools.current.open = true;
     (tools.current.querySelector('.herd-photo-pick') || tools.current).scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
-  // On an ID file the editing panels fold away below the file.
-  const foldTools = (children: React.ReactNode) => idFile
-    ? <details ref={tools} className="tf-tools"><summary>Akte bearbeiten <small>Genetik, Bindungen, Foto und Screenshots</small></summary><div className="tf-tools-body">{children}</div></details>
+  // On an ID file or a titan page the editing panels fold away below it.
+  const foldTools = (children: React.ReactNode) => idFile || titan
+    ? <details ref={tools} className="tf-tools"><summary>{idFile ? 'Akte bearbeiten' : 'Bearbeiten'} <small>Genetik, Bindungen, Foto und Screenshots</small></summary><div className="tf-tools-body">{children}</div></details>
     : children;
+  const openPhoto = () => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo));
 
   return <>
     <ExplorerTopline section="MY DINOS / DETAIL" count={dino.name.toUpperCase()} />
     {isDeceased(dino) ? <button className="back-link" type="button" onClick={() => go('/friedhof')}>← Friedhof</button> : <button className="back-link" type="button" onClick={() => go('/herd')}>← All my dinos</button>}
     <article className="herd-detail">
-      {idFile ? <TyloFile dino={dino} playable={playable} onOpenPhoto={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} onAddPhoto={openTools} /> : <header className="herd-hero">
+      {idFile ? <TyloFile dino={dino} playable={playable} onOpenPhoto={openPhoto} onAddPhoto={openTools} />
+        : titan ? <TitanFile dino={dino} playable={playable} onOpenPhoto={openPhoto} onAddPhoto={openTools} /> : <header className="herd-hero">
         <button type="button" className="herd-hero-image" onClick={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} disabled={!dino.photo} aria-label={dino.photo ? 'Open photo' : 'No photo yet'}><DinoImage dino={dino} playable={playable} />{!dino.photo && <span className="herd-no-photo">No photo yet</span>}</button>
         <div className="herd-hero-copy">
           <div className="profile-kicker">MY DINO{playable?.classification.label ? ` · ${playable.classification.label}` : ''}</div>

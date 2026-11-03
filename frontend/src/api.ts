@@ -248,6 +248,18 @@ export interface Clamper {
 }
 export interface ClampPrey { id: string; name: string; aliases: string[]; tier: string | null; diet: string | null; habitat: string | null; combatWeight: number[] }
 export interface ClampIndex { schemaVersion: number; generatedAt: string; stages: string[]; rule: string; clampers: Clamper[]; prey: ClampPrey[] }
+export type RestNestVerdict = 'profile' | 'rule' | 'brief' | 'against' | 'check';
+export interface RestNestRow {
+  id: string; name: string; family: string; variant: { label: string; de: string } | null;
+  tier: string | null; diet: string | null; habitat: string | null; activity: string | null;
+  verdict: RestNestVerdict; life: string; where: string; hint: string; quotes: Array<{ text: string; section: string }>;
+}
+export interface RestNestIndex {
+  schemaVersion: number; generatedAt: string; note: string;
+  verdicts: Array<{ id: RestNestVerdict; label: string; description: string; count: number }>;
+  rules: Array<{ number: string; de: string; text: string }>;
+  playables: RestNestRow[];
+}
 export interface MigrationMember { id: string; name: string; usage: 'full' | 'partial' | 'profile'; layer: string | null; file: string | null; note?: string; regions: string[] }
 export interface MigrationRoute {
   id: string; name: string; de: string; color: string; note: string;
@@ -288,6 +300,37 @@ export interface RadarDino {
   cw: Array<number | null>; clamp: { ability: 'clamp' | 'grab'; capacity: number } | null;
   home: string[]; route: string[];
 }
+export interface ClimateSeries {
+  air: number[]; dew: number[]; rh: number[]; feel: number[]; feelSun: (number | null)[];
+  wind: number[]; gust: number[]; fog: number[]; ground: Record<string, number[]> | null; deep: number[] | null;
+  from: { day: string; night: string }; water: ClimateWater | null;
+}
+export interface ClimateWater { surface: number[]; shallow: number[] | null; deep: number | null; oxygen: number[] }
+export interface WaterBody { de: string; salt: 'salt' | 'brackish' | 'fresh'; saltDe: string; depth: number; stagnant: boolean; deepDe: string | null; why: string | null }
+export interface ClimateSpot {
+  id: string; name: string; kind: string; kindDe: string; surface: string; note: string; water: boolean; body: WaterBody | null;
+  seasons: Record<string, { air: number[]; rh: number[]; feel: number[]; ground: number[]; wind: number[]; fog: number[]; water: ClimateWater | null }>;
+}
+export interface ClimateZone {
+  id: string; name: string; ecosystems: string[]; exposure: string; exposureDe: string; water: boolean; body: WaterBody | null; surfaces: string[];
+  canopy: number; geothermal: number; why: string; seasons: Record<string, ClimateSeries>; spots: ClimateSpot[];
+}
+export interface ThermoPlayable {
+  name: string; tier: string; cover: string; cw: number; band: [number, number, number, number];
+  water: boolean; aquatic: boolean; gills: boolean; aerial: boolean; activity: string | null; de: string;
+  ideal: [number, number] | null; smallPools: boolean; dens: boolean;
+  quotes: { text: string; section: string }[]; home: string[]; route: string[];
+}
+export interface ThermoIndex {
+  note: string; tiers: Record<string, { de: string; text: string }>; covers: Record<string, string>;
+  playables: Record<string, ThermoPlayable>;
+}
+export interface ClimateIndex {
+  schemaVersion: number; generatedAt: string; note: string;
+  frame: { de: string; sunrise: number; sunset: number; windDay: [number, number]; depthCm: number };
+  seasons: { id: string; de: string; note: string; prevailing: string }[];
+  surfaces: Record<string, string>; zones: ClimateZone[]; thermo: ThermoIndex | null;
+}
 export interface PoiRadar {
   schemaVersion: number; generatedAt: string; note: string;
   areas: Array<{ id: string; name: string; ecosystems: string[]; landmarks: string[] }>;
@@ -326,9 +369,11 @@ export const api = {
   catalog: async () => result<Catalog>(await fetch('/api/catalog')),
   ecosystems: async () => result<EcosystemIndex>(await fetch('/api/ecosystems')),
   clamps: async () => result<ClampIndex>(await fetch('/api/clamps')),
+  restNests: async () => result<RestNestIndex>(await fetch('/api/rest-nests')),
   migration: async () => result<MigrationIndex>(await fetch('/api/migration')),
   foodWeb: async () => result<FoodWebIndex>(await fetch('/api/foodweb')),
   poiRadar: async () => result<PoiRadar>(await fetch('/api/poi-radar')),
+  climate: async () => result<ClimateIndex>(await fetch('/api/climate')),
   processedProfile: async (id: string) => result<ProcessedProfile>(await fetch(`/api/catalog/${encodeURIComponent(id)}`)),
   rules: async () => result<RulesData>(await fetch('/api/rules')),
   worldMap: async () => result<WorldMap>(await fetch('/api/map')),

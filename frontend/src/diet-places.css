@@ -1,0 +1,71 @@
+/* My Dinos by diet: a botanical study for herbivores, a fossil-skull plate for carnivores */
+.diet-place{position:relative;overflow:hidden;padding:34px 30px 30px;isolation:isolate}
+.diet-art{position:absolute;top:0;right:0;z-index:0;width:min(470px,58%);height:auto;pointer-events:none}
+.diet-head{position:relative;z-index:1;display:grid;gap:8px;min-height:150px;align-content:end}
+.diet-count{font-size:10px;font-weight:800;letter-spacing:.24em;text-transform:uppercase}
+.diet-head h2{font-family:'Cormorant Garamond',Georgia,serif;line-height:1}
+.diet-body{position:relative;z-index:1;display:grid;gap:22px;margin-top:22px}
+.diet-place .herd-species-head{border-bottom-color:currentColor}
+.diet-place .herd-card-image{isolation:isolate}
+
+/* Herbivores: deep sage with grain, a botanical study in the corner */
+.herbivores{border:1px solid #a9c79226;border-radius:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .85 0 0 0 0 .95 0 0 0 0 .8 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(70% 80% at 92% 0%,#2f4a33 0%,transparent 62%),radial-gradient(60% 50% at 0% 100%,#1d2e20,transparent 70%),linear-gradient(165deg,#18251a,#101912 78%);color:#e9efe2;box-shadow:0 24px 60px -30px #000c}
+.herbivores .diet-art{top:-4px;right:-6px;width:min(440px,60%);-webkit-mask-image:linear-gradient(100deg,transparent 0%,#000 30%);mask-image:linear-gradient(100deg,transparent 0%,#000 30%)}
+.botany-stem{fill:none;stroke:#8fae78;stroke-width:1.3;stroke-linecap:round}
+.frond-leaflet{fill:#4f7546;stroke:#9cbd84;stroke-width:.6;fill-opacity:.85}
+.frond-rib{stroke:#b9d3a3;stroke-width:.45;stroke-opacity:.7}
+.frond.far{opacity:.45}
+.botany-leaf{fill:#3f6339;stroke:#93b47c;stroke-width:.7}
+.botany-vein{fill:none;stroke:#b5cf9f;stroke-width:.7;stroke-opacity:.8}
+.botany-vein.fine{stroke-width:.45;stroke-opacity:.55}
+.petal{stroke:#fff3f6;stroke-width:.5;stroke-opacity:.55}
+.petal-vein{fill:none;stroke:#8f4f63;stroke-width:.5;stroke-opacity:.45}
+.blossom-heart{fill:#e7c66b;stroke:#9c7a2c;stroke-width:.6}
+.stamen{fill:#f4dd8f}
+.bud{fill:#d99aae;stroke:#fbe8ee;stroke-width:.5}
+.herbivores .diet-count{color:#a9c792}
+.herbivores .diet-head h2{color:#f6efe6;font-size:clamp(34px,4.2vw,48px);font-style:italic;font-weight:500;letter-spacing:.005em}
+.diet-rule{position:relative;z-index:1;width:min(360px,60%);height:1px;margin-top:18px;background:linear-gradient(90deg,#c9dcb8aa,#c9dcb81a)}
+.herbivores .herd-species-head{color:#a9c79233}
+.herbivores .herd-species-head h2{color:#f6efe6;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-style:italic;font-weight:500}
+.herbivores .herd-species-head a{color:#e8b4c5}
+.herbivores .herd-card{border-color:#a9c7921f;border-radius:14px;background:linear-gradient(180deg,#1b291ce6,#141f15e6);box-shadow:0 14px 34px -22px #000}
+.herbivores .herd-card:hover{border-color:#e8b4c566;box-shadow:0 18px 40px -20px #000,0 0 0 1px #e8b4c522}
+.herbivores .herd-card-title h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;font-weight:600;letter-spacing:0}
+.herbivores .herd-card-title>span{color:#e8b4c5}
+.herbivores .herd-card-playable{color:#a9c792}
+.herbivores .herd-genetics dt{color:#86a079}
+.herbivores .herd-chip{border-radius:999px;font-weight:600}
+.herbivores .herd-chip.dominant{border-color:#a9c79299;background:#a9c79214;color:#e7f2dc}
+.herbivores .herd-chip.recessive{border-color:#e8b4c566;border-style:solid;color:#efd4dd}
+.herbivores .herd-chip.mutation{border-color:#c8b2e299;background:#c8b2e214;color:#ece2f8}
+.herbivores .herd-bond-line,.herbivores .herd-bond-line span{color:#e8b4c5}
+
+/* Carnivores: charcoal stone with grain, ivory hairlines, a skull drawn like a museum plate */
+.carnivores{border:1px solid #efe7d61f;border-radius:4px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .95 0 0 0 0 .9 0 0 0 0 .82 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(60% 70% at 88% 10%,#3a2a22aa,transparent 65%),radial-gradient(50% 40% at 10% 100%,#2a110d66,transparent 70%),linear-gradient(170deg,#191513,#0e0c0b 80%);color:#ece4d3;box-shadow:0 24px 60px -30px #000e}
+.carnivores .diet-art{top:10px;right:10px;width:min(400px,56%);-webkit-mask-image:linear-gradient(100deg,transparent 0%,#000 26%);mask-image:linear-gradient(100deg,transparent 0%,#000 26%)}
+.skull-bone{stroke:#efe7d6;stroke-width:1.1;stroke-opacity:.62;stroke-linejoin:round}
+.skull-hole{fill:#0b0908;fill-opacity:.7;stroke:#efe7d6;stroke-width:.9;stroke-opacity:.5}
+.skull-line{fill:none;stroke:#efe7d6;stroke-width:.6;stroke-opacity:.32;stroke-linecap:round}
+.skull-tooth{stroke:#7b6d55;stroke-width:.5;opacity:.92}
+.skull-tooth.lower{opacity:.6}
+.carnivores .diet-count{color:#b86352}
+.carnivores .diet-head h2{color:#f2ebdd;font-size:clamp(30px,3.8vw,44px);font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.diet-serration{position:relative;z-index:1;display:block;width:min(360px,60%);margin-top:16px;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent);mask-image:linear-gradient(90deg,#000 40%,transparent)}
+.diet-serration path{fill:none;stroke:#efe7d6;stroke-width:.8;stroke-opacity:.5}
+.carnivores .herd-species-head{color:#efe7d624}
+.carnivores .herd-species-head h2{color:#f2ebdd;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.carnivores .herd-species-head a{color:#d98a77}
+.carnivores .herd-card{border-color:#efe7d61c;border-radius:2px;background:linear-gradient(180deg,#1a1614e6,#110f0ee6);box-shadow:0 14px 34px -22px #000}
+.carnivores .herd-card:hover{border-color:#b8635288;box-shadow:0 18px 40px -20px #000,0 0 0 1px #b8635233}
+.carnivores .herd-card-title h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.carnivores .herd-card-title>span{color:#d98a77}
+.carnivores .herd-card-playable{color:#c2ae8e}
+.carnivores .herd-genetics dt{color:#8c7f6a}
+.carnivores .herd-chip{border-radius:1px;font-weight:600}
+.carnivores .herd-chip.dominant{border-color:#efe7d680;background:#efe7d60f;color:#f2ebdd}
+.carnivores .herd-chip.recessive{border-color:#efe7d633;border-style:solid;color:#cfc4ae}
+.carnivores .herd-chip.mutation{border-color:#b8635299;background:#b863521a;color:#f0b9aa}
+.carnivores .herd-bond-line,.carnivores .herd-bond-line span{color:#d98a77}
+
+@media(max-width:700px){.diet-place{padding:26px 16px 18px}.herbivores .diet-art,.carnivores .diet-art{top:4px;width:80%;opacity:.35}.diet-head{min-height:96px}}

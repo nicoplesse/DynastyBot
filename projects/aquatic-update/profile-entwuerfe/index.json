@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "title": "Aquatic Update",
+  "status": "Entwurf, noch nicht eingereicht",
+  "updatedAt": "2026-11-03",
+  "intro": "Eigene Suggestion an Dynasty Realism, um das Leben im Meer wiederzubeleben. Grundlage ist eine Beute-Seite nach dem Vorbild des Para: sozial, passiv, robust, frisst nur Fisch. Darauf bauen drei Jäger mit eigener Nische und ein Raptor, der durch kluges Spiel gewinnt, nicht durch Werte. Die Profiltexte sind auf Englisch, so wie sie eingereicht würden.",
+  "sides": [
+    {
+      "id": "prey",
+      "label": "Beute-Seite",
+      "text": "Fressen nur Fisch, jagen keine Spieler und fliehen vor Apexen wie der Para."
+    },
+    {
+      "id": "giant",
+      "label": "Sanfter Riese",
+      "text": "Jagt nie, darf mit einer Kai-Gruppe ziehen. Niemand verteidigt den anderen."
+    },
+    {
+      "id": "hunter",
+      "label": "Jäger",
+      "text": "Jeder mit eigener Zeit, eigenem Raum und eigener Beute."
+    }
+  ],
+  "rules": [
+    {
+      "title": "Neue Einstufung „Piscivore“",
+      "text": "Frisst nur Fisch, Krebse und Muscheln und jagt keine Spieler. Zählt für Gruppen- und Mischgruppen-Regeln (8.1) wie ein Herbivore."
+    },
+    {
+      "title": "Leeds in der Kai-Gruppe",
+      "text": "1 Leeds je Gruppe. Keine Verteidigung in beide Richtungen, kein Stufenschutz. Looming Presence ist in gemischten Gruppen nicht erlaubt (Vorbild 8.1.1)."
+    },
+    {
+      "title": "Reviere im Wasser",
+      "text": "Prog hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Deino und Spino teilen sich die Reviere der Flussengen. Gezählt wird nur das Wasser, Landtiere im selben POI bleiben unberührt."
+    },
+    {
+      "title": "Lebensräume",
+      "text": "Ozeane für Prog, Livy und Tylo. Flussengen für Xiph, Deino und Spino, Tylo zieht durch. Palm Islands ist die einzige Front zwischen Prog und Deino oder Spino, Livy kommt nie dorthin."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "kaiwhekea",
+      "name": "Kaiwhekea",
+      "nickname": "Kai",
+      "order": 1,
+      "side": "prey",
+      "kind": "changed",
+      "role": "Para des Meeres",
+      "classification": "Medium Diurnal Aquatic Piscivore",
+      "activity": "Tagaktiv",
+      "analog": "Meeresschildkröte und Delfin-Schule",
+      "home": "Route des Leedsichthys: warme Salzwasser-Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal",
+      "group": "Bale bis 12 (mit Eurhino), dazu 1 Leeds",
+      "essence": "Sozial, passiv und robust: Kai leben in Gruppen mit Nachtwache und Schutzring, fressen nur Fisch und binden sich fürs Leben.",
+      "dynastyProfile": "kaiwhekea",
+      "mod": null,
+      "stats": {
+        "cw": 4000,
+        "health": 1000,
+        "armor": 1,
+        "heal": 2.2,
+        "dps": 56.92,
+        "swim": 600,
+        "sprint": 990,
+        "oxygen": "11:07",
+        "type": "Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1900
+      },
+      "changes": [
+        {
+          "label": "Health",
+          "from": "750",
+          "to": "1000"
+        },
+        {
+          "label": "Ernährung",
+          "from": "jagt bis Large",
+          "to": "nur Fisch"
+        },
+        {
+          "label": "Aktivität",
+          "from": "cathemeral",
+          "to": "tagaktiv"
+        },
+        {
+          "label": "Wanderung",
+          "from": "Küstenrouten",
+          "to": "Route des Leeds"
+        }
+      ]
+    },
+    {
+      "id": "eurhinosaurus",
+      "name": "Eurhinosaurus",
+      "nickname": "Eurhino",
+      "order": 2,
+      "side": "prey",
+      "kind": "changed",
+      "role": "Schneller Schwarm und Wache",
+      "classification": "Medium Cathemeral Aquatic Piscivore",
+      "activity": "Cathemeral",
+      "analog": "Delfine und Lachs",
+      "home": "Dieselbe Route wie Kai, oft in derselben Gruppe; Nistfluss wie bisher",
+      "group": "Schwarm ohne Obergrenze; in der Kai-Gruppe bis 12 zusammen",
+      "essence": "Laut, verspielt und schnell: Eurhino warnt die Kai-Gruppe früh und überlebt durch Tempo statt Kraft.",
+      "dynastyProfile": "eurhinosaurus",
+      "mod": null,
+      "stats": {
+        "cw": 3000,
+        "health": 600,
+        "armor": 1,
+        "heal": 2,
+        "dps": 32.74,
+        "swim": 700,
+        "sprint": 1050,
+        "oxygen": "11:07",
+        "type": "Aquatic",
+        "sprintTime": "3:42",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Ernährung",
+          "from": "jagt Kai „als Sport“",
+          "to": "nur Fisch"
+        },
+        {
+          "label": "Kai",
+          "from": "Lieblingsbeute",
+          "to": "Gruppenpartner"
+        },
+        {
+          "label": "Wanderung",
+          "from": "sesshaft",
+          "to": "Route des Leeds"
+        }
+      ]
+    },
+    {
+      "id": "leedsichthys",
+      "name": "Leedsichthys",
+      "nickname": "Leeds",
+      "order": 3,
+      "side": "giant",
+      "kind": "changed",
+      "role": "Sanfter Riese",
+      "classification": "Apex Cathemeral Aquatic Filter Feeder",
+      "activity": "Cathemeral",
+      "analog": "Walhai mit Pilotfischen",
+      "home": "Schleife durch die warmen Flussengen, Abstecher zum Abkühlen in die Ozeane; Balzgründe wie bisher",
+      "group": "Allein; darf mit 1 Kai-Gruppe ziehen",
+      "essence": "Jagt nie und gewinnt doch jedes Duell: Leeds zieht mit Kai und Eurhino, aber keiner verteidigt den anderen.",
+      "dynastyProfile": "leedsichthys",
+      "mod": null,
+      "stats": {
+        "cw": 5500,
+        "health": 1000,
+        "healthNote": "„Boosted health“, Wert nicht genannt; 1000 als Untergrenze",
+        "armor": 2,
+        "heal": 2,
+        "dps": 29.17,
+        "swim": 550,
+        "sprint": 600,
+        "oxygen": "unbegrenzt",
+        "type": "Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Gruppe",
+          "from": "keine anderen Arten",
+          "to": "1 Kai-Gruppe, ohne Verteidigung"
+        },
+        {
+          "label": "Mischgruppe",
+          "from": "–",
+          "to": "kein Looming Presence"
+        },
+        {
+          "label": "Route",
+          "from": "Schleife",
+          "to": "+ Abstecher in 4 Ozeane"
+        },
+        {
+          "label": "Schlaf",
+          "from": "irgendwo",
+          "to": "nachts bei der Gruppe"
+        }
+      ]
+    },
+    {
+      "id": "xiphactinus",
+      "name": "Xiphactinus",
+      "nickname": "Xiph",
+      "order": 4,
+      "side": "hunter",
+      "kind": "new",
+      "role": "Raptor des Meeres",
+      "classification": "Medium Cathemeral Aquatic Carnivore",
+      "activity": "Dämmerung",
+      "analog": "Tarpun, Barrakuda und Giant Trevally",
+      "home": "Nur die Salzwasser-Flussengen, nie der offene Ozean; Kinderstube in Coastland Swamp und Mudflats Venule",
+      "group": "Schwarm (battery) bis 6, alle jagen",
+      "essence": "Gewinnt durch Bewegung, nicht durch Kraft: lauert in den Flussengen auf durchziehende Gruppen, trennt Beute ab, blendet sie und lässt sie bluten.",
+      "dynastyProfile": null,
+      "mod": {
+        "name": "ArazoaXiph",
+        "id": "UGC_M_6YJ72ZYE58_SK"
+      },
+      "stats": {
+        "cw": 2400,
+        "health": 600,
+        "armor": 1,
+        "heal": 2,
+        "dps": 37.08,
+        "swim": 700,
+        "sprint": 1200,
+        "oxygen": "11:07",
+        "type": "Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Feinde",
+          "from": "–",
+          "to": "Tylo, Deino, Sarco (clampen)"
+        },
+        {
+          "label": "Krokodile",
+          "from": "–",
+          "to": "Sarco ab 4, Deino ab 5"
+        }
+      ]
+    },
+    {
+      "id": "tylosaurus",
+      "name": "Tylosaurus",
+      "nickname": "Tylo",
+      "order": 5,
+      "side": "hunter",
+      "kind": "changed",
+      "role": "Küsten-Apex",
+      "classification": "Apex Cathemeral Aquatic Carnivore",
+      "activity": "Cathemeral",
+      "analog": "Orca und Seeleopard",
+      "home": "Unverändert: Ozeane und Flussengen; einziger Apex in beiden",
+      "group": "Matrilinie bis 6, bis 2 auf der Jagd",
+      "essence": "Bleibt, wie er ist: Matrilinien an der Küste. Neu sind Rivalen und Gefahren, Prog bei Nacht und Livy aus der Tiefe.",
+      "dynastyProfile": "tylosaurus",
+      "mod": null,
+      "stats": {
+        "cw": 5000,
+        "health": 1000,
+        "armor": 1,
+        "heal": 2,
+        "dps": 51.46,
+        "swim": 550,
+        "sprint": 900,
+        "oxygen": "11:07",
+        "type": "Aquatic",
+        "sprintTime": "3:42",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Livyatan",
+          "from": "–",
+          "to": "Giant, nur Abwehr"
+        },
+        {
+          "label": "Xiphactinus",
+          "from": "–",
+          "to": "jagbar bis 3er-Gruppen"
+        },
+        {
+          "label": "Prognathodon",
+          "from": "–",
+          "to": "Revierkämpfe"
+        }
+      ]
+    },
+    {
+      "id": "prognathodon",
+      "name": "Prognathodon",
+      "nickname": "Prog",
+      "order": 6,
+      "side": "hunter",
+      "kind": "new",
+      "role": "Nächtlicher Revierhalter",
+      "classification": "Apex Nocturnal Aquatic Carnivore",
+      "activity": "Nachtaktiv",
+      "analog": "Jaguar, Riesenzackenbarsch und Tyrannotitan",
+      "home": "Nur Ozeane: halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal; Palm ist die Front zu Deino und Spino",
+      "group": "Bruderpaar (brace) oder Schwesternpaar (drift)",
+      "essence": "Der Tyrannotitan der Meere als Lauerjäger: hält nachts einen halben Ozean, jagt gern Deino und Spino und gewinnt mit dem ersten Biss.",
+      "dynastyProfile": null,
+      "mod": {
+        "name": "ArazoaProg",
+        "id": "UGC_M_Z857QV302V_SK"
+      },
+      "stats": {
+        "cw": 5700,
+        "health": 900,
+        "armor": 1.1,
+        "heal": 1.5,
+        "dps": 47.86,
+        "swim": 550,
+        "sprint": 820,
+        "oxygen": "9:48",
+        "type": "Aquatic",
+        "sprintTime": "2:47, getaucht 2:05",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Health",
+          "from": "700",
+          "to": "900"
+        },
+        {
+          "label": "Armor",
+          "from": "1",
+          "to": "1,1"
+        },
+        {
+          "label": "Heilung/s",
+          "from": "0,83",
+          "to": "1,5"
+        },
+        {
+          "label": "Revier",
+          "from": "–",
+          "to": "halber Ozean-POI"
+        },
+        {
+          "label": "Beaching",
+          "from": "–",
+          "to": "wie Tylo"
+        }
+      ]
+    },
+    {
+      "id": "livyatan",
+      "name": "Livyatan",
+      "nickname": "Livy",
+      "order": 7,
+      "side": "hunter",
+      "kind": "new",
+      "role": "Jäger aus der Tiefe",
+      "classification": "Giant Cathemeral Aquatic Carnivore",
+      "activity": "Cathemeral",
+      "analog": "Pottwal und Orca",
+      "home": "Alle Ozeane außer Palm Islands, Zuhause in Abyssal Depths",
+      "group": "2 Weibchen mit demselben Bullen, Bullen allein; jagt nur allein",
+      "essence": "Kommt aus der Tiefe und kümmert sich um die Großen: findet sie per Echolot, bremst und lähmt sie, dann beißt er zu.",
+      "dynastyProfile": null,
+      "mod": {
+        "name": "ArazoaLivy",
+        "id": "UGC_M_YNRE311081_SK"
+      },
+      "stats": {
+        "cw": 6000,
+        "health": 1200,
+        "armor": 1.1,
+        "heal": 1.5,
+        "dps": 35.5,
+        "swim": 500,
+        "sprint": 750,
+        "oxygen": "11:07, mit Trait 16:40",
+        "type": "Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Health",
+          "from": "950",
+          "to": "1200"
+        }
+      ]
+    },
+    {
+      "id": "deinosuchus",
+      "name": "Deinosuchus",
+      "nickname": "Deino",
+      "order": 8,
+      "side": "hunter",
+      "kind": "changed",
+      "role": "Krokodil der Flussengen",
+      "classification": "Apex Cathemeral Semi-Aquatic Carnivore",
+      "activity": "Cathemeral",
+      "analog": "Leistenkrokodil",
+      "home": "Nur noch Salzwasser-Flussengen und Palm Islands, mit Spinos Revierkarte",
+      "group": "Männchen allein oder mit Bruder; Weibchen mit Schwester oder als Paar",
+      "essence": "Faul, territorial und tödlich am Ufer: teilt sich die Flussengen mit Spino und kämpft auf Palm Islands mit Prog um Reviere.",
+      "dynastyProfile": "deinosuchus",
+      "mod": null,
+      "stats": {
+        "cw": 6000,
+        "health": 1000,
+        "armor": 1.1,
+        "heal": 1.25,
+        "dps": 43.67,
+        "swim": 500,
+        "sprint": 700,
+        "oxygen": "9:48",
+        "type": "Semi-Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Lebensraum",
+          "from": "bis in den offenen Ozean",
+          "to": "Flussengen und Palm"
+        },
+        {
+          "label": "Prognathodon",
+          "from": "–",
+          "to": "Revierkämpfe auf Palm"
+        },
+        {
+          "label": "Xiphactinus",
+          "from": "–",
+          "to": "jagt ihn mit Vergnügen"
+        }
+      ]
+    },
+    {
+      "id": "spinosaurus",
+      "name": "Spinosaurus",
+      "nickname": "Spino",
+      "order": 9,
+      "side": "hunter",
+      "kind": "changed",
+      "role": "Herr der Flüsse",
+      "classification": "Apex Cathemeral Semi-Aquatic Carnivore",
+      "activity": "Cathemeral",
+      "analog": "Grizzly und Eisbär",
+      "home": "Seen, Flüsse und Flussengen wie bisher; vom Meer nur noch Palm Islands",
+      "group": "Allein oder als Paar",
+      "essence": "Bleibt Herr der Flüsse, gibt aber das offene Meer ab: Im Salzwasser bleibt ihm Palm Islands, wo er mit Prog um Reviere kämpft.",
+      "dynastyProfile": "spinosaurus",
+      "mod": null,
+      "stats": {
+        "cw": 6000,
+        "health": 1100,
+        "armor": 1.1,
+        "heal": 1.25,
+        "dps": 72.67,
+        "swim": 500,
+        "sprint": 750,
+        "oxygen": "1:40, mit Trait 3:20",
+        "type": "Semi-Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1300
+      },
+      "changes": [
+        {
+          "label": "Meeresreviere",
+          "from": "5 Meeresflächen",
+          "to": "nur Palm Islands"
+        },
+        {
+          "label": "Prognathodon",
+          "from": "–",
+          "to": "Revierkämpfe auf Palm"
+        },
+        {
+          "label": "Xiphactinus",
+          "from": "–",
+          "to": "ignorieren sich vollständig"
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "sarcosuchus",
+      "name": "Sarcosuchus",
+      "nickname": "Sarco",
+      "side": "hunter",
+      "note": "Unverändertes Dynasty-Profil, nicht Teil des Vorschlags. Steht hier, weil er Xiph jagt und von Deino und Spino gejagt wird.",
+      "stats": {
+        "cw": 4500,
+        "health": 600,
+        "armor": 1,
+        "heal": 1.25,
+        "dps": 90.67,
+        "swim": 450,
+        "sprint": 880,
+        "oxygen": "9:48",
+        "type": "Semi-Aquatic",
+        "sprintTime": "2:47",
+        "accel": 1800
+      }
+    }
+  ]
+}

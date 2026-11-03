@@ -30,9 +30,9 @@ export function decodePNG(buf) {
     }
   }
   if (bpp === 3) return { W, H, data: full };
-  const rgb = Buffer.alloc(W * H * 3);
-  for (let i = 0, j = 0; i < full.length; i += 4, j += 3) { rgb[j] = full[i]; rgb[j + 1] = full[i + 1]; rgb[j + 2] = full[i + 2]; }
-  return { W, H, data: rgb };
+  const rgb = Buffer.alloc(W * H * 3), alpha = Buffer.alloc(W * H);
+  for (let i = 0, j = 0; i < full.length; i += 4, j += 3) { rgb[j] = full[i]; rgb[j + 1] = full[i + 1]; rgb[j + 2] = full[i + 2]; alpha[i / 4] = full[i + 3]; }
+  return { W, H, data: rgb, alpha };
 }
 
 const CRC_TABLE = Array.from({ length: 256 }, (_, n) => { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1; return c >>> 0; });
