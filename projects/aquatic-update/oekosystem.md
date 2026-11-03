@@ -72,7 +72,7 @@ Der Para fällt nicht sofort um, weil seine Werte fast die eines Apex sind. Zur 
 
 ### Wer wen im offenen Wasser einholt
 
-Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 820 › Livy 600 = Leeds 600. Livy bewegt sich laut Entwurf genau wie Leeds (entschieden am 03.11.); der Mod-Standard wäre 750.
+Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 820 › Livy 750 › Leeds 600.
 
 - **Xiphactinus** holt jeden ein. Damit ist er der natürliche Jäger der schnellen Beute, wie der Gepard bei der Gazelle.
 - **Kai und Eurhino** entkommen allen drei Apexen auf freier Strecke. Die Apexe müssen also lauern, und genau das gibt ihre Ausstattung her.
@@ -161,12 +161,12 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 
 **Passt gut:** Die Ausstattung ist genau deine Idee.
 - Er findet das Ziel per Echo und nähert sich ungesehen von unten.
-- Ab 60 m bremst er es, ab 30 m lähmt er es. Unter Concussive Blast sinkt Tylo von 900 auf 675, Prog von 820 auf 615. Mit Dreadful Clicking dazu sind es etwa 574 und 523, falls sich beide Bremsen multiplizieren. Erst dann holt ihn der Livy mit Sprint 600 ein (Bewegung wie Leeds).
+- Ab 60 m bremst er es, ab 30 m lähmt er es. Unter Concussive Blast sinkt Tylo von 900 auf 675, Prog von 820 auf 615.
 - Pressurized Hide (+50 % Sauerstoff, ~16:40) macht ihn zum Tieftaucher.
 - Für die Sozialstruktur gibt es Fähigkeiten für die Gruppe (Leviathan's Call, Pod Migration) und für Einzelgänger (Solo Singer). Das passt zum Pottwal: Weibchen in kleinen Gruppen, Bullen allein.
 
 **Widersprüche:**
-1. **Er ist der langsamste Apex.** Auf freier Strecke holt er weder Tylo noch Prog ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. **Entschieden (03.11.):** Er bewegt sich genau wie Leeds, also Schwimmen 550 und Sprint 600. Einem gemütlichen Tylo kann er damit folgen, einen sprintenden holt er nur mit beiden Bremsen ein.
+1. **Er ist der langsamste Apex.** Auf freier Strecke holt er weder Tylo noch Prog ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. Optional: Schwimmen 500 → 550, damit er einem gemütlich schwimmenden Tylo überhaupt folgen kann.
 2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → Health 950 → 1200. Dann gewinnt er gegen Tylo und Prog. Gegen Leeds verliert er nach reinen Werten hauchdünn, mit seinen schwächenden Fähigkeiten gewinnt er knapp.
 3. **Die Tiefsee ist kreative Freiheit.** Die Fossilien stammen aus einem Küstenmeer in Peru. Belegt ist dagegen, dass er die größte Beute seiner Zeit jagte, nämlich Bartenwale. Deshalb sollte Leeds, als Pendant zu den Bartenwalen, seine Hauptbeute sein, Tylo und Prog kommen danach.
 4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen.
@@ -245,10 +245,7 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 | Prognathodon | Armor | 1 | **1,1** | wie Tyrannotitan |
 | Prognathodon | Heilung/s | 0,83 | **1,5** | wie Tyrannotitan |
 | Livyatan | Health | 950 | **1200** | soll Tylo und Prog sicher schlagen |
-| Livyatan | Schwimmen | 500 | **550** | Bewegung wie Leeds (entschieden am 03.11.) |
-| Livyatan | Sprint-Schwimmen | 750 | **600** | Bewegung wie Leeds |
-| Livyatan | Ausdauer-Regen/s | 0,8 | **0,9** | Bewegung wie Leeds |
-| Livyatan | Trait-Boni auf Tempo, Wenden, Beschleunigung | bis +35 % | **keine** | Bewegung wie Leeds; der Leeds hat keine |
+| Livyatan | Schwimmen | 500 | 550 (optional) | einem gemütlichen Tylo folgen können |
 
 Tylosaurus, Eurhinosaurus, Leedsichthys und Xiphactinus bleiben unverändert.
 
@@ -309,7 +306,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 - ~~Darf Prog adulte Spino allein jagen?~~ Entschieden: ja.
 - ~~Sollen Xiph-Schwärme auch adulte Deino jagen dürfen?~~ Entschieden: ja, einen einzelnen ab 5 Tieren und mit großer Vorsicht; keine bevorzugte Beute.
 - Big Tree Overlook: Liegt auf der Leeds-Route, ist aber ein Fluss. Gehört er zu den Flussengen (dann lebt dort auch Xiph und Deino) oder bleibt er Süßwasser?
-- ~~Livyatan: Hinterhalt-Jäger mit Tempo 750 oder etwas schneller?~~ Entschieden: Bewegung genau wie Leeds (Schwimmen 550, Sprint 600, Wenden, Beschleunigung und Ausdauer gleich).
+- Livyatan: Hinterhalt-Jäger mit Tempo 750 oder etwas schneller?
 - ~~Können Xiphactinus und Livyatan im Meer trinken?~~ Geklärt: Aquatics verlieren Durst nur an Land.
 - ~~Gibt es auf der Karte tiefe Zonen?~~ Geklärt: **Abyssal Depths**, laut Karte „Deep eastern ocean“ mit Tiefsee und offenem Wasser. Dort lebt Livyatan.
 
