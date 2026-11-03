@@ -14,7 +14,7 @@ Neues Profil für den Mod `ArazoaLivy` (`UGC_M_YNRE311081_SK`). Dynasty hat daf�
 | Sonic Disruption | nicht gruppierte Tiere im Umkreis von 30 m: −20 % Schaden, keine Ausdauer-Regeneration für 15 s |
 | Leviathan's Call | +15 % Schaden für gruppierte Wale im Umkreis von 30 m, 30 s, bis 3× stapelbar; nur zur Verteidigung der Kälber |
 | Piercing Bite | 110 Schaden, Blutung, Gegner macht 10 s lang 10 % weniger Schaden |
-| Pressurized Hide | +50 % Sauerstoff (~16:40 unter Wasser), +7,5 % Tempo und Wenden, etwas weniger Armor |
+| Pressurized Hide | +50 % Sauerstoff (~16:40 unter Wasser), etwas weniger Armor; den Bonus von +7,5 % auf Tempo und Wenden setzt der Entwurf auf 0 (Bewegung wie Leeds) |
 | Solo Singer | ohne Gruppe: 20 % kürzere Abklingzeit der Stimm-Fähigkeiten, +15 % Ausdauer-Regeneration |
 
 So ergibt sich die Jagd:
@@ -24,7 +24,7 @@ So ergibt sich die Jagd:
 4. Bei 30 m lähmen (Concussive Blast).
 5. Zubeißen.
 
-Unter Concussive Blast fällt Tylo von 900 auf 675 und Prog von 820 auf 615. Livyatan selbst sprintet mit 750.
+Livyatan sprintet wie Leeds mit 600. Concussive Blast allein reicht deshalb nicht: Tylo fällt nur von 900 auf 675, Prog von 820 auf 615. Erst zusammen mit Dreadful Clicking sinken sie auf etwa 574 und 523, falls sich beide Bremsen multiplizieren. Das Zeitfenster dafür ist höchstens 10 s, denn Concussive Blast hält so lange. Kai (990) und Eurhino (1050) holt er nie ein, auch gebremst nicht (631 und 669).
 
 **Kampfwerte mit Health 1200** (Simulation, ohne Blutung):
 
@@ -52,7 +52,16 @@ Unter Concussive Blast fällt Tylo von 900 auf 675 und Prog von 820 auf 615. Liv
 - **Leeds ist ein Kampf auf Messers Schneide.** Nur nach Werten verliert Livy knapp. Jede seiner schwächenden Fähigkeiten dreht den Kampf, aber er endet mit wenig Health. Gewonnen wird durch kluges Spiel, ohne zusätzliche Werte.
 - **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Prog oder Xiph.
-- **Werte:** Health 950 → 1200. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
+- **Werte:** Health 950 → 1200.
+- **Bewegung wie Leeds** (entschieden am 03.11.): Schwimmen, Sprint, Beschleunigung, Wenden und Ausdauer sind in jeder Wachstumsstufe genau die des Leeds. Die Kurven dazu stehen unten unter „Dynasty Adjusted Stats“.
+  - Adult: Schwimmen 500 → 550, Sprint 750 → 600, Sprintdauer 2:47 und Beschleunigung 1300 bleiben.
+  - Jungtiere: Schwimmen in jeder Stufe 550, Sprint 600 / 750 / 690 / 630 / 600 wie beim Leeds.
+  - Ausdauer: Regeneration 0,8 → 0,9 und die Sprintkosten der Jungtiere wie beim Leeds.
+  - Trait-Boni auf Tempo, Wenden und Beschleunigung stehen auf 1, weil der Leeds keine hat. Diving Fluke und Quick Thinking haben damit keine Wirkung mehr. Pressurized Hide behält den Sauerstoff, Powerful Flippers die Ausdauer.
+  - Ausdauer-Traits bleiben, denn beide Arten haben eigene (Livy: Solo Singer, Marathon Swimmer …; Leeds: Shoaling, Shatter Stride …).
+  - Die Wende-Kurven sind schon gleich (2 / 1,75 / 1,5 / 1,25 / 1). Ob auch die Grundwerte in den Spieldateien gleich sind, muss ein Test im Spiel zeigen.
+  - An Land lässt sich der Sprint nicht angleichen (60 statt 100), weil er denselben Faktor nutzt wie der Sprint im Wasser. Für einen Wal spielt das keine Rolle.
+  - **Folge für die Jagd:** Er folgt jetzt einem gemütlich schwimmenden Tylo (beide 550), holt aber keinen sprintenden Apex mehr mit Concussive Blast allein ein. Er braucht beide Bremsen oder den ersten Biss aus dem Hinterhalt.
 
 **Realismus:** Die Tiefsee ist kreative Freiheit, denn die Fossilien stammen aus einem Küstenmeer in Peru. Belegt sind die riesigen Zähne in beiden Kiefern, und dass er große Beute jagte, vermutlich Bartenwale. Leeds als Hauptbeute ist deshalb die realistischste Beziehung im ganzen Ökosystem.
 
@@ -134,7 +143,7 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
 - **Hunting by sound:** Livyatan hunt by sound. In the darkness of deep water they send out clicks and listen to the echoes, which tell them where prey is long before they can see it.
 - **Diving:** They spend much of their time deep below, and rise to the surface to breathe in long, slow rolls.
 - **Pressurized Hide:** Individuals that wear Pressurized Hide can stay down far longer than any other aquatic.
-- **Pace:** Livyatan are not fast. They conserve their strength, cruising slowly, and only burst into speed for the final attack.
+- **Pace:** Livyatan move exactly like Leedsichthys. They cruise at the pace of other large aquatics, but cannot outsprint any other predator. Every hunt is decided before the chase begins.
 - **Silence:** Units are vocal among themselves, with soft coda clicks, but fall completely silent while stalking prey.
 
 ## Social Interaction
@@ -170,7 +179,7 @@ Livyatan hunt from below and by sound, not by speed.
 1. **Finding:** A clicking scan (Echolocation) reveals prey within 150 meters.
 2. **Approaching:** The hunter dives below its target and closes in silently from the dark.
 3. **Weakening:** Out of combat, a burst of Dreadful Clicking slows the target and weakens its armour.
-4. **Stunning:** At close range, Concussive Blast stuns the water around the target. It loses speed and acceleration, and the hunter can close the gap.
+4. **Stunning:** At close range, Concussive Blast stuns the water around the target. It loses speed and acceleration. Only together with Dreadful Clicking is a Tylosaurus or Prognathodon slowed enough for the hunter to close the gap. Kaiwhekea and Eurhinosaurus cannot be caught in a chase at all.
 5. **Striking:** Piercing Bite tears deep wounds and weakens the target's own bite. Tail Slam drives it away from the shore.
 
 A Livyatan always hunts alone, and picks targets that are alone too. Against a pair, the odds turn against it. When a hunt fails and the target escapes into the shallows, Livyatan let it go.
@@ -195,6 +204,13 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - Growth Time (hatchling–juvenile, juvenile–adolescent, adolescent–sub, sub–adult, in minutes): 20–60–75–85 = 240 total (proposal, like Leedsichthys)
 - Combat Weight: 6000 (mod default)
 - Adjusted Stats: Health 1200 (mod default 950)
+- Movement identical to Leedsichthys at every growth stage (hatchling / juvenile / adolescent / sub / adult):
+  - Core.MovementSpeedMultiplier: 1.1 / 1.1 / 1.1 / 1.1 / 1.1 (mod default 1.25 / 1.15 / 1.1 / 1.05 / 1), swim speed 550 at every stage
+  - Core.SprintingSpeedMultiplier: 0.7273 / 0.9091 / 0.8364 / 0.7636 / 0.7273 (mod default 1), sprint swim 600 / 750 / 690 / 630 / 600
+  - Core.StaminaRecoveryRate: 1.6 / 1.4 / 1.2 / 1 / 0.9 (mod default 1.2 / 1 / 0.9 / 0.85 / 0.8)
+  - StaminaFastSwimCostPerSecond and StaminaFastDiveCostPerSecond: 1 / 0.3 / 0.38 / 0.41 / 0.6 (mod default 0.3 / 0.4 / 0.5 / 0.55 / 0.6)
+  - Trait bonuses to speed, turning and acceleration set to 1: PowerfulFlippersSpeed, PowerfulFlippersTurnRate, PressurizedHideSpeed, PressurizedHideTurn, DivingFlukeAccel, QuickThinkingTurn, MarathonSwimmerAcceleration
+  - Unchanged, already identical: Core.TurnRadiusMultiplier, Core.TurnInPlaceRadiusMultiplier, Core.SwimmingAccelerationMultiplier, Core.MaxStamina
 
 ## Profile – Quick View
 
@@ -204,4 +220,5 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - Livyatan always hunt alone.
 - They must target solitary Leedsichthys, Tylosaurus and Prognathodon first, and never attack Tylosaurus or Prognathodon pairs.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
+- They move exactly like Leedsichthys, so they win by ambush, not by chase.
 - They never follow prey into the shallows.
