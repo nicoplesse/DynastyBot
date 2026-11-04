@@ -44,7 +44,7 @@ Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“),
 **Entscheidungen im Entwurf:**
 - **Stufe Giant** (entschieden am 03.11.), wie bisher nur Argentinosaurus.
   - Prog darf nur bis Apex jagen, einen adulten Livy also nicht, und darf sich nur wehren.
-  - **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger. Das ist die einzige Ausnahme von der Apex-Grenze, ein einzelner Tylo darf es nicht. Im Bissduell gewinnt der Livy (35 s, mit 22 % Health), die Jagd ist für die Tylos also sehr gefährlich. Gewinnen können sie nur durch Hit-and-Run.
+  - **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger. Das ist die einzige Ausnahme von der Apex-Grenze, ein einzelner Tylo darf es nicht. Im Bissduell gewinnt der Livy (35 s, mit 22 % Health), die Jagd ist für die Tylos also sehr gefährlich. Gewinnen können sie nur durch Hit-and-Run. Die Pflicht-Beute der Tylos geht vor: Sind Kai, Eurhino oder Leeds im POI, ist der Livy nicht dran (entschieden am 04.11.). Selbst Tylo traut sich kaum an ihn heran.
   - Sonst dürfte ihn nur jagen, wer „jede Stufe“ jagen darf. Im Wasser wäre das Deinosuchus, der aber nur noch in den Flussengen und auf Palm lebt, wo Livy nie hinkommt. Sein einziger Jäger sind damit Tylo-Paare.
   - Adoleszente Livys zählen eine Stufe tiefer, also als Apex, und bleiben für Tylo und Prog jagbar.
 - **Lebensraum** (entschieden am 03.11.): alle Ozeane außer Palm Islands, also Kelp Vale, Coastal Bluffs, Abyssal Depths und Stonebed Shoal. Zuhause ist Abyssal Depths. Palm ist zu flach für einen Jäger der Tiefe, und so bleibt Palm das eine Meer, in dem Prog vor ihm sicher ist.
@@ -93,7 +93,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - Livyatan always hunt alone. Only one Sub/Adult Livyatan may take part in a hunt, and members of its unit do not join or assist.
 - All members of a unit may defend their calves.
 - Livyatan may hunt up to Apex tier.
-- **Giant tier:** As a Giant, an adult Livyatan cannot be hunted by species limited to Apex tier, such as Prognathodon, which may only defend themselves against it. The one exception are Tylosaurus pairs: they may hunt adult Livyatan at any hunger level. Livyatan are the only Giant that a hunter limited to Apex tier may hunt. Livyatan keep a wider distance from engagements they are not part of, as the server rules ask of Giant species.
+- **Giant tier:** As a Giant, an adult Livyatan cannot be hunted by species limited to Apex tier, such as Prognathodon, which may only defend themselves against it. The one exception are Tylosaurus pairs: they may hunt adult Livyatan at any hunger level, but only when no Kaiwhekea, Eurhinosaurus or Leedsichthys are in the POI. Livyatan are the only Giant that a hunter limited to Apex tier may hunt. Livyatan keep a wider distance from engagements they are not part of, as the server rules ask of Giant species.
 - Livyatan only hunt in open and deep water. They do not follow prey into the shallows, and never attack creatures on land or within one body length of the shore.
 - Adolescent Livyatan do not assist with hunts.
 
@@ -161,7 +161,7 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
   - Livyatan see these predators as competitors and as prey.
   - A Livyatan that hears a Tylosaurus or Prognathodon in its waters hunts it down, or drives it out.
   - Echolocation is especially useful against hidden Prognathodon, which rest in caves and reefs during the day.
-  - Tylosaurus pairs are the only hunters of adult Livyatan. They strike and pull away, trying to wear the giant down. A Livyatan that keeps them in a straight fight wins.
+  - Tylosaurus pairs are the only hunters of adult Livyatan, and even they rarely dare it. Those that do strike and pull away, trying to wear the giant down. A Livyatan that keeps them in a straight fight wins.
 - **Kaiwhekea, Eurhinosaurus & Xiphactinus:**
   - These are too small and too fast to be worth the chase.
   - Livyatan usually ignore them, unless they are hungry or no larger prey is available.
@@ -210,4 +210,4 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - They must target solitary Leedsichthys, Tylosaurus and Prognathodon first. Pairs of Tylosaurus or Prognathodon are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
 - They never follow prey into the shallows.
-- Their only hunters are Tylosaurus pairs, which may hunt adult Livyatan at any hunger level.
+- Their only hunters are Tylosaurus pairs, which may hunt adult Livyatan at any hunger level, but rarely dare it.
