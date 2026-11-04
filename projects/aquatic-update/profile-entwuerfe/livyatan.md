@@ -60,6 +60,12 @@ Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“),
 - **Luft-Regel** (entschieden am 04.11.): Fällt sein Sauerstoff unter 25 %, muss der Livy abbrechen und auftauchen. Das zählt als Forfeit (4.8.2): Er darf die Jagd nicht neu beginnen, sich aber wehren. Vorbild ist die Rex-Regel, nach der er abbrechen muss, wenn die Ausdauer leer ist.
   - Damit wird der Leeds-Kampf ein Rennen: Der Livy muss töten, bevor ihm der Leeds mit der Tiefe und Crushing Pressure die Luft nimmt. Pottwal gegen Riesenkalmar.
   - Die 25 % sind ein Vorschlag und müssen im Spiel getestet werden, denn die Abklingzeit von Crushing Pressure ist unbekannt.
+- **Schützlinge: die Styracosterna** (entschieden am 04.11.). Livys jagen keine Styracosterna: das sind die Hadrosaurier mit ihren nächsten Verwandten Iguanodon und Lurdusaurus. Auf Dynasty sind das Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon und beide Lurdusaurus.
+  - Auch ihre Herdenbegleiter jagen sie nicht. Laut den Profilen sind das Bonapartenykus, Camptosaurus, Citipati, Struthiomimus und Halszkaraptor (bei Lurdusaurus).
+  - Der Grund: Livys sehen in ihnen eine gewisse Schönheit, so wie wilde Orcas Menschen in Ruhe lassen. Vielleicht sind es die tiefen Rufe der Hadrosaurier, die weit durchs Wasser tragen, denn Livys leben vom Hören.
+  - Deshalb fühlen sich diese Arten auf den Inseln und Küsten an Livys Gewässern sehr wohl: Ein Räuber aus dem Wasser greift dort selten an.
+  - **Third Party nur für die Schützlinge:** Jagt ein Räuber einen dieser Schützlinge, darf der Livy eingreifen, aber nur im offenen, tiefen Wasser und nie näher als eine Körperlänge am Ufer. Dafür braucht er Ausnahmen von 3.17 und 3.18. Sonst darf er nie third-partyen.
+  - **Nach dem Kill:** Ist der Schützling schon tot, darf der Livy nicht mehr eingreifen. Er darf dann nur einen Body Contest (6.9) um den Körper beginnen, um den Räuber zu vertreiben. Vom Körper frisst er nie.
 - **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Prog oder Xiph.
 - **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 5500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
@@ -81,6 +87,7 @@ Profile inspired by sperm whales, orcas and Livyatan paleobiology.
 - Livyatan never enter Palm Islands. Their shallow waters are no place for a hunter of the deep.
 - Livyatan have a tolerant nature towards other Livyatan, and an aggressive nature towards large aquatic predators.
 - Livyatan are not scavengers.
+- Livyatan never hunt styracosternans (hadrosaurs, Iguanodon and Lurdusaurus) or their herd companions, and protect them from other predators in the water.
 - Livyatan tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -110,7 +117,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **Smaller prey:** Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
 - **Leedsichthys:** Leedsichthys are Livyatan's main prey and its greatest rival. A grown Livyatan overpowers an adult Leedsichthys in a straight fight, but a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
 - **Spinosaurus & Deinosuchus:** Both keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
-- **Third-party:** Livyatan do not third-party engagements (3.18).
+- **Protected species:** Livyatan never hunt styracosternans: the hadrosaurs and their closest relatives, Iguanodon and Lurdusaurus. On this server these are Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon and both Lurdusaurus. They also never hunt the companions of their herds: Bonapartenykus, Camptosaurus, Citipati, Struthiomimus and Halszkaraptor.
+- **Third-party:** Livyatan may only third-party an engagement in which a predator hunts one of these protected species, and only in open, deep water, never within one body length of the shore (exemption from 3.17 and 3.18). Otherwise they never third-party.
+- **Bodies of protected species:** Once a protected animal has died, Livyatan may no longer step in. They may only start a body contest (6.9) to drive the predator away from the body. Livyatan never feed from the bodies of protected species.
 
 ## Nesting Limits
 
@@ -173,7 +182,11 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
   - These are too small and too fast to be worth the chase.
   - Livyatan usually ignore them, unless they are hungry or no larger prey is available.
 - **Spinosaurus & Deinosuchus:** Treated with caution near the coast, where they have the advantage. In open water they are fair game.
-- **Terrestrial species:** Terrestrial species are of no interest to Livyatan. Units sometimes watch them from a distance when nesting near the islands.
+- **Styracosternans and their companions:**
+  - Livyatan hold a strange fondness for hadrosaurs, Iguanodon and Lurdusaurus, and for the species that travel with their herds. They seem to see a certain beauty in them, much like wild orcas, which leave humans in peace. Perhaps it is the deep, resonant calls of the hadrosaurs, carrying far through the water.
+  - They never hunt them, and step in when a predator hunts them in open water.
+  - These species feel at ease on the islands and coasts along Livyatan waters, where an attack from the water is rare.
+- **Other terrestrial species:** Other terrestrial species are of no interest to Livyatan. Units sometimes watch them from a distance when nesting near the islands.
 
 ## Hunting Strategy
 
@@ -200,7 +213,8 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 
 ## Rule Exemptions
 
-- None required. The shallow-water limit is a profile restriction, not an exemption (see Engagement Limits).
+- **Third-party (3.17, 3.18):** Livyatan may third-party an engagement in which a predator hunts a protected species (styracosternans and their herd companions), but only in open, deep water. They are not on the list of 3.17, and 3.18 would otherwise forbid them to third-party semi-aquatic and aquatic hunters.
+- The shallow-water limit is a profile restriction, not an exemption (see Engagement Limits).
 
 ## Dynasty Adjusted Stats
 
@@ -217,5 +231,6 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - They must target solitary Leedsichthys, Tylosaurus and Prognathodon first. Pairs of Tylosaurus or Prognathodon are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
 - They never follow prey into the shallows.
+- They never hunt styracosternans (hadrosaurs, Iguanodon, Lurdusaurus) or their herd companions, and may third-party only to protect them.
 - Leedsichthys are their rivals: they drag every fight into the deep, and a Livyatan below 25% air must break off and surface.
 - Their only hunters are Tylosaurus pairs, which may hunt adult Livyatan at any hunger level, but rarely dare it.

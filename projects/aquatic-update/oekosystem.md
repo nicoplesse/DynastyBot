@@ -169,7 +169,7 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 1. **Er ist der langsamste Apex.** Auf freier Strecke holt er weder Tylo noch Prog ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. Optional: Schwimmen 500 → 550, damit er einem gemütlich schwimmenden Tylo überhaupt folgen kann.
 2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → **Entschieden (03.11.): CW 6000 → 8000, Health 950 → 2000.** Dann schlägt er einzelne Tylo, Prog und Leeds klar und auch Paare von Tylo und Prog. Nur Kai-Gruppen ab 3 Tieren schlagen ihn noch.
 3. **Die Tiefsee ist kreative Freiheit.** Die Fossilien stammen aus einem Küstenmeer in Peru. Belegt ist dagegen, dass er die größte Beute seiner Zeit jagte, nämlich Bartenwale. Deshalb sollte Leeds, als Pendant zu den Bartenwalen, seine Hauptbeute sein, Tylo und Prog kommen danach.
-4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen.
+4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen. **Ausnahme (entschieden am 04.11.):** Jagt ein Räuber einen seiner Schützlinge (Styracosterna und ihre Herdenbegleiter), darf der Livy im offenen Wasser eingreifen. Ist der Schützling schon tot, bleibt ihm nur ein Body Contest, und vom Körper frisst er nie.
 
 **Im Entwurf (`profile-entwuerfe/livyatan.md`) festgelegt:**
 - **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Prog darf nur bis Apex jagen und sich gegen einen adulten Livy nur wehren. **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger; das ist die einzige Ausnahme von der Apex-Grenze. Adoleszente Livys zählen als Apex.
@@ -290,6 +290,7 @@ Mit der neuen Kai-Health liegt Xiphactinus auf dem Niveau der Land-Raptoren. Mit
 2. **Leeds in der Kai-Gruppe:** 1 Leeds je Gruppe, keine Verteidigung in beide Richtungen, kein Stufenschutz. Looming Presence ist in gemischten Gruppen nicht erlaubt (Vorbild 8.1.1).
 3. **Reviere im Wasser:** Prog hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Deino und Spino teilen sich die Reviere der Flussengen. Gezählt wird nur das Wasser.
 4. **Lebensräume:** Ozeane für Prog, Livy und Tylo. Flussengen für Xiph, Deino und Spino, Tylo zieht durch. Palm Islands ist die einzige Front zwischen Prog und Deino oder Spino.
+5. **Third Party für den Livy:** Ausnahme von 3.17 und 3.18 im Livy-Profil, nur zum Schutz der Styracosterna (Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon, Lurdusaurus) und ihrer Herdenbegleiter (Bonapartenykus, Camptosaurus, Citipati, Struthiomimus, Halszkaraptor).
 
 ## Größtes Risiko: zu viele Jäger
 
