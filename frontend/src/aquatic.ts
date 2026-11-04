@@ -13,9 +13,10 @@ export type AquaticBlock =
 
 export interface AquaticStats {
   cw: number; health: number; healthNote?: string; armor: number; heal: number; dps: number;
-  swim: number; sprint: number; oxygen: string;
+  // null: not read from the game files yet (a mod that is not downloaded).
+  swim: number | null; sprint: number | null; oxygen: string;
   // Movement from the blueprints: water acceleration and sprint time; type decides agility in water.
-  type: 'Aquatic' | 'Semi-Aquatic'; sprintTime: string; accel: number;
+  type: 'Aquatic' | 'Semi-Aquatic'; sprintTime: string; accel: number | null;
 }
 // A species outside the suggestion that still matters to it (Sarcosuchus), shown for comparison only.
 export interface AquaticExtra { id: string; name: string; nickname: string; side: AquaticSide; note: string; stats: AquaticStats }
@@ -28,7 +29,7 @@ export interface AquaticRelations {
 export interface AquaticSummary {
   id: string; name: string; nickname: string; order: number; side: AquaticSide; kind: 'new' | 'changed';
   role: string; classification: string; activity: string; analog: string; home: string; group: string; essence: string;
-  dynastyProfile: string | null; mod: { name: string; id: string } | null;
+  dynastyProfile: string | null; mod: { name: string; id?: string } | null;
   stats: AquaticStats; changes: Array<{ label: string; from: string; to: string }>;
 }
 export interface AquaticDraft {

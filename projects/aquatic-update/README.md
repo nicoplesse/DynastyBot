@@ -2,7 +2,7 @@
 
 Eigene Suggestion an den Dynasty-Realism-Server (Path of Titans), die das Aquatic Life auf dem Server wieder beleben soll.
 
-**Status:** angelegt am 2026-11-03, noch kein Inhalt. Nichts eingereicht.
+**Status:** angelegt am 2026-11-03. Ökosystem, Werte und Profil-Entwürfe stehen, der Einreichungstext in `suggestion.md` fehlt noch. Nichts eingereicht. Am 2026-11-04 wurde der Prognathodon durch den Sachicasaurus (Primordial Tyrants) ersetzt.
 
 ## Dateien
 
@@ -10,13 +10,13 @@ Eigene Suggestion an den Dynasty-Realism-Server (Path of Titans), die das Aquati
 projects/aquatic-update/
   README.md       Diese Übersicht: Ziel, Ist-Zustand, offene Fragen
   suggestion.md   Entwurf der Suggestion, wie sie eingereicht wird (Englisch)
-  werte.md        Werte-Vergleich: 4 Aquatics + Mods Prognathodon, Xiphactinus, Livyatan
-  prognathodon-kurven.txt  Offizielle Standard-Kurven des Prognathodon von den Modmachern
+  werte.md        Werte-Vergleich: 4 Aquatics + Mods Sachicasaurus, Xiphactinus, Livyatan (dazu der verworfene Prognathodon)
+  prognathodon-kurven.txt  Offizielle Standard-Kurven des Prognathodon von den Modmachern (verworfen, nur noch Referenz)
   oekosystem.md   Bewertung: Rollen, Widersprüche, Stat- und Regel-Vorschläge
   tropeognathus.md  Entwurf: Tropeognathus und die Flotilla (kein Wassertier, deshalb nicht im App-Tab)
-  profile-entwuerfe/  Profil-Entwürfe auf Englisch: kaiwhekea, eurhinosaurus, leedsichthys, xiphactinus, livyatan, prognathodon, tylosaurus, deinosuchus, spinosaurus
+  profile-entwuerfe/  Profil-Entwürfe auf Englisch: kaiwhekea, eurhinosaurus, leedsichthys, xiphactinus, livyatan, sachicasaurus, tylosaurus, deinosuchus, spinosaurus
     index.json        Kartenwerte für den App-Tab „Aquatic Update“ (#/aquatic): Rolle, Werte, Änderungen
-    lebensraum.json   Wer wo lebt: Zonen, halbe Prog-Reviere, Leeds-Route; Karte im App-Tab
+    lebensraum.json   Wer wo lebt: Zonen, halbe Sachi-Reviere, Leeds-Route; Karte im App-Tab
     beziehungen.json  Wer jagt wen, flieht oder wehrt sich (Matrix im App-Tab, mit Sarcosuchus zum Vergleich)
 ```
 

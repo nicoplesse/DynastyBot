@@ -7,7 +7,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 - **Kluges Spiel statt Werte:** Er gewinnt durch Tempo, Wendigkeit, Blenden und Blutung. Die Werte bleiben unverändert, und Beute schützt keine Regel.
 - **Eigene Zeitnische:** Er jagt am liebsten in der Dämmerung, also genau dann, wenn Kai-Gruppen zur Nachtruhe ziehen oder morgens aufbrechen.
 - **Eigener Raum:** Er lebt nur in den warmen Salzwasser-Flussengen zwischen den Inseln, nie im offenen Ozean. Dort wartet er auf die Kai- und Eurhino-Gruppen, die auf der Route des Leedsichthys durchziehen.
-- **Angst vor allem, was ihn clampen kann:** Tylo, Deino und Sarco können einen adulten Xiph clampen (Tragkraft 3000, 3900 und 3100 gegen CW 2400). Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen: Sie versuchen, ihn zu clampen und aus dem Wasser zu tragen. Prog könnte ihn auch clampen, trifft ihn aber nicht, weil Xiph nicht in die Ozeane geht.
+- **Angst vor allem, was ihn clampen kann:** Tylo, Deino und Sarco können einen adulten Xiph clampen (Tragkraft 3000, 3900 und 3100 gegen CW 2400). Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen: Sie versuchen, ihn zu clampen und aus dem Wasser zu tragen. Sachi könnte ihn auch clampen, trifft ihn aber nicht, weil Xiph nicht in die Ozeane geht.
 - **Krokodile jagen ist ein gefährliches Vergnügen** (entschieden am 03.11.): Xiph darf Krokodile jagen, aber nur mit großer Vorsicht, und sie sind keine bevorzugte Beute.
   - Einen einzelnen Sarco (Large) darf ein Schwarm ab 4 jagen.
   - Einen einzelnen adulten Deino darf ein Schwarm ab 5 jagen. Das ist die einzige Ausnahme von der Apex-Grenze. 4 Xiph verlieren gegen ihn immer.
@@ -87,7 +87,7 @@ This group is known as a battery. Offspring do not travel with the battery until
   - With at least 4 in a hunting party, they may hunt up to Large tier.
   - They never hunt adult Apex or Giant creatures, with one exception: Deinosuchus (see Crocodylians).
 - **Hit-and-run:** Xiphactinus may strike, pull back and strike again. The hunt continues as long as the battery keeps the target in sight (3.3.1, 4.8.3).
-- **Fleeing:** Xiphactinus flee on sight from every hunter that can clamp them: adult Tylosaurus, Deinosuchus and Sarcosuchus. They also flee from Prognathodon and Livyatan, which they only meet if they stray into the open ocean.
+- **Fleeing:** Xiphactinus flee on sight from every hunter that can clamp them: adult Tylosaurus, Deinosuchus and Sarcosuchus. They also flee from Sachicasaurus and Livyatan, which they only meet if they stray into the open ocean.
 - **Crocodylians:** Crocodylians are not preferred prey, and are only hunted with great caution.
   - A battery of 4 or more may hunt a solitary Sub/Adult Sarcosuchus.
   - A battery of 5 or more may hunt a solitary Sub/Adult Deinosuchus. This is the only Apex they may hunt.
@@ -169,7 +169,7 @@ Orphans hide in the shallowest, most overgrown water they can find, and join any
   - Batteries keep their distance from basking crocodylians, and never rest near a bank.
   - Hunting them in turn is a dangerous pleasure, never a preference. Experienced leaders only try it when a crocodylian is alone, wounded or far from the bank, and even a won fight often costs the battery members.
 - **Spinosaurus:** Xiphactinus and Spinosaurus ignore each other completely. Batteries may hunt within a Spinosaurus territory.
-- **Prognathodon & Livyatan:** Both live in the open ocean, which batteries never enter.
+- **Sachicasaurus & Livyatan:** Both live in the oceans, which batteries never enter.
 - **Austroraptor & Concavenator:** They are competitors for Leedsichthys pups. Batteries avoid conflict with them, and give up a pup rather than fight over it.
 - **Pterosaurs:** Batteries watch fishing pterosaurs closely. Any that land on the water are a target.
 

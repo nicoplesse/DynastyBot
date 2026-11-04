@@ -1,32 +1,34 @@
 # Ökosystem im Wasser: Bewertung der Ideen
 
-Stand 2026-11-03. Diese Datei bewertet die Grundidee und schlägt Rollen, Profil-Änderungen und Werte vor.
+Stand 2026-11-04. Diese Datei bewertet die Grundidee und schlägt Rollen, Profil-Änderungen und Werte vor.
 
 **Entschieden (03.11.):** Kaiwhekea wird der Para des Meeres, Eurhinosaurus wird reiner Fischfresser. Alles andere ist noch Vorschlag. Die Profil-Entwürfe dazu liegen in `profile-entwuerfe/`. Zahlen kommen aus `werte.md`, Kill-Zeiten nach der Projekt-Formel: Schaden × (CW Angreifer ÷ CW Ziel) ÷ Armor.
 
 **Wichtig zu allen Kampfzahlen (Hinweis vom 03.11.):** Die Simulationen sind reine Bissduelle. Wendigkeit und Skill fehlen. Aquatic-Kämpfe entscheidet aber fast immer die Wendigkeit: Ein einzelner Tylo macht einen Spino im Wasser fertig, obwohl er das Bissduell verliert, weil er einfach um ihn herumschwimmt. Die Zahlen zeigen deshalb nur, wer im Stillstand gewinnt. Regeln, die an einem knappen Bissduell hängen, sind vorläufig:
-- **Prog gegen Spino:** „Allein chancenlos, deshalb nur zu zweit“ galt nur im Bissduell. Entschieden: Prog darf adulte Spino auch allein jagen.
-- **Prog gegen Deino:** Das knappe Bissduell kippt im Wasser vermutlich zu Prog.
-- **Prog gegen Tylo:** Hier gilt es umgekehrt, siehe die Tabelle unten. Der Health-Buff für Prog ist eher nötiger als gedacht.
+- **Sachi gegen Spino und Deino:** Im Bissduell verliert ein einzelner Sachi gegen beide. Wie zuvor beim Prog gilt: Im Wasser ist er als voller Aquatic der Wendigere, deshalb darf er beide auch allein jagen.
+- **Sachi gegen Tylo:** Im Bissduell ein Münzwurf, siehe die Tabelle unten.
 
-**Tylo gegen Prog: wer ist stärker?** Die Bewegungswerte stammen direkt aus den Blueprints (Bewegungs-Bauteil), Ausdauer und Luft aus den Kurven.
+**Prognathodon ersetzt durch Sachicasaurus (entschieden am 04.11.).** Der Prog-Mod von Arazoa ist kaum dokumentiert, und ob er beim Clampen beißen kann, steht nirgends. Der Sachicasaurus von Primordial Tyrants füllt dieselbe Lücke (nächtlicher Revierhalter in den Ozeanen) und ist mit allen Fähigkeiten dokumentiert. Primordial Tyrants stellt auf Dynasty schon rund 20 Mods. Das Gift fällt weg, dafür kommen Clamp und Knochenbruch. Weil er kein Tiefseetier ist (9:48 Luft, 20 Schaden/s ohne Luft, Beachcomber), lebt er in Kelp, Riffen, Untiefen und an Stränden. Entwurf: `profile-entwuerfe/sachicasaurus.md`.
 
-| | Tylosaurus | Prognathodon | Vorteil |
+**Tylo gegen Sachi: wer ist stärker?** Tylo-Werte aus den Blueprints und Kurven, Sachi-Werte aus NexLink (2026) und dem Path-of-Titans-Wiki. Das Schwimmtempo des Sachi fehlt noch, weil der Mod nicht heruntergeladen ist.
+
+| | Tylosaurus | Sachicasaurus | Vorteil |
 | --- | --- | --- | --- |
-| Schwimmen | 550 | 550 | gleich |
-| Beschleunigung im Wasser | 1300 | 1300 | gleich |
-| Sprint-Schwimmen | 900 | 820 | Tylo (+10 %) |
-| Sprintdauer | 3:42 | 2:47, getaucht 2:05 | Tylo |
-| Ausdauer-Regeneration/s | 0,9 | 0,7 | Tylo |
-| Luft unter Wasser | 11:07 | 9:48 | Tylo |
-| Übrige Bewegungsfelder | – | – | identisch; Prog ist im Bewegungs-Bauteil fast eine Kopie von Tylo, mit zwei zusätzlichen Feldern unbekannter Bedeutung |
-| Wende-Traits | in den Kurven keine fürs Wasser | Streamlined, Hypocercal Fin (+15 % Beschleunigung), Ravenous Toxin | Prog, nur mit Traits |
-| Bissduell (neue Werte) | verliert (Prog tötet in 19 s) | gewinnt | Prog |
-| Bremsen und Fesseln | Bone Snap (Knochenbruch), Headbutt | Neuro Toxin Snap (Sprint-Ausdauer und Luft weg), Fin Tear (−5 % Tempo), Breaching Clamp | Prog |
+| CW / Health / Armor | 5000 / 1000 / 1 | 5500 / 900 / 1,1 (Ironclad +10 %?) | gleich |
+| Heilung/s | 2,0 | 1,0 | Tylo |
+| Ausdauer-Regeneration/s | 0,9 | 0,66 | Tylo |
+| Sprintdauer | 3:42 | ~2:32 an der Oberfläche, ~5:03 getaucht | Tylo oben, Sachi unten |
+| Luft unter Wasser | 11:07 | 9:48, 20 Schaden/s ohne Luft | Tylo |
+| Tragkraft | 3000, mit Wide Gape 3700 | 4001 | Sachi: packt als einziger adulte Kai |
+| Knochenbruch | Bone Snap 30, Crushing Bite 20 | Bone Snap 40, nachts 48 | Sachi |
+| Bissduell (DPS 51,5 gegen 40,8) | gewinnt knapp (21 s, behält 5 %) | mit Ironclad gewinnt er knapp (22 s, 4 %) | gleich |
+| Paar gegen Paar | gewinnt knapp (31 s, 7 %) | – | gleich |
 
-- **Im offenen Wasser ist Tylo stärker.** Er hat dieselbe Grundwendigkeit, sprintet schneller und länger und braucht weniger Luft. Damit bestimmt er Abstand und Zeitpunkt. Einen Kampf, den er nicht will, kann er verlassen.
-- **Prog gewinnt nur, wenn er den Kampf anfängt.** Erstschlag von unten, dann Neuro Toxin Snap gegen Tylos Sprint und Fin Tear gegen sein Tempo. Steht der Kampf erst, gewinnt Prog das Bissduell.
-- **Das passt zum Entwurf:** Prog ist der nächtliche Lauerjäger, Tylo der offene Jäger. Ohne Health-Buff würde Prog beides verlieren, Bewegung und Bissduell.
+- **Im offenen Wasser und im langen Kampf ist Tylo stärker.** Mehr Ausdauer, schnellere Heilung, längerer Sprint an der Oberfläche. Er bestimmt Abstand und Zeitpunkt.
+- **Sachi gewinnt den ersten Moment.** Clamp, Knochenbruch bei Nacht und vermutlich die längste Sprintdauer unter Wasser.
+- **Jeder hat ein eigenes Vorrecht:** Nur Tylo-Paare dürfen den adulten Livy jagen. Nur Sachi kann einen adulten Kai packen.
+- **Für den Livy sind beide gleich schwer:** Livy gegen Sachi 19 s (behält 76 %), gegen Tylo 18 s (74 %); gegen ein Paar 38 s (27 %) bzw. 35 s (23 %).
+- **Community:** Die einzige Quelle ist die Fandom-Wiki-Seite (Stand September 2024). Dort steht einmal „pretty op“, im Trivia-Teil aber, er gelte oft als „unviable“, weil neuere Meeres-Mods ihn bei Tempo, Ausdauer und Werten schlagen. Gegen den Standard-Tylo (CW 4500, Health 900) gewinnt er klar (18 s gegen 24 s). Gegen den gebufften Dynasty-Tylo ist es ausgeglichen.
 - **Wendewerte:** Ein Feld für die Wendegeschwindigkeit lässt sich in den Blueprints nicht sicher benennen. Die Felder, die ich zuerst dafür hielt (30 bei Kai, 50 bei Tylo, 270 bei Spino), sind die Gehgeschwindigkeit an Land. Sicher vergleichbar sind nur Tempo, Beschleunigung, Sprintdauer und Luft, siehe die Tempo-Tabelle im Tab.
 - **Xiph gegen Krokodile:** Die Mindestzahlen (Sarco ab 4, Deino ab 5) sind vorsichtig. Xiph ist der schnellste Schwimmer, im Wasser reichen vermutlich weniger. Als Vorsichtsregel passen sie trotzdem.
 
@@ -38,11 +40,11 @@ Harte Wendigkeitswerte gibt es weder in den Kurven noch sicher benennbar in den 
 - **Para des Meeres:** Dafür passt **Kaiwhekea**. Eurhinosaurus kommt als schneller Wächter und Schwarmpartner dazu, beide fressen nur Fisch.
 - **Jäger:**
   - Tylosaurus bleibt der Jäger an der Küste.
-  - Prognathodon wird der nächtliche Revierhalter.
+  - Sachicasaurus wird der nächtliche Revierhalter und Flotilla-Jäger (ersetzt den Prognathodon).
   - Livyatan jagt aus der Tiefe die großen Tiere.
   - Xiphactinus wird das Raptor-Profil.
 - **Leedsichthys** bleibt der friedliche Riese. Er darf mit einer Kai-Gruppe gruppieren (1 Leeds je Gruppe). Verteidigt wird nicht, weder von ihm noch für ihn.
-- **Ohne einzelne Wertänderungen klappt es nicht.** Kai fällt heute zu schnell um. Livyatan schlägt Tylosaurus nur knapp, Prognathodon ist für einen Revierhalter zu zerbrechlich.
+- **Ohne einzelne Wertänderungen klappt es nicht.** Kai fällt heute zu schnell um. Livyatan schlägt Tylosaurus nur knapp. Der Sachicasaurus braucht keine Änderung.
 - **Xiphactinus gewinnt durch kluges Spiel, nicht durch Werte.** Die Beute bekommt keinen Schutz durch Regeln. Sie schützt sich durch eigenes Verhalten.
 
 ## Was den Para ausmacht
@@ -67,15 +69,15 @@ Der Para fällt nicht sofort um, weil seine Werte fast die eines Apex sind. Zur 
 | Sanfter Riese | Leedsichthys | Walhai mit Pilotfischen | offenes Meer, Wanderrouten |
 | Raptor | Xiphactinus | Barrakuda- und Makrelen-Rudel | nur die Salzwasser-Flussengen |
 | Küsten-Apex | Tylosaurus | Orca, Seeleopard | Ozeane und Flussengen |
-| Nächtlicher Revierhalter | Prognathodon | Jaguar, Riesenzackenbarsch | nur Ozeane, halbe Reviere |
+| Nächtlicher Flotilla-Jäger | Sachicasaurus | Jaguar, Leistenkrokodil | Kelp, Riffe, Untiefen und Strände der Ozeane, halbe Reviere |
 | Apex der Apexe | Livyatan | Pottwal mit Orca-Jagdweise | alle Ozeane außer Palm Islands |
 
 ### Wer wen im offenen Wasser einholt
 
-Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 820 › Livy 750 › Leeds 600.
+Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Livy 750 › Leeds 600. Sachi fehlt noch, der Mod ist nicht heruntergeladen.
 
 - **Xiphactinus** holt jeden ein. Damit ist er der natürliche Jäger der schnellen Beute, wie der Gepard bei der Gazelle.
-- **Kai und Eurhino** entkommen allen drei Apexen auf freier Strecke. Die Apexe müssen also lauern, und genau das gibt ihre Ausstattung her.
+- **Kai und Eurhino** entkommen Tylo und Livy auf freier Strecke; Sachis Tempo ist noch offen. Die Apexe müssen also lauern, und genau das gibt ihre Ausstattung her. Sachi muss nicht verfolgen: Was er gepackt hat, entkommt nicht.
 - **Livyatan** holt keinen anderen Apex ein. Er funktioniert nur aus dem Hinterhalt (siehe unten).
 
 ## Bewertung je Idee
@@ -126,30 +128,37 @@ Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Prog 8
 Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen Arten:
 - **Beute:** Xiphactinus kommt zur Beute dazu.
 - **Livyatan:** Ein einzelner Tylo flieht vor Livy. Ein Tylo-Paar darf ihn jagen, bei jedem Hunger, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.). Im Bissduell verliert es gegen einen adulten Livy mit CW 8000 und Health 2000 (Livy behält 22 %), gewinnen kann es nur durch Hit-and-Run. Die Pflicht-Beute (Kai, Eurhino, Leeds) geht vor (entschieden am 04.11.), und selbst Tylo traut sich kaum an einen Livy heran.
-- **Prognathodon:** Adulte Prog jagt Tylo nur bei Hunger ≤ 35 %, wie Spino und Deino. Revier-Herausforderungen nimmt er an: Verliert er, muss er gehen (6.7.2). Gewinnt er, muss der Prog ihn 15 min dulden (6.7.3.1).
+- **Sachicasaurus:** Ebenbürtiger Rivale. Adulte Sachi jagt Tylo nur bei Hunger ≤ 35 %, wie Spino und Deino. Revier-Herausforderungen nimmt er an: Verliert er, muss er gehen (6.7.2). Gewinnt er, muss der Sachi ihn 15 min dulden (6.7.3.1).
 - **Xiphactinus:** Tylo darf ihn jagen, wenn er allein oder in Gruppen bis 3 ist. Gegen 6 Xiph verliert ein einzelner Tylo.
 - Entwurf: `profile-entwuerfe/tylosaurus.md`.
 
-### Prognathodon als nächtlicher Revierhalter („Tyrannotitan der Meere“)
+### Sachicasaurus als nächtlicher Flotilla-Jäger („Tyrannotitan der Meere“)
+
+Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Beaching-Regeln stammen aus dem Prog-Entwurf, die Jagdweise ist neu.
 
 **Passt gut:**
-- Die Struktur des Tyrannotitan lässt sich übernehmen: Männchen halten das Revier, oft als Bruderpaar (sett). Weibchen sind nomadisch und nisten im Revier eines Männchens. Aktiv ist er nachts.
-- Seine Ausstattung passt zum Lauerjäger: Ambusher-Trait, Toxic Lunge, Breaching Clamp aus dem Sprung, Gift. Shell Crusher Song (Armor −15 %) passt zum echten Prognathodon, dessen massive Zähne für harte Beute wie Schildkröten gebaut waren.
-- Er hat den schlechtesten Sauerstoff (9:48). Das spricht für Flachwasser und Riffe und trennt ihn sauber von Livyatan in der Tiefe.
+- Die Struktur des Tyrannotitan lässt sich übernehmen: Männchen halten das Revier, oft als Bruderpaar. Weibchen sind nomadisch und nisten im Revier eines Männchens. Aktiv ist er nachts.
+- Kräftig, aber wendig: Pliosaurier mit großem Kopf und vier Flossen. Aileron Roll, Breach und Lunge passen zum Hinterhalt.
+- Moonlight Hunter (+20 % Knochenbruch nachts), Fisch-Tracker und gute Sicht unter Wasser passen zum Nachtjäger, der zwischen den Jagden fischt.
+- Er hat wenig Luft (9:48) und nimmt ohne Luft 20 Schaden pro Sekunde. Dazu kommt Beachcomber. Das spricht für Kelp, Untiefen und Strände und trennt ihn sauber von Livyatan in der Tiefe. Das echte Tier lebte in einem flachen Binnenmeer (Paja-Formation, Kolumbien).
+- **Seine besondere Art:** Mit Tragkraft 4001 ist er der einzige Jäger, der einen adulten Kai packen kann. Er sprengt mit Aileron Roll eine schlafende Flotilla, packt einen Kai am Rand und zieht ihn ins Kelp. Was er gepackt hat, entkommt nicht, egal wie schnell es ist.
 
-**Widersprüche:**
-1. **Für einen Revierhalter ist er zu zerbrechlich.** Er hat nur 700 Health bei CW 5700 und heilt am langsamsten (0,83/s). Ein Revier zu halten heißt aber, immer wieder zu kämpfen. → Health 900, Armor 1,1, Heilung 1,5, also die Werte des Tyrannotitan. Dann schlägt er Tylo im Duell (18 s gegen 22 s), verliert aber gegen Livyatan.
-2. **Die Regeln kennen kein „mittleres“ Revier.** Para beansprucht kleine Reviere am Nest, Tyrannotitan einen ganzen POI.
-   - Entschieden (03.11.): Das Revier ist ein halber Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Es gibt acht, in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal.
-   - Landtiere im selben POI bleiben davon unberührt.
-3. **Lauerjäger oder Brutalo:** Tyrannotitan ist laut und brutal, Prognathodons Ausstattung ist die eines Lauerjägers. Mein Vorschlag: Er ist still, bis er herausfordert. Gerufen wird nur nach Regel 6.7.
+**Kein Widerspruch bei den Werten:** Die Mod-Werte (CW 5500, Health 900, Armor 1,1) passen ohne Änderung. Gegen Tylo ist es ein Münzwurf, für Livy ist er so schwer wie ein Tylo (siehe oben).
 
-**Im Entwurf (`profile-entwuerfe/prognathodon.md`) festgelegt:**
-- Prog lebt nur in den Ozeanen. Männchen halten allein oder als Bruderpaar (brace) einen halben Ozean-POI. Weibchen ziehen allein oder als Paar (drift) umher.
-- Herausgefordert werden Tylo, fremde Prog-Männchen und auf Palm Islands auch Deino und Spino. Er jagt Deino und Spino gern, muss aber nicht; adulte Spino nur zu zweit. Xiph begegnet er kaum, denn der lebt nur in den Flussengen. Vor Livy flieht er.
+**Was man beobachten sollte:**
+1. **Ein gepackter Kai ist verloren** (Entscheidung vom 04.11.). Kai fliehen vor Apexen, die Bale hilft ihm also nicht.
+   - Hält der Sachi einen Kai, macht er rund 19 Schaden pro Sekunde (Kauen und Thrash). Für einen vollen Kai braucht er damit etwa eine Minute. Ob seine Ausdauer dafür reicht, muss das Spiel zeigen.
+   - Der Schutz der Kai liegt vor dem Griff: Nachtwache, Ruhe weg von Kelp und Riffen, und hohe Felsen, auf die der Sachi nicht kommt.
+   - Beobachten, ob ein Sachi unter einem Felsen wartet, bis der Kai bei 50 % Durst ins Wasser zurück muss (rund 20 min).
+2. **Heilung 1,0/s.** Für einen Revierhalter niedrig. Erst anheben (auf 1,5), wenn er im Test seine Reviere nicht halten kann.
+3. **Tempo und Wendigkeit** sind noch nicht aus den Mod-Dateien gelesen.
+
+**Im Entwurf (`profile-entwuerfe/sachicasaurus.md`) festgelegt:**
+- Er lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Männchen halten allein oder als Bruderpaar (brace) einen halben Ozean-POI. Weibchen ziehen allein oder als Paar (drift) umher. Abyssal Depths meidet er.
+- Herausgefordert werden Tylo, fremde Sachi-Männchen und auf Palm Islands auch Deino und Spino. Er jagt Deino und Spino gern, muss aber nicht, auch allein. Xiph begegnet er kaum, denn der lebt nur in den Flussengen. Vor Livy flieht er; in Kelp und Untiefen ist er vor ihm sicher.
 - Tagsüber ziehen Kai-Gruppen unbehelligt durch sein Revier, nachts entscheidet ihr Ruheplatz.
-- Kai fliehen vor Apexen auf Sicht. Die Nachtwache schlägt also Alarm, statt zu kämpfen. Er muss mit dem ersten Biss den Sprint der Beute nehmen (Neuro Toxin Snap), sonst entkommt sie.
-- Nur am Nest stellen sich Kai, und 2 Eltern schlagen einen einzelnen Prog.
+- Kai fliehen vor Apexen auf Sicht. Die Nachtwache schlägt also Alarm, statt zu kämpfen. Er muss aus dem Hinterhalt packen, sonst entkommt die Beute.
+- Nur am Nest stellen sich Kai, und 2 Eltern schlagen einen einzelnen Sachi.
 
 ### Livyatan als Jäger aus der Tiefe
 
@@ -161,33 +170,33 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 
 **Passt gut:** Die Ausstattung ist genau deine Idee.
 - Er findet das Ziel per Echo und nähert sich ungesehen von unten.
-- Ab 60 m bremst er es, ab 30 m lähmt er es. Unter Concussive Blast sinkt Tylo von 900 auf 675, Prog von 820 auf 615.
-- Pressurized Hide (+50 % Sauerstoff, ~16:40) macht ihn zum Tieftaucher.
+- Ab 60 m bremst er es, ab 30 m lähmt er es. Unter Concussive Blast sinkt Tylo von 900 auf 675.
+- Pressurized Hide (+50 % Sauerstoff) macht ihn zum Tieftaucher. Mit dem verdoppelten Vorrat (entschieden am 04.11.) bleibt er ~22:13 unten, mit dem Trait ~33:20.
 - Für die Sozialstruktur gibt es Fähigkeiten für die Gruppe (Leviathan's Call, Pod Migration) und für Einzelgänger (Solo Singer). Das passt zum Pottwal: Weibchen in kleinen Gruppen, Bullen allein.
 
 **Widersprüche:**
-1. **Er ist der langsamste Apex.** Auf freier Strecke holt er weder Tylo noch Prog ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. Optional: Schwimmen 500 → 550, damit er einem gemütlich schwimmenden Tylo überhaupt folgen kann.
-2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → **Entschieden (03.11.): CW 6000 → 8000, Health 950 → 2000.** Dann schlägt er einzelne Tylo, Prog und Leeds klar und auch Paare von Tylo und Prog. Nur Kai-Gruppen ab 3 Tieren schlagen ihn noch.
-3. **Die Tiefsee ist kreative Freiheit.** Die Fossilien stammen aus einem Küstenmeer in Peru. Belegt ist dagegen, dass er die größte Beute seiner Zeit jagte, nämlich Bartenwale. Deshalb sollte Leeds, als Pendant zu den Bartenwalen, seine Hauptbeute sein, Tylo und Prog kommen danach.
-4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen. **Ausnahme (entschieden am 04.11.):** Jagt ein Räuber einen seiner Schützlinge (Styracosterna und ihre Herdenbegleiter), darf der Livy im offenen Wasser eingreifen. Das gilt gegen jeden Fleischfresser bei einer aktiven Jagd, auch gegen Landjäger wie den Tyrannosaurus, die ihrer Beute ins Wasser folgen, und gegen andere Mosasaurier. Jagt ein Räuber etwas anderes, darf er nie third-partyen; dann lässt er ihn die Arbeit machen und fordert danach den Körper per Body Contest heraus. Den Körper eines toten Schützlings ficht er nicht an, denn er frisst nie davon.
+1. **Er ist der langsamste Apex.** Auf freier Strecke holt er Tylo nicht ein. Das ist in Ordnung, solange er nur aus dem Hinterhalt jagt; das sollte das Profil so festschreiben. Optional: Schwimmen 500 → 550, damit er einem gemütlich schwimmenden Tylo überhaupt folgen kann.
+2. **Er gewinnt gegen Tylo nur knapp** (23 s gegen 24 s). Für den „Apex der Apexe“ ist das zu wenig. → **Entschieden (03.11.): CW 6000 → 8000, Health 950 → 2000.** Dann schlägt er einzelne Tylo, Sachi und Leeds klar und auch Paare von Tylo und Sachi. Nur Kai-Gruppen ab 3 Tieren schlagen ihn noch.
+3. **Die Tiefsee ist kreative Freiheit.** Die Fossilien stammen aus einem Küstenmeer in Peru. Belegt ist dagegen, dass er die größte Beute seiner Zeit jagte, nämlich Bartenwale. Deshalb sollte Leeds, als Pendant zu den Bartenwalen, seine Hauptbeute sein, Tylo und Sachi kommen danach.
+4. **Regel 3.18:** Aquatics dürfen sich nicht in Kämpfe anderer Aquatics einmischen. Er räumt also nur Apexe ab, die gerade nicht selbst jagen. **Ausnahme (entschieden am 04.11.):** Jagt ein Räuber einen seiner Schützlinge (Styracosterna und ihre Herdenbegleiter), darf der Livy im offenen Wasser eingreifen. Das gilt gegen jeden Fleischfresser bei einer aktiven Jagd, auch gegen Landjäger wie den Tyrannosaurus, die ihrer Beute ins Wasser folgen, und gegen Meeresjäger wie Tylo und Sachi. Jagt ein Räuber etwas anderes, darf er nie third-partyen; dann lässt er ihn die Arbeit machen und fordert danach den Körper per Body Contest heraus. Den Körper eines toten Schützlings ficht er nicht an, denn er frisst nie davon.
 
 **Im Entwurf (`profile-entwuerfe/livyatan.md`) festgelegt:**
-- **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Prog darf nur bis Apex jagen und sich gegen einen adulten Livy nur wehren. **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger; das ist die einzige Ausnahme von der Apex-Grenze. Adoleszente Livys zählen als Apex.
+- **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Sachi darf nur bis Apex jagen und sich gegen einen adulten Livy nur wehren. **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger; das ist die einzige Ausnahme von der Apex-Grenze. Adoleszente Livys zählen als Apex.
 - Höchstens 2 Weibchen, die sich mit demselben Bullen gepaart haben (oder nur eine von beiden), Bullen immer allein (entschieden am 03.11.). Große Gruppen würden den stillen Jäger verraten. Er lebt in allen Ozeanen außer Palm Islands. **Gejagt wird nur allein** (entschieden am 03.11.), wie bei echten Pottwalen, die in Familien leben, aber einzeln in die Tiefe tauchen. Leviathan's Call dient nur der Verteidigung der Kälber.
-- Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden. Paare von Tylo und Prog darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
+- Einzelne Leeds, Tylo und Sachi müssen zuerst gejagt werden; Sachi zählt nur im offenen Wasser, in Kelp und Untiefen folgt Livy nicht. Paare von Tylo und Sachi darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
 - Er kommt nicht ins Flachwasser, außer zum Nisten an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.
 - Simulation mit CW 8000 und Health 2000 (% = Health, die dem Livy bleibt):
-  - Livy schlägt einen einzelnen Tylo (18 s, 74 %) und einen einzelnen Prog (20 s, 69 %).
+  - Livy schlägt einen einzelnen Tylo (18 s, 74 %) und einen einzelnen Sachi (19 s, 76 %).
   - Einen Leeds schlägt er klar: 39 s mit 65 %, wenn der Leeds 1000 Health hat, 78 s mit 29 % bei 2000. Der Dynasty-Wert des Leeds ist unbekannt.
-  - Ein Tylo-Paar schlägt er in 35 s (22 %), ein Prog-Paar knapp in 40 s (7 %). Mit Sonic Disruption bleiben ihm 38 % bzw. 26 %.
+  - Ein Tylo-Paar schlägt er in 35 s (22 %), ein Sachi-Paar in 38 s (27 %). Mit Sonic Disruption bleiben ihm gegen das Tylo-Paar 38 %.
 - Gegen eine Kai-Gruppe mit 3 Verteidigern verliert ein einzelner Livy in 26 s. Genau so steht auch ein einzelner T-Rex gegen 3 Paras da. Deshalb müssen Kai wie der Para vor Apexen fliehen, statt sich zu stellen.
 
-**Folge für Tylosaurus und Prognathodon:** Ein einzelner Tylo flieht vor Livy, ein Tylo-Paar darf ihn jagen. Prog flieht, allein und als Paar; ein Prog-Paar darf sich wehren, verliert aber knapp. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/prognathodon.md`.
+**Folge für Tylosaurus und Sachicasaurus:** Ein einzelner Tylo flieht vor Livy, ein Tylo-Paar darf ihn jagen. Sachi flieht, allein und als Paar; ein Sachi-Paar darf sich wehren, verliert aber. Für Livy sind beide gleich schwer zu töten, die Livy-Jagd bleibt aber das Vorrecht der Tylo-Paare. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/sachicasaurus.md`.
 
 **Rivalen der Tiefe: Livy und Leeds** (entschieden am 04.11.):
 - Der Leeds flieht nie vor dem Livy. Fliehen brächte nichts, denn der Livy ist schneller (750 gegen 600), und in der Tiefe gibt es kein Versteck. Vorbild sind Buckelwale, die auf jagende Orcas losgehen.
 - Er zieht jeden Kampf in die Tiefe, wo er nie Luft holen muss. Ohne Junge ist er aggressiv (duldet keinen Livy im Umkreis von 5 Körperlängen, respektiert dessen Forfeit), als Vater mit Jungen headstrong (greift auch nach einem Forfeit oder während der Livy Luft holt weiter an, bis der Livy den POI oder die Sichtweite verlässt). Das gilt nur gegenüber dem Livy.
-- **Luft-Regel für den Livy:** Unter 25 % Sauerstoff muss er abbrechen und auftauchen; das zählt als Forfeit. Im Bissduell gewinnt der Livy klar, der Kampf wird aber ein Rennen gegen die eigene Luft, wie beim Pottwal gegen den Riesenkalmar. Die 25 % müssen im Spiel getestet werden.
+- **Luft-Regel für den Livy:** Unter 25 % Sauerstoff muss er abbrechen und auftauchen; das zählt als Forfeit. Im Bissduell gewinnt der Livy klar, der Kampf wird aber ein Rennen gegen die eigene Luft, wie beim Pottwal gegen den Riesenkalmar. Die 25 % müssen im Spiel getestet werden. Mit dem doppelten Sauerstoff-Vorrat erreicht er die Grenze erst nach ~16:40 unter Wasser (mit Pressurized Hide ~25:00), knapp wird es also vor allem nach einer langen Suche in der Tiefe.
 
 ### Xiphactinus als Raptor
 
@@ -247,28 +256,26 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 | Art | Wert | Jetzt | Vorschlag | Warum |
 | --- | --- | --- | --- | --- |
 | Kaiwhekea | Health | 750 | **1000** | Para-Rolle: soll nicht sofort umfallen; CW bleibt 4000, damit Xiph nicht zu schwach wird |
-| Prognathodon | Health | 700 | **900** | Revier halten heißt wiederholt kämpfen |
-| Prognathodon | Armor | 1 | **1,1** | wie Tyrannotitan |
-| Prognathodon | Heilung/s | 0,83 | **1,5** | wie Tyrannotitan |
 | Livyatan | CW | 6000 | **8000** | zweiter Giant nach Argentinosaurus (9000) |
-| Livyatan | Health | 950 | **2000** | soll Tylo und Prog sicher schlagen, auch als Paar |
+| Livyatan | Health | 950 | **2000** | soll Tylo und Sachi sicher schlagen, auch als Paar |
+| Livyatan | Max. Sauerstoff | 100 (11:07) | **200 (22:13)** | Körpermasse: Wale speichern den Sauerstoff in Blut und Muskeln, je größer der Körper, desto mehr; entschieden am 04.11. |
 | Livyatan | Schwimmen | 500 | 550 (optional) | einem gemütlichen Tylo folgen können |
 
-Tylosaurus, Eurhinosaurus, Leedsichthys und Xiphactinus bleiben unverändert.
+Tylosaurus, Eurhinosaurus, Leedsichthys, Xiphactinus und Sachicasaurus bleiben unverändert. Die Prog-Buffs (Health 900, Armor 1,1, Heilung 1,5) entfallen mit dem Wechsel zum Sachi, der Health 900 und Armor 1,1 schon mitbringt.
 
 ### 1 gegen 1 mit den Vorschlägen (Sekunden bis zum Kill)
 
-| Angreifer ↓ / Ziel → | Tylo | Kai | Eurhino | Leeds | Prog | Xiph | Livy | Bilanz |
+| Angreifer ↓ / Ziel → | Tylo | Kai | Eurhino | Leeds | Sachi | Xiph | Livy | Bilanz |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Tylo | – | 16 s | 7 s | 43 s | 22 s | 6 s | 68 s | 3–3 |
-| Kai | 22 s | – | 8 s | 48 s | 25 s | 6 s | 77 s | 2–4 |
-| Eurhino | 51 s | 41 s | – | 112 s | 57 s | 15 s | 179 s | 1–5 |
-| Leeds | 31 s | 25 s | 11 s | – | 35 s | 9 s | 110 s | 5–1 |
-| Prog | 18 s | 15 s | 7 s | 40 s | – | 5 s | 64 s | 4–2 |
-| Xiph | 56 s | 45 s | 20 s | 124 s | 63 s | – | 198 s | 0–6 |
-| Livy | 18 s | 14 s | 6 s | 39 s | 20 s | 5 s | – | 6–0 |
+| Tylo | – | 16 s | 7 s | 43 s | 21 s | 6 s | 68 s | 4–2 |
+| Kai | 22 s | – | 8 s | 48 s | 24 s | 6 s | 77 s | 2–4 |
+| Eurhino | 51 s | 41 s | – | 112 s | 55 s | 15 s | 179 s | 1–5 |
+| Leeds | 31 s | 25 s | 11 s | – | 34 s | 9 s | 110 s | 5–1 |
+| Sachi | 22 s | 18 s | 8 s | 49 s | – | 6 s | 78 s | 3–3 |
+| Xiph | 56 s | 45 s | 20 s | 124 s | 61 s | – | 198 s | 0–6 |
+| Livy | 18 s | 14 s | 6 s | 39 s | 19 s | 5 s | – | 6–0 |
 
-Daraus ergibt sich diese Rangordnung: Livy (CW 8000, Health 2000) gewinnt jedes Duell, auch gegen Leeds. Leeds schlägt alle anderen, jagt aber nie. Danach kommen Prog und Tylo. Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
+Daraus ergibt sich diese Rangordnung: Livy (CW 8000, Health 2000) gewinnt jedes Duell, auch gegen Leeds. Leeds schlägt alle anderen, jagt aber nie. Danach kommen Tylo und Sachi, fast gleichauf (21 s gegen 22 s; zählt Ironclad, gewinnt Sachi). Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
 
 ### Rudel gegen Einzeltier
 
@@ -288,13 +295,13 @@ Mit der neuen Kai-Health liegt Xiphactinus auf dem Niveau der Land-Raptoren. Mit
 
 1. **Neue Einstufung „Piscivore“:** frisst nur Fisch, Krebse und Muscheln und jagt keine Spieler. Für Gruppen- und Mischgruppen-Regeln (8.1) zählt sie wie ein Herbivore.
 2. **Leeds in der Kai-Gruppe:** 1 Leeds je Gruppe, keine Verteidigung in beide Richtungen, kein Stufenschutz. Looming Presence ist in gemischten Gruppen nicht erlaubt (Vorbild 8.1.1).
-3. **Reviere im Wasser:** Prog hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Deino und Spino teilen sich die Reviere der Flussengen. Gezählt wird nur das Wasser.
-4. **Lebensräume:** Ozeane für Prog, Livy und Tylo. Flussengen für Xiph, Deino und Spino, Tylo zieht durch. Palm Islands ist die einzige Front zwischen Prog und Deino oder Spino.
+3. **Reviere im Wasser:** Sachi hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Deino und Spino teilen sich die Reviere der Flussengen. Gezählt wird nur das Wasser.
+4. **Lebensräume:** Ozeane für Sachi, Livy und Tylo. Flussengen für Xiph, Deino und Spino, Tylo zieht durch. Palm Islands ist die einzige Front zwischen Sachi und Deino oder Spino.
 5. **Third Party für den Livy:** Ausnahme von 3.17 und 3.18 im Livy-Profil, gegen jeden Fleischfresser bei einer aktiven Jagd im Wasser, aber nur zum Schutz der Styracosterna (Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon, Lurdusaurus) und ihrer Herdenbegleiter (Bonapartenykus, Camptosaurus, Citipati, Struthiomimus, Halszkaraptor).
 
 ## Größtes Risiko: zu viele Jäger
 
-Im Meer jagen heute schon Tylosaurus, Spinosaurus und Deinosuchus. Kai und Eurhino fliehen vor allen dreien. Mit Prognathodon, Livyatan und Xiphactinus wären es sechs Jäger auf drei Beute-Arten.
+Im Meer jagen heute schon Tylosaurus, Spinosaurus und Deinosuchus. Kai und Eurhino fliehen vor allen dreien. Mit Sachicasaurus, Livyatan und Xiphactinus wären es sechs Jäger auf drei Beute-Arten.
 
 - An Land trägt sich das, weil der Para so beliebt ist und viele Spieler ihn wählen.
 - Im Wasser muss die Beute-Seite zuerst funktionieren, sonst verhungern die neuen Jäger.
@@ -303,15 +310,17 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 1. Kai, Eurhino und Leeds umbauen. Das kostet keinen Mod.
 2. Livyatan dazu, weil er eine eigene Nische hat.
 3. Xiphactinus dazu, weil die Beute-Seite einen schnellen Jäger braucht.
-4. Prognathodon zuletzt, weil er sich mit Tylo am meisten überschneidet.
+4. Sachicasaurus zuletzt, weil er sich mit Tylo am meisten überschneidet. Mit Primordial Tyrants läuft auf Dynasty aber schon ein Team, dem der Server vertraut, und der Kai-Griff gibt ihm eine eigene Nische.
 
 ## Offene Entscheidungen
 
 - Kai als Para des Meeres und Eurhino als Fischfresser: einverstanden?
 - Sollen Kai und Eurhino eine gemeinsame Mischgruppe bilden oder nur nebeneinander leben?
-- ~~Revier des Prognathodon: der Wasserteil eines Küsten-POIs oder ein ganzer POI wie beim Tyrannotitan?~~ Entschieden: ein halber Ozean-POI.
+- ~~Revier des nächtlichen Revierhalters (damals Prognathodon): der Wasserteil eines Küsten-POIs oder ein ganzer POI wie beim Tyrannotitan?~~ Entschieden: ein halber Ozean-POI.
+- ~~Prognathodon behalten oder ersetzen?~~ Entschieden am 04.11.: ersetzt durch Sachicasaurus.
+- Sachicasaurus: Schwimmtempo und Wendigkeit aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist. Ob Ironclad die Armor erhöht, im Spiel prüfen.
 - ~~Sarcosuchus braucht eine Zeile zu Xiph~~ Nicht nötig: Sein heutiges Profil erlaubt schon die Jagd bis Apex im Wasser und bevorzugt Beute, die er clampen kann.
-- ~~Darf Prog adulte Spino allein jagen?~~ Entschieden: ja.
+- ~~Darf der Revierhalter (damals Prog) adulte Spino allein jagen?~~ Entschieden: ja, gilt jetzt für Sachi.
 - ~~Sollen Xiph-Schwärme auch adulte Deino jagen dürfen?~~ Entschieden: ja, einen einzelnen ab 5 Tieren und mit großer Vorsicht; keine bevorzugte Beute.
 - Big Tree Overlook: Liegt auf der Leeds-Route, ist aber ein Fluss. Gehört er zu den Flussengen (dann lebt dort auch Xiph und Deino) oder bleibt er Süßwasser?
 - Livyatan: Hinterhalt-Jäger mit Tempo 750 oder etwas schneller?
@@ -333,25 +342,25 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 | Leedsichthys | Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seiner Gruppe |
 | Xiphactinus | nur die Flussengen, nie der offene Ozean | Kinderstube in Coastland Swamp und Mudflats Venule; flieht vor Tylo, Deino und Sarco |
 | Tylosaurus | unverändert: Ozeane und Flussengen | einziger Apex in beiden Zonen |
-| Prognathodon | nur Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | Abyssal Depths ohne Reviere; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo |
+| Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | meidet Abyssal Depths; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo |
 | Livyatan | alle Ozeane außer Palm Islands, Zuhause Abyssal Depths | Nester an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal |
-| Deinosuchus | nur Flussengen und Palm Islands, mit Spinos Revierkarte | auf Palm Revierkämpfe mit Prog |
-| Spinosaurus | Seen, Flüsse und Flussengen wie bisher; vom Meer nur Palm Islands | auf Palm Revierkämpfe mit Prog |
+| Deinosuchus | nur Flussengen und Palm Islands, mit Spinos Revierkarte | auf Palm Revierkämpfe mit Sachi |
+| Spinosaurus | Seen, Flüsse und Flussengen wie bisher; vom Meer nur Palm Islands | auf Palm Revierkämpfe mit Sachi |
 
 **Was die Aufteilung bewirkt:**
-- **Kai und Eurhino haben keinen sicheren Ort, nur bessere Zeiten.** In den Flussengen lauern Xiph, Deino und Spino, in den Ozeanen Tylo, nachts Prog und außer bei Palm Livy. Die Route selbst wird zum Spiel.
-- **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen. Prog könnte ihn clampen (2500), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
+- **Kai und Eurhino haben keinen sicheren Ort, nur bessere Zeiten.** In den Flussengen lauern Xiph, Deino und Spino, in den Ozeanen Tylo, nachts Sachi in Kelp und Untiefen und außer bei Palm Livy. Die Route selbst wird zum Spiel.
+- **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen. Sachi könnte ihn clampen (4001), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
 - **Krokodile jagen ist für Xiph ein gefährliches Vergnügen.** Einen einzelnen Sarco darf ein Schwarm ab 4 jagen: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 5 Tieren, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.): 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute und werden nur mit großer Vorsicht gejagt.
-- **Palm Islands ist die Front.** Prog, Deino und Spino kämpfen dort um Reviere, und Livy kommt nie hin. Für Prog ist Palm damit das sicherste und zugleich härteste Revier.
+- **Palm Islands ist die Front.** Sachi, Deino und Spino kämpfen dort um Reviere, und Livy kommt nie hin. Für Sachi ist Palm damit das sicherste und zugleich härteste Revier.
 - **Ein adulter Livy hat genau einen Jäger: Tylo-Paare** (entschieden am 03.11.). Sie dürfen ihn bei jedem Hunger jagen, aber erst, wenn keine Pflicht-Beute im POI ist. Sie verlieren das Bissduell und gewinnen nur durch Hit-and-Run, deshalb traut sich kaum ein Tylo an ihn heran. Tylo ist schneller (900 gegen 750), sprintet länger (3:42 gegen 2:47) und heilt schneller (2,0 gegen 1,5/s). Deinosuchus dürfte ihn als Giant ebenfalls jagen, lebt aber nicht mehr in Livys Ozeanen. Gebremst wird Livy außerdem durch die Solo-Jagd, sein geringes Tempo, das Flachwasser und Kai-Gruppen ab 3 Tieren.
 
-**Prog gegen Deino und Spino** (neue Werte, ohne Blutung):
+**Sachi gegen Deino und Spino** (Mod-Werte, ohne Blutung und Knochenbruch):
 
-| Kampf | Ohne Shell Crusher Song | Mit Song (Armor −15 %) |
-| --- | --- | --- |
-| 1 Prog gegen 1 Deino | verliert knapp (22 s, Deino behält 10 %) | gewinnt knapp (21 s, Prog behält 4 %) |
-| 2 Prog gegen 1 Deino | gewinnt (12 s) | gewinnt (11 s) |
-| 1 Prog gegen 1 Spino | verliert (13 s, Spino behält 51 %) | verliert (13 s, Spino behält 43 %) |
-| 2 Prog gegen 1 Spino | gewinnt (14 s), ein Prog stirbt | gewinnt (12 s), beide überleben |
+| Kampf | Ergebnis |
+| --- | --- |
+| 1 Sachi gegen 1 Deino | verliert (21 s, Deino behält 29 %) |
+| 2 Sachi gegen 1 Deino | gewinnt (15 s, beide überleben) |
+| 1 Sachi gegen 1 Spino | verliert (13 s, Spino behält 61 %) |
+| 2 Sachi gegen 1 Spino | gewinnt (20 s), ein Sachi stirbt |
 
-Prog jagt Deino und Spino gern, muss aber nicht. Er darf beide auch allein jagen (entschieden am 03.11.). Im Bissduell verliert ein einzelner Prog gegen Spino klar, im Wasser ist er als voller Aquatic aber der Wendigere. Das kommt selten vor, weil beide nur Palm Islands teilen.
+Sachi jagt Deino und Spino gern, muss aber nicht. Er darf beide auch allein jagen (für den Prog entschieden am 03.11., übernommen). Im Bissduell verliert ein einzelner Sachi gegen beide, im Wasser ist er als voller Aquatic aber der Wendigere. Das kommt selten vor, weil sie nur Palm Islands teilen. Die Regel ist vorläufig, bis das Tempo des Sachi bekannt ist.

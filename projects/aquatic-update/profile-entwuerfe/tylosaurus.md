@@ -8,7 +8,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 | --- | --- | --- |
 | Pflicht-Beute | Kai, Eurhino, Leeds zuerst | unverändert |
 | Xiphactinus | – | darf gejagt werden, wenn er allein oder in Gruppen bis 3 ist; ein einzelner Tylo greift keinen größeren Schwarm an |
-| Prognathodon | – | wie Spino und Deino: Adulte nur bei Hunger ≤ 35 %, Junge frei; nimmt Revier-Herausforderungen an |
+| Sachicasaurus | – | ebenbürtiger Rivale; wie Spino und Deino: Adulte nur bei Hunger ≤ 35 %, Junge frei; nimmt Revier-Herausforderungen an |
 | Livyatan | – | Stufe Giant; als einzige Ausnahme von der Apex-Grenze darf ein Tylo-Paar einen adulten Livy jagen, bei jedem Hunger (entschieden am 03.11.); sehr gefährlich, denn im Bissduell gewinnt der Livy; die Pflicht-Beute geht vor (entschieden am 04.11.), und kaum ein Tylo traut sich; ein einzelner Tylo flieht; Junge frei; Livy kommt nie nach Palm Islands |
 | Lebensraum | – | unverändert; Tylo ist der einzige Apex, der Ozeane und Flussengen teilt |
 | Xiph-Angst | – | Xiph flieht vor Tylo wie der Weiße Hai vor dem Orca, weil Tylo ihn clampen kann (Tragkraft 3000 gegen CW 2400) |
@@ -21,13 +21,14 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 | 1 Tylo gegen 3 Xiph | Tylo gewinnt (17 s) |
 | 1 Tylo gegen 6 Xiph | Tylo verliert (10 s) |
 | 2 Tylo gegen 6 Xiph | Tylo gewinnt (20 s) |
-| 2 Tylo gegen 1 Prog | Tylo gewinnt (11 s) |
-| 2 Tylo gegen 2 Prog | Tylo verliert |
+| 1 Tylo gegen 1 Sachi | Tylo gewinnt knapp (21 s, behält 5 %); mit Ironclad gewinnt Sachi knapp |
+| 2 Tylo gegen 1 Sachi | Tylo gewinnt (11 s) |
+| 2 Tylo gegen 2 Sachi | Tylo gewinnt knapp (31 s, behält 7 %) |
 | 2 Tylo gegen 1 Livy (CW 8000, Health 2000) | Tylo verliert (Livy gewinnt in 35 s mit 22 % Health) |
 | 1 Tylo gegen 3 Kai | Tylo verliert (8 s) |
 
 - **Xiphactinus:** Ein einzelner Tylo verliert gegen einen vollen Schwarm. Deshalb die Grenze von 3.
-- **Prognathodon:** Ein Tylo-Paar schlägt einen einzelnen Prog, verliert aber gegen ein Prog-Paar. Revierkämpfe bleiben also offen und hängen von der Gruppengröße ab.
+- **Sachicasaurus:** Im Bissduell sind beide gleich stark, allein wie als Paar. Tylo gewinnt den langen Kampf im offenen Wasser (mehr Ausdauer, Sprint 3:42, Heilung 2,0), Sachi den kurzen Hinterhalt bei Nacht (Clamp, Knochenbruch). Revierkämpfe bleiben also offen.
 - **Livyatan:** Livy jagt immer allein. Ein einzelner Tylo verliert gegen ihn (18 s) und flieht. Ein Tylo-Paar darf ihn jagen, verliert das reine Bissduell aber auch (35 s). Gewinnen kann es nur wie Orcas gegen Großwale: zubeißen, abdrehen, heilen, wieder zubeißen. Dafür hat Tylo das Tempo (900 gegen 750), den längeren Sprint (3:42 gegen 2:47) und die schnellere Heilung (2,0 gegen 1,5/s). Das ist eine Einschätzung, denn die Simulation bildet Hit-and-Run nicht ab. Die Pflicht-Beute geht trotzdem vor: Sind Kai, Eurhino oder Leeds im POI, werden sie zuerst gejagt (entschieden am 04.11.). Die Livy-Jagd ist ein äußerst gefährliches Unterfangen, an das sich selbst Tylo kaum herantraut.
 - **Kaiwhekea:** Eine Kai-Gruppe mit 3 Verteidigern würde jeden Tylo schlagen. Kai fliehen aber vor Apexen auf Sicht, wie der Para, und helfen sich dabei nicht gegenseitig. Den Schutzring gibt es nur gegen Jäger, die kein Apex sind.
 
@@ -39,7 +40,7 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 - Up to 1 adolescent may assist with a hunt. However, if the adolescent reaches half health, it flees. Adolescents do not assist in defence.
 - Tylosaurus may hunt up to Apex tier.
 - **Rival apex species:**
-  - Tylosaurus do not hunt adult Spinosaurus, Deinosuchus or Prognathodon unless at desperate hunger (35%).
+  - Tylosaurus do not hunt adult Spinosaurus, Deinosuchus or Sachicasaurus unless at desperate hunger (35%).
   - They may respond to territory challenges from these species, and may hunt their offspring freely.
 - **Livyatan:** Livyatan are Giant tier and always hunt alone. As the only exception to their Apex limit, Tylosaurus pairs may hunt adult Livyatan, at any hunger level. This is a very dangerous hunt: in a straight fight, a Livyatan beats a pair. A solitary Tylosaurus never hunts an adult Livyatan, and flees from it. Livyatan offspring may be hunted freely.
 - **Order of targets:** Kaiwhekea, Eurhinosaurus and Leedsichthys must be the first targets in the POI when hunting. This also applies to Livyatan: a pair may only turn to a Livyatan when none of these are in the POI.
@@ -56,10 +57,10 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
 ## Territory Challenges (new section)
 
 - Tylosaurus are nomadic and do not claim territories.
-- **Prognathodon territories:**
-  - At night, male Prognathodon claim one half of an ocean POI as territory (Kelp Vale, Coastal Bluffs, Palm Islands or Stonebed Shoal).
-  - A Prognathodon may challenge Tylosaurus out of it. Tylosaurus respond to these challenges.
-  - If they lose, they must leave the POI (6.7.2). If they win, the Prognathodon keeps its territory, but must tolerate them for 15 minutes (6.7.3.1).
+- **Sachicasaurus territories:**
+  - At night, male Sachicasaurus claim one half of an ocean POI as territory (Kelp Vale, Coastal Bluffs, Palm Islands or Stonebed Shoal).
+  - A Sachicasaurus may challenge Tylosaurus out of it. Tylosaurus respond to these challenges.
+  - If they lose, they must leave the POI (6.7.2). If they win, the Sachicasaurus keeps its territory, but must tolerate them for 15 minutes (6.7.3.1).
 
 ## Cross-Species Interaction (additions)
 
@@ -69,8 +70,9 @@ Das Tylo-Profil bleibt fast unverändert: Matrilinien, Schwesternschaften, Rover
   - Pairs that do hunt them do it the way orcas hunt great whales: they strike, pull away, and strike again until the giant tires. A pair that stays in a straight fight loses.
   - When clicking echoes through open water, matrilines turn towards the coast. Livyatan do not follow prey into the shallows.
   - The Abyssal Depths are entered with caution, or not at all. Livyatan never enter Palm Islands.
-- **Prognathodon:**
-  - Prognathodon are rivals of the coast. By day they lie hidden and leave Tylosaurus in peace. By night they hold their territories.
+- **Sachicasaurus:**
+  - Sachicasaurus are the rivals of the coast, and the Tylosaurus' equals. By day they lie hidden in the kelp and leave Tylosaurus in peace. By night they hold their territories.
+  - Tylosaurus rule the open water, with more stamina and faster healing. Sachicasaurus rule the kelp and the shallows by night, with their grip and their bone-breaking bite.
   - Experienced mothers avoid resting with their calves in a known territory after dark.
 - **Xiphactinus:**
   - Xiphactinus live only in the saltwater channels between the islands. Batteries fear Tylosaurus the way great white sharks fear orcas, because a Tylosaurus can clamp a Xiphactinus and drag it away.

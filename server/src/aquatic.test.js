@@ -56,8 +56,10 @@ test('every Aquatic Update draft has card facts and a readable profile', async (
     assert.ok(AQUATIC_SIDES.includes(profile.side), `${id}: invalid side ${profile.side}`);
     assert.ok(['new', 'changed'].includes(profile.kind), `${id}: kind must be new or changed`);
     assert.equal(profile.kind === 'new', Boolean(profile.mod), `${id}: new profiles are mods, changed ones are not`);
-    if (profile.mod) assert.match(profile.mod.id, /^UGC_M_[A-Z0-9]{10}_SK$/, `${id}: mod id`);
-    for (const key of ['cw', 'health', 'armor', 'heal', 'dps', 'swim', 'sprint']) assert.equal(typeof stats[key], 'number', `${id}: stats.${key} must be a number`);
+    // A mod that is not downloaded yet has no UGC id and no speeds from the game files.
+    if (profile.mod?.id !== undefined) assert.match(profile.mod.id, /^UGC_M_[A-Z0-9]{10}_SK$/, `${id}: mod id`);
+    for (const key of ['cw', 'health', 'armor', 'heal', 'dps']) assert.equal(typeof stats[key], 'number', `${id}: stats.${key} must be a number`);
+    for (const key of ['swim', 'sprint', 'accel']) assert.ok(typeof stats[key] === 'number' || (stats[key] === null && profile.mod && !profile.mod.id), `${id}: stats.${key} must be a number, or null for a mod not downloaded yet`);
     assert.ok(profile.role && profile.essence && profile.analog && profile.home, `${id}: card facts missing`);
     assert.ok(draft.title.startsWith('Entwurf:'), `${id}: draft title`);
     assert.ok(draft.overview.length >= 2, `${id}: German overview missing`);
@@ -79,7 +81,7 @@ test('splits a POI outline into two equal-area halves', () => {
   assert.ok(north.cut < 1.5, 'the wide bottom bar pulls the cut up');
 });
 
-test('the habitat map covers every draft and halves each Prognathodon ocean', async () => {
+test('the habitat map covers every draft and halves each Sachicasaurus ocean', async () => {
   const { profiles, habitat } = await loadAquatic();
   assert.deepEqual(habitat.species.map(species => species.id).sort(), profiles.map(profile => profile.id).sort(), 'one habitat entry per draft');
   const areaById = new Map(habitat.areas.map(area => [area.id, area]));
@@ -89,9 +91,10 @@ test('the habitat map covers every draft and halves each Prognathodon ocean', as
     const whole = polygonArea(areaById.get(parent).points);
     for (const half of halves) assert.ok(Math.abs(polygonArea(half.points) / whole - 0.5) < 0.01, `${half.id} holds half of ${parent}`);
   }
-  const prog = habitat.species.find(species => species.id === 'prognathodon');
-  assert.ok(prog.territories);
-  assert.ok(prog.areas.every(area => areaById.get(area.id).zone === 'ocean'), 'Prognathodon lives only in the oceans');
+  const sachi = habitat.species.find(species => species.id === 'sachicasaurus');
+  assert.ok(sachi.territories);
+  assert.ok(sachi.areas.every(area => areaById.get(area.id).zone === 'ocean'), 'Sachicasaurus lives only in the oceans');
+  assert.ok(!sachi.areas.some(area => area.id === 'abyssal-depths'), 'Sachicasaurus avoids the deep');
   const livy = habitat.species.find(species => species.id === 'livyatan');
   assert.ok(!livy.areas.some(area => area.id === 'palm-islands'), 'Livyatan never enters Palm Islands');
   const xiph = habitat.species.find(species => species.id === 'xiphactinus');
@@ -109,7 +112,7 @@ test('the relations table covers every pair and matches the habitat rules', asyn
   assert.equal(kind('xiphactinus', 'tylosaurus'), 'flee');
   assert.equal(kind('deinosuchus', 'xiphactinus'), 'hunt');
   assert.equal(kind('kaiwhekea', 'leedsichthys'), 'group');
-  assert.ok(['hunt', 'limited'].includes(kind('prognathodon', 'spinosaurus')));
+  assert.ok(['hunt', 'limited'].includes(kind('sachicasaurus', 'spinosaurus')));
   for (const id of ['xiphactinus', 'sarcosuchus']) assert.equal(kind('livyatan', id), 'none', `Livyatan never meets ${id}`);
   for (const extra of overview.extras) for (const key of ['swim', 'sprint', 'accel']) assert.equal(typeof extra.stats[key], 'number', `${extra.id}: stats.${key}`);
 });

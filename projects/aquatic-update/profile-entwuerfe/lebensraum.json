@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die halben Prog-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd).",
+  "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die halben Sachi-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd).",
   "view": { "x": 0.35, "y": 0, "width": 0.65, "height": 0.64 },
   "roles": {
     "home": "Lebt hier",
@@ -13,7 +13,7 @@
   "zones": [
     {
       "id": "ocean", "label": "Ozeane",
-      "text": "Kühles, offenes Wasser mit den wertvollsten Fischen. Hier jagen Tylo, nachts Prog und außer bei Palm Islands Livy.",
+      "text": "Kühles, offenes Wasser mit den wertvollsten Fischen. Hier jagen Tylo, nachts Sachi in Kelp und Untiefen und außer bei Palm Islands Livy.",
       "areas": ["kelp-vale", "coastal-bluffs", "abyssal-depths", "palm-islands", "stonebed-shoal"]
     },
     {
@@ -90,12 +90,11 @@
       ]
     },
     {
-      "id": "prognathodon", "territories": true,
-      "text": "Lebt nur in den Ozeanen. Ein Männchen hält einen halben Ozean-POI. Abyssal Depths hat keine Reviere, Palm Islands ist die Front zu Deino und Spino.",
+      "id": "sachicasaurus", "territories": true,
+      "text": "Lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Ein Männchen hält einen halben Ozean-POI. Abyssal Depths meidet er, zu tief und Livys Zuhause. Palm Islands ist die Front zu Deino und Spino.",
       "areas": [
         { "id": "kelp-vale", "roles": ["territory"] }, { "id": "coastal-bluffs", "roles": ["territory"] },
-        { "id": "palm-islands", "roles": ["territory", "front"] }, { "id": "stonebed-shoal", "roles": ["territory"] },
-        { "id": "abyssal-depths", "roles": ["home"] }
+        { "id": "palm-islands", "roles": ["territory", "front"] }, { "id": "stonebed-shoal", "roles": ["territory"] }
       ]
     },
     {
@@ -108,7 +107,7 @@
     },
     {
       "id": "deinosuchus",
-      "text": "Nur noch Flussengen und Palm Islands, mit Spinos geteilten Revieren. Jagt Xiph mit Vergnügen. Auf Palm harte Revierkämpfe mit Prog.",
+      "text": "Nur noch Flussengen und Palm Islands, mit Spinos geteilten Revieren. Jagt Xiph mit Vergnügen. Auf Palm harte Revierkämpfe mit Sachi.",
       "areas": [
         { "id": "volcano-islands", "roles": ["territory"] }, { "id": "twisted-forest", "roles": ["territory"] }, { "id": "stillwater-bog", "roles": ["territory"] },
         { "id": "mudflats", "roles": ["territory"] }, { "id": "coastland-swamp", "roles": ["territory"] },
@@ -117,7 +116,7 @@
     },
     {
       "id": "spinosaurus",
-      "text": "Seen, Flüsse und Flussengen wie bisher. Vom Meer bleibt nur Palm Islands, wo er mit Prog um Reviere kämpft.",
+      "text": "Seen, Flüsse und Flussengen wie bisher. Vom Meer bleibt nur Palm Islands, wo er mit Sachi um Reviere kämpft.",
       "areas": [
         { "id": "volcano-islands", "roles": ["territory"] }, { "id": "twisted-forest", "roles": ["territory"] }, { "id": "stillwater-bog", "roles": ["territory"] },
         { "id": "mudflats", "roles": ["territory"] }, { "id": "coastland-swamp", "roles": ["territory"] },

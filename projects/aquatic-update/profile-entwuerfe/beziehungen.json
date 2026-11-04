@@ -11,15 +11,15 @@
     "ignore": "ignoriert",
     "none": "kein Kontakt"
   },
-  "order": ["kaiwhekea", "eurhinosaurus", "leedsichthys", "xiphactinus", "tylosaurus", "prognathodon", "livyatan", "deinosuchus", "spinosaurus", "sarcosuchus"],
+  "order": ["kaiwhekea", "eurhinosaurus", "leedsichthys", "xiphactinus", "tylosaurus", "sachicasaurus", "livyatan", "deinosuchus", "spinosaurus", "sarcosuchus"],
   "relations": {
     "kaiwhekea": {
       "eurhinosaurus": ["group", "Mischgruppe bis 12, keiner verteidigt den anderen"],
       "leedsichthys": ["group", "1 Leeds je Gruppe, dann heißt sie Flotilla; keine Verteidigung in beide Richtungen"],
       "xiphactinus": ["defend", "2 Verteidiger und Schutzring um die Kälber; gegen einen Kai mit Ring verliert selbst ein voller Schwarm"],
       "tylosaurus": ["flee", "flieht auf Sicht, stellt sich nur am Nest"],
-      "prognathodon": ["flee", "flieht auf Sicht; die Nachtwache schlägt Alarm; stellt sich nur am Nest"],
-      "livyatan": ["flee", "flieht auf Sicht (Giant)"],
+      "sachicasaurus": ["flee", "flieht auf Sicht aus dem Kelp ins offene Wasser oder auf hohe Felsen; die Nachtwache schlägt Alarm; Sachi ist der einzige, der einen adulten Kai packen kann, und ein gepackter Kai ist verloren, die Bale hilft nicht; stellt sich nur am Nest"],
+      "livyatan": ["flee", "flieht auf Sicht (Giant) in die Untiefen, wohin Livy nicht folgt"],
       "deinosuchus": ["flee", "flieht auf Sicht, stellt sich nur am Nest"],
       "spinosaurus": ["flee", "flieht auf Sicht, stellt sich nur am Nest"],
       "sarcosuchus": ["defend", "Sarco ist Large, kein Apex: Schutzring statt Flucht"]
@@ -29,7 +29,7 @@
       "leedsichthys": ["group", "darf mit 1 Leeds ziehen (Flotilla), keine Verteidigung"],
       "xiphactinus": ["flee", "flieht vor Schwärmen; Xiph ist der einzige schnellere Fisch"],
       "tylosaurus": ["flee", "flieht vor Apex und Giant"],
-      "prognathodon": ["flee", "flieht vor Apex und Giant"],
+      "sachicasaurus": ["flee", "flieht vor Apex und Giant"],
       "livyatan": ["flee", "flieht vor Apex und Giant"],
       "deinosuchus": ["flee", "flieht vor Apex und Giant"],
       "spinosaurus": ["flee", "flieht vor Apex und Giant"],
@@ -40,7 +40,7 @@
       "eurhinosaurus": ["group", "zieht mit, verteidigt nicht"],
       "xiphactinus": ["defend", "Xiph jagt nur Leeds-Junge; der Vater sammelt sie"],
       "tylosaurus": ["defend", "Tylo muss Leeds zuerst jagen, besonders die Jungen"],
-      "prognathodon": ["defend", "adulte Leeds darf nur ein Prog-Paar jagen"],
+      "sachicasaurus": ["defend", "adulte Leeds darf nur ein Sachi-Paar jagen; Junge packt er"],
       "livyatan": ["defend", "Rivale: flieht nie, zieht den Kampf in die Tiefe; aggressiv, mit Jungen headstrong (greift auch nach Forfeit oder beim Luftholen weiter an); im Bissduell gewinnt Livy"],
       "deinosuchus": ["defend", "Deino darf jede Stufe jagen, in den Flussengen"],
       "spinosaurus": ["defend", "Spino darf Leeds überall jagen"],
@@ -51,7 +51,7 @@
       "eurhinosaurus": ["hunt", "Hauptbeute"],
       "leedsichthys": ["limited", "nur Junge, nie adulte Leeds"],
       "tylosaurus": ["flee", "wie der Weiße Hai vor dem Orca: Tylo kann ihn clampen"],
-      "prognathodon": ["flee", "kann ihn clampen; begegnen sich kaum, Prog lebt im Ozean"],
+      "sachicasaurus": ["flee", "kann ihn clampen; begegnen sich kaum, Sachi lebt im Ozean"],
       "livyatan": ["flee", "begegnen sich kaum, Livy lebt im Ozean"],
       "deinosuchus": ["limited", "flieht, weil Deino ihn clampt; einen einzelnen Adulten ab 5 Xiph, mit großer Vorsicht, keine bevorzugte Beute"],
       "spinosaurus": ["ignore", "ignorieren sich vollständig"],
@@ -62,21 +62,21 @@
       "eurhinosaurus": ["hunt", "Pflichtbeute: zuerst im POI"],
       "leedsichthys": ["hunt", "Pflichtbeute: zuerst im POI"],
       "xiphactinus": ["limited", "allein oder in Gruppen bis 3; kann ihn clampen"],
-      "prognathodon": ["rival", "antwortet auf Revier-Herausforderungen; Adulte nur bei Hunger ≤ 35 %, Junge frei"],
+      "sachicasaurus": ["rival", "ebenbürtiger Rivale; antwortet auf Revier-Herausforderungen; Adulte nur bei Hunger ≤ 35 %, Junge frei"],
       "livyatan": ["limited", "nur als Paar, bei jedem Hunger, wenn keine Pflicht-Beute im POI ist; einzige Ausnahme von der Apex-Grenze; äußerst gefährlich, kaum ein Tylo traut sich; ein einzelner Tylo flieht; Junge frei"],
       "deinosuchus": ["rival", "Adulte nur bei Hunger ≤ 35 %; Revier-Herausforderungen; Junge frei"],
       "spinosaurus": ["rival", "Adulte nur bei Hunger ≤ 35 %; Revier-Herausforderungen; im Wasser durch Wendigkeit klar im Vorteil"],
       "sarcosuchus": ["hunt", "nach der Pflichtbeute; im Wasser oder bis 1 Körperlänge davon"]
     },
-    "prognathodon": {
-      "kaiwhekea": ["hunt", "Lieblingsbeute, nachts"],
+    "sachicasaurus": {
+      "kaiwhekea": ["hunt", "Lieblingsbeute, nachts in den Untiefen; als einziger packt er adulte Kai"],
       "eurhinosaurus": ["hunt", "nachts"],
-      "leedsichthys": ["limited", "Adulte nur als Paar (brace oder drift)"],
+      "leedsichthys": ["limited", "Adulte nur als Paar (brace oder drift); Junge packt er"],
       "xiphactinus": ["none", "teilen keinen Lebensraum"],
-      "tylosaurus": ["rival", "fordert ihn aus dem Revier; jagt Tylos, die bleiben"],
-      "livyatan": ["flee", "Giant, nicht jagbar; ein Paar darf sich wehren, verliert aber knapp"],
-      "deinosuchus": ["hunt", "jagt gern, muss nicht; auch allein; Revierkämpfe auf Palm Islands"],
-      "spinosaurus": ["hunt", "jagt gern, muss nicht; auch allein; Revierkämpfe auf Palm Islands"],
+      "tylosaurus": ["rival", "ebenbürtig; fordert ihn aus dem Revier; jagt Tylos, die bleiben"],
+      "livyatan": ["flee", "Giant, nicht jagbar; in Kelp und Untiefen sicher; ein Paar darf sich wehren, verliert aber"],
+      "deinosuchus": ["hunt", "jagt gern, muss nicht; auch allein, weil im Wasser wendiger; Revierkämpfe auf Palm Islands"],
+      "spinosaurus": ["hunt", "jagt gern, muss nicht; auch allein, weil im Wasser wendiger; Revierkämpfe auf Palm Islands"],
       "sarcosuchus": ["none", "teilen keinen Lebensraum"]
     },
     "livyatan": {
@@ -85,7 +85,7 @@
       "leedsichthys": ["hunt", "Pflicht: einzelne Leeds zuerst; Rivale, gewinnt das Bissduell, muss aber unter 25 % Luft abbrechen; meidet Väter mit Jungen"],
       "xiphactinus": ["none", "teilen keinen Lebensraum"],
       "tylosaurus": ["hunt", "Pflicht: einzelne Tylos zuerst; schlägt auch Paare"],
-      "prognathodon": ["hunt", "Pflicht: einzelne Progs zuerst; schlägt auch Paare, knapp"],
+      "sachicasaurus": ["hunt", "Pflicht: einzelne Sachis zuerst, wenn sie im offenen Wasser sind; schlägt auch Paare; in Kelp und Untiefen folgt er nicht"],
       "deinosuchus": ["none", "kommt nicht in Livys Ozeane; nur wer ins tiefe Wasser gerät"],
       "spinosaurus": ["none", "kommt nicht in Livys Ozeane; nur wer ins tiefe Wasser gerät"],
       "sarcosuchus": ["none", "teilen keinen Lebensraum"]
@@ -96,7 +96,7 @@
       "leedsichthys": ["hunt", "darf jede Stufe jagen, in den Flussengen"],
       "xiphactinus": ["hunt", "mit Vergnügen: clampen und aus dem Wasser tragen"],
       "tylosaurus": ["hunt", "darf jede Stufe jagen; im Wasser ist Tylo aber wendiger"],
-      "prognathodon": ["rival", "Revierkämpfe auf Palm Islands; darf ihn jagen"],
+      "sachicasaurus": ["rival", "Revierkämpfe auf Palm Islands; darf ihn jagen"],
       "livyatan": ["none", "begegnen sich nicht mehr"],
       "spinosaurus": ["defend", "Spino jagt Deino zuerst; Rivalen um dieselben Reviere"],
       "sarcosuchus": ["hunt", "Vorrangziel: Männchen jagen oder vertreiben ihn"]
@@ -107,7 +107,7 @@
       "leedsichthys": ["hunt", "überall erlaubt"],
       "xiphactinus": ["ignore", "ignorieren sich vollständig"],
       "tylosaurus": ["hunt", "überall erlaubt; im Wasser ist Tylo aber wendiger"],
-      "prognathodon": ["rival", "Revierkämpfe auf Palm Islands; im Revier als Apex-Beute jagbar"],
+      "sachicasaurus": ["rival", "Revierkämpfe auf Palm Islands; im Revier als Apex-Beute jagbar"],
       "livyatan": ["none", "kommt nicht in Livys Ozeane"],
       "deinosuchus": ["hunt", "Vorrangziel im eigenen Revier"],
       "sarcosuchus": ["hunt", "Vorrangziel im eigenen Revier"]
@@ -118,7 +118,7 @@
       "leedsichthys": ["hunt", "im Wasser bis Apex"],
       "xiphactinus": ["hunt", "mit Vergnügen: bevorzugt Beute, die er clampen kann"],
       "tylosaurus": ["hunt", "im Wasser bis Apex erlaubt"],
-      "prognathodon": ["none", "teilen keinen Lebensraum"],
+      "sachicasaurus": ["none", "teilen keinen Lebensraum"],
       "livyatan": ["none", "teilen keinen Lebensraum"],
       "deinosuchus": ["flee", "allein verlässt er den POI; eine Gruppe ab 2 vertreibt einzelne Deino"],
       "spinosaurus": ["flee", "flieht, jagt keine adulten Spino, nimmt keine Herausforderungen an"]

@@ -7,6 +7,8 @@ Stand 2026-11-03. Alle Werte gelten für Adults.
 
 Dynasty nutzt schon einen Arazoa-Mod: Unser Tropeognathus ist `ArazoaTropeo`.
 
+**Prognathodon verworfen (04.11.):** Ihn ersetzt der Sachicasaurus von Primordial Tyrants. Seine Werte stehen im eigenen Abschnitt unten. Die Prog-Spalten bleiben als Referenz stehen.
+
 ## Gesamtübersicht
 
 Fett = bester Wert der Zeile. Herleitung und Quellen stehen in den Abschnitten darunter.
@@ -123,6 +125,43 @@ Die Standard-Kurven kommen direkt von den Modmachern. Die Rohdaten liegen unver�
 
 Vom Sub-adult zum Adult steigt die CW um fast die Hälfte (3900 → 5700), die Health aber nur um 100. Gleichzeitig fällt die Heilung von 1,15 auf 0,83/s. Der Adult trifft also schwer, steckt aber wenig weg und erholt sich langsam.
 
+## Sachicasaurus (Mod, ersetzt den Prognathodon)
+
+`PTSachicasaurus` von Primordial Tyrants. Werte aus NexLink Core (Stand 01.11.2026), Fähigkeiten aus dem Path-of-Titans-Wiki (pathoftitans.wiki und Fandom, Stand September 2024). Der Mod ist nicht heruntergeladen, deshalb fehlen Schwimmtempo, Beschleunigung und die Mod-ID.
+
+| Wert | Adult | Anmerkung |
+| --- | --- | --- |
+| CW / Health / Armor | 5500 / 900 / 1,1 | Ironclad (frei) gibt +10 % Armor; ob das zur 1,1 dazukommt, ist offen |
+| Heilung/s | 1,0 | Tylo 2,0, Livy 1,5 |
+| Ausdauer-Regeneration/s | 0,66 | niedrigster Wert im Vergleich |
+| Sprintdauer | ~2:32 an der Oberfläche, ~5:03 getaucht | 100 Ausdauer ÷ Fast-Swim 0,66/s bzw. Fast-Dive 0,33/s |
+| Tragkraft | 4001 | einziger Jäger, der einen adulten Kai (CW 4000) packen kann |
+| Sauerstoff | 100, Verbrauch 0,17/s → ~9:48 | ohne Luft 20 Schaden/s (Tylo 5) |
+| Kadaver | 2000 Nahrung | |
+| Wachstum (Health / CW) | 300/500 · 475/1400 · 650/3025 · 825/4100 · 900/5500 | Hatchling bis Adult |
+| Gruppe | 5 Plätze laut Wiki | |
+| Unterarten | Vitae, Mors, Queenslandicus | |
+
+**Fähigkeiten (Adult):**
+- **Clamp:** packt und hält Tiere bis CW 4001, solange die Ausdauer reicht; 30 Schaden, 10 s.
+- **Bite:** 80 Schaden, 2 s (Wiki 2024: 90). Einen gepackten Gegner kaut er für 10,66 Schaden plus 4 Knochenbruch.
+- **Bone Snap / Crushing Bite:** Aufladeangriff, 85 Schaden, Knochenbruch bis 40, 6 s.
+- **Thrash:** nur mit gepacktem Ziel, 25 Schaden, 3 s; hoher Schaden gegen Meeresschildkröten.
+- **Lunge:** 60 Schaden, 5 s. **Breach:** Vorstoß aus dem Wasser, 8 s.
+- **Aileron Roll:** Drehangriff im Wasser mit Rückstoß 1500 auf alle im kleinen Umkreis, 60 Schaden, 12 s.
+- **Passiv:** Beachcomber (an Land schneller, Sprint dort ohne Ausdauerkosten), Ironclad (+10 % Armor), Nictitating Membrane (bessere Sicht unter Wasser, spürt den nächsten Fisch im Umkreis von 100 m).
+- **Wählbar:** Moonlight Hunter (+20 % Knochenbruch nachts), Survivalist (−10 % Abklingzeiten ohne Gruppe), Streamlined (+10 % Schwimmtempo und Wenden), Marathon Runner (+50 % Ausdauer, −14 % Tempo), Slick Scales (wer ihn trägt, verliert schneller Ausdauer).
+
+**Gegen Tylo und Livy** (Projekt-Formel, DPS 40,8):
+
+| Kampf | Ergebnis | Zum Vergleich |
+| --- | --- | --- |
+| 1 Sachi gegen 1 Tylo | Tylo gewinnt knapp (21 s, behält 5 %); mit Ironclad gewinnt Sachi (22 s, 4 %) | Standard-Tylo (CW 4500, Health 900): Sachi gewinnt klar (18 s gegen 24 s) |
+| 1 Livy gegen 1 Sachi | Livy gewinnt (19 s, 76 %) | gegen Tylo 18 s, 74 % |
+| 1 Livy gegen 2 Sachi | Livy gewinnt (38 s, 27 %) | gegen 2 Tylo 35 s, 23 % |
+
+**Community:** Die Fandom-Seite nennt ihn einmal „pretty op“, im Trivia-Teil aber „unviable“, weil neuere Meeres-Mods (vor allem Mosasaurus) ihn bei Tempo, Ausdauer und Werten schlagen; er werde oft zu zweit gespielt. Gegen den gebufften Dynasty-Tylo ist er im Bissduell gleichauf.
+
 ## Damage
 
 Schaden = Damage × (CW Angreifer ÷ CW Ziel) ÷ Armor Ziel. Die „Rotation“ folgt der Projekt-Methode: eine Standardattacke, die durchgehend benutzt wird, plus bis zu zwei stärkere Fähigkeiten. Status-Effekte zählen dabei nicht als Schaden.
@@ -134,6 +173,7 @@ Schaden = Damage × (CW Angreifer ÷ CW Ziel) ÷ Armor Ziel. Die „Rotation“ 
 | Eurhinosaurus | Bite 40/1,5 s · Thrash 50/4 s · Joust 65/7 s (+0,4 Blutung) · Tail Attack 25/4 s | Bite + Joust + Thrash | 32,7 |
 | Leedsichthys | Headbutt 55/2 s · Undertow 80/15 s (AoE, zieht heran) · Tail Attack 40/10 s · Burst 30/10 s · Inhale 15/10 s (zieht heran, bremst) | Headbutt + Undertow | 29,2 |
 | Prognathodon (Mod) | Bite 50/1,25 s · Toxic Lunge 115/35 s · Charged Bite 110/10 s (+Gift) · Breaching Clamp 75/16 s · Neuro Toxin Snap 40/8 s (+Gift) · Fin Tear 35/6 s (+Blutung, −5 % Tempo) · Tail Slap 35/5 s | Bite + Charged Bite + Toxic Lunge | 47,9 |
+| Sachicasaurus (Mod) | Bite 80/2 s · Bone Snap 85/6 s (+40 Knochenbruch) · Lunge 60/5 s · Aileron Roll 60/12 s (AoE, Knockback) · Clamp 30/10 s · Thrash 25/3 s (nur gepackt) | Bite + Bone Snap | 40,8 |
 | Xiphactinus (Mod) | Bite 50/1,5 s · Chomp 95/12 s (+Blutung, −15 % Armor) · Tearing Bite 25/4 s (+0,75 Blutung) | Bite + Chomp | 37,1 |
 | Livyatan (Mod) | Bite 65/2 s · Piercing Bite 110/15 s (+0,5 Blutung, −10 % Schaden beim Gegner) · Tail Slam 50/7 s (Knockback) | Bite + Piercing Bite | 35,5 |
 

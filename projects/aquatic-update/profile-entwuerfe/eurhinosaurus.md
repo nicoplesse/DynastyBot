@@ -79,7 +79,7 @@ Fishing is seen as a sport. Shoals train constantly to refine their coordination
   - Shoals love to race circles around the slow giant.
 - **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Eurhinosaurus take this as an insult to their sport, and drive them off. They give an aggressive call first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 - **Xiphactinus:** Xiphactinus are the only fish faster than Eurhinosaurus, and its most feared hunter. They live in the saltwater channels, so shoals cross them quickly and scatter at the first sight of a pack.
-- **Apex carnivores:** Eurhinosaurus flee from adult Tylosaurus, Prognathodon, Livyatan, Spinosaurus and Deinosuchus. They sometimes come across as arrogant and enjoy outrunning these predators in open water.
+- **Apex carnivores:** Eurhinosaurus flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus. They sometimes come across as arrogant and enjoy outrunning these predators in open water.
 
 ## Rule Exemptions (replaces the current section)
 

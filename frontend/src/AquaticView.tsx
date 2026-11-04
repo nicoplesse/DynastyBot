@@ -55,7 +55,7 @@ function Blocks({ blocks }: { blocks: AquaticBlock[] }) {
 
 function KindBadge({ profile }: { profile: AquaticSummary }) {
   return profile.kind === 'new'
-    ? <span className="aq-badge aq-badge-new" title={profile.mod ? `${profile.mod.name} · ${profile.mod.id}` : undefined}>Neu · Mod</span>
+    ? <span className="aq-badge aq-badge-new" title={profile.mod ? [profile.mod.name, profile.mod.id].filter(Boolean).join(' · ') : undefined}>Neu · Mod</span>
     : <span className="aq-badge">Geändert</span>;
 }
 
@@ -114,7 +114,7 @@ function AquaticCard({ item }: { item: AquaticSummary }) {
     <div className="aq-card-facts">
       <span><b>{item.stats.cw}</b>CW</span>
       <span><b>{item.stats.health}{item.stats.healthNote ? '+' : ''}</b>Health</span>
-      <span><b>{item.stats.sprint}</b>Sprint</span>
+      <span><b>{item.stats.sprint ?? '?'}</b>Sprint</span>
       {item.changes.length > 0 && <span><b>{item.changes.length}</b>Änderungen</span>}
     </div>
   </button>;
@@ -181,7 +181,7 @@ function HabitatPanel({ habitat, profiles }: { habitat: AquaticHabitat; profiles
           {(residents.get(hoverArea.id) ?? []).length ? <ul className="aq-residents">{(residents.get(hoverArea.id) ?? []).map(({ profile: owner, roles }) => <li key={owner.id} className={`side-${owner.side}`}>
             <i className="aq-dot" aria-hidden="true" /><b>{owner.nickname}</b><span>{sortedRoles(roles).map(role => habitat.roles[role]).join(' · ')}</span>
           </li>)}</ul> : <p className="aq-muted">Keine der Wasserarten lebt hier.</p>}
-          {hoverArea.id === 'palm-islands' && <p className="aq-muted">Livy kommt nie hierher. Darum ist Palm das eine Meer, in dem Prog vor ihm sicher ist, und zugleich die Front zu Deino und Spino.</p>}
+          {hoverArea.id === 'palm-islands' && <p className="aq-muted">Livy kommt nie hierher. Darum ist Palm das eine Meer, in dem Sachi vor ihm sicher ist, und zugleich die Front zu Deino und Spino.</p>}
         </div> : species && profile ? <div className={`aq-habitat-card side-${profile.side}`}>
           <div className="aq-eyebrow">{profile.role.toUpperCase()}</div>
           <h3><a href={`#/aquatic/${profile.id}`}>{profile.name}</a></h3>
@@ -193,7 +193,7 @@ function HabitatPanel({ habitat, profiles }: { habitat: AquaticHabitat; profiles
           })}</dl>
           {species.territories && <div className="aq-territory-list"><b>{habitat.territories.length} halbe Reviere</b><span>{habitat.territories.map(territory => territory.name).join(' · ')}</span></div>}
         </div> : <div className="aq-habitat-card">
-          <p className="aq-muted">Wähle eine Art oder fahr über einen POI. Die gestrichelten Linien teilen die Ozeane in die halben Reviere des Prognathodon.</p>
+          <p className="aq-muted">Wähle eine Art oder fahr über einen POI. Die gestrichelten Linien teilen die Ozeane in die halben Reviere des Sachicasaurus.</p>
           {habitat.zones.map(zone => <article key={zone.id} className="aq-zone" onMouseEnter={() => setZoneHover(zone.id)} onMouseLeave={() => setZoneHover(null)}>
             <h3>{zone.label}</h3>
             <p>{zone.text}</p>
@@ -215,7 +215,7 @@ function HabitatPanel({ habitat, profiles }: { habitat: AquaticHabitat; profiles
         </tr>)}
       </tbody>)}
     </table></div>
-    <p className="aq-legend">{ROLE_ORDER.map(role => `${ROLE_MARK[role]} ${habitat.roles[role]}`).join(' · ')}. Die halben Prog-Reviere sind flächengleich aus dem POI geschnitten; Grenzen im Spiel kann der Server anders ziehen.</p>
+    <p className="aq-legend">{ROLE_ORDER.map(role => `${ROLE_MARK[role]} ${habitat.roles[role]}`).join(' · ')}. Die halben Sachi-Reviere sind flächengleich aus dem POI geschnitten; Grenzen im Spiel kann der Server anders ziehen.</p>
   </section>;
 }
 
@@ -265,8 +265,13 @@ function SpeedTable({ profiles, extras }: { profiles: AquaticSummary[]; extras: 
     if (sort.key === 'oxygen') return clockSeconds(stats.oxygen);
     return stats[sort.key];
   };
-  const sorted = [...rows].sort((a, b) => (sort.desc ? value(b) - value(a) : value(a) - value(b)) || b.stats.sprint - a.stats.sprint);
-  const max = Math.max(...rows.map(row => row.stats.sprint));
+  // Unknown speeds (null) sit at the bottom in either direction.
+  const sorted = [...rows].sort((a, b) => {
+    const [first, second] = [value(a), value(b)];
+    if (first === null || second === null) return Number(first === null) - Number(second === null);
+    return (sort.desc ? second - first : first - second) || (b.stats.sprint ?? 0) - (a.stats.sprint ?? 0);
+  });
+  const max = Math.max(...rows.map(row => row.stats.sprint ?? 0));
   const choose = (key: SpeedKey) => setSort(current => ({ key, desc: current.key === key ? !current.desc : true }));
   return <section className="aq-panel">
     <div className="aq-section-head"><span aria-hidden="true">≋</span><div><div className="aq-eyebrow">WER WEN EINHOLT</div><h2>Tempo im Wasser</h2></div></div>
@@ -283,14 +288,14 @@ function SpeedTable({ profiles, extras }: { profiles: AquaticSummary[]; extras: 
           ? <span className="aq-speed-name"><i className="aq-dot" aria-hidden="true" />{row.name}<small>unverändert</small></span>
           : <a className="aq-speed-name" href={`#/aquatic/${row.id}`}><i className="aq-dot" aria-hidden="true" />{row.name}</a>}</th>
         <td><span className={`aq-type ${row.stats.type === 'Aquatic' ? 'full' : 'semi'}`}>{row.stats.type === 'Aquatic' ? 'voll' : 'halb'}</span></td>
-        <td>{row.stats.swim}</td>
-        <td className="aq-speed-sprint"><span className="aq-bar" aria-hidden="true"><span className="aq-bar-sprint" style={{ width: `${row.stats.sprint / max * 100}%` }} /><span className="aq-bar-swim" style={{ width: `${row.stats.swim / max * 100}%` }} /></span><b>{row.stats.sprint}</b></td>
+        <td>{row.stats.swim ?? '?'}</td>
+        <td className="aq-speed-sprint"><span className="aq-bar" aria-hidden="true"><span className="aq-bar-sprint" style={{ width: `${(row.stats.sprint ?? 0) / max * 100}%` }} /><span className="aq-bar-swim" style={{ width: `${(row.stats.swim ?? 0) / max * 100}%` }} /></span><b>{row.stats.sprint ?? '?'}</b></td>
         <td>{row.stats.sprintTime}</td>
-        <td>{row.stats.accel}</td>
+        <td>{row.stats.accel ?? '?'}</td>
         <td>{row.stats.oxygen}</td>
       </tr>)}</tbody>
     </table></div>
-    <p className="aq-legend">Spieleinheiten pro Sekunde, direkt aus den Blueprints der Spieldateien, ohne Traits. Klick auf eine Spalte sortiert. Wendigkeit fehlt, weil sich kein Wende-Wert in den Spieldateien sicher benennen lässt. Als Faustregel gilt: Volle Aquatics sind im Wasser wendiger als halbe, darum schlägt Tylo einen Spino im Wasser. Sarcosuchus ist ein unverändertes Dynasty-Profil und steht nur zum Vergleich dabei.</p>
+    <p className="aq-legend">Spieleinheiten pro Sekunde, direkt aus den Blueprints der Spieldateien, ohne Traits. „?“ heißt: noch nicht aus den Spieldateien gelesen, weil der Mod nicht heruntergeladen ist. Klick auf eine Spalte sortiert. Wendigkeit fehlt, weil sich kein Wende-Wert in den Spieldateien sicher benennen lässt. Als Faustregel gilt: Volle Aquatics sind im Wasser wendiger als halbe, darum schlägt Tylo einen Spino im Wasser. Sarcosuchus ist ein unverändertes Dynasty-Profil und steht nur zum Vergleich dabei.</p>
   </section>;
 }
 
@@ -374,7 +379,7 @@ function AquaticDetail({ id }: { id: string }) {
             <span>{profile.activity}</span>
             <span>{profile.group}</span>
             <span>Vorbild: {profile.analog}</span>
-            {profile.mod && <span className="aq-mod">{profile.mod.name} · <code>{profile.mod.id}</code></span>}
+            {profile.mod && <span className="aq-mod">{profile.mod.name}{profile.mod.id && <> · <code>{profile.mod.id}</code></>}</span>}
           </div>
           <p className="aq-home"><b>Lebensraum</b> {profile.home}</p>
         </div>
@@ -384,7 +389,7 @@ function AquaticDetail({ id }: { id: string }) {
         <div><dt>Health</dt><dd>{stats.health}{stats.healthNote && <small title={stats.healthNote}> +</small>}</dd></div>
         <div><dt>Armor</dt><dd>{formatDecimal(stats.armor)}</dd></div>
         <div><dt>Heilung/s</dt><dd>{formatDecimal(stats.heal)}</dd></div>
-        <div><dt>Schwimmen / Sprint</dt><dd>{stats.swim} / {stats.sprint}</dd></div>
+        <div><dt>Schwimmen / Sprint</dt><dd>{stats.swim ?? '?'} / {stats.sprint ?? '?'}</dd></div>
         <div><dt>Unter Wasser</dt><dd>{stats.oxygen}</dd></div>
       </dl>
       {profile.changes.length > 0 && <div className="aq-changes"><strong>Änderungen</strong>{profile.changes.map(change => <span key={change.label}><b>{change.label}</b> {change.from} <i aria-hidden="true">→</i> <em>{change.to}</em></span>)}</div>}
