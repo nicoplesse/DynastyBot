@@ -14,7 +14,7 @@
   "order": ["kaiwhekea", "eurhinosaurus", "leedsichthys", "xiphactinus", "tylosaurus", "sachicasaurus", "livyatan", "deinosuchus", "spinosaurus", "sarcosuchus"],
   "relations": {
     "kaiwhekea": {
-      "eurhinosaurus": ["group", "Mischgruppe bis 12, keiner verteidigt den anderen"],
+      "eurhinosaurus": ["group", "Mischgruppe bis 16, keiner verteidigt den anderen"],
       "leedsichthys": ["group", "1 Leeds je Gruppe, dann heißt sie Flotilla; keine Verteidigung in beide Richtungen"],
       "xiphactinus": ["defend", "2 Verteidiger und Schutzring um die Kälber; gegen einen Kai mit Ring verliert selbst ein voller Schwarm"],
       "tylosaurus": ["flee", "flieht auf Sicht, stellt sich nur am Nest"],
@@ -25,14 +25,14 @@
       "sarcosuchus": ["defend", "Sarco ist Large, kein Apex: Schutzring statt Flucht"]
     },
     "eurhinosaurus": {
-      "kaiwhekea": ["group", "Wache der Kai-Gruppe, schlägt Alarm statt zu kämpfen"],
+      "kaiwhekea": ["group", "Wache der Kai-Gruppe, schlägt Alarm statt zu kämpfen; bleibt, weil er mehr davon hat"],
       "leedsichthys": ["group", "darf mit 1 Leeds ziehen (Flotilla), keine Verteidigung"],
-      "xiphactinus": ["flee", "flieht vor Schwärmen; Xiph ist der einzige schnellere Fisch"],
-      "tylosaurus": ["flee", "flieht vor Apex und Giant"],
-      "sachicasaurus": ["flee", "flieht vor Apex und Giant"],
-      "livyatan": ["flee", "flieht vor Apex und Giant"],
-      "deinosuchus": ["flee", "flieht vor Apex und Giant"],
-      "spinosaurus": ["flee", "flieht vor Apex und Giant"],
+      "xiphactinus": ["flee", "flieht vor Rudeln ab 3, eng zusammen; Xiph sprintet schneller, Eurhino hält länger durch"],
+      "tylosaurus": ["flee", "flieht an der Oberfläche, ist schneller"],
+      "sachicasaurus": ["flee", "flieht aus dem Kelp ins offene Wasser; ein gepackter Eurhino ist verloren"],
+      "livyatan": ["flee", "flieht in die Untiefen"],
+      "deinosuchus": ["flee", "flieht ins offene Wasser; auf dem Lauf ohne Halt vorbei"],
+      "spinosaurus": ["flee", "flieht ins offene Wasser; auf dem Lauf durch Big Tree Overlook ohne Halt vorbei, wie Lachse an Bären"],
       "sarcosuchus": ["defend", "Sarco ist kein Apex: bis 3 wehren sich, meist entkommt der Schwarm durch Tempo"]
     },
     "leedsichthys": {
@@ -47,15 +47,15 @@
       "sarcosuchus": ["defend", "Sarco jagt im Wasser bis Apex"]
     },
     "xiphactinus": {
-      "kaiwhekea": ["hunt", "einzelne, von der Gruppe getrennte Kai, ab 4 Xiph; nie eine Gruppe mit Ring"],
-      "eurhinosaurus": ["hunt", "Hauptbeute"],
-      "leedsichthys": ["limited", "nur Junge, nie adulte Leeds"],
-      "tylosaurus": ["flee", "wie der Weiße Hai vor dem Orca: Tylo kann ihn clampen"],
+      "kaiwhekea": ["hunt", "einzelne, von der Gruppe getrennte Kai, ab 4 Xiph, im Kessel; wer seine Bale erreicht, ist für den Versuch sicher; nie eine Gruppe mit Ring"],
+      "eurhinosaurus": ["hunt", "Hauptbeute; Treiber jagen den Schwarm auseinander, Sperrer fangen ab"],
+      "leedsichthys": ["limited", "nur Junge, nie adulte Leeds, auch nicht, wenn sie ihre Jungen verteidigen"],
+      "tylosaurus": ["flee", "wie der Weiße Hai vor dem Orca: Tylo kann ihn clampen; verlässt den POI für mindestens 15 Minuten"],
       "sachicasaurus": ["flee", "kann ihn clampen; begegnen sich kaum, Sachi lebt im Ozean"],
       "livyatan": ["flee", "begegnen sich kaum, Livy lebt im Ozean"],
-      "deinosuchus": ["limited", "flieht, weil Deino ihn clampt; einen einzelnen Adulten ab 5 Xiph, mit großer Vorsicht, keine bevorzugte Beute"],
+      "deinosuchus": ["limited", "flieht, weil Deino ihn clampt; einen einzelnen Adulten ab 5 Xiph, nur im offenen Wasser 3 Körperlängen vom Ufer und ohne andere Beute in Sicht; Jagd endet am Ufer"],
       "spinosaurus": ["ignore", "ignorieren sich vollständig"],
-      "sarcosuchus": ["limited", "flieht, weil Sarco ihn clampt; einen einzelnen ab 4 Xiph, mit großer Vorsicht, keine bevorzugte Beute"]
+      "sarcosuchus": ["limited", "flieht, weil Sarco ihn clampt; einen einzelnen ab 4 Xiph, nur im offenen Wasser 3 Körperlängen vom Ufer und ohne andere Beute in Sicht; Jagd endet am Ufer"]
     },
     "tylosaurus": {
       "kaiwhekea": ["hunt", "Pflichtbeute: zuerst im POI"],

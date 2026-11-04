@@ -12,7 +12,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 | Gruß | – | eigener Gruß je Kai; Kühe übernehmen den Gruß des gewählten Bullen | Begrüßung nach Geschlecht |
 | Dimorphismus | freiwillig | Pflicht, weil der Gruß das Geschlecht nicht mehr zeigt | – |
 | Bindung | promiskuitiv | Harem für eine Saison, nach 5 Gelegen lebenslanges Paar | ähnlich |
-| Gruppe | 8 (6 ♀, 2 ♂) | 12 Sub/Adults (Kai und Eurhinosaurus zusammen), dazu 1 Leedsichthys; mit Leeds heißt die Gruppe Flotilla | 20, Mischherde |
+| Gruppe | 8 (6 ♀, 2 ♂) | 16 Sub/Adults (Kai und Eurhinosaurus zusammen), dazu 1 Leedsichthys; mit Leeds heißt die Gruppe Flotilla | 20, Mischherde |
 | Männchen | verlassen die Gruppe | bis zu 2 dominante Bullen begleiten die Bale, alle übrigen sind nicht-dominant; junge Bullen ziehen oft aus, müssen aber nicht | Hirsche schützen die Herde |
 | Führung | – | Leitkuh, dominante Bullen, Tanten | Leithirsch, Leithirschkühe |
 | Verteidigung | bis 3 im Kampf | 2 aktive Verteidiger plus Schutzring aus bis zu 6 um die Kälber | 2 plus Kreis aus 8 |
@@ -165,16 +165,16 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 ## Group Limits (In-Game Group)
 
-- Up to 12 Sub/Adults
+- Up to 16 Sub/Adults
 - Unlimited Offspring
 - Unlimited Adoptees
 
 This group is known as a bale.
 
 - **Bulls:** There is no limit on bulls. A bale has up to 2 dominant bulls, and any number of non-dominant bulls (see Bale Structure).
-- **Eurhinosaurus** may join a bale and count towards the 12 Sub/Adults. An orphaned Eurhinosaurus calf may travel with the bale like any Eurhinosaurus, but it is not an adoptee.
-- **Leedsichthys:** One Leedsichthys may join a bale in addition to the 12 Sub/Adults, together with its own offspring. A bale that travels with a Leedsichthys is known as a flotilla.
-- **Splitting:** Once offspring reach Sub-Adult, the bale must remain at 12 Sub/Adults or below. Lifelong pairs and mothers with their daughters stay together when a bale splits. Young bulls often leave at Sub-Adult (see Growing Up).
+- **Eurhinosaurus** may join a bale and count towards the 16 Sub/Adults. An orphaned Eurhinosaurus calf may travel with the bale like any Eurhinosaurus, but it is not an adoptee.
+- **Leedsichthys:** One Leedsichthys may join a bale in addition to the 16 Sub/Adults, together with its own offspring. A bale that travels with a Leedsichthys is known as a flotilla.
+- **Splitting:** Once offspring reach Sub-Adult, the bale must remain at 16 Sub/Adults or below. Lifelong pairs and mothers with their daughters stay together when a bale splits. Young bulls often leave at Sub-Adult (see Growing Up).
 - **Bale size in courtship:** Bales may court at full size, but often split into smaller nursery groups to nest, so as not to empty the fishing grounds near the pools.
 
 ## Engagement Limits (Defence & Hunts)
@@ -483,7 +483,8 @@ Kaiwhekea are tolerant towards other species and avoid conflict at all times. Wh
 
 - **Eurhinosaurus:**
   - Kaiwhekea welcome them as bale mates. Eurhinosaurus stay with a bale because they gain more from it than they give: safety in numbers, and the fish the bale drives together. Their speed and loud voices make them excellent sentries.
-  - The two species fish together and share fishing grounds.
+  - The two species fish together and share fishing grounds. Eurhinosaurus scouts often find the fish first, and the lead cow decides whether the bale follows their call.
+  - When Kaiwhekea nap on high rocks, grouped Eurhinosaurus stay in the water below and keep watch.
   - An orphaned Eurhinosaurus calf is welcomed kindly, like any Eurhinosaurus. It is not adopted, and has no place in the protective ring.
   - Kaiwhekea do not defend grouped Eurhinosaurus, but call out in grief if a bonded one is lost.
   - **In courtship:** Eurhinosaurus watch the dance closely. It excites them and puts them in a happy mood, and they often breach along with the bulls. Kaiwhekea do not let this distract them.
@@ -663,7 +664,7 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 ## Profile – Quick View
 
 - Kaiwhekea are Medium Diurnal Aquatic Piscivores.
-- They group in bales of up to 12 Sub/Adults, with unlimited offspring and adoptees. Eurhinosaurus may join, and so may one Leedsichthys, without any defence between the species. A group with a Leedsichthys is known as a flotilla.
+- They group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Eurhinosaurus may join, and so may one Leedsichthys, without any defence between the species. A group with a Leedsichthys is known as a flotilla.
 - They are passive, feed only on fish, shellfish and squid, and never hunt other players. They fish together by day, with techniques passed from mother to calf.
 - A lead cow guides the bale, up to 2 dominant bulls escort it, and aunts help raise the calves.
 - Every Kaiwhekea has its own greeting, which players must remember. Cows take on the greeting of their chosen bull for one season, or for life in a lifelong bond. Dominant bulls share one fixed greeting.

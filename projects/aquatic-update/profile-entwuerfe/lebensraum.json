@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die halben Sachi-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd).",
-  "view": { "x": 0.35, "y": 0, "width": 0.65, "height": 0.64 },
+  "view": { "x": 0.3, "y": 0, "width": 0.7, "height": 0.64 },
   "roles": {
     "home": "Lebt hier",
     "route": "Wanderroute",
@@ -23,8 +23,8 @@
     },
     {
       "id": "fresh", "label": "Süßwasser-Flüsse",
-      "text": "Reine Süßwasser-Flüsse im Westen, dazu Redwood Wind weiter im Südwesten. Von den Wasser-Jägern lebt hier nur Spino; Leeds nistet am Fluss von Big Tree Overlook.",
-      "areas": ["big-tree-overlook", "tallbrush-coasts", "cliff-edge-falls"]
+      "text": "Reine Süßwasser-Flüsse im Westen, dazu Redwood Wind weiter im Südwesten. Von den Wasser-Jägern lebt hier nur Spino, in Cedrus Forest lauert außerdem Sarcosuchus. Leeds nistet am Fluss von Big Tree Overlook, Eurhino weiter flussaufwärts in Cedrus Forest.",
+      "areas": ["big-tree-overlook", "cedrus-forest", "tallbrush-coasts", "cliff-edge-falls"]
     }
   ],
   "territories": [
@@ -64,16 +64,17 @@
     },
     {
       "id": "eurhinosaurus", "route": true,
-      "text": "Zieht dieselbe Route wie Kai, oft in derselben Gruppe. Zum Nisten geht es an den Fluss wie bisher.",
+      "text": "Zieht dieselbe Route wie Kai, oft in derselben Gruppe. Zum Nisten schwimmt die Schule flussaufwärts durch Big Tree Overlook nach Cedrus Forest, ohne zu fischen und ohne anzuhalten, so wie Lachse an den Bären vorbei.",
       "areas": [
         { "id": "volcano-islands", "roles": ["route"] }, { "id": "twisted-forest", "roles": ["route"] }, { "id": "stillwater-bog", "roles": ["route"] },
         { "id": "mudflats", "roles": ["route"] }, { "id": "coastland-swamp", "roles": ["route"] }, { "id": "coastal-bluffs", "roles": ["route"] },
-        { "id": "kelp-vale", "roles": ["trip"] }, { "id": "abyssal-depths", "roles": ["trip"] }, { "id": "palm-islands", "roles": ["trip"] }, { "id": "stonebed-shoal", "roles": ["trip"] }
+        { "id": "kelp-vale", "roles": ["trip"] }, { "id": "abyssal-depths", "roles": ["trip"] }, { "id": "palm-islands", "roles": ["trip"] }, { "id": "stonebed-shoal", "roles": ["trip"] },
+        { "id": "cedrus-forest", "roles": ["nest"] }
       ]
     },
     {
       "id": "xiphactinus",
-      "text": "Lebt nur in den Flussengen und wartet dort auf durchziehende Gruppen. Flieht vor Tylo und den Krokodilen, die ihn clampen können. Spino und Xiph ignorieren sich vollständig.",
+      "text": "Lebt nur in den Flussengen, denn der Ozean ist ihm zu kühl. Jagt durchziehende Gruppen, am liebsten in der Dämmerung, und wartet an den Mündungen zum Meer auf zurückkehrende Bales. Zur Balz treffen sich alle in Coastland Swamp, die Jungen wachsen in den Brackwasser-Sümpfen auf. Flieht vor Tylo und den Krokodilen, die ihn clampen können. Spino und Xiph ignorieren sich vollständig.",
       "areas": [
         { "id": "volcano-islands", "roles": ["home"] }, { "id": "twisted-forest", "roles": ["home"] }, { "id": "stillwater-bog", "roles": ["home"] },
         { "id": "mudflats", "roles": ["home", "nest"] }, { "id": "coastland-swamp", "roles": ["home", "nest"] }

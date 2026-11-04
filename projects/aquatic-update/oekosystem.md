@@ -102,7 +102,7 @@ Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Livy 7
 **Vorschlag:**
 - Kai frisst nur Fisch, Krebse und Muscheln und jagt keine Spieler. Gekämpft wird nur zur Verteidigung.
 - Bindung wie beim Para: Harem oder Paar, nach mehreren Gelegen ein lebenslanges Paar.
-- Bale bis 12 Sub/Adults, Mischgruppen mit Eurhinosaurus.
+- Bale bis 16 Sub/Adults, Mischgruppen mit Eurhinosaurus.
 - Zur Verteidigung bis zu 2 aktive Verteidiger und ein Schutzring um die Kälber, die im Flachwasser warten.
 - Vor Apexen flieht Kai auf Sicht, außer am Nest.
 
@@ -205,7 +205,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 - Seine Ausstattung ist die eines Raptors: Blutung (Tearing Bite, Chomp), Armor −15 %, Flash blendet und bremst um 25 %. Agility Mentality ist ein Gruppen-Buff, Sanguine Hunger bringt +20 % Schaden.
 - Als Einzelner verliert er jedes Duell. Das ist auch beim Utahraptor gegen den Para so.
 - Schwarm (battery) bis 6 Tiere, alle dürfen jagen. Laut Simulation schlagen 4 Xiphactinus einen allein stehenden Kai mit den neuen Werten, 3 schaffen es nicht. Gegen einen Kai mit 2 Verteidigern verlieren selbst 6. Erfolg hat ein Schwarm also nur, wenn er ein Tier von der Gruppe trennt. Entwurf: `profile-entwuerfe/xiphactinus.md`.
-- Statt Kai und Eurhino jagt er künftig die Leeds-Jungen.
+- Seine Beute sind Eurhinosaurus, von der Gruppe getrennte Kai, Leeds-Junge und die Jungen aller Arten. Adulte Leeds greift er nie an.
 
 **Widersprüche:**
 1. **Raptor und Pilotfisch zugleich geht nicht.** Ein Jäger würde den Schutz des Leeds als Deckung für die Jagd ausnutzen. Xiphactinus folgt dem Leeds also nicht.
@@ -229,9 +229,25 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
   - vereinzelte Kai
 - **Was er nicht kann:** eine intakte Kai-Gruppe mit 2 Verteidigern und Schutzring frontal angreifen. Raptoren gegen eine Para-Herde geht es an Land genauso.
 
+#### Vertiefung am 04.11. (zu entscheiden)
+
+Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.** Vorbilder sind Piranha und Hai, für die Rollen die Gelbsattel-Meerbarbe. Details und alle offenen Entscheidungen stehen in `profile-entwuerfe/xiphactinus.md`.
+- **Entschieden:**
+  - Er bleibt Cathemeral, ohne feste Jagdzeiten, ist aber in der Dämmerung am aktivsten.
+  - Treiber und Sperrer bleiben.
+  - Zur Balz treffen sich alle in Coastland Swamp.
+  - Dimorphismus ist Pflicht, und die Weibchen beißen die Männchen.
+- **Der Kessel:** Der Schwarm schließt die abgeschnittene Beute in einem trommelnden Ring ein. Jedes Tier hat seinen festen Platz, beißt einmal zu und kehrt sofort zurück, wie bei Piranhas.
+- **Rangordnung** 1 bis 6 nach Zeit im Schwarm, ohne Rangkämpfe. Rang 1 führt.
+- **Die Raserei:** Die Weibchen beißen die Männchen (nur Bite, keine Blutung). Wer unter 50 % fällt, ist raus. Sie endet, sobald nicht mehr Männchen übrig sind als Weibchen balzen. Damit gibt es keinen extremen Männchenüberschuss: Es scheiden nur so viele aus, wie zu viele da sind.
+- **Farb-Dimorphismus:** Der Mod hat keine Unterarten, nur 10 Skins. Weibchen tragen dunkle Farben, Männchen helle.
+- **Bleibt:** Drei Versuche je Gruppe (danach 15 Minuten Ruhe). Ein Kai bei seiner Bale ist für den Versuch sicher. Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer.
+- **Widerspruch:** Der Kai-Entwurf lässt die Kälber „in full daylight“ ziehen, weil die Dämmerung dem Xiph gehört. Mit Cathemeral ist das nur noch eine kluge Gewohnheit, kein Schutz.
+- **Beobachten:** 6 Xiph können ein Ziel mit Flash 30 s am Stück bremsen, genau so lange, wie ein Kai für den Rückweg zu seiner Bale hat. Begrenzt ist das nicht, weil die Beute keinen Regelschutz bekommt.
+
 ### Leedsichthys in der Kai-Gruppe (entschieden 03.11.)
 
-- Ein Leeds darf mit Kai und Eurhinosaurus gruppieren: 1 Leeds plus die Bale mit bis zu 12 Kai und Eurhino zusammen. Seine eigenen Jungen darf er mitbringen.
+- Ein Leeds darf mit Kai und Eurhinosaurus gruppieren: 1 Leeds plus die Bale mit bis zu 16 Kai und Eurhino zusammen. Seine eigenen Jungen darf er mitbringen.
 - **Name** (entschieden am 04.11.): Eine Gruppe, mit der ein Leeds zieht, heißt **Flotilla**. Die Kai-Gruppe bleibt eine Bale, auch wenn Eurhinos mitschwimmen. Die reine Eurhino-Gruppe bleibt eine Shoal.
 - **Tropeognathus und die Flotilla** (entschieden am 04.11.): Tropes suchen eine Flotilla und fliegen mit, ohne zu stören. Gruppieren dürfen sie nicht. Kommt die Flotilla an eine Fischansammlung, bedienen sie sich selbst. Kai und Eurhino vertreiben sie dann, weil sie dieselben Fische wollen; der Leeds bleibt passiv, er frisst keinen Fisch. Ein vertriebener Trope muss aus dem Wasser und den nächsten ruhigen Moment abwarten. Wehren kann er sich im Wasser nicht (3.8). Entwurf: `tropeognathus.md`.
 - **Niemand verteidigt den anderen.** Leeds verteidigt nur sich selbst und, wie bisher, seine eigenen Jungen. Kai und Eurhino verteidigen den Leeds nicht.

@@ -52,7 +52,7 @@
       "activity": "Tagaktiv",
       "analog": "Meeresschildkröte und Delfin-Schule",
       "home": "Route des Leedsichthys: warme Salzwasser-Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal",
-      "group": "Bale bis 12 (mit Eurhino), dazu 1 Leeds",
+      "group": "Bale bis 16 (mit Eurhino), dazu 1 Leeds",
       "essence": "Sozial, passiv und robust: Eine Leitkuh führt die Bale, bis zu 2 dominante Bullen begleiten sie, Tanten hüten die Kälber. Jeder Kai hat einen eigenen Gruß, und Kühe übernehmen den ihres Bullen. Kai fischen gemeinsam und schlafen auch auf hohen Felsen.",
       "dynastyProfile": "kaiwhekea",
       "mod": null,
@@ -127,10 +127,10 @@
       "role": "Schneller Schwarm und Wache",
       "classification": "Medium Cathemeral Aquatic Piscivore",
       "activity": "Cathemeral",
-      "analog": "Delfine und Lachs",
-      "home": "Dieselbe Route wie Kai, oft in derselben Gruppe; Nistfluss wie bisher",
-      "group": "Schwarm ohne Obergrenze; in der Kai-Gruppe bis 12 zusammen",
-      "essence": "Laut, verspielt und schnell: Eurhino warnt die Kai-Gruppe früh und überlebt durch Tempo statt Kraft.",
+      "analog": "Delfine, Fächerfisch und Lachs",
+      "home": "Dieselbe Route wie Kai, oft in derselben Gruppe; zum Nisten der Lauf flussaufwärts nach Cedrus Forest",
+      "group": "Schwarm ohne Obergrenze; in der Kai-Gruppe bis 16 zusammen",
+      "essence": "Laut, verspielt und schnell: ein Schwarm ohne Leitung, der dem folgt, der den Fisch findet. Eurhino schläft mit einem offenen Auge, warnt die Kai-Gruppe früh und überlebt durch Tempo statt Kraft.",
       "dynastyProfile": "eurhinosaurus",
       "mod": null,
       "stats": {
@@ -150,17 +150,32 @@
         {
           "label": "Ernährung",
           "from": "jagt Kai „als Sport“",
-          "to": "nur Fisch"
+          "to": "nur Fisch, Fischen als Sport"
         },
         {
           "label": "Kai",
           "from": "Lieblingsbeute",
-          "to": "Gruppenpartner"
+          "to": "Gruppenpartner und Wache"
         },
         {
           "label": "Wanderung",
           "from": "sesshaft",
-          "to": "Route des Leeds"
+          "to": "Route des Leeds, Lauf zum Nistfluss"
+        },
+        {
+          "label": "Führung",
+          "from": "–",
+          "to": "keine; wer Fisch findet, führt; bis zu 2 Späher"
+        },
+        {
+          "label": "Wache",
+          "from": "–",
+          "to": "ab 3 Tieren bleibt immer einer wach"
+        },
+        {
+          "label": "Angeben",
+          "from": "„arrogant“",
+          "to": "einmal am Jäger vorbei, 3 Körperlängen Abstand"
         }
       ]
     },
@@ -231,11 +246,11 @@
       "kind": "new",
       "role": "Raptor des Meeres",
       "classification": "Medium Cathemeral Aquatic Carnivore",
-      "activity": "Dämmerung",
-      "analog": "Tarpun, Barrakuda und Giant Trevally",
-      "home": "Nur die Salzwasser-Flussengen, nie der offene Ozean; Kinderstube in Coastland Swamp und Mudflats Venule",
-      "group": "Schwarm (battery) bis 6, alle jagen",
-      "essence": "Gewinnt durch Bewegung, nicht durch Kraft: lauert in den Flussengen auf durchziehende Gruppen, trennt Beute ab, blendet sie und lässt sie bluten.",
+      "activity": "Cathemeral, am aktivsten in der Dämmerung",
+      "analog": "Piranha und Hai, dazu Gelbsattel-Meerbarbe und Tarpun",
+      "home": "Nur die Salzwasser-Flussengen, nie der offene Ozean; wartet an den Toren zum Meer; Balz in Coastland Swamp, Kinderstube in Coastland Swamp und Mudflats Venule",
+      "group": "Schwarm (battery) bis 6 mit Rangordnung, alle jagen als Treiber oder Sperrer",
+      "essence": "Von außen Chaos, von innen Kontrolle: Der Schwarm schneidet die Beute ab und schließt sie im Kessel ein, einem trommelnden Ring in vollem Tempo, aus dem jeder auf seinem festen Platz zubeißt und sofort zurückkehrt. Zur Balz beißen die Weibchen die Männchen, bis nur noch so viele übrig sind, wie Weibchen balzen.",
       "dynastyProfile": null,
       "mod": {
         "name": "ArazoaXiph",
@@ -256,14 +271,34 @@
       },
       "changes": [
         {
+          "label": "Jagd",
+          "from": "–",
+          "to": "Flash des Leittiers eröffnet; Kessel: Ring, zubeißen und zurück; bis 3 Versuche je Gruppe"
+        },
+        {
+          "label": "Ordnung",
+          "from": "–",
+          "to": "Rang 1–6 nach Zeit im Schwarm; Treiber und Sperrer fürs Leben"
+        },
+        {
           "label": "Feinde",
           "from": "–",
-          "to": "Tylo, Deino, Sarco (clampen)"
+          "to": "Tylo, Deino, Sarco (clampen); gepackt heißt verloren"
         },
         {
           "label": "Krokodile",
           "from": "–",
-          "to": "Sarco ab 4, Deino ab 5"
+          "to": "Sarco ab 4, Deino ab 5, nur im offenen Wasser"
+        },
+        {
+          "label": "Balz",
+          "from": "–",
+          "to": "Raserei in Coastland Swamp: Weibchen beißen die Männchen, wer durchhält, wird gewählt"
+        },
+        {
+          "label": "Dimorphismus",
+          "from": "–",
+          "to": "Pflicht über die Farbe: Weibchen dunkel, Männchen hell"
         }
       ]
     },

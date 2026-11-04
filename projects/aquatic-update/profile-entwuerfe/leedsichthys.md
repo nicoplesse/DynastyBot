@@ -6,7 +6,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 
 | Punkt | Bisher | Neu |
 | --- | --- | --- |
-| Andere Arten | dürfen nicht mit ihm gruppieren | 1 Leeds darf mit einer Bale gruppieren (bis 12 Kai und Eurhino zusammen); die Gruppe heißt dann Flotilla |
+| Andere Arten | dürfen nicht mit ihm gruppieren | 1 Leeds darf mit einer Bale gruppieren (bis 16 Kai und Eurhino zusammen); die Gruppe heißt dann Flotilla |
 | Tropeognathus | – | bleibt passiv, wenn Tropes der Flotilla folgen; er frisst keinen Fisch |
 | Verteidigung | – | keine, in keine Richtung; Leeds verteidigt nur sich und seine eigenen Jungen |
 | Fähigkeiten in der Mischgruppe | – | Looming Presence nicht erlaubt; Fähigkeiten gegen andere Tiere nur, wenn er selbst angegriffen wird |
@@ -41,7 +41,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 ## Group Limits (addition)
 
 - **Own species:** Unchanged. 1 Sub/Adult, and unlimited offspring if the parent is male.
-- **Mixed group:** In addition, one Leedsichthys may join a Kaiwhekea bale of up to 12 Sub/Adults (Kaiwhekea and Eurhinosaurus combined).
+- **Mixed group:** In addition, one Leedsichthys may join a Kaiwhekea bale of up to 16 Sub/Adults (Kaiwhekea and Eurhinosaurus combined).
 
 ## Engagement Limits (addition)
 
