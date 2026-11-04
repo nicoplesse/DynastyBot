@@ -223,6 +223,8 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 ### Leedsichthys in der Kai-Gruppe (entschieden 03.11.)
 
 - Ein Leeds darf mit Kai und Eurhinosaurus gruppieren: 1 Leeds plus die Bale mit bis zu 12 Kai und Eurhino zusammen. Seine eigenen Jungen darf er mitbringen.
+- **Name** (entschieden am 04.11.): Eine Gruppe, mit der ein Leeds zieht, heißt **Flotilla**. Die Kai-Gruppe bleibt eine Bale, auch wenn Eurhinos mitschwimmen. Die reine Eurhino-Gruppe bleibt eine Shoal.
+- **Tropeognathus und die Flotilla** (entschieden am 04.11.): Tropes suchen eine Flotilla und fliegen mit, ohne zu stören. Gruppieren dürfen sie nicht. Kommt die Flotilla an eine Fischansammlung, bedienen sie sich selbst. Kai und Eurhino vertreiben sie dann, weil sie dieselben Fische wollen; der Leeds bleibt passiv, er frisst keinen Fisch. Ein vertriebener Trope muss aus dem Wasser und den nächsten ruhigen Moment abwarten. Wehren kann er sich im Wasser nicht (3.8). Entwurf: `tropeognathus.md`.
 - **Niemand verteidigt den anderen.** Leeds verteidigt nur sich selbst und, wie bisher, seine eigenen Jungen. Kai und Eurhino verteidigen den Leeds nicht.
 - **Kein Stufenschutz.** Die anfangs vorgeschlagene Pilotfisch-Regel (Begleiter zählen als Apex) ist gestrichen. Sie hätte Xiphactinus die Beute genommen und Kai und Eurhino vom Leeds abhängig gemacht.
 

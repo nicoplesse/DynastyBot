@@ -10,7 +10,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 | Nahrung | jagt bis Large, Leeds-Junge zuerst | nur Fisch, Muscheln, Tintenfisch; jagt keine Spieler | Herbivore |
 | Charakter | tolerant | passiv | passiv |
 | Bindung | promiskuitiv | Harem, nach 5 Gelegen lebenslanges Paar | gleich |
-| Gruppe | 8 (6 ♀, 2 ♂) | 12 Sub/Adults (Kai und Eurhinosaurus zusammen), dazu 1 Leedsichthys | 20, Mischherde |
+| Gruppe | 8 (6 ♀, 2 ♂) | 12 Sub/Adults (Kai und Eurhinosaurus zusammen), dazu 1 Leedsichthys; mit Leeds heißt die Gruppe Flotilla | 20, Mischherde |
 | Männchen | verlassen die Gruppe | bleiben als Bündnis-Duo bei der Gruppe | Hirsche schützen die Herde |
 | Verteidigung | bis 3 im Kampf | 2 aktive Verteidiger plus Schutzring aus bis zu 6 um die Kälber | 2 plus Kreis aus 8 |
 | Apex | flieht vor Spino und Deino | flieht vor allen Apex-Jägern, außer am Nest | gleich |
@@ -58,6 +58,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 This group is known as a bale.
 - Eurhinosaurus may join a bale and count towards the 12 Sub/Adults.
 - One Leedsichthys may join a bale in addition to the 12 Sub/Adults, together with its own offspring.
+- A bale that travels with a Leedsichthys is known as a flotilla.
 Once offspring reach Sub-Adult, the bale must remain at 12 Sub/Adults or below. Harems and pairbonds may stay together when a bale splits.
 
 ## Engagement Limits (Defence & Hunts)
@@ -173,11 +174,12 @@ Kaiwhekea are tolerant towards other species and avoid conflict at all times. Wh
 
 - **Eurhinosaurus:** Kaiwhekea welcome them as bale mates. Their speed and loud voices make them excellent sentries. Kaiwhekea do not defend grouped Eurhinosaurus, but call out in grief if a bonded one is lost.
 - **Leedsichthys:**
-  - A bale may travel with one Leedsichthys, like pilot fish around a whale shark, and may group with it in game.
+  - A bale may travel with one Leedsichthys, like pilot fish around a whale shark, and may group with it in game. Together they are known as a flotilla.
   - Neither side defends the other. The Leedsichthys defends only itself and its own offspring, and Kaiwhekea never step in for it.
   - Kaiwhekea may use the giant's body as cover and hide behind or beneath it. The Leedsichthys never moves to block a predator on their behalf.
 - **Apex carnivores:** Kaiwhekea flee from adult Tylosaurus, Prognathodon, Livyatan, Spinosaurus and Deinosuchus on sight.
 - **Xiphactinus:** Single Xiphactinus are watched closely. Packs of 3 or more are treated as an active threat.
+- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give an aggressive call first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 
 ## Predator Reaction
 
@@ -236,7 +238,7 @@ When Kaiwhekea reach old age, they slow down and swim at the back of the bale, w
 ## Profile – Quick View
 
 - Kaiwhekea are Medium Diurnal Aquatic Piscivores.
-- They group in bales of up to 12 Sub/Adults, with unlimited offspring and adoptees. Eurhinosaurus may join, and so may one Leedsichthys, without any defence between the species.
+- They group in bales of up to 12 Sub/Adults, with unlimited offspring and adoptees. Eurhinosaurus may join, and so may one Leedsichthys, without any defence between the species. A group with a Leedsichthys is known as a flotilla.
 - They are passive, feed only on fish, shellfish and squid, and never hunt other players.
 - 2 active defenders protect the bale, and up to 6 form a ring around the calves. They flee from Apex and Giant carnivores on sight, except at a nest.
 - They form harems that can become lifelong pairbonds.

@@ -9,7 +9,8 @@ Eurhinosaurus bleibt größtenteils, wie er ist. Schwärme, Freundschaften, Farb
 | Einstufung | Medium Cathemeral Aquatic Carnivore | Medium Cathemeral Aquatic Piscivore |
 | Nahrung | jagt Kai und Leeds-Junge zuerst, „als Sport“, bis Large | nur Fisch und Krebse; jagt keine Spieler |
 | Kaiwhekea | Lieblingsbeute, grausam gejagt | Gruppenpartner und Wache |
-| Leedsichthys | jagt dessen Junge | darf mit ihm gruppieren; keiner verteidigt den anderen |
+| Leedsichthys | jagt dessen Junge | darf mit ihm gruppieren, dann heißt die Gruppe Flotilla; keiner verteidigt den anderen |
+| Tropeognathus | – | vertreibt ihn, wenn er der Flotilla die Fische wegfischt |
 | Werte | Health 600 | unverändert; Eurhino bleibt die Beute, die Xiphactinus sicher erlegen kann |
 | Wanderung | sesshaft | zieht die Route des Leedsichthys mit, wie Kai; das Nisten bleibt am Fluss |
 
@@ -32,7 +33,7 @@ Der Charakter des Profils bleibt erhalten: laut, verspielt, ein bisschen arrogan
 
 Unlimited Sub/Adults, Offspring and Adoptees stay as they are.
 - When grouped with a Kaiwhekea bale, Eurhinosaurus count towards the bale's limit of 12 Sub/Adults.
-- One Leedsichthys may join in addition.
+- One Leedsichthys may join in addition. A group with a Leedsichthys is known as a flotilla.
 
 ## Engagement Limits (replaces the current section)
 
@@ -72,10 +73,11 @@ Fishing is seen as a sport. Shoals train constantly to refine their coordination
   - Shoals often swim on the outer edge of a migrating bale and dart ahead to scout for fish.
   - Eurhinosaurus tease Kaiwhekea with playful nips and races, but never harm them.
 - **Leedsichthys:**
-  - Eurhinosaurus may travel and group with one Leedsichthys, like pilot fish around a whale shark.
+  - Eurhinosaurus may travel and group with one Leedsichthys, like pilot fish around a whale shark. Such a group is known as a flotilla.
   - Neither side defends the other.
   - Eurhinosaurus may use the giant's body as cover. The Leedsichthys never moves to block a predator for them.
   - Shoals love to race circles around the slow giant.
+- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Eurhinosaurus take this as an insult to their sport, and drive them off. They give an aggressive call first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 - **Xiphactinus:** Xiphactinus are the only fish faster than Eurhinosaurus, and its most feared hunter. They live in the saltwater channels, so shoals cross them quickly and scatter at the first sight of a pack.
 - **Apex carnivores:** Eurhinosaurus flee from adult Tylosaurus, Prognathodon, Livyatan, Spinosaurus and Deinosuchus. They sometimes come across as arrogant and enjoy outrunning these predators in open water.
 

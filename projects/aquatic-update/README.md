@@ -13,6 +13,7 @@ projects/aquatic-update/
   werte.md        Werte-Vergleich: 4 Aquatics + Mods Prognathodon, Xiphactinus, Livyatan
   prognathodon-kurven.txt  Offizielle Standard-Kurven des Prognathodon von den Modmachern
   oekosystem.md   Bewertung: Rollen, Widersprüche, Stat- und Regel-Vorschläge
+  tropeognathus.md  Entwurf: Tropeognathus und die Flotilla (kein Wassertier, deshalb nicht im App-Tab)
   profile-entwuerfe/  Profil-Entwürfe auf Englisch: kaiwhekea, eurhinosaurus, leedsichthys, xiphactinus, livyatan, prognathodon, tylosaurus, deinosuchus, spinosaurus
     index.json        Kartenwerte für den App-Tab „Aquatic Update“ (#/aquatic): Rolle, Werte, Änderungen
     lebensraum.json   Wer wo lebt: Zonen, halbe Prog-Reviere, Leeds-Route; Karte im App-Tab

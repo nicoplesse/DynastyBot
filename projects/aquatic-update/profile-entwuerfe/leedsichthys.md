@@ -6,7 +6,8 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 
 | Punkt | Bisher | Neu |
 | --- | --- | --- |
-| Andere Arten | dürfen nicht mit ihm gruppieren | 1 Leeds darf mit einer Bale gruppieren (bis 12 Kai und Eurhino zusammen) |
+| Andere Arten | dürfen nicht mit ihm gruppieren | 1 Leeds darf mit einer Bale gruppieren (bis 12 Kai und Eurhino zusammen); die Gruppe heißt dann Flotilla |
+| Tropeognathus | – | bleibt passiv, wenn Tropes der Flotilla folgen; er frisst keinen Fisch |
 | Verteidigung | – | keine, in keine Richtung; Leeds verteidigt nur sich und seine eigenen Jungen |
 | Fähigkeiten in der Mischgruppe | – | Looming Presence nicht erlaubt; Fähigkeiten gegen andere Tiere nur, wenn er selbst angegriffen wird |
 | Kai und Eurhino | Hauptfeinde der Jungen; Weibchen töten deren Junge | harmlose Gruppenpartner; die Tötungsregel entfällt |
@@ -34,7 +35,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 
 ## Overview (replaces the grouping line)
 
-- Leedsichthys may group with one Kaiwhekea bale, which may include Eurhinosaurus. Only one Sub/Adult Leedsichthys may be part of such a group, together with its own offspring.
+- Leedsichthys may group with one Kaiwhekea bale, which may include Eurhinosaurus. Only one Sub/Adult Leedsichthys may be part of such a group, together with its own offspring. A group with a Leedsichthys is known as a flotilla.
 - Leedsichthys never defend the species they group with, and those species never defend them.
 
 ## Group Limits (addition)
@@ -75,6 +76,9 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 - Bales and shoals often travel with a Leedsichthys, gathering beneath and beside it, much like pilot fish around a whale shark.
 - Leedsichthys enjoy this company. Some slow their pace so the smaller swimmers can keep up.
 - Pups soon learn to school alongside the young of both species.
+
+**Tropeognathus.**
+- Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Leedsichthys stay passive towards them, as they do not eat fish. Driving them off is left to Kaiwhekea and Eurhinosaurus.
 
 **Xiphactinus.**
 - Xiphactinus packs are now the most dangerous hunters of Leedsichthys pups in the saltwater channels, where the batteries live. They use their speed to split the school.
