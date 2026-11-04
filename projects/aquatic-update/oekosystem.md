@@ -184,6 +184,11 @@ Das Profil passt fast so, wie es ist. Nötig sind nur Anpassungen an die neuen A
 
 **Folge für Tylosaurus und Prognathodon:** Ein einzelner Tylo flieht vor Livy, ein Tylo-Paar darf ihn jagen. Prog flieht, allein und als Paar; ein Prog-Paar darf sich wehren, verliert aber knapp. Das steht so in `profile-entwuerfe/tylosaurus.md` und `profile-entwuerfe/prognathodon.md`.
 
+**Rivalen der Tiefe: Livy und Leeds** (entschieden am 04.11.):
+- Der Leeds flieht nie vor dem Livy. Fliehen brächte nichts, denn der Livy ist schneller (750 gegen 600), und in der Tiefe gibt es kein Versteck. Vorbild sind Buckelwale, die auf jagende Orcas losgehen.
+- Er zieht jeden Kampf in die Tiefe, wo er nie Luft holen muss. Ohne Junge ist er aggressiv (duldet keinen Livy im Umkreis von 5 Körperlängen, respektiert dessen Forfeit), als Vater mit Jungen headstrong (greift auch nach einem Forfeit oder während der Livy Luft holt weiter an, bis der Livy den POI oder die Sichtweite verlässt). Das gilt nur gegenüber dem Livy.
+- **Luft-Regel für den Livy:** Unter 25 % Sauerstoff muss er abbrechen und auftauchen; das zählt als Forfeit. Im Bissduell gewinnt der Livy klar, der Kampf wird aber ein Rennen gegen die eigene Luft, wie beim Pottwal gegen den Riesenkalmar. Die 25 % müssen im Spiel getestet werden.
+
 ### Xiphactinus als Raptor
 
 **Passt gut:**

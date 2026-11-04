@@ -11,7 +11,9 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 | Fähigkeiten in der Mischgruppe | – | Looming Presence nicht erlaubt; Fähigkeiten gegen andere Tiere nur, wenn er selbst angegriffen wird |
 | Kai und Eurhino | Hauptfeinde der Jungen; Weibchen töten deren Junge | harmlose Gruppenpartner; die Tötungsregel entfällt |
 | Feinde der Jungen | Tylo, Kai, Eurhino, Austroraptor, Concavenator | Tylo, Xiphactinus-Rudel, Austroraptor, Concavenator |
-| Feind der Adulten | Tylosaurus | Livyatan (allein; Livy gewinnt klar, Rettung ist das Flachwasser), Tylosaurus |
+| Feind der Adulten | Tylosaurus | Livyatan (allein), Tylosaurus |
+| Haltung gegenüber Livyatan | – | Rivale (entschieden am 04.11.): flieht nie, zieht den Kampf in die Tiefe; ohne Junge aggressiv, duldet keinen Livy im Umkreis von 5 Körperlängen; Väter mit Jungen headstrong, greifen auch nach einem Forfeit oder während der Livy Luft holt weiter an; nur gegenüber Livy |
+| Forfeits (4.8.2.3) | respektiert die Forfeits aller Fleischfresser | unverändert, außer: ein Vater mit Jungen darf den Forfeit eines Livy ignorieren |
 | Health | „Boosted health“ ohne Wert | Wert festlegen (offen) |
 | Wanderroute | Schleife durchs Meer und die Kanäle | dieselbe Schleife durch die warmen Salzwasser-Flussengen, dazu regelmäßige Abstecher in die Ozeane Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal; Kai und Eurhino ziehen dieselbe Route |
 | Schlaf | kurze Schübe, egal wo und wann | schläft nachts meist bei seiner Gruppe, wenn er eine hat |
@@ -19,7 +21,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 **Warum die Route so läuft:** In den flachen Flussengen zwischen den Inseln ist das Wasser warm. Leeds zieht regelmäßig hinaus in die Ozeane, um sich abzukühlen. Kai und Eurhino finden dort die Fischarten, die für sie am wertvollsten sind. So haben beide Seiten ihren eigenen Grund für dieselbe Route, und Kai brauchen den Leeds nicht, um sie zu finden.
 
 **Warum es keinen Schutz gibt:**
-- **Kein Leibwächter:** Leeds gewinnt jedes Duell, weil er doppelte Armor hat. Als Leibwächter würde er Kai und Eurhino unangreifbar machen.
+- **Kein Leibwächter:** Leeds gewinnt fast jedes Duell, weil er doppelte Armor hat. Nur der Livy schlägt ihn. Als Leibwächter würde er Kai und Eurhino unangreifbar machen.
 - **Kein Stufenschutz:** Schutz über die Stufe würde Xiphactinus die Beute nehmen. Kai und Eurhino würden vom Leeds abhängig.
 - **Was bleibt:** Er ist Gesellschaft und bietet Deckung, die man durch Bewegung nutzt. Beides ist klein und hängt vom Spielen ab.
 
@@ -45,7 +47,13 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 - Within a mixed group, a Leedsichthys only defends itself and its own offspring.
 - It does not intervene in hunts against grouped Kaiwhekea or Eurhinosaurus, and does not move to block predators on their behalf.
 - While grouped with other species, Leedsichthys may not equip Looming Presence.
-- Abilities that weaken, slow or pull other creatures may only be used when the Leedsichthys itself, or its own offspring, is under attack. This covers Undertow, Inhale, Crushing Pressure and the debilitating calls.
+- Abilities that weaken, slow or pull other creatures may only be used when the Leedsichthys itself, or its own offspring, is under attack, or when it engages a Livyatan. This covers Undertow, Inhale, Crushing Pressure and the debilitating calls.
+- **Predator Reaction towards Livyatan:** Aggressive. Fathers with grouped offspring: Headstrong.
+  - Leedsichthys never flee from Sub/Adult Livyatan, and do not tolerate them within 5 body lengths. They may attack them, and try to drag the fight into deep water.
+  - Without offspring, a Leedsichthys respects a Livyatan's forfeit.
+  - A father with grouped offspring is Headstrong towards Livyatan. He may ignore a Livyatan's forfeit, including a Livyatan that breaks off to surface for air, and keep attacking until it leaves the POI or his line of sight (as in 4.8.2.2). He wants the danger gone for his pups.
+  - Livyatan calves are chased away, as Tylosaurus offspring are, but not hunted.
+  - This applies to Livyatan only. Towards all other species, Leedsichthys keep their usual Defensive reaction.
 
 ## Migration (replaces the migration paragraph)
 
@@ -73,13 +81,19 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 - Fathers recognise their silhouettes and gather their pups at the first sight of a pack.
 
 **Livyatan.**
-- Livyatan are the only predators that regularly target adult Leedsichthys. They always come alone, rising from the deep, and an adult Leedsichthys rarely wins such a fight. Its best defence is to reach shallow water, where Livyatan do not follow.
-- Livyatan hunt in every ocean on the route except Palm Islands. Leedsichthys that sense clicking in the water turn away from open, deep water and seek shallower ground.
+- Livyatan are the only predators that regularly target adult Leedsichthys, and the two giants of the ocean are bitter rivals. Livyatan always come alone, rising from the deep.
+- A Leedsichthys never flees from a Livyatan. Fleeing would be useless: the whale is faster, and in deep water there is nowhere to hide. When clicking echoes through the water, a Leedsichthys turns towards the sound, the way humpback whales rush in when they hear killer whales.
+- It drags every fight into the depths. A Livyatan must breathe, a Leedsichthys never does, and Crushing Pressure steals what air the whale has left. Whoever needs air first loses.
+- Fathers fear the Livyatan more than anything else. A father with pups does not stop when the whale breaks off. He follows it, even to the surface, until the danger to his pups is gone.
+- Elderly and Albino Leedsichthys live in the deep ocean, the home of the Livyatan, and meet it more often than any others.
+- Livyatan hunt in every ocean on the route except Palm Islands.
 
 **Tylosaurus.**
 - Unchanged: one of the most prominent predators, especially of pups.
 
 ## Rule Exemptions (addition)
+
+- **Forfeits (4.8.2.3):** Leedsichthys keep respecting the forfeits of other carnivores, with one exception: a father with grouped offspring may ignore the forfeit of a Livyatan (see Engagement Limits).
 
 - Leedsichthys may group with a Kaiwhekea bale (exemption from 8.1, under the proposed piscivore rule). There is no defence between the species, and Looming Presence may not be equipped while grouped (8.1.1).
 

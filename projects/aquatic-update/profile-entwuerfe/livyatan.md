@@ -53,7 +53,13 @@ Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“),
   - Leviathan's Call nutzt die Familie nur zur Verteidigung der Kälber.
   - Paare von Tylo und Prog sind vor ihm nicht mehr sicher: Er schlägt ein Tylo-Paar (35 s, mit 22 % Health) und knapp auch ein Prog-Paar (40 s, mit 7 %). Er darf beide jagen, zieht aber Einzeltiere vor.
   - Gefährlich bleiben ihm nur Kai-Gruppen ab 3 Tieren, die sich stellen. Kai fliehen aber vor Giants auf Sicht.
-- **Leeds ist seine Hauptbeute, und der Livy ist ihm klar überlegen** (39 s mit 65 % Health bei einem Leeds mit 1000 Health, 78 s mit 29 % bei 2000). Den Leeds rettet nicht der Kampf, sondern das Flachwasser, in das der Livy ihm nicht folgt.
+- **Leeds ist seine Hauptbeute und sein Rivale** (entschieden am 04.11.). Im reinen Bissduell ist der Livy klar überlegen (39 s mit 65 % Health bei einem Leeds mit 1000 Health, 78 s mit 29 % bei 2000). Der Leeds flieht aber nie, sondern zieht den Kampf in die Tiefe, wo er nie Luft holen muss.
+  - Ohne Junge ist der Leeds aggressiv: Er duldet keinen Livy im Umkreis von 5 Körperlängen, darf ihn angreifen und respektiert dessen Forfeit.
+  - Ein Vater mit Jungen ist headstrong: Er greift auch nach einem Forfeit oder während der Livy Luft holt weiter an, bis der Livy den POI oder seine Sichtweite verlässt. Er will die Gefahr für seine Jungen beseitigen.
+  - Das gilt nur gegenüber dem Livy. Livy-Kälber vertreibt der Leeds wie Tylo-Junge, jagt sie aber nicht.
+- **Luft-Regel** (entschieden am 04.11.): Fällt sein Sauerstoff unter 25 %, muss der Livy abbrechen und auftauchen. Das zählt als Forfeit (4.8.2): Er darf die Jagd nicht neu beginnen, sich aber wehren. Vorbild ist die Rex-Regel, nach der er abbrechen muss, wenn die Ausdauer leer ist.
+  - Damit wird der Leeds-Kampf ein Rennen: Der Livy muss töten, bevor ihm der Leeds mit der Tiefe und Crushing Pressure die Luft nimmt. Pottwal gegen Riesenkalmar.
+  - Die 25 % sind ein Vorschlag und müssen im Spiel getestet werden, denn die Abklingzeit von Crushing Pressure ist unbekannt.
 - **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Prog müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Prog oder Xiph.
 - **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 5500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
@@ -95,13 +101,14 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - Livyatan may hunt up to Apex tier.
 - **Giant tier:** As a Giant, an adult Livyatan cannot be hunted by species limited to Apex tier, such as Prognathodon, which may only defend themselves against it. The one exception are Tylosaurus pairs: they may hunt adult Livyatan at any hunger level, but only when no Kaiwhekea, Eurhinosaurus or Leedsichthys are in the POI. Livyatan are the only Giant that a hunter limited to Apex tier may hunt. Livyatan keep a wider distance from engagements they are not part of, as the server rules ask of Giant species.
 - Livyatan only hunt in open and deep water. They do not follow prey into the shallows, and never attack creatures on land or within one body length of the shore.
+- **Air:** A Livyatan whose oxygen falls below 25% must break off the engagement and surface. This counts as a forfeit (4.8.2): it may not restart the hunt, but may still defend itself.
 - Adolescent Livyatan do not assist with hunts.
 
 ## Preferred Prey
 
 - **Large prey first:** Livyatan must target solitary Leedsichthys, Tylosaurus and Prognathodon first, if they are present in the POI. Tylosaurus and Prognathodon pairs may be hunted as well.
 - **Smaller prey:** Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
-- **Leedsichthys:** Leedsichthys are Livyatan's main prey. A grown Livyatan overpowers an adult Leedsichthys, but the hunt is long, and the Leedsichthys will try to reach shallow water, where Livyatan do not follow.
+- **Leedsichthys:** Leedsichthys are Livyatan's main prey and its greatest rival. A grown Livyatan overpowers an adult Leedsichthys in a straight fight, but a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
 - **Spinosaurus & Deinosuchus:** Both keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
 - **Third-party:** Livyatan do not third-party engagements (3.18).
 
@@ -156,7 +163,7 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
 
 ## Cross-Species Interaction
 
-- **Leedsichthys:** Leedsichthys are Livyatan's preferred prey, the closest thing to the great baleen whales they once hunted. Lone hunters track them by sound along their migration routes and rise from below.
+- **Leedsichthys:** Leedsichthys are Livyatan's preferred prey, the closest thing to the great baleen whales they once hunted. Lone hunters track them by sound along their migration routes and rise from below. The two giants of the ocean are bitter rivals. A Leedsichthys turns towards the clicking instead of fleeing, and every hunt becomes a struggle in the deep, like a sperm whale against a giant squid. Experienced Livyatan avoid fathers with pups, which fight until the whale is gone.
 - **Tylosaurus & Prognathodon:**
   - Livyatan see these predators as competitors and as prey.
   - A Livyatan that hears a Tylosaurus or Prognathodon in its waters hunts it down, or drives it out.
@@ -210,4 +217,5 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - They must target solitary Leedsichthys, Tylosaurus and Prognathodon first. Pairs of Tylosaurus or Prognathodon are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
 - They never follow prey into the shallows.
+- Leedsichthys are their rivals: they drag every fight into the deep, and a Livyatan below 25% air must break off and surface.
 - Their only hunters are Tylosaurus pairs, which may hunt adult Livyatan at any hunger level, but rarely dare it.
