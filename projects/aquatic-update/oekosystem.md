@@ -234,7 +234,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.** Vorbilder sind Piranha und Hai, für die Rollen die Gelbsattel-Meerbarbe. Details und alle offenen Entscheidungen stehen in `profile-entwuerfe/xiphactinus.md`.
 - **Entschieden:**
   - Er bleibt Cathemeral, ohne feste Jagdzeiten, ist aber in der Dämmerung am aktivsten.
-  - Treiber und Sperrer bleiben.
+  - Treiber und Sperrer bleiben. Am 05.11. ersetzt durch Reißer (nur sie mit Tearing Bite), Sperrer und Beißer, ohne feste Anzahl je Rolle.
   - Zur Balz treffen sich alle in Coastland Swamp.
   - Dimorphismus ist Pflicht, und die Weibchen beißen die Männchen.
 - **Der Kessel:** Der Schwarm schließt die abgeschnittene Beute in einem trommelnden Ring ein. Jedes Tier hat seinen festen Platz, beißt einmal zu und kehrt sofort zurück, wie bei Piranhas.

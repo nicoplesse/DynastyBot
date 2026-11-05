@@ -12,7 +12,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 
 **Entschieden am 04.11.:**
 1. Der Xiph bleibt **Cathemeral**. Die festen Jagdzeiten aus dem letzten Entwurf fallen weg. Er ist in der Dämmerung nur am aktivsten.
-2. Die Rollen **Treiber und Sperrer** bleiben.
+2. Die Rollen **Treiber und Sperrer** bleiben. *(Ersetzt am 05.11., siehe unten: Leittier, Reißer, Sperrer, Beißer.)*
 3. Zur **Balz** treffen sich alle Xiph in **Coastland Swamp**.
 4. **Dimorphismus ist Pflicht.**
 5. Die Balz ist brutal: **Die Weibchen beißen die Männchen**, und wer am längsten durchhält, darf sich paaren.
@@ -26,6 +26,18 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 6. **Keine Brutpflege:** Sind alle Eier geschlüpft, verschwinden die Eltern und finden sich wieder zu Schwärmen zusammen. Die Jungen bleiben bis Adolescent versteckt in Coastland Swamp und bilden Jugendschulen von höchstens 12 Tieren unter Sub-Adult.
 7. **Lebensraum:** Wohl fühlt sich der Xiph nur in Süß- und Brackwasser. Er darf auch in Seen schwimmen, die mit den Flussengen verbunden sind, geht aber nie an Land.
 8. **Allein nisten:** Das gibt es erst einmal nicht.
+
+**Entschieden am 05.11. (Jagdrollen, vom Nutzer):** Die Rollen bekommen einen eigenen Angriff. Statt Treiber und Sperrer gibt es vier Rollen:
+- **Leittier:** eröffnet mit Flash, danach Chomp gegen die Armor.
+- **Reißer:** als Einzige mit Tearing Bite. Schlagen in der Hetze die Wunde, reißen im Vorbeischwimmen und sind mit Lunge sofort wieder weg.
+- **Sperrer:** schneiden den Weg zur Gruppe ab, Flash beim Umdrehen zur Bale, beißen nur mit Bite, tragen Rough und kein Sanguine Hunger.
+- **Beißer:** Chomp und Bite mit Sanguine Hunger im Kessel, möglichst im 10-s-Fenster nach einem Chomp.
+
+**Es gibt keine Regel, wie viele Tiere eine Rolle übernehmen.** Auch die alte Pflicht „mindestens ein Treiber und ein Sperrer“ fällt weg.
+
+**Rechnung zu den Rollen** (4 Xiph gegen einen allein stehenden Kai mit 1000 Health, zubeißen und zurück, ein Biss je Durchgang alle 3 s):
+- Bleibt der Schwarm an der Beute, entscheidet direkter Schaden. 4 Beißer brauchen 16 s, 1 Reißer und 3 Beißer 19 s, alle Bisse gemischt 23 s, nur Tearing Bite 34 s. Mit Blutung nach der Community-Lesart liegen alle bei 14 bis 17 s.
+- Entkommt die Beute nach 10 s Kontakt und ruht in der Bale, wirkt die Blutung nach. Bei 1 Reißer sind das etwa 140 Schaden, bei 2 Reißern etwa 570, bei 4 Reißern reicht es für jeden Kai. Blutung stapelt sich ohne Obergrenze und blockiert das Heilen. Der Kai baut sie beim schnellen Schwimmen mit 0,016/s ab, in Ruhe mit 0,064/s.
 
 **Selbst ergänzt, bitte prüfen:**
 - Der Startschuss (ein Weibchen bellt, ein zweites antwortet) und „nur Bite, vorbei und wenden“ für die Weibchen bleiben aus der alten Raserei. Die Männchen dürfen weiter nur ausweichen.
@@ -45,7 +57,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 **Neue Systeme in diesem Entwurf:**
 - **Der Kessel** (the boil), die Jagd:
   - Ist die Beute abgeschnitten, schließt sich der Schwarm zu einem Ring um sie und kreist in vollem Tempo.
-  - Jedes Tier hat seinen festen Platz im Ring, Treiber und Sperrer im Wechsel.
+  - Jedes Tier hat seinen festen Platz im Ring. Die Sperrer halten die Seite zur Gruppe der Beute.
   - Es schießt hinein, beißt einmal und kehrt sofort auf seinen Platz zurück. Keiner bleibt an der Beute.
   - Der Schwarm trommelt dabei mit :threaten_call:.
   - Das Leittier kann den Ring auf einen Schlag die Richtung wechseln lassen.
@@ -73,7 +85,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 
 **Neu und zu entscheiden:**
 1. **Der Kessel:**
-   - Feste Plätze im Ring, Treiber und Sperrer im Wechsel.
+   - Feste Plätze im Ring, die Sperrer auf der Seite zur Gruppe der Beute.
    - Zubeißen und sofort zurück, keiner bleibt an der Beute.
    - Trommeln mit :threaten_call:.
    - Richtungswechsel auf das Zeichen des Leittiers.
@@ -111,6 +123,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 6. **Welche Seen?** Welche Seen mit den Flussengen verbunden sind, steht nirgends in den Kartendaten. Deshalb sind im Profil keine Namen genannt, und auf der App-Karte fehlen sie noch. Ebenfalls offen: ob er auch in die reinen Süßwasser-Flüsse im Westen darf.
 
 **Beobachten, nicht regeln:**
+- **Viele Reißer:** Ohne Obergrenze je Rolle kann ein Schwarm aus vier Reißern einen Kai in 10 s so stark bluten lassen, dass er auch in seiner Bale stirbt (nach der Community-Lesart der Blutung). Dann schützt die Bale nicht mehr. Wenn das im Spiel passiert, wäre eine Obergrenze für Reißer der Hebel.
 - **Flash-Kette:** 6 Xiph können ein Ziel 30 s am Stück bremsen. Das sind genau die 30 s, die ein Kai für den Rückweg zu seiner Bale hat. Nicht begrenzt, weil die Beute keinen Regelschutz bekommt.
 - **Kai-Paare:** Auch 6 Xiph verlieren das Bissduell gegen 2 Kai, knapp (der letzte Kai behält 2 %). Ein Paar muss also getrennt werden, sonst entscheidet die Wendigkeit.
 - **„Zubeißen und zurück“** senkt den Schaden gegenüber dem stehenden Bissduell. Dafür trifft die Beute kaum zurück, weil keiner vor ihr bleibt. Ob 4 Xiph einen Kai im Kessel noch so sicher schaffen wie in der Simulation (13 s), zeigt erst das Spiel.
@@ -151,7 +164,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 | Tearing Bite | 25 Schaden plus 0,75 Blutung, 4 s |
 | Chomp | 95 Schaden plus 0,4 Blutung, senkt die Armor des Ziels 10 s lang auf 85 %, 12 s |
 | Flash | blendet und bremst Tempo und Wenden des Ziels 5 s lang um 25 %, 35 s Abklingzeit |
-| Lunge | Vorstoß mit 1,25 s Steigzeit, vermutlich ein Sprung aus dem Wasser; 8 Ausdauer, 8 s |
+| Lunge | kein Schaden, nur ein Schub (Stärke 2400 bis 5000 je Stufe) mit 1,25 s Steigzeit; 8 Ausdauer, 8 s |
 | Agility Mentality | Gruppen-Buff: +4 % Beschleunigung und Ausdauer-Erholung im Umkreis von 60 m, 6 s |
 | Sanguine Hunger | +20 % Schaden, dafür +10 % erlittener Schaden |
 | Mob Mentality | eingebaut: 25 % weniger Schaden von Gruppenmitgliedern |
@@ -162,7 +175,8 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 **Werte: Mod-Standard, keine Änderung.** CW 2400, Health 600, Armor 1, Heilung 2,0/s, Ausdauer-Erholung 1,3/s (die schnellste im Wasser), Sprint 1200 für 2:47, Hunger nach ~25 min leer. Mit Kai-Health 1000 braucht ein Schwarm 4 Tiere für einen allein stehenden Kai, genau wie Achillobator für einen Para.
 
 **Noch offen:**
-- **Lunge:** ob es wirklich ein Sprung aus dem Wasser ist. Davon hängen das Springen, das Ausweichen in der Raserei und die Jagd auf Flugsaurier ab.
+- **Lunge:** Laut NexLink macht er keinen Schaden, er ist nur ein Schub. Offen ist, ob er aus dem Wasser springen lässt. Davon hängen das Springen, das Ausweichen in der Raserei und die Jagd auf Flugsaurier ab.
+- **Unklare Mod-Werte:** „XiphBiteCooldown 0,88“, „XiphTearCooldown 1,45“ und „Incoming Bite/Tear 0,75“. Vielleicht beißen Xiph untereinander schneller und machen dabei nur 75 % Schaden. Für die Raserei wäre das wichtig. Im Spiel testen.
 - **Luft:** NexLink nennt beim Tauchen 0 Sauerstoffverbrauch. Vielleicht muss der Xiph also nie auftauchen. Das Luftschnappen bleibt Rollenspiel.
 - **Lone Survivor und Bucking:** wann Lone Survivor greift, und was Bucking tut (vermutlich einen Angreifer abschütteln, der sich festbeißt).
 - **Skins:** ob einzelne Skins klar zu einem Geschlecht passen.
@@ -180,7 +194,7 @@ Profile inspired by piranhas, sharks, yellow saddle goatfish, tarpon and Xiphact
 **Medium Cathemeral Aquatic Carnivore**
 
 - From the outside, a Xiphactinus hunt looks like pure chaos. From the inside, it is pure control: every member of a battery has its rank, its role and its place.
-- Xiphactinus live in batteries of up to 6, led by their highest rank. Every member hunts as a chaser or a blocker.
+- Xiphactinus live in batteries of up to 6, led by their highest rank. Every member has a hunting role: ripper, blocker or biter. Each role has its own attack.
 - Xiphactinus are active by day and by night, and most active at dawn and dusk.
 - Xiphactinus mate in a brutal courtship, the frenzy. They form no lasting pairs. Once the eggs have hatched, the parents leave, and the young grow up on their own in Coastland Swamp.
 - Xiphactinus feel at home only in fresh and brackish water: the warm, brackish channels between the islands (the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp), and the lakes connected to them. They never enter the open ocean, and never go on land.
@@ -219,7 +233,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - Xiphactinus may hunt up to Medium tier in any party size.
   - With at least 4 in a hunting party, they may hunt up to Large tier.
   - They never hunt adult Apex or Giant creatures, with one exception: a lone Deinosuchus (see Crocodylians).
-- **Roles:** A hunt on a Sub/Adult needs at least one chaser and one blocker (see Battery Structure).
+- **Roles:** Every member hunts in its role (see Battery Structure). There is no rule on how many members take each role.
 - **One battery per target:** Only one battery may hunt a group at a time. The battery whose lead opens first has the hunt. Any other battery pulls back, and does not join.
 - **Hit-and-run:** Xiphactinus may strike, pull away and strike again. The hunt continues as long as the battery keeps the target in sight (3.3.1, 4.8.3).
 - **Attempts:** A battery has up to 3 attempts per group. After the third, it leaves that group alone for 15 minutes (see Hunting Strategy).
@@ -235,8 +249,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 **Abilities in an engagement:**
 - **Flash** opens every hunt, and only the lead may use it first (see Hunting Strategy). After the opening, every member may use it.
-- **Agility Mentality** and **Sanguine Hunger** may be used freely in hunts. Xiphactinus do not group with other species, so no other species shares the buff.
-- **Lunge** is used to strike at prey near the surface from below.
+- **Agility Mentality** and **Sanguine Hunger** may be used freely in hunts, except that blockers do not use Sanguine Hunger. Xiphactinus do not group with other species, so no other species shares the buff.
+- **Tearing Bite** is used only by rippers. Leads, blockers and biters never use it.
+- **Lunge** deals no damage. It is a burst of speed, used to dart in and out again, and to rise at prey near the surface from below.
 
 ## Resource Challenges
 
@@ -251,7 +266,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - Kaiwhekea cut off from their bale are the next choice, as are Leedsichthys pups and the young of any species.
 - **Fish:** Between hunts they live on fish. Their fast metabolism keeps them hungry, and they eat often.
 - **Mixed groups:** Kaiwhekea, Eurhinosaurus and Leedsichthys may group together. Within such a group, a battery may switch its target between Kaiwhekea and Eurhinosaurus during a hunt (4.5). It never targets the adult Leedsichthys.
-- **Pterosaurs:** Xiphactinus may hunt pterosaurs up to Medium tier that sit or swim on the water surface. They strike from below with a Lunge, like giant trevally leaping at young terns. Pterosaurs in flight are not attacked.
+- **Pterosaurs:** Xiphactinus may hunt pterosaurs up to Medium tier that sit or swim on the water surface. They rise from below with a Lunge and bite, like giant trevally leaping at young terns. Pterosaurs in flight are not attacked.
 - **Swimming land animals** within the battery's tier may be hunted while they swim, but are never preferred.
 - **Crocodylians** are a dangerous pleasure, never a preference (see Hunting Strategy).
 - **Land:** Xiphactinus never leave the water, and do not attack creatures on land. A target that leaves the water is let go.
@@ -313,7 +328,7 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
 - **Resting formation:** At rest, the battery lies close together in open water. The lead rests in the centre, the other ranks around her, and the young at the edge. Large piranhas hold the safe centre of their shoal in the same way.
 - **Resting bend:** The lead chooses where the battery rests: a sheltered bend in open water, away from the banks. A bend where the battery was attacked is not used again in the same session.
 - **The lookout:** In a battery of 3 or more, one member always keeps watch while the others rest, facing the banks. The lowest rank takes the first watch, and passes it on with a gentle nudge.
-- **Downtime:** Rest time is for rolling, swimming in sync with a friend, play leaps and chasing games. Chasers often chase blockers in play, and blockers practise cutting them off.
+- **Downtime:** Rest time is for rolling, swimming in sync with a friend, play leaps and chasing games. Rippers often chase blockers in play, and blockers practise cutting them off.
 
 ### Range and Seasons
 
@@ -356,12 +371,13 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
   - Rank 1 is the lead. She chooses where the battery hunts and rests and when it moves on. She opens every hunt, decides when an attempt ends, and alone decides whether to hunt a crocodylian.
   - When the lead is absent, rank 2 takes command.
   - An old lead may hand the lead to rank 2 at any time, and takes the lowest rank or leaves.
-- **Chasers and blockers:**
-  - Every Sub/Adult Xiphactinus has a hunting role: chaser or blocker. Like yellow saddle goatfish, which hunt as chasers and blockers, each keeps its role for life. Players choose the role at Sub-Adult.
-  - **Chasers** drive the target out of its group at full speed, and keep it turning.
-  - **Blockers** swim between the target and its group, cut off its way back, and hold the ring of the boil closed.
-  - The lead may take either role in a hunt.
-  - A member may change its role only when no one else in the battery holds the other role.
+- **Hunting roles:**
+  - Every Sub/Adult Xiphactinus has a hunting role: ripper, blocker or biter. Like yellow saddle goatfish, which hunt as chasers and blockers, each keeps its role for life. Players choose the role at Sub-Adult.
+  - Every role has its own task and its own attack. There is no rule on how many members of a battery take each role.
+  - **Rippers** open the wound. They chase the target at full speed, tear at it in passing with Tearing Bite, and dart away at once with a Lunge. They keep the target bleeding, but do not try to kill it. Rippers are the only ones who use Tearing Bite. They usually wear the Streamlined hide.
+  - **Blockers** swim between the target and its group, cut off its way back, and hold the ring of the boil closed. When the target turns back towards its group, they blind it with Flash. Blockers bite only with Bite, and do not use Sanguine Hunger, because they take the blows of the defenders. They usually wear the Rough hide.
+  - **Biters** kill. In the boil they strike with Chomp and Bite, and use Sanguine Hunger. They strike in the 10 seconds after a Chomp, while the target's armour is weakened.
+  - **The lead** opens every hunt with Flash, and then weakens the target's armour with Chomp. After the opening, she may use any attack but Tearing Bite.
 - **The lookout:** At rest and at a kill, one member keeps watch (see Day and Night and Hunting Strategy).
 - **Young members:** Adolescents travel at the edge of the battery, hold no rank, and stay out of its hunts.
 
@@ -413,7 +429,7 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
 - **Eurhinosaurus:**
   - Eurhinosaurus are rivals in speed and the favourite prey. Their loud shoals are easy to find, but hard to surprise, because one of them is always awake.
   - Xiphactinus sprint faster, but Eurhinosaurus hold the sprint for longer. A battery that is spotted early loses the chase.
-  - When a shoal bursts apart, the chasers stay on the burst, and the blockers pick up the one that bursts their way.
+  - When a shoal bursts apart, the rippers stay on the burst and tear at it, and the blockers pick up the one that bursts their way.
   - **Showing off:** Eurhinosaurus like to show off by swimming past hunters. A battery may answer with a hunt.
 - **Kaiwhekea:**
   - When bales pass through the channels, batteries shadow them from a distance, and wait for a calf or a straggler to drift away.
@@ -467,19 +483,21 @@ From the outside, a Xiphactinus hunt looks like pure chaos: six of the fastest f
 
 1. **Finding:** The battery spreads out along a channel, within reach of Agility Mentality, and watches for prey near the surface. When it finds a group, it shadows it in silence from a distance, and waits for a chance: a calf that drifts, a straggler, a member that turns away to fish.
 2. **The opening:** The lead marks the target with Flash. No member strikes before it. If her Flash is not ready, she opens with the first bite instead.
-3. **Cutting off:** The chasers drive the target away from its group at full speed. The blockers swim between it and its group, and turn it back towards the chasers. A Kaiwhekea has 30 seconds to reach its bale.
-4. **The boil:** Once the target is cut off, the battery closes around it (see The Boil).
-5. **Lunging:** Prey near the surface is struck from below with a Lunge.
+3. **The wound:** The rippers chase the target at full speed, tear at it in passing and dart away again. A bleeding target cannot heal, and while it swims fast, its bleeding closes only slowly.
+4. **Cutting off:** At the same time, the blockers swim between the target and its group, and turn it back towards the rippers. A Kaiwhekea has 30 seconds to reach its bale.
+5. **The boil:** Once the target is cut off, the battery closes around it, and the biters go to work (see The Boil).
+6. **Surface prey:** Prey near the surface is met from below: a Lunge upwards, and a bite.
 
 ### The Boil
 
 Sharks circle their prey before they strike. Piranhas tear at it from every side until the water seems to boil. The boil is both, held together by strict order.
 
-- **The ring:** The battery circles the target at full speed, in a tight ring. Every member has its own place in the ring, beside the same neighbours every time, chaser and blocker in turn as far as the battery allows. The blockers keep the ring closed on the side of the target's group.
+- **The ring:** The battery circles the target at full speed, in a tight ring. Every member has its own place in the ring, beside the same neighbours every time. The blockers keep the ring closed on the side of the target's group.
 - **Bite and back:** A member darts in from its place, bites once, and returns to its place at once. No member stays on the target. Like piranhas, which bite out a piece and are gone before the next one comes, the battery strikes from every side, one after another.
 - **The drum:** Once the ring has closed, the battery drums: fast, repeated :threaten_call:. Until then it is silent.
 - **The turn:** At a sudden turn of the lead, the whole ring reverses its direction at once, like a fish school turning as one.
-- **Bleeding and blinding:** Tearing Bite and Chomp make the target bleed, and Chomp weakens its armour. Flash punishes the sharp turns that Kaiwhekea and Eurhinosaurus use to break out.
+- **Who bites:** The lead and the biters strike with Chomp and Bite, and the biters strike hardest in the 10 seconds after a Chomp, while the target's armour is weakened. The rippers keep the target bleeding with Tearing Bite. The blockers hold the ring, and bite only with Bite.
+- **Blinding:** Flash punishes the sharp turns that Kaiwhekea and Eurhinosaurus use to break out.
 - **The first bites** go for the flippers and the tail, the way piranhas bite at fins, to slow the target down.
 - **Breaking the ring:** At the lead's :broadcast_call:, the ring bursts outwards, every member in a different direction, and regroups out of reach.
 
@@ -518,7 +536,7 @@ Hunting a crocodylian is a dangerous pleasure. Giant otters attack caimans toget
 
 ### Pterosaurs
 
-- Pterosaurs up to Medium tier that sit or swim on the water are struck from below with a Lunge.
+- Pterosaurs up to Medium tier that sit or swim on the water are met from below, with a Lunge upwards and a bite.
 - Tropeognathus that follow a flotilla into the channels and land at a gathering of fish are the most common catch.
 
 ### The Gates
@@ -601,9 +619,9 @@ Xiphactinus care for their eggs, but not for their young.
 - Xiphactinus are Medium Cathemeral Aquatic Carnivores, most active at dawn and dusk.
 - From the outside, they are pure chaos. From the inside, they are pure control: every member has a rank, a role and a place.
 - They live only in fresh and brackish water: the channels between the islands and the lakes connected to them. They never enter the open ocean, which is too salty and too cool for them, and never go on land.
-- They live in batteries of up to 6 Sub/Adults, ranked by time in the battery and led by rank 1. Every member hunts as a chaser or a blocker.
+- They live in batteries of up to 6 Sub/Adults, ranked by time in the battery and led by rank 1. Every member hunts as a ripper, a blocker or a biter, each with its own attack.
 - They hunt up to Medium tier in any party size, up to Large tier with 4 or more, and never adult Apex or Giant creatures. The one exception is a lone Deinosuchus, hunted with great caution by 5 or more.
-- Every hunt opens with the lead's Flash. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place.
+- Every hunt opens with the lead's Flash. The rippers open the wound with Tearing Bite, the only ones who use it, while the blockers cut off the way back. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place, and the biters make the kill.
 - They flee from everything that can clamp them: Tylosaurus and crocodylians. A seized Xiphactinus is lost. Spinosaurus and Xiphactinus ignore each other completely.
 - All Xiphactinus court in Coastland Swamp, in the frenzy. Every Xiphactinus leaves its group, and the females chase the males until only half of them are left. Males may not hide or flee, and may die. Each female chooses one of those who endured, and a male may be chosen by several.
 - Colour dimorphism is mandatory: females dark, males light.
