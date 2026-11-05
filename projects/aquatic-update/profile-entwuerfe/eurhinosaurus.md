@@ -83,7 +83,11 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
 
 **Warum Grenzen beim Angeben:** Ohne Grenzen würde aus dem Angeben ein Ködern, und Jäger würden zu den Gruppen gelockt. Mit Abstand, nur einmal je Begegnung und nie in Richtung einer Gruppe bleibt es ein Charakterzug.
 
-**Werte unverändert:** Der Eurhino sprintet mit 1050 und hält das 3:42 durch. Schneller ist nur der Xiph mit 1200, aber nur 2:47 lang. Gegen Xiph rettet den Eurhino also die Ausdauer, gegen alle anderen das Tempo: Kai 990, Tylo 900, Livy und Spino 750, Deino 700.
+**Werte unverändert:** Der Eurhino sprintet mit 1050 und hält das 3:42 durch. Schneller ist nur der Xiph mit 1200, aber nur 2:47 lang. Gegen Xiph rettet den Eurhino also die Ausdauer, gegen alle anderen Jäger das Tempo: Tylo 900, Livy und Spino 750, Deino 700. *(Korrigiert am 05.11.: Hier stand auch der Kai mit 990, obwohl er kein Jäger mehr ist.)*
+
+**Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
+- Eurhinos sind, wie Kai und Leeds, unglaublich neugierig auf Landtiere. Sie folgen ihnen am Ufer, rufen ihnen zu und springen für sie fröhlich in die Luft. An Land gehen sie dafür nicht, das tut nur der Kai.
+- Wie die ganze Flotilla dürfen sie Abstecher in die Seen und das Süßwasser machen, das mit den Flussengen verbunden ist. Welche POIs das sind, muss im Spiel geklärt werden.
 
 ---
 
@@ -198,7 +202,7 @@ Color dimorphism for Eurhinosaurus is mandatory, the changing of environmental c
 - **Routine:** Shoals often follow a familiar route around their current POI, travelling between popular fish locations and checking rocks and underwater caves for crustaceans.
 - **Speed:** Eurhinosaurus are among the fastest swimmers in the ocean, and can hold a sprint longer than almost any other aquatic. Only Xiphactinus sprint faster.
 - **Play:** They race each other, leap high out of the water with Hydrofoil, and ride the bow wave of a swimming Leedsichthys. Friend groups often leap in sync, like spinner dolphins.
-- **Curiosity:** Despite being confined to the waters, Eurhinosaurus are playful and curious. They take great pleasure in calling to terrestrial species and poking their heads above the water to peer into nearby forests.
+- **Curiosity:** Despite being confined to the waters, Eurhinosaurus are playful and endlessly curious about land animals. They follow them along the shore, take great pleasure in calling to them, and poke their heads above the water to peer into nearby forests. For an audience on land they leap high with Hydrofoil, like dolphins leaping beside a boat.
 - **Arrogance:** They enjoy their speed and their perceived dominance over the ocean, and like to show off in front of hunters (see Showing Off).
 
 ### Fishing
@@ -233,6 +237,7 @@ Fishing is seen as a sport. Shoals train constantly to refine their coordination
 
 - **The route:** Eurhinosaurus follow the Leedsichthys migration route marked on the profile map: a loop through the warm saltwater channels between the islands, with regular trips out into the open oceans of Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal.
 - **The oceans** hold the fish shoals Eurhinosaurus value most. Shoals often travel out together with a Kaiwhekea bale or a Leedsichthys.
+- **Fresh water:** Shoals may leave the route for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
 - **The run:** When driven to nest, Eurhinosaurus leave the route and return to their nesting river, like salmon.
   - Shoals gather at the river mouth, and swim upstream together as one school.
   - On Riparia, the run leads from the saltwater channels up through Big Tree Overlook into the Cedrus Forest rivers.
@@ -319,6 +324,7 @@ Eurhinosaurus are rarely aggressive towards their own kind. Over-aggression is c
 - **Apex carnivores:** Eurhinosaurus flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus (see Predator Reaction).
 - **Sarcosuchus:** As a Large carnivore, Sarcosuchus may be defended against by up to 3 Eurhinosaurus. Most often, the shoal escapes by speed. Sarcosuchus lurk along the Cedrus Forest rivers, near the nests.
 - **Shore hunters:** Austroraptor and Halszkaraptor are a danger to fry in the shallows of the nesting river.
+- **Land animals:** Eurhinosaurus are fascinated by every land animal they meet at the water (see General Behavior). Herbivores get calls and leaps up close. Carnivores get the same show, but only from a safe distance (see Showing Off).
 - **Deinocheirus:** Eurhinosaurus display a strong fascination and affection for Deinocheirus, admiring these docile semi-aquatics for their ability to spurt water, which creates playful environments the Eurhinosaurus eagerly enjoy. They often attempt to trade fish or decorative shells with Deinocheirus in exchange for water spouts, turning the encounter into a joyful game.
 - **Pycnonemosaurus:** Terrestrial species they encounter are sometimes teased. Eurhinosaurus especially enjoy screaming matches with Pycnonemosaurus, who rarely back down from the noisy challenge.
 - Both Deinocheirus and Pycnonemosaurus live along the Cedrus Forest rivers, so most of these meetings happen during nesting.
@@ -401,7 +407,8 @@ Mothers stay within the nesting grounds with their young until their oldest offs
 - Shoals have no leader. They follow whoever finds the fish, send up to 2 scouts ahead, and hold close friend groups of the same sex.
 - They are passive, feed only on fish and crustaceans, and fish as a sport: in turns, loud or silent.
 - They sleep lightly with one eye open. In a shoal of 3 or more, one always stays awake, and they act as sentries for Kaiwhekea bales.
-- They follow the Leedsichthys route. To nest, they make the run upstream to their nesting river as one school, without fishing or stopping.
+- They follow the Leedsichthys route, with detours into the fresh waters connected to the channels. To nest, they make the run upstream to their nesting river as one school, without fishing or stopping.
+- They are endlessly curious about land animals. They follow them along the shore, call to them and leap for them.
 - They flee from Apex and Giant carnivores and Xiphactinus packs of 3 or more, and up to 3 may defend. Within limits, they show off by swimming past hunters.
 - They court at the nesting river: males beach themselves to display, and females choose. Mothers stay with their young until the oldest reach adolescent, and leave the rest in a creche.
 - They are friendly towards Deinocheirus, and enjoy screaming matches with Pycnonemosaurus.

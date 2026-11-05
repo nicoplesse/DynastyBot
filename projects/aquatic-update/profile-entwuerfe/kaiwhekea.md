@@ -139,6 +139,13 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 
 **Warum dieselbe Route wie Leeds:** Kai ziehen in die Ozeane, weil es dort die wertvollsten Fischarten gibt, nicht wegen des Leeds. Die Route wechselt zwischen zwei Gefahren. In den Flussengen warten Xiphactinus-Schwärme, Deino und Spino. In den Ozeanen jagen Tylo, nachts Sachi, und außer bei Palm Islands Livy. Einen sicheren Ort gibt es nicht, nur bessere und schlechtere Zeiten.
 
+**Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
+- **Neugier auf Landtiere:** Kai, Eurhino und Leeds sind unglaublich neugierig auf Landtiere. Kai kommen bei Pflanzenfressern auch aus dem Wasser und gehen an Land, um Hallo zu sagen. Laufen können sie gut. Die Flotilla springt dabei fröhlich in die Luft.
+- **Warum:** Das verbindet die zwei Welten. Der Spieler sieht mehr von der Welt und kann mit ihr interagieren, statt nur im Wasser zu bleiben.
+- **Süßwasser:** Die Flotilla darf Abstecher in die Seen und das Süßwasser machen, das mit den Flussengen verbunden ist. Krill gibt es im Spiel auch dort. Welche POIs das sind, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
+
+**Selbst ergänzt, bitte prüfen:** Besuche an Land zählen zur Landzeit, also zurück ins Wasser bei 75 % Durst. Zu Fleischfressern geht ein Kai nicht an Land, sie werden nur aus dem Wasser beobachtet. So steht es schon im heutigen Profil („Experienced adults do this only with herbivores“).
+
 ---
 
 Kaiwhekea is an extinct genus of plesiosaur from the Late Cretaceous (Maastrichtian age) of what is now New Zealand. Kaiwhekea belongs to the clade Aristonectinae inside the family Elasmosauridae. With their long necks, small heads and fine interlocking teeth, they fed on small, soft-bodied prey such as fish and squid. Like other plesiosaurs, they swam with four large flippers, and swallowed stones that are still found in their stomachs today.
@@ -305,7 +312,7 @@ Every Kaiwhekea has its own greeting. It tells others who it is, and, for a cow,
 - **Basking:** They bask in shallow water, on beaches and on high rocks (see Time on Land).
 - **Open water:** Kaiwhekea prefer clear water where they can see far. They become uneasy in murky channels and dense kelp, where predators can hide.
 - **Voice:** Kaiwhekea are vocal by day. A steady chatter of calls tells the bale that all is well. The chatter falls silent at times of stress, and at night the bale stays quiet.
-- **Curiosity:** Kaiwhekea take a great interest in terrestrial species they encounter near the water. Some attempt to get their attention by fetching objects from the seafloor and presenting them as trinkets. Experienced adults do this only with herbivores.
+- **Curiosity:** Kaiwhekea are fascinated by land animals. When they meet terrestrial species near the water, they swim over to watch them, follow them along the shore, and often leap out of the water in excitement. Some attempt to get their attention by fetching objects from the seafloor and presenting them as trinkets. Experienced adults do this only with herbivores, and may go ashore to greet them (see Time on Land).
 
 ### Time on Land
 
@@ -322,6 +329,10 @@ Kaiwhekea are at home in the water, but may leave it for as long as their skin a
   - Kaiwhekea leap from the water onto high rocks to rest or sleep, safe from Tylosaurus, Sachicasaurus and Livyatan. Only rocks a Kaiwhekea can reach with a normal leap from the water may be used.
   - A healthy Kaiwhekea may also flee onto a rock from a hunter. One with heavy deathscars, or one bleeding to death, may not (rule 4.6).
   - A rock is a place for a nap, not for the whole night. Members often take turns on a rock while the rest of the bale rests in the shallows below.
+- **Visiting land animals:**
+  - Kaiwhekea walk well on land. Like curious sea lions, they may leave the water to greet herbivores at the shore: they walk up to them, call softly with :friendly_call:, and present their trinkets.
+  - Visits count towards their time on land, so they return to the water once their thirst drops to 75% (see Drying out).
+  - Carnivores are only watched from the water, never visited.
 - **Beaches:**
   - Flat beaches are not safe. Sachicasaurus move quickly on land, and Tylosaurus lunge out of the water.
   - Crocodylians and shore hunters can reach beaches and low rocks, so Kaiwhekea on land keep watch for them.
@@ -367,6 +378,7 @@ Bales are creatures of habit, and follow the Leedsichthys migration route marked
 - **Oceans:** From there, bales regularly head out into the open oceans of Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year.
 - **Seasons:** In the Rainy Season, bales spend longer in the channels, where the rivers bring fish. In the Dry Season, the channels grow warm, and bales spend longer in the cooler oceans.
 - **Company:** Bales often travel out together with a Leedsichthys, which heads to the cooler ocean water to cool down. A bale does not need one to follow the route.
+- **Fresh water:** Bales, with or without a Leedsichthys, may leave the route for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
 - **Tradition:** The route and the best fishing grounds are passed down between generations, mostly by the lead cow and the elders. Bales leave an area once the fish grows scarce.
 
 ### Albino & Melanistic Behavior
@@ -496,7 +508,7 @@ Kaiwhekea are tolerant towards other species and avoid conflict at all times. Wh
   - Calves and adults like to ride the bow wave of a swimming Leedsichthys.
   - **In courtship:** A Leedsichthys enjoys the splashing of a courting bale, and often stays for it. If the journey to the nesting beach suits it, it travels on with the bale. If not, it simply swims on alone.
 - **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give a :threaten_call: first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
-- **Lurdusaurus and other herbivores at the shore:** Kaiwhekea are curious about them, and like to present them with trinkets from the seafloor.
+- **Lurdusaurus and other herbivores at the shore:** Kaiwhekea are fascinated by them. They follow them along the shore, go ashore to greet them, and like to present them with trinkets from the seafloor (see Time on Land).
 - **Carnivores at the shore:** Austroraptor and other shore hunters are a danger to calves in the pools, and to Kaiwhekea resting on beaches. Aunts and mothers keep watch, and calves hide deeper in the pool when one wades in.
 - **Apex carnivores:** Kaiwhekea flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus on sight (see Hunted by Apex).
 - **Xiphactinus:** Single Xiphactinus are watched closely. Packs of 3 or more are treated as an active threat. The bale stays close together, because Xiphactinus try to cut single Kaiwhekea off from the group.
@@ -673,4 +685,5 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 - They may stay on land until their thirst drops to 75%, or 50% in great danger, and nap on high rocks. Below 50% they become infertile.
 - Courtship is a ritual: cows breach and call, the dominant bulls dance first and may be challenged after a mistake in their greeting, and cows choose a bull by taking on his greeting.
 - Bales nest at the birth beach of their lead cow, and change it after a failed nesting.
-- They migrate by day along the Leedsichthys route, through the saltwater channels and out into the oceans, and rest in the shallows at night under watch.
+- They migrate by day along the Leedsichthys route, through the saltwater channels and out into the oceans, with detours into the fresh waters connected to the channels, and rest in the shallows at night under watch.
+- They are fascinated by land animals. They follow them along the shore, leap in excitement, and go ashore to greet herbivores.

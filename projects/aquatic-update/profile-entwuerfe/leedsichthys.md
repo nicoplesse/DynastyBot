@@ -18,6 +18,12 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 | Health | „Boosted health“ ohne Wert | Wert festlegen (offen) |
 | Wanderroute | Schleife durchs Meer und die Kanäle | dieselbe Schleife durch die warmen Salzwasser-Flussengen, dazu regelmäßige Abstecher in die Ozeane Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal; Kai und Eurhino ziehen dieselbe Route |
 | Schlaf | kurze Schübe, egal wo und wann | schläft nachts meist bei seiner Gruppe, wenn er eine hat |
+| Süßwasser (05.11.) | – | Abstecher in die Seen und das Süßwasser, das mit den Flussengen verbunden ist; Krill gibt es im Spiel auch dort |
+| Landtiere (05.11.) | neugierig auf fremde Arten, beobachtet auch Tiere am Ufer | besonders neugierig auf Landtiere: folgt ihnen langsam am Ufer; die alte Grenze bleibt, er lässt jeden in Ruhe, der sich gestört fühlt |
+
+**Warum Abstecher ins Süßwasser (vom Nutzer, 05.11.):** Die Routen sind sehr streng. Abstecher ins Süßwasser bringen Abwechslung und führen die Flotilla dorthin, wo die Landtiere trinken. Krill gibt es im Spiel auch im Süßwasser, und Leeds schwimmen dort hinein. Welche Seen und Süßwasser-POIs mit den Flussengen verbunden sind, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
+
+**Meine Sorge dabei, und warum sie sich auflöst:** Von den Wasser-Jägern lebt im Süßwasser nur Spino (Sprint 750), und Kai (990) und Eurhino (1050) schwimmen ihm davon. Ohne Grund würde das Süßwasser also zum sicheren Hafen. Den Grund liefert die Neugier auf Landtiere: Sie zieht die Flotilla ans Ufer und den Kai an Land, und dort warten die Fleischfresser vom Land. Dazu kommt der Xiph, der in die verbundenen Seen folgen darf. Ein sicherer Ort wird es so nicht.
 
 **Warum die Route so läuft:** In den flachen Flussengen zwischen den Inseln ist das Wasser warm. Leeds zieht regelmäßig hinaus in die Ozeane, um sich abzukühlen. Kai und Eurhino finden dort die Fischarten, die für sie am wertvollsten sind. So haben beide Seiten ihren eigenen Grund für dieselbe Route, und Kai brauchen den Leeds nicht, um sie zu finden.
 
@@ -61,6 +67,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 - Leedsichthys follow a great loop through the warm saltwater channels between the islands of Riparia: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
 - From the channels they regularly head out into the open oceans: Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The shallow channels are warm, and the cooler ocean water lets them cool down before they return.
 - Kaiwhekea and Eurhinosaurus share this route. The oceans hold the fish they value most, so bales and shoals often travel out together with a Leedsichthys.
+- **Fresh water:** Krill gathers in fresh water too. Leedsichthys may leave the loop for detours into the lakes and fresh waters connected to the channels, alone or with their flotilla.
 - Leedsichthys still readily abandon an area once the krill begins to decline. The route is marked on the profile map.
 
 ## Sleep (addition)
@@ -94,6 +101,11 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 
 **Tylosaurus.**
 - Unchanged: one of the most prominent predators, especially of pups.
+
+**Land animals.**
+- Leedsichthys are especially curious about land animals. When one walks along the shore, a Leedsichthys often follows it slowly through the water, as far as the depth allows, and raises its head above the surface to watch it. Whale sharks follow boats in the same calm way.
+- The flotilla shares this curiosity. Eurhinosaurus and Kaiwhekea leap around the giant in excitement, and Kaiwhekea may go ashore to greet herbivores.
+- As with every species, a Leedsichthys leaves a land animal alone once it shows discomfort.
 
 ## Rule Exemptions (addition)
 
