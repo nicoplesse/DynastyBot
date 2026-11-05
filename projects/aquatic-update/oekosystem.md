@@ -238,10 +238,10 @@ Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.
   - Zur Balz treffen sich alle in Coastland Swamp.
   - Dimorphismus ist Pflicht, und die Weibchen beißen die Männchen.
 - **Der Kessel:** Der Schwarm schließt die abgeschnittene Beute in einem trommelnden Ring ein. Jedes Tier hat seinen festen Platz, beißt einmal zu und kehrt sofort zurück, wie bei Piranhas.
-- **Rangordnung** 1 bis 6 nach Zeit im Schwarm, ohne Rangkämpfe. Rang 1 führt.
+- **Führung (geändert am 05.11.):** Keine feste Rangordnung mehr. Wer führt, zeigt sich im Schwarm von selbst, und das Leittier hat selbst eine der drei Jagdrollen.
 - **Die Raserei (neu am 05.11.):** Alle verlassen ihre Gruppe, die Weibchen jagen die Männchen (nur Bite, keine Blutung). Wer sich versteckt, flieht oder einen Forfeit Call gibt, ist raus. Männchen dürfen sterben, die Körper werden nie geclaimt. Sie endet, sobald nur noch die Hälfte der Männchen übrig ist, und ein Männchen darf mehrere Weibchen haben. Nach dem Schlüpfen gehen die Eltern, die Jungen bleiben in Jugendschulen bis 12 in Coastland Swamp.
 - **Farb-Dimorphismus:** Der Mod hat keine Unterarten, nur 10 Skins. Weibchen tragen dunkle Farben, Männchen helle.
-- **Bleibt:** Drei Versuche je Gruppe (danach 15 Minuten Ruhe). Ein Kai bei seiner Bale ist für den Versuch sicher. Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer.
+- **Bleibt:** Drei Versuche je Gruppe (danach 15 Minuten Ruhe). Ein Kai bei seiner Bale ist für den Versuch sicher. Krokodile seit dem 05.11. nach Stufe, ohne Ufer-Regel.
 - **Widerspruch:** Der Kai-Entwurf lässt die Kälber „in full daylight“ ziehen, weil die Dämmerung dem Xiph gehört. Mit Cathemeral ist das nur noch eine kluge Gewohnheit, kein Schutz.
 - **Beobachten:** 6 Xiph können ein Ziel mit Flash 30 s am Stück bremsen, genau so lange, wie ein Kai für den Rückweg zu seiner Bale hat. Begrenzt ist das nicht, weil die Beute keinen Regelschutz bekommt.
 

@@ -2,7 +2,7 @@
 
 Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat dafür noch kein Profil. Der Text unten ist auf Englisch, wie zur Einreichung. Maßstab für die Tiefe sind die Raptor-Profile von Dynasty (Utahraptor, Achillobator) und der neue Kai-Entwurf.
 
-**Leitbild (vom Nutzer, 04.11.): Von außen absolutes Chaos, von innen absolute Kontrolle.** Für die Beute ist der Xiph ein Albtraum: sechs unglaublich schnelle Fische kreisen um sie und stoßen von allen Seiten zu. Im Schwarm hat aber jedes Tier seinen Rang, seine Rolle und seinen Platz. Die Kunst ist, es so schnell zu machen, dass es für die Beute grausam wirkt und für den Schwarm selbst kontrolliert bleibt.
+**Leitbild (vom Nutzer, 04.11.): Von außen absolutes Chaos, von innen absolute Kontrolle.** Für die Beute ist der Xiph ein Albtraum: sechs unglaublich schnelle Fische kreisen um sie und stoßen von allen Seiten zu. Im Schwarm hat aber jedes Tier seine Rolle und seinen Platz. Die Kunst ist, es so schnell zu machen, dass es für die Beute grausam wirkt und für den Schwarm selbst kontrolliert bleibt.
 
 **Vorbilder:**
 - **Piranha** für das Chaos und die Balz. Wie echte Piranhas sich verhalten, steht unten.
@@ -28,7 +28,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 8. **Allein nisten:** Das gibt es erst einmal nicht.
 
 **Entschieden am 05.11. (Jagdrollen, vom Nutzer):** Die Rollen bekommen einen eigenen Angriff. Statt Treiber und Sperrer gibt es vier Rollen:
-- **Leittier:** eröffnet mit Flash, danach Chomp gegen die Armor.
+- ~~**Leittier:** eröffnet mit Flash, danach Chomp gegen die Armor.~~ Ersetzt am 05.11.: Das Leittier hat selbst eine der drei anderen Rollen (siehe Führung).
 - **Reißer:** als Einzige mit Tearing Bite. Schlagen in der Hetze die Wunde, reißen im Vorbeischwimmen und sind mit Lunge sofort wieder weg.
 - **Sperrer:** schneiden den Weg zur Gruppe ab, Flash beim Umdrehen zur Bale, beißen nur mit Bite, tragen Rough und kein Sanguine Hunger.
 - **Beißer:** Chomp und Bite mit Sanguine Hunger im Kessel, möglichst im 10-s-Fenster nach einem Chomp.
@@ -40,6 +40,15 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 - **Flucht nur vor dem Tylo.** Vor Deino, Sarco, Sachi und Livy flieht der Xiph nicht mehr.
 - **Gestrichen:** Nur das Leittier darf eine Krokodiljagd ausrufen, 3 Körperlängen Abstand zum Ufer, keine andere Beute in Sicht, Jagdende am Ufer, Körper an Krokodile abgeben, Abstand zu den Ufern in der Ruhe und die Raserei, die bei einem Krokodil endet.
 - **Gestrichen:** Injured Members. Bisher durfte ein Tier unter halber Health nicht mitjagen.
+
+**Entschieden am 05.11. (Führung, vom Nutzer):** Die feste Rangordnung ist zu starr und fällt weg. Das soll die Führung offener und dynamischer machen, und es soll weniger Streit im Spiel geben.
+- **Kein Rang 1 bis 6 mehr.** Wer führt, zeigt sich in der Gruppe von selbst: Es ist das Tier, das meistens vorangeht und die Jagd eröffnet und abbricht. Die anderen folgen ihm.
+- **Das Leittier hat selbst eine Jagdrolle** (Reißer, Sperrer oder Beißer) und jagt nach der Eröffnung darin. Die eigene Leittier-Rolle mit Flash und danach Chomp fällt weg.
+
+**Selbst ergänzt, bitte prüfen:**
+- **Eröffnen** darf jeder, meist tut es das Leittier, und die anderen folgen. Darf nur das Leittier eröffnen, gibt es genau den Streit, wer das Leittier ist.
+- **Die Führung kann wechseln:** Geht ein anderes Tier immer öfter voran und der Schwarm folgt ihm, hat er ein neues Leittier. Um die Führung wird nie gekämpft.
+- **Was der Rang geregelt hat:** In der Ruhe liegen die Sub/Adults in der Mitte und die Jungen am Rand. Die Wache geht reihum. Beim Fressen gibt es keine Reihenfolge mehr.
 
 **Rechnung zu den Rollen** (4 Xiph gegen einen allein stehenden Kai mit 1000 Health, zubeißen und zurück, ein Biss je Durchgang alle 3 s):
 - Bleibt der Schwarm an der Beute, entscheidet direkter Schaden. 4 Beißer brauchen 16 s, 1 Reißer und 3 Beißer 19 s, alle Bisse gemischt 23 s, nur Tearing Bite 34 s. Mit Blutung nach der Community-Lesart liegen alle bei 14 bis 17 s.
@@ -68,7 +77,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
   - Der Schwarm trommelt dabei mit :threaten_call:.
   - Das Leittier kann den Ring auf einen Schlag die Richtung wechseln lassen.
   - Von außen sieht das aus wie kochendes Wasser.
-- **Rangordnung:** Jedes Mitglied hat einen Rang von 1 bis 6, nach der Zeit im Schwarm. Rang 1 ist das Leittier. Der Rang bestimmt den Platz in der Ruhe (die Ranghöchsten in der Mitte, wie bei Piranhas), die Reihenfolge beim Fressen und, wer das Kommando übernimmt. Um Ränge wird nie gekämpft.
+- ~~**Rangordnung:** Jedes Mitglied hat einen Rang von 1 bis 6, nach der Zeit im Schwarm. Rang 1 ist das Leittier. Der Rang bestimmt den Platz in der Ruhe (die Ranghöchsten in der Mitte, wie bei Piranhas), die Reihenfolge beim Fressen und, wer das Kommando übernimmt. Um Ränge wird nie gekämpft.~~ Gestrichen am 05.11.: Wer führt, zeigt sich im Schwarm von selbst.
 - **Die Raserei** (the frenzy), die Balz in Coastland Swamp (Stand 05.11.):
   - Alle verlassen ihre Gruppe. Die Männchen sammeln sich in der Mitte, die Weibchen schwimmen wild um sie herum und rufen :broadcast_call:. Auf das Bellen eines Weibchens jagen alle Weibchen die Männchen.
   - Gebissen wird nur mit Bite, und nach jedem Biss schwimmt das Weibchen vorbei und wendet.
@@ -95,10 +104,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
    - Zubeißen und sofort zurück, keiner bleibt an der Beute.
    - Trommeln mit :threaten_call:.
    - Richtungswechsel auf das Zeichen des Leittiers.
-2. **Rangordnung nach Zeit im Schwarm**, ohne Rangkämpfe:
-   - Rang 1 führt.
-   - Ein altes Leittier darf an Rang 2 abgeben.
-   - Neue Mitglieder fangen unten an.
+2. ~~**Rangordnung nach Zeit im Schwarm**, ohne Rangkämpfe~~ Gestrichen am 05.11. (siehe Führung oben).
 3. ~~Die Raserei mit 50-%-Grenze und 3 Minuten~~ Ersetzt am 05.11. (siehe oben).
 4. **Weibchen beißen, wen sie wollen.** Ein Männchen, das sie nicht wollen, wird härter gejagt. So ist die Raserei zugleich die Wahl der Weibchen und die Probe der Männchen.
 5. **Farb-Dimorphismus:**
@@ -111,7 +117,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 9. **Tylo:** Wer einen adulten Tylo sieht, verlässt den POI und kommt frühestens nach 15 Minuten zurück. Ersetzt „bis zur nächsten Dämmerung“.
 
 **Bleibt aus dem letzten Entwurf** (dort schon zur Entscheidung gestellt):
-- Eröffnung mit dem Flash des Leittiers.
+- Eröffnung mit Flash, seit dem 05.11. meist durch das Leittier, aber nicht nur.
 - Ein Kai, der seine Bale erreicht, ist für diesen Versuch sicher.
 - Ein Schwarm je Gruppe.
 - ~~Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer, und nur ohne andere Beute in Sicht.~~ Gestrichen am 05.11.: Krokodile nach Stufe, Sarco ab 4, ein einzelner Deino ab 6.
@@ -123,7 +129,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 **Widersprüche:**
 1. **Cathemeral und die Kai-Kälber.** Der Kai-Entwurf lässt die Kälber „in full daylight“ ins tiefe Wasser schwimmen, weil „dawn and dusk belong to Xiphactinus“. Mit Cathemeral stimmt das nur noch als Tendenz: Der Xiph ist in der Dämmerung am aktivsten, darf aber auch mittags jagen, und nach Regel 4.3.3 auch die Kälber. Der Satz im Kai-Profil ist dann kein Schutz mehr, sondern eine kluge Gewohnheit der Bale. Ich würde ihn so lassen. Wenn die Kälber mittags wirklich sicher sein sollen, bräuchte es doch wieder eine Zeitregel.
 2. **Pflicht-Dimorphismus ohne Unterarten.** Der Mod hat nur ein Modell und 10 Skins (Bluefin, Cod, Default, Esox, Mimic, Oscar, Pardus, Reaper, Scarred, Trout). Größe und Form zeigen das Geschlecht also nicht. Deshalb die Farbregel. Falls einzelne Skins im Spiel klar weiblich oder männlich wirken, kann man sie zusätzlich zuordnen. Das musst du im Spiel ansehen, ich kenne nur die Namen.
-3. **Die alte Führung „wem der Schwarm folgt“** passt nicht zu „klare soziale Struktur“. Sie ist durch die Rangordnung ersetzt.
+3. ~~**Die alte Führung „wem der Schwarm folgt“** passt nicht zu „klare soziale Struktur“. Sie ist durch die Rangordnung ersetzt.~~ Am 05.11. umgekehrt: Die Führung „wem der Schwarm folgt“ ist zurück, die Rangordnung fällt weg. Das widerspricht dem Leitbild nicht, denn die Kontrolle von innen kommt jetzt aus den festen Rollen und dem Kessel und nicht mehr aus dem Rang.
 4. **„Bis nur noch einer steht“ oder „bis die Hälfte übrig ist“?** In deiner Beschreibung vom 05.11. steht beides. Im Profil steht jetzt die Hälfte, weil das die genauere Regel ist und sonst nur ein Männchen nisten dürfte.
 5. **Salz- oder Brackwasser?** In `lebensraum.json` und `oekosystem.md` heißen die Flussengen „Salzwasser-Flussengen“. Wenn der Xiph nur Süß- und Brackwasser mag, müssen die Flussengen brackig sein. Im Profil stehen sie jetzt als „brackish channels“. Willst du das für alle Arten so, benenne ich die Zone um.
 6. **Welche Seen?** Welche Seen mit den Flussengen verbunden sind, steht nirgends in den Kartendaten. Deshalb sind im Profil keine Namen genannt, und auf der App-Karte fehlen sie noch. Ebenfalls offen: ob er auch in die reinen Süßwasser-Flüsse im Westen darf.
@@ -199,8 +205,8 @@ Profile inspired by piranhas, sharks, yellow saddle goatfish, tarpon and Xiphact
 
 **Medium Cathemeral Aquatic Carnivore**
 
-- From the outside, a Xiphactinus hunt looks like pure chaos. From the inside, it is pure control: every member of a battery has its rank, its role and its place.
-- Xiphactinus live in batteries of up to 6, led by their highest rank. Every member has a hunting role: ripper, blocker or biter. Each role has its own attack.
+- From the outside, a Xiphactinus hunt looks like pure chaos. From the inside, it is pure control: every member of a battery has its role and its place.
+- Xiphactinus live in batteries of up to 6, led by the member the others follow. Every member, the lead included, has a hunting role: ripper, blocker or biter. Each role has its own attack.
 - Xiphactinus are active by day and by night, and most active at dawn and dusk.
 - Xiphactinus mate in a brutal courtship, the frenzy. They form no lasting pairs. Once the eggs have hatched, the parents leave, and the young grow up on their own in Coastland Swamp.
 - Xiphactinus feel at home only in fresh and brackish water: the warm, brackish channels between the islands (the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp), and the lakes connected to them. They never enter the open ocean, and never go on land.
@@ -240,7 +246,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - With at least 4 in a hunting party, they may hunt up to Large tier, Sarcosuchus included.
   - They never hunt adult Apex or Giant creatures, with one exception: a lone Deinosuchus, with at least 6 in the hunting party.
 - **Roles:** Every member hunts in its role (see Battery Structure). There is no rule on how many members take each role.
-- **One battery per target:** Only one battery may hunt a group at a time. The battery whose lead opens first has the hunt. Any other battery pulls back, and does not join.
+- **One battery per target:** Only one battery may hunt a group at a time. The battery that opens first has the hunt. Any other battery pulls back, and does not join.
 - **Hit-and-run:** Xiphactinus may strike, pull away and strike again. The hunt continues as long as the battery keeps the target in sight (3.3.1, 4.8.3).
 - **Attempts:** A battery has up to 3 attempts per group. After the third, it leaves that group alone for 15 minutes (see Hunting Strategy).
 - **Fleeing:** Xiphactinus flee only from adult Tylosaurus (see Predator Reaction).
@@ -248,9 +254,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **Adolescents:** Adolescent Xiphactinus do not join hunts. They may hunt fish, critters and hatchlings on their own.
 
 **Abilities in an engagement:**
-- **Flash** opens every hunt, and only the lead may use it first (see Hunting Strategy). After the opening, every member may use it.
+- **Flash** opens every hunt, usually from the lead (see Hunting Strategy). After the opening, every member may use it.
 - **Agility Mentality** and **Sanguine Hunger** may be used freely in hunts, except that blockers do not use Sanguine Hunger. Xiphactinus do not group with other species, so no other species shares the buff.
-- **Tearing Bite** is used only by rippers. Leads, blockers and biters never use it.
+- **Tearing Bite** is used only by rippers. Blockers and biters never use it, even when they lead.
 - **Lunge** deals no damage. It is a burst of speed, used to dart in and out again, and to rise at prey near the surface from below.
 
 ## Resource Challenges
@@ -300,10 +306,10 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
   - Fry also practise the boil on small fish: they circle a fish school, dart in and dart back. Play never turns into biting each other. A juvenile that bites another is pushed away from the school by the others.
 - **Adolescents:**
   - At Adolescent, young Xiphactinus may leave Coastland Swamp, together with their school.
-  - They travel on as a school until Sub-Adult, or join a battery. In a battery they hold no rank yet, and swim at its edge.
+  - They travel on as a school until Sub-Adult, or join a battery. In a battery they have no hunting role yet, and swim at its edge.
   - They follow the battery's hunts from a distance of at least 10 body lengths, and do not join them. They watch closely the member whose role they want to take on.
   - They may hunt fish, critters and hatchlings on their own.
-- **Sub-Adults:** At Sub-Adult, young Xiphactinus are full members of their battery. They take the lowest rank, choose their hunting role (see Battery Structure), take turns as lookout, and may court.
+- **Sub-Adults:** At Sub-Adult, young Xiphactinus are full members of their battery. They choose their hunting role (see Battery Structure), take turns as lookout, and may court.
 
 ### Orphaned Behavior
 
@@ -323,9 +329,9 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
 ### Day and Night
 
 - **Rhythm:** Xiphactinus are cathemeral. They hunt and rest in turns, by day and by night, and are most active in the half light of dawn and dusk.
-- **Resting formation:** At rest, the battery lies close together in open water. The lead rests in the centre, the other ranks around her, and the young at the edge. Large piranhas hold the safe centre of their shoal in the same way.
+- **Resting formation:** At rest, the battery lies close together in open water. The Sub/Adults rest in the centre, and the young at the edge. Large piranhas hold the safe centre of their shoal in the same way.
 - **Resting bend:** The lead chooses where the battery rests: a sheltered bend in open water, away from the banks. A bend where the battery was attacked is not used again in the same session.
-- **The lookout:** In a battery of 3 or more, one member always keeps watch for Tylosaurus while the others rest. The lowest rank takes the first watch, and passes it on with a gentle nudge.
+- **The lookout:** In a battery of 3 or more, one member always keeps watch for Tylosaurus while the others rest. The members take turns, and pass the watch on with a gentle nudge.
 - **Downtime:** Rest time is for rolling, swimming in sync with a friend, play leaps and chasing games. Rippers often chase blockers in play, and blockers practise cutting them off.
 
 ### Range and Seasons
@@ -361,23 +367,19 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 
 ### Battery Structure
 
-- **Ranks:**
-  - Every Sub/Adult member of a battery has a rank, from 1 to 6. Every member knows its own rank and the ranks of the others.
-  - Ranks follow time in the battery. A new member or a young Sub-Adult starts at the bottom, and moves up when a member above it dies or leaves. When a battery forms, its founders agree on their order.
-  - Ranks are never fought for. They decide the place at rest, the order at a kill, and who takes command.
 - **The lead:**
-  - Rank 1 is the lead. She chooses where the battery hunts and rests and when it moves on. She opens every hunt and decides when an attempt ends.
-  - When the lead is absent, rank 2 takes command.
-  - An old lead may hand the lead to rank 2 at any time, and takes the lowest rank or leaves.
+  - Batteries have no fixed ranks. Within a battery, it soon shows who usually goes ahead: who chooses where the battery hunts and rests, when it moves on, and who opens and ends the hunts. The others follow this member, the lead.
+  - The lead has a hunting role like every other member, and hunts in it once the hunt is open.
+  - The lead may change. When another member goes ahead more and more often, and the battery follows it, the battery has a new lead. The lead is never fought for.
+  - When the lead is absent, the battery follows whoever goes ahead.
 - **Hunting roles:**
   - Every Sub/Adult Xiphactinus has a hunting role: ripper, blocker or biter. Like yellow saddle goatfish, which hunt as chasers and blockers, each keeps its role for life. Players choose the role at Sub-Adult.
   - Every role has its own task and its own attack. There is no rule on how many members of a battery take each role.
   - **Rippers** open the wound. They chase the target at full speed, tear at it in passing with Tearing Bite, and dart away at once with a Lunge. They keep the target bleeding, but do not try to kill it. Rippers are the only ones who use Tearing Bite. They usually wear the Streamlined hide.
   - **Blockers** swim between the target and its group, cut off its way back, and hold the ring of the boil closed. When the target turns back towards its group, they blind it with Flash. Blockers bite only with Bite, and do not use Sanguine Hunger, because they take the blows of the defenders. They usually wear the Rough hide.
   - **Biters** kill. In the boil they strike with Chomp and Bite, and use Sanguine Hunger. They strike in the 10 seconds after a Chomp, while the target's armour is weakened.
-  - **The lead** opens every hunt with Flash, and then weakens the target's armour with Chomp. After the opening, she may use any attack but Tearing Bite.
 - **The lookout:** At rest and at a kill, one member keeps watch (see Day and Night and Hunting Strategy).
-- **Young members:** Adolescents travel at the edge of the battery, hold no rank, and stay out of its hunts.
+- **Young members:** Adolescents travel at the edge of the battery, have no hunting role yet, and stay out of its hunts.
 
 ### Battery Behavior
 
@@ -388,7 +390,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 
 - Two batteries that meet greet each other, lead to lead, and pass. They never attack one another.
 - Only one battery may hunt a group at a time (see Engagement Limits). At the gates, batteries take turns.
-- Batteries may exchange members, and small batteries may merge, within the group limit. A merged battery orders its ranks anew, by agreement of the two leads.
+- Batteries may exchange members, and small batteries may merge, within the group limit. In a merged battery, it soon shows whom it follows.
 - All batteries share Coastland Swamp and the frenzy peacefully.
 
 ### Solitary Xiphactinus
@@ -397,7 +399,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 - Alone, a Xiphactinus turns sharper and accelerates faster (Lone Survivor), but it has no one to close a ring. It hunts by ambush rather than by chase, and prefers the young and the weak.
 - Solitary Xiphactinus hunt up to Medium tier.
 - They keep their distance from Kaiwhekea bales.
-- **Joining a battery:** A solitary Xiphactinus approaches with the greeting. The lead accepts it by returning the greeting, and it takes the lowest rank. A battery that does not want it snaps at it, and it moves on.
+- **Joining a battery:** A solitary Xiphactinus approaches with the greeting. The lead accepts it by returning the greeting. A battery that does not want it snaps at it, and it moves on.
 
 ### Correcting Over-Aggression
 
@@ -474,7 +476,7 @@ Xiphactinus flee only from adult Tylosaurus. At the first sight of one, the look
 From the outside, a Xiphactinus hunt looks like pure chaos: six of the fastest fish in the sea, everywhere at once. From the inside, every member knows its place, its role and its moment. Every hunt on a Sub/Adult follows the same course.
 
 1. **Finding:** The battery spreads out along a channel, within reach of Agility Mentality, and watches for prey near the surface. When it finds a group, it shadows it in silence from a distance, and waits for a chance: a calf that drifts, a straggler, a member that turns away to fish.
-2. **The opening:** The lead marks the target with Flash. No member strikes before it. If her Flash is not ready, she opens with the first bite instead.
+2. **The opening:** A Flash marks the target, usually from the lead. Any member may open, and the others follow. No member strikes before the opening. If no Flash is ready, the hunt opens with the first bite instead.
 3. **The wound:** The rippers chase the target at full speed, tear at it in passing and dart away again. A bleeding target cannot heal, and while it swims fast, its bleeding closes only slowly.
 4. **Cutting off:** At the same time, the blockers swim between the target and its group, and turn it back towards the rippers. A Kaiwhekea has 30 seconds to reach its bale.
 5. **The boil:** Once the target is cut off, the battery closes around it, and the biters go to work (see The Boil).
@@ -488,7 +490,7 @@ Sharks circle their prey before they strike. Piranhas tear at it from every side
 - **Bite and back:** A member darts in from its place, bites once, and returns to its place at once. No member stays on the target. Like piranhas, which bite out a piece and are gone before the next one comes, the battery strikes from every side, one after another.
 - **The drum:** Once the ring has closed, the battery drums: fast, repeated :threaten_call:. Until then it is silent.
 - **The turn:** At a sudden turn of the lead, the whole ring reverses its direction at once, like a fish school turning as one.
-- **Who bites:** The lead and the biters strike with Chomp and Bite, and the biters strike hardest in the 10 seconds after a Chomp, while the target's armour is weakened. The rippers keep the target bleeding with Tearing Bite. The blockers hold the ring, and bite only with Bite.
+- **Who bites:** The biters strike with Chomp and Bite, hardest in the 10 seconds after a Chomp, while the target's armour is weakened. The rippers keep the target bleeding with Tearing Bite. The blockers hold the ring, and bite only with Bite. The lead strikes in its own role.
 - **Blinding:** Flash punishes the sharp turns that Kaiwhekea and Eurhinosaurus use to break out.
 - **The first bites** go for the flippers and the tail, the way piranhas bite at fins, to slow the target down.
 - **Breaking the ring:** At the lead's :broadcast_call:, the ring bursts outwards, every member in a different direction, and regroups out of reach.
@@ -506,8 +508,8 @@ Sharks circle their prey before they strike. Piranhas tear at it from every side
 
 ### Feeding
 
-- The lead eats first, then the others in order of rank.
-- The lowest rank keeps watch and eats last.
+- The battery feeds together, with no order at the kill.
+- One member keeps watch, and eats once another takes over.
 - Xiphactinus leave a body at once when an adult Tylosaurus comes near.
 
 ### Pterosaurs
@@ -574,11 +576,11 @@ Xiphactinus care for their eggs, but not for their young.
 
 ## Elderly & End of Life (Optional)
 
-- **Old age:** Old Xiphactinus slow down and can no longer keep up with their battery. An old lead hands the lead to rank 2, and many old members take the lookout more often.
+- **Old age:** Old Xiphactinus slow down and can no longer keep up with their battery. An old lead goes ahead less and less, and the battery soon follows another. Many old members take the lookout more often.
 - **Alone:** Many leave to hunt alone in quiet mangrove backwaters, as Lone Survivors.
 - **The last frenzy:** Old males often still enter the frenzy. Most drop out early, and some never court again.
 - **Greed:** Some die trying to swallow prey too large for them, the same fate that may have befallen the famous Gillicus fossil. Others fall to the crocodylians at the banks, because they are no longer quick enough.
-- **Death:** When a member dies, the battery circles once over the place and rolls together at the surface. Then the ranks below move up, and the battery moves on.
+- **Death:** When a member dies, the battery circles once over the place and rolls together at the surface. Then the battery moves on. If the lead has died, it soon shows whom the battery follows next.
 
 ## Rule Exemptions
 
@@ -593,11 +595,11 @@ Xiphactinus care for their eggs, but not for their young.
 ## Profile – Quick View
 
 - Xiphactinus are Medium Cathemeral Aquatic Carnivores, most active at dawn and dusk.
-- From the outside, they are pure chaos. From the inside, they are pure control: every member has a rank, a role and a place.
+- From the outside, they are pure chaos. From the inside, they are pure control: every member has a role and a place.
 - They live only in fresh and brackish water: the channels between the islands and the lakes connected to them. They never enter the open ocean, which is too salty and too cool for them, and never go on land.
-- They live in batteries of up to 6 Sub/Adults, ranked by time in the battery and led by rank 1. Every member hunts as a ripper, a blocker or a biter, each with its own attack.
+- They live in batteries of up to 6 Sub/Adults, led by the member the others follow, with no fixed ranks. Every member, the lead included, hunts as a ripper, a blocker or a biter, each with its own attack.
 - They hunt up to Medium tier in any party size, up to Large tier with 4 or more, and never adult Apex or Giant creatures. The one exception is a lone Deinosuchus, hunted by 6 or more.
-- Every hunt opens with the lead's Flash. The rippers open the wound with Tearing Bite, the only ones who use it, while the blockers cut off the way back. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place, and the biters make the kill.
+- Every hunt opens with a Flash, usually the lead's. The rippers open the wound with Tearing Bite, the only ones who use it, while the blockers cut off the way back. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place, and the biters make the kill.
 - They flee only from adult Tylosaurus. A Xiphactinus seized by one is lost. Spinosaurus and Xiphactinus ignore each other completely.
 - All Xiphactinus court in Coastland Swamp, in the frenzy. Every Xiphactinus leaves its group, and the females chase the males until only half of them are left. Males may not hide or flee, and may die. Each female chooses one of those who endured, and a male may be chosen by several.
 - Colour dimorphism is mandatory: females dark, males light.
