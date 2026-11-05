@@ -158,6 +158,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 - Herausgefordert werden Tylo, fremde Sachi-Männchen und auf Palm Islands auch Deino und Spino. Er jagt Deino und Spino gern, muss aber nicht, auch allein. Xiph begegnet er kaum, denn der lebt nur in den Flussengen. Vor Livy flieht er; in Kelp und Untiefen ist er vor ihm sicher.
 - Tagsüber ziehen Kai-Gruppen unbehelligt durch sein Revier, nachts entscheidet ihr Ruheplatz.
 - **Balz wie beim Weißen Hai** (entschieden am 05.11.): Nach dem Paarungsgruß schwimmt das Weibchen weiter, und das Männchen jagt sie mit Knochenbrüchen. Bringt er sie unter 50 % Health, nimmt sie ihn an. Dimorphismus ist Pflicht, und die Weibchen sind die massigere, größere Unterart. Ein Männchen paart sich nur mit einem Weibchen. Von einer Drift wird deshalb nur eine Schwester gejagt, außer ein Brace ist da, dann sucht sich jeder Bruder eine aus. Eine Lebensbindung gibt es nicht. Erwidert sie den Gruß nicht, wird sie eine Nacht geduldet und zieht dann weiter.
+- **Kinderstube in Tallbrush Coasts** (entschieden am 05.11.): Die Mütter nisten nicht im Revier des Männchens, sondern an der flachen Nordküste von Tallbrush, wie Haie in ihren Kinderstuben. Die Mutter bleibt bis Adolescent und führt die Jungen dann hinaus ins Meer. Männchen kommen nie dorthin, und alle Mütter teilen sich die Kinderstube. Livy kommt nicht hin. Gefährlich ist sie trotzdem, durch Spino an den Flussmündungen, die Landjäger am Strand und den Tylo vom Meer her. Damit hat die bisher leere Küste eine Aufgabe.
 - Kai fliehen vor Apexen auf Sicht. Die Nachtwache schlägt also Alarm, statt zu kämpfen. Er muss aus dem Hinterhalt packen, sonst entkommt die Beute.
 - Nur am Nest stellen sich Kai, und 2 Eltern schlagen einen einzelnen Sachi.
 
@@ -359,7 +360,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 | Leedsichthys | Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seiner Gruppe |
 | Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht nur vor Tylo |
 | Tylosaurus | unverändert: Ozeane und Flussengen | einziger Apex in beiden Zonen |
-| Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | meidet Abyssal Depths; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo |
+| Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | meidet Abyssal Depths; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo; Kinderstube der Mütter an der Küste von Tallbrush Coasts |
 | Livyatan | alle Ozeane außer Palm Islands, Zuhause Abyssal Depths | Nester an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal |
 | Deinosuchus | nur Flussengen und Palm Islands, mit Spinos Revierkarte | auf Palm Revierkämpfe mit Sachi |
 | Spinosaurus | Seen, Flüsse und Flussengen wie bisher; vom Meer nur Palm Islands | auf Palm Revierkämpfe mit Sachi |

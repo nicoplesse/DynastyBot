@@ -7,7 +7,7 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 **Idee:** Ein kräftiger, aber wendiger Nachtjäger für Kelp, Riffe, Untiefen und Strände. Seine Beute sind vor allem die Flotillas, die nachts in den Untiefen ruhen.
 - **Vom Tyrannotitan übernommen** (wie zuvor beim Prog):
   - Männchen halten ein Revier, allein oder als Bruderpaar.
-  - Weibchen ziehen umher und nisten im Revier eines Männchens.
+  - Weibchen ziehen umher. *(Seit dem 05.11. nisten sie nicht mehr im Revier des Männchens, sondern in der Kinderstube in Tallbrush Coasts.)*
   - Er ist nachtaktiv.
 - **Seine besondere Art:** Er ist der einzige Jäger, der einen adulten Kai packen kann (Tragkraft 4001 gegen CW 4000). Tylo schafft das auch mit Wide Gape nicht (3700). Mit Aileron Roll sprengt er die schlafende Gruppe, packt einen Kai am Rand und zieht ihn ins Kelp, weg von den Verteidigern.
 - **Kein Tiefseetier:**
@@ -102,6 +102,27 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 - **Dimorphismus umgedreht:** Bisher waren die Männchen die Massigen. Jetzt sind es die Weibchen, die Männchen sind schlanker.
 - **Männchen sind zu Weibchen nur noch außerhalb der Balz passiv.**
 
+**Entschieden am 05.11. (vom Nutzer): Kinderstube in Tallbrush Coasts.**
+- **Wo:** Die Mütter nisten nicht im Revier des Männchens, sondern in einer Kinderstube an der Küste von Tallbrush Coasts. Laut Kartendaten ist das die flache, salzige Nordküste westlich von Kelp Vale. Die Mütter kommen an der Küste entlang hin, ohne durch die Flussengen zu müssen.
+- **Die Mutter bleibt** bei ihren Jungen bis Adolescent, bei 20 + 40 Minuten Wachstum also etwa eine Stunde.
+- **Der Auszug:** Mit Adolescent führt sie die Jungen an der Küste entlang hinaus ins Meer. Bis Sub-Adult ziehen sie zusammen.
+- **Männchen kommen nie in die Kinderstube.** Die Regel, dass der Vater seine Jungen verteidigen darf, fällt weg.
+- **Geteilte Kinderstube:** Alle Mütter teilen sie sich. Territorial ist ein Weibchen nur an ihrem eigenen Nest.
+- **Kein Livy als Vaterersatz.** Der Livy ist das einzige Tier, das der Sachi wirklich fürchtet, und er hat schon die Rolle als Schutz der Styracosterna.
+
+**Warum:** Tallbrush Coasts war für die Wasserwelt fast leer. Weiße Haie, Zitronenhaie und Bullenhaie bringen ihre Jungen genauso in Kinderstuben zur Welt: an flachen Küsten, in Mangroven oder in Flüssen, wohin die großen Jäger nicht kommen. Väter gibt es im Meer trotzdem. Beim Leeds zieht nur der Vater die Jungen groß, beim Kai begleiten die Bullen die Bale.
+
+**Gefahr in der Kinderstube:**
+- Livy kommt nicht hin.
+- Spino hält in Tallbrush nur die Flussabschnitte, die ins Meer münden. Die Kinderstube an der Küste liegt also nicht in seinem Revier, an den Mündungen ist er aber nah. Der Spino-Entwurf erlaubt ihm schon, Sachi in seinem Revier wie jede Apex-Beute zu jagen.
+- Am Strand haben Halszkaraptor, Megalania, Torvosaurus, Giganotosaurus und Metriacanthosaurus ihre Reviere.
+- Vom Meer her kann der Tylo kommen.
+
+**Selbst ergänzt, bitte prüfen:**
+- Die Schwester einer Drift, die leer ausgeht, darf mit in die Kinderstube und Nest und Junge mitbewachen.
+- Verwaiste Junge suchen die Kinderstube, wenn sie sie erreichen können.
+- Die Kinderstube ist kein Revier. Mütter fordern dort niemanden heraus, sie verteidigen nur ihr Nest und ihre Jungen.
+
 **Noch offen:**
 - **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, schaut der Nutzer im Mod nach.
 - **Agreement-Call:** In den Dynasty-Profilen gibt es dafür noch kein Emoji. Er steht deshalb als „agreement call“ im Text. Heißt er im Spiel anders, wird er ausgetauscht.
@@ -127,11 +148,11 @@ Profile inspired by jaguars, saltwater crocodiles, Tyrannotitan and pliosaur pal
 - **Males:**
   - Males are territorial. They claim one half of an ocean POI as their territory.
   - A male allows one solitary female, or one bonded pair of females, within his territory, and permits them and any offspring he fathers to share his kills.
-- **Females:** Females are nomadic, but become territorial at their nest site when nesting.
+- **Females:** Females are nomadic. They raise their young in the nursery at Tallbrush Coasts, where males never come, and defend their own nest there.
 - **Nature:**
   - Males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females outside courtship.
   - Females are tolerant towards other species, and passive towards males.
-- Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, and do not enter the saltwater channels between the islands.
+- Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, and do not enter the saltwater channels between the islands. Mothers raise their young in the shallows of Tallbrush Coasts.
 - Sachicasaurus are not scavengers. They hunt, and they fish.
 - Sachicasaurus court like great white sharks: the male chases the female, and she only accepts a male who can stop her from leaving (see Courtship & Parenthood).
 - Sachicasaurus tolerate albino and melanistic individuals.
@@ -169,7 +190,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **Tolerated species:**
   - Males do not challenge Kaiwhekea bales, Eurhinosaurus shoals or Leedsichthys. These pass through freely by day, and become prey by night.
   - Males do not challenge Livyatan.
-- **Losing a territory:** If a male or brace loses a territory challenge, any females nesting with them either follow or leave the POI without them.
+- **Losing a territory:** If a male or brace loses a territory challenge, any female or drift they allow in their territory either follows or leaves the POI without them.
 
 ## Engagement Limits (Defence & Hunts)
 
@@ -197,14 +218,14 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **The lunge:** Sachicasaurus may stalk the shore at night, looking for individuals drinking from or intending to swim across the water. They lunge out of the water and use Clamp or Bone Snap to pull the target back into the water with them. This is dangerous, especially against carnivorous prey.
 - **Third party:** Sachicasaurus may third party engagements that enter the water, or come within 1 body length of the water.
 - **Staying beached:** Sachicasaurus avoid staying beached on land for long. The further they go on land, the higher the risk of drying out and dying to the heat.
-- **Offspring:** Nippers below Adolescent die if beached for more than 5 minutes. Their mother, or the father if he is near, must push them back into the water, at considerable risk to herself.
+- **Offspring:** Nippers below Adolescent die if beached for more than 5 minutes. Their mother must push them back into the water, at considerable risk to herself.
 
 ## Nesting Limits
 
 - 🌧️ Rainy Season: 3 🥚 per 4 hours.
 - ☀️ Dry Season: 2 🥚 per 4 hours.
 
-Females nest in sheltered, shallow coves within a male's territory. A female drives out other ungrouped females she sees near her nest.
+Females nest in the nursery at Tallbrush Coasts (see The Nursery). A mother drives other females away from her own nest, but shares the nursery with them.
 
 ## Physical Dimorphism
 
@@ -217,15 +238,15 @@ Females use the bulkiest of the subspecies the mod offers (Vitae, Mors and Queen
 
 ### Offspring Behavior
 
-- **Hatchlings:** Sachicasaurus hatchlings, known as nippers, hatch in the shallow coves where they were laid. They stay hidden among rocks and kelp.
-- **Mother:** Their mother guards the cove at night and rests close by during the day.
-- **Juveniles:** Juveniles follow their mother on short night trips, and learn to lie still in the kelp and wait.
-- **Adolescents:** Adolescents begin to fish and hunt small critters on their own.
+- **Hatchlings:** Sachicasaurus hatchlings, known as nippers, hatch in the nursery at Tallbrush Coasts. They stay hidden in the shallows, among rocks and weed.
+- **Mother:** Their mother guards them at night and rests close by during the day. She stays with them until they reach Adolescent.
+- **Juveniles:** Juveniles follow their mother on short night trips through the nursery, and learn to lie still and wait.
+- **Adolescents:** Adolescents begin to fish and hunt small critters on their own. At Adolescent, their mother leads them out of the nursery (see The Leaving).
 - **Sub-Adult:** At Sub-Adult, young males leave to find a territory of their own, often together with a brother. Young females may stay with their mother as a drift.
 
 ### Orphaned Behavior
 
-Orphaned nippers hide deep in the kelp, and only come out at night to hunt small fish. They grow up quiet, cautious and solitary.
+Orphaned nippers make their way to the nursery if they can, and hide in its shallows. They only come out at night to hunt small fish, and grow up quiet, cautious and solitary.
 
 ## General Behavior
 
@@ -239,7 +260,7 @@ Orphaned nippers hide deep in the kelp, and only come out at night to hunt small
 ## Social Interaction
 
 - **Males:** Males are solitary or live in a brace with a brother. Braces hold their territory together, and share every kill.
-- **Females:** Females travel alone or as a drift with a sister or daughter. They move between territories, and choose the male whose territory offers the best hunting and the safest coves.
+- **Females:** Females travel alone or as a drift with a sister or daughter. They move between territories, and choose the male whose territory offers the best hunting.
 - **Females in his territory:** A territorial male shares his kills with the female or drift he allows in his territory, and with his offspring.
 - **No lasting bonds:** Sachicasaurus form no lasting pairs. After nesting, each goes their own way.
 
@@ -292,7 +313,7 @@ Sachicasaurus court like great white sharks. Female great whites are larger than
 
 ### Courtship
 
-1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging both the male and the coves his territory offers.
+1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging the male and his territory.
 2. **Meeting:** When a female enters a male's territory and the two see each other, the male recognises her as a female by her build.
 3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives the agreement call. He returns it in the same way. He may also greet first, and she returns it.
 4. **No greeting:** If she does not return his greeting and swims on, he tolerates her in his territory and does not chase her. After one night she travels on, and accepts this.
@@ -311,13 +332,22 @@ Males and females do not group, not even after courtship or when nesting.
 - **A drift and a single male:** When a drift gives the agreement call, he chases only one of the sisters, never both. Her sister goes without.
 - **A drift and a brace:** Each brother chooses one sister, and chases her.
 - **A brace and a single female:** Only one brother chases her. The brothers settle between themselves which one.
-- **The sister who goes without** may stay with the drift, and help guard the nest and the young.
+- **The sister who goes without** may come along to the nursery, and help guard the nest and the young.
 
-### Nesting
+### The Nursery
 
-- **Where:** The female nests in a sheltered, shallow cove within his territory. The wounds of the chase heal while she sits on her nest.
-- **Territorial:** While nesting, she becomes territorial. She drives out other ungrouped females she sees near her nest.
-- **Defending young:** The male defends the territory, and with it the nest. If the father is within sight of his offspring being hunted while the mother is not, he may defend them.
+Female great white, lemon and bull sharks give birth in nurseries: shallow coasts, mangroves or rivers where the large hunters do not go. Sachicasaurus do the same.
+
+- **Where:** The nursery lies in the shallows of Tallbrush Coasts, the northern coast west of Kelp Vale. After courtship, the female travels there along the coast to nest. The wounds of the chase heal while she sits on her nest.
+- **Shared:** All mothers share the nursery. A mother defends her own nest, and drives other females away from it, but not out of the nursery.
+- **No males:** Males never enter the nursery.
+- **Mothers stay:** The mother stays with her nippers in the nursery until they reach Adolescent. She guards them at night, and rests close by during the day.
+- **No safe place:** Livyatan never come here, but the nursery is still dangerous. Spinosaurus wait at the river mouths, shore hunters roam the beach, and Tylosaurus may come in from the sea.
+
+### The Leaving
+
+- Once her young reach Adolescent, the mother leads them out of the nursery, along the coast and into the open ocean. It is the most dangerous journey of their lives.
+- They travel together until Sub-Adult. Then young males leave to find a territory of their own, often with a brother, and young females may stay with their mother as a drift.
 
 ## Elderly & End of Life (Optional)
 
@@ -329,6 +359,7 @@ Males and females do not group, not even after courtship or when nesting.
 
 - **Territory:** A Sachicasaurus territory covers one half of an ocean POI, water only (proposed water territory rule). Terrestrial species on land within the same POI are not affected.
 - **Beaching and third party:** The same as Tylosaurus: hunts within 1 body length of the water, and third party in engagements that enter the water or come within 1 body length of it.
+- **Nursery:** The nursery at Tallbrush Coasts is not a territory. Mothers challenge nothing out of it. They only defend their own nest and young.
 - **Courtship chase:** The chase is an engagement within the species with its own limits, not a hunt. The male stops as soon as the female greets him again below 50% health.
 
 ## Dynasty Adjusted Stats
@@ -340,7 +371,7 @@ Males and females do not group, not even after courtship or when nesting.
 
 - Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
 - They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
-- Females travel alone or as a drift, and nest within a male's territory.
+- Females travel alone or as a drift. They raise their young in the nursery at Tallbrush Coasts, where males never come, and lead them out to sea at Adolescent.
 - They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on. A female who does not return the greeting is tolerated for one night, then travels on.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
 - They form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is chased, unless a brace is there and each brother chooses one.
