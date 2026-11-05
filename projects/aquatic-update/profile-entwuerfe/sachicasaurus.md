@@ -80,6 +80,8 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 4. **Die Jagd:** Nach dem Gruß schwimmt das Weibchen trotzdem weiter. Das Männchen jagt sie, mit Knochenbrüchen und allem, was es kann. So beweist es seine Stärke: Es hält sie davon ab, weiterzuziehen.
 5. **Weibchen halten mehr aus.** Sie sind die dickere, schwerere Unterart und im Schnitt größer als die Männchen.
 6. **Erfolg:** Bringt er sie unter 50 % Health, balzt sie mit ihm. Sie gruppieren nicht, wie beim Tyrannotitan, und zum Nisten wird das Weibchen territorial.
+7. **Ein Männchen, ein Weibchen:** Ein Männchen paart sich immer nur mit einem Weibchen. Gibt eine Drift den Agreement-Call, wird deshalb erst einmal nur ein Weibchen gejagt, nie zwei. Die Schwester geht leer aus, außer ein Brace ist dabei: Dann sucht sich jeder Bruder eine aus.
+8. **Keine Lebensbindung.** Nach dem Nisten geht jeder seiner Wege.
 
 **Echtes Vorbild:** Beim Weißen Hai sind die Weibchen größer als die Männchen. Bei der Paarung beißt sich das Männchen an Flossen und Flanken des Weibchens fest, und erwachsene Weibchen tragen oft Paarungsnarben. Bei Blauhaien ist die Haut der Weibchen deshalb mehr als doppelt so dick wie die der Männchen. Der Xiph macht es genau umgekehrt: Dort beißen die Weibchen die Männchen.
 
@@ -90,7 +92,10 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 - **„Hält mehr aus“ ist Aussehen und Rollenspiel.** Path of Titans kennt keine Werte nach Geschlecht, und Unterarten ändern meines Wissens nur das Aussehen. Mehr aushalten würde sie nur, wenn Dynasty den Weibchen etwas vorschreibt, zum Beispiel Ironclad. Das bringt aber, wie oben gerechnet, kaum etwas.
 
 **Selbst ergänzt, bitte prüfen:**
-- **Der Paarungsgruß:** Sie dreht sich an der Oberfläche mit der Flanke zu ihm und gibt einen :friendly_call:. Er antwortet genauso.
+- **Der Paarungsgruß:** Sie dreht sich an der Oberfläche mit der Flanke zu ihm und gibt den Agreement-Call. Er antwortet genauso.
+- **Brace und einzelnes Weibchen:** Nur ein Bruder jagt sie. Wer, machen die Brüder unter sich aus.
+- **Die Schwester, die leer ausgeht,** darf bei der Drift bleiben und Nest und Junge mitbewachen, wie beim Tyrannotitan.
+- **Kein Harem mehr:** Im Overview stand „form harem bonds“ wie beim Tyrannotitan. Mit „ein Männchen, ein Weibchen“ passt das nicht mehr und ist ersetzt. Eine Drift darf aber weiter gemeinsam im Revier eines Männchens leben.
 - **Das Zeichen bei 50 %:** Wie viel Health sie hat, sieht er nicht. Deshalb gibt sie das Zeichen: Sie bleibt stehen, dreht sich zu ihm und grüßt noch einmal. Damit ist die Jagd vorbei, und er hört sofort auf.
 - **Ende ohne Erfolg:** Erreicht sie die Grenze seines Reviers, hat er es nicht geschafft. Er folgt ihr nicht hinaus, und sie zieht weiter. Ohne diese Grenze würde eine Jagd zwischen zwei gleich schnellen Tieren nie enden.
 - **Sie beißt nicht zurück:** Das Weibchen flieht nur, mit Tempo, Wenden und Abtauchen. Kein Bite, kein Bone Snap, keine Aileron Roll.
@@ -99,9 +104,8 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 
 **Noch offen:**
 - **Kein Gruß:** Was passiert, wenn das Weibchen nicht erwidert und weiterschwimmt (kommt später).
-- **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, muss man im Mod ansehen.
-- **Brace und Drift:** Jagen beide Brüder dasselbe Weibchen, oder nur einer? Wird jede Schwester einer Drift einzeln gejagt? Beim Tyrannotitan kämpfen die Brüder vorher gegeneinander, und nur einer wird gewählt.
-- **Lebensbindung:** Muss ein Paar, das jede Saison zueinander zurückkehrt, die Jagd jedes Mal wiederholen? Beim Tyrannotitan müssen sich solche Paare bei jedem Wiedersehen neu grüßen.
+- **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, schaut der Nutzer im Mod nach.
+- **Agreement-Call:** In den Dynasty-Profilen gibt es dafür noch kein Emoji. Er steht deshalb als „agreement call“ im Text. Heißt er im Spiel anders, wird er ausgetauscht.
 - Schwimmtempo und Wendigkeit. Das Wiki gibt nur 3 von 5 Sternen fürs Wasser. Die Werte lassen sich aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist.
 - Ob Ironclad die Armor 1,1 weiter erhöht, und ob der Biss 80 (NexLink 2026) oder 90 (Wiki 2024) macht. Am Gleichstand mit Tylo ändert beides nichts, es entscheidet nur, wer knapp gewinnt.
 - Heilung 1,0/s ist für einen Revierhalter niedrig. Erst anheben (auf 1,5), wenn er im Test seine Reviere nicht halten kann.
@@ -120,7 +124,7 @@ Profile inspired by jaguars, saltwater crocodiles, Tyrannotitan and pliosaur pal
 **Apex Nocturnal Aquatic Carnivore**
 
 - Sachicasaurus may take part in all activities other than hunting during the day.
-- Sachicasaurus form harem bonds.
+- Sachicasaurus form no lasting bonds. A male mates with only one female at a time, and after nesting each goes their own way.
 - **Males:**
   - Males are territorial. They claim one half of an ocean POI as their territory.
   - A male allows one solitary female, or one bonded pair of females, within his territory, and permits them and any offspring he fathers to share his kills.
@@ -237,8 +241,8 @@ Orphaned nippers hide deep in the kelp, and only come out at night to hunt small
 
 - **Males:** Males are solitary or live in a brace with a brother. Braces hold their territory together, and share every kill.
 - **Females:** Females travel alone or as a drift with a sister or daughter. They move between territories, and choose the male whose territory offers the best hunting and the safest coves.
-- **Harem:** A territorial male shares his kills with the females he allows in his territory, and with his offspring.
-- **Lifelong bonds:** By mutual agreement, a female and a male may return to each other season after season.
+- **Females in his territory:** A territorial male shares his kills with the female or drift he allows in his territory, and with his offspring.
+- **No lasting bonds:** Sachicasaurus form no lasting pairs. After nesting, each goes their own way.
 
 ## Aggressive Interaction
 
@@ -291,7 +295,7 @@ Sachicasaurus court like great white sharks. Female great whites are larger than
 
 1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging both the male and the coves his territory offers.
 2. **Meeting:** When a female enters a male's territory and the two see each other, the male recognises her as a female by her build.
-3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives a :friendly_call:. He returns it in the same way. He may also greet first, and she returns it.
+3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives the agreement call. He returns it in the same way. He may also greet first, and she returns it.
 4. **No greeting:** If she does not return his greeting and swims on, *(to be decided)*.
 5. **The chase:** After the greeting, the female swims on anyway. Now the male must prove his strength by stopping her from leaving his territory.
    - He chases her with everything he has: Bite, Bone Snap, Lunge and Breach. Broken bones slow her down.
@@ -301,6 +305,14 @@ Sachicasaurus court like great white sharks. Female great whites are larger than
 7. **Failure:** If she reaches the edge of his territory, he has failed. He does not follow her out, and she travels on to another territory.
 
 Males and females do not group, not even after courtship or when nesting.
+
+### Braces and Drifts
+
+- **One male, one female:** A male only ever mates with one female at a time.
+- **A drift and a single male:** When a drift gives the agreement call, he chases only one of the sisters, never both. Her sister goes without.
+- **A drift and a brace:** Each brother chooses one sister, and chases her.
+- **A brace and a single female:** Only one brother chases her. The brothers settle between themselves which one.
+- **The sister who goes without** may stay with the drift, and help guard the nest and the young.
 
 ### Nesting
 
@@ -332,6 +344,7 @@ Males and females do not group, not even after courtship or when nesting.
 - Females travel alone or as a drift, and nest within a male's territory.
 - They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
+- They form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is chased, unless a brace is there and each brother chooses one.
 - They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for flotillas resting in the shallows.
 - At the shore they follow the same beaching rules as Tylosaurus.
 - Tylosaurus are their equals: the Tylosaurus rules the open water, the Sachicasaurus the shallows by night.
