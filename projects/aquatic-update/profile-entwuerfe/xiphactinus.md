@@ -17,6 +17,24 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 4. **Dimorphismus ist Pflicht.**
 5. Die Balz ist brutal: **Die Weibchen beißen die Männchen**, und wer am längsten durchhält, darf sich paaren.
 
+**Entschieden am 05.11. (vom Nutzer, ersetzt die alte Raserei, die Saisonpaare und die Kinderstube):**
+1. **Balz:** In der Saison treffen sich alle Xiph in Coastland Swamp und verlassen dafür ihre In-Game-Gruppe. Die Weibchen schwimmen wild um die Männchen und rufen dabei immer wieder :broadcast_call: (die „1 Calls“). Die Männchen sammeln sich in der Mitte. Wer nicht nisten will, muss vorher raus.
+2. **Die Jagd auf die Männchen:** Die Weibchen testen Tempo und Wendigkeit. Ein Männchen darf sich nicht verstecken und den POI nicht verlassen, sonst ist die Balz für ihn vorbei. Wer einen Forfeit Call (:friendly_call:) gibt, ist raus und hält Abstand. Männchen dürfen dabei sterben. Die Körper werden nie geclaimt, und das Ritual läuft weiter.
+3. **Ende:** Die Weibchen hören auf, sobald nur noch die Hälfte der Männchen übrig ist.
+4. **Wahl:** Die Weibchen wählen unter den Übrigen, meist den, der am schwersten zu jagen war. Ein Männchen darf mehrere Weibchen haben.
+5. **Nest:** unter Wurzeln in Schlammlöchern oder unter Bewuchs, in Coastland Swamp. Mudflats Venule ist kein Nistplatz mehr.
+6. **Keine Brutpflege:** Sind alle Eier geschlüpft, verschwinden die Eltern und finden sich wieder zu Schwärmen zusammen. Die Jungen bleiben bis Adolescent versteckt in Coastland Swamp und bilden Jugendschulen von höchstens 12 Tieren unter Sub-Adult.
+7. **Lebensraum:** Wohl fühlt sich der Xiph nur in Süß- und Brackwasser. Er darf auch in Seen schwimmen, die mit den Flussengen verbunden sind, geht aber nie an Land.
+8. **Allein nisten:** Das gibt es erst einmal nicht.
+
+**Selbst ergänzt, bitte prüfen:**
+- Der Startschuss (ein Weibchen bellt, ein zweites antwortet) und „nur Bite, vorbei und wenden“ für die Weibchen bleiben aus der alten Raserei. Die Männchen dürfen weiter nur ausweichen.
+- **Hälfte aufgerundet:** Von 5 Männchen bleiben 3. Ein einzelnes Männchen muss 60 s durchhalten. Die Obergrenze von 3 Minuten fällt weg.
+- **Paare:** Es gibt keine festen Paare, keine lebenslangen Bindungen, keine gleichgeschlechtlichen Paare und keine Adoption mehr, weil die Eltern ohnehin gehen. Die Abschnitte Seasonal Pairs, Lifelong Bonds und Adoption sind gestrichen.
+- Wie beim Piranha wählt weiter das Männchen die Nestmulde, und Männchen kämpfen darum im Flankenkampf. Ein Männchen mit mehreren Weibchen gräbt für jedes eine Mulde und pendelt zwischen den Nestern, bis die Eier geschlüpft sind.
+- **Jugendschule** als zweite In-Game-Gruppe (bis 12, alle unter Sub-Adult). Ab Adolescent darf sie Coastland verlassen oder sich einem Schwarm anschließen.
+- **Echtes Vorbild:** Junge Tarpune wachsen ganz ohne Eltern in Mangroven auf. Die neue Variante ist damit näher am echten Tier als die alte Kinderstube.
+
 **Was echte Piranhas tun** (Studien zum Roten Piranha, *Pygocentrus nattereri*):
 - **Sie jagen nicht gemeinsam.** Ihr Schwarm dient vor allem dem Schutz vor Delfinen, Kaimanen und Vögeln. Große, geschlechtsreife Tiere halten die sichere Mitte des Schwarms, kleine bleiben am Rand und sind hungriger. Das Chaos beim Fressen ist also echt, die Kontrolle ist unsere Erfindung. Deshalb kommt sie von der Gelbsattel-Meerbarbe.
 - **Drei Laute:** Piranhas sind still, bis es Streit gibt. Dann bellen sie Auge in Auge (Bark), trommeln beim Umkreisen eines Gegners und im Streit ums Futter (Drum) und klappern mit den Kiefern, wenn sie nacheinander schnappen (Snap). Das wird die Sprache des Xiph.
@@ -33,26 +51,25 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
   - Das Leittier kann den Ring auf einen Schlag die Richtung wechseln lassen.
   - Von außen sieht das aus wie kochendes Wasser.
 - **Rangordnung:** Jedes Mitglied hat einen Rang von 1 bis 6, nach der Zeit im Schwarm. Rang 1 ist das Leittier. Der Rang bestimmt den Platz in der Ruhe (die Ranghöchsten in der Mitte, wie bei Piranhas), die Reihenfolge beim Fressen und, wer das Kommando übernimmt. Um Ränge wird nie gekämpft.
-- **Die Raserei** (the frenzy), die Balz in Coastland Swamp:
-  - Die Männchen kreisen in der Mitte, die Weibchen außen. Auf das Bellen eines Weibchens fallen alle Weibchen über die Männchen her.
+- **Die Raserei** (the frenzy), die Balz in Coastland Swamp (Stand 05.11.):
+  - Alle verlassen ihre Gruppe. Die Männchen sammeln sich in der Mitte, die Weibchen schwimmen wild um sie herum und rufen :broadcast_call:. Auf das Bellen eines Weibchens jagen alle Weibchen die Männchen.
   - Gebissen wird nur mit Bite, und nach jedem Biss schwimmt das Weibchen vorbei und wendet.
-  - Die Männchen dürfen nicht zurückbeißen und den Platz nicht verlassen, nur ausweichen, abtauchen und springen.
-  - Wer unter 50 % Health fällt, mit :heart_call: aufgibt oder den Platz verlässt, ist raus.
-  - Die Raserei endet, sobald nicht mehr Männchen übrig sind als Weibchen balzen. Wer übrig ist, hat bestanden, und jedes Weibchen wählt eines davon.
+  - Die Männchen dürfen nicht zurückbeißen, sich nicht verstecken und den POI nicht verlassen, nur ausweichen, abtauchen und springen.
+  - Wer einen Forfeit Call (:friendly_call:) gibt, sich versteckt oder flieht, ist raus. Männchen dürfen sterben, die Körper werden nie geclaimt.
+  - Die Raserei endet, sobald nur noch die Hälfte der Männchen übrig ist. Wer übrig ist, hat bestanden. Jedes Weibchen wählt eines davon, ein Männchen darf mehrere haben.
 - **Farb-Dimorphismus als Pflicht:** Der Mod hat keine Unterarten, nur 10 Skins. Deshalb zeigt die Farbe das Geschlecht: Weibchen dunkel, Männchen hell. So sieht jedes Weibchen in der Raserei sofort, wen es beißt.
 - **Piranha-Laute:**
   - Bellen ist ein :threaten_call: Auge in Auge.
   - Trommeln sind schnelle :threaten_call: im Kreisen.
   - Schnappen ist ein Bite ins leere Wasser.
 
-**Hast du wieder einen Männchenüberschuss?** Ja, mit der Regel „nur das Männchen, das am längsten durchhält“ sogar einen extremen. Bei 4 Weibchen und 8 Männchen hätte nur ein Männchen Nachwuchs, und sieben gingen leer aus. Deshalb läuft die Raserei nur so lange, bis nicht mehr Männchen übrig sind als Weibchen balzen.
-- Jedes Weibchen bekommt einen Partner.
-- Es scheiden genau so viele Männchen aus, wie zu viele da sind.
+**Männchenüberschuss (Stand 05.11.):** Mit der Hälfte-Regel und mehreren Weibchen je Männchen kein Problem mehr.
+- Jedes Weibchen findet einen Partner, egal wie viele Männchen übrig sind.
+- Die Hälfte der Männchen scheidet immer aus, auch wenn es mehr Weibchen als Männchen gibt. Die Balz bleibt damit für jedes Männchen eine echte Probe.
 - Ob ein Männchen ausscheidet, hängt am Ausweichen, also an Bewegung und Skill, nicht am Zufall.
-- Den Champion gibt es trotzdem: Das Männchen, das am längsten durchhält. Die meisten Weibchen wählen ihn zuerst.
-- Wer ausgeschieden ist, darf in der nächsten Sitzung eine neue Raserei versuchen.
+- Wer ausscheidet, nistet in dieser Saison nicht.
 
-**Rechnung zur Raserei:** Ein Biss macht 50 Schaden (gleiche CW, Armor 1). Nach 6 Treffern ist ein Männchen unter 50 %. Ein Weibchen beißt wegen „vorbei und wenden“ etwa alle 3 s. 4 Weibchen schaffen also rund 70 Schaden pro Sekunde, verteilt auf alle Männchen. Bei 8 Männchen, von denen 4 ausscheiden müssen, dauert eine Raserei damit grob eine bis zwei Minuten. Die Obergrenze von 3 Minuten reicht also. Gestorben wird nicht: Ohne Chomp und Tearing Bite gibt es keine Blutung, und unter 50 % wird nicht mehr gebissen.
+**Rechnung zur Raserei (Stand 05.11.):** Ein Biss macht 50 Schaden (gleiche CW, Armor 1). Ein Männchen mit 600 Health stirbt also nach 12 Treffern, wenn es vorher nicht aufgibt. Die Gruppe ist aufgelöst, deshalb dämpft Mob Mentality die Bisse nicht. Ein Weibchen beißt wegen „vorbei und wenden“ etwa alle 3 s. 4 Weibchen schaffen also rund 70 Schaden pro Sekunde, verteilt auf alle Männchen. Bei 8 Männchen, von denen 4 ausscheiden müssen, dauert eine Raserei grob eine bis zwei Minuten, je nachdem, wie früh die Männchen aufgeben. Ohne Chomp und Tearing Bite gibt es keine Blutung. Wer aufgibt, überlebt also.
 
 **Neu und zu entscheiden:**
 1. **Der Kessel:**
@@ -64,20 +81,14 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
    - Rang 1 führt.
    - Ein altes Leittier darf an Rang 2 abgeben.
    - Neue Mitglieder fangen unten an.
-3. **Die Raserei** mit diesen Regeln:
-   - Nur Bite, kein Sanguine Hunger, nach jedem Biss vorbei und wenden.
-   - Männchen weichen nur aus.
-   - Raus unter 50 %, mit :heart_call: oder beim Verlassen des Platzes.
-   - Ende, wenn nicht mehr Männchen übrig sind als Weibchen, spätestens nach 3 Minuten.
-   - Sind nicht mehr Männchen da als Weibchen, dauert sie 60 s als Probe.
-   - Wer ausscheidet, darf in derselben Sitzung keine weitere Raserei versuchen.
-4. **Weibchen beißen, wen sie wollen.** Ein Männchen, das sie nicht wollen, bekommt mehr Bisse ab. So ist die Raserei zugleich die Wahl der Weibchen und die Probe der Männchen.
+3. ~~Die Raserei mit 50-%-Grenze und 3 Minuten~~ Ersetzt am 05.11. (siehe oben).
+4. **Weibchen beißen, wen sie wollen.** Ein Männchen, das sie nicht wollen, wird härter gejagt. So ist die Raserei zugleich die Wahl der Weibchen und die Probe der Männchen.
 5. **Farb-Dimorphismus:**
    - ♀ Weibchen tragen dunkle Hauptfarben (schwarz, grau, dunkelbraun, dunkelrot).
    - ♂ Männchen tragen helle (silber, weiß, gelb, orange, hellblau).
    - Das Skin-Muster ist frei.
 6. **Nisten:** Wie bei Piranhas wählt das Männchen die Nestmulde. Um Mulden kämpfen nur Männchen, im Flankenkampf. Das Weibchen prüft die Mulde und darf sie ablehnen.
-7. **Lebenslange Paare** müssen nicht in die Raserei. Sie treffen sich am Balzplatz und kreisen nur gemeinsam.
+7. ~~Lebenslange Paare~~ Gestrichen am 05.11.: Es gibt keine festen Paare mehr.
 8. **Versuche:** bis zu 3 je Gruppe, danach 15 Minuten Ruhe vor dieser Gruppe, wie der Timer aus Regel 4.5.1. Ersetzt die alte Grenze „je Dämmerung“.
 9. **Tylo:** Wer einen adulten Tylo sieht, verlässt den POI und kommt frühestens nach 15 Minuten zurück. Ersetzt „bis zur nächsten Dämmerung“.
 
@@ -88,13 +99,16 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 - Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer, und nur ohne andere Beute in Sicht.
 - Gepackt heißt verloren.
 - Ausguck in der Ruhe und beim Fressen.
-- Wache an der Kinderstube im Wechsel.
+- ~~Wache an der Kinderstube im Wechsel~~ Gestrichen am 05.11.: Die Eltern gehen, sobald die Eier geschlüpft sind.
 - Die Tore zum Meer.
 
 **Widersprüche:**
 1. **Cathemeral und die Kai-Kälber.** Der Kai-Entwurf lässt die Kälber „in full daylight“ ins tiefe Wasser schwimmen, weil „dawn and dusk belong to Xiphactinus“. Mit Cathemeral stimmt das nur noch als Tendenz: Der Xiph ist in der Dämmerung am aktivsten, darf aber auch mittags jagen, und nach Regel 4.3.3 auch die Kälber. Der Satz im Kai-Profil ist dann kein Schutz mehr, sondern eine kluge Gewohnheit der Bale. Ich würde ihn so lassen. Wenn die Kälber mittags wirklich sicher sein sollen, bräuchte es doch wieder eine Zeitregel.
 2. **Pflicht-Dimorphismus ohne Unterarten.** Der Mod hat nur ein Modell und 10 Skins (Bluefin, Cod, Default, Esox, Mimic, Oscar, Pardus, Reaper, Scarred, Trout). Größe und Form zeigen das Geschlecht also nicht. Deshalb die Farbregel. Falls einzelne Skins im Spiel klar weiblich oder männlich wirken, kann man sie zusätzlich zuordnen. Das musst du im Spiel ansehen, ich kenne nur die Namen.
 3. **Die alte Führung „wem der Schwarm folgt“** passt nicht zu „klare soziale Struktur“. Sie ist durch die Rangordnung ersetzt.
+4. **„Bis nur noch einer steht“ oder „bis die Hälfte übrig ist“?** In deiner Beschreibung vom 05.11. steht beides. Im Profil steht jetzt die Hälfte, weil das die genauere Regel ist und sonst nur ein Männchen nisten dürfte.
+5. **Salz- oder Brackwasser?** In `lebensraum.json` und `oekosystem.md` heißen die Flussengen „Salzwasser-Flussengen“. Wenn der Xiph nur Süß- und Brackwasser mag, müssen die Flussengen brackig sein. Im Profil stehen sie jetzt als „brackish channels“. Willst du das für alle Arten so, benenne ich die Zone um.
+6. **Welche Seen?** Welche Seen mit den Flussengen verbunden sind, steht nirgends in den Kartendaten. Deshalb sind im Profil keine Namen genannt, und auf der App-Karte fehlen sie noch. Ebenfalls offen: ob er auch in die reinen Süßwasser-Flüsse im Westen darf.
 
 **Beobachten, nicht regeln:**
 - **Flash-Kette:** 6 Xiph können ein Ziel 30 s am Stück bremsen. Das sind genau die 30 s, die ein Kai für den Rückweg zu seiner Bale hat. Nicht begrenzt, weil die Beute keinen Regelschutz bekommt.
@@ -168,8 +182,8 @@ Profile inspired by piranhas, sharks, yellow saddle goatfish, tarpon and Xiphact
 - From the outside, a Xiphactinus hunt looks like pure chaos. From the inside, it is pure control: every member of a battery has its rank, its role and its place.
 - Xiphactinus live in batteries of up to 6, led by their highest rank. Every member hunts as a chaser or a blocker.
 - Xiphactinus are active by day and by night, and most active at dawn and dusk.
-- Xiphactinus form seasonal pairs in a brutal courtship, the frenzy. After 3 seasons together, or by mutual agreement, a pair may bond for life.
-- Xiphactinus live only in the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp. They never enter the open ocean.
+- Xiphactinus mate in a brutal courtship, the frenzy. They form no lasting pairs. Once the eggs have hatched, the parents leave, and the young grow up on their own in Coastland Swamp.
+- Xiphactinus feel at home only in fresh and brackish water: the warm, brackish channels between the islands (the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp), and the lakes connected to them. They never enter the open ocean, and never go on land.
 - Within the channels, Xiphactinus are nomadic. They follow the fish and the groups that pass through on the Leedsichthys route, and hold no territories.
 - Xiphactinus have an aggressive nature towards prey, and a tolerant nature towards their own kind, outside the frenzy.
 - Xiphactinus may scavenge abandoned bodies, but may not take claimed bodies.
@@ -183,14 +197,16 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 ## Group Limits (In-Game Group)
 
+**Battery:**
 - Up to 6 Sub/Adults, of any relation
-- Unlimited Offspring
-- Unlimited Adoptees
+- Unlimited Adolescents
 
-This group is known as a battery.
+**Juvenile school:**
+- Up to 12 young below Sub-Adult, of any relation
+- No Sub/Adults
 
-- **Offspring** grow up in the nursery, and only travel with the battery from Adolescent on (see Growing Up).
-- **Seasonal partners:** A partner from another battery may join for the season if the battery has room. If it does not, the pair travels as a duo until the season ends.
+- **Offspring** grow up without their parents, in juvenile schools in Coastland Swamp. They travel with a battery from Adolescent on at the earliest (see Growing Up).
+- **The frenzy:** For the courtship, every Xiphactinus leaves its in-game group. Batteries form anew once the eggs have hatched (see Courtship & Parenthood).
 - **Merging and leaving:** Two small batteries may merge, as long as they stay at 6 Sub/Adults or below. A member who no longer wishes to follow the battery may leave at any time, except during a hunt or a flight.
 - **Staying together:** Members of a battery stay within 60 m of each other, the reach of Agility Mentality, so that all of them share its effect. Only a scattering battery breaks this (see Predator Reaction).
 
@@ -226,7 +242,7 @@ This group is known as a battery.
 
 - Batteries hold no territories. They do not challenge other species, do not accept territory challenges, and simply move on.
 - **Bodies:** Xiphactinus give up a body at once to any crocodylian, Tylosaurus or other hunter they flee from. They do not take bodies claimed by others, and do not fight other batteries over bodies.
-- **Nesting hollows:** Males that want the same nesting hollow in a nursery swamp settle it with a flank fight (see Aggressive Interaction). This is the only resource Xiphactinus fight over.
+- **Nesting hollows:** Males that want the same nesting hollow in Coastland Swamp settle it with a flank fight (see Aggressive Interaction). This is the only resource Xiphactinus fight over.
 
 ## Preferred Prey
 
@@ -245,8 +261,8 @@ This group is known as a battery.
 - 🌧️ Rainy Season: 4 🥚 per 3 hours.
 - ☀️ Dry Season: 2 🥚 per 3 hours.
 
-Xiphactinus court in Coastland Swamp, and nest in brackish, sheltered water in their nursery swamps, Coastland Swamp and the Mudflats Venule, where the young grow up hidden among roots and mud (see Nesting).
-Xiphactinus may form same-sex pairs and adopt offspring.
+Xiphactinus court and nest in Coastland Swamp, in mud holes under roots or under thick growth, where the young grow up hidden on their own (see Nesting).
+Xiphactinus form no lasting pairs, do not form same-sex pairs, and do not adopt. A male may mate with several females.
 
 ## Physical Dimorphism
 
@@ -259,32 +275,35 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
 
 ### Offspring Behavior
 
-- **Fry:** Xiphactinus young, known as fry, hatch in hollows among the roots of the nursery swamp. They are small, silver and quick from the first moment, and stay hidden among the roots.
-- **The nursery school:**
-  - The fry of all nests in a swamp form one nursery school. Like young tarpon in mangrove pools, they live in shallow, still and oxygen-poor water, where few large predators follow, and they rise often to gulp air.
+- **Fry:** Xiphactinus young, known as fry, hatch in mud holes under the roots and growth of Coastland Swamp. They are small, silver and quick from the first moment. Their parents are already gone, and they are on their own.
+- **The juvenile school:**
+  - Fry gather in juvenile schools of up to 12, with their clutchmates and the fry of other nests. Like young tarpon in mangrove pools, which grow up without any parental care, they live in shallow, still and oxygen-poor water, where few large predators follow, and they rise often to gulp air.
+  - Until Adolescent, the young stay in Coastland Swamp, and keep hidden among the roots and the growth.
   - The school hunts small fish and critters among the roots, and moves as one. At the sight of a large shadow it falls still among the roots.
-- **Small clampers:** Fry up to Juvenile are light enough for Austroraptor to seize. The school hides deep among the roots whenever one wades into the swamp, and the guards may drive it off (see Offspring Rearing).
+- **Small clampers:** Fry up to Juvenile are light enough for Austroraptor to seize. No adult guards them. The school hides deep among the roots whenever a shore hunter wades into the swamp.
 - **Juveniles:**
   - Juveniles chase small fish in pairs, one driving and one cutting off. This is how they learn the roles of the battery.
-  - Fry also practise the boil on small fish: they circle a fish school, dart in and dart back. Play never turns into biting each other. A juvenile that bites another is pushed away from the school by a guard.
+  - Fry also practise the boil on small fish: they circle a fish school, dart in and dart back. Play never turns into biting each other. A juvenile that bites another is pushed away from the school by the others.
 - **Adolescents:**
-  - At Adolescent, young Xiphactinus leave the nursery together with their nursery mates.
-  - They join their parents' battery, or form a new battery with siblings and nursery mates. In a battery they hold no rank yet, and swim at its edge.
+  - At Adolescent, young Xiphactinus may leave Coastland Swamp, together with their school.
+  - They travel on as a school until Sub-Adult, or join a battery. In a battery they hold no rank yet, and swim at its edge.
   - They follow the battery's hunts from a distance of at least 10 body lengths, and do not join them. They watch closely the member whose role they want to take on.
   - They may hunt fish, critters and hatchlings on their own.
 - **Sub-Adults:** At Sub-Adult, young Xiphactinus are full members of their battery. They take the lowest rank, choose their hunting role (see Battery Structure), take turns as lookout, and may court.
 
 ### Orphaned Behavior
 
-- Orphans hide in the shallowest, most overgrown water they can find, and join any nursery school they come across. Nursery schools accept orphans without hesitation, and the guards watch over them like their own.
-- Orphans that never find a nursery grow up as loners. They are skittish, flee early and are slow to trust a battery. Many hunt alone for the rest of their lives (see Solitary Xiphactinus).
+- Every young Xiphactinus grows up without its parents, so a wild-spawned one lives much like the others. It makes its way to Coastland Swamp, hides in the shallowest, most overgrown water it can find, and joins any juvenile school it comes across. Schools accept newcomers without hesitation, as long as they stay at 12 or below.
+- Young that never find a school grow up as loners. They are skittish, flee early and are slow to trust a battery. Many hunt alone for the rest of their lives (see Solitary Xiphactinus).
 
 ## General Behavior
 
 - **Speed and restlessness:** Xiphactinus are the fastest swimmers in the sea, and restless. They patrol the channels in loose formation, always watching for the flash of prey.
 - **Rolling:** Like tarpon, they roll at the surface to gulp air. A battery often rolls together, a silver flash across the water. In the warm, still swamps they roll more often.
 - **Leaping:** Xiphactinus are famous for their leaps. They leap to shake off parasites, to show off, to dodge in the frenzy, and to strike at prey on the surface.
-- **Warm water:** Xiphactinus need warm water. The open oceans are too cool for them, and they never stay there. Tarpon can die in a single cold snap, and Xiphactinus keep away from cool water in the same way. In the Dry Season, when the channels are warmest, batteries are at their most active.
+- **Fresh and brackish water:** Xiphactinus feel at home only in fresh and brackish water, and they need it warm. The open oceans are too salty and too cool for them, and they never stay there. Tarpon can die in a single cold snap, and Xiphactinus keep away from cool water in the same way. In the Dry Season, when the channels are warmest, batteries are at their most active.
+- **Lakes:** Like tarpon, which swim far up rivers, Xiphactinus may follow the water into the lakes connected to the channels.
+- **Land:** Xiphactinus never go on land. Out of the water they are extremely uneasy.
 - **Voice:** Xiphactinus are silent, until it comes to a fight or a kill. Then they bark, drum and snap like piranhas (see Communication).
 - **Watching the banks:** Crocodylians lie along the banks and mudbanks. Xiphactinus keep their distance from them, and never rest near a bank.
 
@@ -298,7 +317,7 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
 
 ### Range and Seasons
 
-- **The channels:** Batteries roam all five channel POIs, following the fish and the groups that pass through on the Leedsichthys route. They do not hold territories, and do not return to the same bend every day.
+- **The channels:** Batteries roam all five channel POIs and the lakes connected to them, following the fish and the groups that pass through on the Leedsichthys route. They do not hold territories, and do not return to the same bend every day.
 - **The gates:** Where the channels open into the oceans, batteries wait for bales and shoals coming back in. Tarpon gather at passes between the islands in the same way. Batteries never follow their prey out into the ocean.
 - **Rainy Season:** The bales spend longer in the channels, where the rivers bring fish. It is the rich season for Xiphactinus, and the season of the largest frenzies.
 - **Dry Season:** The bales spend longer in the cooler oceans. Batteries live more on fish and on the young, and wait at the gates.
@@ -316,7 +335,7 @@ Xiphactinus are silent most of the time. Like piranhas, they find their voice in
 - **Bark:** a :threaten_call: face to face. It is a warning, and the start of every flank fight and every frenzy.
 - **Drum:** fast, repeated :threaten_call: while circling. Batteries drum in the boil, and females drum in the frenzy.
 - **Snap:** a Bite into open water, without landing it. It warns a battery mate off, or rejects a suitor.
-- **Gathering:** A :broadcast_call: calls the battery together. In a hunt, the lead's :broadcast_call: ends the attempt.
+- **Gathering:** A :broadcast_call: calls the battery together. In a hunt, the lead's :broadcast_call: ends the attempt. In the frenzy, the females call again and again with :broadcast_call: as they circle the males.
 - **Greeting:** When two Xiphactinus meet, they swim up alongside each other, flank to flank, and roll at the surface together. When initiated, the greeting must be returned. Battery mates greet after time apart, and members of different batteries greet before they pass close.
 - **Contentment:** swimming in sync, rolling together, and soft :friendly_call:.
 - **Unease:** restless circling at the edge of the battery, and looking around above the surface (:question_emote:).
@@ -331,7 +350,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 
 - **Ranks:**
   - Every Sub/Adult member of a battery has a rank, from 1 to 6. Every member knows its own rank and the ranks of the others.
-  - Ranks follow time in the battery. A new member, a seasonal partner or a young Sub-Adult starts at the bottom, and moves up when a member above it dies or leaves. When a battery forms, its founders agree on their order.
+  - Ranks follow time in the battery. A new member or a young Sub-Adult starts at the bottom, and moves up when a member above it dies or leaves. When a battery forms, its founders agree on their order.
   - Ranks are never fought for. They decide the place at rest, the order at a kill, and who takes command.
 - **The lead:**
   - Rank 1 is the lead. She chooses where the battery hunts and rests and when it moves on. She opens every hunt, decides when an attempt ends, and alone decides whether to hunt a crocodylian.
@@ -348,7 +367,6 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 
 ### Battery Behavior
 
-- **Pairs:** Seasonal and bonded pairs swim side by side, roll together and share catches.
 - **Friendships:** Battery members often stay together for years. Friends swim in sync, and greet each other first after time apart.
 - **Injured members:** An injured member swims in the middle of the battery, and stays out of hunts until it has healed above half health. The battery slows for it.
 - **Play:** Leaping contests, races and chasing games are common at rest. Play never includes biting.
@@ -358,7 +376,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 - Two batteries that meet greet each other, lead to lead, and pass. They never attack one another.
 - Only one battery may hunt a group at a time (see Engagement Limits). At the gates, batteries take turns.
 - Batteries may exchange members, and small batteries may merge, within the group limit. A merged battery orders its ranks anew, by agreement of the two leads.
-- All batteries share the nursery swamps and the frenzy peacefully.
+- All batteries share Coastland Swamp and the frenzy peacefully.
 
 ### Solitary Xiphactinus
 
@@ -383,7 +401,7 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
 
 - Xiphactinus rarely fight their own kind outside the frenzy. Batteries never fight each other, not over prey, and not over bodies.
 - A foreign Xiphactinus that joins a battery's hunt uninvited is driven off with snaps and flank bumps.
-- **Flank fights:** Flank fights are only fought between males over a nesting hollow in the nursery swamp. Every flank fight follows the same procedure.
+- **Flank fights:** Flank fights are only fought between males over a nesting hollow in Coastland Swamp. Every flank fight follows the same procedure.
   1. **Bark:** The two meet face to face, and each barks once.
   2. **Drum:** They circle each other head to tail, drumming. Either may back down here by swimming away.
   3. **Flank bites:** They use only Bite. Each makes one bite at the other's flank, then they swim past each other, turn and meet again. Chomp, Tearing Bite, Flash and Sanguine Hunger are not used.
@@ -419,8 +437,8 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
 - **Spinosaurus:** Xiphactinus and Spinosaurus ignore each other completely. Batteries may hunt within a Spinosaurus territory.
 - **Sachicasaurus & Livyatan:** Both live in the oceans, which batteries never enter.
 - **Austroraptor, Halszkaraptor & Concavenator:**
-  - Shore hunters are a danger to fry in the nursery, and Austroraptor can seize fry up to Juvenile. Nursery guards may drive them off when they wade in.
-  - Away from the nursery, they are competitors for Leedsichthys pups. Batteries avoid conflict with them, and give up a pup rather than fight over it.
+  - Shore hunters are a danger to the fry in Coastland Swamp, and Austroraptor can seize fry up to Juvenile. No adult guards the fry, so the schools hide deep among the roots when they wade in.
+  - Away from Coastland Swamp, they are competitors for Leedsichthys pups. Batteries avoid conflict with them, and give up a pup rather than fight over it.
 - **Other pterosaurs:** Batteries watch fishing pterosaurs closely. Any that land on the water are a target.
 
 ## Predator Reaction
@@ -430,7 +448,7 @@ At the first sign of a predator, the lookout gives a :danger_call:.
 - **Scattering:** The battery scatters, every member in a different direction at full speed, like a fish school bursting apart. Once out of sight of the predator, the members regroup at the last resting bend with a :broadcast_call:.
 - **Seized:** A Xiphactinus clamped by a Tylosaurus or a crocodylian is lost. The battery does not attack the hunter, and flees. The seized one may fight back, and flees at once if it is released.
   - The only exception is a crocodylian hunt the battery started itself (see Hunting Strategy).
-- **Nests:** Up to 2 parents may defend a nest with eggs or fry against any hunter. They stay within 1 body length of the nest, and do not chase. Against a crocodylian or a Tylosaurus they may instead lead the fry deep into the roots and flee.
+- **Nests:** The mother and the father may defend a nest with eggs against any hunter. They stay within 1 body length of the nest, and do not chase. Once the eggs have hatched, the parents are gone, and no one defends the fry.
 
 ### Solo and Duo Reaction
 
@@ -510,64 +528,55 @@ Hunting a crocodylian is a dangerous pleasure. Giant otters attack caimans toget
 
 ## Courtship & Parenthood
 
-### Seasonal Pairs
+### Pairs
 
-- Pairs form anew each season, in the frenzy (see Courtship). A seasonal pair stays together until the season ends, nests together and shares the nursery watch.
-- After 3 seasons together, or by mutual agreement, a pair may bond for life.
-- Same-sex pairs may form outside the frenzy. They do not nest, but may adopt.
+- Xiphactinus form no lasting pairs. A pair forms in the frenzy, and lasts only until its eggs have hatched.
+- A male may be chosen by several females in the same frenzy, and nest with each of them.
+- Xiphactinus do not form same-sex pairs, and do not adopt.
 
 ### Courtship: the Frenzy
 
-Courtship is the most brutal sight in the channels. To anyone who watches, it looks like a massacre. To the Xiphactinus, it is a ritual with strict rules: the females test the males, and only those who endure may nest.
+Courtship is the most brutal sight in the channels. To anyone who watches, it looks like a massacre. To the Xiphactinus, it is a ritual with strict rules: the females test the speed and the agility of the males, and only those who endure may nest.
 
-All Xiphactinus court in **Coastland Swamp**. Batteries from all channels gather there, and dissolve for the ritual.
+Each season, all Xiphactinus gather in **Coastland Swamp**. Batteries from all channels come together there, and every Xiphactinus leaves its in-game group for the ritual.
 
-1. **The gathering:** Xiphactinus ready to court swim to the courting pool, a stretch of open water in Coastland Swamp. No one hunts there, and no flank fights are fought. Members who do not court may keep watch at the edge of the pool.
-2. **The circle:** The males gather in the middle of the pool and circle slowly. They leap with a Lunge and roll at the surface, flashing their bright bodies. The females circle around them on the outside, in silence.
-3. **The bark:** When a female barks, and at least one other female answers, the frenzy begins. All females turn on the males at once, drumming.
-4. **The frenzy:**
-   - **Females** use only Bite. No Chomp, Tearing Bite, Flash or Sanguine Hunger, so no male bleeds. After every bite, a female swims past and turns before she bites again.
-   - Females bite whichever males they choose. A male they do not want gets bitten more. A male they favour gets bitten less, but he is still tested.
-   - **Males** may not bite back, and may not use Flash. They may only dodge: turn, roll, dive and leap. A male who leaves the pool is out.
-   - **Out:** A male who drops below 50% health, or gives up with a :heart_call:, is out. He leaves the pool at once, and no female may bite him again.
-5. **The end:** The frenzy ends as soon as no more males are left in the pool than females who court. It lasts no longer than 3 minutes.
-   - If there are no more males than females from the start, the frenzy lasts 60 seconds, as a test.
-   - The males still in the pool at the end have passed. The male who lasted longest is the champion of the frenzy.
-6. **The choice:** Each female chooses one of the males who passed. She swims to him, and both circle each other head to tail for one full lap, the way piranha pairs swim in circles before they spawn. Most females choose the champion first. A male accepts one female per season.
-7. **The nest:** The new pair swims to a nursery swamp, Coastland Swamp itself or the Mudflats Venule, to nest (see Nesting).
+1. **The gathering:** Xiphactinus ready to court swim to the courting pool, a stretch of open water in Coastland Swamp. No one hunts there, and no flank fights are fought. Xiphactinus who do not court may keep watch at the edge of the pool.
+2. **The rush:** The water heats up. The females swim wildly around the males, calling again and again with :broadcast_call:. The males gather in the middle of the pool. They leap with a Lunge and roll at the surface, flashing their bright bodies.
+3. **Last chance:** A male who does not want to nest must leave the middle of the pool now, quickly, before the chase begins.
+4. **The bark:** When a female barks, and at least one other female answers, the chase begins. All females turn on the males at once, drumming.
+5. **The chase:**
+   - The females hunt the males, and test their speed and their agility. They bite whichever males they choose. A male they do not want gets chased harder.
+   - **Females** use only Bite. No Chomp, Tearing Bite, Flash or Sanguine Hunger. After every bite, a female swims past and turns before she bites again.
+   - **Males** may not bite back, and may not use Flash. They may only dodge: turn, roll, dive and leap.
+   - **No hiding, no fleeing:** A male may not hide among roots, growth or rocks, and may not leave the POI. A male who hides or leaves is out, and his courtship is over for this season.
+   - **Out:** A male who gives a forfeit call (:friendly_call:) is out. He leaves the pool at once, and keeps his distance. No female may bite him again.
+   - **Death:** Males may die in the frenzy. Their bodies are never claimed, and the ritual goes on.
+6. **The end:** The females stop as soon as only half of the males who entered the chase are left, rounded up (of 5 males, 3 stay).
+   - A single male must endure the chase for 60 seconds.
+   - The males still in the pool at the end have passed.
+7. **The choice:** Each female chooses one of the males who passed. Most choose the male who was hardest to hunt. She swims to him, and both circle each other head to tail for one full lap, the way piranha pairs swim in circles before they spawn. A male may be chosen by several females.
+8. **The nest:** Each new pair nests in Coastland Swamp (see Nesting).
 
-- **Males who drop out** do not nest this season, unless they pass another frenzy. A male who drops out may not enter another frenzy in the same session.
+- **Males who drop out** do not nest this season.
 - **Crocodylians:** If a crocodylian or a Tylosaurus comes near, the frenzy ends at once, and everyone scatters.
 - **Scars:** The bites of the frenzy leave scars. Scars are a mark of honour, and females remember the males who passed.
-- **Bonded pairs** do not need to enter the frenzy. They meet at the courting pool, and circle each other.
-
-### Lifelong Bonds
-
-- After 3 seasons together, or by mutual agreement, a pair may bond for life. Bonded pairs swim side by side, roll together, share catches, and always rejoin the same battery.
-- **Jealousy:** If another Xiphactinus courts a bonded partner, the partner may slip between them and snap once. This never escalates to biting. The courted partner then decides: stay with the bond, or open it.
-- **Rejection:** A bonded Xiphactinus who does not want a suitor turns away from it. If the suitor persists, it gives a :shake_emote: and a snap. After this, the suitor stops.
-- **Mourning:** A Xiphactinus whose partner has died swims alone over the place for a while, and the battery circles it once. It does not court for the rest of that season.
 
 ### Nesting
 
-- **The hollow:** Like a piranha, the male chooses the nesting hollow: soft mud among the roots of the nursery swamp. He clears it, and shows it to his female.
+- **Where:** Xiphactinus nest in Coastland Swamp, in mud holes under the roots or under thick growth.
+- **The hollow:** Like a piranha, the male chooses the nesting hollow. He clears it, and shows it to his female. A male chosen by several females clears a hollow for each of them.
 - **Her answer:** The female inspects the hollow. She accepts it by laying her eggs, or rejects it with a snap, and he must find another.
-- **Space:** Nests lie at least 1 body length apart. Pairs of the same battery often nest close together.
+- **Space:** Nests lie at least 1 body length apart.
 - **Disputes:** Males that want the same hollow settle it with a flank fight (see Aggressive Interaction).
-- **Guarding:** Both parents guard the eggs, and take turns to fish.
+- **Guarding:** The parents guard the eggs until they hatch, and take turns to fish. A male with several nests moves between them.
 
 ### Offspring Rearing
 
-1. **Hatching:** Once the fry hatch, they join the nursery school of the swamp.
-2. **The nursery watch:** As long as there are fry below Adolescent in the nursery, at least one of their parents stays there as a guard. The pairs of a swamp take turns, and a guard does not hunt.
-3. **Guarding:** Guards drive off shore hunters that wade in, and lead the school deep into the roots when a large predator comes near.
-4. **Feeding:** Great barracuda herd fish schools into shallow water and hold them there. Parents drive small fish into the nursery pools in the same way, so that the fry can catch them.
-5. **Visits:** Parents visit the nursery often, and roll at the surface above the school.
-6. **Leaving:** At Adolescent, the fry leave the nursery and join a battery (see Growing Up).
+Xiphactinus care for their eggs, but not for their young.
 
-### Adoption
-
-- Any pair may adopt orphaned Xiphactinus, and same-sex pairs often do. Nursery schools accept orphans without hesitation.
+1. **Leaving:** Once all eggs of a nest have hatched, the parents leave and do not come back.
+2. **Back to the batteries:** The adults gather in batteries again, and go back to hunting the channels.
+3. **Left behind:** The fry stay behind in Coastland Swamp, form juvenile schools of up to 12, and hide there until Adolescent (see Growing Up).
 
 ## Elderly & End of Life (Optional)
 
@@ -579,7 +588,7 @@ All Xiphactinus court in **Coastland Swamp**. Batteries from all channels gather
 
 ## Rule Exemptions
 
-- None required. Hit-and-run stays within 3.3.1 and 4.8.3, and switching targets in mixed groups follows 4.5. The frenzy is an engagement within the species, with its own limits.
+- None required. Hit-and-run stays within 3.3.1 and 4.8.3, and switching targets in mixed groups follows 4.5. The frenzy is an engagement within the species, with its own limits: males may die in it, and their bodies are never claimed.
 
 ## Dynasty Adjusted Stats
 
@@ -591,11 +600,11 @@ All Xiphactinus court in **Coastland Swamp**. Batteries from all channels gather
 
 - Xiphactinus are Medium Cathemeral Aquatic Carnivores, most active at dawn and dusk.
 - From the outside, they are pure chaos. From the inside, they are pure control: every member has a rank, a role and a place.
-- They live only in the saltwater channels between the islands, never in the open ocean, which is too cool for them.
+- They live only in fresh and brackish water: the channels between the islands and the lakes connected to them. They never enter the open ocean, which is too salty and too cool for them, and never go on land.
 - They live in batteries of up to 6 Sub/Adults, ranked by time in the battery and led by rank 1. Every member hunts as a chaser or a blocker.
 - They hunt up to Medium tier in any party size, up to Large tier with 4 or more, and never adult Apex or Giant creatures. The one exception is a lone Deinosuchus, hunted with great caution by 5 or more.
 - Every hunt opens with the lead's Flash. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place.
 - They flee from everything that can clamp them: Tylosaurus and crocodylians. A seized Xiphactinus is lost. Spinosaurus and Xiphactinus ignore each other completely.
-- All Xiphactinus court in Coastland Swamp, in the frenzy: the females bite the males until no more males are left than females, and each female chooses one of those who endured.
+- All Xiphactinus court in Coastland Swamp, in the frenzy. Every Xiphactinus leaves its group, and the females chase the males until only half of them are left. Males may not hide or flee, and may die. Each female chooses one of those who endured, and a male may be chosen by several.
 - Colour dimorphism is mandatory: females dark, males light.
-- Their young grow up in brackish swamp nurseries, guarded by their parents in turns, until Adolescent.
+- The parents guard the eggs, and leave once they have hatched. The young grow up alone in Coastland Swamp, in juvenile schools of up to 12, until Adolescent.

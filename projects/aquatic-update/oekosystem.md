@@ -239,7 +239,7 @@ Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.
   - Dimorphismus ist Pflicht, und die Weibchen beißen die Männchen.
 - **Der Kessel:** Der Schwarm schließt die abgeschnittene Beute in einem trommelnden Ring ein. Jedes Tier hat seinen festen Platz, beißt einmal zu und kehrt sofort zurück, wie bei Piranhas.
 - **Rangordnung** 1 bis 6 nach Zeit im Schwarm, ohne Rangkämpfe. Rang 1 führt.
-- **Die Raserei:** Die Weibchen beißen die Männchen (nur Bite, keine Blutung). Wer unter 50 % fällt, ist raus. Sie endet, sobald nicht mehr Männchen übrig sind als Weibchen balzen. Damit gibt es keinen extremen Männchenüberschuss: Es scheiden nur so viele aus, wie zu viele da sind.
+- **Die Raserei (neu am 05.11.):** Alle verlassen ihre Gruppe, die Weibchen jagen die Männchen (nur Bite, keine Blutung). Wer sich versteckt, flieht oder einen Forfeit Call gibt, ist raus. Männchen dürfen sterben, die Körper werden nie geclaimt. Sie endet, sobald nur noch die Hälfte der Männchen übrig ist, und ein Männchen darf mehrere Weibchen haben. Nach dem Schlüpfen gehen die Eltern, die Jungen bleiben in Jugendschulen bis 12 in Coastland Swamp.
 - **Farb-Dimorphismus:** Der Mod hat keine Unterarten, nur 10 Skins. Weibchen tragen dunkle Farben, Männchen helle.
 - **Bleibt:** Drei Versuche je Gruppe (danach 15 Minuten Ruhe). Ein Kai bei seiner Bale ist für den Versuch sicher. Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer.
 - **Widerspruch:** Der Kai-Entwurf lässt die Kälber „in full daylight“ ziehen, weil die Dämmerung dem Xiph gehört. Mit Cathemeral ist das nur noch eine kluge Gewohnheit, kein Schutz.
@@ -356,7 +356,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 | Kaiwhekea | Route des Leedsichthys: Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal | Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
 | Eurhinosaurus | dieselbe Route, oft in derselben Gruppe | Nistfluss wie bisher |
 | Leedsichthys | Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seiner Gruppe |
-| Xiphactinus | nur die Flussengen, nie der offene Ozean | Kinderstube in Coastland Swamp und Mudflats Venule; flieht vor Tylo, Deino und Sarco |
+| Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht vor Tylo, Deino und Sarco |
 | Tylosaurus | unverändert: Ozeane und Flussengen | einziger Apex in beiden Zonen |
 | Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | meidet Abyssal Depths; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo |
 | Livyatan | alle Ozeane außer Palm Islands, Zuhause Abyssal Depths | Nester an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal |
