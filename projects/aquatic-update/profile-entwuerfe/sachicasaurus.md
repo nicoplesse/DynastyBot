@@ -76,7 +76,7 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 **Entschieden am 05.11. (vom Nutzer): Balz wie beim Weißen Hai.** Vom Tyrannotitan bleibt alles, was ihn erfolgreich macht: Reviere, umherziehende Weibchen, keine Gruppe zwischen den Geschlechtern und das Nest im Revier des Männchens. Die Balz ist aber seine eigene.
 1. **Begegnung:** Ein Weibchen zieht in das Revier eines Männchens. Sobald sich beide sehen, erkennt das Männchen am Körperbau, dass es ein Weibchen ist. Deshalb ist der Dimorphismus jetzt Pflicht.
 2. **Gruß:** Ist das Weibchen paarungsbereit, grüßt es instinktiv mit dem Paarungsgruß, und das Männchen erwidert ihn. Das Männchen darf auch zuerst grüßen. Das wird nicht streng genommen.
-3. **Kein Gruß:** Erwidert das Weibchen nicht und schwimmt weiter, passiert etwas anderes. Das wird später festgelegt.
+3. **Kein Gruß:** Erwidert das Weibchen nicht und schwimmt weiter, duldet das Männchen sie und jagt sie nicht. Nach einer Nacht muss sie weiterziehen, und sie akzeptiert das.
 4. **Die Jagd:** Nach dem Gruß schwimmt das Weibchen trotzdem weiter. Das Männchen jagt sie, mit Knochenbrüchen und allem, was es kann. So beweist es seine Stärke: Es hält sie davon ab, weiterzuziehen.
 5. **Weibchen halten mehr aus.** Sie sind die dickere, schwerere Unterart und im Schnitt größer als die Männchen.
 6. **Erfolg:** Bringt er sie unter 50 % Health, balzt sie mit ihm. Sie gruppieren nicht, wie beim Tyrannotitan, und zum Nisten wird das Weibchen territorial.
@@ -103,7 +103,6 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 - **Männchen sind zu Weibchen nur noch außerhalb der Balz passiv.**
 
 **Noch offen:**
-- **Kein Gruß:** Was passiert, wenn das Weibchen nicht erwidert und weiterschwimmt (kommt später).
 - **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, schaut der Nutzer im Mod nach.
 - **Agreement-Call:** In den Dynasty-Profilen gibt es dafür noch kein Emoji. Er steht deshalb als „agreement call“ im Text. Heißt er im Spiel anders, wird er ausgetauscht.
 - Schwimmtempo und Wendigkeit. Das Wiki gibt nur 3 von 5 Sternen fürs Wasser. Die Werte lassen sich aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist.
@@ -296,7 +295,7 @@ Sachicasaurus court like great white sharks. Female great whites are larger than
 1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging both the male and the coves his territory offers.
 2. **Meeting:** When a female enters a male's territory and the two see each other, the male recognises her as a female by her build.
 3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives the agreement call. He returns it in the same way. He may also greet first, and she returns it.
-4. **No greeting:** If she does not return his greeting and swims on, *(to be decided)*.
+4. **No greeting:** If she does not return his greeting and swims on, he tolerates her in his territory and does not chase her. After one night she travels on, and accepts this.
 5. **The chase:** After the greeting, the female swims on anyway. Now the male must prove his strength by stopping her from leaving his territory.
    - He chases her with everything he has: Bite, Bone Snap, Lunge and Breach. Broken bones slow her down.
    - A grown female is too heavy for him to clamp, so he must wear her down.
@@ -342,7 +341,7 @@ Males and females do not group, not even after courtship or when nesting.
 - Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
 - They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
 - Females travel alone or as a drift, and nest within a male's territory.
-- They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on.
+- They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on. A female who does not return the greeting is tolerated for one night, then travels on.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
 - They form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is chased, unless a brace is there and each brother chooses one.
 - They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for flotillas resting in the shallows.
