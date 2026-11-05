@@ -35,6 +35,12 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 
 **Es gibt keine Regel, wie viele Tiere eine Rolle übernehmen.** Auch die alte Pflicht „mindestens ein Treiber und ein Sperrer“ fällt weg.
 
+**Entschieden am 05.11. (Krokodile und Flucht, vom Nutzer):** Krokodile bekommen keine Sonderregeln mehr.
+- **Jagd nach Stufe:** Medium wie immer in jeder Gruppengröße, Large ab 4 (das gilt auch für Sarco), ein allein stehender Deino ab 6.
+- **Flucht nur vor dem Tylo.** Vor Deino, Sarco, Sachi und Livy flieht der Xiph nicht mehr.
+- **Gestrichen:** Nur das Leittier darf eine Krokodiljagd ausrufen, 3 Körperlängen Abstand zum Ufer, keine andere Beute in Sicht, Jagdende am Ufer, Körper an Krokodile abgeben, Abstand zu den Ufern in der Ruhe und die Raserei, die bei einem Krokodil endet.
+- **Gestrichen:** Injured Members. Bisher durfte ein Tier unter halber Health nicht mitjagen.
+
 **Rechnung zu den Rollen** (4 Xiph gegen einen allein stehenden Kai mit 1000 Health, zubeißen und zurück, ein Biss je Durchgang alle 3 s):
 - Bleibt der Schwarm an der Beute, entscheidet direkter Schaden. 4 Beißer brauchen 16 s, 1 Reißer und 3 Beißer 19 s, alle Bisse gemischt 23 s, nur Tearing Bite 34 s. Mit Blutung nach der Community-Lesart liegen alle bei 14 bis 17 s.
 - Entkommt die Beute nach 10 s Kontakt und ruht in der Bale, wirkt die Blutung nach. Bei 1 Reißer sind das etwa 140 Schaden, bei 2 Reißern etwa 570, bei 4 Reißern reicht es für jeden Kai. Blutung stapelt sich ohne Obergrenze und blockiert das Heilen. Der Kai baut sie beim schnellen Schwimmen mit 0,016/s ab, in Ruhe mit 0,064/s.
@@ -108,8 +114,8 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 - Eröffnung mit dem Flash des Leittiers.
 - Ein Kai, der seine Bale erreicht, ist für diesen Versuch sicher.
 - Ein Schwarm je Gruppe.
-- Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer, und nur ohne andere Beute in Sicht.
-- Gepackt heißt verloren.
+- ~~Krokodile nur im offenen Wasser, 3 Körperlängen vom Ufer, und nur ohne andere Beute in Sicht.~~ Gestrichen am 05.11.: Krokodile nach Stufe, Sarco ab 4, ein einzelner Deino ab 6.
+- Gepackt heißt verloren, seit dem 05.11. nur noch beim Tylo.
 - Ausguck in der Ruhe und beim Fressen.
 - ~~Wache an der Kinderstube im Wechsel~~ Gestrichen am 05.11.: Die Eltern gehen, sobald die Eier geschlüpft sind.
 - Die Tore zum Meer.
@@ -127,7 +133,7 @@ Neues Profil für den Mod `ArazoaXiph` (`UGC_M_6YJ72ZYE58_SK`). Dynasty hat daf�
 - **Flash-Kette:** 6 Xiph können ein Ziel 30 s am Stück bremsen. Das sind genau die 30 s, die ein Kai für den Rückweg zu seiner Bale hat. Nicht begrenzt, weil die Beute keinen Regelschutz bekommt.
 - **Kai-Paare:** Auch 6 Xiph verlieren das Bissduell gegen 2 Kai, knapp (der letzte Kai behält 2 %). Ein Paar muss also getrennt werden, sonst entscheidet die Wendigkeit.
 - **„Zubeißen und zurück“** senkt den Schaden gegenüber dem stehenden Bissduell. Dafür trifft die Beute kaum zurück, weil keiner vor ihr bleibt. Ob 4 Xiph einen Kai im Kessel noch so sicher schaffen wie in der Simulation (13 s), zeigt erst das Spiel.
-- **Raserei und Krokodile:** Coastland Swamp gehört zu den Flussengen, in denen Deino lebt. Eine Raserei ist für ihn ein gedeckter Tisch. Deshalb halten Xiph, die nicht balzen, am Rand Wache, und bei einem Krokodil endet die Raserei sofort.
+- **Raserei und Krokodile:** Coastland Swamp gehört zu den Flussengen, in denen Deino lebt. Eine Raserei ist für ihn ein gedeckter Tisch. Seit dem 05.11. endet sie nur noch bei einem Tylo, nicht mehr bei einem Krokodil. Wenn Deinos die Balz zu oft leerfressen, wäre das der Hebel. Ein Schwarm von 6, der nicht balzt, darf einen einzelnen Deino am Balzplatz aber jagen.
 
 **Kampfzahlen** (Simulation, reine Bissduelle ohne Blutung):
 
@@ -231,21 +237,15 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - Up to 6 Sub/Adults may take part in a hunt or a defence.
 - **Tiers:**
   - Xiphactinus may hunt up to Medium tier in any party size.
-  - With at least 4 in a hunting party, they may hunt up to Large tier.
-  - They never hunt adult Apex or Giant creatures, with one exception: a lone Deinosuchus (see Crocodylians).
+  - With at least 4 in a hunting party, they may hunt up to Large tier, Sarcosuchus included.
+  - They never hunt adult Apex or Giant creatures, with one exception: a lone Deinosuchus, with at least 6 in the hunting party.
 - **Roles:** Every member hunts in its role (see Battery Structure). There is no rule on how many members take each role.
 - **One battery per target:** Only one battery may hunt a group at a time. The battery whose lead opens first has the hunt. Any other battery pulls back, and does not join.
 - **Hit-and-run:** Xiphactinus may strike, pull away and strike again. The hunt continues as long as the battery keeps the target in sight (3.3.1, 4.8.3).
 - **Attempts:** A battery has up to 3 attempts per group. After the third, it leaves that group alone for 15 minutes (see Hunting Strategy).
-- **Fleeing:** Xiphactinus flee on sight from every hunter that can clamp them: adult Tylosaurus, Deinosuchus and Sarcosuchus. They also flee from Sachicasaurus and Livyatan, which they only meet if they stray to the edge of the open ocean.
-- **Crocodylians:** Crocodylians are not preferred prey, and are only hunted with great caution.
-  - A battery of 4 or more may hunt a solitary Sub/Adult Sarcosuchus.
-  - A battery of 5 or more may hunt a solitary Sub/Adult Deinosuchus. This is the only Apex they may hunt.
-  - Either only while it swims in open water, at least 3 body lengths from any bank or mudbank, and only when no other prey within the battery's tier is in sight.
-  - The young of both may be hunted, but never by getting past an adult crocodylian.
+- **Fleeing:** Xiphactinus flee only from adult Tylosaurus (see Predator Reaction).
 - **Spinosaurus:** Xiphactinus and Spinosaurus ignore each other completely. Neither hunts, challenges or defends against the other.
 - **Adolescents:** Adolescent Xiphactinus do not join hunts. They may hunt fish, critters and hatchlings on their own.
-- **Injured members:** A member below half health does not join hunts until it has healed above half.
 
 **Abilities in an engagement:**
 - **Flash** opens every hunt, and only the lead may use it first (see Hunting Strategy). After the opening, every member may use it.
@@ -256,7 +256,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 ## Resource Challenges
 
 - Batteries hold no territories. They do not challenge other species, do not accept territory challenges, and simply move on.
-- **Bodies:** Xiphactinus give up a body at once to any crocodylian, Tylosaurus or other hunter they flee from. They do not take bodies claimed by others, and do not fight other batteries over bodies.
+- **Bodies:** Xiphactinus give up a body at once to an adult Tylosaurus. They do not take bodies claimed by others, and do not fight other batteries over bodies.
 - **Nesting hollows:** Males that want the same nesting hollow in Coastland Swamp settle it with a flank fight (see Aggressive Interaction). This is the only resource Xiphactinus fight over.
 
 ## Preferred Prey
@@ -268,7 +268,6 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **Mixed groups:** Kaiwhekea, Eurhinosaurus and Leedsichthys may group together. Within such a group, a battery may switch its target between Kaiwhekea and Eurhinosaurus during a hunt (4.5). It never targets the adult Leedsichthys.
 - **Pterosaurs:** Xiphactinus may hunt pterosaurs up to Medium tier that sit or swim on the water surface. They rise from below with a Lunge and bite, like giant trevally leaping at young terns. Pterosaurs in flight are not attacked.
 - **Swimming land animals** within the battery's tier may be hunted while they swim, but are never preferred.
-- **Crocodylians** are a dangerous pleasure, never a preference (see Hunting Strategy).
 - **Land:** Xiphactinus never leave the water, and do not attack creatures on land. A target that leaves the water is let go.
 
 ## Nesting Limits
@@ -320,14 +319,13 @@ The mod has one body and no subspecies, so colour shows sex. Skin patterns are f
 - **Lakes:** Like tarpon, which swim far up rivers, Xiphactinus may follow the water into the lakes connected to the channels.
 - **Land:** Xiphactinus never go on land. Out of the water they are extremely uneasy.
 - **Voice:** Xiphactinus are silent, until it comes to a fight or a kill. Then they bark, drum and snap like piranhas (see Communication).
-- **Watching the banks:** Crocodylians lie along the banks and mudbanks. Xiphactinus keep their distance from them, and never rest near a bank.
 
 ### Day and Night
 
 - **Rhythm:** Xiphactinus are cathemeral. They hunt and rest in turns, by day and by night, and are most active in the half light of dawn and dusk.
 - **Resting formation:** At rest, the battery lies close together in open water. The lead rests in the centre, the other ranks around her, and the young at the edge. Large piranhas hold the safe centre of their shoal in the same way.
 - **Resting bend:** The lead chooses where the battery rests: a sheltered bend in open water, away from the banks. A bend where the battery was attacked is not used again in the same session.
-- **The lookout:** In a battery of 3 or more, one member always keeps watch while the others rest, facing the banks. The lowest rank takes the first watch, and passes it on with a gentle nudge.
+- **The lookout:** In a battery of 3 or more, one member always keeps watch for Tylosaurus while the others rest. The lowest rank takes the first watch, and passes it on with a gentle nudge.
 - **Downtime:** Rest time is for rolling, swimming in sync with a friend, play leaps and chasing games. Rippers often chase blockers in play, and blockers practise cutting them off.
 
 ### Range and Seasons
@@ -368,7 +366,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
   - Ranks follow time in the battery. A new member or a young Sub-Adult starts at the bottom, and moves up when a member above it dies or leaves. When a battery forms, its founders agree on their order.
   - Ranks are never fought for. They decide the place at rest, the order at a kill, and who takes command.
 - **The lead:**
-  - Rank 1 is the lead. She chooses where the battery hunts and rests and when it moves on. She opens every hunt, decides when an attempt ends, and alone decides whether to hunt a crocodylian.
+  - Rank 1 is the lead. She chooses where the battery hunts and rests and when it moves on. She opens every hunt and decides when an attempt ends.
   - When the lead is absent, rank 2 takes command.
   - An old lead may hand the lead to rank 2 at any time, and takes the lowest rank or leaves.
 - **Hunting roles:**
@@ -384,7 +382,6 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 ### Battery Behavior
 
 - **Friendships:** Battery members often stay together for years. Friends swim in sync, and greet each other first after time apart.
-- **Injured members:** An injured member swims in the middle of the battery, and stays out of hunts until it has healed above half health. The battery slows for it.
 - **Play:** Leaping contests, races and chasing games are common at rest. Play never includes biting.
 
 ### Other Batteries
@@ -399,7 +396,7 @@ Xiphactinus are social hunters. A battery is a tight, strictly ordered group, an
 - Solitary Xiphactinus are old individuals, orphans who never found a battery, and young ones between batteries. Like the large barracuda that hunt alone, they are quiet and patient.
 - Alone, a Xiphactinus turns sharper and accelerates faster (Lone Survivor), but it has no one to close a ring. It hunts by ambush rather than by chase, and prefers the young and the weak.
 - Solitary Xiphactinus hunt up to Medium tier.
-- They keep their distance from Kaiwhekea bales and crocodylians, and flee earlier than a battery.
+- They keep their distance from Kaiwhekea bales.
 - **Joining a battery:** A solitary Xiphactinus approaches with the greeting. The lead accepts it by returning the greeting, and it takes the lowest rank. A battery that does not want it snaps at it, and it moves on.
 
 ### Correcting Over-Aggression
@@ -447,9 +444,7 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
   - A battery scatters at the first sight of an adult Tylosaurus, leaves the POI, and does not return for at least 15 minutes.
 - **Deinosuchus & Sarcosuchus:**
   - Crocodylians hunt Xiphactinus with relish. They lie still at the surface, clamp a passing fish and carry it out of the water, where it is helpless.
-  - Batteries keep their distance from banks and basking crocodylians, and never rest near a bank. The lookout always faces the banks.
-  - A frenzy is a feast for a crocodylian. The frenzy ends at once when one comes near.
-  - Hunting them in turn is a dangerous pleasure, never a preference (see Hunting Strategy).
+  - Xiphactinus do not flee from them. A battery may hunt them by tier: a Sarcosuchus with 4 or more, a lone Deinosuchus with 6 or more.
 - **Spinosaurus:** Xiphactinus and Spinosaurus ignore each other completely. Batteries may hunt within a Spinosaurus territory.
 - **Sachicasaurus & Livyatan:** Both live in the oceans, which batteries never enter.
 - **Austroraptor, Halszkaraptor & Concavenator:**
@@ -459,23 +454,20 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
 
 ## Predator Reaction
 
-At the first sign of a predator, the lookout gives a :danger_call:.
+Xiphactinus flee only from adult Tylosaurus. At the first sight of one, the lookout gives a :danger_call:.
 
-- **Scattering:** The battery scatters, every member in a different direction at full speed, like a fish school bursting apart. Once out of sight of the predator, the members regroup at the last resting bend with a :broadcast_call:.
-- **Seized:** A Xiphactinus clamped by a Tylosaurus or a crocodylian is lost. The battery does not attack the hunter, and flees. The seized one may fight back, and flees at once if it is released.
-  - The only exception is a crocodylian hunt the battery started itself (see Hunting Strategy).
+- **Scattering:** The battery scatters, every member in a different direction at full speed, like a fish school bursting apart. Once out of sight of the Tylosaurus, the members regroup outside the POI with a :broadcast_call:.
+- **Seized:** A Xiphactinus clamped by a Tylosaurus is lost. The battery does not attack the Tylosaurus, and flees. The seized one may fight back, and flees at once if it is released.
 - **Nests:** The mother and the father may defend a nest with eggs against any hunter. They stay within 1 body length of the nest, and do not chase. Once the eggs have hatched, the parents are gone, and no one defends the fry.
 
 ### Solo and Duo Reaction
 
-- **Solo:** A lone Xiphactinus relies on its speed and its turns, and flees from every hunter that can clamp it.
+- **Solo:** A lone Xiphactinus relies on its speed and its turns, and flees from every adult Tylosaurus.
 - **Duo:** A pair flees together. Once both have turned to face a threat, they stay together until it is over.
 
 ### Where to Flee
 
 - **Tylosaurus:** along the channel at full speed, then out of the POI for at least 15 minutes.
-- **Deinosuchus and Sarcosuchus:** away from banks and mudbanks, into open, deeper water. Never across a mudbank.
-- **Sachicasaurus and Livyatan:** back into the channels.
 
 ## Hunting Strategy
 
@@ -515,24 +507,8 @@ Sharks circle their prey before they strike. Piranhas tear at it from every side
 ### Feeding
 
 - The lead eats first, then the others in order of rank.
-- The lowest rank keeps watch, facing the banks, and eats last.
-- Xiphactinus leave a body at once when a crocodylian or a Tylosaurus comes near.
-
-### Crocodylians
-
-Hunting a crocodylian is a dangerous pleasure. Giant otters attack caimans together in the water, but never on the bank, and batteries follow the same caution.
-
-- Only the lead may call a crocodylian hunt.
-- **When:**
-  - The crocodylian is alone. No other crocodylian is in sight.
-  - It swims in open water, at least 3 body lengths from any bank or mudbank.
-  - No other prey within the battery's tier is in sight.
-  - The battery has at least 4 members for a Sarcosuchus, and at least 5 for a Deinosuchus.
-- **How:** The battery closes the boil around it. The blockers stay between it and the bank.
-- **The end:** The hunt ends when the crocodylian reaches a bank or a mudbank, or leaves the water.
-- **A clamped member:** While the crocodylian is in the water, the battery may keep striking it. Once a member has been carried out of the water, it is lost.
-- **Young crocodylians** may be hunted, but a battery never fights an adult crocodylian to reach its young.
-- A battery that hunts a crocodylian almost always loses members, a Deinosuchus often two or three. Experienced leads choose it rarely.
+- The lowest rank keeps watch and eats last.
+- Xiphactinus leave a body at once when an adult Tylosaurus comes near.
 
 ### Pterosaurs
 
@@ -576,7 +552,7 @@ Each season, all Xiphactinus gather in **Coastland Swamp**. Batteries from all c
 8. **The nest:** Each new pair nests in Coastland Swamp (see Nesting).
 
 - **Males who drop out** do not nest this season.
-- **Crocodylians:** If a crocodylian or a Tylosaurus comes near, the frenzy ends at once, and everyone scatters.
+- **Tylosaurus:** If an adult Tylosaurus comes near, the frenzy ends at once, and everyone scatters.
 - **Scars:** The bites of the frenzy leave scars. Scars are a mark of honour, and females remember the males who passed.
 
 ### Nesting
@@ -620,9 +596,9 @@ Xiphactinus care for their eggs, but not for their young.
 - From the outside, they are pure chaos. From the inside, they are pure control: every member has a rank, a role and a place.
 - They live only in fresh and brackish water: the channels between the islands and the lakes connected to them. They never enter the open ocean, which is too salty and too cool for them, and never go on land.
 - They live in batteries of up to 6 Sub/Adults, ranked by time in the battery and led by rank 1. Every member hunts as a ripper, a blocker or a biter, each with its own attack.
-- They hunt up to Medium tier in any party size, up to Large tier with 4 or more, and never adult Apex or Giant creatures. The one exception is a lone Deinosuchus, hunted with great caution by 5 or more.
+- They hunt up to Medium tier in any party size, up to Large tier with 4 or more, and never adult Apex or Giant creatures. The one exception is a lone Deinosuchus, hunted by 6 or more.
 - Every hunt opens with the lead's Flash. The rippers open the wound with Tearing Bite, the only ones who use it, while the blockers cut off the way back. Once the target is cut off, the battery closes the boil: a drumming ring at full speed, from which every member darts in, bites once and returns to its place, and the biters make the kill.
-- They flee from everything that can clamp them: Tylosaurus and crocodylians. A seized Xiphactinus is lost. Spinosaurus and Xiphactinus ignore each other completely.
+- They flee only from adult Tylosaurus. A Xiphactinus seized by one is lost. Spinosaurus and Xiphactinus ignore each other completely.
 - All Xiphactinus court in Coastland Swamp, in the frenzy. Every Xiphactinus leaves its group, and the females chase the males until only half of them are left. Males may not hide or flee, and may die. Each female chooses one of those who endured, and a male may be chosen by several.
 - Colour dimorphism is mandatory: females dark, males light.
 - The parents guard the eggs, and leave once they have hatched. The young grow up alone in Coastland Swamp, in juvenile schools of up to 12, until Adolescent.

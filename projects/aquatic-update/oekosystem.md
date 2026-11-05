@@ -30,7 +30,7 @@ Stand 2026-11-04. Diese Datei bewertet die Grundidee und schlägt Rollen, Profil
 - **Für den Livy sind beide gleich schwer:** Livy gegen Sachi 19 s (behält 76 %), gegen Tylo 18 s (74 %); gegen ein Paar 38 s (27 %) bzw. 35 s (23 %).
 - **Community:** Die einzige Quelle ist die Fandom-Wiki-Seite (Stand September 2024). Dort steht einmal „pretty op“, im Trivia-Teil aber, er gelte oft als „unviable“, weil neuere Meeres-Mods ihn bei Tempo, Ausdauer und Werten schlagen. Gegen den Standard-Tylo (CW 4500, Health 900) gewinnt er klar (18 s gegen 24 s). Gegen den gebufften Dynasty-Tylo ist es ausgeglichen.
 - **Wendewerte:** Ein Feld für die Wendegeschwindigkeit lässt sich in den Blueprints nicht sicher benennen. Die Felder, die ich zuerst dafür hielt (30 bei Kai, 50 bei Tylo, 270 bei Spino), sind die Gehgeschwindigkeit an Land. Sicher vergleichbar sind nur Tempo, Beschleunigung, Sprintdauer und Luft, siehe die Tempo-Tabelle im Tab.
-- **Xiph gegen Krokodile:** Die Mindestzahlen (Sarco ab 4, Deino ab 5) sind vorsichtig. Xiph ist der schnellste Schwimmer, im Wasser reichen vermutlich weniger. Als Vorsichtsregel passen sie trotzdem.
+- **Xiph gegen Krokodile** (vereinfacht am 05.11.): keine Sonderregeln mehr, Jagd nach Stufe. Sarco ist Large, also ab 4, ein einzelner Deino ab 6. Xiph ist der schnellste Schwimmer, im Wasser reichen vermutlich weniger. Ob die Zahlen zu streng sind, zeigt erst das Spiel.
 
 Harte Wendigkeitswerte gibt es weder in den Kurven noch sicher benennbar in den Blueprints. In den Kurven stehen nur Faktoren, fast alle 1, bei Xiph ein Wenderadius-Faktor von 1,3.
 
@@ -337,7 +337,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 - Sachicasaurus: Schwimmtempo und Wendigkeit aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist. Ob Ironclad die Armor erhöht, im Spiel prüfen.
 - ~~Sarcosuchus braucht eine Zeile zu Xiph~~ Nicht nötig: Sein heutiges Profil erlaubt schon die Jagd bis Apex im Wasser und bevorzugt Beute, die er clampen kann.
 - ~~Darf der Revierhalter (damals Prog) adulte Spino allein jagen?~~ Entschieden: ja, gilt jetzt für Sachi.
-- ~~Sollen Xiph-Schwärme auch adulte Deino jagen dürfen?~~ Entschieden: ja, einen einzelnen ab 5 Tieren und mit großer Vorsicht; keine bevorzugte Beute.
+- ~~Sollen Xiph-Schwärme auch adulte Deino jagen dürfen?~~ Entschieden: ja, einen einzelnen ab 6 Tieren (am 05.11. von 5 auf 6 gesetzt, die Vorsichtsregeln sind gestrichen); keine bevorzugte Beute.
 - Big Tree Overlook: Liegt auf der Leeds-Route, ist aber ein Fluss. Gehört er zu den Flussengen (dann lebt dort auch Xiph und Deino) oder bleibt er Süßwasser?
 - Livyatan: Hinterhalt-Jäger mit Tempo 750 oder etwas schneller?
 - ~~Können Xiphactinus und Livyatan im Meer trinken?~~ Geklärt: Aquatics verlieren Durst nur an Land.
@@ -356,7 +356,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 | Kaiwhekea | Route des Leedsichthys: Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal | Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
 | Eurhinosaurus | dieselbe Route, oft in derselben Gruppe | Nistfluss wie bisher |
 | Leedsichthys | Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seiner Gruppe |
-| Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht vor Tylo, Deino und Sarco |
+| Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht nur vor Tylo |
 | Tylosaurus | unverändert: Ozeane und Flussengen | einziger Apex in beiden Zonen |
 | Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 8 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands und Stonebed Shoal | meidet Abyssal Depths; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo |
 | Livyatan | alle Ozeane außer Palm Islands, Zuhause Abyssal Depths | Nester an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal |
@@ -365,8 +365,8 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 
 **Was die Aufteilung bewirkt:**
 - **Kai und Eurhino haben keinen sicheren Ort, nur bessere Zeiten.** In den Flussengen lauern Xiph, Deino und Spino, in den Ozeanen Tylo, nachts Sachi in Kelp und Untiefen und außer bei Palm Livy. Die Route selbst wird zum Spiel.
-- **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen. Sachi könnte ihn clampen (4001), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
-- **Krokodile jagen ist für Xiph ein gefährliches Vergnügen.** Einen einzelnen Sarco darf ein Schwarm ab 4 jagen: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 5 Tieren, als einzige Ausnahme von der Apex-Grenze (entschieden am 03.11.): 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute und werden nur mit großer Vorsicht gejagt.
+- **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca, und seit dem 05.11. nur vor ihm. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen, aber er flieht nicht vor ihnen. Sachi könnte ihn clampen (4001), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
+- **Krokodile jagt der Xiph nach Stufe** (vereinfacht am 05.11.). Sarco ist Large, also ab 4: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 6, als einzige Ausnahme von der Apex-Grenze: 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute. Weitere Bedingungen wie Abstand zum Ufer gibt es nicht mehr.
 - **Palm Islands ist die Front.** Sachi, Deino und Spino kämpfen dort um Reviere, und Livy kommt nie hin. Für Sachi ist Palm damit das sicherste und zugleich härteste Revier.
 - **Ein adulter Livy hat genau einen Jäger: Tylo-Paare** (entschieden am 03.11.). Sie dürfen ihn bei jedem Hunger jagen, aber erst, wenn keine Pflicht-Beute im POI ist. Sie verlieren das Bissduell und gewinnen nur durch Hit-and-Run, deshalb traut sich kaum ein Tylo an ihn heran. Tylo ist schneller (900 gegen 750), sprintet länger (3:42 gegen 2:47) und heilt schneller (2,0 gegen 1,5/s). Deinosuchus dürfte ihn als Giant ebenfalls jagen, lebt aber nicht mehr in Livys Ozeanen. Gebremst wird Livy außerdem durch die Solo-Jagd, sein geringes Tempo, das Flachwasser und Kai-Gruppen ab 3 Tieren.
 

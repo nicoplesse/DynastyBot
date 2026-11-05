@@ -10,7 +10,7 @@ Das Deino-Profil bleibt fast unverändert: faul, territorial, Brüder-Reviere, N
 | Revierkarte | eigene Profilkarte | die Revierkarte des Spinosaurus ohne die Ozeane: die geteilten Reviere der Flussengen, Coastland Swamp und Palm Islands |
 | Offener Ozean | „venture out into the open ocean“ | entfällt; Kelp Vale, Coastal Bluffs, Abyssal Depths und Stonebed Shoal betritt er nicht mehr |
 | Sachicasaurus | – | harte Revierkämpfe auf Palm Islands; darf Sachi jagen, wie jede Stufe |
-| Xiphactinus | – | jagt ihn mit Vergnügen: clampen (Tragkraft 3900 gegen CW 2400) und aus dem Wasser tragen; umgekehrt darf ein Xiph-Schwarm ab 5 einen einzelnen Deino jagen, mit großer Vorsicht, nur im offenen Wasser mindestens 3 Körperlängen vom Ufer; erreicht der Deino das Ufer, endet die Jagd |
+| Xiphactinus | – | jagt ihn mit Vergnügen: clampen (Tragkraft 3900 gegen CW 2400) und aus dem Wasser tragen; umgekehrt darf ein Xiph-Schwarm ab 6 einen einzelnen Deino jagen; Xiph flieht nicht vor ihm |
 
 **Warum so:**
 - **Die Reviere sind besser aufgeteilt.** Die Ozeane gehören Sachi, Livy und Tylo, die Flussengen Deino, Spino und Xiph. Palm Islands ist die einzige Front.
@@ -56,7 +56,7 @@ Im Bissduell gewinnt Deino gegen einen einzelnen Sachi, im Wasser ist Sachi als 
   - Deinosuchus may hunt Sachicasaurus, as they may hunt any tier. Sachicasaurus in turn like to hunt Deinosuchus. A Deinosuchus wins a standing bite duel, but in open water the fully aquatic Sachicasaurus is the more agile.
 - **Xiphactinus:**
   - Deinosuchus hunt Xiphactinus with relish. They lie still at the surface, clamp a passing fish and carry it out of the water, where it is helpless.
-  - In turn, a Xiphactinus battery of 5 or more may hunt a lone Deinosuchus, with great caution, but only while it swims in open water, at least 3 body lengths from any bank or mudbank. The hunt ends once the Deinosuchus reaches a bank or a mudbank. Deinosuchus are not their preferred prey, and such a fight usually costs the battery two or three members.
+  - Xiphactinus do not flee from Deinosuchus. In turn, a Xiphactinus battery of 6 or more may hunt a lone Deinosuchus. Deinosuchus are not their preferred prey, and such a fight usually costs the battery two members.
 - **Kaiwhekea, Eurhinosaurus & Leedsichthys:** Bales and shoals pass through the channels on the Leedsichthys migration route. Within a Deinosuchus territory they may be hunted as before.
 
 ## Rule Exemptions
