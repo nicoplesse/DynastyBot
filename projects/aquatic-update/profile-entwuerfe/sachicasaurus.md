@@ -73,7 +73,35 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
   - Junge sterben, wenn sie länger als 5 Minuten gestrandet sind.
   - Gejagt wird auch hier nur nachts.
 
+**Entschieden am 05.11. (vom Nutzer): Balz wie beim Weißen Hai.** Vom Tyrannotitan bleibt alles, was ihn erfolgreich macht: Reviere, umherziehende Weibchen, keine Gruppe zwischen den Geschlechtern und das Nest im Revier des Männchens. Die Balz ist aber seine eigene.
+1. **Begegnung:** Ein Weibchen zieht in das Revier eines Männchens. Sobald sich beide sehen, erkennt das Männchen am Körperbau, dass es ein Weibchen ist. Deshalb ist der Dimorphismus jetzt Pflicht.
+2. **Gruß:** Ist das Weibchen paarungsbereit, grüßt es instinktiv mit dem Paarungsgruß, und das Männchen erwidert ihn. Das Männchen darf auch zuerst grüßen. Das wird nicht streng genommen.
+3. **Kein Gruß:** Erwidert das Weibchen nicht und schwimmt weiter, passiert etwas anderes. Das wird später festgelegt.
+4. **Die Jagd:** Nach dem Gruß schwimmt das Weibchen trotzdem weiter. Das Männchen jagt sie, mit Knochenbrüchen und allem, was es kann. So beweist es seine Stärke: Es hält sie davon ab, weiterzuziehen.
+5. **Weibchen halten mehr aus.** Sie sind die dickere, schwerere Unterart und im Schnitt größer als die Männchen.
+6. **Erfolg:** Bringt er sie unter 50 % Health, balzt sie mit ihm. Sie gruppieren nicht, wie beim Tyrannotitan, und zum Nisten wird das Weibchen territorial.
+
+**Echtes Vorbild:** Beim Weißen Hai sind die Weibchen größer als die Männchen. Bei der Paarung beißt sich das Männchen an Flossen und Flanken des Weibchens fest, und erwachsene Weibchen tragen oft Paarungsnarben. Bei Blauhaien ist die Haut der Weibchen deshalb mehr als doppelt so dick wie die der Männchen. Der Xiph macht es genau umgekehrt: Dort beißen die Weibchen die Männchen.
+
+**Rechnung zur Jagd** (gleiche CW, Armor 1,1):
+- Ein Biss macht 80 Schaden, also 73 nach Armor. Bis unter 50 % (450 von 900 Health) braucht das Männchen 7 Bisse, mit Bone Snap 6. Mit Ironclad (+10 % Armor) bleibt es bei 7.
+- **Packen kann er sie nicht:** Seine Tragkraft ist 4001, ihr CW 5500. Er kann sie also nicht einfach festhalten.
+- **Beide sind gleich schnell**, weil es dieselbe Art ist. Schwimmt sie geradeaus davon, holt er sie nicht ein. Er muss ihr den Weg abschneiden, mit Lunge vorstoßen und mit Bone Snap Knochen brechen, die sie bremsen. Die Jagd ist damit eine Frage des Könnens, wie die Raserei des Xiph.
+- **„Hält mehr aus“ ist Aussehen und Rollenspiel.** Path of Titans kennt keine Werte nach Geschlecht, und Unterarten ändern meines Wissens nur das Aussehen. Mehr aushalten würde sie nur, wenn Dynasty den Weibchen etwas vorschreibt, zum Beispiel Ironclad. Das bringt aber, wie oben gerechnet, kaum etwas.
+
+**Selbst ergänzt, bitte prüfen:**
+- **Der Paarungsgruß:** Sie dreht sich an der Oberfläche mit der Flanke zu ihm und gibt einen :friendly_call:. Er antwortet genauso.
+- **Das Zeichen bei 50 %:** Wie viel Health sie hat, sieht er nicht. Deshalb gibt sie das Zeichen: Sie bleibt stehen, dreht sich zu ihm und grüßt noch einmal. Damit ist die Jagd vorbei, und er hört sofort auf.
+- **Ende ohne Erfolg:** Erreicht sie die Grenze seines Reviers, hat er es nicht geschafft. Er folgt ihr nicht hinaus, und sie zieht weiter. Ohne diese Grenze würde eine Jagd zwischen zwei gleich schnellen Tieren nie enden.
+- **Sie beißt nicht zurück:** Das Weibchen flieht nur, mit Tempo, Wenden und Abtauchen. Kein Bite, kein Bone Snap, keine Aileron Roll.
+- **Dimorphismus umgedreht:** Bisher waren die Männchen die Massigen. Jetzt sind es die Weibchen, die Männchen sind schlanker.
+- **Männchen sind zu Weibchen nur noch außerhalb der Balz passiv.**
+
 **Noch offen:**
+- **Kein Gruß:** Was passiert, wenn das Weibchen nicht erwidert und weiterschwimmt (kommt später).
+- **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, muss man im Mod ansehen.
+- **Brace und Drift:** Jagen beide Brüder dasselbe Weibchen, oder nur einer? Wird jede Schwester einer Drift einzeln gejagt? Beim Tyrannotitan kämpfen die Brüder vorher gegeneinander, und nur einer wird gewählt.
+- **Lebensbindung:** Muss ein Paar, das jede Saison zueinander zurückkehrt, die Jagd jedes Mal wiederholen? Beim Tyrannotitan müssen sich solche Paare bei jedem Wiedersehen neu grüßen.
 - Schwimmtempo und Wendigkeit. Das Wiki gibt nur 3 von 5 Sternen fürs Wasser. Die Werte lassen sich aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist.
 - Ob Ironclad die Armor 1,1 weiter erhöht, und ob der Biss 80 (NexLink 2026) oder 90 (Wiki 2024) macht. Am Gleichstand mit Tylo ändert beides nichts, es entscheidet nur, wer knapp gewinnt.
 - Heilung 1,0/s ist für einen Revierhalter niedrig. Erst anheben (auf 1,5), wenn er im Test seine Reviere nicht halten kann.
@@ -98,10 +126,11 @@ Profile inspired by jaguars, saltwater crocodiles, Tyrannotitan and pliosaur pal
   - A male allows one solitary female, or one bonded pair of females, within his territory, and permits them and any offspring he fathers to share his kills.
 - **Females:** Females are nomadic, but become territorial at their nest site when nesting.
 - **Nature:**
-  - Males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females.
+  - Males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females outside courtship.
   - Females are tolerant towards other species, and passive towards males.
 - Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, and do not enter the saltwater channels between the islands.
 - Sachicasaurus are not scavengers. They hunt, and they fish.
+- Sachicasaurus court like great white sharks: the male chases the female, and she only accepts a male who can stop her from leaving (see Courtship & Parenthood).
 - Sachicasaurus tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -176,10 +205,10 @@ Females nest in sheltered, shallow coves within a male's territory. A female dri
 
 ## Physical Dimorphism
 
-- ♂️ Males are bulkier, with broad, heavily scarred jaws.
-- ♀️ Females are sleeker, with smoother skin.
+- ♀️ Females are bulkier, heavier and on average larger than males, with thick skin. Most adult females carry mating scars on their flippers and flanks.
+- ♂️ Males are sleeker, with broad, heavily scarred jaws.
 
-Suitable subspecies and skins depend on the options the mod offers (Vitae, Mors and Queenslandicus). Physical dimorphism is not mandatory, but individuals that differ from the typical dimorphism may face difficulties during courtship.
+Females use the bulkiest of the subspecies the mod offers (Vitae, Mors and Queenslandicus). Physical dimorphism for Sachicasaurus is mandatory: in courtship, a male must recognise a female at first sight.
 
 ## Growing Up
 
@@ -256,10 +285,27 @@ Sachicasaurus win with the grab.
 
 ## Courtship & Parenthood
 
-- **The male's hum:** In the courting season, territorial males hum through the night.
-- **Visiting females:** Females travel from territory to territory, judging both the male and the coves his territory offers.
-- **Choosing:** A female who chooses a male swims slow circles around him, and the two rest together in the kelp until morning.
-- **Nesting:** She then nests in a cove within his territory.
+Sachicasaurus court like great white sharks. Female great whites are larger than males, and many carry the scars of mating. A female Sachicasaurus only accepts a male who can stop her from leaving.
+
+### Courtship
+
+1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging both the male and the coves his territory offers.
+2. **Meeting:** When a female enters a male's territory and the two see each other, the male recognises her as a female by her build.
+3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives a :friendly_call:. He returns it in the same way. He may also greet first, and she returns it.
+4. **No greeting:** If she does not return his greeting and swims on, *(to be decided)*.
+5. **The chase:** After the greeting, the female swims on anyway. Now the male must prove his strength by stopping her from leaving his territory.
+   - He chases her with everything he has: Bite, Bone Snap, Lunge and Breach. Broken bones slow her down.
+   - A grown female is too heavy for him to clamp, so he must wear her down.
+   - She only flees. She turns, dives and uses her speed, but does not bite back, and does not use Bone Snap or Aileron Roll.
+6. **Success:** Once she drops below 50% health, she stops, turns to face him and greets him again. The chase is over at once, and he stops biting. She has accepted him.
+7. **Failure:** If she reaches the edge of his territory, he has failed. He does not follow her out, and she travels on to another territory.
+
+Males and females do not group, not even after courtship or when nesting.
+
+### Nesting
+
+- **Where:** The female nests in a sheltered, shallow cove within his territory. The wounds of the chase heal while she sits on her nest.
+- **Territorial:** While nesting, she becomes territorial. She drives out other ungrouped females she sees near her nest.
 - **Defending young:** The male defends the territory, and with it the nest. If the father is within sight of his offspring being hunted while the mother is not, he may defend them.
 
 ## Elderly & End of Life (Optional)
@@ -272,6 +318,7 @@ Sachicasaurus win with the grab.
 
 - **Territory:** A Sachicasaurus territory covers one half of an ocean POI, water only (proposed water territory rule). Terrestrial species on land within the same POI are not affected.
 - **Beaching and third party:** The same as Tylosaurus: hunts within 1 body length of the water, and third party in engagements that enter the water or come within 1 body length of it.
+- **Courtship chase:** The chase is an engagement within the species with its own limits, not a hunt. The male stops as soon as the female greets him again below 50% health.
 
 ## Dynasty Adjusted Stats
 
@@ -283,6 +330,8 @@ Sachicasaurus win with the grab.
 - Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
 - They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
 - Females travel alone or as a drift, and nest within a male's territory.
+- They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on.
+- Physical dimorphism is mandatory: females are the bulkier and larger sex.
 - They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for flotillas resting in the shallows.
 - At the shore they follow the same beaching rules as Tylosaurus.
 - Tylosaurus are their equals: the Tylosaurus rules the open water, the Sachicasaurus the shallows by night.
