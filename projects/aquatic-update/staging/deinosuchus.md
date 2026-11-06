@@ -6,7 +6,6 @@ order: 8
 kind: changed
 card: Carnivore Profile
 difficulty: 3 Moderate
-cover: deinosuchus/images/image.png
 source: profile-entwuerfe/deinosuchus.md
 ---
 # Deinosuchus

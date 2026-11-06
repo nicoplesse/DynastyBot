@@ -5,7 +5,7 @@ nickname: Spino, Spoon
 order: 9
 kind: changed
 card: Carnivore Profile
-difficulty: 3 Moderate
+difficulty: 2 Easy
 cover: spinosaurus/images/image.png
 source: profile-entwuerfe/spinosaurus.md
 ---
