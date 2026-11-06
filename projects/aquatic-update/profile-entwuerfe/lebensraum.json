@@ -35,7 +35,9 @@
     { "id": "palm-north", "name": "Northern Palm Territory", "label": "Palm Nord", "parent": "palm-islands", "axis": "y", "half": "low" },
     { "id": "palm-south", "name": "Southern Palm Territory", "label": "Palm Süd", "parent": "palm-islands", "axis": "y", "half": "high" },
     { "id": "stonebed-north", "name": "Northern Stonebed Territory", "label": "Stonebed Nord", "parent": "stonebed-shoal", "axis": "y", "half": "low" },
-    { "id": "stonebed-south", "name": "Southern Stonebed Territory", "label": "Stonebed Süd", "parent": "stonebed-shoal", "axis": "y", "half": "high" }
+    { "id": "stonebed-south", "name": "Southern Stonebed Territory", "label": "Stonebed Süd", "parent": "stonebed-shoal", "axis": "y", "half": "high" },
+    { "id": "abyssal-north", "name": "Northern Abyssal Territory", "label": "Abyssal Nord", "parent": "abyssal-depths", "axis": "y", "half": "low" },
+    { "id": "abyssal-south", "name": "Southern Abyssal Territory", "label": "Abyssal Süd", "parent": "abyssal-depths", "axis": "y", "half": "high" }
   ],
   "route": {
     "label": "Route des Leedsichthys",
@@ -92,11 +94,11 @@
     },
     {
       "id": "sachicasaurus", "territories": true,
-      "text": "Lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Ein Männchen hält einen halben Ozean-POI. Abyssal Depths meidet er, zu tief und Livys Zuhause. Palm Islands ist die Front zu Deino und Spino. Die Mütter ziehen ihre Jungen in der Kinderstube an der Küste von Tallbrush Coasts groß, wohin kein Männchen kommt.",
+      "text": "Lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Ein Männchen hält einen halben Ozean-POI. In Abyssal Depths, Livys Zuhause, sitzt er auf den hohen Felsvorsprüngen zwischen den Tiefen, wohin Livy ihm nicht folgt. Palm Islands ist die Front zu Deino und Spino. Die Mütter ziehen ihre Jungen in der Kinderstube an der Küste von Tallbrush Coasts groß, wohin kein Männchen kommt.",
       "areas": [
         { "id": "kelp-vale", "roles": ["territory"] }, { "id": "coastal-bluffs", "roles": ["territory"] },
         { "id": "palm-islands", "roles": ["territory", "front"] }, { "id": "stonebed-shoal", "roles": ["territory"] },
-        { "id": "tallbrush-coasts", "roles": ["nest"] }
+        { "id": "abyssal-depths", "roles": ["territory"] }, { "id": "tallbrush-coasts", "roles": ["nest"] }
       ]
     },
     {

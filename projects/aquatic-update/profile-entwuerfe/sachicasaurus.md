@@ -14,8 +14,8 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
   - Er hat nur 9:48 Luft und nimmt ohne Luft 20 Schaden pro Sekunde, mehr als jedes andere Wassertier hier.
   - Beachcomber macht ihn am Strand schneller und lässt ihn länger an Land.
   - Er spürt den nächsten Fisch im Umkreis von 100 m und fischt nachts.
-  - Abyssal Depths meidet er.
-- **Halbe Reviere:** wie zuvor beim Prog. Ein Männchen hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Es gibt acht: Kelp Vale West und Ost, Coastal Bluffs Nord und Süd, Palm Islands Nord und Süd, Stonebed Shoal Nord und Süd. Sie sind im Tab auf der Karte eingezeichnet. Landtiere im selben POI bleiben unberührt.
+  - Das offene, tiefe Wasser meidet er. In Abyssal Depths hält er sich auf den hohen Felsvorsprüngen zwischen den Tiefen auf (seit dem 06.11., siehe unten).
+- **Halbe Reviere:** wie zuvor beim Prog. Ein Männchen hält einen halben Ozean-POI, so wie Spino im Inland geteilte Reviere hat. Es gibt zehn: Kelp Vale West und Ost, Coastal Bluffs Nord und Süd, Palm Islands Nord und Süd, Stonebed Shoal Nord und Süd, Abyssal Depths Nord und Süd. Sie sind im Tab auf der Karte eingezeichnet. Landtiere im selben POI bleiben unberührt.
 - **Palm Islands als Front:** Palm ist der einzige Ozean, den er mit Deino und Spino teilt, und der einzige, in den Livy nie kommt. Dort gibt es harte Revierkämpfe.
 
 **Seine Werkzeuge** (Path-of-Titans-Wiki und NexLink, Adult):
@@ -66,7 +66,7 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 **Was der Entwurf festlegt:**
 - **Herausfordern:** Er fordert Tylosaurus und fremde Sachicasaurus-Männchen aus seinem Revier heraus. Auf Palm Islands auch Deinosuchus-Männchen und Spinosaurus, und er nimmt deren Herausforderungen an.
 - **Xiphactinus:** Er kann sie packen (CW 2400), die beiden begegnen sich aber kaum, denn Xiph lebt nur in den Flussengen.
-- **Flucht:** Vor adulten Livyatan flieht er. Im Kelp und in den Untiefen ist er vor ihm sicher, denn dorthin kommt Livy nur zum Nisten.
+- **Flucht:** Vor adulten Livyatan flieht er. Im Kelp, in den Untiefen und auf den hohen Felsvorsprüngen in Abyssal Depths ist er vor ihm sicher.
 - **Beaching wie Tylo:**
   - Er darf Tiere jagen, die bis 1 Körperlänge vom Wasser entfernt stehen. Zuerst packt er, was er clampen kann, und zieht es ins Wasser.
   - Adulte Apex-Landfleischfresser greift er nur an, wenn sie schwimmen.
@@ -123,7 +123,21 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 - Verwaiste Junge suchen die Kinderstube, wenn sie sie erreichen können.
 - Die Kinderstube ist kein Revier. Mütter fordern dort niemanden heraus, sie verteidigen nur ihr Nest und ihre Jungen.
 
+**Entschieden am 06.11. (vom Nutzer): Reviere in Abyssal Depths.**
+- Der Sachi darf auch in Abyssal Depths und dort ein halbes Revier halten. Geteilt wird in Nord und Süd, wie bei Coastal Bluffs und Stonebed Shoal, weil der POI fast doppelt so hoch wie breit ist. Damit gibt es zehn Reviere statt acht.
+- Dort setzt er sich gern auf einen der hohen Felsvorsprünge zwischen den Tiefen.
+
+**Warum die Felsvorsprünge passen:**
+- **Luft:** Der Sachi hat nur 9:48 Luft und nimmt ohne Luft 20 Schaden pro Sekunde. Auf einem hohen Felsvorsprung ist die Oberfläche nah. Im tiefen Wasser wäre er der falsche Jäger.
+- **Livy:** Abyssal Depths ist Livys Zuhause. Livy gewinnt gegen einen Sachi in 19 s und behält 76 % Health, gegen ein Brace in 38 s mit 27 %. Außerdem muss er einzelne Sachi im offenen Wasser zuerst jagen. Ohne Rückzugsort wäre ein Revier dort also eine Todesfalle. Der Felsvorsprung ist seine Burg: Von dort beobachtet er die Tiefe, und zum Jagen muss er hinunter.
+- **Vorbild:** wie ein Jaguar, der auf einem Ast über dem Fluss liegt. Der Jaguar steht schon in den Vorbildern des Profils.
+
+**Selbst ergänzt, bitte prüfen:**
+- **Die hohen Felsvorsprünge zählen für Livy als Untiefen.** Livy folgt keiner Beute in die Untiefen, und genauso folgt er dem Sachi nicht auf die Felsvorsprünge. Das ist der Kern der Idee. Ich habe es deshalb auch in den Livy-Entwurf geschrieben.
+- **Beute in der Tiefe:** Die Flotillas machen Abstecher nach Abyssal Depths, und dort leben alte und albino Leeds. Von seinem Felsvorsprung stößt der Sachi nachts auf das, was unter ihm vorbeizieht.
+
 **Noch offen:**
+- **Welche Felsvorsprünge** hoch genug sind, damit der Sachi dort Luft holen kann, muss man im Spiel ansehen.
 - **Unterart der Weibchen:** Welche der drei (Vitae, Mors, Queenslandicus) die massigste ist, schaut der Nutzer im Mod nach.
 - **Agreement-Call:** In den Dynasty-Profilen gibt es dafür noch kein Emoji. Er steht deshalb als „agreement call“ im Text. Heißt er im Spiel anders, wird er ausgetauscht.
 - Schwimmtempo und Wendigkeit. Das Wiki gibt nur 3 von 5 Sternen fürs Wasser. Die Werte lassen sich aus den Mod-Dateien lesen, sobald der Mod heruntergeladen ist.
@@ -152,7 +166,7 @@ Profile inspired by jaguars, saltwater crocodiles, Tyrannotitan and pliosaur pal
 - **Nature:**
   - Males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females outside courtship.
   - Females are tolerant towards other species, and passive towards males.
-- Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, and do not enter the saltwater channels between the islands. Mothers raise their young in the shallows of Tallbrush Coasts.
+- Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, except for the high rock ledges of the Abyssal Depths, and do not enter the saltwater channels between the islands. Mothers raise their young in the shallows of Tallbrush Coasts.
 - Sachicasaurus are not scavengers. They hunt, and they fish.
 - Sachicasaurus court like great white sharks: the male chases the female, and she only accepts a male who can stop her from leaving (see Courtship & Parenthood).
 - Sachicasaurus tolerate albino and melanistic individuals.
@@ -174,13 +188,14 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 ## Territory
 
 - **What a territory is:**
-  - A male's territory is one half of an ocean POI, like the segmented territories of Spinosaurus inland. There are eight:
+  - A male's territory is one half of an ocean POI, like the segmented territories of Spinosaurus inland. There are ten:
     - Western and Eastern Kelp Vale
     - Northern and Southern Coastal Bluffs
     - Northern and Southern Palm Islands
     - Northern and Southern Stonebed Shoal
+    - Northern and Southern Abyssal Depths
   - The territories are marked on the profile map.
-  - The Abyssal Depths hold no territories. Their deep water is Livyatan's home, and too far from the surface for a hunter that needs air.
+  - **The Abyssal Depths:** The deep water is Livyatan's home, and too far from the surface for a hunter that needs air. A male who claims one of its halves keeps to the high rock ledges that rise between the deeps. Livyatan do not follow him onto the ledges.
   - Land within the same POI is not part of the territory. Terrestrial species there are not affected.
 - **Challenges:**
   - Males claim and defend their territory at night.
@@ -196,7 +211,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 - **Numbers:** Up to 2 grouped Sachicasaurus may take part in a hunt or a territory challenge.
 - **Tiers:** Sachicasaurus may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace or drift.
-- **Fleeing:** Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. A brace may stand its ground in defence, but loses against a grown Livyatan.
+- **Fleeing:** Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. A brace may stand its ground in defence, but loses against a grown Livyatan. In the kelp, in the shallows and on the high rock ledges of the Abyssal Depths, Sachicasaurus are safe from it.
 - **Spinosaurus & Deinosuchus:** Sachicasaurus may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
 - **Adolescents:** Adolescent Sachicasaurus do not assist with hunts.
 - **Defence:** Females always defend their grouped offspring of Adolescent and below.
@@ -254,6 +269,7 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
 - **Nights in the shallows:** As dusk falls they leave their shelter and patrol the kelp, the reefs and the shallows, where flotillas come to rest. They sense the nearest fish from far away, and fish between hunts.
 - **Built for the grab:** Sachicasaurus are not slender, but they are agile. Their four flippers let them fly through the water, turn sharply and roll. Their huge head and short neck give them the strongest grip of any aquatic hunter.
 - **Air:** Sachicasaurus need more air than most aquatics, and suffer badly without it. They keep to coastal waters where the surface is never far away, and avoid the deep.
+- **The ledges:** In the Abyssal Depths, Sachicasaurus place themselves on one of the high rock ledges between the deeps, like a jaguar lying on a branch above a river. The surface is close, and from there they watch the deep water below for prey, and for the Livyatan.
 - **Beaches:** They are at ease on beaches at night, and haul out on the sandbanks of Palm Islands.
 - **Sound:** They are quiet hunters. Males make a deep, low hum at dusk, which carries through their territory and warns rivals that it is taken.
 
@@ -289,7 +305,7 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
 - **Livyatan:**
   - Livyatan are the only animals Sachicasaurus truly fear.
   - In open water, its clicks find them wherever they hide.
-  - A Sachicasaurus that hears clicking stays in the kelp and the shallows, where the Livyatan does not follow, until it has gone.
+  - A Sachicasaurus that hears clicking stays in the kelp, in the shallows or on a high ledge of the Abyssal Depths, where the Livyatan does not follow, until it has gone.
   - Palm Islands are the only ocean Livyatan never enter.
 - **Spinosaurus & Deinosuchus:**
   - At Palm Islands, Sachicasaurus and the two river giants fight hard over territory.
@@ -306,6 +322,7 @@ Sachicasaurus win with the grab.
 4. **Dragging away:** The hunter drags its prey into the kelp or the shallows, away from the defenders, chewing and thrashing as it goes. Every bite breaks bones, more so at night.
 5. **Holding on:** Kaiwhekea and Eurhinosaurus flee from Apex carnivores, so a seized animal gets no help from its group. The hunter holds on until its prey is dead, or until its own stamina runs out and it must let go. Prey that reaches a high rock is out of reach. Nests defended by both parents are avoided.
 6. **Other prey:** Larger prey is met with Breach, Lunge and Bone Snap, and worn down by broken bones.
+7. **From the ledge:** In the Abyssal Depths, the hunter drops from its ledge onto prey passing below: flotillas on their trips into the deep, and old Leedsichthys. Then it returns to its ledge.
 
 ## Courtship & Parenthood
 
@@ -370,7 +387,7 @@ Female great white, lemon and bull sharks give birth in nurseries: shallow coast
 ## Profile – Quick View
 
 - Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
-- They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
+- They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. In the Abyssal Depths they keep to the high rock ledges between the deeps, where Livyatan do not follow. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
 - Females travel alone or as a drift. They raise their young in the nursery at Tallbrush Coasts, where males never come, and lead them out to sea at Adolescent.
 - They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on. A female who does not return the greeting is tolerated for one night, then travels on.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
