@@ -257,7 +257,7 @@ Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.
 - **Warum:** Jede Art funktioniert allein, das Treffen ist der Bonus. Kai nisten im Osten, Leeds und Eurhino balzen im Westen an den Flüssen. Eine Kolonie ist ein fester Treffpunkt und leichter zu finden als eine wandernde Flotilla.
 - **Kai an Land:** Sprint 167, mit Beachcomber 300. Damit ist ein Kai an Land schneller als ein sprintender Tylo (160), aber langsamer als dessen Beachcomber-Schub (10 s, von 560 abklingend). Mit Beachcomber holt der Tylo in 6,5 s rund 850 Einheiten auf. Wer näher an der Wasserkante liegt, wird erwischt.
 - **Selbst ergänzt, bitte prüfen:** In einer Kolonie verteidigt jede Bale nur sich selbst, sonst wären 3 Bales mit 6 Verteidigern und 3 Ringen nicht mehr zu jagen. Eine Kolonie hält höchstens einen Tag-Nacht-Zyklus. Eine Bale darf eine Weile neben einer Flotilla schwimmen, ohne Gruppe.
-- **Offen:** Beachcomber verhindert beim Kai das Austrocknen an Land, die Durst-Regel greift dann nicht. Vorschlag: dieselben Zahlen als Zeit (10 min, in großer Gefahr 20 min).
+- **Durst-Regel bleibt (geklärt am 06.11.):** Ein Kai trocknet an Land erst aus, wenn er nicht mehr nass ist. Die Regel „zurück ins Wasser bei 75 % Durst“ gilt also auch mit Beachcomber.
 
 ### Leedsichthys und seine Flotilla (entschieden 03.11., geändert 06.11.)
 

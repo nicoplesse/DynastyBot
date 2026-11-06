@@ -172,7 +172,7 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 **Selbst ergänzt, bitte prüfen:** Besuche an Land zählen zur Landzeit, also zurück ins Wasser bei 75 % Durst. Zu Fleischfressern geht ein Kai nicht an Land, sie werden nur aus dem Wasser beobachtet. So steht es schon im heutigen Profil („Experienced adults do this only with herbivores“).
 
 **Entschieden am 06.11. (vom Nutzer): Land-Sprint 300 mit Beachcomber.**
-- Beachcomber bleibt ein wichtiger Teil des Kai: im Hide-Slot, +80 % Landtempo, +50 % Ausdauer-Erholung an Land, kein Austrocknen an Land.
+- Beachcomber bleibt ein wichtiger Teil des Kai: im Hide-Slot, +80 % Landtempo, +50 % Ausdauer-Erholung an Land, kein Austrocknen an Land, solange er nass ist. Erst danach sinkt sein Durst, die Durst-Regel bleibt also auch mit Beachcomber, wie sie ist (vom Nutzer geklärt am 06.11.).
 - Mit Beachcomber sprintet der Kai an Land höchstens 300. Daraus folgt der Grundwert: 300 ÷ 1,8 ≈ **167** (Sprint-Multiplikator 1,67 auf die bisherigen 100). Gehen (30) und Traben (58) bleiben.
 - *(Zuerst stand hier am selben Tag ein Grundwert von 250. Mit Beachcomber wären das 450 gewesen.)*
 - **Warum:** An Land soll ein Kai etwas schneller sein als ein sprintender Tylo (160), aber langsamer als dessen Beachcomber-Schub. Den Schub bekommt der Tylo beim Verlassen des Wassers: 10 s lang bis zu +250 %, also von 560 abklingend auf 160, und nur alle 120 s.
@@ -184,7 +184,6 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 - **Im Spiel prüfen:** Ob Beachcomber die 167 wirklich auf 300 bringt, hängt davon ab, wie das Spiel die Dynasty-Anpassung und den Bonus verrechnet (multipliziert oder addiert).
 
 **Noch offen:**
-- **Durst-Regel und Beachcomber:** Mit Beachcomber trocknet ein Kai an Land nicht aus, die Regel „zurück bei 75 % Durst“ greift dann nie. Vorschlag: dieselben Zahlen als Zeit, also höchstens 10 min am Stück an Land, in großer Gefahr 20 min. Das passt zu einer Kolonie, die sehr oft an Land geht, und begrenzt trotzdem die Zeit an Land.
 - **Sachi an Land:** Sein Grundtempo ist unbekannt, weil seine Mod nicht heruntergeladen ist. Beachcomber gibt ihm dauerhaft +10 % und denselben Schub wie dem Tylo.
 
 ---
