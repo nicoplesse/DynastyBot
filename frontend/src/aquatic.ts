@@ -20,7 +20,7 @@ export interface AquaticStats {
 }
 // A species outside the suggestion that still matters to it (Sarcosuchus), shown for comparison only.
 export interface AquaticExtra { id: string; name: string; nickname: string; side: AquaticSide; note: string; stats: AquaticStats }
-export type RelationKind = 'hunt' | 'limited' | 'rival' | 'defend' | 'flee' | 'group' | 'ignore' | 'none';
+export type RelationKind = 'hunt' | 'limited' | 'rival' | 'defend' | 'flee' | 'group' | 'meet' | 'ignore' | 'none';
 export interface AquaticRelations {
   kinds: Record<RelationKind, string>;
   order: string[];

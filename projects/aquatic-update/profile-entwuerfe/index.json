@@ -13,7 +13,7 @@
     {
       "id": "giant",
       "label": "Sanfter Riese",
-      "text": "Jagt nie, zieht mit Kai und Eurhino als Flotilla. Niemand verteidigt den anderen."
+      "text": "Jagt nie und zieht eigensinnig seine Route, mit einer Flotilla aus Eurhinos. Niemand verteidigt den anderen."
     },
     {
       "id": "hunter",
@@ -27,8 +27,8 @@
       "text": "Frisst nur Fisch, Krebse und Muscheln und jagt keine Spieler. Zählt für Gruppen- und Mischgruppen-Regeln (8.1) wie ein Herbivore."
     },
     {
-      "title": "Leeds in der Kai-Gruppe",
-      "text": "1 Leeds je Gruppe. Keine Verteidigung in beide Richtungen, kein Stufenschutz. Looming Presence ist in gemischten Gruppen nicht erlaubt (Vorbild 8.1.1)."
+      "title": "Leeds und seine Flotilla",
+      "text": "1 Leeds je Eurhino-Schwarm, mit Kai gruppiert er nicht. Keine Verteidigung in beide Richtungen, kein Stufenschutz. Looming Presence ist in gemischten Gruppen nicht erlaubt (Vorbild 8.1.1)."
     },
     {
       "title": "Reviere im Wasser",
@@ -50,10 +50,10 @@
       "role": "Para des Meeres",
       "classification": "Medium Diurnal Aquatic Piscivore",
       "activity": "Tagaktiv",
-      "analog": "Meeresschildkröte und Delfin-Schule",
-      "home": "Route des Leedsichthys: warme Salzwasser-Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal",
-      "group": "Bale bis 16 (mit Eurhino), dazu 1 Leeds",
-      "essence": "Sozial, passiv und robust: Eine Leitkuh führt die Bale, bis zu 2 dominante Bullen begleiten sie, Tanten hüten die Kälber. Jeder Kai hat einen eigenen Gruß, und Kühe übernehmen den ihres Bullen. Kai fischen gemeinsam und schlafen auch auf hohen Felsen.",
+      "analog": "Seelöwen-Kolonie, See-Elefant und Delfin-Schule",
+      "home": "Nomadisch ohne feste Route: hin und her zwischen Fischgründen und Kolonien in den Flussengen und Ozeanen",
+      "group": "Bale bis 16, dazu bis zu 4 Eurhinos; kein Leeds",
+      "essence": "Sozial, passiv und robust: Eine Leitkuh führt die Bale, bis zu 2 dominante Bullen begleiten sie, Tanten hüten die Kälber. Jeder Kai hat einen eigenen Gruß, und Kühe übernehmen den ihres Bullen. Wie Seelöwen gehen Kai sehr oft an Land und liegen in Kolonien zusammen, bis der Fisch knapp wird.",
       "dynastyProfile": "kaiwhekea",
       "mod": null,
       "stats": {
@@ -88,7 +88,7 @@
         {
           "label": "Wanderung",
           "from": "Küstenrouten",
-          "to": "Route des Leeds, mit Abstechern ins verbundene Süßwasser"
+          "to": "nomadisch ohne feste Route, hin und her zwischen Fischgründen und Kolonien; Abstecher ins verbundene Süßwasser"
         },
         {
           "label": "Führung",
@@ -111,14 +111,24 @@
           "to": "bis 75 % Durst, Schlaf auf hohen Felsen, Besuch bei Pflanzenfressern an Land"
         },
         {
+          "label": "Kolonie",
+          "from": "–",
+          "to": "mehrere Bales liegen zusammen an Land, jede verteidigt nur sich; nach einem Tag ist der Fisch knapp, dann zieht jede weiter"
+        },
+        {
           "label": "Landtempo",
           "from": "Sprint 100",
-          "to": "Sprint 250: schneller als der Tylo, langsamer als sein Beachcomber-Schub"
+          "to": "Sprint 167, mit Beachcomber 300: schneller als der Tylo, langsamer als sein Beachcomber-Schub"
         },
         {
           "label": "Landtiere",
           "from": "neugierig, bringt Mitbringsel",
           "to": "folgt ihnen am Ufer, springt vor Freude, geht zu Pflanzenfressern an Land"
+        },
+        {
+          "label": "Leeds",
+          "from": "jagt dessen Junge",
+          "to": "keine Gruppe mehr; schwimmt eine Weile neben einer Flotilla, der Leeds schaut gern der Balz zu"
         },
         {
           "label": "Nisten",
@@ -137,10 +147,10 @@
       "role": "Schneller Schwarm und Wache",
       "classification": "Medium Cathemeral Aquatic Piscivore",
       "activity": "Cathemeral",
-      "analog": "Delfine, Fächerfisch und Lachs",
-      "home": "Dieselbe Route wie Kai, oft in derselben Gruppe; zum Nisten der Lauf flussaufwärts nach Cedrus Forest",
-      "group": "Schwarm ohne Obergrenze; in der Kai-Gruppe bis 16 zusammen",
-      "essence": "Laut, verspielt und schnell: ein Schwarm ohne Leitung, der dem folgt, der den Fisch findet. Eurhino schläft mit einem offenen Auge, warnt die Kai-Gruppe früh und überlebt durch Tempo statt Kraft.",
+      "analog": "Thunfisch beim Walhai, Fächerfisch, Delfine und Lachs",
+      "home": "Route des Leeds als seine Flotilla; bis zu 4 leben bei einer Kai-Bale; zum Nisten der Lauf flussaufwärts nach Cedrus Forest",
+      "group": "Schwarm ohne Obergrenze, mit 1 Leeds als Flotilla; bis zu 4 in einer Kai-Bale",
+      "essence": "Laut, verspielt und schnell: ein Schwarm ohne Leitung, der dem folgt, der den Fisch findet. Eurhino zieht mit dem Leeds wie Thunfische mit dem Walhai, schläft mit einem offenen Auge, warnt Kai-Bales früh und überlebt durch Tempo statt Kraft.",
       "dynastyProfile": "eurhinosaurus",
       "mod": null,
       "stats": {
@@ -165,12 +175,17 @@
         {
           "label": "Kai",
           "from": "Lieblingsbeute",
-          "to": "Gruppenpartner und Wache"
+          "to": "bis zu 4 als Gruppenpartner und Wache einer Bale"
+        },
+        {
+          "label": "Leeds",
+          "from": "jagt dessen Junge",
+          "to": "der Schwarm ist seine Flotilla, wie Thunfische beim Walhai"
         },
         {
           "label": "Wanderung",
           "from": "sesshaft",
-          "to": "Route des Leeds mit Abstechern ins verbundene Süßwasser, Lauf zum Nistfluss"
+          "to": "Route des Leeds als seine Flotilla, mit Abstechern ins verbundene Süßwasser, Lauf zum Nistfluss"
         },
         {
           "label": "Landtiere",
@@ -204,10 +219,10 @@
       "role": "Sanfter Riese",
       "classification": "Apex Cathemeral Aquatic Filter Feeder",
       "activity": "Cathemeral",
-      "analog": "Walhai mit Pilotfischen",
-      "home": "Schleife durch die warmen Flussengen, Abstecher zum Abkühlen in die Ozeane; Balzgründe wie bisher",
-      "group": "Allein; darf mit 1 Kai-Gruppe ziehen",
-      "essence": "Jagt nie und gewinnt fast jedes Duell: Leeds zieht mit Kai und Eurhino, aber keiner verteidigt den anderen. Dem Livy stellt er sich in der Tiefe.",
+      "analog": "Walhai mit Thunfisch-Schwarm",
+      "home": "Eigensinnig auf seiner Schleife durch die warmen Flussengen, Abstecher zum Abkühlen in die Ozeane; Balzgründe wie bisher",
+      "group": "Allein; darf mit 1 Eurhino-Schwarm ziehen (Flotilla)",
+      "essence": "Jagt nie und gewinnt fast jedes Duell: Leeds zieht eigensinnig seine Route, mit einer Flotilla aus Eurhinos, und keiner verteidigt den anderen. Einer Kai-Balz schaut er gern zu. Dem Livy stellt er sich in der Tiefe.",
       "dynastyProfile": "leedsichthys",
       "mod": null,
       "stats": {
@@ -228,7 +243,7 @@
         {
           "label": "Gruppe",
           "from": "keine anderen Arten",
-          "to": "Flotilla mit Kai und Eurhino, ohne Verteidigung"
+          "to": "Flotilla mit Eurhinos, ohne Verteidigung; keine Kai mehr in der Gruppe"
         },
         {
           "label": "Mischgruppe",
@@ -238,7 +253,7 @@
         {
           "label": "Route",
           "from": "Schleife",
-          "to": "+ Abstecher in 4 Ozeane und ins verbundene Süßwasser"
+          "to": "+ Abstecher in 4 Ozeane und ins verbundene Süßwasser; folgt ihr eigensinnig, ändert sie für niemanden"
         },
         {
           "label": "Landtiere",
@@ -248,7 +263,12 @@
         {
           "label": "Schlaf",
           "from": "irgendwo",
-          "to": "nachts bei der Gruppe"
+          "to": "nachts bei seinem Schwarm"
+        },
+        {
+          "label": "Kai-Balz",
+          "from": "–",
+          "to": "hält an und schaut zu, auch ohne Gruppe; zieht danach mit seinen Eurhinos weiter"
         },
         {
           "label": "Livyatan",

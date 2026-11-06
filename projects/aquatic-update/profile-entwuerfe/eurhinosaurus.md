@@ -12,8 +12,8 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
 | --- | --- | --- |
 | Einstufung | Medium Cathemeral Aquatic Carnivore | Medium Cathemeral Aquatic Piscivore |
 | Nahrung | jagt Kai und Leeds-Junge zuerst, „als Sport“, bis Large | nur Fisch und Krebse; der Sport gilt jetzt Fischschwärmen |
-| Kaiwhekea | Lieblingsbeute, grausam gejagt | Gruppenpartner und Wache; bleibt, weil er mehr davon hat |
-| Leedsichthys | jagt dessen Junge | darf mit ihm gruppieren (Flotilla); keiner verteidigt den anderen |
+| Kaiwhekea | Lieblingsbeute, grausam gejagt | bis zu 4 als Gruppenpartner und Wache einer Bale; bleiben, weil sie mehr davon haben |
+| Leedsichthys | jagt dessen Junge | der Schwarm zieht mit ihm als Flotilla, wie Thunfische mit dem Walhai; keiner verteidigt den anderen |
 | Tropeognathus | – | vertreibt ihn, wenn er der Flotilla die Fische wegfischt |
 | Wanderung | sesshaft | Route des Leedsichthys; zum Nisten der Lauf flussaufwärts nach Cedrus Forest |
 | Führung | – | keine; wer Fisch findet, führt; bis zu 2 Späher |
@@ -29,7 +29,8 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
 - **Lachs** (schon im Profil): Er kehrt zum Nisten in den Fluss zurück, in dem er geschlüpft ist. Auf dem Lauf flussaufwärts frisst er nicht. Der Eurhino zieht an Spino und Deino vorbei wie der Lachs an den Grizzlys.
 - **Herings- und Sardinenschwärme:** Greift ein Jäger an, teilt sich der Schwarm um ihn herum und schließt sich hinter ihm wieder („Fontäne“). Stößt er hinein, spritzt der Schwarm in alle Richtungen auseinander.
 - **Elritzen und Guppys:** Kleine Gruppen schwimmen nah an einen Räuber heran, um ihn zu begutachten. Daraus wird das „Angeben“ des Eurhino.
-- **Thunfisch bei Fleckendelfinen:** Gelbflossen-Thunfische ziehen mit Delfinschulen und haben wohl mehr davon als die Delfine. So steht der Eurhino zur Kai-Bale.
+- **Thunfisch beim Walhai:** Thunfische ziehen so zuverlässig mit Walhaien, dass Thunfischfänger ihre Netze gezielt um Walhaie legen. So steht der Schwarm zum Leeds.
+- **Thunfisch bei Fleckendelfinen:** Gelbflossen-Thunfische ziehen mit Delfinschulen und haben wohl mehr davon als die Delfine. So stehen die bis zu 4 Eurhinos zur Kai-Bale.
 - **Balz:** Die Männchen stranden am Ufer wie Grunions und Schlammspringer, die an Land werben.
 
 **Neue Systeme in diesem Entwurf:**
@@ -85,6 +86,14 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
 
 **Werte unverändert:** Der Eurhino sprintet mit 1050 und hält das 3:42 durch. Schneller ist nur der Xiph mit 1200, aber nur 2:47 lang. Gegen Xiph rettet den Eurhino also die Ausdauer, gegen alle anderen Jäger das Tempo: Tylo 900, Livy und Spino 750, Deino 700. *(Korrigiert am 05.11.: Hier stand auch der Kai mit 990, obwohl er kein Jäger mehr ist.)*
 
+**Entschieden am 06.11. (vom Nutzer): Der Eurhino gehört zu beidem.**
+- Kai und Leeds gruppieren nicht mehr. Die Flotilla ist jetzt der Leeds mit seinen Eurhinos, und Kai leben in Kolonien.
+- Der Eurhino hat damit zwei Plätze: Als Schwarm zieht er mit dem Leeds. Bis zu 4 dürfen stattdessen bei einer Kai-Bale leben, meist eine Freundesgruppe.
+- Der Leeds folgt eigensinnig seiner Route. Hält er an, um einer Kai-Balz zuzuschauen, springen seine Eurhinos mit den Bullen. Danach zieht der Schwarm mit dem Leeds weiter, nicht mit der Bale.
+- Die Balz des Eurhino bleibt genau so, wie sie ist.
+
+**Selbst ergänzt, bitte prüfen:** Ein Schwarm ist entweder beim Leeds oder bei einer Kai-Bale gruppiert, nicht in beiden zugleich, weil Kai und Leeds nicht mehr zusammen gruppieren.
+
 **Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
 - Eurhinos sind, wie Kai und Leeds, unglaublich neugierig auf Landtiere. Sie folgen ihnen am Ufer, rufen ihnen zu und springen für sie fröhlich in die Luft. An Land gehen sie dafür nicht, das tut nur der Kai.
 - Wie die ganze Flotilla dürfen sie Abstecher in die Seen und das Süßwasser machen, das mit den Flussengen verbunden ist. Welche POIs das sind, muss im Spiel geklärt werden.
@@ -94,7 +103,7 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
 Eurhinosaurus was a sleek, fast-swimming marine reptile that lived during the Early Jurassic period, around 180 million years ago, in what is now Europe. This remarkable ichthyosaur was known for its extremely elongated upper jaw, which extended far beyond its lower jaw like a swordfish's bill. Reaching lengths of up to 6–7 meters, Eurhinosaurus was a powerful predator, using its long snout and numerous sharp teeth to catch small fish and squid. Its name, meaning "well-nosed lizard," highlights its distinctive jaw structure, and its streamlined body and large flippers made it an efficient, agile swimmer in the ancient seas.
 
 Author: Bunzey, Entered & Skylark. Revised for the Aquatic Update.
-Profile inspired by salmon, sailfish & dolphins.
+Profile inspired by salmon, sailfish, tuna & dolphins.
 
 ## Overview
 
@@ -104,7 +113,7 @@ Profile inspired by salmon, sailfish & dolphins.
 - Eurhinosaurus are nomadic and follow the Leedsichthys migration route. To nest, they return to their nesting river.
 - Eurhinosaurus have a passive nature towards other species. Shoals may become defensive towards other Eurhinosaurus shoals when resources are low.
 - Eurhinosaurus feed on fish and crustaceans. They do not hunt other players and do not claim or feed from bodies.
-- Eurhinosaurus may group with Kaiwhekea and with one Leedsichthys. Eurhinosaurus do not defend the species they group with, and those species do not defend them.
+- Eurhinosaurus may group with one Leedsichthys, forming a flotilla. Up to 4 may join a Kaiwhekea bale instead. Eurhinosaurus do not defend the species they group with, and those species do not defend them.
 - Eurhinosaurus tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -120,8 +129,8 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 This group is known as a shoal.
 
-- **Kaiwhekea:** When grouped with a Kaiwhekea bale, Eurhinosaurus count towards the bale's limit of 16 Sub/Adults.
 - **Leedsichthys:** One Leedsichthys may join in addition. A group with a Leedsichthys is known as a flotilla.
+- **Kaiwhekea:** Instead, up to 4 Eurhinosaurus, usually one friend group, may join a Kaiwhekea bale. They do not count towards the bale's 16 Sub/Adults. A shoal grouped with a bale cannot also group with a Leedsichthys.
 - **School:** During courtship, shoals mix into one large breeding group, known as a school (see Courtship).
 
 ## Engagement Limits (Defence & Hunts)
@@ -236,7 +245,7 @@ Fishing is seen as a sport. Shoals train constantly to refine their coordination
 ### Migration
 
 - **The route:** Eurhinosaurus follow the Leedsichthys migration route marked on the profile map: a loop through the warm saltwater channels between the islands, with regular trips out into the open oceans of Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal.
-- **The oceans** hold the fish shoals Eurhinosaurus value most. Shoals often travel out together with a Kaiwhekea bale or a Leedsichthys.
+- **The oceans** hold the fish shoals Eurhinosaurus value most. Most shoals travel the route with a Leedsichthys as its flotilla, and go where the giant goes.
 - **Fresh water:** Shoals may leave the route for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
 - **The run:** When driven to nest, Eurhinosaurus leave the route and return to their nesting river, like salmon.
   - Shoals gather at the river mouth, and swim upstream together as one school.
@@ -308,17 +317,20 @@ Eurhinosaurus are rarely aggressive towards their own kind. Over-aggression is c
 ## Cross-Species Interaction
 
 - **Kaiwhekea:**
-  - Eurhinosaurus and Kaiwhekea are frequent companions. Eurhinosaurus stay with a bale because they gain more from it than the Kaiwhekea do: safety in numbers, and the fish the bale drives together. Yellowfin tuna travel with spotted dolphins in the same way.
+  - Eurhinosaurus and Kaiwhekea are frequent companions. Up to 4, usually one friend group, may live with a bale. They stay because they gain more from it than the Kaiwhekea do: safety in numbers, and the fish the bale drives together. Yellowfin tuna travel with spotted dolphins in the same way.
+  - When the bale hauls out at a colony, they keep watch in the water below.
   - In return they act as the bale's sentries. Their loud voices carry far through the water and warn the bale long before a predator arrives.
   - Shoals often swim on the outer edge of a migrating bale, and dart ahead to scout for fish.
   - Eurhinosaurus tease Kaiwhekea with races and close passes, but never bite them.
   - **Kaiwhekea courtship:** Eurhinosaurus watch the bulls' dance closely. It excites them, puts them in a happy mood and stirs their own wish to court, and they often breach along with the bulls. Kaiwhekea do not let this distract them.
   - Neither species defends the other.
 - **Leedsichthys:**
-  - Eurhinosaurus may travel and group with one Leedsichthys, like pilot fish around a whale shark. Such a group is known as a flotilla.
+  - Eurhinosaurus may travel and group with one Leedsichthys, the way tuna travel with whale sharks. Such a group is known as a flotilla. They hunt the fish that gather around the giant.
+  - The Leedsichthys chooses the way and keeps to its route without exception. The shoal goes where it goes.
   - Neither side defends the other.
   - Eurhinosaurus may use the giant's body as cover. The Leedsichthys never moves to block a predator for them.
   - Shoals love to race circles around the slow giant. Its pups soon learn to school alongside Eurhinosaurus young.
+  - **Kaiwhekea courtship:** When the Leedsichthys stops to watch a courting bale, its Eurhinosaurus breach along with the bulls. Afterwards, the shoal travels on with the giant, not with the bale.
 - **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Eurhinosaurus take this as an insult to their sport, and drive them off. They give a :threaten_call: first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 - **Xiphactinus:** The only fish that sprint faster than Eurhinosaurus, and their most feared hunters. Xiphactinus live in the saltwater channels, so shoals cross them quickly.
 - **Apex carnivores:** Eurhinosaurus flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus (see Predator Reaction).
@@ -391,7 +403,7 @@ Mothers stay within the nesting grounds with their young until their oldest offs
 
 ## Rule Exemptions
 
-- **Grouping:** As piscivores, Eurhinosaurus may group with Kaiwhekea and one Leedsichthys (exemption from 8.1, under the proposed piscivore rule). There is no defence between the species.
+- **Grouping:** As piscivores, Eurhinosaurus may group with one Leedsichthys, or up to 4 with a Kaiwhekea bale (exemption from 8.1, under the proposed piscivore rule). There is no defence between the species.
 - The Metriacanthosaurus exemption is no longer needed, because Eurhinosaurus do not feed from bodies.
 
 ## Dynasty Adjusted Stats
@@ -403,11 +415,11 @@ Mothers stay within the nesting grounds with their young until their oldest offs
 ## Profile – Quick View
 
 - Eurhinosaurus are Medium Cathemeral Aquatic Piscivores.
-- They group in unlimited numbers, offspring and adoptees in a group known as a shoal. They may join a Kaiwhekea bale, where they count towards its 16 Sub/Adults, and one Leedsichthys, without any defence between the species.
+- They group in unlimited numbers, offspring and adoptees in a group known as a shoal. With one Leedsichthys, the shoal becomes a flotilla. Instead, up to 4 may join a Kaiwhekea bale. There is no defence between the species.
 - Shoals have no leader. They follow whoever finds the fish, send up to 2 scouts ahead, and hold close friend groups of the same sex.
 - They are passive, feed only on fish and crustaceans, and fish as a sport: in turns, loud or silent.
 - They sleep lightly with one eye open. In a shoal of 3 or more, one always stays awake, and they act as sentries for Kaiwhekea bales.
-- They follow the Leedsichthys route, with detours into the fresh waters connected to the channels. To nest, they make the run upstream to their nesting river as one school, without fishing or stopping.
+- They follow the Leedsichthys route, usually as its flotilla, with detours into the fresh waters connected to the channels. To nest, they make the run upstream to their nesting river as one school, without fishing or stopping.
 - They are endlessly curious about land animals. They follow them along the shore, call to them and leap for them.
 - They flee from Apex and Giant carnivores and Xiphactinus packs of 3 or more, and up to 3 may defend. Within limits, they show off by swimming past hunters.
 - They court at the nesting river: males beach themselves to display, and females choose. Mothers stay with their young until the oldest reach adolescent, and leave the rest in a creche.

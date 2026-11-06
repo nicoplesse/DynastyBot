@@ -43,7 +43,7 @@ Harte Wendigkeitswerte gibt es weder in den Kurven noch sicher benennbar in den 
   - Sachicasaurus wird der nächtliche Revierhalter und Flotilla-Jäger (ersetzt den Prognathodon).
   - Livyatan jagt aus der Tiefe die großen Tiere.
   - Xiphactinus wird das Raptor-Profil.
-- **Leedsichthys** bleibt der friedliche Riese. Er darf mit einer Kai-Gruppe gruppieren (1 Leeds je Gruppe). Verteidigt wird nicht, weder von ihm noch für ihn.
+- **Leedsichthys** bleibt der friedliche Riese. Er zieht eigensinnig seine Route, mit einem Eurhino-Schwarm als Flotilla (1 Leeds je Gruppe). Mit Kai gruppiert er seit dem 06.11. nicht mehr, die leben jetzt in Kolonien. Verteidigt wird nicht, weder von ihm noch für ihn.
 - **Ohne einzelne Wertänderungen klappt es nicht.** Kai fällt heute zu schnell um. Livyatan schlägt Tylosaurus nur knapp. Der Sachicasaurus braucht keine Änderung.
 - **Xiphactinus gewinnt durch kluges Spiel, nicht durch Werte.** Die Beute bekommt keinen Schutz durch Regeln. Sie schützt sich durch eigenes Verhalten.
 
@@ -64,9 +64,9 @@ Der Para fällt nicht sofort um, weil seine Werte fast die eines Apex sind. Zur 
 
 | Rolle | Art | Vorbild aus der Tierwelt | Lebensraum |
 | --- | --- | --- | --- |
-| Para des Meeres | Kaiwhekea | Delfin-Schule, Seekuh-Herde | Küste, Lagunen, offenes Flachwasser |
-| Schneller Schwarm, Wächter | Eurhinosaurus | Delfine, Lachs | Küste und Flussmündungen |
-| Sanfter Riese | Leedsichthys | Walhai mit Pilotfischen | offenes Meer, Wanderrouten |
+| Para des Meeres | Kaiwhekea | Seelöwen-Kolonie, Delfin-Schule | Küste, Strände und Felsen, Lagunen, offenes Flachwasser |
+| Schneller Schwarm, Wächter | Eurhinosaurus | Thunfisch beim Walhai, Delfine, Lachs | mit dem Leeds auf seiner Route, Flussmündungen |
+| Sanfter Riese | Leedsichthys | Walhai mit Thunfisch-Schwarm | offenes Meer, Wanderrouten |
 | Raptor | Xiphactinus | Barrakuda- und Makrelen-Rudel | nur die Salzwasser-Flussengen |
 | Küsten-Apex | Tylosaurus | Orca, Seeleopard | Ozeane und Flussengen |
 | Nächtlicher Flotilla-Jäger | Sachicasaurus | Jaguar, Leistenkrokodil | Kelp, Riffe, Untiefen und Strände der Ozeane, halbe Reviere |
@@ -102,7 +102,7 @@ Sprint-Schwimmen: Xiph 1200 › Eurhino 1050 › Kai 990 › Tylo 900 › Livy 7
 **Vorschlag:**
 - Kai frisst nur Fisch, Krebse und Muscheln und jagt keine Spieler. Gekämpft wird nur zur Verteidigung.
 - Bindung wie beim Para: Harem oder Paar, nach mehreren Gelegen ein lebenslanges Paar.
-- Bale bis 16 Sub/Adults, Mischgruppen mit Eurhinosaurus.
+- Bale bis 16 Sub/Adults, dazu bis zu 4 Eurhinosaurus (seit 06.11.; vorher zählten Eurhinos zu den 16).
 - Zur Verteidigung bis zu 2 aktive Verteidiger und ein Schutzring um die Kälber, die im Flachwasser warten.
 - Vor Apexen flieht Kai auf Sicht, außer am Nest.
 
@@ -141,7 +141,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 - Kräftig, aber wendig: Pliosaurier mit großem Kopf und vier Flossen. Aileron Roll, Breach und Lunge passen zum Hinterhalt.
 - Moonlight Hunter (+20 % Knochenbruch nachts), Fisch-Tracker und gute Sicht unter Wasser passen zum Nachtjäger, der zwischen den Jagden fischt.
 - Er hat wenig Luft (9:48) und nimmt ohne Luft 20 Schaden pro Sekunde. Dazu kommt Beachcomber. Das spricht für Kelp, Untiefen und Strände und trennt ihn sauber von Livyatan in der Tiefe. Das echte Tier lebte in einem flachen Binnenmeer (Paja-Formation, Kolumbien).
-- **Seine besondere Art:** Mit Tragkraft 4001 ist er der einzige Jäger, der einen adulten Kai packen kann. Er sprengt mit Aileron Roll eine schlafende Flotilla, packt einen Kai am Rand und zieht ihn ins Kelp. Was er gepackt hat, entkommt nicht, egal wie schnell es ist.
+- **Seine besondere Art:** Mit Tragkraft 4001 ist er der einzige Jäger, der einen adulten Kai packen kann. Er sprengt mit Aileron Roll eine schlafende Bale, packt einen Kai am Rand und zieht ihn ins Kelp. Was er gepackt hat, entkommt nicht, egal wie schnell es ist.
 
 **Kein Widerspruch bei den Werten:** Die Mod-Werte (CW 5500, Health 900, Armor 1,1) passen ohne Änderung. Gegen Tylo ist es ein Münzwurf, für Livy ist er so schwer wie ein Tylo (siehe oben).
 
@@ -248,17 +248,28 @@ Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.
 - **Widerspruch:** Der Kai-Entwurf lässt die Kälber „in full daylight“ ziehen, weil die Dämmerung dem Xiph gehört. Mit Cathemeral ist das nur noch eine kluge Gewohnheit, kein Schutz.
 - **Beobachten:** 6 Xiph können ein Ziel mit Flash 30 s am Stück bremsen, genau so lange, wie ein Kai für den Rückweg zu seiner Bale hat. Begrenzt ist das nicht, weil die Beute keinen Regelschutz bekommt.
 
-### Leedsichthys in der Kai-Gruppe (entschieden 03.11.)
+### Kai-Kolonie statt Flotilla (entschieden am 06.11.)
 
-- Ein Leeds darf mit Kai und Eurhinosaurus gruppieren: 1 Leeds plus die Bale mit bis zu 16 Kai und Eurhino zusammen. Seine eigenen Jungen darf er mitbringen.
-- **Name** (entschieden am 04.11.): Eine Gruppe, mit der ein Leeds zieht, heißt **Flotilla**. Die Kai-Gruppe bleibt eine Bale, auch wenn Eurhinos mitschwimmen. Die reine Eurhino-Gruppe bleibt eine Shoal.
-- **Tropeognathus und die Flotilla** (entschieden am 04.11.): Tropes suchen eine Flotilla und fliegen mit, ohne zu stören. Gruppieren dürfen sie nicht. Kommt die Flotilla an eine Fischansammlung, bedienen sie sich selbst. Kai und Eurhino vertreiben sie dann, weil sie dieselben Fische wollen; der Leeds bleibt passiv, er frisst keinen Fisch. Ein vertriebener Trope muss aus dem Wasser und den nächsten ruhigen Moment abwarten. Wehren kann er sich im Wasser nicht (3.8). Entwurf: `tropeognathus.md`.
-- **Niemand verteidigt den anderen.** Leeds verteidigt nur sich selbst und, wie bisher, seine eigenen Jungen. Kai und Eurhino verteidigen den Leeds nicht.
+- **Getrennt:** Kai und Leeds gruppieren nicht mehr. Die Flotilla ist jetzt der Leeds mit seinen Eurhinos. Die Balz aller drei bleibt, wie sie ist.
+- **Kai leben in Kolonien,** wie Seelöwen: Sie gehen sehr oft an Land, und mehrere Bales liegen dort zusammen. Sesshaft sind sie nicht. Eine große Kolonie frisst den Fisch um sich herum schnell leer, deshalb schwimmen die Bales ständig hin und her zwischen Fischgründen und Kolonien. Um große Seevogel-Kolonien bleibt aus demselben Grund ein Ring mit kaum noch Fisch.
+- **Der Eurhino gehört zu beidem:** Als Schwarm zieht er mit dem Leeds, wie Thunfische mit dem Walhai. Bis zu 4, meist eine Freundesgruppe, leben stattdessen bei einer Kai-Bale.
+- **Der Leeds ist eigensinnig:** Er folgt zu 100 % seiner Route. Einer Kai-Balz schaut er gern zu und hält dafür an, auch ohne Gruppe, und seine Eurhinos springen mit. Sucht die Bale danach ihren Geburtsstrand auf, zieht er mit seinen Eurhinos seinen eigenen Weg. Nur wenn der Strand auf seiner Route liegt, schwimmen sie ein Stück zusammen.
+- **Warum:** Jede Art funktioniert allein, das Treffen ist der Bonus. Kai nisten im Osten, Leeds und Eurhino balzen im Westen an den Flüssen. Eine Kolonie ist ein fester Treffpunkt und leichter zu finden als eine wandernde Flotilla.
+- **Kai an Land:** Sprint 167, mit Beachcomber 300. Damit ist ein Kai an Land schneller als ein sprintender Tylo (160), aber langsamer als dessen Beachcomber-Schub (10 s, von 560 abklingend). Mit Beachcomber holt der Tylo in 6,5 s rund 850 Einheiten auf. Wer näher an der Wasserkante liegt, wird erwischt.
+- **Selbst ergänzt, bitte prüfen:** In einer Kolonie verteidigt jede Bale nur sich selbst, sonst wären 3 Bales mit 6 Verteidigern und 3 Ringen nicht mehr zu jagen. Eine Kolonie hält höchstens einen Tag-Nacht-Zyklus. Eine Bale darf eine Weile neben einer Flotilla schwimmen, ohne Gruppe.
+- **Offen:** Beachcomber verhindert beim Kai das Austrocknen an Land, die Durst-Regel greift dann nicht. Vorschlag: dieselben Zahlen als Zeit (10 min, in großer Gefahr 20 min).
+
+### Leedsichthys und seine Flotilla (entschieden 03.11., geändert 06.11.)
+
+- Ein Leeds darf mit einem Eurhino-Schwarm gruppieren, 1 Leeds je Gruppe. Seine eigenen Jungen darf er mitbringen. *(Bis 06.11. war das eine Kai-Bale mit bis zu 16 Kai und Eurhino zusammen.)*
+- **Name** (entschieden am 04.11.): Eine Gruppe, mit der ein Leeds zieht, heißt **Flotilla**. Die Kai-Gruppe heißt Bale. Die reine Eurhino-Gruppe bleibt eine Shoal.
+- **Tropeognathus und die Flotilla** (entschieden am 04.11.): Tropes suchen eine Flotilla und fliegen mit, ohne zu stören. Gruppieren dürfen sie nicht. Kommt die Flotilla an eine Fischansammlung, bedienen sie sich selbst. Die Eurhinos vertreiben sie dann, weil sie dieselben Fische wollen, und Kai tun das genauso, wo eine Bale fischt; der Leeds bleibt passiv, er frisst keinen Fisch. Ein vertriebener Trope muss aus dem Wasser und den nächsten ruhigen Moment abwarten. Wehren kann er sich im Wasser nicht (3.8). Entwurf: `tropeognathus.md`.
+- **Niemand verteidigt den anderen.** Leeds verteidigt nur sich selbst und, wie bisher, seine eigenen Jungen. Seine Eurhinos verteidigen den Leeds nicht.
 - **Kein Stufenschutz.** Die anfangs vorgeschlagene Pilotfisch-Regel (Begleiter zählen als Apex) ist gestrichen. Sie hätte Xiphactinus die Beute genommen und Kai und Eurhino vom Leeds abhängig gemacht.
 
 **Widersprüche, die dabei auftauchen:**
 1. **Looming Presence wäre ein heimlicher Schutz über Werte.** Alle nicht gruppierten Tiere bis CW 4250 im Umkreis von 50 m verlieren 25 % Armor. In den Kurven hat die Fähigkeit keine Abklingzeit, ist also sehr wahrscheinlich passiv.
-   - In der Gruppe trifft das Xiphactinus (CW 2400), aber nicht die gruppierten Kai und Eurhino. Ein Kai tötet einen Xiph dann in 5 s statt 6 s.
+   - In der Gruppe trifft das Xiphactinus (CW 2400), aber nicht die gruppierten Eurhinos. Gegen einen geschwächten Xiph hätten sie dann leichteres Spiel.
    - Vorschlag: In einer gemischten Gruppe darf Leeds Looming Presence nicht ausrüsten. Vorbild ist Regel 8.1.1.
 2. **Weitere Leeds-Fähigkeiten, die Gegner schwächen oder heranziehen**, darf er nur nutzen, wenn er selbst angegriffen wird. Laut Kurven sind das Resonant Call, Shattering Cry, Acoustic Debilitation, Undertow, Inhale und Crushing Pressure.
 3. **Shoaling** ist ein Gruppen-Buff (+15 % Ausdauer-Regeneration). Laut Kurve ist er beim adulten Leeds auf 10 % abgeschwächt, also kaum spürbar. Das sollte man im Spiel prüfen.
@@ -266,9 +277,9 @@ Leitbild vom Nutzer: **von außen absolutes Chaos, von innen absolute Kontrolle.
 
 **Was die Gruppe dann noch bringt:**
 - Gemeinschaft und Rollenspiel.
-- Deckung durch Bewegung: Kai und Eurhino dürfen sich hinter oder unter dem Leeds verstecken. Leeds selbst darf sich aber nicht gezielt in den Weg stellen.
+- Deckung durch Bewegung: Eurhinos, und Kai, die eine Weile mitschwimmen, dürfen sich hinter oder unter dem Leeds verstecken. Leeds selbst darf sich aber nicht gezielt in den Weg stellen.
 - Ein Xiph-Rudel kontert das, indem es von zwei Seiten kommt.
-- Der Vorteil ist klein und hängt vom Spielen ab. Abhängig vom Leeds werden Kai und Eurhino dadurch nicht.
+- Der Vorteil ist klein und hängt vom Spielen ab. Abhängig vom Leeds werden die Eurhinos dadurch nicht.
 
 ## Stat-Vorschläge
 
@@ -356,9 +367,9 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 
 | Art | Zuhause | Weitere Orte |
 | --- | --- | --- |
-| Kaiwhekea | Route des Leedsichthys: Flussengen und Abstecher in Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal | Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
-| Eurhinosaurus | dieselbe Route, oft in derselben Gruppe | Nistfluss wie bisher |
-| Leedsichthys | Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seiner Gruppe |
+| Kaiwhekea | nomadisch ohne feste Route: hin und her zwischen Fischgründen und Kolonien in den Flussengen und den Ozeanen Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal | Kolonien an Stränden und Felsen; Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
+| Eurhinosaurus | Route des Leeds als seine Flotilla; bis zu 4 bei einer Kai-Bale | Nistfluss wie bisher |
+| Leedsichthys | eigensinnig auf seiner Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seinem Schwarm |
 | Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht nur vor Tylo |
 | Tylosaurus | unverändert: Ozeane und Flussengen | einziger Apex in beiden Zonen |
 | Sachicasaurus | Kelp, Riffe, Untiefen und Strände der Ozeane: 10 halbe Reviere in Kelp Vale, Coastal Bluffs, Palm Islands, Stonebed Shoal und Abyssal Depths | in Abyssal Depths auf den hohen Felsvorsprüngen zwischen den Tiefen; Palm ist die Front zu Deino und Spino; am Strand dieselben Beaching-Regeln wie Tylo; Kinderstube der Mütter an der Küste von Tallbrush Coasts |
@@ -367,8 +378,8 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 | Spinosaurus | Seen, Flüsse und Flussengen wie bisher; vom Meer nur Palm Islands | auf Palm Revierkämpfe mit Sachi |
 
 **Was die Aufteilung bewirkt:**
-- **Kai und Eurhino haben keinen sicheren Ort, nur bessere Zeiten.** In den Flussengen lauern Xiph, Deino und Spino, in den Ozeanen Tylo, nachts Sachi in Kelp und Untiefen und außer bei Palm Livy. Die Route selbst wird zum Spiel.
-- **Abstecher ins Süßwasser** (entschieden am 05.11.): Die Flotilla darf in die Seen und das Süßwasser, das mit den Flussengen verbunden ist. Krill gibt es im Spiel auch dort. Das bringt Abwechslung in die strengen Routen. Ein sicherer Hafen wird es nicht: Dort lebt Spino, der Xiph darf in die verbundenen Seen folgen, und die Neugier auf Landtiere zieht die Flotilla ans Ufer zu den Fleischfressern vom Land. Welche POIs verbunden sind, muss im Spiel geklärt werden.
+- **Kai und Eurhino haben keinen sicheren Ort, nur bessere Zeiten.** In den Flussengen lauern Xiph, Deino und Spino, in den Ozeanen Tylo, nachts Sachi in Kelp und Untiefen und außer bei Palm Livy. Für den Eurhino wird die Route zum Spiel, für den Kai die Wahl der Kolonie.
+- **Abstecher ins Süßwasser** (entschieden am 05.11.): Flotillas und Kai-Bales dürfen in die Seen und das Süßwasser, das mit den Flussengen verbunden ist. Krill gibt es im Spiel auch dort. Das bringt Abwechslung in die strengen Routen. Ein sicherer Hafen wird es nicht: Dort lebt Spino, der Xiph darf in die verbundenen Seen folgen, und die Neugier auf Landtiere zieht die Flotilla ans Ufer zu den Fleischfressern vom Land. Welche POIs verbunden sind, muss im Spiel geklärt werden.
 - **Neugier auf Landtiere** (entschieden am 05.11.): Kai, Eurhino und Leeds sind unglaublich neugierig auf Landtiere. Sie folgen ihnen am Ufer, die Flotilla springt vor Freude, und Kai gehen zu Pflanzenfressern an Land, um Hallo zu sagen. Das verbindet die Wasserwelt mit der Welt an Land.
 - **Xiph hat Fressfeinde** (entschieden am 03.11.): alles, was ihn clampen kann. Tylo (Tragkraft 3000), Deino (3900) und Sarco (3100) packen einen adulten Xiph mit CW 2400. Vor Tylo flieht er wie der Weiße Hai vor dem Orca, und seit dem 05.11. nur vor ihm. Krokodile jagen ihn mit Vergnügen und versuchen, ihn aus dem Wasser zu tragen, aber er flieht nicht vor ihnen. Sachi könnte ihn clampen (4001), trifft ihn aber nicht. Austroraptor packt Xiph-Junge bis Juvenile. Spino und Xiph ignorieren sich vollständig.
 - **Krokodile jagt der Xiph nach Stufe** (vereinfacht am 05.11.). Sarco ist Large, also ab 4: 4 gewinnen (10 s), verlieren aber 2 Tiere, 6 verlieren eines, 3 verlieren alles. Einen einzelnen adulten Deino ab 6, als einzige Ausnahme von der Apex-Grenze: 4 verlieren immer, 5 gewinnen in 21 s und verlieren 3, 6 gewinnen in 15 s und verlieren 2. Krokodile sind keine bevorzugte Beute. Weitere Bedingungen wie Abstand zum Ufer gibt es nicht mehr.

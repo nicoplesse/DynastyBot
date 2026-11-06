@@ -8,14 +8,15 @@
     "defend": "wehrt sich",
     "flee": "flieht",
     "group": "Gruppe",
+    "meet": "begegnen sich",
     "ignore": "ignoriert",
     "none": "kein Kontakt"
   },
   "order": ["kaiwhekea", "eurhinosaurus", "leedsichthys", "xiphactinus", "tylosaurus", "sachicasaurus", "livyatan", "deinosuchus", "spinosaurus", "sarcosuchus"],
   "relations": {
     "kaiwhekea": {
-      "eurhinosaurus": ["group", "Mischgruppe bis 16, keiner verteidigt den anderen"],
-      "leedsichthys": ["group", "1 Leeds je Gruppe, dann heißt sie Flotilla; keine Verteidigung in beide Richtungen"],
+      "eurhinosaurus": ["group", "bis zu 4 in der Bale, meist eine Freundesgruppe; keiner verteidigt den anderen"],
+      "leedsichthys": ["meet", "keine Gruppe mehr; schwimmt eine Weile neben einer Flotilla und reitet auf der Bugwelle; keine Verteidigung"],
       "xiphactinus": ["defend", "2 Verteidiger und Schutzring um die Kälber; gegen einen Kai mit Ring verliert selbst ein voller Schwarm"],
       "tylosaurus": ["flee", "flieht auf Sicht, stellt sich nur am Nest"],
       "sachicasaurus": ["flee", "flieht auf Sicht aus dem Kelp ins offene Wasser oder auf hohe Felsen; die Nachtwache schlägt Alarm; Sachi ist der einzige, der einen adulten Kai packen kann, und ein gepackter Kai ist verloren, die Bale hilft nicht; stellt sich nur am Nest"],
@@ -25,8 +26,8 @@
       "sarcosuchus": ["defend", "Sarco ist Large, kein Apex: Schutzring statt Flucht"]
     },
     "eurhinosaurus": {
-      "kaiwhekea": ["group", "Wache der Kai-Gruppe, schlägt Alarm statt zu kämpfen; bleibt, weil er mehr davon hat"],
-      "leedsichthys": ["group", "darf mit 1 Leeds ziehen (Flotilla), keine Verteidigung"],
+      "kaiwhekea": ["group", "bis zu 4 als Wache einer Kai-Bale, schlagen Alarm statt zu kämpfen"],
+      "leedsichthys": ["group", "der Schwarm ist seine Flotilla, wie Thunfische beim Walhai; keine Verteidigung"],
       "xiphactinus": ["flee", "flieht vor Rudeln ab 3, eng zusammen; Xiph sprintet schneller, Eurhino hält länger durch"],
       "tylosaurus": ["flee", "flieht an der Oberfläche, ist schneller"],
       "sachicasaurus": ["flee", "flieht aus dem Kelp ins offene Wasser; ein gepackter Eurhino ist verloren"],
@@ -36,8 +37,8 @@
       "sarcosuchus": ["defend", "Sarco ist kein Apex: bis 3 wehren sich, meist entkommt der Schwarm durch Tempo"]
     },
     "leedsichthys": {
-      "kaiwhekea": ["group", "zieht mit einer Kai-Gruppe als Flotilla, schläft nachts bei ihr, verteidigt sie nicht"],
-      "eurhinosaurus": ["group", "zieht mit, verteidigt nicht"],
+      "kaiwhekea": ["meet", "keine Gruppe; hält an, um einer Kai-Balz zuzuschauen, und zieht dann eigensinnig seine Route"],
+      "eurhinosaurus": ["group", "seine Flotilla; schläft nachts bei ihr, verteidigt sie nicht"],
       "xiphactinus": ["defend", "Xiph jagt nur Leeds-Junge; der Vater sammelt sie"],
       "tylosaurus": ["defend", "Tylo muss Leeds zuerst jagen, besonders die Jungen"],
       "sachicasaurus": ["defend", "adulte Leeds darf nur ein Sachi-Paar jagen; Junge packt er"],

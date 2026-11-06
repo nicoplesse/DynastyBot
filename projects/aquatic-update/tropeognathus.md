@@ -1,6 +1,6 @@
 # Entwurf: Tropeognathus und die Flotilla
 
-Das Trope-Profil bleibt unverändert. Neu ist nur, wie er sich zu einer Flotilla verhält, der Gruppe aus einem Leedsichthys mit Kaiwhekea und Eurhinosaurus. Der Text unten ist auf Englisch, wie zur Einreichung. Weil der Trope kein Wassertier ist, liegt der Entwurf nicht bei den Profil-Entwürfen und steht nicht im App-Tab.
+Das Trope-Profil bleibt unverändert. Neu ist nur, wie er sich zu einer Flotilla verhält, der Gruppe aus einem Leedsichthys mit seinen Eurhinosaurus. Kai gehören seit dem 06.11. nicht mehr dazu, sie leben in eigenen Kolonien. Der Text unten ist auf Englisch, wie zur Einreichung. Weil der Trope kein Wassertier ist, liegt der Entwurf nicht bei den Profil-Entwürfen und steht nicht im App-Tab.
 
 **Was sich ändert:**
 
@@ -8,7 +8,7 @@ Das Trope-Profil bleibt unverändert. Neu ist nur, wie er sich zu einer Flotilla
 | --- | --- | --- |
 | Flotilla | – | sucht eine Flotilla und fliegt mit, ohne zu stören; darf nicht mit ihr gruppieren |
 | Fischen | – | wartet, bis die Flotilla an eine Fischansammlung kommt, und bedient sich dann selbst |
-| Vertreiben | – | Kai und Eurhino vertreiben ihn, weil sie dieselben Fische wollen; der Leeds bleibt passiv, denn er frisst keinen Fisch |
+| Vertreiben | – | die Eurhinos vertreiben ihn, weil sie dieselben Fische wollen, und Kai genauso, wo eine Bale fischt; der Leeds bleibt passiv, denn er frisst keinen Fisch |
 | Nach dem Vertreiben | – | muss aus dem Wasser und den nächsten ruhigen Moment abwarten |
 
 **Vorbild:** Seevögel folgen Delfinen, Thunfischen und Walen, weil diese die Fischschwärme an die Oberfläche treiben. Fischer halten deshalb nach Vogelschwärmen Ausschau, wenn sie Fische suchen.
@@ -20,9 +20,10 @@ Das Trope-Profil bleibt unverändert. Neu ist nur, wie er sich zu einer Flotilla
 ## Cross-Species Interaction (additions)
 
 - **Flotillas:**
-  - A flotilla is the travelling group of a Leedsichthys with Kaiwhekea and Eurhinosaurus. Tropeognathus seek them out and follow them from the air, keeping enough distance not to disturb them, the way seabirds follow dolphins and tuna to a shoal of fish.
+  - A flotilla is the travelling group of a Leedsichthys with its Eurhinosaurus. Tropeognathus seek them out and follow them from the air, keeping enough distance not to disturb them, the way seabirds follow dolphins and tuna to a shoal of fish.
   - Tropeognathus never group with a flotilla.
   - They wait until the flotilla reaches a gathering of fish, then dive in to feed themselves.
-  - Flotillas do not welcome them. Kaiwhekea and Eurhinosaurus want the same fish, and drive them off. The Leedsichthys stays passive, as it does not eat fish.
+  - Flotillas do not welcome them. Eurhinosaurus want the same fish, and drive them off. The Leedsichthys stays passive, as it does not eat fish.
+  - Kaiwhekea bales fishing nearby want the same fish too, and drive them off in the same way.
   - A Tropeognathus that is driven off must leave the water, and waits for the next quiet moment before it dives again.
   - Tropeognathus may not attack while either side is swimming (3.8). They never fight back in the water, and cannot hunt the members of a flotilla.

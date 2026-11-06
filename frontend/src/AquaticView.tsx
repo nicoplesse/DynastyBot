@@ -299,8 +299,8 @@ function SpeedTable({ profiles, extras }: { profiles: AquaticSummary[]; extras: 
   </section>;
 }
 
-const RELATION_SHORT: Record<RelationKind, string> = { hunt: 'jagt', limited: 'bedingt', rival: 'Revier', defend: 'wehrt sich', flee: 'flieht', group: 'Gruppe', ignore: 'ignoriert', none: '·' };
-const RELATION_ORDER: RelationKind[] = ['hunt', 'limited', 'rival', 'defend', 'flee', 'group', 'ignore', 'none'];
+const RELATION_SHORT: Record<RelationKind, string> = { hunt: 'jagt', limited: 'bedingt', rival: 'Revier', defend: 'wehrt sich', flee: 'flieht', group: 'Gruppe', meet: 'Begegnung', ignore: 'ignoriert', none: '·' };
+const RELATION_ORDER: RelationKind[] = ['hunt', 'limited', 'rival', 'defend', 'flee', 'group', 'meet', 'ignore', 'none'];
 
 // Who hunts, flees from or defends against whom, as the drafts say: the row acts, the column is the other side.
 function RelationsMatrix({ profiles, extras, relations }: { profiles: AquaticSummary[]; extras: AquaticExtra[]; relations: AquaticRelations }) {

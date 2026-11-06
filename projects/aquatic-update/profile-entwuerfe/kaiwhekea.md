@@ -12,17 +12,19 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 | Gruß | – | eigener Gruß je Kai; Kühe übernehmen den Gruß des gewählten Bullen | Begrüßung nach Geschlecht |
 | Dimorphismus | freiwillig | Pflicht, weil der Gruß das Geschlecht nicht mehr zeigt | – |
 | Bindung | promiskuitiv | Harem für eine Saison, nach 5 Gelegen lebenslanges Paar | ähnlich |
-| Gruppe | 8 (6 ♀, 2 ♂) | 16 Sub/Adults (Kai und Eurhinosaurus zusammen), dazu 1 Leedsichthys; mit Leeds heißt die Gruppe Flotilla | 20, Mischherde |
+| Gruppe | 8 (6 ♀, 2 ♂) | 16 Sub/Adults, dazu bis zu 4 Eurhinosaurus (eine Freundesgruppe); kein Leedsichthys mehr in der Gruppe | 20, Mischherde |
 | Männchen | verlassen die Gruppe | bis zu 2 dominante Bullen begleiten die Bale, alle übrigen sind nicht-dominant; junge Bullen ziehen oft aus, müssen aber nicht | Hirsche schützen die Herde |
 | Führung | – | Leitkuh, dominante Bullen, Tanten | Leithirsch, Leithirschkühe |
 | Verteidigung | bis 3 im Kampf | 2 aktive Verteidiger plus Schutzring aus bis zu 6 um die Kälber | 2 plus Kreis aus 8 |
 | Apex | flieht vor Spino und Deino | flieht vor allen Apex-Jägern, außer am Nest; ein gepackter Kai ist verloren | gleich |
 | Land | kurz | bis 75 % Durst an Land, in großer Gefahr bis 50 %; schläft auch auf hohen Felsen | – |
+| Kolonie | – | geht wie Seelöwen sehr oft an Land; mehrere Bales liegen zusammen, jede verteidigt nur sich; nach einem Tag ist der Fisch knapp, dann zieht jede weiter | – |
 | Fischen | – | eigene Fangtechniken: Schwarm treiben, Kelp aufscheuchen, Strand-Fischen; Reihenfolge am Schwarm | – |
-| Nacht | – | Ruhe in Untiefen, 1–2 Wachen, erlaubte Nachtaktivitäten; ein Leeds in der Gruppe schläft oft mit | Nachtwache, Downtime |
-| Wanderung | Küstenrouten | Route des Leedsichthys, Rhythmus nach Jahreszeit | feste Wanderrouten |
+| Nacht | – | Ruhe in Untiefen, 1–2 Wachen, erlaubte Nachtaktivitäten | Nachtwache, Downtime |
+| Wanderung | Küstenrouten | nomadisch ohne feste Route: hin und her zwischen Fischgründen und Kolonien, Rhythmus nach Jahreszeit | feste Wanderrouten |
+| Leedsichthys | jagt dessen Junge zuerst | keine Gruppe; schwimmt eine Weile neben einer Flotilla; ein Leeds schaut gern der Balz zu | – |
 | Nisten | irgendwo an der Küste | am Geburtsstrand der Leitkuh; nach einem Misserfolg wird gewechselt | – |
-| Werte | CW 4000, Health 750, Land-Sprint 100 | CW 4000, Health 1000, Land-Sprint 250 | CW 5500, Health 1400 |
+| Werte | CW 4000, Health 750, Land-Sprint 100 | CW 4000, Health 1000, Land-Sprint 167 (mit Beachcomber 300) | CW 5500, Health 1400 |
 
 **Neue Systeme in diesem Entwurf:**
 - **Der eigene Gruß** ist der Kern des Kai:
@@ -135,9 +137,32 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 
 **Warum der Gruß das Geschlecht nicht mehr zeigt:** Kühe übernehmen den Gruß ihres Bullen, also grüßen beide gleich. Deshalb übernimmt die Unterart diese Aufgabe, wie beim Tylo.
 
-**Leedsichthys in der Gruppe:** Erlaubt, aber ohne Schutz. Keiner verteidigt den anderen, und es gibt keinen Stufenschutz. Kai sollen ohne Leeds genauso gut zurechtkommen. Echtes Vorbild sind Thunfische und Fleckendelfine, die nur aus Sicherheit zusammen ziehen, und der Walhai mit seinen Begleitern.
+**Leedsichthys in der Gruppe (bis 06.11.):** Ein Leeds durfte mit der Bale gruppieren, ohne Schutz in beide Richtungen. Seit dem 06.11. gruppieren Kai und Leeds nicht mehr (siehe unten).
 
-**Warum dieselbe Route wie Leeds:** Kai ziehen in die Ozeane, weil es dort die wertvollsten Fischarten gibt, nicht wegen des Leeds. Die Route wechselt zwischen zwei Gefahren. In den Flussengen warten Xiphactinus-Schwärme, Deino und Spino. In den Ozeanen jagen Tylo, nachts Sachi, und außer bei Palm Islands Livy. Einen sicheren Ort gibt es nicht, nur bessere und schlechtere Zeiten.
+**Entschieden am 06.11. (vom Nutzer): Kolonie statt Flotilla.**
+- **Getrennt:** Kai und Leeds gruppieren nicht mehr. Die Flotilla ist jetzt der Leeds mit seinen Eurhinos.
+- **Der Eurhino gehört zu beidem:** Als Schwarm zieht er mit dem Leeds. Bis zu 4 Eurhinos dürfen stattdessen bei einer Kai-Bale leben.
+- **Die Balz bleibt genau so,** wie sie ist.
+- **Kolonien:** Kai gehen wie Seelöwen sehr oft an Land, und mehrere Bales liegen dort zusammen.
+- **Nicht sesshaft:** Eine große Kolonie frisst den Fisch um sich herum schnell leer. Deshalb schwimmen die Bales ständig hin und her, zwischen Fischgründen und Kolonien.
+- **Der Leeds ist eigensinnig:** Er folgt zu 100 % seiner eigenen Route.
+  - Einer Kai-Balz schaut er gern zu und hält dafür an, auch ohne Gruppe. Das Geplänkel gefällt ihm, und seine Eurhinos springen mit.
+  - Sucht die Bale danach ihren Geburtsstrand auf, zieht er mit seinen Eurhinos seinen eigenen Weg. Nur wenn der Strand auf seiner Route liegt, schwimmen sie ein Stück zusammen.
+- **Warum:** Jede Art funktioniert allein, das Treffen ist der Bonus. Kai nisten im Osten (Palm Islands, Castaway Isle, Volcano Islands), Leeds und Eurhino balzen im Westen an den Flüssen. Eine feste Kolonie ist außerdem leichter zu finden als eine wandernde Flotilla.
+- **Echte Vorbilder:**
+  - Seelöwen pendeln zwischen Kolonie und Fischgrund. Draußen schließen sie sich an, wo gefressen wird, zum Beispiel Delfinen und Buckelwalen an einem Fischschwarm.
+  - Um große Seevogel-Kolonien bleibt ein Ring, in dem kaum noch Fisch ist. Genau deshalb müssen große Kolonien weit fahren oder weiterziehen.
+  - Thunfische ziehen so zuverlässig mit Walhaien, dass Thunfischfänger ihre Netze gezielt um Walhaie legen. Das ist das Vorbild für den Eurhino beim Leeds.
+
+**Selbst ergänzt, bitte prüfen:**
+1. **Eurhinos in der Bale** zählen zusätzlich zu den 16 Kai, meist eine Freundesgruppe (2 bis 4). Das sind höchstens 20, genau wie die Mischherde des Para.
+2. **In einer Kolonie verteidigt jede Bale nur sich selbst.** Sonst hätten 3 Bales zusammen 6 Verteidiger und 3 Schutzringe und wären nicht mehr zu jagen. In echten Kolonien verteidigt auch jede Mutter nur ihr eigenes Junges.
+3. **Eine Kolonie hält höchstens einen Tag-Nacht-Zyklus,** dann ist der Fisch knapp, und jede Bale zieht ihren Weg. Folgen darf keine der anderen. Das ist die alte Regel „Bales teilen einen POI höchstens einen Tag“, nur dass sie jetzt zusammen an Land liegen dürfen.
+4. **Treffen mit einer Flotilla:** Eine Bale darf eine Weile neben einer Flotilla schwimmen, auf der Bugwelle reiten und die Fische um den Riesen fangen. Das geht ohne Gruppe und ohne Verteidigung, höchstens einen Tag-Nacht-Zyklus wie bei anderen Bales. Der Leeds ändert seinen Kurs dafür nicht.
+5. **Rückkehr in die Kolonie:** Wer vom Fischen zurückkommt, grüßt. Pelzrobben-Mütter finden ihr Junges in der Kolonie unter Hunderten an der Stimme. Dafür ist der eigene Gruß wie gemacht.
+6. **Abstand zum Wasser:** Kai liegen gut oberhalb der Wasserkante, außerhalb der Reichweite des Tylo-Schubs (siehe Land-Sprint).
+
+**Warum ohne feste Route:** Kai ziehen in die Ozeane, weil es dort die wertvollsten Fischarten gibt, nicht wegen des Leeds. Ihr Weg wechselt zwischen zwei Gefahren. In den Flussengen warten Xiphactinus-Schwärme, Deino und Spino. In den Ozeanen jagen Tylo, nachts Sachi, und außer bei Palm Islands Livy. Einen sicheren Ort gibt es nicht, nur bessere und schlechtere Zeiten.
 
 **Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
 - **Neugier auf Landtiere:** Kai, Eurhino und Leeds sind unglaublich neugierig auf Landtiere. Kai kommen bei Pflanzenfressern auch aus dem Wasser und gehen an Land, um Hallo zu sagen. Laufen können sie gut. Die Flotilla springt dabei fröhlich in die Luft.
@@ -146,20 +171,20 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 
 **Selbst ergänzt, bitte prüfen:** Besuche an Land zählen zur Landzeit, also zurück ins Wasser bei 75 % Durst. Zu Fleischfressern geht ein Kai nicht an Land, sie werden nur aus dem Wasser beobachtet. So steht es schon im heutigen Profil („Experienced adults do this only with herbivores“).
 
-**Entschieden am 06.11. (vom Nutzer): Land-Sprint 250.**
-- Der Grundwert für den Sprint an Land steigt von 100 auf 250. Gehen (30) und Traben (58) bleiben.
+**Entschieden am 06.11. (vom Nutzer): Land-Sprint 300 mit Beachcomber.**
+- Beachcomber bleibt ein wichtiger Teil des Kai: im Hide-Slot, +80 % Landtempo, +50 % Ausdauer-Erholung an Land, kein Austrocknen an Land.
+- Mit Beachcomber sprintet der Kai an Land höchstens 300. Daraus folgt der Grundwert: 300 ÷ 1,8 ≈ **167** (Sprint-Multiplikator 1,67 auf die bisherigen 100). Gehen (30) und Traben (58) bleiben.
+- *(Zuerst stand hier am selben Tag ein Grundwert von 250. Mit Beachcomber wären das 450 gewesen.)*
 - **Warum:** An Land soll ein Kai etwas schneller sein als ein sprintender Tylo (160), aber langsamer als dessen Beachcomber-Schub. Den Schub bekommt der Tylo beim Verlassen des Wassers: 10 s lang bis zu +250 %, also von 560 abklingend auf 160, und nur alle 120 s.
 - **Was das bedeutet:**
-  - Der Tylo ist knapp 8 s lang schneller und holt dabei rund 1200 Einheiten auf.
-  - Liegt ein Kai näher an der Wasserkante, wird er erwischt. Liegt er weiter oben, entkommt er, und danach holt ihn der Tylo nicht mehr ein.
+  - **Mit Beachcomber (300):** Der Tylo ist 6,5 s lang schneller und holt dabei rund 850 Einheiten auf. Liegt ein Kai näher an der Wasserkante, wird er erwischt. Liegt er weiter oben, entkommt er, und danach ist er um 140 pro Sekunde schneller.
+  - **Ohne Beachcomber (167):** Der Tylo ist fast die ganzen 10 s schneller und holt rund 1900 Einheiten auf. Danach sind beide fast gleich schnell (167 gegen 160).
   - Vorbild sind die Orcas in Patagonien, die sich auf den Strand werfen, um Seelöwen zu packen.
 - **Landjäger bleiben schneller:** Deino sprintet 550, Spino 700, Sarco 900. An Land rettet den Kai also nur der Weg ins Wasser.
+- **Im Spiel prüfen:** Ob Beachcomber die 167 wirklich auf 300 bringt, hängt davon ab, wie das Spiel die Dynasty-Anpassung und den Bonus verrechnet (multipliziert oder addiert).
 
-**Noch offen: Beachcomber des Kai.**
-- Der Kai kann Beachcomber im Hide-Slot wählen: +80 % Landtempo, +50 % Ausdauer-Erholung an Land, kein Austrocknen an Land.
-- Mit dem Grundwert 250 läuft er damit 450. Der Tylo wäre dann nur noch knapp 3 s schneller und holt rund 150 Einheiten auf. Er hätte also kaum noch eine Chance.
-- Außerdem greift die Durst-Regel nicht, weil ein Kai mit Beachcomber an Land nicht austrocknet.
-- **Vorschlag:** Beachcomber ist für den Kai nicht erlaubt, so wie Looming Presence für den Leeds in der Mischgruppe. Das löst beide Probleme.
+**Noch offen:**
+- **Durst-Regel und Beachcomber:** Mit Beachcomber trocknet ein Kai an Land nicht aus, die Regel „zurück bei 75 % Durst“ greift dann nie. Vorschlag: dieselben Zahlen als Zeit, also höchstens 10 min am Stück an Land, in großer Gefahr 20 min. Das passt zu einer Kolonie, die sehr oft an Land geht, und begrenzt trotzdem die Zeit an Land.
 - **Sachi an Land:** Sein Grundtempo ist unbekannt, weil seine Mod nicht heruntergeladen ist. Beachcomber gibt ihm dauerhaft +10 % und denselben Schub wie dem Tylo.
 
 ---
@@ -167,7 +192,7 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 Kaiwhekea is an extinct genus of plesiosaur from the Late Cretaceous (Maastrichtian age) of what is now New Zealand. Kaiwhekea belongs to the clade Aristonectinae inside the family Elasmosauridae. With their long necks, small heads and fine interlocking teeth, they fed on small, soft-bodied prey such as fish and squid. Like other plesiosaurs, they swam with four large flippers, and swallowed stones that are still found in their stomachs today.
 
 Author: QueenBella, with contributions from Lukesasa. Revised for the Aquatic Update.
-Profile inspired by sea turtles, bottlenose dolphins and elephant seals.
+Profile inspired by sea lions, elephant seals, sea turtles and bottlenose dolphins.
 
 ## Overview
 
@@ -175,10 +200,10 @@ Profile inspired by sea turtles, bottlenose dolphins and elephant seals.
 
 - Every Kaiwhekea has its own greeting. Cows take on the greeting of the bull they choose, for one season, or for life in a lifelong bond.
 - Kaiwhekea form seasonal harems. After 5 successful clutches together, or by mutual agreement, a bull and a cow may become a lifelong pair.
-- Kaiwhekea are nomadic and follow the Leedsichthys migration route. They become territorial only around their nesting pools.
+- Kaiwhekea are nomadic. They roam back and forth between fishing grounds and haul-outs, and like sea lions they spend much of the day on land, often in colonies of several bales. They become territorial only around their nesting pools.
 - Kaiwhekea have a passive nature.
 - Kaiwhekea feed on fish, shellfish and squid. They do not hunt other players and do not claim or feed from bodies.
-- Kaiwhekea may group with Eurhinosaurus and with one Leedsichthys. Kaiwhekea do not defend the species they group with, and those species do not defend them.
+- Kaiwhekea may group with up to 4 Eurhinosaurus. They do not group with Leedsichthys. Kaiwhekea do not defend grouped Eurhinosaurus, and Eurhinosaurus do not defend them.
 - Kaiwhekea tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -195,8 +220,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 This group is known as a bale.
 
 - **Bulls:** There is no limit on bulls. A bale has up to 2 dominant bulls, and any number of non-dominant bulls (see Bale Structure).
-- **Eurhinosaurus** may join a bale and count towards the 16 Sub/Adults. An orphaned Eurhinosaurus calf may travel with the bale like any Eurhinosaurus, but it is not an adoptee.
-- **Leedsichthys:** One Leedsichthys may join a bale in addition to the 16 Sub/Adults, together with its own offspring. A bale that travels with a Leedsichthys is known as a flotilla.
+- **Eurhinosaurus:** Up to 4 Eurhinosaurus, usually one friend group, may join a bale in addition to the 16 Sub/Adults. An orphaned Eurhinosaurus calf may travel with the bale like any Eurhinosaurus, but it is not an adoptee.
+- **Leedsichthys:** Kaiwhekea do not group with Leedsichthys. A Leedsichthys travels with its own flotilla of Eurhinosaurus (see Cross-Species Interaction).
+- **Colonies:** Several bales may rest together at the same haul-out as a colony. They do not group beyond these limits, and each bale defends only itself (see Colonies).
 - **Splitting:** Once offspring reach Sub-Adult, the bale must remain at 16 Sub/Adults or below. Lifelong pairs and mothers with their daughters stay together when a bale splits. Young bulls often leave at Sub-Adult (see Growing Up).
 - **Bale size in courtship:** Bales may court at full size, but often split into smaller nursery groups to nest, so as not to empty the fishing grounds near the pools.
 
@@ -225,7 +251,7 @@ This group is known as a bale.
 
 ## Preferred Diet
 
-- Kaiwhekea live on fish, shellfish and squid. Fish are their staple, and the richest ocean fishing grounds are the reason they follow the route.
+- Kaiwhekea live on fish, shellfish and squid. Fish are their staple, and the richest ocean fishing grounds draw them out to sea again and again.
 - Calves catch small fish on their own from the moment they can swim. Mothers and aunts often share their catch.
 - Kaiwhekea swallow pebbles and shells from beaches and riverbeds. The stones help them grind their food, and to balance in the water.
 - Kaiwhekea fish by day. At night they rest and do not fish.
@@ -304,7 +330,7 @@ Every Kaiwhekea has its own greeting. It tells others who it is, and, for a cow,
 - **Adolescents:**
   - Every Adolescent develops its own greeting (see Greetings).
   - **Young bulls** begin to spar, swim in sync with a best friend, and shadow the dominant bulls to learn their dance. Many practise the courtship dance with their best friend.
-  - **Young cows** stay close to their mothers, help the aunts with younger calves, and learn the route from the lead cow.
+  - **Young cows** stay close to their mothers, help the aunts with younger calves, and learn the fishing grounds and haul-outs from the lead cow.
 - **Sub-Adult:**
   - At Sub-Adult, offspring are adults of the bale and are expected to behave as such. This includes night watch, the protective ring and active defence.
   - Young cows usually stay in their natal bale for life.
@@ -325,14 +351,14 @@ Every Kaiwhekea has its own greeting. It tells others who it is, and, for a cow,
 
 - **Swimming:** Kaiwhekea are fast and agile swimmers. They swim near the surface, rising to breathe in smooth rolls, and enjoy leaping out of the water as a form of play.
 - **Scanning:** They are watchful, and often raise their head above the surface to look around, even while fishing.
-- **Basking:** They bask in shallow water, on beaches and on high rocks (see Time on Land).
+- **Basking:** They bask in shallow water, on beaches and on high rocks (see Time on Land and Colonies).
 - **Open water:** Kaiwhekea prefer clear water where they can see far. They become uneasy in murky channels and dense kelp, where predators can hide.
 - **Voice:** Kaiwhekea are vocal by day. A steady chatter of calls tells the bale that all is well. The chatter falls silent at times of stress, and at night the bale stays quiet.
 - **Curiosity:** Kaiwhekea are fascinated by land animals. When they meet terrestrial species near the water, they swim over to watch them, follow them along the shore, and often leap out of the water in excitement. Some attempt to get their attention by fetching objects from the seafloor and presenting them as trinkets. Experienced adults do this only with herbivores, and may go ashore to greet them (see Time on Land).
 
 ### Time on Land
 
-Kaiwhekea are at home in the water, but may leave it for as long as their skin allows. Like sea lions and penguins, which leap onto rocks and ice to escape orcas, they rest and sleep on high rocks where marine hunters cannot reach them.
+Kaiwhekea are at home in the water, but like sea lions they haul out on land many times a day, to rest, bask and socialise. They may stay for as long as their skin allows. Like sea lions and penguins, which leap onto rocks and ice to escape orcas, they rest and sleep on high rocks where marine hunters cannot reach them.
 
 - **Drying out:**
   - Kaiwhekea dislike drying out. Once their thirst drops to 75%, they return to the water. This takes about 10 minutes on land.
@@ -350,8 +376,19 @@ Kaiwhekea are at home in the water, but may leave it for as long as their skin a
   - Visits count towards their time on land, so they return to the water once their thirst drops to 75% (see Drying out).
   - Carnivores are only watched from the water, never visited.
 - **Beaches:**
-  - Flat beaches are not safe. Sachicasaurus move quickly on land, and Tylosaurus lunge out of the water.
-  - Crocodylians and shore hunters can reach beaches and low rocks, so Kaiwhekea on land keep watch for them.
+  - Flat beaches are not safe. A Tylosaurus that throws itself onto the beach is faster than a Kaiwhekea for a few seconds. Kaiwhekea that rest well above the waterline are out of its reach, and once its burst fades, they outrun it on land. Sachicasaurus move quickly on land too.
+  - Crocodylians and shore hunters can reach beaches and low rocks, and are faster on land. Kaiwhekea on land keep watch for them, and escape into the water.
+
+### Colonies
+
+Kaiwhekea are colonial, like sea lions. Wherever bales haul out together, a colony forms.
+
+- **Haul-outs:** Colonies form on beaches and rocks along the coasts of the channels and oceans, close to good fishing grounds. Any coast can hold one, and the best are known to the elders.
+- **Life in the colony:** A colony is loud and lively. Kaiwhekea chatter, greet each other, bask side by side and cross necks. Calves play at the water's edge under the eyes of the aunts. Members slip back into the water whenever their skin needs it, and haul out again.
+- **Coming back:** Members returning from fishing greet their bale mates on arrival. Like fur seal mothers that find their pup among hundreds by its voice, Kaiwhekea find their own by their greeting.
+- **Several bales:** Bales in a colony greet each other, rest side by side and may fish the same grounds. They do not group beyond the group limits. Each bale keeps its own defenders and its own protective ring, and no bale defends another.
+- **Moving on:** A colony empties the fish around it quickly. Bales stay at a haul-out for no longer than one day–night cycle, then each bale goes its own way. As after any meeting, one bale may not follow another (see Other Bales).
+- **Danger:** Colonies draw hunters. Tylosaurus and Sachicasaurus wait in the water below, and land carnivores come from the shore. Kaiwhekea rest well above the waterline, and the high rocks remain the safest place.
 
 ### Fishing
 
@@ -365,12 +402,12 @@ Kaiwhekea are skilled and cooperative fishers. Each bale develops its own techni
 
 ### Day and Night
 
-- **Rhythm:** Kaiwhekea are diurnal. Mornings are for travel, the middle of the day for fishing, and the afternoon for socialising and basking. At dusk the bale moves to its resting place.
+- **Rhythm:** Kaiwhekea are diurnal. Mornings are for travel, the middle of the day for fishing, and the afternoon for socialising and basking at a haul-out. At dusk the bale moves to its resting place.
 - **Resting place:**
   - The lead cow chooses where the bale rests: calm, shallow water near an island or near high rocks, where the bale can see the surface and the shore.
   - Experienced bales avoid known Sachicasaurus territories and banks where crocodylians were seen.
   - A bale that was attacked at a resting place does not use it again for the rest of the session.
-- **Rest formation:** The bale rests close together at the surface, with calves in the centre, cows around them, and the bulls and grouped Eurhinosaurus on the outer edge. A Leedsichthys travelling with the bale often sleeps beneath or beside it, but does not keep watch.
+- **Rest formation:** The bale rests close together at the surface, with calves in the centre, cows around them, and the bulls and grouped Eurhinosaurus on the outer edge.
 - **Night watch:**
   - Up to 2 individuals stay awake and slowly circle the resting bale. These are usually bulls, or cows if no bulls are present.
   - Watch duty is passed on with a gentle nudge: the watcher swims softly into the next one, who takes over.
@@ -388,14 +425,15 @@ Night is a time for rest and bonding. The bale does not migrate, fish or court a
 
 ### Migration
 
-Bales are creatures of habit, and follow the Leedsichthys migration route marked on the profile map.
+Bales are nomadic, but follow no fixed route. They swim back and forth between fishing grounds and haul-outs, and are always on the move.
 
-- **Channels:** The route loops through the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
-- **Oceans:** From there, bales regularly head out into the open oceans of Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year.
+- **Channels:** Bales roam the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
+- **Oceans:** From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year.
+- **Moving on:** A bale, and even more a colony, empties the fish around it quickly. Bales move on once the fish grows scarce, and rarely stay in one place for longer than a day–night cycle.
 - **Seasons:** In the Rainy Season, bales spend longer in the channels, where the rivers bring fish. In the Dry Season, the channels grow warm, and bales spend longer in the cooler oceans.
-- **Company:** Bales often travel out together with a Leedsichthys, which heads to the cooler ocean water to cool down. A bale does not need one to follow the route.
-- **Fresh water:** Bales, with or without a Leedsichthys, may leave the route for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
-- **Tradition:** The route and the best fishing grounds are passed down between generations, mostly by the lead cow and the elders. Bales leave an area once the fish grows scarce.
+- **Flotillas:** Bales do not follow the Leedsichthys route. When a bale meets a flotilla, it may travel alongside it for a while (see Cross-Species Interaction).
+- **Fresh water:** Bales may leave the coasts for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
+- **Tradition:** The best fishing grounds and haul-outs are passed down between generations, mostly by the lead cow and the elders.
 
 ### Albino & Melanistic Behavior
 
@@ -425,7 +463,7 @@ Kaiwhekea are a highly social species. Bales migrate together in mixed-sex group
 Bales are loosely structured. They are guided by a lead cow and escorted by up to 2 dominant bulls, and aunts help raise the young.
 
 - **Lead cow:**
-  - The lead cow is an experienced cow, often the oldest, who knows the route best. She swims at the front, and decides where the bale travels, fishes and rests.
+  - The lead cow is an experienced cow, often the oldest, who knows the fishing grounds and haul-outs best. She swims at the front, and decides where the bale travels, fishes and rests.
   - She is the first to welcome newcomers into the bale, and the first to correct over-aggression.
   - Her birth beach is the bale's nesting beach (see Nesting). She is the only Kaiwhekea who always keeps her own greeting, and every member of her bale knows it.
   - Other cows may disagree with her choice. A cow shows this by swimming in front of the lead cow and slapping the water with her fluke. If several cows disagree, the bale follows the choice of the majority of cows. On an even split, the lead cow decides.
@@ -472,7 +510,7 @@ Bales are loosely structured. They are guided by a lead cow and escorted by up t
 - When two bales meet, their members greet each other warmly, one by one, and may exchange members.
 - Dominant bulls of different bales recognise each other by the dominant greeting, and keep a respectful distance.
 - At a rich fishing ground, two bales may fish together for that day, but never group beyond the group limits.
-- Bales share a POI for no longer than one day–night cycle. Once one bale moves on, the other may not follow it. A bale that tries to follow is turned away with head shakes.
+- Bales share a POI, or a haul-out as a colony, for no longer than one day–night cycle. Once one bale moves on, the other may not follow it. A bale that tries to follow is turned away with head shakes.
 
 ### Solitary Kaiwhekea
 
@@ -510,20 +548,18 @@ Over-aggression is never defended by bale mates, regardless of relations. Anyone
 Kaiwhekea are tolerant towards other species and avoid conflict at all times. When they meet a new species they approach it with curiosity, though experienced adults keep a safe distance from carnivores.
 
 - **Eurhinosaurus:**
-  - Kaiwhekea welcome them as bale mates. Eurhinosaurus stay with a bale because they gain more from it than they give: safety in numbers, and the fish the bale drives together. Their speed and loud voices make them excellent sentries.
+  - Kaiwhekea welcome them as bale mates. Up to 4, usually one friend group, may group with a bale. Most Eurhinosaurus travel with a Leedsichthys instead. Eurhinosaurus stay with a bale because they gain more from it than they give: safety in numbers, and the fish the bale drives together. Their speed and loud voices make them excellent sentries.
   - The two species fish together and share fishing grounds. Eurhinosaurus scouts often find the fish first, and the lead cow decides whether the bale follows their call.
-  - When Kaiwhekea nap on high rocks, grouped Eurhinosaurus stay in the water below and keep watch.
+  - When Kaiwhekea haul out or nap on high rocks, grouped Eurhinosaurus stay in the water below and keep watch.
   - An orphaned Eurhinosaurus calf is welcomed kindly, like any Eurhinosaurus. It is not adopted, and has no place in the protective ring.
   - Kaiwhekea do not defend grouped Eurhinosaurus, but call out in grief if a bonded one is lost.
   - **In courtship:** Eurhinosaurus watch the dance closely. It excites them and puts them in a happy mood, and they often breach along with the bulls. Kaiwhekea do not let this distract them.
 - **Leedsichthys:**
-  - A bale may travel with one Leedsichthys, like pilot fish around a whale shark, and may group with it in game. Together they are known as a flotilla.
-  - Neither side defends the other. The Leedsichthys defends only itself and its own offspring, and Kaiwhekea never step in for it.
-  - Kaiwhekea may use the giant's body as cover and hide behind or beneath it. The Leedsichthys never moves to block a predator on their behalf.
-  - Kaiwhekea may not lead a predator to another member of the flotilla on purpose to save themselves.
-  - Calves and adults like to ride the bow wave of a swimming Leedsichthys.
-  - **In courtship:** A Leedsichthys enjoys the splashing of a courting bale, and often stays for it. If the journey to the nesting beach suits it, it travels on with the bale. If not, it simply swims on alone.
-- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in when the flotilla reaches a gathering of fish. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give a :threaten_call: first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
+  - Kaiwhekea do not group with Leedsichthys. A Leedsichthys travels with its own flotilla of Eurhinosaurus, and follows its own route without exception.
+  - When a bale meets a flotilla, Kaiwhekea may swim alongside it for a while. They ride the giant's bow wave, race its Eurhinosaurus and fish the shoals that gather around it. The Leedsichthys never changes course for them, so the bale turns back once the route leads away from its own way. Like two bales, they stay together for no longer than one day–night cycle.
+  - Neither side defends the other. Kaiwhekea may hide behind or beneath the giant, but the Leedsichthys never moves to block a predator on their behalf. Kaiwhekea may not lead a predator to it on purpose to save themselves.
+  - **In courtship:** A passing Leedsichthys loves the splashing and banter of a courting bale, and often stops to watch, even though it is not grouped with it. Its Eurhinosaurus breach along with the bulls. When the bale leaves for its nesting beach, the Leedsichthys goes its own way with its Eurhinosaurus. Only if the beach lies on its route do they travel on together for a while.
+- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in wherever fish gather, also where a bale is fishing. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give a :threaten_call: first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 - **Lurdusaurus and other herbivores at the shore:** Kaiwhekea are fascinated by them. They follow them along the shore, go ashore to greet them, and like to present them with trinkets from the seafloor (see Time on Land).
 - **Carnivores at the shore:** Austroraptor and other shore hunters are a danger to calves in the pools, and to Kaiwhekea resting on beaches. Aunts and mothers keep watch, and calves hide deeper in the pool when one wades in.
 - **Apex carnivores:** Kaiwhekea flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus on sight (see Hunted by Apex).
@@ -573,7 +609,7 @@ At the first sign of danger, Kaiwhekea raise their heads above the surface to lo
   - Sachicasaurus are the only hunters strong enough to seize a grown Kaiwhekea, and a seized Kaiwhekea is lost. Like a seal in the jaws of an orca, it cannot count on its bale. The bale does not attack the Sachicasaurus, and flees.
   - The seized Kaiwhekea may fight back. If the Sachicasaurus lets go, it flees at once.
   - The bale's defence lies before the grab: the night watch, resting away from kelp and reefs, and high rocks out of reach.
-  - A grouped Leedsichthys can offer cover to hide behind, but no protection.
+  - A nearby Leedsichthys can offer cover to hide behind, but no protection.
 - Kaiwhekea do not flee from Leedsichthys, which do not hunt them.
 
 ### Hunted by Apex – Nesting
@@ -623,7 +659,7 @@ The ritual follows these steps:
 7. **The lead cow** chooses like any cow, but always keeps her own greeting.
 8. **The journey:** Once courtship is over, the lead cow leads the bale to the nesting beach (see Nesting). The harems of the dominant bulls lay their nests first.
 
-Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Species Interaction).
+Eurhinosaurus and passing Leedsichthys often watch the ritual (see Cross-Species Interaction).
 
 ### Lifelong Bonds
 
@@ -668,7 +704,7 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 ## Elderly & End of Life (Optional)
 
 - **Old age:** When Kaiwhekea reach old age, they slow down and swim at the back of the bale, with bonded friends or a lifelong partner beside them. The bale slows its pace for them.
-- **Keepers of the route:** Elders remember the oldest fishing grounds and resting places. Many lead cows are elders, and young cows follow them to learn the route.
+- **Keepers of the coast:** Elders remember the oldest fishing grounds, haul-outs and resting places. Many lead cows are elders, and young cows follow them to learn the way.
 - **Nesting:** Elders lose most of their wish to court. Some still nest, but often lay infertile eggs, or only one that hatches. Many take on the role of an aunt instead.
 - **Colour:** As they near the end of their lives, they become less vocal, and may shed into darker or duller coloration.
 - **The last journey:**
@@ -680,19 +716,20 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 
 ## Rule Exemptions
 
-- **Grouping:** As piscivores, Kaiwhekea may group with Eurhinosaurus and one Leedsichthys (exemption from 8.1, under the proposed piscivore rule). There is no defence between the species.
+- **Grouping:** As piscivores, Kaiwhekea may group with up to 4 Eurhinosaurus (exemption from 8.1, under the proposed piscivore rule). There is no defence between the species.
 - **Abilities:** In a mixed group, only active defenders use Call to Arms (8.1.1).
 
 ## Dynasty Adjusted Stats
 
 - Growth Time (hatchling–juvenile, juvenile–adolescent, adolescent–sub, sub–adult, in minutes): 15–25–35–45 = 120 total
 - Combat Weight: 4000
-- Adjusted Stats: Health 1000, land sprint speed 250 (base 100)
+- Adjusted Stats: Health 1000, land sprint speed 167 (base 100), which Beachcomber raises to 300
 
 ## Profile – Quick View
 
 - Kaiwhekea are Medium Diurnal Aquatic Piscivores.
-- They group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Eurhinosaurus may join, and so may one Leedsichthys, without any defence between the species. A group with a Leedsichthys is known as a flotilla.
+- They group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Up to 4 Eurhinosaurus may join, without any defence between the species. They do not group with Leedsichthys.
+- Like sea lions, they haul out on land many times a day, often in colonies of several bales. In a colony, each bale defends only itself, and after one day–night cycle each goes its own way.
 - They are passive, feed only on fish, shellfish and squid, and never hunt other players. They fish together by day, with techniques passed from mother to calf.
 - A lead cow guides the bale, up to 2 dominant bulls escort it, and aunts help raise the calves.
 - Every Kaiwhekea has its own greeting, which players must remember. Cows take on the greeting of their chosen bull for one season, or for life in a lifelong bond. Dominant bulls share one fixed greeting.
@@ -701,5 +738,6 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 - They may stay on land until their thirst drops to 75%, or 50% in great danger, and nap on high rocks. Below 50% they become infertile.
 - Courtship is a ritual: cows breach and call, the dominant bulls dance first and may be challenged after a mistake in their greeting, and cows choose a bull by taking on his greeting.
 - Bales nest at the birth beach of their lead cow, and change it after a failed nesting.
-- They migrate by day along the Leedsichthys route, through the saltwater channels and out into the oceans, with detours into the fresh waters connected to the channels, and rest in the shallows at night under watch.
+- They roam by day, without a fixed route, back and forth between fishing grounds and haul-outs in the saltwater channels and the oceans, with detours into the fresh waters connected to the channels. They move on once the fish runs low, and rest in the shallows at night under watch.
+- They do not follow the Leedsichthys, but may swim alongside a passing flotilla for a while. A Leedsichthys often stops to watch their courtship.
 - They are fascinated by land animals. They follow them along the shore, leap in excitement, and go ashore to greet herbivores.

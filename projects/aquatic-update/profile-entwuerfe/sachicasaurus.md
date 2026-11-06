@@ -4,7 +4,7 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 
 **Ersetzt den Prognathodon** (entschieden am 04.11.). Der Prog-Mod ist kaum dokumentiert, und ob er beim Clampen beißen kann, steht nirgends. Für den Sachicasaurus gibt es Wiki-Seiten mit allen Fähigkeiten, und Primordial Tyrants stellt auf Dynasty schon rund 20 Mods (Austroraptor, Lurdusaurus, Kelenken, Maip …). Das Gift des Prog fällt weg, dafür kommen Clamp und Knochenbruch.
 
-**Idee:** Ein kräftiger, aber wendiger Nachtjäger für Kelp, Riffe, Untiefen und Strände. Seine Beute sind vor allem die Flotillas, die nachts in den Untiefen ruhen.
+**Idee:** Ein kräftiger, aber wendiger Nachtjäger für Kelp, Riffe, Untiefen und Strände. Seine Beute sind vor allem die Kai-Bales und Flotillas, die nachts in den Untiefen ruhen. *(Seit 06.11. sind das zwei Gruppen: Kai leben in Kolonien, die Flotilla ist der Leeds mit seinen Eurhinos.)*
 - **Vom Tyrannotitan übernommen** (wie zuvor beim Prog):
   - Männchen halten ein Revier, allein oder als Bruderpaar.
   - Weibchen ziehen umher. *(Seit dem 05.11. nisten sie nicht mehr im Revier des Männchens, sondern in der Kinderstube in Tallbrush Coasts.)*
@@ -266,7 +266,7 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
 ## General Behavior
 
 - **Days in hiding:** Sachicasaurus are creatures of the night. By day they rest in kelp forests, reef caves and under cliffs, and barely move.
-- **Nights in the shallows:** As dusk falls they leave their shelter and patrol the kelp, the reefs and the shallows, where flotillas come to rest. They sense the nearest fish from far away, and fish between hunts.
+- **Nights in the shallows:** As dusk falls they leave their shelter and patrol the kelp, the reefs and the shallows, where bales and flotillas come to rest. They sense the nearest fish from far away, and fish between hunts.
 - **Built for the grab:** Sachicasaurus are not slender, but they are agile. Their four flippers let them fly through the water, turn sharply and roll. Their huge head and short neck give them the strongest grip of any aquatic hunter.
 - **Air:** Sachicasaurus need more air than most aquatics, and suffer badly without it. They keep to coastal waters where the surface is never far away, and avoid the deep.
 - **The ledges:** In the Abyssal Depths, Sachicasaurus place themselves on one of the high rock ledges between the deeps, like a jaguar lying on a branch above a river. The surface is close, and from there they watch the deep water below for prey, and for the Livyatan.
@@ -293,7 +293,8 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
   - Kaiwhekea escape onto high rocks, where a Sachicasaurus cannot reach them. Flat beaches are no refuge from a Sachicasaurus.
   - By day, bales cross a territory unharmed while its owner sleeps.
   - By night, the bale's resting place decides everything. Experienced bales rest outside known territories, and keep a watch.
-- **Flotillas:** A flotilla resting in the shallows is the target Sachicasaurus wait for. They leave the Leedsichthys alone, and take the Kaiwhekea and Eurhinosaurus sleeping around it.
+- **Bales and colonies:** A Kaiwhekea bale resting in the shallows, or hauled out on a flat beach, is the target Sachicasaurus wait for.
+- **Flotillas:** They leave the Leedsichthys alone, and take the Eurhinosaurus sleeping around it.
 - **Eurhinosaurus:** Eurhinosaurus are taken when the chance arises. Their loud calls often betray the hunter's position.
 - **Xiphactinus:** Xiphactinus live in the saltwater channels, which Sachicasaurus do not enter. The two rarely meet.
 - **Leedsichthys:** Pups are easy to seize and drag away. Adults that drift through a territory at night are prey for a brace or drift.
@@ -392,7 +393,7 @@ Female great white, lemon and bull sharks give birth in nurseries: shallow coast
 - They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on. A female who does not return the greeting is tolerated for one night, then travels on.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
 - They form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is chased, unless a brace is there and each brother chooses one.
-- They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for flotillas resting in the shallows.
+- They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for bales and flotillas resting in the shallows.
 - At the shore they follow the same beaching rules as Tylosaurus.
 - Tylosaurus are their equals: the Tylosaurus rules the open water, the Sachicasaurus the shallows by night.
 - They challenge Tylosaurus and rival males, and at Palm Islands also Deinosuchus and Spinosaurus, which they like to hunt. They flee from Livyatan.
