@@ -22,7 +22,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 | Nacht | – | Ruhe in Untiefen, 1–2 Wachen, erlaubte Nachtaktivitäten; ein Leeds in der Gruppe schläft oft mit | Nachtwache, Downtime |
 | Wanderung | Küstenrouten | Route des Leedsichthys, Rhythmus nach Jahreszeit | feste Wanderrouten |
 | Nisten | irgendwo an der Küste | am Geburtsstrand der Leitkuh; nach einem Misserfolg wird gewechselt | – |
-| Werte | CW 4000, Health 750 | CW 4000, Health 1000 | CW 5500, Health 1400 |
+| Werte | CW 4000, Health 750, Land-Sprint 100 | CW 4000, Health 1000, Land-Sprint 250 | CW 5500, Health 1400 |
 
 **Neue Systeme in diesem Entwurf:**
 - **Der eigene Gruß** ist der Kern des Kai:
@@ -145,6 +145,22 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 - **Süßwasser:** Die Flotilla darf Abstecher in die Seen und das Süßwasser machen, das mit den Flussengen verbunden ist. Krill gibt es im Spiel auch dort. Welche POIs das sind, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
 
 **Selbst ergänzt, bitte prüfen:** Besuche an Land zählen zur Landzeit, also zurück ins Wasser bei 75 % Durst. Zu Fleischfressern geht ein Kai nicht an Land, sie werden nur aus dem Wasser beobachtet. So steht es schon im heutigen Profil („Experienced adults do this only with herbivores“).
+
+**Entschieden am 06.11. (vom Nutzer): Land-Sprint 250.**
+- Der Grundwert für den Sprint an Land steigt von 100 auf 250. Gehen (30) und Traben (58) bleiben.
+- **Warum:** An Land soll ein Kai etwas schneller sein als ein sprintender Tylo (160), aber langsamer als dessen Beachcomber-Schub. Den Schub bekommt der Tylo beim Verlassen des Wassers: 10 s lang bis zu +250 %, also von 560 abklingend auf 160, und nur alle 120 s.
+- **Was das bedeutet:**
+  - Der Tylo ist knapp 8 s lang schneller und holt dabei rund 1200 Einheiten auf.
+  - Liegt ein Kai näher an der Wasserkante, wird er erwischt. Liegt er weiter oben, entkommt er, und danach holt ihn der Tylo nicht mehr ein.
+  - Vorbild sind die Orcas in Patagonien, die sich auf den Strand werfen, um Seelöwen zu packen.
+- **Landjäger bleiben schneller:** Deino sprintet 550, Spino 700, Sarco 900. An Land rettet den Kai also nur der Weg ins Wasser.
+
+**Noch offen: Beachcomber des Kai.**
+- Der Kai kann Beachcomber im Hide-Slot wählen: +80 % Landtempo, +50 % Ausdauer-Erholung an Land, kein Austrocknen an Land.
+- Mit dem Grundwert 250 läuft er damit 450. Der Tylo wäre dann nur noch knapp 3 s schneller und holt rund 150 Einheiten auf. Er hätte also kaum noch eine Chance.
+- Außerdem greift die Durst-Regel nicht, weil ein Kai mit Beachcomber an Land nicht austrocknet.
+- **Vorschlag:** Beachcomber ist für den Kai nicht erlaubt, so wie Looming Presence für den Leeds in der Mischgruppe. Das löst beide Probleme.
+- **Sachi an Land:** Sein Grundtempo ist unbekannt, weil seine Mod nicht heruntergeladen ist. Beachcomber gibt ihm dauerhaft +10 % und denselben Schub wie dem Tylo.
 
 ---
 
@@ -671,7 +687,7 @@ Eurhinosaurus and a grouped Leedsichthys often watch the ritual (see Cross-Speci
 
 - Growth Time (hatchling–juvenile, juvenile–adolescent, adolescent–sub, sub–adult, in minutes): 15–25–35–45 = 120 total
 - Combat Weight: 4000
-- Adjusted Stats: Health 1000
+- Adjusted Stats: Health 1000, land sprint speed 250 (base 100)
 
 ## Profile – Quick View
 
