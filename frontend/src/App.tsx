@@ -51,7 +51,7 @@ export default function App() {
     window.addEventListener('hashchange', update);
     return () => window.removeEventListener('hashchange', update);
   }, []);
-  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/clamps') || route.startsWith('/routes') || route.startsWith('/foodweb') || route.startsWith('/radar') || route.startsWith('/restnests') || route.startsWith('/temperature') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd') || route.startsWith('/friedhof') || route.startsWith('/isle') || route.startsWith('/aquatic')) return <Explorer route={route} />;
+  if (route.startsWith('/profiles') || route.startsWith('/ecosystems') || route.startsWith('/clamps') || route.startsWith('/routes') || route.startsWith('/foodweb') || route.startsWith('/radar') || route.startsWith('/restnests') || route.startsWith('/temperature') || route.startsWith('/rules') || route.startsWith('/animals') || route.startsWith('/herd') || route.startsWith('/friedhof') || route.startsWith('/isle') || route.startsWith('/aquatic') || route.startsWith('/staging')) return <Explorer route={route} />;
   return <ImportApp />;
 }
 
@@ -227,6 +227,7 @@ function ImportApp() {
           <div className="nav-divider" />
           <div className="nav-caption nav-caption-inline">PROJEKT</div>
           <button className="nav-item nav-aquatic" onClick={() => { window.location.hash = '#/aquatic'; }} title="Eigene Suggestion an Dynasty Realism"><span className="nav-symbol">≋</span> <span className="nav-label" data-short="Aquatic">Aquatic Update</span></button>
+          <button className="nav-item nav-aquatic" onClick={() => { window.location.hash = '#/staging'; }} title="Alle Aquatic-Profile im Discord-Format, nur Englisch"><span className="nav-symbol">▤</span> <span className="nav-label" data-short="Staging">Aquatic Staging</span></button>
           <div className="nav-divider" />
           <div className="nav-caption nav-caption-inline">EXKURS</div>
           <button className="nav-item nav-isle" onClick={() => { window.location.hash = '#/isle'; }} title="The Isle (Evrima), ein anderes Spiel"><span className="nav-symbol">✶</span> <span className="nav-label">The Isle</span></button>

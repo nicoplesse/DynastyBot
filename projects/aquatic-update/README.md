@@ -18,6 +18,7 @@ projects/aquatic-update/
     index.json        Kartenwerte für den App-Tab „Aquatic Update“ (#/aquatic): Rolle, Werte, Änderungen
     lebensraum.json   Wer wo lebt: Zonen, halbe Sachi-Reviere, Leeds-Route; Karte im App-Tab
     beziehungen.json  Wer jagt wen, flieht oder wehrt sich (Matrix im App-Tab, mit Sarcosuchus zum Vergleich)
+  staging/        Alle 10 Profile (die 9 Entwürfe + Tropeognathus) komplett im Discord-Format, nur Englisch, im Raster der Original-Profile; App-Tab „Aquatic Staging“ (#/staging). Format in staging/README.md
 ```
 
 Die Suggestion wird auf Englisch eingereicht; diese Übersicht bleibt Deutsch.

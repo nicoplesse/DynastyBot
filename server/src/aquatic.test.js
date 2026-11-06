@@ -93,8 +93,10 @@ test('the habitat map covers every draft and halves each Sachicasaurus ocean', a
   }
   const sachi = habitat.species.find(species => species.id === 'sachicasaurus');
   assert.ok(sachi.territories);
-  assert.ok(sachi.areas.every(area => areaById.get(area.id).zone === 'ocean'), 'Sachicasaurus lives only in the oceans');
-  assert.ok(!sachi.areas.some(area => area.id === 'abyssal-depths'), 'Sachicasaurus avoids the deep');
+  // Since 2026-11-05 the nursery lies at Tallbrush Coasts; every other area is an ocean.
+  assert.ok(sachi.areas.filter(area => !area.roles.includes('nest')).every(area => areaById.get(area.id).zone === 'ocean'), 'Sachicasaurus lives only in the oceans');
+  // Since 2026-11-06 Sachicasaurus also holds halves of the Abyssal Depths, on the high rock ledges.
+  assert.ok(habitat.territories.some(territory => territory.parent === 'abyssal-depths'), 'Sachicasaurus holds halves of the Abyssal Depths');
   const livy = habitat.species.find(species => species.id === 'livyatan');
   assert.ok(!livy.areas.some(area => area.id === 'palm-islands'), 'Livyatan never enters Palm Islands');
   const xiph = habitat.species.find(species => species.id === 'xiphactinus');
@@ -111,7 +113,8 @@ test('the relations table covers every pair and matches the habitat rules', asyn
   assert.equal(kind('spinosaurus', 'xiphactinus'), 'ignore');
   assert.equal(kind('xiphactinus', 'tylosaurus'), 'flee');
   assert.equal(kind('deinosuchus', 'xiphactinus'), 'hunt');
-  assert.equal(kind('kaiwhekea', 'leedsichthys'), 'group');
+  // Since 2026-11-06 Kaiwhekea and Leedsichthys no longer group; they only meet.
+  assert.equal(kind('kaiwhekea', 'leedsichthys'), 'meet');
   assert.ok(['hunt', 'limited'].includes(kind('sachicasaurus', 'spinosaurus')));
   for (const id of ['xiphactinus', 'sarcosuchus']) assert.equal(kind('livyatan', id), 'none', `Livyatan never meets ${id}`);
   for (const extra of overview.extras) for (const key of ['swim', 'sprint', 'accel']) assert.equal(typeof extra.stats[key], 'number', `${extra.id}: stats.${key}`);
@@ -127,7 +130,7 @@ test('serves the Aquatic Update index and single drafts', async () => {
     assert.equal(index.count, index.profiles.length);
     assert.equal(index.profiles[0].id, 'kaiwhekea');
     assert.equal(index.profiles[0].draft, undefined, 'index carries summaries only');
-    assert.equal(index.habitat.territories.length, 8);
+    assert.equal(index.habitat.territories.length, 10, 'two halves each of Kelp Vale, Coastal Bluffs, Palm Islands, Stonebed Shoal and the Abyssal Depths');
 
     const livy = await fetch(`${base}/api/aquatic/livyatan`).then(response => response.json());
     assert.equal(livy.name, 'Livyatan');

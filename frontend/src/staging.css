@@ -1,0 +1,147 @@
+/* Aquatic staging: the profiles as threads of the Dynasty Discord forum. The thread pane keeps
+   Discord's dark theme on purpose, so the page shows what the forum would show. */
+.stg-page {
+  --dc-bg: #313338; --dc-bg-2: #2b2d31; --dc-bg-3: #1e1f22; --dc-hover: #2e3035; --dc-line: #3f4147;
+  --dc-text: #dbdee1; --dc-muted: #949ba4; --dc-head: #f2f3f5; --dc-link: #00a8fc; --dc-author: #f0b232;
+  --dc-mention-bg: rgba(88, 101, 242, .3); --dc-mention: #c9cdfb; --dc-code: #2b2d31;
+  --stg-accent: #7cc4e6; --stg-ok: #6fcf97; --stg-warn: #f2c94c; --stg-bad: #ef7d6b; --stg-new: #9bd6ff;
+  width: 100%; max-width: 1650px; margin: 0 auto; padding: 29px 46px 75px;
+}
+.stg-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #263329; }
+.stg-eyebrow { color: var(--stg-accent); font-size: 10px; font-weight: 800; letter-spacing: .2em; }
+.stg-head h1 { margin: 10px 0 9px; font-size: clamp(26px, 2.6vw, 36px); font-weight: 800; letter-spacing: -.04em; line-height: 1.15; }
+.stg-head p { max-width: 900px; color: #9baaa0; font-size: 13px; line-height: 1.55; }
+.stg-ghost { flex: none; padding: 9px 14px; background: #14232b; border: 1px solid #2d4b5a; border-radius: 6px; color: #bfe3f4; font-size: 12px; font-weight: 700; }
+.stg-ghost:hover { background: #1a2f3a; }
+
+.stg-layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 18px; align-items: start; margin-top: 22px; }
+.stg-forum { position: sticky; top: 14px; max-height: calc(100vh - 28px); overflow-y: auto; background: var(--dc-bg-2); border: 1px solid #23262b; border-radius: 10px; }
+.stg-forum-head { display: flex; align-items: center; gap: 6px; padding: 14px 14px 12px; border-bottom: 1px solid var(--dc-bg-3); color: var(--dc-head); font-size: 14px; font-weight: 700; }
+.stg-hash { color: var(--dc-muted); font-size: 20px; font-weight: 500; line-height: 1; }
+.stg-tag-staging { margin-left: auto; padding: 2px 6px; background: #5865f2; border-radius: 4px; color: white; font-size: 9px; font-weight: 800; letter-spacing: .08em; }
+.stg-forum-list { display: grid; gap: 6px; padding: 8px; }
+.stg-post { display: grid; gap: 5px; width: 100%; padding: 11px 12px; background: var(--dc-bg); border: 1px solid transparent; border-radius: 8px; color: var(--dc-text); text-align: left; }
+.stg-post:hover { background: #35373c; }
+.stg-post.active { border-color: #5865f2; background: #383a40; }
+.stg-post strong { color: var(--dc-head); font-size: 13px; letter-spacing: .06em; }
+.stg-post-class { color: var(--dc-muted); font-size: 12px; line-height: 1.35; }
+.stg-post-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.stg-post-meta { color: #80848e; font-size: 11px; }
+.stg-chip { display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 10px; background: #404249; color: #dbdee1; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.stg-chip.new { background: #1d3f52; color: var(--stg-new); }
+.stg-chip.changed { background: #4a3d1c; color: #f5d27a; }
+.stg-chip.ok { background: #1f3d2c; color: var(--stg-ok); }
+.stg-chip.warn { background: #4b2a24; color: #ffb4a6; }
+.stg-chip.note { background: #4a4520; color: var(--stg-warn); }
+
+.stg-thread { min-width: 0; background: var(--dc-bg); border: 1px solid #23262b; border-radius: 10px; overflow: clip; }
+.stg-thread-bar { position: sticky; top: 0; z-index: 3; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; background: var(--dc-bg); border-bottom: 1px solid var(--dc-bg-3); box-shadow: 0 1px 0 rgba(4, 4, 5, .2); }
+.stg-thread-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.stg-thread-title h2 { overflow: hidden; color: var(--dc-head); font-size: 15px; letter-spacing: .05em; text-overflow: ellipsis; white-space: nowrap; }
+.stg-forum-icon { color: var(--dc-muted); font-size: 18px; }
+.stg-thread-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.stg-jump { max-width: 220px; padding: 5px 8px; background: var(--dc-bg-3); border: 1px solid #111214; border-radius: 4px; color: var(--dc-text); font-size: 12px; }
+.stg-tool { padding: 5px 10px; background: #4e5058; border: 0; border-radius: 4px; color: white; font-size: 12px; font-weight: 600; }
+.stg-tool:hover { background: #6d6f78; }
+.stg-tool.on { background: #5865f2; }
+.stg-toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--dc-text); font-size: 12px; }
+
+.stg-raster { display: grid; gap: 8px; padding: 12px 16px 14px; background: var(--dc-bg-2); border-bottom: 1px solid var(--dc-bg-3); color: var(--dc-text); font-size: 12px; }
+.stg-raster p { color: var(--dc-muted); line-height: 1.5; }
+.stg-raster-row { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 10px; align-items: start; }
+.stg-raster-group { padding-top: 3px; color: var(--dc-muted); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.stg-raster-items { display: flex; flex-wrap: wrap; gap: 4px; }
+.stg-raster-item { padding: 2px 7px; border-radius: 4px; font-size: 11px; }
+.stg-raster-item.ok { background: #1f3d2c; color: var(--stg-ok); }
+.stg-raster-item.missing { background: #4b2a24; color: #ffb4a6; }
+
+/* The Discord channel itself. */
+.dc-channel { padding: 0 0 26px; color: var(--dc-text); font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.375; }
+.dc-thread-start { padding: 22px 16px 16px; border-bottom: 1px solid var(--dc-line); margin-bottom: 8px; }
+.dc-thread-icon { display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 10px; background: #41434a; border-radius: 50%; color: var(--dc-head); font-size: 26px; }
+.dc-thread-start h3 { margin: 0 0 6px; color: var(--dc-head); font-size: 26px; font-weight: 800; letter-spacing: .04em; }
+.dc-thread-start p { color: var(--dc-muted); font-size: 13px; }
+.dc-msg { position: relative; display: grid; grid-template-columns: 56px minmax(0, 1fr); padding: 2px 64px 2px 16px; }
+.dc-msg:hover { background: var(--dc-hover); }
+.dc-msg.has-header { margin-top: 17px; padding-top: 2px; }
+.dc-avatar { grid-column: 1; width: 40px; height: 40px; margin-top: 2px; display: grid; place-items: center; background: radial-gradient(circle at 30% 30%, #3f6b4f, #1d3527); border-radius: 50%; color: #e8f3e1; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
+.dc-content { grid-column: 2; min-width: 0; }
+.dc-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin-bottom: 1px; }
+.dc-author { color: var(--dc-author); font-size: 15px; font-weight: 600; }
+.dc-role { color: var(--dc-author); font-size: 12px; }
+.dc-op { padding: 0 4px; background: #5865f2; border-radius: 3px; color: white; font-size: 10px; font-weight: 700; line-height: 15px; }
+.dc-head time { color: var(--dc-muted); font-size: 12px; }
+.dc-tools { position: absolute; top: 2px; right: 10px; display: flex; align-items: center; gap: 6px; opacity: 0; transition: opacity .12s; }
+.dc-msg:hover .dc-tools, .dc-tools:focus-within { opacity: 1; }
+.dc-tools button { padding: 3px 8px; background: var(--dc-bg-2); border: 1px solid #1e1f22; border-radius: 4px; color: var(--dc-text); font-size: 11px; font-weight: 600; }
+.dc-tools button:hover { background: #404249; }
+.dc-count { padding: 2px 6px; background: var(--dc-bg-2); border-radius: 4px; color: var(--dc-muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+.dc-count.over { opacity: 1; background: #5c2b29; color: #ffb4a6; }
+.dc-msg:has(.dc-count.over) .dc-tools { opacity: 1; }
+
+.dc-text { overflow-wrap: anywhere; white-space: normal; }
+.dc-text > div { min-height: 1.375em; }
+.dc-line, .dc-li, .dc-quote { padding: 0; }
+.dc-blank { height: .5em; min-height: .5em !important; }
+.dc-h1, .dc-h2, .dc-h3 { margin: 8px 0 0; color: var(--dc-head); font-weight: 700; line-height: 1.25; }
+.dc-h1 { font-size: 24px; }
+.dc-h2 { font-size: 20px; }
+.dc-h3 { font-size: 16px; }
+.dc-text > .dc-h1:first-child, .dc-text > .dc-h2:first-child, .dc-text > .dc-h3:first-child { margin-top: 2px; }
+.dc-sub { color: var(--dc-muted); font-size: 13px; }
+.dc-quote { padding-left: 12px; border-left: 4px solid #4e5058; }
+.dc-li { display: grid; grid-template-columns: 18px minmax(0, 1fr); padding-left: 4px; }
+.dc-li.depth-1 { margin-left: 22px; }
+.dc-li.depth-2 { margin-left: 44px; }
+.dc-li.depth-3 { margin-left: 66px; }
+.dc-bullet { color: var(--dc-text); text-align: left; }
+.dc-text strong { color: var(--dc-head); font-weight: 700; }
+.dc-text code { padding: .1em .3em; background: var(--dc-code); border-radius: 4px; font-size: 85%; }
+.dc-mention { padding: 0 2px; background: var(--dc-mention-bg); border-radius: 3px; color: var(--dc-mention); font-weight: 500; }
+.dc-link { padding: 0; background: none; border: 0; color: var(--dc-link); font: inherit; text-align: left; cursor: pointer; }
+.dc-link:hover { text-decoration: underline; }
+.dc-link.dead { cursor: default; opacity: .75; }
+.dc-link.dead:hover { text-decoration: none; }
+.show-marks .is-changed { margin-left: -10px; padding-left: 8px; border-left: 2px solid #3ba55d; background: rgba(59, 165, 93, .12); }
+
+/* Attachments: banners, images and the title card stand in for Dynasty's artwork. */
+.dc-attach { max-width: 550px; margin: 4px 0 2px; border-radius: 8px; overflow: hidden; }
+.dc-banner { display: grid; place-items: center; aspect-ratio: 550 / 96; background: linear-gradient(90deg, #050607 0%, #0d1113 55%, #10171a 100%); border: 1px solid #1a1d20; }
+.dc-banner span { position: relative; padding: 6px 18px 6px 22px; color: #f4f6f7; font-family: 'Montserrat', 'Arial Black', Arial, sans-serif; font-size: clamp(14px, 2.1vw, 21px); font-weight: 800; letter-spacing: .32em; text-transform: uppercase; }
+.dc-banner span::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 60%; border: 3px solid #f4f6f7; border-right: 0; border-bottom: 0; opacity: .9; }
+.dc-image { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 120px; padding: 18px; background: repeating-linear-gradient(135deg, #24262a 0 12px, #27292e 12px 24px); border: 1px dashed #4e5058; color: var(--dc-muted); font-size: 13px; text-align: center; }
+.dc-image-icon { font-size: 22px; }
+.dc-titlecard { position: relative; aspect-ratio: 1.615; background: #000; }
+.dc-tc-band { position: absolute; inset: 0 0 auto 0; z-index: 1; height: 33%; padding: 4.2% 5.5% 0; background: #000; color: white; }
+.dc-tc-card { position: relative; display: block; margin-left: 8%; font-family: Calibri, 'Segoe UI', Arial, sans-serif; font-size: clamp(10px, 2.4vw, 16px); font-weight: 600; line-height: 1; }
+.dc-tc-name { position: relative; display: inline-block; margin-top: 2px; padding: 3px 0 6px 4%; font-family: 'Montserrat', 'Arial Black', Arial, sans-serif; font-size: clamp(18px, 5vw, 36px); font-weight: 800; letter-spacing: .16em; line-height: 1.05; }
+.dc-tc-name::before { content: ''; position: absolute; left: 0; top: -2px; bottom: -6px; width: 34%; border: 3px solid white; border-right: 0; }
+.dc-tc-diff { display: flex; align-items: center; gap: 8px; margin-top: 2.6%; font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(8px, 1.8vw, 12px); font-weight: 700; letter-spacing: .3em; }
+.dc-tc-boxes { display: inline-flex; gap: 3px; }
+.dc-tc-boxes i { width: clamp(7px, 1.6vw, 11px); height: clamp(7px, 1.6vw, 11px); border: 1.5px solid white; }
+.dc-tc-boxes i.on { background: white; }
+.dc-tc-photo { position: absolute; inset: 33% 0 0 0; display: grid; place-items: center; overflow: hidden; background: radial-gradient(ellipse at 40% 60%, #1f5a6b 0%, #0f2f3c 55%, #071820 100%); color: rgba(255, 255, 255, .55); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
+.dc-tc-photo img { position: absolute; left: 0; bottom: 0; width: 100%; height: 149%; object-fit: cover; object-position: bottom; }
+.dc-tc-logo { position: absolute; right: 4.5%; bottom: 6%; display: grid; color: white; font-family: 'Montserrat', 'Arial Black', Arial, sans-serif; font-size: clamp(9px, 2.2vw, 15px); font-weight: 800; letter-spacing: .08em; line-height: 1; text-align: center; text-shadow: 0 1px 6px rgba(0, 0, 0, .6); }
+.dc-tc-logo small { font-size: .5em; letter-spacing: .5em; font-weight: 600; }
+
+.stg-note { margin: 8px 16px 8px 72px; padding: 9px 12px; background: #3d3a1d; border: 1px solid #6b6327; border-left: 4px solid var(--stg-warn); border-radius: 6px; color: #f4e7a6; font-size: 13px; line-height: 1.45; }
+.stg-note strong { color: #ffe680; }
+.stg-empty { padding: 30px; color: #9baaa0; }
+
+@media (max-width: 1100px) {
+  .stg-page { padding: 22px 20px 60px; }
+  .stg-layout { grid-template-columns: 1fr; }
+  .stg-forum { position: static; max-height: none; }
+  .stg-forum-list { display: flex; overflow-x: auto; }
+  .stg-post { min-width: 220px; }
+}
+@media (max-width: 640px) {
+  .stg-page { padding: 16px 16px 48px; }
+  .stg-head { flex-direction: column; align-items: flex-start; }
+  .dc-msg { grid-template-columns: 44px minmax(0, 1fr); padding: 2px 12px 2px 10px; }
+  .dc-avatar { width: 34px; height: 34px; font-size: 11px; }
+  .dc-tools { position: static; grid-column: 2; opacity: 1; margin: 4px 0; }
+  .stg-note { margin-left: 12px; margin-right: 12px; }
+  .stg-raster-row { grid-template-columns: 1fr; gap: 4px; }
+}

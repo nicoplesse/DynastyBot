@@ -10,6 +10,7 @@ import { searchAnalogs } from './analogs.js';
 import { createHerdStore, defaultHerdDir } from './herd.js';
 import { defaultIsleDir, isleSummary, loadIsle } from './isle.js';
 import { aquaticSummary, defaultAquaticDir, loadAquatic } from './aquatic.js';
+import { DISCORD_LIMIT, RASTER, defaultStagingDir, loadStaging, stagingSummary } from './staging.js';
 
 const extensions = new Set(['png', 'jpg', 'jpeg', 'webp']);
 const upload = multer({
@@ -63,6 +64,7 @@ export function createApp({
   herdDir = defaultHerdDir,
   isleDir = defaultIsleDir,
   aquaticDir = defaultAquaticDir,
+  stagingDir = defaultStagingDir,
 } = {}) {
   const app = express();
   const rawDir = resolve(dataDir);
@@ -329,6 +331,25 @@ export function createApp({
       if (index < 0) throw httpError(404, 'Aquatic profile not found.');
       const neighbour = offset => aquaticSummary(profiles[(index + offset + profiles.length) % profiles.length]);
       res.json({ ...profiles[index], position: index + 1, count: profiles.length, previous: neighbour(-1), next: neighbour(1) });
+    } catch (error) { next(error); }
+  });
+
+  // Aquatic staging: every profile of the suggestion as a Discord forum thread, English only.
+  app.get('/api/staging', async (_req, res, next) => {
+    try {
+      const threads = await loadStaging(stagingDir);
+      res.json({ limit: DISCORD_LIMIT, raster: RASTER.map(({ group, label }) => ({ group, label })), count: threads.length, threads: threads.map(stagingSummary) });
+    } catch (error) { next(error); }
+  });
+
+  app.get('/api/staging/:id', async (req, res, next) => {
+    try {
+      const id = req.params.id;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw httpError(400, 'Invalid profile ID.');
+      const threads = await loadStaging(stagingDir);
+      const index = threads.findIndex(thread => thread.id === id);
+      if (index < 0) throw httpError(404, 'Staging profile not found.');
+      res.json({ ...threads[index], limit: DISCORD_LIMIT, position: index + 1, count: threads.length });
     } catch (error) { next(error); }
   });
 
