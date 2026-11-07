@@ -122,7 +122,7 @@ Im Wasser entscheidet die Wendigkeit mit. Der Leeds sprintet nur 600, Tylo 900, 
 - Fathers recognise their silhouettes and gather their pups at the first sight of a pack.
 
 **Livyatan.**
-- Livyatan are the only predators that regularly target adult Leedsichthys, and the two giants of the ocean are bitter rivals. Livyatan always come alone, rising from the deep.
+- Livyatan are the only predators that take on an adult Leedsichthys head-on, and the two giants of the ocean are bitter rivals. Livyatan always come alone, rising from the deep.
 - A Leedsichthys never flees from a Livyatan. Fleeing would be useless: the whale is faster, and in deep water there is nowhere to hide. When clicking echoes through the water, a Leedsichthys turns towards the sound, the way humpback whales rush in when they hear killer whales.
 - It drags every fight into the depths. A Livyatan must breathe, a Leedsichthys never does, and Crushing Pressure steals what air the whale has left. Whoever needs air first loses.
 - Fathers fear the Livyatan more than anything else. A father with pups does not stop when the whale breaks off. He follows it, even to the surface, until the danger to his pups is gone.

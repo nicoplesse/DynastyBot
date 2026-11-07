@@ -186,7 +186,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 **Im Entwurf (`profile-entwuerfe/livyatan.md`) festgelegt:**
 - **Stufe Giant** (entschieden am 03.11.), wie Argentinosaurus. Sachi darf nur bis Apex jagen und sich gegen einen adulten Livy nur wehren. **Tylo-Paare dürfen ihn jagen** (entschieden am 03.11.), bei jedem Hunger; das ist die einzige Ausnahme von der Apex-Grenze. Adoleszente Livys zählen als Apex.
 - Höchstens 2 Weibchen, die sich mit demselben Bullen gepaart haben (oder nur eine von beiden), Bullen immer allein (entschieden am 03.11.). Große Gruppen würden den stillen Jäger verraten. Er lebt in allen Ozeanen außer Palm Islands. **Gejagt wird nur allein** (entschieden am 03.11.), wie bei echten Pottwalen, die in Familien leben, aber einzeln in die Tiefe tauchen. Leviathan's Call dient nur der Verteidigung der Kälber.
-- Einzelne Leeds, Tylo und Sachi müssen zuerst gejagt werden; Sachi zählt nur im offenen Wasser, in Kelp und Untiefen folgt Livy nicht. Paare von Tylo und Sachi darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
+- Einzelne Tylo und Sachi müssen zuerst gejagt werden. Den Leeds darf er jagen, muss aber nie (entschieden am 07.11., seit dem Dynasty-Buff des Leeds); Sachi zählt nur im offenen Wasser, in Kelp und Untiefen folgt Livy nicht. Paare von Tylo und Sachi darf er auch jagen. Kai und Eurhino sind erst ab 35 % Hunger oder ohne große Beute erlaubt.
 - Er kommt nicht ins Flachwasser, außer zum Nisten an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.
 - Simulation mit CW 8000 und Health 2000 (% = Health, die dem Livy bleibt):
   - Livy schlägt einen einzelnen Tylo (18 s, 74 %) und einen einzelnen Sachi (19 s, 76 %).

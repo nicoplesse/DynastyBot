@@ -63,10 +63,10 @@ Livyatan may only third party engagements to protect these species. See ✦ Styr
 Adolescent Livyatan do not assist with hunts.
 
 ## Preferred Prey
-Livyatan must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first, if they are present in the POI. Tylosaurus and Sachicasaurus pairs may be hunted as well.
+Livyatan must target solitary Tylosaurus and Sachicasaurus first, if they are present in the POI. Tylosaurus and Sachicasaurus pairs may be hunted as well.
 - Sachicasaurus only count while they are in open water, as Livyatan do not follow them into the kelp, the shallows or onto the high ledges of the Abyssal Depths.
 Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
-Leedsichthys are Livyatan's main prey and its greatest rival. See ✦ Leedsichthys.
+Livyatan may hunt Leedsichthys at any time, but are never required to. See ✦ Leedsichthys.
 Spinosaurus and Deinosuchus keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
 Livyatan never hunt styracosternans: Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon and both Lurdusaurus. They also never hunt the companions of their herds: Bonapartenykus, Camptosaurus, Citipati, Struthiomimus and Halszkaraptor.
 Livyatan never feed from the bodies of these species, and never contest them.
@@ -157,9 +157,10 @@ When a predator hunts anything else, Livyatan never third party. See ✦ Other P
 These species feel at ease on the islands and coasts along Livyatan waters, where an attack from the water is rare.
 
 ### ✦ Leedsichthys
-Leedsichthys are Livyatan's preferred prey, the closest thing to the great baleen whales they once hunted. Lone hunters track them by sound along their migration routes and rise from below.
+Leedsichthys are the closest thing to the great baleen whales Livyatan once hunted. Lone hunters track them by sound along their migration routes and rise from below.
 The two giants of the ocean are bitter rivals. A Leedsichthys turns towards the clicking instead of fleeing, and every hunt becomes a struggle in the deep, like a sperm whale against a giant squid.
 In a straight fight, a grown Livyatan beats an adult Leedsichthys only by a hair, and a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air.
+A Leedsichthys is nearly a Livyatan's equal, so a Livyatan is never required to hunt one, and chooses its moment.
 Experienced Livyatan avoid fathers with pups, which do not even let go when the Livyatan breaks off to breathe, and fight until the whale is gone.
 
 ### ✦ Tylosaurus & Sachicasaurus
@@ -229,7 +230,7 @@ Old cows remain with their unit, which shields them as it shields its calves.
 When a Livyatan dies, it sinks slowly into the depths, feeding the deep for years to come.
 %% banner Profile Notes
 Livyatan always hunt alone. Cows live in units of two, bulls are always solitary.
-Livyatan must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first.
+Livyatan must target solitary Tylosaurus and Sachicasaurus first. Leedsichthys are their rivals, and never a required target.
 Livyatan never hunt styracosternans or their herd companions.
 Livyatan never follow prey into the shallows, or onto the high rock ledges of the Abyssal Depths.
 %% banner Rules & Clarifications
@@ -246,7 +247,7 @@ Livyatan may third party an active hunt on a protected species (styracosternans 
 Livyatan are Giant Cathemeral Aquatic Carnivores.
 Livyatan cows live in units of two, usually sharing the same bull, with unlimited offspring and adoptees. Bulls are always solitary.
 Livyatan are tolerant towards their own kind, and aggressive towards large aquatic predators.
-Livyatan always hunt alone, and may hunt up to Apex tier. They must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
+Livyatan always hunt alone, and may hunt up to Apex tier. They must target solitary Tylosaurus and Sachicasaurus first, and may hunt Leedsichthys without ever being required to. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
 Livyatan hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite. They never follow prey into the shallows, or onto the high rock ledges of the Abyssal Depths.
 Livyatan hold their breath about twice as long as other aquatics. A Livyatan below 25% air must break off and surface.
 Livyatan never hunt styracosternans (hadrosaurs, Iguanodon, Lurdusaurus) or their herd companions, and may third party only to protect them. They take other predators' kills by body contest.

@@ -177,7 +177,7 @@ A Leedsichthys loves the splashing and banter of a courting bale, and often stop
 When the bale leaves for its nesting beach, the Leedsichthys goes its own way with its Eurhinosaurus. Only if the beach lies on its route do they travel on together for a while. {+}
 
 ### ✦ Livyatan
-Livyatan are the only predators that regularly target adult Leedsichthys, and the two giants of the ocean are bitter rivals. Livyatan always come alone, rising from the deep. {+}
+Livyatan are the only predators that take on an adult Leedsichthys head-on, and the two giants of the ocean are bitter rivals. Livyatan always come alone, rising from the deep. {+}
 A Leedsichthys never flees from a Livyatan. Fleeing would be useless: the whale is faster, and in deep water there is nowhere to hide. {+}
 When clicking echoes through the water, a Leedsichthys turns towards the sound, the way humpback whales rush in when they hear killer whales. It does not tolerate a Sub/Adult Livyatan within 5 body lengths, and may attack it. {+}
 It drags every fight into the depths. A Livyatan must breathe, a Leedsichthys never does, and Crushing Pressure steals what air the whale has left. Whoever needs air first loses. {+}

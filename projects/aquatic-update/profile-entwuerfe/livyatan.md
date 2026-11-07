@@ -52,7 +52,7 @@ Seit dem 07.11. stehen die Leeds-Werte fest: Dynasty hat ihn auf CW 6500 und Hea
   - Leviathan's Call nutzt die Familie nur zur Verteidigung der Kälber.
   - Paare von Tylo und Sachi sind vor ihm nicht mehr sicher: Er schlägt ein Tylo-Paar (35 s, mit 22 % Health) und auch ein Sachi-Paar (38 s, mit 27 %). Er darf beide jagen, zieht aber Einzeltiere vor.
   - Gefährlich bleiben ihm nur Kai-Gruppen ab 3 Tieren, die sich stellen. Kai fliehen aber vor Giants auf Sicht.
-- **Leeds ist seine Hauptbeute und sein Rivale** (entschieden am 04.11.). Im reinen Bissduell ist der Livy klar überlegen (39 s mit 65 % Health bei einem Leeds mit 1000 Health, 78 s mit 29 % bei 2000). Der Leeds flieht aber nie, sondern zieht den Kampf in die Tiefe, wo er nie Luft holen muss.
+- **Leeds ist sein Rivale** (entschieden am 04.11.), aber seit dem 07.11. keine Pflicht-Beute mehr. Im reinen Bissduell gewinnt der Livy seit dem Dynasty-Buff des Leeds (CW 6500, Health 2000) nur noch hauchdünn (92 s, behält 1 %). Der Leeds flieht aber nie, sondern zieht den Kampf in die Tiefe, wo er nie Luft holen muss.
   - Ohne Junge ist der Leeds aggressiv: Er duldet keinen Livy im Umkreis von 5 Körperlängen, darf ihn angreifen und respektiert dessen Forfeit.
   - Ein Vater mit Jungen ist headstrong: Er greift auch nach einem Forfeit oder während der Livy Luft holt weiter an, bis der Livy den POI oder seine Sichtweite verlässt. Er will die Gefahr für seine Jungen beseitigen.
   - Das gilt nur gegenüber dem Livy. Livy-Kälber vertreibt der Leeds wie Tylo-Junge, jagt sie aber nicht.
@@ -67,7 +67,7 @@ Seit dem 07.11. stehen die Leeds-Werte fest: Dynasty hat ihn auf CW 6500 und Hea
   - **Third Party nur für die Schützlinge:** Läuft eine aktive Jagd auf einen Schützling im Wasser, darf der Livy eingreifen. Das gilt gegen jeden Fleischfresser, nicht nur gegen Apexe: gegen Landjäger wie den Tyrannosaurus oder Tyrannotitan, die ihrer Beute ins Wasser folgen, genauso wie gegen Meeresjäger wie Tylo und Sachi. Das gilt nur im offenen, tiefen Wasser und nie näher als eine Körperlänge am Ufer. Dafür braucht er Ausnahmen von 3.17 und 3.18.
   - **Sonst kein Third Party:** Jagt ein Räuber etwas anderes als einen Schützling, darf der Livy nie third-partyen. Dann setzt er lieber auf einen Body Contest (6.9): Er lässt den Räuber die Arbeit machen, kommt danach und fordert den Körper heraus. So bekommt er mit ein paar Drohrufen eine leichte Mahlzeit. Vermutlich gibt der Räuber meist auf, weil sich kaum einer auf einen Kampf mit einem Giant einlässt. Das ist eine Erwartung und steht nicht im Profil. Vorbild sind Pottwale, die Fischern heute die Fische von den Langleinen stehlen.
   - **Tote Schützlinge:** Ist ein Schützling schon tot, darf der Livy nicht mehr eingreifen. Den Körper ficht er auch nicht an, denn er frisst nie davon.
-- **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Sachi müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
+- **Beutepflicht für die Großen:** Einzelne Tylo und Sachi müssen zuerst gejagt werden, wenn sie im POI sind. **Den Leeds darf er jagen, muss aber nie** (entschieden am 07.11.): Seit dem Dynasty-Buff wäre jede Pflicht-Jagd ein Münzwurf, gegen Tylo und Sachi behält er dagegen rund drei Viertel seiner Health. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Sachi oder Xiph. Seit dem 06.11. zählen auch die hohen Felsvorsprünge zwischen den Tiefen von Abyssal Depths dazu. Dort hält der Sachi jetzt Reviere, mitten in Livys Zuhause.
 - **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 6500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
 - **Sauerstoff** (entschieden am 04.11.): Der Vorrat wird verdoppelt, Max. Sauerstoff 100 → 200. Verbrauch (0,15/s) und Auffüllen (50/s) bleiben wie im Mod.
@@ -119,9 +119,9 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 ## Preferred Prey
 
-- **Large prey first:** Livyatan must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first, if they are present in the POI. Tylosaurus and Sachicasaurus pairs may be hunted as well. Sachicasaurus only count while they are in open water, as Livyatan do not follow them into the kelp, the shallows or onto the high ledges of the Abyssal Depths.
+- **Large prey first:** Livyatan must target solitary Tylosaurus and Sachicasaurus first, if they are present in the POI. Tylosaurus and Sachicasaurus pairs may be hunted as well. Sachicasaurus only count while they are in open water, as Livyatan do not follow them into the kelp, the shallows or onto the high ledges of the Abyssal Depths.
 - **Smaller prey:** Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
-- **Leedsichthys:** Leedsichthys are Livyatan's main prey and its greatest rival. In a straight fight, a grown Livyatan beats an adult Leedsichthys only by a hair, and a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
+- **Leedsichthys:** Leedsichthys are Livyatan's greatest rival. Livyatan may hunt them at any time, but are never required to. In a straight fight, a grown Livyatan beats an adult Leedsichthys only by a hair, and a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
 - **Spinosaurus & Deinosuchus:** Both keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
 - **Protected species:** Livyatan never hunt styracosternans: the hadrosaurs and their closest relatives, Iguanodon and Lurdusaurus. On this server these are Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon and both Lurdusaurus. They also never hunt the companions of their herds: Bonapartenykus, Camptosaurus, Citipati, Struthiomimus and Halszkaraptor.
 - **Third-party:** Livyatan may only third-party an active hunt on one of these protected species while it is in the water. This applies against any carnivore, not only Apex carnivores: terrestrial hunters such as Tyrannosaurus or Tyrannotitan that follow their prey into the water, as well as marine hunters such as Tylosaurus and Sachicasaurus. This applies only in open, deep water, never within one body length of the shore (exemption from 3.17 and 3.18).
@@ -184,7 +184,7 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
 
 ## Cross-Species Interaction
 
-- **Leedsichthys:** Leedsichthys are Livyatan's preferred prey, the closest thing to the great baleen whales they once hunted. Lone hunters track them by sound along their migration routes and rise from below. The two giants of the ocean are bitter rivals. A Leedsichthys turns towards the clicking instead of fleeing, and every hunt becomes a struggle in the deep, like a sperm whale against a giant squid. Experienced Livyatan avoid fathers with pups, which fight until the whale is gone.
+- **Leedsichthys:** Leedsichthys are the closest thing to the great baleen whales Livyatan once hunted, and nearly a Livyatan's equal. A Livyatan is never required to hunt one, and chooses its moment. Lone hunters track them by sound along their migration routes and rise from below. The two giants of the ocean are bitter rivals. A Leedsichthys turns towards the clicking instead of fleeing, and every hunt becomes a struggle in the deep, like a sperm whale against a giant squid. Experienced Livyatan avoid fathers with pups, which fight until the whale is gone.
 - **Tylosaurus & Sachicasaurus:**
   - Livyatan see these predators as competitors and as prey.
   - A Livyatan that hears a Tylosaurus or Sachicasaurus in its waters hunts it down, or drives it out.
@@ -242,7 +242,7 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - Cows live in units of two, usually sharing the same bull. Bulls are always solitary.
 - They live in every ocean except Palm Islands, centred on the Abyssal Depths.
 - Livyatan always hunt alone.
-- They must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
+- They must target solitary Tylosaurus and Sachicasaurus first, and may hunt Leedsichthys without ever being required to. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
 - They hold their breath about twice as long as other aquatics, as their huge body stores far more oxygen in blood and muscle.
 - They never follow prey into the shallows, or onto the high rock ledges of the Abyssal Depths.
