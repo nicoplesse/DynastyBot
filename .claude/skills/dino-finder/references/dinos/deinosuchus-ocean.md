@@ -79,7 +79,6 @@ You live in two halves. By day you are the elephant seal: you lie for hours with
 - **Deinocheirus** (conditional): Deinocheirus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Austroraptor** (hoch): Austroraptor is a realistic hunting opportunity
-- **Leedsichthys** (spürbar): Leedsichthys is a realistic hunting opportunity
 - **Suchomimus** (conditional): Suchomimus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**

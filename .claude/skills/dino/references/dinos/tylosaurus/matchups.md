@@ -26,16 +26,6 @@ Spinosaurus (Saltwater) is linked by a specific profile rule. Tylosaurus is 17% 
 
 ## Chancen (wen du jagen/schlagen kannst)
 
-### Leedsichthys – sehr hoch (quarry)
-Leedsichthys is a realistic hunting opportunity
-
-A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.
-- Verfolgung: Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call. (Kampfgewicht 5000 vs 5500)
-- Kampf (beide Seiten legal max): 2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (34 bis zum Kill), 61 zurück (17 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
-
 ### Deinosuchus (Shore) – sehr hoch (quarry)
 Deinosuchus (Shore) is a realistic hunting opportunity
 
@@ -54,6 +44,16 @@ A profile rule names or prioritises this matchup. Tylosaurus is 29% faster in wa
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Tylosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 19 s with 25% of its health left, too narrow to call. (Kampfgewicht 5000 vs 6000)
 - Kampf (beide Seiten legal max): 2 Tylosaurus vs 1 Deinosuchus (Ocean): the Tylosaurus side wins in about 13 s with 66% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 49 pro Haupttreffer vom Angreifer (21 bis zum Kill), 66 zurück (16 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Leedsichthys – spürbar (risky-quarry)
+Leedsichthys is legal quarry, but not a comfortable fight
+
+A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 28 s with 72% of its health left.
+- Verfolgung: Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 28 s with 72% of its health left. (Kampfgewicht 5000 vs 6500)
+- Kampf (beide Seiten legal max): 2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 25 pro Haupttreffer vom Angreifer (80 bis zum Kill), 72 zurück (14 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Spinosaurus (Freshwater) – spürbar (risky-quarry)

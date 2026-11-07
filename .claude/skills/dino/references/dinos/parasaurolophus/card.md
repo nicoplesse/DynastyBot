@@ -85,7 +85,7 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Leedsichthys** (conditional): Leedsichthys is a realistic hunting opportunity
+- **Leedsichthys** (conditional): Leedsichthys is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

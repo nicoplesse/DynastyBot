@@ -85,6 +85,6 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Leedsichthys** (conditional): Leedsichthys is a realistic hunting opportunity
+- **Leedsichthys** (conditional): Leedsichthys is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

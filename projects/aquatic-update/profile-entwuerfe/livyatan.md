@@ -32,14 +32,13 @@ Unter Concussive Blast fällt Tylo von 900 auf 675. Für Sachi fehlt das Tempo n
 | --- | --- |
 | 1 Livy gegen 1 Tylo | Livy gewinnt (18 s, 74 %) |
 | 1 Livy gegen 1 Sachi (Mod-Werte) | Livy gewinnt (19 s, 76 %) |
-| 1 Livy gegen 1 Leeds (Health 1000) | Livy gewinnt (39 s, 65 %) |
-| 1 Livy gegen 1 Leeds (Health 2000) | Livy gewinnt (78 s, 29 %) |
+| 1 Livy gegen 1 Leeds (Dynasty seit 07.11.: CW 6500, Health 2000) | Livy gewinnt hauchdünn (92 s, 1 %) |
 | 1 Livy gegen 2 Tylo | Livy gewinnt (35 s, 22 %); mit Sonic Disruption 38 % |
 | 1 Livy gegen 2 Sachi | Livy gewinnt (38 s, 27 %) |
 | 1 Livy gegen 6 Xiph | Livy gewinnt (31 s, 46 %) |
 | 1 Livy gegen 3 Kai | Livy verliert (26 s, die Kai behalten 52 %) |
 
-Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“), deshalb stehen zwei Annahmen in der Tabelle.
+Seit dem 07.11. stehen die Leeds-Werte fest: Dynasty hat ihn auf CW 6500 und Health 2000 angehoben. Damit ist das Duell Livy gegen Leeds fast ausgeglichen (Livy braucht 92 s, der Leeds 93 s). Die 25-%-Luftregel und Crushing Pressure können es zugunsten des Leeds kippen.
 
 **Entscheidungen im Entwurf:**
 - **Stufe Giant** (entschieden am 03.11.), wie bisher nur Argentinosaurus.
@@ -70,7 +69,7 @@ Der Dynasty-Wert für die Health des Leeds ist unbekannt („Boosted health“),
   - **Tote Schützlinge:** Ist ein Schützling schon tot, darf der Livy nicht mehr eingreifen. Den Körper ficht er auch nicht an, denn er frisst nie davon.
 - **Beutepflicht für die Großen:** Einzelne Leeds, Tylo und Sachi müssen zuerst gejagt werden, wenn sie im POI sind. Kai und Eurhino sind erst ab großem Hunger oder ohne große Beute dran. Das schützt die Beute-Seite durch eine Regel über das Verhalten, nicht durch Werte.
 - **Meidet Flachwasser:** Livyatan kommt nicht in die Untiefen, nur zum Nisten an die geschützten Inseln von Coastal Bluffs und an den Rand von Stonebed Shoal. Die Untiefen bleiben so ein Rückzugsort vor ihm, nicht aber vor Tylo, Sachi oder Xiph. Seit dem 06.11. zählen auch die hohen Felsvorsprünge zwischen den Tiefen von Abyssal Depths dazu. Dort hält der Sachi jetzt Reviere, mitten in Livys Zuhause.
-- **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 5500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
+- **Werte** (entschieden am 03.11.): CW 6000 → 8000, Health 950 → 2000. Armor (1,1) und Tempo bleiben wie im Mod. Er liegt damit zwischen Leeds (CW 6500) und Argentinosaurus (CW 9000, Health 2500), dem einzigen anderen Giant. Schwimmen 500 bleibt, er ist ein Hinterhalt-Jäger. Optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
 - **Sauerstoff** (entschieden am 04.11.): Der Vorrat wird verdoppelt, Max. Sauerstoff 100 → 200. Verbrauch (0,15/s) und Auffüllen (50/s) bleiben wie im Mod.
   - Unter Wasser: ~22:13 statt ~11:07, mit Pressurized Hide ~33:20 statt ~16:40. Er bleibt damit doppelt so lange unten wie Tylo, Kai, Eurhino und Xiph (je 11:07) und mehr als doppelt so lange wie Sachi (9:48). Nur der Leeds muss nie auftauchen.
   - Wieder voll nach 4 s statt 2 s, mit Pressurized Hide nach 6 s. Der größere Vorrat braucht beim gleichen Auffüllen länger, so wie echte Pottwale an der Oberfläche mehrere lange Atemzüge brauchen.
@@ -122,7 +121,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 - **Large prey first:** Livyatan must target solitary Leedsichthys, Tylosaurus and Sachicasaurus first, if they are present in the POI. Tylosaurus and Sachicasaurus pairs may be hunted as well. Sachicasaurus only count while they are in open water, as Livyatan do not follow them into the kelp, the shallows or onto the high ledges of the Abyssal Depths.
 - **Smaller prey:** Only when none of these are present, or at 35% hunger or below, may Livyatan hunt Kaiwhekea and Eurhinosaurus.
-- **Leedsichthys:** Leedsichthys are Livyatan's main prey and its greatest rival. A grown Livyatan overpowers an adult Leedsichthys in a straight fight, but a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
+- **Leedsichthys:** Leedsichthys are Livyatan's main prey and its greatest rival. In a straight fight, a grown Livyatan beats an adult Leedsichthys only by a hair, and a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air. A father with pups does not even let go when the Livyatan breaks off to breathe.
 - **Spinosaurus & Deinosuchus:** Both keep to the saltwater channels and Palm Islands, where Livyatan do not go. Adults that stray into open, deep water may be hunted.
 - **Protected species:** Livyatan never hunt styracosternans: the hadrosaurs and their closest relatives, Iguanodon and Lurdusaurus. On this server these are Parasaurolophus, Lambeosaurus, Barsboldia, Iguanodon and both Lurdusaurus. They also never hunt the companions of their herds: Bonapartenykus, Camptosaurus, Citipati, Struthiomimus and Halszkaraptor.
 - **Third-party:** Livyatan may only third-party an active hunt on one of these protected species while it is in the water. This applies against any carnivore, not only Apex carnivores: terrestrial hunters such as Tyrannosaurus or Tyrannotitan that follow their prey into the water, as well as marine hunters such as Tylosaurus and Sachicasaurus. This applies only in open, deep water, never within one body length of the shore (exemption from 3.17 and 3.18).

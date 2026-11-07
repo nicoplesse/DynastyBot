@@ -146,14 +146,14 @@ Concavenator is within the legal hunt ceiling. Sarcosuchus is 96% faster in wate
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 86 pro Haupttreffer vom Angreifer (6 bis zum Kill), 23 zurück (26 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Leedsichthys – hoch (quarry)
-Leedsichthys is a realistic hunting opportunity
+### Metriacanthosaurus – conditional (quarry)
+Metriacanthosaurus can usually refuse the chase
 
-Leedsichthys is within the legal hunt ceiling. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 1 Leedsichthys: the Leedsichthys side wins in about 18 s with 33% of its health left, too narrow to call.
-- Verfolgung: Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 1 Leedsichthys: the Leedsichthys side wins in about 18 s with 33% of its health left, too narrow to call. (Kampfgewicht 4500 vs 5500)
-- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 9 s with 83% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (62 bis zum Kill), 67 zurück (9 bis zum Kill)
+Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 14% faster on land and can normally refuse this fight. 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.
+- Verfolgung: Metriacanthosaurus is 14% faster on land and can normally refuse this fight.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left. (Kampfgewicht 4500 vs 3100)
+- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 3 s with 94% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 58 pro Haupttreffer vom Angreifer (9 bis zum Kill), 28 zurück (22 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

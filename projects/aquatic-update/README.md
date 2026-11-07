@@ -29,7 +29,7 @@ Aus `data/processed/index.json` (Klassifizierung laut Profil):
 
 | Gruppe | Playables |
 | --- | --- |
-| Aquatic | Tylosaurus (Apex, CW 5000), Leedsichthys (Apex, CW 5500), Kaiwhekea (Medium, CW 4000), Eurhinosaurus (Medium, CW 3000) |
+| Aquatic | Tylosaurus (Apex, CW 5000), Leedsichthys (Apex, CW 6500), Kaiwhekea (Medium, CW 4000), Eurhinosaurus (Medium, CW 3000) |
 | Semi-Aquatic, Meer/Küste | Deinosuchus Ocean, Spinosaurus Saltwater, Lurdusaurus Coast, Austroraptor |
 | Semi-Aquatic, Süßwasser/Ufer | Deinosuchus Shore, Spinosaurus Freshwater, Lurdusaurus Freshwater, Sarcosuchus, Suchomimus, Concavenator, Deinocheirus, Halszkaraptor, Megalania (beide) |
 | Fischt aus der Luft | Tropeognathus |

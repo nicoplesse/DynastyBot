@@ -12540,135 +12540,6 @@
     ],
     "opportunities": [
       {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "family": "leedsichthys",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
-        "score": 92,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "close-chase",
-          "attackerSpeed": 750,
-          "targetSpeed": 750,
-          "speedMarginPct": 0,
-          "attackerDurationSeconds": 167,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 0,
-          "label": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "palm-islands",
-            "stonebed-shoal",
-            "rocky-lake",
-            "dark-pond"
-          ],
-          "overlap": 0.286,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
-          "6 shared mapped areas make contact plausible.",
-          "One-on-one, a Spinosaurus (Saltwater) claw lands 33 on Leedsichthys (31 to kill); a Leedsichthys headbutt lands 46 back (25 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 33,
-            "defenderHit": 46,
-            "attackerBurst": 93,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 31,
-            "defenderHitsToKill": 25,
-            "attackerDps": 39.6,
-            "defenderDps": 22.9,
-            "attackerTimeToKill": 25,
-            "defenderTimeToKill": 48,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 25,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.47,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 25.25
-            }
-          },
-          "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
-            "attackers": 1,
-            "defenders": 1
-          }
-        },
-        "attackerId": "spinosaurus-saltwater",
-        "targetId": "leedsichthys",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Spinosaurus (Saltwater)",
-          "targetName": "Leedsichthys",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "baseScore": 74,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": true,
-          "relationKind": null,
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "spinosaurus-saltwater",
-            "profileName": "Spinosaurus (Saltwater)",
-            "section": "Engagement Limits",
-            "text": "They may hunt Leedsichthys, Tylosaurus, and fish and eat critters anywhere."
-          },
-          {
-            "profileId": "spinosaurus-saltwater",
-            "profileName": "Spinosaurus (Saltwater)",
-            "section": "Engagement Limits",
-            "text": "Preferred Prey Hunting in any POI: Fish, ai corpses or critters, Leedsichthys, and Tylosaurus - though this is risky, and offspring are preferred."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
         "family": "deinosuchus",
@@ -12915,6 +12786,135 @@
             "profileName": "Spinosaurus (Saltwater)",
             "section": "Engagement Limits",
             "text": "Crocodilian rivalry: up to 2 Spinosaurs in a pairbond may work together to kill Deinosuchus and Sarcosuchus if spotted within their territory."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "family": "leedsichthys",
+        "direction": "opportunity",
+        "band": "severe",
+        "kind": "quarry",
+        "headline": "Leedsichthys is a realistic hunting opportunity",
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+        "score": 82,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "close-chase",
+          "attackerSpeed": 750,
+          "targetSpeed": 750,
+          "speedMarginPct": 0,
+          "attackerDurationSeconds": 167,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 0,
+          "label": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "palm-islands",
+            "stonebed-shoal",
+            "rocky-lake",
+            "dark-pond"
+          ],
+          "overlap": 0.286,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
+          "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 28 on Leedsichthys (73 to kill); a Leedsichthys headbutt lands 54 back (21 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 28,
+            "defenderHit": 54,
+            "attackerBurst": 78,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 73,
+            "defenderHitsToKill": 21,
+            "attackerDps": 33.5,
+            "defenderDps": 27.1,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 41,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 41,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.32,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 40.75
+            }
+          },
+          "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 6000,
+          "targetCombatWeight": 6500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "spinosaurus-saltwater",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Spinosaurus (Saltwater)",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Engagement Limits",
+            "text": "They may hunt Leedsichthys, Tylosaurus, and fish and eat critters anywhere."
+          },
+          {
+            "profileId": "spinosaurus-saltwater",
+            "profileName": "Spinosaurus (Saltwater)",
+            "section": "Engagement Limits",
+            "text": "Preferred Prey Hunting in any POI: Fish, ai corpses or critters, Leedsichthys, and Tylosaurus - though this is risky, and offspring are preferred."
           }
         ],
         "confidence": "profile-specific"
@@ -14692,35 +14692,6 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
-      "leedsichthys": {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 2,
-        "dps": 27.5,
-        "primary": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2,
-          "situational": false
-        },
-        "attacks": [
-          "Headbutt"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
       "deinosuchus-ocean": {
         "id": "deinosuchus-ocean",
         "name": "Deinosuchus (Ocean)",
@@ -14777,6 +14748,35 @@
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "leedsichthys": {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "cw": 6500,
+        "hp": 2000,
+        "armor": 2,
+        "dps": 27.5,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
         "huntUnlimited": false,

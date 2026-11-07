@@ -32,12 +32,18 @@
   "stats": {
     "growthTime": "(hatchling-juvenile, juvenile-adolescent, adolescent-sub, sub-adult in minutes): 20-60-75-85 = 240 total",
     "growthMinutes": 240,
-    "combatWeight": 5500,
+    "combatWeight": 6500,
     "changes": [
       {
-        "text": "Boosted health.",
-        "current": null,
-        "previous": null,
+        "text": "Combat weight increased to 6500 from 5500",
+        "current": "6500",
+        "previous": "5500",
+        "direction": "up"
+      },
+      {
+        "text": "Max health increased to 2000 from 1000",
+        "current": "2000",
+        "previous": "1000",
         "direction": "up"
       }
     ],
@@ -93,15 +99,15 @@
           262.5,
           450,
           700,
-          null
+          2000
         ],
         "adjustments": [
           {
-            "text": "Boosted health.",
+            "text": "Max health increased to 2000 from 1000",
             "stage": 4,
             "previous": 1000,
-            "current": null,
-            "method": "unquantified",
+            "current": 2000,
+            "method": "explicit",
             "mismatch": false
           }
         ]
@@ -140,9 +146,26 @@
           1500,
           2750,
           3750,
-          5500
+          6500
         ],
-        "adjustments": []
+        "adjustments": [
+          {
+            "text": "Combat Weight: 6500 (Dynasty profile header)",
+            "stage": 4,
+            "previous": 5500,
+            "current": 6500,
+            "method": "profile-header",
+            "mismatch": false
+          },
+          {
+            "text": "Combat weight increased to 6500 from 5500",
+            "stage": 4,
+            "previous": 5500,
+            "current": 6500,
+            "method": "explicit",
+            "mismatch": false
+          }
+        ]
       },
       {
         "key": "Core.Armor",
@@ -11129,8 +11152,8 @@
         "band": "severe",
         "kind": "predator",
         "headline": "Tylosaurus can create a very narrow escape window",
-        "summary": "Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
-        "score": 112,
+        "summary": "Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.",
+        "score": 102,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -11166,9 +11189,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
+          "2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.",
           "8 shared mapped areas make contact plausible.",
-          "One-on-one, a Tylosaurus bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 61 back (17 to kill).",
+          "One-on-one, a Tylosaurus bite lands 25 on Leedsichthys (80 to kill); a Leedsichthys headbutt lands 72 back (14 to kill).",
           "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "fight": {
@@ -11178,45 +11201,45 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 30,
-            "defenderHit": 61,
-            "attackerBurst": 48,
-            "defenderBurst": 61,
-            "attackerHitsToKill": 34,
-            "defenderHitsToKill": 17,
-            "attackerDps": 23.4,
-            "defenderDps": 30.3,
-            "attackerTimeToKill": 43,
-            "defenderTimeToKill": 33,
+            "attackerHit": 25,
+            "defenderHit": 72,
+            "attackerBurst": 40,
+            "defenderBurst": 72,
+            "attackerHitsToKill": 80,
+            "defenderHitsToKill": 14,
+            "attackerDps": 19.8,
+            "defenderDps": 35.8,
+            "attackerTimeToKill": 101,
+            "defenderTimeToKill": 28,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "attacker-advantage",
+          "verdict": "close",
           "sim": {
-            "winner": "attacker",
-            "seconds": 22,
-            "attackersLeft": 2,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.67,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 56,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.17,
             "firstDown": {
-              "side": "defender",
-              "seconds": 21.5
+              "side": "attacker",
+              "seconds": 28
             }
           },
-          "label": "2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
+          "label": "2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.",
           "detail": "2 attackers vs 1 defender",
           "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 2,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "attacker-advantage",
-            "label": "2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.",
             "attackers": 2,
             "defenders": 1
           }
@@ -11264,8 +11287,8 @@
         "band": "severe",
         "kind": "predator",
         "headline": "Kaiwhekea can create a very narrow escape window",
-        "summary": "Kaiwhekea is linked by a specific profile rule. Kaiwhekea is 32% faster in water; a clean escape is unlikely once spotted. 3 Kaiwhekea vs 1 Leedsichthys: the Kaiwhekea side wins in about 16 s with 73% of its health left.",
-        "score": 105,
+        "summary": "Kaiwhekea is linked by a specific profile rule. Kaiwhekea is 32% faster in water; a clean escape is unlikely once spotted. 3 Kaiwhekea vs 1 Leedsichthys: the Leedsichthys side wins in about 51 s with 11% of its health left, too narrow to call.",
+        "score": 95,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -11302,9 +11325,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Kaiwhekea is 32% faster in water; a clean escape is unlikely once spotted.",
-          "3 Kaiwhekea vs 1 Leedsichthys: the Kaiwhekea side wins in about 16 s with 73% of its health left.",
+          "3 Kaiwhekea vs 1 Leedsichthys: the Leedsichthys side wins in about 51 s with 11% of its health left, too narrow to call.",
           "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Kaiwhekea bite lands 18 on Leedsichthys (55 to kill); a Leedsichthys headbutt lands 76 back (10 to kill)."
+          "One-on-one, a Kaiwhekea bite lands 15 on Leedsichthys (130 to kill); a Leedsichthys headbutt lands 89 back (9 to kill)."
         ],
         "fight": {
           "attackers": 3,
@@ -11313,45 +11336,45 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 18,
-            "defenderHit": 76,
-            "attackerBurst": 31,
-            "defenderBurst": 76,
-            "attackerHitsToKill": 55,
-            "defenderHitsToKill": 10,
-            "attackerDps": 20.7,
-            "defenderDps": 37.8,
-            "attackerTimeToKill": 48,
-            "defenderTimeToKill": 20,
+            "attackerHit": 15,
+            "defenderHit": 89,
+            "attackerBurst": 26,
+            "defenderBurst": 89,
+            "attackerHitsToKill": 130,
+            "defenderHitsToKill": 9,
+            "attackerDps": 17.5,
+            "defenderDps": 44.7,
+            "attackerTimeToKill": 114,
+            "defenderTimeToKill": 17,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "attacker-advantage",
+          "verdict": "close",
           "sim": {
-            "winner": "attacker",
-            "seconds": 16,
-            "attackersLeft": 3,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.73,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 51,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.11,
             "firstDown": {
-              "side": "defender",
-              "seconds": 16.25
+              "side": "attacker",
+              "seconds": 17
             }
           },
-          "label": "3 Kaiwhekea vs 1 Leedsichthys: the Kaiwhekea side wins in about 16 s with 73% of its health left.",
+          "label": "3 Kaiwhekea vs 1 Leedsichthys: the Leedsichthys side wins in about 51 s with 11% of its health left, too narrow to call.",
           "detail": "3 attackers vs 1 defender",
           "attackerCombatWeight": 4000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 3,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "attacker-advantage",
-            "label": "3 Kaiwhekea vs 1 Leedsichthys: the Kaiwhekea side wins in about 16 s with 73% of its health left.",
+            "verdict": "close",
+            "label": "3 Kaiwhekea vs 1 Leedsichthys: the Leedsichthys side wins in about 51 s with 11% of its health left, too narrow to call.",
             "attackers": 3,
             "defenders": 1
           }
@@ -11396,8 +11419,8 @@
         "band": "severe",
         "kind": "predator",
         "headline": "Spinosaurus (Saltwater) can create a very narrow escape window",
-        "summary": "Spinosaurus (Saltwater) is linked by a specific profile rule. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
-        "score": 92,
+        "summary": "Spinosaurus (Saltwater) is linked by a specific profile rule. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+        "score": 82,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -11431,9 +11454,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+          "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "6 shared mapped areas make contact plausible.",
-          "One-on-one, a Spinosaurus (Saltwater) claw lands 33 on Leedsichthys (31 to kill); a Leedsichthys headbutt lands 46 back (25 to kill)."
+          "One-on-one, a Spinosaurus (Saltwater) claw lands 28 on Leedsichthys (73 to kill); a Leedsichthys headbutt lands 54 back (21 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -11442,45 +11465,45 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 33,
-            "defenderHit": 46,
-            "attackerBurst": 93,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 31,
-            "defenderHitsToKill": 25,
-            "attackerDps": 39.6,
-            "defenderDps": 22.9,
-            "attackerTimeToKill": 25,
-            "defenderTimeToKill": 48,
+            "attackerHit": 28,
+            "defenderHit": 54,
+            "attackerBurst": 78,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 73,
+            "defenderHitsToKill": 21,
+            "attackerDps": 33.5,
+            "defenderDps": 27.1,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 41,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "attacker-advantage",
+          "verdict": "close",
           "sim": {
-            "winner": "attacker",
-            "seconds": 25,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.47,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 41,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.32,
             "firstDown": {
-              "side": "defender",
-              "seconds": 25.25
+              "side": "attacker",
+              "seconds": 40.75
             }
           },
-          "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+          "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 1,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "attacker-advantage",
-            "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.",
+            "verdict": "close",
+            "label": "1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
             "attackers": 1,
             "defenders": 1
           }
@@ -11525,8 +11548,8 @@
         "band": "severe",
         "kind": "predator",
         "headline": "Spinosaurus (Freshwater) can create a very narrow escape window",
-        "summary": "Spinosaurus (Freshwater) is linked by a specific profile rule. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
-        "score": 92,
+        "summary": "Spinosaurus (Freshwater) is linked by a specific profile rule. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+        "score": 82,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -11559,9 +11582,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+          "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Spinosaurus (Freshwater) claw lands 33 on Leedsichthys (31 to kill); a Leedsichthys headbutt lands 46 back (25 to kill)."
+          "One-on-one, a Spinosaurus (Freshwater) claw lands 28 on Leedsichthys (73 to kill); a Leedsichthys headbutt lands 54 back (21 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -11570,45 +11593,45 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 33,
-            "defenderHit": 46,
-            "attackerBurst": 93,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 31,
-            "defenderHitsToKill": 25,
-            "attackerDps": 39.6,
-            "defenderDps": 22.9,
-            "attackerTimeToKill": 25,
-            "defenderTimeToKill": 48,
+            "attackerHit": 28,
+            "defenderHit": 54,
+            "attackerBurst": 78,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 73,
+            "defenderHitsToKill": 21,
+            "attackerDps": 33.5,
+            "defenderDps": 27.1,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 41,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "attacker-advantage",
+          "verdict": "close",
           "sim": {
-            "winner": "attacker",
-            "seconds": 25,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.47,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 41,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.32,
             "firstDown": {
-              "side": "defender",
-              "seconds": 25.25
+              "side": "attacker",
+              "seconds": 40.75
             }
           },
-          "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+          "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 1,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "attacker-advantage",
-            "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+            "verdict": "close",
+            "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
             "attackers": 1,
             "defenders": 1
           }
@@ -11646,133 +11669,6 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "parasaurolophus",
-        "name": "Parasaurolophus",
-        "family": "parasaurolophus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Parasaurolophus matters only if it gets the right opening",
-        "summary": "Parasaurolophus is linked by a specific profile rule. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
-        "score": 73,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 925,
-          "targetSpeed": 100,
-          "speedMarginPct": 825,
-          "attackerDurationSeconds": 50,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": -20.6,
-          "label": "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "volcano-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "mudflats",
-            "coastland-swamp",
-            "rocky-lake",
-            "coastal-bluffs",
-            "scale-lake",
-            "cedar-valley"
-          ],
-          "overlap": 0.257,
-          "label": "9 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.",
-          "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
-          "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Parasaurolophus bite lands 13 on Leedsichthys (80 to kill); a Leedsichthys headbutt lands 50 back (29 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 13,
-            "defenderHit": 50,
-            "attackerBurst": 40,
-            "defenderBurst": 50,
-            "attackerHitsToKill": 80,
-            "defenderHitsToKill": 29,
-            "attackerDps": 18.8,
-            "defenderDps": 25,
-            "attackerTimeToKill": 53,
-            "defenderTimeToKill": 56,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "close",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 54,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.04,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 53.5
-            }
-          },
-          "label": "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "close",
-            "label": "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
-            "attackers": 1,
-            "defenders": 1
-          }
-        },
-        "attackerId": "parasaurolophus",
-        "targetId": "leedsichthys",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Parasaurolophus",
-          "targetName": "Leedsichthys",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "Parasaurolophus is linked by a specific profile rule."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "parasaurolophus",
-            "profileName": "Parasaurolophus",
-            "section": "Quick View",
-            "text": "Parasaurolophus flee from all Apex carnivores, except when nesting, when a nesting pair will defend their young from a single Apex. Parasaurolophus do not flee from Leedsichthys."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "eurhinosaurus",
         "name": "Eurhinosaurus",
         "family": "eurhinosaurus",
@@ -11780,7 +11676,7 @@
         "band": "meaningful",
         "kind": "predator",
         "headline": "Eurhinosaurus can create a credible fight",
-        "summary": "Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 36 s with 36% of its health left.",
+        "summary": "Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 30 s with 77% of its health left.",
         "score": 70,
         "visible": true,
         "intent": {
@@ -11818,9 +11714,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 36 s with 36% of its health left.",
+          "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 30 s with 77% of its health left.",
           "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Eurhinosaurus bite lands 11 on Leedsichthys (92 to kill); a Leedsichthys headbutt lands 101 back (6 to kill)."
+          "One-on-one, a Eurhinosaurus bite lands 9 on Leedsichthys (217 to kill); a Leedsichthys headbutt lands 119 back (6 to kill)."
         ],
         "fight": {
           "attackers": 3,
@@ -11829,17 +11725,17 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 11,
-            "defenderHit": 101,
-            "attackerBurst": 18,
-            "defenderBurst": 101,
-            "attackerHitsToKill": 92,
+            "attackerHit": 9,
+            "defenderHit": 119,
+            "attackerBurst": 15,
+            "defenderBurst": 119,
+            "attackerHitsToKill": 217,
             "defenderHitsToKill": 6,
-            "attackerDps": 8.9,
-            "defenderDps": 50.4,
-            "attackerTimeToKill": 112,
-            "defenderTimeToKill": 12,
-            "attackerBleed": 0.031,
+            "attackerDps": 7.6,
+            "defenderDps": 59.6,
+            "attackerTimeToKill": 265,
+            "defenderTimeToKill": 10,
+            "attackerBleed": 0.026,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
@@ -11847,27 +11743,27 @@
           "verdict": "defender-advantage",
           "sim": {
             "winner": "defender",
-            "seconds": 36,
+            "seconds": 30,
             "attackersLeft": 0,
             "defendersLeft": 1,
             "attackerHpShare": 0,
-            "defenderHpShare": 0.36,
+            "defenderHpShare": 0.77,
             "firstDown": {
               "side": "attacker",
-              "seconds": 12
+              "seconds": 10.25
             }
           },
-          "label": "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 36 s with 36% of its health left.",
+          "label": "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 30 s with 77% of its health left.",
           "detail": "3 attackers vs 1 defender",
           "attackerCombatWeight": 3000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 3,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 36 s with 36% of its health left.",
+            "label": "3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 30 s with 77% of its health left.",
             "attackers": 3,
             "defenders": 1
           }
@@ -11912,7 +11808,7 @@
         "band": "meaningful",
         "kind": "predator",
         "headline": "Austroraptor can create a credible fight",
-        "summary": "Austroraptor is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+        "summary": "Austroraptor is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 8 s with 97% of its health left.",
         "score": 57,
         "visible": true,
         "intent": {
@@ -11950,9 +11846,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-          "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+          "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 8 s with 97% of its health left.",
           "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Austroraptor bite lands 10 on Leedsichthys (105 to kill); a Leedsichthys headbutt lands 144 back (5 to kill)."
+          "One-on-one, a Austroraptor bite lands 8 on Leedsichthys (248 to kill); a Leedsichthys headbutt lands 170 back (4 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -11961,16 +11857,16 @@
           "defenderChoice": 1,
           "bleed": "off",
           "duel": {
-            "attackerHit": 10,
-            "defenderHit": 144,
-            "attackerBurst": 11,
-            "defenderBurst": 144,
-            "attackerHitsToKill": 105,
-            "defenderHitsToKill": 5,
-            "attackerDps": 9.7,
-            "defenderDps": 72,
-            "attackerTimeToKill": 103,
-            "defenderTimeToKill": 9,
+            "attackerHit": 8,
+            "defenderHit": 170,
+            "attackerBurst": 10,
+            "defenderBurst": 170,
+            "attackerHitsToKill": 248,
+            "defenderHitsToKill": 4,
+            "attackerDps": 8.2,
+            "defenderDps": 85.1,
+            "attackerTimeToKill": 244,
+            "defenderTimeToKill": 8,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
@@ -11979,27 +11875,27 @@
           "verdict": "defender-advantage",
           "sim": {
             "winner": "defender",
-            "seconds": 9,
+            "seconds": 8,
             "attackersLeft": 0,
             "defendersLeft": 1,
             "attackerHpShare": 0,
-            "defenderHpShare": 0.91,
+            "defenderHpShare": 0.97,
             "firstDown": {
               "side": "attacker",
-              "seconds": 9.25
+              "seconds": 7.75
             }
           },
-          "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+          "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 8 s with 97% of its health left.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 2100,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 1,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 9 s with 91% of its health left.",
+            "label": "1 Austroraptor vs 1 Leedsichthys: the Leedsichthys side wins in about 8 s with 97% of its health left.",
             "attackers": 1,
             "defenders": 1
           }
@@ -12035,250 +11931,138 @@
           }
         ],
         "confidence": "profile-specific"
+      },
+      {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
+        "family": "parasaurolophus",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "conditional",
+        "headline": "Parasaurolophus matters only if it gets the right opening",
+        "summary": "Parasaurolophus is linked by a specific profile rule. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "conditional": true,
+          "reason": "Only a stated condition turns this into a legal hunt or attack."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 925,
+          "targetSpeed": 100,
+          "speedMarginPct": 825,
+          "attackerDurationSeconds": 50,
+          "targetDurationSeconds": 63,
+          "durationMarginPct": -20.6,
+          "label": "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "volcano-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "mudflats",
+            "coastland-swamp",
+            "rocky-lake",
+            "coastal-bluffs",
+            "scale-lake",
+            "cedar-valley"
+          ],
+          "overlap": 0.257,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Only a stated condition turns this into a legal hunt or attack.",
+          "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.",
+          "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Parasaurolophus bite lands 11 on Leedsichthys (190 to kill); a Leedsichthys headbutt lands 59 back (24 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 11,
+            "defenderHit": 59,
+            "attackerBurst": 34,
+            "defenderBurst": 59,
+            "attackerHitsToKill": 190,
+            "defenderHitsToKill": 24,
+            "attackerDps": 15.9,
+            "defenderDps": 29.5,
+            "attackerTimeToKill": 126,
+            "defenderTimeToKill": 47,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 48,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.62,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 47.5
+            }
+          },
+          "label": "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 6500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
+            "attackers": 1,
+            "defenders": 1
+          }
+        },
+        "attackerId": "parasaurolophus",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Parasaurolophus",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": true,
+          "explicit": true,
+          "relationKind": "conditional",
+          "summaryLead": "Parasaurolophus is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "parasaurolophus",
+            "profileName": "Parasaurolophus",
+            "section": "Quick View",
+            "text": "Parasaurolophus flee from all Apex carnivores, except when nesting, when a nesting pair will defend their young from a single Apex. Parasaurolophus do not flee from Leedsichthys."
+          }
+        ],
+        "confidence": "profile-specific"
       }
     ],
     "opportunities": [],
     "reserve": {
       "threats": [
-        {
-          "id": "tyrannotitan",
-          "name": "Tyrannotitan",
-          "family": "tyrannotitan",
-          "direction": "threat",
-          "band": "severe",
-          "kind": "predator",
-          "headline": "Tyrannotitan can create a very narrow escape window",
-          "summary": "Tyrannotitan is inside the legal hunt range. Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted. 2 Tyrannotitan vs 1 Leedsichthys: the Tyrannotitan side wins in about 33 s with 55% of its health left.",
-          "score": 90,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 900,
-            "targetSpeed": 100,
-            "speedMarginPct": 800,
-            "attackerDurationSeconds": 63,
-            "targetDurationSeconds": 63,
-            "durationMarginPct": 0,
-            "label": "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "volcano-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "mudflats",
-              "coastland-swamp"
-            ],
-            "overlap": 0.238,
-            "label": "5 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted.",
-            "2 Tyrannotitan vs 1 Leedsichthys: the Tyrannotitan side wins in about 33 s with 55% of its health left.",
-            "5 shared mapped areas make contact plausible.",
-            "One-on-one, a Tyrannotitan bite lands 20 on Leedsichthys (50 to kill); a Leedsichthys headbutt lands 50 back (19 to kill).",
-            "Tyrannotitan's bleed builds faster than Leedsichthys heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 2,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 20,
-              "defenderHit": 50,
-              "attackerBurst": 50,
-              "defenderBurst": 50,
-              "attackerHitsToKill": 50,
-              "defenderHitsToKill": 19,
-              "attackerDps": 15.3,
-              "defenderDps": 25,
-              "attackerTimeToKill": 65,
-              "defenderTimeToKill": 36,
-              "attackerBleed": 0.24,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 33,
-              "attackersLeft": 2,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.55,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 32.75
-              }
-            },
-            "label": "2 Tyrannotitan vs 1 Leedsichthys: the Tyrannotitan side wins in about 33 s with 55% of its health left.",
-            "detail": "2 attackers vs 1 defender",
-            "attackerCombatWeight": 5500,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 2,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "2 Tyrannotitan vs 1 Leedsichthys: the Tyrannotitan side wins in about 33 s with 55% of its health left.",
-              "attackers": 2,
-              "defenders": 1
-            }
-          },
-          "attackerId": "tyrannotitan",
-          "targetId": "leedsichthys",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Tyrannotitan",
-            "targetName": "Leedsichthys",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 72,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Tyrannotitan is inside the legal hunt range."
-          },
-          "tags": [
-            "ambush",
-            "bleed",
-            "endurance",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "allosaurus",
-          "name": "Allosaurus",
-          "family": "allosaurus",
-          "direction": "threat",
-          "band": "severe",
-          "kind": "predator",
-          "headline": "Allosaurus can create a very narrow escape window",
-          "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 940% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Leedsichthys: the Allosaurus side wins in about 30 s with 37% of its health left.",
-          "score": 81,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1040,
-            "targetSpeed": 100,
-            "speedMarginPct": 940,
-            "attackerDurationSeconds": 91,
-            "targetDurationSeconds": 63,
-            "durationMarginPct": 44.4,
-            "label": "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "possible",
-            "sharedRegions": [
-              "volcano-islands",
-              "big-tree-overlook",
-              "twisted-forest"
-            ],
-            "overlap": 0.13,
-            "label": "They overlap in 3 mapped areas, so the matchup is situational."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted.",
-            "3 Allosaurus vs 1 Leedsichthys: the Allosaurus side wins in about 30 s with 37% of its health left.",
-            "They overlap in 3 mapped areas, so the matchup is situational.",
-            "One-on-one, a Allosaurus bite lands 17 on Leedsichthys (59 to kill); a Leedsichthys headbutt lands 81 back (9 to kill).",
-            "Allosaurus's bleed builds faster than Leedsichthys heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 3,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 17,
-              "defenderHit": 81,
-              "attackerBurst": 24,
-              "defenderBurst": 81,
-              "attackerHitsToKill": 59,
-              "defenderHitsToKill": 9,
-              "attackerDps": 13.1,
-              "defenderDps": 40.3,
-              "attackerTimeToKill": 77,
-              "defenderTimeToKill": 16,
-              "attackerBleed": 0.077,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 30,
-              "attackersLeft": 2,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.37,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 16.25
-              }
-            },
-            "label": "3 Allosaurus vs 1 Leedsichthys: the Allosaurus side wins in about 30 s with 37% of its health left.",
-            "detail": "3 attackers vs 1 defender",
-            "attackerCombatWeight": 3750,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "3 Allosaurus vs 1 Leedsichthys: the Allosaurus side wins in about 30 s with 37% of its health left.",
-              "attackers": 3,
-              "defenders": 1
-            }
-          },
-          "attackerId": "allosaurus",
-          "targetId": "leedsichthys",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Allosaurus",
-            "targetName": "Leedsichthys",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 63,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Allosaurus is inside the legal hunt range."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
         {
           "id": "sarcosuchus",
           "name": "Sarcosuchus",
@@ -12287,7 +12071,7 @@
           "band": "severe",
           "kind": "predator",
           "headline": "Sarcosuchus can create a very narrow escape window",
-          "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. 3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 9 s with 83% of its health left.",
+          "summary": "Sarcosuchus is inside the legal hunt range. Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted. 3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 24 s with 46% of its health left.",
           "score": 81,
           "visible": true,
           "intent": {
@@ -12318,9 +12102,9 @@
           "facts": [
             "Its profile permits hunting through Apex tier.",
             "Sarcosuchus is 17% faster in water; a clean escape is unlikely once spotted.",
-            "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 9 s with 83% of its health left.",
+            "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 24 s with 46% of its health left.",
             "They overlap in 2 mapped areas, so the matchup is situational.",
-            "One-on-one, a Sarcosuchus tail lands 16 on Leedsichthys (62 to kill); a Leedsichthys headbutt lands 67 back (9 to kill).",
+            "One-on-one, a Sarcosuchus tail lands 14 on Leedsichthys (145 to kill); a Leedsichthys headbutt lands 79 back (8 to kill).",
             "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
           ],
           "fight": {
@@ -12330,16 +12114,16 @@
             "defenderChoice": 1,
             "bleed": "off",
             "duel": {
-              "attackerHit": 16,
-              "defenderHit": 67,
-              "attackerBurst": 86,
-              "defenderBurst": 67,
-              "attackerHitsToKill": 62,
-              "defenderHitsToKill": 9,
-              "attackerDps": 37.1,
-              "defenderDps": 33.6,
-              "attackerTimeToKill": 27,
-              "defenderTimeToKill": 18,
+              "attackerHit": 14,
+              "defenderHit": 79,
+              "attackerBurst": 73,
+              "defenderBurst": 79,
+              "attackerHitsToKill": 145,
+              "defenderHitsToKill": 8,
+              "attackerDps": 31.4,
+              "defenderDps": 39.7,
+              "attackerTimeToKill": 64,
+              "defenderTimeToKill": 15,
               "attackerBleed": 0,
               "defenderBleed": 0,
               "attackerBleedOutpacesHeal": false,
@@ -12348,27 +12132,27 @@
             "verdict": "attacker-advantage",
             "sim": {
               "winner": "attacker",
-              "seconds": 9,
-              "attackersLeft": 3,
+              "seconds": 24,
+              "attackersLeft": 2,
               "defendersLeft": 0,
-              "attackerHpShare": 0.83,
+              "attackerHpShare": 0.46,
               "defenderHpShare": 0,
               "firstDown": {
-                "side": "defender",
-                "seconds": 9
+                "side": "attacker",
+                "seconds": 15.25
               }
             },
-            "label": "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 9 s with 83% of its health left.",
+            "label": "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 24 s with 46% of its health left.",
             "detail": "3 attackers vs 1 defender",
             "attackerCombatWeight": 4500,
-            "targetCombatWeight": 5500,
+            "targetCombatWeight": 6500,
             "attackerGroupLimit": 3,
             "targetDefenderLimit": 1,
             "attackerGroupUnlimited": false,
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "attacker-advantage",
-              "label": "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 9 s with 83% of its health left.",
+              "label": "3 Sarcosuchus vs 1 Leedsichthys: the Sarcosuchus side wins in about 24 s with 46% of its health left.",
               "attackers": 3,
               "defenders": 1
             }
@@ -12402,7 +12186,7 @@
           "band": "high",
           "kind": "predator",
           "headline": "Torvosaurus can create a real pursuit problem",
-          "summary": "Torvosaurus is inside the legal hunt range. Torvosaurus is 850% faster on land; a clean escape is unlikely once spotted. 6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 10 s with 94% of its health left.",
+          "summary": "Torvosaurus is inside the legal hunt range. Torvosaurus is 850% faster on land; a clean escape is unlikely once spotted. 6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 22 s with 84% of its health left.",
           "score": 74,
           "visible": true,
           "intent": {
@@ -12433,9 +12217,9 @@
           "facts": [
             "Its profile permits hunting through Giant tier.",
             "Torvosaurus is 850% faster on land; a clean escape is unlikely once spotted.",
-            "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 10 s with 94% of its health left.",
+            "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 22 s with 84% of its health left.",
             "They overlap in 2 mapped areas, so the matchup is situational.",
-            "One-on-one, a Torvosaurus bite lands 27 on Leedsichthys (38 to kill); a Leedsichthys headbutt lands 52 back (14 to kill)."
+            "One-on-one, a Torvosaurus bite lands 23 on Leedsichthys (89 to kill); a Leedsichthys headbutt lands 61 back (12 to kill)."
           ],
           "fight": {
             "attackers": 6,
@@ -12444,16 +12228,16 @@
             "defenderChoice": 1,
             "bleed": "off",
             "duel": {
-              "attackerHit": 27,
-              "defenderHit": 52,
-              "attackerBurst": 27,
-              "defenderBurst": 52,
-              "attackerHitsToKill": 38,
-              "defenderHitsToKill": 14,
-              "attackerDps": 17.7,
-              "defenderDps": 25.9,
-              "attackerTimeToKill": 56,
-              "defenderTimeToKill": 27,
+              "attackerHit": 23,
+              "defenderHit": 61,
+              "attackerBurst": 23,
+              "defenderBurst": 61,
+              "attackerHitsToKill": 89,
+              "defenderHitsToKill": 12,
+              "attackerDps": 15,
+              "defenderDps": 30.6,
+              "attackerTimeToKill": 133,
+              "defenderTimeToKill": 23,
               "attackerBleed": 0,
               "defenderBleed": 0,
               "attackerBleedOutpacesHeal": false,
@@ -12462,27 +12246,27 @@
             "verdict": "attacker-advantage",
             "sim": {
               "winner": "attacker",
-              "seconds": 10,
+              "seconds": 22,
               "attackersLeft": 6,
               "defendersLeft": 0,
-              "attackerHpShare": 0.94,
+              "attackerHpShare": 0.84,
               "defenderHpShare": 0,
               "firstDown": {
                 "side": "defender",
-                "seconds": 9.5
+                "seconds": 22.25
               }
             },
-            "label": "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 10 s with 94% of its health left.",
+            "label": "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 22 s with 84% of its health left.",
             "detail": "6 attackers vs 1 defender",
             "attackerCombatWeight": 4500,
-            "targetCombatWeight": 5500,
+            "targetCombatWeight": 6500,
             "attackerGroupLimit": 6,
             "targetDefenderLimit": 1,
             "attackerGroupUnlimited": false,
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "attacker-advantage",
-              "label": "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 10 s with 94% of its health left.",
+              "label": "6 Torvosaurus vs 1 Leedsichthys: the Torvosaurus side wins in about 22 s with 84% of its health left.",
               "attackers": 6,
               "defenders": 1
             }
@@ -12507,15 +12291,137 @@
           "confidence": "derived"
         },
         {
-          "id": "ceratosaurus",
-          "name": "Ceratosaurus",
-          "family": "ceratosaurus",
+          "id": "tyrannotitan",
+          "name": "Tyrannotitan",
+          "family": "tyrannotitan",
           "direction": "threat",
-          "band": "high",
+          "band": "meaningful",
           "kind": "predator",
-          "headline": "Ceratosaurus can create a real pursuit problem",
-          "summary": "Ceratosaurus is inside the legal hunt range. Ceratosaurus is 950% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Leedsichthys: the Ceratosaurus side wins in about 22 s with 57% of its health left.",
-          "score": 74,
+          "headline": "Tyrannotitan can create a credible fight",
+          "summary": "Tyrannotitan is inside the legal hunt range. Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted. 2 Tyrannotitan vs 1 Leedsichthys: the Leedsichthys side wins in about 61 s with 41% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 100,
+            "speedMarginPct": 800,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 0,
+            "label": "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "mudflats",
+              "coastland-swamp"
+            ],
+            "overlap": 0.238,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted.",
+            "2 Tyrannotitan vs 1 Leedsichthys: the Leedsichthys side wins in about 61 s with 41% of its health left.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 17 on Leedsichthys (119 to kill); a Leedsichthys headbutt lands 59 back (16 to kill).",
+            "Tyrannotitan's bleed builds faster than Leedsichthys heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 2,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 59,
+              "attackerBurst": 42,
+              "defenderBurst": 59,
+              "attackerHitsToKill": 119,
+              "defenderHitsToKill": 16,
+              "attackerDps": 13,
+              "defenderDps": 29.5,
+              "attackerTimeToKill": 154,
+              "defenderTimeToKill": 30,
+              "attackerBleed": 0.203,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 61,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.41,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 30.5
+              }
+            },
+            "label": "2 Tyrannotitan vs 1 Leedsichthys: the Leedsichthys side wins in about 61 s with 41% of its health left.",
+            "detail": "2 attackers vs 1 defender",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 6500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "2 Tyrannotitan vs 1 Leedsichthys: the Leedsichthys side wins in about 61 s with 41% of its health left.",
+              "attackers": 2,
+              "defenders": 1
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "leedsichthys",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Leedsichthys",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 800% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannotitan is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "allosaurus",
+          "name": "Allosaurus",
+          "family": "allosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Allosaurus matters only if it gets the right opening",
+          "summary": "Allosaurus is inside the legal hunt range. Allosaurus is 940% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 55% of its health left.",
+          "score": 46,
           "visible": true,
           "intent": {
             "allowed": true,
@@ -12525,328 +12431,97 @@
           "chase": {
             "mode": "land",
             "verdict": "attacker-faster",
-            "attackerSpeed": 1050,
+            "attackerSpeed": 1040,
             "targetSpeed": 100,
-            "speedMarginPct": 950,
-            "attackerDurationSeconds": 143,
+            "speedMarginPct": 940,
+            "attackerDurationSeconds": 91,
             "targetDurationSeconds": 63,
-            "durationMarginPct": 127,
-            "label": "Ceratosaurus is 950% faster on land; a clean escape is unlikely once spotted."
+            "durationMarginPct": 44.4,
+            "label": "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted."
           },
           "encounter": {
             "level": "possible",
             "sharedRegions": [
-              "big-tree-overlook"
+              "volcano-islands",
+              "big-tree-overlook",
+              "twisted-forest"
             ],
-            "overlap": 0.04,
-            "label": "They overlap in 1 mapped area, so the matchup is situational."
+            "overlap": 0.13,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
           },
           "facts": [
             "Its profile permits hunting through Apex tier.",
-            "Ceratosaurus is 950% faster on land; a clean escape is unlikely once spotted.",
-            "4 Ceratosaurus vs 1 Leedsichthys: the Ceratosaurus side wins in about 22 s with 57% of its health left.",
-            "They overlap in 1 mapped area, so the matchup is situational.",
-            "One-on-one, a Ceratosaurus bite lands 9 on Leedsichthys (106 to kill); a Leedsichthys headbutt lands 116 back (7 to kill)."
+            "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted.",
+            "3 Allosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 55% of its health left.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Allosaurus bite lands 14 on Leedsichthys (139 to kill); a Leedsichthys headbutt lands 95 back (7 to kill).",
+            "Allosaurus's bleed builds faster than Leedsichthys heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
           ],
           "fight": {
-            "attackers": 4,
+            "attackers": 3,
             "defenders": 1,
             "attackerChoice": "max",
             "defenderChoice": 1,
             "bleed": "off",
             "duel": {
-              "attackerHit": 9,
-              "defenderHit": 116,
-              "attackerBurst": 21,
-              "defenderBurst": 116,
-              "attackerHitsToKill": 106,
+              "attackerHit": 14,
+              "defenderHit": 95,
+              "attackerBurst": 20,
+              "defenderBurst": 95,
+              "attackerHitsToKill": 139,
               "defenderHitsToKill": 7,
-              "attackerDps": 12.8,
-              "defenderDps": 58.2,
-              "attackerTimeToKill": 78,
-              "defenderTimeToKill": 13,
-              "attackerBleed": 0,
+              "attackerDps": 11.1,
+              "defenderDps": 47.7,
+              "attackerTimeToKill": 181,
+              "defenderTimeToKill": 14,
+              "attackerBleed": 0.065,
               "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
+              "attackerBleedOutpacesHeal": true,
               "defenderBleedOutpacesHeal": false
             },
-            "verdict": "attacker-advantage",
+            "verdict": "defender-advantage",
             "sim": {
-              "winner": "attacker",
-              "seconds": 22,
-              "attackersLeft": 3,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.57,
-              "defenderHpShare": 0,
+              "winner": "defender",
+              "seconds": 41,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.55,
               "firstDown": {
                 "side": "attacker",
-                "seconds": 13
+                "seconds": 13.75
               }
             },
-            "label": "4 Ceratosaurus vs 1 Leedsichthys: the Ceratosaurus side wins in about 22 s with 57% of its health left.",
-            "detail": "4 attackers vs 1 defender",
-            "attackerCombatWeight": 2600,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 4,
+            "label": "3 Allosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 55% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 3750,
+            "targetCombatWeight": 6500,
+            "attackerGroupLimit": 3,
             "targetDefenderLimit": 1,
             "attackerGroupUnlimited": false,
             "targetDefendersUnlimited": false,
             "legal": {
-              "verdict": "attacker-advantage",
-              "label": "4 Ceratosaurus vs 1 Leedsichthys: the Ceratosaurus side wins in about 22 s with 57% of its health left.",
-              "attackers": 4,
+              "verdict": "defender-advantage",
+              "label": "3 Allosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 55% of its health left.",
+              "attackers": 3,
               "defenders": 1
             }
           },
-          "attackerId": "ceratosaurus",
+          "attackerId": "allosaurus",
           "targetId": "leedsichthys",
           "core": {
             "direction": "threat",
-            "attackerName": "Ceratosaurus",
+            "attackerName": "Allosaurus",
             "targetName": "Leedsichthys",
             "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Ceratosaurus is 950% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 56,
+            "chaseLabel": "Allosaurus is 940% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 63,
             "scoreCap": null,
             "conditional": false,
             "explicit": false,
             "relationKind": null,
-            "summaryLead": "Ceratosaurus is inside the legal hunt range."
-          },
-          "tags": [
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "deinosuchus-shore",
-          "name": "Deinosuchus (Shore)",
-          "family": "deinosuchus",
-          "direction": "threat",
-          "band": "high",
-          "kind": "predator",
-          "headline": "Deinosuchus (Shore) can create a real pursuit problem",
-          "summary": "Deinosuchus (Shore) is inside the legal hunt range. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-          "score": 67,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "close-chase",
-            "attackerSpeed": 700,
-            "targetSpeed": 750,
-            "speedMarginPct": -6.7,
-            "attackerDurationSeconds": 166.667,
-            "targetDurationSeconds": 167,
-            "durationMarginPct": -0.2,
-            "label": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "coastal-bluffs",
-              "volcano-islands",
-              "palm-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "mudflats",
-              "coastland-swamp"
-            ],
-            "overlap": 0.412,
-            "label": "7 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-            "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-            "7 shared mapped areas make contact plausible.",
-            "One-on-one, a Deinosuchus (Shore) bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 46 back (22 to kill).",
-            "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 30,
-              "defenderHit": 46,
-              "attackerBurst": 63,
-              "defenderBurst": 46,
-              "attackerHitsToKill": 34,
-              "defenderHitsToKill": 22,
-              "attackerDps": 23.8,
-              "defenderDps": 22.9,
-              "attackerTimeToKill": 42,
-              "defenderTimeToKill": 44,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "close",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 42,
-              "attackersLeft": 1,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.04,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 42
-              }
-            },
-            "label": "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 6000,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "close",
-              "label": "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-              "attackers": 1,
-              "defenders": 1
-            }
-          },
-          "attackerId": "deinosuchus-shore",
-          "targetId": "leedsichthys",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Deinosuchus (Shore)",
-            "targetName": "Leedsichthys",
-            "chaseVerdict": "close-chase",
-            "chaseLabel": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-            "baseScore": 59,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Deinosuchus (Shore) is inside the legal hunt range."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "deinosuchus-ocean",
-          "name": "Deinosuchus (Ocean)",
-          "family": "deinosuchus",
-          "direction": "threat",
-          "band": "meaningful",
-          "kind": "predator",
-          "headline": "Deinosuchus (Ocean) can create a credible fight",
-          "summary": "Deinosuchus (Ocean) is inside the legal hunt range. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.",
-          "score": 58,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "close-chase",
-            "attackerSpeed": 700,
-            "targetSpeed": 750,
-            "speedMarginPct": -6.7,
-            "attackerDurationSeconds": 166.667,
-            "targetDurationSeconds": 167,
-            "durationMarginPct": -0.2,
-            "label": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it."
-          },
-          "encounter": {
-            "level": "possible",
-            "sharedRegions": [
-              "kelp-vale",
-              "stonebed-shoal"
-            ],
-            "overlap": 0.118,
-            "label": "They overlap in 2 mapped areas, so the matchup is situational."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-            "1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.",
-            "They overlap in 2 mapped areas, so the matchup is situational.",
-            "One-on-one, a Deinosuchus (Ocean) bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 46 back (22 to kill).",
-            "Deinosuchus (Ocean) has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 30,
-              "defenderHit": 46,
-              "attackerBurst": 63,
-              "defenderBurst": 46,
-              "attackerHitsToKill": 34,
-              "defenderHitsToKill": 22,
-              "attackerDps": 23.8,
-              "defenderDps": 22.9,
-              "attackerTimeToKill": 42,
-              "defenderTimeToKill": 44,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "close",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 42,
-              "attackersLeft": 1,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.04,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 42
-              }
-            },
-            "label": "1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 6000,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "close",
-              "label": "1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.",
-              "attackers": 1,
-              "defenders": 1
-            }
-          },
-          "attackerId": "deinosuchus-ocean",
-          "targetId": "leedsichthys",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Deinosuchus (Ocean)",
-            "targetName": "Leedsichthys",
-            "chaseVerdict": "close-chase",
-            "chaseLabel": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-            "baseScore": 50,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Deinosuchus (Ocean) is inside the legal hunt range."
+            "summaryLead": "Allosaurus is inside the legal hunt range."
           },
           "tags": [
             "ambush"
@@ -12865,8 +12540,8 @@
       "leedsichthys": {
         "id": "leedsichthys",
         "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
+        "cw": 6500,
+        "hp": 2000,
         "armor": 2,
         "dps": 27.5,
         "primary": {
@@ -13015,37 +12690,6 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "parasaurolophus": {
-        "id": "parasaurolophus",
-        "name": "Parasaurolophus",
-        "cw": 5500,
-        "hp": 1400,
-        "armor": 1.1,
-        "dps": 37.5,
-        "primary": {
-          "label": "Bite",
-          "damage": 25,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Arm Slam",
-          "damage": 80,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Arm Slam",
-          "Leg Kick"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
       "eurhinosaurus": {
         "id": "eurhinosaurus",
         "name": "Eurhinosaurus",
@@ -13107,64 +12751,35 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "tyrannotitan": {
-        "id": "tyrannotitan",
-        "name": "Tyrannotitan",
+      "parasaurolophus": {
+        "id": "parasaurolophus",
+        "name": "Parasaurolophus",
         "cw": 5500,
-        "hp": 900,
+        "hp": 1400,
         "armor": 1.1,
-        "dps": 30.67,
+        "dps": 37.5,
         "primary": {
           "label": "Bite",
-          "damage": 40,
+          "damage": 25,
           "cooldown": 1.5
         },
         "burst": {
-          "label": "Heavy Bite",
-          "damage": 100,
-          "cooldown": 15,
+          "label": "Arm Slam",
+          "damage": 80,
+          "cooldown": 3,
           "situational": false
         },
         "attacks": [
           "Bite",
-          "Heavy Bite"
+          "Arm Slam",
+          "Leg Kick"
         ],
-        "bleedPerSecond": 0.24,
-        "bleedHealRate": 0.032,
-        "estimated": true,
-        "huntLimit": 2,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "allosaurus": {
-        "id": "allosaurus",
-        "name": "Allosaurus",
-        "cw": 3750,
-        "hp": 650,
-        "armor": 1,
-        "dps": 38.33,
-        "primary": {
-          "label": "Bite",
-          "damage": 50,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Hatchet Bite",
-          "damage": 70,
-          "cooldown": 4,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Hatchet Bite"
-        ],
-        "bleedPerSecond": 0.113,
+        "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
         "estimated": false,
-        "huntLimit": 3,
+        "huntLimit": 1,
         "huntUnlimited": false,
-        "engagementLimit": 3,
+        "engagementLimit": 2,
         "engagementUnlimited": false
       },
       "sarcosuchus": {
@@ -13227,97 +12842,64 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "ceratosaurus": {
-        "id": "ceratosaurus",
-        "name": "Ceratosaurus",
-        "cw": 2600,
-        "hp": 750,
-        "armor": 1,
-        "dps": 54,
+      "tyrannotitan": {
+        "id": "tyrannotitan",
+        "name": "Tyrannotitan",
+        "cw": 5500,
+        "hp": 900,
+        "armor": 1.1,
+        "dps": 30.67,
         "primary": {
           "label": "Bite",
           "damage": 40,
-          "cooldown": 1
+          "cooldown": 1.5
         },
         "burst": {
-          "label": "Frenzy Thrash",
-          "damage": 90,
+          "label": "Heavy Bite",
+          "damage": 100,
           "cooldown": 15,
           "situational": false
         },
         "attacks": [
           "Bite",
-          "Kick",
-          "Headbutt"
+          "Heavy Bite"
         ],
-        "bleedPerSecond": 0,
+        "bleedPerSecond": 0.24,
+        "bleedHealRate": 0.032,
+        "estimated": true,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "allosaurus": {
+        "id": "allosaurus",
+        "name": "Allosaurus",
+        "cw": 3750,
+        "hp": 650,
+        "armor": 1,
+        "dps": 38.33,
+        "primary": {
+          "label": "Bite",
+          "damage": 50,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Hatchet Bite",
+          "damage": 70,
+          "cooldown": 4,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Hatchet Bite"
+        ],
+        "bleedPerSecond": 0.113,
         "bleedHealRate": 0.032,
         "estimated": false,
-        "huntLimit": 4,
+        "huntLimit": 3,
         "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "deinosuchus-shore": {
-        "id": "deinosuchus-shore",
-        "name": "Deinosuchus (Shore)",
-        "cw": 6000,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 43.67,
-        "primary": {
-          "label": "Bite",
-          "damage": 55,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite Armor",
-          "damage": 115,
-          "cooldown": 15,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Bite Armor",
-          "Deathroll"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.024,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "deinosuchus-ocean": {
-        "id": "deinosuchus-ocean",
-        "name": "Deinosuchus (Ocean)",
-        "cw": 6000,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 43.67,
-        "primary": {
-          "label": "Bite",
-          "damage": 55,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite Armor",
-          "damage": 115,
-          "cooldown": 15,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Bite Armor",
-          "Deathroll"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.024,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
+        "engagementLimit": 3,
         "engagementUnlimited": false
       }
     },
@@ -13326,7 +12908,7 @@
       "tier": "Apex",
       "diet": "Carnivore",
       "habitat": "Aquatic Filter Feeder",
-      "combatWeight": 5500,
+      "combatWeight": 6500,
       "sprintSpeed": 100,
       "sprintDurationSeconds": 63,
       "waterSprintSpeed": 750,
@@ -13478,8 +13060,8 @@
       "diet": "Carnivore",
       "activity": "Cathemeral",
       "habitat": "Aquatic Filter Feeder",
-      "combatWeight": 5500,
-      "maxHealth": 1000,
+      "combatWeight": 6500,
+      "maxHealth": 2000,
       "growthMinutes": 240,
       "landSprint": 100,
       "landSprintSeconds": 63,
@@ -13639,8 +13221,8 @@
           "diet": "Carnivore",
           "activity": "Cathemeral",
           "habitat": "Aquatic Filter Feeder",
-          "combatWeight": 5500,
-          "maxHealth": 1000,
+          "combatWeight": 6500,
+          "maxHealth": 2000,
           "growthMinutes": 240,
           "landSprint": 100,
           "landSprintSeconds": 63,
@@ -13796,8 +13378,8 @@
           "diet": "Carnivore",
           "activity": "Cathemeral",
           "habitat": "Aquatic Filter Feeder",
-          "combatWeight": 5500,
-          "maxHealth": 1000,
+          "combatWeight": 6500,
+          "maxHealth": 2000,
           "growthMinutes": 240,
           "landSprint": 100,
           "landSprintSeconds": 63,

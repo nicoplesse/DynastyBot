@@ -67,13 +67,13 @@ Alioramus is inside the legal hunt range. Alioramus is 24% faster on land; a cle
 ## Chancen (wen du jagen/schlagen kannst)
 
 ### Leedsichthys – conditional (conditional)
-Leedsichthys is a realistic hunting opportunity
+Leedsichthys is legal quarry, but not a comfortable fight
 
-A profile rule names or prioritises this matchup. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.
+A profile rule names or prioritises this matchup. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.
 - Verfolgung: Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call. (Kampfgewicht 5500 vs 5500)
-- Kampf (beide Seiten legal max): 1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 13 pro Haupttreffer vom Angreifer (80 bis zum Kill), 50 zurück (29 bis zum Kill)
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left. (Kampfgewicht 5500 vs 6500)
+- Kampf (beide Seiten legal max): 1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 11 pro Haupttreffer vom Angreifer (190 bis zum Kill), 59 zurück (24 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
 

@@ -146,14 +146,14 @@ Austroraptor is within the legal hunt ceiling. This is a close chase in water: 7
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 157 pro Haupttreffer vom Angreifer (5 bis zum Kill), 16 zurück (63 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
-### Leedsichthys – hoch (quarry)
-Leedsichthys is a realistic hunting opportunity
+### Suchomimus – spürbar (risky-quarry)
+Suchomimus is legal quarry, but not a comfortable fight
 
-Leedsichthys is within the legal hunt ceiling. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call. (Kampfgewicht 6000 vs 5500)
-- Kampf (beide Seiten legal max): 1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (34 bis zum Kill), 46 zurück (22 bis zum Kill)
+Suchomimus is within the legal hunt ceiling. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. 1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.
+- Verfolgung: Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left. (Kampfgewicht 6000 vs 5000)
+- Kampf (beide Seiten legal max): 1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 66 pro Haupttreffer vom Angreifer (11 bis zum Kill), 30 zurück (33 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
 ## Besondere Risiken

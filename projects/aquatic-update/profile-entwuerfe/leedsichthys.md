@@ -17,7 +17,7 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 | Feind der Adulten | Tylosaurus | Livyatan (allein), Tylosaurus |
 | Haltung gegenüber Livyatan | – | Rivale (entschieden am 04.11.): flieht nie, zieht den Kampf in die Tiefe; ohne Junge aggressiv, duldet keinen Livy im Umkreis von 5 Körperlängen; Väter mit Jungen headstrong, greifen auch nach einem Forfeit oder während der Livy Luft holt weiter an; nur gegenüber Livy |
 | Forfeits (4.8.2.3) | respektiert die Forfeits aller Fleischfresser | unverändert, außer: ein Vater mit Jungen darf den Forfeit eines Livy ignorieren |
-| Health | „Boosted health“ ohne Wert | Wert festlegen (offen) |
+| Werte (07.11.) | CW 5500, „Boosted health“ ohne Wert | von Dynasty selbst angehoben: CW 6500, Health 2000; kein Vorschlag mehr nötig |
 | Wanderroute | Schleife durchs Meer und die Kanäle | dieselbe Schleife durch die warmen Salzwasser-Flussengen, dazu regelmäßige Abstecher in die Ozeane Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal; seine Eurhinos ziehen mit |
 | Schlaf | kurze Schübe, egal wo und wann | schläft nachts meist bei seinem Schwarm, wenn er einen hat |
 | Süßwasser (05.11.) | – | Abstecher in die Seen und das Süßwasser, das mit den Flussengen verbunden ist; Krill gibt es im Spiel auch dort |
@@ -35,6 +35,19 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 **Meine Sorge dabei, und warum sie sich auflöst:** Von den Wasser-Jägern lebt im Süßwasser nur Spino (Sprint 750), und Kai (990) und Eurhino (1050) schwimmen ihm davon. Ohne Grund würde das Süßwasser also zum sicheren Hafen. Den Grund liefert die Neugier auf Landtiere: Sie zieht die Flotilla und die Kai ans Ufer und die Kai an Land, und dort warten die Fleischfresser vom Land. Dazu kommt der Xiph, der in die verbundenen Seen folgen darf. Ein sicherer Ort wird es so nicht.
 
 **Warum die Route so läuft:** In den flachen Flussengen zwischen den Inseln ist das Wasser warm. Leeds zieht regelmäßig hinaus in die Ozeane, um sich abzukühlen. Die Eurhinos finden dort die Fischarten, die für sie am wertvollsten sind. So haben beide Seiten ihren eigenen Grund für dieselbe Route.
+
+**Neu von Dynasty (vom Nutzer, 07.11.): CW 6500, Health 2000.** Dynasty hat den Leeds selbst angehoben (vorher CW 5500, „Boosted health“ ohne Wert, Standard-Health 1000). Damit ist er deutlich mächtiger. Reine Bissduelle, ohne Blutung:
+
+| Kampf | bisher (CW 5500, Health 1000) | jetzt (CW 6500, Health 2000) |
+| --- | --- | --- |
+| 1 Livy gegen Leeds | Livy gewinnt (39 s, behält 65 %) | Livy gewinnt hauchdünn (92 s, behält 1 %) |
+| 2 Tylo gegen Leeds | Tylo gewinnen (22 s) | Leeds gewinnt (53 s, behält 22 %) |
+| 2 Sachi gegen Leeds | Sachi gewinnen (25 s) | Leeds gewinnt (58 s, behält 26 %) |
+| 1 Spino gegen Leeds | Spino gewinnt (25 s) | Leeds gewinnt (39 s, behält 35 %) |
+| 6 Xiph gegen Leeds | Xiph gewinnen (24 s) | Leeds gewinnt (46 s) |
+| 3 Kai gegen Leeds | Kai gewinnen (16 s) | Kai gewinnen (51 s, behalten 20 %) |
+
+Im Wasser entscheidet die Wendigkeit mit. Der Leeds sprintet nur 600, Tylo 900, Livy 750, er kann also niemanden verfolgen. Hit-and-Run bleibt der Weg gegen ihn, und genau so beschreibt ihn das heutige Tylo-Profil schon („ambush, speed and numbers“).
 
 **Warum es keinen Schutz gibt:**
 - **Kein Leibwächter:** Leeds gewinnt fast jedes Duell, weil er doppelte Armor hat. Nur der Livy schlägt ihn. Als Leibwächter würde er seine Eurhinos unangreifbar machen.
@@ -132,5 +145,5 @@ Leedsichthys bleibt ein friedlicher Riese, und seine Werte bleiben gleich. Neu i
 
 ## Dynasty Adjusted Stats
 
-- Combat Weight: 5500
-- Adjusted Stats: Health **(value to be stated)**. The current profile only says "Boosted health". A stated value makes balancing between aquatics possible.
+- Combat Weight: 6500
+- Adjusted Stats: combat weight increased to 6500 from 5500, max health increased to 2000 from 1000 (raised by Dynasty, not part of this suggestion).

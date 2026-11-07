@@ -159,7 +159,7 @@ These species feel at ease on the islands and coasts along Livyatan waters, wher
 ### ✦ Leedsichthys
 Leedsichthys are Livyatan's preferred prey, the closest thing to the great baleen whales they once hunted. Lone hunters track them by sound along their migration routes and rise from below.
 The two giants of the ocean are bitter rivals. A Leedsichthys turns towards the clicking instead of fleeing, and every hunt becomes a struggle in the deep, like a sperm whale against a giant squid.
-A grown Livyatan overpowers an adult Leedsichthys in a straight fight, but a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air.
+In a straight fight, a grown Livyatan beats an adult Leedsichthys only by a hair, and a Leedsichthys never flees. It drags the fight into the depths, where the whale runs out of air.
 Experienced Livyatan avoid fathers with pups, which do not even let go when the Livyatan breaks off to breathe, and fight until the whale is gone.
 
 ### ✦ Tylosaurus & Sachicasaurus

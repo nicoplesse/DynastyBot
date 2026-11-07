@@ -106,16 +106,6 @@ Austroraptor is within the legal hunt ceiling. This is a close chase in water: 7
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 157 pro Haupttreffer vom Angreifer (5 bis zum Kill), 16 zurück (63 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
-### Leedsichthys – spürbar (quarry)
-Leedsichthys is a realistic hunting opportunity
-
-Leedsichthys is within the legal hunt ceiling. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call. (Kampfgewicht 6000 vs 5500)
-- Kampf (beide Seiten legal max): 1 Deinosuchus (Ocean) vs 1 Leedsichthys: the Deinosuchus (Ocean) side wins in about 42 s with 4% of its health left, too narrow to call.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (34 bis zum Kill), 46 zurück (22 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Giant tier.
-
 ### Suchomimus – conditional (risky-quarry)
 Suchomimus is legal quarry, but not a comfortable fight
 

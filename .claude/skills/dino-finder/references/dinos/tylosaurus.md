@@ -84,9 +84,9 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Spinosaurus (Saltwater)** (hoch): Spinosaurus (Saltwater) can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
 - **Deinosuchus (Ocean)** (sehr hoch): Deinosuchus (Ocean) is a realistic hunting opportunity
+- **Leedsichthys** (spürbar): Leedsichthys is legal quarry, but not a comfortable fight
 - **Spinosaurus (Freshwater)** (spürbar): Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
 - **Spinosaurus (Saltwater)** (spürbar): Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
 - **Eurhinosaurus** (hoch): Eurhinosaurus can usually refuse the chase

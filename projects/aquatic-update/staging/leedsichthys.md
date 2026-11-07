@@ -317,8 +317,8 @@ Leedsichthys may opt to communally migrate with other Leedsichthys, but will not
 
 ## Dynasty Adjusted Stats
 Growth Time (hatchling-juvenile, juvenile-adolescent, adolescent-sub, sub-adult in minutes): 20-60-75-85 = 240 total
-Combat Weight: 5500
+Combat Weight: 6500
 Adjusted Stats:
-- Boosted health.
-%% note Offen: Der Health-Wert soll im Profil konkret genannt werden (heute steht nur „Boosted health“).
+- Combat weight increased to 6500 from 5500
+- Max health increased to 2000 from 1000
 %% quicklinks

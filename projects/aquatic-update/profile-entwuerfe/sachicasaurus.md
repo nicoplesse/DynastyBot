@@ -45,7 +45,7 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 | 1 Livy gegen 2 Sachi | Livy gewinnt (38 s, 27 %); gegen 2 Tylo 35 s, 23 % |
 | 1 Sachi gegen 1 Kai | Sachi gewinnt (18 s, 25 %) |
 | 1 Sachi gegen 2 Kai, die sich stellen (nur am Nest) | Sachi verliert (12 s) |
-| 2 Sachi gegen 1 Leeds | gewinnen (25 s bei 1000 Health, 64 s und knapp bei 2000) |
+| 2 Sachi gegen 1 Leeds | verlieren seit dem 07.11.: Leeds mit CW 6500 und Health 2000 gewinnt in 58 s und behält 26 % (vorher gewannen sie in 25 s) |
 | 1 Sachi gegen 4 Xiph | verliert knapp (23 s) |
 | 1 Sachi gegen 1 Deino | verliert (21 s, Deino behält 29 %) |
 | 2 Sachi gegen 1 Deino | gewinnen (15 s, 65 %) |

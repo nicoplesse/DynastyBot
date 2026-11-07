@@ -14204,8 +14204,8 @@
         "band": "severe",
         "kind": "quarry",
         "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
-        "score": 92,
+        "summary": "A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
+        "score": 82,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -14238,9 +14238,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.",
-          "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+          "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Spinosaurus (Freshwater) claw lands 33 on Leedsichthys (31 to kill); a Leedsichthys headbutt lands 46 back (25 to kill)."
+          "One-on-one, a Spinosaurus (Freshwater) claw lands 28 on Leedsichthys (73 to kill); a Leedsichthys headbutt lands 54 back (21 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -14249,45 +14249,45 @@
           "defenderChoice": "max",
           "bleed": "off",
           "duel": {
-            "attackerHit": 33,
-            "defenderHit": 46,
-            "attackerBurst": 93,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 31,
-            "defenderHitsToKill": 25,
-            "attackerDps": 39.6,
-            "defenderDps": 22.9,
-            "attackerTimeToKill": 25,
-            "defenderTimeToKill": 48,
+            "attackerHit": 28,
+            "defenderHit": 54,
+            "attackerBurst": 78,
+            "defenderBurst": 54,
+            "attackerHitsToKill": 73,
+            "defenderHitsToKill": 21,
+            "attackerDps": 33.5,
+            "defenderDps": 27.1,
+            "attackerTimeToKill": 60,
+            "defenderTimeToKill": 41,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "attacker-advantage",
+          "verdict": "close",
           "sim": {
-            "winner": "attacker",
-            "seconds": 25,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.47,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 41,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.32,
             "firstDown": {
-              "side": "defender",
-              "seconds": 25.25
+              "side": "attacker",
+              "seconds": 40.75
             }
           },
-          "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+          "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 1,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "attacker-advantage",
-            "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Spinosaurus (Freshwater) side wins in about 25 s with 47% of its health left.",
+            "verdict": "close",
+            "label": "1 Spinosaurus (Freshwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.",
             "attackers": 1,
             "defenders": 1
           }
@@ -16864,8 +16864,8 @@
       "leedsichthys": {
         "id": "leedsichthys",
         "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
+        "cw": 6500,
+        "hp": 2000,
         "armor": 2,
         "dps": 27.5,
         "primary": {

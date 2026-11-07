@@ -16,7 +16,7 @@ Fett = bester Wert der Zeile. Herleitung und Quellen stehen in den Abschnitten d
 | | Tylosaurus | Kaiwhekea | Eurhinosaurus | Leedsichthys | Prognathodon (Mod) | Xiphactinus (Mod) | Livyatan (Mod) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Kampf** | | | | | | | |
-| CW | 5000 | 4000 | 3000 | 5500 | 5700 | 2400 | **6000** |
+| CW | 5000 | 4000 | 3000 | **6500** | 5700 | 2400 | **6000** |
 | Health | **1000** | 750 | 600 | **≥ 1000** | 700 | 600 | 950 |
 | Armor | 1 | 1 | 1 | **2** | 1 | 1 | 1,1 |
 | Health × Armor | 1000 | 750 | 600 | **≥ 2000** | 700 | 600 | 1045 |
@@ -56,7 +56,7 @@ Fett = bester Wert der Zeile. Herleitung und Quellen stehen in den Abschnitten d
 | Tylosaurus | **5000** (Standard 4500) | **1000** (Standard 900) | 1 | 2,0 | 0,9 | 1000, leer nach ~41 min |
 | Kaiwhekea | **4000** (Standard 3500) | 750 | 1 | 2,2 | 0,9 | 400, ~40 min |
 | Eurhinosaurus | **3000** (Standard 3100) | 600 | 1 | 2,0 | 0,9 | 250, ~40 min |
-| Leedsichthys | 5500 | ≥ 1000 („Boosted health“, Wert nicht genannt) | **2** | 2,0 | 0,9 | 1000, ~41 min |
+| Leedsichthys | **6500** (Standard 5500, seit 07.11.) | **2000** (Standard 1000, seit 07.11.) | **2** | 2,0 | 0,9 | 1000, ~41 min |
 | Prognathodon (Mod) | 5700 | 700 | 1 | **0,83** | 0,7 | 1000, ~60 min |
 | Xiphactinus (Mod) | 2400 | 600 | 1 | 2,0 | **1,3** | 300, ~25 min |
 | Livyatan (Mod) | **6000** | 950 | 1,1 | 1,5 | 0,8 | 1500, ~50 min |
@@ -179,7 +179,7 @@ Schaden = Damage × (CW Angreifer ÷ CW Ziel) ÷ Armor Ziel. Die „Rotation“ 
 
 ### 1 gegen 1: Sekunden bis zum Kill
 
-Annahmen: Jeder Treffer sitzt, ohne Blutung, Gift, Heilung oder Buffs. Für Leedsichthys ist Health 1000 als Untergrenze eingesetzt, weil der Dynasty-Boost keinen Wert nennt.
+Annahmen: Jeder Treffer sitzt, ohne Blutung, Gift, Heilung oder Buffs. Für Leedsichthys ist Health 1000 als Untergrenze eingesetzt, weil der Dynasty-Boost damals keinen Wert nannte (Stand 03.11.). Seit dem 07.11. hat der Leeds CW 6500 und Health 2000; die aktuellen Zahlen stehen in oekosystem.md.
 
 | Angreifer ↓ / Ziel → | Tylo | Kai | Eurhino | Leeds | Prog | Xiph | Livy |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -226,7 +226,7 @@ Bestätigt durch die installierten Mod-Ordner auf diesem PC; dieselben IDs nenne
 
 ## Offene Punkte
 
-- Der Health-Wert von Leedsichthys auf Dynasty.
+- ~~Der Health-Wert von Leedsichthys auf Dynasty.~~ Geklärt am 07.11.: Dynasty hat ihn auf CW 6500 und Health 2000 angehoben.
 - Ein Widerspruch zwischen den Quellen: NexLink nennt für Tylosaurus 0,6 und für Kaiwhekea 0,45 Fast-Swim-Kosten, das Wiki genau umgekehrt. Davon hängt die Sprintdauer der beiden ab.
 - Dynasty kann Speeds per Server-Einstellung ändern. Die Tabelle zeigt die Standardwerte aus den Spieldateien.
 - Ob Xiphactinus zum Luftholen auftauchen muss.

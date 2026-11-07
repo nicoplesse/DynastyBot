@@ -6,8 +6,8 @@ Stufen: Hatchling, Juvenile, Adolescent, Sub-Adult, Adult. „Dynasty“ = nach 
 
 | Wert | Dynasty (5 Stufen) | Basis Adult |
 |---|---|---|
-| Core.MaxHealth | 150 / 262.5 / 450 / 700 /  | 1000 |
-| Core.CombatWeight | 300 / 1500 / 2750 / 3750 / 5500 | = |
+| Core.MaxHealth | 150 / 262.5 / 450 / 700 / 2000 | 1000 |
+| Core.CombatWeight | 300 / 1500 / 2750 / 3750 / 6500 | 5500 |
 | Core.Armor | 2 / 2 / 2 / 2 / 2 | = |
 | Core.BodyFoodAmount | 10 / 10 / 100 / 750 / 1000 | = |
 | Core.MaxHunger | 50 / 150 / 300 / 550 / 1000 | = |

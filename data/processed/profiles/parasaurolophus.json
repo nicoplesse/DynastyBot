@@ -14090,9 +14090,9 @@
         "direction": "opportunity",
         "band": "conditional",
         "kind": "conditional",
-        "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
-        "score": 73,
+        "headline": "Leedsichthys is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted. 1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
+        "score": 48,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -14130,9 +14130,9 @@
         "facts": [
           "Only a stated condition turns this into a legal hunt or attack.",
           "Parasaurolophus is 825% faster on land; a clean escape is unlikely once spotted.",
-          "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
+          "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
           "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Parasaurolophus bite lands 13 on Leedsichthys (80 to kill); a Leedsichthys headbutt lands 50 back (29 to kill)."
+          "One-on-one, a Parasaurolophus bite lands 11 on Leedsichthys (190 to kill); a Leedsichthys headbutt lands 59 back (24 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -14141,45 +14141,45 @@
           "defenderChoice": "max",
           "bleed": "off",
           "duel": {
-            "attackerHit": 13,
-            "defenderHit": 50,
-            "attackerBurst": 40,
-            "defenderBurst": 50,
-            "attackerHitsToKill": 80,
-            "defenderHitsToKill": 29,
-            "attackerDps": 18.8,
-            "defenderDps": 25,
-            "attackerTimeToKill": 53,
-            "defenderTimeToKill": 56,
+            "attackerHit": 11,
+            "defenderHit": 59,
+            "attackerBurst": 34,
+            "defenderBurst": 59,
+            "attackerHitsToKill": 190,
+            "defenderHitsToKill": 24,
+            "attackerDps": 15.9,
+            "defenderDps": 29.5,
+            "attackerTimeToKill": 126,
+            "defenderTimeToKill": 47,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "close",
+          "verdict": "defender-advantage",
           "sim": {
-            "winner": "attacker",
-            "seconds": 54,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.04,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 48,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.62,
             "firstDown": {
-              "side": "defender",
-              "seconds": 53.5
+              "side": "attacker",
+              "seconds": 47.5
             }
           },
-          "label": "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
+          "label": "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
           "detail": "1 attacker vs 1 defender",
           "attackerCombatWeight": 5500,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 6500,
           "attackerGroupLimit": 1,
           "targetDefenderLimit": 1,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "close",
-            "label": "1 Parasaurolophus vs 1 Leedsichthys: the Parasaurolophus side wins in about 54 s with 4% of its health left, too narrow to call.",
+            "verdict": "defender-advantage",
+            "label": "1 Parasaurolophus vs 1 Leedsichthys: the Leedsichthys side wins in about 48 s with 62% of its health left.",
             "attackers": 1,
             "defenders": 1
           }
@@ -15144,8 +15144,8 @@
       "leedsichthys": {
         "id": "leedsichthys",
         "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
+        "cw": 6500,
+        "hp": 2000,
         "armor": 2,
         "dps": 27.5,
         "primary": {

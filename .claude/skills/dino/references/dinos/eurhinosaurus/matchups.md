@@ -29,11 +29,11 @@ Kaiwhekea is inside the legal hunt range. Eurhinosaurus is 6% faster in water an
 ### Leedsichthys – spürbar (risky-quarry)
 Leedsichthys is legal quarry, but not a comfortable fight
 
-A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 12 s with 89% of its health left.
+A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 10 s with 96% of its health left.
 - Verfolgung: Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 12 s with 89% of its health left. (Kampfgewicht 3000 vs 5500)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 36 s with 36% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 11 pro Haupttreffer vom Angreifer (92 bis zum Kill), 101 zurück (6 bis zum Kill)
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 10 s with 96% of its health left. (Kampfgewicht 3000 vs 6500)
+- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 30 s with 77% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 9 pro Haupttreffer vom Angreifer (217 bis zum Kill), 119 zurück (6 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Kaiwhekea – spürbar (risky-quarry)

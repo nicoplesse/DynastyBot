@@ -12997,141 +12997,6 @@
     ],
     "opportunities": [
       {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "family": "leedsichthys",
-        "direction": "opportunity",
-        "band": "severe",
-        "kind": "quarry",
-        "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
-        "score": 102,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "reason": "The profile names this playable as prey or a target."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 900,
-          "targetSpeed": 750,
-          "speedMarginPct": 20,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 32.9,
-          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "volcano-islands",
-            "palm-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "mudflats",
-            "stonebed-shoal"
-          ],
-          "overlap": 0.444,
-          "label": "8 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "The profile names this playable as prey or a target.",
-          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
-          "8 shared mapped areas make contact plausible.",
-          "One-on-one, a Tylosaurus bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 61 back (17 to kill).",
-          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 30,
-            "defenderHit": 61,
-            "attackerBurst": 48,
-            "defenderBurst": 61,
-            "attackerHitsToKill": 34,
-            "defenderHitsToKill": 17,
-            "attackerDps": 23.4,
-            "defenderDps": 30.3,
-            "attackerTimeToKill": 43,
-            "defenderTimeToKill": 33,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "close",
-          "sim": {
-            "winner": "defender",
-            "seconds": 33,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.22,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 33.25
-            }
-          },
-          "label": "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 33 s with 22% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 5000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 2,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "2 Tylosaurus vs 1 Leedsichthys: the Tylosaurus side wins in about 22 s with 67% of its health left.",
-            "attackers": 2,
-            "defenders": 1
-          }
-        },
-        "attackerId": "tylosaurus",
-        "targetId": "leedsichthys",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Tylosaurus",
-          "targetName": "Leedsichthys",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
-          "baseScore": 94,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": true,
-          "relationKind": null,
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [
-          "ambush",
-          "dangerous-defender"
-        ],
-        "evidence": [
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Quick View",
-            "text": "Tylosaurus must hunt Kaiwheka, Eurhinosaurus, and Leedsichthys before anything else in LOS. After Kai and Eurhino, their next priority targets are Parasaurolophus and Lambeosaurus. They may hunt other species if none of those 4 species are available as prey."
-          },
-          {
-            "profileId": "tylosaurus",
-            "profileName": "Tylosaurus",
-            "section": "Engagement Limits",
-            "text": "Preferred Prey Kaiwheka, Eurhinosaurus, and Leedsichthys must be hunted before all other prey in the POI."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
         "family": "deinosuchus",
@@ -13391,6 +13256,141 @@
             "profileName": "Tylosaurus",
             "section": "Engagement Limits",
             "text": "Tylosaurus will not hunt adult Spinosaurus or Deinosuchus unless desperate hunger (35%), and will only hunt adult Apex terrestrial carnivores when they are swimming in water."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "family": "leedsichthys",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Leedsichthys is legal quarry, but not a comfortable fight",
+        "summary": "A profile rule names or prioritises this matchup. Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted. 1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 28 s with 72% of its health left.",
+        "score": 77,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 900,
+          "targetSpeed": 750,
+          "speedMarginPct": 20,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 32.9,
+          "label": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "volcano-islands",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "mudflats",
+            "stonebed-shoal"
+          ],
+          "overlap": 0.444,
+          "label": "8 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 28 s with 72% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Tylosaurus bite lands 25 on Leedsichthys (80 to kill); a Leedsichthys headbutt lands 72 back (14 to kill).",
+          "Tylosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 1,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 25,
+            "defenderHit": 72,
+            "attackerBurst": 40,
+            "defenderBurst": 72,
+            "attackerHitsToKill": 80,
+            "defenderHitsToKill": 14,
+            "attackerDps": 19.8,
+            "defenderDps": 35.8,
+            "attackerTimeToKill": 101,
+            "defenderTimeToKill": 28,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 28,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.72,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 28
+            }
+          },
+          "label": "1 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 28 s with 72% of its health left.",
+          "detail": "1 attacker vs 1 defender",
+          "attackerCombatWeight": 5000,
+          "targetCombatWeight": 6500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "2 Tylosaurus vs 1 Leedsichthys: the Leedsichthys side wins in about 56 s with 17% of its health left, too narrow to call.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "tylosaurus",
+        "targetId": "leedsichthys",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Tylosaurus",
+          "targetName": "Leedsichthys",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Tylosaurus is 20% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 94,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "A profile rule names or prioritises this matchup."
+        },
+        "tags": [
+          "ambush",
+          "dangerous-defender"
+        ],
+        "evidence": [
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Quick View",
+            "text": "Tylosaurus must hunt Kaiwheka, Eurhinosaurus, and Leedsichthys before anything else in LOS. After Kai and Eurhino, their next priority targets are Parasaurolophus and Lambeosaurus. They may hunt other species if none of those 4 species are available as prey."
+          },
+          {
+            "profileId": "tylosaurus",
+            "profileName": "Tylosaurus",
+            "section": "Engagement Limits",
+            "text": "Preferred Prey Kaiwheka, Eurhinosaurus, and Leedsichthys must be hunted before all other prey in the POI."
           }
         ],
         "confidence": "profile-specific"
@@ -15250,35 +15250,6 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "leedsichthys": {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 2,
-        "dps": 27.5,
-        "primary": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2,
-          "situational": false
-        },
-        "attacks": [
-          "Headbutt"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
       "deinosuchus-shore": {
         "id": "deinosuchus-shore",
         "name": "Deinosuchus (Shore)",
@@ -15335,6 +15306,35 @@
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.024,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "leedsichthys": {
+        "id": "leedsichthys",
+        "name": "Leedsichthys",
+        "cw": 6500,
+        "hp": 2000,
+        "armor": 2,
+        "dps": 27.5,
+        "primary": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Headbutt",
+          "damage": 55,
+          "cooldown": 2,
+          "situational": false
+        },
+        "attacks": [
+          "Headbutt"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
         "huntUnlimited": false,

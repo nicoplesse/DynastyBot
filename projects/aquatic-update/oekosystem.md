@@ -190,7 +190,7 @@ Ersetzt den Prognathodon (entschieden am 04.11.). Reviere, Sozialstruktur und Be
 - Er kommt nicht ins Flachwasser, außer zum Nisten an den Inseln von Coastal Bluffs und am Rand von Stonebed Shoal.
 - Simulation mit CW 8000 und Health 2000 (% = Health, die dem Livy bleibt):
   - Livy schlägt einen einzelnen Tylo (18 s, 74 %) und einen einzelnen Sachi (19 s, 76 %).
-  - Einen Leeds schlägt er klar: 39 s mit 65 %, wenn der Leeds 1000 Health hat, 78 s mit 29 % bei 2000. Der Dynasty-Wert des Leeds ist unbekannt.
+  - Einen Leeds schlägt er seit dem 07.11. nur noch hauchdünn (92 s, behält 1 %), denn Dynasty hat den Leeds auf CW 6500 und Health 2000 angehoben. Vorher waren es 39 s mit 65 %.
   - Ein Tylo-Paar schlägt er in 35 s (22 %), ein Sachi-Paar in 38 s (27 %). Mit Sonic Disruption bleiben ihm gegen das Tylo-Paar 38 %.
 - Gegen eine Kai-Gruppe mit 3 Verteidigern verliert ein einzelner Livy in 26 s. Genau so steht auch ein einzelner T-Rex gegen 3 Paras da. Deshalb müssen Kai wie der Para vor Apexen fliehen, statt sich zu stellen.
 
@@ -295,17 +295,19 @@ Tylosaurus, Eurhinosaurus, Leedsichthys, Xiphactinus und Sachicasaurus bleiben u
 
 ### 1 gegen 1 mit den Vorschlägen (Sekunden bis zum Kill)
 
+Leeds mit den Dynasty-Werten seit dem 07.11.: CW 6500, Health 2000.
+
 | Angreifer ↓ / Ziel → | Tylo | Kai | Eurhino | Leeds | Sachi | Xiph | Livy | Bilanz |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Tylo | – | 16 s | 7 s | 43 s | 21 s | 6 s | 68 s | 4–2 |
-| Kai | 22 s | – | 8 s | 48 s | 24 s | 6 s | 77 s | 2–4 |
-| Eurhino | 51 s | 41 s | – | 112 s | 55 s | 15 s | 179 s | 1–5 |
-| Leeds | 31 s | 25 s | 11 s | – | 34 s | 9 s | 110 s | 5–1 |
-| Sachi | 22 s | 18 s | 8 s | 49 s | – | 6 s | 78 s | 3–3 |
-| Xiph | 56 s | 45 s | 20 s | 124 s | 61 s | – | 198 s | 0–6 |
-| Livy | 18 s | 14 s | 6 s | 39 s | 19 s | 5 s | – | 6–0 |
+| Tylo | – | 16 s | 7 s | 101 s | 21 s | 6 s | 68 s | 4–2 |
+| Kai | 22 s | – | 8 s | 114 s | 24 s | 6 s | 77 s | 2–4 |
+| Eurhino | 51 s | 41 s | – | 265 s | 55 s | 15 s | 179 s | 1–5 |
+| Leeds | 26 s | 21 s | 9 s | – | 29 s | 8 s | 93 s | 5–1 |
+| Sachi | 22 s | 18 s | 8 s | 116 s | – | 6 s | 78 s | 3–3 |
+| Xiph | 56 s | 45 s | 20 s | 292 s | 61 s | – | 198 s | 0–6 |
+| Livy | 18 s | 14 s | 6 s | 92 s | 19 s | 5 s | – | 6–0 |
 
-Daraus ergibt sich diese Rangordnung: Livy (CW 8000, Health 2000) gewinnt jedes Duell, auch gegen Leeds. Leeds schlägt alle anderen, jagt aber nie. Danach kommen Tylo und Sachi, fast gleichauf (21 s gegen 22 s; zählt Ironclad, gewinnt Sachi). Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
+Daraus ergibt sich diese Rangordnung: Livy (CW 8000, Health 2000) gewinnt jedes Duell, gegen Leeds aber nur um eine Sekunde (92 s gegen 93 s). Leeds schlägt alle anderen, jagt aber nie. Danach kommen Tylo und Sachi, fast gleichauf (21 s gegen 22 s; zählt Ironclad, gewinnt Sachi). Kai verliert gegen Tylo, hält aber 16 s statt 12 s durch. Eurhino und Xiph überleben durch Tempo und Gruppe.
 
 ### Rudel gegen Einzeltier
 

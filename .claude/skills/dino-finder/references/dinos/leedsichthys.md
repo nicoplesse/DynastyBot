@@ -2,7 +2,7 @@
 - **Aliase:** Leed
 - **Klasse:** Apex Cathemeral Aquatic Filter Feeder Carnivore (Tier Apex, tag- & nachtaktiv, Aquatic Filter Feeder, Fleisch)
 - **Ökosystem:** Meer & Küste (Sea & Coast); Nahrungskette: Riesen-Pflanzenfresser (Stufe 5 von 7)
-- **Werte (adult, Dynasty):** Kampfgewicht 5500, Leben ?, Ausdauer 100, Wachstum 240 min
+- **Werte (adult, Dynasty):** Kampfgewicht 6500, Leben 2000, Ausdauer 100, Wachstum 240 min
 - **Tempo:** Land Sprint 100 (63 s) · Wasser Sprint 750 (167 s)
 - **Jagd & Kampf:** jagt bis –; Jagdgruppe max –; Kampf max 1 (Gruppengröße: siehe Quick View)
 - **Solo-Eignung:** Solo spielbar
@@ -64,8 +64,8 @@ You are an Apex-sized filter feeder that eats only krill along its migration pat
 - **Kaiwhekea** (sehr hoch): Kaiwhekea can create a very narrow escape window
 - **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
 - **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
-- **Parasaurolophus** (conditional): Parasaurolophus matters only if it gets the right opening
 - **Eurhinosaurus** (spürbar): Eurhinosaurus can create a credible fight
+- **Austroraptor** (spürbar): Austroraptor can create a credible fight
 
 **Beute & Chancen:**
 

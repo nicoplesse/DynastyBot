@@ -14,7 +14,7 @@ Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shape
 6. Eurhinosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3000
 7. Austroraptor – Stufe 3, Medium, Fleisch, Kampfgewicht 2100
 8. Tropeognathus – Stufe 4, Small, Fleisch, Kampfgewicht 2000
-9. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 5500
+9. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 6500
 10. Lurdusaurus (Coast) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
 11. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
 

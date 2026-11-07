@@ -14309,15 +14309,15 @@
         "confidence": "derived"
       },
       {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "family": "leedsichthys",
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "family": "suchomimus",
         "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Leedsichthys is a realistic hunting opportunity",
-        "summary": "Leedsichthys is within the legal hunt ceiling. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-        "score": 67,
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Suchomimus is legal quarry, but not a comfortable fight",
+        "summary": "Suchomimus is within the legal hunt ceiling. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. 1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
+        "score": 55,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -14326,14 +14326,14 @@
         },
         "chase": {
           "mode": "water",
-          "verdict": "close-chase",
+          "verdict": "attacker-faster",
           "attackerSpeed": 700,
-          "targetSpeed": 750,
-          "speedMarginPct": -6.7,
+          "targetSpeed": 640,
+          "speedMarginPct": 9.4,
           "attackerDurationSeconds": 166.667,
           "targetDurationSeconds": 167,
           "durationMarginPct": -0.2,
-          "label": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it."
+          "label": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
@@ -14343,84 +14343,85 @@
             "palm-islands",
             "big-tree-overlook",
             "twisted-forest",
+            "stillwater-bog",
             "mudflats",
             "coastland-swamp"
           ],
-          "overlap": 0.412,
-          "label": "7 shared mapped areas make contact plausible."
+          "overlap": 0.667,
+          "label": "8 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-          "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-          "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Deinosuchus (Shore) bite lands 30 on Leedsichthys (34 to kill); a Leedsichthys headbutt lands 46 back (22 to kill).",
+          "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
+          "8 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinosuchus (Shore) bite lands 66 on Suchomimus (11 to kill); a Suchomimus bite lands 30 back (33 to kill).",
           "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "fight": {
           "attackers": 1,
-          "defenders": 1,
+          "defenders": 3,
           "attackerChoice": 1,
           "defenderChoice": "max",
           "bleed": "off",
           "duel": {
-            "attackerHit": 30,
-            "defenderHit": 46,
-            "attackerBurst": 63,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 34,
-            "defenderHitsToKill": 22,
-            "attackerDps": 23.8,
-            "defenderDps": 22.9,
-            "attackerTimeToKill": 42,
-            "defenderTimeToKill": 44,
+            "attackerHit": 66,
+            "defenderHit": 30,
+            "attackerBurst": 138,
+            "defenderBurst": 68,
+            "attackerHitsToKill": 11,
+            "defenderHitsToKill": 33,
+            "attackerDps": 52.4,
+            "defenderDps": 29,
+            "attackerTimeToKill": 13,
+            "defenderTimeToKill": 34,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
             "defenderBleedOutpacesHeal": false
           },
-          "verdict": "close",
+          "verdict": "defender-advantage",
           "sim": {
-            "winner": "attacker",
-            "seconds": 42,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.04,
-            "defenderHpShare": 0,
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.71,
             "firstDown": {
-              "side": "defender",
-              "seconds": 42
+              "side": "attacker",
+              "seconds": 11.5
             }
           },
-          "label": "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
+          "label": "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
           "attackerCombatWeight": 6000,
-          "targetCombatWeight": 5500,
+          "targetCombatWeight": 5000,
           "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
+          "targetDefenderLimit": 3,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
-            "verdict": "close",
-            "label": "1 Deinosuchus (Shore) vs 1 Leedsichthys: the Deinosuchus (Shore) side wins in about 42 s with 4% of its health left, too narrow to call.",
+            "verdict": "defender-advantage",
+            "label": "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
             "attackers": 1,
-            "defenders": 1
+            "defenders": 3
           }
         },
         "attackerId": "deinosuchus-shore",
-        "targetId": "leedsichthys",
+        "targetId": "suchomimus",
         "core": {
           "direction": "opportunity",
           "attackerName": "Deinosuchus (Shore)",
-          "targetName": "Leedsichthys",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.",
-          "baseScore": 59,
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 72,
           "scoreCap": null,
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Leedsichthys is within the legal hunt ceiling."
+          "summaryLead": "Suchomimus is within the legal hunt ceiling."
         },
         "tags": [
           "ambush"
@@ -15127,127 +15128,6 @@
         }
       ],
       "opportunities": [
-        {
-          "id": "suchomimus",
-          "name": "Suchomimus",
-          "family": "suchomimus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Suchomimus is legal quarry, but not a comfortable fight",
-          "summary": "Suchomimus is within the legal hunt ceiling. Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted. 1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
-          "score": 55,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 700,
-            "targetSpeed": 640,
-            "speedMarginPct": 9.4,
-            "attackerDurationSeconds": 166.667,
-            "targetDurationSeconds": 167,
-            "durationMarginPct": -0.2,
-            "label": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "coastal-bluffs",
-              "volcano-islands",
-              "palm-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "coastland-swamp"
-            ],
-            "overlap": 0.667,
-            "label": "8 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
-            "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
-            "8 shared mapped areas make contact plausible.",
-            "One-on-one, a Deinosuchus (Shore) bite lands 66 on Suchomimus (11 to kill); a Suchomimus bite lands 30 back (33 to kill).",
-            "Deinosuchus (Shore) has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 3,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 66,
-              "defenderHit": 30,
-              "attackerBurst": 138,
-              "defenderBurst": 68,
-              "attackerHitsToKill": 11,
-              "defenderHitsToKill": 33,
-              "attackerDps": 52.4,
-              "defenderDps": 29,
-              "attackerTimeToKill": 13,
-              "defenderTimeToKill": 34,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 12,
-              "attackersLeft": 0,
-              "defendersLeft": 3,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.71,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 11.5
-              }
-            },
-            "label": "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
-            "detail": "1 attacker vs 3 defenders",
-            "attackerCombatWeight": 6000,
-            "targetCombatWeight": 5000,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 3,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "1 Deinosuchus (Shore) vs 3 Suchomimus: the Suchomimus side wins in about 12 s with 71% of its health left.",
-              "attackers": 1,
-              "defenders": 3
-            }
-          },
-          "attackerId": "deinosuchus-shore",
-          "targetId": "suchomimus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Deinosuchus (Shore)",
-            "targetName": "Suchomimus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Deinosuchus (Shore) is 9% faster in water; a clean escape is unlikely once spotted.",
-            "baseScore": 72,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Suchomimus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
         {
           "id": "apatosaurus",
           "name": "Apatosaurus",
@@ -16154,33 +16034,34 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "leedsichthys": {
-        "id": "leedsichthys",
-        "name": "Leedsichthys",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 2,
-        "dps": 27.5,
+      "suchomimus": {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "cw": 5000,
+        "hp": 700,
+        "armor": 1,
+        "dps": 38.33,
         "primary": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.2
         },
         "burst": {
-          "label": "Headbutt",
-          "damage": 55,
-          "cooldown": 2,
+          "label": "Stomp",
+          "damage": 90,
+          "cooldown": 10,
           "situational": false
         },
         "attacks": [
-          "Headbutt"
+          "Bite",
+          "Stomp"
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
         "estimated": false,
-        "huntLimit": 1,
+        "huntLimit": 3,
         "huntUnlimited": false,
-        "engagementLimit": 1,
+        "engagementLimit": 3,
         "engagementUnlimited": false
       },
       "allosaurus": {
@@ -16331,36 +16212,6 @@
         "huntLimit": 8,
         "huntUnlimited": false,
         "engagementLimit": 6,
-        "engagementUnlimited": false
-      },
-      "suchomimus": {
-        "id": "suchomimus",
-        "name": "Suchomimus",
-        "cw": 5000,
-        "hp": 700,
-        "armor": 1,
-        "dps": 38.33,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1.2
-        },
-        "burst": {
-          "label": "Stomp",
-          "damage": 90,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Stomp"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 3,
-        "huntUnlimited": false,
-        "engagementLimit": 3,
         "engagementUnlimited": false
       },
       "apatosaurus": {

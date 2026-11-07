@@ -76,16 +76,6 @@ Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape 
 
 ## Chancen (wen du jagen/schlagen kannst)
 
-### Leedsichthys – sehr hoch (quarry)
-Leedsichthys is a realistic hunting opportunity
-
-A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.
-- Verfolgung: This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left. (Kampfgewicht 6000 vs 5500)
-- Kampf (beide Seiten legal max): 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Spinosaurus (Saltwater) side wins in about 25 s with 47% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 33 pro Haupttreffer vom Angreifer (31 bis zum Kill), 46 zurück (25 bis zum Kill)
-- Profilbezug: The profile names this playable as prey or a target.
-
 ### Deinosuchus (Ocean) – sehr hoch (quarry)
 Deinosuchus (Ocean) is a realistic hunting opportunity
 
@@ -104,6 +94,16 @@ A profile rule names or prioritises this matchup. The speed gap is small (750 vs
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left. (Kampfgewicht 6000 vs 6000)
 - Kampf (beide Seiten legal max): 1 Spinosaurus (Saltwater) vs 1 Deinosuchus (Shore): the Spinosaurus (Saltwater) side wins in about 15 s with 45% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 55 pro Haupttreffer vom Angreifer (19 bis zum Kill), 50 zurück (23 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Leedsichthys – sehr hoch (quarry)
+Leedsichthys is a realistic hunting opportunity
+
+A profile rule names or prioritises this matchup. This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it. 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.
+- Verfolgung: This is a close chase in water: 750 vs 750 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call. (Kampfgewicht 6000 vs 6500)
+- Kampf (beide Seiten legal max): 1 Spinosaurus (Saltwater) vs 1 Leedsichthys: the Leedsichthys side wins in about 41 s with 32% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (73 bis zum Kill), 54 zurück (21 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Tylosaurus – spürbar (quarry)

@@ -166,7 +166,7 @@ Als Adult (bis 2699 CW):
 | Kentrosaurus | 350 | 800 | 1100 | 2000 | 2700 |
 | Lambeosaurus | 500 | 1100 | 2200 | 3000 | 3500 |
 | Latenivenatrix | 200 | 425 | 650 | 950 | 1400 |
-| Leedsichthys | 300 | 1500 | 2750 | 3750 | 5500 |
+| Leedsichthys | 300 | 1500 | 2750 | 3750 | 6500 |
 | Lurdusaurus (Coast) | 400 | 1100 | 1250 | 2100 | 3200 |
 | Lurdusaurus (Freshwater) | 400 | 1100 | 1250 | 2100 | 3200 |
 | Maip | 500 | 1100 | 1850 | 2750 | 4000 |
