@@ -10,7 +10,7 @@ source: profile-entwuerfe/livyatan.md
 ---
 # Livyatan
 "Livy"
-Livyatan are giant raptorial sperm whales and the lone hunters of Riparia's deep oceans. They hunt by sound, rising from the dark below their prey, and hold their breath twice as long as any other air-breathing aquatic. Cows live in small units of two, bulls roam alone, and the Leedsichthys is their oldest rival.
+Livyatan are giant raptorial sperm whales and the lone hunters of Riparia's deep oceans. They hunt by sound, rising from the dark below their prey, and hold their breath twice as long as any other air-breathing aquatic. Cows live in small units of up to three, young bulls roam in pairs before they grow into loners, and the Leedsichthys is their oldest rival.
 
 Written by Dynasty Realism
 Mod: Livyatan by Arazoa (ArazoaLivy)
@@ -22,7 +22,7 @@ Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Bey
 %% banner Overview
 **Giant Cathemeral Aquatic Carnivore**
 Livyatan form temporary bonds. Bulls court the cows of a unit during the courting season, then leave.
-Livyatan cows live in small units of two. Bulls are always solitary.
+Livyatan cows live in small units of up to three. Sub-Adult bulls may form bachelor pairs, adult bulls are always solitary.
 Livyatan are nomadic within the open oceans: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal, centred on the Abyssal Depths.
 Livyatan never enter Palm Islands.
 Livyatan have a tolerant nature towards other Livyatan, and an aggressive nature towards large aquatic predators.
@@ -40,18 +40,24 @@ A Livyatan whose oxygen falls below 25% must break off the engagement and surfac
 Livyatan hold their breath about twice as long as other aquatics that must surface to breathe. See ✦ Holding Their Breath.
 
 ## Group Limits (In-Game Group)
-Up to 2 Sub/Adult cows that have mated with the same bull
+Up to 3 Sub/Adult cows that have mated with the same bull
 Unlimited Offspring
 Unlimited Adoptees
 
 This group is known as a unit.
-A unit in which only one of the two cows has mated with that bull is allowed as well, such as a mother and her daughter.
-Bulls are always solitary. They never group, not even with a unit during courtship.
+Daughters of a unit's cows may stay in the unit while there is room, even if they have not mated with that bull, such as a mother with her two daughters.
+
+Up to 2 Sub-Adult bulls
+
+This group is known as a bachelor group.
+The bulls do not need to come from the same unit. Once one of them reaches Adult, the bachelor group splits up and both bulls live alone from then on.
+Adult bulls are always solitary. They never group, not even with a unit during courtship.
 Larger groups give a Livyatan away. A hunter that relies on silence and surprise cannot travel in a loud family.
 
 ## Engagement Limits (Defence & Hunts)
-Livyatan always hunt alone. Only one Sub/Adult Livyatan may take part in a hunt, and members of its unit do not join or assist.
+Livyatan always hunt alone. Only one Sub/Adult Livyatan may take part in a hunt, and members of its unit or bachelor group do not join or assist.
 All members of a unit may defend their calves.
+Bulls of a bachelor group may defend each other when attacked.
 Livyatan may hunt up to Apex tier.
 As a Giant, an adult Livyatan cannot be hunted by species limited to Apex tier, such as Sachicasaurus, which may only defend themselves against it.
 - The one exception are Tylosaurus pairs: they may hunt adult Livyatan at any hunger level, but only when no Kaiwhekea, Eurhinosaurus or Leedsichthys are in the POI.
@@ -91,8 +97,8 @@ Livyatan calves hatch near the islands and stay close to their mother's side.
 Calves cannot dive deep or hold their breath for long. While their mothers dive to hunt, the rest of the unit stays near the surface with the calves and guards them in turn, like sperm whale babysitters.
 At Juvenile, the unit leaves the islands and returns to open water. Calves begin to follow on short dives.
 Calves learn to click and listen by copying their mothers.
-Young bulls leave at Sub-Adult and live alone from then on.
-A unit has room for only two cows, so a mother may keep one daughter with her. Other daughters leave to start a unit of their own.
+Young bulls leave their unit at Sub-Adult. They may team up with another young bull in a bachelor group, or roam alone. See ✦ Bachelor Groups.
+A unit has room for three cows, so a mother may keep up to two daughters with her. Other daughters leave to start a unit of their own.
 
 ### ✦ Orphaned Behavior (Wild Spawn)
 Orphaned calves call constantly, and search for any unit that answers.
@@ -116,19 +122,24 @@ Individuals that wear Pressurized Hide stay down longer still, about half again 
 ### ✦ Downtime Behavior
 Units rest together at the surface in a tight formation, with the calves in the middle.
 After every dive, cows greet each other with long exchanges of clicks.
-Bulls rest alone, drifting near the surface between long dives.
+Bachelor pairs rest side by side. Adult bulls rest alone, drifting near the surface between long dives.
 %% banner Social Interaction
 Units are close, female-led families. Cows share the care of all calves, rest together at the surface in a tight formation, and greet each other with long exchanges of clicks after every dive.
 A unit is led by its oldest cow, who remembers the best hunting grounds.
 Although units live together, every Livyatan hunts alone. Members spread out before a dive, and meet again at the surface.
 
 ### ✦ Units
-A unit is made of up to 2 cows that mated with the same bull, or a mother and her daughter, together with their calves.
+A unit is made of up to 3 cows that mated with the same bull, or a mother with her daughters, together with their calves.
 The cows nest close together and raise their calves as one family.
 When two units meet, they may travel together for a while, but they do not group in game.
 
+### ✦ Bachelor Groups
+Young bulls that have just left their unit often travel in pairs, like the bachelor schools of young sperm whale bulls.
+They rest side by side at the surface and practise ramming each other, but each dives and hunts alone.
+As they grow, they drift apart: once one of them is an adult, they go their separate ways.
+
 ### ✦ Bulls
-Bulls lead a solitary life. They range far, and only seek out units during the courting season.
+Adult bulls lead a solitary life. They range far, and only seek out units during the courting season.
 Two bulls that meet outside of courtship usually ignore each other.
 
 ### ✦ Albino & Melanistic Behavior
@@ -198,13 +209,13 @@ A Livyatan always hunts alone. It prefers targets that are alone, but a grown Li
 Only a bale of three or more Kaiwhekea standing together could turn the fight against it.
 When a hunt fails and the target escapes into the shallows, Livyatan let it go.
 %% banner Courtship & Parenthood
-Livyatan form temporary bonds. A bull may court both cows of a unit, and takes no part in raising the calves.
+Livyatan form temporary bonds. A bull may court every cow of a unit, and takes no part in raising the calves.
 
 ### ✦ Courtship
 In the courting season, bulls leave the deep and seek out units, announcing themselves with slow, powerful clicks that carry over great distances.
 Rival bulls settle their claims by ramming contests. See ✦ Ramming Contests.
 Cows choose a bull by swimming alongside him and answering his clicks.
-A bull may court both cows of a unit. He stays close to it, without grouping, until the eggs are laid.
+A bull may court every cow of a unit. He stays close to it, without grouping, until the eggs are laid.
 
 ### ✦ Nesting
 Cows of a unit nest close together, in sheltered, deeper water near the islands of Coastal Bluffs or at the edge of Stonebed Shoal.
@@ -216,8 +227,8 @@ While the mothers dive to hunt, the rest of the unit stays near the surface with
 At Juvenile, the unit leaves the islands and returns to open water.
 
 ### ✦ Offspring Maturity
-Young bulls leave at Sub-Adult and live alone from then on.
-A mother may keep one daughter with her in the unit. Other daughters leave to start a unit of their own.
+Young bulls leave at Sub-Adult. They may form a bachelor group with another young bull until they are grown, then live alone.
+A mother may keep up to two daughters with her in the unit. Other daughters leave to start a unit of their own.
 
 ### ✦ Adoption
 Units readily adopt orphaned Livyatan calves, and raise them like their own.
@@ -229,7 +240,7 @@ Old cows remain with their unit, which shields them as it shields its calves.
 ### ✦ Death
 When a Livyatan dies, it sinks slowly into the depths, feeding the deep for years to come.
 %% banner Profile Notes
-Livyatan always hunt alone. Cows live in units of two, bulls are always solitary.
+Livyatan always hunt alone. Cows live in units of up to three, Sub-Adult bulls may form bachelor pairs, adult bulls are always solitary.
 Livyatan must target solitary Tylosaurus and Sachicasaurus first. Leedsichthys are their rivals, and never a required target.
 Livyatan never hunt styracosternans or their herd companions.
 Livyatan never follow prey into the shallows, or onto the high rock ledges of the Abyssal Depths.
@@ -245,7 +256,7 @@ Livyatan may third party an active hunt on a protected species (styracosternans 
 %% image Preferred POIs map: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal (never Palm Islands); nesting at the islands of Coastal Bluffs and the edge of Stonebed Shoal
 ## Profile - Quick View
 Livyatan are Giant Cathemeral Aquatic Carnivores.
-Livyatan cows live in units of two, usually sharing the same bull, with unlimited offspring and adoptees. Bulls are always solitary.
+Livyatan cows live in units of up to three, usually sharing the same bull, with unlimited offspring and adoptees. Sub-Adult bulls may form bachelor groups of two, adult bulls are always solitary.
 Livyatan are tolerant towards their own kind, and aggressive towards large aquatic predators.
 Livyatan always hunt alone, and may hunt up to Apex tier. They must target solitary Tylosaurus and Sachicasaurus first, and may hunt Leedsichthys without ever being required to. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
 Livyatan hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite. They never follow prey into the shallows, or onto the high rock ledges of the Abyssal Depths.
