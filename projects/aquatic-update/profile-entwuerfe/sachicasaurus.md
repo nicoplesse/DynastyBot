@@ -73,34 +73,65 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
   - Junge sterben, wenn sie länger als 5 Minuten gestrandet sind.
   - Gejagt wird auch hier nur nachts.
 
-**Entschieden am 05.11. (vom Nutzer): Balz wie beim Weißen Hai.** Vom Tyrannotitan bleibt alles, was ihn erfolgreich macht: Reviere, umherziehende Weibchen, keine Gruppe zwischen den Geschlechtern und das Nest im Revier des Männchens. Die Balz ist aber seine eigene.
-1. **Begegnung:** Ein Weibchen zieht in das Revier eines Männchens. Sobald sich beide sehen, erkennt das Männchen am Körperbau, dass es ein Weibchen ist. Deshalb ist der Dimorphismus jetzt Pflicht.
-2. **Gruß:** Ist das Weibchen paarungsbereit, grüßt es instinktiv mit dem Paarungsgruß, und das Männchen erwidert ihn. Das Männchen darf auch zuerst grüßen. Das wird nicht streng genommen.
-3. **Kein Gruß:** Erwidert das Weibchen nicht und schwimmt weiter, duldet das Männchen sie und jagt sie nicht. Nach einer Nacht muss sie weiterziehen, und sie akzeptiert das.
-4. **Die Jagd:** Nach dem Gruß schwimmt das Weibchen trotzdem weiter. Das Männchen jagt sie, mit Knochenbrüchen und allem, was es kann. So beweist es seine Stärke: Es hält sie davon ab, weiterzuziehen.
-5. **Weibchen halten mehr aus.** Sie sind die dickere, schwerere Unterart und im Schnitt größer als die Männchen.
-6. **Erfolg:** Bringt er sie unter 50 % Health, balzt sie mit ihm. Sie gruppieren nicht, wie beim Tyrannotitan, und zum Nisten wird das Weibchen territorial.
-7. **Ein Männchen, ein Weibchen:** Ein Männchen paart sich immer nur mit einem Weibchen. Gibt eine Drift den Agreement-Call, wird deshalb erst einmal nur ein Weibchen gejagt, nie zwei. Die Schwester geht leer aus, außer ein Brace ist dabei: Dann sucht sich jeder Bruder eine aus.
-8. **Keine Lebensbindung.** Nach dem Nisten geht jeder seiner Wege.
+**Entschieden am 05.11. (vom Nutzer): Balz nach dem Weißen Hai.** Vom Tyrannotitan bleibt alles, was ihn erfolgreich macht: Reviere, umherziehende Weibchen und keine Gruppe zwischen den Geschlechtern (seit dem 10.11. mit einer Ausnahme, der Paarnacht, siehe unten). Die Balz ist aber seine eigene. *(Das Nest liegt seit dem 05.11. in der Kinderstube, siehe unten.)*
 
-**Echtes Vorbild:** Beim Weißen Hai sind die Weibchen größer als die Männchen. Bei der Paarung beißt sich das Männchen an Flossen und Flanken des Weibchens fest, und erwachsene Weibchen tragen oft Paarungsnarben. Bei Blauhaien ist die Haut der Weibchen deshalb mehr als doppelt so dick wie die der Männchen. Der Xiph macht es genau umgekehrt: Dort beißen die Weibchen die Männchen.
+**Umgebaut am 06.11. (vom Nutzer): Flankenschau und Duell statt Jagd.** Bei der Jagd bis zur Reviergrenze war das Männchen zu dominant und das Weibchen zu passiv. Außerdem fehlte, was Tyrannotitan und Eotriceratops besonders macht: Ein Charakter sammelt Erfahrung, man sieht sie ihm an, und sie ist etwas wert. Beim Sachi übernehmen das die Narben. Umkreisen und Zwicken wie beim Tyrannotitan gibt es bewusst nicht, der Sachi prüft mit den Augen, an der Oberfläche, bei Nacht.
 
-**Rechnung zur Jagd** (gleiche CW, Armor 1,1):
-- Ein Biss macht 80 Schaden, also 73 nach Armor. Bis unter 50 % (450 von 900 Health) braucht das Männchen 7 Bisse, mit Bone Snap 6. Mit Ironclad (+10 % Armor) bleibt es bei 7.
-- **Packen kann er sie nicht:** Seine Tragkraft ist 4001, ihr CW 5500. Er kann sie also nicht einfach festhalten.
-- **Beide sind gleich schnell**, weil es dieselbe Art ist. Schwimmt sie geradeaus davon, holt er sie nicht ein. Er muss ihr den Weg abschneiden, mit Lunge vorstoßen und mit Bone Snap Knochen brechen, die sie bremsen. Die Jagd ist damit eine Frage des Könnens, wie die Raserei des Xiph.
-- **„Hält mehr aus“ ist Aussehen und Rollenspiel.** Path of Titans kennt keine Werte nach Geschlecht, und Unterarten ändern meines Wissens nur das Aussehen. Mehr aushalten würde sie nur, wenn Dynasty den Weibchen etwas vorschreibt, zum Beispiel Ironclad. Das bringt aber, wie oben gerechnet, kaum etwas.
+1. **Summen und Begegnung:** Das Männchen summt nachts in seinem Revier. Kommt ein Weibchen hinein, erkennt er sie am Körperbau. Deshalb ist der Dimorphismus Pflicht.
+2. **Die Flankenschau:** Ist sie paarungsbereit, dreht sie sich an der Oberfläche mit der Flanke zu ihm und gibt den Agreement-Call. Er antwortet genauso. Er darf auch zuerst, das wird nicht streng genommen. Dann liegen beide still nebeneinander. Das ist die ganze Musterung: Sie zeigt ihm ihre Narben, er ihr seine.
+3. **Keine Flankenschau:** Erwidert sie nicht und schwimmt weiter, duldet er sie eine Nacht in seinem Revier. Dann zieht sie weiter und akzeptiert das.
+4. **Der Riss:** Liegt ein frischer Riss von ihm im Revier, darf er sie hinführen, und sie frisst davon.
+5. **Ihre Entscheidung:**
+   - **Duell, der Normalfall:** Sie gibt einen Threaten-Call.
+   - **Annehmen ohne Duell:** Sie wiederholt die Flankenschau. Das darf sie nur, wenn er ihr einen eigenen Riss gezeigt hat, der ein Kai ist oder über Medium liegt, etwa ein Tylosaurus, oder wenn er schwer vernarbt ist. Es ist immer ihre Wahl, er hat kein Recht darauf.
+   - **Weiterziehen:** wie bei „Keine Flankenschau“.
+6. **Das Duell:**
+   - Beide kämpfen. Nur Bite, ein Biss pro Anlauf, nur in Flanke und Flossen, wie beim Weißen Hai. Alle anderen Fähigkeiten bleiben aus, Bewegung ist frei.
+   - Wer unter 50 % Health fällt, gibt spätestens jetzt den Heart Call.
+   - Callt sie zuerst, hat er bestanden, und sie nimmt ihn. Callt er zuerst, hat er versagt, und sie zieht weiter.
+   - Mit der Flankenschau darf sie das Duell jederzeit abbrechen. Das heißt: Er hat sie überzeugt, und sie nimmt ihn.
+7. **Der Paarungsbiss:** Jede gelungene Balz endet mit einem Biss von ihm in ihre Flanke oder Flosse, ob mit oder ohne Duell. Sie hält still.
+8. **Ein Männchen, ein Weibchen:** Ein Männchen paart sich immer nur mit einem Weibchen. Gibt eine Drift den Agreement-Call, umwirbt er nur eine Schwester, außer ein Brace ist dabei: Dann sucht sich jeder Bruder eine aus.
+9. **Keine Lebensbindung.** Nach der Paarnacht (siehe unten) zieht sie zur Kinderstube, und jeder geht seiner Wege. Beim Nisten gruppieren sie nicht.
+
+**Narben und was sie wert sind** (vom Nutzer: Narben verheilen nicht, und sie zeigen sich meist erst ab etwa 50 % Health oder darunter, sehr unterschiedlich):
+- **Am Weibchen:** Viele Narben heißen: Sie hat sich oft gepaart und viele Gelege hinter sich.
+  - Männchen suchen sie. Bei einer Drift umwirbt er die Schwester mit den meisten Narben.
+  - In der Kinderstube wählt die am stärksten vernarbte Mutter ihren Nestplatz zuerst, die anderen weichen ihr.
+- **Am Männchen:** Viele Narben heißen: Er hat oft gekämpft, in Duellen, gegen Rivalen, gegen Tylos und gegen harte Beute. Einem solchen Männchen darf sie das Duell ersparen.
+- **Andere Tiere** lesen die Narben im Rollenspiel. Eine Regel brauchen sie dafür nicht.
+
+**Rechnung zum Duell** (gleiche CW, Armor 1,1):
+- Ein Biss macht 80 Schaden, also 73 nach Armor. Bis unter 50 % (450 von 900 Health) braucht jede Seite 7 Bisse, also 7 Anläufe. Mit Ironclad (+10 % Armor) bleibt es bei 7.
+- **Werte nach Geschlecht gibt es nicht.** Path of Titans kennt keine, und Unterarten ändern meines Wissens nur das Aussehen. „Sie ist die Massigere“ ist also Aussehen und Rollenspiel. Im Duell entscheidet die Wendigkeit.
+- **Packen kann er sie nicht:** Seine Tragkraft ist 4001, ihr CW 5500.
+- **Narben zeigen sich ab etwa 50 %.** Wer das Duell verliert, trägt also meist Narben davon. Callt sie, hat sie welche. Deshalb heißen viele Narben am Weibchen wirklich „viele Paarungen“.
+- **Der Paarungsbiss** kostet sie 73 Health, rund 8 %. Nach einem Duell liegt sie schon unter 50 %, dort kann er eine Narbe hinterlassen. Nimmt sie ihn ohne Duell, ist sie bei voller Health, und der Biss hinterlässt meist keine. Paarungen ohne Duell zählen in ihren Narben also kaum. Das ist in Ordnung, weil sie selten sind: Ein großer Riss gelingt nicht oft, und dass genau dann ein Weibchen vorbeikommt, noch seltener.
+- **Seine Narben zählen Kämpfe, nicht Siege.** Verliert er ein Duell, fällt er selbst unter 50 % und trägt Narben davon. Erfahrung ist es trotzdem.
 
 **Selbst ergänzt, bitte prüfen:**
-- **Der Paarungsgruß:** Sie dreht sich an der Oberfläche mit der Flanke zu ihm und gibt den Agreement-Call. Er antwortet genauso.
-- **Brace und einzelnes Weibchen:** Nur ein Bruder jagt sie. Wer, machen die Brüder unter sich aus.
+- **Kai zählt ausdrücklich.** Im Kai-Entwurf ist der Kai Medium. Streng nach „über Medium“ würde gerade die Beute nicht zählen, die nur ein Sachi packen kann. Deshalb steht er namentlich drin. Über Medium liegen im Wasser Tylo, Leeds, Deino und Spino, an Land alles ab Large.
+- **Eigener Riss:** allein oder mit dem Bruder gerissen, frisch und noch im Revier. Aas zählt nicht, der Sachi frisst ohnehin kein Aas.
+- **Er hört bei jedem ihrer Signale sofort auf.** Beißt er nach ihrem Heart Call oder ihrer Flankenschau noch einmal, ist er für sie erledigt, und sie umwirbt ihn nie wieder.
+- **Ein Duell pro Paar und Nacht.**
+- **Brace und einzelnes Weibchen:** Nur ein Bruder umwirbt sie. Wer, machen die Brüder unter sich aus.
 - **Die Schwester, die leer ausgeht,** darf bei der Drift bleiben und Nest und Junge mitbewachen, wie beim Tyrannotitan.
 - **Kein Harem mehr:** Im Overview stand „form harem bonds“ wie beim Tyrannotitan. Mit „ein Männchen, ein Weibchen“ passt das nicht mehr und ist ersetzt. Eine Drift darf aber weiter gemeinsam im Revier eines Männchens leben.
-- **Das Zeichen bei 50 %:** Wie viel Health sie hat, sieht er nicht. Deshalb gibt sie das Zeichen: Sie bleibt stehen, dreht sich zu ihm und grüßt noch einmal. Damit ist die Jagd vorbei, und er hört sofort auf.
-- **Ende ohne Erfolg:** Erreicht sie die Grenze seines Reviers, hat er es nicht geschafft. Er folgt ihr nicht hinaus, und sie zieht weiter. Ohne diese Grenze würde eine Jagd zwischen zwei gleich schnellen Tieren nie enden.
-- **Sie beißt nicht zurück:** Das Weibchen flieht nur, mit Tempo, Wenden und Abtauchen. Kein Bite, kein Bone Snap, keine Aileron Roll.
 - **Dimorphismus umgedreht:** Bisher waren die Männchen die Massigen. Jetzt sind es die Weibchen, die Männchen sind schlanker.
-- **Männchen sind zu Weibchen nur noch außerhalb der Balz passiv.**
+- **Männchen sind zu Weibchen nur außerhalb der Balz passiv, Weibchen zu Männchen genauso.**
+
+**Echtes Vorbild:** Beim Weißen Hai sind die Weibchen größer als die Männchen. Bei der Paarung beißt sich das Männchen an Flossen und Flanken des Weibchens fest, und erwachsene Weibchen tragen oft Paarungsnarben. Bei Blauhaien ist die Haut der Weibchen deshalb mehr als doppelt so dick wie die der Männchen. Dass das Weibchen im Duell zurückbeißt, ist kreative Freiheit: Echte Haiweibchen weichen eher aus. Der Xiph macht es ganz anders: Dort beißen nur die Weibchen, und die Männchen weichen aus.
+
+**Entschieden am 10.11. (vom Nutzer): die Paarnacht.** Nach dem Paarungsbiss gruppieren Männchen und Weibchen einen ganzen Tag-Nacht-Zyklus lang und dürfen gemeinsam jagen. Das soll die Verbindung zwischen den beiden stärken, damit sie zusammen etwas erleben.
+- **Wie lange:** vom Paarungsbiss über den folgenden Tag und die folgende Nacht. Beim zweiten Morgengrauen endet die Gruppe, und sie zieht zur Kinderstube. Gemessen wird am Morgengrauen statt in Stunden, das sieht jeder im Spiel.
+- **Gemeinsam jagen:** in seinem Revier, als Paar. Sie zählen wie Brace oder Drift als 2 gruppierte Sachi und dürfen also auch einen adulten Leeds jagen. Das Bissduell gewinnen sie zu zweit aber auch nicht (Leeds in 58 s, behält 26 %).
+- **Tagsüber** ruhen sie nebeneinander in seinem Revier.
+
+**Selbst ergänzt, bitte prüfen:**
+- **Nur die beiden gruppieren.** Bruder oder Schwester verlassen die Gruppe für diese Zeit, dürfen aber im Revier in der Nähe bleiben. Sonst wären es bis zu 4 Tiere, und das Jagdlimit von 2 würde nicht mehr passen.
+- **Brace trifft Drift:** Jedes Paar gruppiert für sich, und die beiden Paare jagen nie dasselbe Tier.
+- **Bloodline-Logs:** Das Paar muss nicht verwandt sein. Die Pflicht zum Eintrag gilt nur für Brace und Drift.
+- **Vorbild:** Jaguar-Paare, schon ein Vorbild des Profils, ziehen während der Paarung einige Tage zusammen umher. Gemeinsam jagende Haie sind kreative Freiheit.
 
 **Entschieden am 05.11. (vom Nutzer): Kinderstube in Tallbrush Coasts.**
 - **Wo:** Die Mütter nisten nicht im Revier des Männchens, sondern in einer Kinderstube an der Küste von Tallbrush Coasts. Laut Kartendaten ist das die flache, salzige Nordküste westlich von Kelp Vale. Die Mütter kommen an der Küste entlang hin, ohne durch die Flussengen zu müssen.
@@ -151,24 +182,24 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 
 Sachicasaurus vitae was a large pliosaur of the Early Cretaceous, around 125 million years ago, found in the Paja Formation of the Colombian Andes. Estimated at about 10 meters and 17 tonnes, it carried a massive head on a short neck, and swam with four powerful flippers. It hunted in a shallow inland sea, alongside ichthyosaurs, sea turtles and other pliosaurs.
 
-Profile inspired by jaguars, saltwater crocodiles, Tyrannotitan and pliosaur paleobiology.
+Profile inspired by jaguars, saltwater crocodiles, great white sharks, Tyrannotitan and pliosaur paleobiology.
 
 ## Overview
 
 **Apex Nocturnal Aquatic Carnivore**
 
 - Sachicasaurus may take part in all activities other than hunting during the day.
-- Sachicasaurus form no lasting bonds. A male mates with only one female at a time, and after nesting each goes their own way.
+- Sachicasaurus form no lasting bonds. A male mates with only one female at a time. After courtship, the pair group for one night-and-day cycle and may hunt together, then each goes their own way.
 - **Males:**
   - Males are territorial. They claim one half of an ocean POI as their territory.
   - A male allows one solitary female, or one bonded pair of females, within his territory, and permits them and any offspring he fathers to share his kills.
 - **Females:** Females are nomadic. They raise their young in the nursery at Tallbrush Coasts, where males never come, and defend their own nest there.
 - **Nature:**
   - Males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females outside courtship.
-  - Females are tolerant towards other species, and passive towards males.
+  - Females are tolerant towards other species, and passive towards males outside courtship.
 - Sachicasaurus live in the kelp forests, reefs, shallows and beaches of the oceans. They avoid deep, open water, except for the high rock ledges of the Abyssal Depths, and do not enter the saltwater channels between the islands. Mothers raise their young in the shallows of Tallbrush Coasts.
 - Sachicasaurus are not scavengers. They hunt, and they fish.
-- Sachicasaurus court like great white sharks: the male chases the female, and she only accepts a male who can stop her from leaving (see Courtship & Parenthood).
+- Sachicasaurus court with the flank display and the duel, and their scars tell their story: a heavily scarred female has mated many times, a heavily scarred male has fought many times (see Courtship & Parenthood).
 - Sachicasaurus tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -182,8 +213,8 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - Male pairs (brothers, half-brothers, or father and son) are known as a brace.
   - Female pairs (sisters, half-sisters, or mother and daughter) are known as a drift. A drift may be joined by unlimited offspring.
 - **Solitary males:** A solitary male may group with one related Adolescent male offspring.
-- **Opposite sexes:** Adult individuals of the opposite sex never group, even when nesting.
-- **Bloodlines:** All Sachicasaurus that group together must log their relations in bloodline-logs.
+- **Opposite sexes:** Adults of the opposite sex only group for the pair night after a successful courtship (see The Pair Night). They never group when nesting.
+- **Bloodlines:** All Sachicasaurus that group together must log their relations in bloodline-logs. A mated pair does not need to be related.
 
 ## Territory
 
@@ -210,7 +241,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 ## Engagement Limits (Defence & Hunts)
 
 - **Numbers:** Up to 2 grouped Sachicasaurus may take part in a hunt or a territory challenge.
-- **Tiers:** Sachicasaurus may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace or drift.
+- **Tiers:** Sachicasaurus may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace, a drift or a mated pair during its pair night.
 - **Fleeing:** Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. A brace may stand its ground in defence, but loses against a grown Livyatan. In the kelp, in the shallows and on the high rock ledges of the Abyssal Depths, Sachicasaurus are safe from it.
 - **Spinosaurus & Deinosuchus:** Sachicasaurus may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
 - **Adolescents:** Adolescent Sachicasaurus do not assist with hunts.
@@ -222,7 +253,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - **Next choices:** Eurhinosaurus, Leedsichthys pups and the young of any species.
 - **Fish:** Between hunts, Sachicasaurus fish.
 - **Rival apex species:** Sachicasaurus like to hunt Deinosuchus and Spinosaurus at Palm Islands, but may also leave them be.
-- **Leedsichthys:** Adult Leedsichthys that pass through a territory at night are prey for a brace or drift.
+- **Leedsichthys:** Adult Leedsichthys that pass through a territory at night are prey for a brace, a drift or a mated pair during its pair night.
 - **Tylosaurus:** Tylosaurus that refuse to leave a territory may be hunted.
 - **Terrestrial species:** At night, Sachicasaurus may hunt terrestrial species that swim, or stand within one body length of the water (see Beaching).
 
@@ -246,6 +277,7 @@ Females nest in the nursery at Tallbrush Coasts (see The Nursery). A mother driv
 
 - ♀️ Females are bulkier, heavier and on average larger than males, with thick skin. Most adult females carry mating scars on their flippers and flanks.
 - ♂️ Males are sleeker, with broad, heavily scarred jaws.
+- **Scars:** Scars never heal. They are the record of every fight a Sachicasaurus has survived, and other Sachicasaurus read them (see Scars under Courtship & Parenthood).
 
 Females use the bulkiest of the subspecies the mod offers (Vitae, Mors and Queenslandicus). Physical dimorphism for Sachicasaurus is mandatory: in courtship, a male must recognise a female at first sight.
 
@@ -278,7 +310,7 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
 - **Males:** Males are solitary or live in a brace with a brother. Braces hold their territory together, and share every kill.
 - **Females:** Females travel alone or as a drift with a sister or daughter. They move between territories, and choose the male whose territory offers the best hunting.
 - **Females in his territory:** A territorial male shares his kills with the female or drift he allows in his territory, and with his offspring.
-- **No lasting bonds:** Sachicasaurus form no lasting pairs. After nesting, each goes their own way.
+- **No lasting bonds:** Sachicasaurus form no lasting pairs. After the pair night, each goes their own way.
 
 ## Aggressive Interaction
 
@@ -297,7 +329,7 @@ Orphaned nippers make their way to the nursery if they can, and hide in its shal
 - **Flotillas:** They leave the Leedsichthys alone, and take the Eurhinosaurus sleeping around it.
 - **Eurhinosaurus:** Eurhinosaurus are taken when the chance arises. Their loud calls often betray the hunter's position.
 - **Xiphactinus:** Xiphactinus live in the saltwater channels, which Sachicasaurus do not enter. The two rarely meet.
-- **Leedsichthys:** Pups are easy to seize and drag away. Adults that drift through a territory at night are prey for a brace or drift.
+- **Leedsichthys:** Pups are easy to seize and drag away. Adults that drift through a territory at night are prey for a brace, a drift or a mated pair.
 - **Tylosaurus:**
   - Tylosaurus are their equals and their rivals.
   - Tylosaurus rule the open water, with more stamina, more speed in long chases and faster healing.
@@ -327,37 +359,70 @@ Sachicasaurus win with the grab.
 
 ## Courtship & Parenthood
 
-Sachicasaurus court like great white sharks. Female great whites are larger than males, and many carry the scars of mating. A female Sachicasaurus only accepts a male who can stop her from leaving.
+Sachicasaurus court like great white sharks: females are larger than males, and grown females carry the scars of mating. A Sachicasaurus does not circle or inspect its partner. It judges with its eyes, at the surface and by night, and reads the scars.
 
 ### Courtship
 
 1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging the male and his territory.
 2. **Meeting:** When a female enters a male's territory and the two see each other, the male recognises her as a female by her build.
-3. **The greeting:** A female ready to mate greets him with the mating greeting: she turns her flank to him at the surface and gives the agreement call. He returns it in the same way. He may also greet first, and she returns it.
-4. **No greeting:** If she does not return his greeting and swims on, he tolerates her in his territory and does not chase her. After one night she travels on, and accepts this.
-5. **The chase:** After the greeting, the female swims on anyway. Now the male must prove his strength by stopping her from leaving his territory.
-   - He chases her with everything he has: Bite, Bone Snap, Lunge and Breach. Broken bones slow her down.
-   - A grown female is too heavy for him to clamp, so he must wear her down.
-   - She only flees. She turns, dives and uses her speed, but does not bite back, and does not use Bone Snap or Aileron Roll.
-6. **Success:** Once she drops below 50% health, she stops, turns to face him and greets him again. The chase is over at once, and he stops biting. She has accepted him.
-7. **Failure:** If she reaches the edge of his territory, he has failed. He does not follow her out, and she travels on to another territory.
+3. **The flank display:** A female ready to mate turns her flank to him at the surface and gives the agreement call. He answers in the same way. He may also display first, and she answers. Then both lie still, side by side. This is all the judging there is: she shows him her scars, and he shows her his.
+4. **No display:** If she does not answer and swims on, he tolerates her in his territory. After one night she travels on, and accepts this.
+5. **The kill:** If a fresh kill of his own lies in his territory, he may lead her to it, and she may feed from it.
+6. **Her choice:**
+   - **The duel:** Usually, she gives a threaten call, and he must prove himself in the duel.
+   - **Accepting him outright:** She may spare him the duel and repeat the flank display, but only if:
+     - he has shown her a fresh kill of his own that is a Kaiwhekea or above Medium tier, such as a Tylosaurus, or
+     - he is heavily scarred, a male who has clearly fought many times.
+     This is always her choice. A male never has a right to it.
+   - **Moving on:** She swims on, and is tolerated for one night.
 
-Males and females do not group, not even after courtship or when nesting.
+### The Duel
+
+- **Both fight:** Bite only, one bite per pass, aimed at the flanks and flippers, the way great white sharks bite. No other abilities are used. Movement is free.
+- **The limit:** Whoever drops below 50% health gives the heart call then at the latest.
+- **She yields:** If she gives the heart call first, he has proven himself, and she accepts him.
+- **He yields:** If he gives the heart call first, he has failed, and she travels on to another territory.
+- **She is convinced:** At any moment of the duel she may stop it with the flank display. He has convinced her, and she accepts him.
+- **He stops at once** at every signal she gives. A male who bites again after her heart call or her flank display has lost her for good: she never courts him again.
+- **One duel** per pair per night.
+
+### The Mating Bite
+
+Every successful courtship ends with the mating bite, with or without a duel: he bites her once on the flank or a flipper, and she holds still.
+
+### The Pair Night
+
+After the mating bite, the pair group for one full night-and-day cycle, to strengthen the bond between them.
+
+- **How long:** From the mating bite through the following day and the following night. At the second dawn the group ends, and she travels to the nursery.
+- **Hunting together:** During the pair night, the two may hunt together in his territory, as a pair. They count as two grouped Sachicasaurus, like a brace or a drift, so they may also hunt an adult Leedsichthys.
+- **By day:** They rest side by side in his territory, and wake together at dusk.
+- **Only the two of them:** Only the mated pair groups. A brother or sister leaves the group for this time, but may stay close in the territory. When a brace courts a drift, each couple groups on its own, and the two couples never join the same hunt.
+- **No lasting bond:** After the pair night, each goes their own way. They never group when nesting, and males never enter the nursery.
+
+### Scars
+
+Scars never heal. They are how Sachicasaurus know each other.
+
+- **A heavily scarred female** has mated many times, and has many clutches behind her. Her scars come from the duels she yielded, and the mating bites that followed. Males seek her out, and other mothers give way to her in the nursery.
+- **A heavily scarred male** has fought many times: in duels, against rivals, against Tylosaurus and hard prey. A female may spare such a male the duel.
 
 ### Braces and Drifts
 
 - **One male, one female:** A male only ever mates with one female at a time.
-- **A drift and a single male:** When a drift gives the agreement call, he chases only one of the sisters, never both. Her sister goes without.
-- **A drift and a brace:** Each brother chooses one sister, and chases her.
-- **A brace and a single female:** Only one brother chases her. The brothers settle between themselves which one.
-- **The sister who goes without** may come along to the nursery, and help guard the nest and the young.
+- **A drift and a single male:** When a drift gives the agreement call, he courts only one of the sisters, never both, usually the one with the most scars. Her sister goes without.
+- **A drift and a brace:** Each brother chooses one sister, and courts her.
+- **A brace and a single female:** Only one brother courts her. The brothers settle between themselves which one.
+- **The sister who goes without** waits close by during the pair night, then may come along to the nursery, and help guard the nest and the young.
+- **Pair nights:** When a brace meets a drift, each couple has its own pair night (see The Pair Night).
 
 ### The Nursery
 
 Female great white, lemon and bull sharks give birth in nurseries: shallow coasts, mangroves or rivers where the large hunters do not go. Sachicasaurus do the same.
 
-- **Where:** The nursery lies in the shallows of Tallbrush Coasts, the northern coast west of Kelp Vale. After courtship, the female travels there along the coast to nest. The wounds of the chase heal while she sits on her nest.
+- **Where:** The nursery lies in the shallows of Tallbrush Coasts, the northern coast west of Kelp Vale. After the pair night, the female travels there along the coast to nest. The wounds of the duel heal while she sits on her nest, and the scars stay.
 - **Shared:** All mothers share the nursery. A mother defends her own nest, and drives other females away from it, but not out of the nursery.
+- **Nest sites:** The most scarred mother chooses her nest site first, and mothers with fewer scars give way to her.
 - **No males:** Males never enter the nursery.
 - **Mothers stay:** The mother stays with her nippers in the nursery until they reach Adolescent. She guards them at night, and rests close by during the day.
 - **No safe place:** Livyatan never come here, but the nursery is still dangerous. Spinosaurus wait at the river mouths, shore hunters roam the beach, and Tylosaurus may come in from the sea.
@@ -378,7 +443,7 @@ Female great white, lemon and bull sharks give birth in nurseries: shallow coast
 - **Territory:** A Sachicasaurus territory covers one half of an ocean POI, water only (proposed water territory rule). Terrestrial species on land within the same POI are not affected.
 - **Beaching and third party:** The same as Tylosaurus: hunts within 1 body length of the water, and third party in engagements that enter the water or come within 1 body length of it.
 - **Nursery:** The nursery at Tallbrush Coasts is not a territory. Mothers challenge nothing out of it. They only defend their own nest and young.
-- **Courtship chase:** The chase is an engagement within the species with its own limits, not a hunt. The male stops as soon as the female greets him again below 50% health.
+- **Courtship duel:** The duel is an engagement within the species with its own limits, not a hunt and not a territory challenge: Bite only, one bite per pass, flanks and flippers only, and a heart call below 50% health at the latest. Each stops at once at the other's heart call, and the male also at her flank display.
 
 ## Dynasty Adjusted Stats
 
@@ -390,9 +455,10 @@ Female great white, lemon and bull sharks give birth in nurseries: shallow coast
 - Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
 - They live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. In the Abyssal Depths they keep to the high rock ledges between the deeps, where Livyatan do not follow. Males hold one half of an ocean POI as their territory, alone or as a brace of brothers.
 - Females travel alone or as a drift. They raise their young in the nursery at Tallbrush Coasts, where males never come, and lead them out to sea at Adolescent.
-- They court like great white sharks. After the mating greeting, the male chases the female with broken bones. Once he brings her below 50% health, she greets him again and accepts him. A female who reaches the edge of his territory travels on. A female who does not return the greeting is tolerated for one night, then travels on.
+- They court with the flank display at the surface, where both show their scars. Usually the female then tests the male in a duel, bite for bite, until one gives the heart call below 50% health. She may spare him the duel if he shows her a fresh kill of a Kaiwhekea or anything above Medium, or if he is heavily scarred. Every courtship ends with the mating bite.
+- Scars never heal: a heavily scarred female has mated many times, a heavily scarred male has fought many times.
 - Physical dimorphism is mandatory: females are the bulkier and larger sex.
-- They form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is chased, unless a brace is there and each brother chooses one.
+- After the mating bite, the pair group for one night-and-day cycle and may hunt together. Otherwise they form no lasting bonds. A male mates with only one female at a time. Of a drift, only one sister is courted, usually the most scarred, unless a brace is there and each brother chooses one.
 - They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for bales and flotillas resting in the shallows.
 - At the shore they follow the same beaching rules as Tylosaurus.
 - Tylosaurus are their equals: the Tylosaurus rules the open water, the Sachicasaurus the shallows by night.

@@ -22,7 +22,7 @@ Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Bey
 %% banner Overview
 **Apex Nocturnal Aquatic Carnivore**
 Sachicasaurus may take part in all activities other than hunting during the day.
-Sachicasaurus form no lasting bonds. A male mates with only one female at a time, and after nesting each goes their own way.
+Sachicasaurus form no lasting bonds. A male mates with only one female at a time. After courtship, the pair group for one night-and-day cycle and may hunt together, then each goes their own way.
 Sachicasaurus males are territorial and claim one half of an ocean POI as their territory. They allow one solitary female, or one bonded pair of females, within their territory, and permit them and any offspring they father to share their kills.
 Sachicasaurus females are nomadic. They raise their young in the nursery at Tallbrush Coasts, where males never come, and defend their own nest there.
 Sachicasaurus males have an aggressive nature towards ungrouped Sachicasaurus males and towards Tylosaurus, and a passive nature towards females outside courtship.
@@ -46,12 +46,12 @@ Female pairs (sisters, half-sisters, or mother and daughter) are known as a drif
 A solitary male may group with one related Adolescent male offspring.
 Unlimited Offspring
 
-Adult individuals of the opposite sex never group, even when nesting.
-ALL Sachicasaurus that group together must log their relations in #🩸・bloodline-logs before they can group.
+Adults of the opposite sex only group for the pair night after a successful courtship. They never group when nesting. See ✦ The Pair Night.
+ALL Sachicasaurus that group together must log their relations in #🩸・bloodline-logs before they can group. A mated pair does not need to be related.
 
 ## Engagement Limits (Defence & Hunts)
 Up to 2 grouped Sachicasaurus may take part in a hunt or a territory challenge.
-Sachicasaurus may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace or drift.
+Sachicasaurus may hunt up to Apex tier. Adult Leedsichthys may only be hunted by a brace, a drift or a mated pair during its pair night.
 Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. See ✦ Livyatan.
 Sachicasaurus may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
 Adolescent Sachicasaurus do not assist with hunts.
@@ -74,7 +74,7 @@ Sachicasaurus prefer Kaiwhekea, especially individuals resting at the edge of a 
 Eurhinosaurus, Leedsichthys pups and the young of any species are the next choices.
 Between hunts, Sachicasaurus fish.
 Sachicasaurus like to hunt Deinosuchus and Spinosaurus at Palm Islands, but may also leave them be.
-Adult Leedsichthys that pass through a territory at night are prey for a brace or drift.
+Adult Leedsichthys that pass through a territory at night are prey for a brace, a drift or a mated pair during its pair night.
 Tylosaurus that refuse to leave a territory may be hunted.
 At night, Sachicasaurus may hunt terrestrial species that swim, or stand within one body length of the water. Adult Apex terrestrial carnivores are only hunted when they are swimming in water. See ✦ Beaching.
 Sachicasaurus may third party engagements that enter the water, or come within 1 body length of the water.
@@ -135,7 +135,7 @@ A brace rests side by side, and wakes together at dusk.
 Males are solitary or live in a brace with a brother. Braces hold their territory together, and share every kill.
 Females travel alone or as a drift with a sister or daughter. They move between territories, and choose the male whose territory offers the best hunting.
 A territorial male shares his kills with the female or drift he allows in his territory, and with his offspring.
-Sachicasaurus form no lasting pairs. After nesting, each goes their own way.
+Sachicasaurus form no lasting pairs. After the pair night, each goes their own way.
 
 ### ✦ Braces
 A brace is a pair of related males: brothers, half-brothers, or a father and his son.
@@ -146,7 +146,7 @@ In courtship, each brother of a brace may court one sister of a drift. A single 
 A drift is a pair of related females: sisters, half-sisters, or a mother and her daughter.
 A drift travels between territories, and may live together in the territory of one male.
 When a drift gives the agreement call to a single male, he courts only one of the sisters, never both, usually the one with the most scars. Her sister goes without.
-The sister who goes without may come along to the nursery, and help guard the nest and the young.
+The sister who goes without waits close by during the pair night, then may come along to the nursery, and help guard the nest and the young.
 Old females often stay with a daughter in a drift.
 %% banner Aggressive Interaction
 Sachicasaurus are primarily aggressive to unrelated males of their own kind.
@@ -176,7 +176,7 @@ Eurhinosaurus are taken when the chance arises. Their loud calls often betray th
 
 ### ✦ Leedsichthys
 Pups are easy to seize and drag away.
-Adults that drift through a territory at night are prey for a brace or drift.
+Adults that drift through a territory at night are prey for a brace, a drift or a mated pair.
 
 ### ✦ Tylosaurus
 Tylosaurus are their equals and their rivals.
@@ -225,7 +225,7 @@ Sachicasaurus may third party engagements that enter the water, or come within 1
 %% banner Courtship & Parenthood
 Sachicasaurus court like great white sharks: females are larger than males, and grown females carry the scars of mating.
 A Sachicasaurus does not circle or inspect its partner. It judges with its eyes, at the surface and by night, and reads the scars.
-A male only ever mates with one female at a time. Males and females do not group, not even after courtship or when nesting.
+A male only ever mates with one female at a time. After the mating bite, the pair group for one night-and-day cycle. They never group when nesting.
 
 ### ✦ Courtship
 1. **The hum:** In the courting season, territorial males hum through the night. Females travel from territory to territory, judging the male and his territory.
@@ -251,6 +251,14 @@ A male only ever mates with one female at a time. Males and females do not group
 ### ✦ The Mating Bite
 Every successful courtship ends with the mating bite, with or without a duel: he bites her once on the flank or a flipper, and she holds still.
 
+### ✦ The Pair Night
+After the mating bite, the pair group for one full night-and-day cycle, to strengthen the bond between them.
+- From the mating bite through the following day and the following night. At the second dawn the group ends, and she travels to the nursery.
+- During the pair night, the two may hunt together in his territory, as a pair. They count as two grouped Sachicasaurus, like a brace or a drift, so they may also hunt an adult Leedsichthys.
+- By day, they rest side by side in his territory, and wake together at dusk.
+- Only the mated pair groups. A brother or sister leaves the group for this time, but may stay close in the territory. When a brace courts a drift, each couple groups on its own, and the two couples never join the same hunt.
+- After the pair night, each goes their own way. They never group when nesting, and males never enter the nursery.
+
 ### ✦ Scars
 Scars never heal. They are how Sachicasaurus know each other.
 A heavily scarred female has mated many times, and has many clutches behind her. Her scars come from the duels she yielded, and the mating bites that followed. Males seek her out, and other mothers give way to her in the nursery.
@@ -258,7 +266,7 @@ A heavily scarred male has fought many times: in duels, against rivals, against 
 
 ### ✦ Nesting
 Female great white, lemon and bull sharks give birth in nurseries: shallow coasts, mangroves or rivers where the large hunters do not go. Sachicasaurus do the same.
-After courtship, the female travels along the coast to the nursery to nest. The wounds of the duel heal while she sits on her nest, and the scars stay.
+After the pair night, the female travels along the coast to the nursery to nest. The wounds of the duel heal while she sits on her nest, and the scars stay.
 
 ### ✦ The Nursery
 The nursery lies in the shallows of Tallbrush Coasts, the northern coast west of Kelp Vale.
@@ -305,7 +313,7 @@ Males may defend their territory during the day if challenged. (1.4.1)
 %% image Preferred POIs map: ten half-ocean territories (Kelp Vale W/E, Coastal Bluffs N/S, Palm Islands N/S, Stonebed Shoal N/S, Abyssal Depths N/S); nursery at Tallbrush Coasts
 ## Profile - Quick View
 Sachicasaurus are Apex Nocturnal Aquatic Carnivores.
-Sachicasaurus can group up to 2 related Sub/Adults of the same sex: a brace of males, or a drift of females with unlimited offspring. Adults of the opposite sex never group.
+Sachicasaurus can group up to 2 related Sub/Adults of the same sex: a brace of males, or a drift of females with unlimited offspring. Adults of the opposite sex only group for the pair night after courtship, and may hunt together then.
 Sachicasaurus males are aggressive towards rival males and Tylosaurus, and hold one half of an ocean POI as their territory. Females are tolerant, and travel between territories.
 Sachicasaurus live in the kelp, reefs, shallows and beaches of the oceans, and avoid deep water. In the Abyssal Depths they keep to the high rock ledges, where Livyatan do not follow.
 Sachicasaurus may hunt up to Apex tier, and hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and wait for bales and flotillas resting in the shallows. At the shore they follow the same beaching rules as Tylosaurus.
