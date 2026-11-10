@@ -164,6 +164,19 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 
 **Warum ohne feste Route:** Kai ziehen in die Ozeane, weil es dort die wertvollsten Fischarten gibt, nicht wegen des Leeds. Ihr Weg wechselt zwischen zwei Gefahren. In den Flussengen warten Xiphactinus-Schwärme, Deino und Spino. In den Ozeanen jagen Tylo, nachts Sachi, und außer bei Palm Islands Livy. Einen sicheren Ort gibt es nicht, nur bessere und schlechtere Zeiten.
 
+**Entschieden am 10.11. (vom Nutzer): Großfisch und Rhythmus.** Kai ziehen in die Ozeane, weil es dort die Nahrung gibt, die sie brauchen. Daraus wird jetzt ein Rhythmus, aber keine strenge Pflicht, sondern eine Leitlinie im Profil wie die Salt Rocks beim Barsboldia: keine feste Zeit, aber irgendwann braucht er sie.
+- **Großfisch:** Kai müssen regelmäßig große Fisch-AIs fressen: Kelp Shark, Manta Ray, Tuna und River Stingray. Kleiner Fisch hält sie am Leben, aber nicht gesund.
+- **Sonst Probleme:** Ohne Großfisch bekommen sie Nutritional Stress, eine Rollenspiel-Krankheit wie die Hyponatremia beim Barsboldia. Sie werden mager, frieren, liegen länger in der Sonne, ermüden schnell, fallen hinter die Bale zurück und haben keine Lust mehr auf Spiel und Balz. Heilen kann nur Großfisch.
+- **Echtes Vorbild:** die „Junk-Food-Hypothese“ bei Stellerschen Seelöwen in Alaska. Als fetter Hering knapp wurde und sie vor allem mageren Pollack fraßen, wurden sie trotz vollem Magen dünn, und es gab weniger und schwächere Junge.
+
+**Selbst ergänzt, bitte prüfen:**
+1. **Ab Sub-Adult,** wie beim Barsboldia. Kälber brauchen noch keinen Großfisch, Mütter und Tanten teilen ihn aber oft.
+2. **Teilen zählt:** Ein Großfisch, den Mutter, Tante oder ein enger Freund teilt, zählt für den, der ihn frisst. Das passt zum Teilen, das schon im Profil steht.
+3. **Keine Menge, keine Frist:** Wie beim Barsboldia steht keine Zahl drin, nur „at regular intervals“ und „semi-regular“. Wer eine feste Grenze will, könnte zum Beispiel einen Großfisch pro Tag-Nacht-Zyklus nehmen.
+4. **Folgen bei der Balz:** Magere Kühe werden selten gewählt und nehmen selten einen Bullen an. Das ist der stärkste Teil und bleibt Rollenspiel, keine Sperre.
+
+**Bitte prüfen, wo die Fische leben:** Wo die vier im Spiel spawnen, steht nicht in den Kartendaten. Der River Stingray lebt dem Namen nach eher in Flüssen. Gibt es ihn in den Flussengen, kann eine Bale ihren Großfisch dort holen und muss nie in die Ozeane, dann fehlt der Rhythmus. Dann sollte er raus oder nur halb zählen.
+
 **Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
 - **Neugier auf Landtiere:** Kai, Eurhino und Leeds sind unglaublich neugierig auf Landtiere. Kai kommen bei Pflanzenfressern auch aus dem Wasser und gehen an Land, um Hallo zu sagen. Laufen können sie gut. Die Flotilla springt dabei fröhlich in die Luft.
 - **Warum:** Das verbindet die zwei Welten. Der Spieler sieht mehr von der Welt und kann mit ihr interagieren, statt nur im Wasser zu bleiben.
@@ -186,6 +199,26 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 **Noch offen:**
 - **Sachi an Land:** Sein Grundtempo ist unbekannt, weil seine Mod nicht heruntergeladen ist. Beachcomber gibt ihm dauerhaft +10 % und denselben Schub wie dem Tylo.
 
+**Entschieden am 06.11. (vom Nutzer, aus dem Spieltest): Leitkuh und dominante Bullen.**
+- **Die Leitkuh ist vor allem erfahren.** Bei Engagements macht sie nur ganz selten mit.
+- **Ihr Wort beendet jeden Streit.** Bricht in der Bale Streit aus, egal worüber, kommt sie dazu. Alle hören sofort auf und gehorchen ihr. Auch ein Bulle, der doppelt so groß ist wie sie, gibt sofort nach.
+- **Ihr gehört der beste Platz.** Die Bale überlässt ihr von selbst den höchsten Platz und den besten Sonnenplatz.
+- **Die dominanten Bullen bleiben im Wasser,** wenn oben kein Platz mehr ist. Kommen die Kälber noch nicht auf die Felsen, bleiben die dominanten Bullen meist ebenfalls im Wasser und halten Wache.
+- **Die dominanten Bullen machen fast alles:** Engagements, Wache, Verteidigung.
+- **Vorbild:** große Hunderudel, in denen eine ältere Hündin dazukommt und selbst die großen Rüden sofort einlenken. Im Meer passen Orcas: Dort führt oft eine alte Kuh die Gruppe, gerade wenn der Fisch knapp ist, und erwachsene Söhne, deren alte Mutter noch lebt, tragen weniger Bissspuren aus Streit.
+- **Der Gruß** wird noch einmal überdacht, weil das Abbrechen eines Emotes im Spiel nicht so gut funktioniert wie gedacht. Bis dahin bleibt er, wie er ist.
+
+**Selbst ergänzt, bitte prüfen:**
+1. **Das Zeichen:** Sie schwimmt zwischen die beiden und schüttelt einmal den Kopf (:shake_emote:). Beide hören sofort auf, schwimmen mindestens 2 Körperlängen auseinander und nehmen den Streit an diesem Tag nicht wieder auf. Der Kopfschüttler ist schon das Frust-Zeichen der Art und steckt nie in einem Gruß. Bei ihr heißt er: Schluss. Wer sie übergeht, gilt als übergriffig (Correcting Over-Aggression).
+2. **Ritualkämpfe sind kein Streit.** Balz-Herausforderung, Kampf um freie Plätze und Herausforderung um die Begleitung haben eigene Regeln und ein eigenes Ende (unter 50 % oder :heart_call:). Die Leitkuh unterbricht sie nicht. Bricht einer die Regeln, zum Beispiel mit mehr als 2 Bissen pro Anlauf oder einem Biss nach dem :heart_call:, beendet sie den Kampf. So bleibt sie Schiedsrichterin und entscheidet nicht selbst über Plätze.
+3. **„Ganz selten“ konkret:** Aktive Verteidigerin wird sie nur, wenn kein dominanter Bulle da ist. Als Mutter verteidigt sie ihr Kalb und ihr Nest wie jede Mutter. Ressourcen verteidigen die dominanten Bullen, sie nur ohne Bullen. *(Bisher stand bei den Ressourcen „meist die dominanten Bullen und die Leitkuh“.)*
+4. **Platzordnung:** Die dominanten Bullen gehen als Letzte hoch. Ist oben kein Platz mehr, bleiben sie im Wasser.
+5. **Kälber unten:** Kälber, die noch nicht auf den Fels kommen, bleiben in den Untiefen darunter. Ihre Mütter dürfen bei ihnen bleiben, müssen aber nicht. Die dominanten Bullen halten um sie herum Wache.
+6. **Nachtwache:** Sie liegt meist bei den dominanten Bullen. Nicht-dominante Bullen lösen sie ab. Kühe halten nur Wache, wenn keine Bullen da sind. Eurhinos helfen wie bisher.
+7. **Gehorchen gilt beim Streit, nicht bei der Route.** Wohin die Bale zieht, entscheiden wie bisher die Kühe mit Mehrheit, wenn sie der Leitkuh widersprechen. Soll ihr Wort auch dort gelten, fällt diese Abstimmung weg. Ich würde sie behalten: Die Leitkuh führt mit Wissen, und beim Streit mit Autorität.
+
+**Gefahr, bitte bewusst entscheiden:** Nachts ist das Wasser unter dem Fels der gefährlichste Platz. Genau dort jagt der Sachi, und ein gepackter Kai ist verloren. Die dominanten Bullen tragen damit das größte Risiko der Bale, und mit ihnen die Kälber, die nicht hochkommen. Bei Alarm können sie nur ins offene Wasser fliehen, weil oben kein Platz ist. Ich finde das stimmig, denn Dominanz hat ihren Preis wie bei Seelöwenbullen. Es heißt aber, dass dominante Bullen öfter sterben werden als andere Kai.
+
 ---
 
 Kaiwhekea is an extinct genus of plesiosaur from the Late Cretaceous (Maastrichtian age) of what is now New Zealand. Kaiwhekea belongs to the clade Aristonectinae inside the family Elasmosauridae. With their long necks, small heads and fine interlocking teeth, they fed on small, soft-bodied prey such as fish and squid. Like other plesiosaurs, they swam with four large flippers, and swallowed stones that are still found in their stomachs today.
@@ -202,6 +235,7 @@ Profile inspired by sea lions, elephant seals, sea turtles and bottlenose dolphi
 - Kaiwhekea are nomadic. They roam back and forth between fishing grounds and haul-outs, and like sea lions they spend much of the day on land, often in colonies of several bales. They become territorial only around their nesting pools.
 - Kaiwhekea have a passive nature.
 - Kaiwhekea feed on fish, shellfish and squid. They do not hunt other players and do not claim or feed from bodies.
+- Sub-Adult and older Kaiwhekea need large fish at regular intervals, which draws them out into the oceans. Without them they suffer nutritional stress (see Large Fish).
 - Kaiwhekea may group with up to 4 Eurhinosaurus. They do not group with Leedsichthys. Kaiwhekea do not defend grouped Eurhinosaurus, and Eurhinosaurus do not defend them.
 - Kaiwhekea tolerate albino and melanistic individuals.
 
@@ -230,6 +264,7 @@ This group is known as a bale.
 **Predator Reaction: Flighty / Defensive**
 
 - Up to 2 individuals may act as active defenders. In addition, up to 6 may form 1 protective ring around calves.
+- The active defenders are usually the dominant bulls. The lead cow only becomes an active defender if no dominant bull is present (see Bale Structure).
 - Active defenders move freely, but stay within 3 body lengths of the bale. See Predator Reaction for exceptions.
 - Kaiwhekea never chase predators that flee or have forfeited.
 - Kaiwhekea flee from Apex and Giant carnivores on sight, unless defending a nest with hatchlings.
@@ -246,11 +281,12 @@ This group is known as a bale.
 - Kaiwhekea only challenge or accept challenges for resources while nesting, or when offspring below Sub-Adult are present.
 - At all other times they move away from a contested resource.
 - Kaiwhekea do not accept territory challenges and simply move on.
-- A maximum of 3 adults, usually the dominant bulls and the lead cow, may defend resources such as a fishing ground or a nesting pool.
+- A maximum of 3 adults may defend resources such as a fishing ground or a nesting pool. These are usually the dominant bulls. The lead cow only joins if no dominant bull is present.
 
 ## Preferred Diet
 
 - Kaiwhekea live on fish, shellfish and squid. Fish are their staple, and the richest ocean fishing grounds draw them out to sea again and again.
+- **Large fish:** Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays. Without them they suffer nutritional stress (see Large Fish).
 - Calves catch small fish on their own from the moment they can swim. Mothers and aunts often share their catch.
 - Kaiwhekea swallow pebbles and shells from beaches and riverbeds. The stones help them grind their food, and to balance in the water.
 - Kaiwhekea fish by day. At night they rest and do not fish.
@@ -370,6 +406,10 @@ Kaiwhekea are at home in the water, but like sea lions they haul out on land man
   - Kaiwhekea leap from the water onto high rocks to rest or sleep, safe from Tylosaurus, Sachicasaurus and Livyatan. Only rocks a Kaiwhekea can reach with a normal leap from the water may be used.
   - A healthy Kaiwhekea may also flee onto a rock from a hunter. One with heavy deathscars, or one bleeding to death, may not (rule 4.6).
   - A rock is a place for a nap, not for the whole night. Members often take turns on a rock while the rest of the bale rests in the shallows below.
+- **The best places:**
+  - On a rock or a beach, the bale leaves the highest place and the best spot in the sun to the lead cow, without being asked.
+  - The dominant bulls go up last. If there is no room left, they stay in the water below.
+  - Calves that cannot yet reach a rock stay in the shallows below. Their mothers may stay with them, and the dominant bulls usually stay in the water and keep watch around them.
 - **Visiting land animals:**
   - Kaiwhekea walk well on land. Like curious sea lions, they may leave the water to greet herbivores at the shore: they walk up to them, call softly with :friendly_call:, and present their trinkets.
   - Visits count towards their time on land, so they return to the water once their thirst drops to 75% (see Drying out).
@@ -408,7 +448,7 @@ Kaiwhekea are skilled and cooperative fishers. Each bale develops its own techni
   - A bale that was attacked at a resting place does not use it again for the rest of the session.
 - **Rest formation:** The bale rests close together at the surface, with calves in the centre, cows around them, and the bulls and grouped Eurhinosaurus on the outer edge.
 - **Night watch:**
-  - Up to 2 individuals stay awake and slowly circle the resting bale. These are usually bulls, or cows if no bulls are present.
+  - Up to 2 individuals stay awake and slowly circle the resting bale. These are usually the dominant bulls, relieved by non-dominant bulls. Cows only keep watch if no bulls are present.
   - Watch duty is passed on with a gentle nudge: the watcher swims softly into the next one, who takes over.
   - Grouped Eurhinosaurus often take on part of the watch. Their loud calls give the earliest warning.
   - On a threat, the watcher gives a :danger_call: and slaps the water with its fluke. The bale wakes, pulls the calves into the centre and leaves as one group.
@@ -427,12 +467,31 @@ Night is a time for rest and bonding. The bale does not migrate, fish or court a
 Bales are nomadic, but follow no fixed route. They swim back and forth between fishing grounds and haul-outs, and are always on the move.
 
 - **Channels:** Bales roam the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
-- **Oceans:** From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year.
+- **Oceans:** From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year. Their need for large fish gives the bale its rhythm, back and forth between the channels and the oceans (see Large Fish).
 - **Moving on:** A bale, and even more a colony, empties the fish around it quickly. Bales move on once the fish grows scarce, and rarely stay in one place for longer than a day–night cycle.
 - **Seasons:** In the Rainy Season, bales spend longer in the channels, where the rivers bring fish. In the Dry Season, the channels grow warm, and bales spend longer in the cooler oceans.
 - **Flotillas:** Bales do not follow the Leedsichthys route. When a bale meets a flotilla, it may travel alongside it for a while (see Cross-Species Interaction).
 - **Fresh water:** Bales may leave the coasts for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
 - **Tradition:** The best fishing grounds and haul-outs are passed down between generations, mostly by the lead cow and the elders.
+
+### Large Fish
+
+Small fish keep a Kaiwhekea alive, but not healthy. Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays. There is no fixed time, but every Kaiwhekea feels when it has gone too long without them.
+
+- **The pull of the oceans:** Large fish are what draws bales out of the channels and into the oceans again and again. Bales usually set out when several members begin to need them.
+- **Sharing counts:** A large fish shared by a mother, an aunt or a bonded friend counts for the one who eats it.
+- **Calves:** Below Sub-Adult, calves do not need large fish yet, but mothers and aunts often share them.
+
+### Nutritional Stress
+
+Sub-Adult and older Kaiwhekea that do not eat large fish on a semi-regular basis suffer from nutritional stress.
+
+- This is a roleplay behavior, and not a built-in in-game mechanic.
+- They grow lean and lose their blubber. They feel the cold, and spend longer basking in the sun at a haul-out.
+- They tire quickly, swim slowly, dive for shorter times and fall behind the bale.
+- They lose interest in play, greetings and courtship. Lean cows are rarely chosen, and rarely accept a bull.
+- The only cure is to eat large fish again. The Kaiwhekea slowly regains its strength.
+- Like Steller sea lions that lived on lean fish instead of fatty fish, a bale that never leaves the channels grows thin, even with full stomachs.
 
 ### Albino & Melanistic Behavior
 
@@ -451,6 +510,7 @@ Bales are nomadic, but follow no fixed route. They swim back and forth between f
   - slap the water beside it with a Fluke Slap, without landing the hit.
 
   These are done once, and are respected at once: the other moves away by at least 1 body length.
+- **Peace:** A head shake from the lead cow ends any quarrel in the bale at once (see Bale Structure).
 - **Alarm:** a :danger_call: and a hard fluke slap on the water. Every Kaiwhekea that hears it raises its head and looks for the threat.
 
 ## Social Interaction
@@ -463,13 +523,18 @@ Bales are loosely structured. They are guided by a lead cow and escorted by up t
 
 - **Lead cow:**
   - The lead cow is an experienced cow, often the oldest, who knows the fishing grounds and haul-outs best. She swims at the front, and decides where the bale travels, fishes and rests.
+  - She leads through experience, not strength, and rarely takes part in engagements. She only becomes an active defender if no dominant bull is present, and defends her own calf and nest like any mother.
   - She is the first to welcome newcomers into the bale, and the first to correct over-aggression.
+  - **Keeping the peace:** If a quarrel breaks out in the bale, about anything, the lead cow swims between the two and shakes her head once (:shake_emote:). Both stop at once, move at least 2 body lengths apart, and do not pick the quarrel up again that day. Even a bull twice her size gives way to her at once. Ignoring her counts as over-aggression (see Correcting Over-Aggression).
+  - **Spin fights** in courtship, over free places and in escort challenges are not quarrels. They follow their own rules, and she does not stop them, unless a bull breaks those rules, for example by biting more than twice in a pass, or after a :heart_call:.
+  - **The best place:** The bale leaves her the highest place and the best spot in the sun, without being asked (see Time on Land).
   - Her birth beach is the bale's nesting beach (see Nesting). She is the only Kaiwhekea who always keeps her own greeting, and every member of her bale knows it.
   - Other cows may disagree with her choice. A cow shows this by swimming in front of the lead cow and slapping the water with her fluke. If several cows disagree, the bale follows the choice of the majority of cows. On an even split, the lead cow decides.
   - The role is not fought over. When a lead cow dies, leaves or grows too old, the cow the others follow most often takes her place.
   - Bulls guide the bale only when no cow is willing to lead.
 - **Dominant bulls:**
   - A bale has up to 2 dominant bulls. They carry the dominant greeting, escort the bale on its outer edge, and drive away rival bulls.
+  - They do most of the bale's work. They are the usual active defenders, keep most of the night watch, defend resources and make the mock charges. When there is no room on a rock, or the calves cannot reach it yet, they stay in the water and keep watch.
   - They dance first in courtship, and most cows prefer them.
   - The 2 dominant bulls need not be friends, but they do not fight each other over cows. A cow chooses between them, and the other accepts it.
   - A dominant bull who forms a lifelong bond gives up his place at the next courtship ritual, and returns to his own greeting.
@@ -526,6 +591,8 @@ Over-aggression is rare and not tolerated.
 3. If it continues, they follow up with firm nips. Other members quickly rally to help push the aggressor away.
 4. If the behavior continues despite this, the bale shuns the individual.
 
+The lead cow can end it at any step with her head shake (see Bale Structure).
+
 Over-aggression is never defended by bale mates, regardless of relations. Anyone who defends an aggressive individual is shunned along with it.
 
 ## Aggressive Interaction
@@ -580,7 +647,7 @@ At the first sign of danger, Kaiwhekea raise their heads above the surface to lo
 
 ### Hunted by Non-Apex
 
-- **Defenders:** Up to 2 adults, usually the dominant bulls, step forward as active defenders. Once the engagement starts, they cannot be swapped out, and cannot join the ring.
+- **Defenders:** Up to 2 adults, usually the dominant bulls, step forward as active defenders. The lead cow only steps forward if no dominant bull is present. Once the engagement starts, they cannot be swapped out, and cannot join the ring.
 - **Reaching the bale:** An attacked individual must swim back to the bale within 30 seconds to receive defenders. Being within 2 body lengths of the bale counts as reaching it.
   - If it does not reach the bale in time, or turns to fight, it counts as a defender.
   - Any Kaiwhekea may use Fluke Slap in self-defence while being hunted without counting as a defender. Turning to bite or barrel roll makes it an active defender.
@@ -729,8 +796,8 @@ Eurhinosaurus and passing Leedsichthys often watch the ritual (see Cross-Species
 - Kaiwhekea are Medium Diurnal Aquatic Piscivores.
 - They group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Up to 4 Eurhinosaurus may join, without any defence between the species. They do not group with Leedsichthys.
 - Like sea lions, they haul out on land many times a day, often in colonies of several bales. In a colony, each bale defends only itself, and after one day–night cycle each goes its own way.
-- They are passive, feed only on fish, shellfish and squid, and never hunt other players. They fish together by day, with techniques passed from mother to calf.
-- A lead cow guides the bale, up to 2 dominant bulls escort it, and aunts help raise the calves.
+- They are passive, feed only on fish, shellfish and squid, and never hunt other players. From Sub-Adult they need large fish at regular intervals, or suffer nutritional stress. They fish together by day, with techniques passed from mother to calf.
+- An experienced lead cow guides the bale. She rarely fights, but ends any quarrel with a single head shake, and the bale leaves her the best place on the rock. Up to 2 dominant bulls escort the bale and do most of the work: defence, the night watch, and staying in the water when there is no room above. Aunts help raise the calves.
 - Every Kaiwhekea has its own greeting, which players must remember. Cows take on the greeting of their chosen bull for one season, or for life in a lifelong bond. Dominant bulls share one fixed greeting.
 - Physical dimorphism is mandatory, because greetings do not show sex.
 - 2 active defenders protect the bale, and up to 6 form a ring around the calves. They flee from Apex and Giant carnivores on sight, except at a nest. A Kaiwhekea seized by a Sachicasaurus is lost.

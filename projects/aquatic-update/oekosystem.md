@@ -369,7 +369,7 @@ Wenn der Server nicht alles auf einmal nimmt, ist das meine Reihenfolge:
 
 | Art | Zuhause | Weitere Orte |
 | --- | --- | --- |
-| Kaiwhekea | nomadisch ohne feste Route: hin und her zwischen Fischgründen und Kolonien in den Flussengen und den Ozeanen Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal | Kolonien an Stränden und Felsen; Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
+| Kaiwhekea | nomadisch ohne feste Route: hin und her zwischen Fischgründen und Kolonien in den Flussengen und den Ozeanen Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands und Stonebed Shoal; der Großfisch-Bedarf (Kelp Shark, Manta Ray, Tuna, River Stingray) zieht sie regelmäßig in die Ozeane (entschieden am 10.11.) | Kolonien an Stränden und Felsen; Nester auf Palm Islands, Castaway Isle und Volcano Islands; nachts Ruhe in den Untiefen |
 | Eurhinosaurus | Route des Leeds als seine Flotilla; bis zu 4 bei einer Kai-Bale | Nistfluss wie bisher |
 | Leedsichthys | eigensinnig auf seiner Schleife durch die warmen Flussengen, zum Abkühlen in die Ozeane | Balzgründe wie bisher; schläft nachts bei seinem Schwarm |
 | Xiphactinus | nur Süß- und Brackwasser: die Flussengen und verbundene Seen, nie der offene Ozean, nie an Land | Balz, Nest und Jugendschulen in Coastland Swamp; flieht nur vor Tylo |

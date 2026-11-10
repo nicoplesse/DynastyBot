@@ -39,6 +39,7 @@ Players must roll in #🎲・genetics-rolls to use these skins in game. This is 
 ## Profile Specific Unique Feature
 Every Kaiwhekea has its own greeting. Players choose it freely and must remember it, as it is not written down.
 Cows take on the greeting of the bull they choose in courtship for one season, or for life in a lifelong bond.
+Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays. Without them they suffer nutritional stress. See ✦ Large Fish.
 Kaiwhekea dry out on land. They return to the water once their thirst drops to 75%, and a Kaiwhekea whose thirst drops below 50% on land becomes infertile.
 See ✦ Greetings and ✦ Time on Land for more information.
 
@@ -80,6 +81,7 @@ A maximum of 3 adults may defend resources such as a fishing ground or a nesting
 
 ## Preferred Diet
 Kaiwhekea live on fish, shellfish and squid. Fish are their staple, and the richest ocean fishing grounds draw them out to sea again and again.
+Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays. See ✦ Large Fish.
 Kaiwhekea fish by day. At night they rest and do not fish.
 Calves catch small fish on their own from the moment they can swim. Mothers and aunts often share their catch.
 Kaiwhekea swallow pebbles and shells from beaches and riverbeds, which help them grind their food and balance in the water.
@@ -198,12 +200,28 @@ Loud calls at night are corrected with a head shake.
 ### ✦ Migration
 Bales are nomadic, but follow no fixed route. They swim back and forth between fishing grounds and haul-outs, and are always on the move.
 Bales roam the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
-From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year.
+From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year. Their need for large fish gives the bale its rhythm, back and forth between the channels and the oceans. See ✦ Large Fish.
 A bale, and even more a colony, empties the fish around it quickly. Bales move on once the fish grows scarce, and rarely stay in one place for longer than one day–night cycle.
 In the Rainy Season, bales spend longer in the channels, where the rivers bring fish. In the Dry Season, the channels grow warm, and bales spend longer in the cooler oceans.
 Bales do not follow the Leedsichthys route. When a bale meets a flotilla, it may travel alongside it for a while. See Cross-Species Interaction.
 Bales may leave the coasts for detours into the lakes and fresh waters connected to the channels, where land animals come to drink. Spinosaurus live there, and land carnivores wait on the banks.
 The best fishing grounds and haul-outs are passed down between generations, mostly by the lead cow and the elders.
+
+### ✦ Large Fish
+Small fish keep a Kaiwhekea alive, but not healthy. Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays.
+There is no fixed time, but every Kaiwhekea feels when it has gone too long without them.
+Large fish are what draws bales out of the channels and into the oceans again and again. Bales usually set out when several members begin to need them.
+A large fish shared by a mother, an aunt or a bonded friend counts for the one who eats it.
+Below Sub-Adult, calves do not need large fish yet, but mothers and aunts often share them.
+
+### ✦ Nutritional Stress
+Sub-Adult and older Kaiwhekea that do not eat large fish on a semi-regular basis suffer from nutritional stress.
+This is a roleplay behavior, and not a built-in in-game mechanic.
+They grow lean and lose their blubber. They feel the cold, and spend longer basking in the sun at a haul-out.
+They tire quickly, swim slowly, dive for shorter times and fall behind the bale.
+They lose interest in play, greetings and courtship. Lean cows are rarely chosen, and rarely accept a bull.
+The only cure is to eat large fish again. The Kaiwhekea slowly regains its strength.
+Like Steller sea lions that lived on lean fish instead of fatty fish, a bale that never leaves the channels grows thin, even with full stomachs.
 %% banner Social Interaction
 Kaiwhekea are a highly social species, and live in mixed-sex bales that migrate together.
 
@@ -580,7 +598,7 @@ Kaiwhekea do not claim bodies that have fallen in an engagement, bodies that the
 ## Profile - Quick View
 Kaiwhekea are Medium Diurnal Aquatic Piscivores.
 Kaiwhekea can group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Up to 4 Eurhinosaurus may join, without any defence between the species. They do not group with Leedsichthys.
-Kaiwhekea have a passive nature. They feed only on fish, shellfish and squid, and never hunt other players.
+Kaiwhekea have a passive nature. They feed only on fish, shellfish and squid, and never hunt other players. From Sub-Adult they need large fish at regular intervals, or suffer nutritional stress.
 Kaiwhekea can have up to 2 active defenders in an engagement, usually the dominant bulls. Up to 6 other adults can form a protective ring around the calves. The rest of the bale flees.
 Kaiwhekea flee from all Apex and Giant carnivores on sight, except at a nest with hatchlings, which a pair defends against a single Apex. A Kaiwhekea seized by a Sachicasaurus is lost.
 An experienced lead cow guides the bale. She rarely fights, but ends any quarrel with a single head shake, and the bale leaves her the best place on the rock.
