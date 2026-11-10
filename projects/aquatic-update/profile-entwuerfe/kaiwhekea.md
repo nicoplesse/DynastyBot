@@ -175,7 +175,7 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 3. **Keine Menge, keine Frist:** Wie beim Barsboldia steht keine Zahl drin, nur „at regular intervals“ und „semi-regular“. Wer eine feste Grenze will, könnte zum Beispiel einen Großfisch pro Tag-Nacht-Zyklus nehmen.
 4. **Folgen bei der Balz:** Magere Kühe werden selten gewählt und nehmen selten einen Bullen an. Das ist der stärkste Teil und bleibt Rollenspiel, keine Sperre.
 
-**Bitte prüfen, wo die Fische leben:** Wo die vier im Spiel spawnen, steht nicht in den Kartendaten. Der River Stingray lebt dem Namen nach eher in Flüssen. Gibt es ihn in den Flussengen, kann eine Bale ihren Großfisch dort holen und muss nie in die Ozeane, dann fehlt der Rhythmus. Dann sollte er raus oder nur halb zählen.
+**River Stingray bleibt drin** (entschieden am 10.11., vom Nutzer). Er lebt dem Namen nach eher in Flüssen. Gibt es ihn in den Flussengen, kann eine Bale ihren Großfisch auch dort holen, und der Zug in die Ozeane wird schwächer. Das ist bewusst so in Kauf genommen. Wo die vier im Spiel spawnen, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
 
 **Entschieden am 05.11. (vom Nutzer): Landtiere und Süßwasser.**
 - **Neugier auf Landtiere:** Kai, Eurhino und Leeds sind unglaublich neugierig auf Landtiere. Kai kommen bei Pflanzenfressern auch aus dem Wasser und gehen an Land, um Hallo zu sagen. Laufen können sie gut. Die Flotilla springt dabei fröhlich in die Luft.
