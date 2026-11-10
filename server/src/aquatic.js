@@ -127,18 +127,30 @@ function clipHalf(points, axis, cut, half) {
   return kept;
 }
 
-// One of two equal-area halves of a POI outline, like the segmented Spinosaurus territories.
-export function splitHalf(points, axis, half) {
+// The part of a POI outline on one side of an axis cut that holds `share` of its area.
+export function splitShare(points, axis, side, share) {
   const k = axis === 'x' ? 0 : 1;
   let low = Math.min(...points.map(point => point[k]));
   let high = Math.max(...points.map(point => point[k]));
-  const target = polygonArea(points) / 2;
+  const target = polygonArea(points) * (side === 'low' ? share : 1 - share);
   for (let step = 0; step < 40; step += 1) {
     const middle = (low + high) / 2;
     if (polygonArea(clipHalf(points, axis, middle, 'low')) < target) low = middle; else high = middle;
   }
   const cut = (low + high) / 2;
-  return { cut: round(cut), points: clipHalf(points, axis, cut, half).map(([x, y]) => [round(x), round(y)]) };
+  return { cut: round(cut), points: clipHalf(points, axis, cut, side).map(([x, y]) => [round(x), round(y)]) };
+}
+
+// One of two equal-area halves of a POI outline, like the segmented Spinosaurus territories.
+export function splitHalf(points, axis, half) {
+  return splitShare(points, axis, half, 0.5);
+}
+
+// A territory is cut from its POI by one or more axis cuts in a row: `axis` + `half` for a half,
+// or `cuts` ([{ axis, side, share }]) for segments such as the three Volcano Islands territories.
+export function cutTerritory(points, territory) {
+  const cuts = territory.cuts ?? [{ axis: territory.axis, side: territory.half, share: 0.5 }];
+  return cuts.reduce((part, cut) => splitShare(part.points, cut.axis, cut.side, cut.share), { cut: null, points });
 }
 
 function insidePolygon([x, y], points) {
@@ -190,8 +202,8 @@ export function buildHabitat(habitat, regions, profileIds) {
   });
   const territories = habitat.territories.map(territory => {
     if (!zoneOf.has(territory.parent)) throw new Error(`Aquatic habitat: territory ${territory.id} lies outside the zones`);
-    const { cut, points } = splitHalf(outline(territory.parent).shape.points, territory.axis, territory.half);
-    return { ...territory, cut, points, anchor: labelPoint(points) };
+    const { cut, points } = cutTerritory(outline(territory.parent).shape.points, territory);
+    return { ...territory, rank: territory.rank ?? 'preferred', cut, points, anchor: labelPoint(points) };
   });
   for (const species of habitat.species) {
     if (!profileIds.includes(species.id)) throw new Error(`Aquatic habitat: ${species.id} has no draft`);

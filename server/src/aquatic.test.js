@@ -4,7 +4,7 @@ import { mkdtemp, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createApp } from './app.js';
-import { AQUATIC_SIDES, defaultAquaticDir, loadAquatic, parseBlocks, parseDraft, polygonArea, splitHalf } from './aquatic.js';
+import { AQUATIC_SIDES, cutTerritory, defaultAquaticDir, loadAquatic, parseBlocks, parseDraft, polygonArea, splitHalf } from './aquatic.js';
 
 test('parses the Markdown subset the drafts use', () => {
   const blocks = parseBlocks([
@@ -81,20 +81,37 @@ test('splits a POI outline into two equal-area halves', () => {
   assert.ok(north.cut < 1.5, 'the wide bottom bar pulls the cut up');
 });
 
-test('the habitat map covers every draft and halves each Sachicasaurus ocean', async () => {
+test('cuts a POI into three segments with cuts in a row', () => {
+  const square = [[0, 0], [1, 0], [1, 1], [0, 1]];
+  const east = cutTerritory(square, { cuts: [{ axis: 'x', side: 'high', share: 1 / 3 }] });
+  const north = cutTerritory(square, { cuts: [{ axis: 'x', side: 'low', share: 2 / 3 }, { axis: 'y', side: 'low', share: 0.5 }] });
+  const south = cutTerritory(square, { cuts: [{ axis: 'x', side: 'low', share: 2 / 3 }, { axis: 'y', side: 'high', share: 0.5 }] });
+  for (const part of [east, north, south]) assert.ok(Math.abs(polygonArea(part.points) - 1 / 3) < 1e-3);
+  assert.deepEqual(cutTerritory(square, { axis: 'x', half: 'low' }).points, splitHalf(square, 'x', 'low').points);
+});
+
+test('the habitat map covers every draft and splits each Sachicasaurus territory POI without gaps', async () => {
   const { profiles, habitat } = await loadAquatic();
   assert.deepEqual(habitat.species.map(species => species.id).sort(), profiles.map(profile => profile.id).sort(), 'one habitat entry per draft');
   const areaById = new Map(habitat.areas.map(area => [area.id, area]));
   for (const parent of new Set(habitat.territories.map(territory => territory.parent))) {
-    const halves = habitat.territories.filter(territory => territory.parent === parent);
-    assert.equal(halves.length, 2, `${parent} is split in two`);
+    const parts = habitat.territories.filter(territory => territory.parent === parent);
+    assert.ok(parts.length >= 2, `${parent} is split`);
+    assert.equal(new Set(parts.map(part => part.rank)).size, 1, `${parent} is either preferred or secondary`);
     const whole = polygonArea(areaById.get(parent).points);
-    for (const half of halves) assert.ok(Math.abs(polygonArea(half.points) / whole - 0.5) < 0.01, `${half.id} holds half of ${parent}`);
+    for (const part of parts) assert.ok(Math.abs(polygonArea(part.points) / whole - 1 / parts.length) < 0.01, `${part.id} holds an equal share of ${parent}`);
   }
+  // Since 2026-11-10: ten preferred ocean halves, and five secondary territories in Volcano Islands (3) and Twisted Forest (2).
+  const preferred = habitat.territories.filter(territory => territory.rank === 'preferred');
+  const secondary = habitat.territories.filter(territory => territory.rank === 'secondary');
+  assert.equal(preferred.length, 10);
+  assert.ok(preferred.every(territory => areaById.get(territory.parent).zone === 'ocean'), 'preferred territories lie in the oceans');
+  assert.deepEqual(secondary.map(territory => territory.parent).sort(), ['twisted-forest', 'twisted-forest', 'volcano-islands', 'volcano-islands', 'volcano-islands']);
   const sachi = habitat.species.find(species => species.id === 'sachicasaurus');
   assert.ok(sachi.territories);
-  // Since 2026-11-05 the nursery lies at Tallbrush Coasts; every other area is an ocean.
-  assert.ok(sachi.areas.filter(area => !area.roles.includes('nest')).every(area => areaById.get(area.id).zone === 'ocean'), 'Sachicasaurus lives only in the oceans');
+  // Since 2026-11-05 the nursery lies at Tallbrush Coasts; besides it, only oceans and the secondary territory POIs.
+  const secondaryParents = new Set(secondary.map(territory => territory.parent));
+  assert.ok(sachi.areas.filter(area => !area.roles.includes('nest')).every(area => areaById.get(area.id).zone === 'ocean' || secondaryParents.has(area.id)), 'Sachicasaurus lives in the oceans and its secondary territories');
   // Since 2026-11-06 Sachicasaurus also holds halves of the Abyssal Depths, on the high rock ledges.
   assert.ok(habitat.territories.some(territory => territory.parent === 'abyssal-depths'), 'Sachicasaurus holds halves of the Abyssal Depths');
   const livy = habitat.species.find(species => species.id === 'livyatan');
@@ -130,7 +147,7 @@ test('serves the Aquatic Update index and single drafts', async () => {
     assert.equal(index.count, index.profiles.length);
     assert.equal(index.profiles[0].id, 'kaiwhekea');
     assert.equal(index.profiles[0].draft, undefined, 'index carries summaries only');
-    assert.equal(index.habitat.territories.length, 10, 'two halves each of Kelp Vale, Coastal Bluffs, Palm Islands, Stonebed Shoal and the Abyssal Depths');
+    assert.equal(index.habitat.territories.length, 15, 'ten preferred ocean halves and five secondary territories');
 
     const livy = await fetch(`${base}/api/aquatic/livyatan`).then(response => response.json());
     assert.equal(livy.name, 'Livyatan');

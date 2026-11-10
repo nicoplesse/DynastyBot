@@ -257,7 +257,8 @@ Xiphactinus and Spinosaurus ignore each other completely. Neither hunts, challen
 Batteries may hunt within a Spinosaurus territory.
 
 ### ✦ Sachicasaurus & Livyatan
-Both live in the oceans, which batteries never enter.
+Livyatan live in the oceans, which batteries never enter. {+}
+Sachicasaurus mostly live in the oceans too. Batteries only meet them in the secondary Sachicasaurus territories of Volcano Islands and Twisted Forest, where a Sachicasaurus may hunt them by night. Xiphactinus do not flee from them, and never hunt an adult. {+}
 
 ### ✦ Austroraptor, Halszkaraptor & Concavenator
 Shore hunters are a danger to the fry in Coastland Swamp, and Austroraptor can seize fry up to Juvenile. No adult guards the fry, so the schools hide deep among the roots when they wade in.

@@ -42,7 +42,7 @@ export interface AquaticProfile extends AquaticSummary {
 export type HabitatRole = 'home' | 'route' | 'trip' | 'territory' | 'front' | 'nest';
 type Point = [number, number];
 export interface HabitatArea { id: string; name: string; zone: string; points: Point[]; anchor: Point }
-export interface HabitatTerritory { id: string; name: string; label: string; parent: string; cut: number; points: Point[]; anchor: Point }
+export interface HabitatTerritory { id: string; name: string; label: string; parent: string; rank: 'preferred' | 'secondary'; cut: number | null; points: Point[]; anchor: Point }
 export interface HabitatSpecies { id: string; route?: boolean; territories?: boolean; text: string; areas: Array<{ id: string; roles: HabitatRole[] }> }
 // Who lives where, from projects/aquatic-update/profile-entwuerfe/lebensraum.json on the traced POI outlines.
 export interface AquaticHabitat {

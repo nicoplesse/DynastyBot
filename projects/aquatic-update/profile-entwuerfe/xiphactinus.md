@@ -448,7 +448,7 @@ Over-aggression is never defended by battery mates, regardless of relations. A f
   - Crocodylians hunt Xiphactinus with relish. They lie still at the surface, clamp a passing fish and carry it out of the water, where it is helpless.
   - Xiphactinus do not flee from them. A battery may hunt them by tier: a Sarcosuchus with 4 or more, a lone Deinosuchus with 6 or more.
 - **Spinosaurus:** Xiphactinus and Spinosaurus ignore each other completely. Batteries may hunt within a Spinosaurus territory.
-- **Sachicasaurus & Livyatan:** Both live in the oceans, which batteries never enter.
+- **Sachicasaurus & Livyatan:** Livyatan live in the oceans, which batteries never enter. Sachicasaurus mostly do too, but batteries meet them in the secondary Sachicasaurus territories of Volcano Islands and Twisted Forest, where a Sachicasaurus may hunt them by night. Xiphactinus do not flee from them, and never hunt an adult.
 - **Austroraptor, Halszkaraptor & Concavenator:**
   - Shore hunters are a danger to the fry in Coastland Swamp, and Austroraptor can seize fry up to Juvenile. No adult guards the fry, so the schools hide deep among the roots when they wade in.
   - Away from Coastland Swamp, they are competitors for Leedsichthys pups. Batteries avoid conflict with them, and give up a pup rather than fight over it.

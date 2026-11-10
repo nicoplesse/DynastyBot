@@ -71,7 +71,7 @@ Solo Adolescent Tylosaurus do not hunt other species.
 
 ### ✦ Territory Challenges {+}
 Tylosaurus are nomadic and do not claim territories. {+}
-At night, male Sachicasaurus claim one half of an ocean POI as territory (Kelp Vale, Coastal Bluffs, the Abyssal Depths, Palm Islands or Stonebed Shoal). {+}
+At night, male Sachicasaurus claim one half of an ocean POI as territory (Kelp Vale, Coastal Bluffs, the Abyssal Depths, Palm Islands or Stonebed Shoal), or a secondary territory in Volcano Islands or Twisted Forest. {+}
 A Sachicasaurus may challenge Tylosaurus out of it. Tylosaurus respond to these challenges. {+}
 If they lose, they must leave the POI (6.7.2). If they win, the Sachicasaurus keeps its territory, but must tolerate them for 15 minutes (6.7.3.1). {+}
 

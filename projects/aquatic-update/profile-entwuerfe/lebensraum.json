@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die halben Sachi-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd).",
+  "note": "Wer wo lebt, für die Karte im Aquatic-Tab. Die Flächen kommen aus data/map/regions.json. Die Sachi-Reviere schneidet der Server flächengleich entlang der angegebenen Achse aus dem POI (x = West/Ost, y = Nord/Süd); cuts schneidet mehrmals hintereinander, share ist der Flächenanteil der gewählten Seite. rank secondary = Nebenrevier.",
   "view": { "x": 0.3, "y": 0, "width": 0.7, "height": 0.64 },
   "roles": {
     "home": "Lebt hier",
@@ -37,7 +37,12 @@
     { "id": "stonebed-north", "name": "Northern Stonebed Territory", "label": "Stonebed Nord", "parent": "stonebed-shoal", "axis": "y", "half": "low" },
     { "id": "stonebed-south", "name": "Southern Stonebed Territory", "label": "Stonebed Süd", "parent": "stonebed-shoal", "axis": "y", "half": "high" },
     { "id": "abyssal-north", "name": "Northern Abyssal Territory", "label": "Abyssal Nord", "parent": "abyssal-depths", "axis": "y", "half": "low" },
-    { "id": "abyssal-south", "name": "Southern Abyssal Territory", "label": "Abyssal Süd", "parent": "abyssal-depths", "axis": "y", "half": "high" }
+    { "id": "abyssal-south", "name": "Southern Abyssal Territory", "label": "Abyssal Süd", "parent": "abyssal-depths", "axis": "y", "half": "high" },
+    { "id": "volcano-north", "name": "Northern Volcano Territory", "label": "Volcano Nord", "parent": "volcano-islands", "rank": "secondary", "cuts": [{ "axis": "x", "side": "low", "share": 0.6667 }, { "axis": "y", "side": "low", "share": 0.5 }] },
+    { "id": "volcano-south", "name": "Southern Volcano Territory", "label": "Volcano Süd", "parent": "volcano-islands", "rank": "secondary", "cuts": [{ "axis": "x", "side": "low", "share": 0.6667 }, { "axis": "y", "side": "high", "share": 0.5 }] },
+    { "id": "volcano-east", "name": "Eastern Volcano Territory", "label": "Volcano Ost", "parent": "volcano-islands", "rank": "secondary", "cuts": [{ "axis": "x", "side": "high", "share": 0.3333 }] },
+    { "id": "twisted-west", "name": "Western Twisted Territory", "label": "Twisted West", "parent": "twisted-forest", "rank": "secondary", "axis": "x", "half": "low" },
+    { "id": "twisted-east", "name": "Eastern Twisted Territory", "label": "Twisted Ost", "parent": "twisted-forest", "rank": "secondary", "axis": "x", "half": "high" }
   ],
   "route": {
     "label": "Route des Leedsichthys",
@@ -95,11 +100,12 @@
     },
     {
       "id": "sachicasaurus", "territories": true,
-      "text": "Lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Ein Männchen hält einen halben Ozean-POI. In Abyssal Depths, Livys Zuhause, sitzt er auf den hohen Felsvorsprüngen zwischen den Tiefen, wohin Livy ihm nicht folgt. Palm Islands ist die Front zu Deino und Spino. Die Mütter ziehen ihre Jungen in der Kinderstube an der Küste von Tallbrush Coasts groß, wohin kein Männchen kommt.",
+      "text": "Lebt in Kelp, Riffen, Untiefen und an den Stränden der Ozeane. Ein Männchen hält einen halben Ozean-POI. In Abyssal Depths, Livys Zuhause, sitzt er auf den hohen Felsvorsprüngen zwischen den Tiefen, wohin Livy ihm nicht folgt. Palm Islands ist die Front zu Deino und Spino. Wer kein Ozean-Revier findet, nimmt ein unbeliebtes Nebenrevier in Volcano Islands (Nord, Süd, Ost) oder Twisted Forest (West, Ost): dort wird nicht gebalzt, und auch dort kämpft er mit Deino und Spino. Männchen ohne Revier wandern und jagen nicht. Die Mütter ziehen ihre Jungen in der Kinderstube an der Küste von Tallbrush Coasts groß, wohin kein Männchen kommt.",
       "areas": [
         { "id": "kelp-vale", "roles": ["territory"] }, { "id": "coastal-bluffs", "roles": ["territory"] },
         { "id": "palm-islands", "roles": ["territory", "front"] }, { "id": "stonebed-shoal", "roles": ["territory"] },
-        { "id": "abyssal-depths", "roles": ["territory"] }, { "id": "tallbrush-coasts", "roles": ["nest"] }
+        { "id": "abyssal-depths", "roles": ["territory"] }, { "id": "tallbrush-coasts", "roles": ["nest"] },
+        { "id": "volcano-islands", "roles": ["territory", "front"] }, { "id": "twisted-forest", "roles": ["territory", "front"] }
       ]
     },
     {

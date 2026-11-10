@@ -9,7 +9,7 @@ Das Deino-Profil bleibt fast unverändert: faul, territorial, Brüder-Reviere, N
 | Lebensraum | Flüsse, Sümpfe, Strände, Inseln und der offene Ozean | nur die Salzwasser-Flussengen und Palm Islands |
 | Revierkarte | eigene Profilkarte | die Revierkarte des Spinosaurus ohne die Ozeane: die geteilten Reviere der Flussengen, Coastland Swamp und Palm Islands |
 | Offener Ozean | „venture out into the open ocean“ | entfällt; Kelp Vale, Coastal Bluffs, Abyssal Depths und Stonebed Shoal betritt er nicht mehr |
-| Sachicasaurus | – | harte Revierkämpfe auf Palm Islands; darf Sachi jagen, wie jede Stufe |
+| Sachicasaurus | – | harte Revierkämpfe auf Palm Islands und in den Sachi-Nebenrevieren (Volcano Islands, Twisted Forest, seit 10.11.); darf Sachi jagen, wie jede Stufe |
 | Xiphactinus | – | jagt ihn mit Vergnügen: clampen (Tragkraft 3900 gegen CW 2400) und aus dem Wasser tragen; umgekehrt darf ein Xiph-Schwarm ab 6 einen einzelnen Deino jagen; Xiph flieht nicht vor ihm |
 
 **Warum so:**
@@ -51,7 +51,7 @@ Im Bissduell gewinnt Deino gegen einen einzelnen Sachi, im Wasser ist Sachi als 
 ## Cross-Species Interaction (additions)
 
 - **Sachicasaurus:**
-  - Palm Islands are the only ocean Deinosuchus share with Sachicasaurus, and males fight hard over territory there.
+  - Palm Islands are the only ocean Deinosuchus share with Sachicasaurus, and males fight hard over territory there. Sachicasaurus males may also hold secondary territories in Volcano Islands and Twisted Forest, which overlap Deinosuchus territories, with the same hard fights.
   - A Deinosuchus male challenges Sachicasaurus males out of his territory, and responds to their challenges.
   - Deinosuchus may hunt Sachicasaurus, as they may hunt any tier. Sachicasaurus in turn like to hunt Deinosuchus. A Deinosuchus wins a standing bite duel, but in open water the fully aquatic Sachicasaurus is the more agile.
 - **Xiphactinus:**

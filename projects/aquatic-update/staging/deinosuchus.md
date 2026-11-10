@@ -198,6 +198,7 @@ If challenged by a territorial species, Deinosuchus may opt to defend for the ri
 
 ### ✦ Sachicasaurus {+}
 Palm Islands are the only ocean Deinosuchus share with Sachicasaurus, and males fight hard over territory there. {+}
+Sachicasaurus males may also hold secondary territories in Volcano Islands and Twisted Forest, which overlap Deinosuchus territories. The same hard fights happen there. {+}
 A Deinosuchus male challenges Sachicasaurus males out of his territory, and responds to their challenges. {+}
 Deinosuchus may hunt Sachicasaurus, as they may hunt any tier. Sachicasaurus in turn like to hunt Deinosuchus. {+}
 A Deinosuchus wins a standing bite duel, but in open water the fully aquatic Sachicasaurus is the more agile. {+}
@@ -285,7 +286,7 @@ Deinosuchus may third party any engagement that reaches within 2 body lengths of
 Deinosuchus hunt exclusively from water, but may pursue their prey in land until their stamina runs out. If they do not inflict fracture or reduce their prey to deathscars in that time, they must forfeit and return to the water.
 Deinosuchus tolerates scavengers, and enjoys the grooming services they provide.
 Deinosuchus males are highly territorial, controlling a patch of water which they drive out other males from. Females are sedentary, and are allowed to swim between different male territories, but stop being permitted if a male is paired with a female already.
-Deinosuchus live only in the saltwater channels between the islands and at Palm Islands, where males fight hard with Sachicasaurus over territory. {+}
+Deinosuchus live only in the saltwater channels between the islands and at Palm Islands, where males fight hard with Sachicasaurus over territory, as they do in Volcano Islands and Twisted Forest. {+}
 Deinosuchus target Sarcosuchus where possible, preferring to keep their waters clear of these species, which can infringe upon their niche, fish stocks, and prey opportunities. They hunt Xiphactinus with relish. {+}
 Deinosuchus have behavioral dimorphism, with females greeting each other with a wide opening of their jaws, while males greet with a sharp hiss, and head sways.
 

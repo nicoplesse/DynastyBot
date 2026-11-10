@@ -10,7 +10,7 @@ Das Spino-Profil bleibt fast unverändert: ein Revier je Spino, Paare, Triad Fal
 | Seen, Flüsse, geteilte Reviere | wie auf der Profilkarte | unverändert |
 | Salzwasser-Vorliebe | „touring saltwater areas“, also das Meer | tourt die Salzwasser-Flussengen und Palm Islands |
 | Deinosuchus | Rivale, wird zuerst gejagt | unverändert; nutzt jetzt dieselben Reviere in den Flussengen |
-| Sachicasaurus | – | harte Revierkämpfe auf Palm Islands |
+| Sachicasaurus | – | harte Revierkämpfe auf Palm Islands und in den Sachi-Nebenrevieren (Volcano Islands, Twisted Forest, seit 10.11.) |
 | Xiphactinus | – | beide ignorieren sich vollständig |
 
 **Palm Islands in Zahlen** (Simulation, ohne Blutung):
@@ -39,7 +39,7 @@ Das sind reine Bissduelle. Im Bissduell hat ein einzelner Sachi keine Chance, im
 ## Cross-Species Interaction (additions)
 
 - **Sachicasaurus:**
-  - At Palm Islands, Spinosaurus and Sachicasaurus fight hard over territory. Spinosaurus challenge Sachicasaurus out of their territory, and respond to their challenges.
+  - At Palm Islands, and in the secondary Sachicasaurus territories of Volcano Islands and Twisted Forest, Spinosaurus and Sachicasaurus fight hard over territory. Spinosaurus challenge Sachicasaurus out of their territory, and respond to their challenges.
   - Sachicasaurus within a Spinosaurus territory may be hunted like any Apex prey.
   - Sachicasaurus may hunt adult Spinosaurus alone. A Spinosaurus wins a standing bite duel, but in open water the fully aquatic Sachicasaurus is the more agile of the two.
 - **Xiphactinus:** Spinosaurus and Xiphactinus ignore each other completely. Neither hunts, challenges or defends against the other, and batteries may hunt within a Spinosaurus territory.

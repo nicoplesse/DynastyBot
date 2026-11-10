@@ -165,11 +165,11 @@ function HabitatPanel({ habitat, profiles }: { habitat: AquaticHabitat; profiles
           <defs><mask id="aq-lit" maskUnits="userSpaceOnUse" x="0" y="0" width="1" height="1"><rect width="1" height="1" fill="white" />{habitat.areas.filter(area => lit.has(area.id)).map(area => <polygon key={area.id} points={points(area.points)} fill="black" />)}</mask></defs>
           <rect className="aq-veil" width="1" height="1" mask="url(#aq-lit)" />
           {habitat.areas.filter(area => lit.has(area.id)).map(area => <polygon key={area.id} className="aq-outline" points={points(area.points)} />)}
-          {showTerritories && habitat.territories.map(territory => <polygon key={territory.id} className={`aq-territory ${species ? 'strong' : ''}`} points={points(territory.points)} />)}
+          {showTerritories && habitat.territories.map(territory => <polygon key={territory.id} className={`aq-territory ${territory.rank} ${species ? 'strong' : ''}`} points={points(territory.points)} />)}
           {traced.map(id => areaById.get(id)).filter(area => area !== undefined).map(area => <polygon key={`trace-${area.id}`} className="aq-outline on" points={points(area.points)} />)}
         </svg>
         {species?.route && <div className="aq-route" style={{ WebkitMaskImage: `url(${api.mapLayerUrl(habitat.route.layer)})`, maskImage: `url(${api.mapLayerUrl(habitat.route.layer)})` }} />}
-        {species?.territories && habitat.territories.map(territory => <span key={territory.id} className="aq-map-label" style={at(territory.anchor)}>{territory.label}</span>)}
+        {species?.territories && habitat.territories.map(territory => <span key={territory.id} className={`aq-map-label ${territory.rank}`} style={at(territory.anchor)}>{territory.label}</span>)}
         <svg className="aq-map-hits" viewBox="0 0 1 1" preserveAspectRatio="none">
           {habitat.areas.map(area => <polygon key={area.id} points={points(area.points)} aria-label={area.name} onMouseEnter={() => setHover(area.id)} />)}
         </svg>
@@ -191,9 +191,12 @@ function HabitatPanel({ habitat, profiles }: { habitat: AquaticHabitat; profiles
             const names = species.areas.filter(area => area.roles.includes(role)).map(area => areaById.get(area.id)?.name).filter(Boolean);
             return names.length ? <Fragment key={role}><dt>{ROLE_MARK[role]} {habitat.roles[role]}</dt><dd>{names.join(', ')}</dd></Fragment> : null;
           })}</dl>
-          {species.territories && <div className="aq-territory-list"><b>{habitat.territories.length} halbe Reviere</b><span>{habitat.territories.map(territory => territory.name).join(' · ')}</span></div>}
+          {species.territories && (['preferred', 'secondary'] as const).map(rank => {
+            const list = habitat.territories.filter(territory => territory.rank === rank);
+            return list.length ? <div key={rank} className="aq-territory-list"><b>{list.length} {rank === 'preferred' ? 'bevorzugte Reviere' : 'Nebenreviere (keine Balz)'}</b><span>{list.map(territory => territory.name).join(' · ')}</span></div> : null;
+          })}
         </div> : <div className="aq-habitat-card">
-          <p className="aq-muted">Wähle eine Art oder fahr über einen POI. Die gestrichelten Linien teilen die Ozeane in die halben Reviere des Sachicasaurus.</p>
+          <p className="aq-muted">Wähle eine Art oder fahr über einen POI. Die gestrichelten Linien teilen die Ozeane in die halben Reviere des Sachicasaurus, die gepunkteten Volcano Islands und Twisted Forest in seine Nebenreviere.</p>
           {habitat.zones.map(zone => <article key={zone.id} className="aq-zone" onMouseEnter={() => setZoneHover(zone.id)} onMouseLeave={() => setZoneHover(null)}>
             <h3>{zone.label}</h3>
             <p>{zone.text}</p>

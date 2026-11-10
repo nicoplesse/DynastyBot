@@ -26,6 +26,7 @@ Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Bey
 Spinosaurus form temporary pairbonds that become strong pairbonds over time.
 Spinosaurus are territorial and claim medium water sources in claimable territory areas. (See profile map for specific claimable territory water sources)
 Of the open oceans, only Palm Islands remain claimable. The sea areas of Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal belong to Sachicasaurus, Livyatan and Tylosaurus. {+}
+In Volcano Islands and Twisted Forest, Sachicasaurus males may hold secondary territories that overlap Spinosaurus territories. {+}
 Territory borders end 10 body lengths from the water's edge.
 Spinosaurus have an aggressive nature within claimable territory. Otherwise, they are tolerant.
 Suchomimus, Concavenator and Halszkaraptor are tolerated within their territory in some situations.
@@ -188,7 +189,7 @@ Outside of claimable territory, Spinosaurus watches these species with disdain. 
 Deinosuchus now use the segmented territories of the saltwater channels as well, so the two rivals meet there more often. {+}
 
 ### ✦ Sachicasaurus {+}
-At Palm Islands, Spinosaurus and Sachicasaurus fight hard over territory. Spinosaurus challenge Sachicasaurus out of their territory, and respond to their challenges. {+}
+At Palm Islands, and in the secondary Sachicasaurus territories of Volcano Islands and Twisted Forest, Spinosaurus and Sachicasaurus fight hard over territory. Spinosaurus challenge Sachicasaurus out of their territory, and respond to their challenges. {+}
 Sachicasaurus within a Spinosaurus territory may be hunted like any Apex prey. {+}
 Sachicasaurus may hunt adult Spinosaurus alone. A Spinosaurus wins a standing bite duel, but in open water the fully aquatic Sachicasaurus is the more agile of the two. {+}
 
@@ -313,7 +314,7 @@ Spinosaurus may defend their partner, offspring, territory as 2 sub/adults in a 
 Spinosaurus may hunt up to Apex tier.
 Spinosaurus have a migration to Triad Falls. They tolerate other Spinosaurus there neutrally, and do not claim the water source there as territory.
 Spinosaurus can be territorial in specific territory areas. These are listed on their map. Of the open oceans, only Palm Islands remain claimable. {+}
-Spinosaurus are especially aggressive towards Deinosuchus and Sarcosuchus, and opt to kill or expel them from their territory as quickly as possible. At Palm Islands, they fight hard with Sachicasaurus over territory. Spinosaurus and Xiphactinus ignore each other completely. {+}
+Spinosaurus are especially aggressive towards Deinosuchus and Sarcosuchus, and opt to kill or expel them from their territory as quickly as possible. At Palm Islands, Volcano Islands and Twisted Forest, they fight hard with Sachicasaurus over territory. Spinosaurus and Xiphactinus ignore each other completely. {+}
 
 ## Dynasty Adjusted Stats
 Growth Time (hatchling-juvenile, juvenile-adolescent, adolescent-sub, sub-adult in minutes): 20-60-75-85 = 240 total
