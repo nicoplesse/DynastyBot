@@ -24,7 +24,7 @@ Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Bey
 %% banner Overview
 **Medium Diurnal Aquatic Piscivore**
 Kaiwhekea form seasonal harem bonds. After 5 successful clutches together or mutual agreement, these can develop into lifelong pairbonds.
-Kaiwhekea are nomadic, but become territorial around their nesting pools.
+Kaiwhekea are nomadic. Once a bale has offspring, it becomes sedentary on colony islands until all its young reach Sub-Adult. See ✦ Colony Islands.
 Kaiwhekea have a passive nature.
 Kaiwhekea are not scavengers. They feed only on fish, shellfish and squid, and do not hunt other players.
 Kaiwhekea may group with up to 4 Eurhinosaurus. Kaiwhekea may not group with Leedsichthys.
@@ -55,7 +55,7 @@ This group is known as a bale.
 - Kaiwhekea do not group with Leedsichthys. A Leedsichthys travels with its own flotilla of Eurhinosaurus. See Cross-Species Interaction.
 - Several bales may rest together at the same haul-out as a colony. They do not group beyond these limits, and each bale defends only itself. See ✦ Colonies.
 - Once offspring reach Sub-Adult, the bale must remain at 16 Sub/Adults or below. When a bale splits, lifelong pairs and mothers with their daughters stay together.
-- Bales may court at full size, but often split into smaller nursery groups to nest, so as not to empty the fishing grounds near the pools.
+- Bales may court at full size, but often split into smaller nursery groups to nest, so as not to empty the fishing grounds near the birth beach.
 
 ## Engagement Limits (Defence & Hunts)
 Predator Reaction: Flighty / Defensive
@@ -77,7 +77,7 @@ The protective ring does not accept other species or other adults, and cannot sw
 Kaiwhekea only challenge or accept challenges for resources while nesting, or when offspring below Sub-Adult are present.
 If contested outside of these times, Kaiwhekea move away from the resource.
 Kaiwhekea do not accept territory challenges from any species and will simply move on.
-A maximum of 3 adults may defend resources such as a fishing ground or a nesting pool. These are usually the dominant bulls. The lead cow only joins if no dominant bull is present.
+A maximum of 3 adults may defend resources such as a fishing ground or a water hole on their colony island. These are usually the dominant bulls. The lead cow only joins if no dominant bull is present.
 
 ## Preferred Diet
 Kaiwhekea live on fish, shellfish and squid. Fish are their staple, and the richest ocean fishing grounds draw them out to sea again and again.
@@ -90,8 +90,8 @@ Kaiwhekea do not share fish with Tropeognathus, and may drive them off. See Cros
 ## Nesting Limits
 🌧️ Rainy Season: 4 🥚 per 4 hours.
 ☀️ Dry Season: 2 🥚 per 4 hours.
-Kaiwhekea nest along the coastline or in shallow pools on coastal islands in their preferred POIs (Palm Islands, Castaway Isle, Volcano Islands). Their nests are built from kelp, branches and rocks.
-Each bale returns to the birth beach of its lead cow. See Courtship & Parenthood for more information.
+Kaiwhekea nest along the coastline or in shallow pools on coastal islands, on any coast of the map. Their nests are built from kelp, branches and rocks.
+Each bale returns to the birth beach of its lead cow. They never nest on their colony islands, because every calf must make its run to the water alone. See Courtship & Parenthood for more information.
 Kaiwhekea may form same-sex pairs and adopt and raise offspring together.
 
 ## Physical Dimorphism
@@ -110,9 +110,10 @@ Cows take on the greetings of their bulls, so a greeting does not show sex. The 
 Kaiwhekea hatchlings, known as calves, hatch fully developed and able to swim, but stay in the shallow pools where they were born until they reach Juvenile.
 From birth they watch their mother leave the pool to rejoin her bale in deeper water, and wait behind in the shallows for safety.
 Calves stay quiet in the pools, and only come out of hiding for their mother's greeting.
-One or two aunts often stay near the pools while the mothers fish.
+One or two aunts often guard the pools from the nearby water while the mothers fish.
 After reaching Juvenile, calves make the stretch into deeper water to meet their maternal bale. This run happens in full daylight, as dawn and dusk are the hours of Xiphactinus, and the night belongs to Sachicasaurus.
-The bale waits just offshore, giving soft (:friendly_call:), and gathers the calves in as they arrive.
+Calves make the run alone. No adult comes ashore or into the pools to help, lead or carry them. The run is a calf's first test of strength.
+The bale waits just offshore, giving soft (:friendly_call:), and gathers the calves in as they arrive. Then it leads its young to a colony island. See ✦ Colony Islands.
 Juveniles swim in the middle of the bale, tucked against their mother's flank, where her wake carries them along with little effort. A calf that drifts out of this position calls out in alarm.
 Mothers turn back at once for a calf that falls behind, and nudge it forward with soft calls.
 Juveniles copy their mother's greeting, and greet every bale mate they meet with it.
@@ -151,6 +152,7 @@ Like sea lions and penguins, which leap onto rocks and ice to escape orcas, they
 **Drying out:**
 - Kaiwhekea dislike drying out. Once their thirst drops to 75%, they return to the water. This takes about 10 minutes on land.
 - In great danger, for example with a hunter waiting below their rock, they may stay until their thirst drops to 50%. This takes about 20 minutes on land. They never stay longer.
+- Drinking from or bathing in a water hole on land counts as returning to the water. See ✦ Colony Islands.
 - A Kaiwhekea whose thirst drops below 50% on land suffers lasting skin damage. The damage is painful, and the Kaiwhekea becomes infertile for the rest of its life. It no longer courts, and this is noted in the character's bloodline log.
 - Staying on land below 75% without great danger is a rule break, even if the Kaiwhekea returns before 50%.
 **High rocks:**
@@ -159,6 +161,7 @@ Like sea lions and penguins, which leap onto rocks and ice to escape orcas, they
 - A rock is a place for a nap, not for the whole night. Members often take turns on a rock while the rest of the bale rests in the shallows below.
 **The best places:**
 - On a rock or a beach, the bale leaves the highest place and the best spot in the sun to the lead cow, without being asked.
+- A Kaiwhekea may give up its own good spot in the sun to a friend, and a bull to a cow he courts. Like a shell or a bright stone, it is a sign of affection, and it is never demanded.
 - The dominant bulls go up last. If there is no room left, they stay in the water below.
 - Calves that cannot yet reach a rock stay in the shallows below. Their mothers may stay with them, and the dominant bulls usually stay in the water and keep watch around them.
 **Visiting land animals:**
@@ -180,6 +183,8 @@ Mothers, aunts and bonded friends share fish. Fish are never shared with Tropeog
 
 ### ✦ Day and Night
 Kaiwhekea are diurnal. Mornings are for travel, the middle of the day for fishing, and the afternoon for socialising and basking at a haul-out. At dusk the bale moves to its resting place.
+**Evening roll call:** At dusk, before the bale moves to its resting place, the lead cow gives a (:broadcast_call:). Every member answers with its greeting, one after another. Like fur seal mothers that find their pup among hundreds by its voice, Kaiwhekea know their own by their greeting.
+- If a member does not answer, the dominant bulls swim out and call for it with (:broadcast_call:). The bale waits for them, but moves to its resting place once darkness falls.
 The lead cow chooses where the bale rests: calm, shallow water near an island or near high rocks, where the bale can see the surface and the shore.
 Experienced bales avoid known Sachicasaurus territories and banks where crocodylians were seen.
 A bale that was attacked at a resting place does not use it again for the rest of the session.
@@ -198,7 +203,8 @@ Pairs and harems may rest a little apart from the main bale, but always within s
 Loud calls at night are corrected with a head shake.
 
 ### ✦ Migration
-Bales are nomadic, but follow no fixed route. They swim back and forth between fishing grounds and haul-outs, and are always on the move.
+Bales without young are nomadic, but follow no fixed route. They swim back and forth between fishing grounds and haul-outs, and are always on the move.
+A bale with offspring below Sub-Adult is sedentary on its colony islands. See ✦ Colony Islands.
 Bales roam the warm saltwater channels between the islands: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats and Coastland Swamp.
 From there, bales regularly head out into the open oceans of Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands and Stonebed Shoal. The oceans hold the fish Kaiwhekea value most, and the richest fishing grounds of the year. Their need for large fish gives the bale its rhythm, back and forth between the channels and the oceans. See ✦ Large Fish.
 A bale, and even more a colony, empties the fish around it quickly. Bales move on once the fish grows scarce, and rarely stay in one place for longer than one day–night cycle.
@@ -210,8 +216,8 @@ The best fishing grounds and haul-outs are passed down between generations, most
 ### ✦ Large Fish
 Small fish keep a Kaiwhekea alive, but not healthy. Sub-Adult and older Kaiwhekea need large fish at regular intervals: kelp sharks, manta rays, tuna and river stingrays.
 There is no fixed time, but every Kaiwhekea feels when it has gone too long without them.
-Large fish are what draws bales out of the channels and into the oceans again and again. Bales usually set out when several members begin to need them.
-A large fish shared by a mother, an aunt or a bonded friend counts for the one who eats it.
+Large fish are what draws bales out of the channels and into the oceans again and again. Usually a small fishing trip sets out when several members begin to need them. See ✦ Fishing Trips.
+A large fish shared by a mother, an aunt, a bonded friend or a fishing trip counts for the one who eats it.
 Below Sub-Adult, calves do not need large fish yet, but mothers and aunts often share them.
 
 ### ✦ Nutritional Stress
@@ -222,6 +228,30 @@ They tire quickly, swim slowly, dive for shorter times and fall behind the bale.
 They lose interest in play, greetings and courtship. Lean cows are rarely chosen, and rarely accept a bull.
 The only cure is to eat large fish again. The Kaiwhekea slowly regains its strength.
 Like Steller sea lions that lived on lean fish instead of fatty fish, a bale that never leaves the channels grows thin, even with full stomachs.
+
+### ✦ Fishing Trips
+When several members need large fish, a small group of 2 to 4 Sub/Adults sets out, often bonded friends. A nomadic bale may also set out as a whole, but a bale with young on a colony island always sends a trip.
+The rest of the bale stays at the haul-out with the young and the aunts. If the bale has 2 dominant bulls, at least one of them stays.
+A trip stays in the bale's in-game group, but far from the bale it cannot defend it, and gets no defenders from it. It reacts to predators like a duo, and flees from Apex carnivores. See ✦ Duo Predator Reaction.
+While a trip is out, the bale at home has fewer defenders. That is the price of large fish.
+Returning members greet the bale, and share their catch. They bring large fish home where they can, or lead the others to it. Then they tell what they saw.
+Sea lion mothers leave their pups at the colony for days to fish at sea, and find them again by their call when they return.
+
+### ✦ Colony Islands
+A bale with offspring below Sub-Adult is sedentary. After the calves' run to the water, the lead cow leads the bale to a colony island, and the bale stays on the colony islands until all its young reach Sub-Adult. Then it becomes nomadic again, and roams the whole map.
+Colony islands lie in Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands.
+The lead cow looks for the best mix of three things:
+- **Water:** high rocks, or islands with small water holes, where Kaiwhekea can wet their skin and drink without returning to the sea. Drinking from or bathing in a water hole counts as returning to the water.
+- **Safety:** islands that land carnivores cannot simply walk onto, and resting places further than 1 body length from the shore, out of reach of Tylosaurus and Sachicasaurus.
+- **Food:** rich fishing grounds around the island.
+The bale stays on its island until the fish around it runs low, then moves on to the next island within these POIs. The limit of one day–night cycle does not apply while the bale is sedentary.
+Bales with young may share a colony island for as long as they stay. A bale without young shares it for no longer than one day–night cycle, as at any haul-out. Each bale still defends only itself.
+From the island, small fishing trips swim out for large fish, while the rest of the bale stays with the young. See ✦ Fishing Trips.
+Tallbrush Coasts is the most dangerous of the five. Sachicasaurus mothers raise their nippers along this coast, and hunt by night.
+Kaiwhekea do not claim their island, and challenge no one out of it. They defend their young, and while young are present, their resources.
+Kaiwhekea never nest on a colony island. See ✦ Nesting.
+Like sea lions, which haul out on islands and rocks where land predators cannot follow, a bale raises its young where hunters from land and sea struggle to reach it.
+%% note Im Spiel prüfen: welche Inseln Wasserlöcher haben und für Landtiere unerreichbar sind, ob Tallbrush Coasts Inseln hat, und ob ein Kai einen Großfisch tragen kann.
 %% banner Social Interaction
 Kaiwhekea are a highly social species, and live in mixed-sex bales that migrate together.
 
@@ -265,6 +295,7 @@ Greetings are inspired by bottlenose dolphins, whose allied males match their si
 Kaiwhekea are expressive, and use calls and body language to communicate with each other.
 A greeting is the first thing two Kaiwhekea exchange when they meet.
 A member separated from the bale gives a (:broadcast_call:), and the bale answers. Once they see each other, they greet.
+When bales meet, or a fishing trip comes home, Kaiwhekea share what they have seen: where fish gather, where a flotilla passed, where a Tylosaurus or Sachicasaurus was lurking. They tell it with calls and in chat, but only what their own character saw in game.
 Contentment and affection are shown with soft (:friendly_call:) chatter, swimming side by side, brushing along each other's bodies, and crossed necks.
 Discomfort and unease are shown with a head shake (:shake_emote:), looking around above the surface (:question_emote:), or swimming restlessly at the edge of the bale. These are not signs of aggression.
 Alarm is a (:danger_call:) and a hard fluke slap on the water. Every Kaiwhekea that hears it raises its head and looks for the threat.
@@ -273,7 +304,7 @@ Alarm is a (:danger_call:) and a hard fluke slap on the water. Every Kaiwhekea t
 Bale members share space peacefully and treat each other with respect, regardless of sex.
 Bonded Kaiwhekea, such as the cows of one harem, pairs, close kin or tight friends, swim side by side, breach in sync and rest with their necks gently crossed.
 Cows who carry the same greeting in a season often swim together.
-Gift-giving is a common sign of affection, for example a shell, a bright stone or a piece of kelp.
+Gift-giving is a common sign of affection, for example a shell, a bright stone, a piece of kelp, or the best spot in the sun.
 Close friends of any sex share fish and groom each other by brushing along each other's bodies.
 Bulls let cows and calves through to the fish first, and swim on the outer edge of the bale to shield them. Cows value this, and remember it when they choose a partner.
 Adults play too. Leaping contests, bow-riding in the wake of a Leedsichthys and chasing games are common. Play never turns into real biting, and anyone who bites in play is corrected by the others.
@@ -284,7 +315,7 @@ Injured Kaiwhekea swim in the middle of the bale, flanked by bonded friends. The
 Bales are loosely structured. They are guided by a lead cow and escorted by up to 2 dominant bulls, and aunts help raise the young.
 
 ### ✦ Lead Cow
-The lead cow is an experienced cow, often the oldest, who knows the fishing grounds and haul-outs best. She swims at the front, and decides where the bale travels, fishes and rests.
+The lead cow is an experienced cow, often the oldest, who knows the fishing grounds and haul-outs best. She swims at the front, and decides where the bale travels, fishes and rests, and on which colony island it raises its young.
 She leads through experience, not strength, and rarely takes part in engagements. She only becomes an active defender if no dominant bull is present, and defends her own calf and nest like any mother.
 She is the first to welcome newcomers into the bale, and the first to correct over-aggression.
 **Keeping the peace:** If a quarrel breaks out in the bale, about anything, the lead cow swims between the two and shakes her head once (:shake_emote:).
@@ -324,7 +355,7 @@ Cows who chose a beaten dominant bull this season decide for themselves. If they
 A dominant bull may be challenged no more than once per session, whether in courtship or for the escort.
 
 ### ✦ Aunts
-Cows without calves of their own often help raise the calves of others. They stay near the nesting pools while the mothers fish, and watch over juveniles during fishing.
+Cows without calves of their own often help raise the calves of others. They guard the nesting pools from the nearby water while the mothers fish, and stay with the young at the colony island while others are on a fishing trip.
 Aunts may correct unruly calves when the mother is absent, and support new or overwhelmed mothers.
 An aunt who stands guard at the pools may take part in the protective ring.
 
@@ -332,16 +363,18 @@ An aunt who stands guard at the pools may take part in the protective ring.
 When two bales meet, their members greet each other warmly, one by one, and may exchange members.
 Dominant bulls of different bales recognise each other by the dominant greeting, and keep a respectful distance.
 At a rich fishing ground, two bales may fish together for that day, but never group beyond the group limits.
-Bales share a POI, or a haul-out as a colony, for no longer than one day–night cycle. Once one bale moves on, the other may not follow it. A bale that tries to follow is turned away with head shakes.
+Bales share a POI, or a haul-out as a colony, for no longer than one day–night cycle. Once one bale moves on, the other may not follow it. A bale that tries to follow is turned away with head shakes. Bales with young that share a colony island are the exception. See ✦ Colony Islands.
+**Colony friends:** Kaiwhekea may have close friends in other bales. When their bales meet, friends greet each other first, rest side by side and may share fish. Many changes of bale begin with such a friendship.
+Friends in another bale are not defended: each bale defends only itself.
 
 ### ✦ Colonies
 Kaiwhekea are colonial, like sea lions. Wherever bales haul out together, a colony forms.
 Colonies form on beaches and rocks along the coasts of the channels and oceans, close to good fishing grounds. Any coast can hold one, and the best are known to the elders.
 A colony is loud and lively. Kaiwhekea chatter, greet each other, bask side by side and cross necks. Calves play at the water's edge under the eyes of the aunts. Members slip back into the water whenever their skin needs it, and haul out again.
-Members returning from fishing greet their bale mates on arrival. Like fur seal mothers that find their pup among hundreds by its voice, Kaiwhekea find their own by their greeting.
+Members returning from fishing greet their bale mates on arrival. See ✦ Fishing Trips.
 Bales in a colony greet each other, rest side by side and may fish the same grounds. They do not group beyond the group limits.
 Each bale keeps its own defenders and its own protective ring, and no bale defends another.
-A colony empties the fish around it quickly. Bales stay at a haul-out for no longer than one day–night cycle, then each bale goes its own way.
+A colony empties the fish around it quickly. Bales stay at a haul-out for no longer than one day–night cycle, then each bale goes its own way. Bales with young on a colony island are the exception.
 Colonies draw hunters. Tylosaurus and Sachicasaurus wait in the water below, and land carnivores come from the shore. Kaiwhekea rest well above the waterline, and the high rocks remain the safest place.
 
 ### ✦ Solitary Behavior
@@ -538,22 +571,23 @@ After a lifelong bond ends, she does not court or nest for a while.
 A widowed cow may keep her partner's greeting for the rest of her life.
 
 ### ✦ Nesting
-Like sea turtles, a bale returns to nest at the beach or pool where its lead cow hatched, if it lies in one of the preferred POIs.
+Like sea turtles, a bale returns to nest at the beach or pool where its lead cow hatched. Birth beaches lie on coasts all over the map.
 If the lead cow does not know her birth beach, for example as an orphan, the bale chooses one peacefully, by the majority of cows.
 A nesting is successful if at least half of one clutch, rounded up, survives to Juvenile: 2 calves from 4 eggs, or 1 from 2.
 - After a successful nesting, the beach becomes the lead cow's birth beach, even if she hatched elsewhere. It also becomes the birth beach of every cow present who may lead one day, if she has none of her own.
 - The bale keeps its beach as long as at least one clutch there is successful.
 - If no clutch at the birth beach succeeds, the lead cow gives it up. The bale chooses a new beach for the next nesting, by the majority of cows.
 Like black-legged kittiwakes, Kaiwhekea stay where they succeed, and move on where they fail.
+Kaiwhekea never nest on their colony islands. Every calf needs its run to the water, and makes it alone.
 The cows of a bale nest on the same day, side by side along the same shore.
 Cows place their nests at least 1 body length apart. Mothers, sisters and daughters nest close together.
 A full bale often splits into smaller nursery groups to nest, so as not to empty the fishing grounds near the pools.
 
 ### ✦ Parenthood
 When preparing to nest, cows head to coastal shallow pools and build simple nests.
-After all young hatch, mothers return to deeper water nearby. Aunts take turns guarding the pools while the mothers fish. The bale stays close to the nesting area until the calves reach Juvenile.
+After all young hatch, mothers return to deeper water nearby. Aunts take turns guarding the pools from the nearby water while the mothers fish. The bale stays close to the nesting area until the calves reach Juvenile.
 Mothers come back to the pools often, and greet their calves with their greeting. Anxious new mothers who check the pool too often are gently calmed by the other cows.
-At Juvenile, the calves make their run into deeper water in daylight, and the bale travels on, with the bulls on the outside.
+At Juvenile, the calves make their run into deeper water in daylight, alone. Then the bale travels to a colony island, with the bulls on the outside, and stays sedentary until all its young reach Sub-Adult. See ✦ Colony Islands.
 Bulls protect their bale and their calves until the calves reach Adolescent.
 
 ### ✦ Offspring Maturity
@@ -585,7 +619,7 @@ A Kaiwhekea seized by a Sachicasaurus is lost.
 %% banner Rules & Clarifications
 Kaiwhekea return to the water once their thirst drops to 75%, or 50% in great danger. A Kaiwhekea whose thirst drops below 50% on land becomes infertile, and this is noted in its bloodline log.
 Kaiwhekea may only use rocks they can reach with a normal leap from the water. Kaiwhekea with heavy deathscars, or bleeding to death, may not flee onto a high rock (4.6).
-In a colony, each bale defends only itself. Bales share a haul-out or a POI for no longer than one day–night cycle.
+In a colony, each bale defends only itself. Bales share a haul-out or a POI for no longer than one day–night cycle, except bales with young on a colony island.
 
 ### RULE EXEMPTIONS
 Kaiwhekea may group with up to 4 Eurhinosaurus, as piscivores. There is no defence between the species. (8.1)
@@ -594,7 +628,7 @@ Kaiwhekea do not claim bodies that have fallen in an engagement, bodies that the
 %% note Die Piscivore-Regel (Ausnahme von 8.1) ist Teil der Suggestion und auf dem Server noch nicht beschlossen.
 %% post
 ## Preferred POIs
-%% image Preferred POIs map: saltwater channels (Volcano Islands, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp) and oceans (Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands, Stonebed Shoal); nesting at Palm Islands, Castaway Isle and the Volcano Islands
+%% image Preferred POIs map: saltwater channels (Volcano Islands, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp) and oceans (Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands, Stonebed Shoal); birth beaches on any coast; colony islands at Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands
 ## Profile - Quick View
 Kaiwhekea are Medium Diurnal Aquatic Piscivores.
 Kaiwhekea can group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Up to 4 Eurhinosaurus may join, without any defence between the species. They do not group with Leedsichthys.
@@ -604,9 +638,11 @@ Kaiwhekea flee from all Apex and Giant carnivores on sight, except at a nest wit
 An experienced lead cow guides the bale. She rarely fights, but ends any quarrel with a single head shake, and the bale leaves her the best place on the rock.
 Up to 2 dominant bulls escort the bale and do most of its work: defence, the night watch, and staying in the water when there is no room above. Aunts help raise the calves.
 Every Kaiwhekea has its own greeting, which players must remember. Physical dimorphism is mandatory, because greetings do not show sex.
-Like sea lions, Kaiwhekea haul out on land many times a day, often in colonies of several bales, and nap on high rocks. They return to the water at 75% thirst, or 50% in great danger. Below 50%, they become infertile.
+Like sea lions, Kaiwhekea haul out on land many times a day, often in colonies of several bales, and nap on high rocks. Bales with young stay on colony islands until the food runs out. They return to the water at 75% thirst, or 50% in great danger. Below 50%, they become infertile.
 Courtship is a ritual: cows breach and call, the dominant bulls dance first and may be challenged after a mistake in their greeting, and cows choose a bull by taking on his greeting.
-Bales nest at the birth beach of their lead cow, and change it after a failed nesting.
+Bales nest at the birth beach of their lead cow, on any coast, and change it after a failed nesting. Calves make the run to the water alone.
+Until all young reach Sub-Adult, the bale is sedentary on colony islands at Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands: safe from land and sea hunters, with water holes, and rich fishing grounds around.
+At dusk the lead cow calls the roll. Small fishing trips bring large fish home, and friends in other bales greet first at every colony.
 Kaiwhekea roam by day, back and forth between fishing grounds and haul-outs in the saltwater channels and the oceans. They may swim alongside a passing flotilla for a while, and a Leedsichthys often stops to watch their courtship.
 Kaiwhekea are fascinated by land animals. They follow them along the shore, leap in excitement, and go ashore to greet herbivores.
 
