@@ -177,6 +177,10 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 
 **River Stingray bleibt drin** (entschieden am 10.11., vom Nutzer). Er lebt dem Namen nach eher in Flüssen. Gibt es ihn in den Flussengen, kann eine Bale ihren Großfisch auch dort holen, und der Zug in die Ozeane wird schwächer. Das ist bewusst so in Kauf genommen. Wo die vier im Spiel spawnen, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
 
+**Entschieden am 10.11. (vom Nutzer): Balz nur in den Preferred POIs.** Das Balzritual findet nur in den POIs der Preferred-POI-Karte statt: Volcano Islands, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp, Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands, Stonebed Shoal und Tallbrush Coasts. Außerhalb balzen Kai nicht. Danach zieht die Bale wie bisher zum Geburtsstrand, der an jeder Küste liegen darf.
+
+**Selbst ergänzt, bitte prüfen:** Tallbrush Coasts zählt mit, weil es auf der Karte als Kolonie-Insel-POI eingefärbt ist. Die Süßwasser-Abstecher zählen nicht.
+
 **Entschieden am 10.11. (vom Nutzer): der neue Gruß.** Das Abbrechen eines Emotes funktioniert im Spiel nicht gut, und zwei Emotes dauern schon rund 3 Sekunden. Der Kai hat außerdem kein Bite, nur Neck Swipe. Ziel: möglichst viele Kombinationen, aber kurz.
 - **Calls und Emotes getrennt:** Als Call nur :friendly_call:. Als Emote jedes, aber höchstens 1 pro Gruß.
 - **Schnelle Bewegungen:** Neck Swipe ins leere Wasser, halbe Drehung links, halbe Drehung rechts, kurz abtauchen.
@@ -780,7 +784,7 @@ At the first sign of danger, Kaiwhekea raise their heads above the surface to lo
 
 ### Courtship
 
-Courtship is a ritual, held by day in open, clear water where the bale can watch for predators. It is inspired by elephant seals, whose cows gather where the dominant bulls hold their place.
+Courtship is a ritual, held by day in open, clear water where the bale can watch for predators. It is only held in the preferred POIs: the Volcano Islands, Twisted Forest, Stillwater Bog, the Mudflats, Coastland Swamp, Coastal Bluffs, Kelp Vale, the Abyssal Depths, Palm Islands, Stonebed Shoal and Tallbrush Coasts. Outside them, Kaiwhekea do not court. It is inspired by elephant seals, whose cows gather where the dominant bulls hold their place.
 
 - **Calls:** During the courting season both sexes become extremely vocal underwater. Long-distance calls (:broadcast_call:) are used to find a mate.
 - **Who courts:** Infertile Kaiwhekea, such as those with lasting skin damage, do not court.
@@ -887,7 +891,7 @@ Eurhinosaurus and passing Leedsichthys often watch the ritual (see Cross-Species
 - Physical dimorphism is mandatory, because greetings do not show sex.
 - 2 active defenders protect the bale, and up to 6 form a ring around the calves. They flee from Apex and Giant carnivores on sight, except at a nest. A Kaiwhekea seized by a Sachicasaurus is lost.
 - They may stay on land until their thirst drops to 75%, or 50% in great danger, and nap on high rocks. Below 50% they become infertile.
-- Courtship is a ritual: cows breach and call, the dominant bulls dance first and may be challenged after a mistake in their greeting, and cows choose a bull by taking on his greeting.
+- Courtship is a ritual, held only in the preferred POIs: cows breach and call, the dominant bulls dance first and may be challenged after a mistake in their greeting, and cows choose a bull by taking on his greeting.
 - Bales nest at the birth beach of their lead cow, on any coast, and change it after a failed nesting. Calves make the run to the water alone.
 - Until all young reach Sub-Adult, the bale is sedentary on colony islands at Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands: safe from land and sea hunters, with water holes, and rich fishing grounds around.
 - At dusk the lead cow calls the roll. Small fishing trips bring large fish home, and friends in other bales greet first at every colony.
