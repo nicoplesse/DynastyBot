@@ -28,8 +28,8 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 
 **Neue Systeme in diesem Entwurf:**
 - **Der eigene Gruß** ist der Kern des Kai:
-  - Jeder Kai hat einen kurzen Gruß aus höchstens 2 Emotes und 2 Fähigkeiten.
-  - Erlaubt sind als Fähigkeiten nur Bite und Neck Swipe, ins leere Wasser. Als Ruf ist nur der :friendly_call: erlaubt. Große Bewegungen gehören nicht hinein.
+  - Jeder Kai hat einen kurzen Gruß aus 2 oder 3 Elementen, höchstens etwa 3 Sekunden (neu am 10.11.).
+  - Als Ruf nur der :friendly_call:, dazu höchstens 1 beliebiges Emote und schnelle Bewegungen: Neck Swipe ins leere Wasser, halbe Drehung links oder rechts, kurz abtauchen. Große Bewegungen gehören nicht hinein.
   - Der Spieler muss sich den Gruß merken, er wird nirgends notiert.
   - Wählt eine Kuh bei der Balz einen Bullen, übernimmt sie seinen Gruß für eine Saison, bei einer Lebensbindung für immer. Nur die Leitkuh behält immer ihren eigenen.
   - Dominante Bullen tragen einen festen Gruß, der für die ganze Art gilt. Ihre Kühe übernehmen ihn.
@@ -54,7 +54,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
   - **Tanten** (Kühe ohne eigene Kälber) hüten fremde Kälber.
 - **Körpersprache:**
   - Kopfschütteln, ins Wasser schnappen und Flossenschlag aufs Wasser. Das ersetzt das Niesen des Para.
-  - Frustsignale beginnen immer mit Kopfschütteln. Ein Gruß enthält nie eins, deshalb kann man beides nicht verwechseln.
+  - Frustsignale beginnen immer mit Kopfschütteln. Ein Gruß beginnt nie damit, deshalb kann man beides nicht verwechseln.
 - **Fischen** als eigenes System:
   - **Reihenfolge am Schwarm:** Kälber zuerst, dann wird abgewechselt.
   - **Schwarm-Treiben** mit den Eurhinos.
@@ -82,7 +82,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
 6. Jeder Kai hat einen Gruß, den der Spieler sich merken muss. Große Familienverbände gibt es nicht.
 7. Nach dem Tanz geben die Dominanten 2 :friendly_call:.
 8. Es gibt einen dominanten Gruß für die ganze Art, und die Kühe der Dominanten übernehmen ihn.
-9. Im Gruß ist als Ruf nur der :friendly_call: erlaubt, als Fähigkeiten nur Bite und Neck Swipe, ohne große Bewegungen.
+9. Im Gruß ist als Ruf nur der :friendly_call: erlaubt, als Fähigkeiten nur Bite und Neck Swipe, ohne große Bewegungen. *(Seit dem 10.11. ersetzt: Der Kai hat kein Bite, siehe „der neue Gruß“.)*
 10. Ein übernommener Gruß gilt eine Saison, bei einer Lebensbindung für immer.
 11. Junge Bullen ziehen oft aus, müssen es aber nicht.
 12. Das Geschlecht zeigt künftig die Unterart.
@@ -120,7 +120,7 @@ Vorschlag für das neue Kaiwhekea-Profil. Der Text darunter ist auf Englisch, so
     - Gleichgeschlechtliche Paare einigen sich, wessen Gruß sie teilen.
 
 **Noch offen:**
-- **Der dominante Gruß** selbst ist noch nicht festgelegt.
+- ~~**Der dominante Gruß** selbst ist noch nicht festgelegt.~~ Festgelegt am 10.11., siehe „der neue Gruß“.
 - **Ausdauer des Sachi beim Halten:** Er macht dabei rund 19 Schaden/s und braucht für einen vollen Kai etwa eine Minute. Ob seine Ausdauer so lange reicht, zeigt erst der Mod.
 - **Durst an Land im Spiel bestätigen:** Laut den Werten hat der Kai 400 Durst, der an Land nach etwa 40 min leer ist. Daraus kommen die 10 und 20 min.
 
@@ -176,6 +176,23 @@ Mit Beachcomber ist der Sachi an Land schnell, ein flacher Strand schützt also 
 4. **Folgen bei der Balz:** Magere Kühe werden selten gewählt und nehmen selten einen Bullen an. Das ist der stärkste Teil und bleibt Rollenspiel, keine Sperre.
 
 **River Stingray bleibt drin** (entschieden am 10.11., vom Nutzer). Er lebt dem Namen nach eher in Flüssen. Gibt es ihn in den Flussengen, kann eine Bale ihren Großfisch auch dort holen, und der Zug in die Ozeane wird schwächer. Das ist bewusst so in Kauf genommen. Wo die vier im Spiel spawnen, steht nicht in den Kartendaten und muss im Spiel geklärt werden.
+
+**Entschieden am 10.11. (vom Nutzer): der neue Gruß.** Das Abbrechen eines Emotes funktioniert im Spiel nicht gut, und zwei Emotes dauern schon rund 3 Sekunden. Der Kai hat außerdem kein Bite, nur Neck Swipe. Ziel: möglichst viele Kombinationen, aber kurz.
+- **Calls und Emotes getrennt:** Als Call nur :friendly_call:. Als Emote jedes, aber höchstens 1 pro Gruß.
+- **Schnelle Bewegungen:** Neck Swipe ins leere Wasser, halbe Drehung links, halbe Drehung rechts, kurz abtauchen.
+- **Aufbau:** 2 oder 3 Elemente, Reihenfolge zählt, auf der Stelle und dem anderen zugewandt, höchstens etwa 3 Sekunden. Nichts wird mehr abgebrochen.
+- **Kombinationen:** Mit 2 Emotes gibt es 233 Grüße, mit 4 Emotes 395, mit 6 Emotes 557, mit 8 Emotes 719. Jedes Emote bringt 81 dazu.
+
+**Selbst ergänzt, bitte prüfen:**
+1. **Kein Gruß beginnt mit :shake_emote: oder :question_emote:.** Frust und Unbehagen beginnen so, und die Leitkuh beendet Streit mit einem Kopfschütteln. In der Mitte oder am Ende eines Grußes sind beide erlaubt.
+2. **:friendly_call: und Neck Swipe folgen nicht direkt auf sich selbst** (Abklingzeit, und zwei gleiche Rufe hintereinander hört man kaum auseinander). Kein Gruß ist dreimal dasselbe Element.
+3. **Der dominante Gruß** ist der einzige mit 4 Elementen: :friendly_call:, halbe Drehung links, halbe Drehung rechts, :friendly_call:. Nur schnelle Elemente, also auch rund 3 Sekunden, und mit keinem eigenen Gruß zu verwechseln.
+4. **„Ähnlich“** heißt jetzt: mindestens 2 Elemente an derselben Stelle.
+5. **Fehler** wie bisher, nur mit 2 Sekunden Pause statt 3, weil der ganze Gruß nur noch etwa 3 Sekunden dauert.
+
+**Im Spiel prüfen:** welche Emotes der Kai hat. Die Zahl der Kombinationen hängt davon ab.
+
+**Folge: kein Bite beim Kai.** Bite stand auch im Kommentkampf der Bullen, bei den Frust-Signalen, bei der Verteidigung, beim Scheinangriff und bei den Tropeognathus. Überall steht jetzt Neck Swipe. Die alte Angabe „5 bis 6 Durchgänge“ kam vom Bite-Schaden und heißt jetzt „several passes“, bis der Neck-Swipe-Schaden bekannt ist.
 
 **Entschieden am 10.11. (vom Nutzer): Geburtsstrände, Kolonie-Inseln und Alltagsrituale.**
 - **Zwei getrennte Dinge:** Geburtsstrände sind zum Nisten da, Kolonie-Inseln zum Großziehen.
@@ -342,31 +359,32 @@ Physical dimorphism for Kaiwhekea is mandatory. Cows take on the greetings of th
 Every Kaiwhekea has its own greeting. It tells others who it is, and, for a cow, which bull she has chosen. Greetings are inspired by bottlenose dolphins, whose allied males match their signature whistles to each other, and by budgerigars, whose mated pairs match their calls.
 
 - **Making a greeting:**
-  - A greeting holds no more than 2 emotes and 2 abilities.
-  - The only call allowed is :friendly_call:, which counts as an emote.
-  - The only abilities allowed are Bite and Neck Swipe, aimed into open water. A bite or swipe that lands counts as an attack.
-  - If a greeting holds 2 emotes, one of them must be cut short by a Bite or a Neck Swipe.
-  - Greetings are quick, and made almost on the spot. A turn in a circle is the most movement allowed. There are no lunges or sprints, and no Barrel Roll, Fluke Slap or area abilities.
-  - Greetings never contain a :shake_emote:, :threaten_call:, :danger_call: or :fear_call:. These remain warnings.
-  - A greeting can be as simple as a nod. Every greeting is individual.
+  - A greeting is a short sequence of 2 or 3 elements, made on the spot and facing the other. It takes no more than about 3 seconds. The order counts.
+  - **Calls:** The only call allowed is :friendly_call:.
+  - **Emotes:** Any emote may be used, but no more than 1 per greeting, because emotes take time.
+  - **Quick moves:** a Neck Swipe aimed into open water, a half turn to the left, a half turn to the right, or a short dive under the surface and back up. A Neck Swipe that lands counts as an attack.
+  - :friendly_call: and Neck Swipe may not directly follow themselves. No greeting is the same element three times.
+  - A greeting never begins with :shake_emote: or :question_emote:, because frustration and unease begin that way (see Communication).
+  - There are no lunges, sprints or leaps, and no Fluke Slap, Barrel Roll or area abilities. Leaps belong to courtship.
+  - A greeting can be as simple as a :friendly_call: and a half turn. With only a few emotes, there are already several hundred possible greetings, so every greeting is individual.
 - **Remembering:**
   - Players choose their greeting freely, and must remember it. It is not written down.
   - A Kaiwhekea that carries another greeting for a season must still remember its own, and returns to it afterwards.
 - **Using it:**
   - Both greet when two Kaiwhekea meet, or when bale mates meet again after time apart. When initiated, the greeting must be returned.
   - Kaiwhekea recognise friends by their greeting, and remember the greetings of bale mates for life.
-  - Similar greetings attract each other. Kaiwhekea often feel drawn to those whose greeting resembles their own.
+  - Similar greetings attract each other. Kaiwhekea often feel drawn to those whose greeting resembles their own. Two greetings are similar if at least 2 elements stand in the same place.
 - **Taking on a greeting:**
   - A cow who chooses a bull in courtship takes on his greeting until the end of the season. Then she returns to her own.
   - In a lifelong bond, the pair matches their greetings to each other, and the cow takes on the bull's greeting for life. Same-sex pairs agree on whose greeting they share.
   - The lead cow always keeps her own greeting, even when she courts or bonds.
   - A cow whose lifelong partner has died may keep his greeting for the rest of her life, or return to her own.
 - **The dominant greeting:**
-  - Dominant bulls share one fixed greeting, the same for the whole species. Only dominant bulls, and the cows who chose them this season, may use it. *(The exact greeting is still to be decided.)*
+  - Dominant bulls share one fixed greeting, the same for the whole species: :friendly_call:, a half turn to the left, a half turn to the right, :friendly_call:. It is the only greeting with 4 elements, so it can never be mistaken for another. Only dominant bulls, and the cows who chose them this season, may use it.
   - A bull who wins a dominant place takes on the dominant greeting. A bull who loses his place returns to his own.
   - Every Kaiwhekea knows the dominant greeting, so dominant bulls are recognised in any bale. Male humpback whales all sing the same song, and in the courting season, half a bale may carry the dominant greeting in the same way.
 - **Mistakes:**
-  - Only clear mistakes count: a wrong or missing element, the wrong order, a pause of more than 3 seconds, or starting over. When in doubt, it was not a mistake.
+  - Only clear mistakes count: a wrong or missing element, the wrong order, a left turn instead of a right one, a pause of more than 2 seconds, or starting over. When in doubt, it was not a mistake.
   - Outside courtship, a mistake means nothing. In courtship, it is a sign of weakness (see Courtship).
 - **Young Kaiwhekea:**
   - Calves copy their mother's greeting at first. From Adolescent on, every Kaiwhekea has its own.
@@ -392,7 +410,7 @@ Every Kaiwhekea has its own greeting. It tells others who it is, and, for a cow,
   - They chase small fish and practise catching them, and learn the bale's fishing techniques by copying their mother.
 - **Play:**
   - Play-fighting, leaping, chasing games and tossing kelp or shells to each other are common between calves.
-  - Rough play near younger calves is stopped by a watching mother: a head shake first, then a gentle nip if it is ignored.
+  - Rough play near younger calves is stopped by a watching mother: a head shake first, then a gentle nudge if it is ignored.
   - Friendships formed in play often last into adulthood.
 - **Adolescents:**
   - Every Adolescent develops its own greeting (see Greetings).
@@ -570,8 +588,8 @@ A bale with offspring below Sub-Adult is sedentary. After the calves' run to the
 - **News:** When bales meet, or a fishing trip comes home, Kaiwhekea share what they have seen: where fish gather, where a flotilla passed, where a Tylosaurus or Sachicasaurus was lurking. They tell it with calls and in chat, but only what their own character saw in game.
 - **Contentment and affection:** soft :friendly_call: chatter, swimming side by side, brushing along each other's bodies, and crossed necks.
 - **Discomfort and unease:** a head shake (:shake_emote:), looking around above the surface (:question_emote:), or swimming restlessly at the edge of the bale. These are not signs of aggression.
-- **Frustration:** A frustration signal always begins with a head shake (:shake_emote:). Greetings never contain one, so the two cannot be mistaken. After the head shake, a Kaiwhekea may also:
-  - snap at the water in front of the other, without landing the bite;
+- **Frustration:** A frustration signal always begins with a head shake (:shake_emote:). Greetings never begin with one, so the two cannot be mistaken. After the head shake, a Kaiwhekea may also:
+  - swipe at the water in front of the other with Neck Swipe, without landing it;
   - slap the water beside it with a Fluke Slap, without landing the hit.
 
   These are done once, and are respected at once: the other moves away by at least 1 body length.
@@ -591,7 +609,7 @@ Bales are loosely structured. They are guided by a lead cow and escorted by up t
   - She leads through experience, not strength, and rarely takes part in engagements. She only becomes an active defender if no dominant bull is present, and defends her own calf and nest like any mother.
   - She is the first to welcome newcomers into the bale, and the first to correct over-aggression.
   - **Keeping the peace:** If a quarrel breaks out in the bale, about anything, the lead cow swims between the two and shakes her head once (:shake_emote:). Both stop at once, move at least 2 body lengths apart, and do not pick the quarrel up again that day. Even a bull twice her size gives way to her at once. Ignoring her counts as over-aggression (see Correcting Over-Aggression).
-  - **Spin fights** in courtship, over free places and in escort challenges are not quarrels. They follow their own rules, and she does not stop them, unless a bull breaks those rules, for example by biting more than twice in a pass, or after a :heart_call:.
+  - **Spin fights** in courtship, over free places and in escort challenges are not quarrels. They follow their own rules, and she does not stop them, unless a bull breaks those rules, for example by swiping more than twice in a pass, or after a :heart_call:.
   - **The best place:** The bale leaves her the highest place and the best spot in the sun, without being asked (see Time on Land).
   - Her birth beach is the bale's nesting beach (see Nesting). She is the only Kaiwhekea who always keeps her own greeting, and every member of her bale knows it.
   - Other cows may disagree with her choice. A cow shows this by swimming in front of the lead cow and slapping the water with her fluke. If several cows disagree, the bale follows the choice of the majority of cows. On an even split, the lead cow decides.
@@ -630,7 +648,7 @@ Bales are loosely structured. They are guided by a lead cow and escorted by up t
   - Gift-giving is a common sign of affection, for example a shell, a bright stone, a piece of kelp, or the best spot in the sun (see Time on Land).
   - Close friends of any sex share fish and groom each other by brushing along each other's bodies.
 - **Bulls and cows:** Bulls let cows and calves through to the fish first, and swim on the outer edge of the bale to shield them. Cows value this, and remember it when they choose a partner.
-- **Play:** Adults play too. Leaping contests, bow-riding in the wake of a Leedsichthys and chasing games are common. Play never turns into real biting. Anyone who bites in play is corrected by the others.
+- **Play:** Adults play too. Leaping contests, bow-riding in the wake of a Leedsichthys and chasing games are common. Play never turns into a real attack. Anyone who lands a Neck Swipe in play is corrected by the others.
 - **Solitary time:** Kaiwhekea also enjoy time alone, sunbathing on beaches and rocks or swimming spread out, careful not to crowd one another.
 - **Injured members:** Injured Kaiwhekea swim in the middle of the bale, flanked by bonded friends. The bale slows for them, but does not stop in a POI where an Apex carnivore was seen.
 
@@ -654,7 +672,7 @@ Over-aggression is rare and not tolerated.
 
 1. Correction begins with a head shake and a hard slap of the flipper on the water surface.
 2. If it is ignored, nearby members block the aggressor with their bodies and give :threaten_call:.
-3. If it continues, they follow up with firm nips. Other members quickly rally to help push the aggressor away.
+3. If it continues, they follow up with firm Neck Swipes. Other members quickly rally to help push the aggressor away.
 4. If the behavior continues despite this, the bale shuns the individual.
 
 The lead cow can end it at any step with her head shake (see Bale Structure).
@@ -670,8 +688,8 @@ Over-aggression is never defended by bale mates, regardless of relations. Anyone
   1. The two bulls circle each other at the surface, giving 3 :threaten_call: between them.
   2. They stop face to face, and each performs his greeting. The dominant greeting can be intimidating, and a challenger may back down here.
   3. If both then give one more :threaten_call:, the fight begins. A bull who does not give it within 10 seconds backs down. If the challenger backs down, his challenge is used up. If a dominant bull backs down, he loses his place.
-  4. They use only their Bite. Each makes no more than 2 bite attempts, then they swim past each other, turn, and meet again for 2 more.
-  5. This repeats until one bull drops below 50% health, or gives up with a :heart_call:. Either counts as a loss. A fight usually takes 5 or 6 passes.
+  4. They use only their Neck Swipe. Each makes no more than 2 swipes, then they swim past each other, turn, and meet again for 2 more.
+  5. This repeats until one bull drops below 50% health, or gives up with a :heart_call:. Either counts as a loss. A fight usually takes several passes.
 - Losing a fight does not lower a bull's standing in the bale. Self-preservation is valued.
 - These fights rarely end in death, but leave deep scars on both.
 
@@ -691,7 +709,7 @@ Kaiwhekea are tolerant towards other species and avoid conflict at all times. Wh
   - When a bale meets a flotilla, Kaiwhekea may swim alongside it for a while. They ride the giant's bow wave, race its Eurhinosaurus and fish the shoals that gather around it. The Leedsichthys never changes course for them, so the bale turns back once the route leads away from its own way. Like two bales, they stay together for no longer than one day–night cycle.
   - Neither side defends the other. Kaiwhekea may hide behind or beneath the giant, but the Leedsichthys never moves to block a predator on their behalf. Kaiwhekea may not lead a predator to it on purpose to save themselves.
   - **In courtship:** A passing Leedsichthys loves the splashing and banter of a courting bale, and often stops to watch, even though it is not grouped with it. Its Eurhinosaurus breach along with the bulls. When the bale leaves for its nesting beach, the Leedsichthys goes its own way with its Eurhinosaurus. Only if the beach lies on its route do they travel on together for a while.
-- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in wherever fish gather, also where a bale is fishing. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give a :threaten_call: first, then charge and snap at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
+- **Tropeognathus:** Tropeognathus follow flotillas from the air and dive in wherever fish gather, also where a bale is fishing. Fish are the one thing a bale does not share, so Kaiwhekea may drive them off. They give a :threaten_call: first, then charge and swipe at it until it leaves the water. This is not a hunt: once the Tropeognathus is airborne, they let it go.
 - **Lurdusaurus and other herbivores at the shore:** Kaiwhekea are fascinated by them. They follow them along the shore, go ashore to greet them, and like to present them with trinkets from the seafloor (see Time on Land).
 - **Carnivores at the shore:** Austroraptor and other shore hunters are a danger to calves in the pools, and to Kaiwhekea resting on beaches. Aunts and mothers keep watch, and calves hide deeper in the pool when one wades in.
 - **Apex carnivores:** Kaiwhekea flee from adult Tylosaurus, Sachicasaurus, Livyatan, Spinosaurus and Deinosuchus on sight (see Hunted by Apex).
@@ -716,8 +734,8 @@ At the first sign of danger, Kaiwhekea raise their heads above the surface to lo
 - **Defenders:** Up to 2 adults, usually the dominant bulls, step forward as active defenders. The lead cow only steps forward if no dominant bull is present. Once the engagement starts, they cannot be swapped out, and cannot join the ring.
 - **Reaching the bale:** An attacked individual must swim back to the bale within 30 seconds to receive defenders. Being within 2 body lengths of the bale counts as reaching it.
   - If it does not reach the bale in time, or turns to fight, it counts as a defender.
-  - Any Kaiwhekea may use Fluke Slap in self-defence while being hunted without counting as a defender. Turning to bite or barrel roll makes it an active defender.
-- **Mock charges:** Defenders stay within 3 body lengths of the bale. They may charge further out at a predator in a mock charge, with snapping and fluke slaps, if:
+  - Any Kaiwhekea may use Fluke Slap in self-defence while being hunted without counting as a defender. Turning to Neck Swipe or Barrel Roll makes it an active defender.
+- **Mock charges:** Defenders stay within 3 body lengths of the bale. They may charge further out at a predator in a mock charge, with Neck Swipes into the water and fluke slaps, if:
   - the predator sits or rests at the surface;
   - the predator stays still for more than 15 seconds;
   - or the predator does not come back within reach after three :threaten_call: and 10 seconds.
@@ -800,7 +818,7 @@ Eurhinosaurus and passing Leedsichthys often watch the ritual (see Cross-Species
 - A lifelong pair always rejoins the same bale, and travels together even when the rest of the bale is not around.
 - Bonded bulls still dance for their partner in the second round, and bring her gifts.
 - Bonded bulls cannot challenge for a dominant place. A dominant bull who bonds gives up his place at the next ritual.
-- **Jealousy:** If another Kaiwhekea courts a bonded partner, the partner may place itself between them and shake its head once or twice. This never escalates to biting. The courted partner then decides: stay with the bond, or open it.
+- **Jealousy:** If another Kaiwhekea courts a bonded partner, the partner may place itself between them and shake its head once or twice. This never escalates to an attack. The courted partner then decides: stay with the bond, or open it.
 - **Rejection:** A bonded Kaiwhekea who does not want a suitor turns away from it. If the suitor persists, it shakes its head and slaps the water between them. After this, the suitor stops.
 - **Mourning:**
   - A cow who is abandoned or ignored by her lifelong partner may leave him, and returns to her own greeting.
