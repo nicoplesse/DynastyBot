@@ -109,26 +109,94 @@ for (const layer of config.layers) {
   }
 }
 
+// "territories": true draws the borders between the territories of lebensraum.json (cut from their
+// POI the same way as in the Aquatic tab) as a white line on the water, and marks each territory
+// with the compass letter of its name (N, S, E, W) at its widest open water, or at "marks": { id: [x, y] }
+// where that spot collides with a printed POI name.
+const marks = [];
+if (config.territories) {
+  const { cutTerritory } = await import('../src/aquatic.js');
+  const habitat = JSON.parse(await readFile(join(root, 'projects', 'aquatic-update', 'profile-entwuerfe', 'lebensraum.json'), 'utf8'));
+  const owner = new Int16Array(W * H).fill(-1);
+  const parentOf = [];
+  habitat.territories.forEach((territory, index) => {
+    const region = regions.get(territory.parent);
+    if (!region || region.shape?.type !== 'polygon') throw new Error(`staging-map: unknown or untraced region ${territory.parent}`);
+    const { points } = cutTerritory(region.shape.points, territory);
+    parentOf[index] = territory.parent;
+    const xs = points.map(point => point[0]), ys = points.map(point => point[1]);
+    const x0 = Math.max(0, Math.floor(Math.min(...xs) * W)), x1 = Math.min(W, Math.ceil(Math.max(...xs) * W));
+    const y0 = Math.max(0, Math.floor(Math.min(...ys) * H)), y1 = Math.min(H, Math.ceil(Math.max(...ys) * H));
+    for (let y = y0; y < y1; y++) for (let x = x0; x < x1; x++) {
+      const p = y * W + x;
+      if (water[p] && inside((x + 0.5) / W, (y + 0.5) / H, points)) owner[p] = index;
+    }
+  });
+  const border = new Uint8Array(W * H);
+  for (let y = 0; y < H - 1; y++) for (let x = 0; x < W - 1; x++) {
+    const p = y * W + x, a = owner[p];
+    if (a < 0) continue;
+    for (const q of [p + 1, p + W]) {
+      const b = owner[q];
+      if (b >= 0 && b !== a && parentOf[a] === parentOf[b]) { border[p] = 1; border[q] = 1; }
+    }
+  }
+  for (let p = 0; p < W * H; p++) {
+    if (!border[p]) continue;
+    for (let c = 0; c < 3; c++) data[p * 3 + c] = Math.round(data[p * 3 + c] * 0.1 + 255 * 0.9);
+  }
+  // Distance of every territory pixel to the nearest pixel outside its territory (chamfer, 2 passes).
+  const dist = new Float32Array(W * H);
+  for (let p = 0; p < W * H; p++) dist[p] = owner[p] < 0 ? 0 : Infinity;
+  const pass = (from, to, step) => {
+    for (let y = from; y !== to; y += step) for (let x = step > 0 ? 0 : W - 1; x >= 0 && x < W; x += step) {
+      const p = y * W + x;
+      if (!dist[p]) continue;
+      for (const [dx, dy, cost] of [[-step, 0, 1], [0, -step, 1], [-step, -step, 1.4142], [step, -step, 1.4142]]) {
+        const nx = x + dx, ny = y + dy;
+        const q = ny * W + nx;
+        const d = nx < 0 || nx >= W || ny < 0 || ny >= H || owner[q] !== owner[p] ? cost : dist[q] + cost;
+        if (d < dist[p]) dist[p] = d;
+      }
+    }
+  };
+  pass(0, H, 1);
+  pass(H - 1, -1, -1);
+  const deepest = habitat.territories.map(() => ({ p: -1, d: 0 }));
+  for (let p = 0; p < W * H; p++) if (owner[p] >= 0 && dist[p] > deepest[owner[p]].d) deepest[owner[p]] = { p, d: dist[p] };
+  habitat.territories.forEach((territory, index) => {
+    const letter = { Northern: 'N', Southern: 'S', Eastern: 'E', Western: 'W' }[territory.name.split(' ')[0]];
+    const { p } = deepest[index];
+    if (letter && p >= 0) marks.push({ letter, at: config.marks?.[territory.id] ?? [((p % W) + 0.5) / W, (Math.floor(p / W) + 0.5) / H] });
+  });
+}
+
 const escape = text => String(text).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 const legend = config.layers.map(layer => `<li style="color:${layer.color}"><i style="background:${layer.color}"></i>${escape(layer.label)}</li>`).join('');
 const notes = (config.notes || []).map(note => `<li class="note">${escape(note)}</li>`).join('');
+const markup = marks.map(({ letter, at: [x, y] }) => `<b class="mark" style="left:${(x * W).toFixed(1)}px;top:${(y * H).toFixed(1)}px">${letter}</b>`).join('');
+// The legend sits at the bottom left, the title block right above it; both grow upwards with the
+// number of lines (two layers and two notes give the original 90 px).
+const listHeight = 22 * config.layers.length + 19 * (config.notes || []).length + 8;
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@500&display=block" rel="stylesheet">
 <style>
   html, body { margin: 0; width: ${W}px; height: ${H}px; overflow: hidden; background: #000; }
   .map { position: absolute; inset: 0; width: ${W}px; height: ${H}px; }
-  .block { position: absolute; left: 32px; bottom: 98px; color: #fff; }
+  .block { position: absolute; left: 32px; bottom: ${listHeight + 8}px; color: #fff; }
+  .mark { position: absolute; transform: translate(-50%, -50%); font: 13px/1 Michroma, sans-serif; color: #fff; text-shadow: 0 0 3px #000, 0 0 3px #000, 0 1px 2px #000; }
   .card { font: 500 15px/1 Montserrat, sans-serif; position: absolute; left: 46px; top: -9px; padding: 0 4px; white-space: nowrap; }
   .name { font: 24px/1 Michroma, sans-serif; letter-spacing: 3px; padding: 11px 14px 7px 12px; border: 3px solid #fff; border-right: 0; border-bottom-width: 3px; white-space: nowrap;
           clip-path: polygon(0 0, 14px 0, 14px 3px, 100% 3px, 100% 100%, 0 100%); }
-  ul { list-style: none; margin: 0; padding: 0; position: absolute; left: 32px; top: ${H - 90}px; }
+  ul { list-style: none; margin: 0; padding: 0; position: absolute; left: 32px; top: ${H - listHeight}px; }
   li { font: 14px/1 Michroma, sans-serif; letter-spacing: 2.5px; margin: 0 0 8px; white-space: nowrap; text-shadow: 0 1px 2px #000; }
   li i { display: inline-block; width: 11px; height: 11px; margin-right: 9px; border-radius: 2px; vertical-align: -1px; }
   li.note { color: #fff; font-size: 11px; letter-spacing: 2px; padding-left: 20px; opacity: .9; }
 </style></head><body>
 <img class="map" src="data:image/png;base64,${encodePNG(W, H, data).toString('base64')}" alt="">
 <div class="block"><span class="card">${escape(config.card)}</span><div class="name">${escape(config.title)}</div></div>
+${markup}
 <ul>${legend}${notes}</ul>
 </body></html>`;
 

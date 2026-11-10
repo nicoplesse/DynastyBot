@@ -56,6 +56,7 @@ ALL Sachicasaurus that group together must log their relations in #🩸・bloodl
 Up to 2 Sachicasaurus may take part in a hunt or a territory challenge.
 Sachicasaurus may hunt up to Apex tier.
 Wanderers do not hunt. Only a male who holds a territory, preferred or secondary, may hunt.
+Wanderers may only defend themselves, and a brother who wanders with them.
 Any 2 Sub/Adult Sachicasaurus may work together to hunt an adult Leedsichthys, related or not, of either sex. They do not group in game to do so, and share the kill. See ✦ The Leedsichthys Call.
 Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. See ✦ Livyatan.
 Sachicasaurus may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
@@ -65,7 +66,7 @@ Adolescent Sachicasaurus do not assist with hunts, except a son who lives with h
 Up to 2 Sachicasaurus may work together in defence against being hunted. In a brace or drift, their primary defenders will always be each other.
 A brace may stand its ground against a Livyatan in defence, but loses against a grown one. In the kelp, in the shallows and on the high rock ledges of the Abyssal Depths, Sachicasaurus are safe from it.
 Females always defend their grouped offspring of Adolescent and below.
-A father who holds a territory defends his grouped son. A father who has lost his territory may not defend him until he holds a territory again.
+A father who holds a territory defends his grouped son. A father who has lost his territory is a wanderer, and may only defend himself. He may not defend his son until he holds a territory again.
 
 ### ✦ Territory Challenges Against Other Species
 Males claim and defend their territory at night. During the day they may patrol it in small amounts, and defend it if challenged (1.4.1).
@@ -170,7 +171,7 @@ An old male who has lost his preferred territory often ends his days in a second
 
 ### ✦ Wanderers
 A male without a territory is a wanderer. Most are young males who have just left their mother or their father, and males who have lost their territory.
-Wanderers do not hunt. They fish, and travel in search of a free territory, or an owner they can challenge.
+Wanderers do not hunt, and may only defend themselves. They fish, and travel in search of a free territory, or an owner they can challenge.
 Wanderers do not hum. They cross territories with the wide arc and keep moving. An owner tolerates a wanderer who passes through, and challenges one who stays.
 A wanderer who finds no free preferred territory settles in a free secondary territory. If none is free either, he challenges an owner.
 A brace of brothers may wander together.
@@ -204,12 +205,14 @@ Sachicasaurus are primarily aggressive to unrelated males of their own kind.
 ### ✦ Territory Challenges with other Sachicasaurus
 Rival males are met with open hostility.
 A male who finds another ungrouped male staying in his territory gives the broadcast call (:broadcast_call:) and three aggressive calls (:threaten_call:), then attacks.
-**The fight:** It lasts until one of them drops to 50% health. He gives the (:heart_call:) and has lost. The winner stops at once.
-- If the owner loses, the challenger takes the territory. The old owner leaves the POI, and is a wanderer until he finds a new territory.
-- If the challenger loses, he leaves the POI.
-- A brace fights as two. The side whose last fighter drops to 50% has lost.
+**The fight:** It lasts until one of them gives up, or dies. Some territory fights end only in death.
+**Giving up:** The one who gives up gives the (:heart_call:) and turns away. The winner stops biting, and drives him out of the territory with (:threaten_call:). The loser must leave.
+- If the owner loses, the challenger takes the territory. The old owner is driven out, leaves the POI, and is a wanderer until he finds a new territory.
+- If the challenger loses, he is driven out, and leaves the POI.
+- A brace fights as two. The side whose fighters have all given up or died has lost.
 If a male or brace loses the challenge, any female or drift they allow in their territory either follows, or leaves the POI without them.
 A son living with a defeated father loses his protection. See ✦ The Handover.
+A male who has just won a territory gladly takes the unguarded young he finds in it, at the next night.
 
 ### ✦ Unguarded Young
 Like male crocodiles, territorial males kill young of their own kind.
@@ -365,7 +368,7 @@ From the middle of the Adolescent stage, a son may go to his father.
 4. **Refused:** The son stays with his mother until Sub-Adult.
 Only a father who holds a territory, preferred or secondary, may accept a son.
 **Living with his father:** The father teaches his son to hunt, and defends him. A son may take part in his father's hunts. A son with a brace learns by watching his father and uncle, because no more than 2 take part in a hunt.
-**A defeated father:** If the father loses a territory challenge, he flees from the territory, and may not defend his son until he holds a territory again. Until then, the new owner may kill the son, as long as he is Adolescent.
+**A defeated father:** If the father loses a territory challenge, he is driven out of the territory, and must leave the POI. As a wanderer, he may only defend himself, not his son, until he holds a territory again. Until then, the new owner may kill the son, as long as he is Adolescent, and a winner gladly does.
 A father without a territory does not hunt, and cannot teach it.
 
 ### ✦ Offspring Maturity
@@ -392,8 +395,8 @@ Sachicasaurus flee from Livyatan. Tylosaurus are their equals.
 %% banner Rules & Clarifications
 The nursery at Tallbrush Coasts is not a territory. Mothers challenge nothing out of it. They only defend their own nest and young.
 The courtship duel is an engagement within the species with its own limits, not a hunt and not a territory challenge: Bite only, one bite per pass, flanks and flippers only, and a heart call below 50% health at the latest. Each stops at once at the other's heart call, and the male also at her flank display.
-Territory fights between Sachicasaurus end at 50% health. The one who drops to 50% first gives the heart call and has lost. Biting after the heart call is a rule break.
-Wanderers do not hunt. A male who loses his territory may not hunt or defend his son until he holds a territory again.
+Territory fights between Sachicasaurus last until one gives up with the heart call, or dies. The winner then drives the loser out of the territory, and the loser must leave the POI. Biting after the heart call is a rule break.
+Wanderers do not hunt, and may only defend themselves. A male who loses his territory may not hunt or defend his son until he holds a territory again.
 Killing an unguarded Adolescent counts as a hunt: only at night, and only by a territorial male in his own territory.
 
 ### RULE EXEMPTIONS
@@ -403,7 +406,7 @@ Sachicasaurus may hunt within 1 body length of the water, and third party engage
 Males may defend their territory during the day if challenged. (1.4.1)
 %% post
 ## Preferred POIs
-%% image Preferred POIs map: ten preferred half-ocean territories (Kelp Vale W/E, Coastal Bluffs N/S, Palm Islands N/S, Stonebed Shoal N/S, Abyssal Depths N/S); five secondary territories (Volcano Islands N/S/E, Twisted Forest W/E); nursery at Tallbrush Coasts
+%% image [maps/sachicasaurus.png] Preferred POIs map: ten preferred half-ocean territories (Kelp Vale W/E, Coastal Bluffs N/S, Palm Islands N/S, Stonebed Shoal N/S, Abyssal Depths N/S); five secondary territories (Volcano Islands N/S/E, Twisted Forest W/E); nursery at Tallbrush Coasts
 ## Profile - Quick View
 Sachicasaurus are Apex Nocturnal Aquatic Carnivores. They may do everything but hunt by day.
 Sachicasaurus can group up to 2 related Sub/Adults of the same sex: a brace of males, or a drift of females with unlimited offspring. A territorial father may take in one son from the middle of Adolescent. Adults of the opposite sex only group for the pair night after courtship, and may hunt together then.

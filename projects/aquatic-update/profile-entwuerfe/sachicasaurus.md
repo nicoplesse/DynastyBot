@@ -170,17 +170,17 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
 
 **Entschieden am 10.11. (vom Nutzer): Nebenreviere, Wanderer, Morgensummen und Übergabe der Söhne.**
 - **Leeds-Jagd:** Zwei beliebige Sachi dürfen sich für einen adulten Leeds zusammentun, egal ob verwandt und welches Geschlecht, so wie Tyrannotitan beim Argentinosaurus (dort sind es bis zu 3). Sie gruppieren dafür nicht im Spiel und teilen sich den Riss. Wer einen Leeds jagen will, ruft: Kopf über Wasser, Broadcast und danach Threaten.
-- **Revierkämpfe unter Sachi** gehen höchstens bis 50 % Health. Wer zuerst bei 50 % ist, gibt den Heart Call und hat verloren. Verliert der Besitzer, übernimmt der Herausforderer das Revier, und der alte Besitzer verlässt den POI. Verliert der Herausforderer, verlässt er den POI.
+- **Revierkämpfe unter Sachi** (geändert am 10.11., zuerst „höchstens bis 50 %“) gehen bis einer aufgibt oder stirbt, manche also bis zum Tod. Wer aufgibt, gibt den Heart Call. Der Sieger hört auf zu beißen und scheucht ihn aus dem Revier, und der Verlierer muss es verlassen. Verliert der Besitzer, übernimmt der Herausforderer das Revier, und der alte Besitzer verlässt den POI. Verliert der Herausforderer, verlässt er den POI.
 - **Bevorzugte und Nebenreviere:** Die zehn halben Ozeane sind die bevorzugten Reviere. Dazu kommen fünf Nebenreviere: Volcano Islands, geteilt wie beim Spino (Nord, Süd, Ost), und Twisted Forest (West und Ost). Dort wird nicht gebalzt, und Weibchen kommen selten hin. Sie sind unbeliebt, weil die Chance auf einen Kai zu klein ist und die Flussengen zu eng sind, um Landtiere gut zu jagen.
 - **Die Mutter frisst, was sie bekommen kann:** Landtiere, die schwimmen, Kai, die an die Küste kommen, oder andere Tiere. Dazu fischt sie, und ihre Jungen lernen das Fischen von ihr.
 - **Morgensummen statt Abendsummen:** Jedes Revier-Männchen summt zu Tagesbeginn. Vor der Nacht würde er seine Lauerjagd verraten. Ablauf: Broadcast, Animation mit Bite abbrechen, Broadcast. Ein interessiertes Weibchen antwortet mit einem Broadcast und schaut dann bei ihm vorbei. Tagsüber dürfen alle alles außer jagen, also reist sie auch am Tag.
 - **Die Stille:** Bleibt das Summen am Morgen aus, ist das Revier frei.
-- **Wanderer:** Männchen ohne Revier jagen nicht, sie fischen nur. Findet ein Wanderer kein bevorzugtes Revier, nimmt er irgendwann ein Nebenrevier.
+- **Wanderer:** Männchen ohne Revier jagen nicht, sie fischen nur, und sie dürfen nur sich selbst verteidigen. Findet ein Wanderer kein bevorzugtes Revier, nimmt er irgendwann ein Nebenrevier.
 - **Körpersprache** ja, aber keine, die Beute aufscheucht.
 - **Gestrichen:** Grenzschwimmen, Speisekammer, Wartegrenze am Felsen, Transport der Jungen im Maul.
 - **Alter und Tod:** Alte Männchen landen oft in einem Nebenrevier. Die Drift-Schwester bleibt bis zum Morgengrauen beim Körper. Stirbt ein Revierbesitzer, hören die Nachbarn am nächsten Morgen die Stille.
 - **Unbewachte Junge:** Revier-Männchen dürfen fremde Adolescents töten, aber nur unbewachte. Darum begleitet die Mutter ihre Jungen.
-- **Die Übergabe:** Ein Sohn, der zum Vater will, wird von der Mutter bis ins Revier des Vaters gebracht. Der Vater nimmt ihn mit Friendly Calls an oder lehnt ihn mit Threaten Calls ab. Ab der Hälfte von Adolescent darf der Vater mit dem Sohn gruppieren, ihm das Jagen beibringen und ihn verteidigen. Verliert der Vater in der Zeit einen Revierkampf, flieht er aus dem Revier und darf den Sohn nicht beschützen, bis er wieder ein Revier hat. Solange der Sohn Adolescent ist, darf der Sieger ihn töten.
+- **Die Übergabe:** Ein Sohn, der zum Vater will, wird von der Mutter bis ins Revier des Vaters gebracht. Der Vater nimmt ihn mit Friendly Calls an oder lehnt ihn mit Threaten Calls ab. Ab der Hälfte von Adolescent darf der Vater mit dem Sohn gruppieren, ihm das Jagen beibringen und ihn verteidigen. Verliert der Vater in der Zeit einen Revierkampf, flieht er aus dem Revier. Als Wanderer darf er nur sich selbst verteidigen, also den Sohn nicht, bis er wieder ein Revier hat. Solange der Sohn Adolescent ist, darf der Sieger ihn töten, und ein frischer Sieger schnappt sich so ein unbewachtes Junges gern.
 
 **Selbst ergänzt, bitte prüfen:**
 - **Fischen zählt nicht als Jagen.** Sonst könnten Wanderer gar nichts fressen, und die Mutter dürfte tagsüber nicht fischen. Deshalb darf man tags und nachts fischen.
@@ -191,7 +191,10 @@ Neues Profil für den Mod `PTSachicasaurus` von Primordial Tyrants. Die Mod-ID f
   - Ein Männchen antwortet nie auf einen Ruf aus einem fremden Revier, außer der Besitzer hat selbst gerufen.
   - Das Jagdlimit von 2 bleibt, auch ohne Gruppe.
 - **Ablauf beim Leeds:** von zwei Seiten zuschlagen und Knochen brechen, nie Biss gegen Biss. Er ist im Stand stärker als beide zusammen (Leeds gewinnt in 58 s und behält 26 %).
-- **Revierkampf mit Brace:** Ein Brace kämpft zu zweit (Jagd- und Kampflimit 2). Verloren hat die Seite, deren letzter Kämpfer bei 50 % ist. Wer nach dem Heart Call noch beißt, bricht die Regeln.
+- **Revierkampf mit Brace:** Ein Brace kämpft zu zweit (Jagd- und Kampflimit 2). Verloren hat die Seite, deren Kämpfer alle aufgegeben haben oder tot sind.
+- **Aufgeben schützt:** Wer den Heart Call gibt, darf nicht mehr gebissen werden, nur noch mit Threaten aus dem Revier gescheucht. Sonst wäre Aufgeben sinnlos. Wer nach dem Heart Call noch beißt, bricht die Regeln.
+- **Unbewachte Junge nach dem Sieg:** Der Sieger schnappt sie in der nächsten Nacht, weil das Töten als Jagd zählt und nur nachts erlaubt ist.
+- **Wandernde Brüder:** „Nur sich selbst verteidigen“ habe ich so gelesen, dass zwei Brüder, die zusammen wandern, sich gegenseitig noch verteidigen dürfen, aber niemanden sonst. Soll jeder nur sich selbst verteidigen, ändere ich das.
 - **Nebenreviere und Herausforderung:** Aus einem Nebenrevier darf er jederzeit einen bevorzugten Besitzer herausfordern. Nebenreviere überschneiden sich mit Spino- und Deino-Revieren, deshalb gilt dort dieselbe harte Front wie auf Palm Islands. Livy kommt nie in die Flussengen.
 - **Xiph:** Nur in den Nebenrevieren begegnen sie sich. Der Sachi kann einen Xiph packen (CW 2400 unter Tragkraft 4001) und darf ihn nachts dort jagen. Der Xiph flieht trotzdem nicht vor ihm, weil er seit dem 05.11. nur vor dem Tylo flieht. Er jagt ihn aber auch nicht, denn adulte Apex sind für Batterien tabu. So steht es jetzt auch im Xiph-Profil.
 - **Wanderer, Details:** Sie summen nicht und ziehen im weiten Bogen durch fremde Reviere. Wer durchzieht, wird geduldet, wer bleibt, wird herausgefordert. Brüder dürfen zusammen wandern.
@@ -289,7 +292,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - They overlap the territories of Spinosaurus and Deinosuchus, and as at Palm Islands, they fight hard over territory there.
 - **Wanderers:**
   - A male without a territory is a wanderer: mostly young males who have just left their mother or father, and males who lost their territory.
-  - Wanderers do not hunt. They fish, and travel in search of a free territory or an owner they can challenge.
+  - Wanderers do not hunt, and may only defend themselves. They fish, and travel in search of a free territory or an owner they can challenge.
   - They do not hum. They cross territories with the wide arc and keep moving. An owner tolerates a wanderer who passes through, and challenges one who stays.
   - A wanderer who finds no free preferred territory settles in a free secondary one. If none is free either, he challenges an owner. Brothers may wander as a brace.
 - **The silence:** A territory where no hum is heard at dawn is free. Its owner has died, or gone. A wanderer may claim it with his own hum at the next dawn. An owner who returns must win it back in a territory challenge.
@@ -300,7 +303,8 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
   - During the day they may patrol it in small amounts, and defend it if challenged (1.4.1).
   - Males challenge Tylosaurus and ungrouped Sachicasaurus males out of their territory. They follow 6.7: one broadcast call, then three aggressive calls.
   - **Palm Islands, Volcano Islands and Twisted Forest:** Palm Islands are the only ocean Sachicasaurus share with Deinosuchus and Spinosaurus, and the secondary territories lie in their channels. There, males also challenge Deinosuchus males and Spinosaurus, and respond to their challenges.
-  - **Fights between Sachicasaurus** last until one of them drops to 50% health. He gives the heart call and has lost, and the winner stops at once. If the owner loses, the challenger takes the territory, and the old owner leaves the POI as a wanderer. If the challenger loses, he leaves the POI. A brace fights as two, and the side whose last fighter drops to 50% has lost.
+  - **Fights between Sachicasaurus** last until one of them gives up, or dies. Some end only in death. The one who gives up gives the heart call and turns away. The winner stops biting, and drives him out of the territory with aggressive calls. The loser must leave: if the owner loses, the challenger takes the territory, and the old owner leaves the POI as a wanderer. If the challenger loses, he leaves the POI. A brace fights as two, and the side whose fighters have all given up or died has lost.
+  - **After the victory:** A male who has just won a territory gladly takes the unguarded young he finds in it, at the next night.
 - **Tolerated species:**
   - Males do not challenge Kaiwhekea bales, Eurhinosaurus shoals or Leedsichthys. These pass through freely by day, and become prey by night.
   - Males do not challenge Livyatan.
@@ -310,7 +314,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 
 - **Numbers:** Up to 2 Sachicasaurus may take part in a hunt or a territory challenge.
 - **Tiers:** Sachicasaurus may hunt up to Apex tier.
-- **Only with a territory:** Wanderers do not hunt. Only a male who holds a territory, preferred or secondary, may hunt. Females may always hunt.
+- **Only with a territory:** Wanderers do not hunt, and may only defend themselves. Only a male who holds a territory, preferred or secondary, may hunt. Females may always hunt.
 - **Leedsichthys:** Any 2 Sub/Adult Sachicasaurus may work together to hunt an adult Leedsichthys, related or not, of either sex. They do not group in game to do so, like Tyrannotitan mobbing an Argentinosaurus, and share the kill (see The Leedsichthys Call).
 - **Fleeing:** Sachicasaurus flee from adult Livyatan. As a Giant, an adult Livyatan cannot be hunted by Sachicasaurus. A brace may stand its ground in defence, but loses against a grown Livyatan. In the kelp, in the shallows and on the high rock ledges of the Abyssal Depths, Sachicasaurus are safe from it.
 - **Spinosaurus & Deinosuchus:** Sachicasaurus may hunt adult Deinosuchus and Spinosaurus, alone or as a pair, but are never required to.
@@ -405,7 +409,7 @@ At night, Sachicasaurus speak with their bodies, not their voices. A call carrie
 
 ## Aggressive Interaction
 
-- **Rival males:** Rival males are met with open hostility. A male who finds another ungrouped male staying in his territory gives the broadcast call and three aggressive calls, then attacks. The fight ends at 50% health (see Territory).
+- **Rival males:** Rival males are met with open hostility. A male who finds another ungrouped male staying in his territory gives the broadcast call and three aggressive calls, then attacks. The fight lasts until one gives up or dies, and the winner drives the loser out (see Territory).
 - **Unguarded young:** Like male crocodiles, territorial males kill young of their own kind. At night, a territorial male may kill an unguarded Adolescent in his territory that is not his own. This counts as a hunt. An Adolescent is guarded while it is grouped with its mother, or with a father who holds a territory. This is why mothers stay with their young after the nursery, and why sons are handed over to their father, not sent alone.
 - **Females:** Females drive away other ungrouped females from their nests, but otherwise avoid each other peacefully.
 
@@ -549,7 +553,7 @@ From the middle of the Adolescent stage, a son may go to his father.
 
 - **Only with a territory:** Only a father who holds a territory, preferred or secondary, may accept a son.
 - **Living with his father:** The father teaches his son to hunt, and defends him. A son may take part in his father's hunts. A son with a brace learns by watching his father and uncle, because no more than 2 take part in a hunt.
-- **A defeated father:** If the father loses a territory challenge, he flees from the territory, and may not defend his son until he holds a territory again. Until then, the new owner may kill the son, as long as he is Adolescent. A father without a territory does not hunt, and cannot teach it.
+- **A defeated father:** If the father loses a territory challenge, he is driven out of the territory, and must leave the POI. As a wanderer, he may only defend himself, not his son, until he holds a territory again. Until then, the new owner may kill the son, as long as he is Adolescent, and a winner gladly does. A father without a territory does not hunt, and cannot teach it.
 
 ## Elderly & End of Life (Optional)
 
@@ -562,8 +566,8 @@ From the middle of the Adolescent stage, a son may go to his father.
 
 - **Territory:** A Sachicasaurus territory covers one half of an ocean POI, or one segment of Volcano Islands or Twisted Forest, water only (proposed water territory rule). Terrestrial species on land within the same POI are not affected.
 - **Leedsichthys mob:** Any 2 Sub/Adult Sachicasaurus may hunt an adult Leedsichthys together without grouping, like Tyrannotitan mobbing an Argentinosaurus.
-- **Territory fights:** Fights between Sachicasaurus end at 50% health. The one who drops to 50% first gives the heart call and has lost. Biting after the heart call is a rule break.
-- **Wanderers:** Males without a territory do not hunt. A male who loses his territory may not hunt or defend his son until he holds a territory again.
+- **Territory fights:** Fights between Sachicasaurus last until one gives up with the heart call, or dies. The winner then drives the loser out of the territory, and the loser must leave the POI. Biting after the heart call is a rule break.
+- **Wanderers:** Males without a territory do not hunt, and may only defend themselves. A male who loses his territory may not hunt or defend his son until he holds a territory again.
 - **Unguarded young:** Killing an unguarded Adolescent counts as a hunt: only at night, and only by a territorial male in his own territory.
 - **Beaching and third party:** The same as Tylosaurus: hunts within 1 body length of the water, and third party in engagements that enter the water or come within 1 body length of it.
 - **Nursery:** The nursery at Tallbrush Coasts is not a territory. Mothers challenge nothing out of it. They only defend their own nest and young.
@@ -587,4 +591,4 @@ From the middle of the Adolescent stage, a son may go to his father.
 - They hunt by night. They are the only hunters that can seize a grown Kaiwhekea, and they wait for bales and flotillas resting in the shallows. Any two may hunt an adult Leedsichthys together after the hunting call.
 - At the shore they follow the same beaching rules as Tylosaurus.
 - Tylosaurus are their equals: the Tylosaurus rules the open water, the Sachicasaurus the shallows by night.
-- They challenge Tylosaurus and rival males, and at Palm Islands, Volcano Islands and Twisted Forest also Deinosuchus and Spinosaurus, which they like to hunt. Fights between Sachicasaurus end at 50% health. They flee from Livyatan.
+- They challenge Tylosaurus and rival males, and at Palm Islands, Volcano Islands and Twisted Forest also Deinosuchus and Spinosaurus, which they like to hunt. Fights between Sachicasaurus last until one gives up or dies. They flee from Livyatan.

@@ -22,7 +22,7 @@ Satzbau wie im Original: eine Aussage pro Zeile. Oben im Overview-Block steht di
   - `%% titlecard` Titelkarte
   - `%% banner <Abschnitt>` Banner-Bild, beginnt eine neue Nachricht
   - `%% image <Beschriftung>` anderes Bild (Dimorphismus, Karte)
-  - `%% image [maps/<id>.png] <Beschriftung>` fertiges Bild aus dem Staging-Ordner, im Tab angezeigt. Die Preferred-POIs-Karten entstehen mit `npm run staging:map -w server -- <id>` aus `maps/<id>.json` (Farbe und POIs je Ebene, Titelblock, Legende).
+  - `%% image [maps/<id>.png] <Beschriftung>` fertiges Bild aus dem Staging-Ordner, im Tab angezeigt. Die Preferred-POIs-Karten entstehen mit `npm run staging:map -w server -- <id>` aus `maps/<id>.json` (Farbe und POIs je Ebene, Titelblock, Legende). Mit `"territories": true` zeichnet das Skript dazu die Reviergrenzen aus `lebensraum.json` als weiße Linien und setzt je Revier den Himmelsrichtungs-Buchstaben ins offene Wasser; liegt einer auf einem POI-Namen, verschiebt ihn `"marks": { "<revier-id>": [x, y] }`.
   - `%% post` neue Nachrichtengruppe mit Autorzeile
   - `%% quicklinks` Quick-Links-Nachricht am Ende
   - `%% note <Text>` Hinweis für dich (gelb im Tab, offen oder zu entscheiden)
