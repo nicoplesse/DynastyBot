@@ -5,7 +5,7 @@ import { ApiError } from './api';
 export type StagingMessage =
   | { type: 'text'; header: boolean; text: string; copy: string; chars: number; changed: boolean }
   | { type: 'banner'; header: boolean; title: string; id: string }
-  | { type: 'image'; header: boolean; caption: string }
+  | { type: 'image'; header: boolean; caption: string; src?: string }
   | { type: 'titlecard'; header: boolean }
   | { type: 'quicklinks'; header: boolean }
   | { type: 'note'; header: boolean; text: string };

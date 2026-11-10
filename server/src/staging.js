@@ -7,6 +7,7 @@
 //   %% titlecard             the profile's title card image
 //   %% banner <Section>      a section banner image (starts a new message)
 //   %% image <caption>       any other image (dimorphism examples, the POI map)
+//   %% image [maps/x.png] <caption>  the same with a finished image from the staging folder
 //   %% post                  a new message group with the author line, as after a time gap
 //   %% quicklinks            the closing Quick Links message, built from the banners
 //   %% note <text>           a staging-only note for the author, never part of the Discord text
@@ -100,7 +101,10 @@ export function parseThread(body) {
     const [, name, rest] = directive;
     if (name === 'post') { flush(); header = true; }
     else if (name === 'banner') push({ type: 'banner', title: rest.trim(), id: slug(rest) });
-    else if (name === 'image') push({ type: 'image', caption: rest.trim() });
+    else if (name === 'image') {
+      const file = rest.trim().match(/^\[([a-z0-9-]+\/[a-z0-9-]+\.png)\]\s*(.*)$/);
+      push(file ? { type: 'image', caption: file[2], src: file[1] } : { type: 'image', caption: rest.trim() });
+    }
     else if (name === 'titlecard') push({ type: 'titlecard' });
     else if (name === 'quicklinks') push({ type: 'quicklinks' });
     else if (name === 'note') { flush(); messages.push({ type: 'note', text: rest.trim(), header: false }); notes.push(rest.trim()); }

@@ -22,6 +22,7 @@ Satzbau wie im Original: eine Aussage pro Zeile. Oben im Overview-Block steht di
   - `%% titlecard` Titelkarte
   - `%% banner <Abschnitt>` Banner-Bild, beginnt eine neue Nachricht
   - `%% image <Beschriftung>` anderes Bild (Dimorphismus, Karte)
+  - `%% image [maps/<id>.png] <Beschriftung>` fertiges Bild aus dem Staging-Ordner, im Tab angezeigt. Die Preferred-POIs-Karten entstehen mit `npm run staging:map -w server -- <id>` aus `maps/<id>.json` (Farbe und POIs je Ebene, Titelblock, Legende).
   - `%% post` neue Nachrichtengruppe mit Autorzeile
   - `%% quicklinks` Quick-Links-Nachricht am Ende
   - `%% note <Text>` Hinweis für dich (gelb im Tab, offen oder zu entscheiden)

@@ -139,7 +139,9 @@ function Message({ index, message, thread, anchors, copied, onCopy }: { index: n
       {message.header && <Author thread={thread} />}
       {message.type === 'text' && <DiscordText text={message.text} anchors={anchors} index={index} />}
       {message.type === 'banner' && <div className="dc-attach dc-banner" role="img" aria-label={`Banner: ${message.title}`}><span>{message.title}</span></div>}
-      {message.type === 'image' && <div className="dc-attach dc-image" role="img" aria-label={`Image: ${message.caption}`}><span className="dc-image-icon" aria-hidden="true">🖼</span><span>{message.caption}</span></div>}
+      {message.type === 'image' && (message.src
+        ? <a className="dc-attach dc-image-file" href={`/api/staging/media/${message.src}`} target="_blank" rel="noreferrer"><img src={`/api/staging/media/${message.src}`} alt={message.caption} loading="lazy" /></a>
+        : <div className="dc-attach dc-image" role="img" aria-label={`Image: ${message.caption}`}><span className="dc-image-icon" aria-hidden="true">🖼</span><span>{message.caption}</span></div>)}
       {message.type === 'titlecard' && <TitleCard thread={thread} />}
       {message.type === 'quicklinks' && <QuickLinks thread={thread} />}
     </div>

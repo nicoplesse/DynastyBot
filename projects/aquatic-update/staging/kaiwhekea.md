@@ -629,7 +629,7 @@ Kaiwhekea do not claim bodies that have fallen in an engagement, bodies that the
 %% note Die Piscivore-Regel (Ausnahme von 8.1) ist Teil der Suggestion und auf dem Server noch nicht beschlossen.
 %% post
 ## Preferred POIs
-%% image Preferred POIs map: saltwater channels (Volcano Islands, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp) and oceans (Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands, Stonebed Shoal); birth beaches on any coast; colony islands at Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands
+%% image [maps/kaiwhekea.png] Preferred POIs map: saltwater channels (Volcano Islands, Twisted Forest, Stillwater Bog, Mudflats, Coastland Swamp) and oceans (Coastal Bluffs, Kelp Vale, Abyssal Depths, Palm Islands, Stonebed Shoal); colony islands for bales with young at Stonebed Shoal, Palm Islands, Coastal Bluffs, Tallbrush Coasts and the Volcano Islands; birth beaches on any coast
 ## Profile - Quick View
 Kaiwhekea are Medium Diurnal Aquatic Piscivores.
 Kaiwhekea can group in bales of up to 16 Sub/Adults, with unlimited offspring and adoptees. Up to 4 Eurhinosaurus may join, without any defence between the species. They do not group with Leedsichthys.

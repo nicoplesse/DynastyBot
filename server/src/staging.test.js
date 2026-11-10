@@ -96,3 +96,12 @@ test('parses a whole staging file with its card facts', () => {
   assert.equal(thread.difficultyLabel, 'Moderate');
   assert.equal(thread.kind, 'new');
 });
+
+test('an image directive may point to a finished image in the staging folder', () => {
+  const thread = parseThread('# Kai\n%% image [maps/kaiwhekea.png] Preferred POIs map\n%% image Dimorphism Examples\n');
+  const images = thread.messages.filter(message => message.type === 'image');
+  assert.deepEqual(images.map(({ caption, src }) => ({ caption, src })), [
+    { caption: 'Preferred POIs map', src: 'maps/kaiwhekea.png' },
+    { caption: 'Dimorphism Examples', src: undefined },
+  ]);
+});

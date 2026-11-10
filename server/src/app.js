@@ -342,6 +342,13 @@ export function createApp({
     } catch (error) { next(error); }
   });
 
+  // Finished images of the staging profiles, such as the Preferred POIs maps in staging/maps/.
+  app.get('/api/staging/media/:dir/:file', (req, res, next) => {
+    const { dir, file } = req.params;
+    if (dir !== 'maps' || !/^[a-z0-9-]+\.png$/.test(file)) return next(httpError(400, 'Invalid image name.'));
+    res.sendFile(join(stagingDir, dir, file), error => { if (error) next(httpError(404, 'Image not found.')); });
+  });
+
   app.get('/api/staging/:id', async (req, res, next) => {
     try {
       const id = req.params.id;
