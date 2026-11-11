@@ -24,7 +24,8 @@ Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Bey
 Livyatan form temporary bonds. Bulls court the cows of a unit during the courting season, then leave.
 Livyatan cows live in small units of up to three. Sub-Adult bulls may form bachelor pairs, adult bulls are always solitary.
 Livyatan are nomadic within the open oceans: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal, centred on the Abyssal Depths.
-Livyatan never enter Palm Islands.
+Livyatan never enter Palm Islands, apart from passing its deep outer edge on the way to and from the courting bay.
+All Livyatan court in one place: the bay of Coastal Bluffs. See ✦ Courtship.
 Livyatan have a tolerant nature towards other Livyatan, and an aggressive nature towards large aquatic predators.
 Livyatan are not scavengers. They do not feed from carcasses they find, and may only take a body from another predator through a body contest (6.9).
 Livyatan never hunt styracosternans or their herd companions, and protect them from other predators in the water. See ✦ Styracosternans & Their Companions.
@@ -38,6 +39,7 @@ Players must roll in #🎲・genetics-rolls to use these skins in game. This is 
 ## Profile Specific Unique Feature
 A Livyatan whose oxygen falls below 25% must break off the engagement and surface. This counts as a forfeit.
 Livyatan hold their breath about twice as long as other aquatics that must surface to breathe. See ✦ Holding Their Breath.
+All Livyatan court in the bay of Coastal Bluffs. Bulls travel there alone from every direction, and keep apart on the way with slow clicks. See ✦ Courtship.
 
 ## Group Limits (In-Game Group)
 Up to 3 Sub/Adult cows that have mated with the same bull
@@ -80,7 +82,7 @@ Livyatan never feed from the bodies of these species, and never contest them.
 ## Nesting Limits
 🌧️ Rainy Season: 2 🥚 per 4 hours.
 ☀️ Dry Season: 1 🥚 per 4 hours.
-Livyatan nest in sheltered, deeper water close to the islands of Coastal Bluffs, or at the edge of Stonebed Shoal. This is the only time units come close to the shallows.
+Livyatan nest in sheltered, deeper water close to the islands of Coastal Bluffs, near the courting bay. Units from the south may nest at the edge of Stonebed Shoal instead. This is the only time units come close to the shallows.
 
 ## Physical Dimorphism
 ♀️ Cows are smaller and slimmer, with smooth heads.
@@ -109,7 +111,7 @@ Livyatan hunt by sound. In the darkness of deep water they send out clicks and l
 They spend much of their time deep below, and rise to the surface to breathe in long, slow rolls. Refilling such a large body takes a few breaths longer than it does for smaller aquatics.
 Livyatan are not fast. They conserve their strength, cruising slowly, and only burst into speed for the final attack.
 Units are vocal among themselves, with soft coda clicks, but fall completely silent while stalking prey.
-Livyatan never enter Palm Islands. Their shallow waters are no place for a hunter of the deep.
+Livyatan never enter Palm Islands. Their shallow waters are no place for a hunter of the deep. Only bulls on their way to and from the courting bay pass its deep outer edge, without stopping or hunting.
 
 ### ✦ Holding Their Breath
 A Livyatan can stay under water about twice as long as any other aquatic that must surface to breathe. Its huge body is its air tank.
@@ -139,7 +141,7 @@ They rest side by side at the surface and practise ramming each other, but each 
 As they grow, they drift apart: once one of them is an adult, they go their separate ways.
 
 ### ✦ Bulls
-Adult bulls lead a solitary life. They range far, and only seek out units during the courting season.
+Adult bulls lead a solitary life. They range far, and only seek out units during the courting season, at the bay of Coastal Bluffs.
 Two bulls that meet outside of courtship usually ignore each other.
 
 ### ✦ Albino & Melanistic Behavior
@@ -149,9 +151,11 @@ Livyatan are tolerant towards other Livyatan outside the courting season.
 Cows do not fight over bulls.
 
 ### ✦ Ramming Contests
-During courtship, rival bulls fight by ramming each other head-on with their massive heads, and by Tail Slams.
-These contests end when one bull turns away.
-They leave deep scars, but rarely kill.
+During courtship, rival bulls fight by ramming each other head-on with their massive heads. They bite at each other's heads, and use Tail Slams.
+Only Bite and Tail Slam are used. Piercing Bite, Dreadful Clicking, Concussive Blast, Sonic Disruption and Leviathan's Call are not.
+These contests end when one bull turns away, at the latest when one falls to 50% health. They leave deep scars on the head, but rarely kill.
+The loser leaves the courting bay, and may not return before the next in-game day. Two bulls contest each other at most once per in-game day.
+Contests only happen in the courting bay. Cows never join them.
 %% banner Cross-Species Interaction
 Livyatan see most of the ocean as prey or as competition. The few species they spare, they spare completely.
 
@@ -210,16 +214,36 @@ Only a bale of three or more Kaiwhekea standing together could turn the fight ag
 When a hunt fails and the target escapes into the shallows, Livyatan let it go.
 %% banner Courtship & Parenthood
 Livyatan form temporary bonds. A bull may court every cow of a unit, and takes no part in raising the calves.
+All Livyatan court in one place: the bay of Coastal Bluffs. Sperm whale bulls leave the cold polar seas to find the cows in warm waters. Livyatan bulls leave the cold deep in the same way, and travel to the warm, sheltered water of the bay from every direction.
+
+### ✦ The Bay
+The courting bay is the large bay on the eastern side of the Coastal Bluffs island, north of Scale Lake. It opens to the east onto the Abyssal Depths, and deep water reaches right under the cliffs.
+Its surface water is warm and sheltered, right beside the cold deep. Calves are born close by, and their mothers can still dive to hunt.
+At the start of the courting season, units travel to the bay and wait there. They rest at the surface in their tight formation and greet each other with coda clicks. Units lie close to one another in peace.
+Livyatan court nowhere else.
+During the courting season, Livyatan do not hunt inside the bay. Ramming contests are the only fights there. Every Livyatan may still defend itself.
+
+### ✦ The Journey
+Bulls travel to the bay alone, each from its own waters. They should rarely meet on the way.
+- **From the Abyssal Depths:** straight into the mouth of the bay, from the east.
+- **From Kelp Vale:** along the northern cliffs, and round the north-eastern point of the island.
+- **From Stonebed Shoal:** north through the open water along the outer edge of Palm Islands. This is the only time Livyatan pass Palm Islands. They keep to the deep outer water, and do not stop or hunt there.
+On the way, a bull gives slow, powerful clicks (:broadcast_call:) every few minutes. They carry far, and tell every other bull where he is.
+A bull that hears another bull's clicks does not swim towards them. He slows down, waits, or keeps to his own way, so that the bulls reach the bay one after another. The slow clicks of sperm whale bulls are thought to keep rivals at a distance in the same way.
+If two bulls meet on the way after all, they pass each other at least 5 body lengths apart. There are no contests outside the bay.
 
 ### ✦ Courtship
-In the courting season, bulls leave the deep and seek out units, announcing themselves with slow, powerful clicks that carry over great distances.
-Rival bulls settle their claims by ramming contests. See ✦ Ramming Contests.
-Cows choose a bull by swimming alongside him and answering his clicks.
-A bull may court every cow of a unit. He stays close to it, without grouping, until the eggs are laid.
+1. At the mouth of the bay, the newcomer stops and gives his slow clicks. Bulls already in the bay answer with their own.
+2. The newcomer may court any unit that no bull is courting yet.
+3. To court a unit that already has a bull, he must beat that bull in a ramming contest. See ✦ Ramming Contests.
+4. A cow that wants a bull swims alongside him and answers his slow clicks with soft coda clicks (:friendly_call:).
+5. The two then roll together at the surface, touching, belly to belly, as sperm whales do when they court.
+A cow that does not answer is not interested. The bull does not follow her, and may try another unit.
+A bull may court every cow of a unit, and a unit has one bull per season. He stays close to it, without grouping, until the eggs are laid.
 
 ### ✦ Nesting
-Cows of a unit nest close together, in sheltered, deeper water near the islands of Coastal Bluffs or at the edge of Stonebed Shoal.
-Once the eggs are laid, the bull leaves.
+Most units nest close together in sheltered, deeper water near the islands of Coastal Bluffs, close to the bay. Units from the south may nest at the edge of Stonebed Shoal instead.
+Once the eggs are laid, the bull leaves the bay alone, by the way he came. He keeps clicking, so that the bulls do not meet on the way back either.
 
 ### ✦ Parenthood
 Cows of a unit raise their calves as one family.
@@ -247,13 +271,15 @@ Livyatan never follow prey into the shallows, or onto the high rock ledges of th
 %% banner Rules & Clarifications
 A Livyatan whose oxygen falls below 25% must break off the engagement and surface. This counts as a forfeit (4.8.2).
 The shallow-water limit is a profile restriction, not an exemption.
+All Livyatan court only in the bay of Coastal Bluffs. Livyatan do not hunt inside the bay during the courting season.
+Bulls travelling to the bay pass each other at least 5 body lengths apart. Ramming contests use only Bite and Tail Slam, end at 50% health at the latest, and send the loser out of the bay until the next in-game day.
 
 ### RULE EXEMPTIONS
 Livyatan may third party an active hunt on a protected species (styracosternans and their herd companions) in the water, by any carnivore, but only in open, deep water. They are not on the list of 3.17, and 3.18 would otherwise forbid them to third party semi-aquatic and aquatic hunters. (3.17, 3.18)
-%% note Offen: Die 25-%-Luftregel muss im Spiel getestet werden (Abklingzeit von Crushing Pressure unbekannt). Schwimmtempo 500 bleibt; optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann.
+%% note Offen: Die 25-%-Luftregel muss im Spiel getestet werden (Abklingzeit von Crushing Pressure unbekannt). Schwimmtempo 500 bleibt; optional 550, falls er gemütlich schwimmenden Tylos gar nicht folgen kann. Neu am 11.11. und zu entscheiden: die Balz in der Bucht (Durchzug an Palm, Jagdverbot in der Bucht, Stonebed als zweiter Nistplatz, Rammkampf bis 50 %).
 %% post
 ## Preferred POIs
-%% image Preferred POIs map: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal (never Palm Islands); nesting at the islands of Coastal Bluffs and the edge of Stonebed Shoal
+%% image Preferred POIs map: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal (never Palm Islands, only passing its outer edge); courting in the bay of Coastal Bluffs, with the three ways there from the Abyssal Depths, Kelp Vale and Stonebed Shoal; nesting at the islands of Coastal Bluffs and the edge of Stonebed Shoal
 ## Profile - Quick View
 Livyatan are Giant Cathemeral Aquatic Carnivores.
 Livyatan cows live in units of up to three, usually sharing the same bull, with unlimited offspring and adoptees. Sub-Adult bulls may form bachelor groups of two, adult bulls are always solitary.
@@ -264,6 +290,7 @@ Livyatan hold their breath about twice as long as other aquatics. A Livyatan bel
 Livyatan never hunt styracosternans (hadrosaurs, Iguanodon, Lurdusaurus) or their herd companions, and may third party only to protect them. They take other predators' kills by body contest.
 Leedsichthys are their rivals, and drag every fight into the deep. Their only hunters are Tylosaurus pairs, which rarely dare it.
 Livyatan live in every ocean except Palm Islands, centred on the Abyssal Depths.
+All Livyatan court in the bay of Coastal Bluffs. Bulls travel there alone from every direction, keep apart on the way, and ram each other only in the bay. The cows choose.
 
 ## Dynasty Adjusted Stats
 Growth Time (hatchling-juvenile, juvenile-adolescent, adolescent-sub, sub-adult in minutes): 20-60-75-85 = 240 total

@@ -81,6 +81,51 @@ Seit dem 07.11. stehen die Leeds-Werte fest: Dynasty hat ihn auf CW 6500 und Hea
   - **Grund ist seine Körpermasse.** Wale tauchen nicht mit einer Lunge voll Luft. Den Sauerstoff speichern sie vor allem im Blut und in den Muskeln, deren Myoglobin das Fleisch fast schwarz färbt. Je größer der Körper, desto größer dieser Speicher. Ein großer Körper verbraucht außerdem pro Kilo weniger Sauerstoff, und beim Tauchen schlägt das Herz langsamer: Das Blut versorgt dann vor allem Gehirn und Herz, die Muskeln leben von ihrem eigenen Vorrat.
   - Wie lange Livyatan selbst tauchen konnte, ist nicht belegt. Heutige Pottwale bleiben regelmäßig 45 bis 60 Minuten unten, 22 Minuten sind also eher vorsichtig.
 
+**Neu am 11.11. (Wunsch des Nutzers): Balz in der Bucht von Coastal Bluffs.** Alle Livys balzen an einem Ort, und zwar in der Bucht von Coastal Bluffs. So wird die Küste wieder lebendig. Die Bucht ist warmes Wasser, zu dem die Livys aus verschiedenen Richtungen anreisen, und unterwegs sollen sie sich kaum begegnen.
+
+**Was Pottwale wirklich tun und was davon übernommen ist:**
+- **Übernommen:** Kühe leben in warmen Meeren. Die Bullen kommen aus kalten Gewässern zu ihnen und kündigen sich mit langsamen, lauten Klicks an. Diese Klicks halten vermutlich auch Rivalen auf Abstand. Die Bullen kämpfen mit den Köpfen und tragen Narben davon. Die Kühe rollen sich mit dem Bullen an der Oberfläche, Bauch an Bauch.
+- **Kreative Freiheit:** Einen festen Balzort haben Pottwale nicht, die Bullen ziehen von Familie zu Familie. Den festen Ort haben dafür Buckelwale. Er ist hier vom Buckelwal geliehen, der Ablauf bleibt vom Pottwal.
+
+**Welche Bucht:** Die große Bucht an der Ostseite der Insel von Coastal Bluffs, nördlich von Scale Lake. Sie öffnet sich nach Osten zu Abyssal Depths, und tiefes Wasser reicht bis unter die Klippen.
+
+**Warum sie warm ist:** Laut der Temperatur-Map hat das Oberflächenwasser dort 24 bis 26 °C. In Abyssal Depths sind es in 200 m Tiefe nur 15 °C. Die Bullen kommen also aus dem kalten Tiefenwasser in die warme Bucht, so wie Pottwal-Bullen aus den Polarmeeren in die Tropen ziehen. Ehrlich gesagt ist Coastal Bluffs in unseren Daten das kühlste Meer an der Oberfläche. Die anderen Ozeane haben 26 bis 27 °C, die Lagunen von Palm 29 °C. Warm ist die Bucht also im Vergleich mit der Tiefe. Für echte Pottwale reicht das völlig, ihre Kühe leben in Wasser ab etwa 15 °C.
+
+**Die drei Anreisewege:**
+
+| Woher | Weg |
+| --- | --- |
+| Abyssal Depths (Osten) | geradewegs von Osten in die Mündung der Bucht |
+| Kelp Vale (Nordwesten) | entlang der Nordklippen und um die Nordostspitze der Insel |
+| Stonebed Shoal (Süden) | nach Norden durch das offene Wasser am äußeren Rand von Palm Islands, ohne anzuhalten |
+
+**Neu und zu entscheiden:**
+1. **Ein Ort:** Gebalzt wird nur in der Bucht. Die Units kommen zuerst und warten dort, die Bullen reisen danach an.
+2. **Nicht begegnen:**
+   - Jeder Bulle reist allein aus seinem eigenen Meer an.
+   - Unterwegs klickt er alle paar Minuten langsam (:broadcast_call:).
+   - Hört er einen anderen Bullen, schwimmt er nicht zu ihm hin. Er wird langsamer, wartet oder bleibt auf seinem eigenen Weg. So kommen die Bullen nacheinander an.
+   - Treffen sie sich doch, ziehen sie mit mindestens 5 Körperlängen Abstand aneinander vorbei. Kämpfe gibt es nur in der Bucht.
+3. **Ankunft:** An der Mündung hält der Neue an und klickt. Bullen, die schon in der Bucht sind, antworten.
+   - Um eine Unit, die noch keinen Bullen hat, darf er sofort werben.
+   - Für eine Unit, die schon umworben wird, muss er deren Bullen im Rammkampf schlagen.
+4. **Rammkampf:**
+   - Kopf gegen Kopf, nur Bite und Tail Slam. Kein Piercing Bite und keine Stimm-Fähigkeiten.
+   - Er endet, wenn einer abdreht, spätestens bei 50 % Health.
+   - Der Verlierer verlässt die Bucht bis zum nächsten Spieltag.
+   - Zwei Bullen kämpfen höchstens einmal pro Tag gegeneinander.
+5. **Wahl der Kuh:**
+   - Sie schwimmt neben ihm und antwortet mit leisen Coda-Klicks (:friendly_call:). Danach rollen sie sich an der Oberfläche, Bauch an Bauch.
+   - Antwortet sie nicht, folgt er ihr nicht.
+   - Eine Unit hat pro Saison einen Bullen, denn eine Unit besteht ja aus Kühen desselben Bullen.
+6. **Abreise:** Sind die Eier gelegt, verlässt der Bulle die Bucht allein auf dem Weg, auf dem er gekommen ist. Er klickt dabei weiter, damit sich die Bullen auch auf dem Rückweg nicht treffen.
+
+**Von mir ergänzt, bitte prüfen:**
+- **Durchzug an Palm:** Livys betreten Palm Islands nie. Von Stonebed Shoal führt aber kein offener Weg zur Bucht, der nicht am äußeren Rand von Palm vorbeigeht. Deshalb dürfen sie dort durchziehen, im tiefen Außenwasser und ohne anzuhalten oder zu jagen. Das Problem bestand schon vorher, weil Stonebed bisher von den anderen Livy-Meeren abgeschnitten war.
+- **In der Bucht wird nicht gejagt**, solange Balzzeit ist. Sonst müssten nach der Beutepflicht alle Livys zugleich den nächsten Sachi oder Tylo jagen, und die Bucht wäre ein Schlachtfeld statt eines Balzplatzes. Verteidigen dürfen sie sich weiterhin.
+- **Nester:** Die meisten Units nisten nahe der Bucht an den Inseln von Coastal Bluffs. Der Rand von Stonebed Shoal bleibt als zweiter Nistplatz für Units aus dem Süden. Wenn alles an der Küste bleiben soll, streiche ich Stonebed.
+- **Narben:** Mit der 50-%-Grenze bleiben Narben am Kopf sichtbar, die ab etwa 50 % Health erscheinen. Das passt zum Bullen, dessen Kopf voller Narben ist.
+
 **Realismus:** Die Tiefsee ist kreative Freiheit, denn die Fossilien stammen aus einem Küstenmeer in Peru. Belegt sind die riesigen Zähne in beiden Kiefern, und dass er große Beute jagte, vermutlich Bartenwale. Leeds als Hauptbeute ist deshalb die realistischste Beziehung im ganzen Ökosystem.
 
 ---
@@ -95,7 +140,8 @@ Profile inspired by sperm whales, orcas and Livyatan paleobiology.
 
 - Livyatan cows live in small units of up to three. Young bulls may form bachelor pairs as Sub-Adults, and live alone once grown. Adult bulls form temporary bonds with cows during courtship.
 - Livyatan are nomadic within the open oceans: Kelp Vale, Coastal Bluffs, the Abyssal Depths and Stonebed Shoal, centred on the Abyssal Depths.
-- Livyatan never enter Palm Islands. Their shallow waters are no place for a hunter of the deep.
+- Livyatan never enter Palm Islands. Their shallow waters are no place for a hunter of the deep. The only exception is the passage along its deep outer edge on the way to and from the courting bay.
+- All Livyatan court in one place: the bay of Coastal Bluffs (see Courtship & Parenthood).
 - Livyatan have a tolerant nature towards other Livyatan, and an aggressive nature towards large aquatic predators.
 - Livyatan do not feed from carcasses they find. They may only take a body from another predator through a body contest (6.9).
 - Livyatan never hunt styracosternans (hadrosaurs, Iguanodon and Lurdusaurus) or their herd companions, and protect them from other predators in the water.
@@ -140,7 +186,7 @@ Players must roll in genetics-rolls to use these skins in game. This is one roll
 - 🌧️ Rainy Season: 2 🥚 per 4 hours.
 - ☀️ Dry Season: 1 🥚 per 4 hours.
 
-Livyatan nest in sheltered, deeper water close to the islands of Coastal Bluffs, or at the edge of Stonebed Shoal. This is the only time units come close to the shallows.
+Livyatan nest in sheltered, deeper water close to the islands of Coastal Bluffs, near the courting bay. Units from the south may nest at the edge of Stonebed Shoal instead. This is the only time units come close to the shallows.
 
 ## Physical Dimorphism
 
@@ -181,13 +227,13 @@ Orphaned calves call constantly, and search for any unit that answers. Units rea
 - **Units:** Units are close, female-led families. Cows share the care of all calves, rest together at the surface in a tight formation, and greet each other with long exchanges of clicks after every dive. A unit is led by its oldest cow, who remembers the best hunting grounds.
 - **Hunting alone:** Although units live together, every Livyatan hunts alone. Members spread out before a dive, and meet again at the surface.
 - **Bachelor groups:** Young bulls that have just left their unit often travel in pairs, like the bachelor schools of young sperm whale bulls. They rest side by side at the surface and practise ramming each other, but each dives and hunts alone. As they grow, they drift apart: once one of them is an adult, they go their separate ways.
-- **Bulls:** Adult bulls lead a solitary life. They range far, and only seek out units during the courting season.
+- **Bulls:** Adult bulls lead a solitary life. They range far, and only seek out units during the courting season, at the bay of Coastal Bluffs.
 - **Encounters between bulls:** Two bulls that meet outside of courtship usually ignore each other.
 - **Encounters between units:** When two units meet, they may travel together for a while, but they do not group in game.
 
 ## Aggressive Interaction
 
-- **Ramming contests:** During courtship, rival bulls fight by ramming each other head-on with their massive heads, and by Tail Slams. These contests end when one bull turns away. They leave deep scars, but rarely kill.
+- **Ramming contests:** During courtship, rival bulls fight by ramming each other head-on with their massive heads, and by Tail Slams. These contests end when one bull turns away, at the latest at 50% health. They leave deep scars, but rarely kill. Contests only happen in the courting bay (see The Contest).
 - **Cows:** Cows do not fight over bulls.
 
 ## Cross-Species Interaction
@@ -223,10 +269,59 @@ A Livyatan always hunts alone. It prefers targets that are alone, but a grown Li
 
 ## Courtship & Parenthood
 
-- **Calls:** In the courting season, bulls leave the deep and seek out units, announcing themselves with slow, powerful clicks that carry over great distances.
-- **Bulls:** Rival bulls settle their claims by ramming contests.
-- **Cows:** Cows choose a bull by swimming alongside him and answering his clicks. A bull may court every cow of a unit. He stays close to it, without grouping, until the eggs are laid. He then leaves and takes no part in raising the calves.
-- **Rearing:** Cows of a unit nest close together and raise their calves as one family.
+All Livyatan court in one place: the bay of Coastal Bluffs. Sperm whale bulls leave the cold polar seas to find the cows in warm waters. Livyatan bulls leave the cold deep in the same way, and travel to the warm, sheltered water of the bay from every direction.
+
+### The Bay
+
+- **Where:** The large bay on the eastern side of the Coastal Bluffs island, north of Scale Lake. It opens to the east onto the Abyssal Depths, and deep water reaches right under the cliffs.
+- **Why:** Its surface water is warm and sheltered, right beside the cold deep. Calves are born close by, and their mothers can still dive to hunt.
+- **Cows first:** At the start of the courting season, units travel to the bay and wait there. They rest at the surface in their tight formation and greet each other with coda clicks. Units lie close to one another in peace.
+- **Only here:** Livyatan court nowhere else.
+- **Peace in the bay:** During the courting season, Livyatan do not hunt inside the bay. Ramming contests are the only fights there. Every Livyatan may still defend itself.
+
+### The Journey
+
+Bulls travel to the bay alone, each from its own waters. They should rarely meet on the way.
+
+- **From the Abyssal Depths:** straight into the mouth of the bay, from the east.
+- **From Kelp Vale:** along the northern cliffs, and round the north-eastern point of the island.
+- **From Stonebed Shoal:** north through the open water along the outer edge of Palm Islands. This is the only time Livyatan pass Palm Islands. They keep to the deep outer water, and do not stop or hunt there.
+- **Slow clicks:** On the way, a bull gives slow, powerful clicks (:broadcast_call:) every few minutes. They carry far, and tell every other bull where he is.
+- **Keeping apart:** A bull that hears another bull's clicks does not swim towards them. He slows down, waits, or keeps to his own way, so that the bulls reach the bay one after another. The slow clicks of sperm whale bulls are thought to keep rivals at a distance in the same way.
+- **Passing:** If two bulls meet on the way after all, they pass each other at least 5 body lengths apart. There are no contests outside the bay.
+
+### Arrival
+
+1. At the mouth of the bay, the newcomer stops and gives his slow clicks.
+2. Bulls already in the bay answer with their own.
+3. The newcomer may court any unit that no bull is courting yet.
+4. To court a unit that already has a bull, he must beat that bull in a ramming contest.
+
+### The Contest
+
+- The two bulls swim head-on at each other, ram, and bite at each other's heads. Only Bite and Tail Slam are used. Piercing Bite, Dreadful Clicking, Concussive Blast, Sonic Disruption and Leviathan's Call are not.
+- The contest ends when one bull turns away, at the latest when one falls to 50% health. Contests leave deep scars on the head, but rarely kill.
+- The loser leaves the bay, and may not return before the next in-game day.
+- Two bulls contest each other at most once per in-game day.
+- Cows never join a contest.
+
+### Choosing
+
+- **The cow chooses:** A cow that wants a bull swims alongside him and answers his slow clicks with soft coda clicks (:friendly_call:).
+- **Rolling:** The two then roll together at the surface, touching, belly to belly, as sperm whales do when they court.
+- **No answer:** A cow that does not answer is not interested. The bull does not follow her, and may try another unit.
+- **One bull per unit:** A bull may court every cow of a unit, and a unit has one bull per season.
+
+### Leaving
+
+- The bull stays close to his unit, without grouping, until the eggs are laid.
+- He then leaves the bay alone, by the way he came. He keeps clicking, so that the bulls do not meet on the way back either.
+- He takes no part in raising the calves.
+
+### Rearing
+
+- Most units nest close to the islands of Coastal Bluffs, near the bay. Units from the south may nest at the edge of Stonebed Shoal instead.
+- Cows of a unit nest close together and raise their calves as one family.
 
 ## Elderly & End of Life (Optional)
 
@@ -249,6 +344,7 @@ Old Livyatan dive less deeply and spend more time near the surface. Old bulls be
 - Livyatan are Giant Cathemeral Aquatic Carnivores.
 - Cows live in units of up to three, usually sharing the same bull. Sub-Adult bulls may form bachelor pairs, adult bulls are always solitary.
 - They live in every ocean except Palm Islands, centred on the Abyssal Depths.
+- All Livyatan court in the bay of Coastal Bluffs. Bulls travel there alone from every direction, and keep apart on the way with slow clicks. Rival bulls ram each other only in the bay, and the cows choose.
 - Livyatan always hunt alone.
 - They must target solitary Tylosaurus and Sachicasaurus first, and may hunt Leedsichthys without ever being required to. Pairs of Tylosaurus or Sachicasaurus are no match for them either.
 - They hunt from the deep by sound: Echolocation, then Dreadful Clicking, then Concussive Blast, then the bite.
