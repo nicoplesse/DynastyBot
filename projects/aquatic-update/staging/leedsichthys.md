@@ -167,6 +167,8 @@ Though curious, Leedsichthys never go out of their way to continue pestering a s
 Eurhinosaurus live on fish and pose no threat to Leedsichthys or its pups. {+}
 Shoals travel with a Leedsichthys as its flotilla, gathering beneath and beside it, the way tuna travel with whale sharks. They hunt the fish that gather around the giant. {+}
 Leedsichthys enjoy this company. Some slow their pace so the smaller swimmers can keep up, but never change their route for them. {+}
+Up to 2 Eurhinosaurus swim as pilots in front of its head, and the others ride beneath and beside it, like pilot fish and remoras. The pilots never choose the way. {+}
+When a Leedsichthys lies still at the surface, its Eurhinosaurus clean its scales without biting. Leedsichthys love a thorough scale cleaning, and often drift off to sleep. Swimming on ends the cleaning. {+}
 Pups soon learn to school alongside the Eurhinosaurus young. {+}
 %% note Entfällt gegenüber heute: Eurhinosaurus und Kaiwhekea sind keine Hauptfeinde der Jungen mehr, und Weibchen töten deren Junge nicht mehr.
 

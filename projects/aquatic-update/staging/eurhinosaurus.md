@@ -16,7 +16,7 @@ Eurhinosaurus are sleek, swordfish-billed ichthyosaurs and some of the fastest s
 Written by Dynasty Realism
 With contributions from: Bunzey, Entered, Skylark
 Photo: Suprizesoup
-Profile inspired by salmon, sailfish, tuna, dolphins and creative liberty.
+Profile inspired by salmon, sailfish, swordfish, tuna, pilot fish, remoras, trevally, dolphins and creative liberty.
 
 Copyright: This profile and its core ideas are owned by Dynasty Realism 2024-Beyond
 %% titlecard
@@ -29,6 +29,7 @@ Eurhinosaurus have a passive nature towards other species. Shoals may become def
 Eurhinosaurus are not scavengers. They feed on fish and crustaceans, and do not hunt other players.
 Eurhinosaurus may group with one Leedsichthys, forming a flotilla. Up to 4 may join a Kaiwhekea bale instead.
 Eurhinosaurus may not defend the species they group with, and those species do not defend them.
+Eurhinosaurus live one of four ways of life: alone, as a free shoal, as a Leedsichthys' flotilla, or with a Kaiwhekea bale. They may change between them freely. See ✦ Ways of Life.
 Eurhinosaurus tolerate albino and melanistic individuals.
 
 ## Genetics
@@ -40,6 +41,7 @@ Players must roll in #🎲・genetics-rolls to use these skins in game. This is 
 Eurhinosaurus sleep with one eye open. In a shoal of 3 or more, one member always stays awake.
 To nest, Eurhinosaurus make a run upstream to their nesting river as one school, like salmon. See ✦ Migration.
 Eurhinosaurus change their skin with their surroundings and the seasons. See Color Dimorphism.
+Eurhinosaurus live four different lives, each borrowed from a different fish: alone like a swordfish, as a free shoal like sailfish, as a Leedsichthys' pilot fish and remoras, or shadowing a Kaiwhekea like jacks behind a monk seal. See ✦ Ways of Life.
 
 ## Group Limits (In-Game Group)
 Unlimited Sub/Adults
@@ -126,12 +128,14 @@ They enjoy their speed and their perceived dominance over the ocean, and like to
 
 ### ✦ Fishing
 Fishing is seen as a sport. Shoals train constantly to refine their coordination.
+How a Eurhinosaurus fishes depends on its way of life. The styles below belong to the free shoal. See ✦ Ways of Life.
 - **Taking turns:** Like sailfish, the shoal herds a fish school into a tight ball. Members dart into it one at a time with a quick sweep of the bill, then pull away to make room for the next.
 - **Loud style:** Some members circle a fish school with loud calls and fast turns until it bunches into a tight ball. The others then dart in from below and the sides to snatch fish.
 - **Silent style:** Some shoals approach in silence, dive deep and strike the fish school from below.
 - **Mixed style:** Shoals switch between loud chaos and silent strikes to keep the fish off balance.
 Friend groups compete for the biggest catch. The winners boast with high leaps and loud calls, and the losers splash them. Contests never turn into fights.
-In a bale, Eurhinosaurus join the Kaiwhekea's herding with their speed, and drive fish into the bale's circle.
+In a bale, Eurhinosaurus join the Kaiwhekea's herding with their speed, and drive fish into the bale's circle. Each one shadows its own Kaiwhekea.
+A lone Eurhinosaurus fishes with a single slash, and a flotilla takes the fish that gather around the giant.
 A successful shoal often leaves part of the catch to young, or to bonded Kaiwhekea nearby.
 
 ### ✦ Downtime Behavior
@@ -140,6 +144,8 @@ Like dolphins, Eurhinosaurus sleep lightly with one eye open, and wake at the sl
 In a shoal of 3 or more, at least one member always stays awake while the others rest. Members take turns.
 In a Kaiwhekea bale, Eurhinosaurus often take on part of the night watch, resting on the bale's outer edge.
 When Kaiwhekea nap on high rocks, Eurhinosaurus stay in the water below and keep watch.
+In a flotilla, Eurhinosaurus rest beneath the giant.
+A lone Eurhinosaurus has no one to keep watch. It spends the day low in open water, fishes the surface at night, and naps only briefly, never near kelp after dark.
 Xiphactinus hunt the saltwater channels at dawn and dusk. Shoals cross the channels by day where they can, and stay close together in the half light.
 Sachicasaurus hunt sleeping flotillas at night. Eurhinosaurus resting at a flotilla's edge are among the first they reach, and among the first to wake.
 
@@ -158,7 +164,47 @@ Shoals may leave the route for detours into the lakes and fresh waters connected
 - The school swims fast and close together. Loud calls keep stragglers with the school. At the sight of a hunter, the school falls silent and speeds up.
 - The run passes the courting grounds of the Leedsichthys. Eurhinosaurus swim past the males' nests without disturbing them.
 Once they have finished courting, males swim back downstream to the route. Mothers follow once their oldest offspring become Adolescent.
-%% note Offen (optional): Soll die Kai-Balz bei den Eurhinos den Lauf zum Nistfluss auslösen dürfen? Die neuen Schwarm-Regeln (Späher, Wache, Lauf, Angeben, Linie, Land nur zur Balz) warten noch auf deine Entscheidung.
+
+### ✦ Ways of Life
+At any time, a Eurhinosaurus lives one of four lives: alone, in a free shoal, in a Leedsichthys' flotilla, or with a Kaiwhekea bale. Each way of life borrows from a different fish and has habits of its own.
+Courtship is the same in all four, and on the run to the nesting river every Eurhinosaurus joins the school again, whatever life it came from.
+A Eurhinosaurus may change its way of life whenever it wishes, except during an engagement and on the run. A friend group usually changes together.
+Habits carry over for a while, and the ways of life mix where they meet. The rules of the current way of life always apply.
+
+### ✦ Alone
+Swordfish and adult barracuda hunt alone. A lone Eurhinosaurus becomes as quiet and patient as they are.
+- **Silence:** This is the only time a Eurhinosaurus is quiet. It calls only to look for company with a (:broadcast_call:), and to warn others with a (:danger_call:).
+- **The slash:** Like a swordfish, it fishes with a single pass at full speed straight through a fish school, sweeping its bill, then turns and slowly picks up what it has struck. It does not circle or herd.
+- **Day deep, night high:** Like a swordfish, it spends the day low in open water, and fishes the surface by night, away from kelp and reefs. The deep belongs to the Livyatan, and a lone Eurhinosaurus there takes its own risk.
+- **Watching:** Like a barracuda, it lies still near the shore and follows land animals along the bank at a steady distance, instead of leaping and calling for them.
+- With no one to keep watch, it naps only briefly, in open water. It may still show off, within the usual limits.
+- A lone Eurhinosaurus that meets a shoal, a flotilla or a bale may join it at once.
+
+### ✦ The Free Shoal
+A shoal with no giant or bale to follow lives like a sailfish shoal: loud, fast and competitive. Only in the free shoal does the shoal follow whoever finds the fish. See ✦ Shoal Life.
+- **The crescent:** Like bluefin tuna, the shoal spreads into a wide arc and drives a fish school ahead of it, towards the surface or a shore.
+- **Taking turns:** Once the fish bunch into a ball, members dart in one at a time like sailfish. They show their flank to the ball as they pass, sweep the bill, and pull away for the next.
+- The free shoal is the loudest life of all, full of chatter, songs, contests and leaps in sync.
+- A shoal that has just left a flotilla still loves to ride the bow wave of any Leedsichthys it meets.
+
+### ✦ The Flotilla
+With a Leedsichthys, the shoal becomes its pilot fish and remoras. Both follow big hosts all their lives, whale sharks among them.
+- **Pilots:** Up to 2 Eurhinosaurus swim right in front of the giant's head, in its bow wave, no further than 1 body length ahead. Sailors once believed pilot fish guide sharks. They do not, and neither do Eurhinosaurus: the pilots turn when the Leedsichthys turns, and never choose the way. Adolescents love this place, as young golden trevally do in front of whale sharks.
+- **Riders:** The others ride beneath and beside the giant, within 1 body length of its belly and flanks, like remoras. They travel at its pace and save their strength for the fish.
+- **Feeding:** Fish gather around the slow giant. Riders dart out for them like tuna, up to 10 body lengths, then return to their place. When the Leedsichthys feeds, small fish scatter from its mouth, and the riders take them.
+- **Cleaning:** When the Leedsichthys lies still at the surface, it invites a cleaning. The riders swim slowly along its flanks and nose at its scars and wounds with the bill, as remoras pick parasites from their hosts. They never bite and never use an ability. The cleaning ends as soon as the giant swims on.
+- **Changing giants:** When two flotillas meet, a friend group may change to the other Leedsichthys, as remoras change hosts.
+- At night the riders rest beneath the giant. With 3 or more Eurhinosaurus, one still stays awake.
+- When Kaiwhekea swim alongside the flotilla for a while, its Eurhinosaurus may shadow them, as they would in a bale.
+
+### ✦ With a Bale
+Up to 4 Eurhinosaurus with a Kaiwhekea bale live like the jacks that follow hunting Hawaiian monk seals, with a touch of the grouper that hunts with moray eels.
+- **Shadowing:** Each Eurhinosaurus picks one Kaiwhekea, and each Kaiwhekea has no more than one. While the bale fishes, the Eurhinosaurus swims at its flank, within 1 body length, and snaps up the fish its Kaiwhekea flushes out of kelp, rocks or caves.
+- **Pointing:** A Eurhinosaurus that finds fish or crustaceans hidden where it cannot reach them points at the spot with a headstand: bill straight down, held still, as roving coral groupers do for moray eels. Its Kaiwhekea may flush the spot, or ignore it.
+- **Its Kaiwhekea:** The shadowed Kaiwhekea stays its Kaiwhekea for as long as it remains with the bale. At a colony, it keeps watch in the water below that Kaiwhekea's rock. If its Kaiwhekea dies, it calls out in grief.
+- The lead cow decides where the bale goes. Eurhinosaurus scout and keep watch, but never lead.
+- When the bale meets a flotilla, its Eurhinosaurus may ride the giant's bow wave with the Kaiwhekea, but they stay with their bale.
+%% note Offen (optional): Soll die Kai-Balz bei den Eurhinos den Lauf zum Nistfluss auslösen dürfen? Die neuen Schwarm-Regeln (Späher, Wache, Lauf, Angeben, Linie, Land nur zur Balz) warten noch auf deine Entscheidung. Neu am 11.11. und ebenfalls zu entscheiden: die vier Lebenslagen (Abstände, ein Eurhino pro Kai, Putzen nur beim still liegenden Leeds, allein still).
 %% banner Social Interaction
 Shoals form strong, lasting bonds with their members, often spending the majority of their lives together. These connections are vital due to their cooperative fishing and their mutual reliance for comfort, protection and survival.
 
@@ -170,7 +216,7 @@ Eurhinosaurus poke their heads above the water to look at the shore, often with 
 Alarm: the chatter stops, and a (:danger_call:) follows. The shoal either bunches together or bursts apart. The call carries far, which is why Kaiwhekea value Eurhinosaurus as sentries.
 
 ### ✦ Shoal Life
-Shoals have no leader. Like a real fish school, a shoal follows whoever has found the fish.
+Shoals have no leader. Like a real fish school, a shoal follows whoever has found the fish. This holds for the free shoal. In a flotilla the Leedsichthys chooses the way, and in a bale the lead cow does.
 A member that spots fish or crustaceans gives a (:broadcast_call:) and swims towards them, and the shoal follows.
 Disagreements are settled by splitting. Those who want to go elsewhere may leave, and the shoal often meets again later.
 **Friend groups:**
@@ -219,6 +265,7 @@ They stay because they gain more from it than the Kaiwhekea do: safety in number
 In return they act as the bale's sentries. Their loud voices carry far through the water and warn the bale long before a predator arrives.
 When the bale hauls out at a colony, they keep watch in the water below.
 Shoals often swim on the outer edge of a migrating bale, and dart ahead to scout for fish.
+While the bale fishes, each Eurhinosaurus shadows its own Kaiwhekea, and points out hidden fish with a headstand. See ✦ With a Bale.
 Eurhinosaurus tease Kaiwhekea with races and close passes, but never bite them.
 Eurhinosaurus watch the bulls' courtship dance closely. It excites them, puts them in a happy mood and stirs their own wish to court, and they often breach along with the bulls. Kaiwhekea do not let this distract them.
 Neither species defends the other.
@@ -226,6 +273,8 @@ Neither species defends the other.
 ### ✦ Leedsichthys & Flotillas
 Eurhinosaurus may travel and group with one Leedsichthys, the way tuna travel with whale sharks. Such a group is known as a flotilla. They hunt the fish that gather around the giant.
 The Leedsichthys chooses the way and keeps to its route without exception. The shoal goes where it goes.
+Up to 2 swim as pilots in front of its head, and the others ride beneath and beside it, like pilot fish and remoras. See ✦ The Flotilla.
+When the giant lies still at the surface, its Eurhinosaurus clean its scales, and it often drifts off to sleep.
 Neither side defends the other. Eurhinosaurus may use the giant's body as cover, but the Leedsichthys never moves to block a predator for them.
 Shoals love to race circles around the slow giant. Its pups soon learn to school alongside Eurhinosaurus young.
 When the Leedsichthys stops to watch a courting Kaiwhekea bale, its Eurhinosaurus breach along with the bulls. Afterwards, the shoal travels on with the giant, not with the bale.
@@ -270,6 +319,7 @@ It only fights when cornered.
 - **Batteries:** Against a Xiphactinus battery, the shoal bunches together and sprints. Batteries try to split it, so it bursts apart only once the battery strikes.
 - **Defenders:** Up to 3 Sub/Adults may turn to fight when cornered, at their nest, or against non-Apex hunters such as Sarcosuchus. They strike with Joust and pull away again, rather than holding a drawn-out fight.
 - **In a bale:** Eurhinosaurus do not join the protective ring or act as defenders. They raise the alarm and flee with the bale.
+- **In a flotilla:** Riders slide to the far side of the giant and keep it between themselves and the hunter. Pilots break away and return once the hunter has gone. If a hunter strikes into the flotilla, the shoal bursts apart and regroups at the giant. The Leedsichthys does not defend them, but up to 3 Eurhinosaurus may still defend themselves.
 
 ### ✦ Where to Flee
 - **Tylosaurus:** along the surface at full speed. Eurhinosaurus are faster, but a Tylosaurus does not tire sooner.
@@ -336,6 +386,10 @@ In a shoal of 3 or more, at least one member always stays awake.
 On the run to the nesting river, Eurhinosaurus do not fish, and do not stop in Big Tree Overlook.
 Eurhinosaurus leave the water only to display in courtship.
 Showing off is limited to 2 healthy Sub/Adults in open water, once per encounter, no closer than 3 body lengths, and never near fry, a nest, a group or healing water (4.8.4.2).
+A Eurhinosaurus may change its way of life at any time, except during an engagement and on the run.
+In a flotilla, up to 2 pilots swim within 1 body length of the giant's head, riders stay within 1 body length of its body, and forays for fish reach no further than 10 body lengths.
+A Leedsichthys is only cleaned while it lies still at the surface, without bites or abilities.
+In a bale, each Kaiwhekea is shadowed by no more than one Eurhinosaurus, within 1 body length while the bale fishes.
 
 ### RULE EXEMPTIONS
 Eurhinosaurus may group with one Leedsichthys, or up to 4 with a Kaiwhekea bale, as piscivores. There is no defence between the species. (8.1)
@@ -348,7 +402,8 @@ Eurhinosaurus is not found on Gondwa.
 Eurhinosaurus are Medium Cathemeral Aquatic Piscivores.
 Eurhinosaurus group in unlimited numbers, offspring and adoptees in a group known as a shoal. With one Leedsichthys, the shoal becomes a flotilla. Instead, up to 4 may join a Kaiwhekea bale. There is no defence between the species.
 Eurhinosaurus have a passive nature. They feed only on fish and crustaceans, and fish as a sport: in turns, loud or silent.
-Shoals have no leader. They follow whoever finds the fish, send up to 2 scouts ahead, and hold close friend groups of the same sex.
+Eurhinosaurus live one of four ways of life and change freely between them: alone like a swordfish, as a free shoal like sailfish, in a flotilla as the Leedsichthys' pilot fish and remoras, or with a bale, each one shadowing its own Kaiwhekea.
+Free shoals have no leader. They follow whoever finds the fish, send up to 2 scouts ahead, and hold close friend groups of the same sex.
 Eurhinosaurus sleep lightly with one eye open. In a shoal of 3 or more, one always stays awake, and they act as sentries for Kaiwhekea bales.
 Eurhinosaurus flee from Apex and Giant carnivores and Xiphactinus batteries of 3 or more. Up to 3 may defend. Within limits, they show off by swimming past hunters.
 Eurhinosaurus follow the Leedsichthys route, usually as its flotilla. To nest, they make the run upstream to their nesting river as one school, without fishing or stopping.

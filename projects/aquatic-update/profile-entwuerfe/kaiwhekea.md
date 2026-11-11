@@ -704,6 +704,7 @@ Kaiwhekea are tolerant towards other species and avoid conflict at all times. Wh
 - **Eurhinosaurus:**
   - Kaiwhekea welcome them as bale mates. Up to 4, usually one friend group, may group with a bale. Most Eurhinosaurus travel with a Leedsichthys instead. Eurhinosaurus stay with a bale because they gain more from it than they give: safety in numbers, and the fish the bale drives together. Their speed and loud voices make them excellent sentries.
   - The two species fish together and share fishing grounds. Eurhinosaurus scouts often find the fish first, and the lead cow decides whether the bale follows their call.
+  - While the bale fishes, each grouped Eurhinosaurus shadows one Kaiwhekea at its flank and snaps up the fish it flushes, like jacks behind a monk seal. No Kaiwhekea has more than one. A Eurhinosaurus points out hidden fish with a headstand, bill straight down, and its Kaiwhekea may flush the spot or ignore it.
   - When Kaiwhekea haul out or nap on high rocks, grouped Eurhinosaurus stay in the water below and keep watch.
   - An orphaned Eurhinosaurus calf is welcomed kindly, like any Eurhinosaurus. It is not adopted, and has no place in the protective ring.
   - Kaiwhekea do not defend grouped Eurhinosaurus, but call out in grief if a bonded one is lost.
