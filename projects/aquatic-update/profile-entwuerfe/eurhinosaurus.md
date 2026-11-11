@@ -145,8 +145,8 @@ Vorschlag für das neue Eurhinosaurus-Profil. Der Text darunter ist auf Englisch
    - Eurhinos einer Bale reiten mit den Kai die Bugwelle eines Leeds, bleiben aber bei ihrer Bale.
    - Auf dem Lauf zum Nistfluss werden alle wieder eine Schule, egal woher sie kommen.
 
-**Von mir so gesetzt, bitte prüfen:**
-- **Allein ist er still.** Eigentlich ist der Eurhino laut. Gerade dieser Bruch macht das Alleinsein aber zu einer eigenen Erfahrung. Wenn dir das zu weit geht, bleibt er allein laut und nur das Fischen ändert sich.
+**Von mir vorgeschlagen, vom Nutzer am 11.11. so bestätigt:**
+- **Allein ist er still.** Eigentlich ist der Eurhino laut. Gerade dieser Bruch macht das Alleinsein aber zu einer eigenen Erfahrung.
 - **Nachts oben, nicht im Kelp:** Sachicasaurus jagt nachts im Kelp, am Riff und im Flachen, nicht im offenen Wasser. Tags in der Tiefe wartet dagegen der Livy. Das Risiko trägt der Eurhino selbst, ich habe dafür keine Regel geschrieben.
 - **Ein Eurhino pro Kai:** Sonst kleben vier Eurhinos am selben Kai. Bei höchstens 4 Eurhinos und 16 Kai ist das nie knapp.
 - **Putzen nur, wenn der Leeds still liegt:** So entscheidet der Leeds. Die Eurhinos drängen sich nicht auf, und es passt dazu, dass er eigensinnig ist.

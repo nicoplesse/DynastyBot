@@ -204,7 +204,7 @@ Up to 4 Eurhinosaurus with a Kaiwhekea bale live like the jacks that follow hunt
 - **Its Kaiwhekea:** The shadowed Kaiwhekea stays its Kaiwhekea for as long as it remains with the bale. At a colony, it keeps watch in the water below that Kaiwhekea's rock. If its Kaiwhekea dies, it calls out in grief.
 - The lead cow decides where the bale goes. Eurhinosaurus scout and keep watch, but never lead.
 - When the bale meets a flotilla, its Eurhinosaurus may ride the giant's bow wave with the Kaiwhekea, but they stay with their bale.
-%% note Offen (optional): Soll die Kai-Balz bei den Eurhinos den Lauf zum Nistfluss auslösen dürfen? Die neuen Schwarm-Regeln (Späher, Wache, Lauf, Angeben, Linie, Land nur zur Balz) warten noch auf deine Entscheidung. Neu am 11.11. und ebenfalls zu entscheiden: die vier Lebenslagen (Abstände, ein Eurhino pro Kai, Putzen nur beim still liegenden Leeds, allein still).
+%% note Offen (optional): Soll die Kai-Balz bei den Eurhinos den Lauf zum Nistfluss auslösen dürfen? Die neuen Schwarm-Regeln (Späher, Wache, Lauf, Angeben, Linie, Land nur zur Balz) warten noch auf deine Entscheidung. Die vier Lebenslagen vom 11.11. sind bestätigt (allein still, ein Eurhino pro Kai, Putzen nur beim still liegenden Leeds).
 %% banner Social Interaction
 Shoals form strong, lasting bonds with their members, often spending the majority of their lives together. These connections are vital due to their cooperative fishing and their mutual reliance for comfort, protection and survival.
 
