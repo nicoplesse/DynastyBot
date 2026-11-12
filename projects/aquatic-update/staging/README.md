@@ -30,3 +30,9 @@ Satzbau wie im Original: eine Aussage pro Zeile. Oben im Overview-Block steht di
 - Der Server teilt den Text in Nachrichten von höchstens 2000 Zeichen (Discord-Grenze), bevorzugt vor einer Überschrift. Jede Nachricht ist im Tab einzeln kopierbar.
 
 Der Test `server/src/staging.test.js` prüft, dass jedes Profil im Raster liegt, die Banner in Original-Reihenfolge stehen und keine Nachricht zu lang ist.
+
+## Forum-Export
+
+`npm run staging:forum -w server` baut aus allen Profilen fertige Discord-Forum-Posts in `projects/aquatic-update/forum/` (nicht versioniert, bei jedem Lauf neu). Je Profil ein Ordner mit `00-post.txt` (Titel, Tags, erste Nachricht mit Status) und danach den Nachrichten (`.txt`) und Bildern (`.png`) in Post-Reihenfolge. Banner werden zur `# Überschrift` der nächsten Nachricht, fehlende Bilder zur Zeile „Image pending“, die `{+}`-Marker und `%%`-Zeilen fallen weg.
+
+Die Statusnachricht nennt **Ready** (100 % minus Abzüge für offene `%% note`-Punkte und fehlende Bilder) und den **Änderungsgrad** gegenüber dem heutigen Profil in `data/raw/<id>/profile.txt`. Gewichte, Kartenstand je Profil und feste Prozentwerte stehen in `forum.json`; `forum/README.md` listet alle Abzüge.
