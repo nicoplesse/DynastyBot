@@ -8,7 +8,7 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { DISCORD_LIMIT, splitMessage } from './staging.js';
+import { DISCORD_LIMIT, parseStagingFile, splitMessage } from './staging.js';
 
 export const DEFAULT_WEIGHTS = { decision: 8, optional: 3, ingame: 5, proposal: 3, titlecard: 10, dimorphism: 5, map: 10 };
 
@@ -243,4 +243,18 @@ export async function buildForumPost(thread, { stagingDir, rawDir, config }) {
   const change = changeDegree(thread, raw?.text ?? null);
   const status = statusMessage(thread, ready, change);
   return { id: thread.id, name: thread.name, order: thread.order, kind: thread.kind, title: forumTitle(thread, ready), status, ready, change, images: images.filter(Boolean), steps: forumSequence(thread, images), raster: thread.raster };
+}
+
+// ---------- ecosystem guide ----------
+
+// The guide that opens the forum (staging/guide/ecosystem.md): same format as a profile, but text
+// only and without a status message, since it is no profile.
+export const GUIDE_FILE = join('guide', 'ecosystem.md');
+
+export async function buildGuidePost(stagingDir) {
+  const path = join(stagingDir, GUIDE_FILE);
+  if (!existsSync(path)) return null;
+  const thread = parseStagingFile('ecosystem-guide', await readFile(path, 'utf8'));
+  const steps = forumSequence(thread, thread.messages.map(() => null));
+  return { id: thread.id, name: thread.name, title: `Aquatic Update · ${thread.name}`, steps };
 }

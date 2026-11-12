@@ -4,6 +4,7 @@
 //
 // Writes projects/aquatic-update/forum/ (not versioned, rebuilt on every run):
 //   README.md                Overview: readiness, change degree and open points per profile
+//   00-ecosystem-guide/      The introduction to the ecosystem (staging/guide/ecosystem.md), posted first
 //   01-kaiwhekea/
 //     00-post.txt            Post title, tags and the first message (status) of the forum post
 //     01.txt, 02-titlecard.png, 03.txt …   the rest of the post, in posting order
@@ -14,7 +15,7 @@ import { copyFile, mkdir, rm, stat, writeFile } from 'node:fs/promises';
 import { extname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DISCORD_LIMIT, defaultStagingDir, loadStaging } from '../src/staging.js';
-import { buildForumPost, loadForumConfig, NOTE_LABELS } from '../src/forum.js';
+import { buildForumPost, buildGuidePost, loadForumConfig, NOTE_LABELS } from '../src/forum.js';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const rawDir = join(root, 'data', 'raw');
@@ -34,6 +35,18 @@ const threads = await loadStaging(defaultStagingDir);
 const pad = number => String(number).padStart(2, '0');
 const posts = [];
 const warnings = [];
+
+const guide = await buildGuidePost(defaultStagingDir);
+if (guide) {
+  const dir = join(outDir, `00-${guide.id}`);
+  await mkdir(dir);
+  const [first, ...rest] = guide.steps;
+  await writeFile(join(dir, '00-post.txt'), [`TITEL: ${guide.title}`, 'TAGS:  Guide', '', '----- erste Nachricht (unter dem Titel einfügen) -----', first.text, ''].join('\n'));
+  for (const [index, step] of rest.entries()) {
+    if (step.text.length > DISCORD_LIMIT) warnings.push(`${guide.name} ${pad(index + 1)}.txt: ${step.text.length} Zeichen`);
+    await writeFile(join(dir, `${pad(index + 1)}.txt`), `${step.text}\n`);
+  }
+}
 
 for (const thread of threads) {
   const post = await buildForumPost(thread, { stagingDir: defaultStagingDir, rawDir, config });
@@ -73,6 +86,7 @@ const lines = [
   '',
   '## So postest du',
   '',
+  '0. Zuerst den Ecosystem Guide aus `00-ecosystem-guide/` posten (und anpinnen): Ziel der Suggestion, Rollen, Lebensräume, Regeln und ein Wörterbuch aller neuen Begriffe.',
   '1. Im Forum einen neuen Post anlegen. Titel und Tags stehen oben in `00-post.txt`, darunter die erste Nachricht (Status).',
   '2. Dann die Dateien im Ordner der Reihe nach in den Post: `.txt` öffnen, alles kopieren, einfügen und senden; `.png` in Discord ziehen und senden.',
   '3. Die Banner der Original-Profile sind Bilder, die es hier nicht gibt. Sie stehen als `# Überschrift` oben in der nächsten Nachricht. Fehlende Bilder stehen als kursive Zeile „Image pending“ im Text. Die Quick Links fehlen, weil die Nachrichten-Links erst nach dem Posten existieren.',
@@ -104,5 +118,6 @@ if (warnings.length) lines.push('## Warnungen', '', ...warnings.map(warning => `
 await writeFile(join(outDir, 'README.md'), lines.join('\n'));
 
 console.log(`Forum-Posts geschrieben: ${outDir}`);
+if (guide) console.log(`  00-${guide.id.padEnd(15)} ${guide.steps.length} Nachrichten`);
 for (const post of posts) console.log(`  ${post.dir.padEnd(18)} ready ${String(post.ready.percent).padStart(3)} %  Änderung ${changeText(post.change).padEnd(24)} ${post.messages} Nachrichten, ${post.uploads} Bilder`);
 for (const warning of warnings) console.warn(`  ! ${warning}`);

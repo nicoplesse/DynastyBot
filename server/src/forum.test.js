@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
-import { buildForumPost, changeDegree, classifyNote, forumSequence, loadForumConfig, readiness, sortRawImages } from './forum.js';
+import { buildForumPost, buildGuidePost, changeDegree, classifyNote, forumSequence, loadForumConfig, readiness, sortRawImages } from './forum.js';
 import { DISCORD_LIMIT, defaultStagingDir, loadStaging, parseStagingFile } from './staging.js';
 
 const rawDir = fileURLToPath(new URL('../../data/raw/', import.meta.url));
@@ -57,4 +57,13 @@ test('every staging profile exports as forum messages within Discord\'s limit', 
     for (const step of post.steps) if (step.type === 'text') assert.ok(step.text.length <= DISCORD_LIMIT, `${post.id}: message of ${step.text.length} characters`);
     assert.ok(!post.steps.some(step => step.type === 'text' && /\{\+\}|^%%/m.test(step.text)), `${post.id}: staging markup leaked`);
   }
+});
+
+test('the ecosystem guide exports as forum messages and stays out of the profile list', async () => {
+  const guide = await buildGuidePost(defaultStagingDir);
+  assert.ok(guide, 'staging/guide/ecosystem.md exists');
+  assert.ok(guide.steps.length > 3);
+  for (const step of guide.steps) assert.ok(step.type === 'text' && step.text.length <= DISCORD_LIMIT, `guide message of ${step.text?.length} characters`);
+  assert.ok(guide.steps.some(step => /^# Dictionary/m.test(step.text)));
+  assert.ok(!(await loadStaging()).some(thread => thread.id === 'ecosystem-guide'), 'the guide is no staging profile');
 });
