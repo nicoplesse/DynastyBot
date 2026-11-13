@@ -1,5 +1,5 @@
 import type { CatalogItem } from './api';
-import { bondsOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring } from './herd';
 import './tylo-file.css';
 
 // A Tylosaurus of your own gets a photo-ID file in the style of orca catalogues: catalogue number,
@@ -144,6 +144,16 @@ function Section({ index, title, aside, children, className }: { index: string; 
   </section>;
 }
 
+// Behaviour as a field researcher notes it: the traits as a short ethogram, the free text as a field note.
+function Behaviour({ dino, catalogId }: { dino: HerdDino; catalogId: string }) {
+  const { traits, text } = characterOf(dino);
+  if (!traits.length && !text) return <p className="tf-muted">Noch keine Verhaltensnotizen. Beobachtungen: <code>/aktualisiere {dino.name}</code> oder unter „Akte bearbeiten“.</p>;
+  return <div className={`tf-behaviour${traits.length && text ? '' : ' single'}`}>
+    {traits.length > 0 && <ol className="tf-ethogram" aria-label="Wesenszüge">{traits.map((trait, index) => <li key={trait}><span>{String(index + 1).padStart(2, '0')}</span><b>{trait}</b></li>)}</ol>}
+    {text && <figure className="tf-fieldnote"><blockquote>{text}</blockquote><figcaption>Feldnotiz · {catalogId} {dino.name}</figcaption></figure>}
+  </div>;
+}
+
 function Proof({ url, label }: { url: string; label: string }) {
   const discord = isDiscordUrl(url);
   return <a href={linkHref(url)} title={url} {...(discord ? {} : { target: '_blank', rel: 'noreferrer' })}>{label} ↗</a>;
@@ -176,6 +186,7 @@ function TyloEntry({ dino }: { dino: HerdDino }) {
   const mates = bondsOf(dino).filter(bond => mateKind.test(bond.kind));
   const catalogId = family.catalogId || 'TY–';
   const latest = [...family.log].sort((a, b) => a.date.localeCompare(b.date)).pop();
+  const { traits } = characterOf(dino);
   const g = dino.genetics;
   const facts: Array<[string, React.ReactNode]> = [
     ['Unterart', family.subspecies || <i>offen</i>],
@@ -193,6 +204,7 @@ function TyloEntry({ dino }: { dino: HerdDino }) {
       <div className="tf-kicker">KATALOG-NR. {catalogId}{sexInfo ? ` · ${sexInfo.role.toUpperCase()}` : ''}</div>
       <h2>{dino.name}{dino.sex && <span className={`tf-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2>
       <p className="tf-epithet">{mates.length ? `${dino.sex === 'female' ? 'Partnerin' : 'Partner'} von ${mates.map(mate => mate.name).join(', ')}` : 'noch ungebunden'}</p>
+      {traits.length > 0 && <p className="tf-entry-traits">{traits.join(' · ')}</p>}
       <dl className="tf-facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
       <span className="tf-entry-open">ID-Akte öffnen →</span>
     </div>
@@ -253,22 +265,26 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
       </div>
     </Section>
 
-    <Section index="02" title="Stammbaum" aside={<span className="tf-legend"><span><i className="tf-key male" />Bulle</span><span><i className="tf-key female" />Kuh</span><span><i className="tf-key unsexed" />offen</span></span>}>
+    <Section index="02" title="Verhalten &amp; Wesen" aside={<span className="tf-legend">FELDBEOBACHTUNG</span>}>
+      <Behaviour dino={dino} catalogId={catalogId} />
+    </Section>
+
+    <Section index="03" title="Stammbaum" aside={<span className="tf-legend"><span><i className="tf-key male" />Bulle</span><span><i className="tf-key female" />Kuh</span><span><i className="tf-key unsexed" />offen</span></span>}>
       <Pedigree dino={dino} />
       <p className="tf-tree-note">Kälber hängen unter ihrer Mutter: Sie tragen ihren Bloodline-Namen und wachsen in ihrer Matrilinie auf.</p>
       {others.length > 0 && <p className="tf-others"><span>Weitere Bindungen</span>{others.map(bond => `${bond.name}${bond.sex ? ` ${sexSymbol(bond.sex)}` : ''}${bond.kind ? ` · ${bond.kind}` : ''}`).join('  ·  ')}</p>}
     </Section>
 
     <div className="tf-split">
-      <Section index="03" title="Sichtungsprotokoll">
+      <Section index="04" title="Sichtungsprotokoll">
         {family.log.length ? <ol className="tf-log">{family.log.map((entry, index) => <li key={`${entry.date}-${index}`}><time dateTime={entry.date}>{formatDay(entry.date)}</time><p>{entry.text}{entry.place && <small> · {entry.place}</small>}</p></li>)}</ol>
           : <p className="tf-muted">Noch keine Einträge.</p>}
       </Section>
-      <Section index="04" title="Aus dem Profil">
+      <Section index="05" title="Aus dem Profil">
         <ul className="tf-quotes">{quotes.map(quote => <li key={quote.source}><blockquote>{quote.text}</blockquote><cite>Profil › {quote.source}</cite></li>)}</ul>
       </Section>
     </div>
 
-    <footer className="tf-foot"><span>Akte geführt seit {formatDay(dino.createdAt)} · zuletzt ergänzt {formatDay(dino.updatedAt)}</span><span>Neue Kälber, Partnerinnen oder Sichtungen: <code>/aktualisiere {dino.name}</code></span></footer>
+    <footer className="tf-foot"><span>Akte geführt seit {formatDay(dino.createdAt)} · zuletzt ergänzt {formatDay(dino.updatedAt)}</span><span>Neue Kälber, Partnerinnen, Sichtungen oder Verhalten: <code>/aktualisiere {dino.name}</code></span></footer>
   </article>;
 }
