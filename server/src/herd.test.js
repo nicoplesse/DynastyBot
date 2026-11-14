@@ -55,6 +55,7 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { proofs: { nesting: 'javascript:alert(1)' } })).status, 400);
     assert.equal((await patch('malekit', { sex: 'other' })).status, 400);
     assert.equal((await (await patch('malekit', { diedAt: '2026-10-30' })).json()).diedAt, '2026-10-30');
+    assert.equal((await (await patch('malekit', { deathCause: '  Getötet von zwei Sarcosuchus ' })).json()).deathCause, 'Getötet von zwei Sarcosuchus');
     assert.equal((await (await patch('malekit', { diedAt: '' })).json()).diedAt, '');
     assert.equal((await patch('malekit', { diedAt: '30.10.2026' })).status, 400);
 

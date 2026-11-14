@@ -192,3 +192,31 @@
 
 @media(max-width:980px){.tf-hero,.tf-entry{grid-template-columns:1fr}.tf-ident,.tf-entry-body{padding:0 26px 26px}.tf-marks-grid,.tf-split,.tf-behaviour{grid-template-columns:1fr}.tf-split>.tf-section+.tf-section{border-top:1px solid var(--tf-line-soft);border-left:0}}
 @media(max-width:560px){.tf-head{flex-direction:column;align-items:flex-start;padding:18px 16px 28px}.tf-head-id{justify-items:start}.tf-ruler{right:16px;left:16px}.tf-plate{margin:18px 16px 36px}.tf-plate,.tf-plate>button,.tf-plate img{min-height:220px}.tf-entry .tf-plate{margin:18px 16px 36px}.tf-ident,.tf-entry-body{padding:0 16px 22px}.tf-facts{grid-template-columns:1fr}.tf-facts>div:nth-child(odd){padding-right:0;border-right:0}.tf-facts>div:nth-child(even){padding-left:0}.tf-section{padding:22px 16px}.tf-section-head{flex-wrap:wrap}.tf-sketch .tf-note{display:none}.tf-note-list{display:grid}.tf-section-aside{width:100%;margin-left:0}.tf-foot{padding:14px 16px}}
+
+/* Friedhof › Walfall: dead Tylosaurus as catalogue files struck off at the seabed, not as stones */
+.tf-fall{margin-bottom:26px;background:radial-gradient(90% 55% at 50% -8%,#1a4152 0%,transparent 62%),radial-gradient(#d3e7e31c 1px,transparent 1.6px) 0 0/34px 42px,radial-gradient(#d3e7e312 1px,transparent 1.4px) 17px 21px/34px 42px,linear-gradient(180deg,#081822,#03090e 80%)}
+.tf-fall .tf-head-id strong{color:#c9d6d4}
+.tf-fall-intro{max-width:720px;margin:0 auto;padding:18px 28px 6px;color:var(--tf-muted);font-family:Georgia,'Times New Roman',serif;font-size:14px;font-style:italic;line-height:1.55;text-align:center}
+.tf-fall-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) 72px;color:inherit;text-decoration:none;border-top:1px solid var(--tf-line-soft);transition:background .16s}
+.tf-fall-intro+.tf-fall-entry{border-top:0}
+.tf-fall-entry:hover{background:#86cfc40a}
+.tf-fall-entry:hover .tf-entry-open{color:#f1f7f5}
+.tf-fall-plate{min-height:0;aspect-ratio:1.7;margin:24px 18px 40px 26px}
+.tf-fall-plate img,.tf-fall-plate>.tf-plate-empty{display:grid;place-items:center;width:100%;height:100%;min-height:0}
+.tf-fall-plate img{filter:grayscale(1) brightness(.58) contrast(1.08)}
+.tf-fall-plate::after{content:'';position:absolute;inset:0;border-radius:3px;background:linear-gradient(180deg,#86cfc414,#05111aa6 92%);pointer-events:none}
+.tf-stamp{position:absolute;top:16px;right:14px;z-index:1;display:grid;gap:2px;padding:6px 12px 7px;border:1.5px solid #c25248a6;border-radius:3px;background:#05111a99;color:#e08b82;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;transform:rotate(-6deg)}
+.tf-stamp small{color:#c9a19c;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:none}
+.tf-fall-body{display:flex;flex-direction:column;gap:11px;min-width:0;padding:26px 14px 24px}
+.tf-fall-body h2{display:flex;align-items:baseline;gap:10px;color:#dfe7e5;font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,3.6vw,42px);font-weight:400;line-height:1}
+.tf-fall-body h2>i{color:var(--tf-faint);font-size:.6em;font-style:normal}
+.tf-fall-body .tf-sex{color:var(--tf-muted)}
+.tf-fall-cause{display:grid;gap:5px;margin:0;padding:9px 12px;border-left:2px solid #c25248a6;background:#c2524812;color:#eadbd8;font-family:Georgia,'Times New Roman',serif;font-size:16px;font-style:italic}
+.tf-fall-cause span{color:#c9a19c;font-family:Arial,Helvetica,sans-serif;font-size:9.5px;font-style:normal;font-weight:800;letter-spacing:.2em}
+.tf-fall-body .tf-facts{margin-top:2px}
+.tf-fall-body .tf-facts dd{font-size:13px}
+.tf-fall-depth{display:flex;flex-direction:column;align-items:center;padding:26px 0 30px;border-left:1px solid var(--tf-line-soft)}
+.tf-fall-depth span{color:var(--tf-faint);font-size:8.5px;font-weight:800;letter-spacing:.16em;white-space:nowrap;writing-mode:vertical-rl;transform:rotate(180deg)}
+.tf-fall-line{flex:1;width:11px;margin:10px 0 6px 10px;border-left:1px dashed #86cfc466;background:linear-gradient(180deg,#86cfc44d 1px,transparent 1px) 0 0/100% 12px;-webkit-mask-image:linear-gradient(180deg,#0005,#000 45%);mask-image:linear-gradient(180deg,#0005,#000 45%)}
+.tf-fall-marker{width:12px;height:12px;margin-bottom:10px;border:1.5px solid var(--tf-foam);border-radius:50%;background:var(--tf-abyss);box-shadow:0 0 0 5px #86cfc414,0 0 18px #86cfc433}
+@media(max-width:760px){.tf-fall-entry{grid-template-columns:1fr}.tf-fall-plate{margin:24px 22px 38px}.tf-fall-body{padding:4px 22px 24px}.tf-fall-depth{display:none}.tf-fall-body .tf-facts{grid-template-columns:1fr}}

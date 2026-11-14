@@ -7,7 +7,7 @@
 //                                                     sets the dino's photo (png, jpg or webp; replaces the old one)
 //   node server/scripts/herd.mjs apply <name|id> <payload.json>
 //                                                     validated update, then prints what changed
-// The payload may hold playableId, sex, diedAt, genetics, bonds, character, family, proofs, notes, transcripts and processed
+// The payload may hold playableId, sex, diedAt, deathCause, genetics, bonds, character, family, proofs, notes, transcripts and processed
 // ("pending" marks every unread screenshot as read). Screenshots themselves are never touched.
 import { readFile } from 'node:fs/promises';
 import { basename, join, resolve } from 'node:path';
@@ -38,7 +38,7 @@ function summary(dino) {
       offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.clutch && `Gelege ${item.clutch}`, item.born, item.status].filter(Boolean).join(' · ')),
       log: dino.family.log.map(item => `${item.date} ${item.text}`),
     } : null,
-    playableId: dino.playableId, sex: dino.sex, diedAt: dino.diedAt || '', proofs: dino.proofs, notes: dino.notes,
+    playableId: dino.playableId, sex: dino.sex, diedAt: dino.diedAt || '', deathCause: dino.deathCause || '', proofs: dino.proofs, notes: dino.notes,
   };
 }
 

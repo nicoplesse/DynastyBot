@@ -3,7 +3,7 @@
 //                    bonds and character for social playables, from the UI or the skill; family for the ID file)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
 //   photo-*.<ext>    optional photo of the dino
-// A dead dino keeps its folder; diedAt (YYYY-MM-DD) marks it as deceased.
+// A dead dino keeps its folder; diedAt (YYYY-MM-DD) marks it as deceased, deathCause says how it died.
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
 import { copyFile, mkdir, open, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
@@ -278,6 +278,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     }
     // A dino that died stays in the herd with its date of death; empty = alive.
     if ('diedAt' in patch) dino.diedAt = day(patch.diedAt, 'Died at');
+    if ('deathCause' in patch) dino.deathCause = text(patch.deathCause, 200);
     if ('notes' in patch) dino.notes = text(patch.notes, 4000);
     if ('proofs' in patch) {
       const proofs = patch.proofs || {};

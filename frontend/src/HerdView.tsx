@@ -4,7 +4,7 @@ import { bondsOf, characterOf, herdApi, isDeceased, isDiscordUrl, pendingCount, 
 import { DietPlace } from './DietPlaces';
 import { ExternalLink, LinkedText } from './HerdLinks';
 import { TitanFile, TitanHall } from './TitanFile';
-import { TyloCatalog, TyloFile } from './TyloFile';
+import { TyloCatalog, TyloFile, TyloWhaleFall } from './TyloFile';
 import { ExplorerTopline, PageError, PageLoading, go } from './ui';
 import './herd.css';
 
@@ -65,11 +65,15 @@ export function CemeteryPage() {
   const playables = useMemo(() => playableMap(catalog), [catalog]);
   if (error) return <PageError message={error} />;
   if (!dead || !catalog) return <PageLoading label="Loading the cemetery…" />;
+  // Your Tylosaurus get their own place: the whale fall of the photo-ID catalogue instead of a stone.
+  const tylos = dead.filter(hasIdFile);
+  const graves = dead.filter(dino => !hasIdFile(dino));
   return <>
     <ExplorerTopline section="MY DINOS / FRIEDHOF" count={`${dead.length} ${dead.length === 1 ? 'GRAB' : 'GRÄBER'}`} />
     <header className="directory-head cemetery-head"><div><div className="eyebrow">DYNASTY REALISM · IN MEMORIAM</div><h1>Friedhof</h1><p>Hier ruhen deine verstorbenen Dinos. Bloodlines, Skins, Beweise und Screenshots bleiben erhalten.</p></div><div className="directory-actions"><button type="button" className="secondary-button" onClick={() => go('/herd')}>← My Dinos</button><div className="archive-metric cemetery-metric"><strong>{dead.length}</strong><span>{dead.length === 1 ? 'Grab' : 'Gräber'}</span></div></div></header>
-    {dead.length ? <section className="cemetery-grid" aria-label="Verstorbene Dinos">{dead.map(dino => <Grave key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section>
-      : <div className="catalog-empty"><strong>Noch keine Gräber</strong><p>Alle deine Dinos leben.</p></div>}
+    {tylos.length > 0 && <TyloWhaleFall dinos={tylos} />}
+    {graves.length > 0 && <section className="cemetery-grid" aria-label="Verstorbene Dinos">{graves.map(dino => <Grave key={dino.id} dino={dino} playable={dino.playableId ? playables.get(dino.playableId) : undefined} />)}</section>}
+    {!dead.length && <div className="catalog-empty"><strong>Noch keine Gräber</strong><p>Alle deine Dinos leben.</p></div>}
   </>;
 }
 
@@ -83,6 +87,7 @@ function Grave({ dino, playable }: { dino: HerdDino; playable?: CatalogItem }) {
       <h2>{dino.name}{dino.sex && <span className={`herd-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}</h2>
       <div className="grave-playable">{playable ? playable.name : 'Playable unbekannt'}</div>
       <div className="grave-date">† {germanDate(`${dino.diedAt}T12:00:00`)}</div>
+      {dino.deathCause && <div className="grave-cause">{dino.deathCause}</div>}
       {days != null && <div className="grave-span">{days === 0 ? 'Am ersten Tag in deiner Herde gestorben' :`${days} ${days === 1 ? 'Tag' : 'Tage'} in deiner Herde`} · seit {germanDate(dino.createdAt)}</div>}
       {g && (g.bloodlines.length > 0 || g.skins.dominant.length > 0) && <div className="grave-genes">{g.bloodlines.map(item => <span key={item} className="herd-chip bloodline">{item}</span>)}{g.skins.dominant.map(item => <span key={item} className="herd-chip dominant">{item}</span>)}{g.mutations.map(item => <span key={item.name} className="herd-chip mutation">{item.name}</span>)}</div>}
     </div>
@@ -420,6 +425,7 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
   const [playable, setPlayable] = useState(dino.playableId || '');
   const [sex, setSex] = useState(dino.sex || '');
   const [diedAt, setDiedAt] = useState(dino.diedAt || '');
+  const [deathCause, setDeathCause] = useState(dino.deathCause || '');
   const [bloodlines, setBloodlines] = useState(g?.bloodlines.join('\n') || '');
   const [dominant, setDominant] = useState(g?.skins.dominant.join('\n') || '');
   const [recessive, setRecessive] = useState(g?.skins.recessive.join('\n') || '');
@@ -436,7 +442,7 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
       extra: lines(extra).map(line => { const [label, value] = splitPair(line, /:\s*/); return { label, value }; }),
     };
     const empty = !genetics.bloodlines.length && !genetics.skins.dominant.length && !genetics.skins.recessive.length && !genetics.mutations.length && !genetics.extra.length;
-    onSave({ name, playableId: playable || null, sex: (sex || null) as HerdDino['sex'], diedAt, notes, proofs: { mutation: mutationProof, nesting: nestingProof }, genetics: empty && !g ? null : genetics });
+    onSave({ name, playableId: playable || null, sex: (sex || null) as HerdDino['sex'], diedAt, deathCause: diedAt ? deathCause : '', notes, proofs: { mutation: mutationProof, nesting: nestingProof }, genetics: empty && !g ? null : genetics });
   }
   return <form className="herd-editor" onSubmit={event => { event.preventDefault(); submit(); }}>
     <div className="herd-editor-grid four">
@@ -445,6 +451,9 @@ function HerdEditor({ dino, catalog, busy, onSave, onCancel }: { dino: HerdDino;
       <label><span>Sex</span><select value={sex} onChange={event => setSex(event.target.value)}><option value="">Unknown</option><option value="female">♀ Female</option><option value="male">♂ Male</option></select></label>
       <label><span>Died on <small>empty = alive</small></span><input type="date" value={diedAt} onChange={event => setDiedAt(event.target.value)} /></label>
     </div>
+    {diedAt && <div className="herd-editor-grid">
+      <label><span>Cause of death <small>e.g. killed by two Sarcosuchus</small></span><input value={deathCause} onChange={event => setDeathCause(event.target.value)} maxLength={200} /></label>
+    </div>}
     <div className="herd-editor-grid">
       <label><span>Bloodlines <small>one per line</small></span><textarea value={bloodlines} onChange={event => setBloodlines(event.target.value)} rows={3} /></label>
       <label><span>Dominant skins <small>one per line</small></span><textarea value={dominant} onChange={event => setDominant(event.target.value)} rows={3} /></label>

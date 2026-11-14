@@ -20,9 +20,9 @@ export interface HerdDino {
   schemaVersion: number; id: string; name: string; playableId: string | null; sex: 'female' | 'male' | null;
   photo: string | null; proofs: { mutation: string; nesting: string }; notes: string;
   genetics: HerdGenetics | null; bonds?: HerdBond[]; character?: HerdCharacter; family?: HerdFamily | null;
-  diedAt?: string; screenshots: HerdScreenshot[]; createdAt: string; updatedAt: string;
+  diedAt?: string; deathCause?: string; screenshots: HerdScreenshot[]; createdAt: string; updatedAt: string;
 }
-export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'diedAt' | 'notes' | 'proofs' | 'bonds' | 'character' | 'family'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
+export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'diedAt' | 'deathCause' | 'notes' | 'proofs' | 'bonds' | 'character' | 'family'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
 
 async function result<T>(response: Response): Promise<T> {
   if (!response.ok) {

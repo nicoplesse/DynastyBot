@@ -222,6 +222,65 @@ function TyloEntry({ dino }: { dino: HerdDino }) {
   </a>;
 }
 
+// Friedhof: your dead Tylosaurus do not get a stone. In the sea a body sinks to the floor and feeds
+// the deep for years (a whale fall), so they rest in the catalogue as files struck off at the seabed.
+const herdDays = (dino: HerdDino) => {
+  if (!dino.diedAt) return null;
+  const days = Math.round((Date.parse(`${dino.diedAt}T12:00:00`) - Date.parse(`${dino.createdAt.slice(0, 10)}T12:00:00`)) / 86400000);
+  return days >= 0 ? days : null;
+};
+
+export function TyloWhaleFall({ dinos }: { dinos: HerdDino[] }) {
+  const sorted = [...dinos].sort((a, b) => (b.diedAt || '').localeCompare(a.diedAt || '') || catalogOrder(a, b));
+  return <section className="tf tf-fall" aria-label="Walfall: verstorbene Tylosaurus">
+    <header className="tf-head">
+      <Contours />
+      <div className="tf-head-copy"><span>PHOTO-ID-KATALOG · TYLOSAURUS · AUSGETRAGEN</span><strong>Walfall · zum Grund gesunken</strong></div>
+      <div className="tf-head-id"><span>VERSTORBEN</span><strong>{String(dinos.length).padStart(2, '0')}</strong></div>
+      <div className="tf-ruler" aria-hidden="true" />
+    </header>
+    <p className="tf-fall-intro">Was im Meer stirbt, bekommt keinen Stein. Es sinkt zum Grund und nährt dort jahrelang die Tiefe. Die Akten bleiben im Katalog, ihre Nummern werden nicht neu vergeben.</p>
+    {sorted.map(dino => <FallEntry key={dino.id} dino={dino} />)}
+  </section>;
+}
+
+function FallEntry({ dino }: { dino: HerdDino }) {
+  const family = familyOf(dino);
+  const sexInfo = dino.sex ? bySex[dino.sex] : null;
+  const mates = bondsOf(dino).filter(bond => mateKind.test(bond.kind));
+  const catalogId = family.catalogId || 'TY–';
+  const days = herdDays(dino);
+  const g = dino.genetics;
+  const died = formatDay(dino.diedAt || '');
+  const facts: Array<[string, React.ReactNode]> = [
+    ['Unterart', family.subspecies || <i>offen</i>],
+    ['Im Register', days == null ? formatDay(dino.createdAt) : <>{days === 0 ? 'am ersten Tag gestorben' : `${days} ${days === 1 ? 'Tag' : 'Tage'}`}<small>seit {formatDay(dino.createdAt)}</small></>],
+    ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine</i>],
+    ['Familie', familyLine(dino, mates)],
+  ];
+  return <a className="tf-fall-entry" href={`#/herd/${dino.id}`} aria-label={`Ausgetragene Akte ${catalogId} ${dino.name} öffnen`}>
+    <figure className={`tf-plate tf-fall-plate${dino.photo ? '' : ' empty'}`}>
+      {dino.photo ? <img src={herdApi.fileUrl(dino, dino.photo)} alt={dino.name} loading="lazy" /> : <span className="tf-plate-empty"><TyloSketch sex={dino.sex} faint /></span>}
+      <span className="tf-stamp">† Verstorben<small>{died}</small></span>
+      <i className="tf-crop tl" /><i className="tf-crop tr" /><i className="tf-crop bl" /><i className="tf-crop br" />
+      <figcaption><span>{catalogId} · {dino.name.toUpperCase()}</span><span>AUSGETRAGEN</span></figcaption>
+    </figure>
+    <div className="tf-fall-body">
+      <div className="tf-kicker">KATALOG-NR. {catalogId}{sexInfo ? ` · ${sexInfo.role.toUpperCase()}` : ''}</div>
+      <h2>{dino.name}{dino.sex && <span className={`tf-sex ${dino.sex}`} title={dino.sex}>{sexSymbol(dino.sex)}</span>}<i aria-hidden="true">†</i></h2>
+      <p className="tf-fall-cause"><span>TODESURSACHE</span>{dino.deathCause || <i>nicht vermerkt</i>}</p>
+      <dl className="tf-facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+      <span className="tf-entry-open">Akte öffnen →</span>
+    </div>
+    <div className="tf-fall-depth" aria-hidden="true">
+      <span>OBERFLÄCHE</span>
+      <i className="tf-fall-line" />
+      <b className="tf-fall-marker" />
+      <span>GRUND · {died}</span>
+    </div>
+  </a>;
+}
+
 export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; onOpenPhoto: () => void; onAddPhoto: () => void }) {
   const family = familyOf(dino);
   const sexInfo = dino.sex ? bySex[dino.sex] : null;
@@ -237,7 +296,7 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
     ['Im Register seit', formatDay(dino.createdAt)],
     ['Familie', familyLine(dino, mates)],
-    ...(dino.diedAt ? [['Verstorben', `† ${formatDay(dino.diedAt)}`] as [string, string]] : []),
+    ...(dino.diedAt ? [['Verstorben', `† ${formatDay(dino.diedAt)}`, dino.deathCause || undefined] as [string, string, string?]] : []),
   ];
   return <article className="tf" aria-label={`ID-Akte ${dino.name}`}>
     <header className="tf-head">
