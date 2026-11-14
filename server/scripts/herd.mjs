@@ -34,6 +34,7 @@ function summary(dino) {
     traits: dino.character?.traits || [], character: dino.character?.text || '',
     family: dino.family ? {
       ...Object.fromEntries(['catalogId', 'subspecies', 'origin', 'mother', 'father'].map(field => [field, dino.family[field]]).filter(([, value]) => value)),
+      siblings: (dino.family.siblings || []).map(item => [item.name, item.sex, item.status, item.note].filter(Boolean).join(' · ')),
       offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.clutch && `Gelege ${item.clutch}`, item.born, item.status].filter(Boolean).join(' · ')),
       log: dino.family.log.map(item => `${item.date} ${item.text}`),
     } : null,

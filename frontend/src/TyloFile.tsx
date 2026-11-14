@@ -1,5 +1,5 @@
 import type { CatalogItem } from './api';
-import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring, type HerdSibling } from './herd';
 import './tylo-file.css';
 
 // A Tylosaurus of your own gets a photo-ID file in the style of orca catalogues: catalogue number,
@@ -82,6 +82,11 @@ function Node({ sex, name, caption, unknown = false, focus = false, small = fals
   </div>;
 }
 
+function Sibling({ sibling }: { sibling: HerdSibling }) {
+  const role = sibling.sex === 'male' ? 'Bruder' : sibling.sex === 'female' ? 'Schwester' : 'Geschwister';
+  return <li className="tf-sibling"><Node sex={sibling.sex} name={sibling.name} caption={[role, sibling.status].filter(Boolean).join(' · ')} small gone={deceased.test(sibling.status)} /></li>;
+}
+
 function Calf({ calf }: { calf: HerdOffspring }) {
   const caption = [calf.clutch && `Gelege ${calf.clutch}`, calf.born && `geb. ${formatDay(calf.born)}`, calf.status].filter(Boolean).join(' · ');
   return <li><Node sex={calf.sex} name={calf.name} caption={caption || undefined} small gone={deceased.test(calf.status)} /></li>;
@@ -103,6 +108,10 @@ function Pedigree({ dino }: { dino: HerdDino }) {
   const orphans = family.offspring.filter(calf => !mates.some(mate => same(mate.name, calf.mother)));
   const mateRole = (bond: HerdBond, index: number) => `× ${index + 1}. ${bond.sex === 'male' ? 'Partner' : 'Partnerin'}`;
   const calvesOf = (mate: HerdBond) => family.offspring.filter(calf => same(calf.mother, mate.name));
+  // Siblings stand beside the dino under the shared parents: half before, half after.
+  const siblings = family.siblings || [];
+  const before = siblings.slice(0, Math.floor(siblings.length / 2));
+  const after = siblings.slice(before.length);
   return <div className="tf-tree-scroll">
     <div className="tf-tree">
       <div className="tf-parents">
@@ -111,6 +120,7 @@ function Pedigree({ dino }: { dino: HerdDino }) {
         <Node sex="male" name={family.father || 'Vater'} caption={family.father ? 'Vater' : 'noch offen'} unknown={!family.father} small />
       </div>
       <ul className="tf-branch" aria-label={`Stammbaum von ${dino.name}`}>
+        {before.map(sibling => <Sibling key={sibling.name} sibling={sibling} />)}
         <li className="tf-root">
           <Node sex={dino.sex} name={dino.name} caption={family.catalogId || undefined} focus />
           {(mates.length > 0 || orphans.length > 0) && <ul>
@@ -131,6 +141,7 @@ function Pedigree({ dino }: { dino: HerdDino }) {
             </li>}
           </ul>}
         </li>
+        {after.map(sibling => <Sibling key={sibling.name} sibling={sibling} />)}
       </ul>
       {!mates.length && !orphans.length && <p className="tf-tree-empty">Noch keine Partnerin eingetragen.</p>}
     </div>

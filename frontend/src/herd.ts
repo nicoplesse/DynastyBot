@@ -14,7 +14,8 @@ export interface HerdCharacter { traits: string[]; text: string }
 export interface HerdOffspring { name: string; sex: 'female' | 'male' | null; mother: string; clutch: number | null; born: string; status: string; note: string }
 export interface HerdLogEntry { date: string; text: string; place: string }
 // The ID file: catalogue number, origin, calves (each names its mother) and a dated chronicle.
-export interface HerdFamily { catalogId: string; subspecies: string; origin: string; mother: string; father: string; offspring: HerdOffspring[]; log: HerdLogEntry[] }
+export interface HerdSibling { name: string; sex: 'female' | 'male' | null; status: string; note: string }
+export interface HerdFamily { catalogId: string; subspecies: string; origin: string; mother: string; father: string; siblings?: HerdSibling[]; offspring: HerdOffspring[]; log: HerdLogEntry[] }
 export interface HerdDino {
   schemaVersion: number; id: string; name: string; playableId: string | null; sex: 'female' | 'male' | null;
   photo: string | null; proofs: { mutation: string; nesting: string }; notes: string;
@@ -48,7 +49,7 @@ export const pendingCount = (dino: HerdDino) => dino.screenshots.filter(shot => 
 // Older records were saved before bonds and character existed.
 export const bondsOf = (dino: HerdDino) => dino.bonds || [];
 export const characterOf = (dino: HerdDino): HerdCharacter => dino.character || { traits: [], text: '' };
-export const familyOf = (dino: HerdDino): HerdFamily => dino.family || { catalogId: '', subspecies: '', origin: '', mother: '', father: '', offspring: [], log: [] };
+export const familyOf = (dino: HerdDino): HerdFamily => dino.family || { catalogId: '', subspecies: '', origin: '', mother: '', father: '', siblings: [], offspring: [], log: [] };
 export const sexSymbol = (sex: HerdDino['sex']) => sex === 'female' ? '♀' : sex === 'male' ? '♂' : '';
 export const isDeceased = (dino: HerdDino) => !!dino.diedAt;
 
