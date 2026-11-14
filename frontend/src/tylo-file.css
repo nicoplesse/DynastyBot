@@ -220,3 +220,11 @@
 .tf-fall-line{flex:1;width:11px;margin:10px 0 6px 10px;border-left:1px dashed #86cfc466;background:linear-gradient(180deg,#86cfc44d 1px,transparent 1px) 0 0/100% 12px;-webkit-mask-image:linear-gradient(180deg,#0005,#000 45%);mask-image:linear-gradient(180deg,#0005,#000 45%)}
 .tf-fall-marker{width:12px;height:12px;margin-bottom:10px;border:1.5px solid var(--tf-foam);border-radius:50%;background:var(--tf-abyss);box-shadow:0 0 0 5px #86cfc414,0 0 18px #86cfc433}
 @media(max-width:760px){.tf-fall-entry{grid-template-columns:1fr}.tf-fall-plate{margin:24px 22px 38px}.tf-fall-body{padding:4px 22px 24px}.tf-fall-depth{display:none}.tf-fall-body .tf-facts{grid-template-columns:1fr}}
+
+/* Age: a line through an orca-like life, the tick marks maturity */
+.tf-facts>div:last-child:nth-child(odd){grid-column:1/-1;padding-right:0;border-right:0}
+.tf-age-stage{color:var(--tf-muted);font-size:.9em}
+.tf-age{position:relative;display:block;height:4px;margin:8px 0 2px;border-radius:2px;background:#86cfc41f}
+.tf-age i{position:absolute;inset:0 auto 0 0;border-radius:2px;background:linear-gradient(90deg,#86cfc466,var(--tf-glass))}
+.tf-age b{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--tf-foam);opacity:.55}
+.tf-fall .tf-age i{background:linear-gradient(90deg,#93adb144,#93adb1)}

@@ -33,9 +33,10 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
    - **extra**: weitere sichtbare, für den Dino wichtige Angaben als `{ "label", "value" }` (z. B. Generation, Wachstum, Eltern). Kein Rauschen wie UI-Buttons.
    - **bonds** (Bindungen): Beziehungen zu anderen Dinos, vor allem bei sozialen Playables wie Parasaurolophus (Paarbindung, Harem, Lebenspartner, Familie). Je Eintrag `{ "name", "sex", "kind", "status", "bloodline", "note" }`: `sex` ist `female`/`male`/`null`, `kind` z. B. „Bindung“, „Lebenspartner“, „Harem“, „Familie“, „Freund“, `status` z. B. „bondet gerade“, „fest“, „beendet“, `bloodline` die Bloodline der Partnerin oder des Partners (in der Tylo-Akte umrahmt sie die Mutter und ihre Kälber, die ihren Namen tragen), `note` kurz (Skin, Herkunft). Meist nennt der Nutzer sie im Chat. `bonds` wird als Ganzes ersetzt, schick also immer die vollständige Liste mit den bisherigen Einträgen aus `show`.
    - **character**: `{ "traits": ["ruhig", …], "text": "…" }`, also Charakterzüge als kurze Stichworte und ein freier Text zur Persönlichkeit. Nur eintragen, was der Nutzer sagt. Wird ebenfalls als Ganzes ersetzt.
-   - **family** (die ID-Akte, die eigene Tylosaurus als Photo-ID-Katalog mit Stammbaum zeigen, z. B. Mistral): `{ "catalogId", "subspecies", "origin", "mother", "father", "siblings": [...], "offspring": [...], "log": [...] }`.
+   - **family** (die ID-Akte, die eigene Tylosaurus als Photo-ID-Katalog mit Stammbaum zeigen, z. B. Mistral): `{ "catalogId", "subspecies", "origin", "hatchedAt", "mother", "father", "siblings": [...], "offspring": [...], "log": [...] }`.
      - `catalogId` ist die Katalog-Nr. Tylos werden fortlaufend `TY-01`, `TY-02` … nummeriert, ein neuer Tylo bekommt die nächste freie Nummer.
      - `subspecies` gilt laut Profil nach Geschlecht: Bullen proriger, kansasensis oder rex, Kühe nepaeolicus.
+     - `hatchedAt` ist der Schlupftag `JJJJ-MM-TT`, nur wenn bekannt (Nest-Post, Nutzer). Daraus und aus den Gelegen berechnet die Akte das **Alter** in Orca-Jahren (Formel in `frontend/src/tyloAge.ts`: Kuh bis ~100, Bulle bis ~60, höchstens 20 Gelege). Fehlt der Tag, zählt das Alter ab der Aufnahme ins Register. Das Alter selbst wird nie gespeichert.
      - `origin` ist frei, z. B. „Wild Spawn“ oder „genistet von …“; `mother`/`father` sind die Namen der Eltern.
      - **Partnerinnen sind Einträge in `bonds`** mit `kind` „Partnerin“ (bzw. „Partner“); die Reihenfolge ergibt „1. Partnerin“, „2. Partnerin“. Eine beendete Bindung bekommt `status` „beendet“ und bleibt mit ihren Kälbern im Stammbaum.
      - **Geschwister** (gleiche Eltern, z. B. aus demselben Nest) stehen in `siblings` als `{ "name", "sex", "status", "note" }` und erscheinen im Stammbaum neben dem Dino unter den Eltern, als „Bruder“ bzw. „Schwester“. Sie gehören nicht in `bonds`.
@@ -59,7 +60,7 @@ Der Spieler importiert Screenshots seiner Dinos im Reiter **My Dinos** der Dynas
      },
      "bonds": [{ "name": "...", "sex": "female", "kind": "Bindung", "status": "bondet gerade", "bloodline": "", "note": "" }],
      "character": { "traits": ["..."], "text": "" },
-     "family": { "catalogId": "TY-01", "subspecies": "", "origin": "", "mother": "", "father": "", "siblings": [{ "name": "...", "sex": "male", "status": "", "note": "selbes Nest" }], "offspring": [{ "name": "...", "sex": "female", "mother": "...", "clutch": 1, "born": "2026-11-02", "status": "lebend", "note": "" }], "log": [{ "date": "2026-11-02", "text": "...", "place": "" }] },
+     "family": { "catalogId": "TY-01", "subspecies": "", "origin": "", "hatchedAt": "", "mother": "", "father": "", "siblings": [{ "name": "...", "sex": "male", "status": "", "note": "selbes Nest" }], "offspring": [{ "name": "...", "sex": "female", "mother": "...", "clutch": 1, "born": "2026-11-02", "status": "lebend", "note": "" }], "log": [{ "date": "2026-11-02", "text": "...", "place": "" }] },
      "transcripts": { "screenshots/20261001-201500-1.png": "wortgetreuer Text …" },
      "processed": "pending"
    }

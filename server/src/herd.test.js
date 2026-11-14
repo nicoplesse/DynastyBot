@@ -71,12 +71,13 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
 
     assert.equal(bonded.family, undefined);
     const family = await (await patch('malekit', { family: {
-      catalogId: ' TY-01 ', mother: 'Nerea',
+      catalogId: ' TY-01 ', mother: 'Nerea', hatchedAt: '2026-10-20',
       siblings: [{ name: 'Barbossa', sex: 'male', note: 'selbes Nest' }, { name: ' ' }],
       offspring: [{ name: 'Brise', sex: 'female', mother: 'Kamoda Fern', clutch: '2', born: '2026-11-02', status: 'lebend' }, { name: 'Gischt' }, { name: ' ' }],
       log: [{ date: '2026-11-02', text: 'Erstes Kalb mit Kamoda.' }, { date: '2026-10-29', text: 'Ins Register aufgenommen.', place: 'Kelp Vale' }],
     } })).json();
     assert.equal(family.family.catalogId, 'TY-01');
+    assert.equal(family.family.hatchedAt, '2026-10-20');
     assert.deepEqual(family.family.offspring, [
       { name: 'Brise', sex: 'female', mother: 'Kamoda Fern', clutch: 2, born: '2026-11-02', status: 'lebend', note: '' },
       { name: 'Gischt', sex: null, mother: '', clutch: null, born: '', status: '', note: '' },
@@ -88,6 +89,7 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { family: { log: [{ date: '29.10.2026', text: 'x' }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', sex: 'calf' }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { siblings: [{ name: 'X', sex: 'calf' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { hatchedAt: '20.10.2026' } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 1.5 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 0 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: [] })).status, 400);

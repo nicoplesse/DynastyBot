@@ -15,7 +15,7 @@ export interface HerdOffspring { name: string; sex: 'female' | 'male' | null; mo
 export interface HerdLogEntry { date: string; text: string; place: string }
 // The ID file: catalogue number, origin, calves (each names its mother) and a dated chronicle.
 export interface HerdSibling { name: string; sex: 'female' | 'male' | null; status: string; note: string }
-export interface HerdFamily { catalogId: string; subspecies: string; origin: string; mother: string; father: string; siblings?: HerdSibling[]; offspring: HerdOffspring[]; log: HerdLogEntry[] }
+export interface HerdFamily { catalogId: string; subspecies: string; origin: string; hatchedAt?: string; mother: string; father: string; siblings?: HerdSibling[]; offspring: HerdOffspring[]; log: HerdLogEntry[] }
 export interface HerdDino {
   schemaVersion: number; id: string; name: string; playableId: string | null; sex: 'female' | 'male' | null;
   photo: string | null; proofs: { mutation: string; nesting: string }; notes: string;

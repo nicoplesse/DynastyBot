@@ -115,7 +115,8 @@ function clutchNo(value) {
 
 // The family file (catalogue number, origin, siblings, calves, chronicle). Mates stay in bonds;
 // each calf names its mother, so calves hang under the right mate in the family tree.
-// Siblings share the dino's parents and stand beside it under them.
+// Siblings share the dino's parents and stand beside it under them. hatchedAt (optional) dates the hatch
+// for the Tylo age; without it the age counts from the day the dino joined the register.
 export function normalizeFamily(value) {
   if (value == null) return null;
   if (typeof value !== 'object' || Array.isArray(value)) throw herdError(400, 'Family must be an object.');
@@ -139,6 +140,7 @@ export function normalizeFamily(value) {
     .filter(item => item.text).sort((a, b) => a.date.localeCompare(b.date));
   return {
     catalogId: text(value.catalogId, 16), subspecies: text(value.subspecies, 40), origin: text(value.origin, 200),
+    hatchedAt: day(value.hatchedAt, 'Hatched at'),
     mother: text(value.mother, 80), father: text(value.father, 80), siblings, offspring, log,
   };
 }

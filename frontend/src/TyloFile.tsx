@@ -1,5 +1,6 @@
 import type { CatalogItem } from './api';
 import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring, type HerdSibling } from './herd';
+import { formatYears, tyloAge, tyloAgeRules, type TyloAge } from './tyloAge';
 import './tylo-file.css';
 
 // A Tylosaurus of your own gets a photo-ID file in the style of orca catalogues: catalogue number,
@@ -171,10 +172,26 @@ function Proof({ url, label }: { url: string; label: string }) {
 }
 
 const catalogOrder = (a: HerdDino, b: HerdDino) => (familyOf(a).catalogId || '~').localeCompare(familyOf(b).catalogId || '~', 'de', { numeric: true }) || a.name.localeCompare(b.name, 'de');
+// Clutches are numbered across all mates, so the highest number is the count so far.
+const clutchCount = (dino: HerdDino) => Math.max(0, ...familyOf(dino).offspring.map(calf => calf.clutch || 0));
+const ageOf = (dino: HerdDino) => tyloAge({ sex: dino.sex, hatchedAt: familyOf(dino).hatchedAt, createdAt: dino.createdAt, diedAt: dino.diedAt, clutches: clutchCount(dino) });
+
+// The age as a line through an orca-like life: youth up to maturity, then the clutch years up to the maximum.
+function AgeValue({ age, sex, detail = false }: { age: TyloAge | null; sex: HerdDino['sex']; detail?: boolean }) {
+  if (!age || !sex) return <><i>offen</i><small>Geschlecht fehlt</small></>;
+  const { max, mature } = tyloAgeRules[sex];
+  const at = (years: number) => `${Math.min(100, (years / max) * 100)}%`;
+  const basis = [`${age.clutches} Gelege`, `${age.days} ${age.days === 1 ? 'Tag' : 'Tage'} ${age.fromHatch ? 'seit Schlupf' : 'seit Aufnahme'}`].join(' · ');
+  return <>
+    {formatYears(age)}<span className="tf-age-stage"> · {age.stage}</span>
+    <span className="tf-age" aria-hidden="true"><i style={{ width: at(age.years) }} /><b style={{ left: at(mature) }} /></span>
+    <small>{basis}{detail && ` · Lebenserwartung bis ${max} Jahre`}{age.counted < age.clutches && ` · nur ${Math.floor(age.counted)} Gelege zählen (schneller als möglich)`}</small>
+  </>;
+}
+
 const familyLine = (dino: HerdDino, mates: HerdBond[]) => {
   const { offspring } = familyOf(dino);
-  // Clutches are numbered across all mates, so the highest number is the count so far.
-  const clutches = Math.max(0, ...offspring.map(calf => calf.clutch || 0));
+  const clutches = clutchCount(dino);
   return [`${mates.length} ${dino.sex === 'female' ? 'Partner' : mates.length === 1 ? 'Partnerin' : 'Partnerinnen'}`, clutches > 0 && `${clutches} Gelege`, `${offspring.length} ${offspring.length === 1 ? 'Kalb' : 'Kälber'}`].filter(Boolean).join(' · ');
 };
 
@@ -201,6 +218,7 @@ function TyloEntry({ dino }: { dino: HerdDino }) {
   const g = dino.genetics;
   const facts: Array<[string, React.ReactNode]> = [
     ['Unterart', family.subspecies || <i>offen</i>],
+    ['Alter', <AgeValue age={ageOf(dino)} sex={dino.sex} />],
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
     ['Familie', familyLine(dino, mates)],
     ['Letzte Sichtung', latest ? <>{formatDay(latest.date)}<small>{latest.text}</small></> : <i>noch keine</i>],
@@ -254,6 +272,7 @@ function FallEntry({ dino }: { dino: HerdDino }) {
   const died = formatDay(dino.diedAt || '');
   const facts: Array<[string, React.ReactNode]> = [
     ['Unterart', family.subspecies || <i>offen</i>],
+    ['Alter beim Tod', <AgeValue age={ageOf(dino)} sex={dino.sex} />],
     ['Im Register', days == null ? formatDay(dino.createdAt) : <>{days === 0 ? 'am ersten Tag gestorben' : `${days} ${days === 1 ? 'Tag' : 'Tage'}`}<small>seit {formatDay(dino.createdAt)}</small></>],
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine</i>],
     ['Familie', familyLine(dino, mates)],
@@ -292,6 +311,8 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
   const facts: Array<[string, React.ReactNode, string?]> = [
     ['Geschlecht', sexInfo ? `${sexSymbol(dino.sex)} ${sexInfo.role}` : <i>offen</i>],
     ['Unterart', family.subspecies || <i>offen</i>, family.subspecies ? undefined : sexInfo?.subspecies],
+    ['Alter', <AgeValue age={ageOf(dino)} sex={dino.sex} detail />],
+    ['Geschlüpft', family.hatchedAt ? formatDay(family.hatchedAt) : <i>offen</i>, family.hatchedAt ? undefined : 'Das Alter zählt bis dahin ab der Aufnahme ins Register.'],
     ['Herkunft', origin || <i>offen</i>],
     ['Bloodline', g?.bloodlines.length ? g.bloodlines.join(', ') : <i>keine eingetragen</i>],
     ['Im Register seit', formatDay(dino.createdAt)],
