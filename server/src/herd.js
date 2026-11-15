@@ -105,6 +105,8 @@ function day(value, label, required = false) {
   return trimmed;
 }
 
+const eventKinds = new Set(['apex', 'giant', 'event']);
+
 // Clutch number, counted across all of the dino's mates (1st clutch, 2nd clutch …); empty = unknown.
 function clutchNo(value) {
   if (value == null || value === '') return null;
@@ -138,10 +140,20 @@ export function normalizeFamily(value) {
   }).filter(item => item.name);
   const log = entries(value.log, 'Log').map(item => ({ date: day(item.date, 'Log date', true), text: text(item.text, 400), place: text(item.place, 80) }))
     .filter(item => item.text).sort((a, b) => a.date.localeCompare(b.date));
+  // Notable kills and events, kept apart from the chronicle the way orca catalogues log exceptional
+  // predation: another apex predator, a giant herbivore, or an unusual event (stranding, rescue …).
+  const events = entries(value.events, 'Events').map(item => {
+    const kind = item.kind || 'event';
+    if (!eventKinds.has(kind)) throw herdError(400, `Event kind must be one of ${[...eventKinds].join(', ')}.`);
+    return {
+      date: day(item.date, 'Event date', true), kind, subject: text(item.subject, 80), playableId: text(item.playableId, 60),
+      outcome: text(item.outcome, 60), technique: text(item.technique, 80), partners: text(item.partners, 120), place: text(item.place, 80), note: text(item.note, 400),
+    };
+  }).filter(item => item.subject).sort((a, b) => a.date.localeCompare(b.date));
   return {
     catalogId: text(value.catalogId, 16), subspecies: text(value.subspecies, 40), origin: text(value.origin, 200),
     hatchedAt: day(value.hatchedAt, 'Hatched at'),
-    mother: text(value.mother, 80), father: text(value.father, 80), siblings, offspring, log,
+    mother: text(value.mother, 80), father: text(value.father, 80), siblings, offspring, log, events,
   };
 }
 

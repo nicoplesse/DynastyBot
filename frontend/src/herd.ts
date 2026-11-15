@@ -15,7 +15,10 @@ export interface HerdOffspring { name: string; sex: 'female' | 'male' | null; mo
 export interface HerdLogEntry { date: string; text: string; place: string }
 // The ID file: catalogue number, origin, calves (each names its mother) and a dated chronicle.
 export interface HerdSibling { name: string; sex: 'female' | 'male' | null; status: string; note: string }
-export interface HerdFamily { catalogId: string; subspecies: string; origin: string; hatchedAt?: string; mother: string; father: string; siblings?: HerdSibling[]; offspring: HerdOffspring[]; log: HerdLogEntry[] }
+// Notable kills and events: another apex predator, a giant herbivore, or an unusual event.
+export type HerdEventKind = 'apex' | 'giant' | 'event';
+export interface HerdEvent { date: string; kind: HerdEventKind; subject: string; playableId: string; outcome: string; technique: string; partners: string; place: string; note: string }
+export interface HerdFamily { catalogId: string; subspecies: string; origin: string; hatchedAt?: string; mother: string; father: string; siblings?: HerdSibling[]; offspring: HerdOffspring[]; log: HerdLogEntry[]; events?: HerdEvent[] }
 export interface HerdDino {
   schemaVersion: number; id: string; name: string; playableId: string | null; sex: 'female' | 'male' | null;
   photo: string | null; proofs: { mutation: string; nesting: string }; notes: string;

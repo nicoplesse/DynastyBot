@@ -1,5 +1,5 @@
 import type { CatalogItem } from './api';
-import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdOffspring, type HerdSibling } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdEvent, type HerdEventKind, type HerdOffspring, type HerdSibling } from './herd';
 import { formatYears, tyloAge, tyloAgeRules, type TyloAge } from './tyloAge';
 import './tylo-file.css';
 
@@ -166,6 +166,52 @@ function Behaviour({ dino, catalogId }: { dino: HerdDino; catalogId: string }) {
   </div>;
 }
 
+// Notable kills and events, logged one by one the way orca researchers record exceptional predation:
+// kills of other apex predators (great white sharks), of animals bigger than the hunters (blue whales),
+// and unusual events like deliberate stranding. Prey size is set against the dino's own combat weight.
+const eventKinds: Record<HerdEventKind, { label: string; orca: string }> = {
+  apex: { label: 'Apex-Räuber', orca: 'wie Orcas, die Weiße Haie töten' },
+  giant: { label: 'Riesen-Pflanzenfresser', orca: 'wie Orcas, die Blauwale reißen' },
+  event: { label: 'Besonderes Ereignis', orca: 'wie absichtliches Stranden oder eine Rettung' },
+};
+const weightFormat = new Intl.NumberFormat('de-DE');
+const ratioFormat = new Intl.NumberFormat('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+// The prey's playable: the stored id, else every playable whose name or alias is the subject (variants
+// like Deinosuchus shore / ocean); a weight is shown only when all of them agree.
+function preyOf(event: HerdEvent, playables: Map<string, CatalogItem>) {
+  const direct = event.playableId ? playables.get(event.playableId) : undefined;
+  const matches = direct ? [direct] : [...playables.values()].filter(item => [item.name, item.variant?.parentName || '', ...item.aliases].some(name => name && same(name, event.subject)));
+  const weights = new Set(matches.map(item => item.stats.combatWeight));
+  return { link: matches.length === 1 ? matches[0] : undefined, weight: weights.size === 1 ? matches[0].stats.combatWeight : null, tier: matches[0]?.classification.label || '' };
+}
+
+function NotableEvents({ dino, playable, playables }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem> }) {
+  const events = [...(familyOf(dino).events || [])].sort((a, b) => b.date.localeCompare(a.date));
+  if (!events.length) return <p className="tf-muted">Noch keine außergewöhnliche Jagd vermerkt. Eintragen: <code>/aktualisiere {dino.name}</code></p>;
+  const own = playable?.stats.combatWeight || null;
+  return <ol className="tf-events">{events.map((event, index) => {
+    const kind = eventKinds[event.kind] || eventKinds.event;
+    const prey = event.kind === 'event' ? null : preyOf(event, playables);
+    const ratio = prey?.weight && own ? prey.weight / own : null;
+    const details = ([['Ausgang', event.outcome], ['Technik', event.technique], ['Beteiligt', event.partners], ['Ort', event.place]] as Array<[string, string]>).filter(([, value]) => value);
+    return <li key={`${event.date}-${index}`} className={`tf-event ${event.kind}`}>
+      <div className="tf-event-head">
+        <span className="tf-event-kind">{kind.label.toUpperCase()}</span>
+        <time dateTime={event.date}>{formatDay(event.date)}</time>
+      </div>
+      <h3>{prey?.link ? <a href={`#/profiles/${prey.link.id}`}>{event.subject}</a> : event.subject}</h3>
+      {prey?.tier && <p className="tf-event-tier">{prey.tier}</p>}
+      {prey?.weight && <div className="tf-event-scale" title="Kampfgewicht (CW) der Beute im Vergleich zum eigenen">
+        <span><b>{weightFormat.format(prey.weight)}</b> CW Beute</span>
+        {ratio && <span className={ratio >= 1 ? 'bigger' : undefined}>{ratioFormat.format(ratio)}× {dino.name}{ratio > 1 ? ' · größer als der Jäger' : ''}</span>}
+      </div>}
+      {details.length > 0 && <dl>{details.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
+      {event.note && <p className="tf-event-note">{event.note}</p>}
+    </li>;
+  })}</ol>;
+}
+
 function Proof({ url, label }: { url: string; label: string }) {
   const discord = isDiscordUrl(url);
   return <a href={linkHref(url)} title={url} {...(discord ? {} : { target: '_blank', rel: 'noreferrer' })}>{label} ↗</a>;
@@ -300,7 +346,7 @@ function FallEntry({ dino }: { dino: HerdDino }) {
   </a>;
 }
 
-export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; onOpenPhoto: () => void; onAddPhoto: () => void }) {
+export function TyloFile({ dino, playable, playables, onOpenPhoto, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem>; onOpenPhoto: () => void; onAddPhoto: () => void }) {
   const family = familyOf(dino);
   const sexInfo = dino.sex ? bySex[dino.sex] : null;
   const g = dino.genetics;
@@ -375,6 +421,12 @@ export function TyloFile({ dino, playable, onOpenPhoto, onAddPhoto }: { dino: He
         <ul className="tf-quotes">{quotes.map(quote => <li key={quote.source}><blockquote>{quote.text}</blockquote><cite>Profil › {quote.source}</cite></li>)}</ul>
       </Section>
     </div>
+
+    <Section index="06" title="Besondere Jagden &amp; Ereignisse" className="tf-notable" aside={<span className="tf-legend">PRÄDATIONSPROTOKOLL</span>}>
+      <p className="tf-notable-intro">Orca-Forscher halten außergewöhnliche Jagden einzeln fest: wenn Orcas andere Spitzenräuber wie den Weißen Hai töten, Tiere reißen, die größer sind als sie selbst, wie Blauwale, oder sich zur Jagd absichtlich auf den Strand werfen. Hier stehen die Fälle, die über das tägliche Fressen hinausgehen.</p>
+      <ul className="tf-notable-kinds">{(Object.keys(eventKinds) as HerdEventKind[]).map(key => <li key={key} className={key}><b>{eventKinds[key].label}</b><small>{eventKinds[key].orca}</small></li>)}</ul>
+      <NotableEvents dino={dino} playable={playable} playables={playables} />
+    </Section>
 
     <footer className="tf-foot"><span>Akte geführt seit {formatDay(dino.createdAt)} · zuletzt ergänzt {formatDay(dino.updatedAt)}</span><span>Neue Kälber, Partnerinnen, Sichtungen oder Verhalten: <code>/aktualisiere {dino.name}</code></span></footer>
   </article>;

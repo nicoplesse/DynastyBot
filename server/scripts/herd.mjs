@@ -37,6 +37,7 @@ function summary(dino) {
       siblings: (dino.family.siblings || []).map(item => [item.name, item.sex, item.status, item.note].filter(Boolean).join(' · ')),
       offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.clutch && `Gelege ${item.clutch}`, item.born, item.status].filter(Boolean).join(' · ')),
       log: dino.family.log.map(item => `${item.date} ${item.text}`),
+      events: (dino.family.events || []).map(item => [item.date, item.kind, item.subject, item.outcome, item.technique, item.partners, item.place].filter(Boolean).join(' · ')),
     } : null,
     playableId: dino.playableId, sex: dino.sex, diedAt: dino.diedAt || '', deathCause: dino.deathCause || '', proofs: dino.proofs, notes: dino.notes,
   };

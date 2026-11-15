@@ -93,6 +93,14 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 1.5 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 0 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: [] })).status, 400);
+    const events = await (await patch('malekit', { family: { events: [
+      { date: '2026-11-16', kind: 'apex', subject: 'Deinosuchus', outcome: 'getötet' },
+      { date: '2026-11-10', subject: 'Strandung überlebt' }, { date: '2026-11-11', subject: ' ' },
+    ] } })).json();
+    assert.deepEqual(events.family.events.map(item => [item.date, item.kind, item.subject]), [['2026-11-10', 'event', 'Strandung überlebt'], ['2026-11-16', 'apex', 'Deinosuchus']]);
+    assert.equal(events.family.events[1].outcome, 'getötet');
+    assert.equal((await patch('malekit', { family: { events: [{ date: '2026-11-16', kind: 'boss', subject: 'X' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { events: [{ subject: 'X' }] } })).status, 400);
 
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
     assert.equal((await fetch(`${base}/api/herd?playable=spinosaurus`).then(response => response.json())).length, 0);

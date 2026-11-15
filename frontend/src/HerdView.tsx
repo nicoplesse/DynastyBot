@@ -365,7 +365,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
     <ExplorerTopline section="MY DINOS / DETAIL" count={dino.name.toUpperCase()} />
     {isDeceased(dino) ? <button className="back-link" type="button" onClick={() => go('/friedhof')}>← Friedhof</button> : <button className="back-link" type="button" onClick={() => go('/herd')}>← All my dinos</button>}
     <article className="herd-detail">
-      {idFile ? <TyloFile dino={dino} playable={playable} onOpenPhoto={openPhoto} onAddPhoto={openTools} />
+      {idFile ? <TyloFile dino={dino} playable={playable} playables={playables} onOpenPhoto={openPhoto} onAddPhoto={openTools} />
         : titan ? <TitanFile dino={dino} playable={playable} onOpenPhoto={openPhoto} onAddPhoto={openTools} /> : <header className="herd-hero">
         <button type="button" className="herd-hero-image" onClick={() => dino.photo && setLightbox(herdApi.fileUrl(dino, dino.photo))} disabled={!dino.photo} aria-label={dino.photo ? 'Open photo' : 'No photo yet'}><DinoImage dino={dino} playable={playable} />{!dino.photo && <span className="herd-no-photo">No photo yet</span>}</button>
         <div className="herd-hero-copy">
