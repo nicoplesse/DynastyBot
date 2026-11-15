@@ -186,7 +186,7 @@ function preyOf(event: HerdEvent, playables: Map<string, CatalogItem>) {
   return { link: matches.length === 1 ? matches[0] : undefined, weight: weights.size === 1 ? matches[0].stats.combatWeight : null, tier: matches[0]?.classification.label || '' };
 }
 
-function NotableEvents({ dino, playable, playables }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem> }) {
+function NotableEvents({ dino, playable, playables, onOpenImage }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem>; onOpenImage: (url: string) => void }) {
   const events = [...(familyOf(dino).events || [])].sort((a, b) => b.date.localeCompare(a.date));
   if (!events.length) return <p className="tf-muted">Noch keine außergewöhnliche Jagd vermerkt. Eintragen: <code>/aktualisiere {dino.name}</code></p>;
   const own = playable?.stats.combatWeight || null;
@@ -195,7 +195,14 @@ function NotableEvents({ dino, playable, playables }: { dino: HerdDino; playable
     const prey = event.kind === 'event' ? null : preyOf(event, playables);
     const ratio = prey?.weight && own ? prey.weight / own : null;
     const details = ([['Ausgang', event.outcome], ['Technik', event.technique], ['Beteiligt', event.partners], ['Ort', event.place]] as Array<[string, string]>).filter(([, value]) => value);
-    return <li key={`${event.date}-${index}`} className={`tf-event ${event.kind}`}>
+    // Only some kills have a photo of the moment: it is the evidence photo, set on the card like an ID plate.
+    const photo = event.photo ? herdApi.fileUrl(dino, event.photo) : '';
+    return <li key={`${event.date}-${index}`} className={`tf-event ${event.kind}${photo ? ' with-photo' : ''}`}>
+      {photo && <figure className="tf-event-photo">
+        <button type="button" onClick={() => onOpenImage(photo)} aria-label={`Belegfoto ${event.subject} groß öffnen`}><img src={photo} alt={`${dino.name}: ${event.subject}, ${event.outcome || kind.label}`} loading="lazy" /></button>
+        <i className="tf-crop tl" /><i className="tf-crop tr" /><i className="tf-crop bl" /><i className="tf-crop br" />
+        <figcaption><span>BELEGFOTO</span><span>{familyOf(dino).catalogId || 'TY–'} · {dino.name.toUpperCase()}</span></figcaption>
+      </figure>}
       <div className="tf-event-head">
         <span className="tf-event-kind">{kind.label.toUpperCase()}</span>
         <time dateTime={event.date}>{formatDay(event.date)}</time>
@@ -346,7 +353,7 @@ function FallEntry({ dino }: { dino: HerdDino }) {
   </a>;
 }
 
-export function TyloFile({ dino, playable, playables, onOpenPhoto, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem>; onOpenPhoto: () => void; onAddPhoto: () => void }) {
+export function TyloFile({ dino, playable, playables, onOpenPhoto, onOpenImage, onAddPhoto }: { dino: HerdDino; playable?: CatalogItem; playables: Map<string, CatalogItem>; onOpenPhoto: () => void; onOpenImage: (url: string) => void; onAddPhoto: () => void }) {
   const family = familyOf(dino);
   const sexInfo = dino.sex ? bySex[dino.sex] : null;
   const g = dino.genetics;
@@ -425,7 +432,7 @@ export function TyloFile({ dino, playable, playables, onOpenPhoto, onAddPhoto }:
     <Section index="06" title="Besondere Jagden &amp; Ereignisse" className="tf-notable" aside={<span className="tf-legend">PRÄDATIONSPROTOKOLL</span>}>
       <p className="tf-notable-intro">Orca-Forscher halten außergewöhnliche Jagden einzeln fest: wenn Orcas andere Spitzenräuber wie den Weißen Hai töten, Tiere reißen, die größer sind als sie selbst, wie Blauwale, oder sich zur Jagd absichtlich auf den Strand werfen. Hier stehen die Fälle, die über das tägliche Fressen hinausgehen.</p>
       <ul className="tf-notable-kinds">{(Object.keys(eventKinds) as HerdEventKind[]).map(key => <li key={key} className={key}><b>{eventKinds[key].label}</b><small>{eventKinds[key].orca}</small></li>)}</ul>
-      <NotableEvents dino={dino} playable={playable} playables={playables} />
+      <NotableEvents dino={dino} playable={playable} playables={playables} onOpenImage={onOpenImage} />
     </Section>
 
     <footer className="tf-foot"><span>Akte geführt seit {formatDay(dino.createdAt)} · zuletzt ergänzt {formatDay(dino.updatedAt)}</span><span>Neue Kälber, Partnerinnen, Sichtungen oder Verhalten: <code>/aktualisiere {dino.name}</code></span></footer>

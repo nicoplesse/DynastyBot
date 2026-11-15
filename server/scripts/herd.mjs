@@ -80,6 +80,10 @@ try {
     const dino = await store.find(key);
     const updated = await store.addFiles({ id: dino.id, photo: { path: resolve(payloadFile), originalname: basename(payloadFile) } });
     console.log(`Photo for ${updated.name}: data/herd/${updated.id}/${updated.photo}${dino.photo ? ` (replaces ${dino.photo})` : ''}`);
+  } else if (command === 'event-photo' && key && payloadFile) {
+    const dino = await store.find(key);
+    const { event, previous } = await store.setEventPhoto(dino.id, process.argv[5] || '', { path: resolve(payloadFile), originalname: basename(payloadFile) });
+    console.log(`Event photo for ${dino.name}, ${event.date} ${event.subject}: data/herd/${dino.id}/${event.photo}${previous ? ` (replaces ${previous})` : ''}`);
   } else if (command === 'apply' && key && payloadFile) {
     const dino = await store.find(key);
     const payload = JSON.parse(await readFile(payloadFile, 'utf8'));
@@ -90,7 +94,7 @@ try {
     console.log(diff.length ? diff.map(line => `  ${line}`).join('\n') : '  no field changes');
     console.log(`  screenshots marked as read: ${read}, still pending: ${updated.screenshots.filter(shot => !shot.processedAt).length}`);
   } else {
-    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | photo <name|id> <image> | apply <name|id> <payload.json>');
+    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | photo <name|id> <image> | event-photo <name|id> <image> [date|subject] | apply <name|id> <payload.json>');
     process.exitCode = 2;
   }
 } catch (error) {

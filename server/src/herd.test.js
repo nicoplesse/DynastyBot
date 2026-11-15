@@ -101,6 +101,16 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal(events.family.events[1].outcome, 'getötet');
     assert.equal((await patch('malekit', { family: { events: [{ date: '2026-11-16', kind: 'boss', subject: 'X' }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { events: [{ subject: 'X' }] } })).status, 400);
+    assert.equal((await patch('malekit', { family: { events: [{ date: '2026-11-16', subject: 'X', photo: '../dino.json' }] } })).status, 400);
+    const store = createHerdStore({ herdDir, processedDir });
+    const shot = join(root, 'kill.png');
+    await writeFile(shot, png);
+    await assert.rejects(store.setEventPhoto('malekit', '', { path: shot, originalname: 'kill.png' }), /Several events/);
+    const { event } = await store.setEventPhoto('malekit', 'deinosuchus', { path: shot, originalname: 'kill.png' });
+    assert.match(event.photo, /^events\/.+\.png$/);
+    assert.equal((await fetch(`${base}/api/herd/malekit/files/${event.photo}`)).status, 200);
+    const unshot = await (await fetch(`${base}/api/herd/malekit/files/${event.photo}`, { method: 'DELETE' })).json();
+    assert.equal(unshot.family.events.find(item => item.subject === 'Deinosuchus').photo, '');
 
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
     assert.equal((await fetch(`${base}/api/herd?playable=spinosaurus`).then(response => response.json())).length, 0);

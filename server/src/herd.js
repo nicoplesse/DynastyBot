@@ -3,6 +3,7 @@
 //                    bonds and character for social playables, from the UI or the skill; family for the ID file)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
 //   photo-*.<ext>    optional photo of the dino
+//   events/*.<ext>   optional evidence photos of notable kills and events (family.events[].photo)
 // A dead dino keeps its folder; diedAt (YYYY-MM-DD) marks it as deceased, deathCause says how it died.
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
 import { copyFile, mkdir, open, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
@@ -12,7 +13,8 @@ import { fileURLToPath } from 'node:url';
 
 export const defaultHerdDir = fileURLToPath(new URL('../../data/herd/', import.meta.url));
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const filePattern = /^(screenshots\/[a-z0-9-]+|photo-[a-z0-9-]+)\.(png|jpg|webp)$/;
+const filePattern = /^(screenshots\/[a-z0-9-]+|events\/[a-z0-9-]+|photo-[a-z0-9-]+)\.(png|jpg|webp)$/;
+const eventPhotoPattern = /^events\/[a-z0-9-]+\.(png|jpg|webp)$/;
 const sexes = new Set(['female', 'male']);
 
 export function herdError(status, message) {
@@ -106,6 +108,12 @@ function day(value, label, required = false) {
 }
 
 const eventKinds = new Set(['apex', 'giant', 'event']);
+// Only some kills come with a photo of the moment; it lives in the dino's events/ folder.
+function eventPhoto(value) {
+  const file = text(value, 80);
+  if (file && !eventPhotoPattern.test(file)) throw herdError(400, 'Event photo must be a file in events/.');
+  return file;
+}
 
 // Clutch number, counted across all of the dino's mates (1st clutch, 2nd clutch …); empty = unknown.
 function clutchNo(value) {
@@ -148,6 +156,7 @@ export function normalizeFamily(value) {
     return {
       date: day(item.date, 'Event date', true), kind, subject: text(item.subject, 80), playableId: text(item.playableId, 60),
       outcome: text(item.outcome, 60), technique: text(item.technique, 80), partners: text(item.partners, 120), place: text(item.place, 80), note: text(item.note, 400),
+      photo: eventPhoto(item.photo),
     };
   }).filter(item => item.subject).sort((a, b) => a.date.localeCompare(b.date));
   return {
@@ -329,10 +338,35 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     return write(dino);
   }
 
+  // Sets the evidence photo of one notable event, found by its date or subject (the only event if none is given).
+  async function setEventPhoto(id, match, upload) {
+    const dino = await read(id);
+    const events = dino.family?.events || [];
+    const key = text(match, 80).toLowerCase();
+    const hits = key ? events.filter(item => item.date === key || item.subject.toLowerCase() === key) : events;
+    if (!hits.length) throw herdError(404, key ? `No event matches ${match}.` : `${dino.name} has no notable events yet.`);
+    if (hits.length > 1) throw herdError(400, `Several events match; name one by date or subject: ${hits.map(item => `${item.date} ${item.subject}`).join(', ')}`);
+    const kind = await imageKind(upload.path);
+    if (!kind) throw herdError(400, `Unsupported or invalid photo: ${upload.originalname}`);
+    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace('T', '-').slice(0, 15);
+    const file = `events/${stamp}.${kind}`;
+    await mkdir(join(folder(dino.id), 'events'), { recursive: true });
+    await copyFile(upload.path, join(folder(dino.id), file));
+    const event = hits[0];
+    const previous = event.photo;
+    event.photo = file;
+    const saved = await write(dino);
+    if (previous && previous !== file) await rm(join(folder(dino.id), previous), { force: true });
+    return { dino: saved, event, previous };
+  }
+
+  const eventWith = (dino, file) => (dino.family?.events || []).find(item => item.photo === file);
+
   async function removeFile(id, file) {
     if (!isHerdFile(file)) throw herdError(400, 'Invalid file.');
     const dino = await read(id);
     if (dino.photo === file) dino.photo = null;
+    else if (eventWith(dino, file)) eventWith(dino, file).photo = '';
     else if (dino.screenshots.some(shot => shot.file === file)) dino.screenshots = dino.screenshots.filter(shot => shot.file !== file);
     else throw herdError(404, 'File not found.');
     await rm(join(folder(id), file), { force: true });
@@ -347,9 +381,9 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
   async function filePath(id, file) {
     if (!isHerdFile(file)) throw herdError(400, 'Invalid file.');
     const dino = await read(id);
-    if (dino.photo !== file && !dino.screenshots.some(shot => shot.file === file)) throw herdError(404, 'File not found.');
+    if (dino.photo !== file && !dino.screenshots.some(shot => shot.file === file) && !eventWith(dino, file)) throw herdError(404, 'File not found.');
     return join(folder(id), file);
   }
 
-  return { root, all, read, find, addFiles, update, removeFile, remove, filePath, folder };
+  return { root, all, read, find, addFiles, update, setEventPhoto, removeFile, remove, filePath, folder };
 }
