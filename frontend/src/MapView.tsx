@@ -44,6 +44,8 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [hoverId, setHoverId] = useState<number | null>(null);
   const [showRoutes, setShowRoutes] = useState(false);
+  // Variants with overlapping ranges (Microraptor subspecies) spotlight their home areas by default.
+  const [showHome, setShowHome] = useState(true);
   const routes = map.routes || [];
 
   useEffect(() => { let live = true; loadWorldMap().then(doc => { if (live) setWorld(doc); }).catch(() => {}); return () => { live = false; }; }, []);
@@ -70,7 +72,16 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
 
   const litMain = landscape ? landscape.regions.map(id => regionsById.get(id)).filter((r): r is MapRegion => Boolean(r)) : [];
   const litPart = landscape ? landscape.also.map(id => regionsById.get(id)).filter((r): r is MapRegion => Boolean(r)) : [];
-  const spotlight = Boolean(landscape) || (selected?.shape?.type === 'polygon');
+  // Home spotlight: home areas fully lit, border land half-lit, roaming ground under the veil.
+  // A landscape picked above takes over the spotlight.
+  const hasRanges = map.markers.some(marker => marker.range);
+  const rangeSpot = hasRanges && showHome && !landscape;
+  const ringAreas = (range: PoiMarker['range']) => rangeSpot
+    ? map.markers.filter(marker => marker.range === range && marker.shape?.type === 'polygon').map(marker => marker.shape as Extract<PoiShape, { type: 'polygon' }>)
+    : [];
+  const homeAreas = ringAreas('home');
+  const borderAreas = ringAreas('border');
+  const spotlight = Boolean(landscape) || rangeSpot || (selected?.shape?.type === 'polygon');
 
   const toggleLandscape = (id: string) => { setLandscapeId(current => (current === id ? null : id)); setSelectedId(null); };
   const selectMarker = (index: number) => setSelectedId(current => (current === index ? null : index));
@@ -93,7 +104,11 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
             </button>;
           })}
         </div>
-        {routes.length > 0 && <button type="button" className={`map-routes-toggle ${showRoutes ? 'on' : ''}`} onClick={() => setShowRoutes(value => !value)} aria-pressed={showRoutes}>Route lines</button>}
+        {(hasRanges || routes.length > 0) && <div className="map-toggles">
+          {hasRanges && <button type="button" className={`map-routes-toggle ${showHome ? 'on' : ''}`} onClick={() => setShowHome(value => !value)} aria-pressed={showHome}
+            title="Light up the home areas (own hatching areas) and dim the roaming ground">Home areas</button>}
+          {routes.length > 0 && <button type="button" className={`map-routes-toggle ${showRoutes ? 'on' : ''}`} onClick={() => setShowRoutes(value => !value)} aria-pressed={showRoutes}>Route lines</button>}
+        </div>}
       </div>
 
       <div className="map-stage-wrap">
@@ -111,14 +126,18 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
                   <g filter={`url(#soft-${uid})`}>
                     {litPart.map(region => region.shape.type === 'polygon' && <polygon key={region.id} points={polygonPoints(region.shape)} fill="#707070" />)}
                     {litMain.map(region => region.shape.type === 'polygon' && <polygon key={region.id} points={polygonPoints(region.shape)} fill="black" />)}
+                    {borderAreas.map((shape, index) => <polygon key={`border-${index}`} points={polygonPoints(shape)} fill="#707070" />)}
+                    {homeAreas.map((shape, index) => <polygon key={`home-${index}`} points={polygonPoints(shape)} fill="black" />)}
                     {landscape?.water && <image href={api.mapLayerUrl(landscape.water)} x="0" y="0" width="1" height="1" preserveAspectRatio="none" />}
                     {!landscape && selected?.shape?.type === 'polygon' && <polygon points={polygonPoints(selected.shape)} fill="black" />}
                   </g>
                 </mask>
               </defs>
-              <rect className={`map-veil ${landscape ? '' : 'light'}`} width="1" height="1" mask={`url(#lit-${uid})`} />
+              <rect className={`map-veil ${landscape || rangeSpot ? '' : 'light'}`} width="1" height="1" mask={`url(#lit-${uid})`} />
               {litPart.map(region => region.shape.type === 'polygon' && <polygon key={region.id} className="map-outline part" points={polygonPoints(region.shape)} />)}
               {litMain.map(region => region.shape.type === 'polygon' && <polygon key={region.id} className="map-outline" points={polygonPoints(region.shape)} />)}
+              {borderAreas.map((shape, index) => <polygon key={`border-${index}`} className="map-outline part" points={polygonPoints(shape)} />)}
+              {homeAreas.map((shape, index) => <polygon key={`home-${index}`} className="map-outline home" points={polygonPoints(shape)} />)}
             </>}
             {focus?.shape?.type === 'polygon' && <polygon className="map-outline focus" points={polygonPoints(focus.shape)} />}
             {routes.length > 0 && showRoutes && routes.map((route, ri) => {
@@ -156,6 +175,12 @@ export function MapView({ profileId, name, map, ecosystem }: Props) {
                 isHome={ecosystem?.id === landscape.id} onSelect={setSelectedId} onHover={setHoverId} onClose={() => setLandscapeId(null)} />
             : <PoiList markers={map.markers} name={name} onSelect={setSelectedId} onHover={setHoverId} />}
       </div>
+
+      {rangeSpot && <p className="map-key">
+        <span><i className="key-home" /> Home: own hatching areas</span>
+        {borderAreas.length > 0 && <span><i className="key-part" /> Border land</span>}
+        <span>Dimmed: roaming ground</span>
+      </p>}
 
       {landscape && <p className="map-key">
         <span><i className="key-lit" /> {landscape.label}</span>
@@ -201,7 +226,7 @@ function PoiList({ markers, name, onSelect, onHover }: { markers: PoiMarker[]; n
           <span className="map-detail-cap">{role.startsWith('range:') ? RANGE_LABEL[role.slice(6)] : ROLE_LABEL[role] || titleCase(role)}</span>
           <ul>
             {indexes.map(index => (
-              <li key={index}>
+              <li key={index} className={markers[index].range === 'home' ? 'home' : undefined}>
                 <button type="button" onClick={() => onSelect(index)} onMouseEnter={() => onHover(index)} onMouseLeave={() => onHover(null)} onFocus={() => onHover(index)} onBlur={() => onHover(null)}>
                   {markers[index].name}
                   {markers[index].variant && markers[index].variant !== 'both' && <small>{titleCase(markers[index].variant as string)}</small>}
