@@ -375,6 +375,24 @@
         "Giftig: Wer es frisst, kann krank werden – nur wenige Arten vertragen es."
       ]
     },
+    "microraptor": {
+      "setups": [
+        { "id": "pair", "label": "1–2", "size": 1, "tier": "Tiny", "only": ["deinonychus", "latenivenatrix", "psittacosaurus", "struthiomimus", "rhamphorhynchus"] }
+      ],
+      "priorities": [
+        { "label": "Hass: Nester von Deinonychus & Latenivenatrix plündern", "targets": ["deinonychus", "latenivenatrix"], "young": true, "condition": "nur Jungtiere bis Juvenile, bewacht oder nicht – bei Gegenwehr fliehen", "quote": "Microraptor have an innate hatred for these species, and seek to raid their nests should they come across them, should they be at the correct hunting hunger." }
+      ],
+      "allow": [
+        { "label": "Jungtiere bis Juvenile, auch bewacht", "targets": ["psittacosaurus", "struthiomimus"], "young": true, "condition": "nur Jungtiere bis Juvenile, bewacht oder nicht", "quote": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below." },
+        { "label": "Rhamphorhynchus im Gleitflug hetzen", "targets": ["rhamphorhynchus"], "condition": "offen hetzen, bevor er ins Wasser flieht – auch auf Pflanzenfressern", "quote": "Microraptor may hunt Rhamphorhynchus." }
+      ],
+      "notes": [
+        "Frisst vor allem Aas, Insekten und Kleintiere und jagt nur gelegentlich.",
+        "Jagt höchstens zu zweit: Einer lockt die Eltern mit nachgeahmten Rufen weg, der andere schlüpft ins Nest.",
+        "Flieht vor Hatzegopteryx, Quetzalcoatlus, Megalania, Kelenken, Thalassodromeus und Tropeognathus, außer am Nest.",
+        "Verträgt keine Metriacanthosaurus-Kadaver."
+      ]
+    },
     "pycnonemosaurus": {
       "setups": [
         { "id": "solo", "label": "Solo", "size": 1, "tier": "Large" },

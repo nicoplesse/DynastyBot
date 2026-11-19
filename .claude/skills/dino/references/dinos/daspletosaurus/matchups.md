@@ -86,6 +86,16 @@ A profile rule names or prioritises this matchup. This is a close chase on land:
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 60 pro Haupttreffer vom Angreifer (11 bis zum Kill), 30 zurück (20 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Verfolgung: Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left. (Kampfgewicht 3500 vs 500)
+- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 420 pro Haupttreffer vom Angreifer (1 bis zum Kill), 6 zurück (106 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Megalania (Arid) – hoch (quarry)
 Megalania (Arid) is a realistic hunting opportunity
 
@@ -124,16 +134,6 @@ Barsboldia is within the legal hunt ceiling. Daspletosaurus is 21% faster on lan
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left. (Kampfgewicht 3500 vs 5500)
 - Kampf (beide Seiten legal max): 1 Daspletosaurus vs 2 Barsboldia: the Barsboldia side wins in about 3 s with 97% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 35 pro Haupttreffer vom Angreifer (44 bis zum Kill), 79 zurück (8 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Sarcosuchus – spürbar (risky-quarry)
-Sarcosuchus is legal quarry, but not a comfortable fight
-
-Sarcosuchus is within the legal hunt ceiling. Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.
-- Verfolgung: Daspletosaurus is 14% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left. (Kampfgewicht 3500 vs 4500)
-- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 97% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 47 pro Haupttreffer vom Angreifer (13 bis zum Kill), 51 zurück (12 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

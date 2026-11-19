@@ -1,6 +1,6 @@
 # Deinosuchus (Shore) – Matchups
 
-Played solo against their full legal groups, Deinosuchus (Shore) has 4 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Deinosuchus (Shore) has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -44,36 +44,6 @@ Deinocheirus is linked by a specific profile rule. The speed gap is small (700 v
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 38 pro Haupttreffer vom Angreifer (27 bis zum Kill), 55 zurück (18 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
-### Eurhinosaurus – conditional (conditional)
-Eurhinosaurus matters only if it gets the right opening
-
-Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 38% of its health left.
-- Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 3 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 38% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 38% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (56 bis zum Kill), 110 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Freshwater) – conditional (conditional)
-Lurdusaurus (Freshwater) matters only if it gets the right opening
-
-Lurdusaurus (Freshwater) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water. 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left.
-- Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (46 bis zum Kill), 103 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Coast) – conditional (conditional)
-Lurdusaurus (Coast) matters only if it gets the right opening
-
-Lurdusaurus (Coast) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water. 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left.
-- Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 8 s with 76% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (46 bis zum Kill), 103 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ### Tyrannotitan – sehr hoch (predator)
 Tyrannotitan can create a very narrow escape window
 
@@ -82,6 +52,26 @@ Tyrannotitan is inside the legal hunt range. Tyrannotitan is 64% faster on land;
 - Kampf (du solo gegen ihre volle legale Gruppe): 2 Tyrannotitan vs 1 Deinosuchus (Shore): the Tyrannotitan side wins in about 20 s with 52% of its health left. (Kampfgewicht 5500 vs 6000)
 - Kampf (beide Seiten legal max): 2 Tyrannotitan vs 1 Deinosuchus (Shore): the Tyrannotitan side wins in about 20 s with 52% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 33 pro Haupttreffer vom Angreifer (31 bis zum Kill), 55 zurück (17 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Allosaurus – sehr hoch (predator)
+Allosaurus can create a very narrow escape window
+
+Allosaurus is inside the legal hunt range. Allosaurus is 89% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Deinosuchus (Shore): the Allosaurus side wins in about 18 s with 35% of its health left.
+- Verfolgung: Allosaurus is 89% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 3 Allosaurus vs 1 Deinosuchus (Shore): the Allosaurus side wins in about 18 s with 35% of its health left. (Kampfgewicht 3750 vs 6000)
+- Kampf (beide Seiten legal max): 3 Allosaurus vs 1 Deinosuchus (Shore): the Allosaurus side wins in about 18 s with 35% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (36 bis zum Kill), 88 zurück (8 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Pycnonemosaurus – sehr hoch (predator)
+Pycnonemosaurus can create a very narrow escape window
+
+Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 95% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Deinosuchus (Shore): the Pycnonemosaurus side wins in about 13 s with 50% of its health left.
+- Verfolgung: Pycnonemosaurus is 95% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 3 Pycnonemosaurus vs 1 Deinosuchus (Shore): the Pycnonemosaurus side wins in about 13 s with 50% of its health left. (Kampfgewicht 3500 vs 6000)
+- Kampf (beide Seiten legal max): 3 Pycnonemosaurus vs 1 Deinosuchus (Shore): the Pycnonemosaurus side wins in about 13 s with 50% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 27 pro Haupttreffer vom Angreifer (38 bis zum Kill), 94 zurück (7 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
 ## Chancen (wen du jagen/schlagen kannst)

@@ -106,6 +106,16 @@ A profile rule names or prioritises this matchup. Achillobator is 35% faster on 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (44 bis zum Kill), 59 zurück (11 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Achillobator is 27% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 10 Microraptor: the Achillobator side wins in about 15 s with 37% of its health left.
+- Verfolgung: Achillobator is 27% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Achillobator vs 10 Microraptor: the Achillobator side wins in about 15 s with 37% of its health left. (Kampfgewicht 2800 vs 500)
+- Kampf (beide Seiten legal max): 5 Achillobator vs 10 Microraptor: the Achillobator side wins in about 3 s with 97% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 392 pro Haupttreffer vom Angreifer (2 bis zum Kill), 7 zurück (84 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Ceratosaurus – spürbar (quarry)
 Ceratosaurus is a realistic hunting opportunity
 
@@ -114,26 +124,6 @@ Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 10
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Achillobator vs 1 Ceratosaurus: the Ceratosaurus side wins in about 12 s with 14% of its health left, too narrow to call. (Kampfgewicht 2800 vs 2600)
 - Kampf (beide Seiten legal max): 5 Achillobator vs 1 Ceratosaurus: the Achillobator side wins in about 3 s with 95% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 75 pro Haupttreffer vom Angreifer (10 bis zum Kill), 37 zurück (17 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Megalania (Temperate) – spürbar (quarry)
-Megalania (Temperate) is a realistic hunting opportunity
-
-Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.
-- Verfolgung: This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call. (Kampfgewicht 2800 vs 2600)
-- Kampf (beide Seiten legal max): 5 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 2 s with 97% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 72 pro Haupttreffer vom Angreifer (8 bis zum Kill), 37 zurück (17 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Megalania (Arid) – spürbar (quarry)
-Megalania (Arid) is a realistic hunting opportunity
-
-Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.
-- Verfolgung: This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call. (Kampfgewicht 2800 vs 2600)
-- Kampf (beide Seiten legal max): 5 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 2 s with 97% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 72 pro Haupttreffer vom Angreifer (8 bis zum Kill), 37 zurück (17 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

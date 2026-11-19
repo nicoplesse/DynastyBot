@@ -24,16 +24,6 @@ Quetzalcoatlus is linked by a specific profile rule. Quetzalcoatlus can approach
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 71 pro Haupttreffer vom Angreifer (9 bis zum Kill), 34 zurück (18 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Thalassodromeus – conditional (conditional)
-Thalassodromeus matters only if it gets the right opening
-
-Thalassodromeus is linked by a specific profile rule. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight. (Kampfgewicht 2100 vs 3100)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 27 pro Haupttreffer vom Angreifer (23 bis zum Kill), 44 zurück (12 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ## Chancen (wen du jagen/schlagen kannst)
 
 ### Quetzalcoatlus – sehr hoch (quarry)

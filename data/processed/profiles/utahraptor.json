@@ -11726,6 +11726,125 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Utahraptor is 30% faster on land; a clean escape is unlikely once spotted. 1 Utahraptor vs 10 Microraptor: the Microraptor side wins in about 13 s with 20% of its health left, too narrow to call.",
+        "score": 58,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1075,
+          "targetSpeed": 825,
+          "speedMarginPct": 30.3,
+          "attackerDurationSeconds": 153.846,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -61.5,
+          "label": "Utahraptor is 30% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.35,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Utahraptor is 30% faster on land; a clean escape is unlikely once spotted.",
+          "1 Utahraptor vs 10 Microraptor: the Microraptor side wins in about 13 s with 20% of its health left, too narrow to call.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Utahraptor bite lands 210 on Microraptor (2 to kill); a Microraptor bite lands 10 back (58 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 210,
+            "defenderHit": 10,
+            "attackerBurst": 315,
+            "defenderBurst": 10,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 58,
+            "attackerDps": 241.8,
+            "defenderDps": 6.3,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 87,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 13,
+            "attackersLeft": 0,
+            "defendersLeft": 2,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.2,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Utahraptor vs 10 Microraptor: the Microraptor side wins in about 13 s with 20% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2100,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Utahraptor vs 10 Microraptor: the Utahraptor side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "utahraptor",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Utahraptor",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Utahraptor is 30% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "dangerous-defender"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
         "family": "megalania",
@@ -12302,124 +12421,6 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Parasaurolophus is within the legal hunt ceiling."
-        },
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "tyrannosaurus",
-        "name": "Tyrannosaurus",
-        "family": "tyrannosaurus",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Tyrannosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Tyrannosaurus is within the legal hunt ceiling. Utahraptor is 34% faster on land; a clean escape is unlikely once spotted. 1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1075,
-          "targetSpeed": 800,
-          "speedMarginPct": 34.4,
-          "attackerDurationSeconds": 153.846,
-          "targetDurationSeconds": 45,
-          "durationMarginPct": 241.9,
-          "label": "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "cliff-edge-falls",
-            "crag-bluffs",
-            "east-passage",
-            "redwoods",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.75,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted.",
-          "1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
-          "6 shared mapped areas make contact plausible.",
-          "One-on-one, a Utahraptor bite lands 16 on Tyrannosaurus (63 to kill); a Tyrannosaurus bite lands 200 back (3 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 2,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 16,
-            "defenderHit": 200,
-            "attackerBurst": 24,
-            "defenderBurst": 343,
-            "attackerHitsToKill": 63,
-            "defenderHitsToKill": 3,
-            "attackerDps": 18.3,
-            "defenderDps": 154.8,
-            "attackerTimeToKill": 55,
-            "defenderTimeToKill": 4,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 2,
-            "attackersLeft": 0,
-            "defendersLeft": 2,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.98,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 2
-            }
-          },
-          "label": "1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
-          "detail": "1 attacker vs 2 defenders",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "5 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 75% of its health left.",
-            "attackers": 5,
-            "defenders": 2
-          }
-        },
-        "attackerId": "utahraptor",
-        "targetId": "tyrannosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Utahraptor",
-          "targetName": "Tyrannosaurus",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Tyrannosaurus is within the legal hunt ceiling."
         },
         "tags": [
           "dangerous-defender"
@@ -13138,6 +13139,124 @@
       ],
       "opportunities": [
         {
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "family": "tyrannosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Tyrannosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Tyrannosaurus is within the legal hunt ceiling. Utahraptor is 34% faster on land; a clean escape is unlikely once spotted. 1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 800,
+            "speedMarginPct": 34.4,
+            "attackerDurationSeconds": 153.846,
+            "targetDurationSeconds": 45,
+            "durationMarginPct": 241.9,
+            "label": "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.75,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted.",
+            "1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Utahraptor bite lands 16 on Tyrannosaurus (63 to kill); a Tyrannosaurus bite lands 200 back (3 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 16,
+              "defenderHit": 200,
+              "attackerBurst": 24,
+              "defenderBurst": 343,
+              "attackerHitsToKill": 63,
+              "defenderHitsToKill": 3,
+              "attackerDps": 18.3,
+              "defenderDps": 154.8,
+              "attackerTimeToKill": 55,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2
+              }
+            },
+            "label": "1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 6000,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "5 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 75% of its health left.",
+              "attackers": 5,
+              "defenders": 2
+            }
+          },
+          "attackerId": "utahraptor",
+          "targetId": "tyrannosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Utahraptor",
+            "targetName": "Tyrannosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Utahraptor is 34% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Tyrannosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "therizinosaurus",
           "name": "Therizinosaurus",
           "family": "therizinosaurus",
@@ -13721,125 +13840,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "iguanodon",
-          "name": "Iguanodon",
-          "family": "iguanodon",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Iguanodon is legal quarry, but not a comfortable fight",
-          "summary": "Iguanodon is within the legal hunt ceiling. The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land. 1 Utahraptor vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 98% of its health left.",
-          "score": 41,
-          "visible": false,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-edge",
-            "attackerSpeed": 1075,
-            "targetSpeed": 1000,
-            "speedMarginPct": 7.5,
-            "attackerDurationSeconds": 153.846,
-            "targetDurationSeconds": 91,
-            "durationMarginPct": 69.1,
-            "label": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "cliff-edge-falls",
-              "crag-bluffs",
-              "east-passage",
-              "redwoods",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 0.4,
-            "label": "6 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
-            "1 Utahraptor vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 98% of its health left.",
-            "6 shared mapped areas make contact plausible.",
-            "One-on-one, a Utahraptor bite lands 25 on Iguanodon (32 to kill); a Iguanodon kick lands 120 back (5 to kill).",
-            "Iguanodon's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 3,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 25,
-              "defenderHit": 120,
-              "attackerBurst": 38,
-              "defenderBurst": 170,
-              "attackerHitsToKill": 32,
-              "defenderHitsToKill": 5,
-              "attackerDps": 28.8,
-              "defenderDps": 140,
-              "attackerTimeToKill": 28,
-              "defenderTimeToKill": 4,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 2,
-              "attackersLeft": 0,
-              "defendersLeft": 3,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.98,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 1.5
-              }
-            },
-            "label": "1 Utahraptor vs 3 Iguanodon: the Iguanodon side wins in about 2 s with 98% of its health left.",
-            "detail": "1 attacker vs 3 defenders",
-            "attackerCombatWeight": 2100,
-            "targetCombatWeight": 4200,
-            "attackerGroupLimit": 5,
-            "targetDefenderLimit": 3,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "5 Utahraptor vs 3 Iguanodon: the Iguanodon side wins in about 7 s with 76% of its health left.",
-              "attackers": 5,
-              "defenders": 3
-            }
-          },
-          "attackerId": "utahraptor",
-          "targetId": "iguanodon",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Utahraptor",
-            "targetName": "Iguanodon",
-            "chaseVerdict": "attacker-edge",
-            "chaseLabel": "The speed gap is small (1075 vs 1000), but Utahraptor has the pursuit edge on land.",
-            "baseScore": 58,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Iguanodon is within the legal hunt ceiling."
-          },
-          "tags": [
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -14093,6 +14093,35 @@
         "engagementLimit": 8,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "megalania-temperate": {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
@@ -14244,37 +14273,6 @@
         "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "tyrannosaurus": {
-        "id": "tyrannosaurus",
-        "name": "Tyrannosaurus",
-        "cw": 6000,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 54.17,
-        "primary": {
-          "label": "Bite",
-          "damage": 70,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Stomp",
-          "damage": 120,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Stomp",
-          "Bone Snap"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 2,
         "huntUnlimited": false,
         "engagementLimit": 2,
         "engagementUnlimited": false
@@ -14458,6 +14456,37 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
+      "tyrannosaurus": {
+        "id": "tyrannosaurus",
+        "name": "Tyrannosaurus",
+        "cw": 6000,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Bite",
+          "damage": 70,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Stomp",
+          "damage": 120,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Stomp",
+          "Bone Snap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
       "therizinosaurus": {
         "id": "therizinosaurus",
         "name": "Therizinosaurus",
@@ -14602,37 +14631,6 @@
           "Bite",
           "Crushing Bite",
           "Bone Snap Bite"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
-      "iguanodon": {
-        "id": "iguanodon",
-        "name": "Iguanodon",
-        "cw": 4200,
-        "hp": 800,
-        "armor": 1,
-        "dps": 70,
-        "primary": {
-          "label": "Kick",
-          "damage": 60,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Charge",
-          "damage": 85,
-          "cooldown": 20,
-          "situational": false
-        },
-        "attacks": [
-          "Kick",
-          "Back Kick",
-          "Arm Slam"
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,

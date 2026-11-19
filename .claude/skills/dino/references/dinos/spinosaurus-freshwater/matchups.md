@@ -1,6 +1,6 @@
 # Spinosaurus (Freshwater) – Matchups
 
-Played solo against their full legal groups, Spinosaurus (Freshwater) has 4 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Spinosaurus (Freshwater) has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -13,36 +13,6 @@ Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in wat
 - Kampf (beide Seiten legal max): 2 Tylosaurus vs 1 Spinosaurus (Freshwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 49 pro Haupttreffer vom Angreifer (23 bis zum Kill), 72 zurück (14 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
-
-### Eurhinosaurus – conditional (conditional)
-Eurhinosaurus matters only if it gets the right opening
-
-Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 66% of its health left.
-- Verfolgung: Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 3 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 66% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 66% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (61 bis zum Kill), 120 zurück (5 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Freshwater) – conditional (conditional)
-Lurdusaurus (Freshwater) matters only if it gets the right opening
-
-Lurdusaurus (Freshwater) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Coast) – conditional (conditional)
-Lurdusaurus (Coast) matters only if it gets the right opening
-
-Lurdusaurus (Coast) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 5 s with 87% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
 ### Tyrannotitan – sehr hoch (predator)
 Tyrannotitan can create a very narrow escape window
@@ -72,6 +42,26 @@ Tyrannosaurus is inside the legal hunt range. Tyrannosaurus is 14% faster on lan
 - Kampf (du solo gegen ihre volle legale Gruppe): 2 Tyrannosaurus vs 1 Spinosaurus (Freshwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left. (Kampfgewicht 6000 vs 6000)
 - Kampf (beide Seiten legal max): 2 Tyrannosaurus vs 1 Spinosaurus (Freshwater): the Tyrannosaurus side wins in about 11 s with 63% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 64 pro Haupttreffer vom Angreifer (18 bis zum Kill), 55 zurück (19 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Allosaurus – sehr hoch (predator)
+Allosaurus can create a very narrow escape window
+
+Allosaurus is inside the legal hunt range. Allosaurus is 49% faster on land; a clean escape is unlikely once spotted. 3 Allosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 17 s with 33% of its health left, too narrow to call.
+- Verfolgung: Allosaurus is 49% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 3 Allosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 17 s with 33% of its health left, too narrow to call. (Kampfgewicht 3750 vs 6000)
+- Kampf (beide Seiten legal max): 3 Allosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 17 s with 33% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 28 pro Haupttreffer vom Angreifer (39 bis zum Kill), 96 zurück (7 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Pycnonemosaurus – hoch (predator)
+Pycnonemosaurus can create a real pursuit problem
+
+Pycnonemosaurus is inside the legal hunt range. Pycnonemosaurus is 54% faster on land; a clean escape is unlikely once spotted. 3 Pycnonemosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 16 s with 17% of its health left, too narrow to call.
+- Verfolgung: Pycnonemosaurus is 54% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 3 Pycnonemosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 16 s with 17% of its health left, too narrow to call. (Kampfgewicht 3500 vs 6000)
+- Kampf (beide Seiten legal max): 3 Pycnonemosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 16 s with 17% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 27 pro Haupttreffer vom Angreifer (42 bis zum Kill), 103 zurück (7 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
 ## Chancen (wen du jagen/schlagen kannst)

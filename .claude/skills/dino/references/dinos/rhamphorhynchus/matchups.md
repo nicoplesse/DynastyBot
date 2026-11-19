@@ -1,8 +1,18 @@
 # Rhamphorhynchus – Matchups
 
-Played solo against their full legal groups, Rhamphorhynchus has 1 high-priority matchup where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Rhamphorhynchus has 2 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
+
+### Microraptor – sehr hoch (predator)
+Microraptor can create a very narrow escape window
+
+Microraptor is linked by a specific profile rule. Microraptor is 38% faster on land; a clean escape is unlikely once spotted. 2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.
+- Verfolgung: Microraptor is 38% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left. (Kampfgewicht 500 vs 500)
+- Kampf (beide Seiten legal max): 2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (10 bis zum Kill), 0 zurück (null bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
 
 ### Tropeognathus – sehr hoch (predator)
 Tropeognathus can create a very narrow escape window

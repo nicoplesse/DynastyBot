@@ -79,9 +79,9 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 **Beute & Chancen:**
 - **Psittacosaurus** (spürbar): Psittacosaurus is legal quarry, but not a comfortable fight
 - **Dryosaurus** (spürbar): Dryosaurus is legal quarry, but not a comfortable fight
+- **Microraptor** (spürbar): Microraptor is legal quarry, but not a comfortable fight
 - **Struthiomimus** (spürbar): Struthiomimus is legal quarry, but not a comfortable fight
 - **Halszkaraptor** (spürbar): Halszkaraptor is legal quarry, but not a comfortable fight
 - **Deinonychus** (spürbar): Deinonychus is legal quarry, but not a comfortable fight
-- **Latenivenatrix** (spürbar): Latenivenatrix is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

@@ -46,46 +46,6 @@ A profile rule names or prioritises this matchup. The speed gap is small (1050 v
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (25 bis zum Kill), 67 zurück (10 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Deinosuchus (Shore) – conditional (conditional)
-Deinosuchus (Shore) is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 7 s with 90% of its health left.
-- Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 7 s with 90% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 38% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (56 bis zum Kill), 110 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Spinosaurus (Freshwater) – conditional (conditional)
-Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 4 s with 94% of its health left.
-- Verfolgung: Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 4 s with 94% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 66% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (61 bis zum Kill), 120 zurück (5 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Spinosaurus (Saltwater) – conditional (conditional)
-Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.
-- Verfolgung: Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (61 bis zum Kill), 120 zurück (5 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Deinosuchus (Ocean) – conditional (conditional)
-Deinosuchus (Ocean) is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 7 s with 90% of its health left.
-- Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 7 s with 90% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 21 s with 38% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (56 bis zum Kill), 110 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ### Megalania (Temperate) – hoch (quarry)
 Megalania (Temperate) is a realistic hunting opportunity
 
@@ -114,6 +74,26 @@ Austroraptor is within the legal hunt ceiling. Eurhinosaurus is 50% faster in wa
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 2 Austroraptor: the Austroraptor side wins in about 9 s with 69% of its health left. (Kampfgewicht 3000 vs 2100)
 - Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 2 Austroraptor: the Eurhinosaurus side wins in about 10 s with 72% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 57 pro Haupttreffer vom Angreifer (12 bis zum Kill), 35 zurück (18 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Suchomimus – spürbar (risky-quarry)
+Suchomimus is legal quarry, but not a comfortable fight
+
+Suchomimus is within the legal hunt ceiling. Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.
+- Verfolgung: Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left. (Kampfgewicht 3000 vs 5000)
+- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 10 s with 82% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 24 pro Haupttreffer vom Angreifer (30 bis zum Kill), 67 zurück (9 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Concavenator – spürbar (risky-quarry)
+Concavenator is legal quarry, but not a comfortable fight
+
+Concavenator is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.
+- Verfolgung: Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left. (Kampfgewicht 3000 vs 2100)
+- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 18 s with 26% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 57 pro Haupttreffer vom Angreifer (9 bis zum Kill), 35 zurück (18 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 
 

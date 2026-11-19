@@ -15947,6 +15947,149 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Microraptor matters only if it gets the right opening",
+        "summary": "Microraptor is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+        "score": 36,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 323,
+          "durationMarginPct": 23.8,
+          "label": "Struthiomimus is 28% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor bite lands 14 on Struthiomimus (32 to kill); a Struthiomimus kick lands 140 back (3 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 14,
+            "defenderHit": 140,
+            "attackerBurst": 14,
+            "defenderBurst": 140,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 3,
+            "attackerDps": 9.5,
+            "defenderDps": 70,
+            "attackerTimeToKill": 47,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 1.4,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.63,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 5,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.",
+            "attackers": 2,
+            "defenders": 5
+          }
+        },
+        "attackerId": "microraptor",
+        "targetId": "struthiomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor",
+          "targetName": "Struthiomimus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
         "id": "compsognathus",
         "name": "Compsognathus",
         "family": "compsognathus",
@@ -16443,129 +16586,6 @@
         ],
         "evidence": [],
         "confidence": "derived"
-      },
-      {
-        "id": "daspletosaurus",
-        "name": "Daspletosaurus",
-        "family": "daspletosaurus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "predator",
-        "headline": "Daspletosaurus matters only if it gets the right opening",
-        "summary": "Daspletosaurus is inside the legal hunt range. Struthiomimus is 11% faster on land and can normally refuse this fight. 1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
-        "score": 56,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "target-can-disengage",
-          "attackerSpeed": 1025,
-          "targetSpeed": 1150,
-          "speedMarginPct": -10.9,
-          "attackerDurationSeconds": 91,
-          "targetDurationSeconds": 323,
-          "durationMarginPct": -71.8,
-          "label": "Struthiomimus is 11% faster on land and can normally refuse this fight."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "black-fern-hills",
-            "cliff-edge-falls",
-            "crag-bluffs",
-            "east-passage",
-            "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.5,
-          "label": "10 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Struthiomimus is 11% faster on land and can normally refuse this fight.",
-          "1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
-          "10 shared mapped areas make contact plausible.",
-          "One-on-one, a Daspletosaurus bite lands 150 on Struthiomimus (3 to kill); a Struthiomimus kick lands 20 back (30 to kill).",
-          "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 150,
-            "defenderHit": 20,
-            "attackerBurst": 225,
-            "defenderBurst": 20,
-            "attackerHitsToKill": 3,
-            "defenderHitsToKill": 30,
-            "attackerDps": 115.6,
-            "defenderDps": 10,
-            "attackerTimeToKill": 4,
-            "defenderTimeToKill": 60,
-            "attackerBleed": 0,
-            "defenderBleed": 0.2,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": true
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 4,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.93,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 4
-            }
-          },
-          "label": "1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3500,
-          "targetCombatWeight": 1400,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 5,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "close",
-            "label": "1 Daspletosaurus vs 5 Struthiomimus: the Daspletosaurus side wins in about 20 s with 2% of its health left, too narrow to call.",
-            "attackers": 1,
-            "defenders": 5
-          }
-        },
-        "attackerId": "daspletosaurus",
-        "targetId": "struthiomimus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Daspletosaurus",
-          "targetName": "Struthiomimus",
-          "chaseVerdict": "target-can-disengage",
-          "chaseLabel": "Struthiomimus is 11% faster on land and can normally refuse this fight.",
-          "baseScore": 38,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Daspletosaurus is inside the legal hunt range."
-        },
-        "tags": [
-          "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
       }
     ],
     "opportunities": [
@@ -16833,6 +16853,129 @@
     ],
     "reserve": {
       "threats": [
+        {
+          "id": "daspletosaurus",
+          "name": "Daspletosaurus",
+          "family": "daspletosaurus",
+          "direction": "threat",
+          "band": "conditional",
+          "kind": "predator",
+          "headline": "Daspletosaurus matters only if it gets the right opening",
+          "summary": "Daspletosaurus is inside the legal hunt range. Struthiomimus is 11% faster on land and can normally refuse this fight. 1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 1025,
+            "targetSpeed": 1150,
+            "speedMarginPct": -10.9,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 323,
+            "durationMarginPct": -71.8,
+            "label": "Struthiomimus is 11% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "black-fern-hills",
+              "cliff-edge-falls",
+              "crag-bluffs",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.5,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Struthiomimus is 11% faster on land and can normally refuse this fight.",
+            "1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Daspletosaurus bite lands 150 on Struthiomimus (3 to kill); a Struthiomimus kick lands 20 back (30 to kill).",
+            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 150,
+              "defenderHit": 20,
+              "attackerBurst": 225,
+              "defenderBurst": 20,
+              "attackerHitsToKill": 3,
+              "defenderHitsToKill": 30,
+              "attackerDps": 115.6,
+              "defenderDps": 10,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 60,
+              "attackerBleed": 0,
+              "defenderBleed": 0.2,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 4,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.93,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4
+              }
+            },
+            "label": "1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3500,
+            "targetCombatWeight": 1400,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 5,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Daspletosaurus vs 5 Struthiomimus: the Daspletosaurus side wins in about 20 s with 2% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 5
+            }
+          },
+          "attackerId": "daspletosaurus",
+          "targetId": "struthiomimus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Daspletosaurus",
+            "targetName": "Struthiomimus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Struthiomimus is 11% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Daspletosaurus is inside the legal hunt range."
+          },
+          "tags": [
+            "ambush"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
         {
           "id": "yutyrannus",
           "name": "Yutyrannus",
@@ -17445,130 +17588,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "achillobator",
-          "name": "Achillobator",
-          "family": "achillobator",
-          "direction": "threat",
-          "band": "conditional",
-          "kind": "predator",
-          "headline": "Achillobator matters only if it gets the right opening",
-          "summary": "Achillobator is inside the legal hunt range. Struthiomimus is 9% faster on land and can normally refuse this fight. 5 Achillobator vs 1 Struthiomimus: the Achillobator side wins in about 1 s with 100% of its health left.",
-          "score": 49,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 1050,
-            "targetSpeed": 1150,
-            "speedMarginPct": -8.7,
-            "attackerDurationSeconds": 154,
-            "targetDurationSeconds": 323,
-            "durationMarginPct": -52.3,
-            "label": "Struthiomimus is 9% faster on land and can normally refuse this fight."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "big-tree-overlook",
-              "cedrus-forest",
-              "twisted-forest",
-              "mudflats",
-              "cliff-edge-falls",
-              "east-passage",
-              "redwoods",
-              "wind-tunnels",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 0.55,
-            "label": "11 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Struthiomimus is 9% faster on land and can normally refuse this fight.",
-            "5 Achillobator vs 1 Struthiomimus: the Achillobator side wins in about 1 s with 100% of its health left.",
-            "11 shared mapped areas make contact plausible.",
-            "One-on-one, a Achillobator bite lands 140 on Struthiomimus (4 to kill); a Struthiomimus kick lands 25 back (24 to kill).",
-            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-          ],
-          "fight": {
-            "attackers": 5,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 140,
-              "defenderHit": 25,
-              "attackerBurst": 280,
-              "defenderBurst": 25,
-              "attackerHitsToKill": 4,
-              "defenderHitsToKill": 24,
-              "attackerDps": 100,
-              "defenderDps": 12.5,
-              "attackerTimeToKill": 5,
-              "defenderTimeToKill": 48,
-              "attackerBleed": 0,
-              "defenderBleed": 0.25,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 1,
-              "attackersLeft": 5,
-              "defendersLeft": 0,
-              "attackerHpShare": 1,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 1
-              }
-            },
-            "label": "5 Achillobator vs 1 Struthiomimus: the Achillobator side wins in about 1 s with 100% of its health left.",
-            "detail": "5 attackers vs 1 defender",
-            "attackerCombatWeight": 2800,
-            "targetCombatWeight": 1400,
-            "attackerGroupLimit": 5,
-            "targetDefenderLimit": 5,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "5 Achillobator vs 5 Struthiomimus: the Achillobator side wins in about 5 s with 94% of its health left.",
-              "attackers": 5,
-              "defenders": 5
-            }
-          },
-          "attackerId": "achillobator",
-          "targetId": "struthiomimus",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Achillobator",
-            "targetName": "Struthiomimus",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Struthiomimus is 9% faster on land and can normally refuse this fight.",
-            "baseScore": 31,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Achillobator is inside the legal hunt range."
-          },
-          "tags": [
-            "pounce"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ],
       "opportunities": []
@@ -17635,6 +17654,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "compsognathus": {
@@ -17758,37 +17806,6 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
-      "daspletosaurus": {
-        "id": "daspletosaurus",
-        "name": "Daspletosaurus",
-        "cw": 3500,
-        "hp": 600,
-        "armor": 1,
-        "dps": 46.25,
-        "primary": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Crushing Bite",
-          "damage": 90,
-          "cooldown": 8,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Crushing Bite",
-          "Bone Snap Bite"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
       "psittacosaurus": {
         "id": "psittacosaurus",
         "name": "Psittacosaurus",
@@ -17847,6 +17864,37 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "daspletosaurus": {
+        "id": "daspletosaurus",
+        "name": "Daspletosaurus",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 46.25,
+        "primary": {
+          "label": "Bite",
+          "damage": 60,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Crushing Bite",
+          "damage": 90,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Crushing Bite",
+          "Bone Snap Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 3,
         "engagementUnlimited": false
       },
       "yutyrannus": {
@@ -17996,36 +18044,6 @@
         "huntLimit": 8,
         "huntUnlimited": false,
         "engagementLimit": 8,
-        "engagementUnlimited": false
-      },
-      "achillobator": {
-        "id": "achillobator",
-        "name": "Achillobator",
-        "cw": 2800,
-        "hp": 600,
-        "armor": 1,
-        "dps": 50,
-        "primary": {
-          "label": "Bite",
-          "damage": 70,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Shred",
-          "damage": 140,
-          "cooldown": 1.5,
-          "situational": true
-        },
-        "attacks": [
-          "Bite",
-          "Claw Attack"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 5,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
         "engagementUnlimited": false
       }
     },

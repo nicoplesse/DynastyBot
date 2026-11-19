@@ -46,6 +46,16 @@ A profile rule names or prioritises this matchup. Compsognathus is 9% faster on 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 8 pro Haupttreffer vom Angreifer (50 bis zum Kill), 100 zurück (4 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
+### Microraptor – spürbar (risky-quarry)
+Microraptor is legal quarry, but not a comfortable fight
+
+Microraptor is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.
+- Verfolgung: Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left. (Kampfgewicht 400 vs 500)
+- Kampf (beide Seiten legal max): 10 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 14 s with 70% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (25 bis zum Kill), 50 zurück (8 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Small tier.
+
 ### Struthiomimus – spürbar (risky-quarry)
 Struthiomimus is legal quarry, but not a comfortable fight
 
@@ -74,16 +84,6 @@ Deinonychus is within the legal hunt ceiling. Compsognathus is 14% faster on lan
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 100% of its health left. (Kampfgewicht 400 vs 800)
 - Kampf (beide Seiten legal max): 10 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 94% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 10 pro Haupttreffer vom Angreifer (55 bis zum Kill), 100 zurück (4 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Small tier.
-
-### Latenivenatrix – spürbar (risky-quarry)
-Latenivenatrix is legal quarry, but not a comfortable fight
-
-Latenivenatrix is within the legal hunt ceiling. Compsognathus is 16% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.
-- Verfolgung: Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left. (Kampfgewicht 400 vs 1400)
-- Kampf (beide Seiten legal max): 10 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 5 s with 95% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 6 pro Haupttreffer vom Angreifer (88 bis zum Kill), 140 zurück (3 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Small tier.
 
 

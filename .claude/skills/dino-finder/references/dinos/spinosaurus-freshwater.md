@@ -75,11 +75,11 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Eurhinosaurus** (conditional): Eurhinosaurus matters only if it gets the right opening
-- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) matters only if it gets the right opening
-- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) matters only if it gets the right opening
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 - **Torvosaurus** (sehr hoch): Torvosaurus can create a very narrow escape window
+- **Tyrannosaurus** (sehr hoch): Tyrannosaurus can create a very narrow escape window
+- **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity

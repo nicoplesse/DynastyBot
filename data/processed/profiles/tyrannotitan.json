@@ -14013,6 +14013,133 @@
           "confidence": "derived"
         },
         {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Microraptor is a realistic hunting opportunity",
+          "summary": "Microraptor is within the legal hunt ceiling. Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+          "score": 75,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 825,
+            "speedMarginPct": 9.1,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -84.3,
+            "label": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.5,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 440 on Microraptor (1 to kill); a Microraptor bite lands 3 back (273 to kill).",
+            "Tyrannotitan's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 440,
+              "defenderHit": 3,
+              "attackerBurst": 1100,
+              "defenderBurst": 3,
+              "attackerHitsToKill": 1,
+              "defenderHitsToKill": 273,
+              "attackerDps": 337.4,
+              "defenderDps": 2.2,
+              "attackerTimeToKill": 1,
+              "defenderTimeToKill": 408,
+              "attackerBleed": 2.64,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 12,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.84,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 1.25
+              }
+            },
+            "label": "1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 6 s with 96% of its health left.",
+              "attackers": 2,
+              "defenders": 10
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "microraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Microraptor",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 57,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "deinocheirus",
           "name": "Deinocheirus",
           "family": "deinocheirus",
@@ -14504,250 +14631,6 @@
             "explicit": false,
             "relationKind": null,
             "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush",
-            "bleed",
-            "endurance",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "megalania-temperate",
-          "name": "Megalania (Temperate)",
-          "family": "megalania",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "quarry",
-          "headline": "Megalania (Temperate) can usually refuse the chase",
-          "summary": "Megalania (Temperate) is within the legal hunt ceiling. Megalania (Temperate) is 12% faster on land and can normally refuse this fight. 1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-          "score": 56,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 900,
-            "targetSpeed": 1025,
-            "speedMarginPct": -12.2,
-            "attackerDurationSeconds": 63,
-            "targetDurationSeconds": 143,
-            "durationMarginPct": -55.9,
-            "label": "Megalania (Temperate) is 12% faster on land and can normally refuse this fight."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "volcano-islands",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "cliff-edge-falls",
-              "coastland-swamp"
-            ],
-            "overlap": 0.375,
-            "label": "6 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Megalania (Temperate) is 12% faster on land and can normally refuse this fight.",
-            "1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-            "6 shared mapped areas make contact plausible.",
-            "One-on-one, a Tyrannotitan bite lands 81 on Megalania (Temperate) (7 to kill); a Megalania (Temperate) bite lands 17 back (53 to kill).",
-            "Tyrannotitan's bleed builds faster than Megalania (Temperate) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 81,
-              "defenderHit": 17,
-              "attackerBurst": 201,
-              "defenderBurst": 34,
-              "attackerHitsToKill": 7,
-              "defenderHitsToKill": 53,
-              "attackerDps": 61.8,
-              "defenderDps": 21.4,
-              "attackerTimeToKill": 8,
-              "defenderTimeToKill": 42,
-              "attackerBleed": 0.508,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 9,
-              "attackersLeft": 1,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.8,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 8.5
-              }
-            },
-            "label": "1 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 5500,
-            "targetCombatWeight": 2600,
-            "attackerGroupLimit": 2,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "2 Tyrannotitan vs 1 Megalania (Temperate): the Tyrannotitan side wins in about 4 s with 95% of its health left.",
-              "attackers": 2,
-              "defenders": 1
-            }
-          },
-          "attackerId": "tyrannotitan",
-          "targetId": "megalania-temperate",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Tyrannotitan",
-            "targetName": "Megalania (Temperate)",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Megalania (Temperate) is 12% faster on land and can normally refuse this fight.",
-            "baseScore": 38,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush",
-            "bleed",
-            "endurance",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "megalania-arid",
-          "name": "Megalania (Arid)",
-          "family": "megalania",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "quarry",
-          "headline": "Megalania (Arid) can usually refuse the chase",
-          "summary": "Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 12% faster on land and can normally refuse this fight. 1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-          "score": 56,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 900,
-            "targetSpeed": 1025,
-            "speedMarginPct": -12.2,
-            "attackerDurationSeconds": 63,
-            "targetDurationSeconds": 143,
-            "durationMarginPct": -55.9,
-            "label": "Megalania (Arid) is 12% faster on land and can normally refuse this fight."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "volcano-islands",
-              "big-tree-overlook",
-              "cedrus-forest"
-            ],
-            "overlap": 0.25,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Megalania (Arid) is 12% faster on land and can normally refuse this fight.",
-            "1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Tyrannotitan bite lands 81 on Megalania (Arid) (7 to kill); a Megalania (Arid) bite lands 17 back (53 to kill).",
-            "Tyrannotitan's bleed builds faster than Megalania (Arid) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 81,
-              "defenderHit": 17,
-              "attackerBurst": 201,
-              "defenderBurst": 34,
-              "attackerHitsToKill": 7,
-              "defenderHitsToKill": 53,
-              "attackerDps": 61.8,
-              "defenderDps": 21.4,
-              "attackerTimeToKill": 8,
-              "defenderTimeToKill": 42,
-              "attackerBleed": 0.508,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 9,
-              "attackersLeft": 1,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.8,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 8.5
-              }
-            },
-            "label": "1 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 9 s with 80% of its health left.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 5500,
-            "targetCombatWeight": 2600,
-            "attackerGroupLimit": 2,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "2 Tyrannotitan vs 1 Megalania (Arid): the Tyrannotitan side wins in about 4 s with 95% of its health left.",
-              "attackers": 2,
-              "defenders": 1
-            }
-          },
-          "attackerId": "tyrannotitan",
-          "targetId": "megalania-arid",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Tyrannotitan",
-            "targetName": "Megalania (Arid)",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Megalania (Arid) is 12% faster on land and can normally refuse this fight.",
-            "baseScore": 38,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
           },
           "tags": [
             "ambush",
@@ -15373,6 +15256,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "deinocheirus": {
         "id": "deinocheirus",
         "name": "Deinocheirus",
@@ -15493,68 +15405,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "megalania-temperate": {
-        "id": "megalania-temperate",
-        "name": "Megalania (Temperate)",
-        "cw": 2600,
-        "hp": 525,
-        "armor": 1.05,
-        "dps": 49.71,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Lunging Snap Water",
-          "damage": 80,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Venom Bite",
-          "Lunging Snap Water"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "megalania-arid": {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "cw": 2600,
-        "hp": 525,
-        "armor": 1.05,
-        "dps": 49.71,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Lunging Snap Water",
-          "damage": 80,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Venom Bite",
-          "Lunging Snap Water"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
         "engagementUnlimited": false
       }
     },
@@ -17345,6 +17195,26 @@
         "hp": 400,
         "bleedPerHit": 5.5,
         "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4.4,
+        "healRate": 0.032,
         "trot": {
           "hits": 1,
           "seconds": 0

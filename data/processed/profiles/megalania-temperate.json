@@ -15075,6 +15075,125 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Megalania (Temperate) is 24% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Temperate) vs 10 Microraptor: the Megalania (Temperate) side wins in about 16 s with 20% of its health left, too narrow to call.",
+        "score": 58,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
+          "targetSpeed": 825,
+          "speedMarginPct": 24.2,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -64.3,
+          "label": "Megalania (Temperate) is 24% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "cliff-edge-falls",
+            "twisted-forest",
+            "mudflats",
+            "stillwater-bog",
+            "coastland-swamp",
+            "wollemi-forest",
+            "coastal-bluffs",
+            "east-passage",
+            "volcano-islands"
+          ],
+          "overlap": 0.391,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Megalania (Temperate) is 24% faster on land; a clean escape is unlikely once spotted.",
+          "1 Megalania (Temperate) vs 10 Microraptor: the Megalania (Temperate) side wins in about 16 s with 20% of its health left, too narrow to call.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Megalania (Temperate) bite lands 208 on Microraptor (2 to kill); a Microraptor bite lands 7 back (72 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 208,
+            "defenderHit": 7,
+            "attackerBurst": 416,
+            "defenderBurst": 7,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 72,
+            "attackerDps": 258.5,
+            "defenderDps": 4.9,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 107,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 16,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.2,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Megalania (Temperate) vs 10 Microraptor: the Megalania (Temperate) side wins in about 16 s with 20% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Megalania (Temperate) vs 10 Microraptor: the Megalania (Temperate) side wins in about 16 s with 20% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 10
+          }
+        },
+        "attackerId": "megalania-temperate",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Megalania (Temperate)",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Megalania (Temperate) is 24% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
         "family": "ceratosaurus",
@@ -15540,123 +15659,6 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Tyrannotitan is within the legal hunt ceiling."
-        },
-        "tags": [
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "therizinosaurus",
-        "name": "Therizinosaurus",
-        "family": "therizinosaurus",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Therizinosaurus is within the legal hunt ceiling. Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1025,
-          "targetSpeed": 850,
-          "speedMarginPct": 20.6,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 68.966,
-          "durationMarginPct": 107.3,
-          "label": "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "cliff-edge-falls",
-            "stillwater-bog",
-            "wollemi-forest",
-            "east-passage"
-          ],
-          "overlap": 0.25,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted.",
-          "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
-          "4 shared mapped areas make contact plausible.",
-          "One-on-one, a Megalania (Temperate) bite lands 17 on Therizinosaurus (59 to kill); a Therizinosaurus claw attack lands 181 back (3 to kill).",
-          "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 2,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 17,
-            "defenderHit": 181,
-            "attackerBurst": 34,
-            "defenderBurst": 262,
-            "attackerHitsToKill": 59,
-            "defenderHitsToKill": 3,
-            "attackerDps": 21.4,
-            "defenderDps": 137,
-            "attackerTimeToKill": 47,
-            "defenderTimeToKill": 4,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 2,
-            "attackersLeft": 0,
-            "defendersLeft": 2,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.98,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 2
-            }
-          },
-          "label": "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
-          "detail": "1 attacker vs 2 defenders",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
-            "attackers": 1,
-            "defenders": 2
-          }
-        },
-        "attackerId": "megalania-temperate",
-        "targetId": "therizinosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Megalania (Temperate)",
-          "targetName": "Therizinosaurus",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
         },
         "tags": [
           "dangerous-defender"
@@ -16364,6 +16366,123 @@
       ],
       "opportunities": [
         {
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "family": "therizinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Therizinosaurus is within the legal hunt ceiling. Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 850,
+            "speedMarginPct": 20.6,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 107.3,
+            "label": "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "cliff-edge-falls",
+              "stillwater-bog",
+              "wollemi-forest",
+              "east-passage"
+            ],
+            "overlap": 0.25,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted.",
+            "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Megalania (Temperate) bite lands 17 on Therizinosaurus (59 to kill); a Therizinosaurus claw attack lands 181 back (3 to kill).",
+            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 17,
+              "defenderHit": 181,
+              "attackerBurst": 34,
+              "defenderBurst": 262,
+              "attackerHitsToKill": 59,
+              "defenderHitsToKill": 3,
+              "attackerDps": 21.4,
+              "defenderDps": 137,
+              "attackerTimeToKill": 47,
+              "defenderTimeToKill": 4,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.98,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 2
+              }
+            },
+            "label": "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Megalania (Temperate) vs 2 Therizinosaurus: the Therizinosaurus side wins in about 2 s with 98% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "megalania-temperate",
+          "targetId": "therizinosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Megalania (Temperate)",
+            "targetName": "Therizinosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Megalania (Temperate) is 21% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "tenontosaurus",
           "name": "Tenontosaurus",
           "family": "tenontosaurus",
@@ -16952,117 +17071,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "yutyrannus",
-          "name": "Yutyrannus",
-          "family": "yutyrannus",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Yutyrannus is legal quarry, but not a comfortable fight",
-          "summary": "Yutyrannus is within the legal hunt ceiling. The speed gap is small (1025 vs 1040), but Megalania (Temperate) has the pursuit edge on land. 1 Megalania (Temperate) vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
-          "score": 32,
-          "visible": false,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-edge",
-            "attackerSpeed": 1025,
-            "targetSpeed": 1040,
-            "speedMarginPct": -1.4,
-            "attackerDurationSeconds": 143,
-            "targetDurationSeconds": 100,
-            "durationMarginPct": 43,
-            "label": "The speed gap is small (1025 vs 1040), but Megalania (Temperate) has the pursuit edge on land."
-          },
-          "encounter": {
-            "level": "possible",
-            "sharedRegions": [
-              "wollemi-forest"
-            ],
-            "overlap": 0.067,
-            "label": "They overlap in 1 mapped area, so the matchup is situational."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "The speed gap is small (1025 vs 1040), but Megalania (Temperate) has the pursuit edge on land.",
-            "1 Megalania (Temperate) vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
-            "They overlap in 1 mapped area, so the matchup is situational.",
-            "One-on-one, a Megalania (Temperate) bite lands 32 on Yutyrannus (19 to kill); a Yutyrannus bite lands 71 back (8 to kill)."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 32,
-              "defenderHit": 71,
-              "attackerBurst": 64,
-              "defenderBurst": 71,
-              "attackerHitsToKill": 19,
-              "defenderHitsToKill": 8,
-              "attackerDps": 39.8,
-              "defenderDps": 47.6,
-              "attackerTimeToKill": 15,
-              "defenderTimeToKill": 11,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 3,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.95,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 3
-              }
-            },
-            "label": "1 Megalania (Temperate) vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 2600,
-            "targetCombatWeight": 3250,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "1 Megalania (Temperate) vs 4 Yutyrannus: the Yutyrannus side wins in about 3 s with 95% of its health left.",
-              "attackers": 1,
-              "defenders": 4
-            }
-          },
-          "attackerId": "megalania-temperate",
-          "targetId": "yutyrannus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Megalania (Temperate)",
-            "targetName": "Yutyrannus",
-            "chaseVerdict": "attacker-edge",
-            "chaseLabel": "The speed gap is small (1025 vs 1040), but Megalania (Temperate) has the pursuit edge on land.",
-            "baseScore": 49,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Yutyrannus is within the legal hunt ceiling."
-          },
-          "tags": [],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -17319,6 +17327,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "ceratosaurus": {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
@@ -17438,36 +17475,6 @@
         "bleedHealRate": 0.032,
         "estimated": true,
         "huntLimit": 2,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "therizinosaurus": {
-        "id": "therizinosaurus",
-        "name": "Therizinosaurus",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 68,
-        "primary": {
-          "label": "Claw Attack",
-          "damage": 90,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Claw Charged Attack",
-          "damage": 130,
-          "cooldown": 5,
-          "situational": false
-        },
-        "attacks": [
-          "Claw Attack",
-          "Claw Charged Attack"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
         "engagementUnlimited": false
@@ -17657,6 +17664,36 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
       "tenontosaurus": {
         "id": "tenontosaurus",
         "name": "Tenontosaurus",
@@ -17775,35 +17812,6 @@
         "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
-        "engagementUnlimited": false
-      },
-      "yutyrannus": {
-        "id": "yutyrannus",
-        "name": "Yutyrannus",
-        "cw": 3250,
-        "hp": 600,
-        "armor": 1,
-        "dps": 40,
-        "primary": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5,
-          "situational": false
-        },
-        "attacks": [
-          "Bite"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 4,
         "huntUnlimited": false,
         "engagementLimit": 4,
         "engagementUnlimited": false

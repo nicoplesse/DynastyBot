@@ -76,6 +76,16 @@ A profile rule names or prioritises this matchup. Maip is 14% faster on land; a 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (23 bis zum Kill), 55 zurück (12 bis zum Kill)
 - Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Maip is 24% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 10 Microraptor: the Maip side wins in about 11 s with 69% of its health left.
+- Verfolgung: Maip is 24% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Maip vs 10 Microraptor: the Maip side wins in about 11 s with 69% of its health left. (Kampfgewicht 4000 vs 500)
+- Kampf (beide Seiten legal max): 3 Maip vs 10 Microraptor: the Maip side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 480 pro Haupttreffer vom Angreifer (1 bis zum Kill), 5 zurück (130 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Megalania (Arid) – spürbar (quarry)
 Megalania (Arid) is a realistic hunting opportunity
 
@@ -124,16 +134,6 @@ Sarcosuchus is within the legal hunt ceiling. Maip is 14% faster on land; a clea
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Maip vs 3 Sarcosuchus: the Sarcosuchus side wins in about 2 s with 95% of its health left. (Kampfgewicht 4000 vs 4500)
 - Kampf (beide Seiten legal max): 3 Maip vs 3 Sarcosuchus: the Sarcosuchus side wins in about 7 s with 70% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 53 pro Haupttreffer vom Angreifer (12 bis zum Kill), 45 zurück (15 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Therizinosaurus – spürbar (risky-quarry)
-Therizinosaurus is legal quarry, but not a comfortable fight
-
-Therizinosaurus is within the legal hunt ceiling. Maip is 21% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.
-- Verfolgung: Maip is 21% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left. (Kampfgewicht 4000 vs 5500)
-- Kampf (beide Seiten legal max): 3 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 11 s with 68% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (26 bis zum Kill), 124 zurück (6 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

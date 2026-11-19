@@ -13977,7 +13977,7 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Psittacosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Psittacosaurus has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
         "id": "compsognathus",
@@ -14250,6 +14250,149 @@
             "profileName": "Struthiomimus",
             "section": "Interspecies Behavior",
             "text": "Male Struthiomimus may display aggression toward smaller creatures such as Dryosaurus and Psittacosaurus, particularly during the breeding season."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor can create a credible fight",
+        "summary": "Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 140,
+          "label": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor bite lands 22 on Psittacosaurus (23 to kill); a Psittacosaurus bite lands 90 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 90,
+            "attackerBurst": 22,
+            "defenderBurst": 144,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 5,
+            "attackerDps": 14.8,
+            "defenderDps": 94.8,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.62,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.25
+            }
+          },
+          "label": "2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 900,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 2,
+            "defenders": null
+          }
+        },
+        "attackerId": "microraptor",
+        "targetId": "psittacosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor",
+          "targetName": "Psittacosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
           }
         ],
         "confidence": "profile-specific"
@@ -14620,133 +14763,133 @@
         "tags": [],
         "evidence": [],
         "confidence": "derived"
-      },
-      {
-        "id": "deinonychus",
-        "name": "Deinonychus",
-        "family": "deinonychus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Deinonychus can create a real pursuit problem",
-        "summary": "Deinonychus is inside the legal hunt range. This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it. 8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
-        "score": 70,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1100,
-          "targetSpeed": 1150,
-          "speedMarginPct": -4.3,
-          "attackerDurationSeconds": 200,
-          "targetDurationSeconds": 166.667,
-          "durationMarginPct": 20,
-          "label": "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "tallbrush-coasts",
-            "steep-run",
-            "volcano-islands",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "twisted-forest",
-            "black-fern-hills",
-            "stillwater-bog",
-            "cliff-edge-falls",
-            "redwoods",
-            "wind-tunnels"
-          ],
-          "overlap": 0.6,
-          "label": "12 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.",
-          "8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
-          "12 shared mapped areas make contact plausible.",
-          "One-on-one, a Deinonychus bite lands 44 on Psittacosaurus (12 to kill); a Psittacosaurus bite lands 56 back (10 to kill)."
-        ],
-        "fight": {
-          "attackers": 8,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 44,
-            "defenderHit": 56,
-            "attackerBurst": 44,
-            "defenderBurst": 90,
-            "attackerHitsToKill": 12,
-            "defenderHitsToKill": 10,
-            "attackerDps": 44.4,
-            "defenderDps": 59.3,
-            "attackerTimeToKill": 11,
-            "defenderTimeToKill": 9,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 2,
-            "attackersLeft": 8,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.98,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 1.5
-            }
-          },
-          "label": "8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
-          "detail": "8 attackers vs 1 defender",
-          "attackerCombatWeight": 800,
-          "targetCombatWeight": 900,
-          "attackerGroupLimit": 8,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-            "attackers": 8,
-            "defenders": null
-          }
-        },
-        "attackerId": "deinonychus",
-        "targetId": "psittacosaurus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Deinonychus",
-          "targetName": "Psittacosaurus",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.",
-          "baseScore": 52,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Deinonychus is inside the legal hunt range."
-        },
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
       }
     ],
     "opportunities": [],
     "reserve": {
       "threats": [
+        {
+          "id": "deinonychus",
+          "name": "Deinonychus",
+          "family": "deinonychus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Deinonychus can create a real pursuit problem",
+          "summary": "Deinonychus is inside the legal hunt range. This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it. 8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
+          "score": 70,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1100,
+            "targetSpeed": 1150,
+            "speedMarginPct": -4.3,
+            "attackerDurationSeconds": 200,
+            "targetDurationSeconds": 166.667,
+            "durationMarginPct": 20,
+            "label": "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "black-fern-hills",
+              "stillwater-bog",
+              "cliff-edge-falls",
+              "redwoods",
+              "wind-tunnels"
+            ],
+            "overlap": 0.6,
+            "label": "12 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.",
+            "8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
+            "12 shared mapped areas make contact plausible.",
+            "One-on-one, a Deinonychus bite lands 44 on Psittacosaurus (12 to kill); a Psittacosaurus bite lands 56 back (10 to kill)."
+          ],
+          "fight": {
+            "attackers": 8,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 44,
+              "defenderHit": 56,
+              "attackerBurst": 44,
+              "defenderBurst": 90,
+              "attackerHitsToKill": 12,
+              "defenderHitsToKill": 10,
+              "attackerDps": 44.4,
+              "defenderDps": 59.3,
+              "attackerTimeToKill": 11,
+              "defenderTimeToKill": 9,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 2,
+              "attackersLeft": 8,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.98,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 1.5
+              }
+            },
+            "label": "8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.",
+            "detail": "8 attackers vs 1 defender",
+            "attackerCombatWeight": 800,
+            "targetCombatWeight": 900,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": true,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": 8,
+              "defenders": null
+            }
+          },
+          "attackerId": "deinonychus",
+          "targetId": "psittacosaurus",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Deinonychus",
+            "targetName": "Psittacosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Deinonychus is inside the legal hunt range."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
         {
           "id": "latenivenatrix",
           "name": "Latenivenatrix",
@@ -15350,123 +15493,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "yutyrannus",
-          "name": "Yutyrannus",
-          "family": "yutyrannus",
-          "direction": "threat",
-          "band": "conditional",
-          "kind": "predator",
-          "headline": "Yutyrannus matters only if it gets the right opening",
-          "summary": "Yutyrannus is inside the legal hunt range. Psittacosaurus is 10% faster on land and can normally refuse this fight. 4 Yutyrannus vs 1 Psittacosaurus: the Yutyrannus side wins in about 1 s with 99% of its health left.",
-          "score": 56,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 1040,
-            "targetSpeed": 1150,
-            "speedMarginPct": -9.6,
-            "attackerDurationSeconds": 100,
-            "targetDurationSeconds": 166.667,
-            "durationMarginPct": -40,
-            "label": "Psittacosaurus is 10% faster on land and can normally refuse this fight."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "redwoods",
-              "wind-tunnels",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 0.2,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Psittacosaurus is 10% faster on land and can normally refuse this fight.",
-            "4 Yutyrannus vs 1 Psittacosaurus: the Yutyrannus side wins in about 1 s with 99% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Yutyrannus bite lands 217 on Psittacosaurus (3 to kill); a Psittacosaurus bite lands 14 back (44 to kill).",
-            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 4,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 217,
-              "defenderHit": 14,
-              "attackerBurst": 217,
-              "defenderBurst": 22,
-              "attackerHitsToKill": 3,
-              "defenderHitsToKill": 44,
-              "attackerDps": 144.4,
-              "defenderDps": 14.6,
-              "attackerTimeToKill": 3,
-              "defenderTimeToKill": 41,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 1,
-              "attackersLeft": 4,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.99,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 1
-              }
-            },
-            "label": "4 Yutyrannus vs 1 Psittacosaurus: the Yutyrannus side wins in about 1 s with 99% of its health left.",
-            "detail": "4 attackers vs 1 defender",
-            "attackerCombatWeight": 3250,
-            "targetCombatWeight": 900,
-            "attackerGroupLimit": 4,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": true,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-              "attackers": 4,
-              "defenders": null
-            }
-          },
-          "attackerId": "yutyrannus",
-          "targetId": "psittacosaurus",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Yutyrannus",
-            "targetName": "Psittacosaurus",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Psittacosaurus is 10% faster on land and can normally refuse this fight.",
-            "baseScore": 38,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Yutyrannus is inside the legal hunt range."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ],
       "opportunities": []
@@ -15563,6 +15589,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 5,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "alioramus": {
@@ -15835,35 +15890,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
-      "yutyrannus": {
-        "id": "yutyrannus",
-        "name": "Yutyrannus",
-        "cw": 3250,
-        "hp": 600,
-        "armor": 1,
-        "dps": 40,
-        "primary": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5,
-          "situational": false
-        },
-        "attacks": [
-          "Bite"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 4,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
         "engagementUnlimited": false
       }
     },

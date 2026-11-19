@@ -1,6 +1,6 @@
 # Latenivenatrix – Matchups
 
-Played solo against their full legal groups, Latenivenatrix has 6 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Latenivenatrix has 5 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -22,6 +22,16 @@ Tenontosaurus is linked by a specific profile rule. Latenivenatrix is 2% faster 
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Tenontosaurus vs 1 Latenivenatrix: the Tenontosaurus side wins in about 8 s with 67% of its health left. (Kampfgewicht 2400 vs 1400)
 - Kampf (beide Seiten legal max): 1 Tenontosaurus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 4 s with 91% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 43 pro Haupttreffer vom Angreifer (12 bis zum Kill), 23 zurück (24 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor – spürbar (predator)
+Microraptor can create a credible fight
+
+Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (35 bis zum Kill), 112 zurück (4 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
 ### Alioramus – sehr hoch (predator)
@@ -53,16 +63,6 @@ Thalassodromeus is inside the legal hunt range. Thalassodromeus can approach at 
 - Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 60 pro Haupttreffer vom Angreifer (9 bis zum Kill), 27 zurück (19 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Medium tier.
-
-### Quetzalcoatlus – hoch (predator)
-Quetzalcoatlus can create a real pursuit problem
-
-Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.
-- Verfolgung: Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left. (Kampfgewicht 2750 vs 1400)
-- Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 26 s with 17% of its health left, too narrow to call.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 157 pro Haupttreffer vom Angreifer (4 bis zum Kill), 20 zurück (30 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Large tier.
 
 ## Chancen (wen du jagen/schlagen kannst)
 

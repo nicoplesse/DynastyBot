@@ -19475,8 +19475,150 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Rhamphorhynchus has 1 high-priority matchup where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
+    "summary": "Played solo against their full legal groups, Rhamphorhynchus has 2 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "severe",
+        "kind": "predator",
+        "headline": "Microraptor can create a very narrow escape window",
+        "summary": "Microraptor is linked by a specific profile rule. Microraptor is 38% faster on land; a clean escape is unlikely once spotted. 2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.",
+        "score": 105,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 825,
+          "targetSpeed": 600,
+          "speedMarginPct": 37.5,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 133,
+          "durationMarginPct": 200.8,
+          "label": "Microraptor is 38% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 0.87,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Microraptor is 38% faster on land; a clean escape is unlikely once spotted.",
+          "2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.",
+          "20 shared mapped areas make contact plausible."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 40,
+            "defenderHit": 0,
+            "attackerBurst": 40,
+            "defenderBurst": 0,
+            "attackerHitsToKill": 10,
+            "defenderHitsToKill": null,
+            "attackerDps": 26.7,
+            "defenderDps": 0,
+            "attackerTimeToKill": 15,
+            "defenderTimeToKill": null,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 8,
+            "attackersLeft": 2,
+            "defendersLeft": 0,
+            "attackerHpShare": 1,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 7.5
+            }
+          },
+          "label": "2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "2 Microraptor vs 1 Rhamphorhynchus: the Microraptor side wins in about 8 s with 100% of its health left.",
+            "attackers": 2,
+            "defenders": 1
+          }
+        },
+        "attackerId": "microraptor",
+        "targetId": "rhamphorhynchus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor",
+          "targetName": "Rhamphorhynchus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Microraptor is 38% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 87,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor may hunt Rhamphorhynchus."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
       {
         "id": "tropeognathus",
         "name": "Tropeognathus",
@@ -20246,6 +20388,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "tropeognathus": {

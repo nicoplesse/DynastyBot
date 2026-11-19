@@ -69,6 +69,8 @@ Für Wünsche wie „ich will wie ein Orca spielen“. Primäre Analogien zuerst
 - Tokeh / Tokay gecko: Megalania (Temperate)
 - Gila-Krustenechse / Gila monster: Metriacanthosaurus
 - Pfeilgiftfrosch / Poison dart frog: Metriacanthosaurus
+- Trauerdrongo / Fork-tailed drongo: Microraptor
+- Kurzkopfgleitbeutler / Sugar glider: Microraptor
 - Dickhornschaf / Bighorn sheep: Pachycephalosaurus
 - Schneeziege / Mountain goat: Pachycephalosaurus
 - Moschusochse / Musk ox: Pachyrhinosaurus, Styracosaurus

@@ -13813,6 +13813,128 @@
         "confidence": "derived"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+        "score": 66,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1150,
+          "targetSpeed": 825,
+          "speedMarginPct": 39.4,
+          "attackerDurationSeconds": 133,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -66.8,
+          "label": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 216 on Microraptor (2 to kill); a Microraptor bite lands 8 back (63 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 216,
+            "defenderHit": 8,
+            "attackerBurst": 264,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 63,
+            "attackerDps": 234,
+            "defenderDps": 5.6,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 94,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 17,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.03,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 10 Microraptor: the Alioramus side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Alioramus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
         "family": "anodontosaurus",
@@ -14287,111 +14409,6 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
-        },
-        "tags": [
-          "endurance",
-          "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "albertaceratops",
-        "name": "Albertaceratops",
-        "family": "albertaceratops",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Albertaceratops is legal quarry, but not a comfortable fight",
-        "summary": "Albertaceratops is within the legal hunt ceiling. Alioramus is 21% faster on land; a clean escape is unlikely once spotted. Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-        "score": 62,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1150,
-          "targetSpeed": 950,
-          "speedMarginPct": 21.1,
-          "attackerDurationSeconds": 133,
-          "targetDurationSeconds": 111,
-          "durationMarginPct": 19.8,
-          "label": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "cedrus-forest",
-            "wollemi-forest"
-          ],
-          "overlap": 0.3,
-          "label": "3 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
-          "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "3 shared mapped areas make contact plausible.",
-          "One-on-one, a Alioramus bite lands 31 on Albertaceratops (20 to kill); a Albertaceratops kick lands 73 back (8 to kill).",
-          "Albertaceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": null,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 31,
-            "defenderHit": 73,
-            "attackerBurst": 38,
-            "defenderBurst": 175,
-            "attackerHitsToKill": 20,
-            "defenderHitsToKill": 8,
-            "attackerDps": 33.4,
-            "defenderDps": 79,
-            "attackerTimeToKill": 18,
-            "defenderTimeToKill": 7,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": null,
-          "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "attackerCombatWeight": 2400,
-          "targetCombatWeight": 3500,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": true,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-            "attackers": 5,
-            "defenders": null
-          }
-        },
-        "attackerId": "alioramus",
-        "targetId": "albertaceratops",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Alioramus",
-          "targetName": "Albertaceratops",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 79,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Albertaceratops is within the legal hunt ceiling."
         },
         "tags": [
           "endurance",
@@ -15106,6 +15123,111 @@
       ],
       "opportunities": [
         {
+          "id": "albertaceratops",
+          "name": "Albertaceratops",
+          "family": "albertaceratops",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Albertaceratops is legal quarry, but not a comfortable fight",
+          "summary": "Albertaceratops is within the legal hunt ceiling. Alioramus is 21% faster on land; a clean escape is unlikely once spotted. Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+          "score": 62,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1150,
+            "targetSpeed": 950,
+            "speedMarginPct": 21.1,
+            "attackerDurationSeconds": 133,
+            "targetDurationSeconds": 111,
+            "durationMarginPct": 19.8,
+            "label": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "cedrus-forest",
+              "wollemi-forest"
+            ],
+            "overlap": 0.3,
+            "label": "3 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "3 shared mapped areas make contact plausible.",
+            "One-on-one, a Alioramus bite lands 31 on Albertaceratops (20 to kill); a Albertaceratops kick lands 73 back (8 to kill).",
+            "Albertaceratops's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": null,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 31,
+              "defenderHit": 73,
+              "attackerBurst": 38,
+              "defenderBurst": 175,
+              "attackerHitsToKill": 20,
+              "defenderHitsToKill": 8,
+              "attackerDps": 33.4,
+              "defenderDps": 79,
+              "attackerTimeToKill": 18,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": null,
+            "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackerCombatWeight": 2400,
+            "targetCombatWeight": 3500,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 4,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": true,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+              "attackers": 5,
+              "defenders": null
+            }
+          },
+          "attackerId": "alioramus",
+          "targetId": "albertaceratops",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Alioramus",
+            "targetName": "Albertaceratops",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Alioramus is 21% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 79,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Albertaceratops is within the legal hunt ceiling."
+          },
+          "tags": [
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "styracosaurus",
           "name": "Styracosaurus",
           "family": "styracosaurus",
@@ -15696,122 +15818,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "kentrosaurus",
-          "name": "Kentrosaurus",
-          "family": "kentrosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Kentrosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Kentrosaurus is within the legal hunt ceiling. Alioramus is 10% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-          "score": 56,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1150,
-            "targetSpeed": 1050,
-            "speedMarginPct": 9.5,
-            "attackerDurationSeconds": 133,
-            "targetDurationSeconds": 143,
-            "durationMarginPct": -7,
-            "label": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "cedrus-forest",
-              "crag-bluffs",
-              "wollemi-forest"
-            ],
-            "overlap": 0.286,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
-            "1 Alioramus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Alioramus bite lands 40 on Kentrosaurus (19 to kill); a Kentrosaurus tail swipe left lands 45 back (12 to kill)."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 40,
-              "defenderHit": 45,
-              "attackerBurst": 49,
-              "defenderBurst": 84,
-              "attackerHitsToKill": 19,
-              "defenderHitsToKill": 12,
-              "attackerDps": 43.3,
-              "defenderDps": 58.1,
-              "attackerTimeToKill": 17,
-              "defenderTimeToKill": 9,
-              "attackerBleed": 0,
-              "defenderBleed": 0.188,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 3,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.96,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 2.5
-              }
-            },
-            "label": "1 Alioramus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 2400,
-            "targetCombatWeight": 2700,
-            "attackerGroupLimit": 5,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "5 Alioramus vs 4 Kentrosaurus: the Kentrosaurus side wins in about 16 s with 38% of its health left.",
-              "attackers": 5,
-              "defenders": 4
-            }
-          },
-          "attackerId": "alioramus",
-          "targetId": "kentrosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Alioramus",
-            "targetName": "Kentrosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Alioramus is 10% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 73,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Kentrosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "endurance"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -16093,6 +16099,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "anodontosaurus": {
         "id": "anodontosaurus",
         "name": "Anodontosaurus",
@@ -16215,37 +16250,6 @@
         "huntUnlimited": false,
         "engagementLimit": 2,
         "engagementUnlimited": false
-      },
-      "albertaceratops": {
-        "id": "albertaceratops",
-        "name": "Albertaceratops",
-        "cw": 3500,
-        "hp": 600,
-        "armor": 1,
-        "dps": 54.17,
-        "primary": {
-          "label": "Kick",
-          "damage": 50,
-          "cooldown": 1.25
-        },
-        "burst": {
-          "label": "Stomp v2",
-          "damage": 120,
-          "cooldown": 20,
-          "situational": false
-        },
-        "attacks": [
-          "Kick",
-          "Head Slam",
-          "Stomp"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
-        "engagementUnlimited": true
       },
       "pycnonemosaurus": {
         "id": "pycnonemosaurus",
@@ -16429,6 +16433,37 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
+      "albertaceratops": {
+        "id": "albertaceratops",
+        "name": "Albertaceratops",
+        "cw": 3500,
+        "hp": 600,
+        "armor": 1,
+        "dps": 54.17,
+        "primary": {
+          "label": "Kick",
+          "damage": 50,
+          "cooldown": 1.25
+        },
+        "burst": {
+          "label": "Stomp v2",
+          "damage": 120,
+          "cooldown": 20,
+          "situational": false
+        },
+        "attacks": [
+          "Kick",
+          "Head Slam",
+          "Stomp"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 4,
+        "engagementUnlimited": true
+      },
       "styracosaurus": {
         "id": "styracosaurus",
         "name": "Styracosaurus",
@@ -16579,36 +16614,6 @@
         "huntLimit": 4,
         "huntUnlimited": false,
         "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "kentrosaurus": {
-        "id": "kentrosaurus",
-        "name": "Kentrosaurus",
-        "cw": 2700,
-        "hp": 750,
-        "armor": 1,
-        "dps": 51.67,
-        "primary": {
-          "label": "Tail Swipe Left",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 75,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Swipe Left",
-          "Tail Wind Up Attack"
-        ],
-        "bleedPerSecond": 0.167,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
         "engagementUnlimited": false
       }
     },

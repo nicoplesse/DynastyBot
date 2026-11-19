@@ -116,14 +116,14 @@ A profile rule names or prioritises this matchup. Styracosaurus is 10% faster on
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 104 pro Haupttreffer vom Angreifer (7 bis zum Kill), 53 zurück (14 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Megalania (Arid) – conditional (quarry)
-Megalania (Arid) can usually refuse the chase
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
 
-Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 7% faster on land and can normally refuse this fight. 1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.
-- Verfolgung: Megalania (Arid) is 7% faster on land and can normally refuse this fight.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left. (Kampfgewicht 4500 vs 2600)
-- Kampf (beide Seiten legal max): 6 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 1 s with 99% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 107 pro Haupttreffer vom Angreifer (5 bis zum Kill), 18 zurück (40 bis zum Kill)
+Microraptor is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.
+- Verfolgung: Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 6 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 2 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 585 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (205 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
 ## Besondere Risiken

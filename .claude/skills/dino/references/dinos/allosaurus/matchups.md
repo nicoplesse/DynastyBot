@@ -116,6 +116,16 @@ Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 69 pro Haupttreffer vom Angreifer (8 bis zum Kill), 28 zurück (24 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.
+- Verfolgung: Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left. (Kampfgewicht 3750 vs 500)
+- Kampf (beide Seiten legal max): 3 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 5 s with 95% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 375 pro Haupttreffer vom Angreifer (2 bis zum Kill), 5 zurück (122 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Megalania (Temperate) – hoch (quarry)
 Megalania (Temperate) is a realistic hunting opportunity
 
@@ -124,16 +134,6 @@ Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Allosaurus vs 1 Megalania (Temperate): the Allosaurus side wins in about 10 s with 47% of its health left. (Kampfgewicht 3750 vs 2600)
 - Kampf (beide Seiten legal max): 3 Allosaurus vs 1 Megalania (Temperate): the Allosaurus side wins in about 4 s with 94% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 69 pro Haupttreffer vom Angreifer (8 bis zum Kill), 28 zurück (24 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Ceratosaurus – hoch (quarry)
-Ceratosaurus is a realistic hunting opportunity
-
-Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.
-- Verfolgung: This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call. (Kampfgewicht 3750 vs 2600)
-- Kampf (beide Seiten legal max): 3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 72 pro Haupttreffer vom Angreifer (11 bis zum Kill), 28 zurück (24 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

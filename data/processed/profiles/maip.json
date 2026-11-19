@@ -12446,6 +12446,130 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Maip is 24% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 10 Microraptor: the Maip side wins in about 11 s with 69% of its health left.",
+        "score": 68,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
+          "targetSpeed": 825,
+          "speedMarginPct": 24.2,
+          "attackerDurationSeconds": 90.909,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -77.3,
+          "label": "Maip is 24% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Maip is 24% faster on land; a clean escape is unlikely once spotted.",
+          "1 Maip vs 10 Microraptor: the Maip side wins in about 11 s with 69% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Maip claw lands 480 on Microraptor (1 to kill); a Microraptor bite lands 5 back (130 to kill).",
+          "Maip's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 480,
+            "defenderHit": 5,
+            "attackerBurst": 720,
+            "defenderBurst": 5,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 130,
+            "attackerDps": 368,
+            "defenderDps": 3.3,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 195,
+            "attackerBleed": 2.536,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.69,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Maip vs 10 Microraptor: the Maip side wins in about 11 s with 69% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 4000,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Maip vs 10 Microraptor: the Maip side wins in about 4 s with 96% of its health left.",
+            "attackers": 3,
+            "defenders": 10
+          }
+        },
+        "attackerId": "maip",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Maip",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Maip is 24% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "bleed",
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "megalania-arid",
         "name": "Megalania (Arid)",
         "family": "megalania",
@@ -13041,129 +13165,6 @@
         "tags": [
           "bleed",
           "endurance"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "therizinosaurus",
-        "name": "Therizinosaurus",
-        "family": "therizinosaurus",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Therizinosaurus is within the legal hunt ceiling. Maip is 21% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
-        "score": 54,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1025,
-          "targetSpeed": 850,
-          "speedMarginPct": 20.6,
-          "attackerDurationSeconds": 90.909,
-          "targetDurationSeconds": 68.966,
-          "durationMarginPct": 31.8,
-          "label": "Maip is 21% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "cedrus-forest",
-            "cliff-edge-falls",
-            "east-passage",
-            "redwoods",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.636,
-          "label": "7 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Maip is 21% faster on land; a clean escape is unlikely once spotted.",
-          "1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
-          "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Maip claw lands 40 on Therizinosaurus (26 to kill); a Therizinosaurus claw attack lands 124 back (6 to kill).",
-          "Maip's bleed builds faster than Therizinosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-          "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 2,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 40,
-            "defenderHit": 124,
-            "attackerBurst": 60,
-            "defenderBurst": 179,
-            "attackerHitsToKill": 26,
-            "defenderHitsToKill": 6,
-            "attackerDps": 30.4,
-            "defenderDps": 93.5,
-            "attackerTimeToKill": 33,
-            "defenderTimeToKill": 7,
-            "attackerBleed": 0.231,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 4,
-            "attackersLeft": 0,
-            "defendersLeft": 2,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.95,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 3.5
-            }
-          },
-          "label": "1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
-          "detail": "1 attacker vs 2 defenders",
-          "attackerCombatWeight": 4000,
-          "targetCombatWeight": 5500,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "3 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 11 s with 68% of its health left.",
-            "attackers": 3,
-            "defenders": 2
-          }
-        },
-        "attackerId": "maip",
-        "targetId": "therizinosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Maip",
-          "targetName": "Therizinosaurus",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Maip is 21% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 71,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
-        },
-        "tags": [
-          "bleed",
-          "endurance",
-          "dangerous-defender"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -13883,6 +13884,129 @@
       ],
       "opportunities": [
         {
+          "id": "therizinosaurus",
+          "name": "Therizinosaurus",
+          "family": "therizinosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Therizinosaurus is within the legal hunt ceiling. Maip is 21% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
+          "score": 54,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 850,
+            "speedMarginPct": 20.6,
+            "attackerDurationSeconds": 90.909,
+            "targetDurationSeconds": 68.966,
+            "durationMarginPct": 31.8,
+            "label": "Maip is 21% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.636,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Maip is 21% faster on land; a clean escape is unlikely once spotted.",
+            "1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Maip claw lands 40 on Therizinosaurus (26 to kill); a Therizinosaurus claw attack lands 124 back (6 to kill).",
+            "Maip's bleed builds faster than Therizinosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 40,
+              "defenderHit": 124,
+              "attackerBurst": 60,
+              "defenderBurst": 179,
+              "attackerHitsToKill": 26,
+              "defenderHitsToKill": 6,
+              "attackerDps": 30.4,
+              "defenderDps": 93.5,
+              "attackerTimeToKill": 33,
+              "defenderTimeToKill": 7,
+              "attackerBleed": 0.231,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 4,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.95,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 3.5
+              }
+            },
+            "label": "1 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 4 s with 95% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4000,
+            "targetCombatWeight": 5500,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "3 Maip vs 2 Therizinosaurus: the Therizinosaurus side wins in about 11 s with 68% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "maip",
+          "targetId": "therizinosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Maip",
+            "targetName": "Therizinosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Maip is 21% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 71,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "tyrannosaurus",
           "name": "Tyrannosaurus",
           "family": "tyrannosaurus",
@@ -14485,132 +14609,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "anodontosaurus",
-          "name": "Anodontosaurus",
-          "family": "anodontosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Anodontosaurus is within the legal hunt ceiling. Maip is 55% faster on land; a clean escape is unlikely once spotted. 1 Maip vs 1 Anodontosaurus: the Anodontosaurus side wins in about 11 s with 65% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1025,
-            "targetSpeed": 660,
-            "speedMarginPct": 55.3,
-            "attackerDurationSeconds": 90.909,
-            "targetDurationSeconds": 125,
-            "durationMarginPct": -27.3,
-            "label": "Maip is 55% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "cedrus-forest",
-              "black-fern-hills",
-              "cliff-edge-falls",
-              "crag-bluffs",
-              "east-passage",
-              "redwoods",
-              "wind-tunnels",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 1,
-            "label": "10 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Maip is 55% faster on land; a clean escape is unlikely once spotted.",
-            "1 Maip vs 1 Anodontosaurus: the Anodontosaurus side wins in about 11 s with 65% of its health left.",
-            "10 shared mapped areas make contact plausible.",
-            "One-on-one, a Maip claw lands 36 on Anodontosaurus (24 to kill); a Anodontosaurus tail slam lands 79 back (9 to kill).",
-            "Maip's bleed builds faster than Anodontosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 36,
-              "defenderHit": 79,
-              "attackerBurst": 53,
-              "defenderBurst": 135,
-              "attackerHitsToKill": 24,
-              "defenderHitsToKill": 9,
-              "attackerDps": 27.3,
-              "defenderDps": 59.4,
-              "attackerTimeToKill": 31,
-              "defenderTimeToKill": 11,
-              "attackerBleed": 0.282,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 11,
-              "attackersLeft": 0,
-              "defendersLeft": 1,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.65,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 11
-              }
-            },
-            "label": "1 Maip vs 1 Anodontosaurus: the Anodontosaurus side wins in about 11 s with 65% of its health left.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 4000,
-            "targetCombatWeight": 4500,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "3 Maip vs 1 Anodontosaurus: the Maip side wins in about 11 s with 68% of its health left.",
-              "attackers": 3,
-              "defenders": 1
-            }
-          },
-          "attackerId": "maip",
-          "targetId": "anodontosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Maip",
-            "targetName": "Anodontosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Maip is 55% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "bleed",
-            "endurance",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -14861,6 +14859,35 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "megalania-arid": {
         "id": "megalania-arid",
         "name": "Megalania (Arid)",
@@ -15014,36 +15041,6 @@
         "huntLimit": 3,
         "huntUnlimited": false,
         "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
-      "therizinosaurus": {
-        "id": "therizinosaurus",
-        "name": "Therizinosaurus",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 68,
-        "primary": {
-          "label": "Claw Attack",
-          "damage": 90,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Claw Charged Attack",
-          "damage": 130,
-          "cooldown": 5,
-          "situational": false
-        },
-        "attacks": [
-          "Claw Attack",
-          "Claw Charged Attack"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
         "engagementUnlimited": false
       },
       "ceratosaurus": {
@@ -15225,6 +15222,36 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
+      "therizinosaurus": {
+        "id": "therizinosaurus",
+        "name": "Therizinosaurus",
+        "cw": 5500,
+        "hp": 1000,
+        "armor": 1.1,
+        "dps": 68,
+        "primary": {
+          "label": "Claw Attack",
+          "damage": 90,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Claw Charged Attack",
+          "damage": 130,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Claw Attack",
+          "Claw Charged Attack"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
       "tyrannosaurus": {
         "id": "tyrannosaurus",
         "name": "Tyrannosaurus",
@@ -15345,37 +15372,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "anodontosaurus": {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
-        "cw": 4500,
-        "hp": 850,
-        "armor": 1.5,
-        "dps": 52.78,
-        "primary": {
-          "label": "Tail Slam",
-          "damage": 70,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 120,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Slam",
-          "Tail Wind Up Attack",
-          "Swerve"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
         "engagementUnlimited": false
       }
     },
@@ -16860,6 +16856,26 @@
         "hp": 400,
         "bleedPerHit": 10,
         "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 8,
+        "healRate": 0.032,
         "trot": {
           "hits": 1,
           "seconds": 0

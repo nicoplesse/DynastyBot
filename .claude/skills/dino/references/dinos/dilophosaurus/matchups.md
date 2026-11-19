@@ -76,6 +76,16 @@ Megalania (Arid) is within the legal hunt ceiling. The speed gap is small (1100 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 44 pro Haupttreffer vom Angreifer (12 bis zum Kill), 43 zurück (13 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Microraptor – spürbar (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.
+- Verfolgung: Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 240 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (66 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Megalania (Temperate) – spürbar (quarry)
 Megalania (Temperate) is a realistic hunting opportunity
 
@@ -124,16 +134,6 @@ Lambeosaurus is within the legal hunt ceiling. Dilophosaurus is 10% faster on la
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 3 s with 96% of its health left. (Kampfgewicht 2400 vs 3500)
 - Kampf (beide Seiten legal max): 5 Dilophosaurus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 21 s with 10% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 34 pro Haupttreffer vom Angreifer (19 bis zum Kill), 44 zurück (13 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Parasaurolophus – spürbar (risky-quarry)
-Parasaurolophus is legal quarry, but not a comfortable fight
-
-Parasaurolophus is within the legal hunt ceiling. Dilophosaurus is 19% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 3 s with 98% of its health left.
-- Verfolgung: Dilophosaurus is 19% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 3 s with 98% of its health left. (Kampfgewicht 2400 vs 5500)
-- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 2 Parasaurolophus: the Parasaurolophus side wins in about 16 s with 66% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 20 pro Haupttreffer vom Angreifer (71 bis zum Kill), 57 zurück (10 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

@@ -84,9 +84,9 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 **Beute & Chancen:**
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
+- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
-- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

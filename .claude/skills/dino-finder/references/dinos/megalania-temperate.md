@@ -90,11 +90,11 @@ You live among the trunks and the water of Twisted Forest, Wollemi Forest and th
 
 **Beute & Chancen:**
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Tyrannotitan** (spürbar): Tyrannotitan is legal quarry, but not a comfortable fight
-- **Therizinosaurus** (spürbar): Therizinosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Variant conflict: Megalania do not cannibalize other adults of their variant, but may cannibalize ungrouped offspring of Adolescent and below.

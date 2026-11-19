@@ -77,7 +77,7 @@ You are a large, aggressive carnivore that hunts only by day. A 'pack' is 1 unre
 - **Pachyrhinosaurus** (spürbar): Pachyrhinosaurus is legal quarry, but not a comfortable fight
 - **Albertaceratops** (spürbar): Albertaceratops is legal quarry, but not a comfortable fight
 - **Styracosaurus** (conditional): Styracosaurus is legal quarry, but not a comfortable fight
-- **Megalania (Arid)** (conditional): Megalania (Arid) can usually refuse the chase
+- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Torvosaurus have strong behavioral dimorphism, where the females are primarily responsible for hunting and providing food, and the male serves to protect the pack and drive off rival males from pack takeovers.

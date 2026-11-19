@@ -20,7 +20,7 @@ test('every playable has sourced adult speed and sprint-duration data', async ()
   const speedIds = Object.keys(document.profiles).sort();
 
   assert.deepEqual(speedIds, profileIds, 'speed coverage must exactly match the playable catalog');
-  assert.equal(speedIds.length, 61);
+  assert.equal(speedIds.length, 62);
   assert.equal(document.unit, 'game-units-per-second');
 
   for (const [id, profile] of Object.entries(document.profiles)) {

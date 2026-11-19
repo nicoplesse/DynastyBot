@@ -4,16 +4,6 @@ Played solo against their full legal groups, Tropeognathus has 2 high-priority m
 
 ## Gefahren (wer dir gefährlich wird)
 
-### Thalassodromeus – conditional (conditional)
-Thalassodromeus matters only if it gets the right opening
-
-Thalassodromeus is linked by a specific profile rule. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight. (Kampfgewicht 2100 vs 2000)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 42 pro Haupttreffer vom Angreifer (11 bis zum Kill), 43 zurück (12 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ### Hatzegopteryx – hoch (predator)
 Hatzegopteryx can create a real pursuit problem
 

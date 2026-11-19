@@ -86,6 +86,16 @@ Megalania (Temperate) is within the legal hunt ceiling. Alioramus is 12% faster 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (14 bis zum Kill), 43 zurück (13 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.
+- Verfolgung: Alioramus is 39% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Alioramus vs 10 Microraptor: the Alioramus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 216 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (63 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Anodontosaurus – spürbar (risky-quarry)
 Anodontosaurus is legal quarry, but not a comfortable fight
 
@@ -124,16 +134,6 @@ Metriacanthosaurus is within the legal hunt ceiling. Alioramus is 10% faster on 
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 2 Metriacanthosaurus: the Metriacanthosaurus side wins in about 5 s with 80% of its health left. (Kampfgewicht 2400 vs 3100)
 - Kampf (beide Seiten legal max): 5 Alioramus vs 2 Metriacanthosaurus: the Alioramus side wins in about 6 s with 84% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 35 pro Haupttreffer vom Angreifer (15 bis zum Kill), 52 zurück (11 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Albertaceratops – spürbar (risky-quarry)
-Albertaceratops is legal quarry, but not a comfortable fight
-
-Albertaceratops is within the legal hunt ceiling. Alioramus is 21% faster on land; a clean escape is unlikely once spotted. Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Verfolgung: Alioramus is 21% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight. (Kampfgewicht 2400 vs 3500)
-- Kampf (beide Seiten legal max): Albertaceratops may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 31 pro Haupttreffer vom Angreifer (20 bis zum Kill), 73 zurück (8 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

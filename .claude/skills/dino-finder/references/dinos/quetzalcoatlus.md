@@ -59,13 +59,13 @@ You are a large aerial carnivore in a 'committee' of up to 3 with temporary bond
 **Gefährlich für dich:**
 - **Hatzegopteryx** (sehr hoch): Hatzegopteryx can create a very narrow escape window
 - **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
-- **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 - **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
 - **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**

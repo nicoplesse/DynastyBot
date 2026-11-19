@@ -1,6 +1,6 @@
 # Deinonychus – Matchups
 
-Played solo against their full legal groups, Deinonychus has 6 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Deinonychus has 5 high-priority matchups where fight maths, pursuit and profile intent align. Against 2 listed threats, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -34,6 +34,16 @@ Kelenken is linked by a specific profile rule. Deinonychus is 2% faster on land 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 122 pro Haupttreffer vom Angreifer (5 bis zum Kill), 21 zurück (25 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
+### Microraptor – spürbar (predator)
+Microraptor can create a credible fight
+
+Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left. (Kampfgewicht 500 vs 800)
+- Kampf (beide Seiten legal max): 2 Microraptor vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 25 pro Haupttreffer vom Angreifer (22 bis zum Kill), 80 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
 ### Alioramus – sehr hoch (predator)
 Alioramus can create a very narrow escape window
 
@@ -53,16 +63,6 @@ Compsognathus is inside the legal hunt range. Compsognathus is 14% faster on lan
 - Kampf (beide Seiten legal max): 10 Compsognathus vs 8 Deinonychus: the Deinonychus side wins in about 5 s with 94% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 10 pro Haupttreffer vom Angreifer (55 bis zum Kill), 100 zurück (4 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Small tier.
-
-### Concavenator – hoch (predator)
-Concavenator can create a real pursuit problem
-
-Concavenator is inside the legal hunt range. This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it. 4 Concavenator vs 1 Deinonychus: the Concavenator side wins in about 1 s with 99% of its health left.
-- Verfolgung: This is a close chase on land: 1100 vs 1100 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 4 Concavenator vs 1 Deinonychus: the Concavenator side wins in about 1 s with 99% of its health left. (Kampfgewicht 2100 vs 800)
-- Kampf (beide Seiten legal max): 4 Concavenator vs 8 Deinonychus: the Concavenator side wins in about 9 s with 63% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 131 pro Haupttreffer vom Angreifer (5 bis zum Kill), 19 zurück (27 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Chancen (wen du jagen/schlagen kannst)
 
@@ -84,6 +84,16 @@ Barsboldia is within the legal hunt ceiling. Deinonychus is 29% faster on land; 
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 1 s with 100% of its health left. (Kampfgewicht 800 vs 5500)
 - Kampf (beide Seiten legal max): 8 Deinonychus vs 2 Barsboldia: the Barsboldia side wins in about 5 s with 95% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 7 pro Haupttreffer vom Angreifer (227 bis zum Kill), 344 zurück (2 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor – spürbar (risky-quarry)
+Microraptor is legal quarry, but not a comfortable fight
+
+Microraptor is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left.
+- Verfolgung: Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left. (Kampfgewicht 800 vs 500)
+- Kampf (beide Seiten legal max): 8 Deinonychus vs 10 Microraptor: the Deinonychus side wins in about 7 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 80 pro Haupttreffer vom Angreifer (5 bis zum Kill), 25 zurück (22 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ### Parasaurolophus – spürbar (risky-quarry)
@@ -114,16 +124,6 @@ Iguanodon is within the legal hunt ceiling. Deinonychus is 10% faster on land; a
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 1 s with 100% of its health left. (Kampfgewicht 800 vs 4200)
 - Kampf (beide Seiten legal max): 8 Deinonychus vs 3 Iguanodon: the Iguanodon side wins in about 4 s with 93% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 10 pro Haupttreffer vom Angreifer (84 bis zum Kill), 315 zurück (2 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Lambeosaurus – spürbar (risky-quarry)
-Lambeosaurus is legal quarry, but not a comfortable fight
-
-Lambeosaurus is within the legal hunt ceiling. Deinonychus is 10% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 1 s with 99% of its health left.
-- Verfolgung: Deinonychus is 10% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 1 s with 99% of its health left. (Kampfgewicht 800 vs 3500)
-- Kampf (beide Seiten legal max): 8 Deinonychus vs 3 Lambeosaurus: the Lambeosaurus side wins in about 7 s with 83% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 11 pro Haupttreffer vom Angreifer (57 bis zum Kill), 131 zurück (5 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 

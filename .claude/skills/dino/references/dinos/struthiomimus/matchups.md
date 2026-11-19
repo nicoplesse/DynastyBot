@@ -14,6 +14,16 @@ Therizinosaurus is linked by a specific profile rule. Struthiomimus is 26% faste
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 354 pro Haupttreffer vom Angreifer (2 bis zum Kill), 12 zurück (87 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
+### Microraptor – conditional (predator)
+Microraptor matters only if it gets the right opening
+
+Microraptor is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.
+- Verfolgung: Struthiomimus is 28% faster on land and can normally refuse this fight.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (32 bis zum Kill), 140 zurück (3 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
 ### Compsognathus – sehr hoch (predator)
 Compsognathus can create a very narrow escape window
 
@@ -52,16 +62,6 @@ Allosaurus is inside the legal hunt range. Struthiomimus is 10% faster on land a
 - Kampf (du solo gegen ihre volle legale Gruppe): 3 Allosaurus vs 1 Struthiomimus: the Allosaurus side wins in about 2 s with 99% of its health left. (Kampfgewicht 3750 vs 1400)
 - Kampf (beide Seiten legal max): 3 Allosaurus vs 5 Struthiomimus: the Allosaurus side wins in about 8 s with 89% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 134 pro Haupttreffer vom Angreifer (4 bis zum Kill), 19 zurück (35 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Daspletosaurus – conditional (predator)
-Daspletosaurus matters only if it gets the right opening
-
-Daspletosaurus is inside the legal hunt range. Struthiomimus is 11% faster on land and can normally refuse this fight. 1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left.
-- Verfolgung: Struthiomimus is 11% faster on land and can normally refuse this fight.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 1 Struthiomimus: the Daspletosaurus side wins in about 4 s with 93% of its health left. (Kampfgewicht 3500 vs 1400)
-- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 5 Struthiomimus: the Daspletosaurus side wins in about 20 s with 2% of its health left, too narrow to call.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 150 pro Haupttreffer vom Angreifer (3 bis zum Kill), 20 zurück (30 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Chancen (wen du jagen/schlagen kannst)

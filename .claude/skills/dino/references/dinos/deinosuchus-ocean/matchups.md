@@ -34,16 +34,6 @@ Spinosaurus (Freshwater) is linked by a specific profile rule. The speed gap is 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 55 pro Haupttreffer vom Angreifer (19 bis zum Kill), 50 zurück (23 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Eurhinosaurus – conditional (conditional)
-Eurhinosaurus matters only if it gets the right opening
-
-Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 21 s with 38% of its health left.
-- Verfolgung: Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 3 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 21 s with 38% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 21 s with 38% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (56 bis zum Kill), 110 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ### Deinocheirus – conditional (territorial-rival)
 Deinocheirus matters only if it gets the right opening
 
@@ -53,26 +43,6 @@ Deinocheirus is linked by a specific profile rule. The speed gap is small (700 v
 - Kampf (beide Seiten legal max): 1 Deinocheirus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 22 s with 42% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 38 pro Haupttreffer vom Angreifer (27 bis zum Kill), 55 zurück (18 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
-
-### Lurdusaurus (Coast) – conditional (conditional)
-Lurdusaurus (Coast) matters only if it gets the right opening
-
-Lurdusaurus (Coast) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water. 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.
-- Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus (Coast) has the pursuit edge in water.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (46 bis zum Kill), 103 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Freshwater) – conditional (conditional)
-Lurdusaurus (Freshwater) matters only if it gets the right opening
-
-Lurdusaurus (Freshwater) is linked by a specific profile rule. The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water. 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.
-- Verfolgung: The speed gap is small (700 vs 700), but Lurdusaurus (Freshwater) has the pursuit edge in water.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 8 s with 76% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (46 bis zum Kill), 103 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
 ## Chancen (wen du jagen/schlagen kannst)
 

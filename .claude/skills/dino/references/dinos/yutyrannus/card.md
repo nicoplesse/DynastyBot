@@ -87,9 +87,9 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Tyrannosaurus** (spürbar): Tyrannosaurus is legal quarry, but not a comfortable fight
 - **Giganotosaurus** (conditional): Giganotosaurus is legal quarry, but not a comfortable fight
 - **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
+- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
 - **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
-- **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Yutyrannus can have up to 4 in an engagement, and up to 6 individuals if taking part in a territory challenge against a different group of Yutyrannus.

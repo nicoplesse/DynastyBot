@@ -86,6 +86,16 @@ Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 10
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (19 bis zum Kill), 38 zurück (14 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Microraptor – spürbar (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.
+- Verfolgung: Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call. (Kampfgewicht 2600 vs 500)
+- Kampf (beide Seiten legal max): 1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 208 pro Haupttreffer vom Angreifer (2 bis zum Kill), 7 zurück (72 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Barsboldia – spürbar (risky-quarry)
 Barsboldia is legal quarry, but not a comfortable fight
 
@@ -114,16 +124,6 @@ Giganotosaurus is within the legal hunt ceiling. Megalania (Arid) is 21% faster 
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Megalania (Arid) vs 2 Giganotosaurus: the Giganotosaurus side wins in about 3 s with 97% of its health left. (Kampfgewicht 2600 vs 5500)
 - Kampf (beide Seiten legal max): 1 Megalania (Arid) vs 2 Giganotosaurus: the Giganotosaurus side wins in about 3 s with 97% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 17 pro Haupttreffer vom Angreifer (59 bis zum Kill), 91 zurück (6 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Stegosaurus – spürbar (risky-quarry)
-Stegosaurus is legal quarry, but not a comfortable fight
-
-Stegosaurus is within the legal hunt ceiling. Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.
-- Verfolgung: Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left. (Kampfgewicht 2600 vs 5000)
-- Kampf (beide Seiten legal max): 1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 21 pro Haupttreffer vom Angreifer (39 bis zum Kill), 147 zurück (4 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

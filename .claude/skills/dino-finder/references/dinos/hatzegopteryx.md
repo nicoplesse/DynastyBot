@@ -62,7 +62,6 @@ You are a Large daytime flier (air sprint 1,100). Once you have paired for life 
 **Gefährlich für dich:**
 - **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus can create a very narrow escape window
-- **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
 
 **Beute & Chancen:**
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus is a realistic hunting opportunity

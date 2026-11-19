@@ -12764,6 +12764,130 @@
         "confidence": "derived"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -77.3,
+          "label": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 375 on Microraptor (2 to kill); a Microraptor bite lands 5 back (122 to kill).",
+          "Allosaurus's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 375,
+            "defenderHit": 5,
+            "attackerBurst": 525,
+            "defenderBurst": 5,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 122,
+            "attackerDps": 287.5,
+            "defenderDps": 3.6,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 183,
+            "attackerBleed": 0.848,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.57,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 5 s with 95% of its health left.",
+            "attackers": 3,
+            "defenders": 10
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Allosaurus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
         "family": "megalania",
@@ -12876,127 +13000,6 @@
         },
         "tags": [
           "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "ceratosaurus",
-        "name": "Ceratosaurus",
-        "family": "ceratosaurus",
-        "direction": "opportunity",
-        "band": "high",
-        "kind": "quarry",
-        "headline": "Ceratosaurus is a realistic hunting opportunity",
-        "summary": "Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
-        "score": 67,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1040,
-          "targetSpeed": 1050,
-          "speedMarginPct": -1,
-          "attackerDurationSeconds": 91,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": -36.4,
-          "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "tallbrush-coasts",
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "crag-bluffs"
-          ],
-          "overlap": 0.333,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
-          "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Allosaurus bite lands 72 on Ceratosaurus (11 to kill); a Ceratosaurus bite lands 28 back (24 to kill).",
-          "Allosaurus's bleed builds faster than Ceratosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-          "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 72,
-            "defenderHit": 28,
-            "attackerBurst": 101,
-            "defenderBurst": 62,
-            "attackerHitsToKill": 11,
-            "defenderHitsToKill": 24,
-            "attackerDps": 55.3,
-            "defenderDps": 37.4,
-            "attackerTimeToKill": 14,
-            "defenderTimeToKill": 17,
-            "attackerBleed": 0.163,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "close",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 14,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.21,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 13.75
-            }
-          },
-          "label": "1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3750,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
-            "attackers": 3,
-            "defenders": 1
-          }
-        },
-        "attackerId": "allosaurus",
-        "targetId": "ceratosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Allosaurus",
-          "targetName": "Ceratosaurus",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
-          "baseScore": 59,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Ceratosaurus is within the legal hunt ceiling."
-        },
-        "tags": [
-          "ambush",
-          "dangerous-defender"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -13707,6 +13710,127 @@
       ],
       "opportunities": [
         {
+          "id": "ceratosaurus",
+          "name": "Ceratosaurus",
+          "family": "ceratosaurus",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Ceratosaurus is a realistic hunting opportunity",
+          "summary": "Ceratosaurus is within the legal hunt ceiling. This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it. 1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
+          "score": 67,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1040,
+            "targetSpeed": 1050,
+            "speedMarginPct": -1,
+            "attackerDurationSeconds": 91,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -36.4,
+            "label": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "crag-bluffs"
+            ],
+            "overlap": 0.333,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+            "1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Allosaurus bite lands 72 on Ceratosaurus (11 to kill); a Ceratosaurus bite lands 28 back (24 to kill).",
+            "Allosaurus's bleed builds faster than Ceratosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Ceratosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 28,
+              "attackerBurst": 101,
+              "defenderBurst": 62,
+              "attackerHitsToKill": 11,
+              "defenderHitsToKill": 24,
+              "attackerDps": 55.3,
+              "defenderDps": 37.4,
+              "attackerTimeToKill": 14,
+              "defenderTimeToKill": 17,
+              "attackerBleed": 0.163,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 14,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.21,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 13.75
+              }
+            },
+            "label": "1 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 14 s with 21% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3750,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Allosaurus vs 1 Ceratosaurus: the Allosaurus side wins in about 5 s with 91% of its health left.",
+              "attackers": 3,
+              "defenders": 1
+            }
+          },
+          "attackerId": "allosaurus",
+          "targetId": "ceratosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Allosaurus",
+            "targetName": "Ceratosaurus",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1040 vs 1050 units/s, with stamina likely deciding it.",
+            "baseScore": 59,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Ceratosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "barsboldia",
           "name": "Barsboldia",
           "family": "barsboldia",
@@ -14320,125 +14444,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "giganotosaurus",
-          "name": "Giganotosaurus",
-          "family": "giganotosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Giganotosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Giganotosaurus is within the legal hunt ceiling. Allosaurus is 22% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 6 s with 93% of its health left.",
-          "score": 55,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1040,
-            "targetSpeed": 850,
-            "speedMarginPct": 22.4,
-            "attackerDurationSeconds": 91,
-            "targetDurationSeconds": 50,
-            "durationMarginPct": 82,
-            "label": "Allosaurus is 22% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "dry-fang-canyon",
-              "tallbrush-coasts",
-              "steep-run",
-              "cedrus-forest",
-              "black-fern-hills"
-            ],
-            "overlap": 0.455,
-            "label": "5 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Allosaurus is 22% faster on land; a clean escape is unlikely once spotted.",
-            "1 Allosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 6 s with 93% of its health left.",
-            "5 shared mapped areas make contact plausible.",
-            "One-on-one, a Allosaurus bite lands 31 on Giganotosaurus (33 to kill); a Giganotosaurus bite lands 66 back (10 to kill).",
-            "Allosaurus's bleed builds faster than Giganotosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 2,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 31,
-              "defenderHit": 66,
-              "attackerBurst": 43,
-              "defenderBurst": 132,
-              "attackerHitsToKill": 33,
-              "defenderHitsToKill": 10,
-              "attackerDps": 23.8,
-              "defenderDps": 60.9,
-              "attackerTimeToKill": 42,
-              "defenderTimeToKill": 11,
-              "attackerBleed": 0.077,
-              "defenderBleed": 0.208,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 6,
-              "attackersLeft": 0,
-              "defendersLeft": 2,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.93,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 5.5
-              }
-            },
-            "label": "1 Allosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 6 s with 93% of its health left.",
-            "detail": "1 attacker vs 2 defenders",
-            "attackerCombatWeight": 3750,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 2,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "3 Allosaurus vs 2 Giganotosaurus: the Giganotosaurus side wins in about 16 s with 61% of its health left.",
-              "attackers": 3,
-              "defenders": 2
-            }
-          },
-          "attackerId": "allosaurus",
-          "targetId": "giganotosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Allosaurus",
-            "targetName": "Giganotosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Allosaurus is 22% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 72,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Giganotosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -14814,6 +14819,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "megalania-temperate": {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
@@ -15171,37 +15205,6 @@
         "bleedHealRate": 0.032,
         "estimated": true,
         "huntLimit": 2,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "giganotosaurus": {
-        "id": "giganotosaurus",
-        "name": "Giganotosaurus",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 41.5,
-        "primary": {
-          "label": "Bite",
-          "damage": 45,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Charged Bite",
-          "damage": 90,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Bulldoze",
-          "Charged Bite"
-        ],
-        "bleedPerSecond": 0.142,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
         "engagementUnlimited": false
@@ -16668,6 +16671,26 @@
         "hp": 400,
         "bleedPerHit": 4.219,
         "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.375,
+        "healRate": 0.032,
         "trot": {
           "hits": 1,
           "seconds": 0

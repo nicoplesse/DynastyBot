@@ -36,36 +36,6 @@ Hatzegopteryx is inside the legal hunt range. Hatzegopteryx can approach at 1100
 
 ## Chancen (wen du jagen/schlagen kannst)
 
-### Quetzalcoatlus – conditional (conditional)
-Quetzalcoatlus is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 1 Quetzalcoatlus: the Quetzalcoatlus side wins in about 14 s with 42% of its health left.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 1 Quetzalcoatlus: the Quetzalcoatlus side wins in about 14 s with 42% of its health left. (Kampfgewicht 2100 vs 2750)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 31 pro Haupttreffer vom Angreifer (20 bis zum Kill), 105 zurück (5 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Hatzegopteryx – conditional (conditional)
-Hatzegopteryx is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 3 Hatzegopteryx: the Hatzegopteryx side wins in about 6 s with 93% of its health left.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 3 Hatzegopteryx: the Hatzegopteryx side wins in about 6 s with 93% of its health left. (Kampfgewicht 2100 vs 3100)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 27 pro Haupttreffer vom Angreifer (23 bis zum Kill), 44 zurück (12 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Tropeognathus – conditional (conditional)
-Tropeognathus is legal quarry, but not a comfortable fight
-
-A profile rule names or prioritises this matchup. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. 1 Thalassodromeus vs 4 Tropeognathus: the Tropeognathus side wins in about 5 s with 90% of its health left.
-- Verfolgung: Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Thalassodromeus vs 4 Tropeognathus: the Tropeognathus side wins in about 5 s with 90% of its health left. (Kampfgewicht 2100 vs 2000)
-- Kampf (beide Seiten legal max): Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 42 pro Haupttreffer vom Angreifer (11 bis zum Kill), 43 zurück (12 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
 ### Rhamphorhynchus – spürbar (quarry)
 Rhamphorhynchus is a realistic hunting opportunity
 

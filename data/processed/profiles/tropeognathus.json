@@ -13779,117 +13779,6 @@
     "summary": "Played solo against their full legal groups, Tropeognathus has 2 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.",
     "threats": [
       {
-        "id": "thalassodromeus",
-        "name": "Thalassodromeus",
-        "family": "thalassodromeus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Thalassodromeus matters only if it gets the right opening",
-        "summary": "Thalassodromeus is linked by a specific profile rule. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-        "score": 44,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1200,
-          "targetSpeed": 900,
-          "speedMarginPct": 33.3,
-          "attackerDurationSeconds": 83,
-          "targetDurationSeconds": 90.09,
-          "durationMarginPct": -7.9,
-          "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
-        },
-        "encounter": {
-          "level": "rare",
-          "sharedRegions": [],
-          "overlap": 0,
-          "label": "Their mapped ranges and movement niches rarely produce a meaningful encounter."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
-          "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "Their mapped ranges and movement niches rarely produce a meaningful encounter.",
-          "One-on-one, a Thalassodromeus bite lands 42 on Tropeognathus (11 to kill); a Tropeognathus chomp lands 43 back (12 to kill)."
-        ],
-        "fight": {
-          "attackers": null,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 42,
-            "defenderHit": 43,
-            "attackerBurst": 74,
-            "defenderBurst": 62,
-            "attackerHitsToKill": 11,
-            "defenderHitsToKill": 12,
-            "attackerDps": 35.5,
-            "defenderDps": 25.4,
-            "attackerTimeToKill": 13,
-            "defenderTimeToKill": 20,
-            "attackerBleed": 0,
-            "defenderBleed": 0.074,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": true
-          },
-          "verdict": "attacker-advantage",
-          "sim": null,
-          "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 2000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 4,
-          "attackerGroupUnlimited": true,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-            "attackers": null,
-            "defenders": 4
-          }
-        },
-        "attackerId": "thalassodromeus",
-        "targetId": "tropeognathus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Thalassodromeus",
-          "targetName": "Tropeognathus",
-          "chaseVerdict": "approach-advantage",
-          "chaseLabel": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
-          "baseScore": 29,
-          "scoreCap": 44,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "Thalassodromeus is linked by a specific profile rule."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "thalassodromeus",
-            "profileName": "Thalassodromeus",
-            "section": "Quick View",
-            "text": "Thalassodromeus may hunt up to Medium tier, but prefer not to unless there is no other option. Thalassodromeus may scavenge. Thalassodromeus flees from Hatzegopteryx, Quetzalcoatlus & Tropeognathus in some circumstances."
-          },
-          {
-            "profileId": "thalassodromeus",
-            "profileName": "Thalassodromeus",
-            "section": "Engagement Limits",
-            "text": "Thalassodromeus flee from Hatzegopteryx, Quetzalcoatlus and Tropeognathus."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "hatzegopteryx",
         "name": "Hatzegopteryx",
         "family": "hatzegopteryx",
@@ -15014,6 +14903,127 @@
           "confidence": "derived"
         },
         {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "risky-quarry",
+          "headline": "Microraptor is legal quarry, but not a comfortable fight",
+          "summary": "Microraptor is within the legal hunt ceiling. Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters. 1 Tropeognathus vs 10 Microraptor: the Microraptor side wins in about 7 s with 81% of its health left.",
+          "score": 41,
+          "visible": false,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1300,
+            "targetSpeed": 825,
+            "speedMarginPct": 57.6,
+            "attackerDurationSeconds": 181.818,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -54.5,
+            "label": "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "coastland-swamp",
+              "east-passage"
+            ],
+            "overlap": 0.435,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.",
+            "1 Tropeognathus vs 10 Microraptor: the Microraptor side wins in about 7 s with 81% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tropeognathus chomp lands 180 on Microraptor (3 to kill); a Microraptor bite lands 10 back (45 to kill).",
+            "Tropeognathus's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 180,
+              "defenderHit": 10,
+              "attackerBurst": 260,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 3,
+              "defenderHitsToKill": 45,
+              "attackerDps": 106.8,
+              "defenderDps": 6.7,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 67,
+              "attackerBleed": 0.312,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 7,
+              "attackersLeft": 0,
+              "defendersLeft": 9,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.81,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "1 Tropeognathus vs 10 Microraptor: the Microraptor side wins in about 7 s with 81% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 2000,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Tropeognathus vs 10 Microraptor: the Tropeognathus side wins in about 10 s with 81% of its health left.",
+              "attackers": 4,
+              "defenders": 10
+            }
+          },
+          "attackerId": "tropeognathus",
+          "targetId": "microraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tropeognathus",
+            "targetName": "Microraptor",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Tropeognathus can approach at 1300 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "austroraptor",
           "name": "Austroraptor",
           "family": "austroraptor",
@@ -15489,130 +15499,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "tenontosaurus",
-          "name": "Tenontosaurus",
-          "family": "tenontosaurus",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Tenontosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Tenontosaurus is within the legal hunt ceiling. Tropeognathus can arrive from the air, but Tenontosaurus's 1050 land speed and longer sprint let it disengage after the opening pass. 1 Tropeognathus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 3 s with 97% of its health left.",
-          "score": 14,
-          "visible": false,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "air-to-land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 1300,
-            "targetSpeed": 1050,
-            "speedMarginPct": 23.8,
-            "attackerDurationSeconds": 181.818,
-            "targetDurationSeconds": 133.333,
-            "durationMarginPct": 36.4,
-            "label": "Tropeognathus can arrive from the air, but Tenontosaurus's 1050 land speed and longer sprint let it disengage after the opening pass."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "tallbrush-coasts",
-              "coastal-bluffs",
-              "volcano-islands",
-              "palm-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "coastland-swamp",
-              "east-passage"
-            ],
-            "overlap": 0.435,
-            "label": "10 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Tropeognathus can arrive from the air, but Tenontosaurus's 1050 land speed and longer sprint let it disengage after the opening pass.",
-            "1 Tropeognathus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 3 s with 97% of its health left.",
-            "10 shared mapped areas make contact plausible.",
-            "One-on-one, a Tropeognathus chomp lands 38 on Tenontosaurus (15 to kill); a Tenontosaurus bite lands 30 back (15 to kill).",
-            "Tropeognathus's bleed builds faster than Tenontosaurus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
-            "Tenontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 38,
-              "defenderHit": 30,
-              "attackerBurst": 54,
-              "defenderBurst": 78,
-              "attackerHitsToKill": 15,
-              "defenderHitsToKill": 15,
-              "attackerDps": 22.3,
-              "defenderDps": 46.6,
-              "attackerTimeToKill": 25,
-              "defenderTimeToKill": 10,
-              "attackerBleed": 0.065,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 3,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.97,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 2.5
-              }
-            },
-            "label": "1 Tropeognathus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 3 s with 97% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 2000,
-            "targetCombatWeight": 2400,
-            "attackerGroupLimit": 4,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "4 Tropeognathus vs 4 Tenontosaurus: the Tenontosaurus side wins in about 10 s with 75% of its health left.",
-              "attackers": 4,
-              "defenders": 4
-            }
-          },
-          "attackerId": "tropeognathus",
-          "targetId": "tenontosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Tropeognathus",
-            "targetName": "Tenontosaurus",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Tropeognathus can arrive from the air, but Tenontosaurus's 1050 land speed and longer sprint let it disengage after the opening pass.",
-            "baseScore": 31,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Tenontosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -15650,37 +15536,6 @@
         "huntUnlimited": false,
         "engagementLimit": 4,
         "engagementUnlimited": false
-      },
-      "thalassodromeus": {
-        "id": "thalassodromeus",
-        "name": "Thalassodromeus",
-        "cw": 2100,
-        "hp": 500,
-        "armor": 1,
-        "dps": 33.81,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Barrel Roll",
-          "damage": 70,
-          "cooldown": 6,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Barrel Roll",
-          "Wing Slap"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": true,
-        "engagementLimit": 1,
-        "engagementUnlimited": true
       },
       "hatzegopteryx": {
         "id": "hatzegopteryx",
@@ -15823,6 +15678,37 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
+      },
       "suchomimus": {
         "id": "suchomimus",
         "name": "Suchomimus",
@@ -15851,6 +15737,35 @@
         "huntLimit": 3,
         "huntUnlimited": false,
         "engagementLimit": 3,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "austroraptor": {
@@ -15971,37 +15886,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 5,
-        "engagementUnlimited": false
-      },
-      "tenontosaurus": {
-        "id": "tenontosaurus",
-        "name": "Tenontosaurus",
-        "cw": 2400,
-        "hp": 550,
-        "armor": 1,
-        "dps": 38.83,
-        "primary": {
-          "label": "Bite",
-          "damage": 25,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Tail Slam",
-          "damage": 65,
-          "cooldown": 5,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Tail Slam",
-          "Haymaker"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.04,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
         "engagementUnlimited": false
       }
     },
@@ -17143,6 +17027,26 @@
         "sit": {
           "hits": 2,
           "seconds": 5
+        },
+        "direct": 3
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 2,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 44
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 10
         },
         "direct": 3
       }

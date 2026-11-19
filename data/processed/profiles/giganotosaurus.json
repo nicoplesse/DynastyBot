@@ -11773,6 +11773,123 @@
         ],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land. 1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.",
+        "score": 61,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-edge",
+          "attackerSpeed": 850,
+          "targetSpeed": 825,
+          "speedMarginPct": 3,
+          "attackerDurationSeconds": 50,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -87.5,
+          "label": "The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls"
+          ],
+          "overlap": 0.3,
+          "label": "6 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land.",
+          "1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.",
+          "6 shared mapped areas make contact plausible.",
+          "One-on-one, a Giganotosaurus bite lands 495 on Microraptor (1 to kill); a Microraptor bite lands 3 back (303 to kill).",
+          "Giganotosaurus's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 495,
+            "defenderHit": 3,
+            "attackerBurst": 990,
+            "defenderBurst": 3,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 303,
+            "attackerDps": 456.5,
+            "defenderDps": 2.2,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 454,
+            "attackerBleed": 1.562,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 9,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.89,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1
+            }
+          },
+          "label": "1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 5500,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.",
+            "attackers": 1,
+            "defenders": 10
+          }
+        },
+        "attackerId": "giganotosaurus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Giganotosaurus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-edge",
+          "chaseLabel": "The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land.",
+          "baseScore": 43,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "reserve": {
@@ -13358,6 +13475,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "torvosaurus": {
@@ -15334,6 +15480,26 @@
         "hp": 400,
         "bleedPerHit": 6.875,
         "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 5.5,
+        "healRate": 0.032,
         "trot": {
           "hits": 1,
           "seconds": 0

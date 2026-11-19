@@ -71,6 +71,7 @@ You are a medium nocturnal carnivore living in a mated pair (a 'quiver'). Your f
 - **Deinonychus** (hoch): Deinonychus can create a real pursuit problem
 
 **Beute & Chancen:**
+- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
 - **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Torvosaurus** (spürbar): Torvosaurus is legal quarry, but not a comfortable fight

@@ -16223,6 +16223,129 @@
           "confidence": "derived"
         },
         {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Microraptor is a realistic hunting opportunity",
+          "summary": "Microraptor is within the legal hunt ceiling. Austroraptor is 33% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+          "score": 58,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 825,
+            "speedMarginPct": 33.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -58.3,
+            "label": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.565,
+            "label": "13 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "13 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 210 on Microraptor (2 to kill); a Microraptor bite lands 10 back (69 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 210,
+              "defenderHit": 10,
+              "attackerBurst": 252,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 2,
+              "defenderHitsToKill": 69,
+              "attackerDps": 212.8,
+              "defenderDps": 6.3,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 102,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 17,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.11,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 10
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "microraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Microraptor",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 50,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "concavenator",
           "name": "Concavenator",
           "family": "concavenator",
@@ -16710,124 +16833,6 @@
           "tags": [
             "dangerous-defender"
           ],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "citipati",
-          "name": "Citipati",
-          "family": "citipati",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Citipati is legal quarry, but not a comfortable fight",
-          "summary": "Citipati is within the legal hunt ceiling. The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land. 1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
-          "score": 41,
-          "visible": false,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Medium tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-edge",
-            "attackerSpeed": 1100,
-            "targetSpeed": 1075,
-            "speedMarginPct": 2.3,
-            "attackerDurationSeconds": 166.667,
-            "targetDurationSeconds": 133.333,
-            "durationMarginPct": 25,
-            "label": "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "tallbrush-coasts",
-              "steep-run",
-              "big-tree-overlook",
-              "cedrus-forest",
-              "stillwater-bog",
-              "cliff-edge-falls",
-              "coastland-swamp",
-              "redwoods"
-            ],
-            "overlap": 0.348,
-            "label": "8 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Medium tier.",
-            "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land.",
-            "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
-            "8 shared mapped areas make contact plausible.",
-            "One-on-one, a Austroraptor bite lands 44 on Citipati (13 to kill); a Citipati beak snap lands 46 back (15 to kill)."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 44,
-              "defenderHit": 46,
-              "attackerBurst": 53,
-              "defenderBurst": 69,
-              "attackerHitsToKill": 13,
-              "defenderHitsToKill": 15,
-              "attackerDps": 44.3,
-              "defenderDps": 44.9,
-              "attackerTimeToKill": 12,
-              "defenderTimeToKill": 14,
-              "attackerBleed": 0,
-              "defenderBleed": 0.103,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 4,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.92,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 3.75
-              }
-            },
-            "label": "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 2100,
-            "targetCombatWeight": 2400,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "1 Austroraptor vs 4 Citipati: the Citipati side wins in about 4 s with 92% of its health left.",
-              "attackers": 1,
-              "defenders": 4
-            }
-          },
-          "attackerId": "austroraptor",
-          "targetId": "citipati",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Austroraptor",
-            "targetName": "Citipati",
-            "chaseVerdict": "attacker-edge",
-            "chaseLabel": "The speed gap is small (1100 vs 1075), but Austroraptor has the pursuit edge on land.",
-            "baseScore": 58,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Citipati is within the legal hunt ceiling."
-          },
-          "tags": [],
           "evidence": [],
           "confidence": "derived"
         }
@@ -17509,6 +17514,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "concavenator": {
         "id": "concavenator",
         "name": "Concavenator",
@@ -17630,37 +17664,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "citipati": {
-        "id": "citipati",
-        "name": "Citipati",
-        "cw": 2400,
-        "hp": 550,
-        "armor": 1,
-        "dps": 39.33,
-        "primary": {
-          "label": "Beak Snap",
-          "damage": 40,
-          "cooldown": 1.25
-        },
-        "burst": {
-          "label": "Claw Swipe",
-          "damage": 60,
-          "cooldown": 6,
-          "situational": false
-        },
-        "attacks": [
-          "Beak Snap",
-          "Kick",
-          "Claw Swipe"
-        ],
-        "bleedPerSecond": 0.09,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
         "engagementUnlimited": false
       }
     },
@@ -18902,6 +18905,26 @@
         "trot": {
           "hits": 1,
           "seconds": 20
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 5
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.68,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 39
         },
         "sit": {
           "hits": 2,

@@ -13350,6 +13350,130 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Achillobator is 27% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 10 Microraptor: the Achillobator side wins in about 15 s with 37% of its health left.",
+        "score": 68,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 825,
+          "speedMarginPct": 27.3,
+          "attackerDurationSeconds": 154,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -61.5,
+          "label": "Achillobator is 27% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "steep-run",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "mudflats",
+            "cliff-edge-falls",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.55,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Achillobator is 27% faster on land; a clean escape is unlikely once spotted.",
+          "1 Achillobator vs 10 Microraptor: the Achillobator side wins in about 15 s with 37% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Achillobator bite lands 392 on Microraptor (2 to kill); a Microraptor bite lands 7 back (84 to kill).",
+          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 392,
+            "defenderHit": 7,
+            "attackerBurst": 784,
+            "defenderBurst": 7,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 84,
+            "attackerDps": 280,
+            "defenderDps": 4.8,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 126,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 15,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.37,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Achillobator vs 10 Microraptor: the Achillobator side wins in about 15 s with 37% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2800,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Achillobator vs 10 Microraptor: the Achillobator side wins in about 3 s with 97% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "achillobator",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Achillobator",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Achillobator is 27% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "pounce"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
         "family": "ceratosaurus",
@@ -13468,240 +13592,6 @@
         "tags": [
           "pounce",
           "dangerous-defender"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "megalania-temperate",
-        "name": "Megalania (Temperate)",
-        "family": "megalania",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "quarry",
-        "headline": "Megalania (Temperate) is a realistic hunting opportunity",
-        "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-        "score": 60,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1025,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 7.7,
-          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "twisted-forest",
-            "mudflats",
-            "cliff-edge-falls",
-            "east-passage",
-            "wollemi-forest"
-          ],
-          "overlap": 0.278,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-          "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Achillobator bite lands 72 on Megalania (Temperate) (8 to kill); a Megalania (Temperate) bite lands 37 back (17 to kill).",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 72,
-            "defenderHit": 37,
-            "attackerBurst": 144,
-            "defenderBurst": 74,
-            "attackerHitsToKill": 8,
-            "defenderHitsToKill": 17,
-            "attackerDps": 51.3,
-            "defenderDps": 46.2,
-            "attackerTimeToKill": 10,
-            "defenderTimeToKill": 13,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "close",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 10,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.21,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 10.25
-            }
-          },
-          "label": "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "5 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 2 s with 97% of its health left.",
-            "attackers": 5,
-            "defenders": 1
-          }
-        },
-        "attackerId": "achillobator",
-        "targetId": "megalania-temperate",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Achillobator",
-          "targetName": "Megalania (Temperate)",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "baseScore": 52,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
-        },
-        "tags": [
-          "pounce"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "family": "megalania",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "quarry",
-        "headline": "Megalania (Arid) is a realistic hunting opportunity",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-        "score": 51,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "close-chase",
-          "attackerSpeed": 1050,
-          "targetSpeed": 1025,
-          "speedMarginPct": 2.4,
-          "attackerDurationSeconds": 154,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": 7.7,
-          "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest"
-          ],
-          "overlap": 0.167,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-          "They overlap in 3 mapped areas, so the matchup is situational.",
-          "One-on-one, a Achillobator bite lands 72 on Megalania (Arid) (8 to kill); a Megalania (Arid) bite lands 37 back (17 to kill).",
-          "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 72,
-            "defenderHit": 37,
-            "attackerBurst": 144,
-            "defenderBurst": 74,
-            "attackerHitsToKill": 8,
-            "defenderHitsToKill": 17,
-            "attackerDps": 51.3,
-            "defenderDps": 46.2,
-            "attackerTimeToKill": 10,
-            "defenderTimeToKill": 13,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "close",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 10,
-            "attackersLeft": 1,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.21,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 10.25
-            }
-          },
-          "label": "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 2800,
-          "targetCombatWeight": 2600,
-          "attackerGroupLimit": 5,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "5 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 2 s with 97% of its health left.",
-            "attackers": 5,
-            "defenders": 1
-          }
-        },
-        "attackerId": "achillobator",
-        "targetId": "megalania-arid",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Achillobator",
-          "targetName": "Megalania (Arid)",
-          "chaseVerdict": "close-chase",
-          "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
-          "baseScore": 43,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
-        },
-        "tags": [
-          "pounce"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -14403,6 +14293,240 @@
       ],
       "opportunities": [
         {
+          "id": "megalania-temperate",
+          "name": "Megalania (Temperate)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Megalania (Temperate) is a realistic hunting opportunity",
+          "summary": "Megalania (Temperate) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "score": 60,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1025,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": 7.7,
+            "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "wollemi-forest"
+            ],
+            "overlap": 0.278,
+            "label": "5 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+            "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+            "5 shared mapped areas make contact plausible.",
+            "One-on-one, a Achillobator bite lands 72 on Megalania (Temperate) (8 to kill); a Megalania (Temperate) bite lands 37 back (17 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 37,
+              "attackerBurst": 144,
+              "defenderBurst": 74,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 17,
+              "attackerDps": 51.3,
+              "defenderDps": 46.2,
+              "attackerTimeToKill": 10,
+              "defenderTimeToKill": 13,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.21,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.25
+              }
+            },
+            "label": "1 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 1 Megalania (Temperate): the Achillobator side wins in about 2 s with 97% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "megalania-temperate",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Megalania (Temperate)",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+            "baseScore": 52,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Temperate) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Megalania (Arid) is a realistic hunting opportunity",
+          "summary": "Megalania (Arid) is within the legal hunt ceiling. This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it. 1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+          "score": 51,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "close-chase",
+            "attackerSpeed": 1050,
+            "targetSpeed": 1025,
+            "speedMarginPct": 2.4,
+            "attackerDurationSeconds": 154,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": 7.7,
+            "label": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it."
+          },
+          "encounter": {
+            "level": "possible",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest"
+            ],
+            "overlap": 0.167,
+            "label": "They overlap in 3 mapped areas, so the matchup is situational."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+            "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+            "They overlap in 3 mapped areas, so the matchup is situational.",
+            "One-on-one, a Achillobator bite lands 72 on Megalania (Arid) (8 to kill); a Megalania (Arid) bite lands 37 back (17 to kill).",
+            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 72,
+              "defenderHit": 37,
+              "attackerBurst": 144,
+              "defenderBurst": 74,
+              "attackerHitsToKill": 8,
+              "defenderHitsToKill": 17,
+              "attackerDps": 51.3,
+              "defenderDps": 46.2,
+              "attackerTimeToKill": 10,
+              "defenderTimeToKill": 13,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 10,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.21,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 10.25
+              }
+            },
+            "label": "1 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 10 s with 21% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 2800,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 5,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "5 Achillobator vs 1 Megalania (Arid): the Achillobator side wins in about 2 s with 97% of its health left.",
+              "attackers": 5,
+              "defenders": 1
+            }
+          },
+          "attackerId": "achillobator",
+          "targetId": "megalania-arid",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Achillobator",
+            "targetName": "Megalania (Arid)",
+            "chaseVerdict": "close-chase",
+            "chaseLabel": "This is a close chase on land: 1050 vs 1025 units/s, with stamina likely deciding it.",
+            "baseScore": 43,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "barsboldia",
           "name": "Barsboldia",
           "family": "barsboldia",
@@ -15012,124 +15136,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "stegosaurus",
-          "name": "Stegosaurus",
-          "family": "stegosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Stegosaurus is within the legal hunt ceiling. Achillobator is 17% faster on land; a clean escape is unlikely once spotted. 1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1050,
-            "targetSpeed": 900,
-            "speedMarginPct": 16.7,
-            "attackerDurationSeconds": 154,
-            "targetDurationSeconds": 63,
-            "durationMarginPct": 144.4,
-            "label": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "big-tree-overlook",
-              "cedrus-forest",
-              "twisted-forest",
-              "wollemi-forest"
-            ],
-            "overlap": 0.357,
-            "label": "5 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
-            "1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
-            "5 shared mapped areas make contact plausible.",
-            "One-on-one, a Achillobator bite lands 39 on Stegosaurus (21 to kill); a Stegosaurus tail attack lands 143 back (5 to kill).",
-            "Its maximum hunting setup includes 3 Latenivenatrix companions; the model never assumes an unlimited swarm."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 2,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 39,
-              "defenderHit": 143,
-              "attackerBurst": 78,
-              "defenderBurst": 286,
-              "attackerHitsToKill": 21,
-              "defenderHitsToKill": 5,
-              "attackerDps": 28,
-              "defenderDps": 160.7,
-              "attackerTimeToKill": 29,
-              "defenderTimeToKill": 4,
-              "attackerBleed": 0,
-              "defenderBleed": 1.171,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 2,
-              "attackersLeft": 0,
-              "defendersLeft": 2,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.96,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 2
-              }
-            },
-            "label": "1 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 96% of its health left.",
-            "detail": "1 attacker vs 2 defenders",
-            "attackerCombatWeight": 2800,
-            "targetCombatWeight": 5000,
-            "attackerGroupLimit": 5,
-            "targetDefenderLimit": 2,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "5 Achillobator vs 2 Stegosaurus: the Stegosaurus side wins in about 10 s with 50% of its health left.",
-              "attackers": 5,
-              "defenders": 2
-            }
-          },
-          "attackerId": "achillobator",
-          "targetId": "stegosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Achillobator",
-            "targetName": "Stegosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Achillobator is 17% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Stegosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "pounce"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -15472,6 +15478,35 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "ceratosaurus": {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
@@ -15499,68 +15534,6 @@
         "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 4,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "megalania-temperate": {
-        "id": "megalania-temperate",
-        "name": "Megalania (Temperate)",
-        "cw": 2600,
-        "hp": 525,
-        "armor": 1.05,
-        "dps": 49.71,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Lunging Snap Water",
-          "damage": 80,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Venom Bite",
-          "Lunging Snap Water"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "megalania-arid": {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "cw": 2600,
-        "hp": 525,
-        "armor": 1.05,
-        "dps": 49.71,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Lunging Snap Water",
-          "damage": 80,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Venom Bite",
-          "Lunging Snap Water"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 1,
         "engagementUnlimited": false
@@ -15717,6 +15690,68 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
+      "megalania-temperate": {
+        "id": "megalania-temperate",
+        "name": "Megalania (Temperate)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
       "barsboldia": {
         "id": "barsboldia",
         "name": "Barsboldia",
@@ -15868,36 +15903,6 @@
         "huntLimit": 3,
         "huntUnlimited": false,
         "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
-      "stegosaurus": {
-        "id": "stegosaurus",
-        "name": "Stegosaurus",
-        "cw": 5000,
-        "hp": 800,
-        "armor": 1,
-        "dps": 90,
-        "primary": {
-          "label": "Tail Attack",
-          "damage": 80,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 160,
-          "cooldown": 8,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Attack",
-          "Tail Wind Up Attack"
-        ],
-        "bleedPerSecond": 0.656,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
         "engagementUnlimited": false
       }
     },
@@ -17326,6 +17331,26 @@
         "sit": {
           "hits": 1,
           "seconds": 15
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 2.24,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 22
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 4
         },
         "direct": 2
       },

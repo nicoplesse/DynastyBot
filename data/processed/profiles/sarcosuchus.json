@@ -15166,15 +15166,15 @@
         "confidence": "derived"
       },
       {
-        "id": "metriacanthosaurus",
-        "name": "Metriacanthosaurus",
-        "family": "metriacanthosaurus",
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
         "direction": "opportunity",
-        "band": "conditional",
+        "band": "high",
         "kind": "quarry",
-        "headline": "Metriacanthosaurus can usually refuse the chase",
-        "summary": "Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 14% faster on land and can normally refuse this fight. 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
-        "score": 56,
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left.",
+        "score": 75,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -15183,55 +15183,57 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "target-can-disengage",
+          "verdict": "attacker-faster",
           "attackerSpeed": 900,
-          "targetSpeed": 1050,
-          "speedMarginPct": -14.3,
+          "targetSpeed": 825,
+          "speedMarginPct": 9.1,
           "attackerDurationSeconds": 40,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": -68,
-          "label": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight."
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -90,
+          "label": "Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
           "sharedRegions": [
             "steep-run",
             "cedrus-forest",
+            "black-fern-hills",
             "stillwater-bog",
             "mudflats",
             "cliff-edge-falls",
             "coastland-swamp",
-            "crag-bluffs"
+            "crag-bluffs",
+            "redwoods",
+            "wollemi-forest"
           ],
-          "overlap": 0.389,
-          "label": "7 shared mapped areas make contact plausible."
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Apex tier.",
-          "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
-          "1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
-          "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Sarcosuchus tail lands 58 on Metriacanthosaurus (9 to kill); a Metriacanthosaurus v2claw attack lands 28 back (22 to kill).",
-          "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+          "Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Sarcosuchus tail lands 360 on Microraptor (2 to kill); a Microraptor bite lands 4 back (135 to kill).",
           "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "fight": {
           "attackers": 1,
-          "defenders": 2,
+          "defenders": 10,
           "attackerChoice": 1,
           "defenderChoice": "max",
           "bleed": "off",
           "duel": {
-            "attackerHit": 58,
-            "defenderHit": 28,
-            "attackerBurst": 305,
-            "defenderBurst": 45,
-            "attackerHitsToKill": 9,
-            "defenderHitsToKill": 22,
-            "attackerDps": 131.6,
-            "defenderDps": 26.8,
-            "attackerTimeToKill": 4,
-            "defenderTimeToKill": 22,
+            "attackerHit": 360,
+            "defenderHit": 4,
+            "attackerBurst": 1890,
+            "defenderBurst": 4,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 135,
+            "attackerDps": 816,
+            "defenderDps": 3,
+            "attackerTimeToKill": 0,
+            "defenderTimeToKill": 202,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
@@ -15240,49 +15242,48 @@
           "verdict": "attacker-advantage",
           "sim": {
             "winner": "attacker",
-            "seconds": 8,
+            "seconds": 5,
             "attackersLeft": 1,
             "defendersLeft": 0,
-            "attackerHpShare": 0.48,
+            "attackerHpShare": 0.86,
             "defenderHpShare": 0,
             "firstDown": {
               "side": "defender",
-              "seconds": 4
+              "seconds": 0.5
             }
           },
-          "label": "1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
-          "detail": "1 attacker vs 2 defenders",
+          "label": "1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 4500,
-          "targetCombatWeight": 3100,
+          "targetCombatWeight": 500,
           "attackerGroupLimit": 3,
-          "targetDefenderLimit": 2,
+          "targetDefenderLimit": 10,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "3 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 3 s with 94% of its health left.",
+            "label": "3 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 2 s with 98% of its health left.",
             "attackers": 3,
-            "defenders": 2
+            "defenders": 10
           }
         },
         "attackerId": "sarcosuchus",
-        "targetId": "metriacanthosaurus",
+        "targetId": "microraptor",
         "core": {
           "direction": "opportunity",
           "attackerName": "Sarcosuchus",
-          "targetName": "Metriacanthosaurus",
-          "chaseVerdict": "target-can-disengage",
-          "chaseLabel": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
-          "baseScore": 38,
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
           "scoreCap": null,
-          "conditional": true,
+          "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
         },
         "tags": [
-          "ambush",
-          "dangerous-defender"
+          "ambush"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -16006,6 +16007,128 @@
       ],
       "opportunities": [
         {
+          "id": "metriacanthosaurus",
+          "name": "Metriacanthosaurus",
+          "family": "metriacanthosaurus",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Metriacanthosaurus can usually refuse the chase",
+          "summary": "Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 14% faster on land and can normally refuse this fight. 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 900,
+            "targetSpeed": 1050,
+            "speedMarginPct": -14.3,
+            "attackerDurationSeconds": 40,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -68,
+            "label": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "cedrus-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.389,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
+            "1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Sarcosuchus tail lands 58 on Metriacanthosaurus (9 to kill); a Metriacanthosaurus v2claw attack lands 28 back (22 to kill).",
+            "Metriacanthosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 58,
+              "defenderHit": 28,
+              "attackerBurst": 305,
+              "defenderBurst": 45,
+              "attackerHitsToKill": 9,
+              "defenderHitsToKill": 22,
+              "attackerDps": 131.6,
+              "defenderDps": 26.8,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 22,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.48,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 4
+              }
+            },
+            "label": "1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 3100,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "3 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 3 s with 94% of its health left.",
+              "attackers": 3,
+              "defenders": 2
+            }
+          },
+          "attackerId": "sarcosuchus",
+          "targetId": "metriacanthosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Sarcosuchus",
+            "targetName": "Metriacanthosaurus",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Metriacanthosaurus is 14% faster on land and can normally refuse this fight.",
+            "baseScore": 38,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Metriacanthosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "achillobator",
           "name": "Achillobator",
           "family": "achillobator",
@@ -16606,123 +16729,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "suchomimus",
-          "name": "Suchomimus",
-          "family": "suchomimus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Suchomimus is legal quarry, but not a comfortable fight",
-          "summary": "Suchomimus is within the legal hunt ceiling. Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 3 Suchomimus: the Suchomimus side wins in about 5 s with 82% of its health left.",
-          "score": 55,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 880,
-            "targetSpeed": 640,
-            "speedMarginPct": 37.5,
-            "attackerDurationSeconds": 167,
-            "targetDurationSeconds": 167,
-            "durationMarginPct": 0,
-            "label": "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "stillwater-bog",
-              "mudflats",
-              "coastland-swamp",
-              "redwoods"
-            ],
-            "overlap": 0.222,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted.",
-            "1 Sarcosuchus vs 3 Suchomimus: the Suchomimus side wins in about 5 s with 82% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Sarcosuchus tail lands 36 on Suchomimus (20 to kill); a Suchomimus bite lands 44 back (14 to kill).",
-            "Sarcosuchus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 3,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 36,
-              "defenderHit": 44,
-              "attackerBurst": 189,
-              "defenderBurst": 100,
-              "attackerHitsToKill": 20,
-              "defenderHitsToKill": 14,
-              "attackerDps": 81.6,
-              "defenderDps": 42.6,
-              "attackerTimeToKill": 9,
-              "defenderTimeToKill": 14,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 5,
-              "attackersLeft": 0,
-              "defendersLeft": 3,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.82,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 4.75
-              }
-            },
-            "label": "1 Sarcosuchus vs 3 Suchomimus: the Suchomimus side wins in about 5 s with 82% of its health left.",
-            "detail": "1 attacker vs 3 defenders",
-            "attackerCombatWeight": 4500,
-            "targetCombatWeight": 5000,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 3,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "3 Sarcosuchus vs 3 Suchomimus: the Sarcosuchus side wins in about 10 s with 56% of its health left.",
-              "attackers": 3,
-              "defenders": 3
-            }
-          },
-          "attackerId": "sarcosuchus",
-          "targetId": "suchomimus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Sarcosuchus",
-            "targetName": "Suchomimus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Sarcosuchus is 38% faster in water; a clean escape is unlikely once spotted.",
-            "baseScore": 72,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Suchomimus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -17161,34 +17167,33 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "metriacanthosaurus": {
-        "id": "metriacanthosaurus",
-        "name": "Metriacanthosaurus",
-        "cw": 3100,
-        "hp": 500,
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
         "armor": 1,
-        "dps": 38.86,
+        "dps": 26.67,
         "primary": {
-          "label": "V2Claw Attack",
+          "label": "Bite",
           "damage": 40,
-          "cooldown": 1.1
+          "cooldown": 1.5
         },
         "burst": {
-          "label": "Venom Bite",
-          "damage": 65,
-          "cooldown": 10,
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
           "situational": false
         },
         "attacks": [
-          "V2Claw Attack",
-          "Venom Bite"
+          "Bite"
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
         "estimated": false,
-        "huntLimit": 1,
+        "huntLimit": 2,
         "huntUnlimited": false,
-        "engagementLimit": 2,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "tyrannotitan": {
@@ -17371,6 +17376,36 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
+      "metriacanthosaurus": {
+        "id": "metriacanthosaurus",
+        "name": "Metriacanthosaurus",
+        "cw": 3100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 38.86,
+        "primary": {
+          "label": "V2Claw Attack",
+          "damage": 40,
+          "cooldown": 1.1
+        },
+        "burst": {
+          "label": "Venom Bite",
+          "damage": 65,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "V2Claw Attack",
+          "Venom Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
       "lurdusaurus-freshwater": {
         "id": "lurdusaurus-freshwater",
         "name": "Lurdusaurus (Freshwater)",
@@ -17462,36 +17497,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "suchomimus": {
-        "id": "suchomimus",
-        "name": "Suchomimus",
-        "cw": 5000,
-        "hp": 700,
-        "armor": 1,
-        "dps": 38.33,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1.2
-        },
-        "burst": {
-          "label": "Stomp",
-          "damage": 90,
-          "cooldown": 10,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Stomp"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 3,
-        "huntUnlimited": false,
-        "engagementLimit": 3,
         "engagementUnlimited": false
       }
     },
@@ -19209,6 +19214,26 @@
         "sit": {
           "hits": 1,
           "seconds": 14
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 2.25,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 22
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 5
         },
         "direct": 2
       },

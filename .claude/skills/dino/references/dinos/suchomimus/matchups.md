@@ -96,6 +96,16 @@ Megalania (Arid) is within the legal hunt ceiling. Suchomimus is 42% faster in w
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 73 pro Haupttreffer vom Angreifer (8 bis zum Kill), 21 zurück (34 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Suchomimus is 15% faster on land; a clean escape is unlikely once spotted. 1 Suchomimus vs 10 Microraptor: the Suchomimus side wins in about 11 s with 78% of its health left.
+- Verfolgung: Suchomimus is 15% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Suchomimus vs 10 Microraptor: the Suchomimus side wins in about 11 s with 78% of its health left. (Kampfgewicht 5000 vs 500)
+- Kampf (beide Seiten legal max): 3 Suchomimus vs 10 Microraptor: the Suchomimus side wins in about 4 s with 97% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 400 pro Haupttreffer vom Angreifer (1 bis zum Kill), 4 zurück (175 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Austroraptor – conditional (quarry)
 Austroraptor can usually refuse the chase
 

@@ -66,7 +66,6 @@ You are the cliff fisher. Your home is one ledge on the sea cliffs, and you spen
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Thalassodromeus** (conditional): Thalassodromeus matters only if it gets the right opening
 - **Hatzegopteryx** (hoch): Hatzegopteryx can create a real pursuit problem
 - **Quetzalcoatlus** (hoch): Quetzalcoatlus can create a real pursuit problem
 

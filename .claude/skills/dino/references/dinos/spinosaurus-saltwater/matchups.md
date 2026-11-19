@@ -1,6 +1,6 @@
 # Spinosaurus (Saltwater) – Matchups
 
-Played solo against their full legal groups, Spinosaurus (Saltwater) has 4 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Spinosaurus (Saltwater) has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -13,36 +13,6 @@ Tylosaurus is linked by a specific profile rule. Tylosaurus is 20% faster in wat
 - Kampf (beide Seiten legal max): 2 Tylosaurus vs 1 Spinosaurus (Saltwater): the Tylosaurus side wins in about 17 s with 27% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 49 pro Haupttreffer vom Angreifer (23 bis zum Kill), 72 zurück (14 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
-
-### Eurhinosaurus – conditional (conditional)
-Eurhinosaurus matters only if it gets the right opening
-
-Eurhinosaurus is linked by a specific profile rule. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.
-- Verfolgung: Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left. (Kampfgewicht 3000 vs 6000)
-- Kampf (beide Seiten legal max): 3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 18 pro Haupttreffer vom Angreifer (61 bis zum Kill), 120 zurück (5 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Coast) – conditional (conditional)
-Lurdusaurus (Coast) matters only if it gets the right opening
-
-Lurdusaurus (Coast) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Coast) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
-
-### Lurdusaurus (Freshwater) – conditional (conditional)
-Lurdusaurus (Freshwater) matters only if it gets the right opening
-
-Lurdusaurus (Freshwater) is linked by a specific profile rule. This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it. 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.
-- Verfolgung: This is a close chase in water: 700 vs 750 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left. (Kampfgewicht 3200 vs 6000)
-- Kampf (beide Seiten legal max): 1 Lurdusaurus (Freshwater) vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 5 s with 87% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (51 bis zum Kill), 113 zurück (6 bis zum Kill)
-- Profilbezug: Only a stated condition turns this into a legal hunt or attack.
 
 ### Tyrannosaurus – sehr hoch (predator)
 Tyrannosaurus can create a very narrow escape window
@@ -72,6 +42,26 @@ Maip is inside the legal hunt range. Maip is 46% faster on land; a clean escape 
 - Kampf (du solo gegen ihre volle legale Gruppe): 3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call. (Kampfgewicht 4000 vs 6000)
 - Kampf (beide Seiten legal max): 3 Maip vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 9% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 36 pro Haupttreffer vom Angreifer (31 bis zum Kill), 90 zurück (8 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Ceratosaurus – hoch (predator)
+Ceratosaurus can create a real pursuit problem
+
+Ceratosaurus is inside the legal hunt range. Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted. 4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.
+- Verfolgung: Ceratosaurus is 50% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call. (Kampfgewicht 2600 vs 6000)
+- Kampf (beide Seiten legal max): 4 Ceratosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 18 s with 13% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (70 bis zum Kill), 138 zurück (6 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Utahraptor – hoch (predator)
+Utahraptor can create a real pursuit problem
+
+Utahraptor is inside the legal hunt range. Utahraptor is 54% faster on land; a clean escape is unlikely once spotted. 5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.
+- Verfolgung: Utahraptor is 54% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call. (Kampfgewicht 2100 vs 6000)
+- Kampf (beide Seiten legal max): 5 Utahraptor vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 33% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (70 bis zum Kill), 171 zurück (4 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Chancen (wen du jagen/schlagen kannst)

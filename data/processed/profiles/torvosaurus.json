@@ -12836,15 +12836,15 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "family": "megalania",
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
         "direction": "opportunity",
-        "band": "conditional",
+        "band": "high",
         "kind": "quarry",
-        "headline": "Megalania (Arid) can usually refuse the chase",
-        "summary": "Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 7% faster on land and can normally refuse this fight. 1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
-        "score": 49,
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+        "score": 68,
         "visible": true,
         "intent": {
           "allowed": true,
@@ -12853,14 +12853,14 @@
         },
         "chase": {
           "mode": "land",
-          "verdict": "target-can-disengage",
+          "verdict": "attacker-faster",
           "attackerSpeed": 950,
-          "targetSpeed": 1025,
-          "speedMarginPct": -7.3,
+          "targetSpeed": 825,
+          "speedMarginPct": 15.2,
           "attackerDurationSeconds": 68.966,
-          "targetDurationSeconds": 143,
-          "durationMarginPct": -51.8,
-          "label": "Megalania (Arid) is 7% faster on land and can normally refuse this fight."
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -82.8,
+          "label": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted."
         },
         "encounter": {
           "level": "frequent",
@@ -12871,35 +12871,37 @@
             "volcano-islands",
             "big-tree-overlook",
             "cedrus-forest",
-            "black-fern-hills"
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
           ],
-          "overlap": 0.583,
-          "label": "7 shared mapped areas make contact plausible."
+          "overlap": 0.45,
+          "label": "9 shared mapped areas make contact plausible."
         },
         "facts": [
           "Its profile permits hunting through Giant tier.",
-          "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
-          "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
-          "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Torvosaurus bite lands 107 on Megalania (Arid) (5 to kill); a Megalania (Arid) bite lands 18 back (40 to kill)."
+          "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Torvosaurus bite lands 585 on Microraptor (1 to kill); a Microraptor bite lands 3 back (205 to kill)."
         ],
         "fight": {
           "attackers": 1,
-          "defenders": 1,
+          "defenders": 10,
           "attackerChoice": 1,
           "defenderChoice": "max",
           "bleed": "off",
           "duel": {
-            "attackerHit": 107,
-            "defenderHit": 18,
-            "attackerBurst": 107,
-            "defenderBurst": 36,
-            "attackerHitsToKill": 5,
-            "defenderHitsToKill": 40,
-            "attackerDps": 71.4,
-            "defenderDps": 22.1,
-            "attackerTimeToKill": 7,
-            "defenderTimeToKill": 32,
+            "attackerHit": 585,
+            "defenderHit": 3,
+            "attackerBurst": 585,
+            "defenderBurst": 3,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 205,
+            "attackerDps": 390,
+            "defenderDps": 2.3,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 307,
             "attackerBleed": 0,
             "defenderBleed": 0,
             "attackerBleedOutpacesHeal": false,
@@ -12908,45 +12910,45 @@
           "verdict": "attacker-advantage",
           "sim": {
             "winner": "attacker",
-            "seconds": 8,
+            "seconds": 11,
             "attackersLeft": 1,
             "defendersLeft": 0,
-            "attackerHpShare": 0.76,
+            "attackerHpShare": 0.81,
             "defenderHpShare": 0,
             "firstDown": {
               "side": "defender",
-              "seconds": 7.5
+              "seconds": 1.25
             }
           },
-          "label": "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
-          "detail": "1 attacker vs 1 defender",
+          "label": "1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 4500,
-          "targetCombatWeight": 2600,
+          "targetCombatWeight": 500,
           "attackerGroupLimit": 6,
-          "targetDefenderLimit": 1,
+          "targetDefenderLimit": 10,
           "attackerGroupUnlimited": false,
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "6 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 1 s with 99% of its health left.",
+            "label": "6 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 2 s with 99% of its health left.",
             "attackers": 6,
-            "defenders": 1
+            "defenders": 10
           }
         },
         "attackerId": "torvosaurus",
-        "targetId": "megalania-arid",
+        "targetId": "microraptor",
         "core": {
           "direction": "opportunity",
           "attackerName": "Torvosaurus",
-          "targetName": "Megalania (Arid)",
-          "chaseVerdict": "target-can-disengage",
-          "chaseLabel": "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
-          "baseScore": 31,
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
           "scoreCap": null,
-          "conditional": true,
+          "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -13660,6 +13662,123 @@
       ],
       "opportunities": [
         {
+          "id": "megalania-arid",
+          "name": "Megalania (Arid)",
+          "family": "megalania",
+          "direction": "opportunity",
+          "band": "conditional",
+          "kind": "quarry",
+          "headline": "Megalania (Arid) can usually refuse the chase",
+          "summary": "Megalania (Arid) is within the legal hunt ceiling. Megalania (Arid) is 7% faster on land and can normally refuse this fight. 1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+          "score": 49,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "target-can-disengage",
+            "attackerSpeed": 950,
+            "targetSpeed": 1025,
+            "speedMarginPct": -7.3,
+            "attackerDurationSeconds": 68.966,
+            "targetDurationSeconds": 143,
+            "durationMarginPct": -51.8,
+            "label": "Megalania (Arid) is 7% faster on land and can normally refuse this fight."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills"
+            ],
+            "overlap": 0.583,
+            "label": "7 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
+            "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+            "7 shared mapped areas make contact plausible.",
+            "One-on-one, a Torvosaurus bite lands 107 on Megalania (Arid) (5 to kill); a Megalania (Arid) bite lands 18 back (40 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 107,
+              "defenderHit": 18,
+              "attackerBurst": 107,
+              "defenderBurst": 36,
+              "attackerHitsToKill": 5,
+              "defenderHitsToKill": 40,
+              "attackerDps": 71.4,
+              "defenderDps": 22.1,
+              "attackerTimeToKill": 7,
+              "defenderTimeToKill": 32,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 8,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.76,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 7.5
+              }
+            },
+            "label": "1 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 8 s with 76% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 4500,
+            "targetCombatWeight": 2600,
+            "attackerGroupLimit": 6,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "6 Torvosaurus vs 1 Megalania (Arid): the Torvosaurus side wins in about 1 s with 99% of its health left.",
+              "attackers": 6,
+              "defenders": 1
+            }
+          },
+          "attackerId": "torvosaurus",
+          "targetId": "megalania-arid",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Torvosaurus",
+            "targetName": "Megalania (Arid)",
+            "chaseVerdict": "target-can-disengage",
+            "chaseLabel": "Megalania (Arid) is 7% faster on land and can normally refuse this fight.",
+            "baseScore": 31,
+            "scoreCap": null,
+            "conditional": true,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "austroraptor",
           "name": "Austroraptor",
           "family": "austroraptor",
@@ -14245,123 +14364,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "anodontosaurus",
-          "name": "Anodontosaurus",
-          "family": "anodontosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Anodontosaurus is within the legal hunt ceiling. Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Giant tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 950,
-            "targetSpeed": 660,
-            "speedMarginPct": 43.9,
-            "attackerDurationSeconds": 68.966,
-            "targetDurationSeconds": 125,
-            "durationMarginPct": -44.8,
-            "label": "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "cedrus-forest",
-              "black-fern-hills",
-              "crag-bluffs"
-            ],
-            "overlap": 0.267,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Giant tier.",
-            "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted.",
-            "1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Torvosaurus bite lands 43 on Anodontosaurus (20 to kill); a Anodontosaurus tail slam lands 54 back (13 to kill).",
-            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 43,
-              "defenderHit": 54,
-              "attackerBurst": 43,
-              "defenderBurst": 92,
-              "attackerHitsToKill": 20,
-              "defenderHitsToKill": 13,
-              "attackerDps": 28.9,
-              "defenderDps": 40.6,
-              "attackerTimeToKill": 29,
-              "defenderTimeToKill": 17,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 17,
-              "attackersLeft": 0,
-              "defendersLeft": 1,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.41,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 17.25
-              }
-            },
-            "label": "1 Torvosaurus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 17 s with 41% of its health left.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 4500,
-            "targetCombatWeight": 4500,
-            "attackerGroupLimit": 6,
-            "targetDefenderLimit": 1,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "attacker-advantage",
-              "label": "6 Torvosaurus vs 1 Anodontosaurus: the Torvosaurus side wins in about 5 s with 95% of its health left.",
-              "attackers": 6,
-              "defenders": 1
-            }
-          },
-          "attackerId": "torvosaurus",
-          "targetId": "anodontosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Torvosaurus",
-            "targetName": "Anodontosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Torvosaurus is 44% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -14736,35 +14738,33 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "megalania-arid": {
-        "id": "megalania-arid",
-        "name": "Megalania (Arid)",
-        "cw": 2600,
-        "hp": 525,
-        "armor": 1.05,
-        "dps": 49.71,
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
         "primary": {
           "label": "Bite",
           "damage": 40,
-          "cooldown": 1
+          "cooldown": 1.5
         },
         "burst": {
-          "label": "Lunging Snap Water",
-          "damage": 80,
-          "cooldown": 10,
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
           "situational": false
         },
         "attacks": [
-          "Bite",
-          "Venom Bite",
-          "Lunging Snap Water"
+          "Bite"
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
         "estimated": false,
-        "huntLimit": 1,
+        "huntLimit": 2,
         "huntUnlimited": false,
-        "engagementLimit": 1,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "concavenator": {
@@ -14946,6 +14946,37 @@
         "engagementLimit": 6,
         "engagementUnlimited": false
       },
+      "megalania-arid": {
+        "id": "megalania-arid",
+        "name": "Megalania (Arid)",
+        "cw": 2600,
+        "hp": 525,
+        "armor": 1.05,
+        "dps": 49.71,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Lunging Snap Water",
+          "damage": 80,
+          "cooldown": 10,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Venom Bite",
+          "Lunging Snap Water"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
       "austroraptor": {
         "id": "austroraptor",
         "name": "Austroraptor",
@@ -15066,37 +15097,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "anodontosaurus": {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
-        "cw": 4500,
-        "hp": 850,
-        "armor": 1.5,
-        "dps": 52.78,
-        "primary": {
-          "label": "Tail Slam",
-          "damage": 70,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 120,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Slam",
-          "Tail Wind Up Attack",
-          "Swerve"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
         "engagementUnlimited": false
       }
     },

@@ -72,9 +72,6 @@ You are a small daytime flier in an unlimited flock. Fish is your staple, and yo
 - **Hatzegopteryx** (hoch): Hatzegopteryx can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Quetzalcoatlus** (conditional): Quetzalcoatlus is legal quarry, but not a comfortable fight
-- **Hatzegopteryx** (conditional): Hatzegopteryx is legal quarry, but not a comfortable fight
-- **Tropeognathus** (conditional): Tropeognathus is legal quarry, but not a comfortable fight
 - **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

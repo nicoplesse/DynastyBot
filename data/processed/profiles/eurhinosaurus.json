@@ -13979,502 +13979,6 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "deinosuchus-shore",
-        "name": "Deinosuchus (Shore)",
-        "family": "deinosuchus",
-        "direction": "opportunity",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Deinosuchus (Shore) is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 7 s with 90% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 700,
-          "speedMarginPct": 50,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 166.667,
-          "durationMarginPct": 33.2,
-          "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "coastal-bluffs",
-            "volcano-islands",
-            "palm-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats",
-            "coastland-swamp"
-          ],
-          "overlap": 0.727,
-          "label": "8 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-          "1 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 7 s with 90% of its health left.",
-          "8 shared mapped areas make contact plausible.",
-          "One-on-one, a Eurhinosaurus bite lands 18 on Deinosuchus (Shore) (56 to kill); a Deinosuchus (Shore) bite lands 110 back (6 to kill).",
-          "Eurhinosaurus's bleed builds faster than Deinosuchus (Shore) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 18,
-            "defenderHit": 110,
-            "attackerBurst": 30,
-            "defenderBurst": 230,
-            "attackerHitsToKill": 56,
-            "defenderHitsToKill": 6,
-            "attackerDps": 14.9,
-            "defenderDps": 87.3,
-            "attackerTimeToKill": 67,
-            "defenderTimeToKill": 7,
-            "attackerBleed": 0.029,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 7,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.9,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 7
-            }
-          },
-          "label": "1 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 7 s with 90% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "3 Eurhinosaurus vs 1 Deinosuchus (Shore): the Deinosuchus (Shore) side wins in about 21 s with 38% of its health left.",
-            "attackers": 3,
-            "defenders": 1
-          }
-        },
-        "attackerId": "eurhinosaurus",
-        "targetId": "deinosuchus-shore",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Eurhinosaurus",
-          "targetName": "Deinosuchus (Shore)",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "eurhinosaurus",
-            "profileName": "Eurhinosaurus",
-            "section": "Cross-Species Interaction",
-            "text": "Eurhinosaurus consider most other species in a neural manner, except for Spinosaurus and Deinosuchus which they will flee from."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "spinosaurus-freshwater",
-        "name": "Spinosaurus (Freshwater)",
-        "family": "spinosaurus",
-        "direction": "opportunity",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 4 s with 94% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 750,
-          "speedMarginPct": 40,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 32.9,
-          "label": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "volcano-islands",
-            "big-tree-overlook",
-            "twisted-forest",
-            "stillwater-bog",
-            "mudflats",
-            "coastland-swamp"
-          ],
-          "overlap": 0.353,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "1 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 4 s with 94% of its health left.",
-          "6 shared mapped areas make contact plausible.",
-          "One-on-one, a Eurhinosaurus bite lands 18 on Spinosaurus (Freshwater) (61 to kill); a Spinosaurus (Freshwater) claw lands 120 back (5 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 18,
-            "defenderHit": 120,
-            "attackerBurst": 30,
-            "defenderBurst": 340,
-            "attackerHitsToKill": 61,
-            "defenderHitsToKill": 5,
-            "attackerDps": 14.9,
-            "defenderDps": 145.3,
-            "attackerTimeToKill": 74,
-            "defenderTimeToKill": 4,
-            "attackerBleed": 0.029,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 4,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.94,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 4.25
-            }
-          },
-          "label": "1 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 4 s with 94% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "3 Eurhinosaurus vs 1 Spinosaurus (Freshwater): the Spinosaurus (Freshwater) side wins in about 13 s with 66% of its health left.",
-            "attackers": 3,
-            "defenders": 1
-          }
-        },
-        "attackerId": "eurhinosaurus",
-        "targetId": "spinosaurus-freshwater",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Eurhinosaurus",
-          "targetName": "Spinosaurus (Freshwater)",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "eurhinosaurus",
-            "profileName": "Eurhinosaurus",
-            "section": "Cross-Species Interaction",
-            "text": "Eurhinosaurus consider most other species in a neural manner, except for Spinosaurus and Deinosuchus which they will flee from."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "spinosaurus-saltwater",
-        "name": "Spinosaurus (Saltwater)",
-        "family": "spinosaurus",
-        "direction": "opportunity",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 750,
-          "speedMarginPct": 40,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 167,
-          "durationMarginPct": 32.9,
-          "label": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "kelp-vale",
-            "coastal-bluffs",
-            "abyssal-depths",
-            "palm-islands",
-            "stonebed-shoal"
-          ],
-          "overlap": 0.294,
-          "label": "5 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "1 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
-          "5 shared mapped areas make contact plausible.",
-          "One-on-one, a Eurhinosaurus bite lands 18 on Spinosaurus (Saltwater) (61 to kill); a Spinosaurus (Saltwater) claw lands 120 back (5 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 18,
-            "defenderHit": 120,
-            "attackerBurst": 30,
-            "defenderBurst": 340,
-            "attackerHitsToKill": 61,
-            "defenderHitsToKill": 5,
-            "attackerDps": 14.9,
-            "defenderDps": 145.3,
-            "attackerTimeToKill": 74,
-            "defenderTimeToKill": 4,
-            "attackerBleed": 0.029,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 4,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.94,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 4.25
-            }
-          },
-          "label": "1 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 4 s with 94% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "3 Eurhinosaurus vs 1 Spinosaurus (Saltwater): the Spinosaurus (Saltwater) side wins in about 13 s with 66% of its health left.",
-            "attackers": 3,
-            "defenders": 1
-          }
-        },
-        "attackerId": "eurhinosaurus",
-        "targetId": "spinosaurus-saltwater",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Eurhinosaurus",
-          "targetName": "Spinosaurus (Saltwater)",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Eurhinosaurus is 40% faster in water; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "eurhinosaurus",
-            "profileName": "Eurhinosaurus",
-            "section": "Cross-Species Interaction",
-            "text": "Eurhinosaurus consider most other species in a neural manner, except for Spinosaurus and Deinosuchus which they will flee from."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
-        "id": "deinosuchus-ocean",
-        "name": "Deinosuchus (Ocean)",
-        "family": "deinosuchus",
-        "direction": "opportunity",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Deinosuchus (Ocean) is legal quarry, but not a comfortable fight",
-        "summary": "A profile rule names or prioritises this matchup. Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 7 s with 90% of its health left.",
-        "score": 39,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "water",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1050,
-          "targetSpeed": 700,
-          "speedMarginPct": 50,
-          "attackerDurationSeconds": 222,
-          "targetDurationSeconds": 166.667,
-          "durationMarginPct": 33.2,
-          "label": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "possible",
-          "sharedRegions": [
-            "kelp-vale",
-            "abyssal-depths",
-            "stonebed-shoal"
-          ],
-          "overlap": 0.273,
-          "label": "They overlap in 3 mapped areas, so the matchup is situational."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-          "1 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 7 s with 90% of its health left.",
-          "They overlap in 3 mapped areas, so the matchup is situational.",
-          "One-on-one, a Eurhinosaurus bite lands 18 on Deinosuchus (Ocean) (56 to kill); a Deinosuchus (Ocean) bite lands 110 back (6 to kill).",
-          "Eurhinosaurus's bleed builds faster than Deinosuchus (Ocean) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 18,
-            "defenderHit": 110,
-            "attackerBurst": 30,
-            "defenderBurst": 230,
-            "attackerHitsToKill": 56,
-            "defenderHitsToKill": 6,
-            "attackerDps": 14.9,
-            "defenderDps": 87.3,
-            "attackerTimeToKill": 67,
-            "defenderTimeToKill": 7,
-            "attackerBleed": 0.029,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 7,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.9,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 7
-            }
-          },
-          "label": "1 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 7 s with 90% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3000,
-          "targetCombatWeight": 6000,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "3 Eurhinosaurus vs 1 Deinosuchus (Ocean): the Deinosuchus (Ocean) side wins in about 21 s with 38% of its health left.",
-            "attackers": 3,
-            "defenders": 1
-          }
-        },
-        "attackerId": "eurhinosaurus",
-        "targetId": "deinosuchus-ocean",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Eurhinosaurus",
-          "targetName": "Deinosuchus (Ocean)",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Eurhinosaurus is 50% faster in water; a clean escape is unlikely once spotted.",
-          "baseScore": 56,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "A profile rule names or prioritises this matchup."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "eurhinosaurus",
-            "profileName": "Eurhinosaurus",
-            "section": "Cross-Species Interaction",
-            "text": "Eurhinosaurus consider most other species in a neural manner, except for Spinosaurus and Deinosuchus which they will flee from."
-          }
-        ],
-        "confidence": "profile-specific"
-      },
-      {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
         "family": "megalania",
@@ -14825,251 +14329,251 @@
         "tags": [],
         "evidence": [],
         "confidence": "derived"
+      },
+      {
+        "id": "suchomimus",
+        "name": "Suchomimus",
+        "family": "suchomimus",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Suchomimus is legal quarry, but not a comfortable fight",
+        "summary": "Suchomimus is within the legal hunt ceiling. Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 640,
+          "speedMarginPct": 64.1,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 167,
+          "durationMarginPct": 32.9,
+          "label": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "kelp-vale",
+            "coastal-bluffs",
+            "volcano-islands",
+            "abyssal-depths",
+            "palm-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "stonebed-shoal",
+            "coastland-swamp"
+          ],
+          "overlap": 0.917,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
+          "1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Eurhinosaurus bite lands 24 on Suchomimus (30 to kill); a Suchomimus bite lands 67 back (9 to kill).",
+          "Eurhinosaurus's bleed builds faster than Suchomimus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 3,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 24,
+            "defenderHit": 67,
+            "attackerBurst": 39,
+            "defenderBurst": 150,
+            "attackerHitsToKill": 30,
+            "defenderHitsToKill": 9,
+            "attackerDps": 19.6,
+            "defenderDps": 63.9,
+            "attackerTimeToKill": 36,
+            "defenderTimeToKill": 9,
+            "attackerBleed": 0.034,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 3,
+            "attackersLeft": 0,
+            "defendersLeft": 3,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.97,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.25
+            }
+          },
+          "label": "1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
+          "detail": "1 attacker vs 3 defenders",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 5000,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 3,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "3 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 10 s with 82% of its health left.",
+            "attackers": 3,
+            "defenders": 3
+          }
+        },
+        "attackerId": "eurhinosaurus",
+        "targetId": "suchomimus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Eurhinosaurus",
+          "targetName": "Suchomimus",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Suchomimus is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "concavenator",
+        "name": "Concavenator",
+        "family": "concavenator",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Concavenator is legal quarry, but not a comfortable fight",
+        "summary": "Concavenator is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "water",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1050,
+          "targetSpeed": 450,
+          "speedMarginPct": 133.3,
+          "attackerDurationSeconds": 222,
+          "targetDurationSeconds": 91,
+          "durationMarginPct": 144,
+          "label": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "coastal-bluffs",
+            "volcano-islands",
+            "big-tree-overlook",
+            "twisted-forest",
+            "stillwater-bog",
+            "mudflats",
+            "coastland-swamp"
+          ],
+          "overlap": 0.5,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
+          "1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Eurhinosaurus bite lands 57 on Concavenator (9 to kill); a Concavenator bite lands 35 back (18 to kill).",
+          "Eurhinosaurus's bleed builds faster than Concavenator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 4,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 57,
+            "defenderHit": 35,
+            "attackerBurst": 93,
+            "defenderBurst": 56,
+            "attackerHitsToKill": 9,
+            "defenderHitsToKill": 18,
+            "attackerDps": 46.8,
+            "defenderDps": 37.6,
+            "attackerTimeToKill": 11,
+            "defenderTimeToKill": 16,
+            "attackerBleed": 0.081,
+            "defenderBleed": 0.035,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.91,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4
+            }
+          },
+          "label": "1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
+          "detail": "1 attacker vs 4 defenders",
+          "attackerCombatWeight": 3000,
+          "targetCombatWeight": 2100,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 4,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "3 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 18 s with 26% of its health left, too narrow to call.",
+            "attackers": 3,
+            "defenders": 4
+          }
+        },
+        "attackerId": "eurhinosaurus",
+        "targetId": "concavenator",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Eurhinosaurus",
+          "targetName": "Concavenator",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Concavenator is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
       }
     ],
     "reserve": {
       "threats": [],
       "opportunities": [
-        {
-          "id": "suchomimus",
-          "name": "Suchomimus",
-          "family": "suchomimus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Suchomimus is legal quarry, but not a comfortable fight",
-          "summary": "Suchomimus is within the legal hunt ceiling. Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Large tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1050,
-            "targetSpeed": 640,
-            "speedMarginPct": 64.1,
-            "attackerDurationSeconds": 222,
-            "targetDurationSeconds": 167,
-            "durationMarginPct": 32.9,
-            "label": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "kelp-vale",
-              "coastal-bluffs",
-              "volcano-islands",
-              "abyssal-depths",
-              "palm-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "stonebed-shoal",
-              "coastland-swamp"
-            ],
-            "overlap": 0.917,
-            "label": "11 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Large tier.",
-            "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
-            "1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
-            "11 shared mapped areas make contact plausible.",
-            "One-on-one, a Eurhinosaurus bite lands 24 on Suchomimus (30 to kill); a Suchomimus bite lands 67 back (9 to kill).",
-            "Eurhinosaurus's bleed builds faster than Suchomimus heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 3,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 24,
-              "defenderHit": 67,
-              "attackerBurst": 39,
-              "defenderBurst": 150,
-              "attackerHitsToKill": 30,
-              "defenderHitsToKill": 9,
-              "attackerDps": 19.6,
-              "defenderDps": 63.9,
-              "attackerTimeToKill": 36,
-              "defenderTimeToKill": 9,
-              "attackerBleed": 0.034,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 3,
-              "attackersLeft": 0,
-              "defendersLeft": 3,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.97,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 3.25
-              }
-            },
-            "label": "1 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 3 s with 97% of its health left.",
-            "detail": "1 attacker vs 3 defenders",
-            "attackerCombatWeight": 3000,
-            "targetCombatWeight": 5000,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 3,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "3 Eurhinosaurus vs 3 Suchomimus: the Suchomimus side wins in about 10 s with 82% of its health left.",
-              "attackers": 3,
-              "defenders": 3
-            }
-          },
-          "attackerId": "eurhinosaurus",
-          "targetId": "suchomimus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Eurhinosaurus",
-            "targetName": "Suchomimus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Eurhinosaurus is 64% faster in water; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Suchomimus is within the legal hunt ceiling."
-          },
-          "tags": [],
-          "evidence": [],
-          "confidence": "derived"
-        },
-        {
-          "id": "concavenator",
-          "name": "Concavenator",
-          "family": "concavenator",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Concavenator is legal quarry, but not a comfortable fight",
-          "summary": "Concavenator is within the legal hunt ceiling. Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted. 1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Large tier."
-          },
-          "chase": {
-            "mode": "water",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1050,
-            "targetSpeed": 450,
-            "speedMarginPct": 133.3,
-            "attackerDurationSeconds": 222,
-            "targetDurationSeconds": 91,
-            "durationMarginPct": 144,
-            "label": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "coastal-bluffs",
-              "volcano-islands",
-              "big-tree-overlook",
-              "twisted-forest",
-              "stillwater-bog",
-              "mudflats",
-              "coastland-swamp"
-            ],
-            "overlap": 0.5,
-            "label": "7 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Large tier.",
-            "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
-            "1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
-            "7 shared mapped areas make contact plausible.",
-            "One-on-one, a Eurhinosaurus bite lands 57 on Concavenator (9 to kill); a Concavenator bite lands 35 back (18 to kill).",
-            "Eurhinosaurus's bleed builds faster than Concavenator heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 57,
-              "defenderHit": 35,
-              "attackerBurst": 93,
-              "defenderBurst": 56,
-              "attackerHitsToKill": 9,
-              "defenderHitsToKill": 18,
-              "attackerDps": 46.8,
-              "defenderDps": 37.6,
-              "attackerTimeToKill": 11,
-              "defenderTimeToKill": 16,
-              "attackerBleed": 0.081,
-              "defenderBleed": 0.035,
-              "attackerBleedOutpacesHeal": true,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 4,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.91,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 4
-              }
-            },
-            "label": "1 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 4 s with 91% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 3000,
-            "targetCombatWeight": 2100,
-            "attackerGroupLimit": 3,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "close",
-              "label": "3 Eurhinosaurus vs 4 Concavenator: the Concavenator side wins in about 18 s with 26% of its health left, too narrow to call.",
-              "attackers": 3,
-              "defenders": 4
-            }
-          },
-          "attackerId": "eurhinosaurus",
-          "targetId": "concavenator",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Eurhinosaurus",
-            "targetName": "Concavenator",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Eurhinosaurus is 133% faster in water; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Concavenator is within the legal hunt ceiling."
-          },
-          "tags": [],
-          "evidence": [],
-          "confidence": "derived"
-        },
         {
           "id": "lurdusaurus-freshwater",
           "name": "Lurdusaurus (Freshwater)",
@@ -15537,130 +15041,6 @@
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "deinosuchus-shore": {
-        "id": "deinosuchus-shore",
-        "name": "Deinosuchus (Shore)",
-        "cw": 6000,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 43.67,
-        "primary": {
-          "label": "Bite",
-          "damage": 55,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite Armor",
-          "damage": 115,
-          "cooldown": 15,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Bite Armor",
-          "Deathroll"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.024,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "spinosaurus-freshwater": {
-        "id": "spinosaurus-freshwater",
-        "name": "Spinosaurus (Freshwater)",
-        "cw": 6000,
-        "hp": 1100,
-        "armor": 1.1,
-        "dps": 72.67,
-        "primary": {
-          "label": "Claw",
-          "damage": 60,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Crushing Bite",
-          "damage": 170,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Claw",
-          "Crushing Bite",
-          "Stomp"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "spinosaurus-saltwater": {
-        "id": "spinosaurus-saltwater",
-        "name": "Spinosaurus (Saltwater)",
-        "cw": 6000,
-        "hp": 1100,
-        "armor": 1.1,
-        "dps": 72.67,
-        "primary": {
-          "label": "Claw",
-          "damage": 60,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Crushing Bite",
-          "damage": 170,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Claw",
-          "Crushing Bite",
-          "Stomp"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "deinosuchus-ocean": {
-        "id": "deinosuchus-ocean",
-        "name": "Deinosuchus (Ocean)",
-        "cw": 6000,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 43.67,
-        "primary": {
-          "label": "Bite",
-          "damage": 55,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Bite Armor",
-          "damage": 115,
-          "cooldown": 15,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Bite Armor",
-          "Deathroll"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.024,
         "estimated": false,
         "huntLimit": 1,
         "huntUnlimited": false,
@@ -17315,6 +16695,26 @@
           "seconds": 0
         },
         "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "special",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 2.4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 1
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 1
+        },
+        "direct": 2
       },
       {
         "id": "rhamphorhynchus",

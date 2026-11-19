@@ -67,6 +67,7 @@ You are a large semi-aquatic carnivore in a 'snare' of up to 3. You fish readily
 **Beute & Chancen:**
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
 - **Austroraptor** (conditional): Austroraptor can usually refuse the chase
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Concavenator** (spürbar): Concavenator is legal quarry, but not a comfortable fight

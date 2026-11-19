@@ -14741,6 +14741,123 @@
         "confidence": "derived"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.",
+        "score": 58,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1025,
+          "targetSpeed": 825,
+          "speedMarginPct": 24.2,
+          "attackerDurationSeconds": 143,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -64.3,
+          "label": "Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "black-fern-hills",
+            "cedrus-forest",
+            "tallbrush-coasts",
+            "steep-run",
+            "big-tree-overlook",
+            "volcano-islands"
+          ],
+          "overlap": 0.304,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted.",
+          "1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Megalania (Arid) bite lands 208 on Microraptor (2 to kill); a Microraptor bite lands 7 back (72 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 208,
+            "defenderHit": 7,
+            "attackerBurst": 416,
+            "defenderBurst": 7,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 72,
+            "attackerDps": 258.5,
+            "defenderDps": 4.9,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 107,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 16,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.2,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2600,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 1,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "close",
+            "label": "1 Megalania (Arid) vs 10 Microraptor: the Megalania (Arid) side wins in about 16 s with 20% of its health left, too narrow to call.",
+            "attackers": 1,
+            "defenders": 10
+          }
+        },
+        "attackerId": "megalania-arid",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Megalania (Arid)",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Megalania (Arid) is 24% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "barsboldia",
         "name": "Barsboldia",
         "family": "barsboldia",
@@ -15083,120 +15200,6 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Giganotosaurus is within the legal hunt ceiling."
-        },
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "stegosaurus",
-        "name": "Stegosaurus",
-        "family": "stegosaurus",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Stegosaurus is within the legal hunt ceiling. Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1025,
-          "targetSpeed": 900,
-          "speedMarginPct": 13.9,
-          "attackerDurationSeconds": 143,
-          "targetDurationSeconds": 63,
-          "durationMarginPct": 127,
-          "label": "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "black-fern-hills",
-            "cedrus-forest",
-            "steep-run",
-            "big-tree-overlook"
-          ],
-          "overlap": 0.286,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted.",
-          "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
-          "4 shared mapped areas make contact plausible.",
-          "One-on-one, a Megalania (Arid) bite lands 21 on Stegosaurus (39 to kill); a Stegosaurus tail attack lands 147 back (4 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 2,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 21,
-            "defenderHit": 147,
-            "attackerBurst": 42,
-            "defenderBurst": 293,
-            "attackerHitsToKill": 39,
-            "defenderHitsToKill": 4,
-            "attackerDps": 25.8,
-            "defenderDps": 164.8,
-            "attackerTimeToKill": 31,
-            "defenderTimeToKill": 3,
-            "attackerBleed": 0,
-            "defenderBleed": 1.262,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": true
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 2,
-            "attackersLeft": 0,
-            "defendersLeft": 2,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.97,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 1.75
-            }
-          },
-          "label": "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
-          "detail": "1 attacker vs 2 defenders",
-          "attackerCombatWeight": 2600,
-          "targetCombatWeight": 5000,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 2,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
-            "attackers": 1,
-            "defenders": 2
-          }
-        },
-        "attackerId": "megalania-arid",
-        "targetId": "stegosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Megalania (Arid)",
-          "targetName": "Stegosaurus",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Stegosaurus is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -15904,6 +15907,120 @@
       ],
       "opportunities": [
         {
+          "id": "stegosaurus",
+          "name": "Stegosaurus",
+          "family": "stegosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Stegosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Stegosaurus is within the legal hunt ceiling. Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted. 1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1025,
+            "targetSpeed": 900,
+            "speedMarginPct": 13.9,
+            "attackerDurationSeconds": 143,
+            "targetDurationSeconds": 63,
+            "durationMarginPct": 127,
+            "label": "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "black-fern-hills",
+              "cedrus-forest",
+              "steep-run",
+              "big-tree-overlook"
+            ],
+            "overlap": 0.286,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted.",
+            "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Megalania (Arid) bite lands 21 on Stegosaurus (39 to kill); a Stegosaurus tail attack lands 147 back (4 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 2,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 21,
+              "defenderHit": 147,
+              "attackerBurst": 42,
+              "defenderBurst": 293,
+              "attackerHitsToKill": 39,
+              "defenderHitsToKill": 4,
+              "attackerDps": 25.8,
+              "defenderDps": 164.8,
+              "attackerTimeToKill": 31,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0,
+              "defenderBleed": 1.262,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": true
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 2,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.97,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 1.75
+              }
+            },
+            "label": "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+            "detail": "1 attacker vs 2 defenders",
+            "attackerCombatWeight": 2600,
+            "targetCombatWeight": 5000,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 2,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "1 Megalania (Arid) vs 2 Stegosaurus: the Stegosaurus side wins in about 2 s with 97% of its health left.",
+              "attackers": 1,
+              "defenders": 2
+            }
+          },
+          "attackerId": "megalania-arid",
+          "targetId": "stegosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Megalania (Arid)",
+            "targetName": "Stegosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Megalania (Arid) is 14% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Stegosaurus is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "tyrannotitan",
           "name": "Tyrannotitan",
           "family": "tyrannotitan",
@@ -16487,120 +16604,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "kentrosaurus",
-          "name": "Kentrosaurus",
-          "family": "kentrosaurus",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Kentrosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Kentrosaurus is within the legal hunt ceiling. This is a close chase on land: 1025 vs 1050 units/s, with stamina likely deciding it. 1 Megalania (Arid) vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-          "score": 35,
-          "visible": false,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "close-chase",
-            "attackerSpeed": 1025,
-            "targetSpeed": 1050,
-            "speedMarginPct": -2.4,
-            "attackerDurationSeconds": 143,
-            "targetDurationSeconds": 143,
-            "durationMarginPct": 0,
-            "label": "This is a close chase on land: 1025 vs 1050 units/s, with stamina likely deciding it."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "black-fern-hills",
-              "cedrus-forest",
-              "steep-run",
-              "big-tree-overlook"
-            ],
-            "overlap": 0.286,
-            "label": "4 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "This is a close chase on land: 1025 vs 1050 units/s, with stamina likely deciding it.",
-            "1 Megalania (Arid) vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-            "4 shared mapped areas make contact plausible.",
-            "One-on-one, a Megalania (Arid) bite lands 39 on Kentrosaurus (20 to kill); a Kentrosaurus tail swipe left lands 40 back (14 to kill)."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 4,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 39,
-              "defenderHit": 40,
-              "attackerBurst": 77,
-              "defenderBurst": 74,
-              "attackerHitsToKill": 20,
-              "defenderHitsToKill": 14,
-              "attackerDps": 47.9,
-              "defenderDps": 51.1,
-              "attackerTimeToKill": 16,
-              "defenderTimeToKill": 10,
-              "attackerBleed": 0,
-              "defenderBleed": 0.173,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 3,
-              "attackersLeft": 0,
-              "defendersLeft": 4,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.96,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 2.75
-              }
-            },
-            "label": "1 Megalania (Arid) vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-            "detail": "1 attacker vs 4 defenders",
-            "attackerCombatWeight": 2600,
-            "targetCombatWeight": 2700,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 4,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "1 Megalania (Arid) vs 4 Kentrosaurus: the Kentrosaurus side wins in about 3 s with 96% of its health left.",
-              "attackers": 1,
-              "defenders": 4
-            }
-          },
-          "attackerId": "megalania-arid",
-          "targetId": "kentrosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Megalania (Arid)",
-            "targetName": "Kentrosaurus",
-            "chaseVerdict": "close-chase",
-            "chaseLabel": "This is a close chase on land: 1025 vs 1050 units/s, with stamina likely deciding it.",
-            "baseScore": 52,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Kentrosaurus is within the legal hunt ceiling."
-          },
-          "tags": [],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -16857,6 +16860,35 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "barsboldia": {
         "id": "barsboldia",
         "name": "Barsboldia",
@@ -16943,36 +16975,6 @@
           "Charged Bite"
         ],
         "bleedPerSecond": 0.142,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "stegosaurus": {
-        "id": "stegosaurus",
-        "name": "Stegosaurus",
-        "cw": 5000,
-        "hp": 800,
-        "armor": 1,
-        "dps": 90,
-        "primary": {
-          "label": "Tail Attack",
-          "damage": 80,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 160,
-          "cooldown": 8,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Attack",
-          "Tail Wind Up Attack"
-        ],
-        "bleedPerSecond": 0.656,
         "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
@@ -17161,6 +17163,36 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
+      "stegosaurus": {
+        "id": "stegosaurus",
+        "name": "Stegosaurus",
+        "cw": 5000,
+        "hp": 800,
+        "armor": 1,
+        "dps": 90,
+        "primary": {
+          "label": "Tail Attack",
+          "damage": 80,
+          "cooldown": 1
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 160,
+          "cooldown": 8,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Attack",
+          "Tail Wind Up Attack"
+        ],
+        "bleedPerSecond": 0.656,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 2,
+        "engagementUnlimited": false
+      },
       "tyrannotitan": {
         "id": "tyrannotitan",
         "name": "Tyrannotitan",
@@ -17281,36 +17313,6 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "kentrosaurus": {
-        "id": "kentrosaurus",
-        "name": "Kentrosaurus",
-        "cw": 2700,
-        "hp": 750,
-        "armor": 1,
-        "dps": 51.67,
-        "primary": {
-          "label": "Tail Swipe Left",
-          "damage": 40,
-          "cooldown": 1
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 75,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Swipe Left",
-          "Tail Wind Up Attack"
-        ],
-        "bleedPerSecond": 0.167,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 4,
         "engagementUnlimited": false
       }
     },

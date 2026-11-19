@@ -77,6 +77,8 @@ function combatTraits(profile) {
     /(?:can have|up to)\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b[^.]{0,70}\b(?:in|enter|actively in)\s+(?:an\s+)?engagement/gi,
     /(?:engagement limit of|active defenders?[^.]{0,20}(?:up to|max(?:imum)? of))\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)/gi,
     /with\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b[^.]{0,35}actively (?:chasing|defending|engaging)/gi,
+    // "up to 2 in a hunt, and 10 in a defence" (Microraptor) names the defence limit on its own.
+    /\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s+in\s+(?:a\s+)?defen[cs]e\b/gi,
   ];
   const quickEngagementLimit = maximumFrom(quick, engagementPatterns, 0);
   const engagementLimit = quickEngagementLimit || maximumFrom(text, engagementPatterns, 1);
@@ -155,7 +157,10 @@ function relationEvidence(attacker, target) {
     if (passiveTarget.test(text)) current = 'avoid';
     else if (cooperative.test(text)) current = 'tolerate';
     else if (/(?:do(?:es)? not|may not|cannot|never)\s+(?:bother\s+(?:to\s+hunt|with)|hunt)|excluding?|flee(?:s|ing)? from|avoid(?:s|ing)?/i.test(text)) {
-      current = /unless|except|desperate hunger|deathscar|albino|offspring|adolescent|juvenile|hatchling|young/i.test(text) ? 'conditional' : 'avoid';
+      const targetState = /desperate hunger|deathscar|albino|offspring|adolescent|juvenile|hatchling|young/i.test(text);
+      // "Flee from X unless nesting / unless in a group of 5" is a defence rule, never a permission to hunt X.
+      const fleeRule = /flee(?:s|ing)? from/i.test(text) && !/(?:do(?:es)? not|may not|cannot|never)\s+(?:bother\s+(?:to\s+hunt|with)|hunt)/i.test(text);
+      current = targetState || (!fleeRule && /unless|except/i.test(text)) ? 'conditional' : 'avoid';
     } else if (directHunt.test(text)) current = 'hunt';
     else if (directAggression.test(text)) current = 'aggression';
     else if (/tolerat|ignore|passive|share kills|group with|adopt/i.test(text)) current = 'tolerate';

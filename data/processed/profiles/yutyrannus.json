@@ -10627,6 +10627,123 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 100,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -75,
+          "label": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.2,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 390 on Microraptor (2 to kill); a Microraptor bite lands 6 back (98 to kill).",
+          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 390,
+            "defenderHit": 6,
+            "attackerBurst": 390,
+            "defenderBurst": 6,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 98,
+            "attackerDps": 260,
+            "defenderDps": 4.1,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 146,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 16,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.41,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 4 s with 96% of its health left.",
+            "attackers": 4,
+            "defenders": 10
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Yutyrannus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
         "family": "ceratosaurus",
@@ -10854,125 +10971,6 @@
         },
         "tags": [
           "ambush"
-        ],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
-        "family": "anodontosaurus",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
-        "summary": "Anodontosaurus is within the legal hunt ceiling. Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
-        "score": 55,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Apex tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1040,
-          "targetSpeed": 660,
-          "speedMarginPct": 57.6,
-          "attackerDurationSeconds": 100,
-          "targetDurationSeconds": 125,
-          "durationMarginPct": -20,
-          "label": "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.4,
-          "label": "4 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Apex tier.",
-          "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted.",
-          "1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
-          "4 shared mapped areas make contact plausible.",
-          "One-on-one, a Yutyrannus bite lands 29 on Anodontosaurus (30 to kill); a Anodontosaurus tail slam lands 97 back (7 to kill).",
-          "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 1,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 29,
-            "defenderHit": 97,
-            "attackerBurst": 29,
-            "defenderBurst": 166,
-            "attackerHitsToKill": 30,
-            "defenderHitsToKill": 7,
-            "attackerDps": 19.3,
-            "defenderDps": 73.1,
-            "attackerTimeToKill": 44,
-            "defenderTimeToKill": 8,
-            "attackerBleed": 0,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 8,
-            "attackersLeft": 0,
-            "defendersLeft": 1,
-            "attackerHpShare": 0,
-            "defenderHpShare": 0.81,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 8.25
-            }
-          },
-          "label": "1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
-          "detail": "1 attacker vs 1 defender",
-          "attackerCombatWeight": 3250,
-          "targetCombatWeight": 4500,
-          "attackerGroupLimit": 4,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "4 Yutyrannus vs 1 Anodontosaurus: the Yutyrannus side wins in about 12 s with 63% of its health left.",
-            "attackers": 4,
-            "defenders": 1
-          }
-        },
-        "attackerId": "yutyrannus",
-        "targetId": "anodontosaurus",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Yutyrannus",
-          "targetName": "Anodontosaurus",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 72,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
-        },
-        "tags": [
-          "ambush",
-          "dangerous-defender"
         ],
         "evidence": [],
         "confidence": "derived"
@@ -11673,6 +11671,125 @@
       ],
       "opportunities": [
         {
+          "id": "anodontosaurus",
+          "name": "Anodontosaurus",
+          "family": "anodontosaurus",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Anodontosaurus is legal quarry, but not a comfortable fight",
+          "summary": "Anodontosaurus is within the legal hunt ceiling. Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
+          "score": 55,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1040,
+            "targetSpeed": 660,
+            "speedMarginPct": 57.6,
+            "attackerDurationSeconds": 100,
+            "targetDurationSeconds": 125,
+            "durationMarginPct": -20,
+            "label": "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.4,
+            "label": "4 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted.",
+            "1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
+            "4 shared mapped areas make contact plausible.",
+            "One-on-one, a Yutyrannus bite lands 29 on Anodontosaurus (30 to kill); a Anodontosaurus tail slam lands 97 back (7 to kill).",
+            "Anodontosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
+            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 1,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 29,
+              "defenderHit": 97,
+              "attackerBurst": 29,
+              "defenderBurst": 166,
+              "attackerHitsToKill": 30,
+              "defenderHitsToKill": 7,
+              "attackerDps": 19.3,
+              "defenderDps": 73.1,
+              "attackerTimeToKill": 44,
+              "defenderTimeToKill": 8,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 8,
+              "attackersLeft": 0,
+              "defendersLeft": 1,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.81,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 8.25
+              }
+            },
+            "label": "1 Yutyrannus vs 1 Anodontosaurus: the Anodontosaurus side wins in about 8 s with 81% of its health left.",
+            "detail": "1 attacker vs 1 defender",
+            "attackerCombatWeight": 3250,
+            "targetCombatWeight": 4500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 1,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Yutyrannus vs 1 Anodontosaurus: the Yutyrannus side wins in about 12 s with 63% of its health left.",
+              "attackers": 4,
+              "defenders": 1
+            }
+          },
+          "attackerId": "yutyrannus",
+          "targetId": "anodontosaurus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Yutyrannus",
+            "targetName": "Anodontosaurus",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Yutyrannus is 58% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 72,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Anodontosaurus is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "barsboldia",
           "name": "Barsboldia",
           "family": "barsboldia",
@@ -12262,124 +12379,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "deinocheirus",
-          "name": "Deinocheirus",
-          "family": "deinocheirus",
-          "direction": "opportunity",
-          "band": "conditional",
-          "kind": "risky-quarry",
-          "headline": "Deinocheirus is legal quarry, but not a comfortable fight",
-          "summary": "Deinocheirus is within the legal hunt ceiling. Yutyrannus is 30% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
-          "score": 46,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1040,
-            "targetSpeed": 800,
-            "speedMarginPct": 30,
-            "attackerDurationSeconds": 100,
-            "targetDurationSeconds": 45,
-            "durationMarginPct": 122.2,
-            "label": "Yutyrannus is 30% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "possible",
-            "sharedRegions": [
-              "redwoods",
-              "wind-tunnels",
-              "wollemi-forest"
-            ],
-            "overlap": 0.188,
-            "label": "They overlap in 3 mapped areas, so the matchup is situational."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Yutyrannus is 30% faster on land; a clean escape is unlikely once spotted.",
-            "1 Yutyrannus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
-            "They overlap in 3 mapped areas, so the matchup is situational.",
-            "One-on-one, a Yutyrannus bite lands 32 on Deinocheirus (30 to kill); a Deinocheirus claw lands 76 back (8 to kill).",
-            "Deinocheirus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-            "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 2,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 32,
-              "defenderHit": 76,
-              "attackerBurst": 32,
-              "defenderBurst": 85,
-              "attackerHitsToKill": 30,
-              "defenderHitsToKill": 8,
-              "attackerDps": 21.5,
-              "defenderDps": 53.6,
-              "attackerTimeToKill": 44,
-              "defenderTimeToKill": 11,
-              "attackerBleed": 0,
-              "defenderBleed": 0.113,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": true
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 6,
-              "attackersLeft": 0,
-              "defendersLeft": 2,
-              "attackerHpShare": 0,
-              "defenderHpShare": 0.93,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 5.75
-              }
-            },
-            "label": "1 Yutyrannus vs 2 Deinocheirus: the Deinocheirus side wins in about 6 s with 93% of its health left.",
-            "detail": "1 attacker vs 2 defenders",
-            "attackerCombatWeight": 3250,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 4,
-            "targetDefenderLimit": 2,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "close",
-              "label": "4 Yutyrannus vs 2 Deinocheirus: the Deinocheirus side wins in about 31 s with 23% of its health left, too narrow to call.",
-              "attackers": 4,
-              "defenders": 2
-            }
-          },
-          "attackerId": "yutyrannus",
-          "targetId": "deinocheirus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Yutyrannus",
-            "targetName": "Deinocheirus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Yutyrannus is 30% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 63,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Deinocheirus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "ambush",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -12692,6 +12691,35 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "ceratosaurus": {
         "id": "ceratosaurus",
         "name": "Ceratosaurus",
@@ -12745,37 +12773,6 @@
           "Bite",
           "Venom Bite",
           "Lunging Snap Water"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
-      },
-      "anodontosaurus": {
-        "id": "anodontosaurus",
-        "name": "Anodontosaurus",
-        "cw": 4500,
-        "hp": 850,
-        "armor": 1.5,
-        "dps": 52.78,
-        "primary": {
-          "label": "Tail Slam",
-          "damage": 70,
-          "cooldown": 2
-        },
-        "burst": {
-          "label": "Tail Wind Up Attack",
-          "damage": 120,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Tail Slam",
-          "Tail Wind Up Attack",
-          "Swerve"
         ],
         "bleedPerSecond": 0,
         "bleedHealRate": 0.032,
@@ -12934,6 +12931,37 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
+      "anodontosaurus": {
+        "id": "anodontosaurus",
+        "name": "Anodontosaurus",
+        "cw": 4500,
+        "hp": 850,
+        "armor": 1.5,
+        "dps": 52.78,
+        "primary": {
+          "label": "Tail Slam",
+          "damage": 70,
+          "cooldown": 2
+        },
+        "burst": {
+          "label": "Tail Wind Up Attack",
+          "damage": 120,
+          "cooldown": 3,
+          "situational": false
+        },
+        "attacks": [
+          "Tail Slam",
+          "Tail Wind Up Attack",
+          "Swerve"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
       "barsboldia": {
         "id": "barsboldia",
         "name": "Barsboldia",
@@ -13082,36 +13110,6 @@
         ],
         "bleedPerSecond": 0.154,
         "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "deinocheirus": {
-        "id": "deinocheirus",
-        "name": "Deinocheirus",
-        "cw": 5500,
-        "hp": 950,
-        "armor": 1.1,
-        "dps": 31.67,
-        "primary": {
-          "label": "Claw",
-          "damage": 45,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Backhand",
-          "damage": 50,
-          "cooldown": 3,
-          "situational": false
-        },
-        "attacks": [
-          "Claw",
-          "Backhand"
-        ],
-        "bleedPerSecond": 0.067,
-        "bleedHealRate": 0.024,
         "estimated": false,
         "huntLimit": 1,
         "huntUnlimited": false,

@@ -89,10 +89,10 @@ You are the loner of the red rock, and you live on the ground. Where your temper
 **Beute & Chancen:**
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
+- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Giganotosaurus** (spürbar): Giganotosaurus is legal quarry, but not a comfortable fight
-- **Stegosaurus** (spürbar): Stegosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Variant conflict: Megalania do not cannibalize other adults of their variant, but may cannibalize ungrouped offspring of Adolescent and below.

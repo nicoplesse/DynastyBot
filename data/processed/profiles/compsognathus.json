@@ -14624,6 +14624,136 @@
         "confidence": "profile-specific"
       },
       {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Microraptor is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Small tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 825,
+          "speedMarginPct": 51.5,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -6.3,
+          "label": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "coastal-bluffs",
+            "volcano-islands",
+            "palm-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "coastland-swamp",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Small tier.",
+          "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 16 on Microraptor (25 to kill); a Microraptor bite lands 50 back (8 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 16,
+            "defenderHit": 50,
+            "attackerBurst": 16,
+            "defenderBurst": 50,
+            "attackerHitsToKill": 25,
+            "defenderHitsToKill": 8,
+            "attackerDps": 16,
+            "defenderDps": 33.3,
+            "attackerTimeToKill": 25,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0.016,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 10,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 14 s with 70% of its health left.",
+            "attackers": 10,
+            "defenders": 10
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
         "id": "struthiomimus",
         "name": "Struthiomimus",
         "family": "struthiomimus",
@@ -14990,132 +15120,132 @@
         "tags": [],
         "evidence": [],
         "confidence": "derived"
-      },
-      {
-        "id": "latenivenatrix",
-        "name": "Latenivenatrix",
-        "family": "latenivenatrix",
-        "direction": "opportunity",
-        "band": "meaningful",
-        "kind": "risky-quarry",
-        "headline": "Latenivenatrix is legal quarry, but not a comfortable fight",
-        "summary": "Latenivenatrix is within the legal hunt ceiling. Compsognathus is 16% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
-        "score": 48,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Small tier."
-        },
-        "chase": {
-          "mode": "land",
-          "verdict": "attacker-faster",
-          "attackerSpeed": 1250,
-          "targetSpeed": 1075,
-          "speedMarginPct": 16.3,
-          "attackerDurationSeconds": 375,
-          "targetDurationSeconds": 250,
-          "durationMarginPct": 50,
-          "label": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "big-tree-overlook",
-            "cedrus-forest",
-            "twisted-forest",
-            "mudflats",
-            "cliff-edge-falls",
-            "east-passage",
-            "redwoods",
-            "wind-tunnels",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.55,
-          "label": "11 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Small tier.",
-          "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
-          "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
-          "11 shared mapped areas make contact plausible.",
-          "One-on-one, a Compsognathus bite lands 6 on Latenivenatrix (88 to kill); a Latenivenatrix bite lands 140 back (3 to kill)."
-        ],
-        "fight": {
-          "attackers": 1,
-          "defenders": 6,
-          "attackerChoice": 1,
-          "defenderChoice": "max",
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 6,
-            "defenderHit": 140,
-            "attackerBurst": 6,
-            "defenderBurst": 315,
-            "attackerHitsToKill": 88,
-            "defenderHitsToKill": 3,
-            "attackerDps": 5.7,
-            "defenderDps": 140,
-            "attackerTimeToKill": 88,
-            "defenderTimeToKill": 3,
-            "attackerBleed": 0.006,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "defender-advantage",
-          "sim": {
-            "winner": "defender",
-            "seconds": 1,
-            "attackersLeft": 0,
-            "defendersLeft": 6,
-            "attackerHpShare": 0,
-            "defenderHpShare": 1,
-            "firstDown": {
-              "side": "attacker",
-              "seconds": 0.5
-            }
-          },
-          "label": "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
-          "detail": "1 attacker vs 6 defenders",
-          "attackerCombatWeight": 400,
-          "targetCombatWeight": 1400,
-          "attackerGroupLimit": 10,
-          "targetDefenderLimit": 6,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "defender-advantage",
-            "label": "10 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 5 s with 95% of its health left.",
-            "attackers": 10,
-            "defenders": 6
-          }
-        },
-        "attackerId": "compsognathus",
-        "targetId": "latenivenatrix",
-        "core": {
-          "direction": "opportunity",
-          "attackerName": "Compsognathus",
-          "targetName": "Latenivenatrix",
-          "chaseVerdict": "attacker-faster",
-          "chaseLabel": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
-          "baseScore": 65,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Latenivenatrix is within the legal hunt ceiling."
-        },
-        "tags": [],
-        "evidence": [],
-        "confidence": "derived"
       }
     ],
     "reserve": {
       "threats": [],
       "opportunities": [
+        {
+          "id": "latenivenatrix",
+          "name": "Latenivenatrix",
+          "family": "latenivenatrix",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Latenivenatrix is legal quarry, but not a comfortable fight",
+          "summary": "Latenivenatrix is within the legal hunt ceiling. Compsognathus is 16% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Small tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1250,
+            "targetSpeed": 1075,
+            "speedMarginPct": 16.3,
+            "attackerDurationSeconds": 375,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": 50,
+            "label": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.55,
+            "label": "11 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Small tier.",
+            "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+            "11 shared mapped areas make contact plausible.",
+            "One-on-one, a Compsognathus bite lands 6 on Latenivenatrix (88 to kill); a Latenivenatrix bite lands 140 back (3 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 6,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 6,
+              "defenderHit": 140,
+              "attackerBurst": 6,
+              "defenderBurst": 315,
+              "attackerHitsToKill": 88,
+              "defenderHitsToKill": 3,
+              "attackerDps": 5.7,
+              "defenderDps": 140,
+              "attackerTimeToKill": 88,
+              "defenderTimeToKill": 3,
+              "attackerBleed": 0.006,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 1,
+              "attackersLeft": 0,
+              "defendersLeft": 6,
+              "attackerHpShare": 0,
+              "defenderHpShare": 1,
+              "firstDown": {
+                "side": "attacker",
+                "seconds": 0.5
+              }
+            },
+            "label": "1 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 100% of its health left.",
+            "detail": "1 attacker vs 6 defenders",
+            "attackerCombatWeight": 400,
+            "targetCombatWeight": 1400,
+            "attackerGroupLimit": 10,
+            "targetDefenderLimit": 6,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "defender-advantage",
+              "label": "10 Compsognathus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 5 s with 95% of its health left.",
+              "attackers": 10,
+              "defenders": 6
+            }
+          },
+          "attackerId": "compsognathus",
+          "targetId": "latenivenatrix",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Compsognathus",
+            "targetName": "Latenivenatrix",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Compsognathus is 16% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Latenivenatrix is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
         {
           "id": "pachycephalosaurus",
           "name": "Pachycephalosaurus",
@@ -15488,6 +15618,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 8,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "struthiomimus": {
@@ -16305,6 +16464,26 @@
           "seconds": 19
         },
         "direct": 20
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.016,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "direct": 25
       },
       {
         "id": "rhamphorhynchus",

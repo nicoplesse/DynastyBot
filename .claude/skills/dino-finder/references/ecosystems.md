@@ -48,15 +48,16 @@ Redwoods, jungle, woodland clearings and forested hills: cover, ambush and terri
 5. Megalania (Temperate) – Stufe 3, Medium, Fleisch, Kampfgewicht 2600
 6. Dilophosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 2400
 7. Latenivenatrix – Stufe 4, Small, Fleisch, Kampfgewicht 1400
-8. Compsognathus – Stufe 4, Tiny, Fleisch, Kampfgewicht 400
-9. Eotriceratops – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
-10. Therizinosaurus – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
-11. Stegosaurus – Stufe 6, Large, Pflanzen, Kampfgewicht 5000
-12. Anodontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 4500
-13. Iguanodon – Stufe 6, Large, Pflanzen, Kampfgewicht 4200
-14. Albertaceratops – Stufe 6, Medium, Pflanzen, Kampfgewicht 3500
-15. Kentrosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2700
-16. Tenontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2400
+8. Microraptor – Stufe 4, Tiny, Fleisch, Kampfgewicht 500
+9. Compsognathus – Stufe 4, Tiny, Fleisch, Kampfgewicht 400
+10. Eotriceratops – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
+11. Therizinosaurus – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
+12. Stegosaurus – Stufe 6, Large, Pflanzen, Kampfgewicht 5000
+13. Anodontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 4500
+14. Iguanodon – Stufe 6, Large, Pflanzen, Kampfgewicht 4200
+15. Albertaceratops – Stufe 6, Medium, Pflanzen, Kampfgewicht 3500
+16. Kentrosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2700
+17. Tenontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2400
 
 Besucher: Spinosaurus (Freshwater), Giganotosaurus, Sarcosuchus, Maip, Pycnonemosaurus, Daspletosaurus, Yutyrannus, Metriacanthosaurus, Utahraptor, Deinonychus, Parasaurolophus, Lambeosaurus, Lurdusaurus (Freshwater), Styracosaurus, Camptosaurus, Dryosaurus
 
@@ -107,4 +108,4 @@ Cliffs, ledges, caves and rocky outcrops in the high hills.
 4. Pachycephalosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 2000
 5. Dryosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1000
 
-Besucher: Megalania (Arid), Kelenken, Thalassodromeus
+Besucher: Megalania (Arid), Kelenken, Thalassodromeus, Microraptor

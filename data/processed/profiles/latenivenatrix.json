@@ -12232,7 +12232,7 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Latenivenatrix has 6 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Latenivenatrix has 5 high-priority matchups where fight maths, pursuit and profile intent align. Against 1 listed threat, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "kelenken",
@@ -12492,6 +12492,140 @@
             "profileName": "Tenontosaurus",
             "section": "Cross-Species Interaction",
             "text": "If multiple species enter the territory, then Achillobator, Deinonychus, Latenivenatrix, and Utahraptor are targeted for expulsion first."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor can create a credible fight",
+        "summary": "Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1075,
+          "speedMarginPct": -23.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 250,
+          "durationMarginPct": 60,
+          "label": "This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "steep-run",
+            "mudflats",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls"
+          ],
+          "overlap": 0.55,
+          "label": "11 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.",
+          "2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.",
+          "11 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor bite lands 14 on Latenivenatrix (35 to kill); a Latenivenatrix bite lands 112 back (4 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 14,
+            "defenderHit": 112,
+            "attackerBurst": 14,
+            "defenderBurst": 252,
+            "attackerHitsToKill": 35,
+            "defenderHitsToKill": 4,
+            "attackerDps": 9.5,
+            "defenderDps": 112,
+            "attackerTimeToKill": 52,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 7,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.79,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.75
+            }
+          },
+          "label": "2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 6,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.",
+            "attackers": 2,
+            "defenders": 6
+          }
+        },
+        "attackerId": "microraptor",
+        "targetId": "latenivenatrix",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor",
+          "targetName": "Latenivenatrix",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor",
+            "profileName": "Microraptor",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
           }
         ],
         "confidence": "profile-specific"
@@ -12839,125 +12973,6 @@
           "summaryLead": "Thalassodromeus is inside the legal hunt range."
         },
         "tags": [],
-        "evidence": [],
-        "confidence": "derived"
-      },
-      {
-        "id": "quetzalcoatlus",
-        "name": "Quetzalcoatlus",
-        "family": "quetzalcoatlus",
-        "direction": "threat",
-        "band": "high",
-        "kind": "predator",
-        "headline": "Quetzalcoatlus can create a real pursuit problem",
-        "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
-        "score": 76,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": false,
-          "reason": "Its profile permits hunting through Large tier."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1350,
-          "targetSpeed": 1075,
-          "speedMarginPct": 25.6,
-          "attackerDurationSeconds": 50,
-          "targetDurationSeconds": 250,
-          "durationMarginPct": -80,
-          "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "steep-run",
-            "mudflats",
-            "east-passage",
-            "redwoods",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.4,
-          "label": "6 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Its profile permits hunting through Large tier.",
-          "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
-          "3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
-          "6 shared mapped areas make contact plausible.",
-          "One-on-one, a Quetzalcoatlus punch lands 157 on Latenivenatrix (4 to kill); a Latenivenatrix bite lands 20 back (30 to kill).",
-          "Quetzalcoatlus's bleed builds faster than Latenivenatrix heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
-        ],
-        "fight": {
-          "attackers": 3,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 157,
-            "defenderHit": 20,
-            "attackerBurst": 177,
-            "defenderBurst": 46,
-            "attackerHitsToKill": 4,
-            "defenderHitsToKill": 30,
-            "attackerDps": 56.3,
-            "defenderDps": 20.4,
-            "attackerTimeToKill": 9,
-            "defenderTimeToKill": 29,
-            "attackerBleed": 0.098,
-            "defenderBleed": 0,
-            "attackerBleedOutpacesHeal": true,
-            "defenderBleedOutpacesHeal": false
-          },
-          "verdict": "attacker-advantage",
-          "sim": {
-            "winner": "attacker",
-            "seconds": 3,
-            "attackersLeft": 3,
-            "defendersLeft": 0,
-            "attackerHpShare": 0.97,
-            "defenderHpShare": 0,
-            "firstDown": {
-              "side": "defender",
-              "seconds": 3
-            }
-          },
-          "label": "3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
-          "detail": "3 attackers vs 1 defender",
-          "attackerCombatWeight": 2750,
-          "targetCombatWeight": 1400,
-          "attackerGroupLimit": 3,
-          "targetDefenderLimit": 6,
-          "attackerGroupUnlimited": false,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "close",
-            "label": "3 Quetzalcoatlus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 26 s with 17% of its health left, too narrow to call.",
-            "attackers": 3,
-            "defenders": 6
-          }
-        },
-        "attackerId": "quetzalcoatlus",
-        "targetId": "latenivenatrix",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Quetzalcoatlus",
-          "targetName": "Latenivenatrix",
-          "chaseVerdict": "approach-advantage",
-          "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
-          "baseScore": 58,
-          "scoreCap": null,
-          "conditional": false,
-          "explicit": false,
-          "relationKind": null,
-          "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
-        },
-        "tags": [
-          "endurance"
-        ],
         "evidence": [],
         "confidence": "derived"
       }
@@ -14005,6 +14020,125 @@
     "reserve": {
       "threats": [
         {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus",
+          "family": "quetzalcoatlus",
+          "direction": "threat",
+          "band": "high",
+          "kind": "predator",
+          "headline": "Quetzalcoatlus can create a real pursuit problem",
+          "summary": "Quetzalcoatlus is inside the legal hunt range. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
+          "score": 76,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "air-to-land",
+            "verdict": "approach-advantage",
+            "attackerSpeed": 1350,
+            "targetSpeed": 1075,
+            "speedMarginPct": 25.6,
+            "attackerDurationSeconds": 50,
+            "targetDurationSeconds": 250,
+            "durationMarginPct": -80,
+            "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "mudflats",
+              "east-passage",
+              "redwoods",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.4,
+            "label": "6 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
+            "6 shared mapped areas make contact plausible.",
+            "One-on-one, a Quetzalcoatlus punch lands 157 on Latenivenatrix (4 to kill); a Latenivenatrix bite lands 20 back (30 to kill).",
+            "Quetzalcoatlus's bleed builds faster than Latenivenatrix heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 3,
+            "defenders": 1,
+            "attackerChoice": "max",
+            "defenderChoice": 1,
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 157,
+              "defenderHit": 20,
+              "attackerBurst": 177,
+              "defenderBurst": 46,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 30,
+              "attackerDps": 56.3,
+              "defenderDps": 20.4,
+              "attackerTimeToKill": 9,
+              "defenderTimeToKill": 29,
+              "attackerBleed": 0.098,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 3,
+              "attackersLeft": 3,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.97,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3
+              }
+            },
+            "label": "3 Quetzalcoatlus vs 1 Latenivenatrix: the Quetzalcoatlus side wins in about 3 s with 97% of its health left.",
+            "detail": "3 attackers vs 1 defender",
+            "attackerCombatWeight": 2750,
+            "targetCombatWeight": 1400,
+            "attackerGroupLimit": 3,
+            "targetDefenderLimit": 6,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "3 Quetzalcoatlus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 26 s with 17% of its health left, too narrow to call.",
+              "attackers": 3,
+              "defenders": 6
+            }
+          },
+          "attackerId": "quetzalcoatlus",
+          "targetId": "latenivenatrix",
+          "core": {
+            "direction": "threat",
+            "attackerName": "Quetzalcoatlus",
+            "targetName": "Latenivenatrix",
+            "chaseVerdict": "approach-advantage",
+            "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+            "baseScore": 58,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Quetzalcoatlus is inside the legal hunt range."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "austroraptor",
           "name": "Austroraptor",
           "family": "austroraptor",
@@ -14584,127 +14718,6 @@
           "tags": [],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "daspletosaurus",
-          "name": "Daspletosaurus",
-          "family": "daspletosaurus",
-          "direction": "threat",
-          "band": "conditional",
-          "kind": "predator",
-          "headline": "Daspletosaurus matters only if it gets the right opening",
-          "summary": "Daspletosaurus is inside the legal hunt range. Latenivenatrix is 5% faster on land and can normally refuse this fight. 1 Daspletosaurus vs 1 Latenivenatrix: the Daspletosaurus side wins in about 5 s with 88% of its health left.",
-          "score": 56,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "target-can-disengage",
-            "attackerSpeed": 1025,
-            "targetSpeed": 1075,
-            "speedMarginPct": -4.7,
-            "attackerDurationSeconds": 91,
-            "targetDurationSeconds": 250,
-            "durationMarginPct": -63.6,
-            "label": "Latenivenatrix is 5% faster on land and can normally refuse this fight."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "cedrus-forest",
-              "cliff-edge-falls",
-              "east-passage",
-              "redwoods",
-              "wind-tunnels",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 0.615,
-            "label": "8 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Latenivenatrix is 5% faster on land and can normally refuse this fight.",
-            "1 Daspletosaurus vs 1 Latenivenatrix: the Daspletosaurus side wins in about 5 s with 88% of its health left.",
-            "8 shared mapped areas make contact plausible.",
-            "One-on-one, a Daspletosaurus bite lands 150 on Latenivenatrix (4 to kill); a Latenivenatrix bite lands 16 back (38 to kill).",
-            "Daspletosaurus has an explicit ambush style, so raw top speed understates the opening danger."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 1,
-            "attackerChoice": "max",
-            "defenderChoice": 1,
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 150,
-              "defenderHit": 16,
-              "attackerBurst": 225,
-              "defenderBurst": 36,
-              "attackerHitsToKill": 4,
-              "defenderHitsToKill": 38,
-              "attackerDps": 115.6,
-              "defenderDps": 16,
-              "attackerTimeToKill": 4,
-              "defenderTimeToKill": 38,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "attacker-advantage",
-            "sim": {
-              "winner": "attacker",
-              "seconds": 5,
-              "attackersLeft": 1,
-              "defendersLeft": 0,
-              "attackerHpShare": 0.88,
-              "defenderHpShare": 0,
-              "firstDown": {
-                "side": "defender",
-                "seconds": 4.5
-              }
-            },
-            "label": "1 Daspletosaurus vs 1 Latenivenatrix: the Daspletosaurus side wins in about 5 s with 88% of its health left.",
-            "detail": "1 attacker vs 1 defender",
-            "attackerCombatWeight": 3500,
-            "targetCombatWeight": 1400,
-            "attackerGroupLimit": 1,
-            "targetDefenderLimit": 6,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "1 Daspletosaurus vs 6 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 74% of its health left.",
-              "attackers": 1,
-              "defenders": 6
-            }
-          },
-          "attackerId": "daspletosaurus",
-          "targetId": "latenivenatrix",
-          "core": {
-            "direction": "threat",
-            "attackerName": "Daspletosaurus",
-            "targetName": "Latenivenatrix",
-            "chaseVerdict": "target-can-disengage",
-            "chaseLabel": "Latenivenatrix is 5% faster on land and can normally refuse this fight.",
-            "baseScore": 38,
-            "scoreCap": null,
-            "conditional": true,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Daspletosaurus is inside the legal hunt range."
-          },
-          "tags": [
-            "ambush"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ],
       "opportunities": [
@@ -15076,6 +15089,130 @@
           "confidence": "derived"
         },
         {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Microraptor is legal quarry, but not a comfortable fight",
+          "summary": "Microraptor is within the legal hunt ceiling. Latenivenatrix is 30% faster on land; a clean escape is unlikely once spotted. 1 Latenivenatrix vs 10 Microraptor: the Microraptor side wins in about 6 s with 85% of its health left.",
+          "score": 48,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Apex tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 825,
+            "speedMarginPct": 30.3,
+            "attackerDurationSeconds": 250,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -37.5,
+            "label": "Latenivenatrix is 30% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "mudflats",
+              "cliff-edge-falls",
+              "east-passage",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills",
+              "wollemi-forest"
+            ],
+            "overlap": 0.55,
+            "label": "11 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Apex tier.",
+            "Latenivenatrix is 30% faster on land; a clean escape is unlikely once spotted.",
+            "1 Latenivenatrix vs 10 Microraptor: the Microraptor side wins in about 6 s with 85% of its health left.",
+            "11 shared mapped areas make contact plausible.",
+            "One-on-one, a Latenivenatrix bite lands 112 on Microraptor (4 to kill); a Microraptor bite lands 14 back (35 to kill).",
+            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 112,
+              "defenderHit": 14,
+              "attackerBurst": 252,
+              "defenderBurst": 14,
+              "attackerHitsToKill": 4,
+              "defenderHitsToKill": 35,
+              "attackerDps": 112,
+              "defenderDps": 9.5,
+              "attackerTimeToKill": 4,
+              "defenderTimeToKill": 52,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 6,
+              "attackersLeft": 0,
+              "defendersLeft": 9,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.85,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 3.75
+              }
+            },
+            "label": "1 Latenivenatrix vs 10 Microraptor: the Microraptor side wins in about 6 s with 85% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 1400,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 8,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "8 Latenivenatrix vs 10 Microraptor: the Latenivenatrix side wins in about 5 s with 94% of its health left.",
+              "attackers": 8,
+              "defenders": 10
+            }
+          },
+          "attackerId": "latenivenatrix",
+          "targetId": "microraptor",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Latenivenatrix",
+            "targetName": "Microraptor",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Latenivenatrix is 30% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 65,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor is within the legal hunt ceiling."
+          },
+          "tags": [
+            "pounce"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
           "id": "anodontosaurus",
           "name": "Anodontosaurus",
           "family": "anodontosaurus",
@@ -15320,128 +15457,6 @@
           ],
           "evidence": [],
           "confidence": "derived"
-        },
-        {
-          "id": "therizinosaurus",
-          "name": "Therizinosaurus",
-          "family": "therizinosaurus",
-          "direction": "opportunity",
-          "band": "meaningful",
-          "kind": "risky-quarry",
-          "headline": "Therizinosaurus is legal quarry, but not a comfortable fight",
-          "summary": "Therizinosaurus is within the legal hunt ceiling. Latenivenatrix is 26% faster on land; a clean escape is unlikely once spotted. 1 Latenivenatrix vs 2 Therizinosaurus: the Therizinosaurus side wins in about 1 s with 100% of its health left.",
-          "score": 48,
-          "visible": true,
-          "intent": {
-            "allowed": true,
-            "explicit": false,
-            "reason": "Its profile permits hunting through Apex tier."
-          },
-          "chase": {
-            "mode": "land",
-            "verdict": "attacker-faster",
-            "attackerSpeed": 1075,
-            "targetSpeed": 850,
-            "speedMarginPct": 26.5,
-            "attackerDurationSeconds": 250,
-            "targetDurationSeconds": 68.966,
-            "durationMarginPct": 262.5,
-            "label": "Latenivenatrix is 26% faster on land; a clean escape is unlikely once spotted."
-          },
-          "encounter": {
-            "level": "frequent",
-            "sharedRegions": [
-              "steep-run",
-              "cedrus-forest",
-              "cliff-edge-falls",
-              "east-passage",
-              "redwoods",
-              "hollow-hills",
-              "wollemi-forest"
-            ],
-            "overlap": 0.583,
-            "label": "7 shared mapped areas make contact plausible."
-          },
-          "facts": [
-            "Its profile permits hunting through Apex tier.",
-            "Latenivenatrix is 26% faster on land; a clean escape is unlikely once spotted.",
-            "1 Latenivenatrix vs 2 Therizinosaurus: the Therizinosaurus side wins in about 1 s with 100% of its health left.",
-            "7 shared mapped areas make contact plausible.",
-            "One-on-one, a Latenivenatrix bite lands 9 on Therizinosaurus (109 to kill); a Therizinosaurus claw attack lands 354 back (2 to kill).",
-            "Therizinosaurus's profile describes a committed or dangerous defence; it should not be treated as passive prey.",
-            "Its maximum hunting setup includes 2 Achillobator companions; the model never assumes an unlimited swarm."
-          ],
-          "fight": {
-            "attackers": 1,
-            "defenders": 2,
-            "attackerChoice": 1,
-            "defenderChoice": "max",
-            "bleed": "off",
-            "duel": {
-              "attackerHit": 9,
-              "defenderHit": 354,
-              "attackerBurst": 21,
-              "defenderBurst": 511,
-              "attackerHitsToKill": 109,
-              "defenderHitsToKill": 2,
-              "attackerDps": 9.3,
-              "defenderDps": 267.1,
-              "attackerTimeToKill": 108,
-              "defenderTimeToKill": 2,
-              "attackerBleed": 0,
-              "defenderBleed": 0,
-              "attackerBleedOutpacesHeal": false,
-              "defenderBleedOutpacesHeal": false
-            },
-            "verdict": "defender-advantage",
-            "sim": {
-              "winner": "defender",
-              "seconds": 1,
-              "attackersLeft": 0,
-              "defendersLeft": 2,
-              "attackerHpShare": 0,
-              "defenderHpShare": 1,
-              "firstDown": {
-                "side": "attacker",
-                "seconds": 1
-              }
-            },
-            "label": "1 Latenivenatrix vs 2 Therizinosaurus: the Therizinosaurus side wins in about 1 s with 100% of its health left.",
-            "detail": "1 attacker vs 2 defenders",
-            "attackerCombatWeight": 1400,
-            "targetCombatWeight": 5500,
-            "attackerGroupLimit": 8,
-            "targetDefenderLimit": 2,
-            "attackerGroupUnlimited": false,
-            "targetDefendersUnlimited": false,
-            "legal": {
-              "verdict": "defender-advantage",
-              "label": "8 Latenivenatrix vs 2 Therizinosaurus: the Therizinosaurus side wins in about 8 s with 84% of its health left.",
-              "attackers": 8,
-              "defenders": 2
-            }
-          },
-          "attackerId": "latenivenatrix",
-          "targetId": "therizinosaurus",
-          "core": {
-            "direction": "opportunity",
-            "attackerName": "Latenivenatrix",
-            "targetName": "Therizinosaurus",
-            "chaseVerdict": "attacker-faster",
-            "chaseLabel": "Latenivenatrix is 26% faster on land; a clean escape is unlikely once spotted.",
-            "baseScore": 65,
-            "scoreCap": null,
-            "conditional": false,
-            "explicit": false,
-            "relationKind": null,
-            "summaryLead": "Therizinosaurus is within the legal hunt ceiling."
-          },
-          "tags": [
-            "pounce",
-            "dangerous-defender"
-          ],
-          "evidence": [],
-          "confidence": "derived"
         }
       ]
     },
@@ -15541,6 +15556,35 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
       "alioramus": {
         "id": "alioramus",
         "name": "Alioramus",
@@ -15631,36 +15675,6 @@
         "huntUnlimited": true,
         "engagementLimit": 1,
         "engagementUnlimited": true
-      },
-      "quetzalcoatlus": {
-        "id": "quetzalcoatlus",
-        "name": "Quetzalcoatlus",
-        "cw": 2750,
-        "hp": 600,
-        "armor": 1,
-        "dps": 28.67,
-        "primary": {
-          "label": "Punch",
-          "damage": 80,
-          "cooldown": 3
-        },
-        "burst": {
-          "label": "Skewer",
-          "damage": 90,
-          "cooldown": 5,
-          "situational": false
-        },
-        "attacks": [
-          "Punch",
-          "Skewer"
-        ],
-        "bleedPerSecond": 0.05,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 3,
-        "huntUnlimited": false,
-        "engagementLimit": 1,
-        "engagementUnlimited": false
       },
       "parasaurolophus": {
         "id": "parasaurolophus",
@@ -15907,6 +15921,36 @@
         "engagementLimit": 8,
         "engagementUnlimited": false
       },
+      "quetzalcoatlus": {
+        "id": "quetzalcoatlus",
+        "name": "Quetzalcoatlus",
+        "cw": 2750,
+        "hp": 600,
+        "armor": 1,
+        "dps": 28.67,
+        "primary": {
+          "label": "Punch",
+          "damage": 80,
+          "cooldown": 3
+        },
+        "burst": {
+          "label": "Skewer",
+          "damage": 90,
+          "cooldown": 5,
+          "situational": false
+        },
+        "attacks": [
+          "Punch",
+          "Skewer"
+        ],
+        "bleedPerSecond": 0.05,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 3,
+        "huntUnlimited": false,
+        "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
       "austroraptor": {
         "id": "austroraptor",
         "name": "Austroraptor",
@@ -16057,37 +16101,6 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "daspletosaurus": {
-        "id": "daspletosaurus",
-        "name": "Daspletosaurus",
-        "cw": 3500,
-        "hp": 600,
-        "armor": 1,
-        "dps": 46.25,
-        "primary": {
-          "label": "Bite",
-          "damage": 60,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Crushing Bite",
-          "damage": 90,
-          "cooldown": 8,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Crushing Bite",
-          "Bone Snap Bite"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 3,
-        "engagementUnlimited": false
-      },
       "styracosaurus": {
         "id": "styracosaurus",
         "name": "Styracosaurus",
@@ -16232,36 +16245,6 @@
         ],
         "bleedPerSecond": 0.067,
         "bleedHealRate": 0.024,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": false,
-        "engagementLimit": 2,
-        "engagementUnlimited": false
-      },
-      "therizinosaurus": {
-        "id": "therizinosaurus",
-        "name": "Therizinosaurus",
-        "cw": 5500,
-        "hp": 1000,
-        "armor": 1.1,
-        "dps": 68,
-        "primary": {
-          "label": "Claw Attack",
-          "damage": 90,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Claw Charged Attack",
-          "damage": 130,
-          "cooldown": 5,
-          "situational": false
-        },
-        "attacks": [
-          "Claw Attack",
-          "Claw Charged Attack"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
         "estimated": false,
         "huntLimit": 1,
         "huntUnlimited": false,
@@ -17354,6 +17337,26 @@
           "seconds": 11
         },
         "direct": 4
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.12,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 2,
+          "seconds": 36
+        },
+        "sit": {
+          "hits": 3,
+          "seconds": 18
+        },
+        "direct": 5
       },
       {
         "id": "rhamphorhynchus",

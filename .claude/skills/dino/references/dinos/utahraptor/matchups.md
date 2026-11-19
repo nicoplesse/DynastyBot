@@ -76,6 +76,16 @@ A profile rule names or prioritises this matchup. Dryosaurus is 7% faster on lan
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 105 pro Haupttreffer vom Angreifer (4 bis zum Kill), 19 zurück (29 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
+### Microraptor – spürbar (quarry)
+Microraptor is a realistic hunting opportunity
+
+Microraptor is within the legal hunt ceiling. Utahraptor is 30% faster on land; a clean escape is unlikely once spotted. 1 Utahraptor vs 10 Microraptor: the Microraptor side wins in about 13 s with 20% of its health left, too narrow to call.
+- Verfolgung: Utahraptor is 30% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Utahraptor vs 10 Microraptor: the Microraptor side wins in about 13 s with 20% of its health left, too narrow to call. (Kampfgewicht 2100 vs 500)
+- Kampf (beide Seiten legal max): 5 Utahraptor vs 10 Microraptor: the Utahraptor side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 210 pro Haupttreffer vom Angreifer (2 bis zum Kill), 10 zurück (58 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
 ### Megalania (Temperate) – spürbar (quarry)
 Megalania (Temperate) is a realistic hunting opportunity
 
@@ -124,16 +134,6 @@ Parasaurolophus is within the legal hunt ceiling. Utahraptor is 16% faster on la
 - Kampf (du solo gegen ihre volle legale Gruppe): 1 Utahraptor vs 2 Parasaurolophus: the Parasaurolophus side wins in about 3 s with 98% of its health left. (Kampfgewicht 2100 vs 5500)
 - Kampf (beide Seiten legal max): 5 Utahraptor vs 2 Parasaurolophus: the Parasaurolophus side wins in about 14 s with 69% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 17 pro Haupttreffer vom Angreifer (81 bis zum Kill), 65 zurück (9 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
-
-### Tyrannosaurus – spürbar (risky-quarry)
-Tyrannosaurus is legal quarry, but not a comfortable fight
-
-Tyrannosaurus is within the legal hunt ceiling. Utahraptor is 34% faster on land; a clean escape is unlikely once spotted. 1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left.
-- Verfolgung: Utahraptor is 34% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 2 s with 98% of its health left. (Kampfgewicht 2100 vs 6000)
-- Kampf (beide Seiten legal max): 5 Utahraptor vs 2 Tyrannosaurus: the Tyrannosaurus side wins in about 9 s with 75% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (63 bis zum Kill), 200 zurück (3 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

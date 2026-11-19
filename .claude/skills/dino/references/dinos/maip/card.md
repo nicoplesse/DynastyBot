@@ -69,11 +69,11 @@ You are a large nocturnal carnivore living as a lifelong pair with a favoured ad
 
 **Beute & Chancen:**
 - **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
+- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
 - **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
 - **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
-- **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

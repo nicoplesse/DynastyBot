@@ -146,14 +146,14 @@ Concavenator is within the legal hunt ceiling. Sarcosuchus is 96% faster in wate
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 86 pro Haupttreffer vom Angreifer (6 bis zum Kill), 23 zurück (26 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Metriacanthosaurus – conditional (quarry)
-Metriacanthosaurus can usually refuse the chase
+### Microraptor – hoch (quarry)
+Microraptor is a realistic hunting opportunity
 
-Metriacanthosaurus is within the legal hunt ceiling. Metriacanthosaurus is 14% faster on land and can normally refuse this fight. 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left.
-- Verfolgung: Metriacanthosaurus is 14% faster on land and can normally refuse this fight.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 8 s with 48% of its health left. (Kampfgewicht 4500 vs 3100)
-- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 2 Metriacanthosaurus: the Sarcosuchus side wins in about 3 s with 94% of its health left.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 58 pro Haupttreffer vom Angreifer (9 bis zum Kill), 28 zurück (22 bis zum Kill)
+Microraptor is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left.
+- Verfolgung: Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 2 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 360 pro Haupttreffer vom Angreifer (2 bis zum Kill), 4 zurück (135 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Besondere Risiken

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:56:58.946Z",
+  "generatedAt": "2026-11-19T16:22:25.251Z",
   "mode": "solo",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
@@ -1723,6 +1723,14 @@
           "headline": "Calm and sociable in the dry season, furious as a rutting moose in the rain: it rears up like a boxing kangaroo, beats its chest and stomps small predators."
         },
         {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "animal": "Sugar glider",
+          "role": "secondary",
+          "share": 40,
+          "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous."
+        },
+        {
           "id": "psittacosaurus",
           "name": "Psittacosaurus",
           "animal": "Virginia opossum",
@@ -2299,6 +2307,14 @@
           "role": "primary",
           "share": 100,
           "headline": "An oxpecker riding the sauropods, living in a noisy parakeet colony that copies every sound."
+        },
+        {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "animal": "Fork-tailed drongo",
+          "role": "primary",
+          "share": 60,
+          "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous."
         },
         {
           "id": "thalassodromeus",
@@ -3404,6 +3420,34 @@
         }
       ]
     },
+    "fork-tailed-drongo": {
+      "animal": "Fork-tailed drongo",
+      "de": "Trauerdrongo",
+      "scientific": "Dicrurus adsimilis",
+      "archetype": "songbird",
+      "dinos": [
+        {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "role": "primary",
+          "share": 60
+        }
+      ]
+    },
+    "sugar-glider": {
+      "animal": "Sugar glider",
+      "de": "Kurzkopfgleitbeutler",
+      "scientific": "Petaurus breviceps",
+      "archetype": "marsupial",
+      "dinos": [
+        {
+          "id": "microraptor",
+          "name": "Microraptor",
+          "role": "secondary",
+          "share": 40
+        }
+      ]
+    },
     "bighorn-sheep": {
       "animal": "Bighorn sheep",
       "de": "Dickhornschaf",
@@ -3998,6 +4042,7 @@
         "leedsichthys",
         "megalania-arid",
         "megalania-temperate",
+        "microraptor",
         "pachycephalosaurus",
         "parasaurolophus",
         "sarcosuchus",
@@ -4206,7 +4251,8 @@
       "label": "Climber",
       "de": "Kletterer",
       "dinoIds": [
-        "megalania-temperate"
+        "megalania-temperate",
+        "microraptor"
       ]
     },
     "chaser": {
@@ -4235,6 +4281,7 @@
         "megalania-arid",
         "megalania-temperate",
         "metriacanthosaurus",
+        "microraptor",
         "quetzalcoatlus",
         "rhamphorhynchus",
         "thalassodromeus"
@@ -4290,6 +4337,7 @@
         "lambeosaurus",
         "leedsichthys",
         "maip",
+        "microraptor",
         "pachyrhinosaurus",
         "parasaurolophus",
         "pycnonemosaurus",
@@ -4462,6 +4510,7 @@
         "maip",
         "megalania-temperate",
         "metriacanthosaurus",
+        "microraptor",
         "pachyrhinosaurus",
         "parasaurolophus",
         "psittacosaurus",
@@ -4604,6 +4653,7 @@
         "kelenken",
         "maip",
         "megalania-arid",
+        "microraptor",
         "pachycephalosaurus",
         "thalassodromeus"
       ]
@@ -6119,6 +6169,45 @@
       "tier": "Medium",
       "diet": "Carnivore",
       "activity": "Nocturnal",
+      "classification": "Terrestrial"
+    },
+    "microraptor": {
+      "name": "Microraptor",
+      "label": "Fork-tailed drongo + Sugar glider",
+      "labelDe": "Trauerdrongo + Kurzkopfgleitbeutler",
+      "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous.",
+      "setting": "Tree canopy and cliff ledges across most of the island",
+      "habitats": [
+        "forest",
+        "mountain"
+      ],
+      "analogs": [
+        {
+          "id": "fork-tailed-drongo",
+          "animal": "Fork-tailed drongo",
+          "de": "Trauerdrongo",
+          "archetype": "songbird",
+          "share": 60,
+          "role": "primary"
+        },
+        {
+          "id": "sugar-glider",
+          "animal": "Sugar glider",
+          "de": "Kurzkopfgleitbeutler",
+          "archetype": "marsupial",
+          "share": 40,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "climber",
+        "scavenger",
+        "nomadic"
+      ],
+      "tier": "Tiny",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
       "classification": "Terrestrial"
     },
     "pachycephalosaurus": {
@@ -14697,6 +14786,46 @@
       ],
       "animals": [
         "gila-monster"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "fork tailed drongo": {
+      "archetypes": [
+        "songbird"
+      ],
+      "animals": [
+        "fork-tailed-drongo"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "trauerdrongo": {
+      "archetypes": [
+        "songbird"
+      ],
+      "animals": [
+        "fork-tailed-drongo"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "sugar glider": {
+      "archetypes": [
+        "marsupial"
+      ],
+      "animals": [
+        "sugar-glider"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "kurzkopfgleitbeutler": {
+      "archetypes": [
+        "marsupial"
+      ],
+      "animals": [
+        "sugar-glider"
       ],
       "moods": [],
       "habitats": []

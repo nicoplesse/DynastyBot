@@ -82,17 +82,17 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Austroraptor** (sehr hoch): Austroraptor can create a very narrow escape window
 - **Tenontosaurus** (hoch): Tenontosaurus can create a real pursuit problem
 - **Kelenken** (hoch): Kelenken can create a real pursuit problem
+- **Microraptor** (spürbar): Microraptor can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
-- **Concavenator** (hoch): Concavenator can create a real pursuit problem
 
 **Beute & Chancen:**
 - **Kelenken** (spürbar): Kelenken is legal quarry, but not a comfortable fight
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
+- **Microraptor** (spürbar): Microraptor is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
-- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

@@ -16,7 +16,7 @@ Du hilfst bei der Auswahl eines Playables. Die Daten liegen in `references/`. Li
 
 ```
 references/
-  catalog.md        alle 61 Playables in je einer Zeile: Tier, Kost, Aktivität, Land/Wasser/Luft,
+  catalog.md        alle 66 Playables in je einer Zeile: Tier, Kost, Aktivität, Land/Wasser/Luft,
                     Ökosystem, Solo-Eignung, Jagdgruppe, Jagdgrenze, Tier-Analog, Kurzbeschreibung;
                     dazu Listen nach Solo-Eignung, Tiertyp (Großkatze, Wolf, Bär …) und
                     Spielstil-Merkmal (Einzelgänger, Lauerjäger, nachtaktiv, fliegend …)

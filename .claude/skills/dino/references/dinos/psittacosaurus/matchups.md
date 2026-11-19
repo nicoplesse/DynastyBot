@@ -1,6 +1,6 @@
 # Psittacosaurus – Matchups
 
-Played solo against their full legal groups, Psittacosaurus has 6 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
+Played solo against their full legal groups, Psittacosaurus has 5 high-priority matchups where fight maths, pursuit and profile intent align. None of those matchups offers a reliable speed-based disengage once contact is forced.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -23,6 +23,16 @@ Struthiomimus is linked by a specific profile rule. The speed gap is small (1150
 - Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 78 pro Haupttreffer vom Angreifer (7 bis zum Kill), 32 zurück (14 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
+
+### Microraptor – spürbar (predator)
+Microraptor can create a credible fight
+
+Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left. (Kampfgewicht 500 vs 900)
+- Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (23 bis zum Kill), 90 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
 
 ### Alioramus – sehr hoch (predator)
 Alioramus can create a very narrow escape window
@@ -53,16 +63,6 @@ Austroraptor is inside the legal hunt range. This is a close chase on land: 1100
 - Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 117 pro Haupttreffer vom Angreifer (5 bis zum Kill), 21 zurück (31 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Medium tier.
-
-### Deinonychus – hoch (predator)
-Deinonychus can create a real pursuit problem
-
-Deinonychus is inside the legal hunt range. This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it. 8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left.
-- Verfolgung: This is a close chase on land: 1100 vs 1150 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 8 Deinonychus vs 1 Psittacosaurus: the Deinonychus side wins in about 2 s with 98% of its health left. (Kampfgewicht 800 vs 900)
-- Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
-- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 44 pro Haupttreffer vom Angreifer (12 bis zum Kill), 56 zurück (10 bis zum Kill)
-- Profilbezug: Its profile permits hunting through Apex tier.
 
 ## Chancen (wen du jagen/schlagen kannst)
 

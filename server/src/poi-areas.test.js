@@ -12,7 +12,7 @@ const batches = [
   ['hatzegopteryx', 'quetzalcoatlus', 'thalassodromeus', 'tropeognathus', 'rhamphorhynchus'],
   ['tyrannosaurus', 'giganotosaurus', 'tyrannotitan', 'torvosaurus', 'daspletosaurus', 'maip'],
   ['allosaurus', 'pycnonemosaurus', 'yutyrannus', 'metriacanthosaurus', 'ceratosaurus', 'alioramus', 'dilophosaurus'],
-  ['achillobator', 'utahraptor', 'kelenken', 'latenivenatrix', 'deinonychus', 'compsognathus'],
+  ['achillobator', 'utahraptor', 'kelenken', 'latenivenatrix', 'deinonychus', 'compsognathus', 'microraptor'],
   ['argentinosaurus', 'apatosaurus', 'amargasaurus', 'yunnanosaurus', 'therizinosaurus'],
   ['eotriceratops', 'pachyrhinosaurus', 'albertaceratops', 'styracosaurus', 'psittacosaurus'],
   ['parasaurolophus', 'lambeosaurus', 'iguanodon', 'tenontosaurus', 'camptosaurus', 'dryosaurus', 'barsboldia'],
@@ -23,7 +23,7 @@ test('all requested profiles resolve to unique polygon POI areas', async () => {
   const regionsDoc = JSON.parse(await readFile(join(projectRoot, 'data', 'map', 'regions.json'), 'utf8'));
   const regions = new Map(regionsDoc.regions.map(region => [region.id, region]));
   const ids = batches.flat();
-  assert.equal(ids.length, 58);
+  assert.equal(ids.length, 59);
 
   for (const id of ids) {
     const poiDoc = JSON.parse(await readFile(join(projectRoot, 'data', 'raw', id, 'pois.json'), 'utf8'));

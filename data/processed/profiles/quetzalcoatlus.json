@@ -15072,125 +15072,6 @@
           }
         ],
         "confidence": "profile-specific"
-      },
-      {
-        "id": "thalassodromeus",
-        "name": "Thalassodromeus",
-        "family": "thalassodromeus",
-        "direction": "threat",
-        "band": "conditional",
-        "kind": "conditional",
-        "headline": "Thalassodromeus matters only if it gets the right opening",
-        "summary": "Thalassodromeus is linked by a specific profile rule. Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters. Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-        "score": 76,
-        "visible": true,
-        "intent": {
-          "allowed": true,
-          "explicit": true,
-          "conditional": true,
-          "reason": "Only a stated condition turns this into a legal hunt or attack."
-        },
-        "chase": {
-          "mode": "air-to-land",
-          "verdict": "approach-advantage",
-          "attackerSpeed": 1200,
-          "targetSpeed": 1025,
-          "speedMarginPct": 17.1,
-          "attackerDurationSeconds": 83,
-          "targetDurationSeconds": 75.188,
-          "durationMarginPct": 10.4,
-          "label": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters."
-        },
-        "encounter": {
-          "level": "frequent",
-          "sharedRegions": [
-            "dry-fang-canyon",
-            "steep-run",
-            "black-fern-hills",
-            "crag-bluffs",
-            "redwoods",
-            "hollow-hills",
-            "wollemi-forest"
-          ],
-          "overlap": 0.538,
-          "label": "7 shared mapped areas make contact plausible."
-        },
-        "facts": [
-          "Only a stated condition turns this into a legal hunt or attack.",
-          "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
-          "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Thalassodromeus bite lands 31 on Quetzalcoatlus (20 to kill); a Quetzalcoatlus punch lands 105 back (5 to kill)."
-        ],
-        "fight": {
-          "attackers": null,
-          "defenders": 1,
-          "attackerChoice": "max",
-          "defenderChoice": 1,
-          "bleed": "off",
-          "duel": {
-            "attackerHit": 31,
-            "defenderHit": 105,
-            "attackerBurst": 53,
-            "defenderBurst": 118,
-            "attackerHitsToKill": 20,
-            "defenderHitsToKill": 5,
-            "attackerDps": 25.8,
-            "defenderDps": 37.5,
-            "attackerTimeToKill": 23,
-            "defenderTimeToKill": 13,
-            "attackerBleed": 0,
-            "defenderBleed": 0.065,
-            "attackerBleedOutpacesHeal": false,
-            "defenderBleedOutpacesHeal": true
-          },
-          "verdict": "attacker-advantage",
-          "sim": null,
-          "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-          "attackerCombatWeight": 2100,
-          "targetCombatWeight": 2750,
-          "attackerGroupLimit": 1,
-          "targetDefenderLimit": 1,
-          "attackerGroupUnlimited": true,
-          "targetDefendersUnlimited": false,
-          "legal": {
-            "verdict": "attacker-advantage",
-            "label": "Thalassodromeus may bring an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
-            "attackers": null,
-            "defenders": 1
-          }
-        },
-        "attackerId": "thalassodromeus",
-        "targetId": "quetzalcoatlus",
-        "core": {
-          "direction": "threat",
-          "attackerName": "Thalassodromeus",
-          "targetName": "Quetzalcoatlus",
-          "chaseVerdict": "approach-advantage",
-          "chaseLabel": "Thalassodromeus can approach at 1200 flight units/s, but landing the opening attack still matters.",
-          "baseScore": 58,
-          "scoreCap": null,
-          "conditional": true,
-          "explicit": true,
-          "relationKind": "conditional",
-          "summaryLead": "Thalassodromeus is linked by a specific profile rule."
-        },
-        "tags": [],
-        "evidence": [
-          {
-            "profileId": "thalassodromeus",
-            "profileName": "Thalassodromeus",
-            "section": "Quick View",
-            "text": "Thalassodromeus may hunt up to Medium tier, but prefer not to unless there is no other option. Thalassodromeus may scavenge. Thalassodromeus flees from Hatzegopteryx, Quetzalcoatlus & Tropeognathus in some circumstances."
-          },
-          {
-            "profileId": "thalassodromeus",
-            "profileName": "Thalassodromeus",
-            "section": "Engagement Limits",
-            "text": "Thalassodromeus flee from Hatzegopteryx, Quetzalcoatlus and Tropeognathus."
-          }
-        ],
-        "confidence": "profile-specific"
       }
     ],
     "opportunities": [
@@ -15673,6 +15554,129 @@
           "explicit": false,
           "relationKind": null,
           "summaryLead": "Megalania (Arid) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor is a realistic hunting opportunity",
+        "summary": "Microraptor is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 1 Quetzalcoatlus vs 10 Microraptor: the Microraptor side wins in about 18 s with 31% of its health left, too narrow to call.",
+        "score": 51,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Large tier."
+        },
+        "chase": {
+          "mode": "air-to-land",
+          "verdict": "approach-advantage",
+          "attackerSpeed": 1350,
+          "targetSpeed": 825,
+          "speedMarginPct": 63.6,
+          "attackerDurationSeconds": 50,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -87.5,
+          "label": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "black-fern-hills",
+            "mudflats",
+            "coastland-swamp",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Large tier.",
+          "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+          "1 Quetzalcoatlus vs 10 Microraptor: the Microraptor side wins in about 18 s with 31% of its health left, too narrow to call.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Quetzalcoatlus punch lands 440 on Microraptor (1 to kill); a Microraptor bite lands 7 back (83 to kill).",
+          "Quetzalcoatlus's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 440,
+            "defenderHit": 7,
+            "attackerBurst": 495,
+            "defenderBurst": 7,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 83,
+            "attackerDps": 157.7,
+            "defenderDps": 4.8,
+            "attackerTimeToKill": 3,
+            "defenderTimeToKill": 124,
+            "attackerBleed": 0.275,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 18,
+            "attackersLeft": 0,
+            "defendersLeft": 4,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.31,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 2.75
+            }
+          },
+          "label": "1 Quetzalcoatlus vs 10 Microraptor: the Microraptor side wins in about 18 s with 31% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2750,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Quetzalcoatlus vs 10 Microraptor: the Quetzalcoatlus side wins in about 9 s with 87% of its health left.",
+            "attackers": 3,
+            "defenders": 10
+          }
+        },
+        "attackerId": "quetzalcoatlus",
+        "targetId": "microraptor",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Quetzalcoatlus",
+          "targetName": "Microraptor",
+          "chaseVerdict": "approach-advantage",
+          "chaseLabel": "Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.",
+          "baseScore": 43,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor is within the legal hunt ceiling."
         },
         "tags": [
           "endurance"
@@ -16616,37 +16620,6 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "thalassodromeus": {
-        "id": "thalassodromeus",
-        "name": "Thalassodromeus",
-        "cw": 2100,
-        "hp": 500,
-        "armor": 1,
-        "dps": 33.81,
-        "primary": {
-          "label": "Bite",
-          "damage": 40,
-          "cooldown": 1.5
-        },
-        "burst": {
-          "label": "Barrel Roll",
-          "damage": 70,
-          "cooldown": 6,
-          "situational": false
-        },
-        "attacks": [
-          "Bite",
-          "Barrel Roll",
-          "Wing Slap"
-        ],
-        "bleedPerSecond": 0,
-        "bleedHealRate": 0.032,
-        "estimated": false,
-        "huntLimit": 1,
-        "huntUnlimited": true,
-        "engagementLimit": 1,
-        "engagementUnlimited": true
-      },
       "megalania-temperate": {
         "id": "megalania-temperate",
         "name": "Megalania (Temperate)",
@@ -16725,6 +16698,35 @@
         "huntLimit": 1,
         "huntUnlimited": false,
         "engagementLimit": 1,
+        "engagementUnlimited": false
+      },
+      "microraptor": {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
         "engagementUnlimited": false
       },
       "sarcosuchus": {
@@ -16880,6 +16882,37 @@
         "huntUnlimited": false,
         "engagementLimit": 3,
         "engagementUnlimited": false
+      },
+      "thalassodromeus": {
+        "id": "thalassodromeus",
+        "name": "Thalassodromeus",
+        "cw": 2100,
+        "hp": 500,
+        "armor": 1,
+        "dps": 33.81,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Barrel Roll",
+          "damage": 70,
+          "cooldown": 6,
+          "situational": false
+        },
+        "attacks": [
+          "Bite",
+          "Barrel Roll",
+          "Wing Slap"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 1,
+        "huntUnlimited": true,
+        "engagementLimit": 1,
+        "engagementUnlimited": true
       },
       "achillobator": {
         "id": "achillobator",
@@ -18058,6 +18091,26 @@
         "hp": 400,
         "bleedPerHit": 1.719,
         "healRate": 0.052,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor",
+        "name": "Microraptor",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.375,
+        "healRate": 0.032,
         "trot": {
           "hits": 1,
           "seconds": 0
