@@ -146,13 +146,33 @@ Concavenator is within the legal hunt ceiling. Sarcosuchus is 96% faster in wate
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 86 pro Haupttreffer vom Angreifer (6 bis zum Kill), 23 zurück (26 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor (Gui): the Sarcosuchus side wins in about 5 s with 86% of its health left.
 - Verfolgung: Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 5 s with 86% of its health left. (Kampfgewicht 4500 vs 500)
-- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 10 Microraptor: the Sarcosuchus side wins in about 2 s with 98% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 10 Microraptor (Gui): the Sarcosuchus side wins in about 5 s with 86% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 10 Microraptor (Gui): the Sarcosuchus side wins in about 2 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 360 pro Haupttreffer vom Angreifer (2 bis zum Kill), 4 zurück (135 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor (Hanqiugi): the Sarcosuchus side wins in about 5 s with 86% of its health left.
+- Verfolgung: Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 10 Microraptor (Hanqiugi): the Sarcosuchus side wins in about 5 s with 86% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 10 Microraptor (Hanqiugi): the Sarcosuchus side wins in about 2 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 360 pro Haupttreffer vom Angreifer (2 bis zum Kill), 4 zurück (135 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted. 1 Sarcosuchus vs 10 Microraptor (Zhaoianus): the Sarcosuchus side wins in about 5 s with 86% of its health left.
+- Verfolgung: Sarcosuchus is 9% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Sarcosuchus vs 10 Microraptor (Zhaoianus): the Sarcosuchus side wins in about 5 s with 86% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 3 Sarcosuchus vs 10 Microraptor (Zhaoianus): the Sarcosuchus side wins in about 2 s with 98% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 360 pro Haupttreffer vom Angreifer (2 bis zum Kill), 4 zurück (135 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

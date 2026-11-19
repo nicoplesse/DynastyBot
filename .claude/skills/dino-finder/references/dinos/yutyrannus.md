@@ -87,7 +87,7 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Tyrannosaurus** (spürbar): Tyrannosaurus is legal quarry, but not a comfortable fight
 - **Giganotosaurus** (conditional): Giganotosaurus is legal quarry, but not a comfortable fight
 - **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
 - **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
 

@@ -319,6 +319,7 @@ function resolveMap(poiDoc, routeDoc, regions) {
       claimable: typeof poi.claimable === 'boolean' ? poi.claimable : null,
       territoryTier: poi.territoryTier || null,
       variant: poi.variant || null,
+      ...(poi.range && { range: poi.range }),
       prey: poi.prey || null,
       season: poi.season || null,
       note: poi.note || '',
@@ -527,14 +528,29 @@ function parseProfile(manifest, raw, reference = null, referenceFetchedAt = null
 }
 
 // A variant's map keeps only its own POIs plus the shared ones (no variant, or "both").
+// Variants whose ranges overlap (Microraptor's subspecies only say where one hatched) keep the
+// other variants' POIs too: `others` on the document gives them the roles of a roaming ground,
+// and `others.<variant>` on one POI makes it border land for that variant instead. Each marker
+// then says which ring it is in (`range`: home, border or roam).
 function variantPoiDoc(poiDoc, variantId) {
   if (!poiDoc) return null;
+  const overlapping = Boolean(poiDoc.others);
   const others = new Set((poiDoc.variants || []).map(item => item.id).filter(id => id !== variantId));
+  const shared = poi => !poi.variant || poi.variant === 'both';
+  const pois = (poiDoc.pois || []).flatMap(poi => {
+    if (shared(poi) || poi.variant === variantId) return [overlapping ? { ...poi, range: shared(poi) ? 'border' : 'home' } : poi];
+    if (!overlapping) return [];
+    const border = poi.others?.[variantId];
+    const ring = border || poiDoc.others;
+    // The courtship ground of the shared profile stays every variant's, whoever hatches there.
+    const roles = [...new Set([...ring.roles, ...(poi.roles || []).filter(role => role === 'courtship')])];
+    return [{ ...poi, roles, note: ring.note || poi.note, range: border ? 'border' : 'roam' }];
+  });
   return {
     ...poiDoc,
-    legend: poiDoc.legend ? Object.fromEntries(Object.entries(poiDoc.legend).filter(([key]) => !others.has(key))) : null,
-    variants: (poiDoc.variants || []).filter(item => item.id === variantId),
-    pois: (poiDoc.pois || []).filter(poi => !poi.variant || poi.variant === 'both' || poi.variant === variantId),
+    legend: poiDoc.legend ? Object.fromEntries(Object.entries(poiDoc.legend).filter(([key]) => overlapping || !others.has(key))) : null,
+    variants: (poiDoc.variants || []).filter(item => overlapping || item.id === variantId),
+    pois,
   };
 }
 

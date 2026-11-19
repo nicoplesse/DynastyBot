@@ -76,13 +76,33 @@ A profile rule names or prioritises this matchup. Ceratosaurus is 11% faster on 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 30 pro Haupttreffer vom Angreifer (21 bis zum Kill), 67 zurück (12 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 10 Microraptor: the Ceratosaurus side wins in about 14 s with 46% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 10 Microraptor (Gui): the Ceratosaurus side wins in about 14 s with 46% of its health left.
 - Verfolgung: Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Ceratosaurus vs 10 Microraptor: the Ceratosaurus side wins in about 14 s with 46% of its health left. (Kampfgewicht 2600 vs 500)
-- Kampf (beide Seiten legal max): 4 Ceratosaurus vs 10 Microraptor: the Ceratosaurus side wins in about 4 s with 96% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Ceratosaurus vs 10 Microraptor (Gui): the Ceratosaurus side wins in about 14 s with 46% of its health left. (Kampfgewicht 2600 vs 500)
+- Kampf (beide Seiten legal max): 4 Ceratosaurus vs 10 Microraptor (Gui): the Ceratosaurus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 208 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (98 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 10 Microraptor (Hanqiugi): the Ceratosaurus side wins in about 14 s with 46% of its health left.
+- Verfolgung: Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Ceratosaurus vs 10 Microraptor (Hanqiugi): the Ceratosaurus side wins in about 14 s with 46% of its health left. (Kampfgewicht 2600 vs 500)
+- Kampf (beide Seiten legal max): 4 Ceratosaurus vs 10 Microraptor (Hanqiugi): the Ceratosaurus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 208 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (98 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Ceratosaurus vs 10 Microraptor (Zhaoianus): the Ceratosaurus side wins in about 14 s with 46% of its health left.
+- Verfolgung: Ceratosaurus is 27% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Ceratosaurus vs 10 Microraptor (Zhaoianus): the Ceratosaurus side wins in about 14 s with 46% of its health left. (Kampfgewicht 2600 vs 500)
+- Kampf (beide Seiten legal max): 4 Ceratosaurus vs 10 Microraptor (Zhaoianus): the Ceratosaurus side wins in about 4 s with 96% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 208 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (98 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

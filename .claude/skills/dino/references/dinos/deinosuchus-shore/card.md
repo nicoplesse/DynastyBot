@@ -73,19 +73,19 @@ You are an Apex semi-aquatic ambusher with 6,000 combat weight. Every hunt start
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
+- **Spinosaurus (Freshwater / Saltwater)** (sehr hoch): Spinosaurus can create a very narrow escape window
 - **Deinocheirus** (spürbar): Deinocheirus can create a credible fight
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
+- **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
-- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (sehr hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (sehr hoch): Megalania is a realistic hunting opportunity
 - **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
 - **Austroraptor** (hoch): Austroraptor is a realistic hunting opportunity
+- **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Deinosuchus males are highly territorial, controlling a patch of water which they drive out other males from. Females are sedentary, and are allowed to swim between different male territories, but stop being permitted if a male is paired with a female already.

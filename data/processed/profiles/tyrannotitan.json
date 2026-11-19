@@ -14013,14 +14013,14 @@
           "confidence": "derived"
         },
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
           "family": "microraptor",
           "direction": "opportunity",
           "band": "high",
           "kind": "quarry",
-          "headline": "Microraptor is a realistic hunting opportunity",
-          "summary": "Microraptor is within the legal hunt ceiling. Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+          "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+          "summary": "Microraptor (Gui) is within the legal hunt ceiling. Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 10 Microraptor (Gui): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
           "score": 75,
           "visible": true,
           "intent": {
@@ -14059,10 +14059,10 @@
           "facts": [
             "Its profile permits hunting through Giant tier.",
             "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
-            "1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "1 Tyrannotitan vs 10 Microraptor (Gui): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
             "10 shared mapped areas make contact plausible.",
-            "One-on-one, a Tyrannotitan bite lands 440 on Microraptor (1 to kill); a Microraptor bite lands 3 back (273 to kill).",
-            "Tyrannotitan's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "One-on-one, a Tyrannotitan bite lands 440 on Microraptor (Gui) (1 to kill); a Microraptor (Gui) bite lands 3 back (273 to kill).",
+            "Tyrannotitan's bleed builds faster than Microraptor (Gui) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
             "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
           ],
           "fight": {
@@ -14100,7 +14100,7 @@
                 "seconds": 1.25
               }
             },
-            "label": "1 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "label": "1 Tyrannotitan vs 10 Microraptor (Gui): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
             "detail": "1 attacker vs 10 defenders",
             "attackerCombatWeight": 5500,
             "targetCombatWeight": 500,
@@ -14110,17 +14110,17 @@
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "attacker-advantage",
-              "label": "2 Tyrannotitan vs 10 Microraptor: the Tyrannotitan side wins in about 6 s with 96% of its health left.",
+              "label": "2 Tyrannotitan vs 10 Microraptor (Gui): the Tyrannotitan side wins in about 6 s with 96% of its health left.",
               "attackers": 2,
               "defenders": 10
             }
           },
           "attackerId": "tyrannotitan",
-          "targetId": "microraptor",
+          "targetId": "microraptor-gui",
           "core": {
             "direction": "opportunity",
             "attackerName": "Tyrannotitan",
-            "targetName": "Microraptor",
+            "targetName": "Microraptor (Gui)",
             "chaseVerdict": "attacker-faster",
             "chaseLabel": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
             "baseScore": 57,
@@ -14128,7 +14128,261 @@
             "conditional": false,
             "explicit": false,
             "relationKind": null,
-            "summaryLead": "Microraptor is within the legal hunt ceiling."
+            "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+          "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 10 Microraptor (Hanqiugi): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+          "score": 75,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 825,
+            "speedMarginPct": 9.1,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -84.3,
+            "label": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.5,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 10 Microraptor (Hanqiugi): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 440 on Microraptor (Hanqiugi) (1 to kill); a Microraptor (Hanqiugi) bite lands 3 back (273 to kill).",
+            "Tyrannotitan's bleed builds faster than Microraptor (Hanqiugi) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 440,
+              "defenderHit": 3,
+              "attackerBurst": 1100,
+              "defenderBurst": 3,
+              "attackerHitsToKill": 1,
+              "defenderHitsToKill": 273,
+              "attackerDps": 337.4,
+              "defenderDps": 2.2,
+              "attackerTimeToKill": 1,
+              "defenderTimeToKill": 408,
+              "attackerBleed": 2.64,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 12,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.84,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 1.25
+              }
+            },
+            "label": "1 Tyrannotitan vs 10 Microraptor (Hanqiugi): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 10 Microraptor (Hanqiugi): the Tyrannotitan side wins in about 6 s with 96% of its health left.",
+              "attackers": 2,
+              "defenders": 10
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "microraptor-hanqiugi",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Microraptor (Hanqiugi)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 57,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "ambush",
+            "bleed",
+            "endurance",
+            "dangerous-defender"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "high",
+          "kind": "quarry",
+          "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+          "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted. 1 Tyrannotitan vs 10 Microraptor (Zhaoianus): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+          "score": 75,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Giant tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 900,
+            "targetSpeed": 825,
+            "speedMarginPct": 9.1,
+            "attackerDurationSeconds": 63,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -84.3,
+            "label": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "steep-run",
+              "volcano-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "crag-bluffs"
+            ],
+            "overlap": 0.5,
+            "label": "10 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Giant tier.",
+            "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "1 Tyrannotitan vs 10 Microraptor (Zhaoianus): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "10 shared mapped areas make contact plausible.",
+            "One-on-one, a Tyrannotitan bite lands 440 on Microraptor (Zhaoianus) (1 to kill); a Microraptor (Zhaoianus) bite lands 3 back (273 to kill).",
+            "Tyrannotitan's bleed builds faster than Microraptor (Zhaoianus) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+            "Tyrannotitan has an explicit ambush style, so raw top speed understates the opening danger."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 440,
+              "defenderHit": 3,
+              "attackerBurst": 1100,
+              "defenderBurst": 3,
+              "attackerHitsToKill": 1,
+              "defenderHitsToKill": 273,
+              "attackerDps": 337.4,
+              "defenderDps": 2.2,
+              "attackerTimeToKill": 1,
+              "defenderTimeToKill": 408,
+              "attackerBleed": 2.64,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "attacker-advantage",
+            "sim": {
+              "winner": "attacker",
+              "seconds": 12,
+              "attackersLeft": 1,
+              "defendersLeft": 0,
+              "attackerHpShare": 0.84,
+              "defenderHpShare": 0,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 1.25
+              }
+            },
+            "label": "1 Tyrannotitan vs 10 Microraptor (Zhaoianus): the Tyrannotitan side wins in about 12 s with 84% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 5500,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 2,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "2 Tyrannotitan vs 10 Microraptor (Zhaoianus): the Tyrannotitan side wins in about 6 s with 96% of its health left.",
+              "attackers": 2,
+              "defenders": 10
+            }
+          },
+          "attackerId": "tyrannotitan",
+          "targetId": "microraptor-zhaoianus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Tyrannotitan",
+            "targetName": "Microraptor (Zhaoianus)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Tyrannotitan is 9% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 57,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
           },
           "tags": [
             "ambush",
@@ -15256,9 +15510,67 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -17206,8 +17518,48 @@
         "direct": 1
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4.4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 4.4,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

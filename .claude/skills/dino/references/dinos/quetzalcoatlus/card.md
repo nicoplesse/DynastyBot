@@ -62,10 +62,9 @@ You are a large aerial carnivore in a 'committee' of up to 3 with temporary bond
 
 **Beute & Chancen:**
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (hoch): Megalania is a realistic hunting opportunity
 - **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
-- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
 - **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**

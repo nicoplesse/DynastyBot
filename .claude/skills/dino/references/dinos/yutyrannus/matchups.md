@@ -96,13 +96,33 @@ A profile rule names or prioritises this matchup. Yutyrannus is 16% faster on la
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 32 pro Haupttreffer vom Angreifer (28 bis zum Kill), 68 zurück (9 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 16 s with 41% of its health left.
 - Verfolgung: Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left. (Kampfgewicht 3250 vs 500)
-- Kampf (beide Seiten legal max): 4 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 4 s with 96% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 16 s with 41% of its health left. (Kampfgewicht 3250 vs 500)
+- Kampf (beide Seiten legal max): 4 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 390 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (98 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 16 s with 41% of its health left.
+- Verfolgung: Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 16 s with 41% of its health left. (Kampfgewicht 3250 vs 500)
+- Kampf (beide Seiten legal max): 4 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 390 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (98 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 16 s with 41% of its health left.
+- Verfolgung: Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 16 s with 41% of its health left. (Kampfgewicht 3250 vs 500)
+- Kampf (beide Seiten legal max): 4 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 4 s with 96% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 390 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (98 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

@@ -55,6 +55,8 @@ export interface PoiMarker {
   biome: string | null; moisture: string | null; water: PoiWater | null;
   terrain: string[]; description: string; roles: string[];
   claimable: boolean | null; territoryTier: string | null; variant: string | null;
+  // Only on variants whose ranges overlap (Microraptor subspecies): own hatching area, border land or roaming ground.
+  range?: 'home' | 'border' | 'roam';
   prey: string[] | null; season: string | null; note: string; unresolvedRegion: boolean;
 }
 export interface RouteWaypoint { regionId: string; name: string; x: number; y: number; biome: string | null; moisture: string | null }

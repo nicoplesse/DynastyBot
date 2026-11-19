@@ -14624,14 +14624,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
-        "headline": "Microraptor is legal quarry, but not a comfortable fight",
-        "summary": "Microraptor is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+        "headline": "Microraptor (Gui) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 1 s with 99% of its health left.",
         "score": 48,
         "visible": true,
         "intent": {
@@ -14680,9 +14680,9 @@
         "facts": [
           "Its profile permits hunting through Small tier.",
           "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
-          "1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+          "1 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 1 s with 99% of its health left.",
           "20 shared mapped areas make contact plausible.",
-          "One-on-one, a Compsognathus bite lands 16 on Microraptor (25 to kill); a Microraptor bite lands 50 back (8 to kill)."
+          "One-on-one, a Compsognathus bite lands 16 on Microraptor (Gui) (25 to kill); a Microraptor (Gui) bite lands 50 back (8 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -14719,7 +14719,7 @@
               "seconds": 1.25
             }
           },
-          "label": "1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.",
+          "label": "1 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 1 s with 99% of its health left.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 400,
           "targetCombatWeight": 500,
@@ -14729,17 +14729,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "10 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 14 s with 70% of its health left.",
+            "label": "10 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 14 s with 70% of its health left.",
             "attackers": 10,
             "defenders": 10
           }
         },
         "attackerId": "compsognathus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Compsognathus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 65,
@@ -14747,7 +14747,267 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Microraptor (Hanqiugi) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 1 s with 99% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Small tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 825,
+          "speedMarginPct": 51.5,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -6.3,
+          "label": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "coastal-bluffs",
+            "volcano-islands",
+            "palm-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "coastland-swamp",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Small tier.",
+          "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "1 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 1 s with 99% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 16 on Microraptor (Hanqiugi) (25 to kill); a Microraptor (Hanqiugi) bite lands 50 back (8 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 16,
+            "defenderHit": 50,
+            "attackerBurst": 16,
+            "defenderBurst": 50,
+            "attackerHitsToKill": 25,
+            "defenderHitsToKill": 8,
+            "attackerDps": 16,
+            "defenderDps": 33.3,
+            "attackerTimeToKill": 25,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0.016,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 10,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 14 s with 70% of its health left.",
+            "attackers": 10,
+            "defenders": 10
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Microraptor (Zhaoianus) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 1 s with 99% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Small tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1250,
+          "targetSpeed": 825,
+          "speedMarginPct": 51.5,
+          "attackerDurationSeconds": 375,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -6.3,
+          "label": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "coastal-bluffs",
+            "volcano-islands",
+            "palm-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "mudflats",
+            "cliff-edge-falls",
+            "coastland-swamp",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Small tier.",
+          "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "1 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 1 s with 99% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Compsognathus bite lands 16 on Microraptor (Zhaoianus) (25 to kill); a Microraptor (Zhaoianus) bite lands 50 back (8 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 16,
+            "defenderHit": 50,
+            "attackerBurst": 16,
+            "defenderBurst": 50,
+            "attackerHitsToKill": 25,
+            "defenderHitsToKill": 8,
+            "attackerDps": 16,
+            "defenderDps": 33.3,
+            "attackerTimeToKill": 25,
+            "defenderTimeToKill": 12,
+            "attackerBleed": 0.016,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 1,
+            "attackersLeft": 0,
+            "defendersLeft": 10,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.99,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 1 s with 99% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 10,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "10 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 14 s with 70% of its health left.",
+            "attackers": 10,
+            "defenders": 10
+          }
+        },
+        "attackerId": "compsognathus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Compsognathus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -15620,9 +15880,67 @@
         "engagementLimit": 8,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -16466,8 +16784,48 @@
         "direct": 20
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.016,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "direct": 25
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.016,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "sit": {
+          "hits": 25,
+          "seconds": 24
+        },
+        "direct": 25
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

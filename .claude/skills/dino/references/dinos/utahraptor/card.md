@@ -90,11 +90,11 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 
 **Beute & Chancen:**
 - **Dryosaurus** (conditional): Dryosaurus is legal quarry, but not a comfortable fight
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
-- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (spürbar): Megalania is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Same-species territory risk: Utahraptor are tolerant to other species, and aggressive towards rival Utahraptor. When solitary, they are tolerant towards other Utahraptor.

@@ -65,8 +65,7 @@ You are a Large daytime flier (air sprint 1,100). Once you have paired for life 
 
 **Beute & Chancen:**
 - **Quetzalcoatlus** (sehr hoch): Quetzalcoatlus is a realistic hunting opportunity
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (hoch): Megalania is a realistic hunting opportunity
 - **Rhamphorhynchus** (spürbar): Rhamphorhynchus is a realistic hunting opportunity
 
 **Besondere Risiken:**

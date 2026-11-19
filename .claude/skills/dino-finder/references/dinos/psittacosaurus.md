@@ -58,7 +58,7 @@ You are a small herbivore in an unlimited 'passel' led by one elder, the Quillgu
 **Gefährlich für dich:**
 - **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Struthiomimus** (sehr hoch): Struthiomimus can create a very narrow escape window
-- **Microraptor** (spürbar): Microraptor can create a credible fight
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Austroraptor** (hoch): Austroraptor can create a real pursuit problem

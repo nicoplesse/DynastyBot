@@ -24,12 +24,32 @@ Struthiomimus is linked by a specific profile rule. The speed gap is small (1150
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 78 pro Haupttreffer vom Angreifer (7 bis zum Kill), 32 zurück (14 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
-### Microraptor – spürbar (predator)
-Microraptor can create a credible fight
+### Microraptor (Gui) – spürbar (predator)
+Microraptor (Gui) can create a credible fight
 
-Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.
+Microraptor (Gui) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Gui) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.
 - Verfolgung: This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left. (Kampfgewicht 500 vs 900)
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Gui) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left. (Kampfgewicht 500 vs 900)
+- Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (23 bis zum Kill), 90 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Hanqiugi) – spürbar (predator)
+Microraptor (Hanqiugi) can create a credible fight
+
+Microraptor (Hanqiugi) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Hanqiugi) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Hanqiugi) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left. (Kampfgewicht 500 vs 900)
+- Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (23 bis zum Kill), 90 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Zhaoianus) – spürbar (predator)
+Microraptor (Zhaoianus) can create a credible fight
+
+Microraptor (Zhaoianus) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Zhaoianus) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Zhaoianus) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left. (Kampfgewicht 500 vs 900)
 - Kampf (beide Seiten legal max): Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 22 pro Haupttreffer vom Angreifer (23 bis zum Kill), 90 zurück (5 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.

@@ -59,7 +59,7 @@ You are a Tiny aerial fisher and scavenger (air cruise 900, sprint 1,300 for 200
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Microraptor** (sehr hoch): Microraptor can create a very narrow escape window
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (sehr hoch): Microraptor can create a very narrow escape window
 - **Tropeognathus** (sehr hoch): Tropeognathus can create a very narrow escape window
 - **Hatzegopteryx** (spürbar): Hatzegopteryx can create a credible fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus can create a credible fight

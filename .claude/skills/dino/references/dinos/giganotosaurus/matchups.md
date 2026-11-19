@@ -116,13 +116,33 @@ Anodontosaurus is within the legal hunt ceiling. Giganotosaurus is 29% faster on
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 37 pro Haupttreffer vom Angreifer (24 bis zum Kill), 52 zurück (20 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 
-### Microraptor – spürbar (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – spürbar (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land. 1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land. 1 Giganotosaurus vs 10 Microraptor (Gui): the Giganotosaurus side wins in about 9 s with 89% of its health left.
 - Verfolgung: The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left. (Kampfgewicht 5500 vs 500)
-- Kampf (beide Seiten legal max): 1 Giganotosaurus vs 10 Microraptor: the Giganotosaurus side wins in about 9 s with 89% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Giganotosaurus vs 10 Microraptor (Gui): the Giganotosaurus side wins in about 9 s with 89% of its health left. (Kampfgewicht 5500 vs 500)
+- Kampf (beide Seiten legal max): 1 Giganotosaurus vs 10 Microraptor (Gui): the Giganotosaurus side wins in about 9 s with 89% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 495 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (303 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Microraptor (Hanqiugi) – spürbar (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land. 1 Giganotosaurus vs 10 Microraptor (Hanqiugi): the Giganotosaurus side wins in about 9 s with 89% of its health left.
+- Verfolgung: The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Giganotosaurus vs 10 Microraptor (Hanqiugi): the Giganotosaurus side wins in about 9 s with 89% of its health left. (Kampfgewicht 5500 vs 500)
+- Kampf (beide Seiten legal max): 1 Giganotosaurus vs 10 Microraptor (Hanqiugi): the Giganotosaurus side wins in about 9 s with 89% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 495 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (303 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Microraptor (Zhaoianus) – spürbar (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land. 1 Giganotosaurus vs 10 Microraptor (Zhaoianus): the Giganotosaurus side wins in about 9 s with 89% of its health left.
+- Verfolgung: The speed gap is small (850 vs 825), but Giganotosaurus has the pursuit edge on land.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Giganotosaurus vs 10 Microraptor (Zhaoianus): the Giganotosaurus side wins in about 9 s with 89% of its health left. (Kampfgewicht 5500 vs 500)
+- Kampf (beide Seiten legal max): 1 Giganotosaurus vs 10 Microraptor (Zhaoianus): the Giganotosaurus side wins in about 9 s with 89% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 495 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (303 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 

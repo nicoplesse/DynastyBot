@@ -1,6 +1,6 @@
 # Struthiomimus – Matchups
 
-Played solo against their full legal groups, Struthiomimus has 3 high-priority matchups where fight maths, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.
+Played solo against their full legal groups, Struthiomimus has 3 high-priority matchups where fight maths, pursuit and profile intent align. Against 6 listed threats, speed still provides a reliable disengage option.
 
 ## Gefahren (wer dir gefährlich wird)
 
@@ -14,13 +14,33 @@ Therizinosaurus is linked by a specific profile rule. Struthiomimus is 26% faste
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 354 pro Haupttreffer vom Angreifer (2 bis zum Kill), 12 zurück (87 bis zum Kill)
 - Profilbezug: The profile names a direct aggression or rivalry rule.
 
-### Microraptor – conditional (predator)
-Microraptor matters only if it gets the right opening
+### Microraptor (Gui) – conditional (predator)
+Microraptor (Gui) matters only if it gets the right opening
 
-Microraptor is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.
+Microraptor (Gui) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Gui) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.
 - Verfolgung: Struthiomimus is 28% faster on land and can normally refuse this fight.
-- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left. (Kampfgewicht 500 vs 1400)
-- Kampf (beide Seiten legal max): 2 Microraptor vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Gui) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Gui) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (32 bis zum Kill), 140 zurück (3 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Hanqiugi) – conditional (predator)
+Microraptor (Hanqiugi) matters only if it gets the right opening
+
+Microraptor (Hanqiugi) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Hanqiugi) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.
+- Verfolgung: Struthiomimus is 28% faster on land and can normally refuse this fight.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Hanqiugi) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Hanqiugi) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (32 bis zum Kill), 140 zurück (3 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Zhaoianus) – conditional (predator)
+Microraptor (Zhaoianus) matters only if it gets the right opening
+
+Microraptor (Zhaoianus) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Zhaoianus) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.
+- Verfolgung: Struthiomimus is 28% faster on land and can normally refuse this fight.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Zhaoianus) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Zhaoianus) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (32 bis zum Kill), 140 zurück (3 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 

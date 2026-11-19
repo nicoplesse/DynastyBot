@@ -116,13 +116,33 @@ A profile rule names or prioritises this matchup. Styracosaurus is 10% faster on
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 104 pro Haupttreffer vom Angreifer (7 bis zum Kill), 53 zurück (14 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 11 s with 81% of its health left.
 - Verfolgung: Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left. (Kampfgewicht 4500 vs 500)
-- Kampf (beide Seiten legal max): 6 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 2 s with 99% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 11 s with 81% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 6 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 2 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 585 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (205 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 11 s with 81% of its health left.
+- Verfolgung: Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 11 s with 81% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 6 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 2 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 585 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (205 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Giant tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 11 s with 81% of its health left.
+- Verfolgung: Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 11 s with 81% of its health left. (Kampfgewicht 4500 vs 500)
+- Kampf (beide Seiten legal max): 6 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 2 s with 99% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 585 pro Haupttreffer vom Angreifer (1 bis zum Kill), 3 zurück (205 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Giant tier.
 

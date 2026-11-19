@@ -14255,14 +14255,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "threat",
         "band": "meaningful",
         "kind": "predator",
-        "headline": "Microraptor can create a credible fight",
-        "summary": "Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+        "headline": "Microraptor (Gui) can create a credible fight",
+        "summary": "Microraptor (Gui) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Gui) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
         "score": 57,
         "visible": true,
         "intent": {
@@ -14311,9 +14311,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
-          "2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "2 Microraptor (Gui) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
           "20 shared mapped areas make contact plausible.",
-          "One-on-one, a Microraptor bite lands 22 on Psittacosaurus (23 to kill); a Psittacosaurus bite lands 90 back (5 to kill)."
+          "One-on-one, a Microraptor (Gui) bite lands 22 on Psittacosaurus (23 to kill); a Psittacosaurus bite lands 90 back (5 to kill)."
         ],
         "fight": {
           "attackers": 2,
@@ -14350,7 +14350,7 @@
               "seconds": 4.25
             }
           },
-          "label": "2 Microraptor vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "label": "2 Microraptor (Gui) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
           "detail": "2 attackers vs 1 defender",
           "attackerCombatWeight": 500,
           "targetCombatWeight": 900,
@@ -14365,11 +14365,11 @@
             "defenders": null
           }
         },
-        "attackerId": "microraptor",
+        "attackerId": "microraptor-gui",
         "targetId": "psittacosaurus",
         "core": {
           "direction": "threat",
-          "attackerName": "Microraptor",
+          "attackerName": "Microraptor (Gui)",
           "targetName": "Psittacosaurus",
           "chaseVerdict": "close-chase",
           "chaseLabel": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
@@ -14378,19 +14378,305 @@
           "conditional": false,
           "explicit": true,
           "relationKind": null,
-          "summaryLead": "Microraptor is linked by a specific profile rule."
+          "summaryLead": "Microraptor (Gui) is linked by a specific profile rule."
         },
         "tags": [],
         "evidence": [
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
             "section": "Quick View",
             "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
           },
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor (Hanqiugi) can create a credible fight",
+        "summary": "Microraptor (Hanqiugi) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Hanqiugi) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 140,
+          "label": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "2 Microraptor (Hanqiugi) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Hanqiugi) bite lands 22 on Psittacosaurus (23 to kill); a Psittacosaurus bite lands 90 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 90,
+            "attackerBurst": 22,
+            "defenderBurst": 144,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 5,
+            "attackerDps": 14.8,
+            "defenderDps": 94.8,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.62,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.25
+            }
+          },
+          "label": "2 Microraptor (Hanqiugi) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 900,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 2,
+            "defenders": null
+          }
+        },
+        "attackerId": "microraptor-hanqiugi",
+        "targetId": "psittacosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Hanqiugi)",
+          "targetName": "Psittacosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor (Zhaoianus) can create a credible fight",
+        "summary": "Microraptor (Zhaoianus) is linked by a specific profile rule. This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it. 2 Microraptor (Zhaoianus) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 166.667,
+          "durationMarginPct": 140,
+          "label": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "2 Microraptor (Zhaoianus) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Zhaoianus) bite lands 22 on Psittacosaurus (23 to kill); a Psittacosaurus bite lands 90 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 22,
+            "defenderHit": 90,
+            "attackerBurst": 22,
+            "defenderBurst": 144,
+            "attackerHitsToKill": 23,
+            "defenderHitsToKill": 5,
+            "attackerDps": 14.8,
+            "defenderDps": 94.8,
+            "attackerTimeToKill": 34,
+            "defenderTimeToKill": 4,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 9,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.62,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 4.25
+            }
+          },
+          "label": "2 Microraptor (Zhaoianus) vs 1 Psittacosaurus: the Psittacosaurus side wins in about 9 s with 62% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 900,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 1,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": true,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "Psittacosaurus may defend with an unlimited group; the profile sets no number to simulate, so pick a concrete group size to see the fight.",
+            "attackers": 2,
+            "defenders": null
+          }
+        },
+        "attackerId": "microraptor-zhaoianus",
+        "targetId": "psittacosaurus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Zhaoianus)",
+          "targetName": "Psittacosaurus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1150 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
             "section": "Preferred Prey & Diet",
             "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
           }
@@ -15591,9 +15877,67 @@
         "engagementLimit": 5,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,

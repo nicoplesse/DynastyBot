@@ -89,7 +89,7 @@ You are the loner of the red rock, and you live on the ground. Where your temper
 **Beute & Chancen:**
 - **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Giganotosaurus** (spürbar): Giganotosaurus is legal quarry, but not a comfortable fight

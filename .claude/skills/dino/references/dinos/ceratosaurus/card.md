@@ -75,11 +75,11 @@ You are a medium nocturnal carnivore in a close, loyal pack of up to 6 that stay
 
 **Beute & Chancen:**
 - **Albertaceratops** (spürbar): Albertaceratops is legal quarry, but not a comfortable fight
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
-- **Megalania (Arid)** (spürbar): Megalania (Arid) is a realistic hunting opportunity
-- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
+- **Megalania (Arid / Temperate)** (spürbar): Megalania is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Deinocheirus** (spürbar): Deinocheirus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Cannibalism / offspring risk: Ceratosaurus are not cannibalistic and will never eat the bodies of a fallen Ceratosaurus, whether it be a pack member or stranger whelp.

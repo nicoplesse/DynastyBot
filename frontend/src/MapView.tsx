@@ -12,6 +12,9 @@ const ROLE_LABEL: Record<string, string> = {
   territory: 'Territory', drinking: 'Drinking (not defended)', hunting: 'Hunting', nesting: 'Nesting', basking: 'Basking', resting: 'Resting',
   migration: 'Migration', courtship: 'Courtship', neutral: 'Neutral ground', transit: 'Transit',
 };
+// Variants with overlapping ranges list their POIs by ring instead of by role.
+const RANGE_ORDER = ['range:home', 'range:border', 'range:roam'];
+const RANGE_LABEL: Record<string, string> = { home: 'Home (own hatching area)', border: 'Border land', roam: 'Roaming ground' };
 const MOISTURE_LABEL: Record<string, string> = { arid: 'Dry / Arid', 'semi-arid': 'Semi-arid', mesic: 'Mesic', wet: 'Wet', aquatic: 'Aquatic' };
 // Short chip names; the full ecosystem label is shown in the panel.
 const LANDSCAPE_SHORT: Record<string, string> = {
@@ -186,15 +189,16 @@ function rolesOf(marker: PoiMarker) { return marker.roles.length ? marker.roles 
 
 function PoiList({ markers, name, onSelect, onHover }: { markers: PoiMarker[]; name: string; onSelect: (i: number) => void; onHover: (i: number | null) => void }) {
   const groups = new Map<string, number[]>();
-  markers.forEach((marker, index) => { const role = rolesOf(marker)[0]; groups.set(role, [...(groups.get(role) || []), index]); });
-  const ordered = [...groups.entries()].sort((a, b) => (ROLE_ORDER.indexOf(a[0]) + 99) % 99 - (ROLE_ORDER.indexOf(b[0]) + 99) % 99);
+  markers.forEach((marker, index) => { const key = marker.range ? `range:${marker.range}` : rolesOf(marker)[0]; groups.set(key, [...(groups.get(key) || []), index]); });
+  const rank = (key: string) => key.startsWith('range:') ? RANGE_ORDER.indexOf(key) : (ROLE_ORDER.indexOf(key) + 99) % 99;
+  const ordered = [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]));
   return (
     <aside className="map-detail map-list">
       <strong className="map-list-title">{markers.length} points of interest</strong>
       <p className="map-list-hint">The highlights on the map are {name}&apos;s own. Pick a landscape above to see where forest, cliffs, water or open country lie.</p>
       {ordered.map(([role, indexes]) => (
         <div className="map-list-group" key={role}>
-          <span className="map-detail-cap">{ROLE_LABEL[role] || titleCase(role)}</span>
+          <span className="map-detail-cap">{role.startsWith('range:') ? RANGE_LABEL[role.slice(6)] : ROLE_LABEL[role] || titleCase(role)}</span>
           <ul>
             {indexes.map(index => (
               <li key={index}>
@@ -255,6 +259,7 @@ function MarkerDetail({ marker, landscapes, onClose }: { marker: PoiMarker; land
   if (marker.moisture) rows.push(['Moisture', MOISTURE_LABEL[marker.moisture] || titleCase(marker.moisture)]);
   if (marker.water) rows.push(['Water', marker.water.present ? [titleCase(marker.water.type), marker.water.feature && titleCase(marker.water.feature)].filter(Boolean).join(' · ') : 'None']);
   if (marker.variant) rows.push(['Variant', titleCase(marker.variant)]);
+  if (marker.range) rows.push(['Range', RANGE_LABEL[marker.range]]);
   if (marker.territoryTier) rows.push(['Territory', marker.territoryTier]);
   if (marker.claimable !== null) rows.push(['Claimable', marker.claimable ? 'Yes' : 'No']);
   if (marker.season) rows.push(['Season', marker.season]);

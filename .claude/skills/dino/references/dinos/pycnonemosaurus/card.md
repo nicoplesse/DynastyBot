@@ -68,11 +68,11 @@ You are a large carnivore in a 'drove' of up to 5, with up to 3 in an engagement
 
 **Beute & Chancen:**
 - **Ceratosaurus** (sehr hoch): Ceratosaurus is a realistic hunting opportunity
-- **Megalania (Arid)** (sehr hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Megalania (Arid / Temperate)** (sehr hoch): Megalania is a realistic hunting opportunity
 - **Metriacanthosaurus** (hoch): Metriacanthosaurus is a realistic hunting opportunity
 - **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Torvosaurus** (spürbar): Torvosaurus is legal quarry, but not a comfortable fight
+- **Tyrannotitan** (spürbar): Tyrannotitan is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

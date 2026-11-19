@@ -13813,14 +13813,14 @@
         "confidence": "derived"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
-        "headline": "Microraptor is a realistic hunting opportunity",
-        "summary": "Microraptor is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+        "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 3% of its health left, too narrow to call.",
         "score": 66,
         "visible": true,
         "intent": {
@@ -13859,9 +13859,9 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
-          "1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "1 Alioramus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 3% of its health left, too narrow to call.",
           "10 shared mapped areas make contact plausible.",
-          "One-on-one, a Alioramus bite lands 216 on Microraptor (2 to kill); a Microraptor bite lands 8 back (63 to kill)."
+          "One-on-one, a Alioramus bite lands 216 on Microraptor (Gui) (2 to kill); a Microraptor (Gui) bite lands 8 back (63 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -13898,7 +13898,7 @@
               "seconds": 1.75
             }
           },
-          "label": "1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "label": "1 Alioramus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 3% of its health left, too narrow to call.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 2400,
           "targetCombatWeight": 500,
@@ -13908,17 +13908,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "5 Alioramus vs 10 Microraptor: the Alioramus side wins in about 4 s with 96% of its health left.",
+            "label": "5 Alioramus vs 10 Microraptor (Gui): the Alioramus side wins in about 4 s with 96% of its health left.",
             "attackers": 5,
             "defenders": 10
           }
         },
         "attackerId": "alioramus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Alioramus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 58,
@@ -13926,7 +13926,251 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 3% of its health left, too narrow to call.",
+        "score": 66,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1150,
+          "targetSpeed": 825,
+          "speedMarginPct": 39.4,
+          "attackerDurationSeconds": 133,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -66.8,
+          "label": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "1 Alioramus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 216 on Microraptor (Hanqiugi) (2 to kill); a Microraptor (Hanqiugi) bite lands 8 back (63 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 216,
+            "defenderHit": 8,
+            "attackerBurst": 264,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 63,
+            "attackerDps": 234,
+            "defenderDps": 5.6,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 94,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 17,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.03,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Alioramus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 10 Microraptor (Hanqiugi): the Alioramus side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Alioramus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "endurance"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 3% of its health left, too narrow to call.",
+        "score": 66,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1150,
+          "targetSpeed": 825,
+          "speedMarginPct": 39.4,
+          "attackerDurationSeconds": 133,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -66.8,
+          "label": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "cliff-edge-falls",
+            "crag-bluffs",
+            "east-passage",
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "1 Alioramus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Alioramus bite lands 216 on Microraptor (Zhaoianus) (2 to kill); a Microraptor (Zhaoianus) bite lands 8 back (63 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 216,
+            "defenderHit": 8,
+            "attackerBurst": 264,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 63,
+            "attackerDps": 234,
+            "defenderDps": 5.6,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 94,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "defender",
+            "seconds": 17,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.03,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Alioramus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 3% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Alioramus vs 10 Microraptor (Zhaoianus): the Alioramus side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "alioramus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Alioramus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Alioramus is 39% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 58,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [
           "endurance"
@@ -16099,9 +16343,67 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,

@@ -58,16 +58,15 @@ You are a large semi-aquatic carnivore in a 'snare' of up to 3. You fish readily
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
+- **Deinosuchus (Shore / Ocean)** (sehr hoch): Deinosuchus can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Pycnonemosaurus** (sehr hoch): Pycnonemosaurus can create a very narrow escape window
 - **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (sehr hoch): Megalania is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
 - **Austroraptor** (conditional): Austroraptor can usually refuse the chase
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Concavenator** (spürbar): Concavenator is legal quarry, but not a comfortable fight

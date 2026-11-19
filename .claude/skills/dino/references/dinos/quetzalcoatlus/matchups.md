@@ -66,13 +66,33 @@ Megalania (Arid) is within the legal hunt ceiling. Quetzalcoatlus can approach a
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 81 pro Haupttreffer vom Angreifer (7 bis zum Kill), 38 zurück (16 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 
-### Microraptor – spürbar (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – spürbar (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 1 Quetzalcoatlus vs 10 Microraptor: the Microraptor side wins in about 18 s with 31% of its health left, too narrow to call.
+Microraptor (Gui) is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 1 Quetzalcoatlus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 18 s with 31% of its health left, too narrow to call.
 - Verfolgung: Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Quetzalcoatlus vs 10 Microraptor: the Microraptor side wins in about 18 s with 31% of its health left, too narrow to call. (Kampfgewicht 2750 vs 500)
-- Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 10 Microraptor: the Quetzalcoatlus side wins in about 9 s with 87% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Quetzalcoatlus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 18 s with 31% of its health left, too narrow to call. (Kampfgewicht 2750 vs 500)
+- Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 10 Microraptor (Gui): the Quetzalcoatlus side wins in about 9 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 440 pro Haupttreffer vom Angreifer (1 bis zum Kill), 7 zurück (83 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Microraptor (Hanqiugi) – spürbar (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 1 Quetzalcoatlus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 18 s with 31% of its health left, too narrow to call.
+- Verfolgung: Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Quetzalcoatlus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 18 s with 31% of its health left, too narrow to call. (Kampfgewicht 2750 vs 500)
+- Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 10 Microraptor (Hanqiugi): the Quetzalcoatlus side wins in about 9 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 440 pro Haupttreffer vom Angreifer (1 bis zum Kill), 7 zurück (83 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Microraptor (Zhaoianus) – spürbar (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters. 1 Quetzalcoatlus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 18 s with 31% of its health left, too narrow to call.
+- Verfolgung: Quetzalcoatlus can approach at 1350 flight units/s, but landing the opening attack still matters.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Quetzalcoatlus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 18 s with 31% of its health left, too narrow to call. (Kampfgewicht 2750 vs 500)
+- Kampf (beide Seiten legal max): 3 Quetzalcoatlus vs 10 Microraptor (Zhaoianus): the Quetzalcoatlus side wins in about 9 s with 87% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 440 pro Haupttreffer vom Angreifer (1 bis zum Kill), 7 zurück (83 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 

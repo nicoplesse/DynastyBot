@@ -16223,14 +16223,14 @@
           "confidence": "derived"
         },
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
           "family": "microraptor",
           "direction": "opportunity",
           "band": "meaningful",
           "kind": "quarry",
-          "headline": "Microraptor is a realistic hunting opportunity",
-          "summary": "Microraptor is within the legal hunt ceiling. Austroraptor is 33% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+          "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+          "summary": "Microraptor (Gui) is within the legal hunt ceiling. Austroraptor is 33% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 11% of its health left, too narrow to call.",
           "score": 58,
           "visible": true,
           "intent": {
@@ -16272,9 +16272,9 @@
           "facts": [
             "Its profile permits hunting through Medium tier.",
             "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
-            "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "1 Austroraptor vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 11% of its health left, too narrow to call.",
             "13 shared mapped areas make contact plausible.",
-            "One-on-one, a Austroraptor bite lands 210 on Microraptor (2 to kill); a Microraptor bite lands 10 back (69 to kill)."
+            "One-on-one, a Austroraptor bite lands 210 on Microraptor (Gui) (2 to kill); a Microraptor (Gui) bite lands 10 back (69 to kill)."
           ],
           "fight": {
             "attackers": 1,
@@ -16311,7 +16311,7 @@
                 "seconds": 2
               }
             },
-            "label": "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "label": "1 Austroraptor vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 11% of its health left, too narrow to call.",
             "detail": "1 attacker vs 10 defenders",
             "attackerCombatWeight": 2100,
             "targetCombatWeight": 500,
@@ -16321,17 +16321,17 @@
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "close",
-              "label": "1 Austroraptor vs 10 Microraptor: the Microraptor side wins in about 17 s with 11% of its health left, too narrow to call.",
+              "label": "1 Austroraptor vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 11% of its health left, too narrow to call.",
               "attackers": 1,
               "defenders": 10
             }
           },
           "attackerId": "austroraptor",
-          "targetId": "microraptor",
+          "targetId": "microraptor-gui",
           "core": {
             "direction": "opportunity",
             "attackerName": "Austroraptor",
-            "targetName": "Microraptor",
+            "targetName": "Microraptor (Gui)",
             "chaseVerdict": "attacker-faster",
             "chaseLabel": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
             "baseScore": 50,
@@ -16339,7 +16339,253 @@
             "conditional": false,
             "explicit": false,
             "relationKind": null,
-            "summaryLead": "Microraptor is within the legal hunt ceiling."
+            "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+          "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Austroraptor is 33% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 11% of its health left, too narrow to call.",
+          "score": 58,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 825,
+            "speedMarginPct": 33.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -58.3,
+            "label": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.565,
+            "label": "13 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "13 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 210 on Microraptor (Hanqiugi) (2 to kill); a Microraptor (Hanqiugi) bite lands 10 back (69 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 210,
+              "defenderHit": 10,
+              "attackerBurst": 252,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 2,
+              "defenderHitsToKill": 69,
+              "attackerDps": 212.8,
+              "defenderDps": 6.3,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 102,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 17,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.11,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "1 Austroraptor vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Austroraptor vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 11% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 10
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "microraptor-hanqiugi",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Microraptor (Hanqiugi)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 50,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+          },
+          "tags": [],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "quarry",
+          "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+          "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Austroraptor is 33% faster on land; a clean escape is unlikely once spotted. 1 Austroraptor vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 11% of its health left, too narrow to call.",
+          "score": 58,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Medium tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1100,
+            "targetSpeed": 825,
+            "speedMarginPct": 33.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -58.3,
+            "label": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "tallbrush-coasts",
+              "steep-run",
+              "coastal-bluffs",
+              "volcano-islands",
+              "palm-islands",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "twisted-forest",
+              "stillwater-bog",
+              "mudflats",
+              "cliff-edge-falls",
+              "coastland-swamp",
+              "redwoods"
+            ],
+            "overlap": 0.565,
+            "label": "13 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Medium tier.",
+            "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "1 Austroraptor vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "13 shared mapped areas make contact plausible.",
+            "One-on-one, a Austroraptor bite lands 210 on Microraptor (Zhaoianus) (2 to kill); a Microraptor (Zhaoianus) bite lands 10 back (69 to kill)."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 210,
+              "defenderHit": 10,
+              "attackerBurst": 252,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 2,
+              "defenderHitsToKill": 69,
+              "attackerDps": 212.8,
+              "defenderDps": 6.3,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 102,
+              "attackerBleed": 0,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": false,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "close",
+            "sim": {
+              "winner": "defender",
+              "seconds": 17,
+              "attackersLeft": 0,
+              "defendersLeft": 2,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.11,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "1 Austroraptor vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 11% of its health left, too narrow to call.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 2100,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 1,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "close",
+              "label": "1 Austroraptor vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 11% of its health left, too narrow to call.",
+              "attackers": 1,
+              "defenders": 10
+            }
+          },
+          "attackerId": "austroraptor",
+          "targetId": "microraptor-zhaoianus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Austroraptor",
+            "targetName": "Microraptor (Zhaoianus)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Austroraptor is 33% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 50,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
           },
           "tags": [],
           "evidence": [],
@@ -17514,9 +17760,67 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -18913,8 +19217,48 @@
         "direct": 2
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.68,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 39
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 5
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.68,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 39
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 5
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

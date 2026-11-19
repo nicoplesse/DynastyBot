@@ -74,7 +74,7 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
+- **Spinosaurus (Freshwater / Saltwater)** (sehr hoch): Spinosaurus can create a very narrow escape window
 - **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 - **Kaiwhekea** (sehr hoch): Kaiwhekea can create a very narrow escape window
 

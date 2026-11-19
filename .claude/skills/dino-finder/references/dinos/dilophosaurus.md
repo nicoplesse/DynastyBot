@@ -73,12 +73,12 @@ You are a medium carnivore in a 'leash': a dominant male with his breeding group
 - **Pycnonemosaurus** (conditional): Pycnonemosaurus matters only if it gets the right opening
 
 **Beute & Chancen:**
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
-- **Megalania (Temperate)** (spürbar): Megalania (Temperate) is a realistic hunting opportunity
+- **Megalania (Arid / Temperate)** (hoch): Megalania is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
+- **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Cannibalism / offspring risk: Dilophosaurus are tolerant towards other groups of Dilophosaurus. Dilophosaurus are passive towards all other species. Dominant males in leashes may attempt to cannibalize unattended ungrouped Dilophosaurus offspring.

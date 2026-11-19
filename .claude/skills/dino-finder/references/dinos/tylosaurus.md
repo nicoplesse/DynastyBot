@@ -80,15 +80,14 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) can create a real pursuit problem
-- **Spinosaurus (Saltwater)** (hoch): Spinosaurus (Saltwater) can create a real pursuit problem
+- **Spinosaurus (Freshwater / Saltwater)** (hoch): Spinosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
-- **Deinosuchus (Ocean)** (sehr hoch): Deinosuchus (Ocean) is a realistic hunting opportunity
+- **Deinosuchus (Shore / Ocean)** (sehr hoch): Deinosuchus is a realistic hunting opportunity
 - **Leedsichthys** (spürbar): Leedsichthys is legal quarry, but not a comfortable fight
-- **Spinosaurus (Freshwater)** (spürbar): Spinosaurus (Freshwater) is legal quarry, but not a comfortable fight
-- **Spinosaurus (Saltwater)** (spürbar): Spinosaurus (Saltwater) is legal quarry, but not a comfortable fight
+- **Spinosaurus (Freshwater / Saltwater)** (spürbar): Spinosaurus is legal quarry, but not a comfortable fight
 - **Eurhinosaurus** (hoch): Eurhinosaurus can usually refuse the chase
+- **Kaiwhekea** (spürbar): Kaiwhekea is legal quarry, but not a comfortable fight
+- **Parasaurolophus** (conditional): Parasaurolophus is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

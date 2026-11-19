@@ -44,7 +44,9 @@ Suche den Dino über Name, Alias oder Tier-Analog. Pfad: `references/dinos/<id>/
 | megalania-arid | Megalania (Arid) | Megalania, Arid Megalania, Arid Meg, Wüsten-Megalania, Canyon-Drache, Meg | Medium Cathemeral Terrestrial & Semi-Aquatic Carnivore | Komodowaran + Leopardgecko (Komodo dragon + Leopard gecko) |
 | megalania-temperate | Megalania (Temperate) | Megalania, Temperate Megalania, Temperate Meg, Sumpf-Megalania, Feucht-Megalania, Baumdrache, Meg | Medium Cathemeral Terrestrial & Semi-Aquatic Carnivore | Buntwaran + Tokeh (Lace monitor + Tokay gecko) |
 | metriacanthosaurus | Metriacanthosaurus | Metri | Medium Nocturnal Terrestrial Carnivore | Gila-Krustenechse + Pfeilgiftfrosch (Gila monster + Poison dart frog) |
-| microraptor | Microraptor | Micro | Tiny Cathemeral Terrestrial Carnivore | Australische Elster + Kurzkopfgleitbeutler (Australian magpie + Sugar glider) |
+| microraptor-gui | Microraptor (Gui) | Microraptor, Gui, Microraptor gui, Gui Micro, Wald-Microraptor, Wipfelstürmer, Micro | Tiny Cathemeral Terrestrial Carnivore | Grauhörnchen + Australische Elster (Eastern gray squirrel + Australian magpie) |
+| microraptor-hanqiugi | Microraptor (Hanqiugi) | Microraptor, Hanqiugi, Hanqingi, Microraptor hanqingi, Hanqiugi Micro, Küsten-Microraptor, Hungerkünstler, Micro | Tiny Cathemeral Terrestrial Carnivore | Hausratte + Australische Elster (Black rat + Australian magpie) |
+| microraptor-zhaoianus | Microraptor (Zhaoianus) | Microraptor, Zhaoianus, Microraptor zhaoianus, Zhaoianus Micro, Hochland-Microraptor, Windgleiter, Micro | Tiny Cathemeral Terrestrial Carnivore | Kurzkopfgleitbeutler + Australische Elster (Sugar glider + Australian magpie) |
 | pachycephalosaurus | Pachycephalosaurus | Pachy, Pachycep | Small Diurnal Terrestrial Herbivore | Schneeziege + Dickhornschaf (Mountain goat + Bighorn sheep) |
 | pachyrhinosaurus | Pachyrhinosaurus | Pachyr, Pachyrhino, Pachy | Large Diurnal Terrestrial Herbivore | Moschusochse + Karibu / Rentier (Musk ox + Caribou / reindeer) |
 | parasaurolophus | Parasaurolophus | Para | Apex Diurnal Terrestrial Herbivore | Rothirsch + Przewalski-Pferd (Red deer + Przewalski's horse) |

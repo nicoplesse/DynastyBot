@@ -82,12 +82,12 @@ You are an Apex semi-aquatic carnivore, solitary or in a bonded pair. Inside you
 - **Pycnonemosaurus** (hoch): Pycnonemosaurus can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
+- **Deinosuchus (Shore / Ocean)** (sehr hoch): Deinosuchus is a realistic hunting opportunity
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
 - **Tylosaurus** (spürbar): Tylosaurus can usually refuse the chase
-- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is a realistic hunting opportunity
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Concavenator** (sehr hoch): Concavenator is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (sehr hoch): Megalania is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Spinosaurus may defend their partner, offspring, territory as 2 sub/adults in a bonded pair. Spinosaurus hunt alone as 1 sub/adult. Their partner does not assist in hunts.

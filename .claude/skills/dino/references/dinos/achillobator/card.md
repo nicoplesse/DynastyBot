@@ -70,7 +70,7 @@ You are a quiet, medium-sized night stalker with long legs and sickle claws, liv
 - **Iguanodon** (spürbar): Iguanodon is legal quarry, but not a comfortable fight
 - **Pachyrhinosaurus** (spürbar): Pachyrhinosaurus is legal quarry, but not a comfortable fight
 - **Eotriceratops** (spürbar): Eotriceratops is legal quarry, but not a comfortable fight
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
 
 **Besondere Risiken:**

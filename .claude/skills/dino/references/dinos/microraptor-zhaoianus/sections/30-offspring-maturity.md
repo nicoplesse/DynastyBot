@@ -1,0 +1,3 @@
+# Microraptor (Zhaoianus) – Offspring Maturity
+
+Once offspring reach sub-adult, parent’s reactions vary depending on if they are a pair, or a part of a scurry. If within a scurry, parents signify their lack of interest by shooing their offspring away, encouraging offspring to interact with others members of the group. Their previous affection largely disappears, though they may acknowledge kinship with an occasional affectionate call in passing. If a pair, parents will encourage their offspring to disperse, beginning with gentle shoves, and then increased aggressive display if the decision is not respected.

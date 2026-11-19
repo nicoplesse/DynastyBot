@@ -13154,14 +13154,14 @@
       ],
       "opportunities": [
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
           "family": "microraptor",
           "direction": "opportunity",
           "band": "meaningful",
           "kind": "risky-quarry",
-          "headline": "Microraptor is legal quarry, but not a comfortable fight",
-          "summary": "Microraptor is within the legal hunt ceiling. Kelenken is 30% faster on land; a clean escape is unlikely once spotted. 1 Kelenken vs 10 Microraptor: the Microraptor side wins in about 9 s with 53% of its health left.",
+          "headline": "Microraptor (Gui) is legal quarry, but not a comfortable fight",
+          "summary": "Microraptor (Gui) is within the legal hunt ceiling. Kelenken is 30% faster on land; a clean escape is unlikely once spotted. 1 Kelenken vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 9 s with 53% of its health left.",
           "score": 56,
           "visible": true,
           "intent": {
@@ -13199,10 +13199,10 @@
           "facts": [
             "Its profile permits hunting through Large tier.",
             "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
-            "1 Kelenken vs 10 Microraptor: the Microraptor side wins in about 9 s with 53% of its health left.",
+            "1 Kelenken vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 9 s with 53% of its health left.",
             "9 shared mapped areas make contact plausible.",
-            "One-on-one, a Kelenken bite lands 195 on Microraptor (3 to kill); a Microraptor bite lands 10 back (49 to kill).",
-            "Kelenken's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+            "One-on-one, a Kelenken bite lands 195 on Microraptor (Gui) (3 to kill); a Microraptor (Gui) bite lands 10 back (49 to kill).",
+            "Kelenken's bleed builds faster than Microraptor (Gui) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
           ],
           "fight": {
             "attackers": 1,
@@ -13239,7 +13239,7 @@
                 "seconds": 2
               }
             },
-            "label": "1 Kelenken vs 10 Microraptor: the Microraptor side wins in about 9 s with 53% of its health left.",
+            "label": "1 Kelenken vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 9 s with 53% of its health left.",
             "detail": "1 attacker vs 10 defenders",
             "attackerCombatWeight": 1950,
             "targetCombatWeight": 500,
@@ -13249,17 +13249,17 @@
             "targetDefendersUnlimited": false,
             "legal": {
               "verdict": "attacker-advantage",
-              "label": "4 Kelenken vs 10 Microraptor: the Kelenken side wins in about 5 s with 91% of its health left.",
+              "label": "4 Kelenken vs 10 Microraptor (Gui): the Kelenken side wins in about 5 s with 91% of its health left.",
               "attackers": 4,
               "defenders": 10
             }
           },
           "attackerId": "kelenken",
-          "targetId": "microraptor",
+          "targetId": "microraptor-gui",
           "core": {
             "direction": "opportunity",
             "attackerName": "Kelenken",
-            "targetName": "Microraptor",
+            "targetName": "Microraptor (Gui)",
             "chaseVerdict": "attacker-faster",
             "chaseLabel": "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
             "baseScore": 73,
@@ -13267,7 +13267,251 @@
             "conditional": false,
             "explicit": false,
             "relationKind": null,
-            "summaryLead": "Microraptor is within the legal hunt ceiling."
+            "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Microraptor (Hanqiugi) is legal quarry, but not a comfortable fight",
+          "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Kelenken is 30% faster on land; a clean escape is unlikely once spotted. 1 Kelenken vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 9 s with 53% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 825,
+            "speedMarginPct": 30.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -58.3,
+            "label": "Kelenken is 30% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills"
+            ],
+            "overlap": 0.45,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
+            "1 Kelenken vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 9 s with 53% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Kelenken bite lands 195 on Microraptor (Hanqiugi) (3 to kill); a Microraptor (Hanqiugi) bite lands 10 back (49 to kill).",
+            "Kelenken's bleed builds faster than Microraptor (Hanqiugi) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 195,
+              "defenderHit": 10,
+              "attackerBurst": 273,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 3,
+              "defenderHitsToKill": 49,
+              "attackerDps": 209.3,
+              "defenderDps": 6.8,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 73,
+              "attackerBleed": 0.195,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 9,
+              "attackersLeft": 0,
+              "defendersLeft": 6,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.53,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "1 Kelenken vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 9 s with 53% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 1950,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Kelenken vs 10 Microraptor (Hanqiugi): the Kelenken side wins in about 5 s with 91% of its health left.",
+              "attackers": 4,
+              "defenders": 10
+            }
+          },
+          "attackerId": "kelenken",
+          "targetId": "microraptor-hanqiugi",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Kelenken",
+            "targetName": "Microraptor (Hanqiugi)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 73,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+          },
+          "tags": [
+            "endurance"
+          ],
+          "evidence": [],
+          "confidence": "derived"
+        },
+        {
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
+          "family": "microraptor",
+          "direction": "opportunity",
+          "band": "meaningful",
+          "kind": "risky-quarry",
+          "headline": "Microraptor (Zhaoianus) is legal quarry, but not a comfortable fight",
+          "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Kelenken is 30% faster on land; a clean escape is unlikely once spotted. 1 Kelenken vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 9 s with 53% of its health left.",
+          "score": 56,
+          "visible": true,
+          "intent": {
+            "allowed": true,
+            "explicit": false,
+            "reason": "Its profile permits hunting through Large tier."
+          },
+          "chase": {
+            "mode": "land",
+            "verdict": "attacker-faster",
+            "attackerSpeed": 1075,
+            "targetSpeed": 825,
+            "speedMarginPct": 30.3,
+            "attackerDurationSeconds": 166.667,
+            "targetDurationSeconds": 400,
+            "durationMarginPct": -58.3,
+            "label": "Kelenken is 30% faster on land; a clean escape is unlikely once spotted."
+          },
+          "encounter": {
+            "level": "frequent",
+            "sharedRegions": [
+              "dry-fang-canyon",
+              "tallbrush-coasts",
+              "steep-run",
+              "big-tree-overlook",
+              "cedrus-forest",
+              "black-fern-hills",
+              "redwoods",
+              "wind-tunnels",
+              "hollow-hills"
+            ],
+            "overlap": 0.45,
+            "label": "9 shared mapped areas make contact plausible."
+          },
+          "facts": [
+            "Its profile permits hunting through Large tier.",
+            "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
+            "1 Kelenken vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 9 s with 53% of its health left.",
+            "9 shared mapped areas make contact plausible.",
+            "One-on-one, a Kelenken bite lands 195 on Microraptor (Zhaoianus) (3 to kill); a Microraptor (Zhaoianus) bite lands 10 back (49 to kill).",
+            "Kelenken's bleed builds faster than Microraptor (Zhaoianus) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage."
+          ],
+          "fight": {
+            "attackers": 1,
+            "defenders": 10,
+            "attackerChoice": 1,
+            "defenderChoice": "max",
+            "bleed": "off",
+            "duel": {
+              "attackerHit": 195,
+              "defenderHit": 10,
+              "attackerBurst": 273,
+              "defenderBurst": 10,
+              "attackerHitsToKill": 3,
+              "defenderHitsToKill": 49,
+              "attackerDps": 209.3,
+              "defenderDps": 6.8,
+              "attackerTimeToKill": 2,
+              "defenderTimeToKill": 73,
+              "attackerBleed": 0.195,
+              "defenderBleed": 0,
+              "attackerBleedOutpacesHeal": true,
+              "defenderBleedOutpacesHeal": false
+            },
+            "verdict": "defender-advantage",
+            "sim": {
+              "winner": "defender",
+              "seconds": 9,
+              "attackersLeft": 0,
+              "defendersLeft": 6,
+              "attackerHpShare": 0,
+              "defenderHpShare": 0.53,
+              "firstDown": {
+                "side": "defender",
+                "seconds": 2
+              }
+            },
+            "label": "1 Kelenken vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 9 s with 53% of its health left.",
+            "detail": "1 attacker vs 10 defenders",
+            "attackerCombatWeight": 1950,
+            "targetCombatWeight": 500,
+            "attackerGroupLimit": 4,
+            "targetDefenderLimit": 10,
+            "attackerGroupUnlimited": false,
+            "targetDefendersUnlimited": false,
+            "legal": {
+              "verdict": "attacker-advantage",
+              "label": "4 Kelenken vs 10 Microraptor (Zhaoianus): the Kelenken side wins in about 5 s with 91% of its health left.",
+              "attackers": 4,
+              "defenders": 10
+            }
+          },
+          "attackerId": "kelenken",
+          "targetId": "microraptor-zhaoianus",
+          "core": {
+            "direction": "opportunity",
+            "attackerName": "Kelenken",
+            "targetName": "Microraptor (Zhaoianus)",
+            "chaseVerdict": "attacker-faster",
+            "chaseLabel": "Kelenken is 30% faster on land; a clean escape is unlikely once spotted.",
+            "baseScore": 73,
+            "scoreCap": null,
+            "conditional": false,
+            "explicit": false,
+            "relationKind": null,
+            "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
           },
           "tags": [
             "endurance"
@@ -14372,9 +14616,67 @@
         "engagementLimit": 3,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -15661,8 +15963,48 @@
         "direct": 2
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": 3,
+        "kind": "priority",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.95,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 18
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 10
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": 3,
+        "kind": "priority",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 1.95,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 18
+        },
+        "sit": {
+          "hits": 2,
+          "seconds": 10
+        },
+        "direct": 2
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": 3,
         "kind": "priority",

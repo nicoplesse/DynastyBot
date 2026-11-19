@@ -67,17 +67,16 @@ You are an Apex semi-aquatic herbivore (5,500 combat weight) that pairs for life
 ## Matchups (Auszug)
 
 **Gefährlich für dich:**
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
+- **Deinosuchus (Shore / Ocean)** (sehr hoch): Deinosuchus can create a very narrow escape window
 - **Sarcosuchus** (conditional): Sarcosuchus matters only if it gets the right opening
-- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) matters only if it gets the right opening
 - **Tyrannotitan** (sehr hoch): Tyrannotitan can create a very narrow escape window
 - **Allosaurus** (sehr hoch): Allosaurus can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
+- **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 
 **Beute & Chancen:**
-- **Deinosuchus (Shore)** (spürbar): Deinosuchus (Shore) is legal quarry, but not a comfortable fight
+- **Deinosuchus (Shore / Ocean)** (spürbar): Deinosuchus is legal quarry, but not a comfortable fight
 - **Sarcosuchus** (spürbar): Sarcosuchus is legal quarry, but not a comfortable fight
-- **Deinosuchus (Ocean)** (conditional): Deinosuchus (Ocean) is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T16:22:25.251Z",
+  "generatedAt": "2026-11-19T16:32:54.699Z",
   "mode": "solo",
   "note": "Real-animal \"plays like\" analogs per playable. archetypes/animals/moods/habitats list the playables for each value (primary analogs first); lookup maps every normalized English/German synonym to archetype, animal, mood and habitat ids. GET /api/analogs/search?q=<words> ranks playables for free text such as \"ochse\" or \"großkatze dschungel\".",
   "vocabulary": {
@@ -1677,6 +1677,22 @@
           "headline": "A cunning, skittish fox family that turns dangerous in a group, with a raccoon's sneakiness."
         },
         {
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
+          "animal": "Eastern gray squirrel",
+          "role": "secondary",
+          "share": 40,
+          "headline": "A drongo that picked a giant, on a squirrel's legs: you ride an Apex carnivore through the forests, copy its calls and race up the nearest trunk when it gets dangerous."
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "animal": "Black rat",
+          "role": "secondary",
+          "share": 40,
+          "headline": "A drongo that picked a giant, with a rat's grit: you ride an Apex carnivore along the dry rock and the salt coast, copy its calls and live off its scraps."
+        },
+        {
           "id": "compsognathus",
           "name": "Compsognathus",
           "animal": "Brown rat",
@@ -1723,12 +1739,12 @@
           "headline": "Calm and sociable in the dry season, furious as a rutting moose in the rain: it rears up like a boxing kangaroo, beats its chest and stomps small predators."
         },
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
           "animal": "Sugar glider",
           "role": "secondary",
           "share": 40,
-          "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous."
+          "headline": "A drongo that picked a giant, on a glider's wings: you ride an Apex carnivore, copy its calls and sail off to the next tree, cliff or island when it gets dangerous."
         },
         {
           "id": "psittacosaurus",
@@ -2309,12 +2325,28 @@
           "headline": "An oxpecker riding the sauropods, living in a noisy parakeet colony that copies every sound."
         },
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
           "animal": "Fork-tailed drongo",
           "role": "primary",
           "share": 60,
-          "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous."
+          "headline": "A drongo that picked a giant, on a squirrel's legs: you ride an Apex carnivore through the forests, copy its calls and race up the nearest trunk when it gets dangerous."
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "animal": "Fork-tailed drongo",
+          "role": "primary",
+          "share": 60,
+          "headline": "A drongo that picked a giant, with a rat's grit: you ride an Apex carnivore along the dry rock and the salt coast, copy its calls and live off its scraps."
+        },
+        {
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
+          "animal": "Fork-tailed drongo",
+          "role": "primary",
+          "share": 60,
+          "headline": "A drongo that picked a giant, on a glider's wings: you ride an Apex carnivore, copy its calls and sail off to the next tree, cliff or island when it gets dangerous."
         },
         {
           "id": "thalassodromeus",
@@ -3427,10 +3459,50 @@
       "archetype": "songbird",
       "dinos": [
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
           "role": "primary",
           "share": 60
+        },
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "role": "primary",
+          "share": 60
+        },
+        {
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
+          "role": "primary",
+          "share": 60
+        }
+      ]
+    },
+    "eastern-gray-squirrel": {
+      "animal": "Eastern gray squirrel",
+      "de": "Grauhörnchen",
+      "scientific": "Sciurus carolinensis",
+      "archetype": "small-mammal",
+      "dinos": [
+        {
+          "id": "microraptor-gui",
+          "name": "Microraptor (Gui)",
+          "role": "secondary",
+          "share": 40
+        }
+      ]
+    },
+    "black-rat": {
+      "animal": "Black rat",
+      "de": "Hausratte",
+      "scientific": "Rattus rattus",
+      "archetype": "small-mammal",
+      "dinos": [
+        {
+          "id": "microraptor-hanqiugi",
+          "name": "Microraptor (Hanqiugi)",
+          "role": "secondary",
+          "share": 40
         }
       ]
     },
@@ -3441,8 +3513,8 @@
       "archetype": "marsupial",
       "dinos": [
         {
-          "id": "microraptor",
-          "name": "Microraptor",
+          "id": "microraptor-zhaoianus",
+          "name": "Microraptor (Zhaoianus)",
           "role": "secondary",
           "share": 40
         }
@@ -4042,7 +4114,9 @@
         "leedsichthys",
         "megalania-arid",
         "megalania-temperate",
-        "microraptor",
+        "microraptor-gui",
+        "microraptor-hanqiugi",
+        "microraptor-zhaoianus",
         "pachycephalosaurus",
         "parasaurolophus",
         "sarcosuchus",
@@ -4252,7 +4326,9 @@
       "de": "Kletterer",
       "dinoIds": [
         "megalania-temperate",
-        "microraptor"
+        "microraptor-gui",
+        "microraptor-hanqiugi",
+        "microraptor-zhaoianus"
       ]
     },
     "chaser": {
@@ -4281,7 +4357,9 @@
         "megalania-arid",
         "megalania-temperate",
         "metriacanthosaurus",
-        "microraptor",
+        "microraptor-gui",
+        "microraptor-hanqiugi",
+        "microraptor-zhaoianus",
         "quetzalcoatlus",
         "rhamphorhynchus",
         "thalassodromeus"
@@ -4337,7 +4415,9 @@
         "lambeosaurus",
         "leedsichthys",
         "maip",
-        "microraptor",
+        "microraptor-gui",
+        "microraptor-hanqiugi",
+        "microraptor-zhaoianus",
         "pachyrhinosaurus",
         "parasaurolophus",
         "pycnonemosaurus",
@@ -4510,7 +4590,8 @@
         "maip",
         "megalania-temperate",
         "metriacanthosaurus",
-        "microraptor",
+        "microraptor-gui",
+        "microraptor-zhaoianus",
         "pachyrhinosaurus",
         "parasaurolophus",
         "psittacosaurus",
@@ -4581,6 +4662,7 @@
         "giganotosaurus",
         "hatzegopteryx",
         "megalania-arid",
+        "microraptor-hanqiugi",
         "pycnonemosaurus",
         "quetzalcoatlus",
         "styracosaurus",
@@ -4609,6 +4691,7 @@
         "latenivenatrix",
         "lurdusaurus-freshwater",
         "megalania-temperate",
+        "microraptor-zhaoianus",
         "parasaurolophus",
         "rhamphorhynchus",
         "sarcosuchus",
@@ -4636,6 +4719,7 @@
         "leedsichthys",
         "lurdusaurus-coast",
         "metriacanthosaurus",
+        "microraptor-hanqiugi",
         "sarcosuchus",
         "spinosaurus-saltwater",
         "suchomimus",
@@ -4653,7 +4737,8 @@
         "kelenken",
         "maip",
         "megalania-arid",
-        "microraptor",
+        "microraptor-hanqiugi",
+        "microraptor-zhaoianus",
         "pachycephalosaurus",
         "thalassodromeus"
       ]
@@ -6171,15 +6256,94 @@
       "activity": "Nocturnal",
       "classification": "Terrestrial"
     },
-    "microraptor": {
-      "name": "Microraptor",
+    "microraptor-gui": {
+      "name": "Microraptor (Gui)",
+      "label": "Fork-tailed drongo + Eastern gray squirrel",
+      "labelDe": "Trauerdrongo + Grauhörnchen",
+      "headline": "A drongo that picked a giant, on a squirrel's legs: you ride an Apex carnivore through the forests, copy its calls and race up the nearest trunk when it gets dangerous.",
+      "setting": "The big forests: Redwoods, Wollemi, Twisted and Cedrus Forest",
+      "habitats": [
+        "forest"
+      ],
+      "analogs": [
+        {
+          "id": "fork-tailed-drongo",
+          "animal": "Fork-tailed drongo",
+          "de": "Trauerdrongo",
+          "archetype": "songbird",
+          "share": 60,
+          "role": "primary"
+        },
+        {
+          "id": "eastern-gray-squirrel",
+          "animal": "Eastern gray squirrel",
+          "de": "Grauhörnchen",
+          "archetype": "small-mammal",
+          "share": 40,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "climber",
+        "scavenger",
+        "nomadic"
+      ],
+      "tier": "Tiny",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Terrestrial"
+    },
+    "microraptor-hanqiugi": {
+      "name": "Microraptor (Hanqiugi)",
+      "label": "Fork-tailed drongo + Black rat",
+      "labelDe": "Trauerdrongo + Hausratte",
+      "headline": "A drongo that picked a giant, with a rat's grit: you ride an Apex carnivore along the dry rock and the salt coast, copy its calls and live off its scraps.",
+      "setting": "Dry rock and salt coasts without fresh water",
+      "habitats": [
+        "sea",
+        "arid",
+        "mountain"
+      ],
+      "analogs": [
+        {
+          "id": "fork-tailed-drongo",
+          "animal": "Fork-tailed drongo",
+          "de": "Trauerdrongo",
+          "archetype": "songbird",
+          "share": 60,
+          "role": "primary"
+        },
+        {
+          "id": "black-rat",
+          "animal": "Black rat",
+          "de": "Hausratte",
+          "archetype": "small-mammal",
+          "share": 40,
+          "role": "secondary"
+        }
+      ],
+      "moods": [
+        "solitary",
+        "climber",
+        "scavenger",
+        "nomadic"
+      ],
+      "tier": "Tiny",
+      "diet": "Carnivore",
+      "activity": "Cathemeral",
+      "classification": "Terrestrial"
+    },
+    "microraptor-zhaoianus": {
+      "name": "Microraptor (Zhaoianus)",
       "label": "Fork-tailed drongo + Sugar glider",
       "labelDe": "Trauerdrongo + Kurzkopfgleitbeutler",
-      "headline": "A drongo that has picked a giant: you ride an Apex carnivore, copy its calls, live off its leftovers and glide off into the trees when it gets dangerous.",
-      "setting": "Tree canopy and cliff ledges across most of the island",
+      "headline": "A drongo that picked a giant, on a glider's wings: you ride an Apex carnivore, copy its calls and sail off to the next tree, cliff or island when it gets dangerous.",
+      "setting": "Heights, wind canyons and open water to glide across",
       "habitats": [
+        "mountain",
         "forest",
-        "mountain"
+        "wetland"
       ],
       "analogs": [
         {
@@ -14806,6 +14970,46 @@
       ],
       "animals": [
         "fork-tailed-drongo"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "eastern gray squirrel": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "eastern-gray-squirrel"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "grauhornchen": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "eastern-gray-squirrel"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "black rat": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "black-rat"
+      ],
+      "moods": [],
+      "habitats": []
+    },
+    "hausratte": {
+      "archetypes": [
+        "small-mammal"
+      ],
+      "animals": [
+        "black-rat"
       ],
       "moods": [],
       "habitats": []

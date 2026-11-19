@@ -47,9 +47,12 @@ function poiLines(profile) {
   const markers = profile.map?.markers ?? [];
   if (!markers.length) return ['Keine Karte hinterlegt.'];
   // Group POIs by their exact role set so a POI appears once: "Revier + Jagd + Nisten: …".
+  // Variants with overlapping ranges (Microraptor subspecies) lead with their ring.
+  const rings = { home: 'Heimat (eigenes Schlupfgebiet)', border: 'Grenzland', roam: 'Streifgebiet' };
   const byRoles = new Map();
-  for (const marker of markers) {
-    const key = (marker.roles?.length ? marker.roles : ['sonstiges']).map(role => de('role', role)).join(' + ');
+  for (const marker of [...markers].sort((a, b) => Object.keys(rings).indexOf(a.range) - Object.keys(rings).indexOf(b.range))) {
+    const roles = (marker.roles?.length ? marker.roles : ['sonstiges']).map(role => de('role', role)).join(' + ');
+    const key = marker.range ? `${rings[marker.range]}: ${roles}` : roles;
     if (!byRoles.has(key)) byRoles.set(key, []);
     byRoles.get(key).push(marker);
   }
@@ -65,6 +68,25 @@ function poiLines(profile) {
 
 function matchupLine(m) {
   return `- **${m.name}** (${de('band', m.band)}): ${m.headline}`;
+}
+
+// The first `limit` species of a matchup list; variants of one profile (the three Microraptor
+// subspecies) share one line, so they do not crowd other species out of the excerpt.
+function familyLines(entries, limit) {
+  const rows = [], byFamily = new Map();
+  for (const entry of entries) {
+    const family = entry.family || entry.id;
+    if (byFamily.has(family)) { byFamily.get(family).push(entry); continue; }
+    if (byFamily.size >= limit) continue;
+    byFamily.set(family, [entry]);
+    rows.push(byFamily.get(family));
+  }
+  return rows.map(([first, ...more]) => {
+    if (!more.length) return matchupLine(first);
+    const base = first.name.replace(/\s*\([^)]*\)$/, '');
+    const kinds = [first, ...more].map(entry => entry.name.match(/\(([^)]*)\)$/)?.[1] || entry.name);
+    return matchupLine({ ...first, name: `${base} (${kinds.join(' / ')})`, headline: first.headline.replace(first.name, base) });
+  });
 }
 
 function analogLines(analog) {
@@ -130,8 +152,8 @@ function card(profile, { sectionFiles, forFinder }) {
     ...modeLines(profile),
     '## Karte & POIs', '', ...poiLines(profile), '',
     '## Matchups (Auszug)', '',
-    '**Gefährlich für dich:**', ...(m.threats.slice(0, 6).map(matchupLine)), '',
-    '**Beute & Chancen:**', ...(m.opportunities.slice(0, 6).map(matchupLine)), '',
+    '**Gefährlich für dich:**', ...familyLines(m.threats, 6), '',
+    '**Beute & Chancen:**', ...familyLines(m.opportunities, 6), '',
     ...(m.specialRisks?.length ? ['**Besondere Risiken:**', ...m.specialRisks.map(r => `- ${r.title}: ${r.summary}`), ''] : []),
   ];
   if (!forFinder) {

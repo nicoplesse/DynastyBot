@@ -46,13 +46,33 @@ A profile rule names or prioritises this matchup. Compsognathus is 9% faster on 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 8 pro Haupttreffer vom Angreifer (50 bis zum Kill), 100 zurück (4 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – spürbar (risky-quarry)
-Microraptor is legal quarry, but not a comfortable fight
+### Microraptor (Gui) – spürbar (risky-quarry)
+Microraptor (Gui) is legal quarry, but not a comfortable fight
 
-Microraptor is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 1 s with 99% of its health left.
 - Verfolgung: Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 1 s with 99% of its health left. (Kampfgewicht 400 vs 500)
-- Kampf (beide Seiten legal max): 10 Compsognathus vs 10 Microraptor: the Microraptor side wins in about 14 s with 70% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 1 s with 99% of its health left. (Kampfgewicht 400 vs 500)
+- Kampf (beide Seiten legal max): 10 Compsognathus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 14 s with 70% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (25 bis zum Kill), 50 zurück (8 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Small tier.
+
+### Microraptor (Hanqiugi) – spürbar (risky-quarry)
+Microraptor (Hanqiugi) is legal quarry, but not a comfortable fight
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 1 s with 99% of its health left.
+- Verfolgung: Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 1 s with 99% of its health left. (Kampfgewicht 400 vs 500)
+- Kampf (beide Seiten legal max): 10 Compsognathus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 14 s with 70% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (25 bis zum Kill), 50 zurück (8 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Small tier.
+
+### Microraptor (Zhaoianus) – spürbar (risky-quarry)
+Microraptor (Zhaoianus) is legal quarry, but not a comfortable fight
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Compsognathus is 52% faster on land; a clean escape is unlikely once spotted. 1 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 1 s with 99% of its health left.
+- Verfolgung: Compsognathus is 52% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 1 s with 99% of its health left. (Kampfgewicht 400 vs 500)
+- Kampf (beide Seiten legal max): 10 Compsognathus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 14 s with 70% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 16 pro Haupttreffer vom Angreifer (25 bis zum Kill), 50 zurück (8 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Small tier.
 

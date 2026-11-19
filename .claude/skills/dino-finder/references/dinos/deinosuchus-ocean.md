@@ -69,8 +69,7 @@ You live in two halves. By day you are the elephant seal: you lie for hours with
 
 **Gefährlich für dich:**
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Spinosaurus (Saltwater)** (sehr hoch): Spinosaurus (Saltwater) can create a very narrow escape window
-- **Spinosaurus (Freshwater)** (conditional): Spinosaurus (Freshwater) matters only if it gets the right opening
+- **Spinosaurus (Saltwater / Freshwater)** (sehr hoch): Spinosaurus can create a very narrow escape window
 - **Deinocheirus** (conditional): Deinocheirus matters only if it gets the right opening
 
 **Beute & Chancen:**

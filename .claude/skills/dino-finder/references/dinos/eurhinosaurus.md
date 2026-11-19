@@ -66,9 +66,9 @@ You are a medium, very fast aquatic carnivore (cruise 700, sprint 1,050) in an u
 **Beute & Chancen:**
 - **Leedsichthys** (spürbar): Leedsichthys is legal quarry, but not a comfortable fight
 - **Kaiwhekea** (spürbar): Kaiwhekea is legal quarry, but not a comfortable fight
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
+- **Megalania (Temperate / Arid)** (hoch): Megalania is a realistic hunting opportunity
 - **Austroraptor** (spürbar): Austroraptor is legal quarry, but not a comfortable fight
 - **Suchomimus** (spürbar): Suchomimus is legal quarry, but not a comfortable fight
+- **Concavenator** (spürbar): Concavenator is legal quarry, but not a comfortable fight
 
 Für Detailfragen (Regeln, Jagd, Nisten, volle Profiltexte) ist der Skill `/dino` zuständig.

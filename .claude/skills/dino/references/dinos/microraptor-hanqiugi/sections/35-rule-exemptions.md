@@ -1,0 +1,3 @@
+# Microraptor (Hanqiugi) – Rule Exemptions
+
+Microraptor is exempt from body meshing rules while fleeing from engagements when climbing and moving on surfaces, though should not attempt to utilize meshable terrain intentionally to hide from predators. 7.2 Microraptor bites do not start an engagement unless they are hunting, or aggressing each other. 3.1 Any combination of calls, and aggressive moves, do not start a challenge against other species, and these calls can be ignored. Microraptor are unable to eat the bodies of Metriacanthosaurus without suffering adverse side effects. See 📜・server-guideOPTIONAL - Illnesses & Injuries for more information. 4.4

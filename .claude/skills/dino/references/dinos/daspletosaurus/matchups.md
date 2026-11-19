@@ -86,13 +86,33 @@ A profile rule names or prioritises this matchup. This is a close chase on land:
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 60 pro Haupttreffer vom Angreifer (11 bis zum Kill), 30 zurück (20 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 10 Microraptor (Gui): the Daspletosaurus side wins in about 13 s with 56% of its health left.
 - Verfolgung: Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left. (Kampfgewicht 3500 vs 500)
-- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 10 Microraptor: the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 10 Microraptor (Gui): the Daspletosaurus side wins in about 13 s with 56% of its health left. (Kampfgewicht 3500 vs 500)
+- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 10 Microraptor (Gui): the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 420 pro Haupttreffer vom Angreifer (1 bis zum Kill), 6 zurück (106 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 10 Microraptor (Hanqiugi): the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Verfolgung: Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 10 Microraptor (Hanqiugi): the Daspletosaurus side wins in about 13 s with 56% of its health left. (Kampfgewicht 3500 vs 500)
+- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 10 Microraptor (Hanqiugi): the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 420 pro Haupttreffer vom Angreifer (1 bis zum Kill), 6 zurück (106 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted. 1 Daspletosaurus vs 10 Microraptor (Zhaoianus): the Daspletosaurus side wins in about 13 s with 56% of its health left.
+- Verfolgung: Daspletosaurus is 24% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Daspletosaurus vs 10 Microraptor (Zhaoianus): the Daspletosaurus side wins in about 13 s with 56% of its health left. (Kampfgewicht 3500 vs 500)
+- Kampf (beide Seiten legal max): 1 Daspletosaurus vs 10 Microraptor (Zhaoianus): the Daspletosaurus side wins in about 13 s with 56% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 420 pro Haupttreffer vom Angreifer (1 bis zum Kill), 6 zurück (106 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

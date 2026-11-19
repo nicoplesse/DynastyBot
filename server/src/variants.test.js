@@ -86,3 +86,29 @@ test('Megalania is split into an arid and a temperate playable that treat each o
   assert.ok(arid.matchups.opportunities.some(entry => entry.id === 'megalania-temperate' && entry.intent.explicit), 'arid adults may hunt temperate adults');
   assert.ok(temperate.matchups.opportunities.some(entry => entry.id === 'megalania-arid' && entry.intent.explicit), 'and vice versa');
 });
+
+test('Microraptor splits into three subspecies whose ranges overlap: home, border land and roaming ground', async () => {
+  const processed = fileURLToPath(new URL('../../data/processed/', import.meta.url));
+  const load = id => readFile(join(processed, 'profiles', `${id}.json`), 'utf8').then(JSON.parse);
+  const [gui, hanqiugi, zhaoianus] = await Promise.all(['gui', 'hanqiugi', 'zhaoianus'].map(key => load(`microraptor-${key}`)));
+  const ring = (profile, range) => profile.map.markers.filter(marker => marker.range === range).map(marker => marker.regionId).sort();
+  for (const profile of [gui, hanqiugi, zhaoianus]) {
+    assert.equal(profile.map.markers.length, 20, `${profile.id} keeps every area of the profile map`);
+    assert.ok(profile.map.markers.every(marker => marker.range), `${profile.id}: every area is home, border or roaming ground`);
+    assert.ok(profile.map.markers.some(marker => marker.regionId === 'big-tree-overlook' && marker.roles.includes('courtship')), `${profile.id} courts at Big Tree Overlook`);
+    assert.ok(profile.aliases.includes('Microraptor'), 'other profiles naming "Microraptor" reach every subspecies');
+    assert.equal(profile.variant.siblings.length, 2);
+  }
+  assert.deepEqual(ring(gui, 'home'), ['cedrus-forest', 'east-passage', 'hollow-hills', 'redwoods', 'twisted-forest', 'wollemi-forest']);
+  assert.deepEqual(ring(hanqiugi, 'home'), ['coastal-bluffs', 'coastland-swamp', 'crag-bluffs', 'dry-fang-canyon', 'mudflats', 'palm-islands', 'tallbrush-coasts']);
+  assert.deepEqual(ring(zhaoianus, 'home'), ['big-tree-overlook', 'black-fern-hills', 'cliff-edge-falls', 'stillwater-bog', 'volcano-islands', 'wind-tunnels']);
+  assert.deepEqual(ring(gui, 'border'), ['big-tree-overlook', 'steep-run']);
+  assert.deepEqual(ring(hanqiugi, 'border'), ['east-passage', 'steep-run', 'wind-tunnels']);
+  assert.ok(hanqiugi.map.markers.filter(marker => marker.range !== 'roam').every(marker => marker.water?.type !== 'fresh'), 'no Hanqiugi home or border land has fresh water');
+  const roam = gui.map.markers.find(marker => marker.regionId === 'dry-fang-canyon');
+  assert.deepEqual([roam.range, roam.variant, roam.roles], ['roam', 'hanqiugi', ['hunting']], 'another subspecies’ hatching area is roaming ground');
+  assert.equal(gui.ecosystem.id, 'forest');
+  assert.equal(hanqiugi.ecosystem.id, 'sea');
+  assert.equal(zhaoianus.ecosystem.id, 'mountains');
+  assert.ok(!gui.matchups.opportunities.some(entry => entry.id.startsWith('microraptor-')), 'the subspecies are one species, not prey');
+});

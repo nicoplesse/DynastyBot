@@ -12764,14 +12764,14 @@
         "confidence": "derived"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
-        "headline": "Microraptor is a realistic hunting opportunity",
-        "summary": "Microraptor is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+        "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor (Gui): the Allosaurus side wins in about 14 s with 57% of its health left.",
         "score": 75,
         "visible": true,
         "intent": {
@@ -12810,10 +12810,10 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
-          "1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "1 Allosaurus vs 10 Microraptor (Gui): the Allosaurus side wins in about 14 s with 57% of its health left.",
           "10 shared mapped areas make contact plausible.",
-          "One-on-one, a Allosaurus bite lands 375 on Microraptor (2 to kill); a Microraptor bite lands 5 back (122 to kill).",
-          "Allosaurus's bleed builds faster than Microraptor heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "One-on-one, a Allosaurus bite lands 375 on Microraptor (Gui) (2 to kill); a Microraptor (Gui) bite lands 5 back (122 to kill).",
+          "Allosaurus's bleed builds faster than Microraptor (Gui) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
           "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "fight": {
@@ -12851,7 +12851,7 @@
               "seconds": 1.5
             }
           },
-          "label": "1 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "label": "1 Allosaurus vs 10 Microraptor (Gui): the Allosaurus side wins in about 14 s with 57% of its health left.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 3750,
           "targetCombatWeight": 500,
@@ -12861,17 +12861,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "3 Allosaurus vs 10 Microraptor: the Allosaurus side wins in about 5 s with 95% of its health left.",
+            "label": "3 Allosaurus vs 10 Microraptor (Gui): the Allosaurus side wins in about 5 s with 95% of its health left.",
             "attackers": 3,
             "defenders": 10
           }
         },
         "attackerId": "allosaurus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Allosaurus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 57,
@@ -12879,7 +12879,255 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor (Hanqiugi): the Allosaurus side wins in about 14 s with 57% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -77.3,
+          "label": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Allosaurus vs 10 Microraptor (Hanqiugi): the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 375 on Microraptor (Hanqiugi) (2 to kill); a Microraptor (Hanqiugi) bite lands 5 back (122 to kill).",
+          "Allosaurus's bleed builds faster than Microraptor (Hanqiugi) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 375,
+            "defenderHit": 5,
+            "attackerBurst": 525,
+            "defenderBurst": 5,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 122,
+            "attackerDps": 287.5,
+            "defenderDps": 3.6,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 183,
+            "attackerBleed": 0.848,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.57,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Allosaurus vs 10 Microraptor (Hanqiugi): the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 10 Microraptor (Hanqiugi): the Allosaurus side wins in about 5 s with 95% of its health left.",
+            "attackers": 3,
+            "defenders": 10
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Allosaurus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Allosaurus is 26% faster on land; a clean escape is unlikely once spotted. 1 Allosaurus vs 10 Microraptor (Zhaoianus): the Allosaurus side wins in about 14 s with 57% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 91,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -77.3,
+          "label": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
+          ],
+          "overlap": 0.5,
+          "label": "10 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Allosaurus vs 10 Microraptor (Zhaoianus): the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "10 shared mapped areas make contact plausible.",
+          "One-on-one, a Allosaurus bite lands 375 on Microraptor (Zhaoianus) (2 to kill); a Microraptor (Zhaoianus) bite lands 5 back (122 to kill).",
+          "Allosaurus's bleed builds faster than Microraptor (Zhaoianus) heals it, blocks its healing and ignores armour; that pressure comes on top of the direct damage.",
+          "Allosaurus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 375,
+            "defenderHit": 5,
+            "attackerBurst": 525,
+            "defenderBurst": 5,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 122,
+            "attackerDps": 287.5,
+            "defenderDps": 3.6,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 183,
+            "attackerBleed": 0.848,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": true,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 14,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.57,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.5
+            }
+          },
+          "label": "1 Allosaurus vs 10 Microraptor (Zhaoianus): the Allosaurus side wins in about 14 s with 57% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3750,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 3,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "3 Allosaurus vs 10 Microraptor (Zhaoianus): the Allosaurus side wins in about 5 s with 95% of its health left.",
+            "attackers": 3,
+            "defenders": 10
+          }
+        },
+        "attackerId": "allosaurus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Allosaurus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Allosaurus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [
           "ambush"
@@ -14819,9 +15067,67 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -16682,8 +16988,48 @@
         "direct": 1
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.375,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.375,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 0
+        },
+        "direct": 1
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

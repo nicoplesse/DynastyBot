@@ -15817,7 +15817,7 @@
   "matchups": {
     "schemaVersion": 3,
     "speedKnown": true,
-    "summary": "Played solo against their full legal groups, Struthiomimus has 3 high-priority matchups where fight maths, pursuit and profile intent align. Against 4 listed threats, speed still provides a reliable disengage option.",
+    "summary": "Played solo against their full legal groups, Struthiomimus has 3 high-priority matchups where fight maths, pursuit and profile intent align. Against 6 listed threats, speed still provides a reliable disengage option.",
     "threats": [
       {
         "id": "therizinosaurus",
@@ -15947,14 +15947,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "threat",
         "band": "conditional",
         "kind": "predator",
-        "headline": "Microraptor matters only if it gets the right opening",
-        "summary": "Microraptor is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+        "headline": "Microraptor (Gui) matters only if it gets the right opening",
+        "summary": "Microraptor (Gui) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Gui) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
         "score": 36,
         "visible": true,
         "intent": {
@@ -16003,9 +16003,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "Struthiomimus is 28% faster on land and can normally refuse this fight.",
-          "2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "2 Microraptor (Gui) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
           "20 shared mapped areas make contact plausible.",
-          "One-on-one, a Microraptor bite lands 14 on Struthiomimus (32 to kill); a Struthiomimus kick lands 140 back (3 to kill)."
+          "One-on-one, a Microraptor (Gui) bite lands 14 on Struthiomimus (32 to kill); a Struthiomimus kick lands 140 back (3 to kill)."
         ],
         "fight": {
           "attackers": 2,
@@ -16042,7 +16042,7 @@
               "seconds": 5.75
             }
           },
-          "label": "2 Microraptor vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "label": "2 Microraptor (Gui) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
           "detail": "2 attackers vs 1 defender",
           "attackerCombatWeight": 500,
           "targetCombatWeight": 1400,
@@ -16052,16 +16052,16 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "2 Microraptor vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.",
+            "label": "2 Microraptor (Gui) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.",
             "attackers": 2,
             "defenders": 5
           }
         },
-        "attackerId": "microraptor",
+        "attackerId": "microraptor-gui",
         "targetId": "struthiomimus",
         "core": {
           "direction": "threat",
-          "attackerName": "Microraptor",
+          "attackerName": "Microraptor (Gui)",
           "targetName": "Struthiomimus",
           "chaseVerdict": "target-can-disengage",
           "chaseLabel": "Struthiomimus is 28% faster on land and can normally refuse this fight.",
@@ -16070,19 +16070,305 @@
           "conditional": false,
           "explicit": true,
           "relationKind": null,
-          "summaryLead": "Microraptor is linked by a specific profile rule."
+          "summaryLead": "Microraptor (Gui) is linked by a specific profile rule."
         },
         "tags": [],
         "evidence": [
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
             "section": "Quick View",
             "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
           },
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Microraptor (Hanqiugi) matters only if it gets the right opening",
+        "summary": "Microraptor (Hanqiugi) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Hanqiugi) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+        "score": 36,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 323,
+          "durationMarginPct": 23.8,
+          "label": "Struthiomimus is 28% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "2 Microraptor (Hanqiugi) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Hanqiugi) bite lands 14 on Struthiomimus (32 to kill); a Struthiomimus kick lands 140 back (3 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 14,
+            "defenderHit": 140,
+            "attackerBurst": 14,
+            "defenderBurst": 140,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 3,
+            "attackerDps": 9.5,
+            "defenderDps": 70,
+            "attackerTimeToKill": 47,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 1.4,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.63,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "2 Microraptor (Hanqiugi) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 5,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor (Hanqiugi) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.",
+            "attackers": 2,
+            "defenders": 5
+          }
+        },
+        "attackerId": "microraptor-hanqiugi",
+        "targetId": "struthiomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Hanqiugi)",
+          "targetName": "Struthiomimus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "conditional",
+        "kind": "predator",
+        "headline": "Microraptor (Zhaoianus) matters only if it gets the right opening",
+        "summary": "Microraptor (Zhaoianus) is linked by a specific profile rule. Struthiomimus is 28% faster on land and can normally refuse this fight. 2 Microraptor (Zhaoianus) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+        "score": 36,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "target-can-disengage",
+          "attackerSpeed": 825,
+          "targetSpeed": 1150,
+          "speedMarginPct": -28.3,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 323,
+          "durationMarginPct": 23.8,
+          "label": "Struthiomimus is 28% faster on land and can normally refuse this fight."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "hollow-hills",
+            "wollemi-forest",
+            "east-passage",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "crag-bluffs",
+            "coastland-swamp",
+            "mudflats",
+            "coastal-bluffs",
+            "palm-islands",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 1,
+          "label": "20 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "2 Microraptor (Zhaoianus) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "20 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Zhaoianus) bite lands 14 on Struthiomimus (32 to kill); a Struthiomimus kick lands 140 back (3 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 14,
+            "defenderHit": 140,
+            "attackerBurst": 14,
+            "defenderBurst": 140,
+            "attackerHitsToKill": 32,
+            "defenderHitsToKill": 3,
+            "attackerDps": 9.5,
+            "defenderDps": 70,
+            "attackerTimeToKill": 47,
+            "defenderTimeToKill": 6,
+            "attackerBleed": 0,
+            "defenderBleed": 1.4,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": true
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 12,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.63,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5.75
+            }
+          },
+          "label": "2 Microraptor (Zhaoianus) vs 1 Struthiomimus: the Struthiomimus side wins in about 12 s with 63% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 1400,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 5,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor (Zhaoianus) vs 5 Struthiomimus: the Struthiomimus side wins in about 3 s with 98% of its health left.",
+            "attackers": 2,
+            "defenders": 5
+          }
+        },
+        "attackerId": "microraptor-zhaoianus",
+        "targetId": "struthiomimus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Zhaoianus)",
+          "targetName": "Struthiomimus",
+          "chaseVerdict": "target-can-disengage",
+          "chaseLabel": "Struthiomimus is 28% faster on land and can normally refuse this fight.",
+          "baseScore": 53,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
             "section": "Preferred Prey & Diet",
             "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
           }
@@ -17656,9 +17942,67 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,

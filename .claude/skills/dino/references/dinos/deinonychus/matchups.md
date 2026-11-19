@@ -34,13 +34,33 @@ Kelenken is linked by a specific profile rule. Deinonychus is 2% faster on land 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 122 pro Haupttreffer vom Angreifer (5 bis zum Kill), 21 zurück (25 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – spürbar (predator)
-Microraptor can create a credible fight
+### Microraptor (Gui) – spürbar (predator)
+Microraptor (Gui) can create a credible fight
 
-Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.
+Microraptor (Gui) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Gui) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.
 - Verfolgung: This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left. (Kampfgewicht 500 vs 800)
-- Kampf (beide Seiten legal max): 2 Microraptor vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Gui) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left. (Kampfgewicht 500 vs 800)
+- Kampf (beide Seiten legal max): 2 Microraptor (Gui) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 25 pro Haupttreffer vom Angreifer (22 bis zum Kill), 80 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Hanqiugi) – spürbar (predator)
+Microraptor (Hanqiugi) can create a credible fight
+
+Microraptor (Hanqiugi) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Hanqiugi) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Hanqiugi) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left. (Kampfgewicht 500 vs 800)
+- Kampf (beide Seiten legal max): 2 Microraptor (Hanqiugi) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 25 pro Haupttreffer vom Angreifer (22 bis zum Kill), 80 zurück (5 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Zhaoianus) – spürbar (predator)
+Microraptor (Zhaoianus) can create a credible fight
+
+Microraptor (Zhaoianus) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Zhaoianus) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Zhaoianus) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left. (Kampfgewicht 500 vs 800)
+- Kampf (beide Seiten legal max): 2 Microraptor (Zhaoianus) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 25 pro Haupttreffer vom Angreifer (22 bis zum Kill), 80 zurück (5 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
@@ -86,13 +106,33 @@ Barsboldia is within the legal hunt ceiling. Deinonychus is 29% faster on land; 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 7 pro Haupttreffer vom Angreifer (227 bis zum Kill), 344 zurück (2 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Microraptor – spürbar (risky-quarry)
-Microraptor is legal quarry, but not a comfortable fight
+### Microraptor (Gui) – spürbar (risky-quarry)
+Microraptor (Gui) is legal quarry, but not a comfortable fight
 
-Microraptor is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left.
+Microraptor (Gui) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 4 s with 93% of its health left.
 - Verfolgung: Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left. (Kampfgewicht 800 vs 500)
-- Kampf (beide Seiten legal max): 8 Deinonychus vs 10 Microraptor: the Deinonychus side wins in about 7 s with 87% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 4 s with 93% of its health left. (Kampfgewicht 800 vs 500)
+- Kampf (beide Seiten legal max): 8 Deinonychus vs 10 Microraptor (Gui): the Deinonychus side wins in about 7 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 80 pro Haupttreffer vom Angreifer (5 bis zum Kill), 25 zurück (22 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – spürbar (risky-quarry)
+Microraptor (Hanqiugi) is legal quarry, but not a comfortable fight
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 4 s with 93% of its health left.
+- Verfolgung: Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 4 s with 93% of its health left. (Kampfgewicht 800 vs 500)
+- Kampf (beide Seiten legal max): 8 Deinonychus vs 10 Microraptor (Hanqiugi): the Deinonychus side wins in about 7 s with 87% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 80 pro Haupttreffer vom Angreifer (5 bis zum Kill), 25 zurück (22 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – spürbar (risky-quarry)
+Microraptor (Zhaoianus) is legal quarry, but not a comfortable fight
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 4 s with 93% of its health left.
+- Verfolgung: Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Deinonychus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 4 s with 93% of its health left. (Kampfgewicht 800 vs 500)
+- Kampf (beide Seiten legal max): 8 Deinonychus vs 10 Microraptor (Zhaoianus): the Deinonychus side wins in about 7 s with 87% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 80 pro Haupttreffer vom Angreifer (5 bis zum Kill), 25 zurück (22 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

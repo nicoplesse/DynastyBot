@@ -76,13 +76,33 @@ Megalania (Arid) is within the legal hunt ceiling. The speed gap is small (1100 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 44 pro Haupttreffer vom Angreifer (12 bis zum Kill), 43 zurück (13 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Microraptor – spürbar (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – spürbar (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.
+Microraptor (Gui) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.
 - Verfolgung: Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
-- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 4 s with 96% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 240 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (66 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – spürbar (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.
+- Verfolgung: Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 240 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (66 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – spürbar (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.
+- Verfolgung: Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 4 s with 96% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 240 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (66 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

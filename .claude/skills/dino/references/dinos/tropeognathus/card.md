@@ -73,8 +73,7 @@ You are the cliff fisher. Your home is one ledge on the sea cliffs, and you spen
 - **Rhamphorhynchus** (sehr hoch): Rhamphorhynchus is a realistic hunting opportunity
 - **Hatzegopteryx** (spürbar): Hatzegopteryx is legal quarry, but not a comfortable fight
 - **Quetzalcoatlus** (spürbar): Quetzalcoatlus is legal quarry, but not a comfortable fight
-- **Lurdusaurus (Freshwater)** (conditional): Lurdusaurus (Freshwater) is legal quarry, but not a comfortable fight
-- **Lurdusaurus (Coast)** (conditional): Lurdusaurus (Coast) is legal quarry, but not a comfortable fight
+- **Lurdusaurus (Freshwater / Coast)** (conditional): Lurdusaurus is legal quarry, but not a comfortable fight
 - **Thalassodromeus** (conditional): Thalassodromeus is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.

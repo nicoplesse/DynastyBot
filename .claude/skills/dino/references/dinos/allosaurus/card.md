@@ -86,8 +86,8 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 - **Apatosaurus** (spürbar): Apatosaurus is legal quarry, but not a comfortable fight
 - **Amargasaurus** (spürbar): Amargasaurus is legal quarry, but not a comfortable fight
 - **Kentrosaurus** (spürbar): Kentrosaurus is legal quarry, but not a comfortable fight
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
+- **Megalania (Arid / Temperate)** (hoch): Megalania is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Preferred Prey Before hunting, Allosaurus must challenge ungrouped Allosaurus in line of sight or that are knowingly within the POI, whether solitary or grouped.

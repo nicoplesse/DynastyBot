@@ -76,7 +76,7 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 **Gefährlich für dich:**
 - **Kelenken** (sehr hoch): Kelenken can create a very narrow escape window
 - **Tenontosaurus** (hoch): Tenontosaurus can create a real pursuit problem
-- **Microraptor** (spürbar): Microraptor can create a credible fight
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor can create a credible fight
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Thalassodromeus** (hoch): Thalassodromeus can create a real pursuit problem

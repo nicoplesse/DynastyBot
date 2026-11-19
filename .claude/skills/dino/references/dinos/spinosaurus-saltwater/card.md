@@ -84,12 +84,12 @@ You are the polar bear among the Spinosaurus. You have one home sea area, ideall
 - **Utahraptor** (hoch): Utahraptor can create a real pursuit problem
 
 **Beute & Chancen:**
-- **Deinosuchus (Ocean)** (sehr hoch): Deinosuchus (Ocean) is a realistic hunting opportunity
-- **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) is a realistic hunting opportunity
+- **Deinosuchus (Ocean / Shore)** (sehr hoch): Deinosuchus is a realistic hunting opportunity
 - **Leedsichthys** (sehr hoch): Leedsichthys is a realistic hunting opportunity
 - **Tylosaurus** (spürbar): Tylosaurus can usually refuse the chase
 - **Sarcosuchus** (conditional): Sarcosuchus is legal quarry, but not a comfortable fight
 - **Megalania (Temperate)** (sehr hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Austroraptor** (hoch): Austroraptor is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Spinosaurus may defend their partner, offspring, territory as 2 sub/adults in a bonded pair. Spinosaurus hunt alone as 1 sub/adult. Their partner does not assist in hunts.

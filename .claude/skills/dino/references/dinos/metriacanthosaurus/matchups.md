@@ -66,13 +66,33 @@ Deinonychus is inside the legal hunt range. The speed gap is small (1100 vs 1050
 
 ## Chancen (wen du jagen/schlagen kannst)
 
-### Microraptor – spürbar (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – spürbar (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 10 Microraptor: the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+Microraptor (Gui) is within the legal hunt ceiling. Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 10 Microraptor (Gui): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
 - Verfolgung: Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Metriacanthosaurus vs 10 Microraptor: the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call. (Kampfgewicht 3100 vs 500)
-- Kampf (beide Seiten legal max): 1 Metriacanthosaurus vs 10 Microraptor: the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Metriacanthosaurus vs 10 Microraptor (Gui): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call. (Kampfgewicht 3100 vs 500)
+- Kampf (beide Seiten legal max): 1 Metriacanthosaurus vs 10 Microraptor (Gui): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 248 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (78 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Microraptor (Hanqiugi) – spürbar (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 10 Microraptor (Hanqiugi): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+- Verfolgung: Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Metriacanthosaurus vs 10 Microraptor (Hanqiugi): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call. (Kampfgewicht 3100 vs 500)
+- Kampf (beide Seiten legal max): 1 Metriacanthosaurus vs 10 Microraptor (Hanqiugi): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 248 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (78 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Large tier.
+
+### Microraptor (Zhaoianus) – spürbar (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted. 1 Metriacanthosaurus vs 10 Microraptor (Zhaoianus): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
+- Verfolgung: Metriacanthosaurus is 27% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Metriacanthosaurus vs 10 Microraptor (Zhaoianus): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call. (Kampfgewicht 3100 vs 500)
+- Kampf (beide Seiten legal max): 1 Metriacanthosaurus vs 10 Microraptor (Zhaoianus): the Metriacanthosaurus side wins in about 17 s with 20% of its health left, too narrow to call.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 248 pro Haupttreffer vom Angreifer (2 bis zum Kill), 6 zurück (78 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Large tier.
 

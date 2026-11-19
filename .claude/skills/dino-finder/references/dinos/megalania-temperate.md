@@ -85,12 +85,12 @@ You live among the trunks and the water of Twisted Forest, Wollemi Forest and th
 - **Deinosuchus (Shore)** (sehr hoch): Deinosuchus (Shore) can create a very narrow escape window
 - **Sarcosuchus** (sehr hoch): Sarcosuchus can create a very narrow escape window
 - **Tylosaurus** (sehr hoch): Tylosaurus can create a very narrow escape window
-- **Spinosaurus (Freshwater)** (sehr hoch): Spinosaurus (Freshwater) can create a very narrow escape window
+- **Spinosaurus (Freshwater / Saltwater)** (sehr hoch): Spinosaurus can create a very narrow escape window
 - **Eurhinosaurus** (sehr hoch): Eurhinosaurus can create a very narrow escape window
 
 **Beute & Chancen:**
 - **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
 - **Ceratosaurus** (spürbar): Ceratosaurus is a realistic hunting opportunity
 - **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight

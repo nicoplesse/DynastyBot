@@ -13642,14 +13642,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "threat",
         "band": "meaningful",
         "kind": "predator",
-        "headline": "Microraptor can create a credible fight",
-        "summary": "Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+        "headline": "Microraptor (Gui) can create a credible fight",
+        "summary": "Microraptor (Gui) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Gui) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
         "score": 57,
         "visible": true,
         "intent": {
@@ -13690,9 +13690,9 @@
         "facts": [
           "The profile names this playable as prey or a target.",
           "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
-          "2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "2 Microraptor (Gui) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
           "12 shared mapped areas make contact plausible.",
-          "One-on-one, a Microraptor bite lands 25 on Deinonychus (22 to kill); a Deinonychus bite lands 80 back (5 to kill)."
+          "One-on-one, a Microraptor (Gui) bite lands 25 on Deinonychus (22 to kill); a Deinonychus bite lands 80 back (5 to kill)."
         ],
         "fight": {
           "attackers": 2,
@@ -13729,7 +13729,7 @@
               "seconds": 5
             }
           },
-          "label": "2 Microraptor vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "label": "2 Microraptor (Gui) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
           "detail": "2 attackers vs 1 defender",
           "attackerCombatWeight": 500,
           "targetCombatWeight": 800,
@@ -13739,16 +13739,16 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "defender-advantage",
-            "label": "2 Microraptor vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.",
+            "label": "2 Microraptor (Gui) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.",
             "attackers": 2,
             "defenders": 8
           }
         },
-        "attackerId": "microraptor",
+        "attackerId": "microraptor-gui",
         "targetId": "deinonychus",
         "core": {
           "direction": "threat",
-          "attackerName": "Microraptor",
+          "attackerName": "Microraptor (Gui)",
           "targetName": "Deinonychus",
           "chaseVerdict": "close-chase",
           "chaseLabel": "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
@@ -13757,19 +13757,289 @@
           "conditional": false,
           "explicit": true,
           "relationKind": null,
-          "summaryLead": "Microraptor is linked by a specific profile rule."
+          "summaryLead": "Microraptor (Gui) is linked by a specific profile rule."
         },
         "tags": [],
         "evidence": [
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
             "section": "Quick View",
             "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
           },
           {
-            "profileId": "microraptor",
-            "profileName": "Microraptor",
+            "profileId": "microraptor-gui",
+            "profileName": "Microraptor (Gui)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor (Hanqiugi) can create a credible fight",
+        "summary": "Microraptor (Hanqiugi) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Hanqiugi) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1100,
+          "speedMarginPct": -25,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 200,
+          "durationMarginPct": 100,
+          "label": "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
+          "2 Microraptor (Hanqiugi) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Hanqiugi) bite lands 25 on Deinonychus (22 to kill); a Deinonychus bite lands 80 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 25,
+            "defenderHit": 80,
+            "attackerBurst": 25,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 5,
+            "attackerDps": 16.7,
+            "defenderDps": 80,
+            "attackerTimeToKill": 33,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 10,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.55,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5
+            }
+          },
+          "label": "2 Microraptor (Hanqiugi) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor (Hanqiugi) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.",
+            "attackers": 2,
+            "defenders": 8
+          }
+        },
+        "attackerId": "microraptor-hanqiugi",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Hanqiugi)",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-hanqiugi",
+            "profileName": "Microraptor (Hanqiugi)",
+            "section": "Preferred Prey & Diet",
+            "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
+          }
+        ],
+        "confidence": "profile-specific"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "threat",
+        "band": "meaningful",
+        "kind": "predator",
+        "headline": "Microraptor (Zhaoianus) can create a credible fight",
+        "summary": "Microraptor (Zhaoianus) is linked by a specific profile rule. This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it. 2 Microraptor (Zhaoianus) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+        "score": 57,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": true,
+          "reason": "The profile names this playable as prey or a target."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "close-chase",
+          "attackerSpeed": 825,
+          "targetSpeed": 1100,
+          "speedMarginPct": -25,
+          "attackerDurationSeconds": 400,
+          "targetDurationSeconds": 200,
+          "durationMarginPct": 100,
+          "label": "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "twisted-forest",
+            "cedrus-forest",
+            "dry-fang-canyon",
+            "steep-run",
+            "tallbrush-coasts",
+            "big-tree-overlook",
+            "wind-tunnels",
+            "cliff-edge-falls",
+            "black-fern-hills",
+            "volcano-islands",
+            "stillwater-bog"
+          ],
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "The profile names this playable as prey or a target.",
+          "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
+          "2 Microraptor (Zhaoianus) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Microraptor (Zhaoianus) bite lands 25 on Deinonychus (22 to kill); a Deinonychus bite lands 80 back (5 to kill)."
+        ],
+        "fight": {
+          "attackers": 2,
+          "defenders": 1,
+          "attackerChoice": "max",
+          "defenderChoice": 1,
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 25,
+            "defenderHit": 80,
+            "attackerBurst": 25,
+            "defenderBurst": 80,
+            "attackerHitsToKill": 22,
+            "defenderHitsToKill": 5,
+            "attackerDps": 16.7,
+            "defenderDps": 80,
+            "attackerTimeToKill": 33,
+            "defenderTimeToKill": 5,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 10,
+            "attackersLeft": 0,
+            "defendersLeft": 1,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.55,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 5
+            }
+          },
+          "label": "2 Microraptor (Zhaoianus) vs 1 Deinonychus: the Deinonychus side wins in about 10 s with 55% of its health left.",
+          "detail": "2 attackers vs 1 defender",
+          "attackerCombatWeight": 500,
+          "targetCombatWeight": 800,
+          "attackerGroupLimit": 2,
+          "targetDefenderLimit": 8,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "defender-advantage",
+            "label": "2 Microraptor (Zhaoianus) vs 8 Deinonychus: the Deinonychus side wins in about 1 s with 99% of its health left.",
+            "attackers": 2,
+            "defenders": 8
+          }
+        },
+        "attackerId": "microraptor-zhaoianus",
+        "targetId": "deinonychus",
+        "core": {
+          "direction": "threat",
+          "attackerName": "Microraptor (Zhaoianus)",
+          "targetName": "Deinonychus",
+          "chaseVerdict": "close-chase",
+          "chaseLabel": "This is a close chase on land: 825 vs 1100 units/s, with stamina likely deciding it.",
+          "baseScore": 74,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": true,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is linked by a specific profile rule."
+        },
+        "tags": [],
+        "evidence": [
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
+            "section": "Quick View",
+            "text": "Microraptor may hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of juvenile and below, and Rhamphorhynchus."
+          },
+          {
+            "profileId": "microraptor-zhaoianus",
+            "profileName": "Microraptor (Zhaoianus)",
             "section": "Preferred Prey & Diet",
             "text": "Microraptor can hunt attended or unattended Deinonychus, Latenivenatrix, Psittacosaurus, and Struthiomimus offspring of Juvenile and below."
           }
@@ -14266,14 +14536,14 @@
         "confidence": "derived"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "risky-quarry",
-        "headline": "Microraptor is legal quarry, but not a comfortable fight",
-        "summary": "Microraptor is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left.",
+        "headline": "Microraptor (Gui) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 4 s with 93% of its health left.",
         "score": 48,
         "visible": true,
         "intent": {
@@ -14314,9 +14584,9 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
-          "1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left.",
+          "1 Deinonychus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 4 s with 93% of its health left.",
           "12 shared mapped areas make contact plausible.",
-          "One-on-one, a Deinonychus bite lands 80 on Microraptor (5 to kill); a Microraptor bite lands 25 back (22 to kill)."
+          "One-on-one, a Deinonychus bite lands 80 on Microraptor (Gui) (5 to kill); a Microraptor (Gui) bite lands 25 back (22 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -14353,7 +14623,7 @@
               "seconds": 3.5
             }
           },
-          "label": "1 Deinonychus vs 10 Microraptor: the Microraptor side wins in about 4 s with 93% of its health left.",
+          "label": "1 Deinonychus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 4 s with 93% of its health left.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 800,
           "targetCombatWeight": 500,
@@ -14363,17 +14633,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "8 Deinonychus vs 10 Microraptor: the Deinonychus side wins in about 7 s with 87% of its health left.",
+            "label": "8 Deinonychus vs 10 Microraptor (Gui): the Deinonychus side wins in about 7 s with 87% of its health left.",
             "attackers": 8,
             "defenders": 10
           }
         },
         "attackerId": "deinonychus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Deinonychus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 65,
@@ -14381,7 +14651,251 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Microraptor (Hanqiugi) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 4 s with 93% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 825,
+          "speedMarginPct": 33.3,
+          "attackerDurationSeconds": 200,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -50,
+          "label": "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 4 s with 93% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 80 on Microraptor (Hanqiugi) (5 to kill); a Microraptor (Hanqiugi) bite lands 25 back (22 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 80,
+            "defenderHit": 25,
+            "attackerBurst": 80,
+            "defenderBurst": 25,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 22,
+            "attackerDps": 80,
+            "defenderDps": 16.7,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 10,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.93,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.5
+            }
+          },
+          "label": "1 Deinonychus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 4 s with 93% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Deinonychus vs 10 Microraptor (Hanqiugi): the Deinonychus side wins in about 7 s with 87% of its health left.",
+            "attackers": 8,
+            "defenders": 10
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "risky-quarry",
+        "headline": "Microraptor (Zhaoianus) is legal quarry, but not a comfortable fight",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Deinonychus is 33% faster on land; a clean escape is unlikely once spotted. 1 Deinonychus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 4 s with 93% of its health left.",
+        "score": 48,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 825,
+          "speedMarginPct": 33.3,
+          "attackerDurationSeconds": 200,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -50,
+          "label": "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "twisted-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.6,
+          "label": "12 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "1 Deinonychus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 4 s with 93% of its health left.",
+          "12 shared mapped areas make contact plausible.",
+          "One-on-one, a Deinonychus bite lands 80 on Microraptor (Zhaoianus) (5 to kill); a Microraptor (Zhaoianus) bite lands 25 back (22 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 80,
+            "defenderHit": 25,
+            "attackerBurst": 80,
+            "defenderBurst": 25,
+            "attackerHitsToKill": 5,
+            "defenderHitsToKill": 22,
+            "attackerDps": 80,
+            "defenderDps": 16.7,
+            "attackerTimeToKill": 5,
+            "defenderTimeToKill": 33,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "defender-advantage",
+          "sim": {
+            "winner": "defender",
+            "seconds": 4,
+            "attackersLeft": 0,
+            "defendersLeft": 10,
+            "attackerHpShare": 0,
+            "defenderHpShare": 0.93,
+            "firstDown": {
+              "side": "attacker",
+              "seconds": 3.5
+            }
+          },
+          "label": "1 Deinonychus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 4 s with 93% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 800,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 8,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "8 Deinonychus vs 10 Microraptor (Zhaoianus): the Deinonychus side wins in about 7 s with 87% of its health left.",
+            "attackers": 8,
+            "defenders": 10
+          }
+        },
+        "attackerId": "deinonychus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Deinonychus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Deinonychus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 65,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -16421,9 +16935,67 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -18113,8 +18685,48 @@
         "direct": 7
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.72,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 45
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 30
+        },
+        "direct": 9
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 0.72,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 3,
+          "seconds": 45
+        },
+        "sit": {
+          "hits": 4,
+          "seconds": 30
+        },
+        "direct": 9
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

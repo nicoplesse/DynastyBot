@@ -84,10 +84,10 @@ Das Tier oben unter „Spielt sich wie“ gilt in der Gruppe.
 **Beute & Chancen:**
 - **Parasaurolophus** (spürbar): Parasaurolophus is legal quarry, but not a comfortable fight
 - **Lambeosaurus** (spürbar): Lambeosaurus is legal quarry, but not a comfortable fight
-- **Microraptor** (hoch): Microraptor is a realistic hunting opportunity
-- **Megalania (Arid)** (hoch): Megalania (Arid) is a realistic hunting opportunity
-- **Megalania (Temperate)** (hoch): Megalania (Temperate) is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (hoch): Microraptor is a realistic hunting opportunity
+- **Megalania (Arid / Temperate)** (hoch): Megalania is a realistic hunting opportunity
 - **Anodontosaurus** (spürbar): Anodontosaurus is legal quarry, but not a comfortable fight
+- **Barsboldia** (spürbar): Barsboldia is legal quarry, but not a comfortable fight
 
 Alle Matchups mit Tempo- und Kampfvergleich: `matchups.md`. Alle Werte je Wachstumsstufe: `stats.md`.
 

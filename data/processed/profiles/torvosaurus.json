@@ -12836,14 +12836,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
-        "headline": "Microraptor is a realistic hunting opportunity",
-        "summary": "Microraptor is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+        "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 11 s with 81% of its health left.",
         "score": 68,
         "visible": true,
         "intent": {
@@ -12881,9 +12881,9 @@
         "facts": [
           "Its profile permits hunting through Giant tier.",
           "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
-          "1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "1 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 11 s with 81% of its health left.",
           "9 shared mapped areas make contact plausible.",
-          "One-on-one, a Torvosaurus bite lands 585 on Microraptor (1 to kill); a Microraptor bite lands 3 back (205 to kill)."
+          "One-on-one, a Torvosaurus bite lands 585 on Microraptor (Gui) (1 to kill); a Microraptor (Gui) bite lands 3 back (205 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -12920,7 +12920,7 @@
               "seconds": 1.25
             }
           },
-          "label": "1 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "label": "1 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 11 s with 81% of its health left.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 4500,
           "targetCombatWeight": 500,
@@ -12930,17 +12930,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "6 Torvosaurus vs 10 Microraptor: the Torvosaurus side wins in about 2 s with 99% of its health left.",
+            "label": "6 Torvosaurus vs 10 Microraptor (Gui): the Torvosaurus side wins in about 2 s with 99% of its health left.",
             "attackers": 6,
             "defenders": 10
           }
         },
         "attackerId": "torvosaurus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Torvosaurus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 50,
@@ -12948,7 +12948,245 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+        "score": 68,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 950,
+          "targetSpeed": 825,
+          "speedMarginPct": 15.2,
+          "attackerDurationSeconds": 68.966,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -82.8,
+          "label": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
+          ],
+          "overlap": 0.45,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "1 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Torvosaurus bite lands 585 on Microraptor (Hanqiugi) (1 to kill); a Microraptor (Hanqiugi) bite lands 3 back (205 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 585,
+            "defenderHit": 3,
+            "attackerBurst": 585,
+            "defenderBurst": 3,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 205,
+            "attackerDps": 390,
+            "defenderDps": 2.3,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 307,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.81,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 10 Microraptor (Hanqiugi): the Torvosaurus side wins in about 2 s with 99% of its health left.",
+            "attackers": 6,
+            "defenders": 10
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted. 1 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+        "score": 68,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Giant tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 950,
+          "targetSpeed": 825,
+          "speedMarginPct": 15.2,
+          "attackerDurationSeconds": 68.966,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -82.8,
+          "label": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "tallbrush-coasts",
+            "steep-run",
+            "volcano-islands",
+            "big-tree-overlook",
+            "cedrus-forest",
+            "black-fern-hills",
+            "stillwater-bog",
+            "crag-bluffs"
+          ],
+          "overlap": 0.45,
+          "label": "9 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Giant tier.",
+          "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "1 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "9 shared mapped areas make contact plausible.",
+          "One-on-one, a Torvosaurus bite lands 585 on Microraptor (Zhaoianus) (1 to kill); a Microraptor (Zhaoianus) bite lands 3 back (205 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 585,
+            "defenderHit": 3,
+            "attackerBurst": 585,
+            "defenderBurst": 3,
+            "attackerHitsToKill": 1,
+            "defenderHitsToKill": 205,
+            "attackerDps": 390,
+            "defenderDps": 2.3,
+            "attackerTimeToKill": 1,
+            "defenderTimeToKill": 307,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 11,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.81,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.25
+            }
+          },
+          "label": "1 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 11 s with 81% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 4500,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 6,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "6 Torvosaurus vs 10 Microraptor (Zhaoianus): the Torvosaurus side wins in about 2 s with 99% of its health left.",
+            "attackers": 6,
+            "defenders": 10
+          }
+        },
+        "attackerId": "torvosaurus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Torvosaurus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Torvosaurus is 15% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -14738,9 +14976,67 @@
         "engagementLimit": 4,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,

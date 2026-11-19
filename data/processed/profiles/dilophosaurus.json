@@ -9617,14 +9617,14 @@
         "confidence": "derived"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "meaningful",
         "kind": "quarry",
-        "headline": "Microraptor is a realistic hunting opportunity",
-        "summary": "Microraptor is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+        "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
         "score": 58,
         "visible": true,
         "intent": {
@@ -9660,9 +9660,9 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
-          "1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "1 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
           "7 shared mapped areas make contact plausible.",
-          "One-on-one, a Dilophosaurus bite lands 240 on Microraptor (2 to kill); a Microraptor bite lands 8 back (66 to kill)."
+          "One-on-one, a Dilophosaurus bite lands 240 on Microraptor (Gui) (2 to kill); a Microraptor (Gui) bite lands 8 back (66 to kill)."
         ],
         "fight": {
           "attackers": 1,
@@ -9699,7 +9699,7 @@
               "seconds": 1.75
             }
           },
-          "label": "1 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "label": "1 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 2400,
           "targetCombatWeight": 500,
@@ -9709,17 +9709,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "5 Dilophosaurus vs 10 Microraptor: the Dilophosaurus side wins in about 4 s with 96% of its health left.",
+            "label": "5 Dilophosaurus vs 10 Microraptor (Gui): the Dilophosaurus side wins in about 4 s with 96% of its health left.",
             "attackers": 5,
             "defenders": 10
           }
         },
         "attackerId": "dilophosaurus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Dilophosaurus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 50,
@@ -9727,7 +9727,241 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+        "score": 58,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 825,
+          "speedMarginPct": 33.3,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -58.3,
+          "label": "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.35,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "1 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Dilophosaurus bite lands 240 on Microraptor (Hanqiugi) (2 to kill); a Microraptor (Hanqiugi) bite lands 8 back (66 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 240,
+            "defenderHit": 8,
+            "attackerBurst": 240,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 66,
+            "attackerDps": 240,
+            "defenderDps": 5.6,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 99,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 17,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.07,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Dilophosaurus vs 10 Microraptor (Hanqiugi): the Dilophosaurus side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "dilophosaurus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Dilophosaurus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "meaningful",
+        "kind": "quarry",
+        "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted. 1 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+        "score": 58,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1100,
+          "targetSpeed": 825,
+          "speedMarginPct": 33.3,
+          "attackerDurationSeconds": 166.667,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -58.3,
+          "label": "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "dry-fang-canyon",
+            "steep-run",
+            "cedrus-forest",
+            "black-fern-hills",
+            "cliff-edge-falls",
+            "redwoods",
+            "wind-tunnels"
+          ],
+          "overlap": 0.35,
+          "label": "7 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "1 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "7 shared mapped areas make contact plausible.",
+          "One-on-one, a Dilophosaurus bite lands 240 on Microraptor (Zhaoianus) (2 to kill); a Microraptor (Zhaoianus) bite lands 8 back (66 to kill)."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 240,
+            "defenderHit": 8,
+            "attackerBurst": 240,
+            "defenderBurst": 8,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 66,
+            "attackerDps": 240,
+            "defenderDps": 5.6,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 99,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "close",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 17,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.07,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 17 s with 7% of its health left, too narrow to call.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 2400,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 5,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "5 Dilophosaurus vs 10 Microraptor (Zhaoianus): the Dilophosaurus side wins in about 4 s with 96% of its health left.",
+            "attackers": 5,
+            "defenders": 10
+          }
+        },
+        "attackerId": "dilophosaurus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Dilophosaurus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Dilophosaurus is 33% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 50,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [],
         "evidence": [],
@@ -11948,9 +12182,67 @@
         "engagementLimit": 1,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,
@@ -13637,8 +13929,48 @@
         "direct": 4
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.6,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 23
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 28
+        },
+        "direct": 5
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "tier": "Tiny",
+        "rank": null,
+        "kind": "legal",
+        "young": false,
+        "hp": 400,
+        "bleedPerHit": 3.6,
+        "healRate": 0.032,
+        "trot": {
+          "hits": 1,
+          "seconds": 23
+        },
+        "sit": {
+          "hits": 1,
+          "seconds": 28
+        },
+        "direct": 5
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "tier": "Tiny",
         "rank": null,
         "kind": "legal",

@@ -14,9 +14,10 @@ Open ocean, reefs, beaches, sea stacks and the coastal strip where the sea shape
 6. Eurhinosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 3000
 7. Austroraptor – Stufe 3, Medium, Fleisch, Kampfgewicht 2100
 8. Tropeognathus – Stufe 4, Small, Fleisch, Kampfgewicht 2000
-9. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 6500
-10. Lurdusaurus (Coast) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
-11. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
+9. Microraptor (Hanqiugi) – Stufe 4, Tiny, Fleisch, Kampfgewicht 500
+10. Leedsichthys – Stufe 5, Apex, Fleisch, Kampfgewicht 6500
+11. Lurdusaurus (Coast) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
+12. Camptosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1050
 
 Besucher: Deinosuchus (Shore), Suchomimus, Hatzegopteryx, Concavenator, Deinocheirus
 
@@ -35,7 +36,7 @@ Rivers, lakes, bogs, mudflats and riverbanks: life organised around fresh water.
 9. Lurdusaurus (Freshwater) – Stufe 6, Medium, Pflanzen, Kampfgewicht 3200
 10. Halszkaraptor – Stufe 7, Tiny, Pflanzen, Kampfgewicht 400
 
-Besucher: Spinosaurus (Saltwater), Tyrannotitan, Metriacanthosaurus, Eurhinosaurus, Achillobator, Megalania (Temperate), Austroraptor, Latenivenatrix, Rhamphorhynchus, Apatosaurus, Yunnanosaurus, Albertaceratops, Kentrosaurus
+Besucher: Spinosaurus (Saltwater), Tyrannotitan, Metriacanthosaurus, Eurhinosaurus, Achillobator, Megalania (Temperate), Austroraptor, Latenivenatrix, Microraptor (Zhaoianus), Rhamphorhynchus, Apatosaurus, Yunnanosaurus, Albertaceratops, Kentrosaurus
 
 ## Wald (Forest)
 
@@ -48,7 +49,7 @@ Redwoods, jungle, woodland clearings and forested hills: cover, ambush and terri
 5. Megalania (Temperate) – Stufe 3, Medium, Fleisch, Kampfgewicht 2600
 6. Dilophosaurus – Stufe 3, Medium, Fleisch, Kampfgewicht 2400
 7. Latenivenatrix – Stufe 4, Small, Fleisch, Kampfgewicht 1400
-8. Microraptor – Stufe 4, Tiny, Fleisch, Kampfgewicht 500
+8. Microraptor (Gui) – Stufe 4, Tiny, Fleisch, Kampfgewicht 500
 9. Compsognathus – Stufe 4, Tiny, Fleisch, Kampfgewicht 400
 10. Eotriceratops – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
 11. Therizinosaurus – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
@@ -59,7 +60,7 @@ Redwoods, jungle, woodland clearings and forested hills: cover, ambush and terri
 16. Kentrosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2700
 17. Tenontosaurus – Stufe 6, Medium, Pflanzen, Kampfgewicht 2400
 
-Besucher: Spinosaurus (Freshwater), Giganotosaurus, Sarcosuchus, Maip, Pycnonemosaurus, Daspletosaurus, Yutyrannus, Metriacanthosaurus, Utahraptor, Deinonychus, Parasaurolophus, Lambeosaurus, Lurdusaurus (Freshwater), Styracosaurus, Camptosaurus, Dryosaurus
+Besucher: Spinosaurus (Freshwater), Giganotosaurus, Sarcosuchus, Maip, Pycnonemosaurus, Daspletosaurus, Yutyrannus, Metriacanthosaurus, Utahraptor, Deinonychus, Microraptor (Zhaoianus), Parasaurolophus, Lambeosaurus, Lurdusaurus (Freshwater), Styracosaurus, Camptosaurus, Dryosaurus
 
 ## Ebenen & Savanne (Plains & Savanna)
 
@@ -82,7 +83,7 @@ Open country where the big herds migrate and the hunters follow them.
 15. Struthiomimus – Stufe 7, Small, Pflanzen, Kampfgewicht 1400
 16. Psittacosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 900
 
-Besucher: Giganotosaurus, Pycnonemosaurus, Compsognathus, Eotriceratops, Iguanodon
+Besucher: Giganotosaurus, Pycnonemosaurus, Microraptor (Gui), Compsognathus, Eotriceratops, Iguanodon
 
 ## Wüste & Canyons (Desert & Canyons)
 
@@ -96,7 +97,7 @@ Dry canyons, scrub, oases and salt rocks: heat, scarce water and long distances.
 6. Barsboldia – Stufe 5, Apex, Pflanzen, Kampfgewicht 5500
 7. Yunnanosaurus – Stufe 6, Large, Pflanzen, Kampfgewicht 4500
 
-Besucher: Torvosaurus, Hatzegopteryx, Dilophosaurus, Alioramus, Styracosaurus
+Besucher: Torvosaurus, Hatzegopteryx, Dilophosaurus, Alioramus, Microraptor (Hanqiugi), Styracosaurus
 
 ## Gebirge & Felsen (Mountains & Cliffs)
 
@@ -105,7 +106,8 @@ Cliffs, ledges, caves and rocky outcrops in the high hills.
 1. Maip – Stufe 2, Large, Fleisch, Kampfgewicht 4000
 2. Daspletosaurus – Stufe 2, Large, Fleisch, Kampfgewicht 3500
 3. Yutyrannus – Stufe 2, Large, Fleisch, Kampfgewicht 3250
-4. Pachycephalosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 2000
-5. Dryosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1000
+4. Microraptor (Zhaoianus) – Stufe 4, Tiny, Fleisch, Kampfgewicht 500
+5. Pachycephalosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 2000
+6. Dryosaurus – Stufe 7, Small, Pflanzen, Kampfgewicht 1000
 
-Besucher: Megalania (Arid), Kelenken, Thalassodromeus, Microraptor
+Besucher: Megalania (Arid), Kelenken, Thalassodromeus, Microraptor (Hanqiugi)

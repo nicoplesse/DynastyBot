@@ -50,7 +50,7 @@ You are a small, extremely fast herbivore: sprint 1,150 held for 323 s, one of t
 
 **Gefährlich für dich:**
 - **Therizinosaurus** (hoch): Therizinosaurus can create a real pursuit problem
-- **Microraptor** (conditional): Microraptor matters only if it gets the right opening
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (conditional): Microraptor matters only if it gets the right opening
 - **Compsognathus** (sehr hoch): Compsognathus can create a very narrow escape window
 - **Alioramus** (sehr hoch): Alioramus can create a very narrow escape window
 - **Kelenken** (conditional): Kelenken matters only if it gets the right opening

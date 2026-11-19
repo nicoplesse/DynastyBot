@@ -72,8 +72,8 @@ You are an Apex carnivore (6,000 combat weight) that lives alone or with a partn
 - **Giganotosaurus** (conditional): Giganotosaurus is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (sehr hoch): Anodontosaurus is a realistic hunting opportunity
 - **Amargasaurus** (hoch): Amargasaurus is a realistic hunting opportunity
-- **Spinosaurus (Freshwater)** (hoch): Spinosaurus (Freshwater) is a realistic hunting opportunity
-- **Spinosaurus (Saltwater)** (hoch): Spinosaurus (Saltwater) is a realistic hunting opportunity
+- **Spinosaurus (Freshwater / Saltwater)** (hoch): Spinosaurus is a realistic hunting opportunity
+- **Apatosaurus** (conditional): Apatosaurus is legal quarry, but not a comfortable fight
 
 **Besondere Risiken:**
 - Mutation-specific risk: Tyrannosaurus adults may cannibalize unrelated offspring of Adolescent and below, and Albinos.

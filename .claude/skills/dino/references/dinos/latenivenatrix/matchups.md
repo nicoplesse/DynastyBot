@@ -24,13 +24,33 @@ Tenontosaurus is linked by a specific profile rule. Latenivenatrix is 2% faster 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 43 pro Haupttreffer vom Angreifer (12 bis zum Kill), 23 zurück (24 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 
-### Microraptor – spürbar (predator)
-Microraptor can create a credible fight
+### Microraptor (Gui) – spürbar (predator)
+Microraptor (Gui) can create a credible fight
 
-Microraptor is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.
+Microraptor (Gui) is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor (Gui) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.
 - Verfolgung: This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.
-- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left. (Kampfgewicht 500 vs 1400)
-- Kampf (beide Seiten legal max): 2 Microraptor vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Gui) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Gui) vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (35 bis zum Kill), 112 zurück (4 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Hanqiugi) – spürbar (predator)
+Microraptor (Hanqiugi) can create a credible fight
+
+Microraptor (Hanqiugi) is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor (Hanqiugi) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Hanqiugi) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Hanqiugi) vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (35 bis zum Kill), 112 zurück (4 bis zum Kill)
+- Profilbezug: The profile names this playable as prey or a target.
+
+### Microraptor (Zhaoianus) – spürbar (predator)
+Microraptor (Zhaoianus) can create a credible fight
+
+Microraptor (Zhaoianus) is linked by a specific profile rule. This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it. 2 Microraptor (Zhaoianus) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left.
+- Verfolgung: This is a close chase on land: 825 vs 1075 units/s, with stamina likely deciding it.
+- Kampf (du solo gegen ihre volle legale Gruppe): 2 Microraptor (Zhaoianus) vs 1 Latenivenatrix: the Latenivenatrix side wins in about 7 s with 79% of its health left. (Kampfgewicht 500 vs 1400)
+- Kampf (beide Seiten legal max): 2 Microraptor (Zhaoianus) vs 6 Latenivenatrix: the Latenivenatrix side wins in about 1 s with 99% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 14 pro Haupttreffer vom Angreifer (35 bis zum Kill), 112 zurück (4 bis zum Kill)
 - Profilbezug: The profile names this playable as prey or a target.
 

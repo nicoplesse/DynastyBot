@@ -2,190 +2,291 @@
   "schemaVersion": 1,
   "source": "curated-areas",
   "mapImage": "images/image-2.png",
-  "note": "Preferred POI areas curated from the profile map and the profile text: every land area is marked green, the open sea (Kelp Vale, Abyssal Depths, Stonebed Shoal) is not. The three subspecies hatch in the 19 areas named in the Profile Specific Unique Feature; courtship is at Pinnacle Hill in the south of Big Tree Overlook.",
+  "note": "Preferred POI areas curated from the profile map and the profile text: every land area is marked green, the open sea (Kelp Vale, Abyssal Depths, Stonebed Shoal) is not. The three subspecies hatch in the 19 areas named in the Profile Specific Unique Feature; courtship is at Pinnacle Hill in the south of Big Tree Overlook. The subspecies only say where an individual hatched, so their ranges overlap: each subspecies playable keeps every area, as home (its own hatching areas), border land (another subspecies hatches there, but the terrain suits its own gift) or roaming ground.",
+  "legend": {
+    "gui": "Gui hatching areas: the big forests (Redwoods, Wollemi, Twisted, Cedrus) plus Hollow Hills and East Passage",
+    "hanqiugi": "Hanqiugi hatching areas: dry rock and the salt and brackish coast, none of them with fresh water",
+    "zhaoianus": "Zhaoianus hatching areas: heights, wind and open water to glide across",
+    "courtship": "Courtship ground at the giant tree in the south of Big Tree Overlook (magenta on the profile map)"
+  },
+  "variants": [
+    {
+      "id": "gui",
+      "name": "Gui",
+      "note": "Born in Redwoods, Hollow Hills, Wollemi Forest, East Passage, Twisted Forest and Cedrus Forest; more stamina when climbing trees high distances."
+    },
+    {
+      "id": "hanqiugi",
+      "name": "Hanqiugi",
+      "note": "Born in Dry Fang Canyon, Tallbrush Coasts, Crag Bluffs, Coastland Swamp, Mudflats, Coastal Bluffs and Palm Islands; able to go for longer without food and water."
+    },
+    {
+      "id": "zhaoianus",
+      "name": "Zhaoianus",
+      "note": "Born in Big Tree Overlook, Wind Tunnels, Cliff Edge Falls, Black Fern Hills, Volcano Islands and Stillwater Bog; able to glide for longer."
+    }
+  ],
+  "others": {
+    "roles": [
+      "hunting"
+    ],
+    "note": "Roaming ground: another subspecies hatches here. Adults may forage, follow a carnivore companion or pass through; a nest here would hatch chicks of that other subspecies."
+  },
   "pois": [
     {
       "regionId": "redwoods",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile): more stamina when climbing trees high distances. Chicks that hatch here are Gui.",
+      "others": {
+        "zhaoianus": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Zhaoianus: Gui hatch here, but the tallest trunks on the island give the longest glides, and the forest borders Cliff Edge Falls."
+        }
+      }
     },
     {
       "regionId": "hollow-hills",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile), although it is open grassy hills, not forest: one of the blurred edges of the Gui range. More stamina when climbing trees high distances. Chicks that hatch here are Gui."
     },
     {
       "regionId": "wollemi-forest",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile): more stamina when climbing trees high distances. Chicks that hatch here are Gui."
     },
     {
       "regionId": "east-passage",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile), although it is a saltwater channel, not forest: one of the blurred edges of the Gui range. More stamina when climbing trees high distances. Chicks that hatch here are Gui.",
+      "others": {
+        "hanqiugi": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Hanqiugi: Gui hatch here, but the salt channel between Coastland Swamp and the Mudflats is coast without fresh water, like the Hanqiugi lands."
+        }
+      }
     },
     {
       "regionId": "twisted-forest",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile): more stamina when climbing trees high distances. Chicks that hatch here are Gui."
     },
     {
       "regionId": "cedrus-forest",
+      "variant": "gui",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Gui hatching area: more stamina when climbing trees high distances."
+      "note": "Gui hatching area (profile): more stamina when climbing trees high distances. Chicks that hatch here are Gui."
     },
     {
       "regionId": "dry-fang-canyon",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi."
     },
     {
       "regionId": "steep-run",
       "roles": [
         "territory",
-        "hunting",
-        "nesting"
+        "hunting"
       ],
-      "note": "Marked on the profile map but not named in the subspecies list; on this older map version it is the unlabelled ground between Dry Fang Canyon, Black Fern Hills and Cedrus Forest."
+      "note": "Marked on the profile map, but not named in the subspecies list: on this older map version it is the unlabelled ground between Dry Fang Canyon, Black Fern Hills and Cedrus Forest, where Hanqiugi, Zhaoianus and Gui land meet. Border land for every subspecies; the profile gives no subspecies for a chick hatched here."
     },
     {
       "regionId": "tallbrush-coasts",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi."
     },
     {
       "regionId": "crag-bluffs",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi.",
+      "others": {
+        "zhaoianus": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Zhaoianus: Hanqiugi hatch here, but the high crags are launch points for long glides, and they border Wind Tunnels and Stillwater Bog."
+        }
+      }
     },
     {
       "regionId": "coastland-swamp",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi."
     },
     {
       "regionId": "mudflats",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi."
     },
     {
       "regionId": "coastal-bluffs",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi.",
+      "others": {
+        "zhaoianus": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Zhaoianus: Hanqiugi hatch here, but the high sea cliffs face the Volcano Islands across the water, a glider's crossing."
+        }
+      }
     },
     {
       "regionId": "palm-islands",
+      "variant": "hanqiugi",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Hanqiugi (Hanqingi) hatching area: lasts longer without food and water."
+      "note": "Hanqiugi hatching area (profile): lasts longer without food and water. Like every Hanqiugi area it has no fresh water, only dry rock or salt and brackish water. Chicks that hatch here are Hanqiugi."
     },
     {
       "regionId": "big-tree-overlook",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting",
         "courtship"
       ],
-      "note": "Zhaoianus hatching area: glides for longer. Courtship grounds (magenta on the map) at Pinnacle Hill, the giant tree in the south that looks over The Heights."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus. Courtship ground for every subspecies at the giant tree above The Heights (Pinnacle Hill, magenta on the map).",
+      "others": {
+        "gui": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Gui: Zhaoianus hatch here, but the giant trees of the overlook suit a tireless climber, and it borders Cedrus Forest and Twisted Forest. Courtship ground for every subspecies."
+        }
+      }
     },
     {
       "regionId": "wind-tunnels",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Zhaoianus hatching area: glides for longer."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus.",
+      "others": {
+        "hanqiugi": {
+          "roles": [
+            "territory",
+            "hunting"
+          ],
+          "note": "Border land for Hanqiugi: Zhaoianus hatch here, but the dry wind canyon has no fresh water, like the Hanqiugi lands, and it borders Crag Bluffs."
+        }
+      }
     },
     {
       "regionId": "cliff-edge-falls",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Zhaoianus hatching area: glides for longer."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus."
     },
     {
       "regionId": "black-fern-hills",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Zhaoianus hatching area: glides for longer."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus."
     },
     {
       "regionId": "volcano-islands",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Zhaoianus hatching area: glides for longer."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus."
     },
     {
       "regionId": "stillwater-bog",
+      "variant": "zhaoianus",
       "roles": [
         "territory",
         "hunting",
         "nesting"
       ],
-      "note": "Zhaoianus hatching area: glides for longer."
+      "note": "Zhaoianus hatching area (profile): glides for longer. Chicks that hatch here are Zhaoianus."
     }
   ],
-  "reviewedAt": "2026-11-17",
-  "review": "Checked against the traced POI outlines with audit:pois: every listed area is highlighted on the profile map (Palm Islands 22 % because the area is mostly water, all others 54-95 %), and every highlighted area is listed."
+  "reviewedAt": "2026-11-19",
+  "review": "Checked against the traced POI outlines with audit:pois: every listed area is highlighted on the profile map (Palm Islands 22 % because the area is mostly water, all others 54-95 %), and every highlighted area is listed. Split into subspecies on 2026-11-19: hatching areas exactly as listed in the profile, border land curated from terrain and water (regions.json) and neighbourhood."
 }

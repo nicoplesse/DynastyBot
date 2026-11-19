@@ -72,7 +72,7 @@ You are an Apex daytime hunter who thrives alone. Bonds are fragile: brothers, a
 - **Argentinosaurus** (conditional): Argentinosaurus is legal quarry, but not a comfortable fight
 - **Tyrannotitan** (conditional): Tyrannotitan is legal quarry, but not a comfortable fight
 - **Anodontosaurus** (hoch): Anodontosaurus is a realistic hunting opportunity
-- **Microraptor** (spürbar): Microraptor is a realistic hunting opportunity
+- **Microraptor (Gui / Hanqiugi / Zhaoianus)** (spürbar): Microraptor is a realistic hunting opportunity
 
 **Besondere Risiken:**
 - Same-species territory risk: Giganotosaurus do not hunt adult Tyrannosaurus, Tyrannotitan, or other Giganotosaurus, but may challenge them and eat from their bodies.

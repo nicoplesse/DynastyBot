@@ -86,13 +86,33 @@ Megalania (Temperate) is within the legal hunt ceiling. Alioramus is 12% faster 
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 40 pro Haupttreffer vom Angreifer (14 bis zum Kill), 43 zurück (13 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 
-### Microraptor – hoch (quarry)
-Microraptor is a realistic hunting opportunity
+### Microraptor (Gui) – hoch (quarry)
+Microraptor (Gui) is a realistic hunting opportunity
 
-Microraptor is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call.
+Microraptor (Gui) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 3% of its health left, too narrow to call.
 - Verfolgung: Alioramus is 39% faster on land; a clean escape is unlikely once spotted.
-- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 10 Microraptor: the Microraptor side wins in about 17 s with 3% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
-- Kampf (beide Seiten legal max): 5 Alioramus vs 10 Microraptor: the Alioramus side wins in about 4 s with 96% of its health left.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 10 Microraptor (Gui): the Microraptor (Gui) side wins in about 17 s with 3% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Alioramus vs 10 Microraptor (Gui): the Alioramus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 216 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (63 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Hanqiugi) – hoch (quarry)
+Microraptor (Hanqiugi) is a realistic hunting opportunity
+
+Microraptor (Hanqiugi) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 3% of its health left, too narrow to call.
+- Verfolgung: Alioramus is 39% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 10 Microraptor (Hanqiugi): the Microraptor (Hanqiugi) side wins in about 17 s with 3% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Alioramus vs 10 Microraptor (Hanqiugi): the Alioramus side wins in about 4 s with 96% of its health left.
+- Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 216 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (63 bis zum Kill)
+- Profilbezug: Its profile permits hunting through Apex tier.
+
+### Microraptor (Zhaoianus) – hoch (quarry)
+Microraptor (Zhaoianus) is a realistic hunting opportunity
+
+Microraptor (Zhaoianus) is within the legal hunt ceiling. Alioramus is 39% faster on land; a clean escape is unlikely once spotted. 1 Alioramus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 3% of its health left, too narrow to call.
+- Verfolgung: Alioramus is 39% faster on land; a clean escape is unlikely once spotted.
+- Kampf (du solo gegen ihre volle legale Gruppe): 1 Alioramus vs 10 Microraptor (Zhaoianus): the Microraptor (Zhaoianus) side wins in about 17 s with 3% of its health left, too narrow to call. (Kampfgewicht 2400 vs 500)
+- Kampf (beide Seiten legal max): 5 Alioramus vs 10 Microraptor (Zhaoianus): the Alioramus side wins in about 4 s with 96% of its health left.
 - Treffer 1 gegen 1 (Schaden × CW-Verhältnis ÷ Armor): 216 pro Haupttreffer vom Angreifer (2 bis zum Kill), 8 zurück (63 bis zum Kill)
 - Profilbezug: Its profile permits hunting through Apex tier.
 

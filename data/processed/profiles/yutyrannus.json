@@ -10627,14 +10627,14 @@
         "confidence": "profile-specific"
       },
       {
-        "id": "microraptor",
-        "name": "Microraptor",
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
         "family": "microraptor",
         "direction": "opportunity",
         "band": "high",
         "kind": "quarry",
-        "headline": "Microraptor is a realistic hunting opportunity",
-        "summary": "Microraptor is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+        "headline": "Microraptor (Gui) is a realistic hunting opportunity",
+        "summary": "Microraptor (Gui) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 16 s with 41% of its health left.",
         "score": 75,
         "visible": true,
         "intent": {
@@ -10667,9 +10667,9 @@
         "facts": [
           "Its profile permits hunting through Apex tier.",
           "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
-          "1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "1 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 16 s with 41% of its health left.",
           "4 shared mapped areas make contact plausible.",
-          "One-on-one, a Yutyrannus bite lands 390 on Microraptor (2 to kill); a Microraptor bite lands 6 back (98 to kill).",
+          "One-on-one, a Yutyrannus bite lands 390 on Microraptor (Gui) (2 to kill); a Microraptor (Gui) bite lands 6 back (98 to kill).",
           "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
         ],
         "fight": {
@@ -10707,7 +10707,7 @@
               "seconds": 1.75
             }
           },
-          "label": "1 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "label": "1 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 16 s with 41% of its health left.",
           "detail": "1 attacker vs 10 defenders",
           "attackerCombatWeight": 3250,
           "targetCombatWeight": 500,
@@ -10717,17 +10717,17 @@
           "targetDefendersUnlimited": false,
           "legal": {
             "verdict": "attacker-advantage",
-            "label": "4 Yutyrannus vs 10 Microraptor: the Yutyrannus side wins in about 4 s with 96% of its health left.",
+            "label": "4 Yutyrannus vs 10 Microraptor (Gui): the Yutyrannus side wins in about 4 s with 96% of its health left.",
             "attackers": 4,
             "defenders": 10
           }
         },
         "attackerId": "yutyrannus",
-        "targetId": "microraptor",
+        "targetId": "microraptor-gui",
         "core": {
           "direction": "opportunity",
           "attackerName": "Yutyrannus",
-          "targetName": "Microraptor",
+          "targetName": "Microraptor (Gui)",
           "chaseVerdict": "attacker-faster",
           "chaseLabel": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
           "baseScore": 57,
@@ -10735,7 +10735,241 @@
           "conditional": false,
           "explicit": false,
           "relationKind": null,
-          "summaryLead": "Microraptor is within the legal hunt ceiling."
+          "summaryLead": "Microraptor (Gui) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Hanqiugi) is a realistic hunting opportunity",
+        "summary": "Microraptor (Hanqiugi) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 100,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -75,
+          "label": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.2,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 390 on Microraptor (Hanqiugi) (2 to kill); a Microraptor (Hanqiugi) bite lands 6 back (98 to kill).",
+          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 390,
+            "defenderHit": 6,
+            "attackerBurst": 390,
+            "defenderBurst": 6,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 98,
+            "attackerDps": 260,
+            "defenderDps": 4.1,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 146,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 16,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.41,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Yutyrannus vs 10 Microraptor (Hanqiugi): the Yutyrannus side wins in about 4 s with 96% of its health left.",
+            "attackers": 4,
+            "defenders": 10
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "microraptor-hanqiugi",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Yutyrannus",
+          "targetName": "Microraptor (Hanqiugi)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Hanqiugi) is within the legal hunt ceiling."
+        },
+        "tags": [
+          "ambush"
+        ],
+        "evidence": [],
+        "confidence": "derived"
+      },
+      {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
+        "family": "microraptor",
+        "direction": "opportunity",
+        "band": "high",
+        "kind": "quarry",
+        "headline": "Microraptor (Zhaoianus) is a realistic hunting opportunity",
+        "summary": "Microraptor (Zhaoianus) is within the legal hunt ceiling. Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted. 1 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+        "score": 75,
+        "visible": true,
+        "intent": {
+          "allowed": true,
+          "explicit": false,
+          "reason": "Its profile permits hunting through Apex tier."
+        },
+        "chase": {
+          "mode": "land",
+          "verdict": "attacker-faster",
+          "attackerSpeed": 1040,
+          "targetSpeed": 825,
+          "speedMarginPct": 26.1,
+          "attackerDurationSeconds": 100,
+          "targetDurationSeconds": 400,
+          "durationMarginPct": -75,
+          "label": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted."
+        },
+        "encounter": {
+          "level": "frequent",
+          "sharedRegions": [
+            "redwoods",
+            "wind-tunnels",
+            "hollow-hills",
+            "wollemi-forest"
+          ],
+          "overlap": 0.2,
+          "label": "4 shared mapped areas make contact plausible."
+        },
+        "facts": [
+          "Its profile permits hunting through Apex tier.",
+          "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "1 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "4 shared mapped areas make contact plausible.",
+          "One-on-one, a Yutyrannus bite lands 390 on Microraptor (Zhaoianus) (2 to kill); a Microraptor (Zhaoianus) bite lands 6 back (98 to kill).",
+          "Yutyrannus has an explicit ambush style, so raw top speed understates the opening danger."
+        ],
+        "fight": {
+          "attackers": 1,
+          "defenders": 10,
+          "attackerChoice": 1,
+          "defenderChoice": "max",
+          "bleed": "off",
+          "duel": {
+            "attackerHit": 390,
+            "defenderHit": 6,
+            "attackerBurst": 390,
+            "defenderBurst": 6,
+            "attackerHitsToKill": 2,
+            "defenderHitsToKill": 98,
+            "attackerDps": 260,
+            "defenderDps": 4.1,
+            "attackerTimeToKill": 2,
+            "defenderTimeToKill": 146,
+            "attackerBleed": 0,
+            "defenderBleed": 0,
+            "attackerBleedOutpacesHeal": false,
+            "defenderBleedOutpacesHeal": false
+          },
+          "verdict": "attacker-advantage",
+          "sim": {
+            "winner": "attacker",
+            "seconds": 16,
+            "attackersLeft": 1,
+            "defendersLeft": 0,
+            "attackerHpShare": 0.41,
+            "defenderHpShare": 0,
+            "firstDown": {
+              "side": "defender",
+              "seconds": 1.75
+            }
+          },
+          "label": "1 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 16 s with 41% of its health left.",
+          "detail": "1 attacker vs 10 defenders",
+          "attackerCombatWeight": 3250,
+          "targetCombatWeight": 500,
+          "attackerGroupLimit": 4,
+          "targetDefenderLimit": 10,
+          "attackerGroupUnlimited": false,
+          "targetDefendersUnlimited": false,
+          "legal": {
+            "verdict": "attacker-advantage",
+            "label": "4 Yutyrannus vs 10 Microraptor (Zhaoianus): the Yutyrannus side wins in about 4 s with 96% of its health left.",
+            "attackers": 4,
+            "defenders": 10
+          }
+        },
+        "attackerId": "yutyrannus",
+        "targetId": "microraptor-zhaoianus",
+        "core": {
+          "direction": "opportunity",
+          "attackerName": "Yutyrannus",
+          "targetName": "Microraptor (Zhaoianus)",
+          "chaseVerdict": "attacker-faster",
+          "chaseLabel": "Yutyrannus is 26% faster on land; a clean escape is unlikely once spotted.",
+          "baseScore": 57,
+          "scoreCap": null,
+          "conditional": false,
+          "explicit": false,
+          "relationKind": null,
+          "summaryLead": "Microraptor (Zhaoianus) is within the legal hunt ceiling."
         },
         "tags": [
           "ambush"
@@ -12691,9 +12925,67 @@
         "engagementLimit": 2,
         "engagementUnlimited": false
       },
-      "microraptor": {
-        "id": "microraptor",
-        "name": "Microraptor",
+      "microraptor-gui": {
+        "id": "microraptor-gui",
+        "name": "Microraptor (Gui)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-hanqiugi": {
+        "id": "microraptor-hanqiugi",
+        "name": "Microraptor (Hanqiugi)",
+        "cw": 500,
+        "hp": 400,
+        "armor": 1,
+        "dps": 26.67,
+        "primary": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5
+        },
+        "burst": {
+          "label": "Bite",
+          "damage": 40,
+          "cooldown": 1.5,
+          "situational": false
+        },
+        "attacks": [
+          "Bite"
+        ],
+        "bleedPerSecond": 0,
+        "bleedHealRate": 0.032,
+        "estimated": false,
+        "huntLimit": 2,
+        "huntUnlimited": false,
+        "engagementLimit": 10,
+        "engagementUnlimited": false
+      },
+      "microraptor-zhaoianus": {
+        "id": "microraptor-zhaoianus",
+        "name": "Microraptor (Zhaoianus)",
         "cw": 500,
         "hp": 400,
         "armor": 1,

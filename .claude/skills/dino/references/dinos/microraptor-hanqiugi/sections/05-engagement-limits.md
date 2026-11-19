@@ -1,0 +1,3 @@
+# Microraptor (Hanqiugi) – Engagement Limits
+
+Predator Reaction: Flighty / Defensive Up to 2 Microraptor may work together in a hunt. Up to 10 Microraptor may react defensively when defending a claimed nesting site or when hunted. Microraptor flee from Hatzegopteryx, Quetzalcoatlus, Megalania, Kelenken, Thalassodromeus and Tropeognathus, unless nesting. When attacked by species they cannot hunt, solitary and pairs of Microraptor flee. Scurries who are attacked by species that they do not fear retaliate in the form of aggressive swarming. This behavior does not extend to Apex Carnivores. More information can be found under Cross Species Interaction.
