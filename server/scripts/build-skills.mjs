@@ -131,7 +131,7 @@ function header(profile) {
   return [
     `# ${profile.name} – Steckbrief`, '',
     `- **Aliase:** ${profile.aliases?.length ? profile.aliases.join(', ') : '–'}`,
-    profile.variant && `- **Variante:** ${profile.variant.de ?? profile.variant.label} „${profile.variant.title}“ des ${profile.variant.parentName}-Profils (gemeinsamer offizieller Text; eigene POIs, Tiere, Leitfaden und Matchups). Gegenstück: ${profile.variant.siblings.map(s => `${s.name} (\`${s.id}\`)`).join(', ')}. ${profile.variant.note}`,
+    profile.variant && `- **Variante:** ${profile.variant.de ?? profile.variant.label}${profile.variant.kindDe ? ` (${profile.variant.kindDe})` : ''} „${profile.variant.title}“ des ${profile.variant.parentName}-Profils (gemeinsamer offizieller Text; eigene POIs, Tiere, Leitfaden und Matchups). Gegenstück: ${profile.variant.siblings.map(s => `${s.name} (\`${s.id}\`)`).join(', ')}. ${profile.variant.note}`,
     `- **Klasse:** ${c.label} (Tier ${c.tier}, ${de('activity', c.activity)}, ${de('habitat', c.habitat)}, ${de('diet', c.diet)})`,
     eco && `- **Ökosystem:** ${eco.de} (${eco.label}); Nahrungskette: ${eco.foodChain.de} (Stufe ${eco.foodChain.level} von 7)${eco.also?.length ? `; auch: ${eco.also.map(a => a.de ?? a.label ?? a).join(', ')}` : ''}`,
     `- **Werte (adult, Dynasty):** Kampfgewicht ${profile.stats.combatWeight ?? '?'}, Leben ${adultStat(profile, 'Core.MaxHealth') ?? '?'}, Ausdauer ${adultStat(profile, 'Core.MaxStamina') ?? '?'}, Wachstum ${profile.stats.growthMinutes ?? '?'} min`,

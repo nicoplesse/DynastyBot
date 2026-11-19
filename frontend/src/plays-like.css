@@ -103,6 +103,33 @@
 .pl-relatives button:hover{border-color:#61795c;color:#d2e2cc}
 .pl-relatives b{color:#dfeccf}
 .pl-relatives span{color:#8a9c8a}
-.hero-variant{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
-.hero-variant>span{padding:6px 10px;border:1px solid #c9a86a55;border-radius:4px;background:#1a170fcc;color:#e2d3b0;font-size:11px}
-.hero-variant>span b{color:#f3e6c6}
+/* Variant switch: one button per playable split from the same official profile. */
+.variant-switch{display:grid;gap:6px;margin:4px 0 12px}
+.variant-switch-cap{color:#b9a57c;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.variant-switch-buttons{display:flex;flex-wrap:wrap;gap:0;width:max-content;max-width:100%;border:1px solid #c9a86a55;border-radius:6px;overflow:hidden;background:#1a170fcc}
+.variant-switch-buttons button{display:grid;gap:2px;min-width:118px;padding:8px 14px;border:0;border-left:1px solid #c9a86a33;background:transparent;color:#cdbf9f;text-align:left;cursor:pointer;transition:background .15s,color .15s}
+.variant-switch-buttons button:first-child{border-left:0}
+.variant-switch-buttons button b{font-size:13px;color:#e8dcc0;letter-spacing:.02em}
+.variant-switch-buttons button small{font-size:10px;color:#a8997a;white-space:nowrap}
+.variant-switch-buttons button:hover:not(.active){background:#2a2416;color:#f3e6c6}
+.variant-switch-buttons button:focus-visible{outline:2px solid #e2c47e;outline-offset:-2px}
+.variant-switch-buttons button.active{background:#c9a86a;color:#1a150b;cursor:default}
+.variant-switch-buttons button.active b,.variant-switch-buttons button.active small{color:#1a150b}
+/* The floating copy at the bottom of the window, shown once the hero switch has scrolled away. */
+.variant-float{position:fixed;left:50%;bottom:18px;z-index:25;transform:translateX(-50%);max-width:calc(100vw - 32px);animation:variant-float-in .18s ease-out}
+.variant-switch.compact{display:flex;align-items:center;gap:8px;margin:0;padding:5px 5px 5px 12px;border:1px solid #c9a86a66;border-radius:8px;background:#141009f2;box-shadow:0 10px 30px #000a}
+.variant-switch.compact .variant-switch-cap{color:#c9a86a;font-size:13px;letter-spacing:0}
+.variant-switch.compact .variant-switch-buttons{border-radius:5px}
+.variant-switch.compact .variant-switch-buttons button{min-width:0;padding:6px 12px}
+.variant-switch.compact .variant-switch-buttons button b{font-size:12px}
+.variant-switch.compact .variant-switch-buttons button small{font-size:9px}
+@media (max-width:850px){.variant-float{bottom:calc(76px + env(safe-area-inset-bottom))}} /* above the bottom nav bar */
+@media (max-width:640px){
+  .variant-float{left:16px;right:16px;max-width:none;transform:none;animation:none}
+  .variant-switch.compact{padding:4px}
+  .variant-switch.compact .variant-switch-cap,.variant-switch.compact .variant-switch-buttons button small{display:none}
+  .variant-switch.compact .variant-switch-buttons{flex:1;width:auto}
+  .variant-switch.compact .variant-switch-buttons button{padding:9px 6px;text-align:center}
+}
+@keyframes variant-float-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+@media (max-width:640px){.variant-switch-buttons{width:100%}.variant-switch-buttons button{flex:1 1 0;min-width:0;padding:8px 10px}.variant-switch-buttons button small{white-space:normal}}

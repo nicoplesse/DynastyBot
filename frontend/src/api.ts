@@ -205,9 +205,10 @@ export interface BleedTable {
   rows: Array<{ id: string; name: string; tier: string | null; rank: number | null; kind: string; young: boolean; hp: number; bleedPerHit: number; healRate: number; trot: BleedHits | null; sit: BleedHits | null; direct: number }>;
 }
 // A playable split from a shared official profile (Megalania arid / temperate).
+// `kind` is the short landscape word on the variant switch ("Arid", "Woodland").
 export interface ProfileVariant {
-  id: string; label: string; de: string | null; title: string | null; parentId: string; parentName: string; note: string;
-  siblings: Array<{ id: string; name: string; variant: string; label: string; de: string | null; title: string | null }>;
+  id: string; label: string; de: string | null; title: string | null; kind: string; kindDe: string | null; parentId: string; parentName: string; note: string;
+  siblings: Array<{ id: string; name: string; variant: string; label: string; de: string | null; title: string | null; kind: string; kindDe: string | null }>;
 }
 export interface CatalogItem {
   id: string; name: string; aliases: string[]; summary: string; classification: ProcessedProfile['classification'];

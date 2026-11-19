@@ -81,6 +81,7 @@ test('Megalania is split into an arid and a temperate playable that treat each o
   assert.ok(arid.map.markers.every(marker => ['arid', 'both'].includes(marker.variant)));
   assert.ok(temperate.map.markers.every(marker => ['temperate', 'both'].includes(marker.variant)));
   assert.equal(arid.ecosystem.id, 'arid');
+  assert.deepEqual([arid.variant.kind, arid.variant.siblings[0].kind], ['Arid', 'Temperate'], 'without a curated kind the variant key names it');
   assert.equal(temperate.ecosystem.id, 'forest');
   assert.ok(temperate.analog.moods.some(mood => mood.id === 'climber'));
   assert.ok(arid.matchups.opportunities.some(entry => entry.id === 'megalania-temperate' && entry.intent.explicit), 'arid adults may hunt temperate adults');
@@ -99,6 +100,8 @@ test('Microraptor splits into three subspecies whose ranges overlap: home, borde
     assert.ok(profile.aliases.includes('Microraptor'), 'other profiles naming "Microraptor" reach every subspecies');
     assert.equal(profile.variant.siblings.length, 2);
   }
+  assert.deepEqual([gui, hanqiugi, zhaoianus].map(profile => profile.variant.kind), ['Woodland', 'Dry Coast', 'Highland'], 'a landscape word for the variant switch');
+  assert.deepEqual(gui.variant.siblings.map(sibling => sibling.kind), ['Dry Coast', 'Highland']);
   assert.deepEqual(ring(gui, 'home'), ['cedrus-forest', 'east-passage', 'hollow-hills', 'redwoods', 'twisted-forest', 'wollemi-forest']);
   assert.deepEqual(ring(hanqiugi, 'home'), ['coastal-bluffs', 'coastland-swamp', 'crag-bluffs', 'dry-fang-canyon', 'mudflats', 'palm-islands', 'tallbrush-coasts']);
   assert.deepEqual(ring(zhaoianus, 'home'), ['big-tree-overlook', 'black-fern-hills', 'cliff-edge-falls', 'stillwater-bog', 'volcano-islands', 'wind-tunnels']);

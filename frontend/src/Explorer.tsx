@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { api, type Ecosystem, type Catalog, type CatalogItem, type ContentBlock, type ProcessedProfile, type ProfileVariant, type RulesData } from './api';
 import { FullStatsView } from './FullStats';
 import { MapView } from './MapView';
@@ -143,12 +143,45 @@ function ProfileCard({ profile }: { profile: CatalogItem }) {
   </button>;
 }
 
-// Variants share one official profile but are separate playables; link straight to the other one.
-function VariantLine({ variant }: { variant: ProfileVariant }) {
-  return <p className="hero-analog hero-variant" title={variant.note}>
-    <span>◐ {variant.label}{variant.title && <> <b>„{variant.title}“</b></>} · shares the official {variant.parentName} profile</span>
-    {variant.siblings.map(sibling => <a key={sibling.id} href={`#/profiles/${sibling.id}`}>Other variant: <b>{sibling.name}</b>{sibling.title && <> „{sibling.title}“</>} →</a>)}
-  </p>;
+// Variants share one official profile but are separate playables. One button per variant, in a
+// fixed order, so switching back and forth keeps every button in its place; the page stays at
+// the same height, so the section in view can be compared directly.
+function VariantSwitch({ id, name, variant, compact = false }: { id: string; name: string; variant: ProfileVariant; compact?: boolean }) {
+  const options = [{ id, name, label: variant.label, title: variant.title, kind: variant.kind, kindDe: variant.kindDe }, ...variant.siblings]
+    .sort((a, b) => a.id.localeCompare(b.id));
+  // "Microraptor (Gui)" → "Gui"; left out where it only repeats the landscape word ("Megalania (Arid)").
+  const subName = (option: { name: string; kind: string }) => {
+    const inner = option.name.match(/\(([^)]*)\)$/)?.[1] || '';
+    return inner && inner.toLowerCase() !== option.kind.toLowerCase() ? inner : '';
+  };
+  return <div className={`variant-switch ${compact ? 'compact' : 'hero'}`} title={variant.note}>
+    <span className="variant-switch-cap">{compact ? '◐' : `◐ ${options.length} variants of the official ${variant.parentName} profile`}</span>
+    <div className="variant-switch-buttons" role="group" aria-label={`${variant.parentName} variants`}>
+      {options.map(option => {
+        const active = option.id === id;
+        const sub = subName(option);
+        return <button key={option.id} type="button" className={active ? 'active' : ''} aria-pressed={active}
+          title={[option.kindDe, option.label].filter(Boolean).join(' · ')} onClick={() => { if (!active) go(`/profiles/${option.id}`); }}>
+          <b>{option.kind}</b>
+          <small>{sub}{sub && option.title && ' · '}{option.title && `„${option.title}“`}</small>
+        </button>;
+      })}
+    </div>
+  </div>;
+}
+
+// A small copy of the switch pinned to the bottom of the window once the one in the hero has
+// scrolled away, so a variant can be swapped from any section (the scroll position is kept).
+function FloatingVariantSwitch(props: { id: string; name: string; variant: ProfileVariant }) {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const hero = document.querySelector('.variant-switch.hero');
+    if (!hero) return;
+    const observer = new IntersectionObserver(([entry]) => setShow(!entry.isIntersecting && entry.boundingClientRect.top < 0));
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, [props.id]);
+  return show ? <div className="variant-float"><VariantSwitch {...props} compact /></div> : null;
 }
 
 function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
@@ -156,7 +189,18 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
   const [error, setError] = useState('');
   const [lightbox, setLightbox] = useState<string | null>(null);
   const mode = usePlayMode();
-  useEffect(() => { setProfile(null); setError(''); api.processedProfile(id).then(setProfile).catch(cause => setError((cause as Error).message)); window.scrollTo(0, 0); }, [id]);
+  const shown = useRef<ProcessedProfile | null>(null);
+  shown.current = profile;
+  useEffect(() => {
+    // Switching to a sibling variant keeps the current page up until the other one has loaded and
+    // keeps the scroll position, so the same section can be compared; any other profile starts at the top.
+    const sibling = Boolean(shown.current?.variant?.siblings.some(item => item.id === id));
+    let live = true;
+    setError('');
+    if (!sibling) { setProfile(null); window.scrollTo(0, 0); }
+    api.processedProfile(id).then(next => { if (live) setProfile(next); }).catch(cause => { if (live) setError((cause as Error).message); });
+    return () => { live = false; };
+  }, [id]);
   if (error) return <PageError message={error} />;
   if (!profile) return <PageLoading label="Loading profile…" />;
   const analog = profileAnalog(profile, mode);
@@ -167,10 +211,10 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
   return <>
     <ExplorerTopline section="PROFILES / DETAIL" count={`${currentIndex + 1} OF ${catalog.count}`} />
     <button className="back-link" type="button" onClick={() => go('/profiles')}>← All profiles</button>
-    <article className="profile-detail">
+    <article className="profile-detail" key={profile.id}>
       <header className="profile-hero with-showcase">
         <ProfileShowcase profile={profile} analog={analog} onOpen={setLightbox} />
-        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.variant && <VariantLine variant={profile.variant} />}{analog && <p className="hero-analog"><JumpLink id="plays-like">≈ {profile.modes?.[mode].own ? `${modeLabels[mode]}: plays` : 'Plays'} like <b>{analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}<HerdStrip playableId={profile.id} />{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
+        <div className="hero-copy"><div className="profile-kicker">{profile.classification.label || 'Dynasty Realism Profile'}</div><h1>{profile.name}</h1>{profile.variant && <VariantSwitch id={profile.id} name={profile.name} variant={profile.variant} />}{analog && <p className="hero-analog"><JumpLink id="plays-like">≈ {profile.modes?.[mode].own ? `${modeLabels[mode]}: plays` : 'Plays'} like <b>{analog.label}</b></JumpLink></p>}{profile.ecosystem && <p className="hero-analog hero-ecosystem"><a href={`#/ecosystems/${profile.ecosystem.id}`} title={profile.ecosystem.reason}>◎ Ecosystem <b>{profile.ecosystem.label}</b> · food chain level {profile.ecosystem.foodChain.level}: {profile.ecosystem.foodChain.label}</a></p>}<HerdStrip playableId={profile.id} />{profile.aliases.length > 0 && <p className="aliases">Also known as {profile.aliases.join(', ')}</p>}<p className="hero-summary">{profile.summary}</p><div className="hero-pills">{[profile.classification.tier, profile.classification.activity, profile.classification.habitat, profile.classification.diet].filter(Boolean).map(value => <span key={value}>{value}</span>)}</div></div>
       </header>
       <div className="profile-layout">
         <aside className="profile-toc"><strong>ON THIS PROFILE</strong>{profile.playstyle && <JumpLink id="playstyle">So spielst du ihn</JumpLink>}{profile.analog && <JumpLink id="plays-like">Plays Like</JumpLink>}<JumpLink id="quick-view">Quick View</JumpLink><JumpLink id="stats">Playable Stats</JumpLink>{profile.map && <JumpLink id="map">Territory Map</JumpLink>}{profile.matchups && <JumpLink id="counters">Counters</JumpLink>}{profile.bleed && <JumpLink id="bleed">Bleed</JumpLink>}{profile.media.length > 1 && <JumpLink id="media">Images</JumpLink>}{profile.videos.length > 0 && <JumpLink id="videos">Videos</JumpLink>}{profile.sections.map(section => <JumpLink key={section.id} id={section.id}>{section.title}</JumpLink>)}</aside>
@@ -190,6 +234,7 @@ function ProfileDetail({ id, catalog }: { id: string; catalog: Catalog }) {
         </div>
       </div>
     </article>
+    {profile.variant && <FloatingVariantSwitch id={profile.id} name={profile.name} variant={profile.variant} />}
     {lightbox && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" onClick={() => setLightbox(null)}><button type="button" aria-label="Close image" onClick={() => setLightbox(null)}>×</button><img src={lightbox} alt="Full size" referrerPolicy="no-referrer" /></div>}
   </>;
 }

@@ -563,15 +563,18 @@ function applyVariant(profile, variant, variants, poiDoc) {
   profile.id = variant.id;
   profile.name = variant.name;
   profile.aliases = [...new Set([parent.name, ...(variant.aliases || []), ...profile.aliases])];
+  // A short landscape word for the variant switch ("Arid", "Woodland"); the variant key unless one is curated.
+  const kindOf = item => ({ kind: item.kind || item.variant.replace(/(^|-)\w/g, char => char.toUpperCase()).replace(/-/g, ' '), kindDe: item.kindDe || null });
   profile.variant = {
     id: variant.variant,
     label: variant.label,
     de: variant.de || null,
     title: variant.title || null,
+    ...kindOf(variant),
     parentId: parent.id,
     parentName: parent.name,
     note: variant.note || poiVariant?.note || '',
-    siblings: variants.filter(other => other.id !== variant.id).map(other => ({ id: other.id, name: other.name, variant: other.variant, label: other.label, de: other.de || null, title: other.title || null })),
+    siblings: variants.filter(other => other.id !== variant.id).map(other => ({ id: other.id, name: other.name, variant: other.variant, label: other.label, de: other.de || null, title: other.title || null, ...kindOf(other) })),
   };
   profile.source.rawId = parent.id;
 }
