@@ -1,5 +1,5 @@
 import type { CatalogItem } from './api';
-import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdEvent, type HerdEventKind, type HerdOffspring, type HerdSibling } from './herd';
+import { bondsOf, characterOf, familyOf, herdApi, isDiscordUrl, linkHref, sexSymbol, type HerdBond, type HerdDino, type HerdEvent, type HerdEventKind, type HerdFamily, type HerdOffspring, type HerdSibling } from './herd';
 import { formatYears, tyloAge, tyloAgeRules, type TyloAge } from './tyloAge';
 import './tylo-file.css';
 
@@ -83,9 +83,15 @@ function Node({ sex, name, caption, unknown = false, focus = false, small = fals
   </div>;
 }
 
-function Sibling({ sibling }: { sibling: HerdSibling }) {
-  const role = sibling.sex === 'male' ? 'Bruder' : sibling.sex === 'female' ? 'Schwester' : 'Geschwister';
-  return <li className="tf-sibling"><Node sex={sibling.sex} name={sibling.name} caption={[role, sibling.status].filter(Boolean).join(' · ')} small gone={deceased.test(sibling.status)} /></li>;
+// The parent a half sibling does not share with the dino (the mother's other mate, or the father's).
+const otherParent = (sibling: HerdSibling, family: HerdFamily) =>
+  sibling.father && !same(sibling.father, family.father) ? { role: 'Vater', name: sibling.father } : sibling.mother && !same(sibling.mother, family.mother) ? { role: 'Mutter', name: sibling.mother } : null;
+
+// A half sibling's caption names the other parent, unless the tree already draws it above them (grouped).
+function Sibling({ sibling, family, grouped = false }: { sibling: HerdSibling; family: HerdFamily; grouped?: boolean }) {
+  const other = otherParent(sibling, family);
+  const role = (other ? 'Halb' : '') + (sibling.sex === 'male' ? (other ? 'bruder' : 'Bruder') : sibling.sex === 'female' ? (other ? 'schwester' : 'Schwester') : (other ? 'geschwister' : 'Geschwister'));
+  return <li className="tf-sibling"><Node sex={sibling.sex} name={sibling.name} caption={[role, other && !grouped && `${other.role} ${other.name}`, sibling.status].filter(Boolean).join(' · ')} small gone={deceased.test(sibling.status)} /></li>;
 }
 
 function Calf({ calf }: { calf: HerdOffspring }) {
@@ -109,41 +115,78 @@ function Pedigree({ dino }: { dino: HerdDino }) {
   const orphans = family.offspring.filter(calf => !mates.some(mate => same(mate.name, calf.mother)));
   const mateRole = (bond: HerdBond, index: number) => `× ${index + 1}. ${bond.sex === 'male' ? 'Partner' : 'Partnerin'}`;
   const calvesOf = (mate: HerdBond) => family.offspring.filter(calf => same(calf.mother, mate.name));
+  // A clutch laid with this mate that no calf has come from yet.
+  const clutchesWith = (mate: HerdBond) => (family.clutches || []).filter(item => same(item.mate, mate.name)).map(item => `Gelege ${item.clutch}`).join(' · ');
   // Siblings stand beside the dino under the shared parents: half before, half after.
   const siblings = family.siblings || [];
-  const before = siblings.slice(0, Math.floor(siblings.length / 2));
-  const after = siblings.slice(before.length);
+  const flank = (list: HerdSibling[], root: React.ReactNode, grouped = false) => {
+    const before = list.slice(0, Math.floor(list.length / 2));
+    return <>
+      {before.map(sibling => <Sibling key={sibling.name} sibling={sibling} family={family} grouped={grouped} />)}
+      {root}
+      {list.slice(before.length).map(sibling => <Sibling key={sibling.name} sibling={sibling} family={family} grouped={grouped} />)}
+    </>;
+  };
+  const root = <li className="tf-root">
+    <Node sex={dino.sex} name={dino.name} caption={family.catalogId || undefined} focus />
+    {(mates.length > 0 || orphans.length > 0) && <ul>
+      {mates.map((mate, index) => {
+        const calves = calvesOf(mate);
+        return <li key={`${mate.name}-${index}`} className={ended.test(mate.status) ? 'tf-ended' : undefined}>
+          <span className="tf-pairing">{mateRole(mate, index)}</span>
+          <Lineage bloodline={mate.bloodline}>
+            <Node sex={mate.sex} name={mate.name} caption={mate.status || mate.note || undefined} />
+            <ul>{calves.length ? calves.map(calf => <Calf key={calf.name} calf={calf} />) : <li className="tf-pending"><Node sex={null} name="Kälber folgen" caption={clutchesWith(mate) || undefined} unknown small /></li>}</ul>
+          </Lineage>
+        </li>;
+      })}
+      {orphans.length > 0 && <li>
+        <span className="tf-pairing">Mutter offen</span>
+        <Node sex="female" name="unbekannt" caption="keiner Partnerin zugeordnet" unknown />
+        <ul>{orphans.map(calf => <Calf key={calf.name} calf={calf} />)}</ul>
+      </li>}
+    </ul>}
+  </li>;
+  // Half siblings make the shared parent the hub: under it one pairing per mate, each mate drawn with the
+  // calves it had with them (the dino's own parents first). The mother is the hub when she had another mate.
+  const maternal = siblings.some(sibling => otherParent(sibling, family)?.role === 'Vater');
+  const paternal = !maternal && siblings.some(sibling => otherParent(sibling, family)?.role === 'Mutter');
+  const hub = maternal ? { sex: 'female' as const, name: family.mother, role: 'Mutter', mateSex: 'male' as const, mate: family.father, mateRole: 'Vater', key: 'Vater' }
+    : paternal ? { sex: 'male' as const, name: family.father, role: 'Vater', mateSex: 'female' as const, mate: family.mother, mateRole: 'Mutter', key: 'Mutter' } : null;
+  const halfGroups = hub ? siblings.reduce<Array<{ parent: string; siblings: HerdSibling[] }>>((groups, sibling) => {
+    const other = otherParent(sibling, family);
+    if (other?.role !== hub.key) return groups;
+    const group = groups.find(item => same(item.parent, other.name));
+    if (group) group.siblings.push(sibling); else groups.push({ parent: other.name, siblings: [sibling] });
+    return groups;
+  }, []) : [];
+  const pairing = (index: number) => `× ${index + 1}. ${hub?.mateSex === 'male' ? 'Partner' : 'Partnerin'}`;
   return <div className="tf-tree-scroll">
     <div className="tf-tree">
-      <div className="tf-parents">
-        <Node sex="female" name={family.mother || 'Mutter'} caption={family.mother ? 'Mutter' : 'noch offen'} unknown={!family.mother} small />
-        <span className="tf-couple" aria-hidden="true" />
-        <Node sex="male" name={family.father || 'Vater'} caption={family.father ? 'Vater' : 'noch offen'} unknown={!family.father} small />
-      </div>
-      <ul className="tf-branch" aria-label={`Stammbaum von ${dino.name}`}>
-        {before.map(sibling => <Sibling key={sibling.name} sibling={sibling} />)}
-        <li className="tf-root">
-          <Node sex={dino.sex} name={dino.name} caption={family.catalogId || undefined} focus />
-          {(mates.length > 0 || orphans.length > 0) && <ul>
-            {mates.map((mate, index) => {
-              const calves = calvesOf(mate);
-              return <li key={`${mate.name}-${index}`} className={ended.test(mate.status) ? 'tf-ended' : undefined}>
-                <span className="tf-pairing">{mateRole(mate, index)}</span>
-                <Lineage bloodline={mate.bloodline}>
-                  <Node sex={mate.sex} name={mate.name} caption={mate.status || mate.note || undefined} />
-                  <ul>{calves.length ? calves.map(calf => <Calf key={calf.name} calf={calf} />) : <li className="tf-pending"><Node sex={null} name="Kälber folgen" unknown small /></li>}</ul>
-                </Lineage>
-              </li>;
-            })}
-            {orphans.length > 0 && <li>
-              <span className="tf-pairing">Mutter offen</span>
-              <Node sex="female" name="unbekannt" caption="keiner Partnerin zugeordnet" unknown />
-              <ul>{orphans.map(calf => <Calf key={calf.name} calf={calf} />)}</ul>
-            </li>}
-          </ul>}
-        </li>
-        {after.map(sibling => <Sibling key={sibling.name} sibling={sibling} />)}
-      </ul>
+      {hub ? <>
+        <div className="tf-parents">
+          <Node sex={hub.sex} name={hub.name || hub.role} caption={hub.name ? hub.role : 'noch offen'} unknown={!hub.name} small />
+        </div>
+        <ul className="tf-branch" aria-label={`Stammbaum von ${dino.name}`}>
+          <li className="tf-parent-pair">
+            <span className="tf-pairing">{pairing(0)}</span>
+            <Node sex={hub.mateSex} name={hub.mate || hub.mateRole} caption={hub.mate ? hub.mateRole : 'noch offen'} unknown={!hub.mate} small />
+            <ul>{flank(siblings.filter(sibling => otherParent(sibling, family)?.role !== hub.key), root)}</ul>
+          </li>
+          {halfGroups.map((group, index) => <li key={group.parent} className="tf-parent-pair">
+            <span className="tf-pairing">{pairing(index + 1)}</span>
+            <Node sex={hub.mateSex} name={group.parent} caption={`${hub.mateSex === 'male' ? 'Partner' : 'Partnerin'} ${hub.sex === 'female' ? 'der Mutter' : 'des Vaters'}`} small />
+            <ul>{group.siblings.map(sibling => <Sibling key={sibling.name} sibling={sibling} family={family} grouped />)}</ul>
+          </li>)}
+        </ul>
+      </> : <>
+        <div className="tf-parents">
+          <Node sex="female" name={family.mother || 'Mutter'} caption={family.mother ? 'Mutter' : 'noch offen'} unknown={!family.mother} small />
+          <span className="tf-couple" aria-hidden="true" />
+          <Node sex="male" name={family.father || 'Vater'} caption={family.father ? 'Vater' : 'noch offen'} unknown={!family.father} small />
+        </div>
+        <ul className="tf-branch" aria-label={`Stammbaum von ${dino.name}`}>{flank(siblings, root)}</ul>
+      </>}
       {!mates.length && !orphans.length && <p className="tf-tree-empty">Noch keine Partnerin eingetragen.</p>}
     </div>
   </div>;
@@ -225,8 +268,12 @@ function Proof({ url, label }: { url: string; label: string }) {
 }
 
 const catalogOrder = (a: HerdDino, b: HerdDino) => (familyOf(a).catalogId || '~').localeCompare(familyOf(b).catalogId || '~', 'de', { numeric: true }) || a.name.localeCompare(b.name, 'de');
-// Clutches are numbered across all mates, so the highest number is the count so far.
-const clutchCount = (dino: HerdDino) => Math.max(0, ...familyOf(dino).offspring.map(calf => calf.clutch || 0));
+// Clutches are numbered across all mates, so the highest number is the count so far; recorded clutches
+// count too, also those no calf has come from yet.
+const clutchCount = (dino: HerdDino) => {
+  const family = familyOf(dino);
+  return Math.max(0, ...family.offspring.map(calf => calf.clutch || 0), ...(family.clutches || []).map(item => item.clutch));
+};
 const ageOf = (dino: HerdDino) => tyloAge({ sex: dino.sex, hatchedAt: familyOf(dino).hatchedAt, createdAt: dino.createdAt, diedAt: dino.diedAt, clutches: clutchCount(dino) });
 
 // The age as a line through an orca-like life: youth up to maturity, then the clutch years up to the maximum.
