@@ -4,7 +4,11 @@
 //   node server/scripts/herd.mjs create <name> [playableId]
 //                                                     new dino without screenshots (photo and files follow in the UI)
 //   node server/scripts/herd.mjs photo <name|id> <image>
-//                                                     sets the dino's photo (png, jpg or webp; replaces the old one)
+//                                                     sets the dino's photo (png, jpg or webp); the image goes into the
+//                                                     gallery (data/gallery/), an older photo stays there
+//   node server/scripts/herd.mjs event-photo <name|id> <image> [date|subject]
+//                                                     evidence photo of a notable kill, also kept in the gallery
+//   node server/scripts/herd.mjs gallery-move         one-time: moves older per-dino photos into the gallery
 //   node server/scripts/herd.mjs apply <name|id> <payload.json>
 //                                                     validated update, then prints what changed
 // The payload may hold playableId, sex, diedAt, deathCause, genetics, bonds, character, family, proofs, notes, transcripts and processed
@@ -80,11 +84,14 @@ try {
   } else if (command === 'photo' && key && payloadFile) {
     const dino = await store.find(key);
     const updated = await store.addFiles({ id: dino.id, photo: { path: resolve(payloadFile), originalname: basename(payloadFile) } });
-    console.log(`Photo for ${updated.name}: data/herd/${updated.id}/${updated.photo}${dino.photo ? ` (replaces ${dino.photo})` : ''}`);
+    console.log(`Photo for ${updated.name}: data/${updated.photo}${dino.photo ? ` (was ${dino.photo}; it stays in the gallery)` : ''}`);
   } else if (command === 'event-photo' && key && payloadFile) {
     const dino = await store.find(key);
     const { event, previous } = await store.setEventPhoto(dino.id, process.argv[5] || '', { path: resolve(payloadFile), originalname: basename(payloadFile) });
-    console.log(`Event photo for ${dino.name}, ${event.date} ${event.subject}: data/herd/${dino.id}/${event.photo}${previous ? ` (replaces ${previous})` : ''}`);
+    console.log(`Event photo for ${dino.name}, ${event.date} ${event.subject}: data/${event.photo}${previous ? ` (was ${previous}; it stays in the gallery)` : ''}`);
+  } else if (command === 'gallery-move') {
+    const moved = await store.moveImagesToGallery();
+    console.log(moved.length ? moved.map(item => `${item.dino} (${item.kind}): ${item.from} → data/gallery/${item.to}`).join('\n') : 'Nothing to move: every photo is already in the gallery.');
   } else if (command === 'apply' && key && payloadFile) {
     const dino = await store.find(key);
     const payload = JSON.parse(await readFile(payloadFile, 'utf8'));
@@ -95,7 +102,7 @@ try {
     console.log(diff.length ? diff.map(line => `  ${line}`).join('\n') : '  no field changes');
     console.log(`  screenshots marked as read: ${read}, still pending: ${updated.screenshots.filter(shot => !shot.processedAt).length}`);
   } else {
-    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | photo <name|id> <image> | event-photo <name|id> <image> [date|subject] | apply <name|id> <payload.json>');
+    console.error('Usage: herd.mjs list | show <name|id> | create <name> [playableId] | photo <name|id> <image> | event-photo <name|id> <image> [date|subject] | gallery-move | apply <name|id> <payload.json>');
     process.exitCode = 2;
   }
 } catch (error) {

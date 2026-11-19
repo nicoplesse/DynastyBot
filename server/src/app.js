@@ -1,13 +1,14 @@
 import express from 'express';
 import multer from 'multer';
 import { copyFile, mkdir, open, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
-import { join, resolve } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
 import { buildProcessedData } from './processor.js';
 import { searchAnalogs } from './analogs.js';
 import { createHerdStore, defaultHerdDir } from './herd.js';
+import { createGalleryStore } from './gallery.js';
 import { defaultIsleDir, isleSummary, loadIsle } from './isle.js';
 import { aquaticSummary, defaultAquaticDir, loadAquatic } from './aquatic.js';
 import { DISCORD_LIMIT, RASTER, defaultStagingDir, loadStaging, stagingSummary } from './staging.js';
@@ -58,6 +59,12 @@ function httpError(status, message) {
   return error;
 }
 
+// Multer hands over file names as Latin-1; names with umlauts are really UTF-8.
+function uploadName(name) {
+  const decoded = Buffer.from(String(name || ''), 'latin1').toString('utf8');
+  return decoded.includes('�') ? String(name || '') : decoded;
+}
+
 export function createApp({
   dataDir = fileURLToPath(new URL('../../data/raw/', import.meta.url)),
   processedDir = fileURLToPath(new URL('../../data/processed/', import.meta.url)),
@@ -65,11 +72,13 @@ export function createApp({
   isleDir = defaultIsleDir,
   aquaticDir = defaultAquaticDir,
   stagingDir = defaultStagingDir,
+  galleryDir = join(dirname(resolve(herdDir)), 'gallery'),
 } = {}) {
   const app = express();
   const rawDir = resolve(dataDir);
   const derivedDir = resolve(processedDir);
-  const herd = createHerdStore({ herdDir, processedDir: derivedDir });
+  const gallery = createGalleryStore({ galleryDir, processedDir: derivedDir });
+  const herd = createHerdStore({ herdDir, processedDir: derivedDir, gallery });
 
   app.get('/api/catalog', async (_req, res, next) => {
     try { res.json(JSON.parse(await readFile(join(derivedDir, 'index.json'), 'utf8'))); }
@@ -382,7 +391,7 @@ export function createApp({
       const photos = uploaded.filter(file => file.fieldname === 'photo');
       if (photos.length > 1) throw httpError(400, 'Only one photo per dino.');
       const id = typeof req.body.id === 'string' && req.body.id ? req.body.id : undefined;
-      const dino = await herd.addFiles({ id, name: req.body.name, playable: req.body.playableId, screenshots: uploaded.filter(file => file.fieldname === 'screenshots'), photo: photos[0] || null, proofs: { mutation: req.body.mutationProof, nesting: req.body.nestingProof } });
+      const dino = await herd.addFiles({ id, name: req.body.name, playable: req.body.playableId, screenshots: uploaded.filter(file => file.fieldname === 'screenshots'), photo: photos[0] ? { path: photos[0].path, originalname: uploadName(photos[0].originalname) } : null, proofs: { mutation: req.body.mutationProof, nesting: req.body.nestingProof } });
       res.status(201).json(dino);
     } catch (error) { next(error); }
     finally { await Promise.all((req.files || []).map(file => rm(file.path, { force: true }).catch(() => {}))); }
@@ -408,8 +417,56 @@ export function createApp({
     catch (error) { next(error); }
   });
 
+  // Galerie: every own image in data/gallery/, with what it shows and where it is used (dino photo, kill).
+  const withUses = (image, uses) => ({ ...image, uses: uses.get(image.file) || [] });
+  app.get('/api/gallery', async (_req, res, next) => {
+    try {
+      const [images, uses] = await Promise.all([gallery.list(), herd.galleryUses()]);
+      res.json({ folder: 'data/gallery/', images: images.map(image => withUses(image, uses)) });
+    } catch (error) { next(error); }
+  });
+
+  app.get('/api/gallery/files/:file', async (req, res, next) => {
+    try { res.sendFile(await gallery.path(req.params.file)); }
+    catch (error) { next(error); }
+  });
+
+  app.post('/api/gallery', upload.any(), async (req, res, next) => {
+    try {
+      const uploaded = req.files || [];
+      if (!uploaded.length) throw httpError(400, 'Choose at least one image.');
+      if (uploaded.some(file => file.fieldname !== 'images')) throw httpError(400, 'Unexpected upload field.');
+      const added = await gallery.add(uploaded.map(file => ({ path: file.path, originalname: uploadName(file.originalname) })));
+      res.status(201).json(added.map(image => ({ ...image, uses: [] })));
+    } catch (error) { next(error); }
+    finally { await Promise.all((req.files || []).map(file => rm(file.path, { force: true }).catch(() => {}))); }
+  });
+
+  app.patch('/api/gallery/:file', express.json({ limit: '64kb' }), async (req, res, next) => {
+    try {
+      if (Array.isArray(req.body?.dinos)) {
+        const known = new Set((await herd.all()).map(dino => dino.id));
+        const unknown = req.body.dinos.find(id => !known.has(id));
+        if (unknown) throw httpError(400, `Unknown dino: ${unknown}`);
+      }
+      const image = await gallery.classify(req.params.file, req.body);
+      res.json(withUses(image, await herd.galleryUses()));
+    } catch (error) { next(error); }
+  });
+
+  // Deleting an image first unlinks it from every dino that uses it as photo or evidence photo.
+  app.delete('/api/gallery/:file', async (req, res, next) => {
+    try {
+      await gallery.get(req.params.file);
+      const unlinked = await herd.unlinkGallery(req.params.file);
+      await gallery.remove(req.params.file);
+      res.json({ unlinked });
+    } catch (error) { next(error); }
+  });
+
   app.use((error, _req, res, _next) => {
     const status = error.status || (error.code === 'ENOENT' ? 404 : error instanceof multer.MulterError ? 400 : 500);
+    if (status === 500) console.error(error);
     res.status(status).json({ error: status === 500 ? 'Unexpected server error.' : error.message });
   });
   return app;

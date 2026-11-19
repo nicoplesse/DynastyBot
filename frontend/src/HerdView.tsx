@@ -202,7 +202,7 @@ function PhotoPick({ file, onFile }: { file: File | null; onFile: (file: File | 
   useEffect(() => () => { if (preview) URL.revokeObjectURL(preview); }, [preview]);
   return <div className="herd-photo-pick">
     {preview ? <img src={preview} alt="" /> : <span aria-hidden="true">◐</span>}
-    <div><strong>Photo</strong><small>A nice shot of the dino (optional)</small></div>
+    <div><strong>Photo</strong><small>A nice shot of the dino (optional) · also kept in the gallery</small></div>
     <button type="button" className="secondary-button" onClick={() => input.current?.click()}>{file ? 'Change' : 'Choose photo'}</button>
     {file && <button type="button" className="text-button" onClick={() => onFile(null)}>Remove</button>}
     <input ref={input} type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" hidden onChange={event => { onFile(event.target.files?.[0] || null); event.target.value = ''; }} />
@@ -406,7 +406,8 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
         <div className="herd-add">
           <ImageDrop files={newShots} onFiles={setNewShots} label="Add screenshots" hint="New bloodline, skin or mutation screens" />
           <PhotoPick file={newPhoto} onFile={setNewPhoto} />
-          {dino.photo && !newPhoto && <button type="button" className="text-button danger" disabled={busy} onClick={() => void run(() => herdApi.removeFile(dino.id, dino.photo!), 'Photo removed.')}>Remove current photo</button>}
+          <a className="herd-gallery-link" href={`#/gallery?dino=${dino.id}`}><span aria-hidden="true">▦</span> Choose a photo from the gallery <b>→</b></a>
+          {dino.photo && !newPhoto && <button type="button" className="text-button danger" disabled={busy} onClick={() => void run(() => herdApi.removeFile(dino.id, dino.photo!), dino.photo!.startsWith('gallery/') ? 'Photo unlinked. The image stays in the gallery.' : 'Photo removed.')}>{dino.photo.startsWith('gallery/') ? 'Unlink current photo' : 'Remove current photo'}</button>}
           {(newShots.length > 0 || newPhoto) && <div className="save-row"><div><strong>Ready to add?</strong><span>Files are stored exactly as captured.</span></div><button type="button" className="primary-button" disabled={busy} onClick={() => void upload()}>{busy ? 'Saving…' : 'Save files'} <span aria-hidden="true">→</span></button></div>}
         </div>
       </section>
@@ -414,7 +415,7 @@ function HerdDetail({ id, catalog }: { id: string; catalog: Catalog }) {
 
       <div className="herd-danger"><button type="button" className="text-button danger" onClick={() => setConfirmDelete(true)}>Delete {dino.name}…</button></div>
     </article>
-    {confirmDelete && <div className="modal-backdrop" onMouseDown={event => { if (event.target === event.currentTarget && !busy) setConfirmDelete(false); }}><div className="modal" role="alertdialog" aria-modal="true" aria-labelledby="herd-delete-title"><div className="modal-icon">!</div><h2 id="herd-delete-title">Delete {dino.name}?</h2><p>This removes the dino, its photo and all {dino.screenshots.length} raw screenshots from <code>data/herd/{dino.id}/</code>.</p><div className="modal-actions"><button type="button" className="secondary-button" onClick={() => setConfirmDelete(false)} disabled={busy}>Cancel</button><button type="button" className="danger-button" onClick={() => void remove()} disabled={busy}>Delete dino</button></div></div></div>}
+    {confirmDelete && <div className="modal-backdrop" onMouseDown={event => { if (event.target === event.currentTarget && !busy) setConfirmDelete(false); }}><div className="modal" role="alertdialog" aria-modal="true" aria-labelledby="herd-delete-title"><div className="modal-icon">!</div><h2 id="herd-delete-title">Delete {dino.name}?</h2><p>This removes the dino and all {dino.screenshots.length} raw screenshots from <code>data/herd/{dino.id}/</code>. Its photos stay in the gallery.</p><div className="modal-actions"><button type="button" className="secondary-button" onClick={() => setConfirmDelete(false)} disabled={busy}>Cancel</button><button type="button" className="danger-button" onClick={() => void remove()} disabled={busy}>Delete dino</button></div></div></div>}
     {lightbox && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" onClick={() => setLightbox(null)}><button type="button" aria-label="Close image" onClick={() => setLightbox(null)}>×</button><img src={lightbox} alt="Full size" /></div>}
   </>;
 }

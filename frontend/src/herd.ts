@@ -1,4 +1,5 @@
 import { ApiError } from './api';
+import { galleryFileUrl } from './gallery';
 
 export interface HerdScreenshot { file: string; originalFileName: string; addedAt: string; processedAt: string | null; transcript: string }
 export interface HerdGenetics {
@@ -28,7 +29,7 @@ export interface HerdDino {
   genetics: HerdGenetics | null; bonds?: HerdBond[]; character?: HerdCharacter; family?: HerdFamily | null;
   diedAt?: string; deathCause?: string; screenshots: HerdScreenshot[]; createdAt: string; updatedAt: string;
 }
-export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'diedAt' | 'deathCause' | 'notes' | 'proofs' | 'bonds' | 'character' | 'family'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
+export type HerdPatch = Partial<Pick<HerdDino, 'name' | 'playableId' | 'sex' | 'diedAt' | 'deathCause' | 'notes' | 'proofs' | 'bonds' | 'character' | 'family' | 'photo'>> & { genetics?: Omit<HerdGenetics, 'updatedAt'> | null };
 
 async function result<T>(response: Response): Promise<T> {
   if (!response.ok) {
@@ -43,12 +44,13 @@ export const herdApi = {
   get: async (id: string) => result<HerdDino>(await fetch(`/api/herd/${encodeURIComponent(id)}`)),
   upload: async (form: FormData) => result<HerdDino>(await fetch('/api/herd', { method: 'POST', body: form })),
   update: async (id: string, patch: HerdPatch) => result<HerdDino>(await fetch(`/api/herd/${encodeURIComponent(id)}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify(patch) })),
-  removeFile: async (id: string, file: string) => result<HerdDino>(await fetch(`/api/herd/${encodeURIComponent(id)}/files/${file}`, { method: 'DELETE' })),
+  removeFile: async (id: string, file: string) => result<HerdDino>(await fetch(`/api/herd/${encodeURIComponent(id)}/files/${file.split('/').map(encodeURIComponent).join('/')}`, { method: 'DELETE' })),
   remove: async (id: string) => {
     const response = await fetch(`/api/herd/${encodeURIComponent(id)}`, { method: 'DELETE' });
     if (!response.ok) await result(response);
   },
-  fileUrl: (dino: Pick<HerdDino, 'id'>, file: string) => `/api/herd/${encodeURIComponent(dino.id)}/files/${file}`,
+  // Photos and evidence photos point into the gallery ("gallery/<name>"); screenshots stay in the dino's folder.
+  fileUrl: (dino: Pick<HerdDino, 'id'>, file: string) => file.startsWith('gallery/') ? galleryFileUrl(file.slice(8)) : `/api/herd/${encodeURIComponent(dino.id)}/files/${file}`,
 };
 
 export const pendingCount = (dino: HerdDino) => dino.screenshots.filter(shot => !shot.processedAt).length;

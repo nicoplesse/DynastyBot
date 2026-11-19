@@ -36,7 +36,8 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
 
     const appended = await (await post({ name: 'malekit' }, [['screenshots', 'a.png'], ['photo', 'b.png']])).json();
     assert.equal(appended.screenshots.length, 2);
-    assert.match(appended.photo, /^photo-.+\.png$/);
+    assert.equal(appended.photo, 'gallery/b.png'); // a new photo lands in the gallery, the dino only points at it
+    assert.deepEqual(await readFile(join(root, 'gallery', 'b.png')), png);
     assert.equal((await post({ name: 'Rex', playableId: 'nope' })).status, 400);
     assert.equal((await post({ name: 'Rex', nestingProof: 'not a link' })).status, 400);
     assert.equal((await fetch(`${base}/api/herd/rex`)).status, 404);
@@ -114,10 +115,11 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     await writeFile(shot, png);
     await assert.rejects(store.setEventPhoto('malekit', '', { path: shot, originalname: 'kill.png' }), /Several events/);
     const { event } = await store.setEventPhoto('malekit', 'deinosuchus', { path: shot, originalname: 'kill.png' });
-    assert.match(event.photo, /^events\/.+\.png$/);
+    assert.equal(event.photo, 'gallery/kill.png');
     assert.equal((await fetch(`${base}/api/herd/malekit/files/${event.photo}`)).status, 200);
     const unshot = await (await fetch(`${base}/api/herd/malekit/files/${event.photo}`, { method: 'DELETE' })).json();
     assert.equal(unshot.family.events.find(item => item.subject === 'Deinosuchus').photo, '');
+    assert.deepEqual(await readFile(join(root, 'gallery', 'kill.png')), png); // unlinking keeps the image in the gallery
 
     assert.equal((await fetch(`${base}/api/herd?playable=tyrannotitan`).then(response => response.json())).length, 1);
     assert.equal((await fetch(`${base}/api/herd?playable=spinosaurus`).then(response => response.json())).length, 0);

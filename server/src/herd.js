@@ -2,15 +2,19 @@
 //   dino.json        structured record (genetics filled by the /aktualisiere skill, links and photo from the UI;
 //                    bonds and character for social playables, from the UI or the skill; family for the ID file)
 //   screenshots/     raw imported screenshots, stored byte for byte and never modified
-//   photo-*.<ext>    optional photo of the dino
-//   events/*.<ext>   optional evidence photos of notable kills and events (family.events[].photo)
+// The dino's photo and the evidence photos of notable kills (family.events[].photo) live in the gallery
+// (data/gallery/, see gallery.js) and are stored here as references "gallery/<name>". Older records may still
+// name a file in the dino's folder (photo-*.<ext>, events/*.<ext>) until moveImagesToGallery has run.
 // A dead dino keeps its folder; diedAt (YYYY-MM-DD) marks it as deceased, deathCause says how it died.
 // A screenshot is "pending" until the skill has read it (processedAt stays null).
-import { copyFile, mkdir, open, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
-import { join, resolve } from 'node:path';
+import { copyFile, mkdir, readFile, readdir, rename, rm, rmdir, writeFile } from 'node:fs/promises';
+import { basename, dirname, join, resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { imageKind } from './images.js';
+import { createGalleryStore, galleryName, galleryRef, isGalleryRef } from './gallery.js';
 
+export { imageKind };
 export const defaultHerdDir = fileURLToPath(new URL('../../data/herd/', import.meta.url));
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const filePattern = /^(screenshots\/[a-z0-9-]+|events\/[a-z0-9-]+|photo-[a-z0-9-]+)\.(png|jpg|webp)$/;
@@ -28,18 +32,7 @@ export function herdSlug(name) {
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-export function isHerdFile(file) { return typeof file === 'string' && filePattern.test(file); }
-
-// Uploads are recognised by their bytes, so pasted clipboard images without a usable name work too.
-export async function imageKind(path) {
-  const handle = await open(path, 'r');
-  const bytes = Buffer.alloc(12);
-  try { await handle.read(bytes, 0, 12, 0); } finally { await handle.close(); }
-  if (bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) return 'png';
-  if (bytes[0] === 255 && bytes[1] === 216 && bytes[2] === 255) return 'jpg';
-  if (bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP') return 'webp';
-  return null;
-}
+export function isHerdFile(file) { return typeof file === 'string' && (filePattern.test(file) || isGalleryRef(file)); }
 
 function text(value, max = 400) {
   if (value == null) return '';
@@ -108,10 +101,10 @@ function day(value, label, required = false) {
 }
 
 const eventKinds = new Set(['apex', 'giant', 'event']);
-// Only some kills come with a photo of the moment; it lives in the dino's events/ folder.
+// Only some kills come with a photo of the moment; it is an image in the gallery (older records: the dino's events/ folder).
 function eventPhoto(value) {
-  const file = text(value, 80);
-  if (file && !eventPhotoPattern.test(file)) throw herdError(400, 'Event photo must be a file in events/.');
+  const file = text(value, 220);
+  if (file && !eventPhotoPattern.test(file) && !isGalleryRef(file)) throw herdError(400, 'Event photo must be a gallery image.');
   return file;
 }
 
@@ -179,8 +172,10 @@ async function knownPlayables(processedDir) {
   } catch { return null; }
 }
 
-export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {}) {
+// The gallery sits next to the herd folder (data/herd → data/gallery) unless one is passed in.
+export function createHerdStore({ herdDir = defaultHerdDir, processedDir, gallery } = {}) {
   const root = resolve(herdDir);
+  const pictures = gallery || createGalleryStore({ galleryDir: join(dirname(root), 'gallery'), processedDir });
 
   async function playableId(value) {
     const id = text(value, 80);
@@ -201,8 +196,8 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     catch (error) { throw error.code === 'ENOENT' ? herdError(404, 'Dino not found.') : error; }
   }
 
-  async function write(dino) {
-    dino.updatedAt = new Date().toISOString();
+  async function write(dino, { touch = true } = {}) {
+    if (touch) dino.updatedAt = new Date().toISOString();
     const target = join(folder(dino.id), 'dino.json');
     const temp = `${target}.${randomUUID()}.tmp`;
     await writeFile(temp, JSON.stringify(dino, null, 2) + '\n', 'utf8');
@@ -262,6 +257,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     const stamp = new Date().toISOString().replace(/[-:]/g, '').replace('T', '-').slice(0, 15);
     const used = new Set(dino.screenshots.map(shot => shot.file));
     const copied = [];
+    let galleryImage = null;
     try {
       for (const upload of screenshots) {
         const kind = await imageKind(upload.path);
@@ -274,17 +270,17 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
         copied.push(file);
         dino.screenshots.push({ file, originalFileName: String(upload.originalname || ''), addedAt: new Date().toISOString(), processedAt: null, transcript: '' });
       }
+      // A new photo goes into the gallery, tagged with the dino; an older gallery photo stays there.
       if (photo) {
         const kind = await imageKind(photo.path);
         if (!kind) throw herdError(400, `Unsupported or invalid photo: ${photo.originalname}`);
-        const file = `photo-${stamp}.${kind}`;
-        await copyFile(photo.path, join(folder(dino.id), file));
-        copied.push(file);
-        if (dino.photo && dino.photo !== file) await rm(join(folder(dino.id), dino.photo), { force: true });
-        dino.photo = file;
+        [galleryImage] = await pictures.add([photo], { dinos: [dino.id], species: dino.playableId ? [dino.playableId] : [] });
+        if (dino.photo && !isGalleryRef(dino.photo)) await rm(join(folder(dino.id), dino.photo), { force: true });
+        dino.photo = galleryRef(galleryImage.file);
       }
     } catch (error) {
       await Promise.all(copied.map(file => rm(join(folder(dino.id), file), { force: true })));
+      if (galleryImage) await pictures.remove(galleryImage.file).catch(() => {});
       if (created) await rm(folder(dino.id), { recursive: true, force: true }).catch(() => {});
       throw error;
     }
@@ -295,6 +291,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
   async function update(id, patch) {
     if (!patch || typeof patch !== 'object' || Array.isArray(patch)) throw herdError(400, 'Invalid update.');
     const dino = await read(id);
+    let picked = null;
     if ('name' in patch) {
       const name = text(patch.name, 80);
       if (!name) throw herdError(400, 'Dino name is required.');
@@ -309,6 +306,16 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     if ('diedAt' in patch) dino.diedAt = day(patch.diedAt, 'Died at');
     if ('deathCause' in patch) dino.deathCause = text(patch.deathCause, 200);
     if ('notes' in patch) dino.notes = text(patch.notes, 4000);
+    // Picks a gallery image as the dino's photo (null unlinks it; the image stays in the gallery).
+    if ('photo' in patch) {
+      if (patch.photo == null || patch.photo === '') dino.photo = null;
+      else {
+        if (!isGalleryRef(patch.photo)) throw herdError(400, 'Photo must be a gallery image.');
+        await pictures.get(galleryName(patch.photo)).catch(error => { throw error.status === 404 ? herdError(400, `Unknown gallery image: ${galleryName(patch.photo)}`) : error; });
+        dino.photo = patch.photo;
+        picked = galleryName(patch.photo);
+      }
+    }
     if ('proofs' in patch) {
       const proofs = patch.proofs || {};
       dino.proofs = {
@@ -341,10 +348,15 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
         shot.processedAt = now;
       }
     }
-    return write(dino);
+    const saved = await write(dino);
+    if (picked) await pictures.tag(picked, { dinos: [dino.id], species: dino.playableId ? [dino.playableId] : [] });
+    return saved;
   }
 
+  const eventCaption = (dino, event) => [`${dino.name}: ${event.subject}`, event.outcome].filter(Boolean).join(' ');
+
   // Sets the evidence photo of one notable event, found by its date or subject (the only event if none is given).
+  // The photo goes into the gallery, tagged with the dino; an older evidence photo stays there.
   async function setEventPhoto(id, match, upload) {
     const dino = await read(id);
     const events = dino.family?.events || [];
@@ -354,20 +366,18 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     if (hits.length > 1) throw herdError(400, `Several events match; name one by date or subject: ${hits.map(item => `${item.date} ${item.subject}`).join(', ')}`);
     const kind = await imageKind(upload.path);
     if (!kind) throw herdError(400, `Unsupported or invalid photo: ${upload.originalname}`);
-    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace('T', '-').slice(0, 15);
-    const file = `events/${stamp}.${kind}`;
-    await mkdir(join(folder(dino.id), 'events'), { recursive: true });
-    await copyFile(upload.path, join(folder(dino.id), file));
     const event = hits[0];
+    const [image] = await pictures.add([upload], { dinos: [dino.id], species: [dino.playableId, event.playableId].filter(Boolean), caption: eventCaption(dino, event) });
     const previous = event.photo;
-    event.photo = file;
+    event.photo = galleryRef(image.file);
     const saved = await write(dino);
-    if (previous && previous !== file) await rm(join(folder(dino.id), previous), { force: true });
-    return { dino: saved, event, previous };
+    if (previous && !isGalleryRef(previous)) await rm(join(folder(dino.id), previous), { force: true });
+    return { dino: saved, event, previous, image };
   }
 
   const eventWith = (dino, file) => (dino.family?.events || []).find(item => item.photo === file);
 
+  // A gallery photo is only unlinked here; the image itself stays in the gallery.
   async function removeFile(id, file) {
     if (!isHerdFile(file)) throw herdError(400, 'Invalid file.');
     const dino = await read(id);
@@ -375,7 +385,7 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     else if (eventWith(dino, file)) eventWith(dino, file).photo = '';
     else if (dino.screenshots.some(shot => shot.file === file)) dino.screenshots = dino.screenshots.filter(shot => shot.file !== file);
     else throw herdError(404, 'File not found.');
-    await rm(join(folder(id), file), { force: true });
+    if (!isGalleryRef(file)) await rm(join(folder(id), file), { force: true });
     return write(dino);
   }
 
@@ -388,8 +398,72 @@ export function createHerdStore({ herdDir = defaultHerdDir, processedDir } = {})
     if (!isHerdFile(file)) throw herdError(400, 'Invalid file.');
     const dino = await read(id);
     if (dino.photo !== file && !dino.screenshots.some(shot => shot.file === file) && !eventWith(dino, file)) throw herdError(404, 'File not found.');
-    return join(folder(id), file);
+    return isGalleryRef(file) ? pictures.path(galleryName(file)) : join(folder(id), file);
   }
 
-  return { root, all, read, find, addFiles, update, setEventPhoto, removeFile, remove, filePath, folder };
+  // Where each gallery image is used: as a dino's photo or as the evidence photo of a notable kill.
+  async function galleryUses() {
+    const uses = new Map();
+    const note = (ref, use) => { if (isGalleryRef(ref)) uses.set(galleryName(ref), [...(uses.get(galleryName(ref)) || []), use]); };
+    for (const dino of await all()) {
+      note(dino.photo, { dinoId: dino.id, dinoName: dino.name, kind: 'photo' });
+      for (const event of dino.family?.events || []) note(event.photo, { dinoId: dino.id, dinoName: dino.name, kind: 'event', date: event.date, subject: event.subject });
+    }
+    return uses;
+  }
+
+  // Before a gallery image is deleted, every dino that points at it lets go.
+  async function unlinkGallery(name) {
+    const ref = galleryRef(name);
+    const unlinked = [];
+    for (const dino of await all()) {
+      let changed = false;
+      if (dino.photo === ref) { dino.photo = null; changed = true; unlinked.push({ dinoId: dino.id, dinoName: dino.name, kind: 'photo' }); }
+      for (const event of dino.family?.events || []) {
+        if (event.photo !== ref) continue;
+        event.photo = '';
+        changed = true;
+        unlinked.push({ dinoId: dino.id, dinoName: dino.name, kind: 'event', date: event.date, subject: event.subject });
+      }
+      if (changed) await write(dino);
+    }
+    return unlinked;
+  }
+
+  // One-time move of the older per-dino photos (photo-*.<ext>, events/*.<ext>) into the gallery, tagged with
+  // the dino and its species. Herd stamps are UTC, so the stamp in the old name becomes the gallery date.
+  async function moveImagesToGallery() {
+    const moved = [];
+    const stampDate = file => {
+      const match = basename(file).match(/(\d{4})(\d{2})(\d{2})-(\d{2})(\d{2})(\d{2})/);
+      return match ? `${match[1]}-${match[2]}-${match[3]}T${match[4]}:${match[5]}:${match[6]}.000Z` : undefined;
+    };
+    const stampOf = file => basename(file).replace(/\.[^.]+$/, '').replace(/^photo-/, '');
+    for (const dino of await all()) {
+      const species = dino.playableId ? [dino.playableId] : [];
+      let changed = false;
+      if (dino.photo && !isGalleryRef(dino.photo)) {
+        const image = await pictures.move(join(folder(dino.id), dino.photo), `${dino.id}-photo-${stampOf(dino.photo)}`, { dinos: [dino.id], species, addedAt: stampDate(dino.photo), originalFileName: dino.photo });
+        moved.push({ dino: dino.name, kind: 'photo', from: `data/herd/${dino.id}/${dino.photo}`, to: image.file });
+        dino.photo = galleryRef(image.file);
+        changed = true;
+      }
+      for (const event of dino.family?.events || []) {
+        if (!event.photo || isGalleryRef(event.photo)) continue;
+        const image = await pictures.move(join(folder(dino.id), event.photo), `${dino.id}-${herdSlug(event.subject)}-${stampOf(event.photo)}`, {
+          dinos: [dino.id], species: [...new Set([...species, event.playableId].filter(Boolean))], caption: eventCaption(dino, event),
+          addedAt: stampDate(event.photo), originalFileName: event.photo,
+        });
+        moved.push({ dino: dino.name, kind: 'event', from: `data/herd/${dino.id}/${event.photo}`, to: image.file });
+        event.photo = galleryRef(image.file);
+        changed = true;
+      }
+      if (!changed) continue;
+      await write(dino, { touch: false });
+      await rmdir(join(folder(dino.id), 'events')).catch(() => {}); // only if it is empty now
+    }
+    return moved;
+  }
+
+  return { root, gallery: pictures, all, read, find, addFiles, update, setEventPhoto, removeFile, remove, filePath, folder, galleryUses, unlinkGallery, moveImagesToGallery };
 }
