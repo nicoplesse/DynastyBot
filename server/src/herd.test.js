@@ -92,6 +92,13 @@ test('herd: imports raw screenshots, appends by name, stores genetics and links,
     assert.equal((await patch('malekit', { family: { hatchedAt: '20.10.2026' } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 1.5 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: { offspring: [{ name: 'X', clutch: 0 }] } })).status, 400);
+    const half = await (await patch('malekit', { family: {
+      father: 'Razor', siblings: [{ name: 'Lemon', sex: 'female', father: ' Snare ' }],
+      clutches: [{ clutch: 2, mate: 'Snare' }, { clutch: 1, mate: 'Snare', date: '2026-11-16' }, { clutch: '' }],
+    } })).json();
+    assert.deepEqual(half.family.siblings, [{ name: 'Lemon', sex: 'female', status: '', note: '', father: 'Snare' }]);
+    assert.deepEqual(half.family.clutches.map(item => [item.clutch, item.mate, item.date]), [[1, 'Snare', '2026-11-16'], [2, 'Snare', '']]);
+    assert.equal((await patch('malekit', { family: { clutches: [{ clutch: 0 }] } })).status, 400);
     assert.equal((await patch('malekit', { family: [] })).status, 400);
     const events = await (await patch('malekit', { family: { events: [
       { date: '2026-11-16', kind: 'apex', subject: 'Deinosuchus', outcome: 'getötet' },

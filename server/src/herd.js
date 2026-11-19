@@ -125,7 +125,8 @@ function clutchNo(value) {
 
 // The family file (catalogue number, origin, siblings, calves, chronicle). Mates stay in bonds;
 // each calf names its mother, so calves hang under the right mate in the family tree.
-// Siblings share the dino's parents and stand beside it under them. hatchedAt (optional) dates the hatch
+// Siblings share the dino's parents and stand beside it under them (half siblings name the other parent).
+// clutches lists laid clutches by number, so a clutch without a calf still counts. hatchedAt (optional) dates the hatch
 // for the Tylo age; without it the age counts from the day the dino joined the register.
 export function normalizeFamily(value) {
   if (value == null) return null;
@@ -144,8 +145,13 @@ export function normalizeFamily(value) {
   }).filter(item => item.name);
   const siblings = entries(value.siblings, 'Siblings').map(item => {
     if (item.sex != null && item.sex !== '' && !sexes.has(item.sex)) throw herdError(400, 'Sibling sex must be female or male.');
-    return { name: text(item.name, 80), sex: item.sex || null, status: text(item.status, 60), note: text(item.note, 400) };
+    // A half sibling names the parent it does not share (e.g. the mother's other mate as father).
+    const parents = Object.fromEntries(['mother', 'father'].map(field => [field, text(item[field], 80)]).filter(([, value]) => value));
+    return { name: text(item.name, 80), sex: item.sex || null, status: text(item.status, 60), note: text(item.note, 400), ...parents };
   }).filter(item => item.name);
+  // Clutches laid so far, also those no calf came from yet: they count for the Tylo age like any other.
+  const clutches = entries(value.clutches, 'Clutches').map(item => ({ clutch: clutchNo(item.clutch), mate: text(item.mate, 80), date: day(item.date, 'Clutch date'), note: text(item.note, 400) }))
+    .filter(item => item.clutch).sort((a, b) => a.clutch - b.clutch);
   const log = entries(value.log, 'Log').map(item => ({ date: day(item.date, 'Log date', true), text: text(item.text, 400), place: text(item.place, 80) }))
     .filter(item => item.text).sort((a, b) => a.date.localeCompare(b.date));
   // Notable kills and events, kept apart from the chronicle the way orca catalogues log exceptional
@@ -162,7 +168,7 @@ export function normalizeFamily(value) {
   return {
     catalogId: text(value.catalogId, 16), subspecies: text(value.subspecies, 40), origin: text(value.origin, 200),
     hatchedAt: day(value.hatchedAt, 'Hatched at'),
-    mother: text(value.mother, 80), father: text(value.father, 80), siblings, offspring, log, events,
+    mother: text(value.mother, 80), father: text(value.father, 80), siblings, offspring, clutches, log, events,
   };
 }
 

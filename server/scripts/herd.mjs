@@ -34,7 +34,8 @@ function summary(dino) {
     traits: dino.character?.traits || [], character: dino.character?.text || '',
     family: dino.family ? {
       ...Object.fromEntries(['catalogId', 'subspecies', 'origin', 'hatchedAt', 'mother', 'father'].map(field => [field, dino.family[field]]).filter(([, value]) => value)),
-      siblings: (dino.family.siblings || []).map(item => [item.name, item.sex, item.status, item.note].filter(Boolean).join(' · ')),
+      siblings: (dino.family.siblings || []).map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.father && `Vater ${item.father}`, item.status, item.note].filter(Boolean).join(' · ')),
+      clutches: (dino.family.clutches || []).map(item => [`Gelege ${item.clutch}`, item.mate && `mit ${item.mate}`, item.date, item.note].filter(Boolean).join(' · ')),
       offspring: dino.family.offspring.map(item => [item.name, item.sex, item.mother && `Mutter ${item.mother}`, item.clutch && `Gelege ${item.clutch}`, item.born, item.status].filter(Boolean).join(' · ')),
       log: dino.family.log.map(item => `${item.date} ${item.text}`),
       events: (dino.family.events || []).map(item => [item.date, item.kind, item.subject, item.outcome, item.technique, item.partners, item.place].filter(Boolean).join(' · ')),
